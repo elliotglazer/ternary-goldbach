@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\LoadedPackedAudit.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\LoadedPackedAudit.lean"
+  ],
+  "exit_code": 1,
+  "stop": null,
+  "wall_seconds": 8.183743100002175,
+  "user_cpu_seconds": 1.296875,
+  "system_cpu_seconds": 6.8125,
+  "cpu_seconds": 8.109375,
+  "peak_working_set_bytes": 870961152,
+  "observed_peak_private_bytes": 2223534080,
+  "memory_samples": 162,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "LoadedPackedAudit.lean",
+      "bytes": 1072,
+      "sha256": "01749FE54310FBEC4B9D731588064C8C004C581E76117DD7AD6B667956AD9263"
+    },
+    {
+      "path": "loaded_packed_audit.log",
+      "bytes": 1399,
+      "sha256": "DE9F6078A80D1CE2DF786003141205FC73F9FA41365B8BC6ED388FF76B75D2A9"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

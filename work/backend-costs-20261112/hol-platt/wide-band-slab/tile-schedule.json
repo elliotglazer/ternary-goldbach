@@ -1,0 +1,658 @@
+{
+  "1x1": {
+    "groups_per_tile": 1,
+    "eight_height_blocks_per_tile": 1,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 1736699525,
+        "coefficient_loads": 1736699525,
+        "output_buffer_bytes": 837021600,
+        "geometry_rows_per_anchor_at_most": 8474,
+        "preparation_hours": 72027.20071670138,
+        "literal_geometry_hours": 1590.5273149791662,
+        "coefficient_hours_if_all_literal_load_is_shared": 16542.062975625002,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 1517735280,
+        "coefficient_loads": 1517735280,
+        "output_buffer_bytes": 837021600,
+        "geometry_rows_per_anchor_at_most": 4275,
+        "preparation_hours": 24373.5638174,
+        "literal_geometry_hours": 693.9422974666667,
+        "coefficient_hours_if_all_literal_load_is_shared": 13664.465841033334,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 1302575598,
+        "coefficient_loads": 1302575598,
+        "output_buffer_bytes": 836801280,
+        "geometry_rows_per_anchor_at_most": 2214,
+        "preparation_hours": 55189.404434150005,
+        "literal_geometry_hours": 243.14744496072365,
+        "coefficient_hours_if_all_literal_load_is_shared": 12540.9083963,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 1905699993,
+        "coefficient_loads": 1905699993,
+        "output_buffer_bytes": 436489920,
+        "geometry_rows_per_anchor_at_most": 640,
+        "preparation_hours": 6036.834088936666,
+        "literal_geometry_hours": 107.4603051613627,
+        "coefficient_hours_if_all_literal_load_is_shared": 18785.702361552085,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 142467575,
+        "coefficient_loads": 142467575,
+        "output_buffer_bytes": 159510720,
+        "geometry_rows_per_anchor_at_most": 128,
+        "preparation_hours": 461.35749704166665,
+        "literal_geometry_hours": 9.339541027738203,
+        "coefficient_hours_if_all_literal_load_is_shared": 1584.8330488958334,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 837021600,
+    "max_geometry_rows_per_anchor": 8474,
+    "preparation_hours_by_coefficient_sharing": [
+      223850.7500812316,
+      223850.7500812316
+    ],
+    "partial_24h_by_sharing": [
+      [
+        882528.4141150515,
+        883057.7708534275
+      ],
+      [
+        882528.4141150515,
+        883057.7708534275
+      ]
+    ]
+  },
+  "1x4": {
+    "groups_per_tile": 1,
+    "eight_height_blocks_per_tile": 4,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 436122125,
+        "coefficient_loads": 1736699525,
+        "output_buffer_bytes": 3348086400,
+        "geometry_rows_per_anchor_at_most": 8474,
+        "preparation_hours": 20557.21138320139,
+        "literal_geometry_hours": 399.4151794791666,
+        "coefficient_hours_if_all_literal_load_is_shared": 16542.062975625002,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 383001129,
+        "coefficient_loads": 1517735280,
+        "output_buffer_bytes": 3348086400,
+        "geometry_rows_per_anchor_at_most": 4275,
+        "preparation_hours": 7883.039767992501,
+        "literal_geometry_hours": 175.11662731499996,
+        "coefficient_hours_if_all_literal_load_is_shared": 13664.465841033334,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 332791116,
+        "coefficient_loads": 1302575598,
+        "output_buffer_bytes": 3347205120,
+        "geometry_rows_per_anchor_at_most": 2214,
+        "preparation_hours": 15615.462954091665,
+        "literal_geometry_hours": 62.12100832018488,
+        "coefficient_hours_if_all_literal_load_is_shared": 12540.9083963,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 504606870,
+        "coefficient_loads": 1905699993,
+        "output_buffer_bytes": 1745959680,
+        "geometry_rows_per_anchor_at_most": 640,
+        "preparation_hours": 4425.187804952499,
+        "literal_geometry_hours": 28.45422072514017,
+        "coefficient_hours_if_all_literal_load_is_shared": 18785.702361552085,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 46451475,
+        "coefficient_loads": 142467575,
+        "output_buffer_bytes": 638042880,
+        "geometry_rows_per_anchor_at_most": 128,
+        "preparation_hours": 326.77493020833333,
+        "literal_geometry_hours": 3.045152249987097,
+        "coefficient_hours_if_all_literal_load_is_shared": 1584.8330488958334,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 3348086400,
+    "max_geometry_rows_per_anchor": 8474,
+    "preparation_hours_by_coefficient_sharing": [
+      112593.8016519421,
+      112593.8016519421
+    ],
+    "partial_24h_by_sharing": [
+      [
+        771271.465685762,
+        771800.822424138
+      ],
+      [
+        771271.465685762,
+        771800.822424138
+      ]
+    ]
+  },
+  "2x4": {
+    "groups_per_tile": 2,
+    "eight_height_blocks_per_tile": 4,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 436122125,
+        "coefficient_loads": 868368725,
+        "output_buffer_bytes": 6695512320,
+        "geometry_rows_per_anchor_at_most": 16869,
+        "preparation_hours": 20557.21138320139,
+        "literal_geometry_hours": 399.4151794791666,
+        "coefficient_hours_if_all_literal_load_is_shared": 8271.212105625002,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 383001129,
+        "coefficient_loads": 759316371,
+        "output_buffer_bytes": 6695512320,
+        "geometry_rows_per_anchor_at_most": 8496,
+        "preparation_hours": 7883.039767992501,
+        "literal_geometry_hours": 175.11662731499996,
+        "coefficient_hours_if_all_literal_load_is_shared": 6836.272932962917,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 332791116,
+        "coefficient_loads": 652938890,
+        "output_buffer_bytes": 6690785280,
+        "geometry_rows_per_anchor_at_most": 4356,
+        "preparation_hours": 15615.462954091665,
+        "literal_geometry_hours": 62.12100832018488,
+        "coefficient_hours_if_all_literal_load_is_shared": 6286.350535388889,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 504606870,
+        "coefficient_loads": 962759430,
+        "output_buffer_bytes": 3462024960,
+        "geometry_rows_per_anchor_at_most": 1280,
+        "preparation_hours": 4425.187804952499,
+        "literal_geometry_hours": 28.45422072514017,
+        "coefficient_hours_if_all_literal_load_is_shared": 9490.534797812501,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 46451475,
+        "coefficient_loads": 82580400,
+        "output_buffer_bytes": 1251674880,
+        "geometry_rows_per_anchor_at_most": 256,
+        "preparation_hours": 326.77493020833333,
+        "literal_geometry_hours": 3.045152249987097,
+        "coefficient_hours_if_all_literal_load_is_shared": 918.638133,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 6695512320,
+    "max_geometry_rows_per_anchor": 16869,
+    "preparation_hours_by_coefficient_sharing": [
+      81278.83753332518,
+      112593.8016519421
+    ],
+    "partial_24h_by_sharing": [
+      [
+        739956.5015671451,
+        740485.8583055211
+      ],
+      [
+        771271.465685762,
+        771800.822424138
+      ]
+    ]
+  },
+  "4x2": {
+    "groups_per_tile": 4,
+    "eight_height_blocks_per_tile": 2,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 869661250,
+        "coefficient_loads": 434201275,
+        "output_buffer_bytes": 6684300480,
+        "geometry_rows_per_anchor_at_most": 33617,
+        "preparation_hours": 37714.40182754167,
+        "literal_geometry_hours": 796.4647614583332,
+        "coefficient_hours_if_all_literal_load_is_shared": 4135.7671443750005,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 760646172,
+        "coefficient_loads": 380062863,
+        "output_buffer_bytes": 6684300480,
+        "geometry_rows_per_anchor_at_most": 16898,
+        "preparation_hours": 13371.16635539,
+        "literal_geometry_hours": 347.7843330866666,
+        "coefficient_hours_if_all_literal_load_is_shared": 3421.7798567012505,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 654880868,
+        "coefficient_loads": 328095954,
+        "output_buffer_bytes": 6677180160,
+        "geometry_rows_per_anchor_at_most": 8685,
+        "preparation_hours": 28758.961570080555,
+        "literal_geometry_hours": 122.24442869369715,
+        "coefficient_hours_if_all_literal_load_is_shared": 3158.8349348999996,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 966995211,
+        "coefficient_loads": 491014683,
+        "output_buffer_bytes": 3410286720,
+        "geometry_rows_per_anchor_at_most": 2560,
+        "preparation_hours": 4957.062838308333,
+        "literal_geometry_hours": 54.52778550943528,
+        "coefficient_hours_if_all_literal_load_is_shared": 4840.24543415625,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 76649030,
+        "coefficient_loads": 54496510,
+        "output_buffer_bytes": 1098349440,
+        "geometry_rows_per_anchor_at_most": 512,
+        "preparation_hours": 369.1018364666666,
+        "literal_geometry_hours": 5.024769744423153,
+        "coefficient_hours_if_all_literal_load_is_shared": 606.2282599916666,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 6684300480,
+    "max_geometry_rows_per_anchor": 33617,
+    "preparation_hours_by_coefficient_sharing": [
+      102659.59613640394,
+      149614.71312968602
+    ],
+    "partial_24h_by_sharing": [
+      [
+        761337.2601702239,
+        761866.6169085999
+      ],
+      [
+        808292.3771635059,
+        808821.7339018818
+      ]
+    ]
+  },
+  "8x1": {
+    "groups_per_tile": 8,
+    "eight_height_blocks_per_tile": 1,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 1736699525,
+        "coefficient_loads": 217118575,
+        "output_buffer_bytes": 6671175840,
+        "geometry_rows_per_anchor_at_most": 67151,
+        "preparation_hours": 72027.20071670138,
+        "literal_geometry_hours": 1590.5273149791662,
+        "coefficient_hours_if_all_literal_load_is_shared": 2068.054426875,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 1517735280,
+        "coefficient_loads": 190436109,
+        "output_buffer_bytes": 6671175840,
+        "geometry_rows_per_anchor_at_most": 33705,
+        "preparation_hours": 24373.5638174,
+        "literal_geometry_hours": 693.9422974666667,
+        "coefficient_hours_if_all_literal_load_is_shared": 1714.533318570417,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 1302575598,
+        "coefficient_loads": 165686777,
+        "output_buffer_bytes": 6671935680,
+        "geometry_rows_per_anchor_at_most": 17229,
+        "preparation_hours": 55189.404434150005,
+        "literal_geometry_hours": 243.14744496072365,
+        "coefficient_hours_if_all_literal_load_is_shared": 1595.195469672222,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 1905699993,
+        "coefficient_loads": 254908809,
+        "output_buffer_bytes": 3307439040,
+        "geometry_rows_per_anchor_at_most": 4717,
+        "preparation_hours": 6036.834088936666,
+        "literal_geometry_hours": 107.4603051613627,
+        "coefficient_hours_if_all_literal_load_is_shared": 2512.7989887187505,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 142467575,
+        "coefficient_loads": 41454050,
+        "output_buffer_bytes": 934987200,
+        "geometry_rows_per_anchor_at_most": 825,
+        "preparation_hours": 461.35749704166665,
+        "literal_geometry_hours": 9.339541027738203,
+        "coefficient_hours_if_all_literal_load_is_shared": 461.1417612083334,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 6671935680,
+    "max_geometry_rows_per_anchor": 67151,
+    "preparation_hours_by_coefficient_sharing": [
+      169084.5014228701,
+      223850.7500812316
+    ],
+    "partial_24h_by_sharing": [
+      [
+        827762.16545669,
+        828291.522195066
+      ],
+      [
+        882528.4141150515,
+        883057.7708534275
+      ]
+    ]
+  },
+  "4x4": {
+    "groups_per_tile": 4,
+    "eight_height_blocks_per_tile": 4,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 436122125,
+        "coefficient_loads": 434201275,
+        "output_buffer_bytes": 13368600960,
+        "geometry_rows_per_anchor_at_most": 33617,
+        "preparation_hours": 20557.21138320139,
+        "literal_geometry_hours": 399.4151794791666,
+        "coefficient_hours_if_all_literal_load_is_shared": 4135.7671443750005,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 383001129,
+        "coefficient_loads": 380062863,
+        "output_buffer_bytes": 13368600960,
+        "geometry_rows_per_anchor_at_most": 16898,
+        "preparation_hours": 7883.039767992501,
+        "literal_geometry_hours": 175.11662731499996,
+        "coefficient_hours_if_all_literal_load_is_shared": 3421.7798567012505,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 332791116,
+        "coefficient_loads": 328095954,
+        "output_buffer_bytes": 13354360320,
+        "geometry_rows_per_anchor_at_most": 8685,
+        "preparation_hours": 15615.462954091665,
+        "literal_geometry_hours": 62.12100832018488,
+        "coefficient_hours_if_all_literal_load_is_shared": 3158.8349348999996,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 504606870,
+        "coefficient_loads": 491014683,
+        "output_buffer_bytes": 6820573440,
+        "geometry_rows_per_anchor_at_most": 2560,
+        "preparation_hours": 4425.187804952499,
+        "literal_geometry_hours": 28.45422072514017,
+        "coefficient_hours_if_all_literal_load_is_shared": 4840.24543415625,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 46451475,
+        "coefficient_loads": 54496510,
+        "output_buffer_bytes": 2196698880,
+        "geometry_rows_per_anchor_at_most": 512,
+        "preparation_hours": 326.77493020833333,
+        "literal_geometry_hours": 3.045152249987097,
+        "coefficient_hours_if_all_literal_load_is_shared": 606.2282599916666,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 13368600960,
+    "max_geometry_rows_per_anchor": 33617,
+    "preparation_hours_by_coefficient_sharing": [
+      65638.68465866003,
+      112593.8016519421
+    ],
+    "partial_24h_by_sharing": [
+      [
+        724316.34869248,
+        724845.705430856
+      ],
+      [
+        771271.465685762,
+        771800.822424138
+      ]
+    ]
+  },
+  "8x4": {
+    "groups_per_tile": 8,
+    "eight_height_blocks_per_tile": 4,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 436122125,
+        "coefficient_loads": 217118575,
+        "output_buffer_bytes": 26684703360,
+        "geometry_rows_per_anchor_at_most": 67151,
+        "preparation_hours": 20557.21138320139,
+        "literal_geometry_hours": 399.4151794791666,
+        "coefficient_hours_if_all_literal_load_is_shared": 2068.054426875,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 383001129,
+        "coefficient_loads": 190436109,
+        "output_buffer_bytes": 26684703360,
+        "geometry_rows_per_anchor_at_most": 33705,
+        "preparation_hours": 7883.039767992501,
+        "literal_geometry_hours": 175.11662731499996,
+        "coefficient_hours_if_all_literal_load_is_shared": 1714.533318570417,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 332791116,
+        "coefficient_loads": 165686777,
+        "output_buffer_bytes": 26687742720,
+        "geometry_rows_per_anchor_at_most": 17229,
+        "preparation_hours": 15615.462954091665,
+        "literal_geometry_hours": 62.12100832018488,
+        "coefficient_hours_if_all_literal_load_is_shared": 1595.195469672222,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 504606870,
+        "coefficient_loads": 254908809,
+        "output_buffer_bytes": 13229756160,
+        "geometry_rows_per_anchor_at_most": 4717,
+        "preparation_hours": 4425.187804952499,
+        "literal_geometry_hours": 28.45422072514017,
+        "coefficient_hours_if_all_literal_load_is_shared": 2512.7989887187505,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 46451475,
+        "coefficient_loads": 41454050,
+        "output_buffer_bytes": 3739948800,
+        "geometry_rows_per_anchor_at_most": 825,
+        "preparation_hours": 326.77493020833333,
+        "literal_geometry_hours": 3.045152249987097,
+        "coefficient_hours_if_all_literal_load_is_shared": 461.1417612083334,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 26687742720,
+    "max_geometry_rows_per_anchor": 67151,
+    "preparation_hours_by_coefficient_sharing": [
+      57827.55299358059,
+      112593.8016519421
+    ],
+    "partial_24h_by_sharing": [
+      [
+        716505.2170274005,
+        717034.5737657765
+      ],
+      [
+        771271.465685762,
+        771800.822424138
+      ]
+    ]
+  },
+  "16x4": {
+    "groups_per_tile": 16,
+    "eight_height_blocks_per_tile": 4,
+    "bands": [
+      {
+        "band": 1,
+        "calls": 1736699525,
+        "geometry_loads": 436122125,
+        "coefficient_loads": 108954425,
+        "output_buffer_bytes": 53340604800,
+        "geometry_rows_per_anchor_at_most": 134050,
+        "preparation_hours": 20557.21138320139,
+        "literal_geometry_hours": 399.4151794791666,
+        "coefficient_hours_if_all_literal_load_is_shared": 1037.790898125,
+        "coefficient_hours_if_no_literal_load_is_shared": 16542.062975625002
+      },
+      {
+        "band": 2,
+        "calls": 1517735280,
+        "geometry_loads": 383001129,
+        "coefficient_loads": 95628879,
+        "output_buffer_bytes": 53340604800,
+        "geometry_rows_per_anchor_at_most": 67263,
+        "preparation_hours": 7883.039767992501,
+        "literal_geometry_hours": 175.11662731499996,
+        "coefficient_hours_if_all_literal_load_is_shared": 860.9653921412502,
+        "coefficient_hours_if_no_literal_load_is_shared": 13664.465841033334
+      },
+      {
+        "band": 3,
+        "calls": 1302575598,
+        "geometry_loads": 332791116,
+        "coefficient_loads": 84508819,
+        "output_buffer_bytes": 53329774080,
+        "geometry_rows_per_anchor_at_most": 34368,
+        "preparation_hours": 15615.462954091665,
+        "literal_geometry_hours": 62.12100832018488,
+        "coefficient_hours_if_all_literal_load_is_shared": 813.6321295944445,
+        "coefficient_hours_if_no_literal_load_is_shared": 12540.9083963
+      },
+      {
+        "band": 4,
+        "calls": 1905699993,
+        "geometry_loads": 504606870,
+        "coefficient_loads": 137494926,
+        "output_buffer_bytes": 24830856960,
+        "geometry_rows_per_anchor_at_most": 8813,
+        "preparation_hours": 4425.187804952499,
+        "literal_geometry_hours": 28.45422072514017,
+        "coefficient_hours_if_all_literal_load_is_shared": 1355.3753295625,
+        "coefficient_hours_if_no_literal_load_is_shared": 18785.702361552085
+      },
+      {
+        "band": 5,
+        "calls": 142467575,
+        "geometry_loads": 46451475,
+        "coefficient_loads": 41454050,
+        "output_buffer_bytes": 3739948800,
+        "geometry_rows_per_anchor_at_most": 825,
+        "preparation_hours": 326.77493020833333,
+        "literal_geometry_hours": 3.045152249987097,
+        "coefficient_hours_if_all_literal_load_is_shared": 461.1417612083334,
+        "coefficient_hours_if_no_literal_load_is_shared": 1584.8330488958334
+      }
+    ],
+    "max_output_buffer_bytes": 53340604800,
+    "max_geometry_rows_per_anchor": 134050,
+    "preparation_hours_by_coefficient_sharing": [
+      54004.734539167395,
+      112593.8016519421
+    ],
+    "partial_24h_by_sharing": [
+      [
+        712682.3985729873,
+        713211.7553113633
+      ],
+      [
+        771271.465685762,
+        771800.822424138
+      ]
+    ]
+  }
+}

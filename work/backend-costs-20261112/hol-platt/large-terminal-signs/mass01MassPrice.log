@@ -1,0 +1,284 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/MassPriceScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "MassPrice">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/MassPriceScript.sml:33: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/MassPriceScript.sml:42: warning: Pattern is not exhaustive.
+Found near val [sc, mass, chk] = hd (replay.lines (fn ...) (t ^ "cfg.txt"))
+FUSED mass24n64 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.036161 0.005362 0.000255999999999
+Saved theorem _______ "mass24n64false"
+FUSED mass24n64 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.044922 0.005057 0.000564000000001
+Saved theorem _______ "mass24n64true"
+FUSED mass24n64 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.045592 0.147126 0.000138
+FUSED mass24n64 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002091 0.006278 0.000115
+FUSED mass24n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002398 1.120264 0.000159
+FUSED mass24n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00567 0.466204 0.000165
+FUSED mass24n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00586 0.60542 0.000248999999999
+FUSED mass24n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00231 0.399053 0.000128
+FUSED mass24n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002263 0.396399 0.000121
+FUSED mass24n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002191 0.287483 0.000156
+FUSED mass28n64 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002522 0.001015 0.0000660000000003
+Saved theorem _______ "mass28n64false"
+FUSED mass28n64 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002335 0.000951000000001 0.0000529999999994
+Saved theorem _______ "mass28n64true"
+FUSED mass28n64 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002967 0.008099 0.000112
+FUSED mass28n64 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002303 0.006811 0.000123
+FUSED mass28n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002569 0.241954 0.000137
+FUSED mass28n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002634 0.266099 0.000197
+FUSED mass28n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002262 0.258298 0.000121
+FUSED mass28n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002063 0.231473 0.000132000000001
+FUSED mass28n64 2048 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002105 0.225335 0.000116
+FUSED mass28n64 2048 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.001988 0.236795 0.000297000000002
+FUSED mass24n256 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004588 0.005558 0.000105
+Saved theorem _______ "mass24n256false"
+FUSED mass24n256 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004391 0.005547 0.0000859999999996
+Saved theorem _______ "mass24n256true"
+FUSED mass24n256 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004309 0.038878 0.000118000000001
+FUSED mass24n256 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00557 0.029196 0.000139000000001
+FUSED mass24n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003974 1.076712 0.000113000000001
+FUSED mass24n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00273 0.24844 0.000116
+FUSED mass24n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.005337 0.23624 0.000113000000001
+FUSED mass24n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002696 0.213568 0.000131999999999
+FUSED mass24n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004126 0.201714 0.000114
+FUSED mass24n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003822 0.242546 0.000114
+FUSED mass28n256 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003174 0.002662 0.0000809999999998
+Saved theorem _______ "mass28n256false"
+FUSED mass28n256 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003301 0.002736 0.0000739999999997
+Saved theorem _______ "mass28n256true"
+FUSED mass28n256 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003143 0.029769 0.000222000000001
+FUSED mass28n256 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.006642 0.033779 0.000181
+FUSED mass28n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002702 0.206434 0.000216999999999
+FUSED mass28n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003485 0.22931 0.000261
+FUSED mass28n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004308 0.244373 0.000112
+FUSED mass28n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004257 0.20262 0.000204
+FUSED mass28n256 512 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.003555 0.219782 0.000122000000001
+FUSED mass28n256 512 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.002312 0.23359 0.000115000000001
+FUSED mass24n1024 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.007768 0.010498 0.000107999999999
+Saved theorem _______ "mass24n1024false"
+FUSED mass24n1024 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.007525 0.011306 0.000113000000001
+Saved theorem _______ "mass24n1024true"
+FUSED mass24n1024 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.007821 0.848961 0.000145
+FUSED mass24n1024 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.010465 0.23275 0.000197
+FUSED mass24n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.010042 0.388847 0.000141000000001
+FUSED mass24n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.009195 0.359599 0.000135
+FUSED mass24n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.010939 1.107586 0.000263999999998
+FUSED mass24n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.011254 0.228513 0.000228
+FUSED mass24n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.01111 0.224245 0.000201999999998
+FUSED mass24n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.007648 0.244417 0.000142
+FUSED mass28n1024 1 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00993 0.012234 0.000108000000001
+Saved theorem _______ "mass28n1024false"
+FUSED mass28n1024 1 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.010995 0.01124 0.000103000000003
+Saved theorem _______ "mass28n1024true"
+FUSED mass28n1024 64 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.009655 0.130053 0.000232999999998
+FUSED mass28n1024 64 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.005301 0.108062 0.000115999999998
+FUSED mass28n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.005022 0.208514 0.000119000000002
+FUSED mass28n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004713 0.245387 0.000109000000002
+FUSED mass28n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.00504 0.231608 0.000128
+FUSED mass28n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.007323 0.216945 0.000122000000001
+FUSED mass28n1024 128 false
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.006167 0.222224 0.000109999999999
+FUSED mass28n1024 128 true
+SCHEMA cv_massloop input0 input1 input2 input3 input4 input5 input6
+EVAL_ENTER
+JOIN_EVAL 0.004638 0.237242 0.000221
+Exporting theory "MassPrice" ... done.
+Theory "MassPrice" took 17.6s to build
+Holmake: [1/1] MassPrice

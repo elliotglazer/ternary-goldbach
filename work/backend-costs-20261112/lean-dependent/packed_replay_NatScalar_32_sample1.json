@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayNatScalarP343N32.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayNatScalarP343N32.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 3.487735100003192,
+  "user_cpu_seconds": 0.515625,
+  "system_cpu_seconds": 2.921875,
+  "cpu_seconds": 3.4375,
+  "peak_working_set_bytes": 448360448,
+  "observed_peak_private_bytes": 962125824,
+  "memory_samples": 69,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "NatScalar",
+      "precision": 343,
+      "butterflies": 32,
+      "repetitions": 1,
+      "declarations": 3,
+      "kernel_wall_ns": 1476700
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayNatScalarP343N32.lean",
+      "bytes": 189,
+      "sha256": "501A8A50DE423723CD7C05339497539790253240B9BFC522E50A764AF436E10B"
+    },
+    {
+      "path": "packed_replay_NatScalar_32_sample1.log",
+      "bytes": 78,
+      "sha256": "39D721DF3E106FE88C639901B7693A45155E05F5CE5BA30CAACC9CE30ACD9B65"
+    },
+    {
+      "path": "ReplayNatScalarP343N32.olean",
+      "bytes": 1568,
+      "sha256": "EFA5556BED4EF437B214210EE260BE8F5B2D33F7B6F038A8607C16B575F36BB9"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

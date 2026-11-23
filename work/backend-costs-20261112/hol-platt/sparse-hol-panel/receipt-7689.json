@@ -1,0 +1,117 @@
+{
+  "7689": {
+    "main_index": 56781,
+    "main_height": 4436.015625,
+    "guard_index": 57421,
+    "guard_height": 4486.015625,
+    "dense": 230712,
+    "retained": 46162,
+    "processes": {
+      "HeadProjection": {
+        "user": 13.0,
+        "system": 5.4,
+        "cpu": 18.4,
+        "rss_kb": 524420,
+        "markers": [
+          "RETAINED_PROJECTION 3597 46162 4 0.080608 3.789016 3.388054 7.618739"
+        ],
+        "export_sha256": "161f3a35793788707ae8373cf3ea4e59ed42e1ba629d7312cc35af177a18fa14"
+      },
+      "SparseHead": {
+        "user": 16.19,
+        "system": 5.96,
+        "cpu": 22.150000000000002,
+        "rss_kb": 946536,
+        "markers": [],
+        "export_sha256": "59561f5a88d23b8a572d4de22095711b8ea701fda9772f80103b0d8fc1b3fba6"
+      },
+      "PanelTables": {
+        "user": 74.6,
+        "system": 19.18,
+        "cpu": 93.78,
+        "rss_kb": 1578564,
+        "markers": [
+          "JOIN_EVAL 0.000477 0.006096 0.000151",
+          "JOIN_EVAL 0.000477999999999 0.003161 0.000105",
+          "JOIN_EVAL 0.00058 0.007047 0.000147",
+          "JOIN_EVAL 0.000473 0.008492 0.000356",
+          "JOIN_EVAL 0.000497999999999 0.010497 0.000156",
+          "JOIN_EVAL 0.000764999999999 0.019857 0.000146",
+          "JOIN_EVAL 0.000724 0.027724 0.000236",
+          "JOIN_EVAL 0.000584 0.024279 0.000148",
+          "JOIN_EVAL 0.000578 0.04357 0.000642",
+          "JOIN_EVAL 0.000656 0.032259 0.00023",
+          "TABLE_SETUP 12.833164"
+        ],
+        "export_sha256": "a41f45ba79bb083845544d2371d2c4a7f068958a0e682ea5d1ec1a6908650e67"
+      },
+      "HeadPairEven": {
+        "user": 23.57,
+        "system": 7.5,
+        "cpu": 31.07,
+        "rss_kb": 1576108,
+        "markers": [
+          "HEAD_INPUT 2 0.440588 2.011836",
+          "JOIN_EVAL 0.007354 0.779067 0.000126",
+          "HEAD_CHANNEL 2 3.462444",
+          "HEAD_INPUT 3845 0.461901 1.848796",
+          "JOIN_EVAL 0.00154 0.595101 0.000111",
+          "HEAD_CHANNEL 3845 2.909303",
+          "HEAD_PAIR_DONE even 0.009208"
+        ],
+        "export_sha256": "9f58714fac5f96a2007fd8d2bea49dcb3a4718d935087600fbb49f4a0bb248d1"
+      },
+      "HeadPairOdd": {
+        "user": 25.29,
+        "system": 8.24,
+        "cpu": 33.53,
+        "rss_kb": 1575996,
+        "markers": [
+          "HEAD_INPUT 14 0.413807 1.766373",
+          "JOIN_EVAL 0.002069 0.969083 0.000151",
+          "HEAD_CHANNEL 14 3.229519",
+          "HEAD_INPUT 4943 0.345559 1.567226",
+          "JOIN_EVAL 0.004399 0.864798 0.000239",
+          "HEAD_CHANNEL 4943 2.787387",
+          "HEAD_PAIR_DONE odd 0.043541"
+        ],
+        "export_sha256": "9e2df0534a1fc80b1bb0e3532899ff86396cf67a59da81b093f48f19a6820caa"
+      }
+    },
+    "basis_chunks_cpu": 269.71,
+    "hashes": {
+      "heads-14.txt": "b2f7eee5172000d0514e3788fda8aaa10f2c31a9406fe34349a47cf92e64408d",
+      "heads-2.txt": "794410184267c98861449386b26eb0ed54c8905a3da0a2b0d44606d8f4e0f54f",
+      "heads-3845.txt": "126299a79173c4ea7052b73e6f35ee5dcd68148c3484630cd1da258b3be6bfe8",
+      "heads-4943.txt": "2b41dcb0ef611eb21123022bd2fbf85046ca9bb97b123e47dbad6a20c0e8a60f",
+      "jobs-14.txt": "811a3eaa05fbe0cdfba871550bfdca36552f0e25e2bc157c38f67e27ce63faad",
+      "jobs-2.txt": "543910bb6c3a09b7a21d0374e5c349d5488ad42c818c7d088c1205380c14cbef",
+      "jobs-3845.txt": "77e0592292362e078f6e62ed616c1d52ed292da9d8ee81d4ee3e2aeb8863f938",
+      "jobs-4943.txt": "b18727ebbee9a2f9812221bd7ec5c12b6bded2ce7377eb08ffaba05f3da6a6a7",
+      "main-14.txt": "1893622ab6c1e6330e394040888f84ba1149ca8c88467114867568a3abdffe5e",
+      "main-2.txt": "9bbf73270205b74816d0cfbfd71070eff577db4377fb4b02b495cea151f83bfd",
+      "main-3845.txt": "429aabf1e2b81e605a1f66c5fa401805b4b6dc358c1b773d91111bfb42ebb0e1",
+      "main-4943.txt": "f1205c860644f87e1bc85ca22464bb035c5f43a870810c5295a336b9995f74a1",
+      "aux-14.txt": "67f93801cacaf4f19147c9966480e6d12131f4c265bcf904dab97dec6fa65d97",
+      "aux-2.txt": "eb847c7407d4f6356790ae4ac871f4bf7c034125550d9cb7112c217d9c43c578",
+      "aux-3845.txt": "d63d1a6f6d90d59efee87f62bb5cd153d6bb9275a206ba3d80a24f72096803a8",
+      "aux-4943.txt": "50f495b42d76334465acd7bc6f5ea185d6bae98c8ddc86afecf72211a68acad5",
+      "target-14.txt": "dca76f65f75af504e4401b64e6599bd1869ddac71e93d722c5e6cc83d67168a4",
+      "target-2.txt": "796f05bfb15c2f6ceafedab36d47f4c75ce306fa0a6aacb63ce53e8a81f93ab2",
+      "target-3845.txt": "13dc49f37eb4c46eca5971a8cebaec4943063f64fb66af411b1be44f9fbe5d26",
+      "target-4943.txt": "566640c40b6ad24cda3f63e55f105a2d5fc983d47d6bb19e4b5446cd158149d8",
+      "pair-even.txt": "9d72b9474c7f1caab3207811328e7eb367803f07e4c36f369c08618f058ef533",
+      "pair-odd.txt": "08c1d245b553d1add0ce2de0088de849695c65ed50ac445c51cb1858fd4a2599",
+      "retained.hex": "a425ff4bfbcf3f8c40cd45d057174411237cad1ae16099dad314becd0d093c50",
+      "kernels.txt": "67cc8bd33945125da50c2d3f6b73eb8e5e9ba29af5808d350223150a08f50210",
+      "SparseHeadScript.sml": "a46ad47b2a9bf5695ccf850d68ccea2670183d781506fe63620ab6f3aee8520c",
+      "headobserve.sml": "c4993ea3144b850cf8e294cc0bdd2d7cee444d6f11a297996c5da253bf3d1540"
+    },
+    "cold_projection_pair_cpu": 83.0,
+    "us_per_dense": 359.755886126426,
+    "us_per_retained": 1798.015683895845,
+    "internal_cpu": 20.060141,
+    "internal_us_dense": 86.94884097922953,
+    "internal_us_retained": 434.55961613448295
+  }
+}

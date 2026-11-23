@@ -1,0 +1,60 @@
+{
+  "original_rounding": {
+    "lanes": 4,
+    "lane_bits": 200,
+    "field_bits": 114,
+    "delayed_scale_bits": 0,
+    "max_coordinate_difference": 0,
+    "outputs": 9204,
+    "pack": {
+      "cpu": 0.015625,
+      "wall": 0.03726549999919371
+    },
+    "transform": {
+      "cpu": 0.0625,
+      "wall": 0.07816600000296603
+    },
+    "unpack": {
+      "cpu": 0.015625,
+      "wall": 0.019147099999827333
+    }
+  },
+  "delayed_rounding": {
+    "lanes": 4,
+    "lane_bits": 848,
+    "field_bits": 843,
+    "delayed_scale_bits": 729,
+    "max_coordinate_difference": 61,
+    "outputs": 9204,
+    "pack": {
+      "cpu": 0.046875,
+      "wall": 0.04874440000276081
+    },
+    "transform": {
+      "cpu": 0.109375,
+      "wall": 0.11606659999961266
+    },
+    "unpack": {
+      "cpu": 0.015625,
+      "wall": 0.028604999999515712
+    }
+  },
+  "height_indices": [
+    1,
+    2,
+    84198,
+    84199
+  ],
+  "sha256": {
+    "c10004-reference\\h1.tsv": "5dd3e11e0a17097aefa165cbbf714081beb8ed4643a492b980421b5115842a59",
+    "c10004-real-transform\\h1-spectrum.tsv": "4fd6a6ffdc37bd7674ba7127e7faebe068ad219d0167b3d3ef110e4fef5bce03",
+    "c10004-reference\\h2.tsv": "2ffbc22aff927d5988e2c7a06ee3d4ffe503f312f20017eb3cc97908b47a3543",
+    "c10004-real-transform\\h2-spectrum.tsv": "78b71acbd4b273eada8009a47b38979dd7616199d2bfb106281e0d7b32201901",
+    "c10004-high-reference\\j84198-source.tsv": "9e607f20eda071a61c09c2b983cccade04d0fa94b008a06b6064f221b4b2bccc",
+    "c10004-high-reference\\j84198-completed.tsv": "e6a3adbaab6848643e5628114cd283579bae4db9b1b4dcaf8066932defe9610c",
+    "c10004-high-reference\\j84199-source.tsv": "b2ce90358cbe25a976099559289b46f3774f749b22a2b779df916b2c7c8d0280",
+    "c10004-high-reference\\j84199-completed.tsv": "74c0e2df1696d769af8be9291e3f1813333c7a41fff66072ec3642e912749771",
+    "c10004-roots\\table.json": "6b802adb6d3c2565d248b17e3d9bdb5890c7307bfa96e32685dcf717df8ed317",
+    "c10004-packed-transform\\packed.py": "00c648077174907a35771161a38c3e2f9044bdd36615eef890ca3de27a3e40f9"
+  }
+}

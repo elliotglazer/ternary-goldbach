@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "scope": "Complete 1024-even-target binary Goldbach interval",
+  "interval": [
+    3999999997356537860,
+    3999999997356539908
+  ],
+  "width": 1024,
+  "axioms": [
+    "bool.BOOL_CASES_AX",
+    "bool.ETA_AX",
+    "bool.INFINITY_AX",
+    "bool.SELECT_AX"
+  ],
+  "balanced_runs": [
+    {
+      "sample": "b1",
+      "times": {
+        "all_primes": {
+          "cpu_seconds": 8.235622,
+          "wall_seconds": 8.24498
+        },
+        "prime_tree": {
+          "cpu_seconds": 0.003273,
+          "wall_seconds": 0.00328
+        },
+        "input_translation": {
+          "cpu_seconds": 1.494737,
+          "wall_seconds": 1.567278
+        },
+        "coverage": {
+          "cpu_seconds": 0.015481,
+          "wall_seconds": 0.015499
+        },
+        "interval_assembly": {
+          "cpu_seconds": 0.023529,
+          "wall_seconds": 0.023545
+        },
+        "export": {
+          "cpu_seconds": 0.850922,
+          "wall_seconds": 1.057225
+        }
+      },
+      "export_bytes": 766977,
+      "export_sha256": "281bba1d68487d39bf1cfdbcdeada009d6aba349f6b6c5481af7fffee90230b9",
+      "measured_phase_cpu_seconds": 10.623564,
+      "process_cpu_seconds": 17.96,
+      "peak_rss_kib": 634624
+    },
+    {
+      "sample": "b2",
+      "times": {
+        "all_primes": {
+          "cpu_seconds": 8.84997,
+          "wall_seconds": 8.857805
+        },
+        "prime_tree": {
+          "cpu_seconds": 0.002807,
+          "wall_seconds": 0.002812
+        },
+        "input_translation": {
+          "cpu_seconds": 1.36775,
+          "wall_seconds": 1.447399
+        },
+        "coverage": {
+          "cpu_seconds": 0.029277,
+          "wall_seconds": 0.029314
+        },
+        "interval_assembly": {
+          "cpu_seconds": 0.012489,
+          "wall_seconds": 0.012488
+        },
+        "export": {
+          "cpu_seconds": 0.813176,
+          "wall_seconds": 1.003193
+        }
+      },
+      "export_bytes": 766977,
+      "export_sha256": "281bba1d68487d39bf1cfdbcdeada009d6aba349f6b6c5481af7fffee90230b9",
+      "measured_phase_cpu_seconds": 11.075469,
+      "process_cpu_seconds": 18.270000000000003,
+      "peak_rss_kib": 454252
+    },
+    {
+      "sample": "b3",
+      "times": {
+        "all_primes": {
+          "cpu_seconds": 9.469381,
+          "wall_seconds": 9.492899
+        },
+        "prime_tree": {
+          "cpu_seconds": 0.004215,
+          "wall_seconds": 0.004226
+        },
+        "input_translation": {
+          "cpu_seconds": 1.447863,
+          "wall_seconds": 1.525268
+        },
+        "coverage": {
+          "cpu_seconds": 0.021964,
+          "wall_seconds": 0.021982
+        },
+        "interval_assembly": {
+          "cpu_seconds": 0.012931,
+          "wall_seconds": 0.012931
+        },
+        "export": {
+          "cpu_seconds": 0.892917,
+          "wall_seconds": 1.089411
+        }
+      },
+      "export_bytes": 766977,
+      "export_sha256": "281bba1d68487d39bf1cfdbcdeada009d6aba349f6b6c5481af7fffee90230b9",
+      "measured_phase_cpu_seconds": 11.849271,
+      "process_cpu_seconds": 18.87,
+      "peak_rss_kib": 542428
+    }
+  ],
+  "corrected_flat_run": {
+    "sample": "2",
+    "times": {
+      "all_primes": {
+        "cpu_seconds": 9.364021,
+        "wall_seconds": 9.373117
+      },
+      "prime_tree": {
+        "cpu_seconds": 0.003266,
+        "wall_seconds": 0.003273
+      },
+      "input_translation": {
+        "cpu_seconds": 130.737295,
+        "wall_seconds": 130.794875
+      },
+      "coverage": {
+        "cpu_seconds": 0.015064,
+        "wall_seconds": 0.015061
+      },
+      "interval_assembly": {
+        "cpu_seconds": 0.016733,
+        "wall_seconds": 0.016733
+      },
+      "export": {
+        "cpu_seconds": 1.058295,
+        "wall_seconds": 2.090407
+      }
+    },
+    "export_bytes": 727962,
+    "export_sha256": "2dd078bcf96186ae2bbbc7bfad1080663f25b5eabd02a3b2e323f52a53cfe3f8",
+    "measured_phase_cpu_seconds": 141.194674,
+    "process_cpu_seconds": 148.52,
+    "peak_rss_kib": 4172900
+  },
+  "balanced_medians": {
+    "all_primes": {
+      "cpu_seconds": 8.84997,
+      "wall_seconds": 8.857805
+    },
+    "prime_tree": {
+      "cpu_seconds": 0.003273,
+      "wall_seconds": 0.00328
+    },
+    "input_translation": {
+      "cpu_seconds": 1.447863,
+      "wall_seconds": 1.525268
+    },
+    "coverage": {
+      "cpu_seconds": 0.021964,
+      "wall_seconds": 0.021982
+    },
+    "interval_assembly": {
+      "cpu_seconds": 0.012931,
+      "wall_seconds": 0.012931
+    },
+    "export": {
+      "cpu_seconds": 0.850922,
+      "wall_seconds": 1.057225
+    }
+  },
+  "balanced_median_phase_cpu_seconds": 11.075469,
+  "balanced_median_process_cpu_seconds": 18.270000000000003,
+  "flat_to_balanced_translation_ratio": 90.29673042269883,
+  "controls_per_run": 4,
+  "exports_identical": true,
+  "source_hashes": {
+    "FiniteCoverScript.sml": "3f9c714efd887255f5ababd628e9675bca5805ec91dcfa61f5378cf4d5c27b14",
+    "coverbench.sml": "68b97cfd95285268bf206f9c944eb0ae60ee9c0041da8ce6951df12155efeb77",
+    "coverbench_balanced.sml": "2166fe1a9fa0bed5353019c62b7f3932e34594950b7ecdafc0e026b097307b6d",
+    "CoverData.sml": "3a869771e07e14aff3e09a70567a0eba04b15dfb21502d09a7f8744927e2de78",
+    "PrimeData.sml": "36533e77615165ea31bbefdc804eaeef42034e33ccd31e7d1a2d61df7f6d5920"
+  },
+  "limitations": [
+    "HOL4 axioms and evaluator, not stock Lean or ordinary PA MM0",
+    "One flat layout sample; three fresh balanced samples",
+    "Library and executable construction excluded from phase totals",
+    "Existing native witness producer has no proof authority",
+    "No full finite range, prime ladder or spectral result"
+  ]
+}

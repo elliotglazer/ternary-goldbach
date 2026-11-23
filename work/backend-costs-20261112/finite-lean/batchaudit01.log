@@ -1,0 +1,6 @@
+theorem FiniteBatch1024.complete : (∀ p ∈ BatchData1024.roots, Nat.Prime p) ∧
+  ∀ (n : ℕ),
+    3999999997356537860 ≤ n → n < 3999999997356539908 → n % 2 = 0 → ∃ p q, Nat.Prime p ∧ Nat.Prime q ∧ p + q = n :=
+⟨FiniteBatch1024.roots_prime, FiniteBatch1024.binary_interval⟩
+'BatchPrime.nodeValid_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteBatch1024.complete' depends on axioms: [propext, Classical.choice, Quot.sound]

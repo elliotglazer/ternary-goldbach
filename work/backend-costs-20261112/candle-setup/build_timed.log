@@ -1,0 +1,31 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\backend-costs-20261112\candle-setup\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\candle\build\basis_ffi_timed.c:307:21: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  307 |   } else if (strcmp(c, "chdir") == 0) {
+      |                     ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\formal-goldbach-bench\mm0\sysroot\usr\include/string.h:39:25: note: passing argument to parameter here
+   39 | int strcmp (const char *, const char *);
+      |                         ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\backend-costs-20261112\candle-setup\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\candle\build\basis_ffi_timed.c:309:18: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  309 |     a[0] = chdir(a) != 0;
+      |                  ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\formal-goldbach-bench\mm0\sysroot\usr\include/unistd.h:80:23: note: passing argument to parameter here
+   80 | int chdir(const char *);
+      |                       ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\backend-costs-20261112\candle-setup\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\candle\build\basis_ffi_timed.c:310:21: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  310 |   } else if (strcmp(c, "getcwd") == 0) {
+      |                     ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\formal-goldbach-bench\mm0\sysroot\usr\include/string.h:39:25: note: passing argument to parameter here
+   39 | int strcmp (const char *, const char *);
+      |                         ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\backend-costs-20261112\candle-setup\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\candle\build\basis_ffi_timed.c:312:19: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  312 |     a[0] = getcwd(a + 1, alen - 1) == NULL;
+      |                   ^~~~~
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\formal-goldbach-bench\mm0\sysroot\usr\include/unistd.h:82:20: note: passing argument to parameter here
+   82 | char *getcwd(char *, size_t);
+      |                    ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\backend-costs-20261112\candle-setup\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\candle\build\basis_ffi_timed.c:313:21: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  313 |   } else if (strcmp(c, "system") == 0) {
+      |                     ^
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\formal-goldbach-bench\mm0\sysroot\usr\include/string.h:39:25: note: passing argument to parameter here
+   39 | int strcmp (const char *, const char *);
+      |                         ^
+5 warnings generated.

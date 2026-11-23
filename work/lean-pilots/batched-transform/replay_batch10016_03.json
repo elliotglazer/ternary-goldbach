@@ -1,0 +1,44 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayBatchP100N16.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayBatchP100N16.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 1.8739613999932772,
+  "user_cpu_seconds": 0.75,
+  "system_cpu_seconds": 1.109375,
+  "cpu_seconds": 1.859375,
+  "peak_working_set_bytes": 463605760,
+  "observed_peak_private_bytes": 992550912,
+  "memory_samples": 37,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=200000000,recdepth=512"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayBatchP100N16.lean",
+      "bytes": 116,
+      "sha256": "105101641704E340FAD35B8127987E42374A936E1398F7D6189075F94A30EF88"
+    },
+    {
+      "path": "replay_batch10016_03.log",
+      "bytes": 83,
+      "sha256": "E0435E0E26D59B8A10CF99DE6EFD7A1F33238C1865C5386C4AEDA55D53B3FFCE"
+    },
+    {
+      "path": "ReplayBatchP100N16.olean",
+      "bytes": 1560,
+      "sha256": "19B5E74072F7D78F1EF36585F679E21FB5DF5BF9021ADFCD2D3142C213085AA8"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

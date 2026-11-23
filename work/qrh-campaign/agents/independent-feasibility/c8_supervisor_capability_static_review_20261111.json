@@ -1,0 +1,128 @@
+{
+  "scope": "Independent static source hashes and AST only; no Windows API or child/evaluator execution",
+  "files": [
+    {
+      "path": "audit/c8_supervisor_capability_preflight_20261111.py",
+      "sha256": "AD298615C8BB85F7A572323E61C79492111E631DB1BD8D7C0B185E39CFB65931",
+      "bytes": 18320,
+      "imports": [
+        "import time",
+        "import argparse",
+        "import hashlib",
+        "import json",
+        "import os",
+        "from pathlib import Path",
+        "import re",
+        "import sys",
+        "import subprocess",
+        "import ctypes as c",
+        "from ctypes import wintypes as w"
+      ],
+      "native_process_calls": [
+        {
+          "line": 151,
+          "call": "win.CreateProcessW"
+        },
+        {
+          "line": 152,
+          "call": "win.AssignProcessToJobObject"
+        },
+        {
+          "line": 161,
+          "call": "win.WaitForSingleObject"
+        },
+        {
+          "line": 226,
+          "call": "win.TerminateProcess"
+        },
+        {
+          "line": 228,
+          "call": "win.WaitForSingleObject"
+        },
+        {
+          "line": 229,
+          "call": "win.CloseHandle"
+        },
+        {
+          "line": 230,
+          "call": "win.CloseHandle"
+        },
+        {
+          "line": 231,
+          "call": "win.CloseHandle"
+        },
+        {
+          "line": 157,
+          "call": "win.ResumeThread"
+        },
+        {
+          "line": 170,
+          "call": "win.TerminateProcess"
+        },
+        {
+          "line": 171,
+          "call": "win.WaitForSingleObject"
+        }
+      ],
+      "file_open_modes": [
+        {
+          "line": 44,
+          "mode": "'rb'"
+        },
+        {
+          "line": 246,
+          "mode": "'xb'"
+        },
+        {
+          "line": 247,
+          "mode": "'xb'"
+        },
+        {
+          "line": 279,
+          "mode": "'wb'"
+        },
+        {
+          "line": 284,
+          "mode": "'wb'"
+        },
+        {
+          "line": 190,
+          "mode": "'xb'"
+        }
+      ],
+      "syntax_only": "PASS; parsed/compiled but never imported or executed"
+    },
+    {
+      "path": "audit/c8_supervisor_benign_child_20261111.py",
+      "sha256": "4DC1257673F86240255F1B5331DA20BEAABE1B5DEFF85FF5E80D0A0EF58241BE",
+      "bytes": 2363,
+      "imports": [
+        "import gc",
+        "import hashlib",
+        "import json",
+        "from pathlib import Path",
+        "import sys",
+        "import time",
+        "import os"
+      ],
+      "native_process_calls": [],
+      "file_open_modes": [
+        {
+          "line": 18,
+          "mode": "'xb'"
+        }
+      ],
+      "syntax_only": "PASS; parsed/compiled but never imported or executed"
+    },
+    {
+      "path": "audit/C8_SUPERVISOR_CAPABILITY_PREFLIGHT_2026-11-11.md",
+      "sha256": "56E3C48A339D1835AA19728F3575077C818F9222E4F2148DB36C17766B8FDECB",
+      "bytes": 13148
+    },
+    {
+      "path": "audit/c8_supervisor_capability_preparation_20261111.json",
+      "sha256": "929D1E057A1066B8D0B42CAFDDD01D7111030D3C1CAC2F79F1900FA416856939",
+      "bytes": 791
+    }
+  ]
+}

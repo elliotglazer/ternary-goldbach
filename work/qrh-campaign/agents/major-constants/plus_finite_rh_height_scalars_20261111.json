@@ -1,0 +1,155 @@
+{
+  "scope": "rational metadata only; no spectral or analytic evaluations",
+  "Aodd": {
+    "numerator": "4864092156",
+    "denominator": "125"
+  },
+  "Aeven_low": {
+    "numerator": "9728184312",
+    "denominator": "125"
+  },
+  "Aeven_high": {
+    "numerator": "41522228748",
+    "denominator": "625"
+  },
+  "EB_cap": {
+    "numerator": "2899",
+    "denominator": "7205759403792793600"
+  },
+  "E2_low": {
+    "numerator": "15059289053776023968213817",
+    "denominator": "137438953472000000000000000000000000"
+  },
+  "E2_high": {
+    "numerator": "60888193779268136313198621",
+    "denominator": "687194767360000000000000000000000000"
+  },
+  "E2_uniform": {
+    "numerator": "7",
+    "denominator": "62500000000"
+  },
+  "K1": {
+    "numerator": "19395423801",
+    "denominator": "2900"
+  },
+  "K2": {
+    "numerator": "16646042992",
+    "denominator": "2175"
+  },
+  "checks": {
+    "exp_point7_lower": true,
+    "EB_exponent": true,
+    "growth_C": true,
+    "IA_low": true,
+    "IA_high": true,
+    "low_E2": true,
+    "high_E2": true,
+    "old_E2_contract": true,
+    "K1": true,
+    "K2": true,
+    "odd_height_floor": true,
+    "odd_height_slope": true,
+    "even_low_height_floor": true,
+    "even_low_height_slope": true,
+    "even_middle_height_floor": true,
+    "even_middle_height_slope": true,
+    "even_high_height_floor": true,
+    "even_high_height_slope": true,
+    "high_twist": true,
+    "global_twist": true,
+    "u_domains": true,
+    "old_energy_implies_relaxed": true,
+    "pending_base_gap_odd_dominance": true,
+    "pending_base_gap_even_dominance": true
+  },
+  "examples": [
+    {
+      "c": 3,
+      "new_closed_integer_height": 12971113,
+      "original_height": {
+        "numerator": "100000000",
+        "denominator": "3"
+      }
+    },
+    {
+      "c": 4,
+      "new_closed_integer_height": 19456569,
+      "original_height": {
+        "numerator": "25000000",
+        "denominator": "1"
+      }
+    },
+    {
+      "c": 5,
+      "new_closed_integer_height": 7782748,
+      "original_height": {
+        "numerator": "20000000",
+        "denominator": "1"
+      }
+    },
+    {
+      "c": 10001,
+      "new_closed_integer_height": 4091,
+      "original_height": {
+        "numerator": "100000000",
+        "denominator": "10001"
+      }
+    },
+    {
+      "c": 60000,
+      "new_closed_integer_height": 1498,
+      "original_height": {
+        "numerator": "5000",
+        "denominator": "3"
+      }
+    },
+    {
+      "c": 60001,
+      "new_closed_integer_height": 849,
+      "original_height": {
+        "numerator": "100000000",
+        "denominator": "60001"
+      }
+    },
+    {
+      "c": 100000,
+      "new_closed_integer_height": 865,
+      "original_height": {
+        "numerator": "1000",
+        "denominator": "1"
+      }
+    },
+    {
+      "c": 125000,
+      "new_closed_integer_height": 732,
+      "original_height": {
+        "numerator": "800",
+        "denominator": "1"
+      }
+    },
+    {
+      "c": 125004,
+      "new_closed_integer_height": 732,
+      "original_height": {
+        "numerator": "8333400",
+        "denominator": "10417"
+      }
+    },
+    {
+      "c": 132899,
+      "new_closed_integer_height": 493,
+      "original_height": {
+        "numerator": "100000000",
+        "denominator": "132899"
+      }
+    },
+    {
+      "c": 265800,
+      "new_closed_integer_height": 460,
+      "original_height": {
+        "numerator": "213600",
+        "denominator": "443"
+      }
+    }
+  ]
+}

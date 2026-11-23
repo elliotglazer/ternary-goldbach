@@ -1,0 +1,32 @@
+<<HOL message: Created theory "C10004TraversalCVControlsDiagnostics">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004TraversalCVControlsDiagnostics)>>
+TRAVERSAL_CV_COLUMNS,group,name,result,prepare_cpu,execute_cpu,decode_cpu,discharge_cpu,audit_store_cpu,total_cpu
+TRAVERSAL_CV_TAG,outputs_fixture1,DISK_THM,
+Saved theorem _______ "checked_outputs_fixture1"
+TRAVERSAL_CV_TIME,control,outputs_fixture1,T,0.00134,2.501549,0.000296,0.0002,0.000362,2.503776
+TRAVERSAL_CV_TAG,outputs_fixture2,DISK_THM,
+Saved theorem _______ "checked_outputs_fixture2"
+TRAVERSAL_CV_TIME,control,outputs_fixture2,T,0.001672,2.522272,0.000274,0.000227,0.000367,2.524842
+TRAVERSAL_CV_TAG,impulse_all_channels,DISK_THM,
+Saved theorem _______ "checked_impulse_all_channels"
+TRAVERSAL_CV_TIME,control,impulse_all_channels,T,0.0021,0.23392,0.000117,0.000059,0.000281,0.236528
+TRAVERSAL_CV_TAG,short_input_rejected,DISK_THM,
+Saved theorem _______ "checked_short_input_rejected"
+TRAVERSAL_CV_TIME,control,short_input_rejected,T,0.001525,0.111143,0.000105,0.000073,0.000252,0.113122
+TRAVERSAL_CV_TAG,invalid_root_rejected,DISK_THM,
+Saved theorem _______ "checked_invalid_root_rejected"
+TRAVERSAL_CV_TIME,control,invalid_root_rejected,T,0.001325,0.097274,0.000104,0.000057,0.000263,0.099044
+TRAVERSAL_CV_TAG,input_range_rejected,DISK_THM,
+Saved theorem _______ "checked_input_range_rejected"
+TRAVERSAL_CV_TIME,control,input_range_rejected,T,0.002421,0.007267,0.000066,0.000059,0.000257,0.010092
+TRAVERSAL_CV_TAG,changed_output,DISK_THM,
+Saved theorem _______ "checked_changed_output"
+TRAVERSAL_CV_TIME,control,changed_output,F,0.001126,0.375174,0.000187,0.000102,0.000269,0.376884
+Exporting theory "C10004TraversalCVControlsDiagnostics" ... done.
+Theory "C10004TraversalCVControlsDiagnostics" took 6.0s to build
+C10004_TRAVERSAL_CV_DONE,controls,INTEGER_ONLY

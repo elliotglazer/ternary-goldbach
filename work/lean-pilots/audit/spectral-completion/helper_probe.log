@@ -1,0 +1,10 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\audit\spectral-completion\HelperProbe.lean:5:61: error: Type mismatch
+  rfl
+has type
+  ?m.53 = ?m.53
+but is expected to have type
+  SpectralCompletion.gammaPhase =
+    Complex.exp (Complex.I * (↑(5 / 128) * ↑(Real.log (4 / Real.pi)))) * Complex.Gamma (3 / 4 + Complex.I * (5 / 128))
+'SpectralCompletion.gammaPhase_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralCompletion.completion_factor_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralCompletion.completed_product_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

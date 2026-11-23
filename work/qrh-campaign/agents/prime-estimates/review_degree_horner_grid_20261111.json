@@ -1,0 +1,190 @@
+{
+  "status": "PASS_INDEPENDENT_DESCENDING_ERROR_AND_WIDTH_RECONSTRUCTION",
+  "checks": 148,
+  "pins": {
+    "work/qrh-blueprint/DEGREE_DEPENDENT_HORNER_GRID_PROPOSAL_2026-11-11.md": "0249787E3EC22DAC609C28FE62CE847A8389CDB6D81ADD5A65D783A872A5DE12",
+    "work/qrh-blueprint/degree_horner_precision_checks_20261111.py": "DD79FB92239C33508EA8C707A491DD4822DD8C5D977A1D67989F77451FBAB4EE",
+    "work/qrh-blueprint/degree_horner_precision_checks_20261111.json": "82C68F3E3445E4594076BD411EDAC6421A9276B9878C385CCAD90322B8C32A6A",
+    "work/qrh-campaign/agents/integration/RESIDUE_COEFFICIENT_GRID_CLOSURE_2026-11-11.md": "9C2DA6DA76D44AF80C83AC34FD713A57054EEBA7344D6E0274EA548920A530C4",
+    "work/qrh-campaign/agents/integration/CLARIFICATION_RESIDUE_GRID_MIXED_EVALUATORS_2026-11-11.md": "B620E1C26D8F4D1B9F0434CEBB7C121127EA2AD34F6807969CA21A724F468815",
+    "work/qrh-campaign/agents/audit/REVIEW_RESIDUE_COEFFICIENT_GRID_CLOSURE_2026-11-11.md": "793AD4410778F45B39040F246B361E8877876ABA11083A2C9492288B2492B16D"
+  },
+  "coefficient_weight": "917503/524288",
+  "arithmetic_weight": "458751/262144",
+  "error_in_u": "5505015/2097152",
+  "reserve_in_u": "262171/6291456",
+  "stage_rows": [
+    {
+      "stage": 18,
+      "fractional_bits": 82,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 100,
+      "raw_product_signed_bits": 118,
+      "residual_signed_bits": 120,
+      "doubled_residual_signed_bits": 121
+    },
+    {
+      "stage": 17,
+      "fractional_bits": 83,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 101,
+      "raw_product_signed_bits": 119,
+      "residual_signed_bits": 121,
+      "doubled_residual_signed_bits": 122
+    },
+    {
+      "stage": 16,
+      "fractional_bits": 84,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 102,
+      "raw_product_signed_bits": 120,
+      "residual_signed_bits": 122,
+      "doubled_residual_signed_bits": 123
+    },
+    {
+      "stage": 15,
+      "fractional_bits": 85,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 103,
+      "raw_product_signed_bits": 121,
+      "residual_signed_bits": 123,
+      "doubled_residual_signed_bits": 124
+    },
+    {
+      "stage": 14,
+      "fractional_bits": 86,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 104,
+      "raw_product_signed_bits": 122,
+      "residual_signed_bits": 124,
+      "doubled_residual_signed_bits": 125
+    },
+    {
+      "stage": 13,
+      "fractional_bits": 87,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 105,
+      "raw_product_signed_bits": 123,
+      "residual_signed_bits": 125,
+      "doubled_residual_signed_bits": 126
+    },
+    {
+      "stage": 12,
+      "fractional_bits": 88,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 106,
+      "raw_product_signed_bits": 124,
+      "residual_signed_bits": 126,
+      "doubled_residual_signed_bits": 127
+    },
+    {
+      "stage": 11,
+      "fractional_bits": 89,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 107,
+      "raw_product_signed_bits": 125,
+      "residual_signed_bits": 127,
+      "doubled_residual_signed_bits": 128
+    },
+    {
+      "stage": 10,
+      "fractional_bits": 90,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 108,
+      "raw_product_signed_bits": 126,
+      "residual_signed_bits": 128,
+      "doubled_residual_signed_bits": 129
+    },
+    {
+      "stage": 9,
+      "fractional_bits": 91,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 109,
+      "raw_product_signed_bits": 127,
+      "residual_signed_bits": 129,
+      "doubled_residual_signed_bits": 130
+    },
+    {
+      "stage": 8,
+      "fractional_bits": 92,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 110,
+      "raw_product_signed_bits": 128,
+      "residual_signed_bits": 130,
+      "doubled_residual_signed_bits": 131
+    },
+    {
+      "stage": 7,
+      "fractional_bits": 93,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 111,
+      "raw_product_signed_bits": 129,
+      "residual_signed_bits": 131,
+      "doubled_residual_signed_bits": 132
+    },
+    {
+      "stage": 6,
+      "fractional_bits": 94,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 112,
+      "raw_product_signed_bits": 130,
+      "residual_signed_bits": 132,
+      "doubled_residual_signed_bits": 133
+    },
+    {
+      "stage": 5,
+      "fractional_bits": 95,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 113,
+      "raw_product_signed_bits": 131,
+      "residual_signed_bits": 133,
+      "doubled_residual_signed_bits": 134
+    },
+    {
+      "stage": 4,
+      "fractional_bits": 96,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 114,
+      "raw_product_signed_bits": 132,
+      "residual_signed_bits": 134,
+      "doubled_residual_signed_bits": 135
+    },
+    {
+      "stage": 3,
+      "fractional_bits": 97,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 115,
+      "raw_product_signed_bits": 133,
+      "residual_signed_bits": 135,
+      "doubled_residual_signed_bits": 136
+    },
+    {
+      "stage": 2,
+      "fractional_bits": 98,
+      "alignment_shift": 1,
+      "accumulator_signed_bits": 116,
+      "raw_product_signed_bits": 134,
+      "residual_signed_bits": 136,
+      "doubled_residual_signed_bits": 137
+    },
+    {
+      "stage": 1,
+      "fractional_bits": 100,
+      "alignment_shift": 2,
+      "accumulator_signed_bits": 118,
+      "raw_product_signed_bits": 136,
+      "residual_signed_bits": 138,
+      "doubled_residual_signed_bits": 139
+    },
+    {
+      "stage": 0,
+      "fractional_bits": 100,
+      "alignment_shift": 0,
+      "accumulator_signed_bits": 118,
+      "raw_product_signed_bits": 136,
+      "residual_signed_bits": 138,
+      "doubled_residual_signed_bits": 139
+    }
+  ],
+  "scope": "Scalar envelope metadata only; no author execution, coefficients, functions or builds."
+}

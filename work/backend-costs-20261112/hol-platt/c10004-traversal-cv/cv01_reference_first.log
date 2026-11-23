@@ -1,0 +1,59 @@
+<<HOL message: Created theory "C10004TraversalCVReferenceFirstDiagnostics">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004TraversalCVReferenceFirstDiagnostics)>>
+TRAVERSAL_CV_COLUMNS,group,name,result,prepare_cpu,execute_cpu,decode_cpu,discharge_cpu,audit_store_cpu,total_cpu
+TRAVERSAL_CV_TAG,reference_fixture1_run0,DISK_THM,
+Saved theorem _______ "checked_reference_fixture1_run0"
+TRAVERSAL_CV_TIME,first,reference_fixture1_run0,T,0.001459,2.125627,0.000199,0.000139,0.000427,2.127877
+TRAVERSAL_CV_TAG,sequential_fixture1_run0,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture1_run0"
+TRAVERSAL_CV_TIME,first,sequential_fixture1_run0,T,0.001374,0.371584,0.000073,0.00006,0.000255,0.373368
+TRAVERSAL_CV_TAG,reference_fixture2_run0,DISK_THM,
+Saved theorem _______ "checked_reference_fixture2_run0"
+TRAVERSAL_CV_TIME,first,reference_fixture2_run0,T,0.001424,2.210319,0.000119,0.000055,0.000263,2.212202
+TRAVERSAL_CV_TAG,sequential_fixture2_run0,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture2_run0"
+TRAVERSAL_CV_TIME,first,sequential_fixture2_run0,T,0.001392,0.38264,0.000067,0.000054,0.000216,0.384393
+TRAVERSAL_CV_TAG,reference_fixture1_run1,DISK_THM,
+Saved theorem _______ "checked_reference_fixture1_run1"
+TRAVERSAL_CV_TIME,warm,reference_fixture1_run1,T,0.00111,2.065944,0.000168,0.000081,0.000274,2.067603
+TRAVERSAL_CV_TAG,sequential_fixture1_run1,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture1_run1"
+TRAVERSAL_CV_TIME,warm,sequential_fixture1_run1,T,0.001359,0.369319,0.000122,0.000121,0.000262,0.371214
+TRAVERSAL_CV_TAG,reference_fixture2_run1,DISK_THM,
+Saved theorem _______ "checked_reference_fixture2_run1"
+TRAVERSAL_CV_TIME,warm,reference_fixture2_run1,T,0.001256,2.104753,0.000142,0.000072,0.000369,2.106625
+TRAVERSAL_CV_TAG,sequential_fixture2_run1,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture2_run1"
+TRAVERSAL_CV_TIME,warm,sequential_fixture2_run1,T,0.001737,0.407898,0.000068,0.000057,0.000288,0.410079
+TRAVERSAL_CV_TAG,reference_fixture1_run2,DISK_THM,
+Saved theorem _______ "checked_reference_fixture1_run2"
+TRAVERSAL_CV_TIME,warm,reference_fixture1_run2,T,0.001234,2.324644,0.000199,0.000152,0.000537,2.326794
+TRAVERSAL_CV_TAG,sequential_fixture1_run2,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture1_run2"
+TRAVERSAL_CV_TIME,warm,sequential_fixture1_run2,T,0.001862,0.358202,0.000075,0.000102,0.000399,0.360669
+TRAVERSAL_CV_TAG,reference_fixture2_run2,DISK_THM,
+Saved theorem _______ "checked_reference_fixture2_run2"
+TRAVERSAL_CV_TIME,warm,reference_fixture2_run2,T,0.001303,2.162647,0.000126,0.000053,0.000271,2.164425
+TRAVERSAL_CV_TAG,sequential_fixture2_run2,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture2_run2"
+TRAVERSAL_CV_TIME,warm,sequential_fixture2_run2,T,0.001378,0.362385,0.00007,0.00006,0.000387,0.364304
+TRAVERSAL_CV_TAG,reference_fixture1_run3,DISK_THM,
+Saved theorem _______ "checked_reference_fixture1_run3"
+TRAVERSAL_CV_TIME,warm,reference_fixture1_run3,T,0.001181,2.312074,0.000148,0.000059,0.00027,2.313755
+TRAVERSAL_CV_TAG,sequential_fixture1_run3,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture1_run3"
+TRAVERSAL_CV_TIME,warm,sequential_fixture1_run3,T,0.001455,0.376982,0.00007,0.000054,0.00027,0.378855
+TRAVERSAL_CV_TAG,reference_fixture2_run3,DISK_THM,
+Saved theorem _______ "checked_reference_fixture2_run3"
+TRAVERSAL_CV_TIME,warm,reference_fixture2_run3,T,0.001223,2.084666,0.000069,0.000056,0.000219,2.086254
+TRAVERSAL_CV_TAG,sequential_fixture2_run3,DISK_THM,
+Saved theorem _______ "checked_sequential_fixture2_run3"
+TRAVERSAL_CV_TIME,warm,sequential_fixture2_run3,T,0.001129,0.368984,0.00007,0.000057,0.000267,0.370527
+Exporting theory "C10004TraversalCVReferenceFirstDiagnostics" ... done.
+Theory "C10004TraversalCVReferenceFirstDiagnostics" took 20.6s to build
+C10004_TRAVERSAL_CV_DONE,reference_first,INTEGER_ONLY

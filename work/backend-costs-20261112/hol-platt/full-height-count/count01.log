@@ -1,0 +1,38 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptScript.uo to produce theory-builder executable
+<<HOL message: Created theory "CountReceipt">>
+<<HOL message: mk_functional: 
+  pattern completion has added 3 clauses to the original specification.>>
+Saved definition ____ "pair_test_def"
+Starting translation of pair_test from CountReceiptTheory.
+Saved theorem _______ "cv_pair_test_thm"
+Finished translating pair_test, stored in cv_pair_test_thm
+TIMED runs_000 0.53331 0.023189 0.000183
+Saved theorem _______ "runs_000_checked"
+TIMED runs_001 0.002123 0.000273 0.000142
+Saved theorem _______ "runs_001_checked"
+TIMED runs_010 0.530224 0.024443 0.000195
+Saved theorem _______ "runs_010_checked"
+TIMED runs_011 0.007082 0.000198 0.000139
+Saved theorem _______ "runs_011_checked"
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptScript.sml : HOL_ERR (HOL_ERROR {message = "incompatible types", origins = [{origin_function = "list_mk_comb", origin_structure = "Term", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptScript : HOL_ERR (HOL_ERROR {message = "incompatible types", origins = [{origin_function = "list_mk_comb", origin_structure = "Term", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/0/Term.sml:501: HOL_ERR (HOL_ERROR {message = "incompatible types", origins = [{origin_function = "list_mk_comb", origin_structure = "Term", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptScript - exited with code 1

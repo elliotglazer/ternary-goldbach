@@ -1,0 +1,2747 @@
+{
+  "scope": "Independent saved-DAG/price reconstruction; no author imports, new planning, root/value enumeration, builds or proof emission.",
+  "checks": 7339105,
+  "script_sha256": "E956540A8B25122887CDC41DB9723D078F2EDA31A93DDB7CF26929F9EB729148",
+  "preflight_sha256": "C5AAB690B926EC515E8708B2F3CB2B12C20E0ED6FA9C9313EC89803C7406B76E",
+  "author_pins": {
+    "conductor_local_precision_prices_20261111.py": "3F3F3A19521E45EF5D5914DFDBA12C1705F9F2FFA2A080D4DF171D7F3E9C8031",
+    "conductor_local_precision_price_widths_20261111.json": "588474ECF8B628607ADC279BC429BC7CBAA3125CC2AEAB5D7F9708E66CDD48FB",
+    "conductor_local_precision_prices_20261111.json": "B1684F0328BC70E2B59D88975489D31161081A3082F1AFF176D527E7741E9D53"
+  },
+  "contract_sha256": "22FFC752C26CC2E6225E57899F67B9973348DB34957745580EFD4BD84AC7A884",
+  "full_old_and_guard_histograms_match": true,
+  "global_width_classes": 133,
+  "local_width_classes": 936,
+  "processed_contexts_by_p": {
+    "100": 156776,
+    "101": 20378,
+    "102": 17621,
+    "103": 15680,
+    "104": 11681,
+    "105": 8485,
+    "106": 3851,
+    "107": 3687,
+    "108": 32
+  },
+  "total_processed_contexts": 238191,
+  "peak_scope": "Author peak values source-reviewed and checked against top/processed caps; dictionary-order-dependent peaks not claimed identical.",
+  "p108_both_mode_all_component_setup_match": true,
+  "all_local_prices": {
+    "three": [
+      {
+        "extra_nodes": 0,
+        "old": {
+          "parts": {
+            "root_product": 3096977976731951806,
+            "root_exact_add": 142122271665218316,
+            "root_round_add": 222821478873183728,
+            "add_complex_add": 144346397281426514,
+            "kernel_product": 294703545013792256,
+            "kernel_exact_add": 13571415712965888,
+            "kernel_round_add": 21317323527329280
+          },
+          "bands": [
+            {
+              "root_product": 2380553605201719396,
+              "root_exact_add": 109013693407770000,
+              "root_round_add": 170874073418635104,
+              "add_complex_add": 110695164935668232,
+              "kernel_product": 225007022280319168,
+              "kernel_exact_add": 10340665627323904,
+              "kernel_round_add": 16246342338160128
+            },
+            {
+              "root_product": 539117977773675458,
+              "root_exact_add": 24858341311113496,
+              "root_round_add": 38990204646408384,
+              "add_complex_add": 25247944240193490,
+              "kernel_product": 52148305036532352,
+              "kernel_exact_add": 2410676274214976,
+              "kernel_round_add": 3786399625236224
+            },
+            {
+              "root_product": 143893000441475156,
+              "root_exact_add": 6690432670458142,
+              "root_round_add": 10505805093147112,
+              "add_complex_add": 6800117503980688,
+              "kernel_product": 14209633985333056,
+              "kernel_exact_add": 663255955728320,
+              "kernel_round_add": 1039385181202176
+            },
+            {
+              "root_product": 32716549988966388,
+              "root_exact_add": 1527195291214328,
+              "root_round_add": 2400124957070160,
+              "add_complex_add": 1568993247560088,
+              "kernel_product": 3269139375585600,
+              "kernel_exact_add": 153550065944832,
+              "kernel_round_add": 240077058980864
+            },
+            {
+              "root_product": 696843326115408,
+              "root_exact_add": 32608984662350,
+              "root_round_add": 51270757922968,
+              "add_complex_add": 34177354024016,
+              "kernel_product": 69444336022080,
+              "kernel_exact_add": 3267789753856,
+              "kernel_round_add": 5119323749888
+            }
+          ],
+          "product_core": 3391681521745744062,
+          "addition_core": 544178887060123726,
+          "core": 3935860408805867788
+        },
+        "guard": {
+          "parts": {
+            "root_product": 15614739407400730,
+            "root_exact_add": 714954792661430,
+            "root_round_add": 1120647783519816,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1475102134321920,
+            "kernel_exact_add": 67783915118400,
+            "kernel_round_add": 106496924735232
+          },
+          "bands": [
+            {
+              "root_product": 5644365876798974,
+              "root_exact_add": 257068221169008,
+              "root_round_add": 402769398354688,
+              "add_complex_add": 261000686683424,
+              "kernel_product": 521025436240768,
+              "kernel_exact_add": 23833969069440,
+              "kernel_round_add": 37464353667072
+            },
+            {
+              "root_product": 8804863182712884,
+              "root_exact_add": 403809974059538,
+              "root_round_add": 633000366777384,
+              "add_complex_add": 410039054096440,
+              "kernel_product": 839372284854976,
+              "kernel_exact_add": 38614197512896,
+              "kernel_round_add": 60660057566976
+            },
+            {
+              "root_product": 1002155101331292,
+              "root_exact_add": 46458282504700,
+              "root_round_add": 72907814568112,
+              "add_complex_add": 47183273435938,
+              "kernel_product": 98449144209024,
+              "kernel_exact_add": 4573294043776,
+              "kernel_round_add": 7180416794112
+            },
+            {
+              "root_product": 160029488817444,
+              "root_exact_add": 7462744021456,
+              "root_round_add": 11725596578448,
+              "add_complex_add": 7600468703842,
+              "kernel_product": 15923714549760,
+              "kernel_exact_add": 746847707456,
+              "kernel_round_add": 1167653662976
+            },
+            {
+              "root_product": 3325757740136,
+              "root_exact_add": 155570906728,
+              "root_round_add": 244607241184,
+              "add_complex_add": 163317651846,
+              "kernel_product": 331554467392,
+              "kernel_exact_add": 15606784832,
+              "kernel_round_add": 24443044096
+            }
+          ],
+          "product_core": 17089841541722650,
+          "addition_core": 2735870216606368,
+          "core": 19825711758329018
+        },
+        "joined": {
+          "parts": {
+            "root_product": 3112592716139352536,
+            "root_exact_add": 142837226457879746,
+            "root_round_add": 223942126656703544,
+            "add_complex_add": 145072384081998004,
+            "kernel_product": 296178647148114176,
+            "kernel_exact_add": 13639199628084288,
+            "kernel_round_add": 21423820452064512
+          },
+          "bands": [
+            {
+              "root_product": 2386197971078518370,
+              "root_exact_add": 109270761628939008,
+              "root_round_add": 171276842816989792,
+              "add_complex_add": 110956165622351656,
+              "kernel_product": 225528047716559936,
+              "kernel_exact_add": 10364499596393344,
+              "kernel_round_add": 16283806691827200
+            },
+            {
+              "root_product": 547922840956388342,
+              "root_exact_add": 25262151285173034,
+              "root_round_add": 39623205013185768,
+              "add_complex_add": 25657983294289930,
+              "kernel_product": 52987677321387328,
+              "kernel_exact_add": 2449290471727872,
+              "kernel_round_add": 3847059682803200
+            },
+            {
+              "root_product": 144895155542806448,
+              "root_exact_add": 6736890952962842,
+              "root_round_add": 10578712907715224,
+              "add_complex_add": 6847300777416626,
+              "kernel_product": 14308083129542080,
+              "kernel_exact_add": 667829249772096,
+              "kernel_round_add": 1046565597996288
+            },
+            {
+              "root_product": 32876579477783832,
+              "root_exact_add": 1534658035235784,
+              "root_round_add": 2411850553648608,
+              "add_complex_add": 1576593716263930,
+              "kernel_product": 3285063090135360,
+              "kernel_exact_add": 154296913652288,
+              "kernel_round_add": 241244712643840
+            },
+            {
+              "root_product": 700169083855544,
+              "root_exact_add": 32764555569078,
+              "root_round_add": 51515365164152,
+              "add_complex_add": 34340671675862,
+              "kernel_product": 69775890489472,
+              "kernel_exact_add": 3283396538688,
+              "kernel_round_add": 5143766793984
+            }
+          ],
+          "product_core": 3408771363287466712,
+          "addition_core": 546914757276730094,
+          "core": 3955686120564196806
+        }
+      },
+      {
+        "extra_nodes": 167,
+        "old": {
+          "parts": {
+            "root_product": 3160579476269413316,
+            "root_exact_add": 145034404601180726,
+            "root_round_add": 227386068625569320,
+            "add_complex_add": 147303465469120144,
+            "kernel_product": 300711887853591296,
+            "kernel_exact_add": 13847511172106688,
+            "kernel_round_add": 21751103684177664
+          },
+          "bands": [
+            {
+              "root_product": 2402062920048759710,
+              "root_exact_add": 109993169906768272,
+              "root_round_add": 172408689272285440,
+              "add_complex_add": 111689911616529030,
+              "kernel_product": 226992317852449920,
+              "kernel_exact_add": 10431473162577216,
+              "kernel_round_add": 16389076405930240
+            },
+            {
+              "root_product": 576397813824326486,
+              "root_exact_add": 26567723377286790,
+              "root_round_add": 41669732013817928,
+              "add_complex_add": 26983388045353982,
+              "kernel_product": 55697646746277248,
+              "kernel_exact_add": 2573929609693248,
+              "kernel_round_add": 4042869918245120
+            },
+            {
+              "root_product": 148034917983347064,
+              "root_exact_add": 6882440946232514,
+              "root_round_add": 10807125356319128,
+              "add_complex_add": 6995140643881090,
+              "kernel_product": 14616644773021632,
+              "kernel_exact_add": 682162272555456,
+              "kernel_round_add": 1069069836292352
+            },
+            {
+              "root_product": 33373371305193444,
+              "root_exact_add": 1557824759960520,
+              "root_round_add": 2448250245066384,
+              "add_complex_add": 1600179198573708,
+              "kernel_product": 3334476965571904,
+              "kernel_exact_add": 156614451353536,
+              "kernel_round_add": 244868144453376
+            },
+            {
+              "root_product": 710453107786612,
+              "root_exact_add": 33245610932630,
+              "root_round_add": 52271738080440,
+              "add_complex_add": 34845964782334,
+              "kernel_product": 70801516270592,
+              "kernel_exact_add": 3331675927232,
+              "kernel_round_add": 5219379256576
+            }
+          ],
+          "product_core": 3461291364123004612,
+          "addition_core": 555322553552154542,
+          "core": 4016613917675159154
+        },
+        "guard": {
+          "parts": {
+            "root_product": 15614739407400730,
+            "root_exact_add": 714954792661430,
+            "root_round_add": 1120647783519816,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1475102134321920,
+            "kernel_exact_add": 67783915118400,
+            "kernel_round_add": 106496924735232
+          },
+          "bands": [
+            {
+              "root_product": 4647785067496974,
+              "root_exact_add": 211594988050210,
+              "root_round_add": 331516806098136,
+              "add_complex_add": 215005645757062,
+              "kernel_product": 429046926667520,
+              "kernel_exact_add": 19621125866048,
+              "kernel_round_add": 30839116225280
+            },
+            {
+              "root_product": 9757826800200166,
+              "root_exact_add": 447266968675694,
+              "root_round_add": 701090125395144,
+              "add_complex_add": 453978563532266,
+              "kernel_product": 927037822020544,
+              "kernel_exact_add": 42627292612800,
+              "kernel_round_add": 66971463685376
+            },
+            {
+              "root_product": 1042424096614950,
+              "root_exact_add": 48318913619814,
+              "root_round_add": 75826350963240,
+              "add_complex_add": 49083997542620,
+              "kernel_product": 102441014917504,
+              "kernel_exact_add": 4758007837568,
+              "kernel_round_add": 7470687093248
+            },
+            {
+              "root_product": 163338263351124,
+              "root_exact_add": 7616508733210,
+              "root_round_add": 11966997074184,
+              "add_complex_add": 7753226499300,
+              "kernel_product": 16240752798848,
+              "kernel_exact_add": 761689616768,
+              "kernel_round_add": 1190914569216
+            },
+            {
+              "root_product": 3365179737516,
+              "root_exact_add": 157413582502,
+              "root_round_add": 247503989112,
+              "add_complex_add": 165367240242,
+              "kernel_product": 335617917504,
+              "kernel_exact_add": 15799185216,
+              "kernel_round_add": 24743162112
+            }
+          ],
+          "product_core": 17089841541722650,
+          "addition_core": 2735870216606368,
+          "core": 19825711758329018
+        },
+        "joined": {
+          "parts": {
+            "root_product": 3176194215676814046,
+            "root_exact_add": 145749359393842156,
+            "root_round_add": 228506716409089136,
+            "add_complex_add": 148029452269691634,
+            "kernel_product": 302186989987913216,
+            "kernel_exact_add": 13915295087225088,
+            "kernel_round_add": 21857600608912896
+          },
+          "bands": [
+            {
+              "root_product": 2406710705116256684,
+              "root_exact_add": 110204764894818482,
+              "root_round_add": 172740206078383576,
+              "add_complex_add": 111904917262286092,
+              "kernel_product": 227421364779117440,
+              "kernel_exact_add": 10451094288443264,
+              "kernel_round_add": 16419915522155520
+            },
+            {
+              "root_product": 586155640624526652,
+              "root_exact_add": 27014990345962484,
+              "root_round_add": 42370822139213072,
+              "add_complex_add": 27437366608886248,
+              "kernel_product": 56624684568297792,
+              "kernel_exact_add": 2616556902306048,
+              "kernel_round_add": 4109841381930496
+            },
+            {
+              "root_product": 149077342079962014,
+              "root_exact_add": 6930759859852328,
+              "root_round_add": 10882951707282368,
+              "add_complex_add": 7044224641423710,
+              "kernel_product": 14719085787939136,
+              "kernel_exact_add": 686920280393024,
+              "kernel_round_add": 1076540523385600
+            },
+            {
+              "root_product": 33536709568544568,
+              "root_exact_add": 1565441268693730,
+              "root_round_add": 2460217242140568,
+              "add_complex_add": 1607932425073008,
+              "kernel_product": 3350717718370752,
+              "kernel_exact_add": 157376140970304,
+              "kernel_round_add": 246059059022592
+            },
+            {
+              "root_product": 713818287524128,
+              "root_exact_add": 33403024515132,
+              "root_round_add": 52519242069552,
+              "add_complex_add": 35011332022576,
+              "kernel_product": 71137134188096,
+              "kernel_exact_add": 3347475112448,
+              "kernel_round_add": 5244122418688
+            }
+          ],
+          "product_core": 3478381205664727262,
+          "addition_core": 558058423768760910,
+          "core": 4036439629433488172
+        }
+      },
+      {
+        "extra_nodes": 320,
+        "old": {
+          "parts": {
+            "root_product": 3218849113570201406,
+            "root_exact_add": 147702406632331916,
+            "root_round_add": 231567998159192048,
+            "add_complex_add": 150012635724911314,
+            "kernel_product": 306216537281670656,
+            "kernel_exact_add": 14100460904133888,
+            "kernel_round_add": 22148519037457920
+          },
+          "bands": [
+            {
+              "root_product": 2418026509430846134,
+              "root_exact_add": 110719864220877216,
+              "root_round_add": 173547228865473104,
+              "add_complex_add": 112428362985982392,
+              "kernel_product": 228465613253668928,
+              "kernel_exact_add": 10498843215297472,
+              "kernel_round_add": 16494960225146624
+            },
+            {
+              "root_product": 614135210601785598,
+              "root_exact_add": 28297097042432026,
+              "root_round_add": 44380481434507160,
+              "add_complex_add": 28738755699743130,
+              "kernel_product": 59279412681617856,
+              "kernel_exact_add": 2738600348612736,
+              "kernel_round_add": 4301590073087488
+            },
+            {
+              "root_product": 151976901263011526,
+              "root_exact_add": 7065152536087588,
+              "root_round_add": 11093851372767872,
+              "add_complex_add": 7180720146745576,
+              "kernel_product": 15003899007630272,
+              "kernel_exact_add": 700147698867200,
+              "kernel_round_add": 1097310012620288
+            },
+            {
+              "root_product": 33987418090282872,
+              "root_exact_add": 1586456851382802,
+              "root_round_add": 2493236502230616,
+              "add_complex_add": 1629330789931086,
+              "kernel_product": 3395551650481664,
+              "kernel_exact_add": 159478691647168,
+              "kernel_round_add": 249346515881216
+            },
+            {
+              "root_product": 723074184275276,
+              "root_exact_add": 33835981552284,
+              "root_round_add": 53199984213296,
+              "add_complex_add": 35466102509130,
+              "kernel_product": 72060688271936,
+              "kernel_exact_add": 3390949709312,
+              "kernel_round_add": 5312210722304
+            }
+          ],
+          "product_core": 3525065650851872062,
+          "addition_core": 565532020458027086,
+          "core": 4090597671309899148
+        },
+        "guard": {
+          "parts": {
+            "root_product": 15614739407400730,
+            "root_exact_add": 714954792661430,
+            "root_round_add": 1120647783519816,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1475102134321920,
+            "kernel_exact_add": 67783915118400,
+            "kernel_round_add": 106496924735232
+          },
+          "bands": [
+            {
+              "root_product": 3600342538442106,
+              "root_exact_add": 163881299688786,
+              "root_round_add": 256755462134600,
+              "add_complex_add": 166583874051750,
+              "kernel_product": 332449388741184,
+              "kernel_exact_add": 15202035542784,
+              "kernel_round_add": 23890564684288
+            },
+            {
+              "root_product": 10763107552154946,
+              "root_exact_add": 493033691271430,
+              "root_round_add": 772797044095928,
+              "add_complex_add": 500435172514574,
+              "kernel_product": 1019509492026304,
+              "kernel_exact_add": 46855504782208,
+              "kernel_round_add": 73619798430208
+            },
+            {
+              "root_product": 1081231530171142,
+              "root_exact_add": 50110185542048,
+              "root_round_add": 78636327416976,
+              "add_complex_add": 50886567373916,
+              "kernel_product": 106214179281344,
+              "kernel_exact_add": 4932452984640,
+              "kernel_round_add": 7745163384576
+            },
+            {
+              "root_product": 166651676242448,
+              "root_exact_add": 7770291318068,
+              "root_round_add": 12208444090736,
+              "add_complex_add": 7913683929514,
+              "kernel_product": 16588601078784,
+              "kernel_exact_add": 777895056192,
+              "kernel_round_add": 1216297109248
+            },
+            {
+              "root_product": 3406110390088,
+              "root_exact_add": 159324841098,
+              "root_round_add": 250505781576,
+              "add_complex_add": 167502701736,
+              "kernel_product": 340473194304,
+              "kernel_exact_add": 16026752576,
+              "kernel_round_add": 25101126912
+            }
+          ],
+          "product_core": 17089841541722650,
+          "addition_core": 2735870216606368,
+          "core": 19825711758329018
+        },
+        "joined": {
+          "parts": {
+            "root_product": 3234463852977602136,
+            "root_exact_add": 148417361424993346,
+            "root_round_add": 232688645942711864,
+            "add_complex_add": 150738622525482804,
+            "kernel_product": 307691639415992576,
+            "kernel_exact_add": 14168244819252288,
+            "kernel_round_add": 22255015962193152
+          },
+          "bands": [
+            {
+              "root_product": 2421626851969288240,
+              "root_exact_add": 110883745520566002,
+              "root_round_add": 173803984327607704,
+              "add_complex_add": 112594946860034142,
+              "kernel_product": 228798062642410112,
+              "kernel_exact_add": 10514045250840256,
+              "kernel_round_add": 16518850789830912
+            },
+            {
+              "root_product": 624898318153940544,
+              "root_exact_add": 28790130733703456,
+              "root_round_add": 45153278478603088,
+              "add_complex_add": 29239190872257704,
+              "kernel_product": 60298922173644160,
+              "kernel_exact_add": 2785455853394944,
+              "kernel_round_add": 4375209871517696
+            },
+            {
+              "root_product": 153058132793182668,
+              "root_exact_add": 7115262721629636,
+              "root_round_add": 11172487700184848,
+              "add_complex_add": 7231606714119492,
+              "kernel_product": 15110113186911616,
+              "kernel_exact_add": 705080151851840,
+              "kernel_round_add": 1105055176004864
+            },
+            {
+              "root_product": 34154069766525320,
+              "root_exact_add": 1594227142700870,
+              "root_round_add": 2505444946321352,
+              "add_complex_add": 1637244473860600,
+              "kernel_product": 3412140251560448,
+              "kernel_exact_add": 160256586703360,
+              "kernel_round_add": 250562812990464
+            },
+            {
+              "root_product": 726480294665364,
+              "root_exact_add": 33995306393382,
+              "root_round_add": 53450489994872,
+              "add_complex_add": 35633605210866,
+              "kernel_product": 72401161466240,
+              "kernel_exact_add": 3406976461888,
+              "kernel_round_add": 5337311849216
+            }
+          ],
+          "product_core": 3542155492393594712,
+          "addition_core": 568267890674633454,
+          "core": 4110423383068228166
+        }
+      },
+      {
+        "extra_nodes": 640,
+        "old": {
+          "parts": {
+            "root_product": 3340720250408451006,
+            "root_exact_add": 153282541599445516,
+            "root_round_add": 240314517445200368,
+            "add_complex_add": 155678874168396114,
+            "kernel_product": 317729529549549056,
+            "kernel_exact_add": 14629506095301888,
+            "kernel_round_add": 22979714547586560
+          },
+          "bands": [
+            {
+              "root_product": 2436811990425859872,
+              "root_exact_add": 111574896656366602,
+              "root_round_add": 174886825764216200,
+              "add_complex_add": 113296989491688084,
+              "kernel_product": 230202538058910464,
+              "kernel_exact_add": 10578277975808768,
+              "kernel_round_add": 16619786125356544
+            },
+            {
+              "root_product": 707127259653603514,
+              "root_exact_add": 32554118940131548,
+              "root_round_add": 51052755678067120,
+              "add_complex_add": 33060740491993626,
+              "kernel_product": 68062733034962816,
+              "kernel_exact_add": 3142056636923712,
+              "kernel_round_add": 4935525535378688
+            },
+            {
+              "root_product": 160720091055101156,
+              "root_exact_add": 7470266289967430,
+              "root_round_add": 11729567163597256,
+              "add_complex_add": 7592187122502412,
+              "kernel_product": 15862225567898560,
+              "kernel_exact_add": 739998254162048,
+              "kernel_round_add": 1159887436885504
+            },
+            {
+              "root_product": 35310958067583284,
+              "root_exact_add": 1648166576527858,
+              "root_round_add": 2590192232435736,
+              "add_complex_add": 1692169331693708,
+              "kernel_product": 3527289347953024,
+              "kernel_exact_add": 165655988953152,
+              "kernel_round_add": 259005447986944
+            },
+            {
+              "root_product": 749951206303180,
+              "root_exact_add": 35093136452078,
+              "root_round_add": 55176606884056,
+              "add_complex_add": 36787730518284,
+              "kernel_product": 74743539824192,
+              "kernel_exact_add": 3517239454208,
+              "kernel_round_add": 5510001978880
+            }
+          ],
+          "product_core": 3658449779958000062,
+          "addition_core": 586885153855930446,
+          "core": 4245334933813930508
+        },
+        "guard": {
+          "parts": {
+            "root_product": 15614739407400730,
+            "root_exact_add": 714954792661430,
+            "root_round_add": 1120647783519816,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1475102134321920,
+            "kernel_exact_add": 67783915118400,
+            "kernel_round_add": 106496924735232
+          },
+          "bands": [
+            {
+              "root_product": 610002858667046,
+              "root_exact_add": 27802418550920,
+              "root_round_add": 43565703194480,
+              "add_complex_add": 27916150763206,
+              "kernel_product": 56963880648832,
+              "kernel_exact_add": 2609374422592,
+              "kernel_round_add": 4099752492800
+            },
+            {
+              "root_product": 13656040218305684,
+              "root_exact_add": 624621410100108,
+              "root_round_add": 978942820989984,
+              "add_complex_add": 634543553219400,
+              "kernel_product": 1285594621068032,
+              "kernel_exact_add": 59013782806656,
+              "kernel_round_add": 92728152504832
+            },
+            {
+              "root_product": 1171916614003340,
+              "root_exact_add": 54288000950852,
+              "root_round_add": 85188164333584,
+              "add_complex_add": 55129918196610,
+              "kernel_product": 114938939093504,
+              "kernel_exact_add": 5335261123264,
+              "kernel_round_add": 8378141600000
+            },
+            {
+              "root_product": 173285340875278,
+              "root_exact_add": 8079520216480,
+              "root_round_add": 12694116831696,
+              "add_complex_add": 8225427800214,
+              "kernel_product": 17256714919744,
+              "kernel_exact_add": 809115963008,
+              "kernel_round_add": 1265223660544
+            },
+            {
+              "root_product": 3494375549382,
+              "root_exact_add": 163442843070,
+              "root_round_add": 256978170072,
+              "add_complex_add": 171750592060,
+              "kernel_product": 347978591808,
+              "kernel_exact_add": 16380802880,
+              "kernel_round_add": 25654477056
+            }
+          ],
+          "product_core": 17089841541722650,
+          "addition_core": 2735870216606368,
+          "core": 19825711758329018
+        },
+        "joined": {
+          "parts": {
+            "root_product": 3356334989815851736,
+            "root_exact_add": 153997496392106946,
+            "root_round_add": 241435165228720184,
+            "add_complex_add": 156404860968967604,
+            "kernel_product": 319204631683870976,
+            "kernel_exact_add": 14697290010420288,
+            "kernel_round_add": 23086211472321792
+          },
+          "bands": [
+            {
+              "root_product": 2437421993284526918,
+              "root_exact_add": 111602699074917522,
+              "root_round_add": 174930391467410680,
+              "add_complex_add": 113324905642451290,
+              "kernel_product": 230259501939559296,
+              "kernel_exact_add": 10580887350231360,
+              "kernel_round_add": 16623885877849344
+            },
+            {
+              "root_product": 720783299871909198,
+              "root_exact_add": 33178740350231656,
+              "root_round_add": 52031698499057104,
+              "add_complex_add": 33695284045213026,
+              "kernel_product": 69348327656030848,
+              "kernel_exact_add": 3201070419730368,
+              "kernel_round_add": 5028253687883520
+            },
+            {
+              "root_product": 161892007669104496,
+              "root_exact_add": 7524554290918282,
+              "root_round_add": 11814755327930840,
+              "add_complex_add": 7647317040699022,
+              "kernel_product": 15977164506992064,
+              "kernel_exact_add": 745333515285312,
+              "kernel_round_add": 1168265578485504
+            },
+            {
+              "root_product": 35484243408458562,
+              "root_exact_add": 1656246096744338,
+              "root_round_add": 2602886349267432,
+              "add_complex_add": 1700394759493922,
+              "kernel_product": 3544546062872768,
+              "kernel_exact_add": 166465104916160,
+              "kernel_round_add": 260270671647488
+            },
+            {
+              "root_product": 753445581852562,
+              "root_exact_add": 35256579295148,
+              "root_round_add": 55433585054128,
+              "add_complex_add": 36959481110344,
+              "kernel_product": 75091518416000,
+              "kernel_exact_add": 3533620257088,
+              "kernel_round_add": 5535656455936
+            }
+          ],
+          "product_core": 3675539621499722712,
+          "addition_core": 589621024072536814,
+          "core": 4265160645572259526
+        }
+      }
+    ],
+    "four": [
+      {
+        "extra_nodes": 0,
+        "old": {
+          "parts": {
+            "root_product": 4107759133021405416,
+            "root_exact_add": 109952813969187552,
+            "root_round_add": 221852080389457232,
+            "add_complex_add": 144346397281426514,
+            "kernel_product": 391163187009316352,
+            "kernel_exact_add": 10489961831463424,
+            "kernel_round_add": 21177885879779328
+          },
+          "bands": [
+            {
+              "root_product": 3157385032274939976,
+              "root_exact_add": 84331242363931384,
+              "root_round_add": 170140943731927616,
+              "add_complex_add": 110695164935668232,
+              "kernel_product": 298645721740716288,
+              "kernel_exact_add": 7987493505171456,
+              "kernel_round_add": 16138395657440256
+            },
+            {
+              "root_product": 715026945798848472,
+              "root_exact_add": 19234512587897872,
+              "root_round_add": 38817641795309712,
+              "add_complex_add": 25247944240193490,
+              "kernel_product": 69223778443867904,
+              "kernel_exact_add": 1866076661191040,
+              "kernel_round_add": 3761825017193216
+            },
+            {
+              "root_product": 190934129175339200,
+              "root_exact_add": 5178682100397788,
+              "root_round_add": 10454858443661112,
+              "add_complex_add": 6800117503980688,
+              "kernel_product": 18859712911151360,
+              "kernel_exact_add": 514517905723264,
+              "kernel_round_add": 1033055512705280
+            },
+            {
+              "root_product": 43487080782069984,
+              "root_exact_add": 1183085457236120,
+              "root_round_add": 2387659147830848,
+              "add_complex_add": 1568993247560088,
+              "kernel_product": 4341442255481600,
+              "kernel_exact_add": 119328109477632,
+              "kernel_round_add": 239494073317376
+            },
+            {
+              "root_product": 925944990207784,
+              "root_exact_add": 25291459724388,
+              "root_round_add": 50977270727944,
+              "add_complex_add": 34177354024016,
+              "kernel_product": 92531658099200,
+              "kernel_exact_add": 2545649900032,
+              "kernel_round_add": 5115619123200
+            }
+          ],
+          "product_core": 4498922320030721768,
+          "addition_core": 507819139351314050,
+          "core": 5006741459382035818
+        },
+        "guard": {
+          "parts": {
+            "root_product": 20710260520161472,
+            "root_exact_add": 553074370701436,
+            "root_round_add": 1115841447699112,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1957858379124480,
+            "kernel_exact_add": 52356849901952,
+            "kernel_round_add": 105788075800832
+          },
+          "bands": [
+            {
+              "root_product": 7487573013109336,
+              "root_exact_add": 198815083254840,
+              "root_round_add": 401072234376000,
+              "add_complex_add": 261000686683424,
+              "kernel_product": 691521311986944,
+              "kernel_exact_add": 18383532869888,
+              "kernel_round_add": 37191725184000
+            },
+            {
+              "root_product": 11676462589670352,
+              "root_exact_add": 312411973759292,
+              "root_round_add": 630289852630536,
+              "add_complex_add": 410039054096440,
+              "kernel_product": 1114079866991360,
+              "kernel_exact_add": 29837687009664,
+              "kernel_round_add": 60282716736768
+            },
+            {
+              "root_product": 1329114295964024,
+              "root_exact_add": 35947181648256,
+              "root_round_add": 72568926079520,
+              "add_complex_add": 47183273435938,
+              "kernel_product": 130693345313280,
+              "kernel_exact_add": 3543563964416,
+              "kernel_round_add": 7125434429440
+            },
+            {
+              "root_product": 212691439309952,
+              "root_exact_add": 5779486622520,
+              "root_round_add": 11667226899168,
+              "add_complex_add": 7600468703842,
+              "kernel_product": 21122110594560,
+              "kernel_exact_add": 579906609280,
+              "kernel_round_add": 1163778930944
+            },
+            {
+              "root_product": 4419182107808,
+              "root_exact_add": 120645416528,
+              "root_round_add": 243207713888,
+              "add_complex_add": 163317651846,
+              "kernel_product": 441744238336,
+              "kernel_exact_add": 12159448704,
+              "kernel_round_add": 24420519680
+            }
+          ],
+          "product_core": 22668118899285952,
+          "addition_core": 2553047544674822,
+          "core": 25221166443960774
+        },
+        "joined": {
+          "parts": {
+            "root_product": 4128469393541566888,
+            "root_exact_add": 110505888339888988,
+            "root_round_add": 222967921837156344,
+            "add_complex_add": 145072384081998004,
+            "kernel_product": 393121045388440832,
+            "kernel_exact_add": 10542318681365376,
+            "kernel_round_add": 21283673955580160
+          },
+          "bands": [
+            {
+              "root_product": 3164872605288049312,
+              "root_exact_add": 84530057447186224,
+              "root_round_add": 170542015966303616,
+              "add_complex_add": 110956165622351656,
+              "kernel_product": 299337243052703232,
+              "kernel_exact_add": 8005877038041344,
+              "kernel_round_add": 16175587382624256
+            },
+            {
+              "root_product": 726703408388518824,
+              "root_exact_add": 19546924561657164,
+              "root_round_add": 39447931647940248,
+              "add_complex_add": 25657983294289930,
+              "kernel_product": 70337858310859264,
+              "kernel_exact_add": 1895914348200704,
+              "kernel_round_add": 3822107733929984
+            },
+            {
+              "root_product": 192263243471303224,
+              "root_exact_add": 5214629282046044,
+              "root_round_add": 10527427369740632,
+              "add_complex_add": 6847300777416626,
+              "kernel_product": 18990406256464640,
+              "kernel_exact_add": 518061469687680,
+              "kernel_round_add": 1040180947134720
+            },
+            {
+              "root_product": 43699772221379936,
+              "root_exact_add": 1188864943858640,
+              "root_round_add": 2399326374730016,
+              "add_complex_add": 1576593716263930,
+              "kernel_product": 4362564366076160,
+              "kernel_exact_add": 119908016086912,
+              "kernel_round_add": 240657852248320
+            },
+            {
+              "root_product": 930364172315592,
+              "root_exact_add": 25412105140916,
+              "root_round_add": 51220478441832,
+              "add_complex_add": 34340671675862,
+              "kernel_product": 92973402337536,
+              "kernel_exact_add": 2557809348736,
+              "kernel_round_add": 5140039642880
+            }
+          ],
+          "product_core": 4521590438930007720,
+          "addition_core": 510372186895988872,
+          "core": 5031962625825996592
+        }
+      },
+      {
+        "extra_nodes": 167,
+        "old": {
+          "parts": {
+            "root_product": 4192115560018160680,
+            "root_exact_add": 112205580308386084,
+            "root_round_add": 226397093115451176,
+            "add_complex_add": 147303465469120144,
+            "kernel_product": 399137878455994112,
+            "kernel_exact_add": 10703220220088448,
+            "kernel_round_add": 21608778773894912
+          },
+          "bands": [
+            {
+              "root_product": 3185918326873643488,
+              "root_exact_add": 85088759291337200,
+              "root_round_add": 171669088853298288,
+              "add_complex_add": 111689911616529030,
+              "kernel_product": 301280551107559680,
+              "kernel_exact_add": 8057533449846144,
+              "kernel_round_add": 16280092581506816
+            },
+            {
+              "root_product": 764465801169918296,
+              "root_exact_add": 20556980686859820,
+              "root_round_add": 41485707395315304,
+              "add_complex_add": 26983388045353982,
+              "kernel_product": 73934852856295424,
+              "kernel_exact_add": 1992216803907200,
+              "kernel_round_add": 4016687865169664
+            },
+            {
+              "root_product": 196427365350885608,
+              "root_exact_add": 5327248875103628,
+              "root_round_add": 10754779069201000,
+              "add_complex_add": 6995140643881090,
+              "kernel_product": 19400024385556480,
+              "kernel_exact_add": 529167015806080,
+              "kernel_round_add": 1062513526142208
+            },
+            {
+              "root_product": 44360037344241072,
+              "root_exact_add": 1206806293434824,
+              "root_round_add": 2435545277793984,
+              "add_complex_add": 1600179198573708,
+              "kernel_product": 4428110249304832,
+              "kernel_exact_add": 121707525710976,
+              "kernel_round_add": 244269218192128
+            },
+            {
+              "root_product": 944029279472216,
+              "root_exact_add": 25785161650612,
+              "root_round_add": 51972519842600,
+              "add_complex_add": 34845964782334,
+              "kernel_product": 94339857277696,
+              "kernel_exact_add": 2595424818048,
+              "kernel_round_add": 5215582884096
+            }
+          ],
+          "product_core": 4591253438474154792,
+          "addition_core": 518218137886940764,
+          "core": 5109471576361095556
+        },
+        "guard": {
+          "parts": {
+            "root_product": 20710260520161472,
+            "root_exact_add": 553074370701436,
+            "root_round_add": 1115841447699112,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1957858379124480,
+            "kernel_exact_add": 52356849901952,
+            "kernel_round_add": 105788075800832
+          },
+          "bands": [
+            {
+              "root_product": 6165678366512952,
+              "root_exact_add": 163643616248428,
+              "root_round_add": 330117533801800,
+              "add_complex_add": 215005645757062,
+              "kernel_product": 569368225944832,
+              "kernel_exact_add": 15133116914560,
+              "kernel_round_add": 30616267312384
+            },
+            {
+              "root_product": 12940535706431960,
+              "root_exact_add": 346023324015924,
+              "root_round_add": 698095588325848,
+              "add_complex_add": 453978563532266,
+              "kernel_product": 1230508214728192,
+              "kernel_exact_add": 32933505445248,
+              "kernel_round_add": 66546435650816
+            },
+            {
+              "root_product": 1382498004228080,
+              "root_exact_add": 37386785882580,
+              "root_round_add": 75474583052168,
+              "add_complex_add": 49083997542620,
+              "kernel_product": 135991703500800,
+              "kernel_exact_add": 3686478148096,
+              "kernel_round_add": 7413716362240
+            },
+            {
+              "root_product": 217076869058472,
+              "root_exact_add": 5898572672308,
+              "root_round_add": 11907653827416,
+              "add_complex_add": 7753226499300,
+              "kernel_product": 21543101887744,
+              "kernel_exact_add": 591439886336,
+              "kernel_round_add": 1186935837696
+            },
+            {
+              "root_product": 4471573930008,
+              "root_exact_add": 122071882196,
+              "root_round_add": 246088691880,
+              "add_complex_add": 165367240242,
+              "kernel_product": 447133062912,
+              "kernel_exact_add": 12309507712,
+              "kernel_round_add": 24720637696
+            }
+          ],
+          "product_core": 22668118899285952,
+          "addition_core": 2553047544674822,
+          "core": 25221166443960774
+        },
+        "joined": {
+          "parts": {
+            "root_product": 4212825820538322152,
+            "root_exact_add": 112758654679087520,
+            "root_round_add": 227512934563150288,
+            "add_complex_add": 148029452269691634,
+            "kernel_product": 401095736835118592,
+            "kernel_exact_add": 10755577069990400,
+            "kernel_round_add": 21714566849695744
+          },
+          "bands": [
+            {
+              "root_product": 3192084005240156440,
+              "root_exact_add": 85252402907585628,
+              "root_round_add": 171999206387100088,
+              "add_complex_add": 111904917262286092,
+              "kernel_product": 301849919333504512,
+              "kernel_exact_add": 8072666566760704,
+              "kernel_round_add": 16310708848819200
+            },
+            {
+              "root_product": 777406336876350256,
+              "root_exact_add": 20903004010875744,
+              "root_round_add": 42183802983641152,
+              "add_complex_add": 27437366608886248,
+              "kernel_product": 75165361071023616,
+              "kernel_exact_add": 2025150309352448,
+              "kernel_round_add": 4083234300820480
+            },
+            {
+              "root_product": 197809863355113688,
+              "root_exact_add": 5364635660986208,
+              "root_round_add": 10830253652253168,
+              "add_complex_add": 7044224641423710,
+              "kernel_product": 19536016089057280,
+              "kernel_exact_add": 532853493954176,
+              "kernel_round_add": 1069927242504448
+            },
+            {
+              "root_product": 44577114213299544,
+              "root_exact_add": 1212704866107132,
+              "root_round_add": 2447452931621400,
+              "add_complex_add": 1607932425073008,
+              "kernel_product": 4449653351192576,
+              "kernel_exact_add": 122298965597312,
+              "kernel_round_add": 245456154029824
+            },
+            {
+              "root_product": 948500853402224,
+              "root_exact_add": 25907233532808,
+              "root_round_add": 52218608534480,
+              "add_complex_add": 35011332022576,
+              "kernel_product": 94786990340608,
+              "kernel_exact_add": 2607734325760,
+              "kernel_round_add": 5240303521792
+            }
+          ],
+          "product_core": 4613921557373440744,
+          "addition_core": 520771185431615586,
+          "core": 5134692742805056330
+        }
+      },
+      {
+        "extra_nodes": 320,
+        "old": {
+          "parts": {
+            "root_product": 4269400190739738856,
+            "root_exact_add": 114269491984418272,
+            "root_round_add": 230561086810523472,
+            "add_complex_add": 150012635724911314,
+            "kernel_product": 406444032895165952,
+            "kernel_exact_add": 10898600659966464,
+            "kernel_round_add": 22003548910419968
+          },
+          "bands": [
+            {
+              "root_product": 3207095627745246608,
+              "root_exact_add": 85650772091150008,
+              "root_round_add": 172802818593068592,
+              "add_complex_add": 112428362985982392,
+              "kernel_product": 303235623114432000,
+              "kernel_exact_add": 8109491801905792,
+              "kernel_round_add": 16385214498085120
+            },
+            {
+              "root_product": 814512398970712376,
+              "root_exact_add": 21894874109294012,
+              "root_round_add": 44184888428574088,
+              "add_complex_add": 28738755699743130,
+              "kernel_product": 78689150794209536,
+              "kernel_exact_add": 2119433835126784,
+              "kernel_round_add": 4273754843582464
+            },
+            {
+              "root_product": 201655276461628760,
+              "root_exact_add": 5468622657408696,
+              "root_round_add": 11040175759452880,
+              "add_complex_add": 7180720146745576,
+              "kernel_product": 19914117382245376,
+              "kernel_exact_add": 543101874653952,
+              "kernel_round_add": 1090538756385792
+            },
+            {
+              "root_product": 45176087526128824,
+              "root_exact_add": 1228980139544572,
+              "root_round_add": 2480308556877208,
+              "add_complex_add": 1629330789931086,
+              "kernel_product": 4509124185061632,
+              "kernel_exact_add": 123931541662336,
+              "kernel_round_add": 248732486658816
+            },
+            {
+              "root_product": 960800036022288,
+              "root_exact_add": 26242987020984,
+              "root_round_add": 52895472550704,
+              "add_complex_add": 35466102509130,
+              "kernel_product": 96017419217408,
+              "kernel_exact_add": 2641606617600,
+              "kernel_round_add": 5308325707776
+            }
+          ],
+          "product_core": 4675844223634904808,
+          "addition_core": 527745364090239490,
+          "core": 5203589587725144298
+        },
+        "guard": {
+          "parts": {
+            "root_product": 20710260520161472,
+            "root_exact_add": 553074370701436,
+            "root_round_add": 1115841447699112,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1957858379124480,
+            "kernel_exact_add": 52356849901952,
+            "kernel_round_add": 105788075800832
+          },
+          "bands": [
+            {
+              "root_product": 4776084016576024,
+              "root_exact_add": 126742615405788,
+              "root_round_add": 255670295705864,
+              "add_complex_add": 166583874051750,
+              "kernel_product": 441146682765824,
+              "kernel_exact_add": 11723724054528,
+              "kernel_round_add": 23719824618496
+            },
+            {
+              "root_product": 14274263083989528,
+              "root_exact_add": 381417445186036,
+              "root_round_add": 769501742952184,
+              "add_complex_add": 500435172514574,
+              "kernel_product": 1353250382053632,
+              "kernel_exact_add": 36195115799296,
+              "kernel_round_add": 73144657002496
+            },
+            {
+              "root_product": 1433920659368096,
+              "root_exact_add": 38773206573280,
+              "root_round_add": 78272375555440,
+              "add_complex_add": 50886567373916,
+              "kernel_product": 141003677457920,
+              "kernel_exact_add": 3821512980352,
+              "kernel_round_add": 7686379413760
+            },
+            {
+              "root_product": 221466720080360,
+              "root_exact_add": 6017548592480,
+              "root_round_add": 12147952969216,
+              "add_complex_add": 7913683929514,
+              "kernel_product": 22004030081792,
+              "kernel_exact_add": 604010047104,
+              "kernel_round_add": 1212139102464
+            },
+            {
+              "root_product": 4526040147464,
+              "root_exact_add": 123554943852,
+              "root_round_add": 249080516408,
+              "add_complex_add": 167502701736,
+              "kernel_product": 453606765312,
+              "kernel_exact_add": 12487020672,
+              "kernel_round_add": 25075663616
+            }
+          ],
+          "product_core": 22668118899285952,
+          "addition_core": 2553047544674822,
+          "core": 25221166443960774
+        },
+        "joined": {
+          "parts": {
+            "root_product": 4290110451259900328,
+            "root_exact_add": 114822566355119708,
+            "root_round_add": 231676928258222584,
+            "add_complex_add": 150738622525482804,
+            "kernel_product": 408401891274290432,
+            "kernel_exact_add": 10950957509868416,
+            "kernel_round_add": 22109336986220800
+          },
+          "bands": [
+            {
+              "root_product": 3211871711761822632,
+              "root_exact_add": 85777514706555796,
+              "root_round_add": 173058488888774456,
+              "add_complex_add": 112594946860034142,
+              "kernel_product": 303676769797197824,
+              "kernel_exact_add": 8121215525960320,
+              "kernel_round_add": 16408934322703616
+            },
+            {
+              "root_product": 828786662054701904,
+              "root_exact_add": 22276291554480048,
+              "root_round_add": 44954390171526272,
+              "add_complex_add": 29239190872257704,
+              "kernel_product": 80042401176263168,
+              "kernel_exact_add": 2155628950926080,
+              "kernel_round_add": 4346899500584960
+            },
+            {
+              "root_product": 203089197120996856,
+              "root_exact_add": 5507395863981976,
+              "root_round_add": 11118448135008320,
+              "add_complex_add": 7231606714119492,
+              "kernel_product": 20055121059703296,
+              "kernel_exact_add": 546923387634304,
+              "kernel_round_add": 1098225135799552
+            },
+            {
+              "root_product": 45397554246209184,
+              "root_exact_add": 1234997688137052,
+              "root_round_add": 2492456509846424,
+              "add_complex_add": 1637244473860600,
+              "kernel_product": 4531128215143424,
+              "kernel_exact_add": 124535551709440,
+              "kernel_round_add": 249944625761280
+            },
+            {
+              "root_product": 965326076169752,
+              "root_exact_add": 26366541964836,
+              "root_round_add": 53144553067112,
+              "add_complex_add": 35633605210866,
+              "kernel_product": 96471025982720,
+              "kernel_exact_add": 2654093638272,
+              "kernel_round_add": 5333401371392
+            }
+          ],
+          "product_core": 4698512342534190760,
+          "addition_core": 530298411634914312,
+          "core": 5228810754169105072
+        }
+      },
+      {
+        "extra_nodes": 640,
+        "old": {
+          "parts": {
+            "root_product": 4431041248458072296,
+            "root_exact_add": 118586169999648992,
+            "root_round_add": 239270093231589712,
+            "add_complex_add": 155678874168396114,
+            "kernel_product": 421724878781015552,
+            "kernel_exact_add": 11307239488469504,
+            "kernel_round_add": 22829211941060608
+          },
+          "bands": [
+            {
+              "root_product": 3232012290839297560,
+              "root_exact_add": 86312050943543532,
+              "root_round_add": 174136753795566520,
+              "add_complex_add": 113296989491688084,
+              "kernel_product": 305540777609579520,
+              "kernel_exact_add": 8170751253499904,
+              "kernel_round_add": 16509163029708288
+            },
+            {
+              "root_product": 937847288993688456,
+              "root_exact_add": 25188049181594216,
+              "root_round_add": 50828734821380208,
+              "add_complex_add": 33060740491993626,
+              "kernel_product": 90347051195643392,
+              "kernel_exact_add": 2431044496838272,
+              "kernel_round_add": 4903540605340416
+            },
+            {
+              "root_product": 213250227668275520,
+              "root_exact_add": 5782082265378332,
+              "root_round_add": 11672960026816536,
+              "add_complex_add": 7592187122502412,
+              "kernel_product": 21053587201248512,
+              "kernel_exact_add": 573975815791616,
+              "kernel_round_add": 1152644368216576
+            },
+            {
+              "root_product": 46934926869937280,
+              "root_exact_add": 1276769711201804,
+              "root_round_add": 2576783752160616,
+              "add_complex_add": 1692169331693708,
+              "kernel_product": 4683871010118912,
+              "kernel_exact_add": 128727917217152,
+              "kernel_round_add": 258358019568896
+            },
+            {
+              "root_product": 996514086873480,
+              "root_exact_add": 27217897931108,
+              "root_round_add": 54860835665832,
+              "add_complex_add": 36787730518284,
+              "kernel_product": 99591764425216,
+              "kernel_exact_add": 2740005122560,
+              "kernel_round_add": 5505918226432
+            }
+          ],
+          "product_core": 4852766127239087848,
+          "addition_core": 547671588829164930,
+          "core": 5400437716068252778
+        },
+        "guard": {
+          "parts": {
+            "root_product": 20710260520161472,
+            "root_exact_add": 553074370701436,
+            "root_round_add": 1115841447699112,
+            "add_complex_add": 725986800571490,
+            "kernel_product": 1957858379124480,
+            "kernel_exact_add": 52356849901952,
+            "kernel_round_add": 105788075800832
+          },
+          "bands": [
+            {
+              "root_product": 808613340933976,
+              "root_exact_add": 21507382804104,
+              "root_round_add": 43380026719552,
+              "add_complex_add": 27916150763206,
+              "kernel_product": 75664515570432,
+              "kernel_exact_add": 2013467831680,
+              "kernel_round_add": 4071679078656
+            },
+            {
+              "root_product": 18112612273306000,
+              "root_exact_add": 483177434125224,
+              "root_round_add": 974777871305648,
+              "add_complex_add": 634543553219400,
+              "kernel_product": 1706251730916864,
+              "kernel_exact_add": 45569201682944,
+              "kernel_round_add": 92114338426368
+            },
+            {
+              "root_product": 1554114238144520,
+              "root_exact_add": 42005828808544,
+              "root_round_add": 84796854226560,
+              "add_complex_add": 55129918196610,
+              "kernel_product": 152587608371968,
+              "kernel_exact_add": 4133200161920,
+              "kernel_round_add": 8315634639104
+            },
+            {
+              "root_product": 230277381011400,
+              "root_exact_add": 6256980859168,
+              "root_round_add": 12631183181920,
+              "add_complex_add": 8225427800214,
+              "kernel_product": 22890910303232,
+              "kernel_exact_add": 628216907520,
+              "kernel_round_add": 1260794642944
+            },
+            {
+              "root_product": 4643286765576,
+              "root_exact_add": 126744104396,
+              "root_round_add": 255512265432,
+              "add_complex_add": 171750592060,
+              "kernel_product": 463613961984,
+              "kernel_exact_add": 12763317888,
+              "kernel_round_add": 25629013760
+            }
+          ],
+          "product_core": 22668118899285952,
+          "addition_core": 2553047544674822,
+          "core": 25221166443960774
+        },
+        "joined": {
+          "parts": {
+            "root_product": 4451751508978233768,
+            "root_exact_add": 119139244370350428,
+            "root_round_add": 240385934679288824,
+            "add_complex_add": 156404860968967604,
+            "kernel_product": 423682737160140032,
+            "kernel_exact_add": 11359596338371456,
+            "kernel_round_add": 22935000016861440
+          },
+          "bands": [
+            {
+              "root_product": 3232820904180231536,
+              "root_exact_add": 86333558326347636,
+              "root_round_add": 174180133822286072,
+              "add_complex_add": 113324905642451290,
+              "kernel_product": 305616442125149952,
+              "kernel_exact_add": 8172764721331584,
+              "kernel_round_add": 16513234708786944
+            },
+            {
+              "root_product": 955959901266994456,
+              "root_exact_add": 25671226615719440,
+              "root_round_add": 51803512692685856,
+              "add_complex_add": 33695284045213026,
+              "kernel_product": 92053302926560256,
+              "kernel_exact_add": 2476613698521216,
+              "kernel_round_add": 4995654943766784
+            },
+            {
+              "root_product": 214804341906420040,
+              "root_exact_add": 5824088094186876,
+              "root_round_add": 11757756881043096,
+              "add_complex_add": 7647317040699022,
+              "kernel_product": 21206174809620480,
+              "kernel_exact_add": 578109015953536,
+              "kernel_round_add": 1160960002855680
+            },
+            {
+              "root_product": 47165204250948680,
+              "root_exact_add": 1283026692060972,
+              "root_round_add": 2589414935342536,
+              "add_complex_add": 1700394759493922,
+              "kernel_product": 4706761920422144,
+              "kernel_exact_add": 129356134124672,
+              "kernel_round_add": 259618814211840
+            },
+            {
+              "root_product": 1001157373639056,
+              "root_exact_add": 27344642035504,
+              "root_round_add": 55116347931264,
+              "add_complex_add": 36959481110344,
+              "kernel_product": 100055378387200,
+              "kernel_exact_add": 2752768440448,
+              "kernel_round_add": 5531547240192
+            }
+          ],
+          "product_core": 4875434246138373800,
+          "addition_core": 550224636373839752,
+          "core": 5425658882512213552
+        }
+      }
+    ]
+  },
+  "all_setup_local": {
+    "three": {
+      "totals": {
+        "kernel_keys": 7606,
+        "chirp_entries": 151284794,
+        "scaled_cache_round_add_core": 47746732288,
+        "scaled_cache_sum_add_core": 20958937984,
+        "kernel_fft_general_complex_products": 2396725708,
+        "kernel_fft_complex_add_sub": 5886488704,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "exact_real_cache_sums": 728711808,
+        "scaled_cache_complex_rounds": 364355904,
+        "kernel_entries": 364355904,
+        "kernel_fft_quarter_turns": 182170346,
+        "total_added_normalized_setup_add_core": 68705670272
+      },
+      "by_p": {
+        "100": {
+          "kernel_keys": 672,
+          "kernel_entries": 2399712,
+          "chirp_entries": 968058,
+          "scaled_cache_complex_rounds": 2399712,
+          "exact_real_cache_sums": 4799424,
+          "scaled_cache_round_add_core": 296733056,
+          "scaled_cache_sum_add_core": 129584448,
+          "kernel_fft_general_complex_products": 10982976,
+          "kernel_fft_complex_add_sub": 29162400,
+          "kernel_fft_quarter_turns": 1199184,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "101": {
+          "kernel_keys": 676,
+          "kernel_entries": 4440672,
+          "chirp_entries": 1793514,
+          "scaled_cache_complex_rounds": 4440672,
+          "exact_real_cache_sums": 8881344,
+          "scaled_cache_round_add_core": 550638464,
+          "scaled_cache_sum_add_core": 239796288,
+          "kernel_fft_general_complex_products": 21731656,
+          "kernel_fft_complex_add_sub": 56782624,
+          "kernel_fft_quarter_turns": 2219660,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "102": {
+          "kernel_keys": 928,
+          "kernel_entries": 10961120,
+          "chirp_entries": 4478430,
+          "scaled_cache_complex_rounds": 10961120,
+          "exact_real_cache_sums": 21922240,
+          "scaled_cache_round_add_core": 1359177088,
+          "scaled_cache_sum_add_core": 591900480,
+          "kernel_fft_general_complex_products": 58198144,
+          "kernel_fft_complex_add_sub": 149275936,
+          "kernel_fft_quarter_turns": 5479632,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "103": {
+          "kernel_keys": 1218,
+          "kernel_entries": 25624608,
+          "chirp_entries": 10516206,
+          "scaled_cache_complex_rounds": 25624608,
+          "exact_real_cache_sums": 51249216,
+          "scaled_cache_round_add_core": 3177451136,
+          "scaled_cache_sum_add_core": 1383728832,
+          "kernel_fft_general_complex_products": 146622884,
+          "kernel_fft_complex_add_sub": 370114720,
+          "kernel_fft_quarter_turns": 12811086,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "104": {
+          "kernel_keys": 1243,
+          "kernel_entries": 40730624,
+          "chirp_entries": 16932187,
+          "scaled_cache_complex_rounds": 40730624,
+          "exact_real_cache_sums": 81461248,
+          "scaled_cache_round_add_core": 5376442368,
+          "scaled_cache_sum_add_core": 2362376192,
+          "kernel_fft_general_complex_products": 244386230,
+          "kernel_fft_complex_add_sub": 610959360,
+          "kernel_fft_quarter_turns": 20364069,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "105": {
+          "kernel_keys": 1144,
+          "kernel_entries": 73367552,
+          "chirp_entries": 29625354,
+          "scaled_cache_complex_rounds": 73367552,
+          "exact_real_cache_sums": 146735104,
+          "scaled_cache_round_add_core": 9684516864,
+          "scaled_cache_sum_add_core": 4255318016,
+          "kernel_fft_general_complex_products": 476088560,
+          "kernel_fft_complex_add_sub": 1172275200,
+          "kernel_fft_quarter_turns": 36682632,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "106": {
+          "kernel_keys": 797,
+          "kernel_entries": 84148224,
+          "chirp_entries": 31689371,
+          "scaled_cache_complex_rounds": 84148224,
+          "exact_real_cache_sums": 168296448,
+          "scaled_cache_round_add_core": 11107565568,
+          "scaled_cache_sum_add_core": 4880596992,
+          "kernel_fft_general_complex_products": 578881082,
+          "kernel_fft_complex_add_sub": 1410203648,
+          "kernel_fft_quarter_turns": 42073315,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "107": {
+          "kernel_keys": 920,
+          "kernel_entries": 120586240,
+          "chirp_entries": 54753760,
+          "scaled_cache_complex_rounds": 120586240,
+          "exact_real_cache_sums": 241172480,
+          "scaled_cache_round_add_core": 15917383680,
+          "scaled_cache_sum_add_core": 6994001920,
+          "kernel_fft_general_complex_products": 844105520,
+          "kernel_fft_complex_add_sub": 2049966080,
+          "kernel_fft_quarter_turns": 60292200,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "108": {
+          "kernel_keys": 8,
+          "kernel_entries": 2097152,
+          "chirp_entries": 527914,
+          "scaled_cache_complex_rounds": 2097152,
+          "exact_real_cache_sums": 4194304,
+          "scaled_cache_round_add_core": 276824064,
+          "scaled_cache_sum_add_core": 121634816,
+          "kernel_fft_general_complex_products": 15728656,
+          "kernel_fft_complex_add_sub": 37748736,
+          "kernel_fft_quarter_turns": 1048568,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        }
+      },
+      "exponent_entry_histogram": [
+        [
+          100,
+          5,
+          32
+        ],
+        [
+          100,
+          6,
+          320
+        ],
+        [
+          100,
+          7,
+          1152
+        ],
+        [
+          100,
+          8,
+          5120
+        ],
+        [
+          100,
+          9,
+          19456
+        ],
+        [
+          100,
+          10,
+          77824
+        ],
+        [
+          100,
+          11,
+          301056
+        ],
+        [
+          100,
+          12,
+          1085440
+        ],
+        [
+          100,
+          13,
+          909312
+        ],
+        [
+          101,
+          5,
+          32
+        ],
+        [
+          101,
+          6,
+          320
+        ],
+        [
+          101,
+          7,
+          256
+        ],
+        [
+          101,
+          12,
+          1122304
+        ],
+        [
+          101,
+          13,
+          3137536
+        ],
+        [
+          101,
+          14,
+          180224
+        ],
+        [
+          102,
+          5,
+          32
+        ],
+        [
+          102,
+          6,
+          192
+        ],
+        [
+          102,
+          13,
+          4177920
+        ],
+        [
+          102,
+          14,
+          6782976
+        ],
+        [
+          103,
+          5,
+          32
+        ],
+        [
+          103,
+          14,
+          14254080
+        ],
+        [
+          103,
+          15,
+          11370496
+        ],
+        [
+          104,
+          15,
+          40730624
+        ],
+        [
+          105,
+          15,
+          1605632
+        ],
+        [
+          105,
+          16,
+          71761920
+        ],
+        [
+          106,
+          16,
+          20316160
+        ],
+        [
+          106,
+          17,
+          63832064
+        ],
+        [
+          107,
+          17,
+          120586240
+        ],
+        [
+          108,
+          18,
+          2097152
+        ]
+      ]
+    },
+    "four": {
+      "totals": {
+        "kernel_keys": 7606,
+        "chirp_entries": 151284794,
+        "scaled_cache_round_add_core": 47746732288,
+        "scaled_cache_sum_add_core": 0,
+        "kernel_fft_general_complex_products": 2396725708,
+        "kernel_fft_complex_add_sub": 5886488704,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "exact_real_cache_sums": 0,
+        "scaled_cache_complex_rounds": 364355904,
+        "kernel_entries": 364355904,
+        "kernel_fft_quarter_turns": 182170346,
+        "total_added_normalized_setup_add_core": 47746732288
+      },
+      "by_p": {
+        "100": {
+          "kernel_keys": 672,
+          "kernel_entries": 2399712,
+          "chirp_entries": 968058,
+          "scaled_cache_complex_rounds": 2399712,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 296733056,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 10982976,
+          "kernel_fft_complex_add_sub": 29162400,
+          "kernel_fft_quarter_turns": 1199184,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "101": {
+          "kernel_keys": 676,
+          "kernel_entries": 4440672,
+          "chirp_entries": 1793514,
+          "scaled_cache_complex_rounds": 4440672,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 550638464,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 21731656,
+          "kernel_fft_complex_add_sub": 56782624,
+          "kernel_fft_quarter_turns": 2219660,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "102": {
+          "kernel_keys": 928,
+          "kernel_entries": 10961120,
+          "chirp_entries": 4478430,
+          "scaled_cache_complex_rounds": 10961120,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 1359177088,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 58198144,
+          "kernel_fft_complex_add_sub": 149275936,
+          "kernel_fft_quarter_turns": 5479632,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "103": {
+          "kernel_keys": 1218,
+          "kernel_entries": 25624608,
+          "chirp_entries": 10516206,
+          "scaled_cache_complex_rounds": 25624608,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 3177451136,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 146622884,
+          "kernel_fft_complex_add_sub": 370114720,
+          "kernel_fft_quarter_turns": 12811086,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "104": {
+          "kernel_keys": 1243,
+          "kernel_entries": 40730624,
+          "chirp_entries": 16932187,
+          "scaled_cache_complex_rounds": 40730624,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 5376442368,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 244386230,
+          "kernel_fft_complex_add_sub": 610959360,
+          "kernel_fft_quarter_turns": 20364069,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "105": {
+          "kernel_keys": 1144,
+          "kernel_entries": 73367552,
+          "chirp_entries": 29625354,
+          "scaled_cache_complex_rounds": 73367552,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 9684516864,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 476088560,
+          "kernel_fft_complex_add_sub": 1172275200,
+          "kernel_fft_quarter_turns": 36682632,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "106": {
+          "kernel_keys": 797,
+          "kernel_entries": 84148224,
+          "chirp_entries": 31689371,
+          "scaled_cache_complex_rounds": 84148224,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 11107565568,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 578881082,
+          "kernel_fft_complex_add_sub": 1410203648,
+          "kernel_fft_quarter_turns": 42073315,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "107": {
+          "kernel_keys": 920,
+          "kernel_entries": 120586240,
+          "chirp_entries": 54753760,
+          "scaled_cache_complex_rounds": 120586240,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 15917383680,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 844105520,
+          "kernel_fft_complex_add_sub": 2049966080,
+          "kernel_fft_quarter_turns": 60292200,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "108": {
+          "kernel_keys": 8,
+          "kernel_entries": 2097152,
+          "chirp_entries": 527914,
+          "scaled_cache_complex_rounds": 2097152,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 276824064,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 15728656,
+          "kernel_fft_complex_add_sub": 37748736,
+          "kernel_fft_quarter_turns": 1048568,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        }
+      },
+      "exponent_entry_histogram": [
+        [
+          100,
+          5,
+          32
+        ],
+        [
+          100,
+          6,
+          320
+        ],
+        [
+          100,
+          7,
+          1152
+        ],
+        [
+          100,
+          8,
+          5120
+        ],
+        [
+          100,
+          9,
+          19456
+        ],
+        [
+          100,
+          10,
+          77824
+        ],
+        [
+          100,
+          11,
+          301056
+        ],
+        [
+          100,
+          12,
+          1085440
+        ],
+        [
+          100,
+          13,
+          909312
+        ],
+        [
+          101,
+          5,
+          32
+        ],
+        [
+          101,
+          6,
+          320
+        ],
+        [
+          101,
+          7,
+          256
+        ],
+        [
+          101,
+          12,
+          1122304
+        ],
+        [
+          101,
+          13,
+          3137536
+        ],
+        [
+          101,
+          14,
+          180224
+        ],
+        [
+          102,
+          5,
+          32
+        ],
+        [
+          102,
+          6,
+          192
+        ],
+        [
+          102,
+          13,
+          4177920
+        ],
+        [
+          102,
+          14,
+          6782976
+        ],
+        [
+          103,
+          5,
+          32
+        ],
+        [
+          103,
+          14,
+          14254080
+        ],
+        [
+          103,
+          15,
+          11370496
+        ],
+        [
+          104,
+          15,
+          40730624
+        ],
+        [
+          105,
+          15,
+          1605632
+        ],
+        [
+          105,
+          16,
+          71761920
+        ],
+        [
+          106,
+          16,
+          20316160
+        ],
+        [
+          106,
+          17,
+          63832064
+        ],
+        [
+          107,
+          17,
+          120586240
+        ],
+        [
+          108,
+          18,
+          2097152
+        ]
+      ]
+    }
+  },
+  "all_setup_baseline": {
+    "three": {
+      "totals": {
+        "kernel_keys": 6004,
+        "chirp_entries": 140276846,
+        "scaled_cache_round_add_core": 44575881344,
+        "scaled_cache_sum_add_core": 19586737344,
+        "kernel_fft_general_complex_products": 2244782056,
+        "kernel_fft_complex_add_sub": 5502647200,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "exact_real_cache_sums": 675404736,
+        "scaled_cache_complex_rounds": 337702368,
+        "kernel_entries": 337702368,
+        "kernel_fft_quarter_turns": 168845180,
+        "total_added_normalized_setup_add_core": 64162618688
+      },
+      "by_p": {
+        "100": {},
+        "101": {},
+        "102": {},
+        "103": {},
+        "104": {},
+        "105": {},
+        "106": {},
+        "107": {},
+        "108": {
+          "kernel_keys": 6004,
+          "kernel_entries": 337702368,
+          "chirp_entries": 140276846,
+          "scaled_cache_complex_rounds": 337702368,
+          "exact_real_cache_sums": 675404736,
+          "scaled_cache_round_add_core": 44575881344,
+          "scaled_cache_sum_add_core": 19586737344,
+          "kernel_fft_general_complex_products": 2244782056,
+          "kernel_fft_complex_add_sub": 5502647200,
+          "kernel_fft_quarter_turns": 168845180,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        }
+      },
+      "exponent_entry_histogram": [
+        [
+          108,
+          5,
+          32
+        ],
+        [
+          108,
+          6,
+          320
+        ],
+        [
+          108,
+          7,
+          1152
+        ],
+        [
+          108,
+          8,
+          5120
+        ],
+        [
+          108,
+          9,
+          19456
+        ],
+        [
+          108,
+          10,
+          77824
+        ],
+        [
+          108,
+          11,
+          301056
+        ],
+        [
+          108,
+          12,
+          1138688
+        ],
+        [
+          108,
+          13,
+          4186112
+        ],
+        [
+          108,
+          14,
+          14254080
+        ],
+        [
+          108,
+          15,
+          41418752
+        ],
+        [
+          108,
+          16,
+          89784320
+        ],
+        [
+          108,
+          17,
+          184418304
+        ],
+        [
+          108,
+          18,
+          2097152
+        ]
+      ]
+    },
+    "four": {
+      "totals": {
+        "kernel_keys": 6004,
+        "chirp_entries": 140276846,
+        "scaled_cache_round_add_core": 44575881344,
+        "scaled_cache_sum_add_core": 0,
+        "kernel_fft_general_complex_products": 2244782056,
+        "kernel_fft_complex_add_sub": 5502647200,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "exact_real_cache_sums": 0,
+        "scaled_cache_complex_rounds": 337702368,
+        "kernel_entries": 337702368,
+        "kernel_fft_quarter_turns": 168845180,
+        "total_added_normalized_setup_add_core": 44575881344
+      },
+      "by_p": {
+        "100": {},
+        "101": {},
+        "102": {},
+        "103": {},
+        "104": {},
+        "105": {},
+        "106": {},
+        "107": {},
+        "108": {
+          "kernel_keys": 6004,
+          "kernel_entries": 337702368,
+          "chirp_entries": 140276846,
+          "scaled_cache_complex_rounds": 337702368,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 44575881344,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 2244782056,
+          "kernel_fft_complex_add_sub": 5502647200,
+          "kernel_fft_quarter_turns": 168845180,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        }
+      },
+      "exponent_entry_histogram": [
+        [
+          108,
+          5,
+          32
+        ],
+        [
+          108,
+          6,
+          320
+        ],
+        [
+          108,
+          7,
+          1152
+        ],
+        [
+          108,
+          8,
+          5120
+        ],
+        [
+          108,
+          9,
+          19456
+        ],
+        [
+          108,
+          10,
+          77824
+        ],
+        [
+          108,
+          11,
+          301056
+        ],
+        [
+          108,
+          12,
+          1138688
+        ],
+        [
+          108,
+          13,
+          4186112
+        ],
+        [
+          108,
+          14,
+          14254080
+        ],
+        [
+          108,
+          15,
+          41418752
+        ],
+        [
+          108,
+          16,
+          89784320
+        ],
+        [
+          108,
+          17,
+          184418304
+        ],
+        [
+          108,
+          18,
+          2097152
+        ]
+      ]
+    }
+  },
+  "all_comparisons": [
+    {
+      "mode": "three",
+      "extra_nodes": 0,
+      "view": "old",
+      "runtime_product_core_reserve": 402938622114047074,
+      "runtime_addition_core_reserve": 30285359505994848,
+      "local_to_global_core_ratio": "1967930204402933894/2184542195212954855",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 0,
+      "view": "guard",
+      "runtime_product_core_reserve": 1977016012084980,
+      "runtime_addition_core_reserve": 149037042705116,
+      "local_to_global_core_ratio": "241776972662549/267704448940477",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 0,
+      "view": "joined",
+      "runtime_product_core_reserve": 404915638126132054,
+      "runtime_addition_core_reserve": 30434396548699964,
+      "local_to_global_core_ratio": "659281020094032801/731839359206504804",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 167,
+      "view": "old",
+      "runtime_product_core_reserve": 410991345870588334,
+      "runtime_addition_core_reserve": 30892412826281540,
+      "local_to_global_core_ratio": "669435652945859859/743082946062004838",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 167,
+      "view": "guard",
+      "runtime_product_core_reserve": 1977016012084980,
+      "runtime_addition_core_reserve": 149037042705116,
+      "local_to_global_core_ratio": "241776972662549/267704448940477",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 167,
+      "view": "joined",
+      "runtime_product_core_reserve": 412968361882673314,
+      "runtime_addition_core_reserve": 31041449868986656,
+      "local_to_global_core_ratio": "2018219814716744086/2240224720592574071",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 320,
+      "view": "old",
+      "runtime_product_core_reserve": 418368990988856674,
+      "runtime_addition_core_reserve": 31448575449059168,
+      "local_to_global_core_ratio": "681766278551649858/756735872957969165",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 320,
+      "view": "guard",
+      "runtime_product_core_reserve": 1977016012084980,
+      "runtime_addition_core_reserve": 149037042705116,
+      "local_to_global_core_ratio": "241776972662549/267704448940477",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 320,
+      "view": "joined",
+      "runtime_product_core_reserve": 420346007000941654,
+      "runtime_addition_core_reserve": 31597612491764284,
+      "local_to_global_core_ratio": "2055211691534114083/2281183501280467052",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 640,
+      "view": "old",
+      "runtime_product_core_reserve": 433799359863666274,
+      "runtime_addition_core_reserve": 32611791392123488,
+      "local_to_global_core_ratio": "2122667466906965254/2355873042534860135",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 640,
+      "view": "guard",
+      "runtime_product_core_reserve": 1977016012084980,
+      "runtime_addition_core_reserve": 149037042705116,
+      "local_to_global_core_ratio": "241776972662549/267704448940477",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "three",
+      "extra_nodes": 640,
+      "view": "joined",
+      "runtime_product_core_reserve": 435776375875751254,
+      "runtime_addition_core_reserve": 32760828434828604,
+      "local_to_global_core_ratio": "2132580322786129763/2366848924941419692",
+      "additional_cold_scale_sum_add_core": 4543051584,
+      "conservative_sunk_new_scale_sum_add_core": 68705670272,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 0,
+      "view": "old",
+      "runtime_product_core_reserve": 548095716213709400,
+      "runtime_addition_core_reserve": 28514232675005244,
+      "local_to_global_core_ratio": "2503370729691017909/2791675704135375231",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 0,
+      "view": "guard",
+      "runtime_product_core_reserve": 2693252119224568,
+      "runtime_addition_core_reserve": 140355237593244,
+      "local_to_global_core_ratio": "307575200536107/342131387814373",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 0,
+      "view": "joined",
+      "runtime_product_core_reserve": 550788968332933968,
+      "runtime_addition_core_reserve": 28654587912598488,
+      "local_to_global_core_ratio": "628995328228249574/701425772758941131",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 167,
+      "view": "old",
+      "runtime_product_core_reserve": 559065791918843616,
+      "runtime_addition_core_reserve": 29085923520811872,
+      "local_to_global_core_ratio": "1277367894090273889/1424405822950187761",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 167,
+      "view": "guard",
+      "runtime_product_core_reserve": 2693252119224568,
+      "runtime_addition_core_reserve": 140355237593244,
+      "local_to_global_core_ratio": "307575200536107/342131387814373",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 167,
+      "view": "joined",
+      "runtime_product_core_reserve": 561759044038068184,
+      "runtime_addition_core_reserve": 29226278758405116,
+      "local_to_global_core_ratio": "513469274280505633/572567806560152963",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 320,
+      "view": "old",
+      "runtime_product_core_reserve": 569116220558876760,
+      "runtime_addition_core_reserve": 29609688187928124,
+      "local_to_global_core_ratio": "2601794793862572149/2901157748235974591",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 320,
+      "view": "guard",
+      "runtime_product_core_reserve": 2693252119224568,
+      "runtime_addition_core_reserve": 140355237593244,
+      "local_to_global_core_ratio": "307575200536107/342131387814373",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 320,
+      "view": "joined",
+      "runtime_product_core_reserve": 571809472678101328,
+      "runtime_addition_core_reserve": 29750043425521368,
+      "local_to_global_core_ratio": "653601344271138134/728796283784090971",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 640,
+      "view": "old",
+      "runtime_product_core_reserve": 590136724904044120,
+      "runtime_addition_core_reserve": 30705143700851004,
+      "local_to_global_core_ratio": "2700218858034126389/3010639792336573951",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 640,
+      "view": "guard",
+      "runtime_product_core_reserve": 2693252119224568,
+      "runtime_addition_core_reserve": 140355237593244,
+      "local_to_global_core_ratio": "307575200536107/342131387814373",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    },
+    {
+      "mode": "four",
+      "extra_nodes": 640,
+      "view": "joined",
+      "runtime_product_core_reserve": 592829977023268688,
+      "runtime_addition_core_reserve": 30845498938444248,
+      "local_to_global_core_ratio": "678207360314026694/756166794809240811",
+      "additional_cold_scale_sum_add_core": 3170850944,
+      "conservative_sunk_new_scale_sum_add_core": 47746732288,
+      "kernel_fft_deltas": {
+        "general_complex_products": 151943652,
+        "complex_add_sub": 383841504,
+        "quarter_turns": 13325166,
+        "negations": 0,
+        "dyadic_scales": 0
+      }
+    }
+  ]
+}

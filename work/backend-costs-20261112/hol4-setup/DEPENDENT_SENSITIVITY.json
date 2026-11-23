@@ -1,0 +1,50 @@
+{
+  "scope": "Illustrative small-family butterfly component ONLY, not a workload equivalence claim or full TG estimate. DependentBlock is not a certified FFT.",
+  "count": 218799609396458,
+  "seconds_per_core_year": 31557600.0,
+  "scenarios": [
+    {
+      "depth": 1,
+      "native_runtime_core_years": 11.177412740457603,
+      "hol_acceptance_core_years_without_literal_setup": 4936.105626368635,
+      "hol_literal_setup_and_acceptance_core_years_if_all_data_fresh_each_block": 467464.1745008416
+    },
+    {
+      "depth": 8,
+      "native_runtime_core_years": 4.110063018145897,
+      "hol_acceptance_core_years_without_literal_setup": 1474.3777222207714,
+      "hol_literal_setup_and_acceptance_core_years_if_all_data_fresh_each_block": 59290.38633152989
+    },
+    {
+      "depth": 32,
+      "native_runtime_core_years": 3.2662266396411144,
+      "hol_acceptance_core_years_without_literal_setup": 162.45617475731365,
+      "hol_literal_setup_and_acceptance_core_years_if_all_data_fresh_each_block": 14616.458327084594
+    },
+    {
+      "depth": 128,
+      "native_runtime_core_years": 3.171995152024001,
+      "hol_acceptance_core_years_without_literal_setup": 62.59642551655093,
+      "hol_literal_setup_and_acceptance_core_years_if_all_data_fresh_each_block": 3676.096963598371
+    }
+  ],
+  "omitted": [
+    "Roots and coefficients generation/certification",
+    "Analytic source production",
+    "Real-coordinate interpretation and global error propagation",
+    "Additional small-family products/scales",
+    "Large-family branch",
+    "Principal zeros and completeness",
+    "Finite Goldbach coverage",
+    "Discovery/retries",
+    "Proof/library engineering",
+    "General setup, export and I/O"
+  ],
+  "cautions": [
+    "Timing reuse requires the demonstrated named-input representation.",
+    "A real transform has different depth, permutations, memory and coefficients.",
+    "A fresh literal payload incurs substantial proved-translation cost.",
+    "No speed ratio transfers automatically to stock Lean, Candle or MM0."
+  ],
+  "measurement_sha256": "1922b4389d23491f8689a2d31527e3ae976d88f4d3165ba3555204b6a7eebfd9"
+}

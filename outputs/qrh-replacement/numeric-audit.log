@@ -1,0 +1,5 @@
+TernaryGoldbach.Explicit.qrh_low_exp_absorb {L : ℝ} (hL : 35000 ≤ L) : 1e24 * rexp (7 * L / 8) ≤ 5e-5 * rexp L / L ^ 3
+TernaryGoldbach.Explicit.qrh_low_rpow_absorb {x : ℝ} (hx : rexp 35000 ≤ x) :
+  1e24 * x ^ (7 / 8) ≤ 5e-5 * x / Real.log x ^ 3
+'TernaryGoldbach.Explicit.qrh_low_exp_absorb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TernaryGoldbach.Explicit.qrh_low_rpow_absorb' depends on axioms: [propext, Classical.choice, Quot.sound]

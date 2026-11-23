@@ -1,0 +1,206 @@
+{
+  "scope": "Symbolic source-binding successor only; no emitted PA declarations or concrete arithmetic.",
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/NAMED_NATURAL_DIGIT_HEADER_DESIGN_2026-11-11.md": "99A9F90BB5C7D4EBB8C63A24CD7BFA8CDB5D13DCA54790EAADA658E3A24BF988",
+    "work/qrh-campaign/agents/moebius/REVIEW_NAMED_NATURAL_DIGIT_HEADER_DESIGN_2026-11-11.md": "5B9F0652F6312613094A68E3E8E794A78F119073409C95E0077F9AEEDADAC216",
+    "work/qrh-campaign/agents/independent-feasibility/PA_PRODUCT_NUMERAL_BINDING_DESIGN_2026-11-11.md": "67631F57A93B6AE32303A148377AA1D4227FC5E34A4D25F265EA2561C42D6A59",
+    "work/qrh-campaign/agents/integration/REVIEW_PA_PRODUCT_NUMERAL_BINDING_DESIGN_2026-11-11.md": "D5F0EB33433CBD04C1326D90F1B1EE46A87A11D3C5F7AC7A42ABB95D3D92CDB0",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm1": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+    "work/formal-goldbach-bench/mm0/src/verifier.c": "71428A117C96A37B81E183CE57EF34B71E99EFECBA019E65A47CE27DD4FAA4B5",
+    "work/formal-goldbach-bench/mm0/src/types.c": "B3FC325B9269F50298B1D388C80B6544845A7185BC99DF0DD9970FF306A215D1"
+  },
+  "checks": 35,
+  "rows": [
+    {
+      "w": 8,
+      "beta": 256,
+      "new_definitions": 255,
+      "padded_body_nodes": 2295,
+      "canonical_body_nodes": 1801,
+      "extra_body_nodes": 494,
+      "definition_commands_each_stream": 2550,
+      "definition_bytes_old_heads_two": 14280,
+      "definition_bytes_old_heads_five": 28050,
+      "full_digit_bridge_facts": 256,
+      "full_digit_bridge_header_commands": 3072,
+      "full_digit_bridge_header_bytes_old2_alias3": 6142,
+      "bridge_entry_bytes": 2048,
+      "exception_proof_apps_each": 9,
+      "exception_proof_HR_each": 26,
+      "mixed_glue": {
+        "args": 5,
+        "premises": 3,
+        "header_commands": 32,
+        "cached_call": 10,
+        "fresh_call": 16,
+        "HR": 9,
+        "conclusion_child_requests": 6
+      },
+      "old_glue": {
+        "args": 4,
+        "premises": 2,
+        "header_commands": 36,
+        "cached_call": 8,
+        "fresh_call": 22,
+        "HR": 7,
+        "conclusion_child_requests": 14
+      },
+      "exception_step": {
+        "args": 1,
+        "premises": 1,
+        "header_commands": 9,
+        "cached_call": 4,
+        "fresh_call": 7,
+        "HR": 3,
+        "conclusion_child_requests": 3
+      },
+      "general_source_decoder_application_upper_per_L": 26,
+      "source_decoder_application_constant": 8
+    },
+    {
+      "w": 10,
+      "beta": 1024,
+      "new_definitions": 1023,
+      "padded_body_nodes": 11253,
+      "canonical_body_nodes": 9227,
+      "extra_body_nodes": 2026,
+      "definition_commands_each_stream": 12276,
+      "definition_bytes_old_heads_two": 65472,
+      "definition_bytes_old_heads_five": 132990,
+      "full_digit_bridge_facts": 1024,
+      "full_digit_bridge_header_commands": 14336,
+      "full_digit_bridge_header_bytes_old2_alias3": 28670,
+      "bridge_entry_bytes": 8192,
+      "exception_proof_apps_each": 11,
+      "exception_proof_HR_each": 32,
+      "mixed_glue": {
+        "args": 5,
+        "premises": 3,
+        "header_commands": 34,
+        "cached_call": 10,
+        "fresh_call": 16,
+        "HR": 9,
+        "conclusion_child_requests": 6
+      },
+      "old_glue": {
+        "args": 4,
+        "premises": 2,
+        "header_commands": 40,
+        "cached_call": 8,
+        "fresh_call": 24,
+        "HR": 7,
+        "conclusion_child_requests": 16
+      },
+      "exception_step": {
+        "args": 1,
+        "premises": 1,
+        "header_commands": 9,
+        "cached_call": 4,
+        "fresh_call": 7,
+        "HR": 3,
+        "conclusion_child_requests": 3
+      },
+      "general_source_decoder_application_upper_per_L": 32,
+      "source_decoder_application_constant": 8
+    },
+    {
+      "w": 12,
+      "beta": 4096,
+      "new_definitions": 4095,
+      "padded_body_nodes": 53235,
+      "canonical_body_nodes": 45069,
+      "extra_body_nodes": 8166,
+      "definition_commands_each_stream": 57330,
+      "definition_bytes_old_heads_two": 294840,
+      "definition_bytes_old_heads_five": 614250,
+      "full_digit_bridge_facts": 4096,
+      "full_digit_bridge_header_commands": 65536,
+      "full_digit_bridge_header_bytes_old2_alias3": 131070,
+      "bridge_entry_bytes": 32768,
+      "exception_proof_apps_each": 13,
+      "exception_proof_HR_each": 38,
+      "mixed_glue": {
+        "args": 5,
+        "premises": 3,
+        "header_commands": 36,
+        "cached_call": 10,
+        "fresh_call": 16,
+        "HR": 9,
+        "conclusion_child_requests": 6
+      },
+      "old_glue": {
+        "args": 4,
+        "premises": 2,
+        "header_commands": 44,
+        "cached_call": 8,
+        "fresh_call": 26,
+        "HR": 7,
+        "conclusion_child_requests": 18
+      },
+      "exception_step": {
+        "args": 1,
+        "premises": 1,
+        "header_commands": 9,
+        "cached_call": 4,
+        "fresh_call": 7,
+        "HR": 3,
+        "conclusion_child_requests": 3
+      },
+      "general_source_decoder_application_upper_per_L": 38,
+      "source_decoder_application_constant": 8
+    },
+    {
+      "w": 16,
+      "beta": 65536,
+      "new_definitions": 65535,
+      "padded_body_nodes": 1114095,
+      "canonical_body_nodes": 983057,
+      "extra_body_nodes": 131038,
+      "definition_commands_each_stream": 1179630,
+      "definition_bytes_old_heads_two": 5767080,
+      "definition_bytes_old_heads_five": 12451650,
+      "full_digit_bridge_facts": 65536,
+      "full_digit_bridge_header_commands": 1310720,
+      "full_digit_bridge_header_bytes_old2_alias3": 2621438,
+      "bridge_entry_bytes": 524288,
+      "exception_proof_apps_each": 17,
+      "exception_proof_HR_each": 50,
+      "mixed_glue": {
+        "args": 5,
+        "premises": 3,
+        "header_commands": 40,
+        "cached_call": 10,
+        "fresh_call": 16,
+        "HR": 9,
+        "conclusion_child_requests": 6
+      },
+      "old_glue": {
+        "args": 4,
+        "premises": 2,
+        "header_commands": 52,
+        "cached_call": 8,
+        "fresh_call": 30,
+        "HR": 7,
+        "conclusion_child_requests": 22
+      },
+      "exception_step": {
+        "args": 1,
+        "premises": 1,
+        "header_commands": 9,
+        "cached_call": 4,
+        "fresh_call": 7,
+        "HR": 3,
+        "conclusion_child_requests": 3
+      },
+      "general_source_decoder_application_upper_per_L": 50,
+      "source_decoder_application_constant": 8
+    }
+  ],
+  "unpriced": [
+    "ordinary fixed helper and table proof bodies",
+    "actual distinct digit patterns and local pointer sharing",
+    "catalogue/source spelling and all range proof transport",
+    "header execution and term reconstruction per lifetime",
+    "whole stock admission and analytic foundation"
+  ]
+}

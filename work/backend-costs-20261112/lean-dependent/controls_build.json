@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\DependentControls.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\DependentControls.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 9.191571899980772,
+  "user_cpu_seconds": 6.515625,
+  "system_cpu_seconds": 2.609375,
+  "cpu_seconds": 9.125,
+  "peak_working_set_bytes": 573964288,
+  "observed_peak_private_bytes": 1099894784,
+  "memory_samples": 182,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "DependentControls.lean",
+      "bytes": 1592,
+      "sha256": "0981944C87E5280F97891E815CCFA33C66361F46E25C3A46D72032F1504886BE"
+    },
+    {
+      "path": "controls_build.log",
+      "bytes": 403,
+      "sha256": "06D92F9B1B37A029F55EE197C30295EF9F063E3D3A83E29AF7364E9A5EC2D097"
+    },
+    {
+      "path": "DependentControls.olean",
+      "bytes": 16144,
+      "sha256": "F5EBDCC963DEBCB835D7375400C00401EDF34A99D5ADC9CE517358DB206C2CC0"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

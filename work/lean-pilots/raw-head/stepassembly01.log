@@ -1,0 +1,38 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStepAssembly.lean:31:4: error: Type mismatch: After simplification, term
+  Real.log_lt_sub_one_of_pos
+    (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2)) (Eq.refl false))
+    (Mathlib.Meta.NormNum.isNat_eq_false (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2))
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+ has type
+  Real.log 2 < 2 - 1
+but is expected to have type
+  Real.log 2 < 1
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStepAssembly.lean:83:2: error: Type mismatch
+  LE.le.trans_lt (exp_imag_lipschitz (rawStepPhase k x) (-(5 / 64) * Real.log ↑x)) (rawStepPhase_error hx hk hlo hhi)
+has type
+  ‖Complex.exp (Complex.I * ↑(rawStepPhase k x)) - Complex.exp (Complex.I * ↑(-(5 / 64) * Real.log ↑x))‖ <
+    5 / 64 * (1 / 2 ^ 128)
+but is expected to have type
+  ‖Complex.exp (Complex.I * ↑(rawStepPhase k x)) - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑x)))‖ <
+    5 / 64 * (1 / 2 ^ 128)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStepAssembly.lean:104:13: error: Function expected at
+  norm_sub_le v (expPartial 73 (Complex.I * ↑(rawStepPhase k x)))
+but this term has type
+  ‖v - expPartial 73 (Complex.I * ↑(rawStepPhase k x))‖ ≤ ‖v‖ + ‖expPartial 73 (Complex.I * ↑(rawStepPhase k x))‖
+
+Note: Expected a function because this term is being applied to the argument
+  (Complex.exp (Complex.I * rawStepPhase k x))
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStepAssembly.lean:100:27: error: unsolved goals
+x k : ℕ
+v : ℂ
+hx : 0 < x
+hk : k ≤ 18
+hlo : 2 ^ k ≤ x
+hhi : x ≤ 2 * 2 ^ k
+hv : ‖v - expPartial 73 (Complex.I * ↑(rawStepPhase k x))‖ ≤ 81 / 2 ^ 131 + 1 / 2 ^ 122
+ht : ‖expPartial 73 (Complex.I * ↑(rawStepPhase k x)) - Complex.exp (Complex.I * ↑(rawStepPhase k x))‖ ≤ 1 / 2 ^ 124
+hp :
+  ‖Complex.exp (Complex.I * ↑(rawStepPhase k x)) - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑x)))‖ <
+    5 / 64 * (1 / 2 ^ 128)
+⊢ ‖v - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑x)))‖ < 1 / 2 ^ 120

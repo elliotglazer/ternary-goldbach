@@ -1,0 +1,25 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 35 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val require = fn: bool -> string -> unit
+val expected =
+   “∀cache xs.
+      GENLIST
+        (λj. GENLIST (λi. tx_pair j (tx_row i (ftr_rows40 cache xs))) 60) 39 =
+      GENLIST
+        (λj. GENLIST (λi. tx_pair (39 * i + j) (txp_selected40 cache xs)) 60)
+        39”: term
+OK..
+REFINE_DIAGNOSTIC_EXACT_CLOSED_THEOREM ⊢ ∀cache xs.
+    GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i (ftr_rows40 cache xs))) 60)
+      39 =
+    GENLIST
+      (λj. GENLIST (λi. tx_pair (39 * i + j) (txp_selected40 cache xs)) 60)
+      39

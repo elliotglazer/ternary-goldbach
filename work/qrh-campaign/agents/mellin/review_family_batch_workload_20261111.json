@@ -1,0 +1,375 @@
+{
+  "status": "PASS_FULL_ARITHMETIC_RECEIPT_RECONSTRUCTION",
+  "script_sha256": "AAD5FC17046B810086F056B39D57AA79D99BA8D9B2DEEB30C809BEFD560C86B3",
+  "pins": {
+    "major-constants/FAMILY_BATCH_WORKLOAD_MODEL_2026-11-11.md": "3A5444AB295112E86DF0740DB8F4533EC37510A66E41EB0DF0340D16CF82A4E1",
+    "major-constants/family_batch_workload_20261111.py": "F6B182D6DF34756385CDAC690D8EE3AAF7E755DA3A69583B125FEB61464C6D82",
+    "major-constants/family_batch_workload_20261111.json": "CC223B05E14E0DEF2B8DD5DB9567F638B9328D97D5A555D6B86B3D263597D543",
+    "zero-sum/FAMILY_CHARACTER_MANIFEST_PROOF_PLAN_2026-11-11.md": "53D6DE424680957E9467FE5CF608578BB356DE08C57979E7494E4F1E387D4D54",
+    "major-constants/FAMILY_STRIP_SLAB_ASSEMBLY_2026-11-11.md": "5064865E9CE249A896B6B083278938E0E77762B88DE4539E038E624AC011FF93",
+    "mellin/REVIEW_FAMILY_STRIP_SLAB_ASSEMBLY_2026-11-11.md": "C4A41C85540F6B64E53FD04B485AA879F326D98AD5B049A0CFD5FEC634CA6BC7"
+  },
+  "method": "Linear totient sieve, multiplicative primitive counts, full divisor convolution, independent integer padding and directed weighted heights.",
+  "all_300000_divisor_identities": true,
+  "all_149999_rows_digest": "FED5ABB8B36C4444588D94A6F137872B401457D7D9A699E450938EBAEA335C7A",
+  "all_receipt_fields_match": true,
+  "reconstructed": {
+    "scope": "Arithmetic workload only. No spectral data or throughput estimate.",
+    "nonprincipal_conductors": 149999,
+    "single_common_point_totals": {
+      "primitive_outputs": 5543640187,
+      "unit_coefficients": 9118941848,
+      "direct_matrix_products": 490208540122572,
+      "tensor_direct_products": 160881965045064,
+      "padded_three_fft_butterflies": 760838324652,
+      "padded_pointwise_and_chirp_products": 118771491024
+    },
+    "T0_weighted_totals": {
+      "primitive_outputs": 5392479925954,
+      "unit_coefficients": 8173681360378,
+      "direct_matrix_products": 385807953290441342,
+      "tensor_direct_products": 132748505557378380,
+      "padded_three_fft_butterflies": 657261964876764,
+      "padded_pointwise_and_chirp_products": 99326932575036
+    },
+    "Hcert_weighted_bounds": {
+      "primitive_outputs": {
+        "lower": "5389139068717600551/1000000",
+        "upper": "5389139068717708803/1000000",
+        "width": "27063/250000"
+      },
+      "unit_coefficients": {
+        "lower": "8168419017363054371/1000000",
+        "upper": "2042104754340790659/250000",
+        "width": "21653/200000"
+      },
+      "direct_matrix_products": {
+        "lower": "385535018383469154078091/1000000",
+        "upper": "385535018383469154186051/1000000",
+        "width": "2699/25000"
+      },
+      "tensor_direct_products": {
+        "lower": "13265730748394360209979/100000",
+        "upper": "5306292299357744088313/40000",
+        "width": "21607/200000"
+      },
+      "padded_three_fft_butterflies": {
+        "lower": "328412990544657532911/500000",
+        "upper": "656825981089315173911/1000000",
+        "width": "108089/1000000"
+      },
+      "padded_pointwise_and_chirp_products": {
+        "lower": "99260431807662913459/1000000",
+        "upper": "99260431807663021617/1000000",
+        "width": "54079/500000"
+      }
+    },
+    "maxima": {
+      "phi": {
+        "value": "149992",
+        "conductor": 149993
+      },
+      "primitive": {
+        "value": "149991",
+        "conductor": 149993
+      },
+      "axes": {
+        "value": "7",
+        "conductor": 120120
+      },
+      "axis_order": {
+        "value": "149992",
+        "conductor": 149993
+      },
+      "padded_axis": {
+        "value": "524288",
+        "conductor": 131101
+      },
+      "height": {
+        "value": "25000000",
+        "conductor": 4
+      }
+    },
+    "arithmetic_row_digest_sha256": "FED5ABB8B36C4444588D94A6F137872B401457D7D9A699E450938EBAEA335C7A",
+    "groups_by_modulus_parity_and_floor_log2": {
+      "odd:1": {
+        "conductors": 1,
+        "primitive_outputs": 1,
+        "unit_coefficients": 2,
+        "primitive_T0": 20114487,
+        "unit_T0": 40228974
+      },
+      "four_divides:2": {
+        "conductors": 1,
+        "primitive_outputs": 1,
+        "unit_coefficients": 2,
+        "primitive_T0": 25000001,
+        "unit_T0": 50000002
+      },
+      "odd:2": {
+        "conductors": 2,
+        "primitive_outputs": 8,
+        "unit_coefficients": 10,
+        "primitive_T0": 79309369,
+        "unit_T0": 99998752
+      },
+      "four_divides:3": {
+        "conductors": 2,
+        "primitive_outputs": 3,
+        "unit_coefficients": 8,
+        "primitive_T0": 33333336,
+        "unit_T0": 83333340
+      },
+      "odd:3": {
+        "conductors": 4,
+        "primitive_outputs": 27,
+        "unit_coefficients": 36,
+        "primitive_T0": 139323833,
+        "unit_T0": 182976930
+      },
+      "four_divides:4": {
+        "conductors": 4,
+        "primitive_outputs": 14,
+        "unit_coefficients": 36,
+        "primitive_T0": 66190486,
+        "unit_T0": 166190500
+      },
+      "odd:4": {
+        "conductors": 8,
+        "primitive_outputs": 142,
+        "unit_coefficients": 164,
+        "primitive_T0": 354795806,
+        "unit_T0": 411355360
+      },
+      "four_divides:5": {
+        "conductors": 8,
+        "primitive_outputs": 55,
+        "unit_coefficients": 144,
+        "primitive_T0": 123910012,
+        "unit_T0": 317798952
+      },
+      "odd:5": {
+        "conductors": 16,
+        "primitive_outputs": 489,
+        "unit_coefficients": 612,
+        "primitive_T0": 608905087,
+        "unit_T0": 766912536
+      },
+      "four_divides:6": {
+        "conductors": 16,
+        "primitive_outputs": 252,
+        "unit_coefficients": 616,
+        "primitive_T0": 270889896,
+        "unit_T0": 658620252
+      },
+      "odd:6": {
+        "conductors": 32,
+        "primitive_outputs": 2038,
+        "unit_coefficients": 2502,
+        "primitive_T0": 1280819794,
+        "unit_T0": 1573105724
+      },
+      "four_divides:7": {
+        "conductors": 32,
+        "primitive_outputs": 993,
+        "unit_coefficients": 2456,
+        "primitive_T0": 523118403,
+        "unit_T0": 1293981660
+      },
+      "odd:7": {
+        "conductors": 64,
+        "primitive_outputs": 7975,
+        "unit_coefficients": 9904,
+        "primitive_T0": 2512228712,
+        "unit_T0": 3117193036
+      },
+      "four_divides:8": {
+        "conductors": 64,
+        "primitive_outputs": 4024,
+        "unit_coefficients": 9916,
+        "primitive_T0": 1053592539,
+        "unit_T0": 2597041048
+      },
+      "odd:8": {
+        "conductors": 128,
+        "primitive_outputs": 32482,
+        "unit_coefficients": 39956,
+        "primitive_T0": 5114226647,
+        "unit_T0": 6288100496
+      },
+      "four_divides:9": {
+        "conductors": 128,
+        "primitive_outputs": 16023,
+        "unit_coefficients": 39640,
+        "primitive_T0": 2093747672,
+        "unit_T0": 5178304776
+      },
+      "odd:9": {
+        "conductors": 256,
+        "primitive_outputs": 129026,
+        "unit_coefficients": 159260,
+        "primitive_T0": 10160217130,
+        "unit_T0": 12543342172
+      },
+      "four_divides:10": {
+        "conductors": 256,
+        "primitive_outputs": 64528,
+        "unit_coefficients": 159192,
+        "primitive_T0": 4209882743,
+        "unit_T0": 10382009828
+      },
+      "odd:10": {
+        "conductors": 512,
+        "primitive_outputs": 517001,
+        "unit_coefficients": 637658,
+        "primitive_T0": 20413815848,
+        "unit_T0": 25178526340
+      },
+      "four_divides:11": {
+        "conductors": 512,
+        "primitive_outputs": 258082,
+        "unit_coefficients": 636904,
+        "primitive_T0": 8408575697,
+        "unit_T0": 20749047388
+      },
+      "odd:11": {
+        "conductors": 1024,
+        "primitive_outputs": 2065835,
+        "unit_coefficients": 2548848,
+        "primitive_T0": 40996405109,
+        "unit_T0": 50582681208
+      },
+      "four_divides:12": {
+        "conductors": 1024,
+        "primitive_outputs": 1033165,
+        "unit_coefficients": 2549124,
+        "primitive_T0": 16823242372,
+        "unit_T0": 41506457420
+      },
+      "odd:12": {
+        "conductors": 2048,
+        "primitive_outputs": 8269938,
+        "unit_coefficients": 10201570,
+        "primitive_T0": 82887982785,
+        "unit_T0": 102250192592
+      },
+      "four_divides:13": {
+        "conductors": 2048,
+        "primitive_outputs": 4132165,
+        "unit_coefficients": 10195944,
+        "primitive_T0": 33637106866,
+        "unit_T0": 82997462420
+      },
+      "odd:13": {
+        "conductors": 4096,
+        "primitive_outputs": 33066910,
+        "unit_coefficients": 40796118,
+        "primitive_T0": 169040561484,
+        "unit_T0": 208554661536
+      },
+      "four_divides:14": {
+        "conductors": 4096,
+        "primitive_outputs": 16534268,
+        "unit_coefficients": 40795028,
+        "primitive_T0": 67293455138,
+        "unit_T0": 166034108348
+      },
+      "odd:14": {
+        "conductors": 8192,
+        "primitive_outputs": 132271184,
+        "unit_coefficients": 163188708,
+        "primitive_T0": 351428650139,
+        "unit_T0": 433568738714
+      },
+      "four_divides:15": {
+        "conductors": 8192,
+        "primitive_outputs": 66135446,
+        "unit_coefficients": 163182292,
+        "primitive_T0": 134591029593,
+        "unit_T0": 332091682872
+      },
+      "odd:15": {
+        "conductors": 16384,
+        "primitive_outputs": 529080442,
+        "unit_coefficients": 652740158,
+        "primitive_T0": 760537149704,
+        "unit_T0": 938285722512
+      },
+      "four_divides:16": {
+        "conductors": 16384,
+        "primitive_outputs": 264542076,
+        "unit_coefficients": 652742000,
+        "primitive_T0": 269244908759,
+        "unit_T0": 664344916268
+      },
+      "odd:16": {
+        "conductors": 32768,
+        "primitive_outputs": 2116512824,
+        "unit_coefficients": 2611075872,
+        "primitive_T0": 2091860614102,
+        "unit_T0": 2580669797452
+      },
+      "four_divides:17": {
+        "conductors": 32768,
+        "primitive_outputs": 1058164594,
+        "unit_coefficients": 2610964316,
+        "primitive_T0": 538750732470,
+        "unit_T0": 1329329141036
+      },
+      "odd:17": {
+        "conductors": 9464,
+        "primitive_outputs": 873818892,
+        "unit_coefficients": 1078064828,
+        "primitive_T0": 622206954605,
+        "unit_T0": 767644590778
+      },
+      "four_divides:18": {
+        "conductors": 9465,
+        "primitive_outputs": 436979284,
+        "unit_coefficients": 1078198024,
+        "primitive_T0": 155689135330,
+        "unit_T0": 384143139156
+      }
+    },
+    "grid_formula": "T0=floor(Hcert)+1; ny=2*rho*T0; S=2*rho*(3*nx+2)*T0+2*nx+1",
+    "uncertified_grid_examples": [
+      {
+        "nx": 1,
+        "rho": 1,
+        "totals": {
+          "primitive_outputs": 53941430180101,
+          "unit_coefficients": 81764170429324,
+          "direct_matrix_products": 3859550158524781136,
+          "tensor_direct_products": 1327967701468918992,
+          "padded_three_fft_butterflies": 6574902163741596,
+          "padded_pointwise_and_chirp_products": 993625640223432
+        }
+      },
+      {
+        "nx": 1,
+        "rho": 16,
+        "totals": {
+          "primitive_outputs": 862813419073201,
+          "unit_coefficients": 1307816374486024,
+          "direct_matrix_products": 61730743152090982436,
+          "tensor_direct_products": 21240243535075675992,
+          "padded_three_fft_butterflies": 105164196895256196,
+          "padded_pointwise_and_chirp_products": 15892665526478832
+        }
+      },
+      {
+        "nx": 4,
+        "rho": 16,
+        "totals": {
+          "primitive_outputs": 2415880899589075,
+          "unit_coefficients": 3661891319925976,
+          "direct_matrix_products": 172846374950978824364,
+          "tensor_direct_products": 59472778427390919816,
+          "padded_three_fft_butterflies": 294460207809712140,
+          "padded_pointwise_and_chirp_products": 44499534737035344
+        }
+      }
+    ]
+  },
+  "scope": "Arithmetic only. No spectral margins, L-values, transforms, or production cost measurements."
+}

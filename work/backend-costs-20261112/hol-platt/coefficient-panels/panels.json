@@ -1,0 +1,330 @@
+{
+  "bands": [
+    {
+      "band": 1,
+      "f": 1024,
+      "lo": 0,
+      "hi": 6401,
+      "degree": 56,
+      "panels": [
+        {
+          "j": 1066,
+          "first_cell": 512,
+          "seed_cpu": 0.022569444444444444,
+          "seed_wall": 0.02475837777779412,
+          "translate_cpu": 0.004415760869565217,
+          "translate_wall": 0.0042591108695373605,
+          "four_direct_cells_cpu": 0.033854166666666664,
+          "four_direct_cells_wall": 0.035182600000553066,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            9,
+            46,
+            6
+          ]
+        },
+        {
+          "j": 3200,
+          "first_cell": 848,
+          "seed_cpu": 0.02734375,
+          "seed_wall": 0.02637653749934543,
+          "translate_cpu": 0.0045138888888888885,
+          "translate_wall": 0.004612382222290358,
+          "four_direct_cells_cpu": 0.04375,
+          "four_direct_cells_wall": 0.04345619999949122,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            8,
+            45,
+            5
+          ]
+        },
+        {
+          "j": 5334,
+          "first_cell": 160,
+          "seed_cpu": 0.033854166666666664,
+          "seed_wall": 0.033537916666925106,
+          "translate_cpu": 0.004723837209302325,
+          "translate_wall": 0.00470669767453855,
+          "four_direct_cells_cpu": 0.05078125,
+          "four_direct_cells_wall": 0.05387367500043183,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            6,
+            43,
+            4
+          ]
+        }
+      ],
+      "uniform_seed_and_tail_error_in_grid_units": 6.1625657012977074e-09,
+      "original_complex_coefficients": 131220500,
+      "seed_groups": 409664,
+      "endpoint_cells": 6401,
+      "extrapolated_one_thread_hours": 3.71437621022241,
+      "direct_one_thread_hours": 19.49860945336613
+    },
+    {
+      "band": 2,
+      "f": 2048,
+      "lo": 6401,
+      "hi": 12801,
+      "degree": 56,
+      "panels": [
+        {
+          "j": 7467,
+          "first_cell": 1696,
+          "seed_cpu": 0.04375,
+          "seed_wall": 0.04361497999925632,
+          "translate_cpu": 0.004723837209302325,
+          "translate_wall": 0.00448569999994212,
+          "four_direct_cells_cpu": 0.06640625,
+          "four_direct_cells_wall": 0.06759710000005725,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            5,
+            43,
+            4
+          ]
+        },
+        {
+          "j": 9601,
+          "first_cell": 336,
+          "seed_cpu": 0.046875,
+          "seed_wall": 0.047326719999546185,
+          "translate_cpu": 0.005078125,
+          "translate_wall": 0.00492862499995681,
+          "four_direct_cells_cpu": 0.078125,
+          "four_direct_cells_wall": 0.07754730000063621,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            5,
+            40,
+            3
+          ]
+        },
+        {
+          "j": 11734,
+          "first_cell": 1024,
+          "seed_cpu": 0.05078125,
+          "seed_wall": 0.05428317500081903,
+          "translate_cpu": 0.005345394736842105,
+          "translate_wall": 0.00501611052631664,
+          "four_direct_cells_cpu": 0.08333333333333333,
+          "four_direct_cells_wall": 0.08466483333419698,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            4,
+            38,
+            3
+          ]
+        }
+      ],
+      "uniform_seed_and_tail_error_in_grid_units": 1.2831303417565794e-09,
+      "original_complex_coefficients": 262272000,
+      "seed_groups": 819200,
+      "endpoint_cells": 6400,
+      "extrapolated_one_thread_hours": 11.908638717001375,
+      "direct_one_thread_hours": 69.16956018518518
+    },
+    {
+      "band": 3,
+      "f": 4096,
+      "lo": 12801,
+      "hi": 25601,
+      "degree": 52,
+      "panels": [
+        {
+          "j": 14934,
+          "first_cell": 672,
+          "seed_cpu": 0.05859375,
+          "seed_wall": 0.06117982499927166,
+          "translate_cpu": 0.004954268292682927,
+          "translate_wall": 0.004604478048837869,
+          "four_direct_cells_cpu": 0.1015625,
+          "four_direct_cells_wall": 0.10522100000162027,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            4,
+            41,
+            2
+          ]
+        },
+        {
+          "j": 19201,
+          "first_cell": 2048,
+          "seed_cpu": 0.07291666666666667,
+          "seed_wall": 0.07539736666755441,
+          "translate_cpu": 0.004616477272727273,
+          "translate_wall": 0.0043759750000886425,
+          "four_direct_cells_cpu": 0.125,
+          "four_direct_cells_wall": 0.12594539999918197,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            3,
+            44,
+            2
+          ]
+        },
+        {
+          "j": 23467,
+          "first_cell": 3408,
+          "seed_cpu": 0.109375,
+          "seed_wall": 0.10911684999882709,
+          "translate_cpu": 0.0045138888888888885,
+          "translate_wall": 0.0044347444445722636,
+          "four_direct_cells_cpu": 0.1484375,
+          "four_direct_cells_wall": 0.15162150000105612,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            2,
+            45,
+            2
+          ]
+        }
+      ],
+      "uniform_seed_and_tail_error_in_grid_units": 8.89498410905295e-06,
+      "original_complex_coefficients": 1048832000,
+      "seed_groups": 3276800,
+      "endpoint_cells": 12800,
+      "extrapolated_one_thread_hours": 77.47091328825746,
+      "direct_one_thread_hours": 455.22222222222223
+    },
+    {
+      "band": 4,
+      "f": 8192,
+      "lo": 25601,
+      "hi": 64001,
+      "degree": 60,
+      "panels": [
+        {
+          "j": 32001,
+          "first_cell": 4096,
+          "seed_cpu": 0.1328125,
+          "seed_wall": 0.13869024999803514,
+          "translate_cpu": 0.005642361111111111,
+          "translate_wall": 0.0053434722220926135,
+          "four_direct_cells_cpu": 0.1796875,
+          "four_direct_cells_wall": 0.18124580000221613,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            2,
+            36,
+            2
+          ]
+        },
+        {
+          "j": 44801,
+          "first_cell": 6816,
+          "seed_cpu": 0.15625,
+          "seed_wall": 0.16031740000107675,
+          "translate_cpu": 0.005345394736842105,
+          "translate_wall": 0.00501225789488863,
+          "four_direct_cells_cpu": 0.203125,
+          "four_direct_cells_wall": 0.21523969999543624,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            2,
+            38,
+            1
+          ]
+        },
+        {
+          "j": 57601,
+          "first_cell": 1360,
+          "seed_cpu": 0.203125,
+          "seed_wall": 0.20120630000019446,
+          "translate_cpu": 0.005489864864864865,
+          "translate_wall": 0.0052421648648010594,
+          "four_direct_cells_cpu": 0.296875,
+          "four_direct_cells_wall": 0.29794749999564374,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            1,
+            37,
+            1
+          ]
+        }
+      ],
+      "uniform_seed_and_tail_error_in_grid_units": 1.3376818176639645e-08,
+      "original_complex_coefficients": 6292224000,
+      "seed_groups": 19660800,
+      "endpoint_cells": 38400,
+      "extrapolated_one_thread_hours": 926.6007597509791,
+      "direct_one_thread_hours": 4949.9375
+    },
+    {
+      "band": 5,
+      "f": 16384,
+      "lo": 64001,
+      "hi": 84241,
+      "degree": 48,
+      "panels": [
+        {
+          "j": 67374,
+          "first_cell": 13648,
+          "seed_cpu": 0.1875,
+          "seed_wall": 0.1865485999987868,
+          "translate_cpu": 0.004723837209302325,
+          "translate_wall": 0.004478186046431209,
+          "four_direct_cells_cpu": 0.375,
+          "four_direct_cells_wall": 0.377940899998066,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            2,
+            43,
+            1
+          ]
+        },
+        {
+          "j": 74121,
+          "first_cell": 2720,
+          "seed_cpu": 0.21875,
+          "seed_wall": 0.2149238999991212,
+          "translate_cpu": 0.0040625,
+          "translate_wall": 0.004061013999889837,
+          "four_direct_cells_cpu": 0.421875,
+          "four_direct_cells_wall": 0.42726740000216523,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            1,
+            50,
+            1
+          ]
+        },
+        {
+          "j": 80867,
+          "first_cell": 8192,
+          "seed_cpu": 0.234375,
+          "seed_wall": 0.2300656999941566,
+          "translate_cpu": 0.003761574074074074,
+          "translate_wall": 0.0037295851852158428,
+          "four_direct_cells_cpu": 0.390625,
+          "four_direct_cells_wall": 0.39364920000662096,
+          "max_coordinate_delta": 0,
+          "repetitions": [
+            1,
+            54,
+            1
+          ]
+        }
+      ],
+      "uniform_seed_and_tail_error_in_grid_units": 4.672618984535845e-06,
+      "original_complex_coefficients": 6632648000,
+      "seed_groups": 20725760,
+      "endpoint_cells": 20240,
+      "extrapolated_one_thread_hours": 1254.0290507185698,
+      "direct_one_thread_hours": 9116.052662037036
+    }
+  ],
+  "totals": {
+    "original_complex_coefficients": 14367196500,
+    "seed_groups": 44892224,
+    "endpoint_cells": 84241,
+    "extrapolated_one_thread_hours": 2273.72373868503,
+    "direct_one_thread_hours": 14609.88055389781
+  },
+  "precision": 440,
+  "seed_bits": 320,
+  "source_grid_bits": 94,
+  "band_sha256": "82192d1089d8d55dd005bde774853314818de015f92a8cb5f6bbc880e4b26ca6"
+}

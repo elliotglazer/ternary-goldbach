@@ -1,0 +1,49 @@
+*** Using kernel spec --stdknl from earlier build command;
+    use one of --expk, --stdknl, --otknl, --trknl to override
+*** Reduced build sequence (tools/sequences/upto-parallel); skipping help-doc build.
+*** Build log exists; new logging will concatenate onto this file
+Executing /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/tools/Holmake/tests/preexec/.hol_preexec:
+  HOLORIG=/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/tools/Holmake/tests/preexec /bin/rm -f sibling/sibling-tgt
+Executing /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/tools/Holmake/tests/preexec/sibling/.hol_preexec:
+  HOLORIG=/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/tools/Holmake/tests/preexec echo test > sibling-tgt
+Ignoring error executing: cat qux > foo
+Ignoring error executing: cat qux > foo
+Holmake: HOL state-file already set; ignoring earlier spec
+Holmake: HOL state-file already set; ignoring earlier spec
+Makefile:52: warning: pattern recipe did not update peer target 'File.or'.
+Makefile:52: warning: pattern recipe did not update peer target 'File.od'.
+Makefile:52: warning: pattern recipe did not update peer target 'File.op'.
+Makefile:52: warning: pattern recipe did not update peer target 'Main.or'.
+Makefile:52: warning: pattern recipe did not update peer target 'Main.od'.
+Makefile:52: warning: pattern recipe did not update peer target 'Main.op'.
+Makefile:52: warning: pattern recipe did not update peer target 'Proof.or'.
+Makefile:52: warning: pattern recipe did not update peer target 'Proof.od'.
+Makefile:52: warning: pattern recipe did not update peer target 'Proof.op'.
+Makefile:52: warning: pattern recipe did not update peer target 'Solver.or'.
+Makefile:52: warning: pattern recipe did not update peer target 'Solver.od'.
+Makefile:52: warning: pattern recipe did not update peer target 'Solver.op'.
+*** FATAL: Build failed in directory /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/statementdossier (exited with code 1)
+Command exited with non-zero status 1
+	Command being timed: "../run.sh bin/build -t --seq=tools/sequences/upto-parallel"
+	User time (seconds): 603.04
+	System time (seconds): 186.32
+	Percent of CPU this job got: 64%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20m 20.73s
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 718584
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 37252
+	Minor (reclaiming a frame) page faults: 41053707
+	Voluntary context switches: 4515631
+	Involuntary context switches: 10252
+	Swaps: 0
+	File system inputs: 13002252
+	File system outputs: 43056
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

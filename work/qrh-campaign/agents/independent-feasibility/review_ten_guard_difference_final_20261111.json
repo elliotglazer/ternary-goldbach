@@ -1,0 +1,35 @@
+{
+  "status": "PASS_EXACT_GEOMETRY_AND_WIDTH",
+  "checks": 40059,
+  "author_pins": {
+    "major-constants/RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "AFA91F89C51BFC62FAB135997C6ED9FC7FCEAE3FBF6062F973F65AE69ADAC054",
+    "major-constants/residue_difference_ten_guard_20261111.py": "F0A0DC446C54A503D8B6E84A2D9441EF420557EC296D329BB36896B550F884A4",
+    "major-constants/residue_difference_ten_guard_20261111.json": "692D89158DF2A16FF35B1BBEB6A7B29F6C96443B842DFFF55127EE99D4176D58"
+  },
+  "source_pins": {
+    "integration/EXACT_RESIDUE_FINITE_DIFFERENCE_CIRCUIT_V2_2026-11-11.md": "691A9B744FCCE7C7A8F0D8F18F08F70A68C758D2FFFF1C5E826F138E1257D025",
+    "prime-estimates/NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "55576F70A22E3B94108C80CE6255D312437085E08281EFC6FBA34E65147E22BC",
+    "moebius/REVIEW_NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "995BADD0DDBA1F915A768DC34AAEE70BD9E356EE73A665594A6871ECAC83E234",
+    "integration/RESIDUE_COEFFICIENT_GRID_CLOSURE_2026-11-11.md": "9C2DA6DA76D44AF80C83AC34FD713A57054EEBA7344D6E0274EA548920A530C4"
+  },
+  "scope": "abstract integer geometry and rational bounds only; optional b100 source closure remains separate",
+  "abstract_partition_fixtures": 304,
+  "ties_down_witnesses": 150,
+  "widths": [
+    {
+      "b": 100,
+      "live_and_Newton_raw_signed_bits": 506,
+      "traversal_raw_signed_bits": 507,
+      "coefficient_prescale_signed_bits": 479,
+      "cancelled_final_divisor_bits": 362
+    },
+    {
+      "b": 122,
+      "live_and_Newton_raw_signed_bits": 528,
+      "traversal_raw_signed_bits": 529,
+      "coefficient_prescale_signed_bits": 501,
+      "cancelled_final_divisor_bits": 384
+    }
+  ],
+  "geometric_sum": "3560791008422351/19073486328125"
+}

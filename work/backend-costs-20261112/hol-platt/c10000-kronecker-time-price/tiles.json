@@ -1,0 +1,536 @@
+[
+  {
+    "T": 16384,
+    "totals": {
+      "integer_products": 13634865054,
+      "full_integer_products": 13210976847,
+      "ragged_integer_products": 423888207,
+      "accumulation_pieces": 26363291202,
+      "input_payload_bytes": 31964699652722397,
+      "result_payload_bytes": 31964699652722397,
+      "output_real_grid_samples": 1775431871117,
+      "output_tile_sinks": 368456883
+    },
+    "by_N": {
+      "1073741824": {
+        "integer_products": 1222782276,
+        "full_integer_products": 1222710630,
+        "ragged_integer_products": 71646,
+        "accumulation_pieces": 2445359754,
+        "input_payload_bytes": 2962593348409989,
+        "result_payload_bytes": 2962593348409989,
+        "output_real_grid_samples": 391203395,
+        "output_tile_sinks": 71640
+      },
+      "536870912": {
+        "integer_products": 924513804,
+        "full_integer_products": 924405471,
+        "ragged_integer_products": 108333,
+        "accumulation_pieces": 1848720402,
+        "input_payload_bytes": 2189212697915751,
+        "result_payload_bytes": 2189212697915751,
+        "output_real_grid_samples": 591444502,
+        "output_tile_sinks": 108315
+      },
+      "268435456": {
+        "integer_products": 1059090654,
+        "full_integer_products": 1058842449,
+        "ragged_integer_products": 248205,
+        "accumulation_pieces": 2117490135,
+        "input_payload_bytes": 2528179248126444,
+        "result_payload_bytes": 2528179248126444,
+        "output_real_grid_samples": 1354552049,
+        "output_tile_sinks": 248124
+      },
+      "134217728": {
+        "integer_products": 1147602957,
+        "full_integer_products": 1147065186,
+        "ragged_integer_products": 537771,
+        "accumulation_pieces": 2293682595,
+        "input_payload_bytes": 2729969579044002,
+        "result_payload_bytes": 2729969579044002,
+        "output_real_grid_samples": 2933423372,
+        "output_tile_sinks": 537414
+      },
+      "67108864": {
+        "integer_products": 1037766129,
+        "full_integer_products": 1036793526,
+        "ragged_integer_products": 972603,
+        "accumulation_pieces": 2072819082,
+        "input_payload_bytes": 2461209925143609,
+        "result_payload_bytes": 2461209925143609,
+        "output_real_grid_samples": 5296704043,
+        "output_tile_sinks": 971331
+      },
+      "33554432": {
+        "integer_products": 1083382344,
+        "full_integer_products": 1081353528,
+        "ragged_integer_products": 2028816,
+        "accumulation_pieces": 2161002888,
+        "input_payload_bytes": 2564048725264785,
+        "result_payload_bytes": 2564048725264785,
+        "output_real_grid_samples": 11027274848,
+        "output_tile_sinks": 2023416
+      },
+      "16777216": {
+        "integer_products": 971482206,
+        "full_integer_products": 967843623,
+        "ragged_integer_products": 3638583,
+        "accumulation_pieces": 1932594897,
+        "input_payload_bytes": 2273652956124210,
+        "result_payload_bytes": 2273652956124210,
+        "output_real_grid_samples": 19642075222,
+        "output_tile_sinks": 3619128
+      },
+      "8388608": {
+        "integer_products": 1022722068,
+        "full_integer_products": 1015089216,
+        "ragged_integer_products": 7632852,
+        "accumulation_pieces": 2024057436,
+        "input_payload_bytes": 2407050397396788,
+        "result_payload_bytes": 2407050397396788,
+        "output_real_grid_samples": 40893514286,
+        "output_tile_sinks": 7552752
+      },
+      "4194304": {
+        "integer_products": 1006568490,
+        "full_integer_products": 991540491,
+        "ragged_integer_products": 15027999,
+        "accumulation_pieces": 1972247061,
+        "input_payload_bytes": 2367782129309592,
+        "result_payload_bytes": 2367782129309592,
+        "output_real_grid_samples": 78438787792,
+        "output_tile_sinks": 14720556
+      },
+      "2097152": {
+        "integer_products": 1028270100,
+        "full_integer_products": 997991553,
+        "ragged_integer_products": 30278547,
+        "accumulation_pieces": 1976106834,
+        "input_payload_bytes": 2394573088417647,
+        "result_payload_bytes": 2394573088417647,
+        "output_real_grid_samples": 153315520637,
+        "output_tile_sinks": 29078049
+      },
+      "1048576": {
+        "integer_products": 1161813615,
+        "full_integer_products": 1093179837,
+        "ragged_integer_products": 68633778,
+        "accumulation_pieces": 2159927067,
+        "input_payload_bytes": 2694519204554346,
+        "result_payload_bytes": 2694519204554346,
+        "output_real_grid_samples": 316504250746,
+        "output_tile_sinks": 63673167
+      },
+      "524288": {
+        "integer_products": 1207063401,
+        "full_integer_products": 1071018120,
+        "ragged_integer_products": 136045281,
+        "accumulation_pieces": 2119276626,
+        "input_payload_bytes": 2722269095820756,
+        "result_payload_bytes": 2722269095820756,
+        "output_real_grid_samples": 570838658378,
+        "output_tile_sinks": 118701153
+      },
+      "262144": {
+        "integer_products": 761807010,
+        "full_integer_products": 603143217,
+        "ragged_integer_products": 158663793,
+        "accumulation_pieces": 1240006425,
+        "input_payload_bytes": 1669639257194478,
+        "result_payload_bytes": 1669639257194478,
+        "output_real_grid_samples": 574204461847,
+        "output_tile_sinks": 127151838
+      }
+    },
+    "control_groups": {
+      "552": 8217297195,
+      "616": 3338703804,
+      "680": 1228976508,
+      "744": 849887547
+    },
+    "measured_full_products": {
+      "552": {
+        "w": 552,
+        "T": 16384,
+        "operand_bytes": 1130496,
+        "wall_median": 0.047432999999728054,
+        "cpu_median": 0.046875,
+        "samples": [
+          [
+            0.048608299999614246,
+            0.046875
+          ],
+          [
+            0.047432999999728054,
+            0.03125
+          ],
+          [
+            0.04558280000128434,
+            0.046875
+          ]
+        ]
+      },
+      "616": {
+        "w": 616,
+        "T": 16384,
+        "operand_bytes": 1261568,
+        "wall_median": 0.04973249999966356,
+        "cpu_median": 0.046875,
+        "samples": [
+          [
+            0.04973249999966356,
+            0.0625
+          ],
+          [
+            0.04582800000207499,
+            0.046875
+          ],
+          [
+            0.052598399997805245,
+            0.046875
+          ]
+        ]
+      },
+      "680": {
+        "w": 680,
+        "T": 16384,
+        "operand_bytes": 1392640,
+        "wall_median": 0.062097199999698205,
+        "cpu_median": 0.0625,
+        "samples": [
+          [
+            0.059987000000546686,
+            0.0625
+          ],
+          [
+            0.062097199999698205,
+            0.0625
+          ],
+          [
+            0.06857250000030035,
+            0.078125
+          ]
+        ]
+      },
+      "744": {
+        "w": 744,
+        "T": 16384,
+        "operand_bytes": 1523712,
+        "wall_median": 0.07646179999937885,
+        "cpu_median": 0.0625,
+        "samples": [
+          [
+            0.07152180000048247,
+            0.046875
+          ],
+          [
+            0.07853989999784972,
+            0.0625
+          ],
+          [
+            0.07646179999937885,
+            0.0625
+          ]
+        ]
+      }
+    },
+    "hour_model": {
+      "cpu_median": 186560.15285156248,
+      "wall_median": 193642.52123121955
+    },
+    "examples": {
+      "4": {
+        "field_width": 616,
+        "per_character_pair_work": {
+          "pair_count": 251669981,
+          "full_pairs": 251655235,
+          "input_fields": 8246641435449,
+          "result_fields": 8246641435449,
+          "pieces": 503305829,
+          "ragged_pairs": 14746
+        },
+        "max_integer_operand_bytes": 1261568
+      },
+      "10000": {
+        "field_width": 544,
+        "per_character_pair_work": {
+          "pair_count": 62,
+          "full_pairs": 55,
+          "input_fields": 1957473,
+          "result_fields": 1957473,
+          "pieces": 107,
+          "ragged_pairs": 7
+        },
+        "max_integer_operand_bytes": 1114112
+      }
+    }
+  },
+  {
+    "T": 65536,
+    "totals": {
+      "integer_products": 1051852215,
+      "full_integer_products": 888805833,
+      "ragged_integer_products": 163046382,
+      "accumulation_pieces": 1836492654,
+      "input_payload_bytes": 9404247455914392,
+      "result_payload_bytes": 9404247455914392,
+      "output_real_grid_samples": 1775431871117,
+      "output_tile_sinks": 107615058
+    },
+    "by_N": {
+      "1073741824": {
+        "integer_products": 76473168,
+        "full_integer_products": 76455246,
+        "ragged_integer_products": 17922,
+        "accumulation_pieces": 152895138,
+        "input_payload_bytes": 741095291808825,
+        "result_payload_bytes": 741095291808825,
+        "output_real_grid_samples": 391203395,
+        "output_tile_sinks": 17916
+      },
+      "536870912": {
+        "integer_products": 57854856,
+        "full_integer_products": 57827745,
+        "ragged_integer_products": 27111,
+        "accumulation_pieces": 115632906,
+        "input_payload_bytes": 547922769275685,
+        "result_payload_bytes": 547922769275685,
+        "output_real_grid_samples": 591444502,
+        "output_tile_sinks": 27093
+      },
+      "268435456": {
+        "integer_products": 66353448,
+        "full_integer_products": 66291261,
+        "ragged_integer_products": 62187,
+        "accumulation_pieces": 132534123,
+        "input_payload_bytes": 633491713415778,
+        "result_payload_bytes": 633491713415778,
+        "output_real_grid_samples": 1354552049,
+        "output_tile_sinks": 62106
+      },
+      "134217728": {
+        "integer_products": 72052797,
+        "full_integer_products": 71917866,
+        "ragged_integer_products": 134931,
+        "accumulation_pieces": 143724675,
+        "input_payload_bytes": 685254374756292,
+        "result_payload_bytes": 685254374756292,
+        "output_real_grid_samples": 2933423372,
+        "output_tile_sinks": 134574
+      },
+      "67108864": {
+        "integer_products": 65459652,
+        "full_integer_products": 65214480,
+        "ragged_integer_products": 245172,
+        "accumulation_pieces": 130241328,
+        "input_payload_bytes": 620618236291638,
+        "result_payload_bytes": 620618236291638,
+        "output_real_grid_samples": 5296704043,
+        "output_tile_sinks": 243900
+      },
+      "33554432": {
+        "integer_products": 68932776,
+        "full_integer_products": 68418312,
+        "ragged_integer_products": 514464,
+        "accumulation_pieces": 136423752,
+        "input_payload_bytes": 651253190644221,
+        "result_payload_bytes": 651253190644221,
+        "output_real_grid_samples": 11027274848,
+        "output_tile_sinks": 509064
+      },
+      "16777216": {
+        "integer_products": 63054144,
+        "full_integer_products": 62112747,
+        "ragged_integer_products": 941397,
+        "accumulation_pieces": 123520773,
+        "input_payload_bytes": 588981139765617,
+        "result_payload_bytes": 588981139765617,
+        "output_real_grid_samples": 19642075222,
+        "output_tile_sinks": 921942
+      },
+      "8388608": {
+        "integer_products": 68571102,
+        "full_integer_products": 66551949,
+        "ragged_integer_products": 2019153,
+        "accumulation_pieces": 131775504,
+        "input_payload_bytes": 640419912223833,
+        "result_payload_bytes": 640419912223833,
+        "output_real_grid_samples": 40893514286,
+        "output_tile_sinks": 1939053
+      },
+      "4194304": {
+        "integer_products": 71959761,
+        "full_integer_products": 67708749,
+        "ragged_integer_products": 4251012,
+        "accumulation_pieces": 133773903,
+        "input_payload_bytes": 670951193930826,
+        "result_payload_bytes": 670951193930826,
+        "output_real_grid_samples": 78438787792,
+        "output_tile_sinks": 3943569
+      },
+      "2097152": {
+        "integer_products": 81659100,
+        "full_integer_products": 72452478,
+        "ragged_integer_products": 9206622,
+        "accumulation_pieces": 142909734,
+        "input_payload_bytes": 738622005842028,
+        "result_payload_bytes": 738622005842028,
+        "output_real_grid_samples": 153315520637,
+        "output_tile_sinks": 8006124
+      },
+      "1048576": {
+        "integer_products": 108259554,
+        "full_integer_products": 85615521,
+        "ragged_integer_products": 22644033,
+        "accumulation_pieces": 171873609,
+        "input_payload_bytes": 932675278860795,
+        "result_payload_bytes": 932675278860795,
+        "output_real_grid_samples": 316504250746,
+        "output_tile_sinks": 17683422
+      },
+      "524288": {
+        "integer_products": 144995424,
+        "full_integer_products": 90882240,
+        "ragged_integer_products": 54113184,
+        "accumulation_pieces": 203270208,
+        "input_payload_bytes": 1153090603454481,
+        "result_payload_bytes": 1153090603454481,
+        "output_real_grid_samples": 570838658378,
+        "output_tile_sinks": 36769056
+      },
+      "262144": {
+        "integer_products": 106226433,
+        "full_integer_products": 37357239,
+        "ragged_integer_products": 68869194,
+        "accumulation_pieces": 117917001,
+        "input_payload_bytes": 799871745644373,
+        "result_payload_bytes": 799871745644373,
+        "output_real_grid_samples": 574204461847,
+        "output_tile_sinks": 37357239
+      }
+    },
+    "control_groups": {
+      "552": 638542494,
+      "616": 241218072,
+      "680": 103539564,
+      "744": 68552085
+    },
+    "measured_full_products": {
+      "552": {
+        "w": 552,
+        "T": 65536,
+        "operand_bytes": 4521984,
+        "wall_median": 0.2647887000021001,
+        "cpu_median": 0.265625,
+        "samples": [
+          [
+            0.2572366000022157,
+            0.265625
+          ],
+          [
+            0.2647887000021001,
+            0.265625
+          ],
+          [
+            0.29965699999956996,
+            0.265625
+          ]
+        ]
+      },
+      "616": {
+        "w": 616,
+        "T": 65536,
+        "operand_bytes": 5046272,
+        "wall_median": 0.3326125999992655,
+        "cpu_median": 0.328125,
+        "samples": [
+          [
+            0.3449944999993022,
+            0.328125
+          ],
+          [
+            0.30690060000051744,
+            0.296875
+          ],
+          [
+            0.3326125999992655,
+            0.328125
+          ]
+        ]
+      },
+      "680": {
+        "w": 680,
+        "T": 65536,
+        "operand_bytes": 5570560,
+        "wall_median": 0.3694759999998496,
+        "cpu_median": 0.34375,
+        "samples": [
+          [
+            0.4499902000025031,
+            0.40625
+          ],
+          [
+            0.34208760000183247,
+            0.34375
+          ],
+          [
+            0.3694759999998496,
+            0.34375
+          ]
+        ]
+      },
+      "744": {
+        "w": 744,
+        "T": 65536,
+        "operand_bytes": 6094848,
+        "wall_median": 0.43483980000019073,
+        "cpu_median": 0.390625,
+        "samples": [
+          [
+            0.45060910000029253,
+            0.390625
+          ],
+          [
+            0.43483980000019073,
+            0.296875
+          ],
+          [
+            0.41045950000261655,
+            0.390625
+          ]
+        ]
+      }
+    },
+    "hour_model": {
+      "cpu_median": 86425.67032552084,
+      "wall_median": 88159.87940459259
+    },
+    "examples": {
+      "4": {
+        "field_width": 616,
+        "per_character_pair_work": {
+          "pair_count": 15736695,
+          "full_pairs": 15733007,
+          "input_fields": 2062559526511,
+          "result_fields": 2062559526511,
+          "pieces": 31464857,
+          "ragged_pairs": 3688
+        },
+        "max_integer_operand_bytes": 5046272
+      },
+      "10000": {
+        "field_width": 544,
+        "per_character_pair_work": {
+          "pair_count": 8,
+          "full_pairs": 5,
+          "input_fields": 887045,
+          "result_fields": 887045,
+          "pieces": 11,
+          "ragged_pairs": 3
+        },
+        "max_integer_operand_bytes": 4456448
+      }
+    }
+  }
+]

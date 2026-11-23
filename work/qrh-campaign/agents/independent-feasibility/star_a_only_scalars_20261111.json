@@ -1,0 +1,47 @@
+{
+  "status": "PASS_EXACT_A_ONLY_COMPARISON",
+  "checks": {
+    "polynomial_integral": true,
+    "actual_P0_lower": true,
+    "q3_q6_weight": true,
+    "coefficient_ratio": true,
+    "liminf_C_log": true,
+    "principal_amplitude": true,
+    "principal_subtraction_upper": true,
+    "comparison_floor_gt_38": true,
+    "new_target_smaller": true,
+    "C_square_threshold": true,
+    "beyond_conductor_domain": true,
+    "tail_bound_above_target_10000": true,
+    "tail_bound_above_target_50000": true,
+    "tail_bound_above_target_100000": true,
+    "tail_bound_above_target_132899": true,
+    "q3_required_L2": true
+  },
+  "pins": {
+    "work/qrh-campaign/agents/major-constants/PLUS_STAR_CUBIC_BUDGET_REALLOCATION_2026-11-11.md": "7A5B81DA0290BE52D8E64A521702D0299114FF9DE2923E1897AE608E5241ECAD",
+    "work/qrh-campaign/agents/audit/REVIEW_PLUS_STAR_CUBIC_BUDGET_REALLOCATION_2026-11-11.md": "AD993398C6E41DCCE3A9826C0FA5BF6DA89A3B0139672429D7BD61E797DE9F0E",
+    "work/qrh-campaign/agents/audit/ETA_U_PRIME_COEFFICIENT_ENERGY_2026-11-11.md": "0B97BC320F7BEEA4B7CC9D8144FBB70CFC19A4AF756602BDA4DCBD1239399D5C",
+    "work/qrh-campaign/agents/mellin/PointwiseSmoothingTail.md": "77E452E1D87CD8E63788D96201F926299AA65459EDEF05D2EF26DD430F63296C",
+    "work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md": "AFDBBF90157F5170666C481D512D475A1F719366C8FB785D312A213864C38D0B",
+    "work/qrh-campaign/agents/independent-feasibility/MODULUS_WEIGHTED_PLUS_STAR_RESEARCH_2026-11-11.md": "A86643A179B34576117DF2F9125E78B7029696A367D5057EAA8531769B30DE1A",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveProof.lean": "FB71222C80D0377BDF6739529E527F4BE6A0C908286FF87F0EC19D67DDE9CAF1",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveWeights.lean": "4577368FF4AD237E00D04259B813AFE2755ED165766070711CA33FB75E6F2304",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LSQuot1.lean": "9AAEAC8990CA63FE1267F24280EE89A956455EC9AC59A6246A56FDE5469E762E",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/Bombieri.lean": "F3236E24D824647816AB0370CB57FB958C642194643393F20E785096888D3C79",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/EtaCirc.lean": "92491AA65FAE2EFACE1797174018FFEA43C11DD827F83B0A4B0958B54BB0D3CE",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/MajorTotal.lean": "106293987C887D3586DC3483260B135853730F3A20466D0D7E71ABC61AB9F84A"
+  },
+  "P0_lower": "5426077/6300000",
+  "coefficient_lower": "5547/5000",
+  "principal_upper": "3204601157/1015625000",
+  "comparison_lower": "7996571791889/208000000000",
+  "split_upper_comparisons": {
+    "10000": "168903/320000000",
+    "50000": "168903/8000000000",
+    "100000": "168903/32000000000",
+    "132899": "844515/282594307216"
+  },
+  "first_integer_C_passing_scalar_tail": 22974375,
+  "scope": "Upper-comparison obstruction and conditional split inequalities; no actual A lower bound."
+}

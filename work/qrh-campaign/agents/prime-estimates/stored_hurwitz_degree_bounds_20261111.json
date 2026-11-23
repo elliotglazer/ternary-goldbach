@@ -1,0 +1,459 @@
+{
+  "status": "PASS_STORED_FINITE_JET_AND_RECURSIVE_MAGNITUDE_ENVELOPES",
+  "checks": 266,
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/SCALED_HURWITZ_EM_SEED_PRECISION_2026-11-11.md": "251B95AE92B6277C0B14C69F3CFE697F3100FD27C2D7963E4B42676FF4DAB231",
+    "work/qrh-campaign/agents/major-constants/JOINT_QUARTER_MESH_HEAD_TRADEOFF_2026-11-11.md": "AA1A7464A38CA5FDEDF21F000965C765DE22DFB2C8D4F796EC5C0B0A7A8F1D9F",
+    "work/qrh-blueprint/JOINT_SEED_159_CORRECTIONS_2026-11-11.md": "E6F0F3B277828EA451E05F3608478F760C83F02FEE1B70A899FA40434781CBE9",
+    "work/qrh-campaign/agents/major-constants/RECONCILED_NONPRINCIPAL_OPERATION_SCHEDULE_2026-11-11.md": "483B6F4DC38CE5113ADF33419AEC9187BDA03A080FC7ED87ABB1727BBAAAE716"
+  },
+  "weighted_numeric_error": "2213/649037107316853453566312041152512",
+  "flat_numeric_error": "293/4835703278458516698824704",
+  "finite_factorial_majorants": {
+    "first": "569/304",
+    "final": "657/272"
+  },
+  "cohorts": {
+    "first_four": [
+      {
+        "degree": 0,
+        "ideal_finite_polynomial_bound": "429506796138000941432042656353086341121/83076749736557242056487941267521536",
+        "numerical_coefficient_error_bound": "2213/649037107316853453566312041152512",
+        "stored_center_norm_bound": "429506796138000941432042656353086624385/83076749736557242056487941267521536",
+        "stored_center_strict_power_of_two": 13,
+        "state_envelope_all_grids_at_least70": "667249293591700663167593613143914182243233905853/129006836746105406377423555564744970424287232",
+        "state_strict_power_of_two": 13,
+        "product_output_envelope_all_grids_at_least70": "283947614335712196313748919401386521816245357/129006836746105406377423555564744970424287232",
+        "product_output_strict_power_of_two": 2
+      },
+      {
+        "degree": 1,
+        "ideal_finite_polynomial_bound": "15/2",
+        "numerical_coefficient_error_bound": "2213/162259276829213363391578010288128",
+        "stored_center_norm_bound": "1216944576219100225436835077163173/162259276829213363391578010288128",
+        "stored_center_strict_power_of_two": 3,
+        "state_envelope_all_grids_at_least70": "283947614335712196313666964620527765789647981/32251709186526351594355888891186242606071808",
+        "state_strict_power_of_two": 4,
+        "product_output_envelope_all_grids_at_least70": "42059795436764559355977309240976386964249709/32251709186526351594355888891186242606071808",
+        "product_output_strict_power_of_two": 1
+      },
+      {
+        "degree": 2,
+        "ideal_finite_polynomial_bound": "75/16",
+        "numerical_coefficient_error_bound": "2213/40564819207303340847894502572032",
+        "stored_center_norm_bound": "190147590034234410224505480808613/40564819207303340847894502572032",
+        "stored_center_strict_power_of_two": 3,
+        "state_envelope_all_grids_at_least70": "42059795436764559355956820545761697957600365/8062927296631587898588972222796560651517952",
+        "state_strict_power_of_two": 3,
+        "product_output_envelope_all_grids_at_least70": "4264823733803991081315891077159277378737261/8062927296631587898588972222796560651517952",
+        "product_output_strict_power_of_two": 0
+      },
+      {
+        "degree": 3,
+        "ideal_finite_polynomial_bound": "125/64",
+        "numerical_coefficient_error_bound": "2213/10141204801825835211973625643008",
+        "stored_center_norm_bound": "19807040628566084398385987586213/10141204801825835211973625643008",
+        "stored_center_strict_power_of_two": 1,
+        "state_envelope_all_grids_at_least70": "4264823733803991081310768903355605127074925/2015731824157896974647243055699140162879488",
+        "state_strict_power_of_two": 2,
+        "product_output_envelope_all_grids_at_least70": "327847514745598552701591766302433660324973/2015731824157896974647243055699140162879488",
+        "product_output_strict_power_of_two": -2
+      },
+      {
+        "degree": 4,
+        "ideal_finite_polynomial_bound": "625/1024",
+        "numerical_coefficient_error_bound": "2213/2535301200456458802993406410752",
+        "stored_center_norm_bound": "1547425049106725343623905282213/2535301200456458802993406410752",
+        "stored_center_strict_power_of_two": 0,
+        "state_envelope_all_grids_at_least70": "327847514745598552700311222851515597409389/503932956039474243661810763924785040719872",
+        "state_strict_power_of_two": 0,
+        "product_output_envelope_all_grids_at_least70": "20271247631661636402499165208104626390125/503932956039474243661810763924785040719872",
+        "product_output_strict_power_of_two": -4
+      },
+      {
+        "degree": 5,
+        "ideal_finite_polynomial_bound": "625/4096",
+        "numerical_coefficient_error_bound": "2213/633825300114114700748351602688",
+        "stored_center_norm_bound": "96714065569170333976494082213/633825300114114700748351602688",
+        "stored_center_strict_power_of_two": -2,
+        "state_envelope_all_grids_at_least70": "20271247631661636402179029345375110661229/125983239009868560915452690981196260179968",
+        "state_strict_power_of_two": -2,
+        "product_output_envelope_all_grids_at_least70": "1047730937040579133505749856021759638637/125983239009868560915452690981196260179968",
+        "product_output_strict_power_of_two": -6
+      },
+      {
+        "degree": 6,
+        "ideal_finite_polynomial_bound": "3125/98304",
+        "numerical_coefficient_error_bound": "2213/158456325028528675187087900672",
+        "stored_center_norm_bound": "15111572745182864683827206639/475368975085586025561263702016",
+        "stored_center_strict_power_of_two": -4,
+        "state_envelope_all_grids_at_least70": "1047730937040579133425715890339380706413/31495809752467140228863172745299065044992",
+        "state_strict_power_of_two": -4,
+        "product_output_envelope_all_grids_at_least70": "46506109195732400666475444267226362989/31495809752467140228863172745299065044992",
+        "product_output_strict_power_of_two": -9
+      },
+      {
+        "degree": 7,
+        "ideal_finite_polynomial_bound": "15625/2752512",
+        "numerical_coefficient_error_bound": "2213/39614081257132168796771975168",
+        "stored_center_norm_bound": "4722366482869645213696046473/831895706399775544732211478528",
+        "stored_center_strict_power_of_two": -7,
+        "state_envelope_all_grids_at_least70": "46506109195732400646466952846631629933/7873952438116785057215793186324766261248",
+        "state_strict_power_of_two": -7,
+        "product_output_envelope_all_grids_at_least70": "1808572238373171501320126068473736301/7873952438116785057215793186324766261248",
+        "product_output_strict_power_of_two": -12
+      },
+      {
+        "degree": 8,
+        "ideal_finite_polynomial_bound": "78125/88080384",
+        "numerical_coefficient_error_bound": "2213/9903520314283042199192993792",
+        "stored_center_norm_bound": "184467440737095516160046473/207973926599943886183052869632",
+        "stored_center_strict_power_of_two": -10,
+        "state_envelope_all_grids_at_least70": "1808572238373171496318003213325053037/1968488109529196264303948296581191565312",
+        "state_strict_power_of_two": -10,
+        "product_output_envelope_all_grids_at_least70": "62574700976326606780147314704671853/1968488109529196264303948296581191565312",
+        "product_output_strict_power_of_two": -14
+      },
+      {
+        "degree": 9,
+        "ideal_finite_polynomial_bound": "390625/3170893824",
+        "numerical_coefficient_error_bound": "2213/2475880078570760549798248448",
+        "stored_center_norm_bound": "57646075230342348800418257/467941334849873743911868956672",
+        "stored_center_strict_power_of_two": -12,
+        "state_envelope_all_grids_at_least70": "62574700976326605529616600917501037/492122027382299066075987074145297891328",
+        "state_strict_power_of_two": -12,
+        "product_output_envelope_all_grids_at_least70": "1949786483380602151027200997497965/492122027382299066075987074145297891328",
+        "product_output_strict_power_of_two": -17
+      },
+      {
+        "degree": 10,
+        "ideal_finite_polynomial_bound": "390625/25367150592",
+        "numerical_coefficient_error_bound": "2213/618970019642690137449562112",
+        "stored_center_norm_bound": "1801439850948198400418257/116985333712468435977967239168",
+        "stored_center_strict_power_of_two": -15,
+        "state_envelope_all_grids_at_least70": "1949786483380601838394522550705261/123030506845574766518996768536324472832",
+        "state_strict_power_of_two": -15,
+        "product_output_envelope_all_grids_at_least70": "55257905476039163999081065796717/123030506845574766518996768536324472832",
+        "product_output_strict_power_of_two": -21
+      },
+      {
+        "degree": 11,
+        "ideal_finite_polynomial_bound": "1953125/1116154626048",
+        "numerical_coefficient_error_bound": "2213/154742504910672534362390528",
+        "stored_center_norm_bound": "562949953421312004600827/321709667709288198939409907712",
+        "stored_center_strict_power_of_two": -19,
+        "state_envelope_all_grids_at_least70": "55257905476039085840911454098541/30757626711393691629749192134081118208",
+        "state_strict_power_of_two": -19,
+        "product_output_envelope_all_grids_at_least70": "1436070876477628480890777963629/30757626711393691629749192134081118208",
+        "product_output_strict_power_of_two": -24
+      },
+      {
+        "degree": 12,
+        "ideal_finite_polynomial_bound": "9765625/53575422050304",
+        "numerical_coefficient_error_bound": "2213/38685626227668133590597632",
+        "stored_center_norm_bound": "43980465111040013802481/241282250781966149204557430784",
+        "stored_center_strict_power_of_two": -22,
+        "state_envelope_all_grids_at_least70": "1436070876477608941348375039085/7689406677848422907437298033520279552",
+        "state_strict_power_of_two": -22,
+        "product_output_envelope_all_grids_at_least70": "34460600447357851472501097581/7689406677848422907437298033520279552",
+        "product_output_strict_power_of_two": -27
+      },
+      {
+        "degree": 13,
+        "ideal_finite_polynomial_bound": "48828125/2785921946615808",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "6871947673600023756733/392083657520694992457405825024",
+        "stored_center_strict_power_of_two": -25,
+        "state_envelope_all_grids_at_least70": "34460600447352966586900366445/1922351669462105726859324508380069888",
+        "state_strict_power_of_two": -25,
+        "product_output_envelope_all_grids_at_least70": "768045735086105688328877165/1922351669462105726859324508380069888",
+        "product_output_strict_power_of_two": -31
+      },
+      {
+        "degree": 14,
+        "ideal_finite_polynomial_bound": "244140625/156011629010485248",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "4294967296000166297131/2744585602644864947201840775168",
+        "stored_center_strict_power_of_two": -29,
+        "state_envelope_all_grids_at_least70": "768045735084884466928694381/480587917365526431714831127095017472",
+        "state_strict_power_of_two": -29,
+        "product_output_envelope_all_grids_at_least70": "15979781685766042285822061/480587917365526431714831127095017472",
+        "product_output_strict_power_of_two": -34
+      },
+      {
+        "degree": 15,
+        "ideal_finite_polynomial_bound": "244140625/1872139548125822976",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "1073741824000498891393/8233756807934594841605522325504",
+        "stored_center_strict_power_of_two": -32,
+        "state_envelope_all_grids_at_least70": "15979781685460736935776365/120146979341381607928707781773754368",
+        "state_strict_power_of_two": -32,
+        "product_output_envelope_all_grids_at_least70": "311740989569130775058285/120146979341381607928707781773754368",
+        "product_output_strict_power_of_two": -38
+      },
+      {
+        "degree": 16,
+        "ideal_finite_polynomial_bound": "1220703125/119816931080052670464",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "83886080000498891393/8233756807934594841605522325504",
+        "stored_center_strict_power_of_two": -36,
+        "state_envelope_all_grids_at_least70": "311740989492804437546861/30036744835345401982176945443438592",
+        "state_strict_power_of_two": -36,
+        "product_output_envelope_all_grids_at_least70": "5724569631902897367341/30036744835345401982176945443438592",
+        "product_output_strict_power_of_two": -42
+      },
+      {
+        "degree": 17,
+        "ideal_finite_polynomial_bound": "6103515625/8147551313443581591552",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "104857600008481153681/139973865734888112307293879533568",
+        "stored_center_strict_power_of_two": -40,
+        "state_envelope_all_grids_at_least70": "5724569612821312989485/7509186208836350495544236360859648",
+        "state_strict_power_of_two": -40,
+        "product_output_envelope_all_grids_at_least70": "1687552129130775058285/127656165550217958424252018134614016",
+        "product_output_strict_power_of_two": -46
+      },
+      {
+        "degree": 18,
+        "ideal_finite_polynomial_bound": "30517578125/586623694567937874591744",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "65536000076330383129/1259764791613993010765644915802112",
+        "stored_center_strict_power_of_two": -44,
+        "state_envelope_all_grids_at_least70": "1687552048034041452397/31914041387554489606063004533653504",
+        "state_strict_power_of_two": -44,
+        "product_output_envelope_all_grids_at_least70": "81920077478465034971/95742124162663468818189013600960512",
+        "product_output_strict_power_of_two": -50
+      },
+      {
+        "degree": 19,
+        "ideal_finite_polynomial_bound": "152587890625/44583400787163278468972544",
+        "numerical_coefficient_error_bound": "293/4835703278458516698824704",
+        "stored_center_norm_bound": "81920001450277279451/23935531040665867204547253400240128",
+        "stored_center_strict_power_of_two": -48,
+        "state_envelope_all_grids_at_least70": "81920016655914830555/23935531040665867204547253400240128",
+        "state_strict_power_of_two": -48
+      }
+    ],
+    "final": [
+      {
+        "degree": 0,
+        "ideal_finite_polynomial_bound": "374800756436477997537845347028423409665/83076749736557242056487941267521536",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "374800756436477997537845347028423475201/83076749736557242056487941267521536",
+        "stored_center_strict_power_of_two": 13,
+        "state_envelope_all_grids_at_least70": "52954510025689455945660849090648160684359681846852745/11732903257214447878364417333661154978721918091264",
+        "state_strict_power_of_two": 13,
+        "product_output_envelope_all_grids_at_least70": "21516980766474342419772836219131386135278869855369/11732903257214447878364417333661154978721918091264",
+        "product_output_strict_power_of_two": 1
+      },
+      {
+        "degree": 1,
+        "ideal_finite_polynomial_bound": "105/16",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "8318957063997755447322114785281/1267650600228229401496703205376",
+        "stored_center_strict_power_of_two": 3,
+        "state_envelope_all_grids_at_least70": "21516980766474342419765382602412030184723404078217/2933225814303611969591104333415288744680479522816",
+        "state_strict_power_of_two": 3,
+        "product_output_envelope_all_grids_at_least70": "2267686360106888869321897010192044902947801578633/2933225814303611969591104333415288744680479522816",
+        "product_output_strict_power_of_two": 0
+      },
+      {
+        "degree": 2,
+        "ideal_finite_polynomial_bound": "735/256",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "3639543715499018008203425218561/1267650600228229401496703205376",
+        "stored_center_strict_power_of_two": 2,
+        "state_envelope_all_grids_at_least70": "2267686360106888869320033606012205915308935134345/733306453575902992397776083353822186170119880704",
+        "state_strict_power_of_two": 2,
+        "product_output_envelope_all_grids_at_least70": "162294784410448637240015328150029774282078600329/733306453575902992397776083353822186170119880704",
+        "product_output_strict_power_of_two": -2
+      },
+      {
+        "degree": 3,
+        "ideal_finite_polynomial_bound": "1715/2048",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "1061533583687213585725999022081/1267650600228229401496703205376",
+        "stored_center_strict_power_of_two": 0,
+        "state_envelope_all_grids_at_least70": "162294784410448637239549477105070027372361989257/183326613393975748099444020838455546542529970176",
+        "state_strict_power_of_two": 0,
+        "product_output_envelope_all_grids_at_least70": "8776648682583203650298983221638956641837956233/183326613393975748099444020838455546542529970176",
+        "product_output_strict_power_of_two": -4
+      },
+      {
+        "degree": 4,
+        "ideal_finite_polynomial_bound": "12005/65536",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "232210471431577971877562286081/1267650600228229401496703205376",
+        "stored_center_strict_power_of_two": -2,
+        "state_envelope_all_grids_at_least70": "8776648682583203650182520460399019914408803465/45831653348493937024861005209613886635632492544",
+        "state_strict_power_of_two": -2,
+        "product_output_envelope_all_grids_at_least70": "381125634965562750747637443065962154610179209/45831653348493937024861005209613886635632492544",
+        "product_output_strict_power_of_two": -6
+      },
+      {
+        "degree": 5,
+        "ideal_finite_polynomial_bound": "16807/524288",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "40636832500526145078573400065/1267650600228229401496703205376",
+        "stored_center_strict_power_of_two": -4,
+        "state_envelope_all_grids_at_least70": "381125634965562750718521752755977972752891017/11457913337123484256215251302403471658908123136",
+        "state_strict_power_of_two": -4,
+        "product_output_envelope_all_grids_at_least70": "13821501632290961362240509613765530846805129/11457913337123484256215251302403471658908123136",
+        "product_output_strict_power_of_two": -9
+      },
+      {
+        "degree": 6,
+        "ideal_finite_polynomial_bound": "117649/25165824",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "17778614218980188471875862531/3802951800684688204490109616128",
+        "stored_center_strict_power_of_two": -7,
+        "state_envelope_all_grids_at_least70": "13821501632290961354961587036269485382483081/2864478334280871064053812825600867914727030784",
+        "state_strict_power_of_two": -7,
+        "product_output_envelope_all_grids_at_least70": "430205104515427366459480119376716357745801/2864478334280871064053812825600867914727030784",
+        "product_output_strict_power_of_two": -12
+      },
+      {
+        "degree": 7,
+        "ideal_finite_polynomial_bound": "117649/201326592",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "2222326777372523558984482819/3802951800684688204490109616128",
+        "stored_center_strict_power_of_two": -10,
+        "state_envelope_all_grids_at_least70": "430205104515427364639749475002704991665289/716119583570217766013453206400216978681757696",
+        "state_strict_power_of_two": -10,
+        "product_output_envelope_all_grids_at_least70": "11727088022441927100992554898687073238153/716119583570217766013453206400216978681757696",
+        "product_output_strict_power_of_two": -15
+      },
+      {
+        "degree": 8,
+        "ideal_finite_polynomial_bound": "823543/12884901888",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "243066991275119764263927811/3802951800684688204490109616128",
+        "stored_center_strict_power_of_two": -13,
+        "state_envelope_all_grids_at_least70": "11727088022441926646059893805184231718025/179029895892554441503363301600054244670439424",
+        "state_strict_power_of_two": -13,
+        "product_output_envelope_all_grids_at_least70": "284329758961855987065908823707060845705/179029895892554441503363301600054244670439424",
+        "product_output_strict_power_of_two": -19
+      },
+      {
+        "degree": 9,
+        "ideal_finite_polynomial_bound": "5764801/927712935936",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "212683617365729793730936859/34226566206162193840410986545152",
+        "stored_center_strict_power_of_two": -17,
+        "state_envelope_all_grids_at_least70": "284329758961855873332743550331350465673/44757473973138610375840825400013561167609856",
+        "state_strict_power_of_two": -17,
+        "product_output_envelope_all_grids_at_least70": "6207162280048574702140609985201355913/44757473973138610375840825400013561167609856",
+        "product_output_strict_power_of_two": -22
+      },
+      {
+        "degree": 10,
+        "ideal_finite_polynomial_bound": "40353607/74217034874880",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "93049082597506784757284999/171132831030810969202054932725760",
+        "stored_center_strict_power_of_two": -20,
+        "state_envelope_all_grids_at_least70": "6207162280048546268849291641273760905/11189368493284652593960206350003390291902464",
+        "state_strict_power_of_two": -20,
+        "product_output_envelope_all_grids_at_least70": "616152388170025624801311347438759597/55946842466423262969801031750016951459512320",
+        "product_output_strict_power_of_two": -26
+      },
+      {
+        "degree": 11,
+        "ideal_finite_polynomial_bound": "282475249/6531099068989440",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "81417947272818436662625741/1882461141338920661222604259983360",
+        "stored_center_strict_power_of_two": -24,
+        "state_envelope_all_grids_at_least70": "616152388169990083187163417529265837/13986710616605815742450257937504237864878080",
+        "state_strict_power_of_two": -24,
+        "product_output_envelope_all_grids_at_least70": "11215987361717870383568004996312749/13986710616605815742450257937504237864878080",
+        "product_output_strict_power_of_two": -30
+      },
+      {
+        "degree": 12,
+        "ideal_finite_polynomial_bound": "1977326743/626985510622986240",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "17810175965929033019953511/5647383424016761983667812779950080",
+        "stored_center_strict_power_of_two": -28,
+        "state_envelope_all_grids_at_least70": "11215987361708984980031022518939309/3496677654151453935612564484376059466219520",
+        "state_strict_power_of_two": -28,
+        "product_output_envelope_all_grids_at_least70": "37700177727892678016130901769353/699335530830290787122512896875211893243904",
+        "product_output_strict_power_of_two": -34
+      },
+      {
+        "degree": 13,
+        "ideal_finite_polynomial_bound": "13841287201/65206493104790568960",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "15583903970187903892513339/73415984512217905787681566139351040",
+        "stored_center_strict_power_of_two": -32,
+        "state_envelope_all_grids_at_least70": "37700177727448407839281777900681/174833882707572696780628224218802973310976",
+        "state_strict_power_of_two": -32,
+        "product_output_envelope_all_grids_at_least70": "226324770967190484470068941089/67243801041374114146395470853385758965760",
+        "product_output_strict_power_of_two": -38
+      },
+      {
+        "degree": 14,
+        "ideal_finite_polynomial_bound": "13841287201/1043303889676649103360",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "973993998136743993336379/73415984512217905787681566139351040",
+        "stored_center_strict_power_of_two": -36,
+        "state_envelope_all_grids_at_least70": "226324770924472198234576261409/16810950260343528536598867713346439741440",
+        "state_strict_power_of_two": -36,
+        "product_output_envelope_all_grids_at_least70": "8573571206757000645638789257/43708470676893174195157056054700743327744",
+        "product_output_strict_power_of_two": -42
+      },
+      {
+        "degree": 15,
+        "ideal_finite_polynomial_bound": "96889010407/125196466761197892403200",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "852244748369650994987381/1101239767683268586815223492090265600",
+        "stored_center_strict_power_of_two": -40,
+        "state_envelope_all_grids_at_least70": "8573571178990114592568547465/10927117669223293548789264013675185831936",
+        "state_strict_power_of_two": -40,
+        "product_output_envelope_all_grids_at_least70": "2928038041640722561974995041/273177941730582338719731600341879645798400",
+        "product_output_strict_power_of_two": -46
+      },
+      {
+        "degree": 16,
+        "ideal_finite_polynomial_bound": "678223072849/16025147745433330227609600",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "46607134676465289609589/1101239767683268586815223492090265600",
+        "stored_center_strict_power_of_two": -44,
+        "state_envelope_all_grids_at_least70": "2928037868097684730285983841/68294485432645584679932900085469911449600",
+        "state_strict_power_of_two": -44,
+        "product_output_envelope_all_grids_at_least70": "37649760616253871935459617/68294485432645584679932900085469911449600",
+        "product_output_strict_power_of_two": -50
+      },
+      {
+        "degree": 17,
+        "ideal_finite_polynomial_bound": "4747561509943/2179420093378932910954905600",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "40781242841907142416581/18721076050615565975858799365534515200",
+        "stored_center_strict_power_of_two": -48,
+        "state_envelope_all_grids_at_least70": "37649717230494414013206817/17073621358161396169983225021367477862400",
+        "state_strict_power_of_two": -48,
+        "product_output_envelope_all_grids_at_least70": "91442582447047129744349/3414724271632279233996645004273495572480",
+        "product_output_strict_power_of_two": -55
+      },
+      {
+        "degree": 18,
+        "ideal_finite_polynomial_bound": "33232930569601/313836493446566339177506406400",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "17841793743334501261037/168489684455540093782729194289810636800",
+        "stored_center_strict_power_of_two": -53,
+        "state_envelope_all_grids_at_least70": "91440413159074233631709/853681067908069808499161251068373893120",
+        "state_strict_power_of_two": -53,
+        "product_output_envelope_all_grids_at_least70": "15621738062793048214423/12805216018621047127487418766025608396800",
+        "product_output_strict_power_of_two": -59
+      },
+      {
+        "degree": 19,
+        "ideal_finite_polynomial_bound": "232630513987207/47703147003878083554980973772800",
+        "numerical_coefficient_error_bound": "1/1267650600228229401496703205376",
+        "stored_center_norm_bound": "15611569525420097686423/3201304004655261781871854691506402099200",
+        "stored_center_strict_power_of_two": -57,
+        "state_envelope_all_grids_at_least70": "15613603232894687792023/3201304004655261781871854691506402099200",
+        "state_strict_power_of_two": -57
+      }
+    ]
+  },
+  "scope": "Rational envelope metadata only; no coefficient arrays, functions, costs, values or builds."
+}

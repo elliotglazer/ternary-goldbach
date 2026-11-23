@@ -1,0 +1,6 @@
+INCLUDES = .. ../../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: inspect_cv.exe
+
+inspect_cv.exe: inspect_cv.uo
+	$(HOLMOSMLC) -o $@ $<

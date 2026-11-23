@@ -1,0 +1,165 @@
+{
+  "status": "PASS_SAVED_DATA_AUDIT_OF_FAILED_V4",
+  "capability_status": "FAIL",
+  "independent_account_decode": [
+    {
+      "job": "inner_normal",
+      "stage": "fresh_job_preassignment",
+      "fields": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 0,
+        "TotalProcesses": 0,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      }
+    },
+    {
+      "job": "inner_normal",
+      "stage": "postassignment_before_resume",
+      "fields": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 530,
+        "TotalProcesses": 1,
+        "ActiveProcesses": 1,
+        "TotalTerminatedProcesses": 0
+      }
+    },
+    {
+      "job": "inner_normal",
+      "stage": "handshake_baseline",
+      "fields": {
+        "TotalUserTime": 781250,
+        "TotalKernelTime": 937500,
+        "ThisPeriodTotalUserTime": 781250,
+        "ThisPeriodTotalKernelTime": 937500,
+        "TotalPageFaultCount": 6756,
+        "TotalProcesses": 2,
+        "ActiveProcesses": 2,
+        "TotalTerminatedProcesses": 0
+      }
+    },
+    {
+      "job": "outer",
+      "stage": "fresh_job_preassignment",
+      "fields": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 0,
+        "TotalProcesses": 0,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      }
+    },
+    {
+      "job": "outer",
+      "stage": "postassignment_before_resume",
+      "fields": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 530,
+        "TotalProcesses": 1,
+        "ActiveProcesses": 1,
+        "TotalTerminatedProcesses": 0
+      }
+    },
+    {
+      "job": "outer",
+      "stage": "postexit_before_exitcode_rejection",
+      "fields": {
+        "TotalUserTime": 2343750,
+        "TotalKernelTime": 2812500,
+        "ThisPeriodTotalUserTime": 2343750,
+        "ThisPeriodTotalKernelTime": 2812500,
+        "TotalPageFaultCount": 15542,
+        "TotalProcesses": 4,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      }
+    }
+  ],
+  "pid_buffer": {
+    "assigned": 2,
+    "listed": 2,
+    "returned_pids": [
+      30892,
+      29984
+    ],
+    "returned_bytes": 24,
+    "full_buffer_bytes": 72
+  },
+  "original_child_instance": [
+    30892,
+    134389003674607903,
+    "C:\\Users\\glaze\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe"
+  ],
+  "later_opened_candidate": [
+    29984,
+    134389003674807365,
+    "C:\\Windows\\System32\\conhost.exe"
+  ],
+  "identity_continuity_caveat": "The later opened candidate is not proved to be the same instance named at the preceding PID-list query.",
+  "checks": {
+    "source_manifest_console_bindings": true,
+    "all_six_raw_account_decodes": true,
+    "raw_PID_list_decode_and_completeness": true,
+    "self_and_original_instance_match": true,
+    "candidate_query_and_explicit_job_membership": true,
+    "only_baseline_no_allocation_timeout_or_postexit_child_query": true,
+    "saved_cleanup_consistency": true
+  },
+  "outer_launch_to_observed_exit_ns": 636242400,
+  "inventory": [
+    {
+      "path": "audit/coordinator_c8_capability_authorization_20261111_v4.json",
+      "bytes": 1414,
+      "sha256": "EF123EB21A68E262A5C62DA9889B41D69DFB62D1AE1DFC5DB4DFF54DD7666509"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v4.json",
+      "bytes": 5228,
+      "sha256": "4864924FF2AA06B3C4D9D67E17FEFF1FC649C8E14C518EC3AEEBC797E5611F2C"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v4/attempt.json",
+      "bytes": 1276,
+      "sha256": "E1DC9C6E2C5B928B0B50FB679D35F2CF9F0425D0C2E5191E4511E46284F6107F"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v4/completion.json",
+      "bytes": 9797,
+      "sha256": "B22FBDCDAFC7BCF837CEDC478FC7296BF59111E62F5A6AB2257EB25C8BEB3E45"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v4/normal.jsonl",
+      "bytes": 713,
+      "sha256": "F37CDCB353FCA10CE948F122D30EE1341F8BCAA3FED8CEBB043EE11AEDD9DCF8"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v4.started",
+      "bytes": 170,
+      "sha256": "D1B49CF920F464094DC5E4C1C7A6F58F9910B9E9A9C0C728147ED89821571D1A"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v4.stdout",
+      "bytes": 551,
+      "sha256": "CE737C9D8DC4606458DEBB363A627668EE6057CE9004FBF194E3CB131C4E31D7"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v4.stderr",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "listed_bytes": 19149,
+  "no_target_import_API_or_rerun": true
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS_EXACT_LABEL_SCALAR_AND_COUNT_CHECKS",
+  "checks": 4687,
+  "scope": "No logarithms, phases, moments, transforms, model/function values, or builds evaluated.",
+  "input_pins": {
+    "moebius/FINITE_EM_VERTICAL_BATCHING_2026-11-11.md": "814AD0B3012FDA4FD81B485139257409E81E6EAC8FA44FD6824A7D21F02C8818",
+    "major-constants/EM_VERTICAL_BATCH_SCALAR_SUPPORT_2026-11-11.md": "44C53A6F71D9B00368568D35C08D2ED69EC9ECA746AE61E2DDC8A79C5BA2C52F",
+    "major-constants/em_vertical_batch_scalar_support_20261111.py": "79D62492632A784D58019302F01C310849BB2B4A1D6AB4D782852F1DFCEA204C",
+    "major-constants/em_vertical_batch_scalar_support_20261111.json": "B68C8861B4F646C4EC43DEC00E5D364C33A1CEDF8C6F0C5FC976E72210F6F26F",
+    "integration/FINITE_EM_VERTICAL_DFT_CONTRACTS_2026-11-11.md": "170C8F976A8AF8B299E4AB737E6924260B3B1D8328FA54C0F2BF7F6E9720F997"
+  },
+  "source_pins": {
+    "Analysis/Fourier/ZMod.lean": "012663E2EB3A3F3196C6BCE04CB530D04E29C8DE8C65AFE703F2D707484EFE10",
+    "Analysis/Calculus/Taylor.lean": "0AB79A53A36F87AB2A69D907D7999D2516CC4C085799E306F97D8480AE8CA18A"
+  },
+  "rows": [
+    {
+      "J": 1024,
+      "L": 4096,
+      "minimum_actual_ordinate": "999872",
+      "moments": 256000512,
+      "old_contributions": 8192016384,
+      "transforms": 768,
+      "butterflies": 18874368,
+      "residual_updates": 248000496,
+      "streamed_moment_slots": 131072,
+      "horner_steps": 761856,
+      "correction_multiplications_upper": 2715648
+    },
+    {
+      "J": 4096,
+      "L": 16384,
+      "minimum_actual_ordinate": "999488",
+      "moments": 256000512,
+      "old_contributions": 32768065536,
+      "transforms": 768,
+      "butterflies": 88080384,
+      "residual_updates": 248000496,
+      "streamed_moment_slots": 524288,
+      "horner_steps": 3047424,
+      "correction_multiplications_upper": 10862592
+    }
+  ],
+  "quotient_batch_allowance": "27175670022189397881477533/155325030618139057029641929404486918989837940817920000000",
+  "old_square_plus_square_batch": "20182119555324556017214355903048103801477533/103550020412092704686427952936324612659891960545280000000"
+}

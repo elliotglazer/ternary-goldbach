@@ -1,0 +1,46 @@
+{
+  "precision": 224,
+  "threads": 1,
+  "python_flint": "0.9.0",
+  "script_sha256": "67af0e8c328603131a5946be874ba8b59ece8d93530eed850f1962ded45ed77c",
+  "first_omitted": 87,
+  "tail": "[4.05615224359634657668039310345274188992390367373537955055971876980e-36 +/- 1.67e-102]",
+  "cells": 8,
+  "head": 32,
+  "cold_head_and_step_setup": {
+    "wall": 1.2369335000003048,
+    "cpu": 1.0625
+  },
+  "nodes": [
+    {
+      "j": 84198,
+      "setup": {
+        "wall": 12.038876899998286,
+        "cpu": 10.28125
+      },
+      "produce": {
+        "wall": 0.7138310000009369,
+        "cpu": 0.65625
+      },
+      "rows": 4800,
+      "reference_sha256": "9e607f20eda071a61c09c2b983cccade04d0fa94b008a06b6064f221b4b2bccc"
+    },
+    {
+      "j": 84199,
+      "setup": {
+        "wall": 10.401620500000718,
+        "cpu": 9.9375
+      },
+      "produce": {
+        "wall": 0.6376684999995632,
+        "cpu": 0.640625
+      },
+      "rows": 4800,
+      "reference_sha256": "b2ce90358cbe25a976099559289b46f3774f749b22a2b779df916b2c7c8d0280"
+    }
+  ],
+  "inclusive": {
+    "wall": 25.051158199999918,
+    "cpu": 22.59375
+  }
+}

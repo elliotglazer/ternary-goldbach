@@ -1,0 +1,128 @@
+{
+  "status": "PASS_INDEPENDENT_INTEGER_INVENTORY",
+  "checks": 650,
+  "source_sha256": "2AC4DBAF9D0C41D1DFD8006AC280619DFF6C3059D7DA7FAEF6F1C477D2CE4D3F",
+  "rows": [
+    {
+      "conductors": 7499,
+      "primitive_labels": 18477108,
+      "coarse_residue_inputs": 6483368635710,
+      "coarse_primitive_outputs": 4729100914759,
+      "baseline": {
+        "general_complex_products": 201083532249242,
+        "complex_add_sub": 482139890655850,
+        "quarter_turns": 28378817665134,
+        "negations": 168970190574,
+        "dyadic_scales": 27882965188896
+      },
+      "mixed": {
+        "general_complex_products": 116100921287336,
+        "complex_add_sub": 236921547267062,
+        "quarter_turns": 11260075098326,
+        "negations": 2845232740,
+        "dyadic_scales": 10848736574784
+      }
+    },
+    {
+      "conductors": 30000,
+      "primitive_labels": 443510739,
+      "coarse_residue_inputs": 25939576208208,
+      "coarse_primitive_outputs": 18923613019385,
+      "baseline": {
+        "general_complex_products": 1023773905545000,
+        "complex_add_sub": 2405497968330684,
+        "quarter_turns": 128141615337758,
+        "negations": 675942483914,
+        "dyadic_scales": 126156152258432
+      },
+      "mixed": {
+        "general_complex_products": 625478602224356,
+        "complex_add_sub": 1286464670982256,
+        "quarter_turns": 58490494954364,
+        "negations": 14698815656,
+        "dyadic_scales": 56917796333952
+      }
+    },
+    {
+      "conductors": 37500,
+      "primitive_labels": 1385877227,
+      "coarse_residue_inputs": 32425257602984,
+      "coarse_primitive_outputs": 23654275843167,
+      "baseline": {
+        "general_complex_products": 1414907193438000,
+        "complex_add_sub": 3297460882903376,
+        "quarter_turns": 167900337486982,
+        "negations": 844843978254,
+        "dyadic_scales": 165417469870752
+      },
+      "mixed": {
+        "general_complex_products": 882189325053842,
+        "complex_add_sub": 1818005574892304,
+        "quarter_turns": 80482541953450,
+        "negations": 19489713992,
+        "dyadic_scales": 78552436429760
+      }
+    },
+    {
+      "conductors": 37500,
+      "primitive_labels": 2309873118,
+      "coarse_residue_inputs": 32508699504558,
+      "coarse_primitive_outputs": 23689417600180,
+      "baseline": {
+        "general_complex_products": 1485494634130008,
+        "complex_add_sub": 3448952612253632,
+        "quarter_turns": 171920927860430,
+        "negations": 847338329134,
+        "dyadic_scales": 169428114246432
+      },
+      "mixed": {
+        "general_complex_products": 937226044129520,
+        "complex_add_sub": 1934255871132654,
+        "quarter_turns": 84222299092786,
+        "negations": 19027242084,
+        "dyadic_scales": 82293654030464
+      }
+    },
+    {
+      "conductors": 37500,
+      "primitive_labels": 1385901995,
+      "coarse_residue_inputs": 23349535126968,
+      "coarse_primitive_outputs": 9463195548275,
+      "baseline": {
+        "general_complex_products": 965981673350504,
+        "complex_add_sub": 2295000272623792,
+        "quarter_turns": 119419085009720,
+        "negations": 608524174372,
+        "dyadic_scales": 116075222606528
+      },
+      "mixed": {
+        "general_complex_products": 596489355656976,
+        "complex_add_sub": 1262487024996312,
+        "quarter_turns": 56602150232436,
+        "negations": 13374956552,
+        "dyadic_scales": 53641370951936
+      }
+    }
+  ],
+  "choices": {
+    "radix2": 16,
+    "direct_prime": 4,
+    "split": 30625,
+    "bluestein": 6472
+  },
+  "large_old": [
+    4890157406463512,
+    11446911736111484,
+    587381965694890,
+    2976648965674,
+    577076958982144
+  ],
+  "large_new": [
+    3041383327064694,
+    6301213142003526,
+    279797486233036,
+    66590728284,
+    271405257746112
+  ],
+  "scope": "Metadata only; no transform/root/function/prime-candidate evaluations"
+}

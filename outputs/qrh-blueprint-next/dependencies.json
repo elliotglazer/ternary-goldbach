@@ -1,0 +1,227 @@
+{
+  "kind": "proposed research map, not an approved proof graph",
+  "semantics": "coarse selected obligations, not declaration-level edges or proof validation",
+  "nodes": [
+    {
+      "id": "checker_math",
+      "title": "Formalize reviewed EM, polygon, enclosure and Cauchy mathematics",
+      "depends_on": [],
+      "status": "reviewed paper arguments; Lean missing"
+    },
+    {
+      "id": "provider",
+      "title": "Compile and audit genuine global seven-eighths provider",
+      "depends_on": [],
+      "status": "reviewed compatibility cut; closure and axiom gates open"
+    },
+    {
+      "id": "zero_transport",
+      "title": "Actual carriers, principal pole, inverse-character and multiplicity transport",
+      "depends_on": [
+        "provider"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "prime_data",
+      "title": "Complete finite-prime counts and independent recount",
+      "depends_on": [],
+      "status": "complete external data; no Lean certificate"
+    },
+    {
+      "id": "finite_nonprime",
+      "title": "Finite nonprime_mid repair below 10^12 for theta-to-psi transport",
+      "depends_on": [],
+      "status": "reviewed finite argument; does not require full global P6"
+    },
+    {
+      "id": "prime_replay",
+      "title": "Kernel sieve, certified logs and theta recurrence",
+      "depends_on": [
+        "prime_data"
+      ],
+      "status": "reviewed architecture; implementation and kernel replay missing"
+    },
+    {
+      "id": "head",
+      "title": "Complete head, height-14 exclusion and reciprocal sum",
+      "depends_on": [
+        "checker_math"
+      ],
+      "status": "accepted external data; formal replay missing"
+    },
+    {
+      "id": "sign1500",
+      "title": "All principal signs and simplicity through closed height 1500",
+      "depends_on": [
+        "head"
+      ],
+      "status": "accepted external certificate; formal replay missing"
+    },
+    {
+      "id": "topcount",
+      "title": "Independent total count at height one million via explicit EM/Taylor",
+      "depends_on": [
+        "checker_math"
+      ],
+      "status": "accepted external EM-only count; no RS dependency; not a strip proof"
+    },
+    {
+      "id": "low_strip",
+      "title": "Principal closed strip [.4968,.5032] above 1500 through one million",
+      "depends_on": [
+        "sign1500"
+      ],
+      "status": "finite spectral certification and Lean proof missing; topcount is an optional alternative ingredient"
+    },
+    {
+      "id": "analytic_count",
+      "title": "Data-free analytic zero-count bound above 1500",
+      "depends_on": [],
+      "status": "reviewed paper argument; Lean missing"
+    },
+    {
+      "id": "moment",
+      "title": "Principal weighted moment W35 below 24",
+      "depends_on": [
+        "head",
+        "low_strip",
+        "analytic_count"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "family_pilots",
+      "title": "Conductor-five rectangle and conductor-101 segment",
+      "depends_on": [
+        "checker_math"
+      ],
+      "status": "accepted bounded external pilots; not full family"
+    },
+    {
+      "id": "family_certificate",
+      "title": "Complete active primitive family at Hcert and beta<=.555",
+      "depends_on": [
+        "family_pilots"
+      ],
+      "status": "production certificates and Lean proofs missing"
+    },
+    {
+      "id": "psi_envelope",
+      "title": "Integer psi envelope .01*n/log n over every required range",
+      "depends_on": [
+        "prime_replay",
+        "finite_nonprime",
+        "moment",
+        "family_certificate",
+        "zero_transport"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "p236",
+      "title": "Exact P2, P3 and P6 producer repairs",
+      "depends_on": [],
+      "status": "reviewed paper replacements; Lean missing"
+    },
+    {
+      "id": "other_primes",
+      "title": "P1, P4, P5 and P7 consumers",
+      "depends_on": [
+        "psi_envelope",
+        "p236"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "mobius",
+      "title": "Relaxed .03/.10 profile and M1/M2 adapters",
+      "depends_on": [
+        "psi_envelope",
+        "p236"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "totient",
+      "title": "Finite and remote totient consumer repairs",
+      "depends_on": [],
+      "status": "reviewed paper replacements; Lean missing"
+    },
+    {
+      "id": "regionS",
+      "title": "Separate elementary quotient regionS repair",
+      "depends_on": [
+        "totient"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "typeI_II",
+      "title": "All ten Type I/II producer boundaries and numerical adapters",
+      "depends_on": [
+        "p236",
+        "other_primes",
+        "mobius",
+        "totient"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "energy",
+      "title": "Actual etaPlus energy and consumer side conditions",
+      "depends_on": [
+        "psi_envelope"
+      ],
+      "status": "reviewed paper route; Lean missing"
+    },
+    {
+      "id": "major",
+      "title": "Major coprime caps, mixed error and complete-sum transfer",
+      "depends_on": [
+        "family_certificate",
+        "zero_transport"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "basegap",
+      "title": "Finite-family pointwise bound and q=1,2,3 high joins",
+      "depends_on": [
+        "family_certificate",
+        "zero_transport",
+        "typeI_II"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "minor",
+      "title": "Minor total with the selected constants",
+      "depends_on": [
+        "typeI_II",
+        "regionS",
+        "energy",
+        "basegap"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "large_root",
+      "title": "TernaryGoldbachFrom (10^27) without analytic premises",
+      "depends_on": [
+        "major",
+        "minor",
+        "p236"
+      ],
+      "status": "formal proof obligation"
+    },
+    {
+      "id": "full_root",
+      "title": "Full Statement with only original BinaryGoldbachInput",
+      "depends_on": [
+        "large_root"
+      ],
+      "status": "formal proof obligation"
+    }
+  ]
+}

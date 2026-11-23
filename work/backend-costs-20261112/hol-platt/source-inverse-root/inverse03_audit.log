@@ -1,0 +1,14 @@
+SOURCE_INVERSE_ROOT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+SOURCE_INVERSE_ROOT_ROOT,source_inverse_root_adjacent_squares,⊢ ∀A D S.
+    0 < A ⇒
+    (source_inverse_root A D S)² * A ≤ D * S * S ∧
+    D * S * S < (SUC (source_inverse_root A D S))² * A
+SOURCE_INVERSE_ROOT_ROOT,source_sqrt_bracket,⊢ ∀r t. 0 ≤ t ∧ (&r)² ≤ t ∧ t < (&r + 1)² ⇒ &r ≤ sqrt t ∧ sqrt t < &r + 1
+SOURCE_INVERSE_ROOT_ROOT,source_inverse_root_scaled_enclosure,⊢ ∀A D S.
+    0 < A ⇒
+    &source_inverse_root A D S ≤ &S * sqrt (&D / &A) ∧
+    &S * sqrt (&D / &A) < &source_inverse_root A D S + 1
+SOURCE_INVERSE_ROOT_ROOT,source_inverse_root_real_error,⊢ ∀A D S.
+    0 < A ∧ 0 < S ⇒
+    abs (&source_inverse_root A D S / &S − sqrt (&D / &A)) < 1 / &S
+SOURCE_INVERSE_ROOT_EXACT_AUDIT_DONE

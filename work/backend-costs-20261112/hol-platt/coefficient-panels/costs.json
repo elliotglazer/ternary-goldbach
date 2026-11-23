@@ -1,0 +1,123 @@
+{
+  "bands": [
+    {
+      "band": 1,
+      "groups": 409664,
+      "degree": 56,
+      "seconds_per_new_group": [
+        0.140622,
+        0.197519,
+        0.136179
+      ],
+      "marginal_seconds_per_group": [
+        0.006481333333333335,
+        0.010356333333333334,
+        0.014867333333333335,
+        0.021398666666666667,
+        0.009333000000000001
+      ],
+      "marginal_kernel_hours": 1.1785047051851854,
+      "standalone_hol_hours": 17.99183597037037,
+      "native_hours": 3.71437621022241
+    },
+    {
+      "band": 2,
+      "groups": 819200,
+      "degree": 56,
+      "seconds_per_new_group": [
+        0.14792,
+        0.141912,
+        0.133213
+      ],
+      "marginal_seconds_per_group": [
+        0.009630999999999999,
+        0.005993999999999999,
+        -0.005190000000000003,
+        0.008529333333333333,
+        0.008652
+      ],
+      "marginal_kernel_hours": 1.940897185185185,
+      "standalone_hol_hours": 32.088746666666665,
+      "native_hours": 11.908638717001375
+    },
+    {
+      "band": 3,
+      "groups": 3276800,
+      "degree": 52,
+      "seconds_per_new_group": [
+        0.142684,
+        0.151655,
+        0.155316
+      ],
+      "marginal_seconds_per_group": [
+        0.006073666666666665,
+        0.009345000000000001,
+        0.009554666666666668,
+        0.015766000000000002,
+        0.009763333333333334
+      ],
+      "marginal_kernel_hours": 8.696869925925927,
+      "standalone_hol_hours": 136.4286577777778,
+      "native_hours": 77.47091328825746
+    },
+    {
+      "band": 4,
+      "groups": 19660800,
+      "degree": 60,
+      "seconds_per_new_group": [
+        0.13023,
+        0.150384,
+        0.159782
+      ],
+      "marginal_seconds_per_group": [
+        0.009302,
+        0.006285666666666665,
+        0.009194666666666667,
+        0.01588033333333333,
+        0.009657666666666667
+      ],
+      "marginal_kernel_hours": 50.801322666666664,
+      "standalone_hol_hours": 801.7164515555555,
+      "native_hours": 926.6007597509791
+    },
+    {
+      "band": 5,
+      "groups": 20725760,
+      "degree": 48,
+      "seconds_per_new_group": [
+        0.134289,
+        0.318035,
+        0.183831
+      ],
+      "marginal_seconds_per_group": [
+        0.0049236666666666665,
+        0.007516999999999999,
+        0.00743,
+        0.007887,
+        0.009116
+      ],
+      "marginal_kernel_hours": 43.2765383111111,
+      "standalone_hol_hours": 1220.8144308148148,
+      "native_hours": 1254.0290507185698
+    }
+  ],
+  "seed_groups": 44892224,
+  "certifiable_complex_seeds_required": 2458586688,
+  "marginal_kernel_hours": 105.89413279407407,
+  "standalone_hol_hours": 2209.0401227851853,
+  "native_generation_hours": 2273.72373868503,
+  "priced_table_hours": 4482.7638614702155,
+  "hol_three_spatial_height_draws": [
+    1663.8884263466666,
+    2845.08351856,
+    2118.148423448889
+  ],
+  "excluded": "Analytic certification of the seeds, certified ungrouped endpoint cells, packing lemmas, persistent proof transport and scheduling.",
+  "hashes": {
+    "coeff01.log": "ca509e133e66712bf27d0745e565abce87beb68021c28d2e9b48e0976bc4145b",
+    "fresh01.log": "ba97ad05c37066b3cf5b87b520e75aced177fa76314670172246a1462c8849b9",
+    "panels.json": "160703ad73ff4cc9da37cd8e579813860de57a326fb9e8d8c275ba571c0359bf",
+    "kernel-input.txt": "1c99c91fa491c3a56de241fe2d047b8b9d0faf035fb152b231ec7b8dfe22a96d",
+    "fresh-input.txt": "4b8770c019f21ef31955eecc4c9b2bca13cf0ebd1eeccf5efea2cd0025fad8d5"
+  }
+}

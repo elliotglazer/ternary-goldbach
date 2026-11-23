@@ -1,0 +1,1736 @@
+{
+  "scope": "Conditional proposed implementations, not measured full TG or upper/lower bounds",
+  "seconds_per_core_year": 31557600,
+  "semantic_rows": [
+    {
+      "name": "large_root_product",
+      "count": 920122241148146,
+      "butterfly_factors": [
+        0.08,
+        0.25,
+        1
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "large_kernel_product",
+      "count": 89017934196032,
+      "butterfly_factors": [
+        0.1,
+        0.35,
+        1.5
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "large_complex_add",
+      "count": 2090319798067922,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_quarter_turn",
+      "count": 92576511158537,
+      "butterfly_factors": [
+        0.001,
+        0.005,
+        0.02
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_negation",
+      "count": 19970124208,
+      "butterfly_factors": [
+        0.001,
+        0.005,
+        0.02
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "residue_horner_stage",
+      "count": 1144835795977440,
+      "butterfly_factors": [
+        0.02,
+        0.06,
+        0.25
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "raw_head_product_assembly",
+      "count": 60254515577760,
+      "butterfly_factors": [
+        0.08,
+        0.25,
+        1
+      ],
+      "pa_real_product_multiplicity": 4
+    },
+    {
+      "name": "input_regrid",
+      "count": 54067011555562,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "raw_integer_state_update",
+      "count": 23815680000,
+      "butterfly_factors": [
+        0.08,
+        0.25,
+        1
+      ],
+      "pa_real_product_multiplicity": 4
+    },
+    {
+      "name": "raw_conductor_cache",
+      "count": 1528006797,
+      "butterfly_factors": [
+        0.02,
+        0.08,
+        0.3
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "em_head_scale",
+      "count": 10969166595220,
+      "butterfly_factors": [
+        0.03,
+        0.1,
+        0.5
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "em_head_add",
+      "count": 11386294892080,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "em_bernoulli_scale_add",
+      "count": 703333562176,
+      "butterfly_factors": [
+        0.04,
+        0.15,
+        0.75
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "em_E_stage",
+      "count": 58114704402,
+      "butterfly_factors": [
+        0.15,
+        0.5,
+        3
+      ],
+      "pa_real_product_multiplicity": 4
+    },
+    {
+      "name": "em_fine_state_update",
+      "count": 417288057616,
+      "butterfly_factors": [
+        0.08,
+        0.25,
+        1
+      ],
+      "pa_real_product_multiplicity": 4
+    },
+    {
+      "name": "em_shift_update",
+      "count": 150847656960,
+      "butterfly_factors": [
+        0.02,
+        0.1,
+        0.5
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "em_endpoint_slot",
+      "count": 7543088084,
+      "butterfly_factors": [
+        0.5,
+        2,
+        10
+      ],
+      "pa_real_product_multiplicity": 8
+    },
+    {
+      "name": "em_final_scale_round",
+      "count": 6632648000,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "em_state_copy_conversion",
+      "count": 417295106833,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "shared_coefficient_coordinate_conversion",
+      "count": 28734393000,
+      "butterfly_factors": [
+        0.01,
+        0.04,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "small_character_butterfly",
+      "count": 128941391789290,
+      "butterfly_factors": [
+        0.5,
+        1,
+        3
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_time_butterfly",
+      "count": 89858217607168,
+      "butterfly_factors": [
+        0.5,
+        1,
+        3
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_gaussian_unit",
+      "count": 8542028172242,
+      "butterfly_factors": [
+        0.1,
+        0.5,
+        3
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_bucket_add",
+      "count": 7969016316193,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "small_character_point_product",
+      "count": 25399177848072,
+      "butterfly_factors": [
+        0.3,
+        0.65,
+        2
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_complex_prefactor",
+      "count": 1202865170991,
+      "butterfly_factors": [
+        0.3,
+        0.65,
+        2
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_real_radial_prefactor",
+      "count": 2421291652611,
+      "butterfly_factors": [
+        0.1,
+        0.3,
+        1
+      ],
+      "pa_real_product_multiplicity": 1
+    },
+    {
+      "name": "small_inverse_scale",
+      "count": 15046227780352,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "small_odd_scale",
+      "count": 4156411711634,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_completion_sign",
+      "count": 36468561640066,
+      "butterfly_factors": [
+        0.1,
+        0.4,
+        2
+      ],
+      "pa_real_product_multiplicity": 4
+    },
+    {
+      "name": "small_sign",
+      "count": 1775431871117,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "negative_guard_adapter_superset",
+      "count": 177663120563,
+      "butterfly_factors": [
+        0.02,
+        0.1,
+        0.5
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "frequency_conjugate_copy",
+      "count": 1202846693883,
+      "butterfly_factors": [
+        0.001,
+        0.005,
+        0.02
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "zero_imag_projection",
+      "count": 18477108,
+      "butterfly_factors": [
+        0.001,
+        0.005,
+        0.02
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "em_shared_R_step",
+      "count": 2210506,
+      "butterfly_factors": [
+        0.1,
+        0.5,
+        3
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "small_root_cis_enclosure",
+      "count": 10070764730,
+      "butterfly_factors": [
+        10,
+        1000,
+        100000
+      ],
+      "pa_real_product_multiplicity": 30
+    },
+    {
+      "name": "small_outer_complex_exp_enclosure",
+      "count": 2605203866,
+      "butterfly_factors": [
+        100,
+        10000,
+        1000000
+      ],
+      "pa_real_product_multiplicity": 100
+    },
+    {
+      "name": "small_cutoff_rational_division",
+      "count": 2605203866,
+      "butterfly_factors": [
+        5,
+        500,
+        50000
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "small_seed_unit_contraction",
+      "count": 2605203866,
+      "butterfly_factors": [
+        0.3,
+        0.65,
+        2
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_phase_root_division_product",
+      "count": 18477108,
+      "butterfly_factors": [
+        20,
+        2000,
+        200000
+      ],
+      "pa_real_product_multiplicity": 10
+    },
+    {
+      "name": "small_positive_root_setup",
+      "count": 14998,
+      "butterfly_factors": [
+        10,
+        1000,
+        100000
+      ],
+      "pa_real_product_multiplicity": 10
+    },
+    {
+      "name": "small_real_exp_seed",
+      "count": 7499,
+      "butterfly_factors": [
+        100,
+        10000,
+        1000000
+      ],
+      "pa_real_product_multiplicity": 100
+    },
+    {
+      "name": "small_fixed_setup_arithmetic",
+      "count": 221845280,
+      "butterfly_factors": [
+        0.1,
+        0.5,
+        3
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "small_gauss_butterfly",
+      "count": 1005598874,
+      "butterfly_factors": [
+        0.8,
+        2,
+        6
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_gauss_point_product",
+      "count": 191293204,
+      "butterfly_factors": [
+        0.5,
+        1,
+        4
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "small_gauss_inverse_scale",
+      "count": 113309696,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "small_kernel_build_butterfly",
+      "count": 163605472,
+      "butterfly_factors": [
+        0.8,
+        2,
+        6
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "em_initial_B_step_cis_grid_objects",
+      "count": 21147651,
+      "butterfly_factors": [
+        100,
+        10000,
+        1000000
+      ],
+      "pa_real_product_multiplicity": 100
+    },
+    {
+      "name": "em_log_anchor",
+      "count": 960,
+      "butterfly_factors": [
+        100,
+        10000,
+        1000000
+      ],
+      "pa_real_product_multiplicity": 100
+    },
+    {
+      "name": "em_nonanchor_log_stage",
+      "count": 148013397,
+      "butterfly_factors": [
+        0.03,
+        0.1,
+        0.5
+      ],
+      "pa_real_product_multiplicity": 2
+    },
+    {
+      "name": "raw_log_inverse_root_step_enclosures",
+      "count": 797400,
+      "butterfly_factors": [
+        100,
+        10000,
+        1000000
+      ],
+      "pa_real_product_multiplicity": 100
+    },
+    {
+      "name": "bernoulli_exact_constant",
+      "count": 159,
+      "butterfly_factors": [
+        1000,
+        100000,
+        10000000
+      ],
+      "pa_real_product_multiplicity": 1000
+    },
+    {
+      "name": "large_kernel_setup_product",
+      "count": 2388169382,
+      "butterfly_factors": [
+        0.1,
+        0.35,
+        1.5
+      ],
+      "pa_real_product_multiplicity": 3
+    },
+    {
+      "name": "large_kernel_setup_add",
+      "count": 5865912000,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_kernel_setup_quarter",
+      "count": 181592717,
+      "butterfly_factors": [
+        0.001,
+        0.005,
+        0.02
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_chirp_enclosure",
+      "count": 150746135,
+      "butterfly_factors": [
+        10,
+        1000,
+        100000
+      ],
+      "pa_real_product_multiplicity": 30
+    },
+    {
+      "name": "large_cache_presum",
+      "count": 726404736,
+      "butterfly_factors": [
+        0.005,
+        0.02,
+        0.1
+      ],
+      "pa_real_product_multiplicity": 0
+    },
+    {
+      "name": "large_scaled_cache_round",
+      "count": 363202368,
+      "butterfly_factors": [
+        0.01,
+        0.05,
+        0.2
+      ],
+      "pa_real_product_multiplicity": 0
+    }
+  ],
+  "assumptions": {
+    "geometry_factor": [
+      1,
+      1.02,
+      1.1
+    ],
+    "query_fraction": [
+      0.001,
+      0.03,
+      1
+    ],
+    "generation_retry": [
+      1,
+      1.25,
+      3
+    ],
+    "accepted_refinement_factor": [
+      1,
+      1.1,
+      2
+    ],
+    "literal_payload_reuse": [
+      10000,
+      100,
+      1
+    ],
+    "notional_8192_operation_blocks": 149894993255,
+    "serialized_bytes_per_notional_block": [
+      8192,
+      65536,
+      1048576
+    ],
+    "io_bytes_per_second": [
+      10000000000.0,
+      1000000000.0,
+      100000000.0
+    ],
+    "serialization_bytes_per_cpu_second": [
+      500000000.0,
+      100000000.0,
+      20000000.0
+    ],
+    "principal_terms": 1023750004095,
+    "principal_butterfly_factor": [
+      0.5,
+      5,
+      50
+    ],
+    "labels": 4351723951,
+    "closure_seconds_per_label": [
+      0.001,
+      0.1,
+      10
+    ],
+    "cache_reload_factor": [
+      1,
+      3,
+      10
+    ],
+    "cache_entries_large_and_small": 387856864,
+    "large_nonchirp_root_keys": [
+      1000000,
+      100000000,
+      106105233600
+    ],
+    "process_blocks_per_shard": [
+      1000000,
+      10000,
+      100
+    ],
+    "process_startup_seconds": [
+      5,
+      20,
+      100
+    ],
+    "finite_scope": "separate explicit production assumptions below; no HOL batch ratio transferred; B1e16 ladder success conditional",
+    "finite": {
+      "B": 10000000000000000,
+      "L": 68719476736,
+      "tiles": 19073486329,
+      "anchor_records": 37252608,
+      "rungs": [
+        103845000000,
+        118680000000,
+        197800000000
+      ],
+      "native_mask_seconds_per_word": [
+        1.3e-06,
+        2.6e-06,
+        6.5e-06
+      ],
+      "complete_tile_seconds": {
+        "Lean": [
+          0.0034,
+          0.0068,
+          0.0272
+        ],
+        "HOL4": [
+          0.001,
+          0.01,
+          0.1
+        ],
+        "Candle": [
+          0.002,
+          0.02,
+          0.2
+        ]
+      },
+      "complete_ladder_rung_seconds": {
+        "Lean": [
+          0.0001,
+          0.001,
+          0.1
+        ],
+        "HOL4": [
+          0.0001,
+          0.001,
+          0.1
+        ],
+        "Candle": [
+          0.0002,
+          0.002,
+          0.2
+        ]
+      },
+      "anchor_check_seconds": {
+        "Lean": [
+          0.03,
+          0.055,
+          0.25
+        ],
+        "HOL4": [
+          0.002,
+          0.005,
+          0.05
+        ],
+        "Candle": [
+          0.004,
+          0.01,
+          0.1
+        ]
+      },
+      "anchor_generation_seconds": [
+        0.002,
+        0.02,
+        0.2
+      ],
+      "source_exception_library_io_cpu_reserve_years": [
+        1,
+        10,
+        100
+      ]
+    },
+    "library_module_counts": [
+      1000,
+      5000,
+      20000
+    ],
+    "library_cpu_seconds_per_module_build": [
+      60,
+      600,
+      3600
+    ],
+    "library_rebuild_rounds": [
+      2,
+      10,
+      50
+    ],
+    "library_port_module_multiplier": {
+      "Lean": [
+        1,
+        1,
+        1
+      ],
+      "HOL4": [
+        2,
+        4,
+        8
+      ],
+      "Candle": [
+        2,
+        4,
+        8
+      ]
+    },
+    "human_engineer_years": {
+      "Lean": [
+        2,
+        10,
+        50
+      ],
+      "HOL4": [
+        10,
+        50,
+        200
+      ],
+      "Candle": [
+        10,
+        50,
+        200
+      ]
+    },
+    "core_rate_seconds_per_butterfly": {
+      "Lean": 0.0016436297607421875,
+      "HOL4": 9.0283203125e-06,
+      "Candle": 1.93699951171875e-05
+    },
+    "native_rate_seconds_per_butterfly": 4.57498779296875e-07
+  },
+  "backends": {
+    "Lean": {
+      "favorable": {
+        "categories_core_years": {
+          "large_root_product": 3833.853776134795,
+          "large_kernel_product": 463.63641685168676,
+          "large_complex_add": 544.3556907960422,
+          "large_quarter_turn": 4.821707255490045,
+          "large_negation": 0.0010401136485026366,
+          "residue_horner_stage": 1192.5407416479652,
+          "raw_head_product_assembly": 251.06120876799267,
+          "input_regrid": 14.079991708354479,
+          "raw_integer_state_update": 0.09923228742442392,
+          "raw_conductor_cache": 0.0015916783571409399,
+          "em_head_scale": 17.139372448895966,
+          "em_head_add": 2.9651895500940255,
+          "em_bernoulli_scale_add": 1.465282498696085,
+          "em_E_stage": 0.45402244320795404,
+          "em_fine_state_update": 1.7387052761932675,
+          "em_shift_update": 0.15713343113398004,
+          "em_endpoint_slot": 0.19643515449150387,
+          "em_final_scale_round": 0.003454514172600942,
+          "em_state_copy_conversion": 0.10867091550099016,
+          "shared_coefficient_coordinate_conversion": 0.014965873035865208,
+          "small_character_butterfly": 3357.858470485642,
+          "small_time_butterfly": 2340.0645281388474,
+          "small_gaussian_unit": 44.48985892778648,
+          "small_bucket_add": 4.150541353314222,
+          "small_character_point_product": 396.86330338309807,
+          "small_complex_prefactor": 18.794822735579203,
+          "small_real_radial_prefactor": 12.610930551334935,
+          "small_inverse_scale": 7.83659966749449,
+          "small_odd_scale": 2.1648040367895587,
+          "large_completion_sign": 189.9409753690819,
+          "small_sign": 0.4623533889678064,
+          "negative_guard_adapter_superset": 0.18506628662742042,
+          "frequency_conjugate_copy": 0.06264844676643493,
+          "zero_imag_projection": 9.623521624346452e-07,
+          "em_shared_R_step": 1.1513085430765235e-05,
+          "small_root_cis_enclosure": 5.245205156178151,
+          "small_outer_complex_exp_enclosure": 13.568809437213863,
+          "small_cutoff_rational_division": 0.6784404718606932,
+          "small_seed_unit_contraction": 0.04070642831164158,
+          "small_phase_root_division_product": 0.0192470432486929,
+          "small_positive_root_setup": 7.811480959138632e-06,
+          "small_real_exp_seed": 3.9057404795693156e-05,
+          "small_fixed_setup_arithmetic": 0.0011554475133983052,
+          "small_gauss_butterfly": 0.04190007444609814,
+          "small_gauss_point_product": 0.0049816082832998465,
+          "small_gauss_inverse_scale": 5.901563760433303e-05,
+          "small_kernel_build_butterfly": 0.00681691441172897,
+          "em_initial_B_step_cis_grid_objects": 0.11014433465596016,
+          "em_log_anchor": 5.000014482446384e-06,
+          "em_nonanchor_log_stage": 0.0002312716026862769,
+          "raw_log_inverse_root_step_enclosures": 0.004153137029482027,
+          "bernoulli_exact_constant": 8.281273986551824e-06,
+          "large_kernel_setup_product": 0.012438418225557323,
+          "large_kernel_setup_add": 0.00152758567462271,
+          "large_kernel_setup_quarter": 9.457981405279037e-06,
+          "large_chirp_enclosure": 0.07851383939300184,
+          "large_cache_presum": 0.00018916844792279386,
+          "large_scaled_cache_round": 0.00018916844792279386,
+          "offgrid_arithmetic": 2.1868165693447925,
+          "native_discovery_generation": 3.5422894348834215,
+          "lean_additional_frontend": 3181.545284823007,
+          "literal_representation": 3.673739728168938,
+          "principal": 26.660233577497632,
+          "nonprincipal_closure": 0.13789781070170104,
+          "cache_input_translation": 0.4950983863138356,
+          "large_nonchirp_root_producer": 0.0005208348419214983,
+          "generic_library_compilation": 0.003802570537683474,
+          "process_distribution_setup": 0.023749429614419348,
+          "finite_coverage_and_ladder": 6.640129064776789,
+          "serialization_and_root_assembly": 0.10826699796135979
+        },
+        "finite_parts_core_years": {
+          "mask_search": 3.2183214186123155,
+          "complete_tiles": 2.0549678530243107,
+          "complete_ladder": 0.32906494790478363,
+          "anchors": 0.03777484523537911,
+          "remaining": 1
+        },
+        "total_core_years": 15949.012151950334,
+        "total_core_hours": 139809040.52399662,
+        "retained_notional_blocks": 149894993255,
+        "serialized_bytes": 1708323307432704,
+        "proof_bytes_assumed": 1227939784744960,
+        "raw_payload_bytes_assumed": 480383522687744,
+        "one_io_pass_years": 0.00541334989806799,
+        "engineer_years": 2,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 15.949012151950333
+      },
+      "planning": {
+        "categories_core_years": {
+          "large_root_product": 13442.449802572626,
+          "large_kernel_product": 1820.7002089765735,
+          "large_complex_add": 2443.0683402926375,
+          "large_quarter_turn": 27.04977770329915,
+          "large_negation": 0.005835037568099792,
+          "residue_horner_stage": 4014.092136387052,
+          "raw_head_product_assembly": 880.2833632427745,
+          "input_regrid": 63.19100278709491,
+          "raw_integer_state_update": 0.34793320778188636,
+          "raw_conductor_cache": 0.007143452466848539,
+          "em_head_scale": 64.10125295887092,
+          "em_head_add": 13.307770700821987,
+          "em_bernoulli_scale_add": 6.165176113263778,
+          "em_E_stage": 1.6980439375977485,
+          "em_fine_state_update": 6.096335374652645,
+          "em_shift_update": 0.8815185486616279,
+          "em_endpoint_slot": 0.8816009733578696,
+          "em_final_scale_round": 0.019379824508291284,
+          "em_state_copy_conversion": 0.48771506876844384,
+          "shared_coefficient_coordinate_conversion": 0.06716683818496307,
+          "small_character_butterfly": 7535.034407769781,
+          "small_time_butterfly": 5251.104801143574,
+          "small_gaussian_unit": 249.58810858488212,
+          "small_bucket_add": 23.284536992092786,
+          "small_character_point_product": 964.7746905243114,
+          "small_complex_prefactor": 45.69021407019306,
+          "small_real_radial_prefactor": 42.44839223579339,
+          "small_inverse_scale": 43.963324134644104,
+          "small_odd_scale": 12.144550646389426,
+          "large_completion_sign": 852.4550974564398,
+          "small_sign": 2.075042009687515,
+          "negative_guard_adapter_superset": 1.0382218679798283,
+          "frequency_conjugate_copy": 0.3514577863596999,
+          "zero_imag_projection": 5.398795631258361e-06,
+          "em_shared_R_step": 6.458840926659297e-05,
+          "small_root_cis_enclosure": 588.5120185231885,
+          "small_outer_complex_exp_enclosure": 1522.4204188553958,
+          "small_cutoff_rational_division": 76.12102094276977,
+          "small_seed_unit_contraction": 0.09895732722560072,
+          "small_phase_root_division_product": 2.159518252503344,
+          "small_positive_root_setup": 0.0008764481636153546,
+          "small_real_exp_seed": 0.004382240818076773,
+          "small_fixed_setup_arithmetic": 0.006482060550164493,
+          "small_gauss_butterfly": 0.1175297088213053,
+          "small_gauss_point_product": 0.011178728987724856,
+          "small_gauss_inverse_scale": 0.0003310777269603084,
+          "small_kernel_build_butterfly": 0.01912144492489976,
+          "em_initial_B_step_cis_grid_objects": 12.35819434839873,
+          "em_log_anchor": 0.0005610016249304843,
+          "em_nonanchor_log_stage": 0.0008649557940466759,
+          "raw_log_inverse_root_step_enclosures": 0.4659819747078835,
+          "bernoulli_exact_constant": 0.0009291589412911146,
+          "large_kernel_setup_product": 0.048845668371763615,
+          "large_kernel_setup_add": 0.006855804507706723,
+          "large_kernel_setup_quarter": 5.305927568361541e-05,
+          "large_chirp_enclosure": 8.809252779894807,
+          "large_cache_presum": 0.0008489879942774989,
+          "large_scaled_cache_round": 0.0010612349928468738,
+          "offgrid_arithmetic": 327.2578778467056,
+          "native_discovery_generation": 12.761963769041238,
+          "lean_additional_frontend": 36679.34325603652,
+          "literal_representation": 412.19359750273605,
+          "principal": 293.2625693524739,
+          "nonprincipal_closure": 13.789781070170102,
+          "cache_input_translation": 1.4852951589415069,
+          "large_nonchirp_root_producer": 5.208348419214983,
+          "generic_library_compilation": 0.9506426344208685,
+          "process_distribution_setup": 10.658744010951404,
+          "finite_coverage_and_ladder": 24.39585559856263,
+          "serialization_and_root_assembly": 3.6634528038839256
+        },
+        "finite_parts_core_years": {
+          "mask_search": 6.436642837224631,
+          "complete_tiles": 4.1099357060486215,
+          "complete_ladder": 3.760742261768956,
+          "anchors": 0.0885347935204198,
+          "remaining": 10
+        },
+        "total_core_years": 77804.9910879971,
+        "total_core_hours": 682038551.8773825,
+        "retained_notional_blocks": 168182182433,
+        "serialized_bytes": 11560977820384737,
+        "proof_bytes_assumed": 11021987507929088,
+        "raw_payload_bytes_assumed": 538990312455649,
+        "one_io_pass_years": 0.3663452803883925,
+        "engineer_years": 10,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 77.8049910879971
+      },
+      "stress": {
+        "categories_core_years": {
+          "large_root_product": 105430.97884370686,
+          "large_kernel_product": 15300.00175610566,
+          "large_complex_add": 23951.65039502586,
+          "large_quarter_turn": 212.15511924156198,
+          "large_negation": 0.045765000534116015,
+          "residue_horner_stage": 32794.87039531905,
+          "raw_head_product_assembly": 6904.183241119799,
+          "input_regrid": 619.519635167597,
+          "raw_integer_state_update": 2.7288879041716583,
+          "raw_conductor_cache": 0.05252538578565102,
+          "em_head_scale": 628.4436564595188,
+          "em_head_add": 130.46834020413712,
+          "em_bernoulli_scale_add": 60.442903071213514,
+          "em_E_stage": 19.97698750114998,
+          "em_fine_state_update": 47.814395095314865,
+          "em_shift_update": 8.6423387123689,
+          "em_endpoint_slot": 8.643146797626171,
+          "em_final_scale_round": 0.15199862359444144,
+          "em_state_copy_conversion": 4.781520282043568,
+          "shared_coefficient_coordinate_conversion": 0.6584984135780693,
+          "small_character_butterfly": 44323.73181041048,
+          "small_time_butterfly": 30888.851771432783,
+          "small_gaussian_unit": 2936.330689233907,
+          "small_bucket_add": 182.6238195458258,
+          "small_character_point_product": 5820.661782952106,
+          "small_complex_prefactor": 275.6574001218284,
+          "small_real_radial_prefactor": 277.4404721293686,
+          "small_inverse_scale": 344.8103853697577,
+          "small_odd_scale": 95.25137761874059,
+          "large_completion_sign": 8357.402916239605,
+          "small_sign": 20.34354911458348,
+          "negative_guard_adapter_superset": 10.178645764508124,
+          "frequency_conjugate_copy": 2.7565316577231367,
+          "zero_imag_projection": 4.234349514712439e-05,
+          "em_shared_R_step": 0.0007598636384305057,
+          "small_root_cis_enclosure": 115394.51343591932,
+          "small_outer_complex_exp_enclosure": 298513.807618705,
+          "small_cutoff_rational_division": 14925.69038093525,
+          "small_seed_unit_contraction": 0.59702761523741,
+          "small_phase_root_division_product": 423.43495147124395,
+          "small_positive_root_setup": 0.17185258110104992,
+          "small_real_exp_seed": 0.8592629055052496,
+          "small_fixed_setup_arithmetic": 0.07625953588428815,
+          "small_gauss_butterfly": 0.6913512283606194,
+          "small_gauss_point_product": 0.0876763057860773,
+          "small_gauss_inverse_scale": 0.002596688054590654,
+          "small_kernel_build_butterfly": 0.112479087793528,
+          "em_initial_B_step_cis_grid_objects": 2423.1753624311236,
+          "em_log_anchor": 0.11000031861382045,
+          "em_nonanchor_log_stage": 0.008479958765163489,
+          "raw_log_inverse_root_step_enclosures": 91.36901464860462,
+          "bernoulli_exact_constant": 0.18218802770414014,
+          "large_kernel_setup_product": 0.4104678014433917,
+          "large_kernel_setup_add": 0.06721376968339923,
+          "large_kernel_setup_quarter": 0.00041615118183227766,
+          "large_chirp_enclosure": 1727.3044666460407,
+          "large_cache_presum": 0.008323411708602933,
+          "large_scaled_cache_round": 0.008323411708602933,
+          "offgrid_arithmetic": 99169.05389275249,
+          "native_discovery_generation": 339.1656260993832,
+          "lean_additional_frontend": 1624667.9906904872,
+          "literal_representation": 80822.27401971663,
+          "principal": 5332.046715499525,
+          "nonprincipal_closure": 1378.9781070170102,
+          "cache_input_translation": 4.950983863138356,
+          "large_nonchirp_root_producer": 552633.0256909966,
+          "generic_library_compilation": 114.07711613050422,
+          "process_distribution_setup": 10449.748561360813,
+          "finite_coverage_and_ladder": 759.8529356398711,
+          "serialization_and_root_assembly": 549.542245186728
+        },
+        "finite_parts_core_years": {
+          "mask_search": 16.091607093061576,
+          "complete_tiles": 16.439742824194486,
+          "complete_ladder": 626.7903769614926,
+          "anchors": 0.5312087611225188,
+          "remaining": 100
+        },
+        "total_core_years": 3089385.648037241,
+        "total_core_hours": 27081554590.694454,
+        "retained_notional_blocks": 329768985161,
+        "serialized_bytes": 346844687134093773,
+        "proof_bytes_assumed": 345787843384180736,
+        "raw_payload_bytes_assumed": 1056843749913037,
+        "one_io_pass_years": 109.9084490373456,
+        "engineer_years": 50,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 3089.385648037241
+      }
+    },
+    "HOL4": {
+      "favorable": {
+        "categories_core_years": {
+          "large_root_product": 21.05903698567909,
+          "large_kernel_product": 2.5467159209788583,
+          "large_complex_add": 2.9901001173279202,
+          "large_quarter_turn": 0.02648523322917467,
+          "large_negation": 5.713256965999771e-06,
+          "residue_horner_stage": 6.550526194197422,
+          "raw_head_product_assembly": 1.3790581461468254,
+          "input_regrid": 0.07734021260540291,
+          "raw_integer_state_update": 0.000545074625446802,
+          "raw_conductor_cache": 8.742955613223544e-06,
+          "em_head_scale": 0.09414513421440907,
+          "em_head_add": 0.016287537306113403,
+          "em_bernoulli_scale_add": 0.008048673772221668,
+          "em_E_stage": 0.002493907170733087,
+          "em_fine_state_update": 0.009550562138409014,
+          "em_shift_update": 0.0008631207477279642,
+          "em_endpoint_slot": 0.0010790018152165232,
+          "em_final_scale_round": 1.8975356384535737e-05,
+          "em_state_copy_conversion": 0.0005969202172103125,
+          "shared_coefficient_coordinate_conversion": 8.220628437817127e-05,
+          "small_character_butterfly": 18.444434725918125,
+          "small_time_butterfly": 12.85377803235734,
+          "small_gaussian_unit": 0.24437906069346116,
+          "small_bucket_add": 0.022798575264953352,
+          "small_character_point_product": 2.179936813508142,
+          "small_complex_prefactor": 0.10323838368371008,
+          "small_real_radial_prefactor": 0.06927078298018413,
+          "small_inverse_scale": 0.04304578418379526,
+          "small_odd_scale": 0.011891086864418757,
+          "large_completion_sign": 1.0433298344065016,
+          "small_sign": 0.0025396683565077024,
+          "negative_guard_adapter_superset": 0.0010165535783209555,
+          "frequency_conjugate_copy": 0.0003441226594927168,
+          "zero_imag_projection": 5.286119650184306e-09,
+          "em_shared_R_step": 6.324041188399348e-08,
+          "small_root_cis_enclosure": 0.028811471650020144,
+          "small_outer_complex_exp_enclosure": 0.07453233129772648,
+          "small_cutoff_rational_division": 0.0037266165648863234,
+          "small_seed_unit_contraction": 0.00022359699389317938,
+          "small_phase_root_division_product": 0.00010572239300368611,
+          "small_positive_root_setup": 4.290780922721468e-08,
+          "small_real_exp_seed": 2.145390461360734e-07,
+          "small_fixed_setup_arithmetic": 6.346776204959344e-06,
+          "small_gauss_butterfly": 0.00023015359191728976,
+          "small_gauss_point_product": 2.736355615313595e-05,
+          "small_gauss_inverse_scale": 3.2416794369660553e-07,
+          "small_kernel_build_butterfly": 3.7444738664378784e-05,
+          "em_initial_B_step_cis_grid_objects": 0.0006050135849524708,
+          "em_log_anchor": 2.7464659860065405e-08,
+          "em_nonanchor_log_stage": 1.2703555010430706e-06,
+          "raw_log_inverse_root_step_enclosures": 2.2812833096266826e-05,
+          "bernoulli_exact_constant": 4.548834289323332e-08,
+          "large_kernel_setup_product": 6.83231872550548e-05,
+          "large_kernel_setup_add": 8.390899887972708e-06,
+          "large_kernel_setup_quarter": 5.1951897973647046e-08,
+          "large_chirp_enclosure": 0.0004312699294785938,
+          "large_cache_presum": 1.0390864059885733e-06,
+          "large_scaled_cache_round": 1.0390864059885733e-06,
+          "offgrid_arithmetic": 0.012011999858053188,
+          "native_discovery_generation": 3.5422894348834215,
+          "lean_additional_frontend": 0,
+          "literal_representation": 2.0279565786920544,
+          "principal": 0.14644242523025905,
+          "nonprincipal_closure": 0.13789781070170104,
+          "cache_input_translation": 0.27330135064450933,
+          "large_nonchirp_root_producer": 2.860902068756813e-06,
+          "generic_library_compilation": 0.007605141075366948,
+          "process_distribution_setup": 0.023749429614419348,
+          "finite_coverage_and_ladder": 5.156510531884554,
+          "serialization_and_root_assembly": 0.10826699796135979
+        },
+        "finite_parts_core_years": {
+          "mask_search": 3.2183214186123155,
+          "complete_tiles": 0.6044023097130327,
+          "complete_ladder": 0.32906494790478363,
+          "anchors": 0.004721855654422389,
+          "remaining": 1
+        },
+        "total_core_years": 81.32786734749993,
+        "total_core_hours": 712920.0851681844,
+        "retained_notional_blocks": 149894993255,
+        "serialized_bytes": 1708323307432704,
+        "proof_bytes_assumed": 1227939784744960,
+        "raw_payload_bytes_assumed": 480383522687744,
+        "one_io_pass_years": 0.00541334989806799,
+        "engineer_years": 10,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 0.08132786734749993
+      },
+      "planning": {
+        "categories_core_years": {
+          "large_root_product": 73.8382484310373,
+          "large_kernel_product": 10.000953421683974,
+          "large_complex_add": 13.41956932656771,
+          "large_quarter_turn": 0.14858215841566988,
+          "large_negation": 3.2051371579258724e-05,
+          "residue_horner_stage": 22.049071169668522,
+          "raw_head_product_assembly": 4.835322624927308,
+          "input_regrid": 0.34710287417304836,
+          "raw_integer_state_update": 0.0019111679054728496,
+          "raw_conductor_cache": 3.923838479214726e-05,
+          "em_head_scale": 0.3521028019618899,
+          "em_head_add": 0.07309846742983696,
+          "em_bernoulli_scale_add": 0.03386479489662267,
+          "em_E_stage": 0.009327212818541746,
+          "em_fine_state_update": 0.033486658497796605,
+          "em_shift_update": 0.00484210739475388,
+          "em_endpoint_slot": 0.004842560146691756,
+          "em_final_scale_round": 0.0001064517493172455,
+          "em_state_copy_conversion": 0.0026789779348398825,
+          "shared_coefficient_coordinate_conversion": 0.00036894180428923283,
+          "small_character_butterfly": 41.38931152496027,
+          "small_time_butterfly": 28.843877904609872,
+          "small_gaussian_unit": 1.3709665304903171,
+          "small_bucket_add": 0.1279000072363883,
+          "small_character_point_product": 5.299426393638294,
+          "small_complex_prefactor": 0.25097251073509924,
+          "small_real_radial_prefactor": 0.23316545551129977,
+          "small_inverse_scale": 0.2414868492710915,
+          "small_odd_scale": 0.06670899730938923,
+          "large_completion_sign": 4.68246429681638,
+          "small_sign": 0.01139803158400657,
+          "negative_guard_adapter_superset": 0.00570286557438056,
+          "frequency_conjugate_copy": 0.001930528119754141,
+          "zero_imag_projection": 2.965513123753396e-08,
+          "em_shared_R_step": 3.5477871066920345e-07,
+          "small_root_cis_enclosure": 3.2326471191322605,
+          "small_outer_complex_exp_enclosure": 8.36252757160491,
+          "small_cutoff_rational_division": 0.41812637858024554,
+          "small_seed_unit_contraction": 0.0005435642921543193,
+          "small_phase_root_division_product": 0.011862052495013584,
+          "small_positive_root_setup": 4.814256195293487e-06,
+          "small_real_exp_seed": 2.4071280976467435e-05,
+          "small_fixed_setup_arithmetic": 3.560541450982192e-05,
+          "small_gauss_butterfly": 0.0006455808253279978,
+          "small_gauss_point_product": 6.140382000763709e-05,
+          "small_gauss_inverse_scale": 1.8185821641379577e-06,
+          "small_kernel_build_butterfly": 0.0001050324919535825,
+          "em_initial_B_step_cis_grid_objects": 0.06788252423166723,
+          "em_log_anchor": 3.0815348362993387e-06,
+          "em_nonanchor_log_stage": 4.751129573901083e-06,
+          "raw_log_inverse_root_step_enclosures": 0.002559599873401138,
+          "bernoulli_exact_constant": 5.1037920726207805e-06,
+          "large_kernel_setup_product": 0.0002683051563506002,
+          "large_kernel_setup_add": 3.765835869722151e-05,
+          "large_kernel_setup_quarter": 2.9145014763216e-07,
+          "large_chirp_enclosure": 0.04838848608749823,
+          "large_cache_presum": 4.663419790076718e-06,
+          "large_scaled_cache_round": 5.8292747375958965e-06,
+          "offgrid_arithmetic": 1.797600053588041,
+          "native_discovery_generation": 12.761963769041238,
+          "lean_additional_frontend": 0,
+          "literal_representation": 227.5367281304526,
+          "principal": 1.6108666775328497,
+          "nonprincipal_closure": 13.789781070170102,
+          "cache_input_translation": 0.8199040519335279,
+          "large_nonchirp_root_producer": 0.02860902068756813,
+          "generic_library_compilation": 3.802570537683474,
+          "process_distribution_setup": 10.658744010951404,
+          "finite_coverage_and_ladder": 26.270919793964055,
+          "serialization_and_root_assembly": 3.6634528038839256
+        },
+        "finite_parts_core_years": {
+          "mask_search": 6.436642837224631,
+          "complete_tiles": 6.044023097130326,
+          "complete_ladder": 3.760742261768956,
+          "anchors": 0.029511597840139937,
+          "remaining": 10
+        },
+        "total_core_years": 522.5677489460336,
+        "total_core_hours": 4580828.887260931,
+        "retained_notional_blocks": 168182182433,
+        "serialized_bytes": 11560977820384737,
+        "proof_bytes_assumed": 11021987507929088,
+        "raw_payload_bytes_assumed": 538990312455649,
+        "one_io_pass_years": 0.3663452803883925,
+        "engineer_years": 50,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 0.5225677489460336
+      },
+      "stress": {
+        "categories_core_years": {
+          "large_root_product": 579.1235171061749,
+          "large_kernel_product": 84.04162539230232,
+          "large_complex_add": 131.56440516242853,
+          "large_quarter_turn": 1.1653502620836855,
+          "large_negation": 0.00025138330650398993,
+          "residue_horner_stage": 180.13947034042909,
+          "raw_head_product_assembly": 37.924099019037705,
+          "input_regrid": 3.4029693546377286,
+          "raw_integer_state_update": 0.014989552199787058,
+          "raw_conductor_cache": 0.00028851753523637694,
+          "em_head_scale": 3.4519882545283322,
+          "em_head_add": 0.7166516414689896,
+          "em_bernoulli_scale_add": 0.33200779310414386,
+          "em_E_stage": 0.10973191551225582,
+          "em_fine_state_update": 0.26264045880624787,
+          "em_shift_update": 0.047471641125038024,
+          "em_endpoint_slot": 0.04747607986952702,
+          "em_final_scale_round": 0.0008349156809195723,
+          "em_state_copy_conversion": 0.026264489557253752,
+          "shared_coefficient_coordinate_conversion": 0.003617076512639537,
+          "small_character_butterfly": 243.46653838211927,
+          "small_time_butterfly": 169.6698700271169,
+          "small_gaussian_unit": 16.129018005768437,
+          "small_bucket_add": 1.0031373116579474,
+          "small_character_point_product": 31.97240659811942,
+          "small_complex_prefactor": 1.5141629606944147,
+          "small_real_radial_prefactor": 1.5239572255640508,
+          "small_inverse_scale": 1.894014504086992,
+          "small_odd_scale": 0.5232078220344254,
+          "large_completion_sign": 45.90651271388607,
+          "small_sign": 0.11174540768633891,
+          "negative_guard_adapter_superset": 0.055910446807652565,
+          "frequency_conjugate_copy": 0.01514139701767954,
+          "zero_imag_projection": 2.325892646081095e-07,
+          "em_shared_R_step": 4.17386718434357e-06,
+          "small_root_cis_enclosure": 633.8523763004432,
+          "small_outer_complex_exp_enclosure": 1639.7112885499823,
+          "small_cutoff_rational_division": 81.98556442749911,
+          "small_seed_unit_contraction": 0.003279422577099965,
+          "small_phase_root_division_product": 2.325892646081095,
+          "small_positive_root_setup": 0.000943971802998723,
+          "small_real_exp_seed": 0.004719859014993615,
+          "small_fixed_setup_arithmetic": 0.0004188872295273167,
+          "small_gauss_butterfly": 0.0037975342666352807,
+          "small_gauss_point_product": 0.00048159858829519275,
+          "small_gauss_inverse_scale": 1.4263389522650648e-05,
+          "small_kernel_build_butterfly": 0.00061783818796225,
+          "em_initial_B_step_cis_grid_objects": 13.310298868954359,
+          "em_log_anchor": 0.0006042225169214389,
+          "em_nonanchor_log_stage": 4.657970170491258e-05,
+          "raw_log_inverse_root_step_enclosures": 0.5018823281178703,
+          "bernoulli_exact_constant": 0.0010007435436511333,
+          "large_kernel_setup_product": 0.002254665179416808,
+          "large_kernel_setup_add": 0.00036919959507079913,
+          "large_kernel_setup_quarter": 2.2858835108404702e-06,
+          "large_chirp_enclosure": 9.487938448529064,
+          "large_cache_presum": 4.571980186349724e-05,
+          "large_scaled_cache_round": 4.571980186349724e-05,
+          "offgrid_arithmetic": 544.727288965037,
+          "native_discovery_generation": 339.1656260993832,
+          "lean_additional_frontend": 0,
+          "literal_representation": 44615.0447312252,
+          "principal": 29.28848504605181,
+          "nonprincipal_closure": 1378.9781070170102,
+          "cache_input_translation": 2.733013506445093,
+          "large_nonchirp_root_producer": 3035.566823121649,
+          "generic_library_compilation": 912.6169290440338,
+          "process_distribution_setup": 10449.748561360813,
+          "finite_coverage_and_ladder": 803.6173310042589,
+          "serialization_and_root_assembly": 549.542245186728
+        },
+        "finite_parts_core_years": {
+          "mask_search": 16.091607093061576,
+          "complete_tiles": 60.44023097130327,
+          "complete_ladder": 626.7903769614926,
+          "anchors": 0.29511597840139936,
+          "remaining": 100
+        },
+        "total_core_years": 66578.38430322261,
+        "total_core_hours": 583626116.8020494,
+        "retained_notional_blocks": 329768985161,
+        "serialized_bytes": 346844687134093773,
+        "proof_bytes_assumed": 345787843384180736,
+        "raw_payload_bytes_assumed": 1056843749913037,
+        "one_io_pass_years": 109.9084490373456,
+        "engineer_years": 200,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 109.9084490373456
+      }
+    },
+    "Candle": {
+      "favorable": {
+        "categories_core_years": {
+          "large_root_product": 45.181543129402,
+          "large_kernel_product": 5.463903943009792,
+          "large_complex_add": 6.415171667353665,
+          "large_quarter_turn": 0.056823287230559856,
+          "large_negation": 1.2257624420063246e-05,
+          "residue_horner_stage": 14.053960870322507,
+          "raw_head_product_assembly": 2.958728604278422,
+          "input_regrid": 0.1659311465118,
+          "raw_integer_state_update": 0.0011694415426078027,
+          "raw_conductor_cache": 1.8757753566126264e-05,
+          "em_head_scale": 0.20198561049226899,
+          "em_head_add": 0.0349444312087178,
+          "em_bernoulli_scale_add": 0.017268192340486235,
+          "em_E_stage": 0.005350604325916109,
+          "em_fine_state_update": 0.020490449561392694,
+          "em_shift_update": 0.0018518001234278747,
+          "em_endpoint_slot": 0.002314966590545466,
+          "em_final_scale_round": 4.071106781695168e-05,
+          "em_state_copy_conversion": 0.0012806747315672682,
+          "shared_coefficient_coordinate_conversion": 0.00017637116007090104,
+          "small_character_butterfly": 39.57199104751165,
+          "small_time_butterfly": 27.577401898275152,
+          "small_gaussian_unit": 0.524308071549185,
+          "small_bucket_add": 0.04891367123401207,
+          "small_character_point_product": 4.676990178889378,
+          "small_complex_prefactor": 0.2214949092015607,
+          "small_real_radial_prefactor": 0.14861842310049536,
+          "small_inverse_scale": 0.0923534611749655,
+          "small_odd_scale": 0.025511976373162572,
+          "large_completion_sign": 2.2384334071631864,
+          "small_sign": 0.005448783601166653,
+          "negative_guard_adapter_superset": 0.0021809857389722947,
+          "frequency_conjugate_copy": 0.0007383050227913034,
+          "zero_imag_projection": 1.1341213899021031e-08,
+          "em_shared_R_step": 1.3568043966117093e-07,
+          "small_root_cis_enclosure": 0.061814163195694244,
+          "small_outer_complex_exp_enclosure": 0.15990691992958272,
+          "small_cutoff_rational_division": 0.007995345996479135,
+          "small_seed_unit_contraction": 0.0004797207597887481,
+          "small_phase_root_division_product": 0.0002268242779804206,
+          "small_positive_root_setup": 9.205743997248781e-08,
+          "small_real_exp_seed": 4.60287199862439e-07,
+          "small_fixed_setup_arithmetic": 1.3616821274023035e-05,
+          "small_gauss_butterfly": 0.0004937877475911793,
+          "small_gauss_point_product": 5.870770317500622e-05,
+          "small_gauss_inverse_scale": 6.954927682238192e-07,
+          "small_kernel_build_butterfly": 8.033658310607033e-05,
+          "em_initial_B_step_cis_grid_objects": 0.0012980388135028814,
+          "em_log_anchor": 5.892461819815195e-08,
+          "em_nonanchor_log_stage": 2.725510283261403e-06,
+          "raw_log_inverse_root_step_enclosures": 4.894426099083996e-05,
+          "bernoulli_exact_constant": 9.759389889068917e-08,
+          "large_kernel_setup_product": 0.00014658538440298592,
+          "large_kernel_setup_add": 1.800242838458114e-05,
+          "large_kernel_setup_quarter": 1.1146126579989643e-07,
+          "large_chirp_enclosure": 0.000925276921846049,
+          "large_cache_presum": 2.2293292565692377e-06,
+          "large_scaled_cache_round": 2.2293292565692377e-06,
+          "offgrid_arithmetic": 0.02577139163704735,
+          "native_discovery_generation": 3.5422894348834215,
+          "lean_additional_frontend": 0,
+          "literal_representation": 1.9883021578492341,
+          "principal": 0.3141879068836165,
+          "nonprincipal_closure": 0.13789781070170104,
+          "cache_input_translation": 0.2679572486606501,
+          "large_nonchirp_root_producer": 6.137981062307494e-06,
+          "generic_library_compilation": 0.007605141075366948,
+          "process_distribution_setup": 0.023749429614419348,
+          "finite_coverage_and_ladder": 6.092338717329581,
+          "serialization_and_root_assembly": 0.10826699796135979
+        },
+        "finite_parts_core_years": {
+          "mask_search": 3.2183214186123155,
+          "complete_tiles": 1.2088046194260653,
+          "complete_ladder": 0.6581298958095673,
+          "anchors": 0.007082783481633585,
+          "remaining": 1
+        },
+        "total_core_years": 162.45923952787612,
+        "total_core_hours": 1424117.693701362,
+        "retained_notional_blocks": 149894993255,
+        "serialized_bytes": 1708323307432704,
+        "proof_bytes_assumed": 1227939784744960,
+        "raw_payload_bytes_assumed": 480383522687744,
+        "one_io_pass_years": 0.00541334989806799,
+        "engineer_years": 10,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 0.1624592395278761
+      },
+      "planning": {
+        "categories_core_years": {
+          "large_root_product": 158.41778559746575,
+          "large_kernel_product": 21.45675078419945,
+          "large_complex_add": 28.791290443083255,
+          "large_quarter_turn": 0.3187786413634408,
+          "large_negation": 6.876527299655482e-05,
+          "residue_horner_stage": 47.30563228950556,
+          "raw_head_product_assembly": 10.37404216875122,
+          "input_regrid": 0.7446989855449585,
+          "raw_integer_state_update": 0.004100354408768609,
+          "raw_conductor_cache": 8.418479800477468e-05,
+          "em_head_scale": 0.7554261832410862,
+          "em_head_add": 0.15683060726472553,
+          "em_bernoulli_scale_add": 0.07265591927259583,
+          "em_E_stage": 0.020011260178926252,
+          "em_fine_state_update": 0.07184463877463314,
+          "em_shift_update": 0.010388598692430378,
+          "em_endpoint_slot": 0.010389570058368054,
+          "em_final_scale_round": 0.0002283890904530989,
+          "em_state_copy_conversion": 0.005747668195273901,
+          "shared_coefficient_coordinate_conversion": 0.000791553766398204,
+          "small_character_butterfly": 88.79954791061617,
+          "small_time_butterfly": 61.88368985972945,
+          "small_gaussian_unit": 2.941368281390928,
+          "small_bucket_add": 0.2744056956228077,
+          "small_character_point_product": 11.369763124880079,
+          "small_complex_prefactor": 0.5384541242689942,
+          "small_real_radial_prefactor": 0.5002496121562673,
+          "small_inverse_scale": 0.5181029171915567,
+          "small_odd_scale": 0.14312218745344202,
+          "large_completion_sign": 10.046089131348381,
+          "small_sign": 0.02445414080203594,
+          "negative_guard_adapter_superset": 0.012235329995634573,
+          "frequency_conjugate_copy": 0.004141891177859213,
+          "zero_imag_projection": 6.3624209973508e-08,
+          "em_shared_R_step": 7.61167266499169e-07,
+          "small_root_cis_enclosure": 6.935549110556894,
+          "small_outer_complex_exp_enclosure": 17.941556416099182,
+          "small_cutoff_rational_division": 0.897077820804959,
+          "small_seed_unit_contraction": 0.001166201167046447,
+          "small_phase_root_division_product": 0.025449683989403196,
+          "small_positive_root_setup": 1.0328844764913132e-05,
+          "small_real_exp_seed": 5.164422382456566e-05,
+          "small_fixed_setup_arithmetic": 7.639036734726924e-05,
+          "small_gauss_butterfly": 0.0013850746319932577,
+          "small_gauss_point_product": 0.00013174008592471397,
+          "small_gauss_inverse_scale": 3.901714429735627e-06,
+          "small_kernel_build_butterfly": 0.00022534411561252727,
+          "em_initial_B_step_cis_grid_objects": 0.14563995487502332,
+          "em_log_anchor": 6.611342161832649e-06,
+          "em_nonanchor_log_stage": 1.0193408459397646e-05,
+          "raw_log_inverse_root_step_enclosures": 0.005491546083172243,
+          "bernoulli_exact_constant": 1.0950035455535325e-05,
+          "large_kernel_setup_product": 0.0005756408045505257,
+          "large_kernel_setup_add": 8.079489859000015e-05,
+          "large_kernel_setup_quarter": 6.25297701137419e-07,
+          "large_chirp_enclosure": 0.1038160706311267,
+          "large_cache_presum": 1.0005229703482738e-05,
+          "large_scaled_cache_round": 1.2506537129353426e-05,
+          "offgrid_arithmetic": 3.8566979300067166,
+          "native_discovery_generation": 12.761963769041238,
+          "lean_additional_frontend": 0,
+          "literal_representation": 223.08750211186467,
+          "principal": 3.4560669757197817,
+          "nonprincipal_closure": 13.789781070170102,
+          "cache_input_translation": 0.8038717459819504,
+          "large_nonchirp_root_producer": 0.06137981062307494,
+          "generic_library_compilation": 3.802570537683474,
+          "process_distribution_setup": 10.658744010951404,
+          "finite_coverage_and_ladder": 36.081587472431366,
+          "serialization_and_root_assembly": 3.6634528038839256
+        },
+        "finite_parts_core_years": {
+          "mask_search": 6.436642837224631,
+          "complete_tiles": 12.088046194260652,
+          "complete_ladder": 7.521484523537912,
+          "anchors": 0.03541391740816792,
+          "remaining": 10
+        },
+        "total_core_years": 783.6551284284556,
+        "total_core_hours": 6869520.855803842,
+        "retained_notional_blocks": 168182182433,
+        "serialized_bytes": 11560977820384737,
+        "proof_bytes_assumed": 11021987507929088,
+        "raw_payload_bytes_assumed": 538990312455649,
+        "one_io_pass_years": 0.3663452803883925,
+        "engineer_years": 50,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 0.7836551284284555
+      },
+      "stress": {
+        "categories_core_years": {
+          "large_root_product": 1242.4924360585549,
+          "large_kernel_product": 180.30883011932312,
+          "large_complex_add": 282.2675533635613,
+          "large_quarter_turn": 2.500224638144634,
+          "large_negation": 0.0005393354744827829,
+          "residue_horner_stage": 386.4839239338689,
+          "raw_head_product_assembly": 81.36503661765661,
+          "input_regrid": 7.300970446519201,
+          "raw_integer_state_update": 0.03215964242171458,
+          "raw_conductor_cache": 0.0006190058676821667,
+          "em_head_scale": 7.406139051383197,
+          "em_head_add": 1.5375549731835831,
+          "em_bernoulli_scale_add": 0.7123129340450572,
+          "em_E_stage": 0.23542659034030886,
+          "em_fine_state_update": 0.5634873629382992,
+          "em_shift_update": 0.10184900678853309,
+          "em_endpoint_slot": 0.10185852998400051,
+          "em_final_scale_round": 0.001791286983945874,
+          "em_state_copy_conversion": 0.05634968818895981,
+          "shared_coefficient_coordinate_conversion": 0.007760331043119646,
+          "small_character_butterfly": 522.3502818271539,
+          "small_time_butterfly": 364.02170505723205,
+          "small_gaussian_unit": 34.60433272224621,
+          "small_bucket_add": 2.152201534296531,
+          "small_character_point_product": 68.59585595704422,
+          "small_complex_prefactor": 3.2485920016228906,
+          "small_real_radial_prefactor": 3.269605308210898,
+          "small_inverse_scale": 4.063552291698484,
+          "small_odd_scale": 1.1225269604191532,
+          "large_completion_sign": 98.4910699151802,
+          "small_sign": 0.23974647845133276,
+          "negative_guard_adapter_superset": 0.11995421564347619,
+          "frequency_conjugate_copy": 0.03248542100281735,
+          "zero_imag_projection": 4.990134115569254e-07,
+          "em_shared_R_step": 8.95490901763728e-06,
+          "small_root_cis_enclosure": 1359.9115903052736,
+          "small_outer_complex_exp_enclosure": 3517.9522384508196,
+          "small_cutoff_rational_division": 175.897611922541,
+          "small_seed_unit_contraction": 0.00703590447690164,
+          "small_phase_root_division_product": 4.990134115569254,
+          "small_positive_root_setup": 0.0020252636793947317,
+          "small_real_exp_seed": 0.01012631839697366,
+          "small_fixed_setup_arithmetic": 0.0008987102040855203,
+          "small_gauss_butterfly": 0.008147497835254458,
+          "small_gauss_point_product": 0.0010332555758801093,
+          "small_gauss_inverse_scale": 3.060168180184805e-05,
+          "small_kernel_build_butterfly": 0.0013255536212501604,
+          "em_initial_B_step_cis_grid_objects": 28.556853897063394,
+          "em_log_anchor": 0.0012963416003593429,
+          "em_nonanchor_log_stage": 9.993537705291811e-05,
+          "raw_log_inverse_root_step_enclosures": 1.0767737417984793,
+          "bernoulli_exact_constant": 0.0021470657755951615,
+          "large_kernel_setup_product": 0.004837317685298536,
+          "large_kernel_setup_add": 0.0007921068489215701,
+          "large_kernel_setup_quarter": 4.904295695195443e-06,
+          "large_chirp_enclosure": 20.35609228061308,
+          "large_cache_presum": 9.809048728904648e-05,
+          "large_scaled_cache_round": 9.809048728904648e-05,
+          "offgrid_arithmetic": 1168.696342424055,
+          "native_discovery_generation": 339.1656260993832,
+          "lean_additional_frontend": 0,
+          "literal_representation": 43742.64747268316,
+          "principal": 62.8375813767233,
+          "nonprincipal_closure": 1378.9781070170102,
+          "cache_input_translation": 2.6795724866065016,
+          "large_nonchirp_root_producer": 6512.719144485128,
+          "generic_library_compilation": 912.6169290440338,
+          "process_distribution_setup": 10449.748561360813,
+          "finite_coverage_and_ladder": 1490.906962132735,
+          "serialization_and_root_assembly": 549.542245186728
+        },
+        "finite_parts_core_years": {
+          "mask_search": 16.091607093061576,
+          "complete_tiles": 120.88046194260654,
+          "complete_ladder": 1253.5807539229852,
+          "anchors": 0.3541391740816793,
+          "remaining": 100
+        },
+        "total_core_years": 75015.10857802848,
+        "total_core_hours": 657582441.7949977,
+        "retained_notional_blocks": 329768985161,
+        "serialized_bytes": 346844687134093773,
+        "proof_bytes_assumed": 345787843384180736,
+        "raw_payload_bytes_assumed": 1056843749913037,
+        "one_io_pass_years": 109.9084490373456,
+        "engineer_years": 200,
+        "hypothetical_wall_lower_bound_years_1000_effective_cores": 109.9084490373456
+      }
+    }
+  },
+  "ordinary_PA_current_scalar_architecture": {
+    "favorable": {
+      "raw_real_products": 6500358634569129,
+      "width_factor": 0.1,
+      "unmeasured_nonproduct_and_composition_factor": 2,
+      "generation_core_years": 55866705.43449266,
+      "first_check_core_years": 142178.48019650232,
+      "finite_ladder_core_years": 15747.726338934994,
+      "finite_library_source_closure_reserve_core_years": 15958.726338934994,
+      "total_core_years": 56024842.641028106,
+      "serialized_bytes": 1.0584006910113848e+21,
+      "one_io_pass_years": 3353.869403919768,
+      "engineer_years": 10
+    },
+    "planning": {
+      "raw_real_products": 6735509060177560.0,
+      "width_factor": 0.3,
+      "unmeasured_nonproduct_and_composition_factor": 5,
+      "generation_core_years": 542697028.978865,
+      "first_check_core_years": 1215404.7317593386,
+      "finite_ladder_core_years": 224967.51912764276,
+      "finite_library_source_closure_reserve_core_years": 226097.51912764276,
+      "total_core_years": 544138531.229752,
+      "serialized_bytes": 9.049385553437586e+21,
+      "one_io_pass_years": 286757.7240803352,
+      "engineer_years": 100
+    },
+    "stress": {
+      "raw_real_products": 1.0597811765736444e+16,
+      "width_factor": 1,
+      "unmeasured_nonproduct_and_composition_factor": 20,
+      "generation_core_years": 27324561371.951588,
+      "first_check_core_years": 46359927.350712836,
+      "finite_ladder_core_years": 4499350.382552856,
+      "finite_library_source_closure_reserve_core_years": 4530350.382552856,
+      "total_core_years": 27375451649.684853,
+      "serialized_bytes": 3.450991469314633e+23,
+      "one_io_pass_years": 109355320.72510687,
+      "engineer_years": 500
+    }
+  },
+  "evidence": [
+    {
+      "path": "work/backend-costs-20261112/lean-dependent/REPORT.md",
+      "sha256": "F22B60290F42C374C77C8E1E4EF1810ABD7D5F8672C7F45050E81C3677F9C579"
+    },
+    {
+      "path": "work/backend-costs-20261112/lean-dependent/RESULTS.json",
+      "sha256": "915D1E48FCE7DC4F818E9BBA1173FCB3BD5DEDCB6158361BD67EA5798E95FA44"
+    },
+    {
+      "path": "work/backend-costs-20261112/hol4-setup/DEPENDENT_BLOCK_REPORT.md",
+      "sha256": "E24815D2D36AA4EDAF929FC12CB0541D1B31E26A1606C110D654CBCCBA788908"
+    },
+    {
+      "path": "work/backend-costs-20261112/hol4-setup/DEPENDENT_RESULTS.json",
+      "sha256": "1922B4389D23491F8689A2D31527E3AE976D88F4D3165BA3555204B6A7EEBFD9"
+    },
+    {
+      "path": "work/backend-costs-20261112/candle-setup/DEPENDENT_REPORT.md",
+      "sha256": "AECC04F5D12E6D5D42370AB77A4F965D3A42E120B5322C49BC73972447B8EED2"
+    },
+    {
+      "path": "work/backend-costs-20261112/candle-setup/DEPENDENT_RESULTS.json",
+      "sha256": "8AF2F3A11C9A96F54CA1F2F538AF0E2EDAFB21F69E09260522169F75727FD317"
+    },
+    {
+      "path": "work/backend-costs-20261112/mm0-pa/REPORT.md",
+      "sha256": "C2846C9815FDDC43EC04DECCDF44AC041BE1246430C6E10F888930B14F817331"
+    },
+    {
+      "path": "work/backend-costs-20261112/mm0-pa/RESULTS.json",
+      "sha256": "C61CEC5C19E489CB88B367E060E822ED163599EC30A2C87970296D87B93FB580"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/REPORT.md",
+      "sha256": "3BC20B6004D89FC8CAFF720435959A07374201A4472BE7304596C9CF8EC582D8"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/RESULTS.json",
+      "sha256": "59A306540D853BAEB47A715CE19ABB02FCB51EEE689383DCD71AAF8FAA6344D4"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/BATCH_REPORT.md",
+      "sha256": "D36B55EC6450443A26FF3F7234A14B7523F947F70B2169C0A8AF35B26443728B"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/BATCH_RESULTS.json",
+      "sha256": "82AC4131895AEE7D77270812AE512937F2B40FD2BDE91325F90025169E88D193"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-hol/BATCH_REPORT.md",
+      "sha256": "FAC52C0F64281D135D4984F216BC5DF9CED9A70C912E021CA075E66417F3755E"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-hol/BATCH_RESULTS.json",
+      "sha256": "D59E4C1E38CA8455B12C2EF806708B3079C714DDD985410020A7ED1C231BF2E6"
+    },
+    {
+      "path": "work/qrh-blueprint/estimates-20261111/SPECTRAL_COST_ESTIMATE.md",
+      "sha256": "48F721494509A7EDF164210C91DA0FDAD8140E05F85E7EA3C01A6E16EA567D43"
+    },
+    {
+      "path": "work/qrh-blueprint/estimates-20261111/FINITE_COST_ESTIMATE.md",
+      "sha256": "F03C9E49433988ECCEF97D6A10CCA073F7BD024F1B92511285CCD7D65CA1BFCE"
+    },
+    {
+      "path": "work/lean-pilots/spectral/REPORT.md",
+      "sha256": "06E423C98CADCB94A372872E8D1CF9D9B7F142F007350C9A08F058D82B064A08"
+    },
+    {
+      "path": "work/backend-costs-20261112/forecast-audit-20261113/WIDTH_RESOLVED_LEDGER.md",
+      "sha256": "B15214CA3EF1668B5D10CB3ACC6864A5C16F5F9A7448869F55438069917A11C8"
+    },
+    {
+      "path": "work/backend-costs-20261112/forecast-audit-20261113/WIDTH_RESOLVED_LEDGER.json",
+      "sha256": "9FF298322516D178D4401DA23C779EEDD6F9E387934EF55BEEB037C250D0459B"
+    },
+    {
+      "path": "work/backend-costs-20261112/forecast-audit-20261113/FINITE_FRONTIER.md",
+      "sha256": "FC1A163AF199B635E850D21F0D1EFF09D7143820D8FC3FF3C2FF307F535708FC"
+    }
+  ]
+}

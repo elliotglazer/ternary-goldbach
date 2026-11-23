@@ -1,0 +1,58 @@
+<<HOL message: Created theory "C10004Transform">>
+Saved definition ____ "tx_scale_def"
+Saved definition ____ "tx_lengths_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004Transform)>>
+Saved theorem _______ "tx_pair_compute"
+Saved definition ____ "tx_pair_def"
+Saved induction _____ "tx_pair_ind"
+Saved theorem _______ "tx_row_compute"
+Saved definition ____ "tx_row_def"
+Saved induction _____ "tx_row_ind"
+Saved definition ____ "tx_bound_def"
+Saved definition ____ "tx_special_def"
+Saved definition ____ "tx_root_row_ok_def"
+Saved definition ____ "tx_roots_ok_def"
+Saved definition ____ "tx_slot_def"
+Saved definition ____ "tx_cache_entry_def"
+Saved definition ____ "tx_cache_def"
+Saved theorem _______ "tx_cache_pair_compute"
+Saved definition ____ "tx_cache_pair_def"
+Saved induction _____ "tx_cache_pair_ind"
+Saved theorem _______ "tx_cache_row_compute"
+Saved definition ____ "tx_cache_row_def"
+Saved induction _____ "tx_cache_row_ind"
+Saved definition ____ "tx_add_def"
+Saved definition ____ "tx_sub_def"
+Saved definition ____ "tx_mul_def"
+Saved definition ____ "tx_action_def"
+Saved definition ____ "tx_sum_def"
+Saved definition ____ "tx_direct_at_def"
+Saved definition ____ "tx_emit_def"
+Saved definition ____ "tx_radix_def"
+Saved definition ____ "tx_leaf_def"
+Saved definition ____ "tx_gather_def"
+Saved definition ____ "tx_bridge_def"
+Saved theorem _______ "tx_full_compute"
+Saved definition ____ "tx_full_def"
+Saved theorem _______ "tx_omit_compute"
+Saved definition ____ "tx_omit_def"
+Saved definition ____ "tx_flatten_def"
+Saved definition ____ "tx_tensor_full_def"
+Saved definition ____ "tx_tensor_selected_def"
+Saved definition ____ "tx_project_def"
+Saved definition ____ "tx_input_ok_def"
+Saved definition ____ "tx_output_ok_def"
+Saved definition ____ "tx_checked_def"
+Saved theorem _______ "tx_mul_cached_identity"
+Saved theorem _______ "tx_emit_length"
+Proof of 
+
+tx_emit n T f = TL (tx_emit n F f)
+
+failed.
+First unsolved sub-goal is
+
+GENLIST (λj. f (j + 1)) n' = TL (GENLIST f (n' + 1))
+
+Tactic failure proving "tx_emit_projection"; heap saved to C10004Transform.tx_emit_projection.dumpedheap.
+Resume with: bin/hol --holstate=C10004Transform.tx_emit_projection.dumpedheap

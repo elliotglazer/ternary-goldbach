@@ -1,0 +1,29 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../c10004-root-check[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 17 directories
+actual_coordinates oracles=DISK_THM ⊢ ∀n r k.
+    MEM (n,r) rows ∧ k < n ⇒
+    near (FST r❲k❳) (cos (2 * pi * &k / &n)) ∧
+    near (SND r❲k❳) (sin (2 * pi * &k / &n))
+near_def oracles=DISK_THM ⊢ ∀q x. near q x ⇔ abs (real_of_int q − scale * x) < 1 / 2
+scale_def oracles=DISK_THM ⊢ scale = 2417851639229258349412352
+actual_complex_error oracles=DISK_THM ⊢ ∀n r k.
+    MEM (n,r) rows ∧ k < n ⇒
+    modu
+      ((real_of_int (FST r❲k❳) / scale,real_of_int (SND r❲k❳) / scale) −
+       (cos (2 * pi * &k / &n),sin (2 * pi * &k / &n))) < 1 / scale
+NORM_AUDIT_PASS

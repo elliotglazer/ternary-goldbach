@@ -1,0 +1,68 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:693:59: error: Ambiguous term
+  Ioi
+Possible interpretations:
+  Finset.Ioi 0 : Finset ?m.24
+  
+  Set.Ioi 0 : Set ?m.23
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:693:49: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℝ (Set ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:694:29: error: Ambiguous term
+  Ioi
+Possible interpretations:
+  Finset.Ioi 0 : Finset ?m.37
+  
+  Set.Ioi 0 : Set ?m.36
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:694:19: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℝ (Set ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:693:35: error: unsolved goals
+x : ℝ
+h1 : 1 ≤ x
+h2 : x ≤ 2
+⊢ sorry ()
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:694:5: error: unsolved goals
+x : ℝ
+h1 : 1 ≤ x
+h2 : x ≤ 2
+⊢ sorry ()
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:710:62: error: Ambiguous term
+  Ioi
+Possible interpretations:
+  Finset.Ioi 0 : Finset ?m.138
+  
+  Set.Ioi 0 : Set ?m.137
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:710:50: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℝ (Set ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:711:31: error: Ambiguous term
+  Ioi
+Possible interpretations:
+  Finset.Ioi 0 : Finset ?m.157
+  
+  Set.Ioi 0 : Set ?m.156
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:711:19: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Membership ℝ (Set ℕ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:710:36: error: unsolved goals
+h7 : Real.Gamma (7 / 4) ≤ 1
+h5 : Real.Gamma (5 / 4) ≤ 1
+hrec7 : Real.Gamma (7 / 4) = 3 / 4 * Real.Gamma (3 / 4)
+hrec5 : Real.Gamma (5 / 4) = 1 / 4 * Real.Gamma (1 / 4)
+⊢ sorry ()
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FullSpectralPilot.lean:711:5: error: unsolved goals
+h7 : Real.Gamma (7 / 4) ≤ 1
+h5 : Real.Gamma (5 / 4) ≤ 1
+hrec7 : Real.Gamma (7 / 4) = 3 / 4 * Real.Gamma (3 / 4)
+hrec5 : Real.Gamma (5 / 4) = 1 / 4 * Real.Gamma (1 / 4)
+⊢ sorry ()
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.

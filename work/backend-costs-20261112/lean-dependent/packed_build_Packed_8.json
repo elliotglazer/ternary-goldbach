@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\PackedP343N8.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\PackedP343N8.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 3.4410991999902762,
+  "user_cpu_seconds": 0.65625,
+  "system_cpu_seconds": 2.6875,
+  "cpu_seconds": 3.34375,
+  "peak_working_set_bytes": 451158016,
+  "observed_peak_private_bytes": 961495040,
+  "memory_samples": 68,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "PackedP343N8.lean",
+      "bytes": 349,
+      "sha256": "30EA9C3FE44B9603646BCD409CFF2771C23D4E8F2351684354E8246BDDDBA74C"
+    },
+    {
+      "path": "packed_build_Packed_8.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "PackedP343N8.olean",
+      "bytes": 7496,
+      "sha256": "CED7AD500BF73EBD7FE1E697717EABE5D89D09487060B9C58021422FBA18DFF8"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

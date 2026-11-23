@@ -1,0 +1,12 @@
+#use "hol.ml";;
+#use "../checker.ml";;
+#use "../arithmetic_sound.ml";;
+#use "../encoding_sound.ml";;
+#use "../dependent_arithmetic.ml";;
+#use "../dependent_network.ml";;
+#use "../dependent_sound.ml";;
+#use "../dependent_numeral_presentation.ml";;
+#use "../dependent_fixture.ml";;
+#use "../dependent_export.ml";;
+check_axioms ();;
+print_string "DEPENDENT_REPRODUCTION_DONE\n";;

@@ -1,0 +1,40 @@
+GammaEnclosure.lean:17:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+GammaEnclosure.lean:17:40: warning: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+GammaEnclosure.lean:17:40: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+GammaEnclosure.lean:104:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (∫ (a : ℝ) in Ioi 0, ↑(rexp (-a)) * ↑a ^ (3 / 4 + Complex.I * (5 / 128) - 1)) -
+    ∫ (a : ℝ) in Ioi 0, ↑(rexp (-a)) * ↑a ^ (3 / 4 - 1)
+in the target expression
+  ‖(∫ (x : ℝ) in Ioi 0, ↑(rexp (-x)) * ↑x ^ (3 / 4 + Complex.I * (5 / 128) - 1)) -
+        ∫ (x : ℝ) in Ioi 0, ↑(rexp (-x)) * ↑x ^ (-(1 / 4))‖ ≤
+    25 / 128
+
+hi1 : IntegrableOn (fun x => ↑(rexp (-x)) * ↑x ^ (3 / 4 + Complex.I * (5 / 128) - 1)) (Ioi 0) volume
+hi0 : IntegrableOn (fun x => ↑(rexp (-x)) * ↑x ^ (3 / 4 - 1)) (Ioi 0) volume
+hp : IntegrableOn (fun x => rexp (-x) * x ^ (5 / 4 - 1)) (Ioi 0) volume
+hm : IntegrableOn (fun x => rexp (-x) * x ^ (1 / 4 - 1)) (Ioi 0) volume
+⊢ ‖(∫ (x : ℝ) in Ioi 0, ↑(rexp (-x)) * ↑x ^ (3 / 4 + Complex.I * (5 / 128) - 1)) -
+        ∫ (x : ℝ) in Ioi 0, ↑(rexp (-x)) * ↑x ^ (-(1 / 4))‖ ≤
+    25 / 128
+GammaEnclosure.lean:118:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Complex.exp', which is 'noncomputable'
+GammaEnclosure.lean:136:23: error: Type mismatch
+  Complex.norm_exp_I_mul_ofReal ?m.67
+has type
+  ‖Complex.exp (Complex.I * ↑?m.67)‖ = 1
+but is expected to have type
+  ‖e‖ = 1

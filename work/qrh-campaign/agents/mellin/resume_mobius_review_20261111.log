@@ -1,0 +1,61 @@
+{
+  "tail": {
+    "P2_only_K": "13.8155",
+    "old_margin": "550346344605710203965603313459921471182553164017262558054369615551570476909847343949121831526327734021205760910949859538259458265324743541345755275617/408294433736365556957120728071557444298721869767781331989698623707183926514464176601159054617094098789020616365193760311587852922818110356000000000000000",
+    "relaxed_margin": "1658717155223891338198980977336648679163251324647923115139766135176451580870004314685877381169293601458363130422431743167266206904050078224634548861/1458194406201305560561145457398419443924006677742076185677495084668514023265943487861282337918193209960787915589977715398528046152921822700000000000000",
+    "relaxed_C5_cap_diagnostic": 0.014912081884489439,
+    "relaxed_m_upper_diagnostic": 0.09731556242407795
+  },
+  "cell_trials": [
+    {
+      "C": "1/100",
+      "cells_checked": 214,
+      "max_profile_diagnostic": 0.08637119620199334,
+      "first_failure": null,
+      "terminal_S_over_T_diagnostic": 0.000134586823899479,
+      "terminal_I_log2_over_T_diagnostic": 0.021590700271358853,
+      "combined_tail": {
+        "nu": "37/1000",
+        "b": "3/50",
+        "K0": "11/500",
+        "Sf_over_T": "27/200000",
+        "etaMax_diagnostic": 0.000158259840634,
+        "tail_margin": "5603869283634055826120686534051912591560244067915108356654348829681687588018042953974963762903570141235422443443082288246979909394245855852877762461/2041472168681827784785603640357787221493609348838906659948493118535919632572320883005795273085470493945103081825968801557939264614090551780000000000000",
+        "profile_upper_diagnostic": 0.09712681333845141,
+        "all_exact_assertions": true
+      }
+    },
+    {
+      "C": "1/200",
+      "cells_checked": 214,
+      "max_profile_diagnostic": 0.0855372741339272,
+      "first_failure": null,
+      "terminal_S_over_T_diagnostic": 7.628510915687591e-05,
+      "terminal_I_log2_over_T_diagnostic": 0.01223780828038288
+    },
+    {
+      "C": "1/500",
+      "cells_checked": 214,
+      "max_profile_diagnostic": 0.0855372741339272,
+      "first_failure": null,
+      "terminal_S_over_T_diagnostic": 4.130408031241316e-05,
+      "terminal_I_log2_over_T_diagnostic": 0.006626073085921183
+    }
+  ],
+  "input_sha256": {
+    "scripts\\gen_schoenfeld_cells.py": "ba19829a0d3627df37f01aa8a5c09304884f2711ebcf1874e4094c409ee3d546",
+    "TernaryGoldbach\\Prelim\\WeightsMain.lean": "4fda5627a66237839818faf55f394f1131f961aab5d9a3538199dd56a5342775",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells1.lean": "a960ca5a56efb060679efb04635a83cb6550646f114dafde4f7b7fca735bfe65",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells10.lean": "9ebb73b79c6e4c1079f6cd29f9653eed3ae73aac7459de61a565ce2e98a949ec",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells11.lean": "7bf817c4dfa3b2722ad8b1c334e7f78c5ded6cdce59579f8c4c23e82eada4d9d",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells2.lean": "c98f0f27d68cf1028b007b0220b03ad710f61c9ae16558466526e0fd8d1a65a9",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells3.lean": "c932be0c6d2023c210048c3f1edd8df4d900e1c8bb9e6641bd28a71eba46b5bc",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells4.lean": "061f6d90d6c2999aaf13c17489695384064b861af6bab432d70c4ec32538625f",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells5.lean": "e1eecb92495f2e7ae93dd10c76498842417ef3402f937c182e1478100758180c",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells6.lean": "3baea882c79b595bf88caa62fe4bdce3cbd816a9d941193219cab1b6b05d45a7",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells7.lean": "a9ddc35a676fe25def87f2d8e3144a634113f895e9cecc3b727221015668ba29",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells8.lean": "02a6543207b51000eeaea8cdaaa8f41bf641599c21d53a79a7bf0d8220a9dc18",
+    "TernaryGoldbach\\Prelim\\SchoenfeldCells9.lean": "9a8da765f114274bb5e445dcf5b12eaffa4b4e34b5284d6b3be1b9a72144f7d3"
+  }
+}
+AUDIT PASS: exact replay agrees; all 214 cells and terminal/domain checks passed.

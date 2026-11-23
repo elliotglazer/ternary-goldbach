@@ -1,0 +1,805 @@
+{
+  "status": "PASS: exact arithmetic checks only; no Lean proof or spectral certificate",
+  "counts": {
+    "active_conductors": 150000,
+    "primitive_characters": 5543640188,
+    "odd_conductor_characters": 3695775215,
+    "four_divisible_conductor_characters": 1847864973,
+    "even_characters": 2771820069,
+    "odd_characters": 2771820119,
+    "all_levels_divisor_sum_check": 300000,
+    "height_samples_exact": {
+      "1": "60343058",
+      "3": "20114486",
+      "4": "25000000",
+      "40": "2500000",
+      "101": "597655",
+      "120": "2500000/3",
+      "150000": "2000/3",
+      "299996": "25000000/74999",
+      "300000": "1000/3"
+    }
+  },
+  "pilots": [
+    {
+      "conductor": 4,
+      "factorization": [
+        [
+          2,
+          2
+        ]
+      ],
+      "coordinate_orders": [
+        2
+      ],
+      "root_order": 2,
+      "local_generators": [
+        [
+          3
+        ]
+      ],
+      "unit_group_order": 2,
+      "distinct_characters": 2,
+      "all_divisor_kernel_tests": 6,
+      "conductor_histogram": {
+        "1": 1,
+        "4": 1
+      },
+      "primitive_count": 1,
+      "primitive_even": 0,
+      "primitive_odd": 1,
+      "primitive_real": 1,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            1
+          ],
+          "real": true
+        }
+      ]
+    },
+    {
+      "conductor": 8,
+      "factorization": [
+        [
+          2,
+          3
+        ]
+      ],
+      "coordinate_orders": [
+        2,
+        2
+      ],
+      "root_order": 2,
+      "local_generators": [
+        [
+          7,
+          5
+        ]
+      ],
+      "unit_group_order": 4,
+      "distinct_characters": 4,
+      "all_divisor_kernel_tests": 16,
+      "conductor_histogram": {
+        "1": 1,
+        "4": 1,
+        "8": 2
+      },
+      "primitive_count": 2,
+      "primitive_even": 1,
+      "primitive_odd": 1,
+      "primitive_real": 2,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1
+          ],
+          "real": true
+        },
+        {
+          "coordinates": [
+            1,
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1
+          ],
+          "real": true
+        }
+      ]
+    },
+    {
+      "conductor": 16,
+      "factorization": [
+        [
+          2,
+          4
+        ]
+      ],
+      "coordinate_orders": [
+        2,
+        4
+      ],
+      "root_order": 4,
+      "local_generators": [
+        [
+          15,
+          5
+        ]
+      ],
+      "unit_group_order": 8,
+      "distinct_characters": 8,
+      "all_divisor_kernel_tests": 40,
+      "conductor_histogram": {
+        "1": 1,
+        "4": 1,
+        "8": 2,
+        "16": 4
+      },
+      "primitive_count": 4,
+      "primitive_even": 2,
+      "primitive_odd": 2,
+      "primitive_real": 0,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            0,
+            1
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            3
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            3
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1
+          ],
+          "real": false
+        }
+      ]
+    },
+    {
+      "conductor": 27,
+      "factorization": [
+        [
+          3,
+          3
+        ]
+      ],
+      "coordinate_orders": [
+        18
+      ],
+      "root_order": 18,
+      "local_generators": [
+        [
+          2
+        ]
+      ],
+      "unit_group_order": 18,
+      "distinct_characters": 18,
+      "all_divisor_kernel_tests": 72,
+      "conductor_histogram": {
+        "1": 1,
+        "3": 1,
+        "9": 4,
+        "27": 12
+      },
+      "primitive_count": 12,
+      "primitive_even": 6,
+      "primitive_odd": 6,
+      "primitive_real": 0,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            17
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            2
+          ],
+          "parity": 0,
+          "conjugate": [
+            16
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            4
+          ],
+          "parity": 0,
+          "conjugate": [
+            14
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            5
+          ],
+          "parity": 1,
+          "conjugate": [
+            13
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            7
+          ],
+          "parity": 1,
+          "conjugate": [
+            11
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            8
+          ],
+          "parity": 0,
+          "conjugate": [
+            10
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            10
+          ],
+          "parity": 0,
+          "conjugate": [
+            8
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            11
+          ],
+          "parity": 1,
+          "conjugate": [
+            7
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            13
+          ],
+          "parity": 1,
+          "conjugate": [
+            5
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            14
+          ],
+          "parity": 0,
+          "conjugate": [
+            4
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            16
+          ],
+          "parity": 0,
+          "conjugate": [
+            2
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            17
+          ],
+          "parity": 1,
+          "conjugate": [
+            1
+          ],
+          "real": false
+        }
+      ]
+    },
+    {
+      "conductor": 40,
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "coordinate_orders": [
+        2,
+        2,
+        4
+      ],
+      "root_order": 4,
+      "local_generators": [
+        [
+          7,
+          5
+        ],
+        [
+          2
+        ]
+      ],
+      "unit_group_order": 16,
+      "distinct_characters": 16,
+      "all_divisor_kernel_tests": 128,
+      "conductor_histogram": {
+        "1": 1,
+        "4": 1,
+        "5": 3,
+        "8": 2,
+        "20": 3,
+        "40": 6
+      },
+      "primitive_count": 6,
+      "primitive_even": 3,
+      "primitive_odd": 3,
+      "primitive_real": 2,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            0,
+            1,
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            0,
+            1,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            2
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1,
+            2
+          ],
+          "real": true
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            3
+          ],
+          "parity": 1,
+          "conjugate": [
+            0,
+            1,
+            1
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            1
+          ],
+          "parity": 0,
+          "conjugate": [
+            1,
+            1,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            2
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1,
+            2
+          ],
+          "real": true
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            3
+          ],
+          "parity": 0,
+          "conjugate": [
+            1,
+            1,
+            1
+          ],
+          "real": false
+        }
+      ]
+    },
+    {
+      "conductor": 72,
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "coordinate_orders": [
+        2,
+        2,
+        6
+      ],
+      "root_order": 6,
+      "local_generators": [
+        [
+          7,
+          5
+        ],
+        [
+          2
+        ]
+      ],
+      "unit_group_order": 24,
+      "distinct_characters": 24,
+      "all_divisor_kernel_tests": 288,
+      "conductor_histogram": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "8": 2,
+        "9": 4,
+        "12": 1,
+        "24": 2,
+        "36": 4,
+        "72": 8
+      },
+      "primitive_count": 8,
+      "primitive_even": 4,
+      "primitive_odd": 4,
+      "primitive_real": 0,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            0,
+            1,
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            0,
+            1,
+            5
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            2
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1,
+            4
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            4
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1,
+            2
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            5
+          ],
+          "parity": 1,
+          "conjugate": [
+            0,
+            1,
+            1
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            1
+          ],
+          "parity": 0,
+          "conjugate": [
+            1,
+            1,
+            5
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            2
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1,
+            4
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            4
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1,
+            2
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            5
+          ],
+          "parity": 0,
+          "conjugate": [
+            1,
+            1,
+            1
+          ],
+          "real": false
+        }
+      ]
+    },
+    {
+      "conductor": 120,
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "coordinate_orders": [
+        2,
+        2,
+        2,
+        4
+      ],
+      "root_order": 4,
+      "local_generators": [
+        [
+          7,
+          5
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "unit_group_order": 32,
+      "distinct_characters": 32,
+      "all_divisor_kernel_tests": 512,
+      "conductor_histogram": {
+        "1": 1,
+        "3": 1,
+        "4": 1,
+        "5": 3,
+        "8": 2,
+        "12": 1,
+        "15": 3,
+        "20": 3,
+        "24": 2,
+        "40": 6,
+        "60": 3,
+        "120": 6
+      },
+      "primitive_count": 6,
+      "primitive_even": 3,
+      "primitive_odd": 3,
+      "primitive_real": 2,
+      "primitive_labels": [
+        {
+          "coordinates": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "parity": 1,
+          "conjugate": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "real": true
+        },
+        {
+          "coordinates": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "parity": 0,
+          "conjugate": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "real": false
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "parity": 0,
+          "conjugate": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "real": true
+        },
+        {
+          "coordinates": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "parity": 1,
+          "conjugate": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "real": false
+        }
+      ]
+    }
+  ],
+  "script_sha256": "570fd7e9636bc9ff0337beb80ae5053b581b6338c44462408bb225df5ebf1f9b"
+}

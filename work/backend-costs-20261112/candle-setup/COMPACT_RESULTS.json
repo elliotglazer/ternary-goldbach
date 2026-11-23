@@ -1,0 +1,104 @@
+{
+  "passed": false,
+  "markers": {
+    "ENCODING_SOUND_DONE": true,
+    "ROW_EXACT_DONE": true,
+    "RESIDUAL_SOUND_DONE": true,
+    "STAGE_EXACT_DONE": true,
+    "BOOTSTRAP_SOUND_DONE": true,
+    "INTEGER_EXPORT_DONE": true,
+    "REJECTED_rounding": true,
+    "REJECTED_missing": true,
+    "REJECTED_reordered": true,
+    "REJECTED_coefficient": true,
+    "CONTROLS_DONE": true,
+    "COMPACT_PROOF_DONE": true,
+    "COMPACT_EXPORT_DONE": false,
+    "COMPACT_REPRODUCTION_DONE": false
+  },
+  "errors": [],
+  "exit_status": 1,
+  "kernel_channel_present": false,
+  "intervals": {
+    "first": {
+      "cpu_seconds": 0.1124847950000003,
+      "wall_seconds": 0.14550539999999046
+    },
+    "repeat100": {
+      "cpu_seconds": 6.3415933550000005,
+      "wall_seconds": 6.343420537999975
+    },
+    "compact_conclusion": {
+      "cpu_seconds": 4.942812008000004,
+      "wall_seconds": 5.035045480999997
+    }
+  },
+  "resources": {
+    "User time (seconds)": "99.16",
+    "System time (seconds)": "4.89",
+    "Elapsed (wall clock) time (h:mm:ss or m:ss)": "2m 2.18s",
+    "Maximum resident set size (kbytes)": "3328168"
+  },
+  "statement": "closed integer residual theorem, numerals represented by proved balanced arithmetic expressions",
+  "real_coordinate_interpretation": false,
+  "root_certification": false,
+  "spectral_inputs": false,
+  "artifacts": {
+    "checker.ml": {
+      "bytes": 3315,
+      "sha256": "c3ec48d016d5a3c324036371325468c9348a418a1602163f816db53f3b0a9d6d"
+    },
+    "arithmetic_sound.ml": {
+      "bytes": 936,
+      "sha256": "91e96889f9cc64551065f3868180b9055ba55470ff4db787d28fdbecf76b49b1"
+    },
+    "encoding_sound.ml": {
+      "bytes": 4305,
+      "sha256": "cdfbae18d98e2c5683d6d8c824475570c6918c13effe0d740f031c00a3aa9222"
+    },
+    "row_sound.ml": {
+      "bytes": 2336,
+      "sha256": "1177e79cc6788f9a6ea9cb967709af65890049e877dd877699c8fa57c652435e"
+    },
+    "residual_sound.ml": {
+      "bytes": 1858,
+      "sha256": "ee0d07f1b4fb66fdb57fd3a776f0784be942319e5910a764d0eb0b1867a726be"
+    },
+    "stage_sound.ml": {
+      "bytes": 2007,
+      "sha256": "dc6f53c262f722c4975ac7273b00abe63fdf65f5917f0c63d91402ecacd8d1c7"
+    },
+    "export_integer.ml": {
+      "bytes": 1520,
+      "sha256": "823d0c57dfc658070549503187ecb449e9e123a11ab1204b0161cb8863f9e47c"
+    },
+    "bootstrap_sound.ml": {
+      "bytes": 241,
+      "sha256": "27f249af8c3a3677307081e2144f2d8520680950c3b176eb19d1e7cbe0251f28"
+    },
+    "fixture.ml": {
+      "bytes": 91486,
+      "sha256": "075827ba4bb6608eab92a27501f10376d99f65a0308c7f19c3aa9717125c6bd9"
+    },
+    "controls.ml": {
+      "bytes": 364406,
+      "sha256": "5ab95df120881c7abdc5c69a78c8a739d9f21ec9025e738504c10a863fc52aa8"
+    },
+    "compact_export.ml": {
+      "bytes": 2311,
+      "sha256": "f1bdec6dd1574b8837123bd9a3ac51999c9c6c12542e16f9d470f073ae7ed684"
+    },
+    "reproduce_compact.ml": {
+      "bytes": 201,
+      "sha256": "9f745e25240b0a9c01a9e0d4258bb0fb94665158e15e77f7f4791904ceb577c3"
+    },
+    "reproduce_compact.log": {
+      "bytes": 3027572,
+      "sha256": "941a488f23d6d8244057850a31beb4c0422078a58be8ba28e8c15ca97b2a1e78"
+    },
+    "reproduce_compact.time": {
+      "bytes": 1227,
+      "sha256": "036485ea3ad2233cc064252f02fda342127ca9fd2090d6b04bc8cc677fa06d87"
+    }
+  }
+}

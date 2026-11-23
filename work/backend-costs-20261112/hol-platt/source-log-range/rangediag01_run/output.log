@@ -1,0 +1,28 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 39 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val checked = fn: string -> term -> tactic -> thm
+OK..
+RANGE_DIAGNOSTIC_FAIL,slr_domain_bounds,HOL_ERR (at Preterm.type-analysis: at line 17, character 32: Couldn't infer type for overloaded name *)
+Exception- Match raised
+poly: : error: Value or constructor (slr_domain_bounds) has not been declared
+Found near
+  checked "slr_reduced_ratio"
+  (
+  Parse.Term
+  [
+     QUOTE
+     " (*#loc 19 55*)!A D k:num. source_log_domain A D k ==>\n    (1 + (&(A - (2:num) ** k * D):real) / &(A + (2:num) ** k * D)) /\n    (1 - (&(A - (2:num) ** k * D):real) / &(A + (2:num) ** k * D)) =\n    (&A:real) / &((2:num) ** k * D)"
+     ])
+  (
+  (
+  (((... >> ...) >> (... by ...)) >> ([...] by RealField.REAL_ASM_ARITH_TAC))
+  >> FULL_SIMP_TAC bool_ss [... ...]) >> RealField.REAL_ASM_FIELD_TAC)
+Static Errors

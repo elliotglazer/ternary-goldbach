@@ -1,0 +1,103 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../hol4-setup[0m
+Holmake: Scanning [1m../c10004-transform[0m
+Holmake: Scanning [1m../c10004-projection[0m
+Holmake: Scanning [1m../c10004-traversal[0m
+Holmake: Scanning [1m../c10004-traversal-refinement[0m
+Holmake: Scanning [1m../c10004-traversal-cv[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-hol-fused/C10004FusedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004Fused">>
+Saved definition ____ "fused_margin_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004Fused)>>
+Saved definition ____ "fused_all_def"
+Saved induction _____ "fused_all_ind"
+Saved definition ____ "fused_checked_def"
+Translation failed inside:
+
+  case v0 of
+    ((v5,v6),v7,v8) =>
+      case v1 of
+        (v9,v10) =>
+          0 ≤ v7 ∧ (v8 = 1 ∨ v8 = -1) ∧
+          (ABS v5 + ABS v6) * v7 + ABS v9 + ABS v10 + 2 * v7 <
+          v8 * (v5 * v9 − v6 * v10)
+
+Translation failed inside:
+
+  case v0 of
+    (v5,v6) =>
+      case v1' of
+        (v7,v8) =>
+          case v1 of
+            (v9,v10) =>
+              0 ≤ v7 ∧ (v8 = 1 ∨ v8 = -1) ∧
+              (ABS v5 + ABS v6) * v7 + ABS v9 + ABS v10 + 2 * v7 <
+              v8 * (v5 * v9 − v6 * v10)
+
+Translation failed inside:
+
+  case v1' of
+    (v7,v8) =>
+      case v1 of
+        (v9,v10) =>
+          0 ≤ v7 ∧ (v8 = 1 ∨ v8 = -1) ∧
+          (ABS v0 + ABS v1'') * v7 + ABS v9 + ABS v10 + 2 * v7 <
+          v8 * (v0 * v9 − v1'' * v10)
+
+Translation failed inside:
+
+  case v1 of
+    (v9,v10) =>
+      0 ≤ v0' ∧ (v1' = 1 ∨ v1' = -1) ∧
+      (ABS v0 + ABS v1'') * v0' + ABS v9 + ABS v10 + 2 * v0' <
+      v1' * (v0 * v9 − v1'' * v10)
+
+Translation failed inside:
+
+  0 ≤ v0' ∧ (v1' = 1 ∨ v1' = -1) ∧
+  (ABS v0 + ABS v1'') * v0' + ABS v0'' + ABS v1 + 2 * v0' <
+  v1' * (v0 * v0'' − v1'' * v1)
+
+Translation failed inside:
+
+  (v1' = 1 ∨ v1' = -1) ∧
+  (ABS v0 + ABS v1'') * v0' + ABS v0'' + ABS v1 + 2 * v0' <
+  v1' * (v0 * v0'' − v1'' * v1)
+
+Translation failed inside:
+
+  (ABS v0 + ABS v1'') * v0' + ABS v0'' + ABS v1 + 2 * v0' <
+  v1' * (v0 * v0'' − v1'' * v1)
+
+Translation failed inside:
+
+  (ABS v0 + ABS v1'') * v0' + ABS v0'' + ABS v1 + 2 * v0'
+
+Translation failed inside:
+
+  (ABS v0 + ABS v1'') * v0' + ABS v0'' + ABS v1
+
+Translation failed at:
+
+  ABS v1
+
+Translation of fused_margin needs ABS : :int -> int.
+Stopping.
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-hol-fused/C10004FusedScript.sml : HOL_ERR (HOL_ERROR {message = "Unable to translate ABS", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-hol-fused/C10004FusedScript : HOL_ERR (HOL_ERROR {message = "Unable to translate ABS", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Unable to translate ABS", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-hol-fused/C10004FusedScript - exited with code 1

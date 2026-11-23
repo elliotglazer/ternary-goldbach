@@ -1,0 +1,48 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../hol4-setup[0m
+Holmake: Scanning [1m../c10004-transform[0m
+Holmake: Scanning [1m../c10004-projection[0m
+Holmake: Scanning [1m../c10004-traversal[0m
+Holmake: Scanning [1m../c10004-traversal-refinement[0m
+Holmake: Scanning [1m../c10004-traversal-cv[0m
+Holmake: Scanning [1m../c10004-hol-shared-phase[0m
+Holmake: Scanned 21 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-packed-input-hol/C10004PackedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004Packed">>
+Saved definition ____ "packed_coord_def"
+Saved theorem _______ "packed_block_compute"
+Saved definition ____ "packed_block_def"
+Saved definition ____ "packed_input_def"
+Saved definition ____ "packed_probe_def"
+Saved definition ____ "packed_checked_def"
+Saved theorem _______ "cv_packed_coord_thm"
+Finished translating packed_coord, stored in cv_packed_coord_thm
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004Packed)>>
+Saved definition ____ "cv_packed_block_def"
+Saved induction _____ "cv_packed_block_ind"
+Saved theorem _______ "cv_packed_block_thm"
+Finished translating packed_block, stored in cv_packed_block_thm
+Saved definition ____ "cv_packed_input_def"
+Saved induction _____ "cv_packed_input_ind"
+Saved theorem _______ "cv_packed_input_thm"
+Finished translating packed_input, stored in cv_packed_input_thm
+Saved theorem _______ "cv_packed_probe_thm"
+Finished translating packed_probe, stored in cv_packed_probe_thm
+Saved theorem _______ "cv_packed_checked_thm"
+Finished translating packed_checked, stored in cv_packed_checked_thm
+Exporting theory "C10004Packed" ... done.
+Theory "C10004Packed" took 0.35491s to build
+Holmake: [1/1] C10004Packed

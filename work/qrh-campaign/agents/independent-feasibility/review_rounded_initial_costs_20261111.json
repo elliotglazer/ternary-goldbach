@@ -1,0 +1,104 @@
+{
+  "status": "PASS_CONDITIONAL_PRICE_INTERFACE",
+  "checks": 126116,
+  "pins": {
+    "major-constants/ROUNDED_INITIAL_DIFFERENCE_COST_COMPARISON_2026-11-11.md": "BB570E4A54C551C0CA4137CAD792548EC89D11594BC284D437AF01946C9BB6E0",
+    "major-constants/rounded_initial_costs_20261111.py": "C53F39BA5DBE3052C27201FF7C3193E3F160ABCECF5907601ED2A8432FAD0BF1",
+    "major-constants/rounded_initial_costs_20261111.json": "5157CA6B7BEF1826EB0818DF7C1EED239961E0FD642BE622097CECC42902E7DB",
+    "integration/EFFICIENCY_MM0_LADDER_ARITHMETIC_2026-11-11.md": "3D8116AC2D53E33DA76DF0FE7AE42211AAB4D7B5C3D954746587D8DC9EF21227",
+    "major-constants/ROUNDED_INITIAL_DIFFERENCES_EXACT_TRAVERSAL_2026-11-11.md": "FB0B0F9AF9C53150E14C1F5FFDE7A39E78DD8A6BFA09FE7769BF234EBB965E46",
+    "major-constants/rounded_initial_differences_20261111.json": "51A09104F2F5C29FA84B5E39312984E4E0433764ED933A3F7BDA064830FDD6A2",
+    "moebius/REVIEW_ROUNDED_INITIAL_DIFFERENCES_EXACT_TRAVERSAL_2026-11-11.md": "B493A9965A8C9CCDBF138CD56FE322AEE7BC4DD75252AF538951D99709E5A40E",
+    "integration/MATCHED_NORMALIZED_RESIDUE_COST_COMPARISON_2026-11-11.md": "4E01AE12B9224898AF3CF169389B83B0BFFAE2FF0FDB74083B094BEB6735C54C",
+    "independent-feasibility/RESIDUE_POWER_TWO_STATE_NORMALIZATION_2026-11-11.md": "EFB31BE5B3A556CE88A29B1E566ACB86E026F7C9E3E778F67F5B81453914F004",
+    "prime-estimates/OPTIMIZED_BYTE_HORNER_GRID_PROFILE_2026-11-11.md": "A27CD526DB41C599F43912626827062EDC454F887A722782FF3953BE5BFFCE29",
+    "independent-feasibility/REVIEW_OPTIMIZED_BYTE_HORNER_GRID_PROFILE_2026-11-11.md": "A9D0D867D68FE902E0270A988DCED8E1D2A0B711EF9F4A99A2EEB24ABCA92A0B"
+  },
+  "selected": [
+    {
+      "L": 1,
+      "p": 103,
+      "twenty_complex_init_core": 188960,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 78,
+      "strict_conversion_core_U_threshold": 26,
+      "rounded_advance_complex_add_core": 1482,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 0
+    },
+    {
+      "L": 10,
+      "p": 112,
+      "twenty_complex_init_core": 198320,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 90,
+      "strict_conversion_core_U_threshold": 27,
+      "rounded_advance_complex_add_core": 1558,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 9
+    },
+    {
+      "L": 20,
+      "p": 122,
+      "twenty_complex_init_core": 207760,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 110,
+      "strict_conversion_core_U_threshold": 28,
+      "rounded_advance_complex_add_core": 1634,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 19
+    },
+    {
+      "L": 40,
+      "p": 141,
+      "twenty_complex_init_core": 226480,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 134,
+      "strict_conversion_core_U_threshold": 31,
+      "rounded_advance_complex_add_core": 1862,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 39
+    },
+    {
+      "L": 80,
+      "p": 163,
+      "twenty_complex_init_core": 254560,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 170,
+      "strict_conversion_core_U_threshold": 35,
+      "rounded_advance_complex_add_core": 2014,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 79
+    },
+    {
+      "L": 130,
+      "p": 177,
+      "twenty_complex_init_core": 273200,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 190,
+      "strict_conversion_core_U_threshold": 37,
+      "rounded_advance_complex_add_core": 2166,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 129
+    },
+    {
+      "L": 260,
+      "p": 197,
+      "twenty_complex_init_core": 292000,
+      "exact_final_complex_core": 7580,
+      "dyadic_final_complex_core": 218,
+      "strict_conversion_core_U_threshold": 40,
+      "rounded_advance_complex_add_core": 2394,
+      "init_complex_rounds": 20,
+      "unit_rounds": "U",
+      "all_numerator_advances": 259
+    }
+  ],
+  "scope": "Independent finite metadata and algebra only; no author execution, actual coefficients, builds or occupancy scan."
+}

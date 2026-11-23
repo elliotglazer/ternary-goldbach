@@ -1,0 +1,224 @@
+{
+  "scope": "Byte reconciliation only; mathematical derivations and explicit lower cut are in the companion review.",
+  "author_report_sha256": "E7E7459604669F251BDC7A1FE196CEDCC734D1AF37C4005B96EA1781F4CA720D",
+  "expected_source_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "verified_author_pins": [
+    {
+      "path": "Energy/ZeroGrowth.lean",
+      "sha256": "9B891926385D2746C1397EB0F54AAE7A6AE7F13185CC0C46AD8DBE782332E8AD",
+      "lines": 66
+    },
+    {
+      "path": "Energy/ZeroGrowthOriginal.lean",
+      "sha256": "6282A4B2C61775A1C92E9F62344366560379EEFF92CA529389C8B57A411BCA7D",
+      "lines": 248
+    },
+    {
+      "path": "Energy/ZeroGrowthBounded.lean",
+      "sha256": "CFE04DEFDE47F010997AD64D97B1878E6764F6DAD21E0D09F09F9E8A2C9D9718",
+      "lines": 91
+    },
+    {
+      "path": "Energy/ZeroGrowthBounds.lean",
+      "sha256": "5A56F38CD321E7CE06E8C3C2728EDFA070F9A81F81B049F5BEE3E11E5DD163EC",
+      "lines": 64
+    },
+    {
+      "path": "Energy/ZeroGrowthReflection.lean",
+      "sha256": "0A2A4F63A3F701A950698EA63147A115F01EB72557CC7A3A2B81FDCF4CE52B09",
+      "lines": 98
+    },
+    {
+      "path": "Energy/ZeroGrowthWindow.lean",
+      "sha256": "54D72178AF6C8FBB0E67AA025DB168E307BC1B5A655C74AEE768F99DCF7B3D33",
+      "lines": 81
+    },
+    {
+      "path": "Energy/ZeroGrowthMoments.lean",
+      "sha256": "FF7D1775A03A88BE93C6A7EA904FA8189D71236C638A8F1207AFBD037068939F",
+      "lines": 76
+    },
+    {
+      "path": "Energy/ZeroGrowthChild.lean",
+      "sha256": "9E2C4E26CC2BC7D7467E132652D591B225892CF1788C43FDF8F72DED6E29FFD6",
+      "lines": 70
+    },
+    {
+      "path": "Energy/ReferenceHomogeneous.lean",
+      "sha256": "4A60AD60815EE0FDE3A67BE2B4536F1AC3D49872BEAC37174F79025855E92F45",
+      "lines": 100
+    },
+    {
+      "path": "Energy/ZeroReflectionSupport.lean",
+      "sha256": "12255985128738DABAED630CB8F161009772F2E2BBA74D84D6794B1660C7471E",
+      "lines": 267
+    },
+    {
+      "path": "Energy/ZeroRetainedError.lean",
+      "sha256": "4CCB3231ACA7BF7727721CFFD860B41F1F843A645797D93D65575763FFC3C8C9",
+      "lines": 248
+    },
+    {
+      "path": "Energy/ReferenceDeletionEnergy.lean",
+      "sha256": "7AE940260AE66BA51E370038051C5784A69F21E7515C7A9395E3DFA87BC7CC6E",
+      "lines": 124
+    },
+    {
+      "path": "Energy/ReferenceDeletionBudget.lean",
+      "sha256": "E7813955B749D15B62F044C13CE1DD1B96CF334286843613B8515D9FE8AFF469",
+      "lines": 207
+    },
+    {
+      "path": "Energy/ReferenceWeightedEnergy.lean",
+      "sha256": "FF30671D548C2D4964A6843C240469526706C853DB386F3DD2930D879A7DD81D",
+      "lines": 62
+    },
+    {
+      "path": "Energy/ZeroGrowthContourBounded.lean",
+      "sha256": "4ABC10F8357C64E5EE30F3AD08ABD7173D7700DC87E1F11365FA05413941BB38",
+      "lines": 125
+    },
+    {
+      "path": "Energy/ZeroGrowthReserve.lean",
+      "sha256": "3EB53DF30E9794FE0E35DCF8CD904D217CDFDAAC3501955A77B54151D8A9D3D6",
+      "lines": 96
+    },
+    {
+      "path": "Energy/ReferenceScalarBounds.lean",
+      "sha256": "918BA417C2CA4118EC987E114A8DE94D24AA42A9E2D40824A8A6EF18ED2E6508",
+      "lines": 73
+    },
+    {
+      "path": "Moments/UniformRadialComparison.lean",
+      "sha256": "691A519EBF6299C90CB322973CCE682B2FD7178452CDD06DB2B5388E2AA068C1",
+      "lines": 81
+    },
+    {
+      "path": "Moments/UniformOriginalComparison.lean",
+      "sha256": "C02C85741EE1EA5717538D93FDB4BE7A7EAF68A4B2EEB426FF5079B4522E3A2C",
+      "lines": 70
+    },
+    {
+      "path": "Moments/UniformOriginalEnergy.lean",
+      "sha256": "D100B9A02B83116CEF1030AEB503AF9830239752CC2F57DBC01FFF4F04F45C84",
+      "lines": 76
+    },
+    {
+      "path": "Moments/UniformReflectionApproximation.lean",
+      "sha256": "66B338241929D7FD0CDD5C89887297E4E5EFC4A8F7A100402412602BE3283517",
+      "lines": 279
+    },
+    {
+      "path": "Moments/UniformNaturalRetained.lean",
+      "sha256": "EC3D375978F3C93D9C73E683377F6878959DC8E16EF9BE099B0A64DF7B14C674",
+      "lines": 67
+    },
+    {
+      "path": "Moments/UniformRetainedEnergy.lean",
+      "sha256": "0A266EE17020575CC62DCA913E869E84A1A67BF96E444ECCFB368AFB5DDDFC17",
+      "lines": 85
+    },
+    {
+      "path": "Moments/UniformReflectionChoices.lean",
+      "sha256": "2CD8B7065C189675337009B8CCB08E22C47E842B88F0CF1C32DDBA283EF85054",
+      "lines": 69
+    },
+    {
+      "path": "Moments/UniformReflectionScale.lean",
+      "sha256": "8B386E7DAE475BC10B40DF94EA303A86FC6B70504BD1CFD6C656E4DF92CAC979",
+      "lines": 75
+    },
+    {
+      "path": "Moments/UniformReflectionProfile.lean",
+      "sha256": "C4E46D26256EE55C311D2CF87012E063BAEE70E63408ED79767853988A8B7DCA",
+      "lines": 215
+    },
+    {
+      "path": "Moments/ReflectedProfileMeasure.lean",
+      "sha256": "05D62DFD2A97E8056402C6EE87B564A56299674F1B22762BA52275A8BB50A745",
+      "lines": 222
+    },
+    {
+      "path": "Moments/RetainedWeightedSource.lean",
+      "sha256": "1BF1DA2E2E55CC6E0261E065467D06A649F4500F4102A2E5D84569AAA2F96497",
+      "lines": 172
+    },
+    {
+      "path": "Moments/ReflectionWeightedEnergy.lean",
+      "sha256": "D0F5E51AC23D16494E782D695DD2471501E7F9354C4775BC8DCFD8CB69DE6351",
+      "lines": 285
+    },
+    {
+      "path": "Moments/RetainedReflection.lean",
+      "sha256": "97A698C3726A87BB75ED0FEC23EB29AFB92824714B0B74F74665D9B2570604D9",
+      "lines": 120
+    },
+    {
+      "path": "Moments/NaturalReflection.lean",
+      "sha256": "C8FE9636B9BC40FC0ED280FCE22FEE4C15E6C7D97927BA0626FFC66FF1B15888",
+      "lines": 102
+    },
+    {
+      "path": "work/qrh-campaign/agents/integration/QRH_BASE_FLOOR_ANALYTIC_AUDIT_2026-11-11.md",
+      "sha256": "7EBE8A5D2A7E2D4B78416A5BB34E1C7EF34E50155A25461A05C698F4989CEF7E",
+      "lines": 146
+    },
+    {
+      "path": "work/qrh-campaign/agents/moebius/REVIEW_QRH_BASE_FLOOR_ANALYTIC_AUDIT_2026-11-11.md",
+      "sha256": "C944E03E2E67AD98B18625573AA18348916D7426C6375E1B11F1F48514414412",
+      "lines": 71
+    },
+    {
+      "path": "work/qrh-campaign/agents/integration/QRH_ORIGINAL_POISSON_ANALYTIC_AUDIT_2026-11-11.md",
+      "sha256": "DE7237156824F7503A51F36A9E4A777F57647F2FC98F82D624D000E5D5C12AFA",
+      "lines": 135
+    },
+    {
+      "path": "work/qrh-campaign/agents/moebius/REVIEW_QRH_ORIGINAL_POISSON_ANALYTIC_AUDIT_2026-11-11.md",
+      "sha256": "9516B5144F691A5D5203C93D737B943E69EFE4A0E4BA4F399A164F833AF75407",
+      "lines": 63
+    },
+    {
+      "path": "work/qrh-campaign/agents/major-constants/QRH_ENERGY_INDUCTION_MATH_AUDIT_2026-11-11.md",
+      "sha256": "C04D05F95C1747652F28576AC41372702F586F5D85E2849F12CD3E4D28A8D695",
+      "lines": 181
+    },
+    {
+      "path": "work/qrh-campaign/agents/independent-feasibility/REVIEW_QRH_ENERGY_INDUCTION_MATH_AUDIT_2026-11-11.md",
+      "sha256": "70B618789695E16ECD8F78F81E951D9A7AB02FA6ED55B78CE9A46CD7203C3877",
+      "lines": 133
+    },
+    {
+      "path": "work/qrh-campaign/agents/audit/QRH_REMAINING_SOURCE_OBLIGATIONS_2026-11-11.md",
+      "sha256": "B4FD23DBABB297E057E00A6DFDE4BD3A8164202AA40DC292C090E7C5C3858D07",
+      "lines": 72
+    }
+  ],
+  "additional_read_source_pins": [
+    {
+      "path": "Energy/ZeroReferenceChild.lean",
+      "sha256": "99F4578EAE4F8F197BA833F1E60FB20AA7BB7E1D236991EFD156FFAB9BE9C0AD",
+      "lines": 83
+    },
+    {
+      "path": "Energy/ReferenceLowChild.lean",
+      "sha256": "039F42D462FC365F92CFA479F0F9F733DA03587DF6E637BE48897CA556B26026",
+      "lines": 77
+    },
+    {
+      "path": "Energy/ReferenceState.lean",
+      "sha256": "B36CB63E659FAB4957581C6CE5D3184012F1A836D2CF099358BC527B9C765688",
+      "lines": 113
+    },
+    {
+      "path": "Energy/ReferenceDivisors.lean",
+      "sha256": "FB222C730642403B00184D065A60A9BC993784AFC0029206DF61565C5E9A55B0",
+      "lines": 73
+    },
+    {
+      "path": "Energy/ReferenceProfileBudget.lean",
+      "sha256": "636D88C9F544C4833A66852824024734D2590829F692D2077A178EB8D9DB0686",
+      "lines": 108
+    }
+  ]
+}

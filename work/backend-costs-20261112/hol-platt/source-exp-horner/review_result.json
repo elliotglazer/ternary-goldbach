@@ -1,0 +1,61 @@
+{
+  "accepted_run": "exphorner02",
+  "scope": "Actual integer exponential Horner rounding against its defined ideal recurrence, for absolute phase at most two",
+  "exact_roots": [
+    "seh_round_pair_error",
+    "seh_affine_distance",
+    "seh_affine_scale",
+    "seh_den_positive",
+    "seh_exact_affine",
+    "seh_actual_step_error",
+    "seh_update_error",
+    "seh_bound_nonnegative",
+    "seh_bound_step",
+    "seh_initial_exact",
+    "source_exp_horner_error",
+    "source_exp_horner_zero_error"
+  ],
+  "exact_program_types": [
+    "source_exp_horner",
+    "source_exp_step",
+    "seh_affine",
+    "seh_ideal",
+    "seh_bound"
+  ],
+  "manifest_counts": {
+    "source_expected.sha256": 17,
+    "exphorner02_source.sha256": 6,
+    "exphorner02_dependency.sha256": 49,
+    "exphorner02_output.sha256": 3
+  },
+  "phase_cpu_seconds": {
+    "theory": 27.36,
+    "build": 4.83,
+    "audit": 15.44
+  },
+  "accepted_phase_cpu_seconds": 47.629999999999995,
+  "container_elapsed_seconds": 193.0675077,
+  "all_recorded_experiment_phase_cpu_seconds": 209.91,
+  "recorded_time_files": [
+    "expdiag01_run\\time.txt",
+    "expdiag02_run\\time.txt",
+    "expdiag03_run\\time.txt",
+    "expdiag04_run\\time.txt",
+    "expdiag05_run\\time.txt",
+    "expdiag06_run\\time.txt",
+    "expdiag07_run\\time.txt",
+    "exphorner01_theory.time",
+    "exphorner02_audit.time",
+    "exphorner02_build.time",
+    "exphorner02_theory.time"
+  ],
+  "hashes": {
+    "SourceExpHornerScript.sml": "2e61253128c2266874f12cc8d2a984c68f16ec1d48993091b46a95fbd993d6c7",
+    "exp_horner_audit.sml": "8624d41be43a40b9be239382194b143704b2c726f2e9800bbe7602dc47be843d",
+    "source_expected.sha256": "92ba39f1e265f42d8db9a7d9b092ce04cd65670a0ed5e4cd6113fc1f11627bbc",
+    ".hol/objs/SourceExpHornerTheory.uo": "c437df63ce5e8a8b75b0622edea038d224247fdc48bd0450e704b53d4801fc1e",
+    ".hol/objs/SourceExpHornerTheory.dat": "a4d8c1e60675ecb3ac742c47295863852b638fef975776f0a645686bbd6e0063",
+    "exphorner02_audit.log": "5ef8d4d8e9c7783f5fac3d2c47f9dd8437f0f78ce41e2ceed7cd9c021abb627f"
+  },
+  "forecast_unchanged": true
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\LegacyP0N4.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\LegacyP0N4.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 4.397498499994981,
+  "user_cpu_seconds": 1.53125,
+  "system_cpu_seconds": 2.71875,
+  "cpu_seconds": 4.25,
+  "peak_working_set_bytes": 478081024,
+  "observed_peak_private_bytes": 992342016,
+  "memory_samples": 87,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "LegacyP0N4.lean",
+      "bytes": 69355,
+      "sha256": "7A2A31ED6C1B3E95BC4E8E45D4B7E17102203E950006CB6FED6B1136BE721448"
+    },
+    {
+      "path": "legacy_build.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "LegacyP0N4.olean",
+      "bytes": 352344,
+      "sha256": "B977568854FC09B21C2A6976216AA02974D39EA775120DE19C697B9557540BA1"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

@@ -1,0 +1,89 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-character-kernel[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-gaussian[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-gaussian-transform[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Q10004All">>
+Saved definition ____ "cut_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Q10004All)>>
+Saved definition ____ "slice_def"
+Saved induction _____ "slice_ind"
+Saved definition ____ "weights_for_def"
+Saved induction _____ "weights_for_ind"
+<<HOL message: mk_functional: 
+  pattern completion has added 11 clauses to the original specification.>>
+Saved definition ____ "all_jobs_def"
+Starting translation of all_jobs from Q10004AllTheory.
+Starting translation of slice from Q10004AllTheory.
+Starting translation of cut from Q10004AllTheory.
+Saved definition ____ "cv_cut_def"
+Saved induction _____ "cv_cut_ind"
+Saved theorem _______ "cv_cut_thm"
+Finished translating cut, stored in cv_cut_thm
+Starting translation of slice from Q10004AllTheory.
+Saved theorem _______ "cv_slice_thm"
+Finished translating slice, stored in cv_slice_thm
+Starting translation of all_jobs from Q10004AllTheory.
+Starting translation of weights_for from Q10004AllTheory.
+Saved theorem _______ "cv_weights_for_thm"
+Finished translating weights_for, stored in cv_weights_for_thm
+Starting translation of all_jobs from Q10004AllTheory.
+Saved theorem _______ "cv_all_jobs_thm"
+Finished translating all_jobs, stored in cv_all_jobs_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllScript.sml:37: warning: Pattern is not exhaustive.
+Found near val [enc, _] = #2 (strip_comb (concl (... ...)))
+SOURCE_LOAD kernels 0.006077
+INPUT_TERMS kernels 0.205139
+INPUT_CONVERT shared_kernels 2.763143
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllScript.sml:55: warning: Pattern is not exhaustive. Found near val [actual, r, e, ...] = line ins
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllScript.sml:73: warning: Pattern is not exhaustive.
+Found near val [_, decoder] = #2 (strip_comb (concl inv))
+SOURCE_LOAD 6559 0.003321
+INPUT_TERMS 6559 0.106591
+INPUT_CONVERT grid_spans_6559 2.085199
+INPUT_CONVERT probe_list_6559 0.006584
+INPUT_CONVERT packet_6559 0.380578
+ENCODED all_6559 0.001366 0.179514
+Saved theorem _______ "all_interior_repair_bits_6559"
+ACCEPTED_ALL 6559 17
+SOURCE_LOAD 7707 0.007947
+INPUT_TERMS 7707 0.274951
+INPUT_CONVERT grid_spans_7707 3.907806
+INPUT_CONVERT probe_list_7707 0.013302
+INPUT_CONVERT packet_7707 0.292463
+ENCODED all_7707 0.000974000000003 0.196228
+Saved theorem _______ "all_interior_repair_bits_7707"
+ACCEPTED_ALL 7707 35
+SOURCE_LOAD 5499 0.003612
+INPUT_TERMS 5499 0.13882
+INPUT_CONVERT grid_spans_5499 3.526329
+INPUT_CONVERT probe_list_5499 0.047709
+INPUT_CONVERT packet_5499 0.258846
+ENCODED all_5499 0.001301 0.193859
+Saved theorem _______ "all_interior_repair_bits_5499"
+ACCEPTED_ALL 5499 21
+SOURCE_LOAD 7659 0.004129
+INPUT_TERMS 7659 0.134366
+INPUT_CONVERT grid_spans_7659 3.209108
+INPUT_CONVERT probe_list_7659 0.071344
+INPUT_CONVERT packet_7659 1.667205
+ENCODED all_7659 0.001396 0.186293
+Saved theorem _______ "all_interior_repair_bits_7659"
+ACCEPTED_ALL 7659 20
+Exporting theory "Q10004All" ... done.
+Theory "Q10004All" took 28.8s to build
+Holmake: [1/1] Q10004All

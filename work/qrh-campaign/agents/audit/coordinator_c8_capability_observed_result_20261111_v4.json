@@ -1,0 +1,174 @@
+{
+  "status": "FAILED_DIAGNOSTIC_ATTEMPT_NO_RETRY",
+  "tool_chunk": "1a2c3a",
+  "tool_wall_seconds": 1.3188213,
+  "observed_outer_exit_code": 1,
+  "outer_record_sha256": "4864924FF2AA06B3C4D9D67E17FEFF1FC649C8E14C518EC3AEEBC797E5611F2C",
+  "inner_record_sha256": "B22FBDCDAFC7BCF837CEDC478FC7296BF59111E62F5A6AB2257EB25C8BEB3E45",
+  "failure": "RuntimeError: handshake_baseline_pid_identity_valid",
+  "original_child_identity": {
+    "creation_filetime": 134389003674607903,
+    "image": {
+      "capacity": 4096,
+      "complete": true,
+      "error_on_failure": null,
+      "path": "C:\\Users\\glaze\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "returned_length": 65,
+      "success": true
+    },
+    "pid": 30892,
+    "pid_error": null,
+    "times_error": null,
+    "times_success": true,
+    "valid": true
+  },
+  "child_self_matches_original": true,
+  "supervisor_startup_matches_original": true,
+  "inner_baseline_accounting": {
+    "ActiveProcesses": 2,
+    "ThisPeriodTotalKernelTime": 937500,
+    "ThisPeriodTotalUserTime": 781250,
+    "TotalKernelTime": 937500,
+    "TotalPageFaultCount": 6756,
+    "TotalProcesses": 2,
+    "TotalTerminatedProcesses": 0,
+    "TotalUserTime": 781250
+  },
+  "baseline_pid_snapshot": {
+    "assigned": 2,
+    "buffer_size": 72,
+    "capacity": 8,
+    "complete": true,
+    "entries": [
+      {
+        "continuity": "original_retained_handle",
+        "identity": {
+          "creation_filetime": 134389003674607903,
+          "image": {
+            "capacity": 4096,
+            "complete": true,
+            "error_on_failure": null,
+            "path": "C:\\Users\\glaze\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "returned_length": 65,
+            "success": true
+          },
+          "pid": 30892,
+          "pid_error": null,
+          "times_error": null,
+          "times_success": true,
+          "valid": true
+        },
+        "matches_original": true,
+        "member": true,
+        "membership_error": null,
+        "membership_success": true,
+        "open_success": true,
+        "snapshot_pid": 30892
+      },
+      {
+        "continuity": "later_opened_candidate_only",
+        "identity": {
+          "creation_filetime": 134389003674807365,
+          "image": {
+            "capacity": 4096,
+            "complete": true,
+            "error_on_failure": null,
+            "path": "C:\\Windows\\System32\\conhost.exe",
+            "returned_length": 31,
+            "success": true
+          },
+          "pid": 29984,
+          "pid_error": null,
+          "times_error": null,
+          "times_success": true,
+          "valid": true
+        },
+        "matches_original": false,
+        "member": true,
+        "membership_error": null,
+        "membership_success": true,
+        "open_success": true,
+        "snapshot_pid": 29984
+      }
+    ],
+    "error_on_failure": null,
+    "information_class": 3,
+    "job_handle": "0x168",
+    "listed": 2,
+    "logical_job": "inner_normal",
+    "pids": [
+      30892,
+      29984
+    ],
+    "raw_hex": "0200000002000000ac780000000000002075000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "returned_length": 24,
+    "stage": "handshake_baseline",
+    "success": true,
+    "valid": false
+  },
+  "outer_total_processes": [
+    0,
+    1,
+    4
+  ],
+  "allocation_stages_executed": false,
+  "timeout_fixture_executed": false,
+  "child_postexit_memory_observed": false,
+  "cleanup_wait_state": 0,
+  "supervisor_exit_observed": true,
+  "terminate_job_success": true,
+  "remaining_associated_descendants": [],
+  "full_capability_established": false,
+  "retry_authorized": false,
+  "numerical_evaluation_authorized": false,
+  "inventory": [
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_authorization_20261111_v4.json",
+      "bytes": 1414,
+      "sha256": "EF123EB21A68E262A5C62DA9889B41D69DFB62D1AE1DFC5DB4DFF54DD7666509"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_execution_decision_20261111_v4.json",
+      "bytes": 1010,
+      "sha256": "5C10B341BF4E4B0970553B1A1E966E34332A90C9882449B3DFB3A1F8AA813242"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_v4.json",
+      "bytes": 5228,
+      "sha256": "4864924FF2AA06B3C4D9D67E17FEFF1FC649C8E14C518EC3AEEBC797E5611F2C"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_v4.started",
+      "bytes": 170,
+      "sha256": "D1B49CF920F464094DC5E4C1C7A6F58F9910B9E9A9C0C728147ED89821571D1A"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_v4.stdout",
+      "bytes": 551,
+      "sha256": "CE737C9D8DC4606458DEBB363A627668EE6057CE9004FBF194E3CB131C4E31D7"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_v4.stderr",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_v4\\attempt.json",
+      "bytes": 1276,
+      "sha256": "E1DC9C6E2C5B928B0B50FB679D35F2CF9F0425D0C2E5191E4511E46284F6107F"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_v4\\completion.json",
+      "bytes": 9797,
+      "sha256": "B22FBDCDAFC7BCF837CEDC478FC7296BF59111E62F5A6AB2257EB25C8BEB3E45"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_v4\\normal.jsonl",
+      "bytes": 713,
+      "sha256": "F37CDCB353FCA10CE948F122D30EE1341F8BCAA3FED8CEBB043EE11AEDD9DCF8"
+    }
+  ],
+  "retained_bytes_before_this_record": 20159,
+  "additional_tool_output_reserve_bytes": 65536,
+  "identity_scope": "A later query of PID29984 reports conhost.exe and membership in the explicit inner job. PID snapshot and later query are not atomic; no claim of historical completeness or loaded-binary hash identity."
+}

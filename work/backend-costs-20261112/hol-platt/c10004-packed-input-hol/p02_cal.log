@@ -1,0 +1,21 @@
+<<HOL message: Created theory "C10004PackedCal">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX;bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004PackedCal)>>
+SHARED_BOOTSTRAP_DONE
+TRAVERSAL_CV_TAG,actual_phase_encoding,DISK_THM,
+PACKED_CPU,warmup,1,4,256,0.105996,0.158781,0.010373,0.000131,0.000061,0.275367
+PACKED_CPU,warmup,1,16,256,0.123891,0.629769,0.031971,0.000102,0.00007,0.785827
+PACKED_CPU,cal,1,4,256,0.246772,0.129929,0.011812,0.00012,0.000101,0.388757
+PACKED_CPU,cal,1,16,256,0.110921,0.258609,0.026383,0.0001,0.000069,0.39611
+PACKED_CPU,cal,1,16,256,0.164004,0.272488,0.01987,0.000093,0.000071,0.456558
+PACKED_CPU,cal,1,4,256,0.242652,0.741801,0.022674,0.000217,0.000069,1.007448
+PACKED_CPU,cal,1,4,256,0.233189,0.350642,0.030025,0.000178,0.000074,0.614132
+PACKED_CPU,cal,1,16,256,0.131934,0.186044,0.012986,0.000072,0.000058,0.331115
+PACKED_CHOICE,16
+Exporting theory "C10004PackedCal" ... done.
+Theory "C10004PackedCal" took 4.6s to build
+PACKED_REPLAY_DONE,cal

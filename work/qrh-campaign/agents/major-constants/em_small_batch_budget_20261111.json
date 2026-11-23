@@ -1,0 +1,75 @@
+{
+  "scope": "scalar design only; no numerical function or FFT evaluations",
+  "parameters": {
+    "T": 2000,
+    "N": 1024,
+    "B": 1025,
+    "M": 16,
+    "K": 16,
+    "p": 24,
+    "J": 8,
+    "L": 32,
+    "sigma": "629/1250",
+    "t0": "31999/16",
+    "delta": "-1/8",
+    "outer_radius": "1",
+    "target_radius": "1/16"
+  },
+  "panels": [
+    [
+      "15999/8",
+      "2000"
+    ],
+    [
+      "7999/4",
+      "15999/8"
+    ],
+    [
+      "15997/8",
+      "7999/4"
+    ],
+    [
+      "3999/2",
+      "15997/8"
+    ],
+    [
+      "15995/8",
+      "3999/2"
+    ],
+    [
+      "7997/4",
+      "15995/8"
+    ],
+    [
+      "15993/8",
+      "7997/4"
+    ],
+    [
+      "1999",
+      "15993/8"
+    ]
+  ],
+  "outer_bound": "339194823/5",
+  "EM_bound": "54379186859011733945376540357778725974714504308466797299503068758798823220909660063448/15426298564409649893626267022250448281935725589294337487498987027123575899167917668819427490234375",
+  "Taylor_bound": "1/128849018880",
+  "max_main_jet_weight": "470596/45",
+  "main_arithmetic_bound": "5/2535301200456458802993406410752",
+  "full_g_coefficient_error_bound": "1267650639154328862597589614751/23439877893560724933014241604388499467796480000",
+  "coordinate_halfwidth": "1/4503599627370496",
+  "added_quotient_error_bound": "37/92233720368547758080",
+  "full_quotient_error_bound": "1540133/92233720368547758080",
+  "counts": {
+    "moment_contributions": 393216,
+    "normalized_transforms": 384,
+    "transform_length": 32,
+    "radix_two_butterflies": 30720,
+    "bucket_entries": 12288,
+    "one_jet_bucket_entries": 768,
+    "contraction_terms": 3072,
+    "full_g_coefficients": 128,
+    "direct_reference_main_terms": 8192,
+    "direct_reference_coefficient_contributions": 131072,
+    "correction_polynomials": 128,
+    "affine_pochhammer_updates": 248
+  }
+}

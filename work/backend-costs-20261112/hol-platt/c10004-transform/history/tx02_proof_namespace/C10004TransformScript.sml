@@ -1,0 +1,314 @@
+(* Integer reference and selected CT program. No analytic root claim. *)
+Theory C10004Transform
+Ancestors BlockRound integer list arithmetic
+Libs intLib cv_transLib
+
+val _ = intLib.prefer_int ();
+
+Definition tx_scale_def:
+  tx_scale : int = 2417851639229258349412352
+End
+Definition tx_lengths_def:
+  tx_lengths : num list = [2;3;5;10;15;20;30;40;60]
+End
+Definition tx_pair_def:
+  (tx_pair (k:num) ([]:(int # int) list) = (0,0)) /\
+  (tx_pair 0 (x::xs) = x) /\
+  (tx_pair (SUC k) (x::xs) = tx_pair k xs)
+End
+Definition tx_row_def:
+  (tx_row (k:num) ([]:(int # int) list list) = []) /\
+  (tx_row 0 (x::xs) = x) /\
+  (tx_row (SUC k) (x::xs) = tx_row k xs)
+End
+Definition tx_bound_def:
+  tx_bound (b:int) (r:int,i:int) <=> -b <= r /\ r <= b /\
+    -b <= i /\ i <= b
+End
+Definition tx_special_def:
+  tx_special (n:num) (k:num) =
+    if k = 0 then SOME (tx_scale,0) else
+    if 2*k = n then SOME (-tx_scale,0) else
+    if 4*k = n then SOME (0,tx_scale) else
+    if 4*k = 3*n then SOME (0,-tx_scale) else NONE
+End
+Definition tx_root_row_ok_def:
+  tx_root_row_ok n row <=> LENGTH row = n /\
+    EVERY (\k. tx_bound (tx_scale+1) (tx_pair k row) /\
+      case tx_special n k of NONE => T
+      | SOME v => tx_pair k row = v) (GENLIST I n)
+End
+Definition tx_roots_ok_def:
+  tx_roots_ok roots <=> LENGTH roots = 9 /\
+    tx_root_row_ok 2 (tx_row 0 roots) /\
+    tx_root_row_ok 3 (tx_row 1 roots) /\
+    tx_root_row_ok 5 (tx_row 2 roots) /\
+    tx_root_row_ok 10 (tx_row 3 roots) /\
+    tx_root_row_ok 15 (tx_row 4 roots) /\
+    tx_root_row_ok 20 (tx_row 5 roots) /\
+    tx_root_row_ok 30 (tx_row 6 roots) /\
+    tx_root_row_ok 40 (tx_row 7 roots) /\
+    tx_root_row_ok 60 (tx_row 8 roots)
+End
+Definition tx_slot_def:
+  tx_slot (n:num) : num = if n = 2 then 0 else if n = 3 then 1 else
+    if n = 5 then 2 else if n = 10 then 3 else if n = 15 then 4 else
+    if n = 20 then 5 else if n = 30 then 6 else if n = 40 then 7 else 8
+End
+Definition tx_cache_entry_def:
+  tx_cache_entry (r:int,i:int) = ((r,i),(r+i,i-r))
+End
+Definition tx_cache_def:
+  tx_cache roots = MAP (MAP tx_cache_entry) roots
+End
+Definition tx_cache_pair_def:
+  (tx_cache_pair (k:num) ([]:((int # int) # (int # int)) list) =
+     ((0,0),(0,0))) /\
+  (tx_cache_pair 0 (x::xs) = x) /\
+  (tx_cache_pair (SUC k) (x::xs) = tx_cache_pair k xs)
+End
+Definition tx_cache_row_def:
+  (tx_cache_row (k:num)
+     ([]:((int # int) # (int # int)) list list) = []) /\
+  (tx_cache_row 0 (x::xs) = x) /\
+  (tx_cache_row (SUC k) (x::xs) = tx_cache_row k xs)
+End
+Definition tx_add_def:
+  tx_add (a:int,b:int) (c:int,d:int) = (a+c,b+d)
+End
+Definition tx_sub_def:
+  tx_sub (a:int,b:int) (c:int,d:int) = (a-c,b-d)
+End
+Definition tx_mul_def:
+  tx_mul ((wr:int,wi:int),(wp:int,wm:int)) (vr:int,vi:int) =
+    let t = wr*(vr+vi); u = vi*wp; v = vr*wm
+    in (round_scaled tx_scale (t-u),round_scaled tx_scale (t+v))
+End
+Definition tx_action_def:
+  tx_action cache (n:num) (j:num) (r:int,i:int) =
+    let k = j MOD n in
+    if k = 0 then (r,i) else
+    if 2*k = n then (-r,-i) else
+    if 4*k = n then (-i,r) else
+    if 4*k = 3*n then (i,-r) else
+    tx_mul (tx_cache_pair k (tx_cache_row (tx_slot n) cache)) (r,i)
+End
+Definition tx_sum_def:
+  (tx_sum acc [] = (acc:int # int)) /\
+  (tx_sum acc (x::xs) = tx_sum (tx_add acc x) xs)
+End
+Definition tx_direct_at_def:
+  tx_direct_at cache (n:num) xs (k:num) =
+    if n = 2 then
+      if k MOD 2 = 0 then tx_add (tx_pair 0 xs) (tx_pair 1 xs)
+      else tx_sub (tx_pair 0 xs) (tx_pair 1 xs)
+    else tx_sum (tx_pair 0 xs)
+      (GENLIST (\j. tx_action cache n ((j+1)*k) (tx_pair (j+1) xs))
+        (n-1))
+End
+Definition tx_emit_def:
+  tx_emit (n:num) omit f =
+    if omit then GENLIST (\j. f (j+1)) (n-1) else GENLIST f n
+End
+Definition tx_radix_def:
+  tx_radix (n:num) : num = if n = 15 then 3 else 2
+End
+Definition tx_leaf_def:
+  tx_leaf (n:num) <=> n = 2 \/ n = 3 \/ n = 5
+End
+Definition tx_gather_def:
+  tx_gather (r:num) (m:num) (a:num) xs =
+    GENLIST (\b. tx_pair (a+r*b) xs) m
+End
+Definition tx_bridge_def:
+  tx_bridge cache (n:num) (r:num) (m:num) children =
+    GENLIST (\v. GENLIST (\a.
+      tx_action cache n (a*v) (tx_pair v (tx_row a children))) r) m
+End
+(* Fuel 6 exceeds the depth of every admitted tree. Fuel zero is a total
+   direct reference, never an unproved arbitrary result. *)
+Definition tx_full_def:
+  (tx_full 0 n cache xs = tx_emit n F (tx_direct_at cache n xs)) /\
+  (tx_full (SUC fuel) n cache xs =
+    if tx_leaf n then tx_emit n F (tx_direct_at cache n xs) else
+    let r = tx_radix n; m = n DIV r;
+        children = GENLIST (\a.
+          tx_full fuel m cache (tx_gather r m a xs)) r;
+        rows = tx_bridge cache n r m children
+    in tx_emit n F (\k.
+         tx_direct_at cache r (tx_row (k MOD m) rows) (k DIV m)))
+End
+(* Same children and bridge, but the unused output point is never evaluated. *)
+Definition tx_omit_def:
+  (tx_omit 0 n cache xs = tx_emit n T (tx_direct_at cache n xs)) /\
+  (tx_omit (SUC fuel) n cache xs =
+    if tx_leaf n then tx_emit n T (tx_direct_at cache n xs) else
+    let r = tx_radix n; m = n DIV r;
+        children = GENLIST (\a.
+          tx_full fuel m cache (tx_gather r m a xs)) r;
+        rows = tx_bridge cache n r m children
+    in tx_emit n T (\k.
+         tx_direct_at cache r (tx_row (k MOD m) rows) (k DIV m)))
+End
+Definition tx_flatten_def:
+  tx_flatten (count:num) (width:num) rows =
+    GENLIST (\i. tx_pair (i MOD width) (tx_row (i DIV width) rows))
+      (count*width)
+End
+(* External input has j4 fastest: 2*(40*j61+j41)+j4. *)
+Definition tx_tensor_full_def:
+  tx_tensor_full cache xs =
+    let r2 = GENLIST (\j. tx_full 6 2 cache
+          [tx_pair (2*j) xs;tx_pair (2*j+1) xs]) 2400;
+        a2 = tx_flatten 2400 2 r2;
+        r40 = GENLIST (\line. tx_full 6 40 cache
+          (GENLIST (\j41. tx_pair
+            (2*(40*(line DIV 2)+j41)+line MOD 2) a2) 40)) 120;
+        a40 = tx_flatten 120 40 r40;
+        r60 = GENLIST (\line. tx_full 6 60 cache
+          (GENLIST (\j61. tx_pair
+            ((2*j61+line MOD 2)*40+line DIV 2) a40) 60)) 80
+    in tx_flatten 80 60 r60
+End
+(* Output index is 59*(k41-1)+(k61-1). *)
+Definition tx_tensor_selected_def:
+  tx_tensor_selected cache xs =
+    let r2 = GENLIST (\j. tx_omit 6 2 cache
+          [tx_pair (2*j) xs;tx_pair (2*j+1) xs]) 2400;
+        a2 = tx_flatten 2400 1 r2;
+        r40 = GENLIST (\j61. tx_omit 6 40 cache
+          (GENLIST (\j41. tx_pair (40*j61+j41) a2) 40)) 60;
+        a40 = tx_flatten 60 39 r40;
+        r60 = GENLIST (\k41. tx_omit 6 60 cache
+          (GENLIST (\j61. tx_pair (39*j61+k41) a40) 60)) 39
+    in tx_flatten 39 59 r60
+End
+Definition tx_project_def:
+  tx_project ys = GENLIST (\i. tx_pair
+    ((2*(1+i DIV 59)+1)*60+(1+i MOD 59)) ys) 2301
+End
+Definition tx_input_ok_def:
+  tx_input_ok xs <=> LENGTH xs = 4800 /\
+    EVERY (tx_bound (2 ** 95 - 1)) xs
+End
+Definition tx_output_ok_def:
+  tx_output_ok ys <=> LENGTH ys = 2301 /\
+    EVERY (tx_bound (2 ** 112 - 1)) ys
+End
+Definition tx_checked_def:
+  tx_checked roots xs =
+    if tx_roots_ok roots /\ tx_input_ok xs then
+      let ys = tx_tensor_selected (tx_cache roots) xs in
+      if tx_output_ok ys then SOME ys else NONE
+    else NONE
+End
+
+Theorem tx_mul_cached_identity:
+  tx_mul (tx_cache_entry (wr,wi)) (vr,vi) =
+    (round_scaled tx_scale (vr*wr-vi*wi),
+     round_scaled tx_scale (vr*wi+vi*wr))
+Proof
+  simp [tx_mul_def,tx_cache_entry_def,
+        StageCheckTheory.three_real,StageCheckTheory.three_imag]
+QED
+
+Theorem tx_emit_length:
+  LENGTH (tx_emit n omit f) = if omit then n-1 else n
+Proof
+  Cases_on `omit` >> simp [tx_emit_def]
+QED
+Theorem tx_emit_projection:
+  tx_emit n T f = TL (tx_emit n F f)
+Proof
+  Cases_on `n` >> simp [tx_emit_def,TL_GENLIST,o_DEF,ADD1]
+QED
+Theorem tx_full_length:
+  !fuel n cache xs. LENGTH (tx_full fuel n cache xs) = n
+Proof
+  Cases >> simp [tx_full_def,tx_emit_length] >>
+  rpt gen_tac >> IF_CASES_TAC >> simp [tx_emit_length]
+QED
+Theorem tx_omit_length:
+  !fuel n cache xs. LENGTH (tx_omit fuel n cache xs) = n-1
+Proof
+  Cases >> simp [tx_omit_def,tx_emit_length] >>
+  rpt gen_tac >> IF_CASES_TAC >> simp [tx_emit_length]
+QED
+Theorem tx_omit_projection:
+  !fuel n cache xs. tx_omit fuel n cache xs = TL (tx_full fuel n cache xs)
+Proof
+  Cases >> simp [tx_omit_def,tx_full_def,tx_emit_projection] >>
+  rpt gen_tac >> IF_CASES_TAC >> simp [tx_emit_projection]
+QED
+Theorem tx_tensor_full_length:
+  LENGTH (tx_tensor_full cache xs) = 4800
+Proof
+  simp [tx_tensor_full_def,tx_flatten_def]
+QED
+Theorem tx_tensor_selected_length:
+  LENGTH (tx_tensor_selected cache xs) = 2301
+Proof
+  simp [tx_tensor_selected_def,tx_flatten_def]
+QED
+Theorem tx_project_length:
+  LENGTH (tx_project ys) = 2301
+Proof
+  simp [tx_project_def]
+QED
+Theorem tx_checked_contract:
+  tx_checked roots xs = SOME ys ==>
+    tx_roots_ok roots /\ tx_input_ok xs /\ tx_output_ok ys /\
+    ys = tx_tensor_selected (tx_cache roots) xs
+Proof
+  rw [tx_checked_def] >> fs []
+QED
+
+(* Specialize the identity used by the numerical GENLIST predicate. *)
+Theorem tx_num_identity[cv_inline]:
+  !n:num. I n = n
+Proof
+  simp [combinTheory.I_THM]
+QED
+
+val _ = cv_trans tx_scale_def;
+val _ = cv_trans tx_lengths_def;
+val _ = cv_trans tx_pair_def;
+val _ = cv_trans tx_row_def;
+val _ = cv_trans tx_bound_def;
+val _ = cv_trans tx_special_def;
+val _ = cv_auto_trans tx_root_row_ok_def;
+val _ = cv_auto_trans tx_roots_ok_def;
+val _ = cv_trans tx_slot_def;
+val _ = cv_trans tx_cache_entry_def;
+val _ = cv_auto_trans tx_cache_def;
+val _ = cv_trans tx_cache_pair_def;
+val _ = cv_trans tx_cache_row_def;
+val _ = cv_trans tx_add_def;
+val _ = cv_trans tx_sub_def;
+val mul_pre_def = cv_trans_pre "tx_mul_pre" tx_mul_def;
+Theorem tx_mul_pre_ok[cv_pre]:
+  !w z. tx_mul_pre w z
+Proof
+  rpt gen_tac >> PairCases_on `w` >> PairCases_on `z` >>
+  simp [mul_pre_def,BlockRoundTheory.round_scaled_pre_ok,tx_scale_def]
+QED
+val _ = cv_trans tx_action_def;
+val _ = cv_trans tx_sum_def;
+val _ = cv_auto_trans tx_direct_at_def;
+(* tx_emit is proof-side notation. Remove its function-valued parameter from
+   the code equations before translating; GENLIST is then specialized. *)
+val _ = cv_trans tx_radix_def;
+val _ = cv_trans tx_leaf_def;
+val _ = cv_auto_trans tx_gather_def;
+val _ = cv_auto_trans tx_bridge_def;
+val _ = cv_auto_trans (SIMP_RULE std_ss [tx_emit_def] tx_full_def);
+val _ = cv_auto_trans (SIMP_RULE std_ss [tx_emit_def] tx_omit_def);
+val _ = cv_auto_trans tx_flatten_def;
+val _ = cv_auto_trans tx_tensor_full_def;
+val _ = cv_auto_trans tx_tensor_selected_def;
+val _ = cv_auto_trans tx_project_def;
+val _ = cv_auto_trans tx_input_ok_def;
+val _ = cv_auto_trans tx_output_ok_def;
+val _ = cv_trans tx_checked_def;
+
+val _ = print "C10004_TRANSFORM_GENERIC_INTEGER_ONLY_DONE\n";

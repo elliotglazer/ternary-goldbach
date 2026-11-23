@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\DataP343N256.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\DataP343N256.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 6.661759100010386,
+  "user_cpu_seconds": 3.6875,
+  "system_cpu_seconds": 2.984375,
+  "cpu_seconds": 6.671875,
+  "peak_working_set_bytes": 563486720,
+  "observed_peak_private_bytes": 1085571072,
+  "memory_samples": 132,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "DataP343N256.lean",
+      "bytes": 296682,
+      "sha256": "0C94D5B170B6E95AF08F20ED75E8844F181C9B3152670B3621AB78815028FEE3"
+    },
+    {
+      "path": "final_build_DataP343N256.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "DataP343N256.olean",
+      "bytes": 5988584,
+      "sha256": "E3B794F80D6DCD28A49039E842BB64DC5008794F039AAECEC5172B6891F60381"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

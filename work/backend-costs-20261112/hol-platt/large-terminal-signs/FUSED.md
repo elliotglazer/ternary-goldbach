@@ -1,0 +1,37 @@
+# Fused sign checks on the q = 10004 final transform axis
+
+The first two sample heights are 5/64 and 10/64. Each has 2,301 primitive channels, indexed in order by k41=1..39 and k61=1..59. A positive-sign exponential convention is used in the DFT. The native check reconstructs all first differences and rounded p81 length-40 transforms from the archived Hurwitz inputs, rounds their actual output coordinates to p24 or p28 and runs a length-60 even Bluestein convolution down each terminal column. Thus the lower precision applies to the final transform axis. The 236 stock fixture outputs span k41=20, both heights and precisions, including the real character at k61=30. Native checks cover all 9,204 individual outputs across the four panels.
+
+The baseline computes both complete postchirp coordinates, the original sum modulo 65537 and the four original index taps. Ordinary fusion chooses a signed real or imaginary projection of the completed Hardy value, computes just that coordinate of the final chirp rotation and regrids it. Absorption instead multiplies the character phase by the fixed final chirp before classifying the phase quadrant. A successful test reads the sign of one raw unpacked integer. An inconclusive test computes the original full postchirp and performs the interval dot product. The worker compares all 59 primitive sign bits and its zero unresolved mask against independent expected values. Both arms use identical input lists, rounding, packed kernel, folding and unpacking. The fused arms omit the nonprimitive postchirp output at k61=0. The root cache is constructed once per stock trial and each trial repeats the same transform. Cache ownership and persistence are separate production considerations.
+
+Let S=2^p and D=2^(81−p). Denote a p81 reference center by (r,i), with per-coordinate radius e, and the chirp center by (u,v) at scale S. The centered unpacked integers (R,I) have effective scale S². After undoing the exact chirp, the absolute coordinate errors in these integers are bounded by the ceiling of
+
+    [max(|DR−(ur+vi)|, |DI−(ui−vr)|) + |r|+|i| + (|u|+|v|+2)e] / D.
+
+The residual is independently computed from the archived true spectrum, so it accounts for the actual low-precision final-axis rounding. Both chirp components have error strictly below one grid unit, checked with Arb at 160 bits. The time-independent absorbed phase uses an explicit rounding allowance and the phase components must be separated from zero by that allowance. The fallback radius for the ordinary final coordinates is the largest actual reference discrepancy plus its p81 radius, rounded upward. These are sample-specific certified tolerances. A production gate needs a scalable error provider.
+
+The absorbed native check resolves 2,300 of 2,301 signs directly in each of its four panels. The original dot product resolves the remaining case in each panel, and all bit vectors agree with the p81 interval reference. The HOL timing slice deliberately includes that fallback at each precision and height, giving it a higher fallback incidence than the conductor-wide check.
+
+The separate count replay uses FullCount.scan_between on the complete 2,301 sets of strict character signs on each of two contiguous panels. The low panel j=1..32 contributes 6,544 opposite-sign intervals; the high panel j=84184..84199 contributes 6,895. Their right-endpoint weighted sums are 402,944,000 and 225,693,696 in 1/4096-grid units, relative to exclusive local endpoints j=33 and j=84200. Checking these finite contributions leaves the rest of each full-height stream and the Turing analytic bound to be supplied.
+## Matched stock HOL4 timing results
+
+For q10004 the completed transforms consumed the full final length-60 inputs. The strict character count is 59 per transform. With a uniform preceding-axis error bound, the p24 and p28 postchirp checksum baselines took 14.110–17.024 microseconds/primitive output, including the shared full transform. The absorbed sign-emitting versions took 12.204–15.642. All four matched differences favored absorption, by 1.382–3.349 microseconds. See odd01BoundPrice.log and other-price.json.
+
+At q131071 and t=444.921875, even_full.py computes the *entire selected* 131070-point even convolution before selecting any timing tiles. The 131070 complex residue inputs and 131069 phase centers come from the authenticated source in large-sector-second. It rounds each chirp after rigorous 128-bit Arb interval verification, uses three exact packed signed GMP products, checks five scalar O(n) dot products at separate indices, and compares all resolved sign decisions with the archived full reference. At p24 the uniform preceding-axis error allows 131024 strict outputs and leaves 45 unresolved. At p28 it allows 131064 strict outputs and leaves five unresolved. These lists of unresolved coordinates cannot be treated as the cost fraction of a repeated complete transform.
+
+The following per-output CPU microseconds price just the final producer on original-order tiles of this actual full convolution. Each value is a median of three visits over 131072 individual outputs; each matched arm starts with the same resident unpacked integers. The reference producer computes its original two rounded postchirp coordinates and checksum. Its fixed four whole-axis taps are excluded so a tile receives no spurious tap charge. The absorbed producer returns strict sign bits and the unresolved mask. The central tile contains one real-character fallback. Signed sums and all masks were checked in stock HOL. Cache setup is amortized separately.
+
+| p | outputs/tile | original postchirp/checksum | absorbed signs | difference |
+|---:|---:|---:|---:|---:|
+| 24 | 64 | 4.676 | 1.075 | −3.601 |
+| 24 | 256 | 4.228 | 1.491 | −2.737 |
+| 24 | 1024 | 4.418 | 2.215 | −2.203 |
+| 28 | 64 | 4.447 | 1.080 | −3.367 |
+| 28 | 256 | 6.997 | 1.783 | −5.215 |
+| 28 | 1024 | 4.848 | 2.084 | −2.763 |
+
+The separate odd prime factor n=257 alternative decomposition also passed at both precisions. It gives a second geometry check under the periodic odd chirp, but the original campaign table has only even selected terminal axes of length at least 32. The standalone even terminal timings do not price upstream packing or convolution, which the old full-axis budget already includes.
+
+For the two q10004 stock count panels, eight strict-grid scans minus their zero-repeat controls cost 0.346–0.379 microseconds per input sign using the previously exported FullCount.scan_between. Real bracket weights and counts are checked for each of 2301 labels. That projects to 3770–4127 core-hours on 39241839619586 signs before transposition, seams, sparse rescue, or the analytic count upper bound.
+
+GreyStreamScript.sml proves the stream can omit grey signs and holds the previous strict anchor on both counts and right-weighted bounds. Deleting one interior strict completion cannot increase either bound. At the q131071 high node the neighboring certified archived signs at 5694 and 5696 reveal exactly how much the missing 5695 signs cost. Among 45 p24 greys, 42 retain one crossing (17 move its right end one step). Two cases lose two crossings each, while one loses none. Of five p28 greys, three retain one crossing (one right-end delay), one loses two crossings and one loses none. The true production Turing slack cannot be inferred from these two adjacent intervals. Detailed per-label data are in grey24.json and grey28.json.

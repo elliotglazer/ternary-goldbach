@@ -1,0 +1,54 @@
+{
+  "source_sha256": "e767ec3b3e14f2a243837da85c811de5ed67ce701bdd08998c2329f9c687c24d",
+  "conductors": 7499,
+  "graph_controls": 682,
+  "example": {
+    "points": 524288,
+    "j": 68267,
+    "outputs": 84225,
+    "per_character": {
+      "dense_butterflies": 4980736,
+      "dense_complex_adds": 9961472,
+      "dense_normalized_output_slots": 9961472,
+      "dense_general_rotations": 4194306,
+      "dense_quarter_turns": 262143,
+      "pruned_complex_adds": 7951459,
+      "pruned_normalized_output_slots": 8726965,
+      "pruned_general_rotations": 3922694,
+      "pruned_quarter_turns": 199337,
+      "single_output_active_pairs": 440063,
+      "double_output_active_pairs": 3755698,
+      "odd_only_minus_outputs": 193875
+    }
+  },
+  "full_length": {
+    "dense_butterflies": 89858217607168,
+    "dense_complex_adds": 179716435214336,
+    "dense_normalized_output_slots": 179716435214336,
+    "dense_general_rotations": 76001578705000,
+    "dense_quarter_turns": 4618873475020,
+    "pruned_complex_adds": 146303204129267,
+    "pruned_normalized_output_slots": 159967348208031,
+    "pruned_general_rotations": 72071407901803,
+    "pruned_quarter_turns": 3512257596707,
+    "single_output_active_pairs": 7462352033139,
+    "double_output_active_pairs": 69420426048064,
+    "odd_only_minus_outputs": 3416008304029
+  },
+  "half_length_fft": {
+    "dense_butterflies": 42619662827520,
+    "dense_complex_adds": 85239325655040,
+    "dense_normalized_output_slots": 85239325655040,
+    "dense_general_rotations": 35691361853544,
+    "dense_quarter_turns": 2309427498956,
+    "pruned_complex_adds": 73151638882058,
+    "pruned_normalized_output_slots": 77577999056566,
+    "pruned_general_rotations": 33726300359272,
+    "pruned_quarter_turns": 2309410902824,
+    "single_output_active_pairs": 3731170417666,
+    "double_output_active_pairs": 34710234232196,
+    "odd_only_minus_outputs": 1106580805073
+  },
+  "half_length_additional_packing_rotations": 1202846693883,
+  "half_length_additional_packing_complex_adds": 2405693387766
+}

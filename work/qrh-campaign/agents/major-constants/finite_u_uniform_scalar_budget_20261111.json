@@ -1,0 +1,197 @@
+{
+  "scope": "exact scalar implications only; no spectral or numerical function evidence",
+  "sigma_min": {
+    "numerator": "197",
+    "denominator": "400"
+  },
+  "rho": {
+    "numerator": "1",
+    "denominator": "16"
+  },
+  "primary": {
+    "M": 16,
+    "K": 30,
+    "N_rule": "ceil(T)+36",
+    "Xmax_strict_cap": 111400000,
+    "outer_strict_bound": {
+      "numerator": "4398046511104",
+      "denominator": "1"
+    },
+    "em_upper": {
+      "numerator": "25",
+      "denominator": "47805430413243680925696"
+    },
+    "taylor_upper": {
+      "numerator": "1",
+      "denominator": "283341988972178712821760"
+    },
+    "analytic_norm_upper": {
+      "numerator": "1160702336379835856359",
+      "denominator": "2204636350416593080560196107506059931811840"
+    },
+    "analytic_square_norm_upper": {
+      "numerator": "1160702336379835856359",
+      "denominator": "1469757566944395387040130738337373287874560"
+    },
+    "optional_residual_length": 32,
+    "optional_batch_upper": {
+      "numerator": "1",
+      "denominator": "1003764484152578468960640000000"
+    },
+    "optional_all_finite_arithmetic_norm_allowance": {
+      "numerator": "1",
+      "denominator": "1180591620717411303424"
+    },
+    "optional_complete_norm_upper": {
+      "numerator": "2935338874962418748961520942049099431",
+      "denominator": "1793387511849981717599116676592522887860131295395840000000"
+    }
+  },
+  "comparison": {
+    "M": 32,
+    "K": 24,
+    "N_rule": "ceil((T+66)/3)",
+    "Xmax_strict_cap": {
+      "numerator": "121600000",
+      "denominator": "3"
+    },
+    "outer_strict_bound": {
+      "numerator": "1099511627776",
+      "denominator": "1"
+    },
+    "em_upper": {
+      "numerator": "625",
+      "denominator": "14297239967041060864"
+    },
+    "taylor_upper": {
+      "numerator": "1",
+      "denominator": "67553994410557440"
+    },
+    "analytic_norm_upper": {
+      "numerator": "100397",
+      "denominator": "1715668796044927303680"
+    }
+  },
+  "examples": [
+    {
+      "c": 3,
+      "T": {
+        "numerator": "100000000",
+        "denominator": "3"
+      },
+      "N": 33333370,
+      "v": 2,
+      "residue_head_terms": 66666740,
+      "Xmax": 100000113,
+      "normalized_coefficients_per_character": 30
+    },
+    {
+      "c": 4,
+      "T": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "N": 25000036,
+      "v": 2,
+      "residue_head_terms": 50000072,
+      "Xmax": 100000148,
+      "normalized_coefficients_per_character": 30
+    },
+    {
+      "c": 101,
+      "T": {
+        "numerator": "100000000",
+        "denominator": "101"
+      },
+      "N": 990136,
+      "v": 100,
+      "residue_head_terms": 99013600,
+      "Xmax": 100003837,
+      "normalized_coefficients_per_character": 30
+    },
+    {
+      "c": 100003,
+      "T": {
+        "numerator": "100000000",
+        "denominator": "100003"
+      },
+      "N": 1036,
+      "v": 100002,
+      "residue_head_terms": 103602072,
+      "Xmax": 103703111,
+      "normalized_coefficients_per_character": 30
+    },
+    {
+      "c": 300000,
+      "T": {
+        "numerator": "1000",
+        "denominator": "3"
+      },
+      "N": 370,
+      "v": 80000,
+      "residue_head_terms": 29600000,
+      "Xmax": 111300000,
+      "normalized_coefficients_per_character": 30
+    }
+  ],
+  "checks": [
+    "target sigma is 197/400",
+    "outer sigma exceeds -1/2",
+    "full-disk extra power is bounded by factor two",
+    "Bernoulli coefficient m=1",
+    "Bernoulli coefficient m=2",
+    "Bernoulli coefficient m=3",
+    "Bernoulli coefficient m=4",
+    "Bernoulli coefficient m=5",
+    "Bernoulli coefficient m=6",
+    "Bernoulli coefficient m=7",
+    "Bernoulli coefficient m=8",
+    "Bernoulli coefficient m=9",
+    "Bernoulli coefficient m=10",
+    "Bernoulli coefficient m=11",
+    "Bernoulli coefficient m=12",
+    "Bernoulli coefficient m=13",
+    "Bernoulli coefficient m=14",
+    "Bernoulli coefficient m=15",
+    "Bernoulli coefficient m=16",
+    "Bernoulli coefficient m=17",
+    "Bernoulli coefficient m=18",
+    "Bernoulli coefficient m=19",
+    "Bernoulli coefficient m=20",
+    "Bernoulli coefficient m=21",
+    "Bernoulli coefficient m=22",
+    "Bernoulli coefficient m=23",
+    "Bernoulli coefficient m=24",
+    "Bernoulli coefficient m=25",
+    "Bernoulli coefficient m=26",
+    "Bernoulli coefficient m=27",
+    "Bernoulli coefficient m=28",
+    "Bernoulli coefficient m=29",
+    "Bernoulli coefficient m=30",
+    "Bernoulli coefficient m=31",
+    "Bernoulli coefficient m=32",
+    "correction geometric series",
+    "primary Xmax bound",
+    "primary sqrt bound",
+    "primary outer prefactor",
+    "primary EM <2^-70",
+    "primary Taylor <2^-77",
+    "primary analytic norm <2^-69",
+    "primary analytic square norm <2^-68",
+    "weighted head sum <2^18",
+    "optional p32 batching <2^-99",
+    "optional complete conditional norm <2^-68",
+    "comparison Xmax bound",
+    "comparison sqrt bound",
+    "comparison outer prefactor",
+    "comparison EM <2^-54",
+    "comparison Taylor <2^-55",
+    "comparison analytic norm <2^-53",
+    "example Xmax c=3",
+    "example Xmax c=4",
+    "example Xmax c=101",
+    "example Xmax c=100003",
+    "example Xmax c=300000"
+  ],
+  "check_count": 57
+}

@@ -1,0 +1,61 @@
+{
+  "precision": 176,
+  "threads": 1,
+  "phase_wall": 0.4061793000000762,
+  "phase_cpu": 0.328125,
+  "nodes": [
+    {
+      "j": 84198,
+      "t": "6577.968750000000000000000000000000000000000000000000",
+      "source_cpu": 23.234375,
+      "source_wall": 30.858635100001266,
+      "source_sha256": "9e607f20eda071a61c09c2b983cccade04d0fa94b008a06b6064f221b4b2bccc",
+      "ct_cpu": 0.09375,
+      "ct_wall": 0.10503020000032848,
+      "direct_cpu": 0.3125,
+      "direct_wall": 0.5817448000016157,
+      "completion_cpu": 0.03125,
+      "completion_wall": 0.10538679999808664,
+      "output_sha256": "e6a3adbaab6848643e5628114cd283579bae4db9b1b4dcaf8066932defe9610c",
+      "max_error_grid": 20763,
+      "signs": {
+        "1": 1493,
+        "-1": 808
+      },
+      "min_scaled_abs_floor_1e12": [
+        1867768720,
+        [
+          29,
+          6
+        ]
+      ]
+    },
+    {
+      "j": 84199,
+      "t": "6578.046875000000000000000000000000000000000000000000",
+      "source_cpu": 23.234375,
+      "source_wall": 30.74634359999982,
+      "source_sha256": "b2ce90358cbe25a976099559289b46f3774f749b22a2b779df916b2c7c8d0280",
+      "ct_cpu": 0.109375,
+      "ct_wall": 0.12087249999967753,
+      "direct_cpu": 0.328125,
+      "direct_wall": 0.6043710999983887,
+      "completion_cpu": 0.046875,
+      "completion_wall": 0.08970750000298722,
+      "output_sha256": "74c0e2df1696d769af8be9291e3f1813333c7a41fff66072ec3642e912749771",
+      "max_error_grid": 20596,
+      "signs": {
+        "-1": 703,
+        "1": 1598
+      },
+      "min_scaled_abs_floor_1e12": [
+        2725689110,
+        [
+          29,
+          50
+        ]
+      ]
+    }
+  ],
+  "opposite_endpoint_signs": 453
+}

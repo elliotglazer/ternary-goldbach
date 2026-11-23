@@ -1,0 +1,73 @@
+{
+  "status": "PASS_EXACT_SCALAR_REVIEW",
+  "pins": {
+    "zero-sum/GLOBAL_INVERSE_SCALING_LIMITS_2026-11-11.md": "DDAA08056E5159790D4E7C58BBF7F028538E1C885CF5E8A1E8D0CA0EF4C6C141",
+    "major-constants/FAMILY_BATCH_WORKLOAD_MODEL_2026-11-11.md": "3A5444AB295112E86DF0740DB8F4533EC37510A66E41EB0DF0340D16CF82A4E1",
+    "major-constants/JOINT_CHARACTER_FOURIER_BATCH_PLAN_2026-11-11.md": "3D41376E00A58D5EBC8403151807694163F0E59923869DCAAAB08F51A6A3625D",
+    "zero-sum/c5_global_inverse_candidate_20261111.py": "3F86D07FB695EAD08F677E7C1F9BBDFE9D9BB0FF5F74F269D9B0B3DA0AEB321B",
+    "zero-sum/c5_centered_complete_attempt_20261111.py": "01F1E30A4CDA60482BA5DDDFCBCBB04F6BD47B16F4CA955BB54FE3B2DF37FF71"
+  },
+  "pilot": {
+    "height": 12,
+    "primitive_count": 3,
+    "poles": 385,
+    "models": 1630,
+    "training_rows": 816,
+    "validation_rows": 1632,
+    "matrix_entries": 314976,
+    "rational_jet_products": 24474450,
+    "coefficient_slots": 1158
+  },
+  "height_examples": [
+    {
+      "height": 25000001,
+      "primitive_count": 1,
+      "poles": 800000033,
+      "models": 3200000222,
+      "training_rows": 1600000112,
+      "validation_rows": 3200000224,
+      "matrix_entries": 1280000144000003808,
+      "rational_jet_products": 33280003681600095238,
+      "coefficient_slots": 800000034,
+      "conductor": 4,
+      "Hp": 30171629,
+      "Hcert": "25000000"
+    },
+    {
+      "height": 12068773,
+      "primitive_count": 3,
+      "poles": 386200737,
+      "models": 1544803038,
+      "training_rows": 772401520,
+      "validation_rows": 1544803040,
+      "matrix_entries": 298302037056321760,
+      "rational_jet_products": 23267558800022121234,
+      "coefficient_slots": 1158602214,
+      "conductor": 5,
+      "Hp": 12068772,
+      "Hcert": "12068772"
+    }
+  ],
+  "family_inputs_reused_without_reenumeration": {
+    "sum_nT0": 5392479925954,
+    "sum_n": 5543640187
+  },
+  "literal_complex_coefficient_slots": 172570444910902,
+  "illustrative_16byte_encoding": 2761127118574432,
+  "reflected_counterexample_checks": [
+    {
+      "epsilon": "1/100",
+      "boundary_value": "1/1000"
+    },
+    {
+      "epsilon": "1/1000",
+      "boundary_value": "109/1000000"
+    },
+    {
+      "epsilon": "1/1000000",
+      "boundary_value": "109999/1000000000000"
+    }
+  ],
+  "no_L_evaluations": true,
+  "no_family_scan": true
+}

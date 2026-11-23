@@ -1,0 +1,87 @@
+{
+  "status": "Frozen bounded patterns replay and independent local Cauchy wrapper pass; point zeta remains trusted",
+  "input_sha256": {
+    "PRODUCTION_SPECTRAL_EVALUATOR_2026-11-11.md": "8494e089bb937b0595dec607eee0d49b4f549134a9371230d3a74a67c74daf9a",
+    "rs_panel_benchmark_20261111.py": "caccea1dada0d8bdad105fdff6404b19953509bb98f6b4d08bfed877de49ba0d",
+    "rs_panel_benchmark_20261111.json": "79e020183d5877e680dd1be7d56ecc5ceec2cd8d23c1c3d7e4f2621f7cbe6800",
+    "rs_cauchy_block_benchmark_20261111.py": "3a06a92d1f09d6ed8b1bab8ddda946bd15dc2b3eb134400b0714c0727bd9d79e",
+    "rs_cauchy_block_benchmark_20261111.json": "2a5e255442b3151fb08109d326c18c1a856c08eba6dc3d1d751d0981fa778f26"
+  },
+  "frozen_replay_panel_patterns": [
+    0,
+    0,
+    16,
+    16
+  ],
+  "frozen_replay_cauchy_leaves": [
+    2,
+    1
+  ],
+  "independent_local_blocks": [
+    {
+      "sigma": "201/400",
+      "precision_bits": 192,
+      "samples": 64,
+      "M_alternative": 400000802,
+      "error_upper_rational": "68056609837416827992688126511457506310782991471/2353913150770005286310815146107522982239617813887099863040",
+      "leaves": [
+        {
+          "lo": "-1/8",
+          "hi": "0",
+          "axis": 1,
+          "sign": 1,
+          "coordinate_margin": "[0.132403684551437600833171355777860288949113819459014704157 +/- 3.75e-58]"
+        },
+        {
+          "lo": "0",
+          "hi": "1/8",
+          "axis": 1,
+          "sign": 1,
+          "coordinate_margin": "[1.75558591321768542870098522272654634921544804399500772518 +/- 4.60e-57]"
+        }
+      ],
+      "point_overlap_diagnostics": [
+        "-1/8",
+        "-1/16",
+        "0",
+        "1/16",
+        "1/8"
+      ],
+      "local_block_pass": true
+    },
+    {
+      "sigma": "111/200",
+      "precision_bits": 192,
+      "samples": 64,
+      "M_alternative": 400000802,
+      "error_upper_rational": "68056609837416827992688126511457506310782991471/2353913150770005286310815146107522982239617813887099863040",
+      "leaves": [
+        {
+          "lo": "-1/8",
+          "hi": "1/8",
+          "axis": 1,
+          "sign": 1,
+          "coordinate_margin": "[0.223354572307214694312228898683536556899460914520261189092 +/- 4.95e-58]"
+        }
+      ],
+      "point_overlap_diagnostics": [
+        "-1/8",
+        "-1/16",
+        "0",
+        "1/16",
+        "1/8"
+      ],
+      "local_block_pass": true
+    }
+  ],
+  "operation_counts": {
+    "blocks": 3994000,
+    "samples": 255616000,
+    "two_399_term_summands": 203981568000,
+    "DFT_products_per_block": 4096,
+    "radix2_butterflies_per_block": 192,
+    "coefficient_raw_bytes": 16359424000
+  },
+  "wording_correction": "Balanced AFE real length sqrt(1e8/(2pi)) is between3989and3990; floor3989, ceiling3990.",
+  "limitations": "No full contour, winding, production strip, independently proved RS point values, or formal Rademacher theorem."
+}

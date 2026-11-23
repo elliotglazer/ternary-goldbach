@@ -1,0 +1,50 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-character-kernel[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-gaussian[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-gaussian-transform[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-short/PanelKernelScript.uo to produce theory-builder executable
+<<HOL message: Created theory "PanelKernel">>
+Saved theorem _______ "partition12_compute"
+Saved definition ____ "partition12_def"
+Saved definition ____ "checkdot_def"
+<<HOL message: mk_functional: 
+  pattern completion has added 7 clauses to the original specification.>>
+Saved definition ____ "panel_def"
+Saved definition ____ "panels_def"
+Starting translation of panels from PanelKernelTheory.
+Starting translation of panel from PanelKernelTheory.
+Starting translation of partition12 from PanelKernelTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in PanelKernel)>>
+Saved definition ____ "cv_partition12_def"
+Saved induction _____ "cv_partition12_ind"
+Saved theorem _______ "cv_partition12_thm"
+Finished translating partition12, stored in cv_partition12_thm
+Starting translation of panel from PanelKernelTheory.
+Starting translation of checkdot from PanelKernelTheory.
+Saved definition ____ "cv_checkdot_def"
+Saved induction _____ "cv_checkdot_ind"
+Saved theorem _______ "cv_checkdot_thm"
+Finished translating checkdot, stored in cv_checkdot_thm
+Starting translation of panel from PanelKernelTheory.
+Saved theorem _______ "cv_panel_thm"
+Finished translating panel, stored in cv_panel_thm
+Starting translation of panels from PanelKernelTheory.
+Saved theorem _______ "cv_panels_thm"
+Finished translating panels, stored in cv_panels_thm
+Exporting theory "PanelKernel" ... done.
+Theory "PanelKernel" took 0.86873s to build
+Holmake: [1/1] PanelKernel

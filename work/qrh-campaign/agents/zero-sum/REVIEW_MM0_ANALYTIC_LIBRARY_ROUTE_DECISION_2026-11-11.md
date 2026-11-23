@@ -1,0 +1,41 @@
+# Independent review of the MM0 analytic-library route decision
+
+2026-11-11. **PASS at source-research and proposed-architecture scope; no correction required.** This is not acceptance of an exporter, a translated analytic theorem, an axiom closure, or a cost estimate. No build, export, proof check, or analytic evaluation was run.
+
+Reviewed author: `integration/MM0_ANALYTIC_LIBRARY_ROUTE_DECISION_2026-11-11.md`, SHA256 `DC2110AC1ED3F81D6379D8B19750F147E52D4CBFDDBACA6B2A8E64760D49D5E4`. The original bytes were preserved.
+
+## Translation direction and the available evidence
+
+The pinned `mm0-lean/README.md:7,10–18` expressly identifies Lean 3, supplies the commands importing a filtered set.mm dependency closure into MM0 and then exporting it to Lean, and describes a manually written semantic postprocessor. `post.lean:473–498` actually connects the imported statement to native naturals, integers, primality, divisibility and infinitude. This is evidence for that direction and example, not a Lean 4 analytic export. The README also mentions an experimental syntactically restricted Lean-to-MM0 framework: this does not contradict the author's more precise claim that a compatible exporter for the present Lean 4 dependency closure has not been demonstrated. [README](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-lean/README.md#L7-L18), [postprocessor](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-lean/mm0/set/post.lean#L473-L498).
+
+The concrete Nat recursor conversion and List constructions in `examples/lean.mm1:485–548` provide genuine type-theoretic machinery. They do not show support for the complete universe, quotient, conversion, inductive and axiom behavior of the actual Lean 4 library. `mm0-lean4/MM0/Basic.lean:1–68` instead begins compiler/machine-oriented infrastructure, including explicit axioms. Neither filename supplies the missing exporter or its correctness argument. [Type-theory example](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/examples/lean.mm1#L485-L548), [Lean 4 infrastructure](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-lean4/MM0/Basic.lean#L1-L68).
+
+The separate HOL Zero repository describes its translation project as work in progress. The author correctly grants it no validated complete-library credit. This review does not establish that no other exporter exists; the negative conclusion is limited to the inspected evidence. [Project description](https://github.com/digama0/hz-to-mm0#readme).
+
+## Axiom, definition and incomplete-proof boundaries
+
+`FromMM.hs:69–91` implements input filtering and output generation. Its `trThmB` branches at 216–225 distinguish source assertions without proof from theorems with proof; the former become axioms. At 393, source `PSorry` becomes target `PSorry`. At 421–422, automatic definition conversion is unfinished. These observations justify the author's separate axiom/definition/hole audit. They do **not** establish that an ordinary downstream verifier accepts a hole: preservation by this intermediate translator and final acceptance are different questions. Source axioms are also not automatically illicit; each must belong to the approved foundation or have a checked elimination/interpretation. [Importer bodies](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-hs/src/MM0/FromMM.hs#L209-L225), [proof and definition handling](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-hs/src/MM0/FromMM.hs#L379-L422).
+
+`Closure.hs:10–46` traverses statement hypotheses, expressions, aliases and referenced proof statements. This is substantive dependency extraction, but not an independent certificate of admissible foundations or conservative definitions. The author keeps those duties separate. [Closure traversal](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/mm0-hs/src/MM0/FromMM/Closure.hs#L10-L46).
+
+The supplied set-theory and HOL examples have explicit foundational rules and real core proofs. In particular, the HOL selection consequence is derived using the selection axiom; it does not eliminate that foundational assumption. MM0's ability to host multiple logics does not itself approve any particular list of axioms for this project. The author expressly leaves that list unchosen and rejects theorem-specific analytic or certificate-success axioms. [Set interface](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/examples/set.mm0#L59-L85), [set proof bodies](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/examples/set.mm1#L71-L105), [HOL core consequences](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/examples/hol.mm1#L394-L410), [MM0 specification/proof distinction](https://github.com/digama0/mm0/blob/0d414c0bfdaaeb7fea571895127abc1fa5a3d956/README.md#L26-L40).
+
+## Arithmetic interpretation and the final theorem
+
+The proposed arithmetic join is logically sufficient **conditional on constructing it**. Fix a translation of PA formulas into the chosen foundation, including its intended natural numbers. Supply checked translations of every used axiom instance and templates preserving every used inference rule. Induction on a particular finite PA derivation then constructs a derivation of its translated conclusion. This is a proof translation, not an internal assertion that every coded PA theorem is true. It does not require adding a global reflection principle.
+
+That translated conclusion must still be connected to the consumer's actual definitions of prime, divisibility, finite sequences, inequalities and exact constants. One cannot replace this step by matching theorem names or by two independent success receipts. Similarly, library imports and shard linking must preserve the actual hypotheses and final context; success labels cannot enter as new axioms.
+
+The author correctly refuses the inference that an arithmetical final statement makes its supplied analytic proof a PA proof. A PA-only route needs its own justified reduction of the particular mathematical reasoning. A type-theoretic or set-theoretic route may reuse the finite arithmetic after interpretation, but its final proof belongs to that selected foundation. No analytic theorem is reclassified as already proved in PA by this report.
+
+## Costs and the next gate
+
+The cost separation is sound. Exporter/port development and semantic bridges differ from elaboration, dependency extraction, proof generation, serialization, linking, checking and I/O. Existing proof bodies can reduce development without reducing generated proof volume. The preference for investigating a matching type theory is therefore a development-risk proposal, not an established end-to-end winner. The report makes no Lean/MM0 runtime ratio or compile-time forecast.
+
+Its proposed representative analytic slice is an appropriate next test, provided it retains the complete reachable definitions, conversion evidence, axioms and arithmetic interpretation. Even a successful slice would validate only the exercised features and statement; it would not establish compatibility for every later dependency. Actual implementation, negative controls, ordinary proof acceptance and measured costs all remain future work.
+
+## Pin verification and bounded scope
+
+Independently checked the author's SHA256, all eleven Git blob entries against the saved recursive tree, and the five cited local SHA256 pins (tree, README, research agenda, proof-composition note and arithmetic note). The tree's SHA256 is `696C3A071FF79189294EF99EC1C5CA80FA864C4667DBDD2783BC2CF199122DC5`. Git blob IDs are not file SHA256 digests. Primary source bodies were read at commit `0d414c0bfdaaeb7fea571895127abc1fa5a3d956`; source references above use one-based lines.
+
+This bounded review accepts the route decision's fidelity and distinctions. It does not audit the soundness of all MM0 implementations, prove a foundation consistent, reproduce the historical translation, certify all imported set.mm axioms, or validate any current Lean 4 export. No author artifact was modified.

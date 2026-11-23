@@ -1,0 +1,46 @@
+{
+  "positive_cases": {
+    "full_pratt": {
+      "accepted_nodes": 17649,
+      "roots": 4055
+    },
+    "partial_pock": {
+      "accepted_nodes": 16386,
+      "roots": 4055
+    },
+    "cached_pock": {
+      "accepted_nodes": 7345,
+      "roots": 4055
+    },
+    "smooth_pock": {
+      "accepted_nodes": 1572,
+      "roots": 1572
+    },
+    "cached_inverse": {
+      "accepted_nodes": 7345,
+      "roots": 4055
+    },
+    "smooth_inverse": {
+      "accepted_nodes": 1572,
+      "roots": 1572
+    }
+  },
+  "negative_rejected": [
+    "bad_cache.bin",
+    "bad_magic.bin",
+    "bad_remainder.bin",
+    "base_one.bin",
+    "composite_factor.bin",
+    "insufficient_F.bin",
+    "inverse_wrong.bin",
+    "inverse_zero.bin",
+    "self_factor.bin",
+    "too_many_factors.bin",
+    "too_many_nodes.bin",
+    "trailing.bin",
+    "truncated.bin",
+    "unknown_root.bin",
+    "zero_exponent.bin"
+  ],
+  "independent_integer_arithmetic": true
+}

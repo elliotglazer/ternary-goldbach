@@ -1,0 +1,187 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanned 18 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportScript.uo to produce theory-builder executable
+<<HOL message: Created theory "EndpointExport">>
+Saved theorem _______ "paced_steps_compute"
+Saved definition ____ "paced_steps_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in EndpointExport)>>
+Saved definition ____ "paced_scan_def"
+Saved induction _____ "paced_scan_ind"
+Saved definition ____ "scan_at_def"
+Starting translation of scan_at from EndpointExportTheory.
+Starting translation of paced_scan from EndpointExportTheory.
+Starting translation of paced_steps from EndpointExportTheory.
+Saved theorem _______ "cv_paced_steps_thm"
+Finished translating paced_steps, stored in cv_paced_steps_thm
+Starting translation of paced_scan from EndpointExportTheory.
+Saved theorem _______ "cv_paced_scan_thm"
+Finished translating paced_scan, stored in cv_paced_scan_thm
+Starting translation of scan_at from EndpointExportTheory.
+Saved theorem _______ "cv_scan_at_thm"
+Finished translating scan_at, stored in cv_scan_at_thm
+<<HOL message: mk_functional: 
+  pattern completion has added 3 clauses to the original specification.>>
+Saved definition ____ "pair_at_def"
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportScript.sml:40: warning: Pattern is not exhaustive. Found near val [lo, hi, k, ...] = line ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportScript.sml:52: warning: Pattern is not exhaustive. Found near val [q, a, b, ...] = line ()
+TIMED q10000_c3_c6667_grid_c3_main 0.75452 0.030907 0.000228
+Saved theorem _______ "q10000_c3_c6667_grid_c3_main_scan"
+TIMED q10000_c3_c6667_grid_c3_aux 0.001726 0.000234 0.000139
+Saved theorem _______ "q10000_c3_c6667_grid_c3_aux_scan"
+TIMED q10000_c3_c6667_grid_c6667_main 0.755477 0.03559 0.000191
+Saved theorem _______ "q10000_c3_c6667_grid_c6667_main_scan"
+TIMED q10000_c3_c6667_grid_c6667_aux 0.00776 0.000673 0.000288
+Saved theorem _______ "q10000_c3_c6667_grid_c6667_aux_scan"
+Saved theorem _______ "q10000_c3_c6667_grid_decision"
+ENDPOINT_DECISION q10000_c3_c6667_grid 1
+TIMED q10000_c11_c9091_grid_c11_main 0.741122 0.050531 0.00055
+Saved theorem _______ "q10000_c11_c9091_grid_c11_main_scan"
+TIMED q10000_c11_c9091_grid_c11_aux 0.010751 0.000936 0.000566
+Saved theorem _______ "q10000_c11_c9091_grid_c11_aux_scan"
+TIMED q10000_c11_c9091_grid_c9091_main 0.365819 0.068102 0.000201
+Saved theorem _______ "q10000_c11_c9091_grid_c9091_main_scan"
+TIMED q10000_c11_c9091_grid_c9091_aux 0.002214 0.000336 0.000215
+Saved theorem _______ "q10000_c11_c9091_grid_c9091_aux_scan"
+Saved theorem _______ "q10000_c11_c9091_grid_decision"
+ENDPOINT_DECISION q10000_c11_c9091_grid 1
+TIMED q10004_c6559_c7707_grid_c6559_main 0.838377 0.058439 0.000193
+Saved theorem _______ "q10004_c6559_c7707_grid_c6559_main_scan"
+TIMED q10004_c6559_c7707_grid_c6559_aux 0.00187 0.000318 0.000136
+Saved theorem _______ "q10004_c6559_c7707_grid_c6559_aux_scan"
+TIMED q10004_c6559_c7707_grid_c7707_main 0.503987 0.032033 0.000181
+Saved theorem _______ "q10004_c6559_c7707_grid_c7707_main_scan"
+TIMED q10004_c6559_c7707_grid_c7707_aux 0.005941 0.002663 0.000191
+Saved theorem _______ "q10004_c6559_c7707_grid_c7707_aux_scan"
+Saved theorem _______ "q10004_c6559_c7707_grid_decision"
+ENDPOINT_DECISION q10004_c6559_c7707_grid 1
+TIMED q10004_c5499_c7659_grid_c5499_main 0.748139 0.02746 0.000675
+Saved theorem _______ "q10004_c5499_c7659_grid_c5499_main_scan"
+TIMED q10004_c5499_c7659_grid_c5499_aux 0.001546 0.000197 0.000107000000001
+Saved theorem _______ "q10004_c5499_c7659_grid_c5499_aux_scan"
+TIMED q10004_c5499_c7659_grid_c7659_main 0.438474 0.029492 0.000184
+Saved theorem _______ "q10004_c5499_c7659_grid_c7659_main_scan"
+TIMED q10004_c5499_c7659_grid_c7659_aux 0.001568 0.000208000000001 0.000113
+Saved theorem _______ "q10004_c5499_c7659_grid_c7659_aux_scan"
+Saved theorem _______ "q10004_c5499_c7659_grid_decision"
+ENDPOINT_DECISION q10004_c5499_c7659_grid 1
+TIMED q265800_c9539_c117059_grid_c9539_main 0.014145 0.002445 0.000208
+Saved theorem _______ "q265800_c9539_c117059_grid_c9539_main_scan"
+TIMED q265800_c9539_c117059_grid_c9539_aux 0.001691 0.000393 0.000135
+Saved theorem _______ "q265800_c9539_c117059_grid_c9539_aux_scan"
+TIMED q265800_c9539_c117059_grid_c117059_main 0.032157 0.002315 0.000163000000001
+Saved theorem _______ "q265800_c9539_c117059_grid_c117059_main_scan"
+TIMED q265800_c9539_c117059_grid_c117059_aux 0.001924 0.000221000000001 0.000154999999999
+Saved theorem _______ "q265800_c9539_c117059_grid_c117059_aux_scan"
+Saved theorem _______ "q265800_c9539_c117059_grid_decision"
+ENDPOINT_DECISION q265800_c9539_c117059_grid 1
+TIMED q10000_c3_c6667_no_edges_c3_main 0.726893 0.0697 0.000427
+Saved theorem _______ "q10000_c3_c6667_no_edges_c3_main_scan"
+TIMED q10000_c3_c6667_no_edges_c3_aux 0.005442 0.000628000000001 0.000273
+Saved theorem _______ "q10000_c3_c6667_no_edges_c3_aux_scan"
+TIMED q10000_c3_c6667_no_edges_c6667_main 0.41886 0.0338 0.000189000000001
+Saved theorem _______ "q10000_c3_c6667_no_edges_c6667_main_scan"
+TIMED q10000_c3_c6667_no_edges_c6667_aux 0.002206 0.000261999999999 0.000142
+Saved theorem _______ "q10000_c3_c6667_no_edges_c6667_aux_scan"
+Saved theorem _______ "q10000_c3_c6667_no_edges_decision"
+ENDPOINT_DECISION q10000_c3_c6667_no_edges 0
+TIMED q10000_c3_c6667_selected_c3_main 0.295353 0.032384 0.000218
+Saved theorem _______ "q10000_c3_c6667_selected_c3_main_scan"
+TIMED q10000_c3_c6667_selected_c3_aux 0.002066 0.000214 0.000125000000001
+Saved theorem _______ "q10000_c3_c6667_selected_c3_aux_scan"
+TIMED q10000_c3_c6667_selected_c6667_main 0.295802 0.033943 0.000178999999999
+Saved theorem _______ "q10000_c3_c6667_selected_c6667_main_scan"
+TIMED q10000_c3_c6667_selected_c6667_aux 0.001664 0.000207 0.000116
+Saved theorem _______ "q10000_c3_c6667_selected_c6667_aux_scan"
+Saved theorem _______ "q10000_c3_c6667_selected_decision"
+ENDPOINT_DECISION q10000_c3_c6667_selected 1
+TIMED q10000_c11_c9091_no_edges_c11_main 0.486766 0.091662 0.000359
+Saved theorem _______ "q10000_c11_c9091_no_edges_c11_main_scan"
+TIMED q10000_c11_c9091_no_edges_c11_aux 0.005305 0.000603999999999 0.000280999999999
+Saved theorem _______ "q10000_c11_c9091_no_edges_c11_aux_scan"
+TIMED q10000_c11_c9091_no_edges_c9091_main 0.292434 0.034364 0.000249
+Saved theorem _______ "q10000_c11_c9091_no_edges_c9091_main_scan"
+TIMED q10000_c11_c9091_no_edges_c9091_aux 0.001804 0.000271 0.000140999999999
+Saved theorem _______ "q10000_c11_c9091_no_edges_c9091_aux_scan"
+Saved theorem _______ "q10000_c11_c9091_no_edges_decision"
+ENDPOINT_DECISION q10000_c11_c9091_no_edges 0
+TIMED q10000_c11_c9091_selected_c11_main 0.264769 0.024739 0.000233000000001
+Saved theorem _______ "q10000_c11_c9091_selected_c11_main_scan"
+TIMED q10000_c11_c9091_selected_c11_aux 0.001704 0.000197 0.000116
+Saved theorem _______ "q10000_c11_c9091_selected_c11_aux_scan"
+TIMED q10000_c11_c9091_selected_c9091_main 0.291249 0.029833 0.000182000000001
+Saved theorem _______ "q10000_c11_c9091_selected_c9091_main_scan"
+TIMED q10000_c11_c9091_selected_c9091_aux 0.00183 0.000253000000001 0.000144000000001
+Saved theorem _______ "q10000_c11_c9091_selected_c9091_aux_scan"
+Saved theorem _______ "q10000_c11_c9091_selected_decision"
+ENDPOINT_DECISION q10000_c11_c9091_selected 1
+TIMED q10004_c6559_c7707_no_edges_c6559_main 0.42033 0.06354 0.00033
+Saved theorem _______ "q10004_c6559_c7707_no_edges_c6559_main_scan"
+TIMED q10004_c6559_c7707_no_edges_c6559_aux 0.004599 0.000484999999999 0.000277000000001
+Saved theorem _______ "q10004_c6559_c7707_no_edges_c6559_aux_scan"
+TIMED q10004_c6559_c7707_no_edges_c7707_main 0.329284 0.049388 0.000233
+Saved theorem _______ "q10004_c6559_c7707_no_edges_c7707_main_scan"
+TIMED q10004_c6559_c7707_no_edges_c7707_aux 0.001633 0.000229000000001 0.000109999999999
+Saved theorem _______ "q10004_c6559_c7707_no_edges_c7707_aux_scan"
+Saved theorem _______ "q10004_c6559_c7707_no_edges_decision"
+ENDPOINT_DECISION q10004_c6559_c7707_no_edges 1
+TIMED q10004_c5499_c7659_no_edges_c5499_main 0.299427 0.030123 0.000183
+Saved theorem _______ "q10004_c5499_c7659_no_edges_c5499_main_scan"
+TIMED q10004_c5499_c7659_no_edges_c5499_aux 0.001738 0.000225 0.000147999999999
+Saved theorem _______ "q10004_c5499_c7659_no_edges_c5499_aux_scan"
+TIMED q10004_c5499_c7659_no_edges_c7659_main 0.383257 0.064731 0.000272000000001
+Saved theorem _______ "q10004_c5499_c7659_no_edges_c7659_main_scan"
+TIMED q10004_c5499_c7659_no_edges_c7659_aux 0.002766 0.000360000000001 0.0002
+Saved theorem _______ "q10004_c5499_c7659_no_edges_c7659_aux_scan"
+Saved theorem _______ "q10004_c5499_c7659_no_edges_decision"
+ENDPOINT_DECISION q10004_c5499_c7659_no_edges 0
+TIMED q10004_c5499_c7659_selected_c5499_main 0.521031 0.068464 0.000988
+Saved theorem _______ "q10004_c5499_c7659_selected_c5499_main_scan"
+TIMED q10004_c5499_c7659_selected_c5499_aux 0.007609 0.000640999999998 0.000456
+Saved theorem _______ "q10004_c5499_c7659_selected_c5499_aux_scan"
+TIMED q10004_c5499_c7659_selected_c7659_main 0.440403 0.037585 0.000173
+Saved theorem _______ "q10004_c5499_c7659_selected_c7659_main_scan"
+TIMED q10004_c5499_c7659_selected_c7659_aux 0.001671 0.000282000000002 0.000121
+Saved theorem _______ "q10004_c5499_c7659_selected_c7659_aux_scan"
+Saved theorem _______ "q10004_c5499_c7659_selected_decision"
+ENDPOINT_DECISION q10004_c5499_c7659_selected 1
+TIMED q265800_c9539_c117059_no_edges_c9539_main 0.014725 0.006342 0.000399999999999
+Saved theorem _______ "q265800_c9539_c117059_no_edges_c9539_main_scan"
+TIMED q265800_c9539_c117059_no_edges_c9539_aux 0.001693 0.000214 0.000125999999998
+Saved theorem _______ "q265800_c9539_c117059_no_edges_c9539_aux_scan"
+TIMED q265800_c9539_c117059_no_edges_c117059_main 0.011965 0.002105 0.000159
+Saved theorem _______ "q265800_c9539_c117059_no_edges_c117059_main_scan"
+TIMED q265800_c9539_c117059_no_edges_c117059_aux 0.001781 0.000229000000001 0.000152
+Saved theorem _______ "q265800_c9539_c117059_no_edges_c117059_aux_scan"
+Saved theorem _______ "q265800_c9539_c117059_no_edges_decision"
+ENDPOINT_DECISION q265800_c9539_c117059_no_edges 0
+TIMED q265800_c9539_c117059_selected_c9539_main 0.011996 0.002423 0.000184000000001
+Saved theorem _______ "q265800_c9539_c117059_selected_c9539_main_scan"
+TIMED q265800_c9539_c117059_selected_c9539_aux 0.002035 0.000530999999999 0.000133999999999
+Saved theorem _______ "q265800_c9539_c117059_selected_c9539_aux_scan"
+TIMED q265800_c9539_c117059_selected_c117059_main 0.014546 0.002339 0.000154000000002
+Saved theorem _______ "q265800_c9539_c117059_selected_c117059_main_scan"
+TIMED q265800_c9539_c117059_selected_c117059_aux 0.00178 0.000326000000001 0.000142999999998
+Saved theorem _______ "q265800_c9539_c117059_selected_c117059_aux_scan"
+Saved theorem _______ "q265800_c9539_c117059_selected_decision"
+ENDPOINT_DECISION q265800_c9539_c117059_selected 1
+ENDPOINT_EXPORT_DONE
+Exporting theory "EndpointExport" ... done.
+Theory "EndpointExport" took 20.8s to build
+Holmake: [1/1] EndpointExport

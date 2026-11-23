@@ -1,0 +1,25 @@
+{
+  "scope": "Internal actual central L-value milestone only; no positive-height pipeline verdict",
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-j",
+    "1",
+    "-t",
+    "0",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\audit\\CentralSpectralSemanticProbe.lean"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 44.64622720000625,
+  "pins": {
+    "work/lean-pilots/spectral/CentralChi4.lean": "DADBA753B6475CD5ED9C48F0CC1312709F60DE8FCCF7291C5CC797A844A89D22",
+    "work/lean-pilots/spectral/CentralChi4.olean": "B7FB59F14A902F4E4712DF2485EE9760D417CCAFFCB118252321FD38CC480607",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/LGrowth.lean": "5E6BD327045A95842498DD35DA4D4CA476D7DF37275EA612CD4FA46D2273C341",
+    "work/qrh-campaign/agents/integration/artifacts/TernaryGoldbach/Explicit/LGrowth.olean": "1F4140842770D4B6A8B9CFE93D724FF5C1B55111A2CAA57C5350BAEBE9EBB7FC"
+  },
+  "probe_text": "import CentralChi4\n\nexample : SpectralPilot.chi4 = ZMod.\u03c7\u2084.ringHomComp (Int.castRingHom \u2102) := rfl\n\nexample :\n    (1 / 4 : \u211d) < (DirichletCharacter.LFunction\n      (ZMod.\u03c7\u2084.ringHomComp (Int.castRingHom \u2102)) (1 / 2)).re \u2227\n    (DirichletCharacter.LFunction\n      (ZMod.\u03c7\u2084.ringHomComp (Int.castRingHom \u2102)) (1 / 2)).re \u2264 1 \u2227\n    (DirichletCharacter.LFunction\n      (ZMod.\u03c7\u2084.ringHomComp (Int.castRingHom \u2102)) (1 / 2)).im = 0 :=\n  SpectralPilot.central_chi4_certificate\n\n#check SpectralPilot.central_chi4_certificate\n#print DirichletCharacter.LFunction\n#print ZMod.LFunction\n#print axioms SpectralPilot.central_chi4_certificate\n#print axioms SpectralPilot.actual_central_finite_approximation\n#print axioms SpectralPilot.central_tail_le\n#print axioms TernaryGoldbach.Explicit.LFunction_eq_mul_Iint\n",
+  "probe_sha256": "AE494FF9B7E37B7729A5A08D672306C8B19981E6551D028F6972BE7B6805789E",
+  "log_sha256": "E6372D6FA43B709C88BB5946ED816E229BCB69000CADD989C49488A61C8ED6C2",
+  "script_sha256": "4D5DB2697A02313A07E6D5C1EB027DD0949364A60BAD1B3800412196D3F80EB8",
+  "lean_executable_sha256": "EC7A472D1C12A09B0C0C718F7427C2BE527B3F5F07810FDBE076C2507C7A91EA",
+  "temporary_probe_deleted": true
+}

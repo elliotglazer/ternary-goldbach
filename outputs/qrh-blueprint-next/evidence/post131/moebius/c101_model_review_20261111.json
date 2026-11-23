@@ -1,0 +1,30 @@
+{
+  "status": "PASS_INDEPENDENT_ALL_CHARACTER_WHOLE_PANEL_MODEL",
+  "input_sha256": {
+    "C101_CAUCHY_ALPHA_BLOCK_2026-11-11.md": "4f73c1fa9c8d8c1c5eccd22db0348fcac52108c126b840e5bc419fcd9968bf5b",
+    "c101_cauchy_alpha_block_20261111.py": "fd75dac17af6735e9a5ae72e5a47096592609d2371cd5a65643b544f5b8f4e11",
+    "c101_cauchy_alpha_block_20261111.json": "087c2577d42cfb22ca9ba2e0e00d17bd9c5c9585c4bab854920a3e26131e2f84"
+  },
+  "author_replay_all_non_timing_fields_match": true,
+  "parameters": {
+    "bits": 192,
+    "N": 768,
+    "M": 48,
+    "samples": 48,
+    "natural_residue_order": true,
+    "raw_Hurwitz_integral_terms": true,
+    "outer_bound": 1856502
+  },
+  "alias_error_exact": "480677261974043443888714850232397/54658689212084666454346088255663646965760",
+  "alias_error_float_diagnostic": 8.79416006682738e-09,
+  "exact_character_multiplication_pairs_checked": 10000,
+  "characters": 99,
+  "stored_panels": 159,
+  "independent_accepted_leaves": 159,
+  "additional_maxdepth": 0,
+  "minimum_coordinate_lower_bound_diagnostic": "[0.00304541046292614445945718289303562322894265135772077739002 +/- 4.85e-60]",
+  "independent_seconds": 8.919814400000178,
+  "builtin_zeta_or_L_acceptance": false,
+  "overlap_is_proof": false,
+  "scope": "Only sigma=.555,t in[999.875,1000.125]; no contour, winding, production height or Lean."
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "exact inequalities for two hypothetical iid Bernoulli-matrix fixtures; no samples, source bits, primes, masks or inventory",
+  "checks": 8,
+  "passed": [
+    "q_power_512_below_2^-44",
+    "empty_power_512_below_2^-47",
+    "empty_power_16_above_1/4",
+    "availability_mgf_below_2^26",
+    "W_squared_pair_bound",
+    "W_missing_lower",
+    "availability_tail_exponent",
+    "adaptive_union_exponent"
+  ],
+  "fixtures": [
+    {
+      "W": 262144,
+      "M": 512,
+      "theta": "1/16",
+      "eta": "1/32",
+      "nonempty_antichain_probability_lower": "1-2^-8-2^-29",
+      "any_subset_size_at_most_64_cover_probability_upper": "2^-512",
+      "available_anchor_cover_probability_upper": "2^-39+2^-512"
+    },
+    {
+      "W": 262144,
+      "M": 64,
+      "theta": "1/16",
+      "probability_no_empty_row_upper": "2^-1024"
+    }
+  ],
+  "note": "probability conclusions use the paper's independence assumptions and generic (1-x)^n<=exp(-nx), exp(1)>2; no transcendental values evaluated"
+}

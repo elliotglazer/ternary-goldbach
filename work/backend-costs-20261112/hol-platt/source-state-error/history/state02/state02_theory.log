@@ -1,0 +1,40 @@
+Holmake: Scanning $(HOLDIR)/src/sort
+Holmake: Scanning $(HOLDIR)/src/string
+Holmake: Scanning $(HOLDIR)/src/TeX
+Holmake: Scanning $(HOLDIR)/src/bag
+Holmake: Scanning $(HOLDIR)/src/n-bit
+Holmake: Scanning $(HOLDIR)/src/res_quan/src
+Holmake: Scanning $(HOLDIR)/src/finite_maps
+Holmake: Scanning $(HOLDIR)/src/integer
+Holmake: Scanning $(HOLDIR)/src/num/extra_theories
+Holmake: Scanning $(HOLDIR)/src/transfer
+Holmake: Scanning $(HOLDIR)/src/pred_set/src/more_theories
+Holmake: Scanning $(HOLDIR)/src/rational
+Holmake: Scanning $(HOLDIR)/src/num/theories/cv_compute/automation
+Holmake: Scanning /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup
+Holmake: Scanning ../raw-analytic/dependency-build-win01
+Holmake: Scanning ../raw-pair-round-proof
+Holmake: Scanning ../source-producer
+Holmake: Scanned 18 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-state-error/SourceStateErrorScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceStateError">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceStateError)>>
+Saved theorem _______ "ss_modu_add_square"
+Saved theorem _______ "ss_modu_triangle"
+Saved theorem _______ "ss_modu_sub_triangle"
+Saved definition ____ "source_pair_value_def"
+Saved theorem _______ "ss_source_mul_eq"
+Saved theorem _______ "ss_source_mul_error"
+Saved theorem _______ "ss_step_norm"
+Proof of 
+
+∀u v z w err eps.
+  0 ≤ err ∧ 0 ≤ eps ∧ modu z ≤ 1 ∧ modu w = 1 ∧ modu (u − z) ≤ err ∧
+  modu (v − w) ≤ eps ⇒
+  modu (u * v − z * w) ≤ (1 + eps) * err + eps
+
+failed.
+Tactic failure proving "ss_product_error"; heap saved to SourceStateError.ss_product_error.dumpedheap.
+Resume with: bin/hol --holstate=SourceStateError.ss_product_error.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-state-error/SourceStateErrorScript - exited with code 1

@@ -1,0 +1,59 @@
+<<HOL message: Created theory "HandoffMaterialized">>
+HANDOFF_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+HANDOFF_MODE,materialized,integer_only
+HANDOFF_FIXTURE,01C3E9F1AF2FD8DF40C9EF770840078E02EC356737727637C58397836C5C6BF9
+HANDOFF_PHASE,construct_sources,0.001037000,0.001234000
+HANDOFF_PHASE,define_sources,0.001943000,0.001950000
+Saved theorem _______ "cv_accepted_integer_sources_thm"
+Finished translating accepted_integer_sources, stored in cv_accepted_integer_sources_thm
+HANDOFF_PHASE,translate_sources,0.015185000,0.028987000
+HANDOFF_PHASE,construct_final_outputs,0.033714000,0.033732000
+HANDOFF_PHASE,producer_representation,0.000602000,0.000602000
+HANDOFF_PHASE,producer_from_to,0.000103000,0.000103000
+HANDOFF_PHASE,producer_code_equations,0.000717000,0.000718000
+HANDOFF_PHASE,producer_prepare_conversion,0.000404000,0.000403000
+HANDOFF_PHASE,producer_proof_context,0.000054000,0.000053000
+HANDOFF_PHASE,producer_compute,0.029617000,0.029626000
+HANDOFF_PHASE,producer_decode,0.882889000,0.883240000
+HANDOFF_PHASE,producer_close,0.731100000,0.731475000
+HANDOFF_TAG,producer,DISK_THM,
+HANDOFF_PHASE,construct_intermediate_literal,0.089685000,0.089744000
+HANDOFF_PHASE,bind_intermediate_literal,0.005587000,0.005604000
+HANDOFF_PHASE,define_intermediate,0.242645000,0.242757000
+Saved theorem _______ "cv_materialized_trace_thm"
+Finished translating materialized_trace, stored in cv_materialized_trace_thm
+HANDOFF_PHASE,translate_intermediate,8.868433000,8.884371000
+HANDOFF_PHASE,bind_producer_to_named_trace,0.003543000,0.003559000
+HANDOFF_PHASE,consumer_representation,0.000932000,0.000931000
+HANDOFF_PHASE,consumer_from_to,0.000186000,0.000189000
+HANDOFF_PHASE,consumer_code_equations,0.041296000,0.041329000
+HANDOFF_PHASE,consumer_prepare_conversion,0.017901000,0.017913000
+HANDOFF_PHASE,consumer_proof_context,0.000068000,0.000067000
+HANDOFF_PHASE,consumer_compute,0.014922000,0.014937000
+HANDOFF_PHASE,consumer_decode,0.132812000,0.132824000
+HANDOFF_PHASE,consumer_close,0.476794000,0.476933000
+HANDOFF_TAG,consumer,DISK_THM,
+HANDOFF_PHASE,compose_pipeline,0.000824000,0.000829000
+HANDOFF_PHASE,bind_final_outputs,0.001894000,0.001899000
+HANDOFF_PHASE,public_literal_binding,0.011919000,0.011933000
+HANDOFF_TAG,final_integer_pipeline,DISK_THM,
+Saved theorem _______ "final_integer_pipeline"
+HANDOFF_PHASE,save_final,0.026665000,0.027532000
+HANDOFF_PRIMARY_COMPLETE,516,8,129
+HANDOFF_PHASE,control_construct_seed,0.001036000,0.001041000
+HANDOFF_PHASE,control_define_seed,0.002217000,0.002229000
+Saved theorem _______ "cv_control_seed_thm"
+Finished translating control_seed, stored in cv_control_seed_thm
+HANDOFF_PHASE,control_translate_seed,0.015125000,0.016586000
+HANDOFF_PHASE,control_seed_representation,3.989160000,4.005709000
+HANDOFF_PHASE,control_seed_from_to,0.000107000,0.000144000
+HANDOFF_PHASE,control_seed_code_equations,0.006635000,0.006652000
+HANDOFF_PHASE,control_seed_prepare_conversion,0.000768000,0.000771000
+HANDOFF_PHASE,control_seed_proof_context,0.041686000,0.041703000
+HANDOFF_PHASE,control_seed_compute,0.014119000,0.014129000
+HANDOFF_PHASE,control_seed_decode,0.000457000,0.000458000
+HANDOFF_PHASE,control_seed_close,0.597645000,0.597617000
+HANDOFF_TAG,control_seed,DISK_THM,
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/handoff_materialized.sml : Fail "evaluation not equality"
+error in load handoff_materialized : Fail "evaluation not equality"
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/handoff_materialized.sml:4: Fail "evaluation not equality"

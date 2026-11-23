@@ -1,0 +1,6 @@
+INCLUDES = ../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: C10004TransformTestsTheory.uo
+
+transform_audit.exe: transform_audit.uo
+	$(HOLMOSMLC) -o $@ $<

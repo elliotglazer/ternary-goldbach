@@ -1,0 +1,77 @@
+{
+  "scope": "Scalar-only independent-path accuracy; no pilot execution or data acceptance",
+  "elementary_error": {
+    "numerator": "1",
+    "denominator": "1766847064778384329583297500742918515827483896875618958121606201292619776"
+  },
+  "named_rounding_error": {
+    "numerator": "1",
+    "denominator": "26959946667150639794667015087019630673637144422540572481103610249216"
+  },
+  "amplification": {
+    "numerator": "176848577040768610699874889",
+    "denominator": "1"
+  },
+  "numerator_error": {
+    "numerator": "1",
+    "denominator": "13479973333575319897333507543509815336818572211270286240551805124608"
+  },
+  "off_center_P_error": {
+    "numerator": "530545731122305832099624667",
+    "denominator": "26959946667150639794667015087019630673637144422540572481103610249216"
+  },
+  "at_one_P_error": {
+    "numerator": "33",
+    "denominator": "862718293348820473429344482784628181556388621521298319395315527974912"
+  },
+  "head_error": {
+    "numerator": "39",
+    "denominator": "53919893334301279589334030174039261347274288845081144962207220498432"
+  },
+  "half_error": {
+    "numerator": "5",
+    "denominator": "107839786668602559178668060348078522694548577690162289924414440996864"
+  },
+  "bernoulli_error": {
+    "numerator": "9",
+    "denominator": "26959946667150639794667015087019630673637144422540572481103610249216"
+  },
+  "residue_error": {
+    "numerator": "2122182924489223328398498791",
+    "denominator": "107839786668602559178668060348078522694548577690162289924414440996864"
+  },
+  "character_error": {
+    "numerator": "265272865561152916049812349",
+    "denominator": "3369993333393829974333376885877453834204643052817571560137951281152"
+  },
+  "canonical_independent_radius": {
+    "numerator": "1",
+    "denominator": "340282366920938463463374607431768211456"
+  },
+  "author_center_error_bound": {
+    "numerator": "122529848868592569814184779",
+    "denominator": "9258093274720851005890484416752273976197120000000"
+  },
+  "containment_margin": {
+    "numerator": "275912670083990787489121280351140114762933",
+    "denominator": "20847372711097059822580968418206627272536103504779684085760000000"
+  },
+  "checks": [
+    "geometric recurrence factor",
+    "30-order amplification below2^88",
+    "log endpoints below7",
+    "normalized power and derivative l1 bound",
+    "scaled rising-factor bound",
+    "off-center P accuracy",
+    "at-one P accuracy",
+    "P budget fits original block",
+    "half block meets old target",
+    "Bernoulli block meets old target",
+    "full independent coefficient radius",
+    "complete independent ball containment margin",
+    "pole component count",
+    "character coefficient count",
+    "whole-disk inherited allowance"
+  ],
+  "check_count": 15
+}

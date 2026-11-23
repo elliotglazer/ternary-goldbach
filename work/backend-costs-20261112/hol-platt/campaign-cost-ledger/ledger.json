@@ -1,0 +1,369 @@
+{
+  "historical_platt_hours": 400000,
+  "comparison_target": 800000,
+  "baseline": [
+    628472.0262959333,
+    629001.3830343093
+  ],
+  "baseline_remainder_to_800k": [
+    170998.61696569074,
+    171527.9737040667
+  ],
+  "measured_family_labels": 4,
+  "sample_counts_include_halos": 340484,
+  "hashes": {
+    "sign_only_minimal_theta_nonprincipal_schedule_20261111.json@prime-estimates": "e767ec3b3e14f2a243837da85c811de5ed67ce701bdd08998c2329f9c687c24d",
+    "costs.json@small-gaussian": "385cedc597a9d78cfad0a39a0ad3519a6e927b8a7db57e9818bb17d708762c19",
+    "results.json@grid-projection": "7339d95d9c341842e0a76efb9757f1f51a4010ebf28d39295f64358c674c4204",
+    "results.json@grid-sign-join": "d4f41a799cd5c034bbd882b1c06b70d4f0039b616c0b0ec0b839f5c79a64e8e6",
+    "results.json@full-height-count": "8e80fccff703d5f15025e7c1cf95892546fc28fcdc671e0e4579ed9c8c75f390",
+    "sensitivity.json@full-height-count": "b246d741092d7cf0d17f53563252e4ee535976264e844c16ee8526c66d271600",
+    "short_window_guard_ledger_20261111.json@integration": "c04f477a1accdffdae76fea972d09c270332bcb6766edff060c2678daef970a4"
+  },
+  "rows": [
+    {
+      "extra": 0,
+      "window_grid_units": "0",
+      "large_plus41": {
+        "conductor_height_nodes": 1528006797,
+        "residue_inputs": 60254515577760,
+        "primitive_outputs": 36468561640066
+      },
+      "small_labels": 18477108,
+      "small_conductors": 7499,
+      "small_coarse": 1775431871117,
+      "modeled_extra_halo": 4730139648,
+      "modeled_sample_population": 1780162010765,
+      "raw_to_compressed": {
+        "worker": 74491.88909324598,
+        "numerals": 37450.92695281486,
+        "check": 34799.16259038788,
+        "process": 87632.5855494271
+      },
+      "compressed_join_inner": 96745.32878097925,
+      "compressed_join_eval_only": 11854.844386924864,
+      "alternative_packet_model": [
+        {
+          "edge_per_label": 4,
+          "hypothetical_interior": 470715514,
+          "hypothetical_edge": 73908432,
+          "bit_packet_count_hours": 3676.8161325677743,
+          "separate_sparse_dot_hours": 5008.8867909273,
+          "native_discovery_hours": 385.9062847901022
+        },
+        {
+          "edge_per_label": 6,
+          "hypothetical_interior": 470715514,
+          "hypothetical_edge": 110862648,
+          "bit_packet_count_hours": 3676.892641518724,
+          "separate_sparse_dot_hours": 5348.753382822388,
+          "native_discovery_hours": 385.9062847901022
+        }
+      ],
+      "conditional_budget": {
+        "explicit_two_interfaces": {
+          "additional_hours": 171237.21787422523,
+          "subtotal": [
+            799709.2441701585,
+            800238.6009085345
+          ],
+          "remainder_to_800k": [
+            -238.60090853448492,
+            290.7558298414806
+          ]
+        },
+        "skip_projection_numerals_only": {
+          "additional_hours": 133786.29092141037,
+          "subtotal": [
+            762258.3172173437,
+            762787.6739557197
+          ],
+          "remainder_to_800k": [
+            37212.32604428037,
+            37741.68278265634
+          ]
+        },
+        "kernel_only_both_boundaries": {
+          "additional_hours": 46654.00697731275,
+          "subtotal": [
+            675126.033273246,
+            675655.390011622
+          ],
+          "remainder_to_800k": [
+            124344.609988378,
+            124873.96672675396
+          ]
+        },
+        "compressed_join_only": {
+          "additional_hours": 96745.32878097925,
+          "subtotal": [
+            725217.3550769126,
+            725746.7118152885
+          ],
+          "remainder_to_800k": [
+            74253.28818471149,
+            74782.64492308746
+          ]
+        }
+      }
+    },
+    {
+      "extra": 167,
+      "window_grid_units": "835/64",
+      "large_plus41": {
+        "conductor_height_nodes": 1548948597,
+        "residue_inputs": 61445729121504,
+        "primitive_outputs": 37192213862847
+      },
+      "small_labels": 18477108,
+      "small_conductors": 7499,
+      "small_coarse": 1778517548153,
+      "modeled_extra_halo": 4730139648,
+      "modeled_sample_population": 1783247687801,
+      "raw_to_compressed": {
+        "worker": 74621.01099909123,
+        "numerals": 37515.84321581586,
+        "check": 34859.482368154095,
+        "process": 87784.48512665657
+      },
+      "compressed_join_inner": 96913.02410171664,
+      "compressed_join_eval_only": 11875.393202633144,
+      "alternative_packet_model": [
+        {
+          "edge_per_label": 4,
+          "hypothetical_interior": 471533620,
+          "hypothetical_edge": 73908432,
+          "bit_packet_count_hours": 3683.2063237552734,
+          "separate_sparse_dot_hours": 5016.410882306453,
+          "native_discovery_hours": 386.576984792956
+        },
+        {
+          "edge_per_label": 6,
+          "hypothetical_interior": 471533620,
+          "hypothetical_edge": 110862648,
+          "bit_packet_count_hours": 3683.282832706222,
+          "separate_sparse_dot_hours": 5356.27747420154,
+          "native_discovery_hours": 386.576984792956
+        }
+      ],
+      "conditional_budget": {
+        "explicit_two_interfaces": {
+          "additional_hours": 171534.03510080787,
+          "subtotal": [
+            800006.0613967412,
+            800535.4181351172
+          ],
+          "remainder_to_800k": [
+            -535.4181351171283,
+            -6.061396741162753
+          ]
+        },
+        "skip_projection_numerals_only": {
+          "additional_hours": 134018.191884992,
+          "subtotal": [
+            762490.2181809254,
+            763019.5749193013
+          ],
+          "remainder_to_800k": [
+            36980.42508069874,
+            37509.781819074706
+          ]
+        },
+        "kernel_only_both_boundaries": {
+          "additional_hours": 46734.87557078724,
+          "subtotal": [
+            675206.9018667205,
+            675736.2586050965
+          ],
+          "remainder_to_800k": [
+            124263.74139490351,
+            124793.09813327948
+          ]
+        },
+        "compressed_join_only": {
+          "additional_hours": 96913.02410171664,
+          "subtotal": [
+            725385.0503976499,
+            725914.4071360258
+          ],
+          "remainder_to_800k": [
+            74085.5928639741,
+            74614.94960235007
+          ]
+        }
+      }
+    },
+    {
+      "extra": 320,
+      "window_grid_units": "25",
+      "large_plus41": {
+        "conductor_height_nodes": 1568134797,
+        "residue_inputs": 62537080452000,
+        "primitive_outputs": 37855200629826
+      },
+      "small_labels": 18477108,
+      "small_conductors": 7499,
+      "small_coarse": 1781344545677,
+      "modeled_extra_halo": 4730139648,
+      "modeled_sample_population": 1786074685325,
+      "raw_to_compressed": {
+        "worker": 74739.3083140273,
+        "numerals": 37575.31739688863,
+        "check": 34914.745398083614,
+        "process": 87923.65060759136
+      },
+      "compressed_join_inner": 97066.66113209279,
+      "compressed_join_eval_only": 11894.219363132344,
+      "alternative_packet_model": [
+        {
+          "edge_per_label": 4,
+          "hypothetical_interior": 472283142,
+          "hypothetical_edge": 73908432,
+          "bit_packet_count_hours": 3689.0608102917768,
+          "separate_sparse_dot_hours": 5023.304209110907,
+          "native_discovery_hours": 387.19145844826517
+        },
+        {
+          "edge_per_label": 6,
+          "hypothetical_interior": 472283142,
+          "hypothetical_edge": 110862648,
+          "bit_packet_count_hours": 3689.1373192427254,
+          "separate_sparse_dot_hours": 5363.170801005995,
+          "native_discovery_hours": 387.19145844826517
+        }
+      ],
+      "conditional_budget": {
+        "explicit_two_interfaces": {
+          "additional_hours": 171805.96944612009,
+          "subtotal": [
+            800277.9957420534,
+            800807.3524804293
+          ],
+          "remainder_to_800k": [
+            -807.3524804293411,
+            -277.9957420533756
+          ]
+        },
+        "skip_projection_numerals_only": {
+          "additional_hours": 134230.65204923146,
+          "subtotal": [
+            762702.6783451647,
+            763232.0350835407
+          ],
+          "remainder_to_800k": [
+            36767.964916459285,
+            37297.32165483525
+          ]
+        },
+        "kernel_only_both_boundaries": {
+          "additional_hours": 46808.96476121596,
+          "subtotal": [
+            675280.9910571493,
+            675810.3477955252
+          ],
+          "remainder_to_800k": [
+            124189.65220447478,
+            124719.00894285075
+          ]
+        },
+        "compressed_join_only": {
+          "additional_hours": 97066.66113209279,
+          "subtotal": [
+            725538.6874280261,
+            726068.0441664021
+          ],
+          "remainder_to_800k": [
+            73931.95583359795,
+            74461.31257197392
+          ]
+        }
+      }
+    },
+    {
+      "extra": 640,
+      "window_grid_units": "50",
+      "large_plus41": {
+        "conductor_height_nodes": 1608262797,
+        "residue_inputs": 64819645326240,
+        "primitive_outputs": 39241839619586
+      },
+      "small_labels": 18477108,
+      "small_conductors": 7499,
+      "small_coarse": 1787257220237,
+      "modeled_extra_halo": 4730139648,
+      "modeled_sample_population": 1791987359885,
+      "raw_to_compressed": {
+        "worker": 74986.72753480861,
+        "numerals": 37699.707840962416,
+        "check": 35030.32820577934,
+        "process": 88214.71566575562
+      },
+      "compressed_join_inner": 97387.99348320634,
+      "compressed_join_eval_only": 11933.594339339823,
+      "alternative_packet_model": [
+        {
+          "edge_per_label": 4,
+          "hypothetical_interior": 473850770,
+          "hypothetical_edge": 73908432,
+          "bit_packet_count_hours": 3701.3054880157792,
+          "separate_sparse_dot_hours": 5037.721627294513,
+          "native_discovery_hours": 388.4766321064281
+        },
+        {
+          "edge_per_label": 6,
+          "hypothetical_interior": 473850770,
+          "hypothetical_edge": 110862648,
+          "bit_packet_count_hours": 3701.381996966728,
+          "separate_sparse_dot_hours": 5377.588219189601,
+          "native_discovery_hours": 388.4766321064281
+        }
+      ],
+      "conditional_budget": {
+        "explicit_two_interfaces": {
+          "additional_hours": 172374.72101801494,
+          "subtotal": [
+            800846.7473139482,
+            801376.1040523242
+          ],
+          "remainder_to_800k": [
+            -1376.1040523241973,
+            -846.7473139482317
+          ]
+        },
+        "skip_projection_numerals_only": {
+          "additional_hours": 134675.01317705255,
+          "subtotal": [
+            763147.0394729858,
+            763676.3962113617
+          ],
+          "remainder_to_800k": [
+            36323.6037886382,
+            36852.96052701416
+          ]
+        },
+        "kernel_only_both_boundaries": {
+          "additional_hours": 46963.92254511916,
+          "subtotal": [
+            675435.9488410525,
+            675965.3055794284
+          ],
+          "remainder_to_800k": [
+            124034.69442057158,
+            124564.05115894755
+          ]
+        },
+        "compressed_join_only": {
+          "additional_hours": 97387.99348320634,
+          "subtotal": [
+            725860.0197791397,
+            726389.3765175156
+          ],
+          "remainder_to_800k": [
+            73610.6234824844,
+            74139.98022086037
+          ]
+        }
+      }
+    }
+  ]
+}

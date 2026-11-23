@@ -1,0 +1,74 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FiniteInputs.lean:22:51: error: unsolved goals
+n k : ℕ
+hn : 0 < n
+hk : k ≤ 3
+hlo : 2 ^ k ≤ ↑n
+hhi : ↑n ≤ 2 * 2 ^ k
+a : ℝ := 2 ^ k
+ha : 0 < a
+hnr : 0 < ↑n
+hd : 0 < ↑n + a
+x : ℝ := (↑n - a) / (↑n + a)
+hx0 : 0 ≤ x
+hx : x ≤ 1 / 3
+⊢ a * ↑n * a⁻¹ = ↑n
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FiniteInputs.lean:40:33: error: Application type mismatch: The argument
+  Nat.cast_nonneg k
+has type
+  0 ≤ ↑k
+but is expected to have type
+  0 ≤ Real.log ↑n - ↑k * Real.log 2 - logSeries x
+in the application
+  abs_of_nonneg (Nat.cast_nonneg k)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FiniteInputs.lean:81:4: error: linarith failed to find a contradiction
+n k : ℕ
+hn : 0 < n
+hN : n ≤ 16
+hk : k ≤ 3
+hlo : 2 ^ k ≤ ↑n
+hhi : ↑n ≤ 2 * 2 ^ k
+hl : |Real.log ↑n - logApprox n k| ≤ 1 / 10000000
+hlog0 : 0 ≤ Real.log ↑n
+hlog : Real.log ↑n < 3
+habs : -(1 / 10000000) ≤ Real.log ↑n - logApprox n k ∧ Real.log ↑n - logApprox n k ≤ 1 / 10000000
+hlA : |logApprox n k| ≤ 3 + 1 / 10000000
+x : ℂ := -sampleS * ↑(Real.log ↑n)
+y : ℂ := -sampleS * ↑(logApprox n k)
+hexy : ‖y - x‖ ≤ 3 / 5 * (1 / 10000000)
+a✝ : 1 / 2 * (log ↑n).re < 5 / 64 * (log ↑n).im
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FiniteInputs.lean:97:13: error: Function expected at
+  norm_sub_le (cexp x) (cexp y)
+but this term has type
+  ‖cexp x - cexp y‖ ≤ ‖cexp x‖ + ‖cexp y‖
+
+Note: Expected a function because this term is being applied to the argument
+  (expSeries y)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\FiniteInputs.lean:63:63: error: unsolved goals
+n k : ℕ
+hn : 0 < n
+hN : n ≤ 16
+hk : k ≤ 3
+hlo : 2 ^ k ≤ ↑n
+hhi : ↑n ≤ 2 * 2 ^ k
+hl : |Real.log ↑n - logApprox n k| ≤ 1 / 10000000
+hlog0 : 0 ≤ Real.log ↑n
+hlog : Real.log ↑n < 3
+habs : -(1 / 10000000) ≤ Real.log ↑n - logApprox n k ∧ Real.log ↑n - logApprox n k ≤ 1 / 10000000
+hlA : |logApprox n k| ≤ 3 + 1 / 10000000
+x : ℂ := -sampleS * ↑(Real.log ↑n)
+y : ℂ := -sampleS * ↑(logApprox n k)
+hexy : ‖y - x‖ ≤ 3 / 5 * (1 / 10000000)
+hx : x.re ≤ 0
+hy : ‖y‖ ≤ 2
+ht : ‖cexp y - cexp x‖ ≤ 2 * ‖y - x‖
+hp : ‖cexp y - expSeries y‖ ≤ 1 / 10000000
+hcp : ↑n ^ (-sampleS) = cexp x
+⊢ ‖cexp x - expSeries y‖ ≤ 3 / 10000000

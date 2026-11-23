@@ -1,0 +1,36 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawPowerIdentity.lean:31:79: error: unsolved goals
+x t : ℝ
+htwo : (starRingEnd ℂ) 2 = 2
+⊢ ((starRingEnd ℂ) (-1 / 2) + I * ↑t) * ↑(Real.log x) = (-1 / 2 + I * ↑t) * ↑(Real.log x)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawPowerIdentity.lean:38:31: warning: This simp argument is unused:
+  map_div
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_sub, map_neg, map_one, Complex.conj_ofReal, Complex.conj_I, htwo, neg_mul,
+    sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawPowerIdentity.lean:38:40: warning: This simp argument is unused:
+  map_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_sub, map_div, map_one, Complex.conj_ofReal, Complex.conj_I, htwo, neg_mul,
+    sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawPowerIdentity.lean:38:49: warning: This simp argument is unused:
+  map_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_sub, map_div, map_neg, Complex.conj_ofReal, Complex.conj_I, htwo, neg_mul,
+    sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawPowerIdentity.lean:39:41: warning: This simp argument is unused:
+  htwo
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_mul, map_sub, map_div, map_neg, map_one, Complex.conj_ofReal, Complex.conj_I, neg_mul,
+    sub_neg_eq_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

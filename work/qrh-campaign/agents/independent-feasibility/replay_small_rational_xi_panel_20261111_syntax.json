@@ -1,0 +1,23 @@
+{
+  "status": "SYNTAX_ONLY_PASS_NO_NUMERICAL_EVALUATION",
+  "script_sha256": "E7C235B05B18818E1C5F44E631BCD924021F2A21D3ADB6D94A2EFE7032C4E171",
+  "imports": [
+    "argparse",
+    "fractions",
+    "hashlib",
+    "json",
+    "math",
+    "pathlib",
+    "time"
+  ],
+  "function_count": 48,
+  "module_executed": false,
+  "nodes_evaluated": 0,
+  "weights_evaluated": 0,
+  "checks": [
+    "AST parse",
+    "compile to in-memory code object only",
+    "standard-library imports only",
+    "no float literals"
+  ]
+}

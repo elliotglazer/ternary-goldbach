@@ -1,0 +1,388 @@
+<<HOL message: Created theory "RoundDependentResults">>
+HOL4_CONTEXT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+ROUND_IMPL,old
+PREPARED_MODE,retained
+Saved theorem _______ "cv_block_scale_thm"
+Finished translating block_scale, stored in cv_block_scale_thm
+HOL4_TIME,translate_block_scale,0.002790000,0.004593000
+HOL4_POSITIVE_SCALE_RAW,⊢ 0 < block_scale ⇔ T
+HOL4_TIME,construct_inputs,0.050632000,0.050633000
+Saved theorem _______ "cv_block_inputs_thm"
+Finished translating block_inputs, stored in cv_block_inputs_thm
+HOL4_TIME,translate_block_inputs,2.985227000,2.992069000
+HOL4_TIME,construct_coefficients,0.020382000,0.021206000
+Saved theorem _______ "cv_block_coefficients_thm"
+Finished translating block_coefficients, stored in cv_block_coefficients_thm
+HOL4_TIME,translate_block_coefficients,1.001396000,1.002808000
+PREPARED_PHASE,depth1_prebuild_discover,0.013244000,0.013263000
+Saved theorem _______ "prepared_equations_0_0"
+PREPARED_EQUATION_MEMBER,0,0,prepared_equations_0_0
+Saved theorem _______ "prepared_equations_0_1"
+PREPARED_EQUATION_MEMBER,0,1,prepared_equations_0_1
+Saved theorem _______ "prepared_equations_0_2"
+PREPARED_EQUATION_MEMBER,0,2,prepared_equations_0_2
+Saved theorem _______ "prepared_equations_0_3"
+PREPARED_EQUATION_MEMBER,0,3,prepared_equations_0_3
+Saved theorem _______ "prepared_equations_0_4"
+PREPARED_EQUATION_MEMBER,0,4,prepared_equations_0_4
+Saved theorem _______ "prepared_equations_0_5"
+PREPARED_EQUATION_MEMBER,0,5,prepared_equations_0_5
+Saved theorem _______ "prepared_equations_0_6"
+PREPARED_EQUATION_MEMBER,0,6,prepared_equations_0_6
+Saved theorem _______ "prepared_equations_0_7"
+PREPARED_EQUATION_MEMBER,0,7,prepared_equations_0_7
+Saved theorem _______ "prepared_equations_0_8"
+PREPARED_EQUATION_MEMBER,0,8,prepared_equations_0_8
+Saved theorem _______ "prepared_equations_0_9"
+PREPARED_EQUATION_MEMBER,0,9,prepared_equations_0_9
+Saved theorem _______ "prepared_equations_0_10"
+PREPARED_EQUATION_MEMBER,0,10,prepared_equations_0_10
+Saved theorem _______ "prepared_equations_0_11"
+PREPARED_EQUATION_MEMBER,0,11,prepared_equations_0_11
+Saved theorem _______ "prepared_equations_0_12"
+PREPARED_EQUATION_MEMBER,0,12,prepared_equations_0_12
+Saved theorem _______ "prepared_equations_0_13"
+PREPARED_EQUATION_MEMBER,0,13,prepared_equations_0_13
+Saved theorem _______ "prepared_equations_0_14"
+PREPARED_EQUATION_MEMBER,0,14,prepared_equations_0_14
+Saved theorem _______ "prepared_equations_0_15"
+PREPARED_EQUATION_MEMBER,0,15,prepared_equations_0_15
+Saved theorem _______ "prepared_equations_0_16"
+PREPARED_EQUATION_MEMBER,0,16,prepared_equations_0_16
+Saved theorem _______ "prepared_equations_0_17"
+PREPARED_EQUATION_MEMBER,0,17,prepared_equations_0_17
+Saved theorem _______ "prepared_equations_0_18"
+PREPARED_EQUATION_MEMBER,0,18,prepared_equations_0_18
+Saved theorem _______ "prepared_equations_0_19"
+PREPARED_EQUATION_MEMBER,0,19,prepared_equations_0_19
+Saved theorem _______ "prepared_equations_0_20"
+PREPARED_EQUATION_MEMBER,0,20,prepared_equations_0_20
+PREPARED_EQUATION_SET,0,21
+PREPARED_EQUATION_USE,depth1,0,21
+PREPARED_PHASE,depth1_equation_record,0.033211000,0.056477000
+PREPARED_PHASE,depth1_prebuild_compile,0.014588000,0.014599000
+HOL4_TIME,depth1_prebuild_total,0.061402000,0.086576000
+PREPARED_PHASE,positive_discover,0.013047000,0.013063000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.000986000,0.001727000
+PREPARED_PHASE,positive_equation_identity,0.000588000,0.000597000
+PREPARED_PHASE,positive_evaluate_transport,0.001219000,0.001637000
+HOL4_TIME,depth1_r0,0.021698000,0.025400000
+PREPARED_PHASE,positive_discover,0.035379000,0.035400000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001151000,0.002029000
+PREPARED_PHASE,positive_equation_identity,0.000677000,0.000689000
+PREPARED_PHASE,positive_evaluate_transport,0.002499000,0.002502000
+HOL4_TIME,depth1_r1,0.060904000,0.064738000
+PREPARED_PHASE,positive_discover,0.040242000,0.040259000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.000686000,0.001460000
+PREPARED_PHASE,positive_equation_identity,0.000572000,0.000577000
+PREPARED_PHASE,positive_evaluate_transport,0.002447000,0.002456000
+HOL4_TIME,depth1_r2,0.065654000,0.069103000
+HOL4_TIME,depth1_stock_reference,0.105467000,0.105436000
+HOL4_TIME,derive_depth1,0.026915000,0.026917000
+HOL4_TAG,depth1,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth1"
+HOL4_BLOCK_CONCLUSION,depth1,505
+PREPARED_PHASE,depth8_prebuild_discover,0.051519000,0.051582000
+PREPARED_EQUATION_USE,depth8,0,21
+PREPARED_PHASE,depth8_equation_record,0.001282000,0.001962000
+PREPARED_PHASE,depth8_prebuild_compile,0.013379000,0.013394000
+HOL4_TIME,depth8_prebuild_total,0.066552000,0.069536000
+PREPARED_PHASE,positive_discover,0.013362000,0.013379000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001086000,0.001876000
+PREPARED_PHASE,positive_equation_identity,0.000667000,0.000673000
+PREPARED_PHASE,positive_evaluate_transport,0.003046000,0.003054000
+HOL4_TIME,depth8_r0,0.024086000,0.027795000
+PREPARED_PHASE,positive_discover,0.013193000,0.013208000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001060000,0.001720000
+PREPARED_PHASE,positive_equation_identity,0.000580000,0.000586000
+PREPARED_PHASE,positive_evaluate_transport,0.003078000,0.003093000
+HOL4_TIME,depth8_r1,0.023621000,0.026898000
+PREPARED_PHASE,positive_discover,0.013177000,0.013193000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001165000,0.001814000
+PREPARED_PHASE,positive_equation_identity,0.000642000,0.000647000
+PREPARED_PHASE,positive_evaluate_transport,0.002610000,0.002616000
+HOL4_TIME,depth8_r2,0.023884000,0.027308000
+HOL4_TIME,depth8_stock_reference,0.034371000,0.034380000
+HOL4_TIME,derive_depth8,0.003078000,0.003079000
+HOL4_TAG,depth8,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth8"
+HOL4_BLOCK_CONCLUSION,depth8,507
+PREPARED_PHASE,depth32_prebuild_discover,0.013990000,0.014008000
+Saved theorem _______ "prepared_equations_1_0"
+PREPARED_EQUATION_MEMBER,1,0,prepared_equations_1_0
+Saved theorem _______ "prepared_equations_1_1"
+PREPARED_EQUATION_MEMBER,1,1,prepared_equations_1_1
+Saved theorem _______ "prepared_equations_1_2"
+PREPARED_EQUATION_MEMBER,1,2,prepared_equations_1_2
+Saved theorem _______ "prepared_equations_1_3"
+PREPARED_EQUATION_MEMBER,1,3,prepared_equations_1_3
+Saved theorem _______ "prepared_equations_1_4"
+PREPARED_EQUATION_MEMBER,1,4,prepared_equations_1_4
+Saved theorem _______ "prepared_equations_1_5"
+PREPARED_EQUATION_MEMBER,1,5,prepared_equations_1_5
+Saved theorem _______ "prepared_equations_1_6"
+PREPARED_EQUATION_MEMBER,1,6,prepared_equations_1_6
+Saved theorem _______ "prepared_equations_1_7"
+PREPARED_EQUATION_MEMBER,1,7,prepared_equations_1_7
+Saved theorem _______ "prepared_equations_1_8"
+PREPARED_EQUATION_MEMBER,1,8,prepared_equations_1_8
+Saved theorem _______ "prepared_equations_1_9"
+PREPARED_EQUATION_MEMBER,1,9,prepared_equations_1_9
+Saved theorem _______ "prepared_equations_1_10"
+PREPARED_EQUATION_MEMBER,1,10,prepared_equations_1_10
+Saved theorem _______ "prepared_equations_1_11"
+PREPARED_EQUATION_MEMBER,1,11,prepared_equations_1_11
+Saved theorem _______ "prepared_equations_1_12"
+PREPARED_EQUATION_MEMBER,1,12,prepared_equations_1_12
+Saved theorem _______ "prepared_equations_1_13"
+PREPARED_EQUATION_MEMBER,1,13,prepared_equations_1_13
+Saved theorem _______ "prepared_equations_1_14"
+PREPARED_EQUATION_MEMBER,1,14,prepared_equations_1_14
+Saved theorem _______ "prepared_equations_1_15"
+PREPARED_EQUATION_MEMBER,1,15,prepared_equations_1_15
+Saved theorem _______ "prepared_equations_1_16"
+PREPARED_EQUATION_MEMBER,1,16,prepared_equations_1_16
+Saved theorem _______ "prepared_equations_1_17"
+PREPARED_EQUATION_MEMBER,1,17,prepared_equations_1_17
+Saved theorem _______ "prepared_equations_1_18"
+PREPARED_EQUATION_MEMBER,1,18,prepared_equations_1_18
+Saved theorem _______ "prepared_equations_1_19"
+PREPARED_EQUATION_MEMBER,1,19,prepared_equations_1_19
+Saved theorem _______ "prepared_equations_1_20"
+PREPARED_EQUATION_MEMBER,1,20,prepared_equations_1_20
+PREPARED_EQUATION_SET,1,21
+PREPARED_EQUATION_USE,depth32,1,21
+PREPARED_PHASE,depth32_equation_record,0.030736000,0.055140000
+PREPARED_PHASE,depth32_prebuild_compile,0.012861000,0.012890000
+HOL4_TIME,depth32_prebuild_total,0.057903000,0.084367000
+PREPARED_PHASE,positive_discover,0.012847000,0.012871000
+PREPARED_EQUATION_USE,positive,1,21
+PREPARED_PHASE,positive_equation_record,0.001027000,0.001896000
+PREPARED_PHASE,positive_equation_identity,0.000622000,0.000629000
+PREPARED_PHASE,positive_evaluate_transport,0.009697000,0.009711000
+HOL4_TIME,depth32_r0,0.043138000,0.046728000
+PREPARED_PHASE,positive_discover,0.040490000,0.040528000
+PREPARED_EQUATION_USE,positive,1,21
+PREPARED_PHASE,positive_equation_record,0.001328000,0.002064000
+PREPARED_PHASE,positive_equation_identity,0.000936000,0.000949000
+PREPARED_PHASE,positive_evaluate_transport,0.008100000,0.008110000
+HOL4_TIME,depth32_r1,0.057264000,0.060640000
+PREPARED_PHASE,positive_discover,0.012764000,0.012780000
+PREPARED_EQUATION_USE,positive,1,21
+PREPARED_PHASE,positive_equation_record,0.001359000,0.001991000
+PREPARED_PHASE,positive_equation_identity,0.001069000,0.001080000
+PREPARED_PHASE,positive_evaluate_transport,0.007828000,0.007840000
+HOL4_TIME,depth32_r2,0.028974000,0.032520000
+HOL4_TIME,depth32_stock_reference,0.043689000,0.043697000
+HOL4_TIME,derive_depth32,0.003097000,0.003104000
+HOL4_TAG,depth32,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth32"
+HOL4_BLOCK_CONCLUSION,depth32,515
+PREPARED_PHASE,depth128_prebuild_discover,0.013527000,0.013548000
+PREPARED_EQUATION_USE,depth128,0,21
+PREPARED_PHASE,depth128_equation_record,0.001073000,0.001895000
+PREPARED_PHASE,depth128_prebuild_compile,0.013060000,0.013073000
+HOL4_TIME,depth128_prebuild_total,0.028006000,0.030944000
+PREPARED_PHASE,positive_discover,0.013352000,0.013373000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001031000,0.001800000
+PREPARED_PHASE,positive_equation_identity,0.000589000,0.000595000
+PREPARED_PHASE,positive_evaluate_transport,0.031557000,0.031568000
+HOL4_TIME,depth128_r0,0.054018000,0.057837000
+PREPARED_PHASE,positive_discover,0.013809000,0.013827000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001024000,0.001852000
+PREPARED_PHASE,positive_equation_identity,0.000784000,0.000796000
+PREPARED_PHASE,positive_evaluate_transport,0.063993000,0.064036000
+HOL4_TIME,depth128_r1,0.086469000,0.090399000
+PREPARED_PHASE,positive_discover,0.014723000,0.014747000
+PREPARED_EQUATION_USE,positive,0,21
+PREPARED_PHASE,positive_equation_record,0.001058000,0.001783000
+PREPARED_PHASE,positive_equation_identity,0.001214000,0.001231000
+PREPARED_PHASE,positive_evaluate_transport,0.031290000,0.031332000
+HOL4_TIME,depth128_r2,0.055250000,0.059157000
+HOL4_TIME,depth128_stock_reference,0.067297000,0.067304000
+HOL4_TIME,derive_depth128,0.002991000,0.002995000
+HOL4_TAG,depth128,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth128"
+HOL4_BLOCK_CONCLUSION,depth128,545
+Saved theorem _______ "cv_block_changed_inputs_thm"
+Finished translating block_changed_inputs, stored in cv_block_changed_inputs_thm
+HOL4_TIME,translate_block_changed_inputs,2.508802000,2.511501000
+Saved theorem _______ "cv_block_changed_coefficients_thm"
+Finished translating block_changed_coefficients, stored in cv_block_changed_coefficients_thm
+HOL4_TIME,translate_block_changed_coefficients,0.506791000,0.509077000
+PREPARED_PHASE,incompatible_control_apply_discover,0.000049000,0.000053000
+PREPARED_EQUATION_SET,2,0
+PREPARED_EQUATION_USE,incompatible_control_apply,2,0
+PREPARED_PHASE,incompatible_control_apply_equation_record,0.000120000,0.001238000
+PREPARED_INCOMPATIBLE_CLOSURE_REJECTED
+HOL4_TIME,incompatible_closure_control,0.000674000,0.003685000
+PREPARED_EQUATION_IDENTITY_CONTROL_DONE
+HOL4_TIME,control_checksum_stock_reference,0.038793000,0.038808000
+PREPARED_PHASE,control_checksum_discover,0.013910000,0.013924000
+PREPARED_EQUATION_USE,control_checksum,0,21
+PREPARED_PHASE,control_checksum_equation_record,0.001512000,0.002155000
+PREPARED_PHASE,control_checksum_equation_identity,0.000894000,0.000900000
+PREPARED_PHASE,control_checksum_evaluate_transport,0.002391000,0.002398000
+PREPARED_CACHE_HIT,checksum
+HOL4_TAG,checksum,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_checksum"
+HOL4_REJECTED_checksum
+HOL4_TIME,control_checksum,0.064332000,0.070864000
+HOL4_TIME,control_bound_stock_reference,0.032047000,0.032069000
+PREPARED_PHASE,control_bound_discover,0.014545000,0.014561000
+PREPARED_EQUATION_USE,control_bound,0,21
+PREPARED_PHASE,control_bound_equation_record,0.001225000,0.002060000
+PREPARED_PHASE,control_bound_equation_identity,0.000929000,0.000936000
+PREPARED_PHASE,control_bound_evaluate_transport,0.002266000,0.002278000
+PREPARED_CACHE_HIT,bound
+HOL4_TAG,bound,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_bound"
+HOL4_REJECTED_bound
+HOL4_TIME,control_bound,0.056929000,0.063740000
+HOL4_TIME,control_depth_stock_reference,0.058201000,0.058223000
+PREPARED_PHASE,control_depth_discover,0.012976000,0.012993000
+PREPARED_EQUATION_USE,control_depth,0,21
+PREPARED_PHASE,control_depth_equation_record,0.001028000,0.001592000
+PREPARED_PHASE,control_depth_equation_identity,0.000922000,0.000927000
+PREPARED_PHASE,control_depth_evaluate_transport,0.002518000,0.002528000
+PREPARED_CACHE_HIT,depth
+HOL4_TAG,depth,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_depth"
+HOL4_REJECTED_depth
+HOL4_TIME,control_depth,0.082610000,0.088066000
+HOL4_TIME,control_input_stock_reference,0.036449000,0.036460000
+PREPARED_PHASE,control_input_discover,0.012898000,0.012909000
+Saved theorem _______ "prepared_equations_3_0"
+PREPARED_EQUATION_MEMBER,3,0,prepared_equations_3_0
+Saved theorem _______ "prepared_equations_3_1"
+PREPARED_EQUATION_MEMBER,3,1,prepared_equations_3_1
+Saved theorem _______ "prepared_equations_3_2"
+PREPARED_EQUATION_MEMBER,3,2,prepared_equations_3_2
+Saved theorem _______ "prepared_equations_3_3"
+PREPARED_EQUATION_MEMBER,3,3,prepared_equations_3_3
+Saved theorem _______ "prepared_equations_3_4"
+PREPARED_EQUATION_MEMBER,3,4,prepared_equations_3_4
+Saved theorem _______ "prepared_equations_3_5"
+PREPARED_EQUATION_MEMBER,3,5,prepared_equations_3_5
+Saved theorem _______ "prepared_equations_3_6"
+PREPARED_EQUATION_MEMBER,3,6,prepared_equations_3_6
+Saved theorem _______ "prepared_equations_3_7"
+PREPARED_EQUATION_MEMBER,3,7,prepared_equations_3_7
+Saved theorem _______ "prepared_equations_3_8"
+PREPARED_EQUATION_MEMBER,3,8,prepared_equations_3_8
+Saved theorem _______ "prepared_equations_3_9"
+PREPARED_EQUATION_MEMBER,3,9,prepared_equations_3_9
+Saved theorem _______ "prepared_equations_3_10"
+PREPARED_EQUATION_MEMBER,3,10,prepared_equations_3_10
+Saved theorem _______ "prepared_equations_3_11"
+PREPARED_EQUATION_MEMBER,3,11,prepared_equations_3_11
+Saved theorem _______ "prepared_equations_3_12"
+PREPARED_EQUATION_MEMBER,3,12,prepared_equations_3_12
+Saved theorem _______ "prepared_equations_3_13"
+PREPARED_EQUATION_MEMBER,3,13,prepared_equations_3_13
+Saved theorem _______ "prepared_equations_3_14"
+PREPARED_EQUATION_MEMBER,3,14,prepared_equations_3_14
+Saved theorem _______ "prepared_equations_3_15"
+PREPARED_EQUATION_MEMBER,3,15,prepared_equations_3_15
+Saved theorem _______ "prepared_equations_3_16"
+PREPARED_EQUATION_MEMBER,3,16,prepared_equations_3_16
+Saved theorem _______ "prepared_equations_3_17"
+PREPARED_EQUATION_MEMBER,3,17,prepared_equations_3_17
+Saved theorem _______ "prepared_equations_3_18"
+PREPARED_EQUATION_MEMBER,3,18,prepared_equations_3_18
+Saved theorem _______ "prepared_equations_3_19"
+PREPARED_EQUATION_MEMBER,3,19,prepared_equations_3_19
+Saved theorem _______ "prepared_equations_3_20"
+PREPARED_EQUATION_MEMBER,3,20,prepared_equations_3_20
+PREPARED_EQUATION_SET,3,21
+PREPARED_EQUATION_USE,control_input,3,21
+PREPARED_PHASE,control_input_equation_record,0.029264000,0.050808000
+PREPARED_CACHE_MISS,input
+PREPARED_PHASE,control_input_prebuild_discover,0.012925000,0.012945000
+PREPARED_EQUATION_USE,control_input,3,21
+PREPARED_PHASE,control_input_equation_record,0.002175000,0.002850000
+PREPARED_PHASE,control_input_prebuild_compile,0.012770000,0.012782000
+HOL4_TIME,control_input_new_prebuild_total,0.028186000,0.030718000
+PREPARED_PHASE,control_input_new_discover,0.013040000,0.013054000
+PREPARED_EQUATION_USE,control_input_new,3,21
+PREPARED_PHASE,control_input_new_equation_record,0.001882000,0.002472000
+PREPARED_PHASE,control_input_new_equation_identity,0.000551000,0.000555000
+PREPARED_PHASE,control_input_new_evaluate_transport,0.002518000,0.002528000
+HOL4_TAG,input,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_input"
+HOL4_REJECTED_input
+HOL4_TIME,control_input,0.134191000,0.166136000
+HOL4_TIME,control_coefficient_stock_reference,0.038417000,0.038889000
+PREPARED_PHASE,control_coefficient_discover,0.014265000,0.014278000
+Saved theorem _______ "prepared_equations_4_0"
+PREPARED_EQUATION_MEMBER,4,0,prepared_equations_4_0
+Saved theorem _______ "prepared_equations_4_1"
+PREPARED_EQUATION_MEMBER,4,1,prepared_equations_4_1
+Saved theorem _______ "prepared_equations_4_2"
+PREPARED_EQUATION_MEMBER,4,2,prepared_equations_4_2
+Saved theorem _______ "prepared_equations_4_3"
+PREPARED_EQUATION_MEMBER,4,3,prepared_equations_4_3
+Saved theorem _______ "prepared_equations_4_4"
+PREPARED_EQUATION_MEMBER,4,4,prepared_equations_4_4
+Saved theorem _______ "prepared_equations_4_5"
+PREPARED_EQUATION_MEMBER,4,5,prepared_equations_4_5
+Saved theorem _______ "prepared_equations_4_6"
+PREPARED_EQUATION_MEMBER,4,6,prepared_equations_4_6
+Saved theorem _______ "prepared_equations_4_7"
+PREPARED_EQUATION_MEMBER,4,7,prepared_equations_4_7
+Saved theorem _______ "prepared_equations_4_8"
+PREPARED_EQUATION_MEMBER,4,8,prepared_equations_4_8
+Saved theorem _______ "prepared_equations_4_9"
+PREPARED_EQUATION_MEMBER,4,9,prepared_equations_4_9
+Saved theorem _______ "prepared_equations_4_10"
+PREPARED_EQUATION_MEMBER,4,10,prepared_equations_4_10
+Saved theorem _______ "prepared_equations_4_11"
+PREPARED_EQUATION_MEMBER,4,11,prepared_equations_4_11
+Saved theorem _______ "prepared_equations_4_12"
+PREPARED_EQUATION_MEMBER,4,12,prepared_equations_4_12
+Saved theorem _______ "prepared_equations_4_13"
+PREPARED_EQUATION_MEMBER,4,13,prepared_equations_4_13
+Saved theorem _______ "prepared_equations_4_14"
+PREPARED_EQUATION_MEMBER,4,14,prepared_equations_4_14
+Saved theorem _______ "prepared_equations_4_15"
+PREPARED_EQUATION_MEMBER,4,15,prepared_equations_4_15
+Saved theorem _______ "prepared_equations_4_16"
+PREPARED_EQUATION_MEMBER,4,16,prepared_equations_4_16
+Saved theorem _______ "prepared_equations_4_17"
+PREPARED_EQUATION_MEMBER,4,17,prepared_equations_4_17
+Saved theorem _______ "prepared_equations_4_18"
+PREPARED_EQUATION_MEMBER,4,18,prepared_equations_4_18
+Saved theorem _______ "prepared_equations_4_19"
+PREPARED_EQUATION_MEMBER,4,19,prepared_equations_4_19
+Saved theorem _______ "prepared_equations_4_20"
+PREPARED_EQUATION_MEMBER,4,20,prepared_equations_4_20
+PREPARED_EQUATION_SET,4,21
+PREPARED_EQUATION_USE,control_coefficient,4,21
+PREPARED_PHASE,control_coefficient_equation_record,0.031334000,0.053263000
+PREPARED_CACHE_MISS,coefficient
+PREPARED_PHASE,control_coefficient_prebuild_discover,0.018687000,0.018706000
+PREPARED_EQUATION_USE,control_coefficient,4,21
+PREPARED_PHASE,control_coefficient_equation_record,0.001545000,0.002245000
+PREPARED_PHASE,control_coefficient_prebuild_compile,0.039347000,0.039365000
+HOL4_TIME,control_coefficient_new_prebuild_total,0.059988000,0.062553000
+PREPARED_PHASE,control_coefficient_new_discover,0.035414000,0.035444000
+PREPARED_EQUATION_USE,control_coefficient_new,4,21
+PREPARED_PHASE,control_coefficient_new_equation_record,0.002013000,0.002785000
+PREPARED_PHASE,control_coefficient_new_equation_identity,0.000941000,0.000949000
+PREPARED_PHASE,control_coefficient_new_evaluate_transport,0.002316000,0.002320000
+HOL4_TAG,coefficient,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_coefficient"
+HOL4_REJECTED_coefficient
+HOL4_TIME,control_coefficient,0.192285000,0.225274000
+Exporting theory "RoundDependentResults" ... done.
+Theory "RoundDependentResults" took 9.7s to build
+HOL4_TIME,theory_export,1.625660000,2.063123000
+HOL4_ROUND_DEPENDENT_BENCHMARK_DONE

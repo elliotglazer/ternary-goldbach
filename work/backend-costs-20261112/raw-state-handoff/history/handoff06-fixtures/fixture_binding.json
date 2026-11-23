@@ -1,0 +1,35 @@
+{
+  "schema": "raw-state-handoff-source-binding-v1",
+  "scope": "Integer-only proposals; no HOL analytic source theorem",
+  "fixture_sha256": "01C3E9F1AF2FD8DF40C9EF770840078E02EC356737727637C58397836C5C6BF9",
+  "base_order": [
+    1,
+    2,
+    3,
+    41,
+    61,
+    10004,
+    262144,
+    265800
+  ],
+  "states": 1032,
+  "final_pairs": 516,
+  "common_shape_guard": "all8 rows129, every coordinate abs<2^121",
+  "proposal_cpu_seconds": 0.046875,
+  "proposal_elapsed_seconds": 0.046078799990937114,
+  "generator_sha256": "FE87A04CD1D8B66CF3F2D9D2FE06BE3C1A6481CC5838FCC8637DBB2408404467",
+  "artifacts": {
+    "handoff_materialized.sml": {
+      "bytes": 468590,
+      "sha256": "4C940370003A4D49523E657549F4315DB9444688B5002D632C411DA3BE856D9F"
+    },
+    "handoff_fused.sml": {
+      "bytes": 390789,
+      "sha256": "78677F2A97107209EC824840E565F50EC917C366C3BB5EA621DD33104A4791F5"
+    },
+    "handoff_compare.sml": {
+      "bytes": 425,
+      "sha256": "BBB9A5696518566CDC12A74272A03DEAF494C0D1A0047CBDF8CE13BB8EC17EE6"
+    }
+  }
+}

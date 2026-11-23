@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\AxiomAudit.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\AxiomAudit.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 11.40097919999971,
+  "user_cpu_seconds": 5.1875,
+  "system_cpu_seconds": 5.984375,
+  "cpu_seconds": 11.171875,
+  "peak_working_set_bytes": 999698432,
+  "observed_peak_private_bytes": 2322878464,
+  "memory_samples": 226,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "AxiomAudit.lean",
+      "bytes": 675,
+      "sha256": "1D7F0249B4E3240D0316FE91774B098CA2278D3C8AA83D5D39EE011CDD401D69"
+    },
+    {
+      "path": "axioms_final.log",
+      "bytes": 1109,
+      "sha256": "A872CADE6F95ACBD1FE0AC34C19EEF41CB053E8926A95C8C4D17D2585D91AFF7"
+    },
+    {
+      "path": "AxiomAudit.olean",
+      "bytes": 1368,
+      "sha256": "3D47840B534B549CC63855D5BCA8FC86513410048732B0D1CC7D8BB8BDEC1E24"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

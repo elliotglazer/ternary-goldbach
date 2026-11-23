@@ -1,0 +1,12 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawInverseRoot.lean:48:4: error: Type mismatch: After simplification, term
+  hloR
+ has type
+  ↑m * ↑m * ↑x ≤ ↑S * ↑S
+but is expected to have type
+  ↑m * √↑x * (↑m * √↑x) ≤ ↑S * ↑S
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawInverseRoot.lean:51:4: error: Type mismatch: After simplification, term
+  hhiR
+ has type
+  ↑S * ↑S < (↑m + 1) * (↑m + 1) * ↑x
+but is expected to have type
+  ↑S * ↑S < (↑m + 1) * √↑x * ((↑m + 1) * √↑x)

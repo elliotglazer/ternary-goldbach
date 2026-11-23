@@ -1,0 +1,6 @@
+theorem UpperBinaryPilot.binary_interval : ∀ (n : ℕ),
+  9999999999997954 ≤ n → n < 10000000000000002 → n % 2 = 0 → ∃ p q, Nat.Prime p ∧ Nat.Prime q ∧ p + q = n :=
+PrimeCoverage.binaryGoldbach_interval 9999999999997954 1024 (of_decide_eq_true (id (Eq.refl true))) fun j hj =>
+  BatchPrime.checkedCover_sound UpperBinaryPilot.valid UpperBinaryPilot.witnesses 9999999999997954
+    UpperBinaryPilot.covered j (Eq.symm UpperBinaryPilot.width_eq ▸ hj)
+'UpperBinaryPilot.binary_interval' depends on axioms: [propext, Classical.choice, Quot.sound]

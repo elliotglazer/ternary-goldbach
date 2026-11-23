@@ -1,0 +1,128 @@
+{
+  "name": "sparse-reset-slice-or",
+  "op": "slice-or",
+  "updates": 500000,
+  "reset": 16,
+  "sparse_level": 3,
+  "actual_trace_sha256": null,
+  "actual_trace_unique_updates": null,
+  "repetitions": null,
+  "measurements": [
+    {
+      "updates": 0,
+      "producer": [
+        {
+          "updates": 0,
+          "bytes": 8810160,
+          "update_bytes": 0,
+          "cpu_seconds": 0.00331589,
+          "wall_seconds": 0.003310609
+        },
+        {
+          "updates": 0,
+          "bytes": 8810160,
+          "update_bytes": 0,
+          "cpu_seconds": 0.004778606,
+          "wall_seconds": 0.004772853
+        },
+        {
+          "updates": 0,
+          "bytes": 8810160,
+          "update_bytes": 0,
+          "cpu_seconds": 0.004623684,
+          "wall_seconds": 0.004633522
+        },
+        {
+          "updates": 0,
+          "bytes": 8810160,
+          "update_bytes": 0,
+          "cpu_seconds": 0.004951091,
+          "wall_seconds": 0.004946992
+        },
+        {
+          "updates": 0,
+          "bytes": 8810160,
+          "update_bytes": 0,
+          "cpu_seconds": 0.003855351,
+          "wall_seconds": 0.003849919
+        }
+      ],
+      "checker_cpu": [
+        0.066232951,
+        0.079807234,
+        0.084507444,
+        0.088423546,
+        0.082806148,
+        0.070770327,
+        0.066522784
+      ],
+      "profile": {
+        "proof": 2229767,
+        "unify": 5118198
+      }
+    },
+    {
+      "updates": 500000,
+      "producer": [
+        {
+          "updates": 500000,
+          "bytes": 107040809,
+          "update_bytes": 98230643,
+          "cpu_seconds": 0.328322305,
+          "wall_seconds": 0.329782798
+        },
+        {
+          "updates": 500000,
+          "bytes": 107040809,
+          "update_bytes": 98230643,
+          "cpu_seconds": 0.284554859,
+          "wall_seconds": 0.284651038
+        },
+        {
+          "updates": 500000,
+          "bytes": 107040809,
+          "update_bytes": 98230643,
+          "cpu_seconds": 0.262196568,
+          "wall_seconds": 0.262283472
+        },
+        {
+          "updates": 500000,
+          "bytes": 107040809,
+          "update_bytes": 98230643,
+          "cpu_seconds": 0.304061977,
+          "wall_seconds": 0.304174182
+        },
+        {
+          "updates": 500000,
+          "bytes": 107040809,
+          "update_bytes": 98230643,
+          "cpu_seconds": 0.291904516,
+          "wall_seconds": 0.292064247
+        }
+      ],
+      "checker_cpu": [
+        0.841909754,
+        0.732695305,
+        0.695724809,
+        0.794643535,
+        0.670427644,
+        0.745312668,
+        0.645731118
+      ],
+      "profile": {
+        "proof": 39948510,
+        "unify": 72149431
+      }
+    }
+  ],
+  "checker_cpu_seconds_per_update": 1.3057761420000001e-06,
+  "emitter_cpu_seconds_per_update": 5.745616639999999e-07,
+  "bytes_per_update": 196.461286,
+  "proof_commands_per_update": 75.437486,
+  "unifier_commands_per_update": 134.062466,
+  "valid_accepted": true,
+  "corruption_rejected": true,
+  "corruption_exit": 255,
+  "corruption_diagnostic": "MM0_REJECT: unify failure at ref near theorem bench  : $ ok $;",
+  "final_sha256": "3793769a946b926f5e98297ba11de43a2e66f2332b5a4caaf1e456191c0194ba"
+}

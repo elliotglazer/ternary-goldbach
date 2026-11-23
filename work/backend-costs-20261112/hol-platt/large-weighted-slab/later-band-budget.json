@@ -1,0 +1,78 @@
+{
+  "heights_per_block": 8,
+  "conductors_per_group": 32,
+  "additional_heights": 41,
+  "bands": [
+    {
+      "height_indices": [
+        0,
+        6401
+      ],
+      "cells": 1025,
+      "units": 44739119112240,
+      "pad": 43423787536,
+      "calls": 3199451400
+    },
+    {
+      "height_indices": [
+        6401,
+        12801
+      ],
+      "cells": 2049,
+      "units": 11084284134728,
+      "pad": 13855376536,
+      "calls": 4138588641
+    },
+    {
+      "height_indices": [
+        12801,
+        25601
+      ],
+      "cells": 4097,
+      "units": 3385597125640,
+      "pad": 1786474008,
+      "calls": 6442270292
+    },
+    {
+      "height_indices": [
+        25601,
+        64001
+      ],
+      "cells": 8193,
+      "units": 1011645304324,
+      "pad": 337255964,
+      "calls": 10052360385
+    },
+    {
+      "height_indices": [
+        64001,
+        84241
+      ],
+      "cells": 16385,
+      "units": 33869900828,
+      "pad": 13742084,
+      "calls": 1472323330
+    }
+  ],
+  "later_padded_output_positions": 15531389314112,
+  "later_cell_blocks": 22105542648,
+  "thresholds": [
+    {
+      "reference_band1_marginal_us": 6.260829207920792,
+      "reference_control_seconds": 0.005332,
+      "later_fixed_hours_if_transferred": 32740.76483309333,
+      "later_total_hours_if_band1_rates_transferred": 59751.7025712548,
+      "remaining_hours_for_later_bands_and_all_omitted_work": 214810.49056302314,
+      "later_marginal_us_ceiling_if_no_other_cost": 42.20169872583111
+    },
+    {
+      "reference_band1_marginal_us": 7.251237623762377,
+      "reference_control_seconds": 0.010728,
+      "later_fixed_hours_if_transferred": 65874.51709104,
+      "later_total_hours_if_band1_rates_transferred": 97158.3489087594,
+      "remaining_hours_for_later_bands_and_all_omitted_work": 197165.23184544593,
+      "later_marginal_us_ceiling_if_no_other_cost": 30.431699544509463
+    }
+  ],
+  "manifest_sha256": "a41d70db2bb439d73cc817f80b24cb598d3efa89cce1d19a5fa618abbe239637"
+}

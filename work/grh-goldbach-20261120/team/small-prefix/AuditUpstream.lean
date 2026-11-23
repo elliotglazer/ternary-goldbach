@@ -1,0 +1,4 @@
+import Upstream9
+
+#print axioms SmallGoldbach.binaryGoldbachUpToBillion
+#print axioms SmallGoldbach.binaryGoldbachUpToFourHundredMillion

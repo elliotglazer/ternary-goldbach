@@ -1,0 +1,2 @@
+qs.append(('shared3','rscommon '+lit(pi)+' ['+';'.join('('+','.join(map(lit,(t,h,j,v)))+')' for t,h,_,j,v in rows)+']'))
+qs.append(('setup','LENGTH (cache 3989 11 (logc 1 3)) = 3989'))

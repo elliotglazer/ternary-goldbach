@@ -1,0 +1,29 @@
+{
+  "status": "PASS independent snapshot inventory and byte preservation; no proof validation",
+  "manifest_files": 676,
+  "source_copy_byte_matches": 672,
+  "archived_byte_matches": 576,
+  "accepted_packets": 16,
+  "research_nodes": 27,
+  "new_verifier_observed": "exit0,36landing links,676files",
+  "old_verifier_observed": "exit0,575files,131chapters,149links,35nodes",
+  "canonical_head": "23b2d68ca344203d4384e0aff7affa4ec034bef9",
+  "canonical_status": [
+    "?? TernaryGoldbach/Explicit/QrhMellin.lean",
+    "?? TernaryGoldbach/Explicit/QrhNumeric.lean"
+  ],
+  "pins": {
+    "outputs\\qrh-blueprint-next\\manifest.json": "3f0da3e74f80f563f2f2fd8368afba46ff6cc086f7459c2b32b52a47385b686a",
+    "outputs\\qrh-blueprint-next\\README.md": "a0a9e92f05452e157aa290d649d97665107f7f2d84ed02980a569adcce1e2ae6",
+    "outputs\\qrh-blueprint-next\\OVERVIEW.md": "8b8b4737f8d899aa52cdb6d5501f66cf1fb279eed58a95d43f2f592c44b8fd63",
+    "outputs\\qrh-blueprint-next\\SELECTED_STRATEGY.md": "e07683a017b922bc309e26763a821e97cac7ae79938a19ccbf843e9205cabbf7",
+    "outputs\\qrh-blueprint-next\\dependencies.json": "b1efea240c16f8b41f3efec6fa29583535d02c9de9b53627216784bf22b47b86",
+    "outputs\\qrh-blueprint-next\\provenance\\assemble.py": "6d61a0192bebe611ced93a6fc0b706f4ff3da20bf01b1b92cd1f5f6971f5f04f",
+    "outputs\\qrh-blueprint-next\\provenance\\verify_package.py": "a9837de2250924c091abd5b7125f7ed303e78f8e48771e229d74aac5a2395685",
+    "outputs\\qrh-blueprint-next\\provenance\\catalog.json": "d094dd9d3cbb5147b8a72df31558ec0a4d5d80442457fae7ea35534627aa3dc9",
+    "outputs\\qrh-blueprint\\manifest.json": "eaa2fdf61fbb79477242314c3269146ffd45646da030df1d111a0360ed447035",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Statement.lean": "3f61837d2c3a0dde3a1997f05af21c20c7fe6ee13e29891125495f6947596bf8",
+    "work\\ternary-goldbach\\TernaryGoldbach\\MainTheorems.lean": "4b2bdb187a2d9ac485239611eee99d1c716c5bc0f57f1946daa32cbd22fecfff"
+  },
+  "script_sha256": "3f08f07bb7b9e605007d145b24921bdf8d1527d571db9512d9ec275dd831bdfc"
+}

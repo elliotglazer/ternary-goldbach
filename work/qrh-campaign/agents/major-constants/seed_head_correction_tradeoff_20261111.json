@@ -1,0 +1,179 @@
+{
+  "scope": "conditional seed parameter and metadata proof only",
+  "parameters": {
+    "V": 7000,
+    "D": 8192,
+    "N": 1500,
+    "m": 256,
+    "P": 27
+  },
+  "checks": {
+    "E_ratio": true,
+    "scaled_k_ratio": true,
+    "remainder": true,
+    "R_factor": true,
+    "E_error": true,
+    "lambda_factor": true,
+    "S_norm": true,
+    "S_rounding": true,
+    "S_component_rounding": true,
+    "Z_round_error_small": true,
+    "Ehat_bound": true,
+    "selected_P27_error": true,
+    "all_P32_error": true,
+    "center_magnitude": true,
+    "shift_perturbation": true,
+    "alpha_error": true,
+    "net_real_scale_reduction": true,
+    "net_addition_reduction": true,
+    "log_cover": true,
+    "transition_partition": true
+  },
+  "remainder_upper": "733647906638732058744499113861274537075718359992909547043854993907105232421271606701096688570449906106010072907362460432819865236858471192461167729356491541874986949427512591984883960286898324006075055384135341050712359539584788933659190615328251375652176551045531912185621290975809046843027282273466252015512854853701737854689928410010329543124013904787590107225841804582490155233926607291734102467453034653965072687154600666812184178794824894304223967948451610342085850716568532946617319622379512997477724241428696189858079829386130429404023543337206021180061974892900852860941518816859124911242670566667542721497611022861087990511/85726171952070480205401422332278628677571195215412615158820020980796028767282740982926983793904638790793141193279845187646188888228883381595010143332650188800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "P27_error_over_eta": "6963823006444253734301199726659476385247943365096180912800771852929164681793676730204495418439646128850483749339160047641360819865236858471192461167729356491541874986949427512591984883960286898324006075055384135341050712359539584788933659190615328251375652176551045531912185621290975809046843027282273466252015512854853701737854689928410010329543124013904787590107225841804582490155233926607291734102467453034653965072687154600666812184178794824894304223967948451610342085850716568532946617319622379512997477724241428696189858079829386130429404023543337206021180061974892900852860941518816859124911242670566667542721497611022861087990511/67626025607242431672780936011752477374445799067245968732819571756571712443474650677916856227982873639908580990159889554525388800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "P27_error_delta_coefficient": 10507,
+  "P27_error_u_coefficient": 263753,
+  "old_per_height": {
+    "head_scales": 508457257,
+    "head_additions": 528013948,
+    "Bernoulli_terms": 14157056,
+    "Bernoulli_additions": 14157056,
+    "E_complex_stages": 1253522,
+    "source_slots": 221204,
+    "midpoint_updates": 2703360
+  },
+  "new_per_height": {
+    "head_scales": 319516500,
+    "head_additions": 331806000,
+    "Bernoulli_terms": 56628224,
+    "Bernoulli_additions": 56628224,
+    "E_complex_stages": 4399634,
+    "source_slots": 221204,
+    "midpoint_updates": 2703360
+  },
+  "scenarios": [
+    {
+      "last_band_heights": 20199,
+      "old_work": {
+        "head_scales": 10270328134143,
+        "head_additions": 10665353735652,
+        "Bernoulli_terms": 285958374144,
+        "Bernoulli_additions": 285958374144,
+        "E_complex_stages": 25319890878,
+        "source_slots": 4468099596,
+        "midpoint_updates": 54605168640
+      },
+      "new_work": {
+        "head_scales": 6453913783500,
+        "head_additions": 6702149394000,
+        "Bernoulli_terms": 1143833496576,
+        "Bernoulli_additions": 1143833496576,
+        "E_complex_stages": 88868207166,
+        "source_slots": 4468099596,
+        "midpoint_updates": 54605168640
+      },
+      "old_argument_pairs": 395142876903,
+      "new_argument_pairs": 248370802407,
+      "old_last_band_updates": 395130363623,
+      "new_last_band_updates": 248364654311
+    },
+    {
+      "last_band_heights": 20366,
+      "old_work": {
+        "head_scales": 10355240496062,
+        "head_additions": 10753532064968,
+        "Bernoulli_terms": 288322602496,
+        "Bernoulli_additions": 288322602496,
+        "E_complex_stages": 25529229052,
+        "source_slots": 4505040664,
+        "midpoint_updates": 55056629760
+      },
+      "new_work": {
+        "head_scales": 6507273039000,
+        "head_additions": 6757560996000,
+        "Bernoulli_terms": 1153290409984,
+        "Bernoulli_additions": 1153290409984,
+        "E_complex_stages": 89602946044,
+        "source_slots": 4505040664,
+        "midpoint_updates": 55056629760
+      },
+      "old_argument_pairs": 398409813902,
+      "new_argument_pairs": 250424266638,
+      "old_last_band_updates": 398397300622,
+      "new_last_band_updates": 250418118542
+    },
+    {
+      "last_band_heights": 20519,
+      "old_work": {
+        "head_scales": 10433034456383,
+        "head_additions": 10834318199012,
+        "Bernoulli_terms": 290488632064,
+        "Bernoulli_additions": 290488632064,
+        "E_complex_stages": 25721017918,
+        "source_slots": 4538884876,
+        "midpoint_updates": 55470243840
+      },
+      "new_work": {
+        "head_scales": 6556159063500,
+        "head_additions": 6808327314000,
+        "Bernoulli_terms": 1161954528256,
+        "Bernoulli_additions": 1161954528256,
+        "E_complex_stages": 90276090046,
+        "source_slots": 4538884876,
+        "midpoint_updates": 55470243840
+      },
+      "old_argument_pairs": 401402875943,
+      "new_argument_pairs": 252305584167,
+      "old_last_band_updates": 401390362663,
+      "new_last_band_updates": 252299436071
+    },
+    {
+      "last_band_heights": 20839,
+      "old_work": {
+        "head_scales": 10595740778623,
+        "head_additions": 11003282662372,
+        "Bernoulli_terms": 295018889984,
+        "Bernoulli_additions": 295018889984,
+        "E_complex_stages": 26122144958,
+        "source_slots": 4609670156,
+        "midpoint_updates": 56335319040
+      },
+      "new_work": {
+        "head_scales": 6658404343500,
+        "head_additions": 6914505234000,
+        "Bernoulli_terms": 1180075559936,
+        "Bernoulli_additions": 1180075559936,
+        "E_complex_stages": 91683972926,
+        "source_slots": 4609670156,
+        "midpoint_updates": 56335319040
+      },
+      "old_argument_pairs": 407662874983,
+      "new_argument_pairs": 256240365927,
+      "old_last_band_updates": 407650361703,
+      "new_last_band_updates": 256234217831
+    }
+  ],
+  "transition": {
+    "previous_arguments": 7049217,
+    "last_band_arguments": 12296193,
+    "retained": 6148097,
+    "retired": 901120,
+    "introduced": 6148096,
+    "total_required_union": 13197313
+  },
+  "log_setup_conservative": {
+    "full_grid_points": 14098433,
+    "anchors": 959,
+    "degree21_stages": 296046954
+  },
+  "new_exact_gamma_constants": 192,
+  "highest_Bernoulli_index": 512,
+  "input_sha256": {
+    "work/qrh-campaign/agents/independent-feasibility/RETUNED_FINAL_SHARED_SEED_BAND_2026-11-11.md": "8F08560DDB2BDFEBEABA0D4D5A44FCBCC625BFD43D1027AF05BF62233863FD9B",
+    "work/qrh-campaign/agents/prime-estimates/SCALED_HURWITZ_EM_SEED_PRECISION_2026-11-11.md": "251B95AE92B6277C0B14C69F3CFE697F3100FD27C2D7963E4B42676FF4DAB231",
+    "work/qrh-campaign/agents/integration/SHARED_HURWITZ_EM_SEED_CIRCUIT_2026-11-11.md": "1E1D5099D398EE978D635729873F4D3941BC186BD91D086198B39962DF8E564E",
+    "work/qrh-blueprint/SELECTED_SCALED_SEED_ORDER_2026-11-11.md": "579AAEC28BD4C1DB8FB83F3CDB1E4782160D3D35FA8AB2B8DC83BFF956ACBCD1",
+    "work/qrh-blueprint/SCALED_SEED_HEIGHT_RECURRENCE_2026-11-11.md": "8ABDD8A1F991AF9FEACE49908E5BA865EC3FD5804311CAE73AB9D80A4456D413",
+    "work/qrh-campaign/agents/major-constants/combined_odd_even_height_inventory_20261111.json": "BCBAA29AE9A963A46170C5B7B355C0399EE6A622EDBE355ECD24BFE92042C2EE"
+  }
+}

@@ -1,0 +1,1736 @@
+{
+  "scope": "conditional combined odd/even profile; unchanged bands and circuits; no values or spectral claim",
+  "input_sha256": {
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\coupled_plus_height_inventory_20261111.py": "3ED2792A965169994B716B12DDE43034E58FC8FDD9D1B8E28AE065D3C39FFF11",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\coupled_plus_height_inventory_20261111.json": "676388307D0353800DB72B85ED9252C83E3BA4F62F3D54F63A5C3B43A7DB4267",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\ODD_PLUS_SHARED_RH_HEIGHT_2026-11-11.md": "C4EE2B2F674F6376D987C778FC7886A03A93BC81E61C0BC56D0B1C25E2E4A14D",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\moebius\\EVEN_GAUSS_PLUS_HEIGHT_PROFILE_2026-11-11.md": "D3408AA27763D7E3C475E7B27DB124FDE9C16EDC916CEE061563B31D9A2DD88B"
+  },
+  "current_Tplus_main": {
+    "conductors": 125400,
+    "primitive_labels": 4333246843,
+    "unit_coefficients": 7133015232,
+    "conductor_height_nodes": 1729026050,
+    "residue_inputs": 65920064426356,
+    "primitive_outputs": 40474902420727,
+    "max_nodes": 102145,
+    "max_node_conductors": [
+      10004
+    ],
+    "operations": {
+      "general_complex_products": 1120925963188476,
+      "complex_add_sub": 2319745161470097,
+      "quarter_turns": 102708998603521,
+      "negations": 22187990916,
+      "dyadic_scales": 98879283658304
+    }
+  },
+  "H4_main": {
+    "conductors": 125400,
+    "primitive_labels": 4333246843,
+    "unit_coefficients": 7133015232,
+    "conductor_height_nodes": 1545129536,
+    "residue_inputs": 60719106537478,
+    "primitive_outputs": 36733644379717,
+    "max_nodes": 85902,
+    "max_node_conductors": [
+      10004
+    ],
+    "operations": {
+      "general_complex_products": 1016146569565796,
+      "complex_add_sub": 2104881781255801,
+      "quarter_turns": 93230703713452,
+      "negations": 20114065256,
+      "dyadic_scales": 89642894251776
+    }
+  },
+  "combined_main": {
+    "conductors": 125400,
+    "primitive_labels": 4333246843,
+    "unit_coefficients": 7133015232,
+    "conductor_height_nodes": 1522865397,
+    "residue_inputs": 59962061953248,
+    "primitive_outputs": 36290898519503,
+    "max_nodes": 84200,
+    "max_node_conductors": [
+      10004
+    ],
+    "operations": {
+      "general_complex_products": 1004103686197888,
+      "complex_add_sub": 2079886046397995,
+      "quarter_turns": 92117812144056,
+      "negations": 19872754128,
+      "dyadic_scales": 88576420247296
+    }
+  },
+  "scenarios": [
+    {
+      "extra_nodes": 0,
+      "aux_height": "0",
+      "conductor_height_nodes": 1522865397,
+      "residue_inputs": 59962061953248,
+      "primitive_outputs": 36290898519503,
+      "operations": {
+        "general_complex_products": 1004103686197888,
+        "complex_add_sub": 2079886046397995,
+        "quarter_turns": 92117812144056,
+        "negations": 19872754128,
+        "dyadic_scales": 88576420247296
+      },
+      "P20_Horner_stages": 1139279177111712,
+      "global_nodes": 84200,
+      "last_height": "420995/64",
+      "selected_P27": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "heights": 6401,
+            "first_index": 0,
+            "last_index": 6400,
+            "independent_P27_source_coefficients": 88615444,
+            "head_reciprocal_scales": 18772980820,
+            "head_accumulator_additions": 19495397680,
+            "E_contracting_complex_stages": 502363282,
+            "Bernoulli_weighted_terms": 5671388416,
+            "Bernoulli_accumulator_additions": 5671388416,
+            "P27_to_P20_midpoint_shift_updates": 1081512960,
+            "P20_fine_anchor_coefficient_deliveries": 131220500,
+            "shared_height_R_recurrence_steps": 166426,
+            "coarse_anchor_instances": 3283713,
+            "base_height_argument_pairs": 724292353,
+            "initial_B_certificates": 113153,
+            "step_cis_certificates": 113153,
+            "step_grid_conversions": 113153,
+            "fine_state_complex_updates": 724179200,
+            "state_to_EM_grid_conversions": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "heights": 6400,
+            "first_index": 6401,
+            "last_index": 12800,
+            "independent_P27_source_coefficients": 177075200,
+            "head_reciprocal_scales": 65989382400,
+            "head_accumulator_additions": 68528102400,
+            "E_contracting_complex_stages": 1003635200,
+            "Bernoulli_weighted_terms": 11332812800,
+            "Bernoulli_accumulator_additions": 11332812800,
+            "P27_to_P20_midpoint_shift_updates": 2162688000,
+            "P20_fine_anchor_coefficient_deliveries": 262272000,
+            "shared_height_R_recurrence_steps": 166400,
+            "coarse_anchor_instances": 6560000,
+            "base_height_argument_pairs": 2542803200,
+            "initial_B_certificates": 284160,
+            "step_cis_certificates": 284160,
+            "step_grid_conversions": 284160,
+            "fine_state_complex_updates": 2542519040,
+            "state_to_EM_grid_conversions": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "heights": 12800,
+            "first_index": 12801,
+            "last_index": 25600,
+            "independent_P27_source_coefficients": 708044800,
+            "head_reciprocal_scales": 490908672000,
+            "head_accumulator_additions": 509792256000,
+            "E_contracting_complex_stages": 4012672000,
+            "Bernoulli_weighted_terms": 45314867200,
+            "Bernoulli_accumulator_additions": 45314867200,
+            "P27_to_P20_midpoint_shift_updates": 8650752000,
+            "P20_fine_anchor_coefficient_deliveries": 1048832000,
+            "shared_height_R_recurrence_steps": 332800,
+            "coarse_anchor_instances": 26227200,
+            "base_height_argument_pairs": 18900595200,
+            "initial_B_certificates": 1079296,
+            "step_cis_certificates": 1079296,
+            "step_grid_conversions": 1079296,
+            "fine_state_complex_updates": 18899515904,
+            "state_to_EM_grid_conversions": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "heights": 38400,
+            "first_index": 25601,
+            "last_index": 64000,
+            "independent_P27_source_coefficients": 4247500800,
+            "head_reciprocal_scales": 7035102720000,
+            "head_accumulator_additions": 7305701376000,
+            "E_contracting_complex_stages": 24070425600,
+            "Bernoulli_weighted_terms": 271840051200,
+            "Bernoulli_accumulator_additions": 271840051200,
+            "P27_to_P20_midpoint_shift_updates": 51904512000,
+            "P20_fine_anchor_coefficient_deliveries": 6292224000,
+            "shared_height_R_recurrence_steps": 998400,
+            "coarse_anchor_instances": 157324800,
+            "base_height_argument_pairs": 270689932800,
+            "initial_B_certificates": 5572608,
+            "step_cis_certificates": 5572608,
+            "step_grid_conversions": 5572608,
+            "fine_state_complex_updates": 270684360192,
+            "state_to_EM_grid_conversions": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "heights": 20199,
+            "first_index": 64001,
+            "last_index": 84199,
+            "independent_P27_source_coefficients": 4468099596,
+            "head_reciprocal_scales": 14572937323143,
+            "head_accumulator_additions": 15133453331652,
+            "E_contracting_complex_stages": 25319890878,
+            "Bernoulli_weighted_terms": 285958374144,
+            "Bernoulli_accumulator_additions": 285958374144,
+            "P27_to_P20_midpoint_shift_updates": 54605168640,
+            "P20_fine_anchor_coefficient_deliveries": 6619212300,
+            "shared_height_R_recurrence_steps": 525174,
+            "coarse_anchor_instances": 165490407,
+            "base_height_argument_pairs": 560613084903,
+            "initial_B_certificates": 20705280,
+            "step_cis_certificates": 20705280,
+            "step_grid_conversions": 20705280,
+            "fine_state_complex_updates": 560592379623,
+            "state_to_EM_grid_conversions": 560613084903
+          }
+        ],
+        "totals": {
+          "independent_P27_source_coefficients": 9689335840,
+          "head_reciprocal_scales": 22183711078363,
+          "head_accumulator_additions": 23036970463732,
+          "E_contracting_complex_stages": 54908986960,
+          "Bernoulli_weighted_terms": 620117493760,
+          "Bernoulli_accumulator_additions": 620117493760,
+          "P27_to_P20_midpoint_shift_updates": 118404633600,
+          "P20_fine_anchor_coefficient_deliveries": 14353760800,
+          "shared_height_R_recurrence_steps": 2189200,
+          "coarse_anchor_instances": 358886120,
+          "base_height_argument_pairs": 853470708456,
+          "initial_B_certificates": 27754497,
+          "step_cis_certificates": 27754497,
+          "step_grid_conversions": 27754497,
+          "fine_state_complex_updates": 853442953959,
+          "state_to_EM_grid_conversions": 853470708456
+        }
+      },
+      "operation_ratios_to_H4": {
+        "general_complex_products": {
+          "exact": "251025921549472/254036642391449",
+          "lower_ppm": 988148,
+          "upper_ppm": 988149
+        },
+        "complex_add_sub": {
+          "exact": "2079886046397995/2104881781255801",
+          "lower_ppm": 988124,
+          "upper_ppm": 988125
+        },
+        "quarter_turns": {
+          "exact": "23029453036014/23307675928363",
+          "lower_ppm": 988063,
+          "upper_ppm": 988064
+        },
+        "negations": {
+          "exact": "2484094266/2514258157",
+          "lower_ppm": 988002,
+          "upper_ppm": 988003
+        },
+        "dyadic_scales": {
+          "exact": "346001641591/350167555671",
+          "lower_ppm": 988103,
+          "upper_ppm": 988104
+        }
+      },
+      "P27_ratios_to_H4": {
+        "independent_P27_source_coefficients": {
+          "exact": "1211166980/1258228131",
+          "lower_ppm": 962597,
+          "upper_ppm": 962598
+        },
+        "head_reciprocal_scales": {
+          "exact": "22183711078363/23411650051777",
+          "lower_ppm": 947550,
+          "upper_ppm": 947551
+        },
+        "head_accumulator_additions": {
+          "exact": "5759242615933/6078034852807",
+          "lower_ppm": 947550,
+          "upper_ppm": 947551
+        },
+        "E_contracting_complex_stages": {
+          "exact": "13727246740/14260620351",
+          "lower_ppm": 962598,
+          "upper_ppm": 962599
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "1211166980/1258228131",
+          "lower_ppm": 962597,
+          "upper_ppm": 962598
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "1211166980/1258228131",
+          "lower_ppm": 962597,
+          "upper_ppm": 962598
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "700785/728017",
+          "lower_ppm": 962594,
+          "upper_ppm": 962595
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "71768804/74557531",
+          "lower_ppm": 962596,
+          "upper_ppm": 962597
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "42100/42951",
+          "lower_ppm": 980186,
+          "upper_ppm": 980187
+        },
+        "coarse_anchor_instances": {
+          "exact": "179443060/186415303",
+          "lower_ppm": 962598,
+          "upper_ppm": 962599
+        },
+        "base_height_argument_pairs": {
+          "exact": "142245118076/150118143725",
+          "lower_ppm": 947554,
+          "upper_ppm": 947555
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "284480984653/300227035951",
+          "lower_ppm": 947552,
+          "upper_ppm": 947553
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "142245118076/150118143725",
+          "lower_ppm": 947554,
+          "upper_ppm": 947555
+        }
+      },
+      "operation_ratios_to_current": {
+        "general_complex_products": {
+          "exact": "251025921549472/280231490797119",
+          "lower_ppm": 895780,
+          "upper_ppm": 895781
+        },
+        "complex_add_sub": {
+          "exact": "2079886046397995/2319745161470097",
+          "lower_ppm": 896601,
+          "upper_ppm": 896602
+        },
+        "quarter_turns": {
+          "exact": "92117812144056/102708998603521",
+          "lower_ppm": 896881,
+          "upper_ppm": 896882
+        },
+        "negations": {
+          "exact": "552020948/616333081",
+          "lower_ppm": 895653,
+          "upper_ppm": 895654
+        },
+        "dyadic_scales": {
+          "exact": "1384006566364/1544988807161",
+          "lower_ppm": 895803,
+          "upper_ppm": 895804
+        }
+      },
+      "P27_ratios_to_current": {
+        "independent_P27_source_coefficients": {
+          "exact": "484466792/682942081",
+          "lower_ppm": 709381,
+          "upper_ppm": 709382
+        },
+        "head_reciprocal_scales": {
+          "exact": "22183711078363/35130458950228",
+          "lower_ppm": 631466,
+          "upper_ppm": 631467
+        },
+        "head_accumulator_additions": {
+          "exact": "5759242615933/9120421635148",
+          "lower_ppm": 631466,
+          "upper_ppm": 631467
+        },
+        "E_contracting_complex_stages": {
+          "exact": "5490898696/7740343925",
+          "lower_ppm": 709386,
+          "upper_ppm": 709387
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "484466792/682942081",
+          "lower_ppm": 709381,
+          "upper_ppm": 709382
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "484466792/682942081",
+          "lower_ppm": 709381,
+          "upper_ppm": 709382
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "140157/197581",
+          "lower_ppm": 709364,
+          "upper_ppm": 709365
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "143537608/202343373",
+          "lower_ppm": 709376,
+          "upper_ppm": 709377
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "16840/20429",
+          "lower_ppm": 824318,
+          "upper_ppm": 824319
+        },
+        "coarse_anchor_instances": {
+          "exact": "71777224/101181901",
+          "lower_ppm": 709387,
+          "upper_ppm": 709388
+        },
+        "base_height_argument_pairs": {
+          "exact": "284490236152/450508385707",
+          "lower_ppm": 631487,
+          "upper_ppm": 631488
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "284480984653/450499134208",
+          "lower_ppm": 631479,
+          "upper_ppm": 631480
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "284490236152/450508385707",
+          "lower_ppm": 631487,
+          "upper_ppm": 631488
+        }
+      },
+      "transform_plus_Horner_real_counts": {
+        "four": {
+          "products": 6294973099014976,
+          "additions": 8446537819415190
+        },
+        "fixed_three": {
+          "products": 5290869412817088,
+          "additions": 9450641505613078
+        },
+        "gauss_three": {
+          "products": 5290869412817088,
+          "additions": 11458848878008854
+        }
+      }
+    },
+    {
+      "extra_nodes": 167,
+      "aux_height": "835/64",
+      "conductor_height_nodes": 1543807197,
+      "residue_inputs": 61153275496992,
+      "primitive_outputs": 37014550742284,
+      "operations": {
+        "general_complex_products": 1024618166379118,
+        "complex_add_sub": 2122384498321844,
+        "quarter_turns": 93986171544503,
+        "negations": 20269359088,
+        "dyadic_scales": 90374781940928
+      },
+      "P20_Horner_stages": 1161912234442848,
+      "global_nodes": 84367,
+      "last_height": "210915/32",
+      "selected_P27": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "heights": 6401,
+            "first_index": 0,
+            "last_index": 6400,
+            "independent_P27_source_coefficients": 88615444,
+            "head_reciprocal_scales": 18772980820,
+            "head_accumulator_additions": 19495397680,
+            "E_contracting_complex_stages": 502363282,
+            "Bernoulli_weighted_terms": 5671388416,
+            "Bernoulli_accumulator_additions": 5671388416,
+            "P27_to_P20_midpoint_shift_updates": 1081512960,
+            "P20_fine_anchor_coefficient_deliveries": 131220500,
+            "shared_height_R_recurrence_steps": 166426,
+            "coarse_anchor_instances": 3283713,
+            "base_height_argument_pairs": 724292353,
+            "initial_B_certificates": 113153,
+            "step_cis_certificates": 113153,
+            "step_grid_conversions": 113153,
+            "fine_state_complex_updates": 724179200,
+            "state_to_EM_grid_conversions": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "heights": 6400,
+            "first_index": 6401,
+            "last_index": 12800,
+            "independent_P27_source_coefficients": 177075200,
+            "head_reciprocal_scales": 65989382400,
+            "head_accumulator_additions": 68528102400,
+            "E_contracting_complex_stages": 1003635200,
+            "Bernoulli_weighted_terms": 11332812800,
+            "Bernoulli_accumulator_additions": 11332812800,
+            "P27_to_P20_midpoint_shift_updates": 2162688000,
+            "P20_fine_anchor_coefficient_deliveries": 262272000,
+            "shared_height_R_recurrence_steps": 166400,
+            "coarse_anchor_instances": 6560000,
+            "base_height_argument_pairs": 2542803200,
+            "initial_B_certificates": 284160,
+            "step_cis_certificates": 284160,
+            "step_grid_conversions": 284160,
+            "fine_state_complex_updates": 2542519040,
+            "state_to_EM_grid_conversions": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "heights": 12800,
+            "first_index": 12801,
+            "last_index": 25600,
+            "independent_P27_source_coefficients": 708044800,
+            "head_reciprocal_scales": 490908672000,
+            "head_accumulator_additions": 509792256000,
+            "E_contracting_complex_stages": 4012672000,
+            "Bernoulli_weighted_terms": 45314867200,
+            "Bernoulli_accumulator_additions": 45314867200,
+            "P27_to_P20_midpoint_shift_updates": 8650752000,
+            "P20_fine_anchor_coefficient_deliveries": 1048832000,
+            "shared_height_R_recurrence_steps": 332800,
+            "coarse_anchor_instances": 26227200,
+            "base_height_argument_pairs": 18900595200,
+            "initial_B_certificates": 1079296,
+            "step_cis_certificates": 1079296,
+            "step_grid_conversions": 1079296,
+            "fine_state_complex_updates": 18899515904,
+            "state_to_EM_grid_conversions": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "heights": 38400,
+            "first_index": 25601,
+            "last_index": 64000,
+            "independent_P27_source_coefficients": 4247500800,
+            "head_reciprocal_scales": 7035102720000,
+            "head_accumulator_additions": 7305701376000,
+            "E_contracting_complex_stages": 24070425600,
+            "Bernoulli_weighted_terms": 271840051200,
+            "Bernoulli_accumulator_additions": 271840051200,
+            "P27_to_P20_midpoint_shift_updates": 51904512000,
+            "P20_fine_anchor_coefficient_deliveries": 6292224000,
+            "shared_height_R_recurrence_steps": 998400,
+            "coarse_anchor_instances": 157324800,
+            "base_height_argument_pairs": 270689932800,
+            "initial_B_certificates": 5572608,
+            "step_cis_certificates": 5572608,
+            "step_grid_conversions": 5572608,
+            "fine_state_complex_updates": 270684360192,
+            "state_to_EM_grid_conversions": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "heights": 20366,
+            "first_index": 64001,
+            "last_index": 84366,
+            "independent_P27_source_coefficients": 4505040664,
+            "head_reciprocal_scales": 14693422522062,
+            "head_accumulator_additions": 15258572728968,
+            "E_contracting_complex_stages": 25529229052,
+            "Bernoulli_weighted_terms": 288322602496,
+            "Bernoulli_accumulator_additions": 288322602496,
+            "P27_to_P20_midpoint_shift_updates": 55056629760,
+            "P20_fine_anchor_coefficient_deliveries": 6673938200,
+            "shared_height_R_recurrence_steps": 529516,
+            "coarse_anchor_instances": 166858638,
+            "base_height_argument_pairs": 565248085902,
+            "initial_B_certificates": 20705280,
+            "step_cis_certificates": 20705280,
+            "step_grid_conversions": 20705280,
+            "fine_state_complex_updates": 565227380622,
+            "state_to_EM_grid_conversions": 565248085902
+          }
+        ],
+        "totals": {
+          "independent_P27_source_coefficients": 9726276908,
+          "head_reciprocal_scales": 22304196277282,
+          "head_accumulator_additions": 23162089861048,
+          "E_contracting_complex_stages": 55118325134,
+          "Bernoulli_weighted_terms": 622481722112,
+          "Bernoulli_accumulator_additions": 622481722112,
+          "P27_to_P20_midpoint_shift_updates": 118856094720,
+          "P20_fine_anchor_coefficient_deliveries": 14408486700,
+          "shared_height_R_recurrence_steps": 2193542,
+          "coarse_anchor_instances": 360254351,
+          "base_height_argument_pairs": 858105709455,
+          "initial_B_certificates": 27754497,
+          "step_cis_certificates": 27754497,
+          "step_grid_conversions": 27754497,
+          "fine_state_complex_updates": 858077954958,
+          "state_to_EM_grid_conversions": 858105709455
+        }
+      },
+      "operation_ratios_to_H4": {
+        "general_complex_products": {
+          "exact": "512309083189559/518330524873513",
+          "lower_ppm": 988383,
+          "upper_ppm": 988384
+        },
+        "complex_add_sub": {
+          "exact": "1061192249160922/1073690116589825",
+          "lower_ppm": 988359,
+          "upper_ppm": 988360
+        },
+        "quarter_turns": {
+          "exact": "93986171544503/95099063113899",
+          "lower_ppm": 988297,
+          "upper_ppm": 988298
+        },
+        "negations": {
+          "exact": "2533669886/2563833777",
+          "lower_ppm": 988234,
+          "upper_ppm": 988235
+        },
+        "dyadic_scales": {
+          "exact": "1412105967827/1428769624147",
+          "lower_ppm": 988337,
+          "upper_ppm": 988338
+        }
+      },
+      "P27_ratios_to_H4": {
+        "independent_P27_source_coefficients": {
+          "exact": "2431569227/2525691529",
+          "lower_ppm": 962734,
+          "upper_ppm": 962735
+        },
+        "head_reciprocal_scales": {
+          "exact": "11152098138641/11766067625348",
+          "lower_ppm": 947818,
+          "upper_ppm": 947819
+        },
+        "head_accumulator_additions": {
+          "exact": "2895261232631/3054657351068",
+          "lower_ppm": 947818,
+          "upper_ppm": 947819
+        },
+        "E_contracting_complex_stages": {
+          "exact": "27559162567/28625909789",
+          "lower_ppm": 962734,
+          "upper_ppm": 962735
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "2431569227/2525691529",
+          "lower_ppm": 962734,
+          "upper_ppm": 962735
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "2431569227/2525691529",
+          "lower_ppm": 962734,
+          "upper_ppm": 962735
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "703457/730689",
+          "lower_ppm": 962731,
+          "upper_ppm": 962732
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "144084867/149662321",
+          "lower_ppm": 962733,
+          "upper_ppm": 962734
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "84367/86069",
+          "lower_ppm": 980225,
+          "upper_ppm": 980226
+        },
+        "coarse_anchor_instances": {
+          "exact": "360254351/374198837",
+          "lower_ppm": 962735,
+          "upper_ppm": 962736
+        },
+        "base_height_argument_pairs": {
+          "exact": "286035236485/301781287783",
+          "lower_ppm": 947822,
+          "upper_ppm": 947823
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "143012992493/150886018142",
+          "lower_ppm": 947821,
+          "upper_ppm": 947822
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "286035236485/301781287783",
+          "lower_ppm": 947822,
+          "upper_ppm": 947823
+        }
+      },
+      "operation_ratios_to_current": {
+        "general_complex_products": {
+          "exact": "512309083189559/570720221684853",
+          "lower_ppm": 897653,
+          "upper_ppm": 897654
+        },
+        "complex_add_sub": {
+          "exact": "1061192249160922/1181121806696973",
+          "lower_ppm": 898461,
+          "upper_ppm": 898462
+        },
+        "quarter_turns": {
+          "exact": "93986171544503/104577358003968",
+          "lower_ppm": 898723,
+          "upper_ppm": 898724
+        },
+        "negations": {
+          "exact": "5067339772/5646148969",
+          "lower_ppm": 897486,
+          "upper_ppm": 897487
+        },
+        "dyadic_scales": {
+          "exact": "1412105967827/1573088208624",
+          "lower_ppm": 897664,
+          "upper_ppm": 897665
+        }
+      },
+      "P27_ratios_to_current": {
+        "independent_P27_source_coefficients": {
+          "exact": "2431569227/3423945672",
+          "lower_ppm": 710165,
+          "upper_ppm": 710166
+        },
+        "head_reciprocal_scales": {
+          "exact": "22304196277282/35250944149147",
+          "lower_ppm": 632726,
+          "upper_ppm": 632727
+        },
+        "head_accumulator_additions": {
+          "exact": "5790522465262/9151701484477",
+          "lower_ppm": 632726,
+          "upper_ppm": 632727
+        },
+        "E_contracting_complex_stages": {
+          "exact": "27559162567/38806388712",
+          "lower_ppm": 710170,
+          "upper_ppm": 710171
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "2431569227/3423945672",
+          "lower_ppm": 710165,
+          "upper_ppm": 710166
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "2431569227/3423945672",
+          "lower_ppm": 710165,
+          "upper_ppm": 710166
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "703457/990577",
+          "lower_ppm": 710148,
+          "upper_ppm": 710149
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "1485411/2091656",
+          "lower_ppm": 710160,
+          "upper_ppm": 710161
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "84367/102312",
+          "lower_ppm": 824605,
+          "upper_ppm": 824606
+        },
+        "coarse_anchor_instances": {
+          "exact": "360254351/507277736",
+          "lower_ppm": 710171,
+          "upper_ppm": 710172
+        },
+        "base_height_argument_pairs": {
+          "exact": "57207047297/90410677208",
+          "lower_ppm": 632746,
+          "upper_ppm": 632747
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "286025984986/452044134541",
+          "lower_ppm": 632739,
+          "upper_ppm": 632740
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "57207047297/90410677208",
+          "lower_ppm": 632746,
+          "upper_ppm": 632747
+        }
+      },
+      "transform_plus_Horner_real_counts": {
+        "four": {
+          "products": 6422297134402168,
+          "additions": 8617829798287620
+        },
+        "fixed_three": {
+          "products": 5397678968023050,
+          "additions": 9642447964666738
+        },
+        "gauss_three": {
+          "products": 5397678968023050,
+          "additions": 11691684297424974
+        }
+      }
+    },
+    {
+      "extra_nodes": 320,
+      "aux_height": "25",
+      "conductor_height_nodes": 1562993397,
+      "residue_inputs": 62244626827488,
+      "primitive_outputs": 37677537509263,
+      "operations": {
+        "general_complex_products": 1043412869778688,
+        "complex_add_sub": 2161320205773035,
+        "quarter_turns": 95697902013176,
+        "negations": 20632715728,
+        "dyadic_scales": 92022382774016
+      },
+      "P20_Horner_stages": 1182647909722272,
+      "global_nodes": 84520,
+      "last_height": "422595/64",
+      "selected_P27": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "heights": 6401,
+            "first_index": 0,
+            "last_index": 6400,
+            "independent_P27_source_coefficients": 88615444,
+            "head_reciprocal_scales": 18772980820,
+            "head_accumulator_additions": 19495397680,
+            "E_contracting_complex_stages": 502363282,
+            "Bernoulli_weighted_terms": 5671388416,
+            "Bernoulli_accumulator_additions": 5671388416,
+            "P27_to_P20_midpoint_shift_updates": 1081512960,
+            "P20_fine_anchor_coefficient_deliveries": 131220500,
+            "shared_height_R_recurrence_steps": 166426,
+            "coarse_anchor_instances": 3283713,
+            "base_height_argument_pairs": 724292353,
+            "initial_B_certificates": 113153,
+            "step_cis_certificates": 113153,
+            "step_grid_conversions": 113153,
+            "fine_state_complex_updates": 724179200,
+            "state_to_EM_grid_conversions": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "heights": 6400,
+            "first_index": 6401,
+            "last_index": 12800,
+            "independent_P27_source_coefficients": 177075200,
+            "head_reciprocal_scales": 65989382400,
+            "head_accumulator_additions": 68528102400,
+            "E_contracting_complex_stages": 1003635200,
+            "Bernoulli_weighted_terms": 11332812800,
+            "Bernoulli_accumulator_additions": 11332812800,
+            "P27_to_P20_midpoint_shift_updates": 2162688000,
+            "P20_fine_anchor_coefficient_deliveries": 262272000,
+            "shared_height_R_recurrence_steps": 166400,
+            "coarse_anchor_instances": 6560000,
+            "base_height_argument_pairs": 2542803200,
+            "initial_B_certificates": 284160,
+            "step_cis_certificates": 284160,
+            "step_grid_conversions": 284160,
+            "fine_state_complex_updates": 2542519040,
+            "state_to_EM_grid_conversions": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "heights": 12800,
+            "first_index": 12801,
+            "last_index": 25600,
+            "independent_P27_source_coefficients": 708044800,
+            "head_reciprocal_scales": 490908672000,
+            "head_accumulator_additions": 509792256000,
+            "E_contracting_complex_stages": 4012672000,
+            "Bernoulli_weighted_terms": 45314867200,
+            "Bernoulli_accumulator_additions": 45314867200,
+            "P27_to_P20_midpoint_shift_updates": 8650752000,
+            "P20_fine_anchor_coefficient_deliveries": 1048832000,
+            "shared_height_R_recurrence_steps": 332800,
+            "coarse_anchor_instances": 26227200,
+            "base_height_argument_pairs": 18900595200,
+            "initial_B_certificates": 1079296,
+            "step_cis_certificates": 1079296,
+            "step_grid_conversions": 1079296,
+            "fine_state_complex_updates": 18899515904,
+            "state_to_EM_grid_conversions": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "heights": 38400,
+            "first_index": 25601,
+            "last_index": 64000,
+            "independent_P27_source_coefficients": 4247500800,
+            "head_reciprocal_scales": 7035102720000,
+            "head_accumulator_additions": 7305701376000,
+            "E_contracting_complex_stages": 24070425600,
+            "Bernoulli_weighted_terms": 271840051200,
+            "Bernoulli_accumulator_additions": 271840051200,
+            "P27_to_P20_midpoint_shift_updates": 51904512000,
+            "P20_fine_anchor_coefficient_deliveries": 6292224000,
+            "shared_height_R_recurrence_steps": 998400,
+            "coarse_anchor_instances": 157324800,
+            "base_height_argument_pairs": 270689932800,
+            "initial_B_certificates": 5572608,
+            "step_cis_certificates": 5572608,
+            "step_grid_conversions": 5572608,
+            "fine_state_complex_updates": 270684360192,
+            "state_to_EM_grid_conversions": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "heights": 20519,
+            "first_index": 64001,
+            "last_index": 84519,
+            "independent_P27_source_coefficients": 4538884876,
+            "head_reciprocal_scales": 14803807165383,
+            "head_accumulator_additions": 15373203075012,
+            "E_contracting_complex_stages": 25721017918,
+            "Bernoulli_weighted_terms": 290488632064,
+            "Bernoulli_accumulator_additions": 290488632064,
+            "P27_to_P20_midpoint_shift_updates": 55470243840,
+            "P20_fine_anchor_coefficient_deliveries": 6724076300,
+            "shared_height_R_recurrence_steps": 533494,
+            "coarse_anchor_instances": 168112167,
+            "base_height_argument_pairs": 569494523943,
+            "initial_B_certificates": 20705280,
+            "step_cis_certificates": 20705280,
+            "step_grid_conversions": 20705280,
+            "fine_state_complex_updates": 569473818663,
+            "state_to_EM_grid_conversions": 569494523943
+          }
+        ],
+        "totals": {
+          "independent_P27_source_coefficients": 9760121120,
+          "head_reciprocal_scales": 22414580920603,
+          "head_accumulator_additions": 23276720207092,
+          "E_contracting_complex_stages": 55310114000,
+          "Bernoulli_weighted_terms": 624647751680,
+          "Bernoulli_accumulator_additions": 624647751680,
+          "P27_to_P20_midpoint_shift_updates": 119269708800,
+          "P20_fine_anchor_coefficient_deliveries": 14458624800,
+          "shared_height_R_recurrence_steps": 2197520,
+          "coarse_anchor_instances": 361507880,
+          "base_height_argument_pairs": 862352147496,
+          "initial_B_certificates": 27754497,
+          "step_cis_certificates": 27754497,
+          "step_grid_conversions": 27754497,
+          "fine_state_complex_updates": 862324392999,
+          "state_to_EM_grid_conversions": 862352147496
+        }
+      },
+      "operation_ratios_to_H4": {
+        "general_complex_products": {
+          "exact": "260853217444672/263863938286649",
+          "lower_ppm": 988589,
+          "upper_ppm": 988590
+        },
+        "complex_add_sub": {
+          "exact": "2161320205773035/2186315940630841",
+          "lower_ppm": 988567,
+          "upper_ppm": 988568
+        },
+        "quarter_turns": {
+          "exact": "23924475503294/24202698395643",
+          "lower_ppm": 988504,
+          "upper_ppm": 988505
+        },
+        "negations": {
+          "exact": "2579089466/2609253357",
+          "lower_ppm": 988439,
+          "upper_ppm": 988440
+        },
+        "dyadic_scales": {
+          "exact": "359462432711/363628346791",
+          "lower_ppm": 988543,
+          "upper_ppm": 988544
+        }
+      },
+      "P27_ratios_to_H4": {
+        "independent_P27_source_coefficients": {
+          "exact": "1220015140/1267076291",
+          "lower_ppm": 962858,
+          "upper_ppm": 962859
+        },
+        "head_reciprocal_scales": {
+          "exact": "22414580920603/23642519894017",
+          "lower_ppm": 948062,
+          "upper_ppm": 948063
+        },
+        "head_accumulator_additions": {
+          "exact": "5819180051773/6137972288647",
+          "lower_ppm": 948062,
+          "upper_ppm": 948063
+        },
+        "E_contracting_complex_stages": {
+          "exact": "13827528500/14360902111",
+          "lower_ppm": 962859,
+          "upper_ppm": 962860
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "1220015140/1267076291",
+          "lower_ppm": 962858,
+          "upper_ppm": 962859
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "1220015140/1267076291",
+          "lower_ppm": 962858,
+          "upper_ppm": 962859
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "705905/733137",
+          "lower_ppm": 962855,
+          "upper_ppm": 962856
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "72293124/75081851",
+          "lower_ppm": 962857,
+          "upper_ppm": 962858
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "42260/43111",
+          "lower_ppm": 980260,
+          "upper_ppm": 980261
+        },
+        "coarse_anchor_instances": {
+          "exact": "180753940/187726183",
+          "lower_ppm": 962859,
+          "upper_ppm": 962860
+        },
+        "base_height_argument_pairs": {
+          "exact": "143725357916/151598383565",
+          "lower_ppm": 948066,
+          "upper_ppm": 948067
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "12497454971/13182065897",
+          "lower_ppm": 948064,
+          "upper_ppm": 948065
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "143725357916/151598383565",
+          "lower_ppm": 948066,
+          "upper_ppm": 948067
+        }
+      },
+      "operation_ratios_to_current": {
+        "general_complex_products": {
+          "exact": "260853217444672/290058786692319",
+          "lower_ppm": 899311,
+          "upper_ppm": 899312
+        },
+        "complex_add_sub": {
+          "exact": "2161320205773035/2401179320845137",
+          "lower_ppm": 900107,
+          "upper_ppm": 900108
+        },
+        "quarter_turns": {
+          "exact": "95697902013176/106289088472641",
+          "lower_ppm": 900354,
+          "upper_ppm": 900355
+        },
+        "negations": {
+          "exact": "5158178932/5736988129",
+          "lower_ppm": 899109,
+          "upper_ppm": 899110
+        },
+        "dyadic_scales": {
+          "exact": "1437849730844/1598831971641",
+          "lower_ppm": 899312,
+          "upper_ppm": 899313
+        }
+      },
+      "P27_ratios_to_current": {
+        "independent_P27_source_coefficients": {
+          "exact": "488006056/686481345",
+          "lower_ppm": 710880,
+          "upper_ppm": 710881
+        },
+        "head_reciprocal_scales": {
+          "exact": "22414580920603/35361328792468",
+          "lower_ppm": 633872,
+          "upper_ppm": 633873
+        },
+        "head_accumulator_additions": {
+          "exact": "5819180051773/9180359070988",
+          "lower_ppm": 633872,
+          "upper_ppm": 633873
+        },
+        "E_contracting_complex_stages": {
+          "exact": "5531011400/7780456629",
+          "lower_ppm": 710885,
+          "upper_ppm": 710886
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "488006056/686481345",
+          "lower_ppm": 710880,
+          "upper_ppm": 710881
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "488006056/686481345",
+          "lower_ppm": 710880,
+          "upper_ppm": 710881
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "141181/198605",
+          "lower_ppm": 710863,
+          "upper_ppm": 710864
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "144586248/203392013",
+          "lower_ppm": 710874,
+          "upper_ppm": 710875
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "16904/20493",
+          "lower_ppm": 824867,
+          "upper_ppm": 824868
+        },
+        "coarse_anchor_instances": {
+          "exact": "72301576/101706253",
+          "lower_ppm": 710886,
+          "upper_ppm": 710887
+        },
+        "base_height_argument_pairs": {
+          "exact": "287450715832/453468865387",
+          "lower_ppm": 633892,
+          "upper_ppm": 633893
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "287441464333/453459613888",
+          "lower_ppm": 633885,
+          "upper_ppm": 633886
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "287450715832/453468865387",
+          "lower_ppm": 633892,
+          "upper_ppm": 633893
+        }
+      },
+      "transform_plus_Horner_real_counts": {
+        "four": {
+          "products": 6538947298559296,
+          "additions": 8774761970547990
+        },
+        "fixed_three": {
+          "products": 5495534428780608,
+          "additions": 9818174840326678
+        },
+        "gauss_three": {
+          "products": 5495534428780608,
+          "additions": 11905000579884054
+        }
+      }
+    },
+    {
+      "extra_nodes": 640,
+      "aux_height": "50",
+      "conductor_height_nodes": 1603121397,
+      "residue_inputs": 64527191701728,
+      "primitive_outputs": 39064176499023,
+      "operations": {
+        "general_complex_products": 1082722053359488,
+        "complex_add_sub": 2242754365148075,
+        "quarter_turns": 99277991882296,
+        "negations": 21392677328,
+        "dyadic_scales": 95468345300736
+      },
+      "P20_Horner_stages": 1226016642332832,
+      "global_nodes": 84840,
+      "last_height": "424195/64",
+      "selected_P27": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "heights": 6401,
+            "first_index": 0,
+            "last_index": 6400,
+            "independent_P27_source_coefficients": 88615444,
+            "head_reciprocal_scales": 18772980820,
+            "head_accumulator_additions": 19495397680,
+            "E_contracting_complex_stages": 502363282,
+            "Bernoulli_weighted_terms": 5671388416,
+            "Bernoulli_accumulator_additions": 5671388416,
+            "P27_to_P20_midpoint_shift_updates": 1081512960,
+            "P20_fine_anchor_coefficient_deliveries": 131220500,
+            "shared_height_R_recurrence_steps": 166426,
+            "coarse_anchor_instances": 3283713,
+            "base_height_argument_pairs": 724292353,
+            "initial_B_certificates": 113153,
+            "step_cis_certificates": 113153,
+            "step_grid_conversions": 113153,
+            "fine_state_complex_updates": 724179200,
+            "state_to_EM_grid_conversions": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "heights": 6400,
+            "first_index": 6401,
+            "last_index": 12800,
+            "independent_P27_source_coefficients": 177075200,
+            "head_reciprocal_scales": 65989382400,
+            "head_accumulator_additions": 68528102400,
+            "E_contracting_complex_stages": 1003635200,
+            "Bernoulli_weighted_terms": 11332812800,
+            "Bernoulli_accumulator_additions": 11332812800,
+            "P27_to_P20_midpoint_shift_updates": 2162688000,
+            "P20_fine_anchor_coefficient_deliveries": 262272000,
+            "shared_height_R_recurrence_steps": 166400,
+            "coarse_anchor_instances": 6560000,
+            "base_height_argument_pairs": 2542803200,
+            "initial_B_certificates": 284160,
+            "step_cis_certificates": 284160,
+            "step_grid_conversions": 284160,
+            "fine_state_complex_updates": 2542519040,
+            "state_to_EM_grid_conversions": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "heights": 12800,
+            "first_index": 12801,
+            "last_index": 25600,
+            "independent_P27_source_coefficients": 708044800,
+            "head_reciprocal_scales": 490908672000,
+            "head_accumulator_additions": 509792256000,
+            "E_contracting_complex_stages": 4012672000,
+            "Bernoulli_weighted_terms": 45314867200,
+            "Bernoulli_accumulator_additions": 45314867200,
+            "P27_to_P20_midpoint_shift_updates": 8650752000,
+            "P20_fine_anchor_coefficient_deliveries": 1048832000,
+            "shared_height_R_recurrence_steps": 332800,
+            "coarse_anchor_instances": 26227200,
+            "base_height_argument_pairs": 18900595200,
+            "initial_B_certificates": 1079296,
+            "step_cis_certificates": 1079296,
+            "step_grid_conversions": 1079296,
+            "fine_state_complex_updates": 18899515904,
+            "state_to_EM_grid_conversions": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "heights": 38400,
+            "first_index": 25601,
+            "last_index": 64000,
+            "independent_P27_source_coefficients": 4247500800,
+            "head_reciprocal_scales": 7035102720000,
+            "head_accumulator_additions": 7305701376000,
+            "E_contracting_complex_stages": 24070425600,
+            "Bernoulli_weighted_terms": 271840051200,
+            "Bernoulli_accumulator_additions": 271840051200,
+            "P27_to_P20_midpoint_shift_updates": 51904512000,
+            "P20_fine_anchor_coefficient_deliveries": 6292224000,
+            "shared_height_R_recurrence_steps": 998400,
+            "coarse_anchor_instances": 157324800,
+            "base_height_argument_pairs": 270689932800,
+            "initial_B_certificates": 5572608,
+            "step_cis_certificates": 5572608,
+            "step_grid_conversions": 5572608,
+            "fine_state_complex_updates": 270684360192,
+            "state_to_EM_grid_conversions": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "heights": 20839,
+            "first_index": 64001,
+            "last_index": 84839,
+            "independent_P27_source_coefficients": 4609670156,
+            "head_reciprocal_scales": 15034677007623,
+            "head_accumulator_additions": 15612952818372,
+            "E_contracting_complex_stages": 26122144958,
+            "Bernoulli_weighted_terms": 295018889984,
+            "Bernoulli_accumulator_additions": 295018889984,
+            "P27_to_P20_midpoint_shift_updates": 56335319040,
+            "P20_fine_anchor_coefficient_deliveries": 6828940300,
+            "shared_height_R_recurrence_steps": 541814,
+            "coarse_anchor_instances": 170733927,
+            "base_height_argument_pairs": 578375962983,
+            "initial_B_certificates": 20705280,
+            "step_cis_certificates": 20705280,
+            "step_grid_conversions": 20705280,
+            "fine_state_complex_updates": 578355257703,
+            "state_to_EM_grid_conversions": 578375962983
+          }
+        ],
+        "totals": {
+          "independent_P27_source_coefficients": 9830906400,
+          "head_reciprocal_scales": 22645450762843,
+          "head_accumulator_additions": 23516469950452,
+          "E_contracting_complex_stages": 55711241040,
+          "Bernoulli_weighted_terms": 629178009600,
+          "Bernoulli_accumulator_additions": 629178009600,
+          "P27_to_P20_midpoint_shift_updates": 120134784000,
+          "P20_fine_anchor_coefficient_deliveries": 14563488800,
+          "shared_height_R_recurrence_steps": 2205840,
+          "coarse_anchor_instances": 364129640,
+          "base_height_argument_pairs": 871233586536,
+          "initial_B_certificates": 27754497,
+          "step_cis_certificates": 27754497,
+          "step_grid_conversions": 27754497,
+          "fine_state_complex_updates": 871205832039,
+          "state_to_EM_grid_conversions": 871233586536
+        }
+      },
+      "operation_ratios_to_H4": {
+        "general_complex_products": {
+          "exact": "270680513339872/273691234181849",
+          "lower_ppm": 988999,
+          "upper_ppm": 989000
+        },
+        "complex_add_sub": {
+          "exact": "2242754365148075/2267750100005881",
+          "lower_ppm": 988977,
+          "upper_ppm": 988978
+        },
+        "quarter_turns": {
+          "exact": "24819497970574/25097720862923",
+          "lower_ppm": 988914,
+          "upper_ppm": 988915
+        },
+        "negations": {
+          "exact": "2674084666/2704248557",
+          "lower_ppm": 988845,
+          "upper_ppm": 988846
+        },
+        "dyadic_scales": {
+          "exact": "372923223831/377089137911",
+          "lower_ppm": 988952,
+          "upper_ppm": 988953
+        }
+      },
+      "P27_ratios_to_H4": {
+        "independent_P27_source_coefficients": {
+          "exact": "1228863300/1275924451",
+          "lower_ppm": 963116,
+          "upper_ppm": 963117
+        },
+        "head_reciprocal_scales": {
+          "exact": "22645450762843/23873389736257",
+          "lower_ppm": 948564,
+          "upper_ppm": 948565
+        },
+        "head_accumulator_additions": {
+          "exact": "5879117487613/6197909724487",
+          "lower_ppm": 948564,
+          "upper_ppm": 948565
+        },
+        "E_contracting_complex_stages": {
+          "exact": "13927810260/14461183871",
+          "lower_ppm": 963116,
+          "upper_ppm": 963117
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "1228863300/1275924451",
+          "lower_ppm": 963116,
+          "upper_ppm": 963117
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "1228863300/1275924451",
+          "lower_ppm": 963116,
+          "upper_ppm": 963117
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "711025/738257",
+          "lower_ppm": 963113,
+          "upper_ppm": 963114
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "72817444/75606171",
+          "lower_ppm": 963115,
+          "upper_ppm": 963116
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "42420/43271",
+          "lower_ppm": 980333,
+          "upper_ppm": 980334
+        },
+        "coarse_anchor_instances": {
+          "exact": "182064820/189037063",
+          "lower_ppm": 963117,
+          "upper_ppm": 963118
+        },
+        "base_height_argument_pairs": {
+          "exact": "145205597756/153078623405",
+          "lower_ppm": 948568,
+          "upper_ppm": 948569
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "290401944013/306147995311",
+          "lower_ppm": 948567,
+          "upper_ppm": 948568
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "145205597756/153078623405",
+          "lower_ppm": 948568,
+          "upper_ppm": 948569
+        }
+      },
+      "operation_ratios_to_current": {
+        "general_complex_products": {
+          "exact": "270680513339872/299886082587519",
+          "lower_ppm": 902611,
+          "upper_ppm": 902612
+        },
+        "complex_add_sub": {
+          "exact": "2242754365148075/2482613480220177",
+          "lower_ppm": 903384,
+          "upper_ppm": 903385
+        },
+        "quarter_turns": {
+          "exact": "99277991882296/109869178341761",
+          "lower_ppm": 903601,
+          "upper_ppm": 903602
+        },
+        "negations": {
+          "exact": "5348169332/5926978529",
+          "lower_ppm": 902343,
+          "upper_ppm": 902344
+        },
+        "dyadic_scales": {
+          "exact": "1491692895324/1652675136121",
+          "lower_ppm": 902592,
+          "upper_ppm": 902593
+        }
+      },
+      "P27_ratios_to_current": {
+        "independent_P27_source_coefficients": {
+          "exact": "491545320/690020609",
+          "lower_ppm": 712363,
+          "upper_ppm": 712364
+        },
+        "head_reciprocal_scales": {
+          "exact": "22645450762843/35592198634708",
+          "lower_ppm": 636247,
+          "upper_ppm": 636248
+        },
+        "head_accumulator_additions": {
+          "exact": "5879117487613/9240296506828",
+          "lower_ppm": 636247,
+          "upper_ppm": 636248
+        },
+        "E_contracting_complex_stages": {
+          "exact": "5571124104/7820569333",
+          "lower_ppm": 712368,
+          "upper_ppm": 712369
+        },
+        "Bernoulli_weighted_terms": {
+          "exact": "491545320/690020609",
+          "lower_ppm": 712363,
+          "upper_ppm": 712364
+        },
+        "Bernoulli_accumulator_additions": {
+          "exact": "491545320/690020609",
+          "lower_ppm": 712363,
+          "upper_ppm": 712364
+        },
+        "P27_to_P20_midpoint_shift_updates": {
+          "exact": "142205/199629",
+          "lower_ppm": 712346,
+          "upper_ppm": 712347
+        },
+        "P20_fine_anchor_coefficient_deliveries": {
+          "exact": "145634888/204440653",
+          "lower_ppm": 712357,
+          "upper_ppm": 712358
+        },
+        "shared_height_R_recurrence_steps": {
+          "exact": "16968/20557",
+          "lower_ppm": 825412,
+          "upper_ppm": 825413
+        },
+        "coarse_anchor_instances": {
+          "exact": "72825928/102230605",
+          "lower_ppm": 712369,
+          "upper_ppm": 712370
+        },
+        "base_height_argument_pairs": {
+          "exact": "290411195512/456429345067",
+          "lower_ppm": 636267,
+          "upper_ppm": 636268
+        },
+        "initial_B_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_cis_certificates": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "step_grid_conversions": {
+          "exact": "1",
+          "lower_ppm": 1000000,
+          "upper_ppm": 1000000
+        },
+        "fine_state_complex_updates": {
+          "exact": "290401944013/456420093568",
+          "lower_ppm": 636260,
+          "upper_ppm": 636261
+        },
+        "state_to_EM_grid_conversions": {
+          "exact": "290411195512/456429345067",
+          "lower_ppm": 636267,
+          "upper_ppm": 636268
+        }
+      },
+      "transform_plus_Horner_real_counts": {
+        "four": {
+          "products": 6782921498103616,
+          "additions": 9102986121680790
+        },
+        "fixed_three": {
+          "products": 5700199444744128,
+          "additions": 10185708175040278
+        },
+        "gauss_three": {
+          "products": 5700199444744128,
+          "additions": 12351152281759254
+        }
+      }
+    }
+  ],
+  "examples": {
+    "10001": {
+      "combined_height": 3407,
+      "H4_height": 3457,
+      "current_height": 4091,
+      "combined_nodes": 43611
+    },
+    "10004": {
+      "combined_height": 6578,
+      "H4_height": 6711,
+      "current_height": 7980,
+      "combined_nodes": 84200
+    },
+    "60000": {
+      "combined_height": 1264,
+      "H4_height": 1286,
+      "current_height": 1498,
+      "combined_nodes": 16181
+    },
+    "60004": {
+      "combined_height": 1264,
+      "H4_height": 1286,
+      "current_height": 1308,
+      "combined_nodes": 16181
+    },
+    "100000": {
+      "combined_height": 838,
+      "H4_height": 852,
+      "current_height": 865,
+      "combined_nodes": 10728
+    },
+    "132899": {
+      "combined_height": 442,
+      "H4_height": 455,
+      "current_height": 493,
+      "combined_nodes": 5659
+    },
+    "265800": {
+      "combined_height": 455,
+      "H4_height": 455,
+      "current_height": 460,
+      "combined_nodes": 5825
+    }
+  },
+  "aux_exceeds_comparison_main": {
+    "0": {
+      "H4_main": 0,
+      "current_main": 0
+    },
+    "167": {
+      "H4_main": 88193,
+      "current_main": 16002
+    },
+    "320": {
+      "H4_main": 109037,
+      "current_main": 39520
+    },
+    "640": {
+      "H4_main": 121093,
+      "current_main": 51450
+    }
+  },
+  "per_extra_node_operations": {
+    "general_complex_products": 122841198690,
+    "complex_add_sub": 254481748047,
+    "quarter_turns": 11187780841,
+    "negations": 2374880,
+    "dyadic_scales": 10768632896
+  },
+  "transform_setup_unchanged": {
+    "axis_lengths": 12496,
+    "active_nodes": 32942,
+    "kernel_count": 6004,
+    "kernel_entries": 337702368,
+    "chirp_entries": 140276846,
+    "max_padded_length": 262144,
+    "kernel_forward_operations": {
+      "general_complex_products": 2244782056,
+      "complex_add_sub": 5502647200,
+      "quarter_turns": 168845180,
+      "negations": 0,
+      "dyadic_scales": 0
+    },
+    "CT_full_root_table_entry_upper": 1116142487
+  },
+  "seed_setup_unchanged": {
+    "distinct_x_arguments": 27754497,
+    "log_bits": 144,
+    "log_nonanchor_Horner_stages": 582822471,
+    "init_p": 120,
+    "step_cis_p": 138,
+    "state_error_bits": 140,
+    "EM_rounding_error_bits": 122,
+    "initial_cis_terms_per_argument": 74,
+    "step_cis_terms_per_argument": 83,
+    "raw_dense_state_step_bytes": 1998323784,
+    "exact_Bernoulli_constants": 64
+  },
+  "excluded": {
+    "small_conductors": 7499,
+    "small_primitive_labels": 18477108,
+    "principal": "all, retains RH1e8 separately"
+  },
+  "V7000_retune_counted": false
+}

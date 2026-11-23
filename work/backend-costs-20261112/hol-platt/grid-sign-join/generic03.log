@@ -1,0 +1,108 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanned 18 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/GridSignsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "GridSigns">>
+Saved definition ____ "digit_def"
+Saved definition ____ "four_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in GridSigns)>>
+Saved definition ____ "grid_def"
+Saved induction _____ "grid_ind"
+Saved definition ____ "strict_code_def"
+Saved definition ____ "coarse_def"
+Saved definition ____ "dot_window_def"
+Saved definition ____ "at_repair_def"
+Saved definition ____ "repairs_def"
+Saved induction _____ "repairs_ind"
+Saved definition ____ "sign_at_def"
+Saved theorem _______ "match_word_compute"
+Saved definition ____ "match_word_def"
+Saved definition ____ "match_runs_def"
+Saved induction _____ "match_runs_ind"
+Saved definition ____ "valid_kernels_def"
+Saved induction _____ "valid_kernels_ind"
+Saved definition ____ "coarse_radius_ok_def"
+Saved definition ____ "channel_def"
+Starting translation of channel from GridSignsTheory.
+Starting translation of grid from GridSignsTheory.
+Saved definition ____ "MAP_four_EXP_2_EXP_2_1_def"
+Saved induction _____ "MAP_four_EXP_2_EXP_2_1_ind"
+Starting translation of MAP_four_EXP_2_EXP_2 from GridSignsTheory.
+Starting translation of four from GridSignsTheory.
+Starting translation of digit from GridSignsTheory.
+Saved theorem _______ "cv_digit_thm"
+Finished translating digit, stored in cv_digit_thm
+Starting translation of four from GridSignsTheory.
+Saved theorem _______ "cv_four_thm"
+Finished translating four, stored in cv_four_thm
+Starting translation of MAP_four_EXP_2_EXP_2 from GridSignsTheory.
+Saved definition ____ "cv_MAP_four_EXP_2_EXP_2_def"
+Saved induction _____ "cv_MAP_four_EXP_2_EXP_2_ind"
+Saved theorem _______ "cv_MAP_four_EXP_2_EXP_2_thm"
+Finished translating MAP_four_EXP_2_EXP_2, stored in cv_MAP_four_EXP_2_EXP_2_thm
+Saved theorem _______ "MAP_four_EXP_2_EXP_2_ho"
+Starting translation of grid from GridSignsTheory.
+Saved definition ____ "cv_grid_def"
+Saved induction _____ "cv_grid_ind"
+Saved theorem _______ "cv_grid_thm"
+Finished translating grid, stored in cv_grid_thm
+Starting translation of channel from GridSignsTheory.
+Starting translation of repairs from GridSignsTheory.
+Starting translation of at_repair from GridSignsTheory.
+Starting translation of dot_window from GridSignsTheory.
+Saved theorem _______ "cv_dot_window_thm"
+Finished translating dot_window, stored in cv_dot_window_thm
+Starting translation of at_repair from GridSignsTheory.
+Starting translation of strict_code from GridSignsTheory.
+Saved theorem _______ "cv_strict_code_thm"
+Finished translating strict_code, stored in cv_strict_code_thm
+Starting translation of at_repair from GridSignsTheory.
+Saved theorem _______ "cv_at_repair_thm"
+Finished translating at_repair, stored in cv_at_repair_thm
+Starting translation of repairs from GridSignsTheory.
+Saved theorem _______ "cv_repairs_thm"
+Finished translating repairs, stored in cv_repairs_thm
+Starting translation of channel from GridSignsTheory.
+Starting translation of match_runs from GridSignsTheory.
+Starting translation of match_word from GridSignsTheory.
+Starting translation of sign_at from GridSignsTheory.
+Starting translation of coarse from GridSignsTheory.
+Saved theorem _______ "cv_coarse_thm"
+Finished translating coarse, stored in cv_coarse_thm
+Starting translation of sign_at from GridSignsTheory.
+Saved theorem _______ "cv_sign_at_thm"
+Finished translating sign_at, stored in cv_sign_at_thm
+Starting translation of match_word from GridSignsTheory.
+Saved theorem _______ "cv_match_word_thm"
+Finished translating match_word, stored in cv_match_word_thm
+Starting translation of match_runs from GridSignsTheory.
+Saved theorem _______ "cv_match_runs_thm"
+Finished translating match_runs, stored in cv_match_runs_thm
+Starting translation of channel from GridSignsTheory.
+Starting translation of coarse_radius_ok from GridSignsTheory.
+Saved theorem _______ "cv_coarse_radius_ok_thm"
+Finished translating coarse_radius_ok, stored in cv_coarse_radius_ok_thm
+Starting translation of channel from GridSignsTheory.
+Saved theorem _______ "cv_channel_thm"
+Finished translating channel, stored in cv_channel_thm
+Saved theorem _______ "code_margin"
+Saved theorem _______ "coarse_interval_margin"
+Exporting theory "GridSigns" ... done.
+Theory "GridSigns" took 2.0s to build
+Holmake: [1/1] GridSigns

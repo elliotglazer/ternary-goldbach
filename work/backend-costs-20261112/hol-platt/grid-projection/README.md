@@ -1,0 +1,11 @@
+# Checking compressed samples against the raw time grid
+
+HOL4 checked the signed rounding of 340,484 actual time-grid entries at conductor 10,000. The four characters each supplied 85,121 values, including the interpolation halo. All 5,324 tiles passed. Eight controls changed one proposed head by one unit. The kernel proved that each modified tile failed. [Full replay](all01.log) and [input identities and timings](results.json)
+
+The source stores four biased 256-bit integer fields per packed word. Given a tile exponent e, the integer checker verifies each quotient by 2^e against the corresponding signed short field. The project theory proves that reversing the biases puts the original integer in the half-open interval between the lower endpoint and that endpoint plus 2^e. The raw centers themselves have 220 fractional bits. [Checker and rounding proof](ProjectScript.sml)
+
+The complete process took 60.34 CPU seconds and peaked at 269 MiB. Inside the worker, constructing HOL numerals took 25.79 seconds, and checking the individual tile propositions took 23.96 seconds. The worker used 51.29 CPU seconds overall. The eight original endpoint tile proofs and the eight rejection controls are in the exported theory. The worker checked the other tile propositions in memory and released them. The numerical FFT that supplied the original raw centers is still an external input.
+
+At the same per-sample rate, 18,477,108 labels with two 128-node halos on the 640-extra-node schedule would use about **75,000 core-hours** inside these workers, or **88,200 core-hours** at the complete process rate. The extrapolation uses four labels at one conductor. It charges for admitting the original numerals. An FFT worker that rounds its own proved output could avoid that admission cost. The earlier compressed-to-count check consumes the exported short fields. The historical comparison still requires matched guard schedules and a price for the full analytic inputs. [Previous grid-to-count join](../grid-sign-join/README.md)
+
+To reproduce the input run `source.py` in the campaign Python environment. Build `Project`, `ProjectionPilot`, and `ProjectionAll` in that order with the isolated local HOL4 runner. The pilot checks every 83rd tile plus the final partial tile in all four channels. Run `report.py` to verify the benchmark receipts and input hashes.

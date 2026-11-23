@@ -1,0 +1,102 @@
+{
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "dependency_sha256": {
+    "grh-goldbach-20261120\\team\\certificate\\checks\\endpoint02\\UpperBinaryPilot.olean": "bbc72a2b0ec42964a10ee728e71882d184f7992fccc5b483af13a0941f2abe3e",
+    "backend-costs-20261112\\finite-lean\\BatchPrime.olean": "25b61eb487e9dafab1d173e5faee22f88b0c92c86f6c0cdad6aa146850c83ea5",
+    "backend-costs-20261112\\finite-lean\\PrimeBitmap.olean": "ae47e41d6e76cbc842c19f13bdd9763f70648920df5290bfc7f1be0b80f86e3d",
+    "formal-goldbach-bench\\prime-cert\\PrimeSupport.olean": "b60f15c8aa5e55421278f5be40b784002f0290094261201a8e404ecc43767127",
+    "grh-goldbach-20261120\\team\\certificate\\upper-fixture.json": "7b4aff95dfd28779062468926596d591ad3534c1155104ee7c570fffb564733c"
+  },
+  "checked": [
+    {
+      "module": "PackedDigits",
+      "exit": 0,
+      "cpu_seconds": 4.203125,
+      "wall_seconds": 13.23936209999738,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\receipts\\packed01\\PackedDigits.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\PackedDigits.lean"
+      ],
+      "source_sha256": "94bda0ba03027eee8ad0fc40ae9b9e20305a489b018e3f4872345d35ff858714",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "155eca17b97f9571d861d52366fbb7e8704cd4ed7ab780bf0f5ff90c7beecf8a"
+    },
+    {
+      "module": "PackedChunks",
+      "exit": 0,
+      "cpu_seconds": 2.25,
+      "wall_seconds": 2.871094499998435,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\receipts\\packed01\\PackedChunks.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\PackedChunks.lean"
+      ],
+      "source_sha256": "14581fbc0702938a6fa1d8e89ee4b348ed589296e6cc1d2d14629fb1e65cae0d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "3e0e6c588010d8d21a126e028b73c70d2d5fcc5cfbd4ba496583386f441f188d"
+    },
+    {
+      "module": "PackedGoldbach",
+      "exit": 0,
+      "cpu_seconds": 17.65625,
+      "wall_seconds": 160.67659819999972,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\receipts\\packed01\\PackedGoldbach.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\PackedGoldbach.lean"
+      ],
+      "source_sha256": "aa8f2da8a9c720d4908258bcbf2d51ed86a724cb08ec6e090b4a08f3b0f780b2",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "1e99db5cb5fdd27e43d5468ab3cead844afa6ee284f930d385dab010315c02de"
+    },
+    {
+      "module": "PackedExample",
+      "exit": 0,
+      "cpu_seconds": 11.828125,
+      "wall_seconds": 17.264740400001756,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\receipts\\packed01\\PackedExample.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\PackedExample.lean"
+      ],
+      "source_sha256": "dfb579a523d9fca5bd8871cf1a3822cf8f4674e8ca7a5ee8a22742e8d2f1ebdd",
+      "log_sha256": "66b63c162ebdb95301f9167e70d94aee67c234d2fc8892b3324eb773f6ff909b",
+      "olean_sha256": "fde7eb1515ccf323849828008e6586154f0d8e494f7e4cbba0b1554332100c73"
+    },
+    {
+      "module": "PackedEndpoint",
+      "exit": 0,
+      "cpu_seconds": 27.015625,
+      "wall_seconds": 36.11481509999794,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\receipts\\packed01\\PackedEndpoint.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\PackedEndpoint.lean"
+      ],
+      "source_sha256": "74280537b061496b7a36756cfc427f23428c8043ffc6d30367895b0491a35c35",
+      "log_sha256": "6ee647cb43bcbc97942643fc004c19fa10f60621e3069c45d85573b9bebf7ad6",
+      "olean_sha256": "243f4e8db1da12295d1cbe683ed3f611a3518f4e201a366666a04522a05e4010"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SelectedHead">>
+Saved definition ____ "hddiv_def"
+Starting translation of hddiv from SelectedHeadTheory.
+Saved theorem _______ "cv_hddiv_thm"
+Finished translating hddiv, stored in cv_hddiv_thm
+Saved definition ____ "halves_def"
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "halves_pre_rules"
+Saved theorem _______ "halves_pre_ind"
+Saved theorem _______ "halves_pre_strongind"
+Saved theorem _______ "halves_pre_cases"
+Saved theorem _______ "cv_halves_thm"
+Finished translating halves, stored in cv_halves_thm
+
+WARNING: definition of cv_halves has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem halves_pre[cv_pre]:
+  ∀w k x. halves_pre w k x
+Proof
+  ho_match_mp_tac halves_ind (* for example *)
+  ...
+QED
+
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript.sml:15:1-11: parse error: expected 'QED'
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript.sml:14: error: Value or constructor (QED) has not been declared Found near simp [hp] QED
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript.sml : Fail "Static Errors"
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript : Fail "Static Errors"
+Uncaught exception at ./basis/FinalPolyML.sml:492: Fail "Static Errors"
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript - exited with code 1

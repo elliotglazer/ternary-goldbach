@@ -1,0 +1,67 @@
+{
+  "status": "PASS_STATIC_SOURCE_ONLY",
+  "files": [
+    {
+      "path": "audit/c8_supervisor_capability_preflight_20261111_v3.py",
+      "sha256": "4488B65FB487CDF22E6B924410AA61032C20B423C88491C4E4984038337BA7C0",
+      "bytes": 25222,
+      "syntax_only": true
+    },
+    {
+      "path": "audit/coordinator_c8_capability_run_20261111_v3.py",
+      "sha256": "299953B969E49E9E329BCC9DD790336D913AF1B4FAE0637330F8F9E55F9EAF32",
+      "bytes": 18312,
+      "syntax_only": true
+    },
+    {
+      "path": "audit/C8_SUPERVISOR_CAPABILITY_PREFLIGHT_V3_2026-11-11.md",
+      "sha256": "0B7CAC07BF8BBDC15F8FF895983C96EDE2410485283A814E032796C0F22F4D7B",
+      "bytes": 19620
+    },
+    {
+      "path": "audit/c8_supervisor_capability_preparation_20261111_v3.json",
+      "sha256": "7AF0D112F17813121F638A2620526CC2BEE66D63B2A16822C8B4943A8AFBF0B1",
+      "bytes": 1120
+    },
+    {
+      "path": "audit/c8_supervisor_benign_child_20261111.py",
+      "sha256": "4DC1257673F86240255F1B5331DA20BEAABE1B5DEFF85FF5E80D0A0EF58241BE",
+      "bytes": 2363,
+      "syntax_only": true
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_01_v2.json",
+      "sha256": "92888F50181BF8C9E0E02B58658ED2A8ACA690B83266658B276E8B53E98B7D79",
+      "bytes": 999
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_01/completion.json",
+      "sha256": "2E98F8A15E6C9646538B9A5ECB7E870F8045CA2D505EA1E85FA1DD567B8D0384",
+      "bytes": 1616
+    }
+  ],
+  "checks": {
+    "syntax_and_compile_text_only": true,
+    "outer_binds_frozen_inner": true,
+    "caps_match": {
+      "total_ns": 30000000000,
+      "normal_ns": 15000000000,
+      "timeout_ns": 1000000000,
+      "cleanup_ns": 2000000000,
+      "peak_bytes": 268435456,
+      "aggregate_peak_bytes": 268435456,
+      "output_bytes": 4194304,
+      "explicit_allocation_bytes": 50331648
+    },
+    "new_runtime_manifest_absent": true,
+    "old_failed_attempt_bytes_preserved": true
+  },
+  "check_harness_note": "Initial AST literal_eval did not support the dict constructor and multiplication in CAPS; corrected with an explicit three-form AST visitor. No target execution occurred.",
+  "not_performed": [
+    "module_import",
+    "Windows_API_call",
+    "process_fixture",
+    "new_runtime_attempt"
+  ],
+  "scope": "V3 diagnostic source preparation; original V2 attempt remains FAIL"
+}

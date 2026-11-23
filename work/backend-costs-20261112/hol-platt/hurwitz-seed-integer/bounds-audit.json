@@ -1,0 +1,58 @@
+{
+  "bands": [
+    {
+      "band": 1,
+      "degrees": 57,
+      "truncation_ulps": 0.03121602209472253,
+      "arithmetic_ulps": 2.7789183173133978e-12,
+      "total_ulps": 0.7812160220975014,
+      "phase_error_power_of_two": -368
+    },
+    {
+      "band": 2,
+      "degrees": 57,
+      "truncation_ulps": 0.030882861842618327,
+      "arithmetic_ulps": 1.0254104953595363e-11,
+      "total_ulps": 0.7808828618528725,
+      "phase_error_power_of_two": -367
+    },
+    {
+      "band": 3,
+      "degrees": 53,
+      "truncation_ulps": 0.03124736735207411,
+      "arithmetic_ulps": 3.935982947088452e-11,
+      "total_ulps": 0.781247367391434,
+      "phase_error_power_of_two": -366
+    },
+    {
+      "band": 4,
+      "degrees": 61,
+      "truncation_ulps": 0.031249647192726583,
+      "arithmetic_ulps": 2.817427740302993e-10,
+      "total_ulps": 0.7812496474744693,
+      "phase_error_power_of_two": -365
+    },
+    {
+      "band": 5,
+      "degrees": 49,
+      "truncation_ulps": 0.031199959348509033,
+      "arithmetic_ulps": 4.148068731847019e-10,
+      "total_ulps": 0.7811999597633159,
+      "phase_error_power_of_two": -364
+    },
+    {
+      "band": 6,
+      "degrees": 49,
+      "truncation_ulps": 0.03122245808234425,
+      "arithmetic_ulps": 4.2105041299792916e-10,
+      "total_ulps": 0.7812224585033947,
+      "phase_error_power_of_two": -364
+    }
+  ],
+  "source_sha256": "a262702477f65c9ea18c16c74fab59a2016f3ff0c07ecc93a0ac3ac3de939751",
+  "totals": {
+    "degrees": 326,
+    "max_total_ulps": 0.7812496474744693
+  },
+  "assumptions": "Euler\u2013Maclaurin with the even periodic Bernoulli remainder, the standard absolute-series bound, and the documented elementary log/phase error estimates. The saved plans are independently rechecked with exact rational inequalities."
+}

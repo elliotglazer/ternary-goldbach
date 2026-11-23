@@ -1,0 +1,23 @@
+{
+  "theorem": "EnclosureTheory.tile_enclosures",
+  "statement": "!w e n xs hs. project_ok w e n xs hs ==> LIST_REL encloses (expanded n (2**256) xs) (grid [(w,e,n,hs)])",
+  "raw_encoding": "signed sample = int(raw)-2^255",
+  "encloses": "q*int(u) <= int(raw)-2^255 < q*int(u)+int(u)",
+  "hypotheses": [],
+  "oracle_tag_whitelist": [
+    "DISK_THM"
+  ],
+  "explicit_axiom_tags": [],
+  "status": 0,
+  "sha256": {
+    "EnclosureScript.sml": "d15e20dda9f062b52d5549902b54d57b1a802cacec8386c8a693e481a0d6b5ad",
+    "Holmakefile": "e9c7a2e64e2d3f7f3e4a2e2399e61aeb53529c4607538893eeb6bb168b3e8fb0",
+    "../grid-projection/.hol/objs/ProjectTheory.dat": "0750c0de80f4a1939c6f85063cf94066c048d52181ef784f58b38b8361df163e",
+    "../grid-sign-join/.hol/objs/GridSignsTheory.dat": "5b80f02b4cffcb9dc8215fb9dc47fdc0aab8fb735ff994ad7d3f0f759d883406",
+    ".hol/objs/EnclosureTheory.dat": "e7a71637ab4696e8c9d676376add02c7faf9aa576badc1d71b50d51b08270acb",
+    "generic07.sha256": "3d78e4ec6353998e32e22f2868be8db0392a386e3746c6ac28338fc61c6428c3",
+    "generic07.log": "9b24ea13341db0b60b58c817e6bb07c7a769e1d188d3aa8e5846c2f428c997b1",
+    "generic07.time": "67fb14dfff2262717905ccee73161c1df77df3855395051fecb8c94f78666aab",
+    "generic07.status": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  }
+}

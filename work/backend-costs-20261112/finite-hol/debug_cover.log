@@ -1,0 +1,130 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 35 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val it =
+   [([],
+     “∀[0;32mws[0m [0;32mtarget[0m.
+        tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m [0;32mws[0m ⇒
+        ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;32mws[0m ⇒ binary_goldbach ([0;32mtarget[0m + 2 * [0;32mj[0m)”)]: goal list
+OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mtarget[0m.
+          tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;1;34mws[0m ⇒ binary_goldbach ([0;32mtarget[0m + 2 * [0;32mj[0m)
+   ------------------------------------
+        ∀[0;32mh[0m [0;32mtarget[0m.
+          tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m ([0;32mh[0m::[0;1;34mws[0m) ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < SUC (LENGTH [0;1;34mws[0m) ⇒ binary_goldbach (2 * [0;32mj[0m + [0;32mtarget[0m)
+   
+   : proof
+OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mtarget[0m.
+          tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;1;34mws[0m ⇒ binary_goldbach ([0;32mtarget[0m + 2 * [0;32mj[0m)
+   ------------------------------------
+        tree_primes [0;1;34mtree[0m ∧ [0;1;34mh0[0m + [0;1;34mh1[0m = [0;1;34mtarget[0m ∧ tree_contains [0;1;34mh0[0m [0;1;34mtree[0m ∧
+        tree_contains [0;1;34mh1[0m [0;1;34mtree[0m ∧ checked_cover ([0;1;34mtarget[0m + 2) [0;1;34mtree[0m [0;1;34mws[0m ⇒
+        ∀[0;32mj[0m. [0;32mj[0m < SUC (LENGTH [0;1;34mws[0m) ⇒ binary_goldbach (2 * [0;32mj[0m + [0;1;34mtarget[0m)
+   
+   : proof
+OK..
+2 subgoals:
+val it =
+   
+    0.  ∀[0;32mtarget'[0m.
+          checked_cover [0;32mtarget'[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;1;34mws[0m ⇒ binary_goldbach (2 * [0;32mj[0m + [0;32mtarget'[0m)
+    1.  tree_primes [0;1;34mtree[0m
+    2.  [0;1;34mh0[0m + [0;1;34mh1[0m = [0;1;34mtarget[0m
+    3.  tree_contains [0;1;34mh0[0m [0;1;34mtree[0m
+    4.  tree_contains [0;1;34mh1[0m [0;1;34mtree[0m
+    5.  checked_cover ([0;1;34mtarget[0m + 2) [0;1;34mtree[0m [0;1;34mws[0m
+    6.  [0;1;34mn[0m < LENGTH [0;1;34mws[0m
+   ------------------------------------
+        binary_goldbach ([0;1;34mtarget[0m + 2 * SUC [0;1;34mn[0m)
+   
+    0.  ∀[0;32mtarget'[0m.
+          checked_cover [0;32mtarget'[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;1;34mws[0m ⇒ binary_goldbach (2 * [0;32mj[0m + [0;32mtarget'[0m)
+    1.  tree_primes [0;1;34mtree[0m
+    2.  [0;1;34mh0[0m + [0;1;34mh1[0m = [0;1;34mtarget[0m
+    3.  tree_contains [0;1;34mh0[0m [0;1;34mtree[0m
+    4.  tree_contains [0;1;34mh1[0m [0;1;34mtree[0m
+    5.  checked_cover ([0;1;34mtarget[0m + 2) [0;1;34mtree[0m [0;1;34mws[0m
+    6.  T
+   ------------------------------------
+        binary_goldbach [0;1;34mtarget[0m
+
+2 subgoals
+   : proof
+OK..
+metis: r[+0+10]+0+0+0+0+0+0+0+2+1+1+0+0+4+1+0+1#
+
+Goal proved.
+ [.......] ⊢ binary_goldbach target
+
+Remaining subgoals:
+val it =
+   
+    0.  ∀[0;32mtarget'[0m.
+          checked_cover [0;32mtarget'[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+          ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;1;34mws[0m ⇒ binary_goldbach (2 * [0;32mj[0m + [0;32mtarget'[0m)
+    1.  tree_primes [0;1;34mtree[0m
+    2.  [0;1;34mh0[0m + [0;1;34mh1[0m = [0;1;34mtarget[0m
+    3.  tree_contains [0;1;34mh0[0m [0;1;34mtree[0m
+    4.  tree_contains [0;1;34mh1[0m [0;1;34mtree[0m
+    5.  checked_cover ([0;1;34mtarget[0m + 2) [0;1;34mtree[0m [0;1;34mws[0m
+    6.  [0;1;34mn[0m < LENGTH [0;1;34mws[0m
+   ------------------------------------
+        binary_goldbach ([0;1;34mtarget[0m + 2 * SUC [0;1;34mn[0m)
+   
+   : proof
+OK..
+metis: r[+0+10]+0+0+0+0+0+0+0+0+0+1#
+
+Goal proved.
+ [.......] ⊢ binary_goldbach (target + 2 * SUC n)
+
+Goal proved.
+ [.]
+⊢ tree_primes tree ∧ h0 + h1 = target ∧ tree_contains h0 tree ∧
+  tree_contains h1 tree ∧ checked_cover (target + 2) tree ws ⇒
+  ∀j. j < SUC (LENGTH ws) ⇒ binary_goldbach (2 * j + target)
+
+Goal proved.
+ [.]
+⊢ ∀h target.
+    tree_primes tree ∧ checked_cover target tree (h::ws) ⇒
+    ∀j. j < SUC (LENGTH ws) ⇒ binary_goldbach (2 * j + target)
+val it =
+   Initial goal proved.
+   ⊢ ∀[0;32mws[0m [0;32mtarget[0m.
+       tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m [0;32mws[0m ⇒
+       ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;32mws[0m ⇒ binary_goldbach ([0;32mtarget[0m + 2 * [0;32mj[0m): proof
+val checked_cover_sound =
+   ⊢ ∀[0;32mws[0m [0;32mtarget[0m.
+       tree_primes [0;1;34mtree[0m ∧ checked_cover [0;32mtarget[0m [0;1;34mtree[0m [0;32mws[0m ⇒
+       ∀[0;32mj[0m. [0;32mj[0m < LENGTH [0;32mws[0m ⇒ binary_goldbach ([0;32mtarget[0m + 2 * [0;32mj[0m): thm
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in scratch)>>
+metis: r[+0+11]+0+0+0+0+0+0+0+0+0+0+1+1+1#
+val checked_cover_interval =
+   ⊢ [0;1;34mtarget[0m MOD 2 = 0 ∧ tree_primes [0;1;34mtree[0m ∧ checked_cover [0;1;34mtarget[0m [0;1;34mtree[0m [0;1;34mws[0m ⇒
+     ∀[0;32mn[0m. [0;1;34mtarget[0m ≤ [0;32mn[0m ∧ [0;32mn[0m < [0;1;34mtarget[0m + 2 * LENGTH [0;1;34mws[0m ∧ [0;32mn[0m MOD 2 = 0 ⇒
+         binary_goldbach [0;32mn[0m: thm
+Definition has been stored under "from_FiniteCover_FiniteCover_prime_tree_def"
+Finished translating tree_contains, stored in cv_tree_contains_thm
+Finished translating checked_cover, stored in cv_checked_cover_thm
+DEBUG_COVER_COMPLETE
+> 

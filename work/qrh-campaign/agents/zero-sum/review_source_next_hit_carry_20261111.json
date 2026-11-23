@@ -1,0 +1,44 @@
+{
+  "status": "PASS_INDEPENDENT_CARRY_SCALAR_AND_PROTOCOL_CHECKS",
+  "scope": "Exact scalar and abstract integer progressions only; no primes, source sieve, author execution or builds",
+  "author_pins": {
+    "note": "4A44E6866C2FCC40A5D0B78F342C5F1B7E49BA77F3749C0E172CB3FF6488062B",
+    "script": "348781327FEBDC120869A79A18EFE10E882BD43B1B6004CC01EEE3620B6136B3",
+    "receipt": "43127729EB0CB7E9722A909587D2A136209D20D77F45AF2CEB449C1EDB47FDC0"
+  },
+  "checks": 22111,
+  "transition_cases": 5417,
+  "wrong_count_rejections": 132,
+  "active": 66,
+  "gap_empty": 415,
+  "preactivation_empty": 4936,
+  "endpoint_equality_cases": 33,
+  "costs": [
+    {
+      "L_exponent": 32,
+      "empty": 231,
+      "sparse": 4961,
+      "dense": 5639,
+      "fresh_extra": 5821
+    },
+    {
+      "L_exponent": 34,
+      "empty": 245,
+      "sparse": 5142,
+      "dense": 5820,
+      "fresh_extra": 6471
+    },
+    {
+      "L_exponent": 36,
+      "empty": 259,
+      "sparse": 5342,
+      "dense": 6020,
+      "fresh_extra": 7155
+    }
+  ],
+  "required_qualifications": [
+    "Raw-to-packed exact equality precedes narrow fresh comparisons and remains separately charged",
+    "Counts of actual prime/chunk cases are uncomputed",
+    "Complete immutable vector linkage and ordinary proof compiler remain required"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "source": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean",
+  "original_import_count": 180,
+  "proposed_import_count": 3,
+  "candidate_imports": [
+    "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+    "Mathlib.NumberTheory.LSeries.Nonvanishing",
+    "Mathlib.Analysis.Complex.HalfPlane"
+  ],
+  "provider_roots": [
+    "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+    "Mathlib.NumberTheory.LSeries.Nonvanishing",
+    "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+    "Mathlib.NumberTheory.GaussSum",
+    "Mathlib.Analysis.Analytic.Uniqueness",
+    "Mathlib.Analysis.Analytic.Constructions",
+    "Mathlib.Analysis.Complex.Convex",
+    "Mathlib.Analysis.Complex.HalfPlane",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.Group",
+    "Mathlib.Tactic.GCongr"
+  ],
+  "public_import_redundancy": {
+    "Mathlib.NumberTheory.NumberField.Cyclotomic.PID": [],
+    "Mathlib.NumberTheory.LSeries.Nonvanishing": [],
+    "Mathlib.NumberTheory.ArithmeticFunction.Moebius": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.GaussSum"
+    ],
+    "Mathlib.NumberTheory.GaussSum": [
+      "Mathlib.NumberTheory.LSeries.Nonvanishing"
+    ],
+    "Mathlib.Analysis.Analytic.Uniqueness": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing"
+    ],
+    "Mathlib.Analysis.Analytic.Constructions": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing"
+    ],
+    "Mathlib.Analysis.Complex.Convex": [
+      "Mathlib.NumberTheory.LSeries.Nonvanishing"
+    ],
+    "Mathlib.Analysis.Complex.HalfPlane": [],
+    "Mathlib.Analysis.Real.Sqrt": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane"
+    ],
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Tactic.Positivity"
+    ],
+    "Mathlib.Tactic.FieldSimp": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt"
+    ],
+    "Mathlib.Tactic.Linarith": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt"
+    ],
+    "Mathlib.Tactic.NormNum": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Tactic.Linarith"
+    ],
+    "Mathlib.Tactic.Positivity": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.GaussSum"
+    ],
+    "Mathlib.Tactic.Ring": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Tactic.Group"
+    ],
+    "Mathlib.Tactic.Group": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane"
+    ],
+    "Mathlib.Tactic.GCongr": [
+      "Mathlib.NumberTheory.NumberField.Cyclotomic.PID",
+      "Mathlib.NumberTheory.LSeries.Nonvanishing",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.NumberTheory.GaussSum",
+      "Mathlib.Analysis.Analytic.Uniqueness",
+      "Mathlib.Analysis.Analytic.Constructions",
+      "Mathlib.Analysis.Complex.Convex",
+      "Mathlib.Analysis.Complex.HalfPlane",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Tactic.Group"
+    ]
+  },
+  "original_all_mathlib_closure_count": 4023,
+  "candidate_all_mathlib_closure_count": 3827,
+  "source_sha256": "a97237026d0add0b1e1f6a3a025a253a9e6dd17c0e06929f779772727f02260b",
+  "candidate_sha256": "7a9e677b2abd33b80be2278b202895e94a11c71a49b81da72314fd8e1d05091b",
+  "body_sha256": "6a659f2c2a18dbb4197b99f8811ebecc2aa4bbe204bc21433213398d960a1ab6",
+  "declaration_body_bytes_equal": true,
+  "compiled": false,
+  "performance_measured": false
+}

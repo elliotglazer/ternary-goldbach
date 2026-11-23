@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\TreeBinding.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\TreeBinding.lean"
+  ],
+  "exit_code": 1,
+  "stop": null,
+  "wall_seconds": 3.0855478000012226,
+  "user_cpu_seconds": 0.546875,
+  "system_cpu_seconds": 2.5625,
+  "cpu_seconds": 3.109375,
+  "peak_working_set_bytes": 445325312,
+  "observed_peak_private_bytes": 972632064,
+  "memory_samples": 61,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "TreeBinding.lean",
+      "bytes": 240,
+      "sha256": "EBC10FB855DA4359F64395911BFC3994B9E37E2B2C53885EB056E9D6DD1E0F81"
+    },
+    {
+      "path": "tree_binding.log",
+      "bytes": 1216,
+      "sha256": "7B0B709FA2CD7BC8F62FF6DED93841A0AFC89B3F641BB900F2FBE01BC97AAB69"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

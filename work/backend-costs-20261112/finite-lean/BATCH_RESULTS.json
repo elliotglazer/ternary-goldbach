@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "scope": "1537-node Lucas graph, all 393 requested root primes and closed 1024-target interval",
+  "interval": [
+    3999999997356537860,
+    3999999997356539908
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "data_audit": {
+    "passed": true,
+    "certificate_nodes": 1537,
+    "expanded_factors": 7614,
+    "root_primes": 393,
+    "witnesses": 1024,
+    "source_sha256": "0026850572c53ce109debdf0dbf5aec97eae4e3a4095b48c5377b85129ff0db3"
+  },
+  "positive_controls": 5,
+  "negative_controls": 9,
+  "phases": {
+    "full": {
+      "kernel_elapsed_seconds": [
+        18.6024854,
+        17.3168339,
+        18.5160106
+      ],
+      "median_kernel_elapsed_seconds": 18.5160106,
+      "declarations": 265,
+      "median_process_cpu_seconds": 52.1875,
+      "median_process_wall_seconds": 52.8791954999906,
+      "observed_peak_private_bytes": 2938826752
+    },
+    "primality": {
+      "kernel_elapsed_seconds": [
+        18.4282149,
+        17.3979917,
+        14.9855316
+      ],
+      "median_kernel_elapsed_seconds": 17.3979917,
+      "declarations": 255,
+      "median_process_cpu_seconds": 48.875,
+      "median_process_wall_seconds": 49.40374300000258,
+      "observed_peak_private_bytes": 2938503168
+    },
+    "roots": {
+      "kernel_elapsed_seconds": [
+        0.2973011,
+        0.4071334,
+        0.2744712
+      ],
+      "median_kernel_elapsed_seconds": 0.2973011,
+      "declarations": 2,
+      "median_process_cpu_seconds": 15.0,
+      "median_process_wall_seconds": 15.145484699984081,
+      "observed_peak_private_bytes": 2896945152
+    },
+    "cover": {
+      "kernel_elapsed_seconds": [
+        0.3385381,
+        0.3161294,
+        0.3391755
+      ],
+      "median_kernel_elapsed_seconds": 0.3385381,
+      "declarations": 2,
+      "median_process_cpu_seconds": 13.953125,
+      "median_process_wall_seconds": 14.143691800010856,
+      "observed_peak_private_bytes": 2894725120
+    }
+  },
+  "baseline_full_median_kernel_elapsed_seconds": 9.4516709,
+  "new_over_baseline_full_replay_ratio": 1.959019817331981,
+  "incremental_project_build_cpu_seconds": 209.5,
+  "incremental_project_build_wall_seconds": 268.0381472000445,
+  "build_components": {
+    "batchprime02": {
+      "cpu_seconds": 19.296875,
+      "wall_seconds": 74.02380240001366
+    },
+    "batchdata02": {
+      "cpu_seconds": 21.015625,
+      "wall_seconds": 22.075726199982455
+    },
+    "batchvalid_00": {
+      "cpu_seconds": 18.375,
+      "wall_seconds": 18.61538310002652
+    },
+    "batchvalid_01": {
+      "cpu_seconds": 19.203125,
+      "wall_seconds": 19.999276900023688
+    },
+    "batchvalid_02": {
+      "cpu_seconds": 18.8125,
+      "wall_seconds": 19.14098989998456
+    },
+    "batchvalid_03": {
+      "cpu_seconds": 18.46875,
+      "wall_seconds": 18.676353199989535
+    },
+    "batchvalid_04": {
+      "cpu_seconds": 18.921875,
+      "wall_seconds": 19.26896580000175
+    },
+    "batchvalid_05": {
+      "cpu_seconds": 19.25,
+      "wall_seconds": 19.34250530001009
+    },
+    "batchvalid_06": {
+      "cpu_seconds": 18.34375,
+      "wall_seconds": 18.52137530001346
+    },
+    "batchvalid_07": {
+      "cpu_seconds": 20.796875,
+      "wall_seconds": 21.05847879999783
+    },
+    "batchblock02": {
+      "cpu_seconds": 17.015625,
+      "wall_seconds": 17.315290300000925
+    }
+  },
+  "limitations": [
+    "Generic support and literal definitions are imported, not rechecked in timed certificate replay",
+    "Kernel loop reports elapsed time; separate whole-process CPU includes imports and warmup",
+    "Incremental build uses prebuilt common PrimeBitmap/PrimeSupport/Mathlib and excludes audits, replays, failed attempts",
+    "Some corruptions reject at an earlier guard; they do not isolate every individual check",
+    "The root conjunction contains 162 primes unused by these explicit pair witnesses",
+    "No transfer of HOL's prime-phase speedup to stock Lean or full TG"
+  ]
+}

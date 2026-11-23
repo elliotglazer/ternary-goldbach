@@ -1,0 +1,78 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/SeedCasesScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/seedbench.sml:32: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+<<HOL message: Created theory "SeedCases">>
+Saved definition ____ "rows_bad_def"
+Starting translation of rows_bad from SeedCasesTheory.
+Saved theorem _______ "cv_rows_bad_thm"
+Finished translating rows_bad, stored in cv_rows_bad_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/SeedCasesScript.sml:17: warning: Pattern is not exhaustive. Found near val [id, f, c, ...] = tok ()
+ADMISSION 1 3.379814
+JOIN_EVAL 0.001242 0.195557 0.000284
+Saved theorem _______ "all_seeds_1"
+SEED_REPLAY 1 1 0.199227
+JOIN_EVAL 0.003406 0.298748 0.00017
+SEED_REPLAY 1 2 0.302678
+JOIN_EVAL 0.001394 0.151998 0.000151
+SEED_REPLAY 1 3 0.153761
+JOIN_EVAL 0.001672 0.192398 0.000166
+Saved theorem _______ "altered_seed_is_false"
+ADMISSION 2 4.040173
+JOIN_EVAL 0.001195 0.876626 0.000252
+Saved theorem _______ "all_seeds_2"
+SEED_REPLAY 2 1 0.880335
+JOIN_EVAL 0.002613 0.331314 0.000135999999999
+SEED_REPLAY 2 2 0.334303
+JOIN_EVAL 0.001109 0.175341 0.000169999999999
+SEED_REPLAY 2 3 0.176874
+ADMISSION 3 7.745339
+JOIN_EVAL 0.001406 0.341186 0.000225
+Saved theorem _______ "all_seeds_3"
+SEED_REPLAY 3 1 0.345719
+JOIN_EVAL 0.001448 0.381655 0.000133999999999
+SEED_REPLAY 3 2 0.383483
+JOIN_EVAL 0.002475 0.350814 0.000138
+SEED_REPLAY 3 3 0.353674
+ADMISSION 4 19.902524
+JOIN_EVAL 0.003015 1.19384 0.000157999999999
+Saved theorem _______ "all_seeds_4"
+SEED_REPLAY 4 1 1.205572
+JOIN_EVAL 0.001249 0.767279 0.000171000000002
+SEED_REPLAY 4 2 0.768984
+JOIN_EVAL 0.001442 0.840438 0.000189999999996
+SEED_REPLAY 4 3 0.842482
+ADMISSION 5 43.92024
+JOIN_EVAL 0.001836 1.567727 0.000205999999991
+Saved theorem _______ "all_seeds_5"
+SEED_REPLAY 5 1 1.57264
+JOIN_EVAL 0.00188100000001 1.730868 0.000184999999988
+SEED_REPLAY 5 2 1.733223
+JOIN_EVAL 0.002776 1.12123 0.000168000000002
+SEED_REPLAY 5 3 1.124483
+ADMISSION 6 32.793519
+JOIN_EVAL 0.00157200000001 1.161055 0.000201000000004
+Saved theorem _______ "all_seeds_6"
+SEED_REPLAY 6 1 1.165793
+JOIN_EVAL 0.001741 0.962564 0.000168000000002
+SEED_REPLAY 6 2 0.964732
+JOIN_EVAL 0.00157 1.142779 0.000215999999995
+SEED_REPLAY 6 3 1.144853
+SEED_CASES_DONE
+Exporting theory "SeedCases" ... done.
+Theory "SeedCases" took 2m18s to build
+Holmake: [1/1] SeedCases

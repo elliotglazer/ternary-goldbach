@@ -1,0 +1,81 @@
+{
+  "status": "PASS_EXACT_FLOOR500_COUNTS_AND_TAIL",
+  "R": 132900,
+  "floor": 500,
+  "active_nonprincipal_conductors": 132899,
+  "modulus_gauss_checks": 199350,
+  "height_min": 500,
+  "height_max": 545549,
+  "max_height_conductors": [
+    4
+  ],
+  "conductors_at_floor": 130718,
+  "samples": {
+    "3": {
+      "H": 363700,
+      "count_upper": 1469350,
+      "log_upper_integer": 13
+    },
+    "4": {
+      "H": 545549,
+      "count_upper": 2387688,
+      "log_upper_integer": 14
+    },
+    "5": {
+      "H": 218220,
+      "count_upper": 881610,
+      "log_upper_integer": 13
+    },
+    "8": {
+      "H": 272775,
+      "count_upper": 1193847,
+      "log_upper_integer": 14
+    },
+    "10001": {
+      "H": 500,
+      "count_upper": 2245,
+      "log_upper_integer": 14
+    },
+    "60004": {
+      "H": 500,
+      "count_upper": 2588,
+      "log_upper_integer": 16
+    },
+    "132899": {
+      "H": 500,
+      "count_upper": 2759,
+      "log_upper_integer": 17
+    },
+    "265800": {
+      "H": 500,
+      "count_upper": 2930,
+      "log_upper_integer": 18
+    }
+  },
+  "directed_sum_denominator": 1000000000000,
+  "weighted_count_A_numerator": 2323866993447313558,
+  "weighted_count_B_numerator": 29202700956717402761203761,
+  "weighted_count_B_squarefree_numerator": 16213407210744388046449018,
+  "weighted_count_B_nonsquarefree_numerator": 12989293745973014714754743,
+  "Q_A_line_upper": "1161933496723656779/5000000000000000000000000000000000000",
+  "Q_B_line_upper": "29202700956717402761203761/10000000000000000000000000000000000000",
+  "sum_squarefree_inverse_phi_upper": "6738254872143/500000000000",
+  "geometric_window_bound": "1940423731872557/182250",
+  "high_tail_upper": "10000000000001/2500000000000000000000000000000000",
+  "remainder_upper": "2500002510000000000001/2500000000000000000000000000000000",
+  "TA_upper": "1/125000000",
+  "TB_upper": "3/6250",
+  "old_floor1000_profile_check": {
+    "GQA_upper": "6128960798291992227/1562500000000000000000000000000",
+    "GQB_upper": "41757214664919712916786157/1000000000000000000000000",
+    "A_bound": "4/1000000000000",
+    "B_bound": 42
+  },
+  "new_floor500_profile_check": {
+    "GQA_upper": "24400603431196792359/6250000000000000000000000000000",
+    "GQB_upper": "204418906697021819328426327/10000000000000000000000000",
+    "A_bound": "4/1000000000000",
+    "B_bound": 42
+  },
+  "scope": "Paper count and scalar bounds only. No actual spectrum, transform or function values."
+}

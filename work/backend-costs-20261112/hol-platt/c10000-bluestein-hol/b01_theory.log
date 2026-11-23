@@ -1,0 +1,43 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-bluestein-hol/BlueScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Blue">>
+Saved definition ____ "blue_mul_def"
+Saved definition ____ "blue_add_def"
+Saved definition ____ "blue_sub_def"
+Saved definition ____ "blue_conj_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Blue)>>
+Saved definition ____ "blue_even_def"
+Saved induction _____ "blue_even_ind"
+Saved definition ____ "blue_odd_def"
+Saved induction _____ "blue_odd_ind"
+Saved definition ____ "blue_zip_mul_def"
+Saved definition ____ "blue_zip_add_def"
+Saved definition ____ "blue_zip_sub_def"
+Saved theorem _______ "blue_fft_compute"
+Saved definition ____ "blue_fft_def"
+Saved definition ____ "blue_conjs_def"
+Saved definition ____ "blue_run_def"
+Starting translation of blue_run from BlueTheory.
+Starting translation of blue_zip_mul from BlueTheory.
+Starting translation of blue_mul from BlueTheory.
+
+ERROR: failed to find a suitable induction theorem in DefnBase.
+Stopping. Use cv_trans_pre instead (or one of its variants).
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-bluestein-hol/BlueScript.sml : HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-bluestein-hol/BlueScript : HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-bluestein-hol/BlueScript - exited with code 1

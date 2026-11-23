@@ -1,0 +1,6 @@
+INCLUDES = ../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: NaturalOffsetRoundTheory.uo NaturalOffsetCVTheory.uo
+
+natural_offset_audit.exe: natural_offset_audit.uo
+	$(HOLMOSMLC) -o $@ $<

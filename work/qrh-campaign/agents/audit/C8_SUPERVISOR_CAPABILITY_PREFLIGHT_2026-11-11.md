@@ -1,0 +1,82 @@
+# C8 benign Windows supervision capability preflight
+
+2026-11-11. **Preparation only. No test process, Windows API call, evaluator, numerical experiment, or Lean build has been run for this packet.** Source parsing is not a capability result. The supervisor refuses to launch without a later hash-bound authorization manifest. Independent static review and a separate root execution decision are required.
+
+## Purpose and limits
+
+This one attempt tests whether this host can return a positive, consistent `PeakWorkingSetSize` after a benign process has exited, using the **same original handle** returned by suspended creation. It also exercises assignment to a one-process job before resume, normal completion, a deliberate timeout, and rejection of a failed memory query. It does not prove that every future Windows query succeeds, certify the OS implementation, run C8 mathematics, authorize the numerical pilot, or supply a hard working-set prevention guarantee.
+
+The accepted conditional design is [C8_EXTERNAL_SUPERVISION_DESIGN_2026-11-11.md](C8_EXTERNAL_SUPERVISION_DESIGN_2026-11-11.md), SHA256 `EF2EF80F930AA029DE7418C9759A01465A867A40DFACAA0F9FE9B67ED8FC6B19`. Its independent review is [REVIEW_C8_EXTERNAL_SUPERVISION_DESIGN_2026-11-11.md](../independent-feasibility/REVIEW_C8_EXTERNAL_SUPERVISION_DESIGN_2026-11-11.md), SHA256 `AEA656CCB32B74151CB570EDFA58A63104771AF7E764DE9B95789299856251DF`.
+
+The native bindings follow [GetProcessMemoryInfo](https://learn.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-getprocessmemoryinfo), [PROCESS_MEMORY_COUNTERS](https://learn.microsoft.com/en-us/windows/win32/api/psapi/ns-psapi-process_memory_counters), [AssignProcessToJobObject](https://learn.microsoft.com/en-us/windows/win32/api/jobapi2/nf-jobapi2-assignprocesstojobobject), and the process/job documentation linked in the accepted design. Successful-query semantics and post-exit query availability remain distinct. No fallback to sampled maximum, commit usage, or job committed-memory peaks is permitted.
+
+## Fixed source and fixtures
+
+The only launch implementation is [c8_supervisor_capability_preflight_20261111.py](c8_supervisor_capability_preflight_20261111.py). Its only child is [c8_supervisor_benign_child_20261111.py](c8_supervisor_benign_child_20261111.py). Exact hashes are recorded in the adjacent preparation receipt, then must be copied into the authorization manifest. No source imports of either file are part of preparation.
+
+The executable is the base interpreter `C:/Users/glaze/AppData/Local/Python/pythoncore-3.14-64/python.exe`, SHA256 `4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9`. Using the base executable avoids depending on a virtual-environment redirector's process behavior. The exact child arguments are `-I -S`, the frozen child path, `normal` or `timeout`, the new attempt directory, and the manifest's 32-character token. `-I -S` suppresses user environment/site import customization. Working directory is the new attempt directory; no shell, inherited handles, console window, child workers, network access, or evaluator import is used. The code calls `subprocess.list2cmdline` only as a quoting helper; it never calls a subprocess launcher.
+
+The following tests are sequential and fixed, with no retry or parameter tuning:
+
+1. NULL-handle query: call `GetProcessMemoryInfo` with a fresh zero-initialized counter structure and invalid NULL handle. Native failure and rejection by the same semantic memory-validation function are both required. The error code is recorded; no particular error number is assumed. This is not a stale-handle query.
+2. Normal child: emit and flush/fsync `baseline`; wait at most five seconds for the exclusively created acknowledgment. Allocate and page-touch 16 MiB, emit `held`, and wait at most five seconds for its acknowledgment. The supervisor takes a **fresh** memory sample after reading each stage and before acknowledging it. Release the 16 MiB, collect garbage, emit `released`, then allocate and page-touch 32 MiB. Emit `finished` with a SHA256 of the exact preceding log bytes. Keep the late allocation alive through interpreter exit. Require exit code zero, exact four-stage sequence and allocation sizes, both acknowledgments, and the prefix hash. This uses 48 MiB cumulative explicit allocation, with at most 32 MiB explicitly live at once; interpreter overhead is separately subject to the observed peak gate.
+3. Timeout child: emit/flush/fsync `idle`, then sleep for 60 seconds. The supervisor's fixed one-second deadline must cause `TerminateProcess` with code `0xC8F1`; it must observe a signaled exit, the expected code and exact one-stage log, then query memory on the original handle. Natural completion is a failure of this control. An expected timeout result is recorded separately from normal success.
+
+Both cases require a new unnamed job with `ACTIVE_PROCESS_LIMIT | KILL_ON_JOB_CLOSE` (`0x2008`), limit one, and no breakaway flags. The job limits are read back. `CreateProcessW` uses `CREATE_SUSPENDED | CREATE_NO_WINDOW`; the process is assigned and membership checked before `ResumeThread` returns the expected previous count one. Failure of job compatibility or setup fails closed; there is no outside-job retry. Query final accounting and require `TotalProcesses=1` and `TotalTerminatedProcesses=0`. The latter counts job-limit violations, not the explicit timeout termination. Record, but do not require zero for, `ActiveProcesses` while retaining the process handle.
+
+The 64-bit ABI sizes required at runtime are PMC 72, extended job limits 144, basic job accounting 48, STARTUPINFO 104 and PROCESS_INFORMATION 24 bytes. Pointer-sized fields are not truncated. Function argument and return types are explicit. Post-exit creation/exit FILETIMEs corroborate identity; they do not replace elapsed monotonic timing. No PID-based handle reopening is used.
+
+## Limits and supervisor boundaries
+
+The **whole preflight**, including both children, setup and final publication, has a 30-second acceptance limit. The inner clock begins at the supervisor's first module-level `time.monotonic_ns` call and includes later imports, argument parsing, input verification and finalization. It cannot measure the interpreter bootstrap preceding that call or prove completion after its last call. Therefore the execution coordinator must additionally time from before supervisor creation to its observed exit, enforce the same 30-second limit, and reject any late completion. The final process-exit record is mandatory. A displayed receipt or final line alone is insufficient.
+
+The normal case has a 15-second case budget, the timeout case a one-second case budget. These clocks start before job setup; the reported per-case launch interval starts immediately before `CreateProcessW`. Short waits are 20 ms. All loops recheck the common absolute inner deadline; they do not reset a 30-second allowance for each child. Cleanup waits are at most two seconds and cannot turn a failed case into success. The caller must reject a whole attempt exceeding 30 seconds even if cleanup was necessary. Windows creation, scheduling, console output and asynchronous termination do not admit a promise of instantaneous physical prevention; the protocol enforces acceptance and requests termination. If cleanup does not observe exit, record `INCOMPLETE_TERMINATION` and fail. Closing the job handle remains a kill-on-close backstop, not evidence of observed exit.
+
+Each child must have a successful positive post-exit working-set peak at most 256 MiB, at least every recorded live peak and at least the simultaneous current working set. The normal child's final peak must also be at least 32 MiB. Failure of this last plausibility check is not proof of an OS bug: it is a failed capability fixture on this host. No monotonic decline in the live sampled peak is accepted. The supervisor checks its own current-process peak during guards and again after sealing; it too must stay below 256 MiB. Its receipt reports the last guarded peak, while the last check is an acceptance gate; this is **not** a post-exit measurement of the supervisor itself. The coordinator's outer completion evidence is required for the total deadline, not a claim that the child's complete OS peak metric was also obtained for the observer after exit.
+
+Output is limited to 4 MiB in aggregate: the external authorization manifest size, every file in the exclusively created attempt directory, and the final bounded console line (allowing CRLF). Accounting intentionally counts the copied manifest again. A 64 KiB reserve covers the completion seal; no pending duplicate snapshot is written. The log reader limits each log to 16 KiB. The exact allowable directory entries are `attempt.json`, `completion.json`, `normal.jsonl`, `normal.baseline.ack`, `normal.held.ack`, and `timeout.jsonl`. Unexpected entries or symbolic links fail. Existing attempt directories and files are never reused. The sole rewrite is the supervisor's own exclusively created `completion.json`, first `INCOMPLETE`, then its final status; a finalization breach may downgrade it to `FAIL`.
+
+Failure after a PASS-shaped file has been written but before final console/exit can leave that file behind. It is **not accepted**: a complete matching console seal and observed supervisor exit zero within the outer deadline are essential. Capture any traceback/outer tool logs within the coordinator's aggregate accounting; the internal accounting covers only the known files and final line. The fixed reviewed sources produce bounded error text; an externally forced abnormal termination is a failed attempt, not grounds for repeating it automatically.
+
+## Authorization schema (no manifest supplied here)
+
+The later root-created JSON has exactly these keys:
+
+```json
+{
+  "schema": "c8-benign-preflight-v1",
+  "authorize": "RUN_ONE_C8_SUPERVISOR_CAPABILITY_PREFLIGHT",
+  "token": "32 lowercase hexadecimal characters",
+  "attempt_name": "c8_benign_attempt_UNIQUE_SUFFIX",
+  "pins": {
+    "supervisor": "SHA256 of prepared supervisor",
+    "child": "SHA256 of prepared child",
+    "specification": "SHA256 of this specification",
+    "executable": "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9",
+    "accepted_design": "EF2EF80F930AA029DE7418C9759A01465A867A40DFACAA0F9FE9B67ED8FC6B19",
+    "accepted_design_review": "AEA656CCB32B74151CB570EDFA58A63104771AF7E764DE9B95789299856251DF"
+  },
+  "static_review": {"path": "absolute independent review .md path", "sha256": "SHA256"},
+  "caps": {
+    "total_ns": 30000000000,
+    "normal_ns": 15000000000,
+    "timeout_ns": 1000000000,
+    "cleanup_ns": 2000000000,
+    "peak_bytes": 268435456,
+    "output_bytes": 4194304,
+    "explicit_allocation_bytes": 50331648
+  }
+}
+```
+
+JSON duplicate keys and excess fields are rejected; inputs are size-limited before parsing. The static review must resolve to a Markdown file inside the campaign agents directory and match its hash. The root must read and accept that review; the launcher verifies its bytes, not the meaning of the review's prose. Authorization is tied to the exact source/spec/interpreter bytes and output name. The token provides cross-file identity, not authentication against malicious same-user processes. The reviewed benign code and exclusive output ownership are the threat model.
+
+## Completion schema and acceptance
+
+`completion.json` has schema `c8-benign-completion-v1`, status, manifest/source pins, token/caps, the invalid-query control, two ordered test records, file inventory and hashes, inner elapsed time, and guarded supervisor peak. A test record contains case/outcome, PID, original-handle marker, exit code, launch-to-observed-exit interval, final raw memory result, live peaks/stage samples, creation/exit/kernel/user FILETIMEs, job accounting, exact child records and log SHA/size. The normal child additionally seals its preceding raw log bytes. These hashes detect mismatched artifacts; they are not measurements of correctness by themselves.
+
+The final console line binds receipt SHA256, manifest SHA256, supervisor and child SHA256, status, inner elapsed and retained file bytes. A coordinator record must bind that line to actual supervisor exit zero, launch/exit timestamps and measured aggregate output (including its own retained record/log overhead). Only then may all three controls be recorded PASS. A missing query, missing stage, deadline/byte/peak breach, unexpected code/count, failed cleanup, mismatch, or incomplete coordinator record is a failed/incomplete capability attempt. There is no runtime authorization in this specification and no automatic numerical follow-on.
+
+## Preparation evidence
+
+The adjacent `c8_supervisor_capability_preparation_20261111.json` records AST and `compile(..., 'exec')` syntax checks performed on source text **without execution or module import**, plus source/specification/executable hashes. The independent reviewer should audit all native declarations, lifecycle and failure paths before any authorization manifest is created. No post-exit availability conclusion is claimed in that preparation receipt.

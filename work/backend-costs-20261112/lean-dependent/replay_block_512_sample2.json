@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayBlockP343N512.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayBlockP343N512.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 5.306055999972159,
+  "user_cpu_seconds": 1.984375,
+  "system_cpu_seconds": 3.234375,
+  "cpu_seconds": 5.21875,
+  "peak_working_set_bytes": 546992128,
+  "observed_peak_private_bytes": 1072398336,
+  "memory_samples": 105,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "Block",
+      "precision": 343,
+      "butterflies": 512,
+      "repetitions": 1,
+      "declarations": 3,
+      "kernel_wall_ns": 632240800
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayBlockP343N512.lean",
+      "bytes": 178,
+      "sha256": "0A06651E6880D9D5CA1326F223D0C6AC2A5116D681163A8418650C0DD3A6BBE5"
+    },
+    {
+      "path": "replay_block_512_sample2.log",
+      "bytes": 77,
+      "sha256": "8BBB33439A3AA5B0422AFC9CE9BA31407230EF4F129CA88EB827402A959B6C99"
+    },
+    {
+      "path": "ReplayBlockP343N512.olean",
+      "bytes": 1560,
+      "sha256": "0286B388313FA38F04FCD91090B5B7271658B8E8B412BD4A13B5F814B91582D1"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

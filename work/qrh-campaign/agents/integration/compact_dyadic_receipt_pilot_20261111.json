@@ -1,0 +1,431 @@
+{
+  "status": "PARTIAL: listed sufficient checks failed",
+  "source": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\prime-estimates\\principal_theta_modular_pilot_20261111.json",
+  "source_sha256": "C39982174CAC9C51E9F816275082BCE322CA2AD143D9FCE61081DF72E57B11EF",
+  "inventory": {
+    "endpoint_occurrences": 4058,
+    "pair_occurrences": 2029,
+    "max_input_mantissa_bits": 256,
+    "max_input_exponent_bits": 36,
+    "min_exponent": -54699295540,
+    "max_exponent": 0,
+    "complex_box_occurrences": 984
+  },
+  "checks": {
+    "endpoint_order_attempted": 2029,
+    "endpoint_order_passed": 2029,
+    "display_containment_attempted": 2029,
+    "display_containment_passed": 2029,
+    "display_directed_rounding_attempted": 2029,
+    "display_directed_rounding_passed": 2029,
+    "w_real_attempted": 4,
+    "w_real_passed": 4,
+    "w_imag_from_pi_eta_attempted": 4,
+    "w_imag_from_pi_eta_passed": 4,
+    "initial_imaginary_lower_attempted": 4,
+    "initial_imaginary_lower_passed": 4,
+    "step_chain_attempted": 28,
+    "step_chain_passed": 28,
+    "upper_half_plane_attempted": 28,
+    "upper_half_plane_passed": 28,
+    "translation_attempted": 16,
+    "translation_failed": 14,
+    "translation_range_attempted": 16,
+    "translation_range_passed": 16,
+    "phase8_attempted": 32,
+    "phase8_passed": 32,
+    "inversion_domain_attempted": 12,
+    "inversion_domain_passed": 12,
+    "inversion_growth_attempted": 12,
+    "inversion_growth_passed": 12,
+    "root_argument_enclosure_attempted": 12,
+    "root_argument_enclosure_passed": 12,
+    "root_branch_domain_attempted": 12,
+    "root_branch_domain_passed": 12,
+    "root_norm_square_attempted": 12,
+    "root_norm_square_passed": 12,
+    "root_u_square_attempted": 12,
+    "root_u_square_passed": 12,
+    "root_v_quotient_attempted": 12,
+    "root_v_quotient_passed": 9,
+    "root_assembly_attempted": 12,
+    "root_assembly_passed": 12,
+    "coarse_reciprocal_attempted": 24,
+    "coarse_reciprocal_not_certified": 24,
+    "translation_passed": 2,
+    "final_chain_attempted": 4,
+    "final_chain_passed": 4,
+    "terminal_domain_attempted": 4,
+    "terminal_domain_passed": 4,
+    "inversion_count_attempted": 4,
+    "inversion_count_passed": 4,
+    "root_v_quotient_failed": 3
+  },
+  "failed_checks": [
+    "point0/step0/T",
+    "point1/step0/T",
+    "point1/step1/S",
+    "point1/step2/T",
+    "point1/step4/T",
+    "point1/step5/S",
+    "point1/step6/T",
+    "point1/step8/T",
+    "point1/step10/T",
+    "point2/step0/T",
+    "point3/step0/T",
+    "point3/step2/T",
+    "point3/step4/T",
+    "point3/step5/S",
+    "point3/step6/T",
+    "point3/step8/T",
+    "point3/step10/T"
+  ],
+  "translation_details": [
+    {
+      "path": "point0/step0/T",
+      "n": -1,
+      "inward_deficits": [
+        {
+          "mantissa": "133693435",
+          "exponent": -283
+        },
+        {
+          "mantissa": "133693435",
+          "exponent": -283
+        }
+      ]
+    },
+    {
+      "path": "point0/step2/T",
+      "n": 0,
+      "inward_deficits": [
+        {
+          "mantissa": "0",
+          "exponent": 0
+        },
+        {
+          "mantissa": "0",
+          "exponent": 0
+        }
+      ]
+    },
+    {
+      "path": "point1/step0/T",
+      "n": -1,
+      "inward_deficits": [
+        {
+          "mantissa": "1",
+          "exponent": -257
+        },
+        {
+          "mantissa": "1",
+          "exponent": -257
+        }
+      ]
+    },
+    {
+      "path": "point1/step2/T",
+      "n": 4,
+      "inward_deficits": [
+        {
+          "mantissa": "1",
+          "exponent": -255
+        },
+        {
+          "mantissa": "1",
+          "exponent": -255
+        }
+      ]
+    },
+    {
+      "path": "point1/step4/T",
+      "n": 2,
+      "inward_deficits": [
+        {
+          "mantissa": "25",
+          "exponent": -259
+        },
+        {
+          "mantissa": "25",
+          "exponent": -259
+        }
+      ]
+    },
+    {
+      "path": "point1/step6/T",
+      "n": -12,
+      "inward_deficits": [
+        {
+          "mantissa": "7",
+          "exponent": -256
+        },
+        {
+          "mantissa": "7",
+          "exponent": -256
+        }
+      ]
+    },
+    {
+      "path": "point1/step8/T",
+      "n": -2,
+      "inward_deficits": [
+        {
+          "mantissa": "7",
+          "exponent": -257
+        },
+        {
+          "mantissa": "7",
+          "exponent": -257
+        }
+      ]
+    },
+    {
+      "path": "point1/step10/T",
+      "n": 6,
+      "inward_deficits": [
+        {
+          "mantissa": "21",
+          "exponent": -258
+        },
+        {
+          "mantissa": "21",
+          "exponent": -258
+        }
+      ]
+    },
+    {
+      "path": "point2/step0/T",
+      "n": -1,
+      "inward_deficits": [
+        {
+          "mantissa": "133693439",
+          "exponent": -283
+        },
+        {
+          "mantissa": "133693439",
+          "exponent": -283
+        }
+      ]
+    },
+    {
+      "path": "point2/step2/T",
+      "n": 0,
+      "inward_deficits": [
+        {
+          "mantissa": "0",
+          "exponent": 0
+        },
+        {
+          "mantissa": "0",
+          "exponent": 0
+        }
+      ]
+    },
+    {
+      "path": "point3/step0/T",
+      "n": -1,
+      "inward_deficits": [
+        {
+          "mantissa": "1",
+          "exponent": -257
+        },
+        {
+          "mantissa": "1",
+          "exponent": -257
+        }
+      ]
+    },
+    {
+      "path": "point3/step2/T",
+      "n": 4,
+      "inward_deficits": [
+        {
+          "mantissa": "1",
+          "exponent": -255
+        },
+        {
+          "mantissa": "1",
+          "exponent": -255
+        }
+      ]
+    },
+    {
+      "path": "point3/step4/T",
+      "n": 2,
+      "inward_deficits": [
+        {
+          "mantissa": "25",
+          "exponent": -259
+        },
+        {
+          "mantissa": "25",
+          "exponent": -259
+        }
+      ]
+    },
+    {
+      "path": "point3/step6/T",
+      "n": -12,
+      "inward_deficits": [
+        {
+          "mantissa": "13",
+          "exponent": -257
+        },
+        {
+          "mantissa": "13",
+          "exponent": -257
+        }
+      ]
+    },
+    {
+      "path": "point3/step8/T",
+      "n": -2,
+      "inward_deficits": [
+        {
+          "mantissa": "15",
+          "exponent": -258
+        },
+        {
+          "mantissa": "15",
+          "exponent": -258
+        }
+      ]
+    },
+    {
+      "path": "point3/step10/T",
+      "n": 19,
+      "inward_deficits": [
+        {
+          "mantissa": "9",
+          "exponent": -255
+        },
+        {
+          "mantissa": "9",
+          "exponent": -255
+        }
+      ]
+    }
+  ],
+  "failed_quotient_corners": [
+    {
+      "path": "point1/step1/S",
+      "numerator_endpoint": 1,
+      "u_endpoint": 0,
+      "lower_residual_sign": 1,
+      "upper_residual_sign": -1
+    },
+    {
+      "path": "point1/step5/S",
+      "numerator_endpoint": 0,
+      "u_endpoint": 0,
+      "lower_residual_sign": -1,
+      "upper_residual_sign": 1
+    },
+    {
+      "path": "point3/step5/S",
+      "numerator_endpoint": 0,
+      "u_endpoint": 0,
+      "lower_residual_sign": -1,
+      "upper_residual_sign": 1
+    }
+  ],
+  "coarse_reciprocal_not_certified": [
+    "point0/step1/S/root_A",
+    "point0/step1/S/S_output",
+    "point1/step1/S/root_A",
+    "point1/step1/S/S_output",
+    "point1/step3/S/root_A",
+    "point1/step3/S/S_output",
+    "point1/step5/S/root_A",
+    "point1/step5/S/S_output",
+    "point1/step7/S/root_A",
+    "point1/step7/S/S_output",
+    "point1/step9/S/root_A",
+    "point1/step9/S/S_output",
+    "point2/step1/S/root_A",
+    "point2/step1/S/S_output",
+    "point3/step1/S/root_A",
+    "point3/step1/S/S_output",
+    "point3/step3/S/root_A",
+    "point3/step3/S/S_output",
+    "point3/step5/S/root_A",
+    "point3/step5/S/S_output",
+    "point3/step7/S/root_A",
+    "point3/step7/S/S_output",
+    "point3/step9/S/root_A",
+    "point3/step9/S/S_output"
+  ],
+  "corruption_controls": {
+    "reversed_actual_pi_interval": true,
+    "false_actual_display_box": true,
+    "opposite_actual_root_branch": true
+  },
+  "actual_replay_counts": {
+    "comparison": 12971,
+    "guarded_left_shift": 21620,
+    "directed_rounding": 4058,
+    "guarded_right_shift": 1946,
+    "round_small_term_no_shift": 2060,
+    "product": 706,
+    "sign_at_most_three": 266,
+    "sign_near_top_merge": 394,
+    "sqrt_witness": 10,
+    "quotient_witness": 48,
+    "coarse_complex_reciprocal_attempt": 24,
+    "sign_dominance": 14
+  },
+  "actual_replay_maxima": {
+    "working_mantissa_bits": 768,
+    "working_exponent_bits": 36,
+    "guarded_left_shift": 531,
+    "guarded_right_shift": 254
+  },
+  "regression": {
+    "comparison_product_pairs": 1225,
+    "three_term_sums": 4900,
+    "rounding_cases": 13005,
+    "quotient_enclosures": 1050,
+    "sqrt_enclosures": 20,
+    "huge_exponent_magnitude": "10^100",
+    "negative_controls": {
+      "false_addition": true,
+      "false_product": true,
+      "false_quotient": true,
+      "zero_denominator": true,
+      "negative_sqrt_branch": true,
+      "false_sqrt": true,
+      "bad_exponent": true,
+      "bad_mantissa": true
+    },
+    "counts": {
+      "comparison": 6901,
+      "guarded_left_shift": 15328,
+      "product": 4598,
+      "product_witness": 1226,
+      "quotient_witness": 1053,
+      "sign_at_most_three": 4906,
+      "sign_near_top_merge": 3074,
+      "sign_dominance": 2897,
+      "directed_rounding": 13007,
+      "guarded_right_shift": 1414,
+      "round_small_term_no_shift": 3958,
+      "sqrt_witness": 23,
+      "addition_witness": 2
+    },
+    "maxima": {
+      "working_mantissa_bits": 129,
+      "working_exponent_bits": 334,
+      "guarded_left_shift": 128,
+      "guarded_right_shift": 4
+    }
+  },
+  "cpu_seconds_including_regression": 0.375,
+  "not_certified": [
+    "truth of pi/exp/sin/cos or Gaussian-tail values",
+    "entire reduced series or derivative-unwind arithmetic",
+    "complete complex reciprocal operations where the coarse sufficient rule did not pass",
+    "actual theta/xi values, spectral statements, or Lean kernel acceptance"
+  ],
+  "scope": "conditional arithmetic/serialization checks on supplied interval endpoints, not analytic certificate validation",
+  "script_sha256": "6FC3E2976B53B49D1A4FDFBDEA6A2D1E327CAA8BFCA24CCE0B1A77CE90B39840"
+}

@@ -1,0 +1,1 @@
+SourceInverseRootTheory.ui: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/sigobj/Thm.uo 

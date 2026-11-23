@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ScalarP100N16.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ScalarP100N16.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 1.4707459999917774,
+  "user_cpu_seconds": 0.46875,
+  "system_cpu_seconds": 0.921875,
+  "cpu_seconds": 1.390625,
+  "peak_working_set_bytes": 463941632,
+  "observed_peak_private_bytes": 1003712512,
+  "memory_samples": 29,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "ScalarP100N16.lean",
+      "bytes": 2217,
+      "sha256": "247183E374938348E771AE392290138C9520ABDB9C08BE44A56B541C149D8B76"
+    },
+    {
+      "path": "scalar10016.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "ScalarP100N16.olean",
+      "bytes": 34904,
+      "sha256": "B403AC700E44C2BA67485FAC64CF0BE9D7CD18411CB6A09AFFD8560C3CC0CF31"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

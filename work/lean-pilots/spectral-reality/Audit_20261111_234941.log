@@ -1,0 +1,12 @@
+SpectralRealityPilot.normalized_completed_chi4_real (t : ℝ) :
+  (4 ^ ((1 / 2 + Complex.I * ↑t) / 2) *
+        DirichletCharacter.completedLFunction SpectralPilot.chi4 (1 / 2 + Complex.I * ↑t)).im =
+    0
+'SpectralRealityPilot.chi4_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_completed_central_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_rootNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_LFunction_conjugate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.chi4_completed_conjugate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralRealityPilot.normalized_completed_chi4_real' depends on axioms: [propext, Classical.choice, Quot.sound]

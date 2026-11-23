@@ -1,0 +1,846 @@
+{
+  "status": "PASS_CONDITIONAL_REDUCED_PLUS_HEIGHT_INVENTORY",
+  "pins": {
+    "qrh-campaign\\agents\\zero-sum\\conditional_r132900_pruning_inventory_20261111.py": "074E6B512F595DD174C45F3D273212FDFCF76CD6EFF6F82699F260E447CA986D",
+    "qrh-campaign\\agents\\zero-sum\\conditional_r132900_pruning_inventory_20261111.json": "E94D87827C3A4D37CA34F07001F16EA7AEE8854684F8BC156C3D4AC6D96B65CF",
+    "qrh-campaign\\agents\\major-constants\\PLUS_FINITE_RH_HEIGHT_REDUCTION_2026-11-11.md": "3F91F39B485607833A5FADD061BEC7602B1DCC02C77B8FB82CA10B6C076FA6A0"
+  },
+  "formula": "ceil(200+max(260,u*(3927/1250)*1063200/qt(c))); u=1989/100 for even c>60000,233/10 otherwise",
+  "grid": "J=ceil(64*integer_certificate_height/5)+1; indices0..J-1; auxiliary nodes appended after J-1",
+  "baseline": {
+    "conductors": 125400,
+    "primitive_labels": 4333246843,
+    "unit_coefficients": 7133015232,
+    "conductor_height_nodes": 2735223455,
+    "residue_inputs": 99513098256768,
+    "primitive_outputs": 66172730256514,
+    "max_nodes": 127989,
+    "max_node_conductors": [
+      10001
+    ],
+    "operations": {
+      "general_complex_products": 1849018578634950,
+      "complex_add_sub": 3808420069398260,
+      "quarter_turns": 168298416860166,
+      "negations": 36476401602,
+      "dyadic_scales": 163078435471936
+    }
+  },
+  "main": {
+    "conductors": 125400,
+    "primitive_labels": 4333246843,
+    "unit_coefficients": 7133015232,
+    "conductor_height_nodes": 1729026050,
+    "residue_inputs": 65920064426356,
+    "primitive_outputs": 40474902420727,
+    "max_nodes": 102145,
+    "max_node_conductors": [
+      10004
+    ],
+    "operations": {
+      "general_complex_products": 1120925963188476,
+      "complex_add_sub": 2319745161470097,
+      "quarter_turns": 102708998603521,
+      "negations": 22187990916,
+      "dyadic_scales": 98879283658304
+    }
+  },
+  "groups": {
+    "odd": {
+      "conductors": 61450,
+      "primitive_labels": 2884704004,
+      "unit_coefficients": 3558883368,
+      "conductor_height_nodes": 802064632,
+      "residue_inputs": 33947796230344,
+      "primitive_outputs": 27516989490616,
+      "max_nodes": 52366,
+      "max_node_conductors": [
+        10001,
+        10003
+      ],
+      "operations": {
+        "general_complex_products": 801514289255638,
+        "complex_add_sub": 1635466633617840,
+        "quarter_turns": 71426840447779,
+        "negations": 15374755090,
+        "dyadic_scales": 70194844047104
+      }
+    },
+    "even_le_60000": {
+      "conductors": 12500,
+      "primitive_labels": 71865868,
+      "unit_coefficients": 177321360,
+      "conductor_height_nodes": 478278912,
+      "residue_inputs": 5502008725616,
+      "primitive_outputs": 2229909764822,
+      "max_nodes": 102145,
+      "max_node_conductors": [
+        10004
+      ],
+      "operations": {
+        "general_complex_products": 45965663334308,
+        "complex_add_sub": 98840803691008,
+        "quarter_turns": 4688530974728,
+        "negations": 1167323174,
+        "dyadic_scales": 4238356548032
+      }
+    },
+    "even_gt_60000": {
+      "conductors": 51450,
+      "primitive_labels": 1376676971,
+      "unit_coefficients": 3396810504,
+      "conductor_height_nodes": 448682506,
+      "residue_inputs": 26470259470396,
+      "primitive_outputs": 10728003165289,
+      "max_nodes": 16744,
+      "max_node_conductors": [
+        60004,
+        60008,
+        60012
+      ],
+      "operations": {
+        "general_complex_products": 273446010598530,
+        "complex_add_sub": 585437724161249,
+        "quarter_turns": 26593627181014,
+        "negations": 5645912652,
+        "dyadic_scales": 24446083063168
+      }
+    }
+  },
+  "samples": {
+    "10001": {
+      "H_plus": 4091,
+      "J_main": 52366,
+      "last_main_height": "261825/64",
+      "J_old": 127989,
+      "H_base": 2700,
+      "H_star300": 300,
+      "u": "233/10"
+    },
+    "10004": {
+      "H_plus": 7980,
+      "J_main": 102145,
+      "last_main_height": "7980",
+      "J_old": 127950,
+      "H_base": 5398,
+      "H_star300": 300,
+      "u": "233/10"
+    },
+    "10007": {
+      "H_plus": 4089,
+      "J_main": 52341,
+      "last_main_height": "65425/16",
+      "J_old": 127912,
+      "H_base": 2699,
+      "H_star300": 300,
+      "u": "233/10"
+    },
+    "60000": {
+      "H_plus": 1498,
+      "J_main": 19176,
+      "last_main_height": "95875/64",
+      "J_old": 21335,
+      "H_base": 900,
+      "H_star300": 300,
+      "u": "233/10"
+    },
+    "60004": {
+      "H_plus": 1308,
+      "J_main": 16744,
+      "last_main_height": "83715/64",
+      "J_old": 21333,
+      "H_base": 900,
+      "H_star300": 300,
+      "u": "1989/100"
+    },
+    "100000": {
+      "H_plus": 865,
+      "J_main": 11073,
+      "last_main_height": "865",
+      "J_old": 12801,
+      "H_base": 540,
+      "H_star300": 300,
+      "u": "1989/100"
+    },
+    "125000": {
+      "H_plus": 732,
+      "J_main": 9371,
+      "last_main_height": "23425/32",
+      "J_old": 10241,
+      "H_base": 432,
+      "H_star300": 300,
+      "u": "1989/100"
+    },
+    "132899": {
+      "H_plus": 493,
+      "J_main": 6312,
+      "last_main_height": "31555/64",
+      "J_old": 9633,
+      "H_base": 204,
+      "H_star300": 300,
+      "u": "233/10"
+    },
+    "265800": {
+      "H_plus": 460,
+      "J_main": 5889,
+      "last_main_height": "460",
+      "J_old": 6173,
+      "H_base": 204,
+      "H_star300": 300,
+      "u": "1989/100"
+    }
+  },
+  "height_min": 460,
+  "height_max": 7980,
+  "main_subset_checks": 125400,
+  "union_checks": 125400,
+  "auxiliary_conductors_exceeding_old_own_grid": {
+    "167": 0,
+    "320": 643,
+    "640": 24007
+  },
+  "per_added_height_operations": {
+    "general_complex_products": 122841198690,
+    "complex_add_sub": 254481748047,
+    "quarter_turns": 11187780841,
+    "negations": 2374880,
+    "dyadic_scales": 10768632896
+  },
+  "scenarios": [
+    {
+      "extra_nodes": 0,
+      "nominal_aux_height": "0",
+      "total_conductor_height_nodes": 1729026050,
+      "total_residue_inputs": 65920064426356,
+      "total_primitive_outputs": 40474902420727,
+      "added_operations": {
+        "general_complex_products": 0,
+        "complex_add_sub": 0,
+        "quarter_turns": 0,
+        "negations": 0,
+        "dyadic_scales": 0
+      },
+      "total_operations": {
+        "general_complex_products": 1120925963188476,
+        "complex_add_sub": 2319745161470097,
+        "quarter_turns": 102708998603521,
+        "negations": 22187990916,
+        "dyadic_scales": 98879283658304
+      },
+      "global_height_nodes": 102145,
+      "last_global_index": 102144,
+      "last_global_height": "7980",
+      "seed_prefix": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "first_index": 0,
+            "last_index": 6400,
+            "height_nodes": 6401,
+            "P24_coefficient_slots": 78809112,
+            "P27_shifted_source_slots": 88615444,
+            "P27_midpoint_shift_updates": 1081512960,
+            "global_height_argument_pairs": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "first_index": 6401,
+            "last_index": 12800,
+            "height_nodes": 6400,
+            "P24_coefficient_slots": 157440000,
+            "P27_shifted_source_slots": 177075200,
+            "P27_midpoint_shift_updates": 2162688000,
+            "global_height_argument_pairs": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "first_index": 12801,
+            "last_index": 25600,
+            "height_nodes": 12800,
+            "P24_coefficient_slots": 629452800,
+            "P27_shifted_source_slots": 708044800,
+            "P27_midpoint_shift_updates": 8650752000,
+            "global_height_argument_pairs": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "first_index": 25601,
+            "last_index": 64000,
+            "height_nodes": 38400,
+            "P24_coefficient_slots": 3775795200,
+            "P27_shifted_source_slots": 4247500800,
+            "P27_midpoint_shift_updates": 51904512000,
+            "global_height_argument_pairs": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "first_index": 64001,
+            "last_index": 102144,
+            "height_nodes": 38144,
+            "P24_coefficient_slots": 7500331008,
+            "P27_shifted_source_slots": 8437605376,
+            "P27_midpoint_shift_updates": 103116963840,
+            "global_height_argument_pairs": 1058667533568
+          }
+        ],
+        "P24_coefficient_slots": 12141828120,
+        "P27_shifted_source_slots": 13658841620,
+        "P27_midpoint_shift_updates": 166916428800,
+        "global_height_argument_pairs": 1351525157121,
+        "rational_argument_union": 27754497,
+        "largest_V": 10000,
+        "new_seed_domain_adapter_required": false,
+        "caveat": "Alternative slot ledgers, not simultaneously generated; old band parameters retained."
+      },
+      "ratios_to_original_main": {
+        "residue": {
+          "exact": "2354288015227/3554039223456",
+          "lower_ppm": 662426,
+          "upper_ppm": 662427
+        },
+        "primitive": {
+          "exact": "40474902420727/66172730256514",
+          "lower_ppm": 611655,
+          "upper_ppm": 611656
+        },
+        "operations": {
+          "general_complex_products": {
+            "exact": "186820993864746/308169763105825",
+            "lower_ppm": 606227,
+            "upper_ppm": 606228
+          },
+          "complex_add_sub": {
+            "exact": "2319745161470097/3808420069398260",
+            "lower_ppm": 609109,
+            "upper_ppm": 609110
+          },
+          "quarter_turns": {
+            "exact": "102708998603521/168298416860166",
+            "lower_ppm": 610279,
+            "upper_ppm": 610280
+          },
+          "negations": {
+            "exact": "3697998486/6079400267",
+            "lower_ppm": 608283,
+            "upper_ppm": 608284
+          },
+          "dyadic_scales": {
+            "exact": "1544988807161/2548100554249",
+            "lower_ppm": 606329,
+            "upper_ppm": 606330
+          }
+        }
+      }
+    },
+    {
+      "extra_nodes": 167,
+      "nominal_aux_height": "835/64",
+      "total_conductor_height_nodes": 1749967850,
+      "total_residue_inputs": 67111277970100,
+      "total_primitive_outputs": 41198554643508,
+      "added_operations": {
+        "general_complex_products": 20514480181230,
+        "complex_add_sub": 42498451923849,
+        "quarter_turns": 1868359400447,
+        "negations": 396604960,
+        "dyadic_scales": 1798361693632
+      },
+      "total_operations": {
+        "general_complex_products": 1141440443369706,
+        "complex_add_sub": 2362243613393946,
+        "quarter_turns": 104577358003968,
+        "negations": 22584595876,
+        "dyadic_scales": 100677645351936
+      },
+      "global_height_nodes": 102312,
+      "last_global_index": 102311,
+      "last_global_height": "511555/64",
+      "seed_prefix": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "first_index": 0,
+            "last_index": 6400,
+            "height_nodes": 6401,
+            "P24_coefficient_slots": 78809112,
+            "P27_shifted_source_slots": 88615444,
+            "P27_midpoint_shift_updates": 1081512960,
+            "global_height_argument_pairs": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "first_index": 6401,
+            "last_index": 12800,
+            "height_nodes": 6400,
+            "P24_coefficient_slots": 157440000,
+            "P27_shifted_source_slots": 177075200,
+            "P27_midpoint_shift_updates": 2162688000,
+            "global_height_argument_pairs": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "first_index": 12801,
+            "last_index": 25600,
+            "height_nodes": 12800,
+            "P24_coefficient_slots": 629452800,
+            "P27_shifted_source_slots": 708044800,
+            "P27_midpoint_shift_updates": 8650752000,
+            "global_height_argument_pairs": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "first_index": 25601,
+            "last_index": 64000,
+            "height_nodes": 38400,
+            "P24_coefficient_slots": 3775795200,
+            "P27_shifted_source_slots": 4247500800,
+            "P27_midpoint_shift_updates": 51904512000,
+            "global_height_argument_pairs": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "first_index": 64001,
+            "last_index": 102311,
+            "height_nodes": 38311,
+            "P24_coefficient_slots": 7533168552,
+            "P27_shifted_source_slots": 8474546444,
+            "P27_midpoint_shift_updates": 103568424960,
+            "global_height_argument_pairs": 1063302534567
+          }
+        ],
+        "P24_coefficient_slots": 12174665664,
+        "P27_shifted_source_slots": 13695782688,
+        "P27_midpoint_shift_updates": 167367889920,
+        "global_height_argument_pairs": 1356160158120,
+        "rational_argument_union": 27754497,
+        "largest_V": 10000,
+        "new_seed_domain_adapter_required": false,
+        "caveat": "Alternative slot ledgers, not simultaneously generated; old band parameters retained."
+      },
+      "ratios_to_original_main": {
+        "residue": {
+          "exact": "2396831356075/3554039223456",
+          "lower_ppm": 674396,
+          "upper_ppm": 674397
+        },
+        "primitive": {
+          "exact": "20599277321754/33086365128257",
+          "lower_ppm": 622591,
+          "upper_ppm": 622592
+        },
+        "operations": {
+          "general_complex_products": {
+            "exact": "190240073894951/308169763105825",
+            "lower_ppm": 617322,
+            "upper_ppm": 617323
+          },
+          "complex_add_sub": {
+            "exact": "1181121806696973/1904210034699130",
+            "lower_ppm": 620268,
+            "upper_ppm": 620269
+          },
+          "quarter_turns": {
+            "exact": "17429559667328/28049736143361",
+            "lower_ppm": 621380,
+            "upper_ppm": 621381
+          },
+          "negations": {
+            "exact": "11292297938/18238200801",
+            "lower_ppm": 619156,
+            "upper_ppm": 619157
+          },
+          "dyadic_scales": {
+            "exact": "1573088208624/2548100554249",
+            "lower_ppm": 617357,
+            "upper_ppm": 617358
+          }
+        }
+      }
+    },
+    {
+      "extra_nodes": 320,
+      "nominal_aux_height": "25",
+      "total_conductor_height_nodes": 1769154050,
+      "total_residue_inputs": 68202629300596,
+      "total_primitive_outputs": 41861541410487,
+      "added_operations": {
+        "general_complex_products": 39309183580800,
+        "complex_add_sub": 81434159375040,
+        "quarter_turns": 3580089869120,
+        "negations": 759961600,
+        "dyadic_scales": 3445962526720
+      },
+      "total_operations": {
+        "general_complex_products": 1160235146769276,
+        "complex_add_sub": 2401179320845137,
+        "quarter_turns": 106289088472641,
+        "negations": 22947952516,
+        "dyadic_scales": 102325246185024
+      },
+      "global_height_nodes": 102465,
+      "last_global_index": 102464,
+      "last_global_height": "8005",
+      "seed_prefix": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "first_index": 0,
+            "last_index": 6400,
+            "height_nodes": 6401,
+            "P24_coefficient_slots": 78809112,
+            "P27_shifted_source_slots": 88615444,
+            "P27_midpoint_shift_updates": 1081512960,
+            "global_height_argument_pairs": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "first_index": 6401,
+            "last_index": 12800,
+            "height_nodes": 6400,
+            "P24_coefficient_slots": 157440000,
+            "P27_shifted_source_slots": 177075200,
+            "P27_midpoint_shift_updates": 2162688000,
+            "global_height_argument_pairs": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "first_index": 12801,
+            "last_index": 25600,
+            "height_nodes": 12800,
+            "P24_coefficient_slots": 629452800,
+            "P27_shifted_source_slots": 708044800,
+            "P27_midpoint_shift_updates": 8650752000,
+            "global_height_argument_pairs": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "first_index": 25601,
+            "last_index": 64000,
+            "height_nodes": 38400,
+            "P24_coefficient_slots": 3775795200,
+            "P27_shifted_source_slots": 4247500800,
+            "P27_midpoint_shift_updates": 51904512000,
+            "global_height_argument_pairs": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "first_index": 64001,
+            "last_index": 102464,
+            "height_nodes": 38464,
+            "P24_coefficient_slots": 7563253248,
+            "P27_shifted_source_slots": 8508390656,
+            "P27_midpoint_shift_updates": 103982039040,
+            "global_height_argument_pairs": 1067548972608
+          }
+        ],
+        "P24_coefficient_slots": 12204750360,
+        "P27_shifted_source_slots": 13729626900,
+        "P27_midpoint_shift_updates": 167781504000,
+        "global_height_argument_pairs": 1360406596161,
+        "rational_argument_union": 27754497,
+        "largest_V": 10000,
+        "new_seed_domain_adapter_required": false,
+        "caveat": "Alternative slot ledgers, not simultaneously generated; old band parameters retained."
+      },
+      "ratios_to_original_main": {
+        "residue": {
+          "exact": "2435808189307/3554039223456",
+          "lower_ppm": 685363,
+          "upper_ppm": 685364
+        },
+        "primitive": {
+          "exact": "41861541410487/66172730256514",
+          "lower_ppm": 632610,
+          "upper_ppm": 632611
+        },
+        "operations": {
+          "general_complex_products": {
+            "exact": "193372524461546/308169763105825",
+            "lower_ppm": 627487,
+            "upper_ppm": 627488
+          },
+          "complex_add_sub": {
+            "exact": "2401179320845137/3808420069398260",
+            "lower_ppm": 630492,
+            "upper_ppm": 630493
+          },
+          "quarter_turns": {
+            "exact": "35429696157547/56099472286722",
+            "lower_ppm": 631551,
+            "upper_ppm": 631552
+          },
+          "negations": {
+            "exact": "11473976258/18238200801",
+            "lower_ppm": 629117,
+            "upper_ppm": 629118
+          },
+          "dyadic_scales": {
+            "exact": "1598831971641/2548100554249",
+            "lower_ppm": 627460,
+            "upper_ppm": 627461
+          }
+        }
+      }
+    },
+    {
+      "extra_nodes": 640,
+      "nominal_aux_height": "50",
+      "total_conductor_height_nodes": 1809282050,
+      "total_residue_inputs": 70485194174836,
+      "total_primitive_outputs": 43248180400247,
+      "added_operations": {
+        "general_complex_products": 78618367161600,
+        "complex_add_sub": 162868318750080,
+        "quarter_turns": 7160179738240,
+        "negations": 1519923200,
+        "dyadic_scales": 6891925053440
+      },
+      "total_operations": {
+        "general_complex_products": 1199544330350076,
+        "complex_add_sub": 2482613480220177,
+        "quarter_turns": 109869178341761,
+        "negations": 23707914116,
+        "dyadic_scales": 105771208711744
+      },
+      "global_height_nodes": 102785,
+      "last_global_index": 102784,
+      "last_global_height": "8030",
+      "seed_prefix": {
+        "bands": [
+          {
+            "V": 500,
+            "D": 512,
+            "N": 220,
+            "first_index": 0,
+            "last_index": 6400,
+            "height_nodes": 6401,
+            "P24_coefficient_slots": 78809112,
+            "P27_shifted_source_slots": 88615444,
+            "P27_midpoint_shift_updates": 1081512960,
+            "global_height_argument_pairs": 724292353
+          },
+          {
+            "V": 1000,
+            "D": 1024,
+            "N": 387,
+            "first_index": 6401,
+            "last_index": 12800,
+            "height_nodes": 6400,
+            "P24_coefficient_slots": 157440000,
+            "P27_shifted_source_slots": 177075200,
+            "P27_midpoint_shift_updates": 2162688000,
+            "global_height_argument_pairs": 2542803200
+          },
+          {
+            "V": 2000,
+            "D": 2048,
+            "N": 720,
+            "first_index": 12801,
+            "last_index": 25600,
+            "height_nodes": 12800,
+            "P24_coefficient_slots": 629452800,
+            "P27_shifted_source_slots": 708044800,
+            "P27_midpoint_shift_updates": 8650752000,
+            "global_height_argument_pairs": 18900595200
+          },
+          {
+            "V": 5000,
+            "D": 4096,
+            "N": 1720,
+            "first_index": 25601,
+            "last_index": 64000,
+            "height_nodes": 38400,
+            "P24_coefficient_slots": 3775795200,
+            "P27_shifted_source_slots": 4247500800,
+            "P27_midpoint_shift_updates": 51904512000,
+            "global_height_argument_pairs": 270689932800
+          },
+          {
+            "V": 10000,
+            "D": 8192,
+            "N": 3387,
+            "first_index": 64001,
+            "last_index": 102784,
+            "height_nodes": 38784,
+            "P24_coefficient_slots": 7626175488,
+            "P27_shifted_source_slots": 8579175936,
+            "P27_midpoint_shift_updates": 104847114240,
+            "global_height_argument_pairs": 1076430411648
+          }
+        ],
+        "P24_coefficient_slots": 12267672600,
+        "P27_shifted_source_slots": 13800412180,
+        "P27_midpoint_shift_updates": 168646579200,
+        "global_height_argument_pairs": 1369288035201,
+        "rational_argument_union": 27754497,
+        "largest_V": 10000,
+        "new_seed_domain_adapter_required": false,
+        "caveat": "Alternative slot ledgers, not simultaneously generated; old band parameters retained."
+      },
+      "ratios_to_original_main": {
+        "residue": {
+          "exact": "2517328363387/3554039223456",
+          "lower_ppm": 708300,
+          "upper_ppm": 708301
+        },
+        "primitive": {
+          "exact": "43248180400247/66172730256514",
+          "lower_ppm": 653564,
+          "upper_ppm": 653565
+        },
+        "operations": {
+          "general_complex_products": {
+            "exact": "199924055058346/308169763105825",
+            "lower_ppm": 648746,
+            "upper_ppm": 648747
+          },
+          "complex_add_sub": {
+            "exact": "2482613480220177/3808420069398260",
+            "lower_ppm": 651874,
+            "upper_ppm": 651875
+          },
+          "quarter_turns": {
+            "exact": "109869178341761/168298416860166",
+            "lower_ppm": 652823,
+            "upper_ppm": 652824
+          },
+          "negations": {
+            "exact": "11853957058/18238200801",
+            "lower_ppm": 649952,
+            "upper_ppm": 649953
+          },
+          "dyadic_scales": {
+            "exact": "1652675136121/2548100554249",
+            "lower_ppm": 648591,
+            "upper_ppm": 648592
+          }
+        }
+      }
+    }
+  ],
+  "baseline_seed_prefix": {
+    "bands": [
+      {
+        "V": 500,
+        "D": 512,
+        "N": 220,
+        "first_index": 0,
+        "last_index": 6400,
+        "height_nodes": 6401,
+        "P24_coefficient_slots": 78809112,
+        "P27_shifted_source_slots": 88615444,
+        "P27_midpoint_shift_updates": 1081512960,
+        "global_height_argument_pairs": 724292353
+      },
+      {
+        "V": 1000,
+        "D": 1024,
+        "N": 387,
+        "first_index": 6401,
+        "last_index": 12800,
+        "height_nodes": 6400,
+        "P24_coefficient_slots": 157440000,
+        "P27_shifted_source_slots": 177075200,
+        "P27_midpoint_shift_updates": 2162688000,
+        "global_height_argument_pairs": 2542803200
+      },
+      {
+        "V": 2000,
+        "D": 2048,
+        "N": 720,
+        "first_index": 12801,
+        "last_index": 25600,
+        "height_nodes": 12800,
+        "P24_coefficient_slots": 629452800,
+        "P27_shifted_source_slots": 708044800,
+        "P27_midpoint_shift_updates": 8650752000,
+        "global_height_argument_pairs": 18900595200
+      },
+      {
+        "V": 5000,
+        "D": 4096,
+        "N": 1720,
+        "first_index": 25601,
+        "last_index": 64000,
+        "height_nodes": 38400,
+        "P24_coefficient_slots": 3775795200,
+        "P27_shifted_source_slots": 4247500800,
+        "P27_midpoint_shift_updates": 51904512000,
+        "global_height_argument_pairs": 270689932800
+      },
+      {
+        "V": 10000,
+        "D": 8192,
+        "N": 3387,
+        "first_index": 64001,
+        "last_index": 127988,
+        "height_nodes": 63988,
+        "P24_coefficient_slots": 12582088416,
+        "P27_shifted_source_slots": 14154401552,
+        "P27_midpoint_shift_updates": 172982599680,
+        "global_height_argument_pairs": 1775954754036
+      }
+    ],
+    "P24_coefficient_slots": 17223585528,
+    "P27_shifted_source_slots": 19375637796,
+    "P27_midpoint_shift_updates": 236782064640,
+    "global_height_argument_pairs": 2068812377589,
+    "rational_argument_union": 27754497,
+    "largest_V": 10000,
+    "new_seed_domain_adapter_required": false,
+    "caveat": "Alternative slot ledgers, not simultaneously generated; old band parameters retained."
+  },
+  "transform_setup": {
+    "axis_lengths": 12496,
+    "active_nodes": 32942,
+    "kernel_count": 6004,
+    "kernel_entries": 337702368,
+    "chirp_entries": 140276846,
+    "max_padded_length": 262144,
+    "kernel_forward_operations": {
+      "general_complex_products": 2244782056,
+      "complex_add_sub": 5502647200,
+      "quarter_turns": 168845180,
+      "negations": 0,
+      "dyadic_scales": 0
+    },
+    "CT_full_root_table_entry_upper": 1116142487
+  },
+  "additional_setup_at_same_precision": 0,
+  "excluded": {
+    "small_conductors": 7499,
+    "small_primitive_labels": 18477108,
+    "principal": "all, retains RH1e8 separately"
+  },
+  "scope": "Metadata only. Main/aux sign success, Turing closure and actual numerical values are not asserted. Fixed original axis order only."
+}

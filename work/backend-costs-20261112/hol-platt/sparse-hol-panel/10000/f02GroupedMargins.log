@@ -1,0 +1,58 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../small-character-kernel[0m
+Holmake: Scanning [1m../../small-gaussian[0m
+Holmake: Scanning [1m../../small-gaussian-transform[0m
+Holmake: Scanning [1m../../full-height-count[0m
+Holmake: Scanning [1m../../grid-projection[0m
+Holmake: Scanning [1m../../grid-sign-join[0m
+Holmake: Scanning [1m../../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../../stencil-perturbation[0m
+Holmake: Scanning [1m../../interpolation-geometry[0m
+Holmake: Scanning [1m../../sparse-head[0m
+Holmake: Scanned 26 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/10000/GroupedMarginsScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/10000/groupedworker.sml:6: warning: Pattern is not exhaustive.
+Found near
+  val [[mb, ab, ...]] = replay.lines (map nat) (("target-" ^ lab) ^ ".txt")
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/10000/groupedworker.sml:25: warning: Pattern is not exhaustive.
+Found near
+  val [[h, phase, ...]] = replay.lines (map nat) (("pair-" ^ tag) ^ ".txt")
+<<HOL message: Created theory "GroupedMargins">>
+JOIN_EVAL 0.002167 1.085294 0.000137
+Saved theorem _______ "outcome_3"
+FUSED_CHANNEL 3 3.703404 6.315536 7.513036
+JOIN_EVAL 0.002329 0.952494 0.000147999999999
+Saved theorem _______ "outcome_6667"
+FUSED_CHANNEL 6667 3.647323 7.21144 8.168822
+Saved theorem _______ "pair_even"
+FUSED_PAIR even 0.012526
+JOIN_EVAL 0.002413 0.981194 0.000145
+Saved theorem _______ "outcome_11"
+FUSED_CHANNEL 11 2.630085 6.689466 7.676188
+JOIN_EVAL 0.002256 0.97633 0.000112999999999
+Saved theorem _______ "outcome_9091"
+FUSED_CHANNEL 9091 4.360743 9.076943 10.058213
+Saved theorem _______ "pair_odd"
+FUSED_PAIR odd 0.015122
+FUSED_WORKER 33.44437
+Exporting theory "GroupedMargins" ... done.
+Theory "GroupedMargins" took 38.8s to build
+Holmake: [1/1] GroupedMargins

@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\PrimeBitmap.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\PrimeBitmap.lean"
+  ],
+  "exit_code": 1,
+  "stop": null,
+  "wall_seconds": 88.92613929999061,
+  "user_cpu_seconds": 1.671875,
+  "system_cpu_seconds": 13.578125,
+  "cpu_seconds": 15.25,
+  "peak_working_set_bytes": 169140224,
+  "observed_peak_private_bytes": 2682499072,
+  "memory_samples": 1761,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "PrimeBitmap.lean",
+      "bytes": 3002,
+      "sha256": "17D16500B7C05589FFBCFD34C889C042E8E0D0075DB4BD7758A1FB89ADFE2395"
+    },
+    {
+      "path": "bridge01.log",
+      "bytes": 348,
+      "sha256": "28BCE8C4367865606A608221A86D12FF91AB7A0183EC796306C2F41363B032F5"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

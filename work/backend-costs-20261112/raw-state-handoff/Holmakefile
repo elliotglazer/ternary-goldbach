@@ -1,0 +1,12 @@
+INCLUDES = ../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: RawStateHandoffTheory.uo
+
+handoff_materialized.exe: handoff_materialized.uo
+	$(HOLMOSMLC) -o $@ $<
+
+handoff_fused.exe: handoff_fused.uo
+	$(HOLMOSMLC) -o $@ $<
+
+handoff_compare.exe: handoff_compare.uo
+	$(HOLMOSMLC) -o $@ $<

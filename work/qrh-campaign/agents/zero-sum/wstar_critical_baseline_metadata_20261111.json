@@ -1,0 +1,242 @@
+{
+  "status": "PASS_EXACT_WEIGHTED_COUNT_BOUNDS",
+  "R": 132900,
+  "scale": 1000000000000,
+  "profiles": {
+    "cap500": {
+      "weighted_count_A_upper_numerator": 19871229909693864,
+      "weighted_count_B_upper_numerator": 29163502264161431263197400,
+      "Q_A_line_upper": "2483903738711733/1250000000000000000000000000000000000",
+      "Q_B_line_upper": "145817511320807156315987/50000000000000000000000000000000000",
+      "A_upper_meets_target": true,
+      "B_upper_meets_target": true
+    },
+    "cap1000": {
+      "weighted_count_A_upper_numerator": 41236612274926762,
+      "weighted_count_B_upper_numerator": 50013537805026321410925749,
+      "Q_A_line_upper": "20618306137463381/5000000000000000000000000000000000000",
+      "Q_B_line_upper": "50013537805026321410925749/10000000000000000000000000000000000000",
+      "A_upper_meets_target": true,
+      "B_upper_meets_target": true
+    },
+    "star_tail": {
+      "weighted_count_A_upper_numerator": 2334842208873139896,
+      "weighted_count_B_upper_numerator": 59653163807028161309694510,
+      "Q_A_line_upper": "291855276109142487/1250000000000000000000000000000000000",
+      "Q_B_line_upper": "5965316380702816130969451/1000000000000000000000000000000000000",
+      "A_upper_meets_target": true,
+      "B_upper_meets_target": true
+    },
+    "original": {
+      "weighted_count_A_upper_numerator": 283041757396258699258,
+      "weighted_count_B_upper_numerator": 86941786602955171481836178,
+      "Q_A_line_upper": "141520878698129349629/5000000000000000000000000000000000000",
+      "Q_B_line_upper": "43470893301477585740918089/5000000000000000000000000000000000000",
+      "A_upper_meets_target": false,
+      "B_upper_meets_target": true
+    }
+  },
+  "samples": {
+    "cap500": {
+      "3": {
+        "T": "500",
+        "count_lower": "109517/250",
+        "count_upper_integer": 877,
+        "upper_log_integer": 6,
+        "lower_log_integer": 4
+      },
+      "5": {
+        "T": "500",
+        "count_lower": "148199/250",
+        "count_upper_integer": 1048,
+        "upper_log_integer": 7,
+        "lower_log_integer": 5
+      },
+      "7": {
+        "T": "500",
+        "count_lower": "148199/250",
+        "count_upper_integer": 1048,
+        "upper_log_integer": 7,
+        "lower_log_integer": 5
+      },
+      "10001": {
+        "T": "500",
+        "count_lower": "418973/250",
+        "count_upper_integer": 2245,
+        "upper_log_integer": 14,
+        "lower_log_integer": 12
+      },
+      "132899": {
+        "T": "500",
+        "count_lower": "247822/125",
+        "count_upper_integer": 2759,
+        "upper_log_integer": 17,
+        "lower_log_integer": 14
+      },
+      "265800": {
+        "T": "213600/443",
+        "count_lower": "16213911429/7885400",
+        "count_upper_integer": 2830,
+        "upper_log_integer": 18,
+        "lower_log_integer": 15
+      }
+    },
+    "cap1000": {
+      "3": {
+        "T": "1000",
+        "count_lower": "620449/500",
+        "count_upper_integer": 2040,
+        "upper_log_integer": 7,
+        "lower_log_integer": 5
+      },
+      "5": {
+        "T": "1000",
+        "count_lower": "777949/500",
+        "count_upper_integer": 2040,
+        "upper_log_integer": 7,
+        "lower_log_integer": 6
+      },
+      "7": {
+        "T": "1000",
+        "count_lower": "194314/125",
+        "count_upper_integer": 2378,
+        "upper_log_integer": 8,
+        "lower_log_integer": 6
+      },
+      "10001": {
+        "T": "1000",
+        "count_lower": "343481/100",
+        "count_upper_integer": 4744,
+        "upper_log_integer": 15,
+        "lower_log_integer": 12
+      },
+      "132899": {
+        "T": "100000000/132899",
+        "count_lower": "21761096323523819/6644950000000",
+        "count_upper_integer": 4097,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "265800": {
+        "T": "213600/443",
+        "count_lower": "16213911429/7885400",
+        "count_upper_integer": 2830,
+        "upper_log_integer": 18,
+        "lower_log_integer": 15
+      }
+    },
+    "star_tail": {
+      "3": {
+        "T": "363700",
+        "count_lower": "93751715258/90925",
+        "count_upper_integer": 1469350,
+        "upper_log_integer": 13,
+        "lower_log_integer": 10
+      },
+      "5": {
+        "T": "218220",
+        "count_lower": "11250197148/18185",
+        "count_upper_integer": 881610,
+        "upper_log_integer": 13,
+        "lower_log_integer": 10
+      },
+      "7": {
+        "T": "155872",
+        "count_lower": "860990069983/1948400",
+        "count_upper_integer": 629725,
+        "upper_log_integer": 13,
+        "lower_log_integer": 10
+      },
+      "10001": {
+        "T": "1000",
+        "count_lower": "343481/100",
+        "count_upper_integer": 4744,
+        "upper_log_integer": 15,
+        "lower_log_integer": 12
+      },
+      "132899": {
+        "T": "1000",
+        "count_lower": "1093913/250",
+        "count_upper_integer": 5758,
+        "upper_log_integer": 18,
+        "lower_log_integer": 15
+      },
+      "265800": {
+        "T": "1000",
+        "count_lower": "1093913/250",
+        "count_upper_integer": 5758,
+        "upper_log_integer": 18,
+        "lower_log_integer": 15
+      }
+    },
+    "original": {
+      "3": {
+        "T": "100000000/3",
+        "count_lower": "7349999949952057/50000000",
+        "count_upper_integer": 179555557,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "5": {
+        "T": "20000000",
+        "count_lower": "881999989984019/10000000",
+        "count_upper_integer": 107733335,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "7": {
+        "T": "100000000/7",
+        "count_lower": "3149999949888133/50000000",
+        "count_upper_integer": 76952382,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "10001": {
+        "T": "100000000/10001",
+        "count_lower": "22047901530364019/500050000000",
+        "count_upper_integer": 53866,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "132899": {
+        "T": "100000000/132899",
+        "count_lower": "21761096323523819/6644950000000",
+        "count_upper_integer": 4097,
+        "upper_log_integer": 17,
+        "lower_log_integer": 15
+      },
+      "265800": {
+        "T": "213600/443",
+        "count_lower": "16213911429/7885400",
+        "count_upper_integer": 2830,
+        "upper_log_integer": 18,
+        "lower_log_integer": 15
+      }
+    }
+  },
+  "c3_obstructions": {
+    "2200000": {
+      "count_lower": "1677059777081/220000",
+      "Q_A_lower": "5031179331243/8800000000000000000000000000000",
+      "factor_over_target": "35218255318701/35200000000000",
+      "upper_log": 15,
+      "lower_log": 12
+    },
+    "100000000/3": {
+      "count_lower": "7349999949952057/50000000",
+      "Q_A_lower": "22049999849856171/2000000000000000000000000000000000",
+      "factor_over_target": "154349998948993197/8000000000000000",
+      "upper_log": 17,
+      "lower_log": 15
+    }
+  },
+  "Qset_count": 199350,
+  "sum_squarefree_inverse_phi_upper": "6738254872143/500000000000",
+  "remainder_measure_upper": {
+    "A": 14884800,
+    "B": 56336022936000000
+  },
+  "finite_band_beta": "203/400",
+  "finite_band_multiplier_upper": "12/5",
+  "scope": "Count inequalities use reviewed integrated Turing+Binet paper contracts. Upper Q values are conditional all-critical baselines; c3 lower uses reflection and is unconditional at paper scope. No actual zero counts produced."
+}

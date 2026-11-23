@@ -1,0 +1,33 @@
+{"blocks": 1, "seconds": 0.019063899999309797, "real_lower": 0.41779418496536397}
+{"blocks": 2, "seconds": 0.03461249999963911, "real_lower": 0.5079213410751664}
+{"blocks": 3, "seconds": 0.04914759999883245, "real_lower": 0.5394273642320707}
+{"blocks": 4, "seconds": 0.06328099999882397, "real_lower": 0.6020061270060622}
+{"blocks": 5, "seconds": 0.07743440000194823, "real_lower": 0.6655798259032736}
+{"blocks": 6, "seconds": 0.09137620000183233, "real_lower": 0.723691694772225}
+{
+  "status": "PASS_ALL_SIX_INDEPENDENT_EM_MODELS",
+  "N": 601,
+  "M": 36,
+  "K": 26,
+  "R": "3/4",
+  "h": "1/8",
+  "precision_bits": 160,
+  "coefficient_method": "exp(-center log n), then a_j=a_(j-1)*(-log n)/j; no series exp",
+  "T": 2000,
+  "S": [
+    "3462952842838264465623/500000000000000000000000",
+    "2164345526773918127721/312500000000000000000000"
+  ],
+  "F": [
+    "7584965353892931470155035129/5000000000000000000000000",
+    "3033986141557172588062014053/2000000000000000000000000"
+  ],
+  "count_interval_exact_outward_25dp": [
+    "15168749966842719705599382719/10000000000000000000000000",
+    "15171249966842719705690157337/10000000000000000000000000"
+  ],
+  "unique_integer": 1517,
+  "seconds": 0.10772709999946528,
+  "script_sha256": "c8eba16f90f5739ab87fd09538b05fbdb8d5280e18891460c6c007e77483b99b",
+  "scope": "External elementary interval arithmetic, conditional analytic EM/Taylor/count contracts; no Lean proof."
+}

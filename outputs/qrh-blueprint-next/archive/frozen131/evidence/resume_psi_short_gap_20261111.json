@@ -1,0 +1,78 @@
+{
+  "status": "external one-window pilot only; no Lean proof or full-gap counts",
+  "range": [
+    1000000000,
+    5000000000
+  ],
+  "grid_divisor": 4000,
+  "grid_windows": 6439,
+  "grid_checkpoints": 6440,
+  "grid_aligned_32768_chunks": 125271,
+  "unbroken_32768_chunks": 122071,
+  "full_span_bits": 4000000000,
+  "full_span_bytes": 500000000,
+  "base_limit": 70710,
+  "mask_list_bytes_131072_bits_each": 114753536,
+  "upper_mask_visits_at_32768_chunks": 877398084,
+  "base_prime_count_external": 7004,
+  "existing_PS3_prime_count": 3401,
+  "prime_upper_relative_bound": "15251/45000000",
+  "conservative_E_relative_bound": "1/2300",
+  "pilot_endpoint": 1000250000,
+  "pilot_count": 12008,
+  "pilot_subwindows": [
+    {
+      "n": 1000000000,
+      "width": 32768,
+      "count": 1566
+    },
+    {
+      "n": 1000032768,
+      "width": 32768,
+      "count": 1591
+    },
+    {
+      "n": 1000065536,
+      "width": 32768,
+      "count": 1597
+    },
+    {
+      "n": 1000098304,
+      "width": 32768,
+      "count": 1565
+    },
+    {
+      "n": 1000131072,
+      "width": 32768,
+      "count": 1554
+    },
+    {
+      "n": 1000163840,
+      "width": 32768,
+      "count": 1567
+    },
+    {
+      "n": 1000196608,
+      "width": 32768,
+      "count": 1581
+    },
+    {
+      "n": 1000229376,
+      "width": 20624,
+      "count": 987
+    }
+  ],
+  "pilot_log_box_denominator": 1000000000,
+  "pilot_log_box": [
+    20723515795,
+    20723515815
+  ],
+  "pilot_theta_lower": "250054120041602949/250000000",
+  "pilot_theta_upper": "200043834209245433/200000000",
+  "pilot_theta_lower_decimal": "1000216480.1664118",
+  "pilot_theta_upper_decimal": "1000219171.0462272",
+  "pilot_checkpoint_lower_margin": "6117937308847/750000000",
+  "pilot_checkpoint_upper_margin": "43503622263701/600000000",
+  "pilot_primes_ascii_sha256": "96779ee05e044581c24f67da29904872a6777c2f4f9f654b70deab285d1fbb9f",
+  "remaining_grid_windows_without_external_counts": 6438
+}

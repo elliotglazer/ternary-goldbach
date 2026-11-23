@@ -1,0 +1,124 @@
+{
+  "status": "SYNTAX_AND_PIN_CHECK_ONLY",
+  "source_sha256": "23D358590279AA810EAE764D3FEEA0756C51DF8CF0EA6F05B457A192BB82822C",
+  "preparation_sha256": "65379869F849BB27BE9DF4974F73984269FECF1C408C442D2C772BFF37E53500",
+  "lines": 676,
+  "imports": [
+    {
+      "module": "fractions",
+      "line": 7
+    },
+    {
+      "module": "math",
+      "line": 8
+    },
+    {
+      "module": "pathlib",
+      "line": 9
+    },
+    {
+      "module": "argparse",
+      "line": 10
+    },
+    {
+      "module": "ctypes",
+      "line": 11
+    },
+    {
+      "module": "ctypes",
+      "line": 12
+    },
+    {
+      "module": "hashlib",
+      "line": 13
+    },
+    {
+      "module": "json",
+      "line": 14
+    },
+    {
+      "module": "os",
+      "line": 15
+    },
+    {
+      "module": "sys",
+      "line": 16
+    },
+    {
+      "module": "time",
+      "line": 17
+    },
+    {
+      "module": "flint",
+      "line": 234
+    }
+  ],
+  "pins": [
+    {
+      "path": "moebius/SMALL_EM_BATCH_PILOT_SPECIFICATION_2026-11-11.md",
+      "expected": "3977881D20CFE9F948E850AC9A83CF50084AA1EF7D0B7023E5D1A95DE845B929",
+      "actual": "3977881D20CFE9F948E850AC9A83CF50084AA1EF7D0B7023E5D1A95DE845B929",
+      "matches": true
+    },
+    {
+      "path": "independent-feasibility/REVIEW_SMALL_EM_BATCH_PILOT_PREFLIGHT_2026-11-11.md",
+      "expected": "E8D928EB25CA0AAB583609D33DF982CFC2A1D01E65890AE8BCBBB58C4BF9C7F0",
+      "actual": "E8D928EB25CA0AAB583609D33DF982CFC2A1D01E65890AE8BCBBB58C4BF9C7F0",
+      "matches": true
+    },
+    {
+      "path": "major-constants/EM_SMALL_BATCH_FULL_BUDGET_2026-11-11.md",
+      "expected": "47256C6265C63BF1851B0FD7347F57BC18849AA7B629FFA72442EF9D05A22D23",
+      "actual": "47256C6265C63BF1851B0FD7347F57BC18849AA7B629FFA72442EF9D05A22D23",
+      "matches": true
+    },
+    {
+      "path": "major-constants/em_small_batch_budget_20261111.py",
+      "expected": "13E200EDFF99D2C44CFA19EEE8CC83C071488362E2DF3997D71E7A79BB65B59D",
+      "actual": "13E200EDFF99D2C44CFA19EEE8CC83C071488362E2DF3997D71E7A79BB65B59D",
+      "matches": true
+    },
+    {
+      "path": "major-constants/em_small_batch_budget_20261111.json",
+      "expected": "41FF7A626495159CCEB34C19ED6426F480DEB9759962784885120E8B4E76E931",
+      "actual": "41FF7A626495159CCEB34C19ED6426F480DEB9759962784885120E8B4E76E931",
+      "matches": true
+    },
+    {
+      "path": "integration/SMALL_EM_BATCH_RECEIPT_CONTRACT_2026-11-11.md",
+      "expected": "DA2740C39148A2F1AB2291E6581B5C55A75BF33456E8006CB148B34B516178AF",
+      "actual": "DA2740C39148A2F1AB2291E6581B5C55A75BF33456E8006CB148B34B516178AF",
+      "matches": true
+    },
+    {
+      "path": "moebius/FINITE_EM_VERTICAL_BATCHING_2026-11-11.md",
+      "expected": "814AD0B3012FDA4FD81B485139257409E81E6EAC8FA44FD6824A7D21F02C8818",
+      "actual": "814AD0B3012FDA4FD81B485139257409E81E6EAC8FA44FD6824A7D21F02C8818",
+      "matches": true
+    },
+    {
+      "path": "independent-feasibility/REVIEW_FINITE_EM_VERTICAL_BATCHING_2026-11-11.md",
+      "expected": "B8EE7250B9E2AAEE8099A7109C08FF34FBD70E880182E99E2B3F30970C49717E",
+      "actual": "B8EE7250B9E2AAEE8099A7109C08FF34FBD70E880182E99E2B3F30970C49717E",
+      "matches": true
+    },
+    {
+      "path": "integration/FINITE_EM_VERTICAL_DFT_CONTRACTS_2026-11-11.md",
+      "expected": "170C8F976A8AF8B299E4AB737E6924260B3B1D8328FA54C0F2BF7F6E9720F997",
+      "actual": "170C8F976A8AF8B299E4AB737E6924260B3B1D8328FA54C0F2BF7F6E9720F997",
+      "matches": true
+    },
+    {
+      "path": "audit/REVIEW_FINITE_EM_VERTICAL_DFT_CONTRACTS_2026-11-11.md",
+      "expected": "F2DC3A12F4474E8469D45C741E0F1A7FBA5A1CAF61AEF6A1509749FDE8BFD406",
+      "actual": "F2DC3A12F4474E8469D45C741E0F1A7FBA5A1CAF61AEF6A1509749FDE8BFD406",
+      "matches": true
+    }
+  ],
+  "all_pins_match": true,
+  "producer_imported": false,
+  "producer_executed": false,
+  "numerical_evaluations": false,
+  "behavioral_tests": false,
+  "runtime_authorization_created": false
+}

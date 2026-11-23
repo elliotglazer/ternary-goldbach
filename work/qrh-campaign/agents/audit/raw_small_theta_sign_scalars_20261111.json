@@ -1,0 +1,71 @@
+{
+  "status": "PASS exact rational bounds and saved-count deductions only",
+  "checks": 39,
+  "pins": {
+    "integration/SMALL_THETA_OUTPUT_INTERPOLATION_AUDIT_2026-11-11.md": "19E411982E0D504C52F604145D6404ACB3BEBA51B662CB7BB1CDBD5D31E83081",
+    "moebius/REVIEW_SMALL_THETA_OUTPUT_INTERPOLATION_AUDIT_2026-11-11.md": "B815BBEEF96C0E8D1259A915E8BB0F3BEB98BBD1CFB9473B038E0B3D64F3A38F",
+    "prime-estimates/small_family_theta_inventory_final_20261111.json": "26ED3C86420123A7629DB41C07999990A53A4DAAA4C7146C3FC64D527B578B69",
+    "prime-estimates/NONPRINCIPAL_SMALL_CONDUCTOR_BACKEND_COST_2026-11-11.md": "6AA4F11AD9103A1176F24BDF045CDF798193B726B1B3A925B8540476E6823043",
+    "integration/SMALL_CONDUCTOR_SHARED_ELEMENTARY_CIRCUIT_2026-11-11.md": "A8AC4A3B594C8671476FCC92C67A45DCF42EFF0060F522023F929BA440835A4B",
+    "zero-sum/MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md": "4AD43D7D2163A185BC05DFD7C3AC22237B58979BC3F139E79A69D414675F30F4",
+    "audit/REVIEW_MINIMAL_THETA_AT_FIXED_TIME_LENGTH_2026-11-11.md": "58215EA3A0D697D229AD746F6FCE340DE913165D63599DC197798E705392308B",
+    "zero-sum/SELECTED_SIGN_CHECKER_COST_SUPPLEMENT_2026-11-11.md": "D4507C3C7F7B513621240AC2BB4B0142B371465FC7AFD5892C2993F0404F4C41"
+  },
+  "raw_threshold_over_epsP": "109/704",
+  "loose_threshold_over_epsP": "5/32",
+  "physical_error_ratio_upper": "109/112",
+  "rows": [
+    {
+      "extra": 0,
+      "coarse_outputs": 1775431871117,
+      "removed_coarse_omega_scalings": 1775431871117,
+      "removed_coarse_Y_products": 1775431871117,
+      "removed_shared_positive_updates": 3791938303,
+      "removed_positive_exp_seeds": 7499,
+      "retained_radial_exp_seeds": 7499,
+      "full_time_outputs": 9237783904256,
+      "dense_new_eighth_points": 12427893758063,
+      "dense_all_eighth_points": 14203325629180,
+      "dense_direct_interpolation_terms": 4225483877741420
+    },
+    {
+      "extra": 167,
+      "coarse_outputs": 1778517548153,
+      "removed_coarse_omega_scalings": 1778517548153,
+      "removed_coarse_Y_products": 1778517548153,
+      "removed_shared_positive_updates": 3793190636,
+      "removed_positive_exp_seeds": 7499,
+      "retained_radial_exp_seeds": 7499,
+      "full_time_outputs": 9247225020416,
+      "dense_new_eighth_points": 12449493497315,
+      "dense_all_eighth_points": 14228011045468,
+      "dense_direct_interpolation_terms": 4232827789087100
+    },
+    {
+      "extra": 320,
+      "coarse_outputs": 1781344545677,
+      "removed_coarse_omega_scalings": 1781344545677,
+      "removed_coarse_Y_products": 1781344545677,
+      "removed_shared_positive_updates": 3794337983,
+      "removed_positive_exp_seeds": 7499,
+      "retained_radial_exp_seeds": 7499,
+      "full_time_outputs": 9257887727616,
+      "dense_new_eighth_points": 12469282479983,
+      "dense_all_eighth_points": 14250627025660,
+      "dense_direct_interpolation_terms": 4239556043194220
+    },
+    {
+      "extra": 640,
+      "coarse_outputs": 1787257220237,
+      "removed_coarse_omega_scalings": 1787257220237,
+      "removed_coarse_Y_products": 1787257220237,
+      "removed_shared_positive_updates": 3796737663,
+      "removed_positive_exp_seeds": 7499,
+      "retained_radial_exp_seeds": 7499,
+      "full_time_outputs": 9278818353152,
+      "dense_new_eighth_points": 12510671201903,
+      "dense_all_eighth_points": 14297928422140,
+      "dense_direct_interpolation_terms": 4253628208647020
+    }
+  ]
+}

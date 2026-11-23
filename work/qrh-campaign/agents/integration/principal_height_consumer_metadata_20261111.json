@@ -1,0 +1,78 @@
+{
+  "scope": "exact rational inequalities and source hashes only",
+  "checks": {
+    "c3_dynamic": true,
+    "positive_polynomial_coefficients": true,
+    "polynomial_identity": true,
+    "offC_at_two_million": true,
+    "old_window_support_threshold": true,
+    "threshold491_integer_bracket": true,
+    "threshold492_integer_bracket": true,
+    "old_K_delta": true,
+    "plateau_surplus": true
+  },
+  "offC_polynomial_coefficients_u3_u4_u5": [
+    {
+      "numerator": "755952",
+      "denominator": "121"
+    },
+    {
+      "numerator": "1570464",
+      "denominator": "55"
+    },
+    {
+      "numerator": "23424",
+      "denominator": "5"
+    }
+  ],
+  "offC_at_two_million": {
+    "numerator": "118117769923522143",
+    "denominator": "151250000000000000000000000000000"
+  },
+  "offC_margin": {
+    "numerator": "33132230076477857",
+    "denominator": "151250000000000000000000000000000"
+  },
+  "threshold491": {
+    "numerator": "49000000000",
+    "denominator": "491"
+  },
+  "threshold492": {
+    "numerator": "12250000000",
+    "denominator": "123"
+  },
+  "pins": {
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/ZetaZeroSums.lean": "21C97198134C5CEEDBCD597FA11E05982FE8878FFD24BBB60BCCC8E2032943AA",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/ZeroSumGen.lean": "9096C5D611A09FFCF5A4516BFDDC1E518B9917C52B5BC206216AF86A31A52389",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/WeilWindow.lean": "E62BC53DCE170675C2D4814FB47BBC92C5457103A2ABF4F0C66326BD4C2328BE",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiRanges1e8.lean": "26BDF0EEEAD4C7628B3205ECF1B52BB05A914E492A3721DCA6B784F6FE3C1120",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiPlateau1e8.lean": "F5BEB066695D24085A74706C9FFE3219A2A053E2C1854FC3E209BD0CD78E392C",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiLarge.lean": "D370555A164DA01E37E5BDB14EFA774DC79FE43682EED21D42C90BA2D1B165F2",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiRange1.lean": "F474C24F28ED3D14774A170F19EF312AE132124D727ABD438478C4AF89BBE026",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiAsymp.lean": "2EEE8AAAC78360010044AB5964058ADB5998FB30EFAC3000352ED6D2114D047D",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/ZeroFreeRegion.lean": "AC367CDA6777165DF4AF22BA1BA1530B8A280B77CA55F1918562376DE69C0EAB",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/IEANTNBridge.lean": "54E839497E66C7444A7B03BA5C62096E7C526BF2999EF5888CC5BB17481D72FE",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/PsiTwoSided.lean": "9E2790AC0B3707D4A51B79735711BC9D7470694E8BFE6B96762E38F39F929E3C",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/ThetaExplicit.lean": "F30571CFFF146129180D9A1865BAE879027CB5E1F9BCC4B3C8D1912983A45F93",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/LambdaMu.lean": "45A40A3209665061FF2F4F28F7CDDD1C012BCEE66FA90E555859A22D38D8568E",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/MertensProduct.lean": "8182DC2B990DC8D65AC76D3CC55847B26922E2062CD154C14367D5DB97F71A0F",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/MertensLimit.lean": "B4FBB30EE6BCEEAFE847F14271AA91DCDEB2E735B8176D1083446F70139159DB",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/EOneBound.lean": "ADD1130F3FBBB4EA2AAFB7A7F769FBD565E14DB13B2F6500245E14023106DC65",
+    "work/ternary-goldbach/TernaryGoldbach/Prelim/EOneRanges.lean": "E3BAEA29E0AF75E9EE6526ACFE648DE39628144A0E944324D0ED40C544751F24",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Prop942.lean": "35B170971DBD0F1C6646CD86ECE8C3A86021085C1B07730141CD6311D9CA5716",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Thm714.lean": "7BBF8F06B1A0B703A0C00FF1E5E64997792C4E93629CED591FCB6A646301FD3F",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor713.lean": "11325BE6F77A7A762747542F30E2A9035782765A801C603F14107E84ED5D7433",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Prop715.lean": "CD026A3D01FD8578484E43A48888885C2DC3BF696B2F7ACB89BB525E4E064DF0",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/EBound.lean": "EB4A44BA2A0422BC346A73EED0828BDD32AF9597F24515ED763331DFF776F17F",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/TypeI2Large.lean": "8139C79397A42791C2FC929A380AF440BCF2B3CDDCE45CB847CDE1C36E74B09A",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/TypeI2Proof.lean": "085A1CF1B2A1B8A46B55C81CD2479F151314F1768E0B399D72C8D94DBE2A0E66",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/TypeIIReduction.lean": "CBA5FAE640F519546892CF647FBE6EDED0845363C55334485E10303491EAC690",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap2.lean": "AAD66405B48CFBFE46DE3196CE82D3CAB57136353F482CA3DF4B591A27B9C60E",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/FirstChoiceTypeII.lean": "F42E8C2D1B28F362A9ACA5DED7DF6B3025E4B0A58EAF6A4D66DC2C3FE935E5C2",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/GBound.lean": "79070A7DD3B3B755A34C3C39690674193CBCF439238D763EB4982889E5B52491",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LSQuot3.lean": "4E1105C3A734EF94CBFFA81AF2128D0525092F95F0E4E6F8B8ED8E0B983542BD",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/SecondBridge.lean": "816CA4F58B8B53C270A935F2A9BB47CA51114963B85D0FBB4EB982FC6FBD089D",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/SecondTypeIIa.lean": "41C4ED65E94CA2ED22A871CD534D14C064CECD3F571B8181185070E41FE3C43C",
+    "work/ternary-goldbach/TernaryGoldbach/MinorArcs/SecondTypeIIb.lean": "F1EDE13B41A3F39DAB25B1EF10D750C7DA9278B681500628D006435CE01DF11A"
+  }
+}

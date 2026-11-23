@@ -1,0 +1,49 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 27 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mxs[0m. LENGTH (block_layer [0;1;34ms[0m [0;1;34mws[0m [0;32mxs[0m) = LENGTH [0;32mxs[0m
+   ------------------------------------
+        ∀[0;32mh'[0m. LENGTH (block_layer [0;1;34ms[0m ([0;32mh'[0m::[0;1;34mws[0m) ([0;1;34mh[0m::[0;1;34mt[0m)) = SUC (LENGTH [0;1;34mt[0m)
+   
+   : proof
+OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mxs[0m. LENGTH (block_layer [0;1;34ms[0m [0;1;34mws[0m [0;32mxs[0m) = LENGTH [0;32mxs[0m
+   ------------------------------------
+        ∀[0;32mh''[0m.
+          LENGTH
+            ((λ([0;32mp[0m,[0;32mm[0m). [0;32mp[0m::[0;32mm[0m::block_layer [0;1;34ms[0m [0;1;34mws[0m [0;1;34mt'[0m)
+               (rounded_butterfly [0;1;34ms[0m [0;1;34mh[0m [0;1;34mh'[0m [0;32mh''[0m)) =
+          SUC (SUC (LENGTH [0;1;34mt'[0m))
+   
+   : proof
+OK..
+
+Goal proved.
+ [.]
+⊢ ∀h''.
+    LENGTH
+      ((λ(p,m). p::m::block_layer s ws t') (rounded_butterfly s h h' h'')) =
+    SUC (SUC (LENGTH t'))
+
+Goal proved.
+ [.] ⊢ ∀h'. LENGTH (block_layer s (h'::ws) (h::t)) = SUC (LENGTH t)
+val it =
+   Initial goal proved.
+   ⊢ ∀[0;32mws[0m [0;32mxs[0m. LENGTH (block_layer [0;1;34ms[0m [0;32mws[0m [0;32mxs[0m) = LENGTH [0;32mxs[0m: proof
+Exception- HOL_ERR (at goalStack.top_goals: no goals) raised
+poly: : warning: The type of (it) contains a free type variable. Setting it to a unique
+   monotype.

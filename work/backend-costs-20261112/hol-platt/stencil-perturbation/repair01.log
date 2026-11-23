@@ -1,0 +1,51 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanned 21 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/stencil-perturbation/RepairPerturbationScript.uo to produce theory-builder executable
+<<HOL message: Created theory "RepairPerturbation">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in RepairPerturbation)>>
+Proof of 
+
+∀tab ks t k r off den err ws ps raw.
+  lookup k ks = SOME (r,off,den,err,ws) ∧ kernel_ok r off (&den) ws ∧
+  LENGTH ws = LENGTH ps ∧ reads tab (129 + t DIV 4096 − r DIV 2) ps ∧
+  LIST_REL encloses raw ps ⇒
+  (at_repair tab ks t k = 2 ⇒ &(den * err) < dot ws (MAP raw_center raw)) ∧
+  (at_repair tab ks t k = 1 ⇒ dot ws (MAP raw_center raw) < -&(den * err))
+
+failed.
+First unsolved sub-goal is
+
+(reads tab (t DIV 4096 + 129 − LENGTH ps DIV 2) ps ∧
+ dot_window tab (t DIV 4096 + 129 − LENGTH ps DIV 2) ws 0 0 = SOME (p0,p1) ⇒
+ (strict_code p0 (den * (err + 5 * p1)) = 2 ⇒
+  &(den * err) < dot ws (MAP raw_center raw)) ∧
+ (strict_code p0 (den * (err + 5 * p1)) = 1 ⇒
+  dot ws (MAP raw_center raw) < -&(den * err))) ⇒
+(strict_code p0 (den * (err + 5 * p1)) = 2 ⇒
+ &(den * err) < dot ws (MAP raw_center raw)) ∧
+(strict_code p0 (den * (err + 5 * p1)) = 1 ⇒
+ dot ws (MAP raw_center raw) < -&(den * err))
+
+Tactic failure proving "repair_raw_margin"; heap saved to RepairPerturbation.repair_raw_margin.dumpedheap.
+Resume with: bin/hol --holstate=RepairPerturbation.repair_raw_margin.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/stencil-perturbation/RepairPerturbationScript - exited with code 1

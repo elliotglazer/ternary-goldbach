@@ -1,0 +1,50 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanning [1m../interpolation-geometry[0m
+Holmake: Scanning [1m../sparse-stream[0m
+Holmake: Scanned 26 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/ChannelInvariantScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "ChannelInvariant">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in ChannelInvariant)>>
+Saved definition ____ "scatter_def"
+Saved induction _____ "scatter_ind"
+Saved definition ____ "raw_map_def"
+Saved induction _____ "raw_map_ind"
+Saved definition ____ "matches_def"
+Saved induction _____ "matches_ind"
+Saved definition ____ "channel_ok_def"
+Saved definition ____ "source_code_def"
+Proof of 
+
+∀xs rt i p.
+  matches rt xs ∧ MEM (i,p) xs ⇒ ∃v. lookup i rt = SOME v ∧ encloses v p
+
+failed.
+Tactic failure proving "matches_mem"; heap saved to ChannelInvariant.matches_mem.dumpedheap.
+Resume with: bin/hol --holstate=ChannelInvariant.matches_mem.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/ChannelInvariantScript - exited with code 1

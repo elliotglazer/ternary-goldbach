@@ -1,0 +1,36 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "CampaignEnvelope">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript.sml:9: error: Type error in function application.
+   Function: SPEC : term -> thm -> thm
+   Argument: [QUOTE " (*#loc 9 19*)a:int"] : 'a frag list
+   Reason:
+      Can't unify term (*Created from opaque signature*) with
+         'a frag list (*In Basis*) (Different type constructors)
+Found near
+  Q.store_thm_at
+  (
+  DB_dtype.mkloc
+  (
+     "/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript.sml"
+     ,
+     ...
+     )) ("bounded_product", [... ...], fn ...) HOLctxt
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript.sml : Fail "Static Errors"
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript : Fail "Static Errors"
+Uncaught exception at ./basis/FinalPolyML.sml:492: Fail "Static Errors"
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/CampaignEnvelopeScript - exited with code 1

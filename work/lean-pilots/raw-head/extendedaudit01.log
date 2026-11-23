@@ -1,0 +1,17 @@
+RawHead.expPartial73_error {z : ℂ} (hz : ‖z‖ ≤ 4) : ‖Complex.exp z - RawHead.expPartial 73 z‖ ≤ 1 / 2 ^ 124
+RawHead.expHorner72_error {z : ℂ} {a : ℕ → ℕ → ℂ} {δ : ℝ} (hz : ‖z‖ ≤ 4) (hδ : 0 ≤ δ) (hzero : ∀ (k : ℕ), a 0 k = 1)
+  (hstep : ∀ (N k : ℕ), ‖a (N + 1) k - (1 + z / ↑(k + 1) * a N (k + 1))‖ ≤ δ) :
+  ‖a 72 0 - RawHead.expPartial 73 z‖ ≤ 81 * δ
+RawHead.expIntegerHorner72_error {S d : ℕ} (hS : 0 < S) (hd : 0 < d) (p : ℤ) (hp : |↑p / ↑d| ≤ 4) :
+  ‖RawHead.expIntegerValue S (RawHead.expIntegerHorner S p d 72 0) - RawHead.expPartial 73 (RawHead.expPhase p d)‖ ≤
+    81 / ↑S
+RawHead.rawStepValue_error {x k : ℕ} (hx : 0 < x) (hk : k ≤ 18) (hlo : 2 ^ k ≤ x) (hhi : x ≤ 2 * 2 ^ k) :
+  ‖RawHead.rawStepValue k x - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑x)))‖ < 1 / 2 ^ 120
+RawHead.inverseRootCandidate_initialization_error {x S : ℕ} (hx : 0 < x) (hS : 0 < S) :
+  ‖↑(↑(RawHead.inverseRootCandidate x S) / ↑S) - RawHead.integerPower (↑x) 0‖ < 1 / ↑S
+'RawHead.expPartial73_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RawHead.expHorner72_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RawHead.expIntegerHorner72_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RawHead.rawStepValue_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RawHead.inverseRootCandidate_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RawHead.inverseRootCandidate_initialization_error' depends on axioms: [propext, Classical.choice, Quot.sound]

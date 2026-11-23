@@ -1,0 +1,141 @@
+{
+  "axiom_audit_performed": false,
+  "body_equal": null,
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j",
+    "1",
+    "-M4096",
+    "-DautoImplicit=false",
+    "-R",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\leaf-import-quarantine\\1113T064714_original-imports_a6cc3c55\\artifacts\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean"
+  ],
+  "cpu_kernel_seconds": 8.015625,
+  "cpu_total_seconds": 9.296875,
+  "cpu_user_seconds": 1.28125,
+  "cwd": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src",
+  "dependencies_rehashed": false,
+  "exit_code": 124,
+  "expected_input_hashes": {
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "a97237026d0add0b1e1f6a3a025a253a9e6dd17c0e06929f779772727f02260b",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lake-manifest.json": "b61e36d7fb579f9eb682afc4623e871934189e1248c4c92e69f9e9e2e6fc0227",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lakefile.lean": "9847ec38547c41c8ed14b0d28a5f0ef38f5883334e648b52e4ffff58cf60c676",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "c91875463748e56248d08cb61560d4e9b59e8f89dad0b44ec9c9a73995fae1d3",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\staging.json": "fdcb7789127f93226eb23fdcd1e96d8d07d9bacfcdb929be8694b971eb39edf9",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\probe_first_leaf.py": "32c72e2b278bd34742eb4d75a4308f7d1fbfc985f90e980196ad06375610a807"
+  },
+  "expected_primary_output_present": false,
+  "finished_utc": "2026-11-13T06:48:06.247026+00:00",
+  "header_only": true,
+  "input_hashes_after": {
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "a97237026d0add0b1e1f6a3a025a253a9e6dd17c0e06929f779772727f02260b",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lake-manifest.json": "b61e36d7fb579f9eb682afc4623e871934189e1248c4c92e69f9e9e2e6fc0227",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lakefile.lean": "9847ec38547c41c8ed14b0d28a5f0ef38f5883334e648b52e4ffff58cf60c676",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "c91875463748e56248d08cb61560d4e9b59e8f89dad0b44ec9c9a73995fae1d3",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\staging.json": "fdcb7789127f93226eb23fdcd1e96d8d07d9bacfcdb929be8694b971eb39edf9",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\probe_first_leaf.py": "32c72e2b278bd34742eb4d75a4308f7d1fbfc985f90e980196ad06375610a807"
+  },
+  "input_hashes_before": {
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "a97237026d0add0b1e1f6a3a025a253a9e6dd17c0e06929f779772727f02260b",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lake-manifest.json": "b61e36d7fb579f9eb682afc4623e871934189e1248c4c92e69f9e9e2e6fc0227",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lakefile.lean": "9847ec38547c41c8ed14b0d28a5f0ef38f5883334e648b52e4ffff58cf60c676",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src\\OAI\\NumberTheory\\DirichletL\\Arithmetic\\EisensteinCoordinates.lean": "c91875463748e56248d08cb61560d4e9b59e8f89dad0b44ec9c9a73995fae1d3",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\staging.json": "fdcb7789127f93226eb23fdcd1e96d8d07d9bacfcdb929be8694b971eb39edf9",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\probe_first_leaf.py": "32c72e2b278bd34742eb4d75a4308f7d1fbfc985f90e980196ad06375610a807"
+  },
+  "kind": "diagnostic_leaf_import_variant",
+  "lean_path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\leaf-import-quarantine\\1113T064714_original-imports_a6cc3c55\\artifacts;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+  "limits": {
+    "hard_memory_cap": false,
+    "job_active_processes": 1,
+    "lean_memory_megabytes": 4096,
+    "lean_workers": 1,
+    "observed_private_bytes": 4294967296,
+    "process_wall_seconds": 600.0,
+    "sample_interval_seconds": 0.25
+  },
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "module": "OAI.NumberTheory.DirichletL.Arithmetic.EisensteinCoordinates",
+  "monitor_sha256_expected": "32c72e2b278bd34742eb4d75a4308f7d1fbfc985f90e980196ad06375610a807",
+  "observed_os_peak_pagefile_bytes": 4296957952,
+  "observed_os_peak_working_set_bytes": 210513920,
+  "observed_peak_private_bytes": 4296957952,
+  "options": [
+    "-t0",
+    "-j",
+    "1",
+    "-M4096",
+    "-DautoImplicit=false",
+    "-R",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src"
+  ],
+  "options_sha256": "bb3b8475cbb631c18819c6d584eaeae19922d987a2a93911ffc3287ce966db8a",
+  "original_body_sha256": "6a659f2c2a18dbb4197b99f8811ebecc2aa4bbe204bc21433213398d960a1ab6",
+  "original_provider_root": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean",
+  "output_inventory": {},
+  "overall_wall_seconds": 52.22403119999217,
+  "package_options": "autoImplicit=false; original provider metadata, no Lake evaluation",
+  "package_options_source": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\openai-math\\lean\\lakefile.lean",
+  "pid": 57228,
+  "pinned_inputs_unchanged": true,
+  "prebuilt_package_metadata": {
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli": {
+      "lake-manifest.json": "c9883d326e2773d21a1e67f3f9b9f35b1b6d978ba252451386f7d8d51656ae40",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient": {
+      "lake-manifest.json": "15c495488e4b67203943f84f3e33f7f70c0debfd849544d653b3ba83e4f9cabf",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq": {
+      "lake-manifest.json": "399c6b83ec1591fa325685b1dae869a27a2c8efcca55b9ce979547988fac4500",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop": {
+      "lake-manifest.json": "09c9e2c4638a97e6d204f669a1a4d51679ad31f26f3a49a56f4d2916de7bd3da",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries": {
+      "lake-manifest.json": "e78200de1f14e1a557c224423abad818b76795927e9716d4b6715d0f41827d36",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph": {
+      "lake-manifest.json": "d687c292a2a452a91690ce5498a896faafbd9335c9e40ad96b376331e49fdf65",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib": {
+      "lake-manifest.json": "a7190d6c08899259e731c0d98b94fb540feb172f0dc7754be2a097ceae253f3d",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible": {
+      "lake-manifest.json": "dad8576cdc1e841035f5ca859d316179a4a7adc3d996c096fef5b09ad43209dd",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    },
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets": {
+      "lake-manifest.json": "4e7006665c64f09104a34e069b9e18b57c296564f9028838d61527345d020303",
+      "lean-toolchain": "27e73059e3a4d568450f74e39c2f79676c4f8d41373fff15170690f124e3bacd"
+    }
+  },
+  "process_wall_seconds": 52.02124329999788,
+  "provider_validated": false,
+  "publication": "none; never add this attempt to another LEAN_PATH",
+  "python_executable": "C:\\Users\\glaze\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "python_version": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "removed_environment_keys": [],
+  "reusable_accepted_artifact": false,
+  "sample_count": 208,
+  "saved_import_graph_sha256": "ba430ed0e832bb8340fcd6f5b3a3cd3e2e2e577df75c08a1bbe3184efea3ad58",
+  "staged_source_root": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-build\\memory-probe\\original-imports\\src",
+  "staging_sha256_expected": "fdcb7789127f93226eb23fdcd1e96d8d07d9bacfcdb929be8694b971eb39edf9",
+  "started_utc": "2026-11-13T06:47:14.022810+00:00",
+  "status": "observed_private_limit_stop",
+  "variant": "original-imports",
+  "wrapper_sha256": "6692bdc8ab6de8c4d04868b1f8c79edd5fede08b8008d46624abe737672d1404"
+}

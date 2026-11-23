@@ -1,0 +1,94 @@
+[
+  {
+    "width": 262144,
+    "m": 188,
+    "k": 9,
+    "S": 3789,
+    "flint_packed": {
+      "median_us": 3015.147000005527,
+      "trials": [
+        {
+          "wall_seconds": 0.2808481000001848,
+          "cpu_seconds": 0.265625,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 0.3028835999994044,
+          "cpu_seconds": 0.296875,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 0.3015147000005527,
+          "cpu_seconds": 0.3125,
+          "repetitions": 100
+        }
+      ]
+    },
+    "flint_shift_or": {
+      "median_us": 607.6704166692556,
+      "trials": [
+        {
+          "wall_seconds": 0.14104950000000827,
+          "cpu_seconds": 0.125,
+          "repetitions": 240
+        },
+        {
+          "wall_seconds": 0.15481180000006134,
+          "cpu_seconds": 0.140625,
+          "repetitions": 240
+        },
+        {
+          "wall_seconds": 0.14584090000062133,
+          "cpu_seconds": 0.140625,
+          "repetitions": 240
+        }
+      ]
+    }
+  },
+  {
+    "width": 1048576,
+    "m": 250,
+    "k": 9,
+    "S": 5056,
+    "flint_packed": {
+      "median_us": 18375.35900000148,
+      "trials": [
+        {
+          "wall_seconds": 1.8094226999992316,
+          "cpu_seconds": 1.8125,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 1.837535900000148,
+          "cpu_seconds": 1.828125,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 1.8644851999997627,
+          "cpu_seconds": 1.875,
+          "repetitions": 100
+        }
+      ]
+    },
+    "flint_shift_or": {
+      "median_us": 3107.0850000014616,
+      "trials": [
+        {
+          "wall_seconds": 0.30918170000040845,
+          "cpu_seconds": 0.3125,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 0.3386508999992657,
+          "cpu_seconds": 0.328125,
+          "repetitions": 100
+        },
+        {
+          "wall_seconds": 0.31070850000014616,
+          "cpu_seconds": 0.3125,
+          "repetitions": 100
+        }
+      ]
+    }
+  }
+]

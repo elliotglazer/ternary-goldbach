@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "scope": "393 matching Lucas prime roots only; no coverage theorem in this benchmark",
+  "roots": 393,
+  "source_roots": 283,
+  "anchor_roots": 110,
+  "certificate_nodes": 1537,
+  "axioms": [
+    "bool.BOOL_CASES_AX",
+    "bool.ETA_AX",
+    "bool.INFINITY_AX",
+    "bool.SELECT_AX"
+  ],
+  "runs": [
+    {
+      "sample": 1,
+      "times": {
+        "all_roots": {
+          "cpu_seconds": 9.110255,
+          "wall_seconds": 9.117846
+        },
+        "source_roots": {
+          "cpu_seconds": 4.896598,
+          "wall_seconds": 4.903859
+        },
+        "anchor_roots": {
+          "cpu_seconds": 4.805317,
+          "wall_seconds": 4.810133
+        },
+        "export": {
+          "cpu_seconds": 1.415481,
+          "wall_seconds": 1.522011
+        }
+      },
+      "export_bytes": 189167,
+      "export_sha256": "a1cde28c2a540c9a1eb5d438273755dc88987cfb0e03d228a2501a90582fd687",
+      "process_cpu_seconds": 27.59,
+      "peak_rss_kib": 482240
+    },
+    {
+      "sample": 2,
+      "times": {
+        "all_roots": {
+          "cpu_seconds": 8.869391,
+          "wall_seconds": 8.882645
+        },
+        "source_roots": {
+          "cpu_seconds": 4.509239,
+          "wall_seconds": 4.514283
+        },
+        "anchor_roots": {
+          "cpu_seconds": 4.780345,
+          "wall_seconds": 4.785488
+        },
+        "export": {
+          "cpu_seconds": 0.856398,
+          "wall_seconds": 0.952054
+        }
+      },
+      "export_bytes": 189167,
+      "export_sha256": "a1cde28c2a540c9a1eb5d438273755dc88987cfb0e03d228a2501a90582fd687",
+      "process_cpu_seconds": 26.509999999999998,
+      "peak_rss_kib": 405124
+    },
+    {
+      "sample": 3,
+      "times": {
+        "all_roots": {
+          "cpu_seconds": 10.135366,
+          "wall_seconds": 10.152329
+        },
+        "source_roots": {
+          "cpu_seconds": 5.29982,
+          "wall_seconds": 5.307594
+        },
+        "anchor_roots": {
+          "cpu_seconds": 6.259763,
+          "wall_seconds": 6.2703
+        },
+        "export": {
+          "cpu_seconds": 1.08085,
+          "wall_seconds": 1.181148
+        }
+      },
+      "export_bytes": 189167,
+      "export_sha256": "a1cde28c2a540c9a1eb5d438273755dc88987cfb0e03d228a2501a90582fd687",
+      "process_cpu_seconds": 30.14,
+      "peak_rss_kib": 378800
+    }
+  ],
+  "medians": {
+    "all_roots": {
+      "cpu_seconds": 9.110255,
+      "wall_seconds": 9.117846
+    },
+    "source_roots": {
+      "cpu_seconds": 4.896598,
+      "wall_seconds": 4.903859
+    },
+    "anchor_roots": {
+      "cpu_seconds": 4.805317,
+      "wall_seconds": 4.810133
+    },
+    "export": {
+      "cpu_seconds": 1.08085,
+      "wall_seconds": 1.181148
+    }
+  },
+  "exports_identical": true,
+  "controls_per_run": 3
+}

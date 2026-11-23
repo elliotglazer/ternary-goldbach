@@ -1,0 +1,73 @@
+{
+  "results": {
+    "uncompressed_0": {
+      "total": 34515,
+      "strict": 34513,
+      "ambiguous": 2,
+      "hidden_total": 13,
+      "hidden_strict": 13,
+      "ambiguous_with_equal_endpoints": 0
+    },
+    "per_value_8": {
+      "total": 34515,
+      "strict": 34375,
+      "ambiguous": 140,
+      "hidden_total": 13,
+      "hidden_strict": 11,
+      "ambiguous_with_equal_endpoints": 2
+    },
+    "per_value_12": {
+      "total": 34515,
+      "strict": 34489,
+      "ambiguous": 26,
+      "hidden_total": 13,
+      "hidden_strict": 13,
+      "ambiguous_with_equal_endpoints": 0
+    },
+    "per_value_16": {
+      "total": 34515,
+      "strict": 34506,
+      "ambiguous": 9,
+      "hidden_total": 13,
+      "hidden_strict": 13,
+      "ambiguous_with_equal_endpoints": 0
+    },
+    "shared_16_8": {
+      "total": 34515,
+      "strict": 33930,
+      "ambiguous": 585,
+      "hidden_total": 13,
+      "hidden_strict": 6,
+      "ambiguous_with_equal_endpoints": 19
+    },
+    "shared_16_12": {
+      "total": 34515,
+      "strict": 34464,
+      "ambiguous": 51,
+      "hidden_total": 13,
+      "hidden_strict": 13,
+      "ambiguous_with_equal_endpoints": 0
+    },
+    "shared_16_16": {
+      "total": 34515,
+      "strict": 34499,
+      "ambiguous": 16,
+      "hidden_total": 13,
+      "hidden_strict": 13,
+      "ambiguous_with_equal_endpoints": 0
+    }
+  },
+  "conductor": 10004,
+  "indices": [
+    84184,
+    84199
+  ],
+  "mantissa": "b unsigned magnitude bits plus sign, dyadic exponent per value or per character block of 16",
+  "quantization_radius": "original source radius plus half the quantum",
+  "sha256": {
+    "precision_stencil.py": "d3d04284b614f4a25b60d4e4bc112d0d289a92e574b69408170177fc68acd497",
+    "high-signs.tsv.gz": "48b5a32c66309f0206cca66abb2abab4e84c63cf7bed33bdf7daa4b1ae385d00",
+    "high-midpoints.tsv.gz": "c49dac9caf52067aad378b47db984eca5b6d600f6ab8c6710091333a625cdd10",
+    "strip_interpolation.py": "eae197bcf5be7b38e98af6178bc9feb9c3c510da356ac63d45924dc7157f3037"
+  }
+}

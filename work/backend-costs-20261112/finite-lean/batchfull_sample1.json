@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\ReplayBatchFull1024.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\ReplayBatchFull1024.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 52.986512200004654,
+  "user_cpu_seconds": 42.6875,
+  "system_cpu_seconds": 9.75,
+  "cpu_seconds": 52.4375,
+  "peak_working_set_bytes": 1356435456,
+  "observed_peak_private_bytes": 2938818560,
+  "memory_samples": 1050,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "batch_full",
+      "width": 1024,
+      "repetitions": 1,
+      "declarations": 265,
+      "proof_pool_generation_ns": 22317700,
+      "kernel_bundle_wall_ns": 18602485400
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayBatchFull1024.lean",
+      "bytes": 176,
+      "sha256": "422D8F894377C8729B7B53C87F2BEDC14FA3819EC5171E963106EC91F354EE12"
+    },
+    {
+      "path": "batchfull_sample1.log",
+      "bytes": 92,
+      "sha256": "ACD2035A1192EC669F31C0D37A981446B0608FEA09CE605569CA45396669E1AE"
+    },
+    {
+      "path": "ReplayBatchFull1024.olean",
+      "bytes": 1568,
+      "sha256": "096AFAEDCABB7DAE8AAF7DBBE6E171745773ADAEA052420634A2E3DEBE633D3C"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

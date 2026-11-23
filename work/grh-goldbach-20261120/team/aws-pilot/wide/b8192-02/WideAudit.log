@@ -1,0 +1,8 @@
+theorem WideGoldbach.endpoint_range : ∀ (n : ℕ),
+  3999999999967234 ≤ n → n ≤ 4000000000000000 → n % 2 = 0 → ∃ p q, Nat.Prime p ∧ Nat.Prime q ∧ p + q = n :=
+fun n hlo hhi he =>
+  if hm : n < 3999999999983618 then UpperShard0.verified n hlo hm he
+  else
+    UpperShard1.verified n (Decidable.byContradiction fun a => WideGoldbach.endpoint_range._proof_1_1 n hlo hhi he hm a)
+      (Decidable.byContradiction fun a => WideGoldbach.endpoint_range._proof_1_2 n hlo hhi he hm a) he
+'WideGoldbach.endpoint_range' depends on axioms: [propext, Classical.choice, Quot.sound]

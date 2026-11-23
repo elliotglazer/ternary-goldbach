@@ -1,0 +1,37 @@
+Holmake: Scanning $(HOLDIR)/src/sort
+Holmake: Scanning $(HOLDIR)/src/string
+Holmake: Scanning $(HOLDIR)/src/TeX
+Holmake: Scanning $(HOLDIR)/src/bag
+Holmake: Scanning $(HOLDIR)/src/n-bit
+Holmake: Scanning $(HOLDIR)/src/res_quan/src
+Holmake: Scanning $(HOLDIR)/src/finite_maps
+Holmake: Scanning $(HOLDIR)/src/integer
+Holmake: Scanning $(HOLDIR)/src/num/extra_theories
+Holmake: Scanning $(HOLDIR)/src/transfer
+Holmake: Scanning $(HOLDIR)/src/pred_set/src/more_theories
+Holmake: Scanning $(HOLDIR)/src/rational
+Holmake: Scanning $(HOLDIR)/src/num/theories/cv_compute/automation
+Holmake: Scanning /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup
+Holmake: Scanning ../raw-analytic/dependency-build-win01
+Holmake: Scanning ../raw-pair-round-proof
+Holmake: Scanning ../source-log-real
+Holmake: Scanning ../source-producer
+Holmake: Scanning ../source-log-horner
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-log-range/SourceLogRangeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceLogRange">>
+Saved definition ____ "slr_error_bound_def"
+Saved definition ____ "slr_numerator_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceLogRange)>>
+Proof of 
+
+∀A D k.
+  source_log_domain A D k ⇒
+  0 < D ∧ 0 < 2 ** k * D ∧ 0 < A ∧ 0 < A + 2 ** k * D ∧
+  3 * (A − 2 ** k * D) ≤ A + 2 ** k * D
+
+failed.
+Tactic failure proving "slr_domain_bounds"; heap saved to SourceLogRange.slr_domain_bounds.dumpedheap.
+Resume with: bin/hol --holstate=SourceLogRange.slr_domain_bounds.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-log-range/SourceLogRangeScript - exited with code 1

@@ -1,0 +1,162 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\CpuRawLogs64.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\CpuRawLogs64.lean"
+  ],
+  "exit_code": 1,
+  "stop": null,
+  "wall_seconds": 21.998712000000523,
+  "cpu_seconds": 21.859375,
+  "phase_cpu_seconds": {},
+  "reader_errors": [],
+  "rows": [],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "observed_peak_private_bytes": 3423608832,
+  "peak_working_set_bytes": 1508261888,
+  "source_sha256": "033872ee0509050e13a95911d06e56c015762858403dfed15d146cda577c08ac",
+  "source_unchanged": true,
+  "log_sha256": "8deca85d26aeaa5aaf69848a05ac80a37569f6fce39f8ce3238b6a5ede5bdf45",
+  "dependency_builds": false,
+  "protocol": "Child waits for parent CPU sample before and after phase; first admission/imports/warmup excluded; tiny marker IO included",
+  "local_snapshot_before": [
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\FiniteReplay.lean",
+      "sha256": "6f9bc9ecb3cb1000f975b30db43174d6c2d2a3859b4699857c50af9e389319c0"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\FiniteReplay.olean",
+      "sha256": "3a87c58721361bdb81e59666f6cbad6a8b084ed46eef3d86e944c66a7b2a61c7"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\CpuRawLogs64.lean",
+      "sha256": "033872ee0509050e13a95911d06e56c015762858403dfed15d146cda577c08ac"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawInverseRoot.lean",
+      "sha256": "d0b6c28b39f35de88056ca4bbb078b2a8d84463dc92aaa2d32f3c4cd1ba67619"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawInverseRoot.olean",
+      "sha256": "802aac0694d584681e9f1650801165510bf24858621df2571c17635ec3a7789c"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogAssembly.lean",
+      "sha256": "bdf4c5dabb9f68ea9e5754452ce0c228eda801a9f144a4648f415e7c900485d7"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogAssembly.olean",
+      "sha256": "40881ed6bb7aef1a9da24f6034b136a65c8ad71a9f57a6b4c5062b1f92810bc6"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogCases64.lean",
+      "sha256": "d744f35c15c7d188f714f7f6438c5cdacea7b7eb0e6e6b79cd7b63f97ea61aba"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogCases64.olean",
+      "sha256": "3851bb723f88c8fbfef4e401e459eb1453f6e71a7f3fd42432d10d80dd9433da"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogHorner.lean",
+      "sha256": "b8f3d80805063d22c653d1949732de0b67e92be329512eabd1198a88e8a67aad"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogHorner.olean",
+      "sha256": "6446204458a0eb5e7ff0928de125c04d87a7cafa53cd3aab1df5081d2e5fe406"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogTail.lean",
+      "sha256": "2d6e8e9a38086653661ff06a263164bf04b077e41c7efbdd96011466eb52ab55"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogTail.olean",
+      "sha256": "83c031b40716529b009f414bad42bec12e7d2d10f6c6fdd2d6d789c34a3888dd"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawReplay.lean",
+      "sha256": "de90469dc798beaf60b048b640863e008c709753c0222584989516f96ed7144c"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawReplay.olean",
+      "sha256": "c50e856f7e6c632bb25ec3ab48775d01f6bc8c17b4644f83d5967b35e714b3e8"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\run_replay.py",
+      "sha256": "dfed9862edc92e1a1637f29a2604d05e5c6436eab398e5b4dfcda768df46a231"
+    }
+  ],
+  "local_snapshot_after": [
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\FiniteReplay.lean",
+      "sha256": "6f9bc9ecb3cb1000f975b30db43174d6c2d2a3859b4699857c50af9e389319c0"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\FiniteReplay.olean",
+      "sha256": "3a87c58721361bdb81e59666f6cbad6a8b084ed46eef3d86e944c66a7b2a61c7"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\CpuRawLogs64.lean",
+      "sha256": "033872ee0509050e13a95911d06e56c015762858403dfed15d146cda577c08ac"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawInverseRoot.lean",
+      "sha256": "d0b6c28b39f35de88056ca4bbb078b2a8d84463dc92aaa2d32f3c4cd1ba67619"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawInverseRoot.olean",
+      "sha256": "802aac0694d584681e9f1650801165510bf24858621df2571c17635ec3a7789c"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogAssembly.lean",
+      "sha256": "bdf4c5dabb9f68ea9e5754452ce0c228eda801a9f144a4648f415e7c900485d7"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogAssembly.olean",
+      "sha256": "40881ed6bb7aef1a9da24f6034b136a65c8ad71a9f57a6b4c5062b1f92810bc6"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogCases64.lean",
+      "sha256": "d744f35c15c7d188f714f7f6438c5cdacea7b7eb0e6e6b79cd7b63f97ea61aba"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogCases64.olean",
+      "sha256": "3851bb723f88c8fbfef4e401e459eb1453f6e71a7f3fd42432d10d80dd9433da"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogHorner.lean",
+      "sha256": "b8f3d80805063d22c653d1949732de0b67e92be329512eabd1198a88e8a67aad"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogHorner.olean",
+      "sha256": "6446204458a0eb5e7ff0928de125c04d87a7cafa53cd3aab1df5081d2e5fe406"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogTail.lean",
+      "sha256": "2d6e8e9a38086653661ff06a263164bf04b077e41c7efbdd96011466eb52ab55"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawLogTail.olean",
+      "sha256": "83c031b40716529b009f414bad42bec12e7d2d10f6c6fdd2d6d789c34a3888dd"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawReplay.lean",
+      "sha256": "de90469dc798beaf60b048b640863e008c709753c0222584989516f96ed7144c"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\RawReplay.olean",
+      "sha256": "c50e856f7e6c632bb25ec3ab48775d01f6bc8c17b4644f83d5967b35e714b3e8"
+    },
+    {
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\raw-head\\run_replay.py",
+      "sha256": "dfed9862edc92e1a1637f29a2604d05e5c6436eab398e5b4dfcda768df46a231"
+    }
+  ],
+  "local_imports_unchanged": true,
+  "protocol_valid": false
+}

@@ -1,0 +1,175 @@
+<<HOL message: Created theory "HandoffMaterialized">>
+HANDOFF_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+HANDOFF_MODE,materialized,integer_only
+HANDOFF_FIXTURE,01C3E9F1AF2FD8DF40C9EF770840078E02EC356737727637C58397836C5C6BF9
+HANDOFF_PHASE,construct_sources,0.000995000,0.001482000
+HANDOFF_PHASE,define_sources,0.001814000,0.001802000
+Saved theorem _______ "cv_accepted_integer_sources_thm"
+Finished translating accepted_integer_sources, stored in cv_accepted_integer_sources_thm
+HANDOFF_PHASE,translate_sources,0.012120000,0.013278000
+HANDOFF_PHASE,construct_final_outputs,0.025176000,0.025193000
+HANDOFF_PHASE,producer_representation,0.000337000,0.000337000
+HANDOFF_PHASE,producer_from_to,0.000045000,0.000044000
+HANDOFF_PHASE,producer_code_equations,0.000234000,0.000235000
+HANDOFF_PHASE,producer_prepare_conversion,0.000243000,0.000244000
+HANDOFF_PHASE,producer_proof_context,0.000041000,0.000040000
+HANDOFF_PHASE,producer_compute,0.026828000,0.026839000
+HANDOFF_PHASE,producer_decode,0.756892000,0.757118000
+HANDOFF_PHASE,producer_close,0.628712000,0.629025000
+HANDOFF_PHASE,producer_normalize_boolean,0.000044000,0.000044000
+HANDOFF_TAG,producer,DISK_THM,
+HANDOFF_PHASE,construct_intermediate_literal,0.059913000,0.061466000
+HANDOFF_PHASE,bind_intermediate_literal,0.005431000,0.005447000
+HANDOFF_PHASE,define_intermediate,0.188679000,0.188753000
+Saved theorem _______ "cv_materialized_trace_thm"
+Finished translating materialized_trace, stored in cv_materialized_trace_thm
+HANDOFF_PHASE,translate_intermediate,7.158615000,7.163542000
+HANDOFF_PHASE,bind_producer_to_named_trace,0.003480000,0.003491000
+HANDOFF_PHASE,consumer_representation,0.000386000,0.000388000
+HANDOFF_PHASE,consumer_from_to,0.000049000,0.000048000
+HANDOFF_PHASE,consumer_code_equations,0.011608000,0.011620000
+HANDOFF_PHASE,consumer_prepare_conversion,0.016122000,0.016130000
+HANDOFF_PHASE,consumer_proof_context,0.000076000,0.000077000
+HANDOFF_PHASE,consumer_compute,0.012909000,0.012917000
+HANDOFF_PHASE,consumer_decode,0.225248000,0.225272000
+HANDOFF_PHASE,consumer_close,0.452254000,0.452232000
+HANDOFF_PHASE,consumer_normalize_boolean,0.000046000,0.000045000
+HANDOFF_TAG,consumer,DISK_THM,
+HANDOFF_PHASE,compose_pipeline,0.000819000,0.000819000
+HANDOFF_PHASE,bind_final_outputs,0.001770000,0.001779000
+HANDOFF_PHASE,public_literal_binding,0.009791000,0.009805000
+HANDOFF_TAG,final_integer_pipeline,DISK_THM,
+Saved theorem _______ "final_integer_pipeline"
+HANDOFF_PHASE,save_final,0.020058000,0.020686000
+HANDOFF_PRIMARY_COMPLETE,516,8,129
+HANDOFF_PHASE,control_construct_seed,0.000930000,0.000951000
+HANDOFF_PHASE,control_define_seed,0.001884000,0.001895000
+Saved theorem _______ "cv_control_seed_thm"
+Finished translating control_seed, stored in cv_control_seed_thm
+HANDOFF_PHASE,control_translate_seed,0.013917000,0.015260000
+HANDOFF_PHASE,control_seed_representation,2.776179000,2.777122000
+HANDOFF_PHASE,control_seed_from_to,0.000016000,0.000016000
+HANDOFF_PHASE,control_seed_code_equations,0.003020000,0.003028000
+HANDOFF_PHASE,control_seed_prepare_conversion,0.000397000,0.000397000
+HANDOFF_PHASE,control_seed_proof_context,0.019506000,0.019525000
+HANDOFF_PHASE,control_seed_compute,0.012051000,0.012062000
+HANDOFF_PHASE,control_seed_decode,0.000080000,0.000078000
+HANDOFF_PHASE,control_seed_close,0.334724000,0.334787000
+HANDOFF_PHASE,control_seed_normalize_boolean,0.001345000,0.001351000
+HANDOFF_TAG,control_seed,DISK_THM,
+Saved theorem _______ "reject_seed"
+HANDOFF_REJECTED,seed
+HANDOFF_PHASE,control_construct_step,0.000700000,0.000700000
+HANDOFF_PHASE,control_define_step,0.001763000,0.001770000
+Saved theorem _______ "cv_control_step_thm"
+Finished translating control_step, stored in cv_control_step_thm
+HANDOFF_PHASE,control_translate_step,0.011542000,0.012719000
+HANDOFF_PHASE,control_step_representation,2.758132000,2.758481000
+HANDOFF_PHASE,control_step_from_to,0.000009000,0.000013000
+HANDOFF_PHASE,control_step_code_equations,0.003986000,0.003995000
+HANDOFF_PHASE,control_step_prepare_conversion,0.000708000,0.000708000
+HANDOFF_PHASE,control_step_proof_context,0.071946000,0.071957000
+HANDOFF_PHASE,control_step_compute,0.043596000,0.043578000
+HANDOFF_PHASE,control_step_decode,0.000110000,0.000110000
+HANDOFF_PHASE,control_step_close,0.493294000,0.493362000
+HANDOFF_PHASE,control_step_normalize_boolean,0.001174000,0.001182000
+HANDOFF_TAG,control_step,DISK_THM,
+Saved theorem _______ "reject_step"
+HANDOFF_REJECTED,step
+HANDOFF_PHASE,control_interior_representation,6.263681000,6.270191000
+HANDOFF_PHASE,control_interior_from_to,0.000011000,0.000009000
+HANDOFF_PHASE,control_interior_code_equations,0.006069000,0.006082000
+HANDOFF_PHASE,control_interior_prepare_conversion,0.000329000,0.000348000
+HANDOFF_PHASE,control_interior_proof_context,0.037489000,0.037502000
+HANDOFF_PHASE,control_interior_compute,0.017209000,0.017228000
+HANDOFF_PHASE,control_interior_decode,0.000120000,0.000118000
+HANDOFF_PHASE,control_interior_close,1.399599000,1.399908000
+HANDOFF_PHASE,control_interior_normalize_boolean,0.002511000,0.002528000
+HANDOFF_TAG,control_interior,DISK_THM,
+Saved theorem _______ "reject_interior"
+HANDOFF_REJECTED,interior
+HANDOFF_PHASE,control_row_index_representation,6.735260000,6.750269000
+HANDOFF_PHASE,control_row_index_from_to,0.000011000,0.000011000
+HANDOFF_PHASE,control_row_index_code_equations,0.006966000,0.007016000
+HANDOFF_PHASE,control_row_index_prepare_conversion,0.000309000,0.000309000
+HANDOFF_PHASE,control_row_index_proof_context,0.038081000,0.038099000
+HANDOFF_PHASE,control_row_index_compute,0.016673000,0.016680000
+HANDOFF_PHASE,control_row_index_decode,0.000074000,0.000073000
+HANDOFF_PHASE,control_row_index_close,2.384028000,2.386014000
+HANDOFF_PHASE,control_row_index_normalize_boolean,0.002429000,0.002441000
+HANDOFF_TAG,control_row_index,DISK_THM,
+Saved theorem _______ "reject_row_index"
+HANDOFF_REJECTED,row_index
+HANDOFF_PHASE,control_dropped_row_representation,7.402560000,7.421896000
+HANDOFF_PHASE,control_dropped_row_from_to,0.000011000,0.000012000
+HANDOFF_PHASE,control_dropped_row_code_equations,0.005971000,0.005985000
+HANDOFF_PHASE,control_dropped_row_prepare_conversion,0.000089000,0.000087000
+HANDOFF_PHASE,control_dropped_row_proof_context,0.159697000,0.160652000
+HANDOFF_PHASE,control_dropped_row_compute,0.046592000,0.046596000
+HANDOFF_PHASE,control_dropped_row_decode,0.000083000,0.000084000
+HANDOFF_PHASE,control_dropped_row_close,2.386396000,2.386741000
+HANDOFF_PHASE,control_dropped_row_normalize_boolean,0.002452000,0.002416000
+HANDOFF_TAG,control_dropped_row,DISK_THM,
+Saved theorem _______ "reject_dropped_row"
+HANDOFF_REJECTED,dropped_row
+HANDOFF_PHASE,control_repeated_row_representation,8.854640000,8.884921000
+HANDOFF_PHASE,control_repeated_row_from_to,0.000012000,0.000013000
+HANDOFF_PHASE,control_repeated_row_code_equations,0.006751000,0.006767000
+HANDOFF_PHASE,control_repeated_row_prepare_conversion,0.000092000,0.000092000
+HANDOFF_PHASE,control_repeated_row_proof_context,0.042678000,0.042694000
+HANDOFF_PHASE,control_repeated_row_compute,0.016982000,0.016994000
+HANDOFF_PHASE,control_repeated_row_decode,0.000096000,0.000097000
+HANDOFF_PHASE,control_repeated_row_close,1.571061000,1.571618000
+HANDOFF_PHASE,control_repeated_row_normalize_boolean,0.002160000,0.002172000
+HANDOFF_TAG,control_repeated_row,DISK_THM,
+Saved theorem _______ "reject_repeated_row"
+HANDOFF_REJECTED,repeated_row
+HANDOFF_PHASE,control_final_entry_representation,4.269096000,4.270871000
+HANDOFF_PHASE,control_final_entry_from_to,0.000015000,0.000013000
+HANDOFF_PHASE,control_final_entry_code_equations,0.003297000,0.003312000
+HANDOFF_PHASE,control_final_entry_prepare_conversion,0.000399000,0.000399000
+HANDOFF_PHASE,control_final_entry_proof_context,0.019692000,0.019722000
+HANDOFF_PHASE,control_final_entry_compute,0.010888000,0.010899000
+HANDOFF_PHASE,control_final_entry_decode,0.000068000,0.000067000
+HANDOFF_PHASE,control_final_entry_close,0.367298000,0.367324000
+HANDOFF_PHASE,control_final_entry_normalize_boolean,0.001225000,0.001234000
+HANDOFF_TAG,control_final_entry,DISK_THM,
+Saved theorem _______ "reject_final_entry"
+HANDOFF_REJECTED,final_entry
+HANDOFF_PHASE,control_base_label_representation,4.594182000,4.601754000
+HANDOFF_PHASE,control_base_label_from_to,0.000018000,0.000016000
+HANDOFF_PHASE,control_base_label_code_equations,0.004457000,0.004472000
+HANDOFF_PHASE,control_base_label_prepare_conversion,0.000496000,0.000498000
+HANDOFF_PHASE,control_base_label_proof_context,0.026445000,0.026580000
+HANDOFF_PHASE,control_base_label_compute,0.008894000,0.008902000
+HANDOFF_PHASE,control_base_label_decode,0.000067000,0.000065000
+HANDOFF_PHASE,control_base_label_close,0.489999000,0.490109000
+HANDOFF_PHASE,control_base_label_normalize_boolean,0.001422000,0.001430000
+HANDOFF_TAG,control_base_label,DISK_THM,
+Saved theorem _______ "reject_base_label"
+HANDOFF_REJECTED,base_label
+HANDOFF_PHASE,control_denominator_representation,4.960034000,4.978454000
+HANDOFF_PHASE,control_denominator_from_to,0.000012000,0.000010000
+HANDOFF_PHASE,control_denominator_code_equations,0.003387000,0.003396000
+HANDOFF_PHASE,control_denominator_prepare_conversion,0.000451000,0.000452000
+HANDOFF_PHASE,control_denominator_proof_context,0.022398000,0.022414000
+HANDOFF_PHASE,control_denominator_compute,0.007052000,0.007059000
+HANDOFF_PHASE,control_denominator_decode,0.000069000,0.000068000
+HANDOFF_PHASE,control_denominator_close,0.409914000,0.410053000
+HANDOFF_PHASE,control_denominator_normalize_boolean,0.001309000,0.001317000
+HANDOFF_TAG,control_denominator,DISK_THM,
+Saved theorem _______ "reject_denominator"
+HANDOFF_REJECTED,denominator
+HANDOFF_PHASE,control_negative_ties_representation,0.000628000,0.000630000
+HANDOFF_PHASE,control_negative_ties_from_to,0.000008000,0.000008000
+HANDOFF_PHASE,control_negative_ties_code_equations,0.000077000,0.000077000
+HANDOFF_PHASE,control_negative_ties_prepare_conversion,0.000048000,0.000049000
+HANDOFF_PHASE,control_negative_ties_proof_context,0.000053000,0.000053000
+HANDOFF_PHASE,control_negative_ties_compute,0.000022000,0.000023000
+HANDOFF_PHASE,control_negative_ties_decode,0.000064000,0.000065000
+HANDOFF_PHASE,control_negative_ties_close,0.000254000,0.000255000
+HANDOFF_PHASE,control_negative_ties_normalize_boolean,0.000046000,0.000045000
+HANDOFF_TAG,control_negative_ties,DISK_THM,
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/handoff_materialized.sml : Fail "evaluation not equality"
+error in load handoff_materialized : Fail "evaluation not equality"
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/handoff_materialized.sml:4: Fail "evaluation not equality"

@@ -1,0 +1,80 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-character-kernel[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-gaussian[0m
+Holmake: Scanning [1m../../../../backend-costs-20261112/hol-platt/small-gaussian-transform[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Q10004Window">>
+Saved definition ____ "signs_def"
+Saved definition ____ "inner_def"
+Saved definition ____ "triple_def"
+Saved definition ____ "window_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Q10004Window)>>
+Saved definition ____ "selected_def"
+Saved induction _____ "selected_ind"
+<<HOL message: mk_functional: 
+  pattern completion has added 2 clauses to the original specification.>>
+Saved definition ____ "at_three_def"
+Starting translation of window from Q10004WindowTheory.
+Starting translation of signs from Q10004WindowTheory.
+Saved theorem _______ "cv_signs_thm"
+Finished translating signs, stored in cv_signs_thm
+Starting translation of window from Q10004WindowTheory.
+Starting translation of LENGTH from listTheory.
+Saved definition ____ "cv_LENGTH_def"
+Saved induction _____ "cv_LENGTH_ind"
+Saved theorem _______ "cv_LENGTH_thm"
+Finished translating LENGTH, stored in cv_LENGTH_thm
+Starting translation of window from Q10004WindowTheory.
+Starting translation of inner from Q10004WindowTheory.
+Saved definition ____ "cv_inner_def"
+Saved induction _____ "cv_inner_ind"
+Saved theorem _______ "cv_inner_thm"
+Finished translating inner, stored in cv_inner_thm
+Starting translation of window from Q10004WindowTheory.
+Starting translation of triple from Q10004WindowTheory.
+Saved theorem _______ "cv_triple_thm"
+Finished translating triple, stored in cv_triple_thm
+Starting translation of window from Q10004WindowTheory.
+Saved theorem _______ "cv_window_thm"
+Finished translating window, stored in cv_window_thm
+Starting translation of at_three from Q10004WindowTheory.
+Starting translation of selected from Q10004WindowTheory.
+Saved theorem _______ "cv_selected_thm"
+Finished translating selected, stored in cv_selected_thm
+Starting translation of at_three from Q10004WindowTheory.
+Saved theorem _______ "cv_at_three_thm"
+Finished translating at_three, stored in cv_at_three_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowScript.sml:47: warning: Pattern is not exhaustive. Found near val [label, first, tick, ...] = line ()
+TIMED window_6559 0.118115 0.009492 0.000154
+TIMED count_packet_6559 0.619952 0.020125 0.000165999999999
+Saved theorem _______ "raw_to_count_packet_6559"
+CLOSED_RAW_WINDOW 6559 6
+TIMED window_7707 0.116834 0.009674 0.000113
+TIMED count_packet_7707 0.614197 0.01255 0.000129
+Saved theorem _______ "raw_to_count_packet_7707"
+CLOSED_RAW_WINDOW 7707 3
+TIMED window_5499 0.245146 0.009117 0.000102999999999
+TIMED count_packet_5499 0.310985 0.022399 0.000118000000001
+Saved theorem _______ "raw_to_count_packet_5499"
+CLOSED_RAW_WINDOW 5499 3
+TIMED window_7659 0.261051 0.017281 0.000125000000001
+TIMED count_packet_7659 0.297351 0.009721 0.000157
+Saved theorem _______ "raw_to_count_packet_7659"
+CLOSED_RAW_WINDOW 7659 3
+Exporting theory "Q10004Window" ... done.
+Theory "Q10004Window" took 4.9s to build
+Holmake: [1/1] Q10004Window

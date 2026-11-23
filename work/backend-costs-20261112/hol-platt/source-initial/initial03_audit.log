@@ -1,0 +1,24 @@
+SOURCE_INITIAL_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+SOURCE_INITIAL_ROOT,si_grid_factor,⊢ ∀a b. a ≤ b ⇒ 2 ** b = 2 ** a * 2 ** (b − a)
+SOURCE_INITIAL_ROOT,si_shift_value,⊢ ∀r a b.
+    a ≤ b ⇒
+    source_pair_value (2 ** b) (&r * &(2 ** (b − a)),0) =
+    complex_of_real (&r / 2 pow a)
+SOURCE_INITIAL_ROOT,source_initial_success,⊢ ∀A D a b initial.
+    source_initial A D a b = SOME initial ⇒
+    0 < D ∧ D ≤ A ∧ a ≤ b ∧
+    initial = (&source_inverse_root A D (2 ** a) * &(2 ** (b − a)),0)
+SOURCE_INITIAL_ROOT,source_initial_value,⊢ ∀A D a b initial.
+    source_initial A D a b = SOME initial ⇒
+    source_pair_value (2 ** b) initial =
+    complex_of_real (&source_inverse_root A D (2 ** a) / 2 pow a)
+SOURCE_INITIAL_ROOT,source_amplitude_norm,⊢ ∀A D. 0 < D ∧ D ≤ A ⇒ modu (complex_of_real (sqrt (&D / &A))) ≤ 1
+SOURCE_INITIAL_ROOT,source_initial_accuracy,⊢ ∀A D a b initial.
+    source_initial A D a b = SOME initial ⇒
+    modu
+      (source_pair_value (2 ** b) initial − complex_of_real (sqrt (&D / &A))) <
+    1 / 2 pow a ∧ modu (complex_of_real (sqrt (&D / &A))) ≤ 1
+SOURCE_INITIAL_ROOT,source_amplitude_inverse_sqrt,⊢ ∀A D.
+    0 < A ∧ 0 < D ⇒
+    complex_of_real (sqrt (&D / &A)) = complex_of_real (1 / sqrt (&A / &D))
+SOURCE_INITIAL_EXACT_AUDIT_DONE

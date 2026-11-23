@@ -1,0 +1,28 @@
+open HolKernel Parse boolLib bossLib cv_transLib MatchedTheory GaussTheory meter;
+val _ = intLib.ARITH_TAC;
+val _ = new_theory "MatchedActual";
+val input = TextIO.openIn "matched.txt";
+fun next() = String.tokens Char.isSpace(valOf(TextIO.inputLine input));
+val [pp,ee,mm,qr,qi] = next();
+val p=nat pp and extra=nat ee and m=nat mm and q=pair qr qi;
+fun readvec count =
+  let val xs=pairs(next()) in if length xs=count then vector xs else raise Fail "vector length" end;
+val roots=readvec 512 and chirps=readvec 500 and kernel=readvec 1024 and expected=readvec 1600;
+val _=if Option.isSome(TextIO.inputLine input) then raise Fail "trailing data" else TextIO.closeIn input;
+val args=[p,extra,m,q,roots,chirps,kernel];
+val direct=evaluate "fused" ``Matched$matched`` args;
+val _=if aconv(rhs(concl direct)) expected then () else raise Fail "independent integer output mismatch";
+val _=save_thm("c10000_folded_primitive_coefficients",direct);
+val buckets=evaluate "buckets" ``Gauss$produce`` [nat "10000",m,p,q];
+val tab=rhs(concl buckets);
+val _=if length(#1(listSyntax.dest_list tab))=5303 then () else raise Fail "bucket length";
+val rest=[p,extra,roots,chirps,kernel];
+val finish=evaluate "after" ``Matched$matched_after`` (rest@[tab]);
+val start=cpu();
+val lifted=AP_TERM (list_mk_comb(``Matched$matched_after``,rest)) buckets;
+val composed=TRANS (REWR_CONV matched_def (lhs(concl direct))) (TRANS lifted finish);
+val _=if closed composed andalso aconv(concl composed)(concl direct) then () else raise Fail "split differs";
+val _=save_thm("c10000_folded_primitive_coefficients_split",composed);
+val _=print("COMPOSE "^Real.toString(cpu()-start)^"\n");
+val _=export_theory();
+val _=print "FUSED_DONE\n";

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_BOUNDED_ANALYTIC_REVIEW_WITH_NUMERICAL_CONSISTENCY_CHECKS",
+  "input_sha256": {
+    "FAMILY_ALPHA_MATERIALIZATION_2026-11-11.md": "f6a4dbdf9d6ea212b3c93ae282ce1ca1c463a8004d67617240232f2c74958b5c",
+    "family_alpha_materialize_20261111.py": "fd2c16f0b3c969265e61972d5f2c5772c56e9baba41b66c34f7f82dc2de1f0f6",
+    "family_alpha_materialize_20261111.json": "8e50cda44befe7ce2f38ba3eb3bcdcd1007ce64fc778e7f3ecba0959ff0c3e48"
+  },
+  "author_replay_all_non_timing_fields_match": true,
+  "independent_parameters": {
+    "bits": 192,
+    "N": 768,
+    "M": 48,
+    "exprel_degree": 48
+  },
+  "runs": [
+    {
+      "name": "height100",
+      "coefficients_checked": 512,
+      "residues_checked": 100,
+      "all_consistency_checks_pass": true,
+      "alternative_min_accuracy_bits": 0,
+      "alternative_max_radius": 0.6357365208677948
+    },
+    {
+      "name": "height1000",
+      "coefficients_checked": 512,
+      "residues_checked": 100,
+      "all_consistency_checks_pass": true,
+      "alternative_min_accuracy_bits": -3,
+      "alternative_max_radius": 0.6184374298900366
+    },
+    {
+      "name": "through_pole",
+      "coefficients_checked": 512,
+      "residues_checked": 100,
+      "all_consistency_checks_pass": true,
+      "alternative_min_accuracy_bits": 2,
+      "alternative_max_radius": 2.004489685408771
+    },
+    {
+      "name": "height1000_point_diagnostic",
+      "coefficients_checked": 0,
+      "residues_checked": 100,
+      "all_consistency_checks_pass": true,
+      "alternative_min_accuracy_bits": 169,
+      "alternative_max_radius": 1.709683013178577e-52
+    },
+    {
+      "name": "height1000_narrow_diagnostic",
+      "coefficients_checked": 0,
+      "residues_checked": 100,
+      "all_consistency_checks_pass": true,
+      "alternative_min_accuracy_bits": 8,
+      "alternative_max_radius": 0.000302075786748901
+    }
+  ],
+  "exact_grid_error": "206636686283744621517706808316398118912935438105015655266979/7770675568902916283677847627294075626569627356208558085007249638955617140820833992704",
+  "all100_exact_cell_assignments_pass": true,
+  "all_primary_input_EM_errors_below_7_8e_minus41": true,
+  "seconds": 10.204294999999547,
+  "overlap_is_analytic_proof": false,
+  "builtin_zeta_or_L_used": false,
+  "full_contour_or_production_height_or_Lean_claim": false
+}

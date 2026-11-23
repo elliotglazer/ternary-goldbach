@@ -1,0 +1,14 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawLogTail.lean:88:33: error: Application type mismatch: The argument
+  Nat.cast_nonneg k
+has type
+  0 ≤ ↑k
+but is expected to have type
+  0 ≤ Real.log x - ↑k * Real.log 2 - logPartial 45 v
+in the application
+  abs_of_nonneg (Nat.cast_nonneg k)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawLogTail.lean:93:6: error: Type mismatch
+  add_le_add_left (mul_le_mul_of_nonneg_right hkr (le_of_lt hx)) ?m.589
+has type
+  ↑k * x + ?m.589 ≤ 18 * x + ?m.589
+but is expected to have type
+  1 / 2 ^ 135 + ↑k * (1 / 2 ^ 135) ≤ 1 / 2 ^ 135 + 18 * (1 / 2 ^ 135)

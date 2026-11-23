@@ -1,0 +1,24 @@
+{
+  "status": "PREPARATION_SYNTAX_ONLY_PASS",
+  "script_sha256": "757C1D30A2D030CF46863DDF1D43D4F1169ACD67E802CB41181BC0C6B7A1A620",
+  "module_executed": false,
+  "new_models_evaluated": 0,
+  "new_function_values": 0,
+  "independent_model_budget": 13,
+  "parameters": {
+    "N": 300001,
+    "M": 36,
+    "Taylor_length": 26,
+    "outer_radius": "3/4",
+    "precision_bits": 160,
+    "seconds_cap": 300,
+    "memory_bytes_cap": 536870912
+  },
+  "checks": [
+    "AST parse",
+    "in-memory Python compile only",
+    "no forbidden special-function attributes",
+    "no float literals"
+  ],
+  "scope": "No numerical evaluation or operational authorization"
+}

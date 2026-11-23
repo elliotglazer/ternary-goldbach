@@ -1,0 +1,20 @@
+REFINEMENT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+REFINEMENT_THEOREM,ftr_genlist_pair,oracles=DISK_THM,axioms=,⊢ ∀xs. GENLIST (λi. tx_pair i xs) (LENGTH xs) = xs
+REFINEMENT_THEOREM,ftr_chunks_any,oracles=DISK_THM,axioms=,⊢ ∀n width xs.
+    LENGTH xs = n * width ⇒
+    ft_chunks n width xs =
+    SOME (GENLIST (λi. GENLIST (λj. tx_pair (width * i + j) xs) width) n)
+REFINEMENT_THEOREM,ftr_transpose_any,oracles=DISK_THM,axioms=,⊢ ∀width rows.
+    EVERY (λrow. LENGTH row = width) rows ⇒
+    ft_transpose width rows =
+    SOME
+      (GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i rows)) (LENGTH rows))
+         width)
+REFINEMENT_THEOREM,ftr_concat_shape,oracles=DISK_THM,axioms=,⊢ ∀width rows.
+    EVERY (λrow. LENGTH row = width) rows ⇒
+    ft_concat rows = tx_flatten (LENGTH rows) width rows
+REFINEMENT_THEOREM,ft_tensor_refines,oracles=DISK_THM,axioms=,⊢ ∀cache xs.
+    LENGTH xs = 4800 ⇒
+    ft_tensor cache xs = SOME (tx_tensor_selected cache xs)
+REFINEMENT_THEOREM,ft_checked_refines,oracles=DISK_THM,axioms=,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+C10004_TRAVERSAL_REFINEMENT_AUDIT_DONE_GENERIC_ONLY

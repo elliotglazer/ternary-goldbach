@@ -1,0 +1,36 @@
+{
+  "status": "PASS_EXACT_SCALARS_AND_PINS",
+  "checks": {
+    "exp1_lower": true,
+    "exp1_upper": true,
+    "log_bounds": true,
+    "closed_head_count": true,
+    "uniform_count_slope": true,
+    "ratio": true,
+    "low_CS": true,
+    "reciprocal_total": true,
+    "weight_exponent": true,
+    "weighted_mass": true,
+    "lower_endpoint": true,
+    "wider_strip_prefactor": true,
+    "sqrt_endpoint": true,
+    "low_error": true,
+    "unchanged_terms": true,
+    "final_upper": true,
+    "far_tail": true
+  },
+  "pins": {
+    "audit/P4_SHARED_STRIP_REDUCTION_2026-11-11.md": "EE2E6A7752136F751D64890A0E2BD4CD613790529B1A4D5BC24483F2A3B5B585",
+    "audit/p4_shared_strip_scalars_20261111.py": "641D47F7ADB06F1266A7D3C15BC5514818FBE1A85139942B6DCE3F4AAEC6ACBA",
+    "mellin/RESUME_PSI_ANALYTIC_COUNT_2026-11-11.md": "4648E4C454F4344D4F110E878F6CF619F5AC2128CAC91C2658E443FA3D1DF303",
+    "prime-estimates/XiMass.lean": "DC2F179566C4DD7EFEBBC295CD49C1E40CD1B861EAC5555ABF6EA4377765A899",
+    "audit/XIMASS_REVIEW.md": "F285D46C3275A3A605A52974A5FA30BCAA87912007C6A28CC5BFD3772C5DD436",
+    "zero-sum/FINITE_MASS_ORDER_TRANSPORT_2026-11-11.md": "C62CB504C15A02CB954C35F8F5DAB5B551C483014F6FEE1F957FF37C444C5E0D",
+    "prime-estimates/PRIME_CONSUMER_SOURCE_JOIN_2026-11-11.md": "B5F377CEED926B70B22E2539086D5C423D474A065D3E10F56D93C93108377B61",
+    "mellin/RESUME_PSI_LOW_ZERO_REFINEMENT_2026-11-11.md": "33C01406E927F8F49F329AB52B967AA14B85B64DF7928A034C3028EFEEB91F61"
+  },
+  "weighted_mass_upper": "18271/48",
+  "independent_endpoint_upper": "32433710867602791593/32396104736483233500",
+  "error_upper": "11000011/2000000000",
+  "scope": "No source import, analytic evaluation, or Lean proof."
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\FastScalarP343N64.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\FastScalarP343N64.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 3.7919342999957735,
+  "user_cpu_seconds": 1.5625,
+  "system_cpu_seconds": 3.09375,
+  "cpu_seconds": 4.65625,
+  "peak_working_set_bytes": 507752448,
+  "observed_peak_private_bytes": 1125879808,
+  "memory_samples": 75,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "FastScalarP343N64.lean",
+      "bytes": 30285,
+      "sha256": "2BFD0DCE8DB215F3D46B8C106F5CF69FC1360AA75B1E07BA397B545121A3AE31"
+    },
+    {
+      "path": "build_FastScalarP343N64.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "FastScalarP343N64.olean",
+      "bytes": 210960,
+      "sha256": "8C36135576C578E63C5FB3CE7005784B69C2CF7ADDE04F28B389C82990EC677D"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

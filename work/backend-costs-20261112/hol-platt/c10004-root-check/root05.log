@@ -1,0 +1,131 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 2 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootBinsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "RootBins">>
+Saved theorem _______ "run_compute"
+Saved definition ____ "run_def"
+Saved definition ____ "signok_def"
+Saved definition ____ "bins_def"
+Saved definition ____ "centers_def"
+Starting translation of bins from RootBinsTheory.
+Saved theorem _______ "cv_rep_list_datatype"
+Starting translation of signok from RootBinsTheory.
+Starting translation of run from RootBinsTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in RootBins)>>
+Saved theorem _______ "cv_run_thm"
+Finished translating run, stored in cv_run_thm
+Starting translation of signok from RootBinsTheory.
+Saved theorem _______ "cv_signok_thm"
+Finished translating signok, stored in cv_signok_thm
+Starting translation of bins from RootBinsTheory.
+Saved theorem _______ "cv_bins_thm"
+Finished translating bins, stored in cv_bins_thm
+Starting translation of centers from RootBinsTheory.
+Saved theorem _______ "cv_centers_thm"
+Finished translating centers, stored in cv_centers_thm
+Saved definition ____ "p_checked_centers_def"
+Starting translation of p_checked_centers from RootBinsTheory.
+Starting translation of LENGTH from listTheory.
+Saved definition ____ "cv_LENGTH_def"
+Saved induction _____ "cv_LENGTH_ind"
+Saved theorem _______ "cv_LENGTH_thm"
+Finished translating LENGTH, stored in cv_LENGTH_thm
+Starting translation of p_checked_centers from RootBinsTheory.
+Saved theorem _______ "cv_p_checked_centers_thm"
+Finished translating p_checked_centers, stored in cv_p_checked_centers_thm
+Saved theorem _______ "checked_centers"
+Saved definition ____ "p_bad_controls_def"
+Starting translation of p_bad_controls from RootBinsTheory.
+Starting translation of REVERSE from listTheory.
+Starting translation of APPEND from listTheory.
+Saved definition ____ "cv_APPEND_def"
+Saved induction _____ "cv_APPEND_ind"
+Saved theorem _______ "cv_APPEND_thm"
+Finished translating APPEND, stored in cv_APPEND_thm
+Starting translation of REVERSE from listTheory.
+Saved definition ____ "cv_REVERSE_def"
+Saved induction _____ "cv_REVERSE_ind"
+Saved theorem _______ "cv_REVERSE_thm"
+Finished translating REVERSE, stored in cv_REVERSE_thm
+Starting translation of p_bad_controls from RootBinsTheory.
+Saved theorem _______ "cv_p_bad_controls_thm"
+Finished translating p_bad_controls, stored in cv_p_bad_controls_thm
+Saved theorem _______ "bad_controls"
+Exporting theory "RootBins" ... done.
+Theory "RootBins" took 0.53626s to build
+Holmake: [1/2] RootBins
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootRowsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "RootRows">>
+Saved definition ____ "quadrant_def"
+Saved definition ____ "pick_def"
+Saved definition ____ "wave_def"
+Saved definition ____ "rows_def"
+Saved definition ____ "expected_def"
+Saved definition ____ "rowok_def"
+Starting translation of rows from RootRowsTheory.
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "cv_rows_thm"
+Finished translating rows, stored in cv_rows_thm
+Starting translation of rowok from RootRowsTheory.
+Saved definition ____ "GENLIST_expected_1_def"
+Saved induction _____ "GENLIST_expected_1_ind"
+Starting translation of GENLIST_expected from RootRowsTheory.
+Starting translation of SNOC from listTheory.
+Saved definition ____ "cv_SNOC_def"
+Saved induction _____ "cv_SNOC_ind"
+Saved theorem _______ "cv_SNOC_thm"
+Finished translating SNOC, stored in cv_SNOC_thm
+Starting translation of GENLIST_expected from RootRowsTheory.
+Starting translation of expected from RootRowsTheory.
+Starting translation of wave from RootRowsTheory.
+Starting translation of pick from RootRowsTheory.
+Saved theorem _______ "cv_pick_thm"
+Finished translating pick, stored in cv_pick_thm
+Starting translation of wave from RootRowsTheory.
+Starting translation of quadrant from RootRowsTheory.
+Saved theorem _______ "cv_quadrant_thm"
+Finished translating quadrant, stored in cv_quadrant_thm
+Starting translation of wave from RootRowsTheory.
+Saved theorem _______ "cv_wave_thm"
+Finished translating wave, stored in cv_wave_thm
+Starting translation of expected from RootRowsTheory.
+Saved theorem _______ "cv_expected_thm"
+Finished translating expected, stored in cv_expected_thm
+Starting translation of GENLIST_expected from RootRowsTheory.
+Saved definition ____ "cv_GENLIST_expected_def"
+Saved induction _____ "cv_GENLIST_expected_ind"
+Saved theorem _______ "cv_GENLIST_expected_thm"
+Finished translating GENLIST_expected, stored in cv_GENLIST_expected_thm
+Saved theorem _______ "GENLIST_expected_ho"
+Starting translation of rowok from RootRowsTheory.
+Saved theorem _______ "cv_rowok_thm"
+Finished translating rowok, stored in cv_rowok_thm
+Saved definition ____ "p_checked_rows_def"
+Starting translation of p_checked_rows from RootRowsTheory.
+Saved definition ____ "EVERY_rowok_rows_1_def"
+Saved induction _____ "EVERY_rowok_rows_1_ind"
+Starting translation of EVERY_rowok_rows from RootRowsTheory.
+Saved theorem _______ "cv_EVERY_rowok_rows_thm"
+Finished translating EVERY_rowok_rows, stored in cv_EVERY_rowok_rows_thm
+Saved theorem _______ "EVERY_rowok_rows_ho"
+Starting translation of p_checked_rows from RootRowsTheory.
+Saved definition ____ "MAP_FST_rows_1_def"
+Saved induction _____ "MAP_FST_rows_1_ind"
+Starting translation of MAP_FST_rows from RootRowsTheory.
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootRowsScript.sml : HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootRowsScript : HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootRowsScript - exited with code 1

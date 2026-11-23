@@ -1,0 +1,20 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawLogHorner.lean:141:54: error(lean.unknownIdentifier): Unknown identifier `abs_add`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawLogHorner.lean:165:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑(2 * ↑A * logHorner S A B N 0) / ↑B
+in the target expression
+  |↑(roundDiv (↑B) (2 * ↑A * logHorner S A B N 0)) - ↑(2 * ↑A * logHorner S A B N 0) / ↑↑B| ≤ 1 / 2
+
+S A B : ℕ
+hS : 0 < S
+hB : 0 < B
+hAB : 3 * A ≤ B
+N : ℕ
+hSR : 0 < ↑S
+hBR : 0 < ↑B
+hBI : 0 < ↑B
+v : ℝ := ↑A / ↑B
+hv0 : 0 ≤ v
+hv1 : v ≤ 1 / 3
+hr : |↑(roundDiv (↑B) (2 * ↑A * logHorner S A B N 0)) - ↑(2 * ↑A * logHorner S A B N 0) / ↑↑B| ≤ 1 / 2
+hq : ↑(2 * ↑A * logHorner S A B N 0) / ↑B = 2 * v * ↑(logHorner S A B N 0)
+⊢ |↑(logCenter S A B N) / ↑S - logPartial N (↑A / ↑B)| ≤ 7 / (4 * ↑S)

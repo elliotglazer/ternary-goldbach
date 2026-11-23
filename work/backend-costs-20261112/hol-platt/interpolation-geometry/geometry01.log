@@ -1,0 +1,44 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanned 24 directories
+all_55_nodes ⊢ EVERY (UNCURRY spacing_ok) checked_nodes
+centered_product_bound ⊢ ∀h x. 0 ≤ x ∧ x ≤ 1 ⇒ node_product (2 * h) (1 − &h) x ≤ (&FACT h)²
+certified_coarse_samples ⊢ ∀r off den ws vs zs.
+    kernel_ok r off (&den) ws ∧ LENGTH ws = LENGTH vs ∧
+    LIST_REL (λv z. abs (v − real_of_int z) ≤ 2) vs zs ⇒
+    abs (weighted ws vs − real_of_int (dot ws zs)) ≤ 10 * &den
+radius_real ⊢ ∀r e.
+    radius_ok r e ⇒
+    10 +
+    &(2 ** 220 * (5 * 524288 * budget_D r + budget_A * budget_M r)) /
+    &(budget_A * budget_D r) ≤ &e
+interpolation_consumer ⊢ ∀r off den err ws nodes centers H U.
+    kernel_ok r off (&den) ws ∧ radius_ok r err ∧ LENGTH ws = LENGTH nodes ∧
+    LIST_REL (λv z. abs (v − real_of_int z) ≤ 2) nodes centers ∧
+    abs (H − U) ≤
+    &(2 ** 220 * (5 * 524288 * budget_D r)) / &(budget_A * budget_D r) ∧
+    abs (U − weighted ws nodes / &den) ≤
+    &(2 ** 220 * (budget_A * budget_M r)) / &(budget_A * budget_D r) ⇒
+    abs (H − real_of_int (dot ws centers) / &den) ≤ &err
+REAL_INTERPOLATION_AUDIT_PASS

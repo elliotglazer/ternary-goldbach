@@ -1,0 +1,5894 @@
+{
+  "checks": 10937,
+  "pins": {
+    "major-constants/RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "AFA91F89C51BFC62FAB135997C6ED9FC7FCEAE3FBF6062F973F65AE69ADAC054",
+    "independent-feasibility/REVIEW_RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "0FC1801726CE19F28E0B512C3B24FA8D88B1531E3360E8566A1A799A8F955711",
+    "prime-estimates/NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "55576F70A22E3B94108C80CE6255D312437085E08281EFC6FBA34E65147E22BC",
+    "moebius/REVIEW_NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "995BADD0DDBA1F915A768DC34AAEE70BD9E356EE73A665594A6871ECAC83E234",
+    "integration/RESIDUE_COEFFICIENT_GRID_CLOSURE_2026-11-11.md": "9C2DA6DA76D44AF80C83AC34FD713A57054EEBA7344D6E0274EA548920A530C4",
+    "integration/CLARIFICATION_RESIDUE_GRID_MIXED_EVALUATORS_2026-11-11.md": "B620E1C26D8F4D1B9F0434CEBB7C121127EA2AD34F6807969CA21A724F468815",
+    "audit/REVIEW_RESIDUE_COEFFICIENT_GRID_CLOSURE_2026-11-11.md": "793AD4410778F45B39040F246B361E8877876ABA11083A2C9492288B2492B16D"
+  },
+  "scope": "Binomial and width metadata only; no arithmetic values",
+  "g10": "3560791008422351/19073486328125",
+  "g20": "1096024843375/274877906944",
+  "error_factor": "31/12",
+  "rows": [
+    {
+      "L": 1,
+      "S": 1,
+      "bitlength": 1,
+      "p": 103,
+      "old_guard": {
+        "signed_live": 141,
+        "signed_add_temporary": 142,
+        "signed_initial_scaled_product": 503,
+        "signed_initial_residual": 504,
+        "signed_initial_doubled_residual": 505
+      },
+      "ten_guard": {
+        "signed_live": 147,
+        "signed_add_temporary": 148,
+        "signed_initial_scaled_product": 509,
+        "signed_initial_residual": 510,
+        "signed_initial_doubled_residual": 511
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 0
+    },
+    {
+      "L": 2,
+      "S": 2,
+      "bitlength": 2,
+      "p": 104,
+      "old_guard": {
+        "signed_live": 142,
+        "signed_add_temporary": 143,
+        "signed_initial_scaled_product": 504,
+        "signed_initial_residual": 505,
+        "signed_initial_doubled_residual": 506
+      },
+      "ten_guard": {
+        "signed_live": 148,
+        "signed_add_temporary": 149,
+        "signed_initial_scaled_product": 510,
+        "signed_initial_residual": 511,
+        "signed_initial_doubled_residual": 512
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 19
+    },
+    {
+      "L": 3,
+      "S": 4,
+      "bitlength": 3,
+      "p": 105,
+      "old_guard": {
+        "signed_live": 143,
+        "signed_add_temporary": 144,
+        "signed_initial_scaled_product": 505,
+        "signed_initial_residual": 506,
+        "signed_initial_doubled_residual": 507
+      },
+      "ten_guard": {
+        "signed_live": 149,
+        "signed_add_temporary": 150,
+        "signed_initial_scaled_product": 511,
+        "signed_initial_residual": 512,
+        "signed_initial_doubled_residual": 513
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 38
+    },
+    {
+      "L": 4,
+      "S": 8,
+      "bitlength": 4,
+      "p": 106,
+      "old_guard": {
+        "signed_live": 144,
+        "signed_add_temporary": 145,
+        "signed_initial_scaled_product": 506,
+        "signed_initial_residual": 507,
+        "signed_initial_doubled_residual": 508
+      },
+      "ten_guard": {
+        "signed_live": 150,
+        "signed_add_temporary": 151,
+        "signed_initial_scaled_product": 512,
+        "signed_initial_residual": 513,
+        "signed_initial_doubled_residual": 514
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 57
+    },
+    {
+      "L": 5,
+      "S": 16,
+      "bitlength": 5,
+      "p": 107,
+      "old_guard": {
+        "signed_live": 145,
+        "signed_add_temporary": 146,
+        "signed_initial_scaled_product": 507,
+        "signed_initial_residual": 508,
+        "signed_initial_doubled_residual": 509
+      },
+      "ten_guard": {
+        "signed_live": 151,
+        "signed_add_temporary": 152,
+        "signed_initial_scaled_product": 513,
+        "signed_initial_residual": 514,
+        "signed_initial_doubled_residual": 515
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 76
+    },
+    {
+      "L": 6,
+      "S": 32,
+      "bitlength": 6,
+      "p": 108,
+      "old_guard": {
+        "signed_live": 146,
+        "signed_add_temporary": 147,
+        "signed_initial_scaled_product": 508,
+        "signed_initial_residual": 509,
+        "signed_initial_doubled_residual": 510
+      },
+      "ten_guard": {
+        "signed_live": 152,
+        "signed_add_temporary": 153,
+        "signed_initial_scaled_product": 514,
+        "signed_initial_residual": 515,
+        "signed_initial_doubled_residual": 516
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 95
+    },
+    {
+      "L": 7,
+      "S": 64,
+      "bitlength": 7,
+      "p": 109,
+      "old_guard": {
+        "signed_live": 147,
+        "signed_add_temporary": 148,
+        "signed_initial_scaled_product": 509,
+        "signed_initial_residual": 510,
+        "signed_initial_doubled_residual": 511
+      },
+      "ten_guard": {
+        "signed_live": 153,
+        "signed_add_temporary": 154,
+        "signed_initial_scaled_product": 515,
+        "signed_initial_residual": 516,
+        "signed_initial_doubled_residual": 517
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 114
+    },
+    {
+      "L": 8,
+      "S": 128,
+      "bitlength": 8,
+      "p": 110,
+      "old_guard": {
+        "signed_live": 148,
+        "signed_add_temporary": 149,
+        "signed_initial_scaled_product": 510,
+        "signed_initial_residual": 511,
+        "signed_initial_doubled_residual": 512
+      },
+      "ten_guard": {
+        "signed_live": 154,
+        "signed_add_temporary": 155,
+        "signed_initial_scaled_product": 516,
+        "signed_initial_residual": 517,
+        "signed_initial_doubled_residual": 518
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 133
+    },
+    {
+      "L": 9,
+      "S": 256,
+      "bitlength": 9,
+      "p": 111,
+      "old_guard": {
+        "signed_live": 149,
+        "signed_add_temporary": 150,
+        "signed_initial_scaled_product": 511,
+        "signed_initial_residual": 512,
+        "signed_initial_doubled_residual": 513
+      },
+      "ten_guard": {
+        "signed_live": 155,
+        "signed_add_temporary": 156,
+        "signed_initial_scaled_product": 517,
+        "signed_initial_residual": 518,
+        "signed_initial_doubled_residual": 519
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 152
+    },
+    {
+      "L": 10,
+      "S": 512,
+      "bitlength": 10,
+      "p": 112,
+      "old_guard": {
+        "signed_live": 150,
+        "signed_add_temporary": 151,
+        "signed_initial_scaled_product": 512,
+        "signed_initial_residual": 513,
+        "signed_initial_doubled_residual": 514
+      },
+      "ten_guard": {
+        "signed_live": 156,
+        "signed_add_temporary": 157,
+        "signed_initial_scaled_product": 518,
+        "signed_initial_residual": 519,
+        "signed_initial_doubled_residual": 520
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 171
+    },
+    {
+      "L": 11,
+      "S": 1024,
+      "bitlength": 11,
+      "p": 113,
+      "old_guard": {
+        "signed_live": 151,
+        "signed_add_temporary": 152,
+        "signed_initial_scaled_product": 513,
+        "signed_initial_residual": 514,
+        "signed_initial_doubled_residual": 515
+      },
+      "ten_guard": {
+        "signed_live": 157,
+        "signed_add_temporary": 158,
+        "signed_initial_scaled_product": 519,
+        "signed_initial_residual": 520,
+        "signed_initial_doubled_residual": 521
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 190
+    },
+    {
+      "L": 12,
+      "S": 2048,
+      "bitlength": 12,
+      "p": 114,
+      "old_guard": {
+        "signed_live": 152,
+        "signed_add_temporary": 153,
+        "signed_initial_scaled_product": 514,
+        "signed_initial_residual": 515,
+        "signed_initial_doubled_residual": 516
+      },
+      "ten_guard": {
+        "signed_live": 158,
+        "signed_add_temporary": 159,
+        "signed_initial_scaled_product": 520,
+        "signed_initial_residual": 521,
+        "signed_initial_doubled_residual": 522
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 209
+    },
+    {
+      "L": 13,
+      "S": 4096,
+      "bitlength": 13,
+      "p": 115,
+      "old_guard": {
+        "signed_live": 153,
+        "signed_add_temporary": 154,
+        "signed_initial_scaled_product": 515,
+        "signed_initial_residual": 516,
+        "signed_initial_doubled_residual": 517
+      },
+      "ten_guard": {
+        "signed_live": 159,
+        "signed_add_temporary": 160,
+        "signed_initial_scaled_product": 521,
+        "signed_initial_residual": 522,
+        "signed_initial_doubled_residual": 523
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 228
+    },
+    {
+      "L": 14,
+      "S": 8192,
+      "bitlength": 14,
+      "p": 116,
+      "old_guard": {
+        "signed_live": 154,
+        "signed_add_temporary": 155,
+        "signed_initial_scaled_product": 516,
+        "signed_initial_residual": 517,
+        "signed_initial_doubled_residual": 518
+      },
+      "ten_guard": {
+        "signed_live": 160,
+        "signed_add_temporary": 161,
+        "signed_initial_scaled_product": 522,
+        "signed_initial_residual": 523,
+        "signed_initial_doubled_residual": 524
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 247
+    },
+    {
+      "L": 15,
+      "S": 16384,
+      "bitlength": 15,
+      "p": 117,
+      "old_guard": {
+        "signed_live": 155,
+        "signed_add_temporary": 156,
+        "signed_initial_scaled_product": 517,
+        "signed_initial_residual": 518,
+        "signed_initial_doubled_residual": 519
+      },
+      "ten_guard": {
+        "signed_live": 161,
+        "signed_add_temporary": 162,
+        "signed_initial_scaled_product": 523,
+        "signed_initial_residual": 524,
+        "signed_initial_doubled_residual": 525
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 266
+    },
+    {
+      "L": 16,
+      "S": 32768,
+      "bitlength": 16,
+      "p": 118,
+      "old_guard": {
+        "signed_live": 156,
+        "signed_add_temporary": 157,
+        "signed_initial_scaled_product": 518,
+        "signed_initial_residual": 519,
+        "signed_initial_doubled_residual": 520
+      },
+      "ten_guard": {
+        "signed_live": 162,
+        "signed_add_temporary": 163,
+        "signed_initial_scaled_product": 524,
+        "signed_initial_residual": 525,
+        "signed_initial_doubled_residual": 526
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 285
+    },
+    {
+      "L": 17,
+      "S": 65536,
+      "bitlength": 17,
+      "p": 119,
+      "old_guard": {
+        "signed_live": 157,
+        "signed_add_temporary": 158,
+        "signed_initial_scaled_product": 519,
+        "signed_initial_residual": 520,
+        "signed_initial_doubled_residual": 521
+      },
+      "ten_guard": {
+        "signed_live": 163,
+        "signed_add_temporary": 164,
+        "signed_initial_scaled_product": 525,
+        "signed_initial_residual": 526,
+        "signed_initial_doubled_residual": 527
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 304
+    },
+    {
+      "L": 18,
+      "S": 131072,
+      "bitlength": 18,
+      "p": 120,
+      "old_guard": {
+        "signed_live": 158,
+        "signed_add_temporary": 159,
+        "signed_initial_scaled_product": 520,
+        "signed_initial_residual": 521,
+        "signed_initial_doubled_residual": 522
+      },
+      "ten_guard": {
+        "signed_live": 164,
+        "signed_add_temporary": 165,
+        "signed_initial_scaled_product": 526,
+        "signed_initial_residual": 527,
+        "signed_initial_doubled_residual": 528
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 323
+    },
+    {
+      "L": 19,
+      "S": 262144,
+      "bitlength": 19,
+      "p": 121,
+      "old_guard": {
+        "signed_live": 159,
+        "signed_add_temporary": 160,
+        "signed_initial_scaled_product": 521,
+        "signed_initial_residual": 522,
+        "signed_initial_doubled_residual": 523
+      },
+      "ten_guard": {
+        "signed_live": 165,
+        "signed_add_temporary": 166,
+        "signed_initial_scaled_product": 527,
+        "signed_initial_residual": 528,
+        "signed_initial_doubled_residual": 529
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 342
+    },
+    {
+      "L": 20,
+      "S": 524288,
+      "bitlength": 20,
+      "p": 122,
+      "old_guard": {
+        "signed_live": 160,
+        "signed_add_temporary": 161,
+        "signed_initial_scaled_product": 522,
+        "signed_initial_residual": 523,
+        "signed_initial_doubled_residual": 524
+      },
+      "ten_guard": {
+        "signed_live": 166,
+        "signed_add_temporary": 167,
+        "signed_initial_scaled_product": 528,
+        "signed_initial_residual": 529,
+        "signed_initial_doubled_residual": 530
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 361
+    },
+    {
+      "L": 21,
+      "S": 1048575,
+      "bitlength": 20,
+      "p": 122,
+      "old_guard": {
+        "signed_live": 160,
+        "signed_add_temporary": 161,
+        "signed_initial_scaled_product": 522,
+        "signed_initial_residual": 523,
+        "signed_initial_doubled_residual": 524
+      },
+      "ten_guard": {
+        "signed_live": 166,
+        "signed_add_temporary": 167,
+        "signed_initial_scaled_product": 528,
+        "signed_initial_residual": 529,
+        "signed_initial_doubled_residual": 530
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 380
+    },
+    {
+      "L": 22,
+      "S": 2097130,
+      "bitlength": 21,
+      "p": 123,
+      "old_guard": {
+        "signed_live": 161,
+        "signed_add_temporary": 162,
+        "signed_initial_scaled_product": 523,
+        "signed_initial_residual": 524,
+        "signed_initial_doubled_residual": 525
+      },
+      "ten_guard": {
+        "signed_live": 167,
+        "signed_add_temporary": 168,
+        "signed_initial_scaled_product": 529,
+        "signed_initial_residual": 530,
+        "signed_initial_doubled_residual": 531
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 399
+    },
+    {
+      "L": 23,
+      "S": 4194050,
+      "bitlength": 22,
+      "p": 124,
+      "old_guard": {
+        "signed_live": 162,
+        "signed_add_temporary": 163,
+        "signed_initial_scaled_product": 524,
+        "signed_initial_residual": 525,
+        "signed_initial_doubled_residual": 526
+      },
+      "ten_guard": {
+        "signed_live": 168,
+        "signed_add_temporary": 169,
+        "signed_initial_scaled_product": 530,
+        "signed_initial_residual": 531,
+        "signed_initial_doubled_residual": 532
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 418
+    },
+    {
+      "L": 24,
+      "S": 8386560,
+      "bitlength": 23,
+      "p": 125,
+      "old_guard": {
+        "signed_live": 163,
+        "signed_add_temporary": 164,
+        "signed_initial_scaled_product": 525,
+        "signed_initial_residual": 526,
+        "signed_initial_doubled_residual": 527
+      },
+      "ten_guard": {
+        "signed_live": 169,
+        "signed_add_temporary": 170,
+        "signed_initial_scaled_product": 531,
+        "signed_initial_residual": 532,
+        "signed_initial_doubled_residual": 533
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 437
+    },
+    {
+      "L": 25,
+      "S": 16764265,
+      "bitlength": 24,
+      "p": 126,
+      "old_guard": {
+        "signed_live": 164,
+        "signed_add_temporary": 165,
+        "signed_initial_scaled_product": 526,
+        "signed_initial_residual": 527,
+        "signed_initial_doubled_residual": 528
+      },
+      "ten_guard": {
+        "signed_live": 170,
+        "signed_add_temporary": 171,
+        "signed_initial_scaled_product": 532,
+        "signed_initial_residual": 533,
+        "signed_initial_doubled_residual": 534
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 456
+    },
+    {
+      "L": 26,
+      "S": 33486026,
+      "bitlength": 25,
+      "p": 127,
+      "old_guard": {
+        "signed_live": 165,
+        "signed_add_temporary": 166,
+        "signed_initial_scaled_product": 527,
+        "signed_initial_residual": 528,
+        "signed_initial_doubled_residual": 529
+      },
+      "ten_guard": {
+        "signed_live": 171,
+        "signed_add_temporary": 172,
+        "signed_initial_scaled_product": 533,
+        "signed_initial_residual": 534,
+        "signed_initial_doubled_residual": 535
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 475
+    },
+    {
+      "L": 27,
+      "S": 66794952,
+      "bitlength": 26,
+      "p": 128,
+      "old_guard": {
+        "signed_live": 166,
+        "signed_add_temporary": 167,
+        "signed_initial_scaled_product": 528,
+        "signed_initial_residual": 529,
+        "signed_initial_doubled_residual": 530
+      },
+      "ten_guard": {
+        "signed_live": 172,
+        "signed_add_temporary": 173,
+        "signed_initial_scaled_product": 534,
+        "signed_initial_residual": 535,
+        "signed_initial_doubled_residual": 536
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 494
+    },
+    {
+      "L": 28,
+      "S": 132932104,
+      "bitlength": 27,
+      "p": 129,
+      "old_guard": {
+        "signed_live": 167,
+        "signed_add_temporary": 168,
+        "signed_initial_scaled_product": 529,
+        "signed_initial_residual": 530,
+        "signed_initial_doubled_residual": 531
+      },
+      "ten_guard": {
+        "signed_live": 173,
+        "signed_add_temporary": 174,
+        "signed_initial_scaled_product": 535,
+        "signed_initial_residual": 536,
+        "signed_initial_doubled_residual": 537
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 513
+    },
+    {
+      "L": 29,
+      "S": 263644133,
+      "bitlength": 28,
+      "p": 130,
+      "old_guard": {
+        "signed_live": 168,
+        "signed_add_temporary": 169,
+        "signed_initial_scaled_product": 530,
+        "signed_initial_residual": 531,
+        "signed_initial_doubled_residual": 532
+      },
+      "ten_guard": {
+        "signed_live": 174,
+        "signed_add_temporary": 175,
+        "signed_initial_scaled_product": 536,
+        "signed_initial_residual": 537,
+        "signed_initial_doubled_residual": 538
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 532
+    },
+    {
+      "L": 30,
+      "S": 520381366,
+      "bitlength": 29,
+      "p": 131,
+      "old_guard": {
+        "signed_live": 169,
+        "signed_add_temporary": 170,
+        "signed_initial_scaled_product": 531,
+        "signed_initial_residual": 532,
+        "signed_initial_doubled_residual": 533
+      },
+      "ten_guard": {
+        "signed_live": 175,
+        "signed_add_temporary": 176,
+        "signed_initial_scaled_product": 537,
+        "signed_initial_residual": 538,
+        "signed_initial_doubled_residual": 539
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 551
+    },
+    {
+      "L": 31,
+      "S": 1020732722,
+      "bitlength": 30,
+      "p": 132,
+      "old_guard": {
+        "signed_live": 170,
+        "signed_add_temporary": 171,
+        "signed_initial_scaled_product": 532,
+        "signed_initial_residual": 533,
+        "signed_initial_doubled_residual": 534
+      },
+      "ten_guard": {
+        "signed_live": 176,
+        "signed_add_temporary": 177,
+        "signed_initial_scaled_product": 538,
+        "signed_initial_residual": 539,
+        "signed_initial_doubled_residual": 540
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 570
+    },
+    {
+      "L": 32,
+      "S": 1986838144,
+      "bitlength": 31,
+      "p": 133,
+      "old_guard": {
+        "signed_live": 171,
+        "signed_add_temporary": 172,
+        "signed_initial_scaled_product": 533,
+        "signed_initial_residual": 534,
+        "signed_initial_doubled_residual": 535
+      },
+      "ten_guard": {
+        "signed_live": 177,
+        "signed_add_temporary": 178,
+        "signed_initial_scaled_product": 539,
+        "signed_initial_residual": 540,
+        "signed_initial_doubled_residual": 541
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 589
+    },
+    {
+      "L": 33,
+      "S": 3832555763,
+      "bitlength": 32,
+      "p": 134,
+      "old_guard": {
+        "signed_live": 172,
+        "signed_add_temporary": 173,
+        "signed_initial_scaled_product": 534,
+        "signed_initial_residual": 535,
+        "signed_initial_doubled_residual": 536
+      },
+      "ten_guard": {
+        "signed_live": 178,
+        "signed_add_temporary": 179,
+        "signed_initial_scaled_product": 540,
+        "signed_initial_residual": 541,
+        "signed_initial_doubled_residual": 542
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 608
+    },
+    {
+      "L": 34,
+      "S": 7317737926,
+      "bitlength": 33,
+      "p": 135,
+      "old_guard": {
+        "signed_live": 173,
+        "signed_add_temporary": 174,
+        "signed_initial_scaled_product": 535,
+        "signed_initial_residual": 536,
+        "signed_initial_doubled_residual": 537
+      },
+      "ten_guard": {
+        "signed_live": 179,
+        "signed_add_temporary": 180,
+        "signed_initial_scaled_product": 541,
+        "signed_initial_residual": 542,
+        "signed_initial_doubled_residual": 543
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 627
+    },
+    {
+      "L": 35,
+      "S": 13816666652,
+      "bitlength": 34,
+      "p": 136,
+      "old_guard": {
+        "signed_live": 174,
+        "signed_add_temporary": 175,
+        "signed_initial_scaled_product": 536,
+        "signed_initial_residual": 537,
+        "signed_initial_doubled_residual": 538
+      },
+      "ten_guard": {
+        "signed_live": 180,
+        "signed_add_temporary": 181,
+        "signed_initial_scaled_product": 542,
+        "signed_initial_residual": 543,
+        "signed_initial_doubled_residual": 544
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 646
+    },
+    {
+      "L": 36,
+      "S": 25777365784,
+      "bitlength": 35,
+      "p": 137,
+      "old_guard": {
+        "signed_live": 175,
+        "signed_add_temporary": 176,
+        "signed_initial_scaled_product": 537,
+        "signed_initial_residual": 538,
+        "signed_initial_doubled_residual": 539
+      },
+      "ten_guard": {
+        "signed_live": 181,
+        "signed_add_temporary": 182,
+        "signed_initial_scaled_product": 543,
+        "signed_initial_residual": 544,
+        "signed_initial_doubled_residual": 545
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 665
+    },
+    {
+      "L": 37,
+      "S": 47494802618,
+      "bitlength": 36,
+      "p": 138,
+      "old_guard": {
+        "signed_live": 176,
+        "signed_add_temporary": 177,
+        "signed_initial_scaled_product": 538,
+        "signed_initial_residual": 539,
+        "signed_initial_doubled_residual": 540
+      },
+      "ten_guard": {
+        "signed_live": 182,
+        "signed_add_temporary": 183,
+        "signed_initial_scaled_product": 544,
+        "signed_initial_residual": 545,
+        "signed_initial_doubled_residual": 546
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 684
+    },
+    {
+      "L": 38,
+      "S": 86392108636,
+      "bitlength": 37,
+      "p": 139,
+      "old_guard": {
+        "signed_live": 177,
+        "signed_add_temporary": 178,
+        "signed_initial_scaled_product": 539,
+        "signed_initial_residual": 540,
+        "signed_initial_doubled_residual": 541
+      },
+      "ten_guard": {
+        "signed_live": 183,
+        "signed_add_temporary": 184,
+        "signed_initial_scaled_product": 545,
+        "signed_initial_residual": 546,
+        "signed_initial_doubled_residual": 547
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 703
+    },
+    {
+      "L": 39,
+      "S": 155111585372,
+      "bitlength": 38,
+      "p": 140,
+      "old_guard": {
+        "signed_live": 178,
+        "signed_add_temporary": 179,
+        "signed_initial_scaled_product": 540,
+        "signed_initial_residual": 541,
+        "signed_initial_doubled_residual": 542
+      },
+      "ten_guard": {
+        "signed_live": 184,
+        "signed_add_temporary": 185,
+        "signed_initial_scaled_product": 546,
+        "signed_initial_residual": 547,
+        "signed_initial_doubled_residual": 548
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 722
+    },
+    {
+      "L": 40,
+      "S": 274877906944,
+      "bitlength": 39,
+      "p": 141,
+      "old_guard": {
+        "signed_live": 179,
+        "signed_add_temporary": 180,
+        "signed_initial_scaled_product": 541,
+        "signed_initial_residual": 542,
+        "signed_initial_doubled_residual": 543
+      },
+      "ten_guard": {
+        "signed_live": 185,
+        "signed_add_temporary": 186,
+        "signed_initial_scaled_product": 547,
+        "signed_initial_residual": 548,
+        "signed_initial_doubled_residual": 549
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 741
+    },
+    {
+      "L": 41,
+      "S": 480832549478,
+      "bitlength": 39,
+      "p": 141,
+      "old_guard": {
+        "signed_live": 179,
+        "signed_add_temporary": 180,
+        "signed_initial_scaled_product": 541,
+        "signed_initial_residual": 542,
+        "signed_initial_doubled_residual": 543
+      },
+      "ten_guard": {
+        "signed_live": 185,
+        "signed_add_temporary": 186,
+        "signed_initial_scaled_product": 547,
+        "signed_initial_residual": 548,
+        "signed_initial_doubled_residual": 549
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 760
+    },
+    {
+      "L": 42,
+      "S": 830382690556,
+      "bitlength": 40,
+      "p": 142,
+      "old_guard": {
+        "signed_live": 180,
+        "signed_add_temporary": 181,
+        "signed_initial_scaled_product": 542,
+        "signed_initial_residual": 543,
+        "signed_initial_doubled_residual": 544
+      },
+      "ten_guard": {
+        "signed_live": 186,
+        "signed_add_temporary": 187,
+        "signed_initial_scaled_product": 548,
+        "signed_initial_residual": 549,
+        "signed_initial_doubled_residual": 550
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 779
+    },
+    {
+      "L": 43,
+      "S": 1416102710912,
+      "bitlength": 41,
+      "p": 143,
+      "old_guard": {
+        "signed_live": 181,
+        "signed_add_temporary": 182,
+        "signed_initial_scaled_product": 543,
+        "signed_initial_residual": 544,
+        "signed_initial_doubled_residual": 545
+      },
+      "ten_guard": {
+        "signed_live": 187,
+        "signed_add_temporary": 188,
+        "signed_initial_scaled_product": 549,
+        "signed_initial_residual": 550,
+        "signed_initial_doubled_residual": 551
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 798
+    },
+    {
+      "L": 44,
+      "S": 2385430111024,
+      "bitlength": 42,
+      "p": 144,
+      "old_guard": {
+        "signed_live": 182,
+        "signed_add_temporary": 183,
+        "signed_initial_scaled_product": 544,
+        "signed_initial_residual": 545,
+        "signed_initial_doubled_residual": 546
+      },
+      "ten_guard": {
+        "signed_live": 188,
+        "signed_add_temporary": 189,
+        "signed_initial_scaled_product": 550,
+        "signed_initial_residual": 551,
+        "signed_initial_doubled_residual": 552
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 817
+    },
+    {
+      "L": 45,
+      "S": 3970387790198,
+      "bitlength": 42,
+      "p": 144,
+      "old_guard": {
+        "signed_live": 182,
+        "signed_add_temporary": 183,
+        "signed_initial_scaled_product": 544,
+        "signed_initial_residual": 545,
+        "signed_initial_doubled_residual": 546
+      },
+      "ten_guard": {
+        "signed_live": 188,
+        "signed_add_temporary": 189,
+        "signed_initial_scaled_product": 550,
+        "signed_initial_residual": 551,
+        "signed_initial_doubled_residual": 552
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 836
+    },
+    {
+      "L": 46,
+      "S": 6531944100340,
+      "bitlength": 43,
+      "p": 145,
+      "old_guard": {
+        "signed_live": 183,
+        "signed_add_temporary": 184,
+        "signed_initial_scaled_product": 545,
+        "signed_initial_residual": 546,
+        "signed_initial_doubled_residual": 547
+      },
+      "ten_guard": {
+        "signed_live": 189,
+        "signed_add_temporary": 190,
+        "signed_initial_scaled_product": 551,
+        "signed_initial_residual": 552,
+        "signed_initial_doubled_residual": 553
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 855
+    },
+    {
+      "L": 47,
+      "S": 10625526023660,
+      "bitlength": 44,
+      "p": 146,
+      "old_guard": {
+        "signed_live": 184,
+        "signed_add_temporary": 185,
+        "signed_initial_scaled_product": 546,
+        "signed_initial_residual": 547,
+        "signed_initial_doubled_residual": 548
+      },
+      "ten_guard": {
+        "signed_live": 190,
+        "signed_add_temporary": 191,
+        "signed_initial_scaled_product": 552,
+        "signed_initial_residual": 553,
+        "signed_initial_doubled_residual": 554
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 874
+    },
+    {
+      "L": 48,
+      "S": 17096805375360,
+      "bitlength": 44,
+      "p": 146,
+      "old_guard": {
+        "signed_live": 184,
+        "signed_add_temporary": 185,
+        "signed_initial_scaled_product": 546,
+        "signed_initial_residual": 547,
+        "signed_initial_doubled_residual": 548
+      },
+      "ten_guard": {
+        "signed_live": 190,
+        "signed_add_temporary": 191,
+        "signed_initial_scaled_product": 552,
+        "signed_initial_residual": 553,
+        "signed_initial_doubled_residual": 554
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 893
+    },
+    {
+      "L": 49,
+      "S": 27220410979930,
+      "bitlength": 45,
+      "p": 147,
+      "old_guard": {
+        "signed_live": 185,
+        "signed_add_temporary": 186,
+        "signed_initial_scaled_product": 547,
+        "signed_initial_residual": 548,
+        "signed_initial_doubled_residual": 549
+      },
+      "ten_guard": {
+        "signed_live": 191,
+        "signed_add_temporary": 192,
+        "signed_initial_scaled_product": 553,
+        "signed_initial_residual": 554,
+        "signed_initial_doubled_residual": 555
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 912
+    },
+    {
+      "L": 50,
+      "S": 42898974063380,
+      "bitlength": 46,
+      "p": 148,
+      "old_guard": {
+        "signed_live": 186,
+        "signed_add_temporary": 187,
+        "signed_initial_scaled_product": 548,
+        "signed_initial_residual": 549,
+        "signed_initial_doubled_residual": 550
+      },
+      "ten_guard": {
+        "signed_live": 192,
+        "signed_add_temporary": 193,
+        "signed_initial_scaled_product": 554,
+        "signed_initial_residual": 555,
+        "signed_initial_doubled_residual": 556
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 931
+    },
+    {
+      "L": 51,
+      "S": 66946263229176,
+      "bitlength": 46,
+      "p": 148,
+      "old_guard": {
+        "signed_live": 186,
+        "signed_add_temporary": 187,
+        "signed_initial_scaled_product": 548,
+        "signed_initial_residual": 549,
+        "signed_initial_doubled_residual": 550
+      },
+      "ten_guard": {
+        "signed_live": 192,
+        "signed_add_temporary": 193,
+        "signed_initial_scaled_product": 554,
+        "signed_initial_residual": 555,
+        "signed_initial_doubled_residual": 556
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 950
+    },
+    {
+      "L": 52,
+      "S": 103486583075152,
+      "bitlength": 47,
+      "p": 149,
+      "old_guard": {
+        "signed_live": 187,
+        "signed_add_temporary": 188,
+        "signed_initial_scaled_product": 549,
+        "signed_initial_residual": 550,
+        "signed_initial_doubled_residual": 551
+      },
+      "ten_guard": {
+        "signed_live": 193,
+        "signed_add_temporary": 194,
+        "signed_initial_scaled_product": 555,
+        "signed_initial_residual": 556,
+        "signed_initial_doubled_residual": 557
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 969
+    },
+    {
+      "L": 53,
+      "S": 158513693883329,
+      "bitlength": 48,
+      "p": 150,
+      "old_guard": {
+        "signed_live": 188,
+        "signed_add_temporary": 189,
+        "signed_initial_scaled_product": 550,
+        "signed_initial_residual": 551,
+        "signed_initial_doubled_residual": 552
+      },
+      "ten_guard": {
+        "signed_live": 194,
+        "signed_add_temporary": 195,
+        "signed_initial_scaled_product": 556,
+        "signed_initial_residual": 557,
+        "signed_initial_doubled_residual": 558
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 988
+    },
+    {
+      "L": 54,
+      "S": 240667007224758,
+      "bitlength": 48,
+      "p": 150,
+      "old_guard": {
+        "signed_live": 188,
+        "signed_add_temporary": 189,
+        "signed_initial_scaled_product": 550,
+        "signed_initial_residual": 551,
+        "signed_initial_doubled_residual": 552
+      },
+      "ten_guard": {
+        "signed_live": 194,
+        "signed_add_temporary": 195,
+        "signed_initial_scaled_product": 556,
+        "signed_initial_residual": 557,
+        "signed_initial_doubled_residual": 558
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1007
+    },
+    {
+      "L": 55,
+      "S": 362301656545966,
+      "bitlength": 49,
+      "p": 151,
+      "old_guard": {
+        "signed_live": 189,
+        "signed_add_temporary": 190,
+        "signed_initial_scaled_product": 551,
+        "signed_initial_residual": 552,
+        "signed_initial_doubled_residual": 553
+      },
+      "ten_guard": {
+        "signed_live": 195,
+        "signed_add_temporary": 196,
+        "signed_initial_scaled_product": 557,
+        "signed_initial_residual": 558,
+        "signed_initial_doubled_residual": 559
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1026
+    },
+    {
+      "L": 56,
+      "S": 540953389469312,
+      "bitlength": 49,
+      "p": 151,
+      "old_guard": {
+        "signed_live": 189,
+        "signed_add_temporary": 190,
+        "signed_initial_scaled_product": 551,
+        "signed_initial_residual": 552,
+        "signed_initial_doubled_residual": 553
+      },
+      "ten_guard": {
+        "signed_live": 195,
+        "signed_add_temporary": 196,
+        "signed_initial_scaled_product": 557,
+        "signed_initial_residual": 558,
+        "signed_initial_doubled_residual": 559
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1045
+    },
+    {
+      "L": 57,
+      "S": 801330506737399,
+      "bitlength": 50,
+      "p": 152,
+      "old_guard": {
+        "signed_live": 190,
+        "signed_add_temporary": 191,
+        "signed_initial_scaled_product": 552,
+        "signed_initial_residual": 553,
+        "signed_initial_doubled_residual": 554
+      },
+      "ten_guard": {
+        "signed_live": 196,
+        "signed_add_temporary": 197,
+        "signed_initial_scaled_product": 558,
+        "signed_initial_residual": 559,
+        "signed_initial_doubled_residual": 560
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1064
+    },
+    {
+      "L": 58,
+      "S": 1178005033926998,
+      "bitlength": 51,
+      "p": 153,
+      "old_guard": {
+        "signed_live": 191,
+        "signed_add_temporary": 192,
+        "signed_initial_scaled_product": 553,
+        "signed_initial_residual": 554,
+        "signed_initial_doubled_residual": 555
+      },
+      "ten_guard": {
+        "signed_live": 197,
+        "signed_add_temporary": 198,
+        "signed_initial_scaled_product": 559,
+        "signed_initial_residual": 560,
+        "signed_initial_doubled_residual": 561
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1083
+    },
+    {
+      "L": 59,
+      "S": 1719026098532296,
+      "bitlength": 51,
+      "p": 153,
+      "old_guard": {
+        "signed_live": 191,
+        "signed_add_temporary": 192,
+        "signed_initial_scaled_product": 553,
+        "signed_initial_residual": 554,
+        "signed_initial_doubled_residual": 555
+      },
+      "ten_guard": {
+        "signed_live": 197,
+        "signed_add_temporary": 198,
+        "signed_initial_scaled_product": 559,
+        "signed_initial_residual": 560,
+        "signed_initial_doubled_residual": 561
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1102
+    },
+    {
+      "L": 60,
+      "S": 2490742704227192,
+      "bitlength": 52,
+      "p": 154,
+      "old_guard": {
+        "signed_live": 192,
+        "signed_add_temporary": 193,
+        "signed_initial_scaled_product": 554,
+        "signed_initial_residual": 555,
+        "signed_initial_doubled_residual": 556
+      },
+      "ten_guard": {
+        "signed_live": 198,
+        "signed_add_temporary": 199,
+        "signed_initial_scaled_product": 560,
+        "signed_initial_residual": 561,
+        "signed_initial_doubled_residual": 562
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1121
+    },
+    {
+      "L": 61,
+      "S": 3584203906519219,
+      "bitlength": 52,
+      "p": 154,
+      "old_guard": {
+        "signed_live": 192,
+        "signed_add_temporary": 193,
+        "signed_initial_scaled_product": 554,
+        "signed_initial_residual": 555,
+        "signed_initial_doubled_residual": 556
+      },
+      "ten_guard": {
+        "signed_live": 198,
+        "signed_add_temporary": 199,
+        "signed_initial_scaled_product": 560,
+        "signed_initial_residual": 561,
+        "signed_initial_doubled_residual": 562
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1140
+    },
+    {
+      "L": 62,
+      "S": 5123605615084538,
+      "bitlength": 53,
+      "p": 155,
+      "old_guard": {
+        "signed_live": 193,
+        "signed_add_temporary": 194,
+        "signed_initial_scaled_product": 555,
+        "signed_initial_residual": 556,
+        "signed_initial_doubled_residual": 557
+      },
+      "ten_guard": {
+        "signed_live": 199,
+        "signed_add_temporary": 200,
+        "signed_initial_scaled_product": 561,
+        "signed_initial_residual": 562,
+        "signed_initial_doubled_residual": 563
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1159
+    },
+    {
+      "L": 63,
+      "S": 7277379466474126,
+      "bitlength": 53,
+      "p": 155,
+      "old_guard": {
+        "signed_live": 193,
+        "signed_add_temporary": 194,
+        "signed_initial_scaled_product": 555,
+        "signed_initial_residual": 556,
+        "signed_initial_doubled_residual": 557
+      },
+      "ten_guard": {
+        "signed_live": 199,
+        "signed_add_temporary": 200,
+        "signed_initial_scaled_product": 561,
+        "signed_initial_residual": 562,
+        "signed_initial_doubled_residual": 563
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1178
+    },
+    {
+      "L": 64,
+      "S": 10272675924829952,
+      "bitlength": 54,
+      "p": 156,
+      "old_guard": {
+        "signed_live": 194,
+        "signed_add_temporary": 195,
+        "signed_initial_scaled_product": 556,
+        "signed_initial_residual": 557,
+        "signed_initial_doubled_residual": 558
+      },
+      "ten_guard": {
+        "signed_live": 200,
+        "signed_add_temporary": 201,
+        "signed_initial_scaled_product": 562,
+        "signed_initial_residual": 563,
+        "signed_initial_doubled_residual": 564
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1197
+    },
+    {
+      "L": 65,
+      "S": 14414187542581429,
+      "bitlength": 54,
+      "p": 156,
+      "old_guard": {
+        "signed_live": 194,
+        "signed_add_temporary": 195,
+        "signed_initial_scaled_product": 556,
+        "signed_initial_residual": 557,
+        "signed_initial_doubled_residual": 558
+      },
+      "ten_guard": {
+        "signed_live": 200,
+        "signed_add_temporary": 201,
+        "signed_initial_scaled_product": 562,
+        "signed_initial_residual": 563,
+        "signed_initial_doubled_residual": 564
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1216
+    },
+    {
+      "L": 66,
+      "S": 20108496959540138,
+      "bitlength": 55,
+      "p": 157,
+      "old_guard": {
+        "signed_live": 195,
+        "signed_add_temporary": 196,
+        "signed_initial_scaled_product": 557,
+        "signed_initial_residual": 558,
+        "signed_initial_doubled_residual": 559
+      },
+      "ten_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1235
+    },
+    {
+      "L": 67,
+      "S": 27895427002439476,
+      "bitlength": 55,
+      "p": 157,
+      "old_guard": {
+        "signed_live": 195,
+        "signed_add_temporary": 196,
+        "signed_initial_scaled_product": 557,
+        "signed_initial_residual": 558,
+        "signed_initial_doubled_residual": 559
+      },
+      "ten_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1254
+    },
+    {
+      "L": 68,
+      "S": 38488228121936552,
+      "bitlength": 56,
+      "p": 158,
+      "old_guard": {
+        "signed_live": 196,
+        "signed_add_temporary": 197,
+        "signed_initial_scaled_product": 558,
+        "signed_initial_residual": 559,
+        "signed_initial_doubled_residual": 560
+      },
+      "ten_guard": {
+        "signed_live": 202,
+        "signed_add_temporary": 203,
+        "signed_initial_scaled_product": 564,
+        "signed_initial_residual": 565,
+        "signed_initial_doubled_residual": 566
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1273
+    },
+    {
+      "L": 69,
+      "S": 52824874282266004,
+      "bitlength": 56,
+      "p": 158,
+      "old_guard": {
+        "signed_live": 196,
+        "signed_add_temporary": 197,
+        "signed_initial_scaled_product": 558,
+        "signed_initial_residual": 559,
+        "signed_initial_doubled_residual": 560
+      },
+      "ten_guard": {
+        "signed_live": 202,
+        "signed_add_temporary": 203,
+        "signed_initial_scaled_product": 564,
+        "signed_initial_residual": 565,
+        "signed_initial_doubled_residual": 566
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1292
+    },
+    {
+      "L": 70,
+      "S": 72133267474954808,
+      "bitlength": 57,
+      "p": 159,
+      "old_guard": {
+        "signed_live": 197,
+        "signed_add_temporary": 198,
+        "signed_initial_scaled_product": 559,
+        "signed_initial_residual": 560,
+        "signed_initial_doubled_residual": 561
+      },
+      "ten_guard": {
+        "signed_live": 203,
+        "signed_add_temporary": 204,
+        "signed_initial_scaled_product": 565,
+        "signed_initial_residual": 566,
+        "signed_initial_doubled_residual": 567
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1311
+    },
+    {
+      "L": 71,
+      "S": 98013791046293080,
+      "bitlength": 57,
+      "p": 159,
+      "old_guard": {
+        "signed_live": 197,
+        "signed_add_temporary": 198,
+        "signed_initial_scaled_product": 559,
+        "signed_initial_residual": 560,
+        "signed_initial_doubled_residual": 561
+      },
+      "ten_guard": {
+        "signed_live": 203,
+        "signed_add_temporary": 204,
+        "signed_initial_scaled_product": 565,
+        "signed_initial_residual": 566,
+        "signed_initial_doubled_residual": 567
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1330
+    },
+    {
+      "L": 72,
+      "S": 132543423793504640,
+      "bitlength": 57,
+      "p": 159,
+      "old_guard": {
+        "signed_live": 197,
+        "signed_add_temporary": 198,
+        "signed_initial_scaled_product": 559,
+        "signed_initial_residual": 560,
+        "signed_initial_doubled_residual": 561
+      },
+      "ten_guard": {
+        "signed_live": 203,
+        "signed_add_temporary": 204,
+        "signed_initial_scaled_product": 565,
+        "signed_initial_residual": 566,
+        "signed_initial_doubled_residual": 567
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1349
+    },
+    {
+      "L": 73,
+      "S": 178406554524801820,
+      "bitlength": 58,
+      "p": 160,
+      "old_guard": {
+        "signed_live": 198,
+        "signed_add_temporary": 199,
+        "signed_initial_scaled_product": 560,
+        "signed_initial_residual": 561,
+        "signed_initial_doubled_residual": 562
+      },
+      "ten_guard": {
+        "signed_live": 204,
+        "signed_add_temporary": 205,
+        "signed_initial_scaled_product": 566,
+        "signed_initial_residual": 567,
+        "signed_initial_doubled_residual": 568
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1368
+    },
+    {
+      "L": 74,
+      "S": 239058748663208600,
+      "bitlength": 58,
+      "p": 160,
+      "old_guard": {
+        "signed_live": 198,
+        "signed_add_temporary": 199,
+        "signed_initial_scaled_product": 560,
+        "signed_initial_residual": 561,
+        "signed_initial_doubled_residual": 562
+      },
+      "ten_guard": {
+        "signed_live": 204,
+        "signed_add_temporary": 205,
+        "signed_initial_scaled_product": 566,
+        "signed_initial_residual": 567,
+        "signed_initial_doubled_residual": 568
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1387
+    },
+    {
+      "L": 75,
+      "S": 318931047174438720,
+      "bitlength": 59,
+      "p": 161,
+      "old_guard": {
+        "signed_live": 199,
+        "signed_add_temporary": 200,
+        "signed_initial_scaled_product": 561,
+        "signed_initial_residual": 562,
+        "signed_initial_doubled_residual": 563
+      },
+      "ten_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1406
+    },
+    {
+      "L": 76,
+      "S": 423683961417124576,
+      "bitlength": 59,
+      "p": 161,
+      "old_guard": {
+        "signed_live": 199,
+        "signed_add_temporary": 200,
+        "signed_initial_scaled_product": 561,
+        "signed_initial_residual": 562,
+        "signed_initial_doubled_residual": 563
+      },
+      "ten_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1425
+    },
+    {
+      "L": 77,
+      "S": 560522209086365852,
+      "bitlength": 59,
+      "p": 161,
+      "old_guard": {
+        "signed_live": 199,
+        "signed_add_temporary": 200,
+        "signed_initial_scaled_product": 561,
+        "signed_initial_residual": 562,
+        "signed_initial_doubled_residual": 563
+      },
+      "ten_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1444
+    },
+    {
+      "L": 78,
+      "S": 738583466508887304,
+      "bitlength": 60,
+      "p": 162,
+      "old_guard": {
+        "signed_live": 200,
+        "signed_add_temporary": 201,
+        "signed_initial_scaled_product": 562,
+        "signed_initial_residual": 563,
+        "signed_initial_doubled_residual": 564
+      },
+      "ten_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1463
+    },
+    {
+      "L": 79,
+      "S": 969417048912326008,
+      "bitlength": 60,
+      "p": 162,
+      "old_guard": {
+        "signed_live": 200,
+        "signed_add_temporary": 201,
+        "signed_initial_scaled_product": 562,
+        "signed_initial_residual": 563,
+        "signed_initial_doubled_residual": 564
+      },
+      "ten_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1482
+    },
+    {
+      "L": 80,
+      "S": 1267571539176770816,
+      "bitlength": 61,
+      "p": 163,
+      "old_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "ten_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1501
+    },
+    {
+      "L": 81,
+      "S": 1651314042800498052,
+      "bitlength": 61,
+      "p": 163,
+      "old_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "ten_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1520
+    },
+    {
+      "L": 82,
+      "S": 2143508038974053704,
+      "bitlength": 61,
+      "p": 163,
+      "old_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "ten_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1539
+    },
+    {
+      "L": 83,
+      "S": 2772681823483876208,
+      "bitlength": 62,
+      "p": 164,
+      "old_guard": {
+        "signed_live": 202,
+        "signed_add_temporary": 203,
+        "signed_initial_scaled_product": 564,
+        "signed_initial_residual": 565,
+        "signed_initial_doubled_residual": 566
+      },
+      "ten_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1558
+    },
+    {
+      "L": 84,
+      "S": 3574325410998435616,
+      "bitlength": 62,
+      "p": 164,
+      "old_guard": {
+        "signed_live": 202,
+        "signed_add_temporary": 203,
+        "signed_initial_scaled_product": 564,
+        "signed_initial_residual": 565,
+        "signed_initial_doubled_residual": 566
+      },
+      "ten_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1577
+    },
+    {
+      "L": 85,
+      "S": 4592460609724163507,
+      "bitlength": 62,
+      "p": 164,
+      "old_guard": {
+        "signed_live": 202,
+        "signed_add_temporary": 203,
+        "signed_initial_scaled_product": 564,
+        "signed_initial_residual": 565,
+        "signed_initial_doubled_residual": 566
+      },
+      "ten_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1596
+    },
+    {
+      "L": 86,
+      "S": 5881536945126673954,
+      "bitlength": 63,
+      "p": 165,
+      "old_guard": {
+        "signed_live": 203,
+        "signed_add_temporary": 204,
+        "signed_initial_scaled_product": 565,
+        "signed_initial_residual": 566,
+        "signed_initial_doubled_residual": 567
+      },
+      "ten_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1615
+    },
+    {
+      "L": 87,
+      "S": 7508715355142128058,
+      "bitlength": 63,
+      "p": 165,
+      "old_guard": {
+        "signed_live": 203,
+        "signed_add_temporary": 204,
+        "signed_initial_scaled_product": 565,
+        "signed_initial_residual": 566,
+        "signed_initial_doubled_residual": 567
+      },
+      "ten_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1634
+    },
+    {
+      "L": 88,
+      "S": 9556612292081794816,
+      "bitlength": 64,
+      "p": 166,
+      "old_guard": {
+        "signed_live": 204,
+        "signed_add_temporary": 205,
+        "signed_initial_scaled_product": 566,
+        "signed_initial_residual": 567,
+        "signed_initial_doubled_residual": 568
+      },
+      "ten_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1653
+    },
+    {
+      "L": 89,
+      "S": 12126589254992793557,
+      "bitlength": 64,
+      "p": 166,
+      "old_guard": {
+        "signed_live": 204,
+        "signed_add_temporary": 205,
+        "signed_initial_scaled_product": 566,
+        "signed_initial_residual": 567,
+        "signed_initial_doubled_residual": 568
+      },
+      "ten_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1672
+    },
+    {
+      "L": 90,
+      "S": 15342687075680803714,
+      "bitlength": 64,
+      "p": 166,
+      "old_guard": {
+        "signed_live": 204,
+        "signed_add_temporary": 205,
+        "signed_initial_scaled_product": 566,
+        "signed_initial_residual": 567,
+        "signed_initial_doubled_residual": 568
+      },
+      "ten_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1691
+    },
+    {
+      "L": 91,
+      "S": 19356320756316954248,
+      "bitlength": 65,
+      "p": 167,
+      "old_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "ten_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1710
+    },
+    {
+      "L": 92,
+      "S": 24351869603422376296,
+      "bitlength": 65,
+      "p": 167,
+      "old_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "ten_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1729
+    },
+    {
+      "L": 93,
+      "S": 30553319154924621617,
+      "bitlength": 65,
+      "p": 167,
+      "old_guard": {
+        "signed_live": 205,
+        "signed_add_temporary": 206,
+        "signed_initial_scaled_product": 567,
+        "signed_initial_residual": 568,
+        "signed_initial_doubled_residual": 569
+      },
+      "ten_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1748
+    },
+    {
+      "L": 94,
+      "S": 38232136326607434334,
+      "bitlength": 66,
+      "p": 168,
+      "old_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "ten_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1767
+    },
+    {
+      "L": 95,
+      "S": 47716587728329892618,
+      "bitlength": 66,
+      "p": 168,
+      "old_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "ten_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1786
+    },
+    {
+      "L": 96,
+      "S": 59402743684137281920,
+      "bitlength": 66,
+      "p": 168,
+      "old_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "ten_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1805
+    },
+    {
+      "L": 97,
+      "S": 73767447652621434695,
+      "bitlength": 66,
+      "p": 168,
+      "old_guard": {
+        "signed_live": 206,
+        "signed_add_temporary": 207,
+        "signed_initial_scaled_product": 568,
+        "signed_initial_residual": 569,
+        "signed_initial_doubled_residual": 570
+      },
+      "ten_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1824
+    },
+    {
+      "L": 98,
+      "S": 91383573062350656430,
+      "bitlength": 67,
+      "p": 169,
+      "old_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "ten_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1843
+    },
+    {
+      "L": 99,
+      "S": 112937937694437919820,
+      "bitlength": 67,
+      "p": 169,
+      "old_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "ten_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1862
+    },
+    {
+      "L": 100,
+      "S": 139252300374118719160,
+      "bitlength": 67,
+      "p": 169,
+      "old_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "ten_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1881
+    },
+    {
+      "L": 101,
+      "S": 171307926667475501726,
+      "bitlength": 68,
+      "p": 170,
+      "old_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "ten_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1900
+    },
+    {
+      "L": 102,
+      "S": 210274280395738736052,
+      "bitlength": 68,
+      "p": 170,
+      "old_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "ten_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1919
+    },
+    {
+      "L": 103,
+      "S": 257542477049276996404,
+      "bitlength": 68,
+      "p": 170,
+      "old_guard": {
+        "signed_live": 208,
+        "signed_add_temporary": 209,
+        "signed_initial_scaled_product": 570,
+        "signed_initial_residual": 571,
+        "signed_initial_doubled_residual": 572
+      },
+      "ten_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1938
+    },
+    {
+      "L": 104,
+      "S": 314764224680428107008,
+      "bitlength": 69,
+      "p": 171,
+      "old_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "ten_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1957
+    },
+    {
+      "L": 105,
+      "S": 383897078764820901666,
+      "bitlength": 69,
+      "p": 171,
+      "old_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "ten_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1976
+    },
+    {
+      "L": 106,
+      "S": 467256951153316244692,
+      "bitlength": 69,
+      "p": 171,
+      "old_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "ten_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1995
+    },
+    {
+      "L": 107,
+      "S": 567578941033211749184,
+      "bitlength": 69,
+      "p": 171,
+      "old_guard": {
+        "signed_live": 209,
+        "signed_add_temporary": 210,
+        "signed_initial_scaled_product": 571,
+        "signed_initial_residual": 572,
+        "signed_initial_doubled_residual": 573
+      },
+      "ten_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2014
+    },
+    {
+      "L": 108,
+      "S": 688087699365474090768,
+      "bitlength": 70,
+      "p": 172,
+      "old_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "ten_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2033
+    },
+    {
+      "L": 109,
+      "S": 832578699310475606386,
+      "bitlength": 70,
+      "p": 172,
+      "old_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "ten_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2052
+    },
+    {
+      "L": 110,
+      "S": 1005511965616332806972,
+      "bitlength": 70,
+      "p": 172,
+      "old_guard": {
+        "signed_live": 210,
+        "signed_add_temporary": 211,
+        "signed_initial_scaled_product": 572,
+        "signed_initial_residual": 573,
+        "signed_initial_doubled_residual": 574
+      },
+      "ten_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2071
+    },
+    {
+      "L": 111,
+      "S": 1212120017927072211364,
+      "bitlength": 71,
+      "p": 173,
+      "old_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "ten_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2090
+    },
+    {
+      "L": 112,
+      "S": 1458532008781449100928,
+      "bitlength": 71,
+      "p": 173,
+      "old_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "ten_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2109
+    },
+    {
+      "L": 113,
+      "S": 1751916289246928846206,
+      "bitlength": 71,
+      "p": 173,
+      "old_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "ten_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2128
+    },
+    {
+      "L": 114,
+      "S": 2100643916435916102812,
+      "bitlength": 71,
+      "p": 173,
+      "old_guard": {
+        "signed_live": 211,
+        "signed_add_temporary": 212,
+        "signed_initial_scaled_product": 573,
+        "signed_initial_residual": 574,
+        "signed_initial_doubled_residual": 575
+      },
+      "ten_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2147
+    },
+    {
+      "L": 115,
+      "S": 2514475930610689656424,
+      "bitlength": 72,
+      "p": 174,
+      "old_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "ten_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2166
+    },
+    {
+      "L": 116,
+      "S": 3004777578508008253808,
+      "bitlength": 72,
+      "p": 174,
+      "old_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "ten_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2185
+    },
+    {
+      "L": 117,
+      "S": 3584763047515624093141,
+      "bitlength": 72,
+      "p": 174,
+      "old_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "ten_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2204
+    },
+    {
+      "L": 118,
+      "S": 4269774706350366535982,
+      "bitlength": 72,
+      "p": 174,
+      "old_guard": {
+        "signed_live": 212,
+        "signed_add_temporary": 213,
+        "signed_initial_scaled_product": 574,
+        "signed_initial_residual": 575,
+        "signed_initial_doubled_residual": 576
+      },
+      "ten_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2223
+    },
+    {
+      "L": 119,
+      "S": 5077601326214374367014,
+      "bitlength": 73,
+      "p": 175,
+      "old_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "ten_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2242
+    },
+    {
+      "L": 120,
+      "S": 6028840286717735328128,
+      "bitlength": 73,
+      "p": 175,
+      "old_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "ten_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2261
+    },
+    {
+      "L": 121,
+      "S": 7147309358239364703235,
+      "bitlength": 73,
+      "p": 175,
+      "old_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "ten_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2280
+    },
+    {
+      "L": 122,
+      "S": 8460514302384346095950,
+      "bitlength": 73,
+      "p": 175,
+      "old_guard": {
+        "signed_live": 213,
+        "signed_add_temporary": 214,
+        "signed_initial_scaled_product": 575,
+        "signed_initial_residual": 576,
+        "signed_initial_doubled_residual": 577
+      },
+      "ten_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2299
+    },
+    {
+      "L": 123,
+      "S": 10000179250793982578440,
+      "bitlength": 74,
+      "p": 176,
+      "old_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "ten_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2318
+    },
+    {
+      "L": 124,
+      "S": 11802847616297532410840,
+      "bitlength": 74,
+      "p": 176,
+      "old_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "ten_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2337
+    },
+    {
+      "L": 125,
+      "S": 13910562166338110708575,
+      "bitlength": 74,
+      "p": 176,
+      "old_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "ten_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2356
+    },
+    {
+      "L": 126,
+      "S": 16371633854429913702626,
+      "bitlength": 74,
+      "p": 176,
+      "old_guard": {
+        "signed_live": 214,
+        "signed_add_temporary": 215,
+        "signed_initial_scaled_product": 576,
+        "signed_initial_residual": 577,
+        "signed_initial_doubled_residual": 578
+      },
+      "ten_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2375
+    },
+    {
+      "L": 127,
+      "S": 19241510069418426798502,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2394
+    },
+    {
+      "L": 128,
+      "S": 22583754133513335125504,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2413
+    },
+    {
+      "L": 129,
+      "S": 26471149168174014270633,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2432
+    },
+    {
+      "L": 130,
+      "S": 30986940862466010509266,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2451
+    },
+    {
+      "L": 131,
+      "S": 36226235232834018053732,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2470
+    },
+    {
+      "L": 132,
+      "S": 42297569168616320923464,
+      "bitlength": 76,
+      "p": 178,
+      "old_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "ten_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2489
+    },
+    {
+      "L": 133,
+      "S": 49324673427288224979928,
+      "bitlength": 76,
+      "p": 178,
+      "old_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "ten_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2508
+    },
+    {
+      "L": 134,
+      "S": 57448449791632529371856,
+      "bitlength": 76,
+      "p": 178,
+      "old_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "ten_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2527
+    },
+    {
+      "L": 135,
+      "S": 66829186343163818057712,
+      "bitlength": 76,
+      "p": 178,
+      "old_guard": {
+        "signed_live": 216,
+        "signed_add_temporary": 217,
+        "signed_initial_scaled_product": 578,
+        "signed_initial_residual": 579,
+        "signed_initial_doubled_residual": 580
+      },
+      "ten_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2546
+    },
+    {
+      "L": 136,
+      "S": 77649037258731407837824,
+      "bitlength": 77,
+      "p": 179,
+      "old_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "ten_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2565
+    },
+    {
+      "L": 137,
+      "S": 90114796218105136214648,
+      "bitlength": 77,
+      "p": 179,
+      "old_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "ten_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2584
+    },
+    {
+      "L": 138,
+      "S": 104460995438666303141296,
+      "bitlength": 77,
+      "p": 179,
+      "old_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "ten_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2603
+    },
+    {
+      "L": 139,
+      "S": 120953365549675624990592,
+      "bitlength": 77,
+      "p": 179,
+      "old_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "ten_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2622
+    },
+    {
+      "L": 140,
+      "S": 139892695005093574197184,
+      "bitlength": 77,
+      "p": 179,
+      "old_guard": {
+        "signed_live": 217,
+        "signed_add_temporary": 218,
+        "signed_initial_scaled_product": 579,
+        "signed_initial_residual": 580,
+        "signed_initial_doubled_residual": 581
+      },
+      "ten_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2641
+    },
+    {
+      "L": 141,
+      "S": 161619131534338673944568,
+      "bitlength": 78,
+      "p": 180,
+      "old_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "ten_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2660
+    },
+    {
+      "L": 142,
+      "S": 186516972270174980757136,
+      "bitlength": 78,
+      "p": 180,
+      "old_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "ten_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2679
+    },
+    {
+      "L": 143,
+      "S": 215019993699457881468272,
+      "bitlength": 78,
+      "p": 180,
+      "old_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "ten_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2698
+    },
+    {
+      "L": 144,
+      "S": 247617377485040353452544,
+      "bitlength": 78,
+      "p": 180,
+      "old_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "ten_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2717
+    },
+    {
+      "L": 145,
+      "S": 284860293537143742742088,
+      "bitlength": 78,
+      "p": 180,
+      "old_guard": {
+        "signed_live": 218,
+        "signed_add_temporary": 219,
+        "signed_initial_scaled_product": 580,
+        "signed_initial_residual": 581,
+        "signed_initial_doubled_residual": 582
+      },
+      "ten_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2736
+    },
+    {
+      "L": 146,
+      "S": 327369207503544102768400,
+      "bitlength": 79,
+      "p": 181,
+      "old_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "ten_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2755
+    },
+    {
+      "L": 147,
+      "S": 375841986135994630189280,
+      "bitlength": 79,
+      "p": 181,
+      "old_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "ten_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2774
+    },
+    {
+      "L": 148,
+      "S": 431062880813881685569600,
+      "bitlength": 79,
+      "p": 181,
+      "old_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "ten_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2793
+    },
+    {
+      "L": 149,
+      "S": 493912476906342953194535,
+      "bitlength": 79,
+      "p": 181,
+      "old_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "ten_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2812
+    },
+    {
+      "L": 150,
+      "S": 565378704674932248592090,
+      "bitlength": 79,
+      "p": 181,
+      "old_guard": {
+        "signed_live": 219,
+        "signed_add_temporary": 220,
+        "signed_initial_scaled_product": 581,
+        "signed_initial_residual": 582,
+        "signed_initial_doubled_residual": 583
+      },
+      "ten_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2831
+    },
+    {
+      "L": 151,
+      "S": 646569016107362227863026,
+      "bitlength": 80,
+      "p": 182,
+      "old_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "ten_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2850
+    },
+    {
+      "L": 152,
+      "S": 738723841479034834365952,
+      "bitlength": 80,
+      "p": 182,
+      "old_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "ten_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2869
+    },
+    {
+      "L": 153,
+      "S": 843231449616485329145729,
+      "bitlength": 80,
+      "p": 182,
+      "old_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "ten_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2888
+    },
+    {
+      "L": 154,
+      "S": 961644346842588555907258,
+      "bitlength": 80,
+      "p": 182,
+      "old_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "ten_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2907
+    },
+    {
+      "L": 155,
+      "S": 1095697361478248293420616,
+      "bitlength": 80,
+      "p": 182,
+      "old_guard": {
+        "signed_live": 220,
+        "signed_add_temporary": 221,
+        "signed_initial_scaled_product": 582,
+        "signed_initial_residual": 583,
+        "signed_initial_doubled_residual": 584
+      },
+      "ten_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2926
+    },
+    {
+      "L": 156,
+      "S": 1247327573624148156969672,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2945
+    },
+    {
+      "L": 157,
+      "S": 1418696263818046265188669,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2964
+    },
+    {
+      "L": 158,
+      "S": 1612213069131574226690438,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2983
+    },
+    {
+      "L": 159,
+      "S": 1830562551413805165853026,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3002
+    },
+    {
+      "L": 160,
+      "S": 2076733399790227314228352,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3021
+    },
+    {
+      "L": 161,
+      "S": 2354050508273712487178459,
+      "bitlength": 81,
+      "p": 183,
+      "old_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "ten_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3040
+    },
+    {
+      "L": 162,
+      "S": 2666210189532682119005718,
+      "bitlength": 82,
+      "p": 184,
+      "old_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "ten_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3059
+    },
+    {
+      "L": 163,
+      "S": 3017318807590902268211836,
+      "bitlength": 82,
+      "p": 184,
+      "old_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "ten_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3078
+    },
+    {
+      "L": 164,
+      "S": 3411935135609337130077272,
+      "bitlength": 82,
+      "p": 184,
+      "old_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "ten_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3097
+    },
+    {
+      "L": 165,
+      "S": 3855116770035950737692994,
+      "bitlength": 82,
+      "p": 184,
+      "old_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "ten_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3116
+    },
+    {
+      "L": 166,
+      "S": 4352470959423855560326028,
+      "bitlength": 82,
+      "p": 184,
+      "old_guard": {
+        "signed_live": 222,
+        "signed_add_temporary": 223,
+        "signed_initial_scaled_product": 584,
+        "signed_initial_residual": 585,
+        "signed_initial_doubled_residual": 586
+      },
+      "ten_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3135
+    },
+    {
+      "L": 167,
+      "S": 4910210235238618134454156,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3154
+    },
+    {
+      "L": 168,
+      "S": 5535213263136355753882112,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3173
+    },
+    {
+      "L": 169,
+      "S": 6235091366638069304998174,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3192
+    },
+    {
+      "L": 170,
+      "S": 7018261211003521898152748,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3211
+    },
+    {
+      "L": 171,
+      "S": 7894024173579895634295040,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3230
+    },
+    {
+      "L": 172,
+      "S": 8872652968135849629240560,
+      "bitlength": 83,
+      "p": 185,
+      "old_guard": {
+        "signed_live": 223,
+        "signed_add_temporary": 224,
+        "signed_initial_scaled_product": 585,
+        "signed_initial_residual": 586,
+        "signed_initial_doubled_residual": 587
+      },
+      "ten_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3249
+    },
+    {
+      "L": 173,
+      "S": 9965486134869764914212910,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3268
+    },
+    {
+      "L": 174,
+      "S": 11185031055091603637483780,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3287
+    },
+    {
+      "L": 175,
+      "S": 12545076200221575904623580,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3306
+    },
+    {
+      "L": 176,
+      "S": 14060813378937836593506176,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3325
+    },
+    {
+      "L": 177,
+      "S": 15748970804263941374482402,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3344
+    },
+    {
+      "L": 178,
+      "S": 17627957864351673838103204,
+      "bitlength": 84,
+      "p": 186,
+      "old_guard": {
+        "signed_live": 224,
+        "signed_add_temporary": 225,
+        "signed_initial_scaled_product": 586,
+        "signed_initial_residual": 587,
+        "signed_initial_doubled_residual": 588
+      },
+      "ten_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3363
+    },
+    {
+      "L": 179,
+      "S": 19718022546936328833026008,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3382
+    },
+    {
+      "L": 180,
+      "S": 22041422538183793803875216,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3401
+    },
+    {
+      "L": 181,
+      "S": 24622611092190671161940137,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3420
+    },
+    {
+      "L": 182,
+      "S": 27488438848034479216763174,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3439
+    },
+    {
+      "L": 183,
+      "S": 30668372857311043480512798,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3458
+    },
+    {
+      "L": 184,
+      "S": 34194734176867850633120896,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3477
+    },
+    {
+      "L": 185,
+      "S": 38102955479290425363762767,
+      "bitlength": 85,
+      "p": 187,
+      "old_guard": {
+        "signed_live": 225,
+        "signed_add_temporary": 226,
+        "signed_initial_scaled_product": 587,
+        "signed_initial_residual": 588,
+        "signed_initial_doubled_residual": 589
+      },
+      "ten_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3496
+    },
+    {
+      "L": 186,
+      "S": 42431860237987330933245894,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3515
+    },
+    {
+      "L": 187,
+      "S": 47223965154831281372866888,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3534
+    },
+    {
+      "L": 188,
+      "S": 52525807616652570100139576,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3553
+    },
+    {
+      "L": 189,
+      "S": 58388300092871398386433227,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3572
+    },
+    {
+      "L": 190,
+      "S": 64867113520644906471073354,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3591
+    },
+    {
+      "L": 191,
+      "S": 72023091866563334900741438,
+      "bitlength": 86,
+      "p": 188,
+      "old_guard": {
+        "signed_live": 226,
+        "signed_add_temporary": 227,
+        "signed_initial_scaled_product": 588,
+        "signed_initial_residual": 589,
+        "signed_initial_doubled_residual": 590
+      },
+      "ten_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3610
+    },
+    {
+      "L": 192,
+      "S": 79922700205652805311032576,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3629
+    },
+    {
+      "L": 193,
+      "S": 88638508819750330868134877,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3648
+    },
+    {
+      "L": 194,
+      "S": 98249715988757229870636154,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3667
+    },
+    {
+      "L": 195,
+      "S": 108842712330425480717897108,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3686
+    },
+    {
+      "L": 196,
+      "S": 120511689737792321832738280,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3705
+    },
+    {
+      "L": 197,
+      "S": 133359298168786719105272540,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3724
+    },
+    {
+      "L": 198,
+      "S": 147497353760554267511110120,
+      "bitlength": 87,
+      "p": 189,
+      "old_guard": {
+        "signed_live": 227,
+        "signed_add_temporary": 228,
+        "signed_initial_scaled_product": 589,
+        "signed_initial_residual": 590,
+        "signed_initial_doubled_residual": 591
+      },
+      "ten_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3743
+    },
+    {
+      "L": 199,
+      "S": 163047601972385070821160200,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3762
+    },
+    {
+      "L": 200,
+      "S": 180142539706517371185281920,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3781
+    },
+    {
+      "L": 201,
+      "S": 198926300616299735031949076,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3800
+    },
+    {
+      "L": 202,
+      "S": 219555608087035926043329352,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3819
+    },
+    {
+      "L": 203,
+      "S": 242200800667158267756250304,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3838
+    },
+    {
+      "L": 204,
+      "S": 267046935037067661005711008,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3857
+    },
+    {
+      "L": 205,
+      "S": 294294971930974878941431316,
+      "bitlength": 88,
+      "p": 190,
+      "old_guard": {
+        "signed_live": 228,
+        "signed_add_temporary": 229,
+        "signed_initial_scaled_product": 590,
+        "signed_initial_residual": 591,
+        "signed_initial_doubled_residual": 592
+      },
+      "ten_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3876
+    },
+    {
+      "L": 206,
+      "S": 324163050774356620659737752,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3895
+    },
+    {
+      "L": 207,
+      "S": 356887859167226181476784104,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3914
+    },
+    {
+      "L": 208,
+      "S": 392726103732386403982475008,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3933
+    },
+    {
+      "L": 209,
+      "S": 431956089259306565906352716,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3952
+    },
+    {
+      "L": 210,
+      "S": 474879413509422770182079832,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3971
+    },
+    {
+      "L": 211,
+      "S": 521822785508736142570471504,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 3990
+    },
+    {
+      "L": 212,
+      "S": 573139975639865093849453408,
+      "bitlength": 89,
+      "p": 191,
+      "old_guard": {
+        "signed_live": 229,
+        "signed_add_temporary": 230,
+        "signed_initial_scaled_product": 591,
+        "signed_initial_residual": 592,
+        "signed_initial_doubled_residual": 593
+      },
+      "ten_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4009
+    },
+    {
+      "L": 213,
+      "S": 629213906359547284769196891,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4028
+    },
+    {
+      "L": 214,
+      "S": 690458892910396251294360082,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4047
+    },
+    {
+      "L": 215,
+      "S": 757323043968974245959961514,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4066
+    },
+    {
+      "L": 216,
+      "S": 830290832777491533363234048,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4085
+    },
+    {
+      "L": 217,
+      "S": 909885849945298137697447021,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4104
+    },
+    {
+      "L": 218,
+      "S": 996673749780484881129571442,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4123
+    },
+    {
+      "L": 219,
+      "S": 1091265402723120405917854984,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4142
+    },
+    {
+      "L": 220,
+      "S": 1194320267201762622476912168,
+      "bitlength": 90,
+      "p": 192,
+      "old_guard": {
+        "signed_live": 230,
+        "signed_add_temporary": 231,
+        "signed_initial_scaled_product": 592,
+        "signed_initial_residual": 593,
+        "signed_initial_doubled_residual": 594
+      },
+      "ten_guard": {
+        "signed_live": 236,
+        "signed_add_temporary": 237,
+        "signed_initial_scaled_product": 598,
+        "signed_initial_residual": 599,
+        "signed_initial_doubled_residual": 600
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4161
+    },
+    {
+      "L": 221,
+      "S": 1306549995025821627605940745,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4180
+    },
+    {
+      "L": 222,
+      "S": 1428722285260126858114695470,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4199
+    },
+    {
+      "L": 223,
+      "S": 1561665002406763004553756730,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4218
+    },
+    {
+      "L": 224,
+      "S": 1706270575645078038703617920,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4237
+    },
+    {
+      "L": 225,
+      "S": 1863500696856019325446114735,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4256
+    },
+    {
+      "L": 226,
+      "S": 2034391336184006297529833726,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4275
+    },
+    {
+      "L": 227,
+      "S": 2220058094970889879008507052,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4294
+    },
+    {
+      "L": 228,
+      "S": 2421701917034776212956326904,
+      "bitlength": 91,
+      "p": 193,
+      "old_guard": {
+        "signed_live": 231,
+        "signed_add_temporary": 232,
+        "signed_initial_scaled_product": 593,
+        "signed_initial_residual": 594,
+        "signed_initial_doubled_residual": 595
+      },
+      "ten_guard": {
+        "signed_live": 237,
+        "signed_add_temporary": 238,
+        "signed_initial_scaled_product": 599,
+        "signed_initial_residual": 600,
+        "signed_initial_doubled_residual": 601
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4313
+    },
+    {
+      "L": 229,
+      "S": 2640615180464312980101230758,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4332
+    },
+    {
+      "L": 230,
+      "S": 2878188193359273837499090916,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4351
+    },
+    {
+      "L": 231,
+      "S": 3135916118273873217383553892,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4370
+    },
+    {
+      "L": 232,
+      "S": 3415406351513267168172963584,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4389
+    },
+    {
+      "L": 233,
+      "S": 3718386384899342305292873818,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4408
+    },
+    {
+      "L": 234,
+      "S": 4046712179162494229344863236,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4427
+    },
+    {
+      "L": 235,
+      "S": 4402377079735117623039604672,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4446
+    },
+    {
+      "L": 236,
+      "S": 4787521307423585127278611664,
+      "bitlength": 92,
+      "p": 194,
+      "old_guard": {
+        "signed_live": 232,
+        "signed_add_temporary": 233,
+        "signed_initial_scaled_product": 594,
+        "signed_initial_residual": 595,
+        "signed_initial_doubled_residual": 596
+      },
+      "ten_guard": {
+        "signed_live": 238,
+        "signed_add_temporary": 239,
+        "signed_initial_scaled_product": 600,
+        "signed_initial_residual": 601,
+        "signed_initial_doubled_residual": 602
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4465
+    },
+    {
+      "L": 237,
+      "S": 5204442058222342579010276778,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4484
+    },
+    {
+      "L": 238,
+      "S": 5655604248410310358808206156,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4503
+    },
+    {
+      "L": 239,
+      "S": 6143651943040130683610328212,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4522
+    },
+    {
+      "L": 240,
+      "S": 6671420507999180873643268224,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4541
+    },
+    {
+      "L": 241,
+      "S": 7241949527992097029263828358,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4560
+    },
+    {
+      "L": 242,
+      "S": 7858496535072413369272227116,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4579
+    },
+    {
+      "L": 243,
+      "S": 8524551594740596350659055432,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4598
+    },
+    {
+      "L": 244,
+      "S": 9243852799132207257962655664,
+      "bitlength": 93,
+      "p": 195,
+      "old_guard": {
+        "signed_live": 233,
+        "signed_add_temporary": 234,
+        "signed_initial_scaled_product": 595,
+        "signed_initial_residual": 596,
+        "signed_initial_doubled_residual": 597
+      },
+      "ten_guard": {
+        "signed_live": 239,
+        "signed_add_temporary": 240,
+        "signed_initial_scaled_product": 601,
+        "signed_initial_residual": 602,
+        "signed_initial_doubled_residual": 603
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4617
+    },
+    {
+      "L": 245,
+      "S": 10020402719448327628713813053,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4636
+    },
+    {
+      "L": 246,
+      "S": 10858485872536098810851601310,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4655
+    },
+    {
+      "L": 247,
+      "S": 11762687259415842181830963350,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4674
+    },
+    {
+      "L": 248,
+      "S": 12737912036578541464064698240,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4693
+    },
+    {
+      "L": 249,
+      "S": 13789406384049511453565732315,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4712
+    },
+    {
+      "L": 250,
+      "S": 14922779637537111441228457150,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4731
+    },
+    {
+      "L": 251,
+      "S": 16144027755465892643283658376,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4750
+    },
+    {
+      "L": 252,
+      "S": 17459558195338354291791065752,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4769
+    },
+    {
+      "L": 253,
+      "S": 18876216277685539705612997879,
+      "bitlength": 94,
+      "p": 196,
+      "old_guard": {
+        "signed_live": 234,
+        "signed_add_temporary": 235,
+        "signed_initial_scaled_product": 596,
+        "signed_initial_residual": 597,
+        "signed_initial_doubled_residual": 598
+      },
+      "ten_guard": {
+        "signed_live": 240,
+        "signed_add_temporary": 241,
+        "signed_initial_scaled_product": 602,
+        "signed_initial_residual": 603,
+        "signed_initial_doubled_residual": 604
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4788
+    },
+    {
+      "L": 254,
+      "S": 20401313119861317362950366258,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4807
+    },
+    {
+      "L": 255,
+      "S": 22042655226115926186525799766,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4826
+    },
+    {
+      "L": 256,
+      "S": 23808575824759069526237842432,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4845
+    },
+    {
+      "L": 257,
+      "S": 25707968047799666061215057489,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4864
+    },
+    {
+      "L": 258,
+      "S": 27750320053236762140308930978,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4883
+    },
+    {
+      "L": 259,
+      "S": 29945752195182849972192885956,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4902
+    },
+    {
+      "L": 260,
+      "S": 32305056352236018054956299912,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4921
+    }
+  ],
+  "selected": [
+    {
+      "L": 1,
+      "S": 1,
+      "bitlength": 1,
+      "p": 103,
+      "old_guard": {
+        "signed_live": 141,
+        "signed_add_temporary": 142,
+        "signed_initial_scaled_product": 503,
+        "signed_initial_residual": 504,
+        "signed_initial_doubled_residual": 505
+      },
+      "ten_guard": {
+        "signed_live": 147,
+        "signed_add_temporary": 148,
+        "signed_initial_scaled_product": 509,
+        "signed_initial_residual": 510,
+        "signed_initial_doubled_residual": 511
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 0
+    },
+    {
+      "L": 10,
+      "S": 512,
+      "bitlength": 10,
+      "p": 112,
+      "old_guard": {
+        "signed_live": 150,
+        "signed_add_temporary": 151,
+        "signed_initial_scaled_product": 512,
+        "signed_initial_residual": 513,
+        "signed_initial_doubled_residual": 514
+      },
+      "ten_guard": {
+        "signed_live": 156,
+        "signed_add_temporary": 157,
+        "signed_initial_scaled_product": 518,
+        "signed_initial_residual": 519,
+        "signed_initial_doubled_residual": 520
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 171
+    },
+    {
+      "L": 20,
+      "S": 524288,
+      "bitlength": 20,
+      "p": 122,
+      "old_guard": {
+        "signed_live": 160,
+        "signed_add_temporary": 161,
+        "signed_initial_scaled_product": 522,
+        "signed_initial_residual": 523,
+        "signed_initial_doubled_residual": 524
+      },
+      "ten_guard": {
+        "signed_live": 166,
+        "signed_add_temporary": 167,
+        "signed_initial_scaled_product": 528,
+        "signed_initial_residual": 529,
+        "signed_initial_doubled_residual": 530
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 361
+    },
+    {
+      "L": 40,
+      "S": 274877906944,
+      "bitlength": 39,
+      "p": 141,
+      "old_guard": {
+        "signed_live": 179,
+        "signed_add_temporary": 180,
+        "signed_initial_scaled_product": 541,
+        "signed_initial_residual": 542,
+        "signed_initial_doubled_residual": 543
+      },
+      "ten_guard": {
+        "signed_live": 185,
+        "signed_add_temporary": 186,
+        "signed_initial_scaled_product": 547,
+        "signed_initial_residual": 548,
+        "signed_initial_doubled_residual": 549
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 741
+    },
+    {
+      "L": 80,
+      "S": 1267571539176770816,
+      "bitlength": 61,
+      "p": 163,
+      "old_guard": {
+        "signed_live": 201,
+        "signed_add_temporary": 202,
+        "signed_initial_scaled_product": 563,
+        "signed_initial_residual": 564,
+        "signed_initial_doubled_residual": 565
+      },
+      "ten_guard": {
+        "signed_live": 207,
+        "signed_add_temporary": 208,
+        "signed_initial_scaled_product": 569,
+        "signed_initial_residual": 570,
+        "signed_initial_doubled_residual": 571
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 1501
+    },
+    {
+      "L": 130,
+      "S": 30986940862466010509266,
+      "bitlength": 75,
+      "p": 177,
+      "old_guard": {
+        "signed_live": 215,
+        "signed_add_temporary": 216,
+        "signed_initial_scaled_product": 577,
+        "signed_initial_residual": 578,
+        "signed_initial_doubled_residual": 579
+      },
+      "ten_guard": {
+        "signed_live": 221,
+        "signed_add_temporary": 222,
+        "signed_initial_scaled_product": 583,
+        "signed_initial_residual": 584,
+        "signed_initial_doubled_residual": 585
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 2451
+    },
+    {
+      "L": 260,
+      "S": 32305056352236018054956299912,
+      "bitlength": 95,
+      "p": 197,
+      "old_guard": {
+        "signed_live": 235,
+        "signed_add_temporary": 236,
+        "signed_initial_scaled_product": 597,
+        "signed_initial_residual": 598,
+        "signed_initial_doubled_residual": 599
+      },
+      "ten_guard": {
+        "signed_live": 241,
+        "signed_add_temporary": 242,
+        "signed_initial_scaled_product": 603,
+        "signed_initial_residual": 604,
+        "signed_initial_doubled_residual": 605
+      },
+      "initial_complex_rounds": 20,
+      "advance_complex_additions": 4921
+    }
+  ]
+}

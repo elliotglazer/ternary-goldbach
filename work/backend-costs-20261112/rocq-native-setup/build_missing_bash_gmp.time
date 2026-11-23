@@ -1,0 +1,55 @@
+File "dune", lines 35-39, characters 0-153:
+35 | (rule
+36 |  (targets revision)
+37 |  (mode fallback)
+38 |  (deps (:rev-script dev/tools/make_git_revision.sh))
+39 |  (action (with-stdout-to revision (bash %{rev-script}))))
+Error: I need bash to interpret (bash ...) actions but I couldn't find it :(
+File "dev/bench/dune", line 22, characters 7-22:
+22 |  (name coqtimelog2html)
+            ^^^^^^^^^^^^^^^
+(cd _build/default && /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/bin/ocamlopt.opt -w -40 -g -O3 -unbox-closures -o dev/bench/coqtimelog2html.exe /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/unix.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/str.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/threads/threads.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml clib/clib.cmxa /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith/zarith.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith dev/bench/benchlib.cmxa dev/bench/.coqtimelog2html.eobjs/native/dune__exe__Coqtimelog2html.cmx)
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/usr/bin/../lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lgmp: No such file or directory
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking (exit code 1)
+File "plugins/micromega/dune", line 26, characters 7-15:
+26 |  (name csdpcert)
+            ^^^^^^^^
+(cd _build/default && /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/bin/ocamlopt.opt -w -40 -open Micromega_core_plugin -g -O3 -unbox-closures -o plugins/micromega/csdpcert.exe /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith/zarith.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/str.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/unix.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/threads/threads.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml clib/clib.cmxa plugins/micromega/micromega_core_plugin.cmxa plugins/micromega/.csdpcert.eobjs/native/dune__exe__Csdpcert.cmx)
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/usr/bin/../lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lgmp: No such file or directory
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking (exit code 1)
+File "topbin/dune", line 10, characters 14-18:
+10 |  (public_name rocq)
+                   ^^^^
+(cd _build/default && /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/bin/ocamlopt.opt -w -40 -g -O3 -unbox-closures -o topbin/rocq.exe config/config.cmxa boot/boot.cmxa /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/unix.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/findlib/findlib.cmxa topbin/rocqshim.cmxa /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/str.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/threads/threads.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml clib/clib.cmxa perf/coqperf.cmxa -I perf lib/lib.cmxa tools/coqdep/lib/coqdeplib.cmxa coqpp/coqpp.cmxa tools/coqdoc/coqdoclib.cmxa tools/rocqwc.cmxa tools/coqworkmgr/coqworkmgrApi.cmxa tools/coqworkmgr/rocqworkmgr.cmxa tools/rocqtex.cmxa tools/rocqmakefile.cmxa /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith/zarith.cmxa -I /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/sysroot/usr/lib/ocaml/zarith dev/bench/benchlib.cmxa topbin/.rocq.eobjs/native/dune__exe__Rocq.cmx)
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/usr/bin/../lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: cannot find -lgmp: No such file or directory
+collect2: error: ld returned 1 exit status
+File "caml_startup", line 1:
+Error: Error during linking (exit code 1)
+Command exited with non-zero status 1
+	Command being timed: "../run.sh dune build -p rocq-runtime,coq-core,coq -j 4"
+	User time (seconds): 86.21
+	System time (seconds): 96.66
+	Percent of CPU this job got: 53%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5m 40.42s
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 79238
+	Minor (reclaiming a frame) page faults: 8597416
+	Voluntary context switches: 3671067
+	Involuntary context switches: 2575
+	Swaps: 0
+	File system inputs: 4294704
+	File system outputs: 111640
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

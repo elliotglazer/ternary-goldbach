@@ -1,0 +1,120 @@
+[
+  {
+    "c": 131071,
+    "h": 1,
+    "cells": 1025,
+    "units": 131070,
+    "degrees": [
+      8
+    ],
+    "widths": [
+      240,
+      248
+    ],
+    "scalar_wall": 0.3212424000012106,
+    "series_wall": 0.35885920000146143,
+    "phases": {
+      "prepare_and_kernel": 0.023900399944977835,
+      "seed_and_difference": 0.03191679992232821,
+      "large_integer_and_bytes": 0.1158395000747987,
+      "decode_filter_divide": 0.18269420005162829
+    },
+    "gmp_wall": 0.32728729999871575,
+    "gmp_phases": {
+      "prepare_and_kernel": 0.019907299993064953,
+      "seed_and_difference": 0.039352899919322226,
+      "large_integer_and_bytes": 0.05315110005903989,
+      "decode_filter_divide": 0.20825509995847824
+    },
+    "worst_oracle_sample": 6.9313186765291e-29,
+    "kernel_cache": "CacheInfo(hits=2046, misses=4, maxsize=None, currsize=4)"
+  },
+  {
+    "c": 265800,
+    "h": 1,
+    "cells": 1025,
+    "units": 70720,
+    "degrees": [
+      8
+    ],
+    "widths": [
+      248,
+      256
+    ],
+    "scalar_wall": 0.18313889999990351,
+    "series_wall": 0.4520563000005495,
+    "phases": {
+      "prepare_and_kernel": 0.016756699962570565,
+      "seed_and_difference": 0.034190700032922905,
+      "large_integer_and_bytes": 0.2703833000159648,
+      "decode_filter_divide": 0.12597290004850947
+    },
+    "gmp_wall": 0.25066549999974086,
+    "gmp_phases": {
+      "prepare_and_kernel": 0.014644899936683942,
+      "seed_and_difference": 0.032583200041699456,
+      "large_integer_and_bytes": 0.07913620008184807,
+      "decode_filter_divide": 0.12031590001788572
+    },
+    "worst_oracle_sample": 6.473707313542107e-29,
+    "kernel_cache": "CacheInfo(hits=2044, misses=6, maxsize=None, currsize=6)"
+  },
+  {
+    "c": 131072,
+    "h": 6337,
+    "cells": 2,
+    "units": 96,
+    "degrees": [
+      19
+    ],
+    "widths": [
+      440
+    ],
+    "scalar_wall": 0.0007148000004235655,
+    "series_wall": 0.001977600000827806,
+    "phases": {
+      "prepare_and_kernel": 0.0002535999992687721,
+      "seed_and_difference": 0.0004879000007349532,
+      "large_integer_and_bytes": 0.0009884999999485444,
+      "decode_filter_divide": 0.0002085999985865783
+    },
+    "gmp_wall": 0.001222900002176175,
+    "gmp_phases": {
+      "prepare_and_kernel": 0.0001534000039100647,
+      "seed_and_difference": 0.00034449999657226726,
+      "large_integer_and_bytes": 0.000558900002943119,
+      "decode_filter_divide": 0.00013969999781693332
+    },
+    "worst_oracle_sample": 5.409480185711156e-29,
+    "kernel_cache": "CacheInfo(hits=2, misses=2, maxsize=None, currsize=2)"
+  },
+  {
+    "c": 131072,
+    "h": 6400,
+    "cells": 2,
+    "units": 96,
+    "degrees": [
+      19
+    ],
+    "widths": [
+      440
+    ],
+    "scalar_wall": 0.0006333999990602024,
+    "series_wall": 0.0018282000019098632,
+    "phases": {
+      "prepare_and_kernel": 0.0001891999963845592,
+      "seed_and_difference": 0.00042210000538034365,
+      "large_integer_and_bytes": 0.000980899996648077,
+      "decode_filter_divide": 0.00020880000374745578
+    },
+    "gmp_wall": 0.001322799998888513,
+    "gmp_phases": {
+      "prepare_and_kernel": 0.00022259999605012126,
+      "seed_and_difference": 0.000504600004205713,
+      "large_integer_and_bytes": 0.0003097000007983297,
+      "decode_filter_divide": 0.00025120000282186083
+    },
+    "worst_oracle_sample": 3.972633425864541e-29,
+    "kernel_cache": "CacheInfo(hits=2, misses=2, maxsize=None, currsize=2)"
+  }
+]

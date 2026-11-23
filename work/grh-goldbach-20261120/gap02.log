@@ -1,0 +1,28 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\Gap.lean:27:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\Gap.lean:33:12: error: Function expected at
+  hn p hp'.right ?m.51
+but this term has type
+  b < p
+
+Note: Expected a function because this term is being applied to the argument
+  hp'.1
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\Gap.lean:60:2: error: linarith failed to find a contradiction
+x : ℝ
+hx : 1 ≤ x
+hX : x ≤ 10 ^ 20
+h : Real.log x ≤ ↑20 * Real.log 10
+a✝ : 2303 / 50 < Real.log x
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\Gap.lean:97:23: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\Gap.lean:97:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

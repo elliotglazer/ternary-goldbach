@@ -1,0 +1,4556 @@
+{
+  "status": "external candidate batch; not Lean-validated",
+  "batch_number": 8,
+  "metadata_sha256": "0d65ec72aa1dc618558dd6abbaa6bf6f7c13873bd2fa6617f38d768c2034d160",
+  "start_index": 986,
+  "start_endpoint": 1279499215,
+  "end_index": 1050,
+  "end_endpoint": 1300133219,
+  "scale": 1000000000,
+  "windows": [
+    {
+      "index": 987,
+      "a": 1279499215,
+      "b": 1279819089,
+      "count": 15197,
+      "subwindows": [
+        {
+          "n": 1279499215,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1279531983,
+          "width": 32768,
+          "count": 1524
+        },
+        {
+          "n": 1279564751,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1279597519,
+          "width": 32768,
+          "count": 1519
+        },
+        {
+          "n": 1279630287,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1279663055,
+          "width": 32768,
+          "count": 1538
+        },
+        {
+          "n": 1279695823,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1279728591,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1279761359,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1279794127,
+          "width": 24962,
+          "count": 1185
+        }
+      ],
+      "log_box": [
+        20969984558,
+        20969984578
+      ],
+      "theta_lower_scaled": 1279777823921531635,
+      "theta_upper_scaled": 1279783866468028558,
+      "lower_margin_scaled": 86716830431635,
+      "upper_margin_scaled": 163204440871442,
+      "checkpoint_pass": true,
+      "classification_sha256": "3e2fad97540132575666600534bb411cc93cf80f6b9755a02073137decde2689",
+      "base_limit": 35774,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 988,
+      "a": 1279819089,
+      "b": 1280139043,
+      "count": 15279,
+      "subwindows": [
+        {
+          "n": 1279819089,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1279851857,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1279884625,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1279917393,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1279950161,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1279982929,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1280015697,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1280048465,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1280081233,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1280114001,
+          "width": 25042,
+          "count": 1165
+        }
+      ],
+      "log_box": [
+        20970234526,
+        20970234546
+      ],
+      "theta_lower_scaled": 1280098224315593317,
+      "theta_upper_scaled": 1280104270681656892,
+      "lower_margin_scaled": 87195219893317,
+      "upper_margin_scaled": 162786222643108,
+      "checkpoint_pass": true,
+      "classification_sha256": "72b0628e144d8ed9b581a6929be849f5ae6bb1a1997dcccdba28b1fae03792f9",
+      "base_limit": 35779,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 989,
+      "a": 1280139043,
+      "b": 1280459077,
+      "count": 15354,
+      "subwindows": [
+        {
+          "n": 1280139043,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1280171811,
+          "width": 32768,
+          "count": 1606
+        },
+        {
+          "n": 1280204579,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1280237347,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1280270115,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1280302883,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1280335651,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1280368419,
+          "width": 32768,
+          "count": 1575
+        },
+        {
+          "n": 1280401187,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1280433955,
+          "width": 25122,
+          "count": 1204
+        }
+      ],
+      "log_box": [
+        20970484494,
+        20970484514
+      ],
+      "theta_lower_scaled": 1280420201296505521,
+      "theta_upper_scaled": 1280426251500884848,
+      "lower_margin_scaled": 89170204205521,
+      "upper_margin_scaled": 160871406815152,
+      "checkpoint_pass": true,
+      "classification_sha256": "f68316ff490880afc7c654de1a75ac379148ae1a8e6866bf355735c0840be79e",
+      "base_limit": 35783,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 990,
+      "a": 1280459077,
+      "b": 1280779191,
+      "count": 15190,
+      "subwindows": [
+        {
+          "n": 1280459077,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1280491845,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1280524613,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1280557381,
+          "width": 32768,
+          "count": 1531
+        },
+        {
+          "n": 1280590149,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1280622917,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1280655685,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1280688453,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1280721221,
+          "width": 32768,
+          "count": 1508
+        },
+        {
+          "n": 1280753989,
+          "width": 25202,
+          "count": 1264
+        }
+      ],
+      "log_box": [
+        20970734462,
+        20970734482
+      ],
+      "theta_lower_scaled": 1280738742955969381,
+      "theta_upper_scaled": 1280744796957666428,
+      "lower_margin_scaled": 87629875069381,
+      "upper_margin_scaled": 162471961433572,
+      "checkpoint_pass": true,
+      "classification_sha256": "9d3c3892f41cd8a055a5fa9c65011a685846f021fb9b3d2ba4984628bbf63847",
+      "base_limit": 35787,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 991,
+      "a": 1280779191,
+      "b": 1281099385,
+      "count": 15264,
+      "subwindows": [
+        {
+          "n": 1280779191,
+          "width": 32768,
+          "count": 1511
+        },
+        {
+          "n": 1280811959,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1280844727,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1280877495,
+          "width": 32768,
+          "count": 1611
+        },
+        {
+          "n": 1280910263,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1280943031,
+          "width": 32768,
+          "count": 1534
+        },
+        {
+          "n": 1280975799,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1281008567,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1281041335,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1281074103,
+          "width": 25282,
+          "count": 1208
+        }
+      ],
+      "log_box": [
+        20970984430,
+        20970984450
+      ],
+      "theta_lower_scaled": 1281058840246797349,
+      "theta_upper_scaled": 1281064898064311228,
+      "lower_margin_scaled": 87565185297349,
+      "upper_margin_scaled": 162596874188772,
+      "checkpoint_pass": true,
+      "classification_sha256": "51e5615edf07f76862f9ec982ae38a5e9f9d93e02ff32836849d17b2a08e7704",
+      "base_limit": 35792,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 992,
+      "a": 1281099385,
+      "b": 1281419659,
+      "count": 15225,
+      "subwindows": [
+        {
+          "n": 1281099385,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1281132153,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1281164921,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1281197689,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1281230457,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1281263225,
+          "width": 32768,
+          "count": 1567
+        },
+        {
+          "n": 1281295993,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1281328761,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1281361529,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1281394297,
+          "width": 25362,
+          "count": 1255
+        }
+      ],
+      "log_box": [
+        20971234398,
+        20971234418
+      ],
+      "theta_lower_scaled": 1281378123484744099,
+      "theta_upper_scaled": 1281384185108325278,
+      "lower_margin_scaled": 86606450644099,
+      "upper_margin_scaled": 163615857574722,
+      "checkpoint_pass": true,
+      "classification_sha256": "ee90e927465fce46d94b358dd8bb2130e223aac6ff6666ae43ceb0e0b5e90a6b",
+      "base_limit": 35796,
+      "base_prime_count_used": 3801,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 993,
+      "a": 1281419659,
+      "b": 1281740013,
+      "count": 15309,
+      "subwindows": [
+        {
+          "n": 1281419659,
+          "width": 32768,
+          "count": 1596
+        },
+        {
+          "n": 1281452427,
+          "width": 32768,
+          "count": 1546
+        },
+        {
+          "n": 1281485195,
+          "width": 32768,
+          "count": 1591
+        },
+        {
+          "n": 1281517963,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1281550731,
+          "width": 32768,
+          "count": 1523
+        },
+        {
+          "n": 1281583499,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1281616267,
+          "width": 32768,
+          "count": 1528
+        },
+        {
+          "n": 1281649035,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1281681803,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1281714571,
+          "width": 25442,
+          "count": 1230
+        }
+      ],
+      "log_box": [
+        20971484366,
+        20971484386
+      ],
+      "theta_lower_scaled": 1281699172112143081,
+      "theta_upper_scaled": 1281705237562790552,
+      "lower_margin_scaled": 87333113443081,
+      "upper_margin_scaled": 162949438509448,
+      "checkpoint_pass": true,
+      "classification_sha256": "88837e572c1d2896d58e1f633fd230862a5b72240278f62e615e9b1b8f256051",
+      "base_limit": 35801,
+      "base_prime_count_used": 3803,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 994,
+      "a": 1281740013,
+      "b": 1282060448,
+      "count": 15228,
+      "subwindows": [
+        {
+          "n": 1281740013,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1281772781,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1281805549,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1281838317,
+          "width": 32768,
+          "count": 1525
+        },
+        {
+          "n": 1281871085,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1281903853,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1281936621,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1281969389,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1282002157,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1282034925,
+          "width": 25523,
+          "count": 1208
+        }
+      ],
+      "log_box": [
+        20971734335,
+        20971734355
+      ],
+      "theta_lower_scaled": 1282018525876068529,
+      "theta_upper_scaled": 1282024595133548492,
+      "lower_margin_scaled": 86283920868529,
+      "upper_margin_scaled": 164058911251508,
+      "checkpoint_pass": true,
+      "classification_sha256": "06ebf33e66457d1a629184055d73c92f4d18d29e251a66874e53551c1a8bc373",
+      "base_limit": 35805,
+      "base_prime_count_used": 3804,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 995,
+      "a": 1282060448,
+      "b": 1282380963,
+      "count": 15195,
+      "subwindows": [
+        {
+          "n": 1282060448,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1282093216,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1282125984,
+          "width": 32768,
+          "count": 1518
+        },
+        {
+          "n": 1282158752,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1282191520,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1282224288,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1282257056,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1282289824,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1282322592,
+          "width": 32768,
+          "count": 1604
+        },
+        {
+          "n": 1282355360,
+          "width": 25603,
+          "count": 1176
+        }
+      ],
+      "log_box": [
+        20971984304,
+        20971984324
+      ],
+      "theta_lower_scaled": 1282337191379288854,
+      "theta_upper_scaled": 1282343264435351672,
+      "lower_margin_scaled": 84466475588854,
+      "upper_margin_scaled": 165936660948328,
+      "checkpoint_pass": true,
+      "classification_sha256": "7d15a7447fa8e6bb0bee83d5c52113e26c8b74c9cb4068ff056cd93515dad837",
+      "base_limit": 35810,
+      "base_prime_count_used": 3805,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 996,
+      "a": 1282380963,
+      "b": 1282701558,
+      "count": 15346,
+      "subwindows": [
+        {
+          "n": 1282380963,
+          "width": 32768,
+          "count": 1624
+        },
+        {
+          "n": 1282413731,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1282446499,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1282479267,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1282512035,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1282544803,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1282577571,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1282610339,
+          "width": 32768,
+          "count": 1621
+        },
+        {
+          "n": 1282643107,
+          "width": 32768,
+          "count": 1525
+        },
+        {
+          "n": 1282675875,
+          "width": 25683,
+          "count": 1188
+        }
+      ],
+      "log_box": [
+        20972234272,
+        20972234292
+      ],
+      "theta_lower_scaled": 1282659027450418038,
+      "theta_upper_scaled": 1282665104342796704,
+      "lower_margin_scaled": 85739606218038,
+      "upper_margin_scaled": 164723813003296,
+      "checkpoint_pass": true,
+      "classification_sha256": "8d4d8e9a741358278262d926eb3452fbe91298778f77dfd3cb23da91be694dde",
+      "base_limit": 35814,
+      "base_prime_count_used": 3805,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 997,
+      "a": 1282701558,
+      "b": 1283022233,
+      "count": 15144,
+      "subwindows": [
+        {
+          "n": 1282701558,
+          "width": 32768,
+          "count": 1490
+        },
+        {
+          "n": 1282734326,
+          "width": 32768,
+          "count": 1527
+        },
+        {
+          "n": 1282767094,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1282799862,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1282832630,
+          "width": 32768,
+          "count": 1522
+        },
+        {
+          "n": 1282865398,
+          "width": 32768,
+          "count": 1519
+        },
+        {
+          "n": 1282898166,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1282930934,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1282963702,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1282996470,
+          "width": 25763,
+          "count": 1214
+        }
+      ],
+      "log_box": [
+        20972484241,
+        20972484261
+      ],
+      "theta_lower_scaled": 1282976630966233206,
+      "theta_upper_scaled": 1282982711644445288,
+      "lower_margin_scaled": 82700189533206,
+      "upper_margin_scaled": 167823578854712,
+      "checkpoint_pass": true,
+      "classification_sha256": "f47611a46ab176c9de681db7bb2a9d1ba9552a49cf45de8a8a07fd0a78dd9d56",
+      "base_limit": 35819,
+      "base_prime_count_used": 3805,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 998,
+      "a": 1283022233,
+      "b": 1283342988,
+      "count": 15375,
+      "subwindows": [
+        {
+          "n": 1283022233,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1283055001,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1283087769,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1283120537,
+          "width": 32768,
+          "count": 1632
+        },
+        {
+          "n": 1283153305,
+          "width": 32768,
+          "count": 1601
+        },
+        {
+          "n": 1283186073,
+          "width": 32768,
+          "count": 1527
+        },
+        {
+          "n": 1283218841,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1283251609,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1283284377,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1283317145,
+          "width": 25843,
+          "count": 1233
+        }
+      ],
+      "log_box": [
+        20972734209,
+        20972734229
+      ],
+      "theta_lower_scaled": 1283299082911438581,
+      "theta_upper_scaled": 1283305167433216163,
+      "lower_margin_scaled": 84429210238581,
+      "upper_margin_scaled": 166154865583837,
+      "checkpoint_pass": true,
+      "classification_sha256": "530cc2fbdb4bcfb83e4376f4035e77854c81ee55ac807010dccba3215762758f",
+      "base_limit": 35823,
+      "base_prime_count_used": 3805,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 999,
+      "a": 1283342988,
+      "b": 1283663823,
+      "count": 15355,
+      "subwindows": [
+        {
+          "n": 1283342988,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1283375756,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1283408524,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1283441292,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1283474060,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1283506828,
+          "width": 32768,
+          "count": 1532
+        },
+        {
+          "n": 1283539596,
+          "width": 32768,
+          "count": 1575
+        },
+        {
+          "n": 1283572364,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1283605132,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1283637900,
+          "width": 25923,
+          "count": 1239
+        }
+      ],
+      "log_box": [
+        20972984177,
+        20972984197
+      ],
+      "theta_lower_scaled": 1283621119245217776,
+      "theta_upper_scaled": 1283627207605561098,
+      "lower_margin_scaled": 85662627517776,
+      "upper_margin_scaled": 164981776738902,
+      "checkpoint_pass": true,
+      "classification_sha256": "6a13deebf47e8493773a575183fd639db8f85be207a7ad81570dc189f95f2d4c",
+      "base_limit": 35828,
+      "base_prime_count_used": 3805,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1000,
+      "a": 1283663823,
+      "b": 1283984738,
+      "count": 15265,
+      "subwindows": [
+        {
+          "n": 1283663823,
+          "width": 32768,
+          "count": 1537
+        },
+        {
+          "n": 1283696591,
+          "width": 32768,
+          "count": 1538
+        },
+        {
+          "n": 1283729359,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1283762127,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1283794895,
+          "width": 32768,
+          "count": 1623
+        },
+        {
+          "n": 1283827663,
+          "width": 32768,
+          "count": 1512
+        },
+        {
+          "n": 1283860431,
+          "width": 32768,
+          "count": 1618
+        },
+        {
+          "n": 1283893199,
+          "width": 32768,
+          "count": 1522
+        },
+        {
+          "n": 1283925967,
+          "width": 32768,
+          "count": 1590
+        },
+        {
+          "n": 1283958735,
+          "width": 26003,
+          "count": 1224
+        }
+      ],
+      "log_box": [
+        20973234145,
+        20973234165
+      ],
+      "theta_lower_scaled": 1283941271848679681,
+      "theta_upper_scaled": 1283947364025089823,
+      "lower_margin_scaled": 84932322479681,
+      "upper_margin_scaled": 165772448710177,
+      "checkpoint_pass": true,
+      "classification_sha256": "02d10f7badd1771702e96c6b153485588a9f807ed58a8a2b7ec75f588166c88f",
+      "base_limit": 35832,
+      "base_prime_count_used": 3806,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1001,
+      "a": 1283984738,
+      "b": 1284305734,
+      "count": 15343,
+      "subwindows": [
+        {
+          "n": 1283984738,
+          "width": 32768,
+          "count": 1567
+        },
+        {
+          "n": 1284017506,
+          "width": 32768,
+          "count": 1620
+        },
+        {
+          "n": 1284050274,
+          "width": 32768,
+          "count": 1513
+        },
+        {
+          "n": 1284083042,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1284115810,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1284148578,
+          "width": 32768,
+          "count": 1608
+        },
+        {
+          "n": 1284181346,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1284214114,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1284246882,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1284279650,
+          "width": 26084,
+          "count": 1255
+        }
+      ],
+      "log_box": [
+        20973484114,
+        20973484134
+      ],
+      "theta_lower_scaled": 1284263064180166416,
+      "theta_upper_scaled": 1284269160192157785,
+      "lower_margin_scaled": 85760753566416,
+      "upper_margin_scaled": 165004381242215,
+      "checkpoint_pass": true,
+      "classification_sha256": "f6d8883bf9e8e906dd50c86426f30444ca43d596441242aa12567d138a1a95dc",
+      "base_limit": 35837,
+      "base_prime_count_used": 3807,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1002,
+      "a": 1284305734,
+      "b": 1284626810,
+      "count": 15306,
+      "subwindows": [
+        {
+          "n": 1284305734,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1284338502,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1284371270,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1284404038,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1284436806,
+          "width": 32768,
+          "count": 1546
+        },
+        {
+          "n": 1284469574,
+          "width": 32768,
+          "count": 1533
+        },
+        {
+          "n": 1284502342,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1284535110,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1284567878,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1284600646,
+          "width": 26164,
+          "count": 1259
+        }
+      ],
+      "log_box": [
+        20973734082,
+        20973734102
+      ],
+      "theta_lower_scaled": 1284584084328015300,
+      "theta_upper_scaled": 1284590184166322997,
+      "lower_margin_scaled": 85737009015300,
+      "upper_margin_scaled": 165088514677003,
+      "checkpoint_pass": true,
+      "classification_sha256": "befd362a6c274886bfaa4e00d8da01df90f03adbc1b1993c3e26e10f8a893ce4",
+      "base_limit": 35841,
+      "base_prime_count_used": 3808,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1003,
+      "a": 1284626810,
+      "b": 1284947966,
+      "count": 15189,
+      "subwindows": [
+        {
+          "n": 1284626810,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1284659578,
+          "width": 32768,
+          "count": 1547
+        },
+        {
+          "n": 1284692346,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1284725114,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1284757882,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1284790650,
+          "width": 32768,
+          "count": 1535
+        },
+        {
+          "n": 1284823418,
+          "width": 32768,
+          "count": 1547
+        },
+        {
+          "n": 1284856186,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1284888954,
+          "width": 32768,
+          "count": 1510
+        },
+        {
+          "n": 1284921722,
+          "width": 26244,
+          "count": 1229
+        }
+      ],
+      "log_box": [
+        20973984051,
+        20973984071
+      ],
+      "theta_lower_scaled": 1284902654374986798,
+      "theta_upper_scaled": 1284908758010377416,
+      "lower_margin_scaled": 83183171586798,
+      "upper_margin_scaled": 167702786222584,
+      "checkpoint_pass": true,
+      "classification_sha256": "b35110e42adabe2bcca02b74bac8da23d6232a0e86af5ef16e134aff9a36383e",
+      "base_limit": 35846,
+      "base_prime_count_used": 3808,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1004,
+      "a": 1284947966,
+      "b": 1285269202,
+      "count": 15303,
+      "subwindows": [
+        {
+          "n": 1284947966,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1284980734,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1285013502,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1285046270,
+          "width": 32768,
+          "count": 1508
+        },
+        {
+          "n": 1285079038,
+          "width": 32768,
+          "count": 1583
+        },
+        {
+          "n": 1285111806,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1285144574,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1285177342,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1285210110,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1285242878,
+          "width": 26324,
+          "count": 1271
+        }
+      ],
+      "log_box": [
+        20974234019,
+        20974234039
+      ],
+      "theta_lower_scaled": 1285223619252919251,
+      "theta_upper_scaled": 1285229726713876233,
+      "lower_margin_scaled": 82944173119251,
+      "upper_margin_scaled": 168002206323767,
+      "checkpoint_pass": true,
+      "classification_sha256": "870743337333f4a0b3abc55f87fab706c467cd7f2ea6961978a8e0a728ce84e9",
+      "base_limit": 35850,
+      "base_prime_count_used": 3808,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1005,
+      "a": 1285269202,
+      "b": 1285590519,
+      "count": 15279,
+      "subwindows": [
+        {
+          "n": 1285269202,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1285301970,
+          "width": 32768,
+          "count": 1531
+        },
+        {
+          "n": 1285334738,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1285367506,
+          "width": 32768,
+          "count": 1613
+        },
+        {
+          "n": 1285400274,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1285433042,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1285465810,
+          "width": 32768,
+          "count": 1526
+        },
+        {
+          "n": 1285498578,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1285531346,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1285564114,
+          "width": 26405,
+          "count": 1262
+        }
+      ],
+      "log_box": [
+        20974483987,
+        20974484007
+      ],
+      "theta_lower_scaled": 1285544084574495552,
+      "theta_upper_scaled": 1285550195855019186,
+      "lower_margin_scaled": 82124626395552,
+      "upper_margin_scaled": 168882196880814,
+      "checkpoint_pass": true,
+      "classification_sha256": "42e35fbcb03dc5b1dbad481f878317e246e8d6c3b7312677e2a0879b943dbcc5",
+      "base_limit": 35855,
+      "base_prime_count_used": 3809,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1006,
+      "a": 1285590519,
+      "b": 1285911916,
+      "count": 15344,
+      "subwindows": [
+        {
+          "n": 1285590519,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1285623287,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1285656055,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1285688823,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1285721591,
+          "width": 32768,
+          "count": 1547
+        },
+        {
+          "n": 1285754359,
+          "width": 32768,
+          "count": 1607
+        },
+        {
+          "n": 1285787127,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1285819895,
+          "width": 32768,
+          "count": 1605
+        },
+        {
+          "n": 1285852663,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1285885431,
+          "width": 26485,
+          "count": 1292
+        }
+      ],
+      "log_box": [
+        20974733955,
+        20974733975
+      ],
+      "theta_lower_scaled": 1285865917056792080,
+      "theta_upper_scaled": 1285872032173131586,
+      "lower_margin_scaled": 82592248392080,
+      "upper_margin_scaled": 168475018468414,
+      "checkpoint_pass": true,
+      "classification_sha256": "dc97bbbdd1efa42f23f02a6d5b0f1df621c823d99e91de82a53b1e54015a3f05",
+      "base_limit": 35859,
+      "base_prime_count_used": 3809,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1007,
+      "a": 1285911916,
+      "b": 1286233393,
+      "count": 15429,
+      "subwindows": [
+        {
+          "n": 1285911916,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1285944684,
+          "width": 32768,
+          "count": 1603
+        },
+        {
+          "n": 1285977452,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1286010220,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1286042988,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1286075756,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1286108524,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1286141292,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1286174060,
+          "width": 32768,
+          "count": 1589
+        },
+        {
+          "n": 1286206828,
+          "width": 26565,
+          "count": 1248
+        }
+      ],
+      "log_box": [
+        20974983923,
+        20974983943
+      ],
+      "theta_lower_scaled": 1286189536226983775,
+      "theta_upper_scaled": 1286195655200388133,
+      "lower_margin_scaled": 84766566283775,
+      "upper_margin_scaled": 166361138911867,
+      "checkpoint_pass": true,
+      "classification_sha256": "00f1cb4bb51d375bd1c65948c689b59c35219c4ead9c9717519bc12fb50ab930",
+      "base_limit": 35864,
+      "base_prime_count_used": 3810,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1008,
+      "a": 1286233393,
+      "b": 1286554951,
+      "count": 15409,
+      "subwindows": [
+        {
+          "n": 1286233393,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1286266161,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1286298929,
+          "width": 32768,
+          "count": 1607
+        },
+        {
+          "n": 1286331697,
+          "width": 32768,
+          "count": 1498
+        },
+        {
+          "n": 1286364465,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1286397233,
+          "width": 32768,
+          "count": 1636
+        },
+        {
+          "n": 1286430001,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1286462769,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1286495537,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1286528305,
+          "width": 26646,
+          "count": 1306
+        }
+      ],
+      "log_box": [
+        20975233892,
+        20975233912
+      ],
+      "theta_lower_scaled": 1286512739754253282,
+      "theta_upper_scaled": 1286518862579738141,
+      "lower_margin_scaled": 86444249353282,
+      "upper_margin_scaled": 164743915361859,
+      "checkpoint_pass": true,
+      "classification_sha256": "7b86ffd49c07aef17fc7357ec00b16383722115006f9786d42fc7aa52caf6256",
+      "base_limit": 35868,
+      "base_prime_count_used": 3810,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1009,
+      "a": 1286554951,
+      "b": 1286876589,
+      "count": 15373,
+      "subwindows": [
+        {
+          "n": 1286554951,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1286587719,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1286620487,
+          "width": 32768,
+          "count": 1596
+        },
+        {
+          "n": 1286653255,
+          "width": 32768,
+          "count": 1473
+        },
+        {
+          "n": 1286686023,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1286718791,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1286751559,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1286784327,
+          "width": 32768,
+          "count": 1613
+        },
+        {
+          "n": 1286817095,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1286849863,
+          "width": 26726,
+          "count": 1290
+        }
+      ],
+      "log_box": [
+        20975483860,
+        20975483880
+      ],
+      "theta_lower_scaled": 1286835192024874998,
+      "theta_upper_scaled": 1286841318693425381,
+      "lower_margin_scaled": 87290683774998,
+      "upper_margin_scaled": 163957965474619,
+      "checkpoint_pass": true,
+      "classification_sha256": "fe05fd184620c25b38f7e1702d25ebd552e22499212d7c9d24f6e1296ba8fa6d",
+      "base_limit": 35873,
+      "base_prime_count_used": 3811,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1010,
+      "a": 1286876589,
+      "b": 1287198308,
+      "count": 15351,
+      "subwindows": [
+        {
+          "n": 1286876589,
+          "width": 32768,
+          "count": 1531
+        },
+        {
+          "n": 1286909357,
+          "width": 32768,
+          "count": 1589
+        },
+        {
+          "n": 1286942125,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1286974893,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1287007661,
+          "width": 32768,
+          "count": 1576
+        },
+        {
+          "n": 1287040429,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1287073197,
+          "width": 32768,
+          "count": 1505
+        },
+        {
+          "n": 1287105965,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1287138733,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1287171501,
+          "width": 26807,
+          "count": 1285
+        }
+      ],
+      "log_box": [
+        20975733829,
+        20975733849
+      ],
+      "theta_lower_scaled": 1287157186677609858,
+      "theta_upper_scaled": 1287163317183741380,
+      "lower_margin_scaled": 87598508409858,
+      "upper_margin_scaled": 163710647058620,
+      "checkpoint_pass": true,
+      "classification_sha256": "cb804cba67728f2de84d73225e5ba3f868225317661b7819b1af703d6eb23b93",
+      "base_limit": 35877,
+      "base_prime_count_used": 3811,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1011,
+      "a": 1287198308,
+      "b": 1287520107,
+      "count": 15333,
+      "subwindows": [
+        {
+          "n": 1287198308,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1287231076,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1287263844,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1287296612,
+          "width": 32768,
+          "count": 1584
+        },
+        {
+          "n": 1287329380,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1287362148,
+          "width": 32768,
+          "count": 1545
+        },
+        {
+          "n": 1287394916,
+          "width": 32768,
+          "count": 1602
+        },
+        {
+          "n": 1287427684,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1287460452,
+          "width": 32768,
+          "count": 1521
+        },
+        {
+          "n": 1287493220,
+          "width": 26887,
+          "count": 1276
+        }
+      ],
+      "log_box": [
+        20975983797,
+        20975983817
+      ],
+      "theta_lower_scaled": 1287478807604409915,
+      "theta_upper_scaled": 1287484941943607441,
+      "lower_margin_scaled": 87452615109915,
+      "upper_margin_scaled": 163917067092559,
+      "checkpoint_pass": true,
+      "classification_sha256": "8111ecc32e8e99be6551c490c0c325a15f4dd1fef2c21b993e66c37c7df20fc3",
+      "base_limit": 35882,
+      "base_prime_count_used": 3812,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1012,
+      "a": 1287520107,
+      "b": 1287841987,
+      "count": 15196,
+      "subwindows": [
+        {
+          "n": 1287520107,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1287552875,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1287585643,
+          "width": 32768,
+          "count": 1533
+        },
+        {
+          "n": 1287618411,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1287651179,
+          "width": 32768,
+          "count": 1538
+        },
+        {
+          "n": 1287683947,
+          "width": 32768,
+          "count": 1503
+        },
+        {
+          "n": 1287716715,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1287749483,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1287782251,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1287815019,
+          "width": 26968,
+          "count": 1276
+        }
+      ],
+      "log_box": [
+        20976233766,
+        20976233786
+      ],
+      "theta_lower_scaled": 1287797558654189127,
+      "theta_upper_scaled": 1287803696792219497,
+      "lower_margin_scaled": 84355852889127,
+      "upper_margin_scaled": 167074406480503,
+      "checkpoint_pass": true,
+      "classification_sha256": "c06b7359e7b64ba0476fb0fc86883c73f1fd6caf000eef575ce4e0bf6f9eb2e4",
+      "base_limit": 35886,
+      "base_prime_count_used": 3812,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1013,
+      "a": 1287841987,
+      "b": 1288163947,
+      "count": 15330,
+      "subwindows": [
+        {
+          "n": 1287841987,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1287874755,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1287907523,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1287940291,
+          "width": 32768,
+          "count": 1596
+        },
+        {
+          "n": 1287973059,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1288005827,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1288038595,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1288071363,
+          "width": 32768,
+          "count": 1521
+        },
+        {
+          "n": 1288104131,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1288136899,
+          "width": 27048,
+          "count": 1295
+        }
+      ],
+      "log_box": [
+        20976483734,
+        20976483754
+      ],
+      "theta_lower_scaled": 1288119124317821907,
+      "theta_upper_scaled": 1288125266288168317,
+      "lower_margin_scaled": 83993712521907,
+      "upper_margin_scaled": 167497106531683,
+      "checkpoint_pass": true,
+      "classification_sha256": "230d14879e76bd88fad1fdd3968451a3ed0dba3b29bfb7f384e8677bde15b648",
+      "base_limit": 35891,
+      "base_prime_count_used": 3812,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1014,
+      "a": 1288163947,
+      "b": 1288485987,
+      "count": 15345,
+      "subwindows": [
+        {
+          "n": 1288163947,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1288196715,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1288229483,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1288262251,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1288295019,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1288327787,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1288360555,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1288393323,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1288426091,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1288458859,
+          "width": 27128,
+          "count": 1257
+        }
+      ],
+      "log_box": [
+        20976733702,
+        20976733722
+      ],
+      "theta_lower_scaled": 1288441008460720137,
+      "theta_upper_scaled": 1288447154267132407,
+      "lower_margin_scaled": 83870059420137,
+      "upper_margin_scaled": 167681331567593,
+      "checkpoint_pass": true,
+      "classification_sha256": "40011db1a5df5d88912f65245aaa3e125d33ed0d58398e59417d461be0a6894b",
+      "base_limit": 35895,
+      "base_prime_count_used": 3812,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1015,
+      "a": 1288485987,
+      "b": 1288808108,
+      "count": 15388,
+      "subwindows": [
+        {
+          "n": 1288485987,
+          "width": 32768,
+          "count": 1613
+        },
+        {
+          "n": 1288518755,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1288551523,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1288584291,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1288617059,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1288649827,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1288682595,
+          "width": 32768,
+          "count": 1545
+        },
+        {
+          "n": 1288715363,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1288748131,
+          "width": 32768,
+          "count": 1605
+        },
+        {
+          "n": 1288780899,
+          "width": 27209,
+          "count": 1249
+        }
+      ],
+      "log_box": [
+        20976983670,
+        20976983690
+      ],
+      "theta_lower_scaled": 1288763798438926513,
+      "theta_upper_scaled": 1288769948092154127,
+      "lower_margin_scaled": 84571249726513,
+      "upper_margin_scaled": 167040718645873,
+      "checkpoint_pass": true,
+      "classification_sha256": "4534ae98ee633819fb02b9d08c28363901dd15d772bd9d4212fdc8ac175a2e12",
+      "base_limit": 35899,
+      "base_prime_count_used": 3814,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1016,
+      "a": 1288808108,
+      "b": 1289130310,
+      "count": 15366,
+      "subwindows": [
+        {
+          "n": 1288808108,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1288840876,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1288873644,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1288906412,
+          "width": 32768,
+          "count": 1521
+        },
+        {
+          "n": 1288939180,
+          "width": 32768,
+          "count": 1609
+        },
+        {
+          "n": 1288971948,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1289004716,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1289037484,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1289070252,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1289103020,
+          "width": 27290,
+          "count": 1256
+        }
+      ],
+      "log_box": [
+        20977233639,
+        20977233659
+      ],
+      "theta_lower_scaled": 1289086130769999733,
+      "theta_upper_scaled": 1289092284264558321,
+      "lower_margin_scaled": 84733800999733,
+      "upper_margin_scaled": 166938766441679,
+      "checkpoint_pass": true,
+      "classification_sha256": "6afbf2d60d0ac9f7ff8bc7751a10582be34da4bb106086251b24ccbdf748b63e",
+      "base_limit": 35904,
+      "base_prime_count_used": 3814,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1017,
+      "a": 1289130310,
+      "b": 1289452592,
+      "count": 15371,
+      "subwindows": [
+        {
+          "n": 1289130310,
+          "width": 32768,
+          "count": 1630
+        },
+        {
+          "n": 1289163078,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1289195846,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1289228614,
+          "width": 32768,
+          "count": 1513
+        },
+        {
+          "n": 1289261382,
+          "width": 32768,
+          "count": 1531
+        },
+        {
+          "n": 1289294150,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1289326918,
+          "width": 32768,
+          "count": 1534
+        },
+        {
+          "n": 1289359686,
+          "width": 32768,
+          "count": 1627
+        },
+        {
+          "n": 1289392454,
+          "width": 32768,
+          "count": 1535
+        },
+        {
+          "n": 1289425222,
+          "width": 27370,
+          "count": 1295
+        }
+      ],
+      "log_box": [
+        20977483607,
+        20977483627
+      ],
+      "theta_lower_scaled": 1289408571828264802,
+      "theta_upper_scaled": 1289414729165388938,
+      "lower_margin_scaled": 84925087464802,
+      "upper_margin_scaled": 166808093811062,
+      "checkpoint_pass": true,
+      "classification_sha256": "42fdf7655c5dafb3dac88d16add86efa72aee271c4f0e71c70042b2c963052ca",
+      "base_limit": 35908,
+      "base_prime_count_used": 3814,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1018,
+      "a": 1289452592,
+      "b": 1289774955,
+      "count": 15331,
+      "subwindows": [
+        {
+          "n": 1289452592,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1289485360,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1289518128,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1289550896,
+          "width": 32768,
+          "count": 1597
+        },
+        {
+          "n": 1289583664,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1289616432,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1289649200,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1289681968,
+          "width": 32768,
+          "count": 1520
+        },
+        {
+          "n": 1289714736,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1289747504,
+          "width": 27451,
+          "count": 1269
+        }
+      ],
+      "log_box": [
+        20977733576,
+        20977733596
+      ],
+      "theta_lower_scaled": 1289730177629443719,
+      "theta_upper_scaled": 1289736338799149214,
+      "lower_margin_scaled": 84200124943719,
+      "upper_margin_scaled": 167593696350786,
+      "checkpoint_pass": true,
+      "classification_sha256": "3f9d378325055d31cca0d9ba0322e6b72d732261f74b832ec13a926f20f255f3",
+      "base_limit": 35913,
+      "base_prime_count_used": 3815,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1019,
+      "a": 1289774955,
+      "b": 1290097398,
+      "count": 15418,
+      "subwindows": [
+        {
+          "n": 1289774955,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1289807723,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1289840491,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1289873259,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1289906027,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1289938795,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1289971563,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1290004331,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1290037099,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1290069867,
+          "width": 27531,
+          "count": 1312
+        }
+      ],
+      "log_box": [
+        20977983544,
+        20977983564
+      ],
+      "theta_lower_scaled": 1290053612325718487,
+      "theta_upper_scaled": 1290059777349738966,
+      "lower_margin_scaled": 85224065518487,
+      "upper_margin_scaled": 166630390061034,
+      "checkpoint_pass": true,
+      "classification_sha256": "439822dfad47316c4dbcaa446a9165687ec74f3709149ee8f32e8fa1c932eb79",
+      "base_limit": 35917,
+      "base_prime_count_used": 3815,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1020,
+      "a": 1290097398,
+      "b": 1290419922,
+      "count": 15397,
+      "subwindows": [
+        {
+          "n": 1290097398,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1290130166,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1290162934,
+          "width": 32768,
+          "count": 1619
+        },
+        {
+          "n": 1290195702,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1290228470,
+          "width": 32768,
+          "count": 1576
+        },
+        {
+          "n": 1290261238,
+          "width": 32768,
+          "count": 1609
+        },
+        {
+          "n": 1290294006,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1290326774,
+          "width": 32768,
+          "count": 1576
+        },
+        {
+          "n": 1290359542,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1290392310,
+          "width": 27612,
+          "count": 1273
+        }
+      ],
+      "log_box": [
+        20978233513,
+        20978233533
+      ],
+      "theta_lower_scaled": 1290376610338345455,
+      "theta_upper_scaled": 1290382779211446567,
+      "lower_margin_scaled": 85730330545455,
+      "upper_margin_scaled": 166184780753433,
+      "checkpoint_pass": true,
+      "classification_sha256": "b68cf21cc42ae0efd79da1ec3d93316715880a8fdc49b3bcef26195fcb486b86",
+      "base_limit": 35922,
+      "base_prime_count_used": 3815,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1021,
+      "a": 1290419922,
+      "b": 1290742526,
+      "count": 15441,
+      "subwindows": [
+        {
+          "n": 1290419922,
+          "width": 32768,
+          "count": 1622
+        },
+        {
+          "n": 1290452690,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1290485458,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1290518226,
+          "width": 32768,
+          "count": 1595
+        },
+        {
+          "n": 1290550994,
+          "width": 32768,
+          "count": 1527
+        },
+        {
+          "n": 1290583762,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1290616530,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1290649298,
+          "width": 32768,
+          "count": 1541
+        },
+        {
+          "n": 1290682066,
+          "width": 32768,
+          "count": 1599
+        },
+        {
+          "n": 1290714834,
+          "width": 27692,
+          "count": 1267
+        }
+      ],
+      "log_box": [
+        20978483481,
+        20978483501
+      ],
+      "theta_lower_scaled": 1290700535242019688,
+      "theta_upper_scaled": 1290706707975185508,
+      "lower_margin_scaled": 87083494619688,
+      "upper_margin_scaled": 164892277414492,
+      "checkpoint_pass": true,
+      "classification_sha256": "9b61fed59804749ee7961ae30c5b83d56d4d59854cba2c140989d0edc8c17e67",
+      "base_limit": 35926,
+      "base_prime_count_used": 3816,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1022,
+      "a": 1290742526,
+      "b": 1291065211,
+      "count": 15425,
+      "subwindows": [
+        {
+          "n": 1290742526,
+          "width": 32768,
+          "count": 1590
+        },
+        {
+          "n": 1290775294,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1290808062,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1290840830,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1290873598,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1290906366,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1290939134,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1290971902,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1291004670,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1291037438,
+          "width": 27773,
+          "count": 1348
+        }
+      ],
+      "log_box": [
+        20978733449,
+        20978733469
+      ],
+      "theta_lower_scaled": 1291024128349714113,
+      "theta_upper_scaled": 1291030304938944833,
+      "lower_margin_scaled": 88023870814113,
+      "upper_margin_scaled": 164012582155167,
+      "checkpoint_pass": true,
+      "classification_sha256": "08f28235cd919675398a325f554ef1544bbded1094622246d9141eb520fbf7f8",
+      "base_limit": 35931,
+      "base_prime_count_used": 3816,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1023,
+      "a": 1291065211,
+      "b": 1291387977,
+      "count": 15426,
+      "subwindows": [
+        {
+          "n": 1291065211,
+          "width": 32768,
+          "count": 1533
+        },
+        {
+          "n": 1291097979,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1291130747,
+          "width": 32768,
+          "count": 1615
+        },
+        {
+          "n": 1291163515,
+          "width": 32768,
+          "count": 1527
+        },
+        {
+          "n": 1291196283,
+          "width": 32768,
+          "count": 1524
+        },
+        {
+          "n": 1291229051,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1291261819,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1291294587,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1291327355,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1291360123,
+          "width": 27854,
+          "count": 1356
+        }
+      ],
+      "log_box": [
+        20978983418,
+        20978983438
+      ],
+      "theta_lower_scaled": 1291347746291898387,
+      "theta_upper_scaled": 1291353926737459421,
+      "lower_margin_scaled": 88908089598387,
+      "upper_margin_scaled": 163189060240579,
+      "checkpoint_pass": true,
+      "classification_sha256": "8daeaa2f31d201c112d69d0a5144ca4f2dd2ecb14c46a045b897bd1b385b8567",
+      "base_limit": 35935,
+      "base_prime_count_used": 3817,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1024,
+      "a": 1291387977,
+      "b": 1291710823,
+      "count": 15418,
+      "subwindows": [
+        {
+          "n": 1291387977,
+          "width": 32768,
+          "count": 1584
+        },
+        {
+          "n": 1291420745,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1291453513,
+          "width": 32768,
+          "count": 1574
+        },
+        {
+          "n": 1291486281,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1291519049,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1291551817,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1291584585,
+          "width": 32768,
+          "count": 1528
+        },
+        {
+          "n": 1291617353,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1291650121,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1291682889,
+          "width": 27934,
+          "count": 1365
+        }
+      ],
+      "log_box": [
+        20979233386,
+        20979233406
+      ],
+      "theta_lower_scaled": 1291671200258237111,
+      "theta_upper_scaled": 1291677384558113129,
+      "lower_margin_scaled": 89548340537111,
+      "upper_margin_scaled": 162609524186871,
+      "checkpoint_pass": true,
+      "classification_sha256": "b71a68c5f19f9e3c7825db68519a7580ff2afbc73ab2f8567163f721c3dcf500",
+      "base_limit": 35940,
+      "base_prime_count_used": 3817,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1025,
+      "a": 1291710823,
+      "b": 1292033750,
+      "count": 15414,
+      "subwindows": [
+        {
+          "n": 1291710823,
+          "width": 32768,
+          "count": 1538
+        },
+        {
+          "n": 1291743591,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1291776359,
+          "width": 32768,
+          "count": 1633
+        },
+        {
+          "n": 1291809127,
+          "width": 32768,
+          "count": 1493
+        },
+        {
+          "n": 1291841895,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1291874663,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1291907431,
+          "width": 32768,
+          "count": 1606
+        },
+        {
+          "n": 1291940199,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1291972967,
+          "width": 32768,
+          "count": 1526
+        },
+        {
+          "n": 1292005735,
+          "width": 28015,
+          "count": 1330
+        }
+      ],
+      "log_box": [
+        20979483354,
+        20979483374
+      ],
+      "theta_lower_scaled": 1291994574161648915,
+      "theta_upper_scaled": 1292000762314839965,
+      "lower_margin_scaled": 90027536648915,
+      "upper_margin_scaled": 162191060160035,
+      "checkpoint_pass": true,
+      "classification_sha256": "8dad1953fa080140030d02d2ebb1f0bf096b749acb4bdb46b3f4c11860ddaed0",
+      "base_limit": 35944,
+      "base_prime_count_used": 3817,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1026,
+      "a": 1292033750,
+      "b": 1292356758,
+      "count": 15454,
+      "subwindows": [
+        {
+          "n": 1292033750,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1292066518,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1292099286,
+          "width": 32768,
+          "count": 1623
+        },
+        {
+          "n": 1292132054,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1292164822,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1292197590,
+          "width": 32768,
+          "count": 1538
+        },
+        {
+          "n": 1292230358,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1292263126,
+          "width": 32768,
+          "count": 1604
+        },
+        {
+          "n": 1292295894,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1292328662,
+          "width": 28096,
+          "count": 1307
+        }
+      ],
+      "log_box": [
+        20979733322,
+        20979733342
+      ],
+      "theta_lower_scaled": 1292318791097401631,
+      "theta_upper_scaled": 1292324983113907233,
+      "lower_margin_scaled": 91268773201631,
+      "upper_margin_scaled": 161010561892767,
+      "checkpoint_pass": true,
+      "classification_sha256": "92cf57b6719675e3245e83501780ea975484c99b3b3690d60c47783198ed895a",
+      "base_limit": 35949,
+      "base_prime_count_used": 3817,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1027,
+      "a": 1292356758,
+      "b": 1292679847,
+      "count": 15331,
+      "subwindows": [
+        {
+          "n": 1292356758,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1292389526,
+          "width": 32768,
+          "count": 1607
+        },
+        {
+          "n": 1292422294,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1292455062,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1292487830,
+          "width": 32768,
+          "count": 1524
+        },
+        {
+          "n": 1292520598,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1292553366,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1292586134,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1292618902,
+          "width": 32768,
+          "count": 1533
+        },
+        {
+          "n": 1292651670,
+          "width": 28177,
+          "count": 1323
+        }
+      ],
+      "log_box": [
+        20979983291,
+        20979983311
+      ],
+      "theta_lower_scaled": 1292640431388961213,
+      "theta_upper_scaled": 1292646627238048174,
+      "lower_margin_scaled": 89852373661213,
+      "upper_margin_scaled": 162487746651826,
+      "checkpoint_pass": true,
+      "classification_sha256": "9cb6c99c17626d4eb4b1f3701418253ffe24f86c3f18576ded59e51e46ef0018",
+      "base_limit": 35953,
+      "base_prime_count_used": 3818,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1028,
+      "a": 1292679847,
+      "b": 1293003016,
+      "count": 15367,
+      "subwindows": [
+        {
+          "n": 1292679847,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1292712615,
+          "width": 32768,
+          "count": 1603
+        },
+        {
+          "n": 1292745383,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1292778151,
+          "width": 32768,
+          "count": 1533
+        },
+        {
+          "n": 1292810919,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1292843687,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1292876455,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1292909223,
+          "width": 32768,
+          "count": 1520
+        },
+        {
+          "n": 1292941991,
+          "width": 32768,
+          "count": 1576
+        },
+        {
+          "n": 1292974759,
+          "width": 28257,
+          "count": 1315
+        }
+      ],
+      "log_box": [
+        20980233259,
+        20980233279
+      ],
+      "theta_lower_scaled": 1292962830792194010,
+      "theta_upper_scaled": 1292969030482846567,
+      "lower_margin_scaled": 89115093794010,
+      "upper_margin_scaled": 163285818753433,
+      "checkpoint_pass": true,
+      "classification_sha256": "eda3053bf72d2360610e9f7e433810626546ccba0ff7d2287edf8b02379bcc55",
+      "base_limit": 35958,
+      "base_prime_count_used": 3818,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1029,
+      "a": 1293003016,
+      "b": 1293326266,
+      "count": 15155,
+      "subwindows": [
+        {
+          "n": 1293003016,
+          "width": 32768,
+          "count": 1546
+        },
+        {
+          "n": 1293035784,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1293068552,
+          "width": 32768,
+          "count": 1532
+        },
+        {
+          "n": 1293101320,
+          "width": 32768,
+          "count": 1511
+        },
+        {
+          "n": 1293134088,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1293166856,
+          "width": 32768,
+          "count": 1490
+        },
+        {
+          "n": 1293199624,
+          "width": 32768,
+          "count": 1575
+        },
+        {
+          "n": 1293232392,
+          "width": 32768,
+          "count": 1530
+        },
+        {
+          "n": 1293265160,
+          "width": 32768,
+          "count": 1572
+        },
+        {
+          "n": 1293297928,
+          "width": 28338,
+          "count": 1323
+        }
+      ],
+      "log_box": [
+        20980483227,
+        20980483247
+      ],
+      "theta_lower_scaled": 1293280786227234155,
+      "theta_upper_scaled": 1293286989706454852,
+      "lower_margin_scaled": 83852853834155,
+      "upper_margin_scaled": 168608920145148,
+      "checkpoint_pass": true,
+      "classification_sha256": "ef188474af39f59a2f004bf477bfcd308c8c2311dec58451e7b0f0c315bf3f79",
+      "base_limit": 35962,
+      "base_prime_count_used": 3818,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1030,
+      "a": 1293326266,
+      "b": 1293649597,
+      "count": 15467,
+      "subwindows": [
+        {
+          "n": 1293326266,
+          "width": 32768,
+          "count": 1591
+        },
+        {
+          "n": 1293359034,
+          "width": 32768,
+          "count": 1620
+        },
+        {
+          "n": 1293391802,
+          "width": 32768,
+          "count": 1545
+        },
+        {
+          "n": 1293424570,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1293457338,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1293490106,
+          "width": 32768,
+          "count": 1535
+        },
+        {
+          "n": 1293522874,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1293555642,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1293588410,
+          "width": 32768,
+          "count": 1599
+        },
+        {
+          "n": 1293621178,
+          "width": 28419,
+          "count": 1356
+        }
+      ],
+      "log_box": [
+        20980733195,
+        20980733215
+      ],
+      "theta_lower_scaled": 1293605291361306164,
+      "theta_upper_scaled": 1293611498707091257,
+      "lower_margin_scaled": 85059321006164,
+      "upper_margin_scaled": 167463252608743,
+      "checkpoint_pass": true,
+      "classification_sha256": "42f55d9b8417c8becbd19fb9e0cbcfc3bbe0bbbab1ef0b2b450eaece67f5d371",
+      "base_limit": 35967,
+      "base_prime_count_used": 3819,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1031,
+      "a": 1293649597,
+      "b": 1293973009,
+      "count": 15510,
+      "subwindows": [
+        {
+          "n": 1293649597,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1293682365,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1293715133,
+          "width": 32768,
+          "count": 1589
+        },
+        {
+          "n": 1293747901,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1293780669,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1293813437,
+          "width": 32768,
+          "count": 1559
+        },
+        {
+          "n": 1293846205,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1293878973,
+          "width": 32768,
+          "count": 1591
+        },
+        {
+          "n": 1293911741,
+          "width": 32768,
+          "count": 1575
+        },
+        {
+          "n": 1293944509,
+          "width": 28500,
+          "count": 1371
+        }
+      ],
+      "log_box": [
+        20980983164,
+        20980983184
+      ],
+      "theta_lower_scaled": 1293930702533160614,
+      "theta_upper_scaled": 1293936913756275097,
+      "lower_margin_scaled": 87090834060614,
+      "upper_margin_scaled": 165492544624903,
+      "checkpoint_pass": true,
+      "classification_sha256": "a03b611742e26f43defb929a45407f7882673f296ca3124d2d14bf3ec00cad5b",
+      "base_limit": 35971,
+      "base_prime_count_used": 3820,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1032,
+      "a": 1293973009,
+      "b": 1294296502,
+      "count": 15398,
+      "subwindows": [
+        {
+          "n": 1293973009,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1294005777,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1294038545,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1294071313,
+          "width": 32768,
+          "count": 1596
+        },
+        {
+          "n": 1294104081,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1294136849,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1294169617,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1294202385,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1294235153,
+          "width": 32768,
+          "count": 1524
+        },
+        {
+          "n": 1294267921,
+          "width": 28581,
+          "count": 1369
+        }
+      ],
+      "log_box": [
+        20981233132,
+        20981233152
+      ],
+      "theta_lower_scaled": 1294253767711919886,
+      "theta_upper_scaled": 1294259982784349593,
+      "lower_margin_scaled": 86695362119886,
+      "upper_margin_scaled": 165948865850407,
+      "checkpoint_pass": true,
+      "classification_sha256": "d7706e9db260e68ab321f1f990a15ebd7dd7b8a1dbb3806328c02d96d1618c54",
+      "base_limit": 35976,
+      "base_prime_count_used": 3820,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1033,
+      "a": 1294296502,
+      "b": 1294620076,
+      "count": 15323,
+      "subwindows": [
+        {
+          "n": 1294296502,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1294329270,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1294362038,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1294394806,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1294427574,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1294460342,
+          "width": 32768,
+          "count": 1489
+        },
+        {
+          "n": 1294493110,
+          "width": 32768,
+          "count": 1534
+        },
+        {
+          "n": 1294525878,
+          "width": 32768,
+          "count": 1614
+        },
+        {
+          "n": 1294558646,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1294591414,
+          "width": 28662,
+          "count": 1341
+        }
+      ],
+      "log_box": [
+        20981483101,
+        20981483121
+      ],
+      "theta_lower_scaled": 1294575263147201522,
+      "theta_upper_scaled": 1294581482050212676,
+      "lower_margin_scaled": 84649154801522,
+      "upper_margin_scaled": 168055957387324,
+      "checkpoint_pass": true,
+      "classification_sha256": "17b2dea2752dae06bd05e2acbf250113aa8a274c7b5f1561da03fb46af5b768c",
+      "base_limit": 35980,
+      "base_prime_count_used": 3821,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1034,
+      "a": 1294620076,
+      "b": 1294943731,
+      "count": 15462,
+      "subwindows": [
+        {
+          "n": 1294620076,
+          "width": 32768,
+          "count": 1583
+        },
+        {
+          "n": 1294652844,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1294685612,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1294718380,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1294751148,
+          "width": 32768,
+          "count": 1551
+        },
+        {
+          "n": 1294783916,
+          "width": 32768,
+          "count": 1539
+        },
+        {
+          "n": 1294816684,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1294849452,
+          "width": 32768,
+          "count": 1603
+        },
+        {
+          "n": 1294882220,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1294914988,
+          "width": 28743,
+          "count": 1367
+        }
+      ],
+      "log_box": [
+        20981733070,
+        20981733090
+      ],
+      "theta_lower_scaled": 1294899678838909184,
+      "theta_upper_scaled": 1294905901607250256,
+      "lower_margin_scaled": 85442212009184,
+      "upper_margin_scaled": 167323765849744,
+      "checkpoint_pass": true,
+      "classification_sha256": "6ef230c37f5edc44d1479729b9427929b3ea86b6544b1471565f836e917844dd",
+      "base_limit": 35985,
+      "base_prime_count_used": 3822,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1035,
+      "a": 1294943731,
+      "b": 1295267466,
+      "count": 15293,
+      "subwindows": [
+        {
+          "n": 1294943731,
+          "width": 32768,
+          "count": 1597
+        },
+        {
+          "n": 1294976499,
+          "width": 32768,
+          "count": 1535
+        },
+        {
+          "n": 1295009267,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1295042035,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1295074803,
+          "width": 32768,
+          "count": 1546
+        },
+        {
+          "n": 1295107571,
+          "width": 32768,
+          "count": 1501
+        },
+        {
+          "n": 1295140339,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1295173107,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1295205875,
+          "width": 32768,
+          "count": 1519
+        },
+        {
+          "n": 1295238643,
+          "width": 28823,
+          "count": 1364
+        }
+      ],
+      "log_box": [
+        20981983038,
+        20981983058
+      ],
+      "theta_lower_scaled": 1295220552482748694,
+      "theta_upper_scaled": 1295226779074156250,
+      "lower_margin_scaled": 82613229348694,
+      "upper_margin_scaled": 170213672443750,
+      "checkpoint_pass": true,
+      "classification_sha256": "df8dbca1a0b6f2bb15a8d30c9c0f14014f4db7155fc8855a8c0443f8d940ad93",
+      "base_limit": 35989,
+      "base_prime_count_used": 3822,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1036,
+      "a": 1295267466,
+      "b": 1295591282,
+      "count": 15515,
+      "subwindows": [
+        {
+          "n": 1295267466,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1295300234,
+          "width": 32768,
+          "count": 1609
+        },
+        {
+          "n": 1295333002,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1295365770,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1295398538,
+          "width": 32768,
+          "count": 1537
+        },
+        {
+          "n": 1295431306,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1295464074,
+          "width": 32768,
+          "count": 1540
+        },
+        {
+          "n": 1295496842,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1295529610,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1295562378,
+          "width": 28904,
+          "count": 1402
+        }
+      ],
+      "log_box": [
+        20982233006,
+        20982233026
+      ],
+      "theta_lower_scaled": 1295546087949583264,
+      "theta_upper_scaled": 1295552318419554640,
+      "lower_margin_scaled": 84365077783264,
+      "upper_margin_scaled": 168522708645360,
+      "checkpoint_pass": true,
+      "classification_sha256": "1a68671078b5e18096941831a140b21619396155a89824b00ad29934c8b170e0",
+      "base_limit": 35994,
+      "base_prime_count_used": 3823,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1037,
+      "a": 1295591282,
+      "b": 1295915179,
+      "count": 15385,
+      "subwindows": [
+        {
+          "n": 1295591282,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1295624050,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1295656818,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1295689586,
+          "width": 32768,
+          "count": 1520
+        },
+        {
+          "n": 1295722354,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1295755122,
+          "width": 32768,
+          "count": 1594
+        },
+        {
+          "n": 1295787890,
+          "width": 32768,
+          "count": 1534
+        },
+        {
+          "n": 1295820658,
+          "width": 32768,
+          "count": 1567
+        },
+        {
+          "n": 1295853426,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1295886194,
+          "width": 28985,
+          "count": 1396
+        }
+      ],
+      "log_box": [
+        20982482974,
+        20982482994
+      ],
+      "theta_lower_scaled": 1295868899604380574,
+      "theta_upper_scaled": 1295875133920417330,
+      "lower_margin_scaled": 83312122280574,
+      "upper_margin_scaled": 169636597482670,
+      "checkpoint_pass": true,
+      "classification_sha256": "cd2bdcf1c4a3c2c10d50a78542d2ee12b9a800115ccd33630cc4a6cd4a7c453f",
+      "base_limit": 35998,
+      "base_prime_count_used": 3823,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1038,
+      "a": 1295915179,
+      "b": 1296239157,
+      "count": 15301,
+      "subwindows": [
+        {
+          "n": 1295915179,
+          "width": 32768,
+          "count": 1531
+        },
+        {
+          "n": 1295947947,
+          "width": 32768,
+          "count": 1583
+        },
+        {
+          "n": 1295980715,
+          "width": 32768,
+          "count": 1498
+        },
+        {
+          "n": 1296013483,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1296046251,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1296079019,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1296111787,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1296144555,
+          "width": 32768,
+          "count": 1528
+        },
+        {
+          "n": 1296177323,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1296210091,
+          "width": 29066,
+          "count": 1347
+        }
+      ],
+      "log_box": [
+        20982732942,
+        20982732962
+      ],
+      "theta_lower_scaled": 1296189952576365748,
+      "theta_upper_scaled": 1296196190717468892,
+      "lower_margin_scaled": 80419492065748,
+      "upper_margin_scaled": 172590198231108,
+      "checkpoint_pass": true,
+      "classification_sha256": "e30d198e06d6d4860d22fab9b78f27194cd33f933001385ab361b366f37e0465",
+      "base_limit": 36003,
+      "base_prime_count_used": 3824,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1039,
+      "a": 1296239157,
+      "b": 1296563216,
+      "count": 15500,
+      "subwindows": [
+        {
+          "n": 1296239157,
+          "width": 32768,
+          "count": 1546
+        },
+        {
+          "n": 1296271925,
+          "width": 32768,
+          "count": 1600
+        },
+        {
+          "n": 1296304693,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1296337461,
+          "width": 32768,
+          "count": 1585
+        },
+        {
+          "n": 1296370229,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1296402997,
+          "width": 32768,
+          "count": 1536
+        },
+        {
+          "n": 1296435765,
+          "width": 32768,
+          "count": 1622
+        },
+        {
+          "n": 1296468533,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1296501301,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1296534069,
+          "width": 29147,
+          "count": 1380
+        }
+      ],
+      "log_box": [
+        20982982910,
+        20982982930
+      ],
+      "theta_lower_scaled": 1296515184936966748,
+      "theta_upper_scaled": 1296521426952883892,
+      "lower_margin_scaled": 81625258566748,
+      "upper_margin_scaled": 171445368716108,
+      "checkpoint_pass": true,
+      "classification_sha256": "44ec846c603e52930253bfaed168348ce5a6b01dd65188ecd9e7bfb61afffa39",
+      "base_limit": 36007,
+      "base_prime_count_used": 3825,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1040,
+      "a": 1296563216,
+      "b": 1296887356,
+      "count": 15393,
+      "subwindows": [
+        {
+          "n": 1296563216,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1296595984,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1296628752,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1296661520,
+          "width": 32768,
+          "count": 1539
+        },
+        {
+          "n": 1296694288,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1296727056,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1296759824,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1296792592,
+          "width": 32768,
+          "count": 1527
+        },
+        {
+          "n": 1296825360,
+          "width": 32768,
+          "count": 1555
+        },
+        {
+          "n": 1296858128,
+          "width": 29228,
+          "count": 1412
+        }
+      ],
+      "log_box": [
+        20983232878,
+        20983232898
+      ],
+      "theta_lower_scaled": 1296838175992900378,
+      "theta_upper_scaled": 1296844421856882806,
+      "lower_margin_scaled": 80508728500378,
+      "upper_margin_scaled": 172622878717194,
+      "checkpoint_pass": true,
+      "classification_sha256": "762e885f0a2b33b36d7cb0983391b863efe8ff83100b84429eaf4e4c4686b6dd",
+      "base_limit": 36012,
+      "base_prime_count_used": 3826,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1041,
+      "a": 1296887356,
+      "b": 1297211577,
+      "count": 15490,
+      "subwindows": [
+        {
+          "n": 1296887356,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1296920124,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1296952892,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1296985660,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1297018428,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1297051196,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1297083964,
+          "width": 32768,
+          "count": 1528
+        },
+        {
+          "n": 1297116732,
+          "width": 32768,
+          "count": 1553
+        },
+        {
+          "n": 1297149500,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1297182268,
+          "width": 29309,
+          "count": 1412
+        }
+      ],
+      "log_box": [
+        20983482846,
+        20983482866
+      ],
+      "theta_lower_scaled": 1297163206270180598,
+      "theta_upper_scaled": 1297169456006477146,
+      "lower_margin_scaled": 81350427880598,
+      "upper_margin_scaled": 171842151222854,
+      "checkpoint_pass": true,
+      "classification_sha256": "911e8e587772b84b2a1134e5d17bbdf93facd8680e03576e133c2af2bce47969",
+      "base_limit": 36016,
+      "base_prime_count_used": 3827,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1042,
+      "a": 1297211577,
+      "b": 1297535879,
+      "count": 15351,
+      "subwindows": [
+        {
+          "n": 1297211577,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1297244345,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1297277113,
+          "width": 32768,
+          "count": 1496
+        },
+        {
+          "n": 1297309881,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1297342649,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1297375417,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1297408185,
+          "width": 32768,
+          "count": 1563
+        },
+        {
+          "n": 1297440953,
+          "width": 32768,
+          "count": 1500
+        },
+        {
+          "n": 1297473721,
+          "width": 32768,
+          "count": 1564
+        },
+        {
+          "n": 1297506489,
+          "width": 29390,
+          "count": 1413
+        }
+      ],
+      "log_box": [
+        20983732815,
+        20983732835
+      ],
+      "theta_lower_scaled": 1297485323715349544,
+      "theta_upper_scaled": 1297491577289227231,
+      "lower_margin_scaled": 79198303249544,
+      "upper_margin_scaled": 174055298672769,
+      "checkpoint_pass": true,
+      "classification_sha256": "a9379dcf97dd65a4a8f73e8d00dc8d3736134a0181fcfe786dcabc8a4cb9c228",
+      "base_limit": 36021,
+      "base_prime_count_used": 3828,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1043,
+      "a": 1297535879,
+      "b": 1297860262,
+      "count": 15408,
+      "subwindows": [
+        {
+          "n": 1297535879,
+          "width": 32768,
+          "count": 1537
+        },
+        {
+          "n": 1297568647,
+          "width": 32768,
+          "count": 1569
+        },
+        {
+          "n": 1297601415,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1297634183,
+          "width": 32768,
+          "count": 1571
+        },
+        {
+          "n": 1297666951,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1297699719,
+          "width": 32768,
+          "count": 1558
+        },
+        {
+          "n": 1297732487,
+          "width": 32768,
+          "count": 1543
+        },
+        {
+          "n": 1297765255,
+          "width": 32768,
+          "count": 1522
+        },
+        {
+          "n": 1297798023,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1297830791,
+          "width": 29471,
+          "count": 1422
+        }
+      ],
+      "log_box": [
+        20983982783,
+        20983982803
+      ],
+      "theta_lower_scaled": 1297808641070563064,
+      "theta_upper_scaled": 1297814898496255855,
+      "lower_margin_scaled": 78165096763064,
+      "upper_margin_scaled": 175149529944145,
+      "checkpoint_pass": true,
+      "classification_sha256": "e828130dc445b26cf9f52a96c3c4470e63ac6baae103091606d5af145a12bb73",
+      "base_limit": 36025,
+      "base_prime_count_used": 3828,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1044,
+      "a": 1297860262,
+      "b": 1298184727,
+      "count": 15533,
+      "subwindows": [
+        {
+          "n": 1297860262,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1297893030,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1297925798,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1297958566,
+          "width": 32768,
+          "count": 1560
+        },
+        {
+          "n": 1297991334,
+          "width": 32768,
+          "count": 1603
+        },
+        {
+          "n": 1298024102,
+          "width": 32768,
+          "count": 1550
+        },
+        {
+          "n": 1298056870,
+          "width": 32768,
+          "count": 1598
+        },
+        {
+          "n": 1298089638,
+          "width": 32768,
+          "count": 1581
+        },
+        {
+          "n": 1298122406,
+          "width": 32768,
+          "count": 1556
+        },
+        {
+          "n": 1298155174,
+          "width": 29553,
+          "count": 1411
+        }
+      ],
+      "log_box": [
+        20984232751,
+        20984232771
+      ],
+      "theta_lower_scaled": 1298134585275131403,
+      "theta_upper_scaled": 1298140846583887798,
+      "lower_margin_scaled": 79676747831403,
+      "upper_margin_scaled": 173698888812202,
+      "checkpoint_pass": true,
+      "classification_sha256": "60b8d153fb7ca26b7a47a65d399c68ffbdf5430a5fd938f01e16975d3558c0f8",
+      "base_limit": 36030,
+      "base_prime_count_used": 3828,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1045,
+      "a": 1298184727,
+      "b": 1298509273,
+      "count": 15451,
+      "subwindows": [
+        {
+          "n": 1298184727,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1298217495,
+          "width": 32768,
+          "count": 1521
+        },
+        {
+          "n": 1298250263,
+          "width": 32768,
+          "count": 1516
+        },
+        {
+          "n": 1298283031,
+          "width": 32768,
+          "count": 1510
+        },
+        {
+          "n": 1298315799,
+          "width": 32768,
+          "count": 1589
+        },
+        {
+          "n": 1298348567,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1298381335,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1298414103,
+          "width": 32768,
+          "count": 1570
+        },
+        {
+          "n": 1298446871,
+          "width": 32768,
+          "count": 1587
+        },
+        {
+          "n": 1298479639,
+          "width": 29634,
+          "count": 1435
+        }
+      ],
+      "log_box": [
+        20984482720,
+        20984482740
+      ],
+      "theta_lower_scaled": 1298458812655367104,
+      "theta_upper_scaled": 1298465077826703538,
+      "lower_margin_scaled": 79390582667104,
+      "upper_margin_scaled": 174046100596462,
+      "checkpoint_pass": true,
+      "classification_sha256": "d8a02e18958a8a36bf577e081ef8b2b4da628a22a7f0004ef7b9293cde7f2857",
+      "base_limit": 36034,
+      "base_prime_count_used": 3828,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1046,
+      "a": 1298509273,
+      "b": 1298833900,
+      "count": 15474,
+      "subwindows": [
+        {
+          "n": 1298509273,
+          "width": 32768,
+          "count": 1542
+        },
+        {
+          "n": 1298542041,
+          "width": 32768,
+          "count": 1586
+        },
+        {
+          "n": 1298574809,
+          "width": 32768,
+          "count": 1510
+        },
+        {
+          "n": 1298607577,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1298640345,
+          "width": 32768,
+          "count": 1583
+        },
+        {
+          "n": 1298673113,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1298705881,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1298738649,
+          "width": 32768,
+          "count": 1588
+        },
+        {
+          "n": 1298771417,
+          "width": 32768,
+          "count": 1568
+        },
+        {
+          "n": 1298804185,
+          "width": 29715,
+          "count": 1387
+        }
+      ],
+      "log_box": [
+        20984732688,
+        20984732708
+      ],
+      "theta_lower_scaled": 1298783526540976384,
+      "theta_upper_scaled": 1298789795580627130,
+      "lower_margin_scaled": 79509930976384,
+      "upper_margin_scaled": 173987809372870,
+      "checkpoint_pass": true,
+      "classification_sha256": "c76d64f8e34f02dac746d343833ed86c33024e91bad0a5e8288e25b0a6d97274",
+      "base_limit": 36039,
+      "base_prime_count_used": 3829,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1047,
+      "a": 1298833900,
+      "b": 1299158608,
+      "count": 15466,
+      "subwindows": [
+        {
+          "n": 1298833900,
+          "width": 32768,
+          "count": 1544
+        },
+        {
+          "n": 1298866668,
+          "width": 32768,
+          "count": 1608
+        },
+        {
+          "n": 1298899436,
+          "width": 32768,
+          "count": 1547
+        },
+        {
+          "n": 1298932204,
+          "width": 32768,
+          "count": 1549
+        },
+        {
+          "n": 1298964972,
+          "width": 32768,
+          "count": 1513
+        },
+        {
+          "n": 1298997740,
+          "width": 32768,
+          "count": 1622
+        },
+        {
+          "n": 1299030508,
+          "width": 32768,
+          "count": 1554
+        },
+        {
+          "n": 1299063276,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1299096044,
+          "width": 32768,
+          "count": 1578
+        },
+        {
+          "n": 1299128812,
+          "width": 29796,
+          "count": 1390
+        }
+      ],
+      "log_box": [
+        20984982657,
+        20984982677
+      ],
+      "theta_lower_scaled": 1299108076416728992,
+      "theta_upper_scaled": 1299114349322709612,
+      "lower_margin_scaled": 79384277528992,
+      "upper_margin_scaled": 174174538090388,
+      "checkpoint_pass": true,
+      "classification_sha256": "45cb43e590701eda3cef9006eb9f3846847a82f28eedacaefe630da87b5b6d07",
+      "base_limit": 36043,
+      "base_prime_count_used": 3829,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1048,
+      "a": 1299158608,
+      "b": 1299483397,
+      "count": 15499,
+      "subwindows": [
+        {
+          "n": 1299158608,
+          "width": 32768,
+          "count": 1548
+        },
+        {
+          "n": 1299191376,
+          "width": 32768,
+          "count": 1501
+        },
+        {
+          "n": 1299224144,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1299256912,
+          "width": 32768,
+          "count": 1605
+        },
+        {
+          "n": 1299289680,
+          "width": 32768,
+          "count": 1562
+        },
+        {
+          "n": 1299322448,
+          "width": 32768,
+          "count": 1592
+        },
+        {
+          "n": 1299355216,
+          "width": 32768,
+          "count": 1565
+        },
+        {
+          "n": 1299387984,
+          "width": 32768,
+          "count": 1566
+        },
+        {
+          "n": 1299420752,
+          "width": 32768,
+          "count": 1579
+        },
+        {
+          "n": 1299453520,
+          "width": 29877,
+          "count": 1415
+        }
+      ],
+      "log_box": [
+        20985232625,
+        20985232645
+      ],
+      "theta_lower_scaled": 1299433322662929835,
+      "theta_upper_scaled": 1299439599443474467,
+      "lower_margin_scaled": 79874002629835,
+      "upper_margin_scaled": 173745896225533,
+      "checkpoint_pass": true,
+      "classification_sha256": "6777c2f3fecaa960991a0698568056648d0ec8e648c425f21e6386778bde18e9",
+      "base_limit": 36048,
+      "base_prime_count_used": 3829,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1049,
+      "a": 1299483397,
+      "b": 1299808267,
+      "count": 15383,
+      "subwindows": [
+        {
+          "n": 1299483397,
+          "width": 32768,
+          "count": 1552
+        },
+        {
+          "n": 1299516165,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1299548933,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1299581701,
+          "width": 32768,
+          "count": 1580
+        },
+        {
+          "n": 1299614469,
+          "width": 32768,
+          "count": 1561
+        },
+        {
+          "n": 1299647237,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1299680005,
+          "width": 32768,
+          "count": 1529
+        },
+        {
+          "n": 1299712773,
+          "width": 32768,
+          "count": 1596
+        },
+        {
+          "n": 1299745541,
+          "width": 32768,
+          "count": 1515
+        },
+        {
+          "n": 1299778309,
+          "width": 29958,
+          "count": 1355
+        }
+      ],
+      "log_box": [
+        20985482593,
+        20985482613
+      ],
+      "theta_lower_scaled": 1299756138496400210,
+      "theta_upper_scaled": 1299762419122510246,
+      "lower_margin_scaled": 77852323100210,
+      "upper_margin_scaled": 175828704189754,
+      "checkpoint_pass": true,
+      "classification_sha256": "931023f2f3c506969a2013465864a2e175d432cc8dbf45018bd28f5dbf07d02f",
+      "base_limit": 36052,
+      "base_prime_count_used": 3829,
+      "dual_pointwise_equality": true
+    },
+    {
+      "index": 1050,
+      "a": 1299808267,
+      "b": 1300133219,
+      "count": 15468,
+      "subwindows": [
+        {
+          "n": 1299808267,
+          "width": 32768,
+          "count": 1557
+        },
+        {
+          "n": 1299841035,
+          "width": 32768,
+          "count": 1517
+        },
+        {
+          "n": 1299873803,
+          "width": 32768,
+          "count": 1593
+        },
+        {
+          "n": 1299906571,
+          "width": 32768,
+          "count": 1545
+        },
+        {
+          "n": 1299939339,
+          "width": 32768,
+          "count": 1582
+        },
+        {
+          "n": 1299972107,
+          "width": 32768,
+          "count": 1577
+        },
+        {
+          "n": 1300004875,
+          "width": 32768,
+          "count": 1573
+        },
+        {
+          "n": 1300037643,
+          "width": 32768,
+          "count": 1519
+        },
+        {
+          "n": 1300070411,
+          "width": 32768,
+          "count": 1524
+        },
+        {
+          "n": 1300103179,
+          "width": 30040,
+          "count": 1481
+        }
+      ],
+      "log_box": [
+        20985732562,
+        20985732582
+      ],
+      "theta_lower_scaled": 1300080741941148734,
+      "theta_upper_scaled": 1300087026434088622,
+      "lower_margin_scaled": 77536263048734,
+      "upper_margin_scaled": 176205887811378,
+      "checkpoint_pass": true,
+      "classification_sha256": "1beff21302dfaeca6f704b8a100363523664ee3190fee3202f0fa06dbb613a1e",
+      "base_limit": 36057,
+      "base_prime_count_used": 3829,
+      "dual_pointwise_equality": true
+    }
+  ]
+}

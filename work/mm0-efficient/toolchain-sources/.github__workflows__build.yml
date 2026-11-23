@@ -1,0 +1,471 @@
+name: CI
+
+on:
+  push:
+    branches: "**"
+  pull_request:
+    branches: [master]
+  workflow_dispatch:      # so the site can be redeployed without a commit
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build-mm0-rs:
+    name: mm0-rs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore mm0-rs cache
+        id: cache-mm0-rs
+        uses: actions/cache/restore@v4
+        with:
+          path: mm0-rs/target/release/mm0-rs
+          key: ${{ runner.os }}-mm0-rs-${{ hashFiles('mm0-rs/**', 'tests/mm1/**') }}
+      - name: Install stable rust
+        if: ${{ !steps.cache-mm0-rs.outputs.cache-hit }}
+        uses: dtolnay/rust-toolchain@stable
+      - name: Cache build mm0-rs
+        id: cache-build-mm0-rs
+        if: ${{ !steps.cache-mm0-rs.outputs.cache-hit }}
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            mm0-rs/target
+          key: ${{ runner.os }}-cargo-release-${{ hashFiles('mm0-rs/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-release-
+      - name: Build mm0-rs
+        if: ${{ !steps.cache-mm0-rs.outputs.cache-hit }}
+        working-directory: mm0-rs
+        run: cargo build --verbose --release --locked
+      - name: Run tests
+        if: ${{ !steps.cache-mm0-rs.outputs.cache-hit }}
+        working-directory: mm0-rs
+        run: cargo test --verbose --release --locked --workspace
+      - name: Save mm0-rs cache
+        if: ${{ success() && !steps.cache-mm0-rs.outputs.cache-hit }}
+        uses: actions/cache/save@v4
+        with:
+          path: mm0-rs/target/release/mm0-rs
+          key: ${{ runner.os }}-mm0-rs-${{ hashFiles('mm0-rs/**', 'tests/mm1/**') }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mm0-rs
+          path: mm0-rs/target/release/mm0-rs
+
+  check-mm0-rs:
+    name: Check ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: no default features
+            args: --workspace --no-default-features
+          - name: doc only
+            args: --workspace --no-default-features --features doc
+          - name: server only
+            args: --workspace --no-default-features --features server
+          - name: mmc + memory
+            args: --workspace --no-default-features --features mmc,memory
+          - name: all features
+            args: --workspace --all-features
+          # The configuration m0e builds against
+          - name: wasm32
+            args: --no-default-features --features server,mmc
+            target: wasm32-unknown-unknown
+            rustflags: -Dwarnings
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - name: Cache check
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            mm0-rs/target
+          key: ${{ runner.os }}-cargo-check-${{ matrix.name }}-${{ hashFiles('mm0-rs/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-check-${{ matrix.name }}-
+      - working-directory: mm0-rs
+        env:
+          RUSTFLAGS: ${{ matrix.rustflags }}
+        run: cargo check --locked ${{ matrix.args }}
+          ${{ matrix.target && format('--target {0}', matrix.target) }}
+
+  doc-mm0-rs:
+    name: Check mm0-rs docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Cache doc
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            mm0-rs/target
+          key: ${{ runner.os }}-cargo-doc-${{ hashFiles('mm0-rs/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-doc-
+      # rustdoc's own `--check` would be cheaper, but it is nightly-only and
+      # `cargo rustdoc` takes one package at a time; this is the stable
+      # workspace-wide equivalent.
+      - working-directory: mm0-rs
+        env:
+          RUSTDOCFLAGS: -D warnings
+        run: cargo doc --locked --workspace --no-deps --document-private-items
+
+  clippy-mm0-rs:
+    name: Clippy mm0-rs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install nightly rust
+        uses: dtolnay/rust-toolchain@nightly
+        with:
+          components: clippy
+      - name: Cache clippy
+        id: cache-nightly-mm0-rs
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            mm0-rs/target
+          key: ${{ runner.os }}-cargo-nightly-${{ hashFiles('mm0-rs/Cargo.lock') }}
+      - name: Clippy
+        working-directory: ./mm0-rs
+        run: ./clippy.sh
+
+  examples:
+    name: Examples
+    runs-on: ubuntu-latest
+    needs: build-mm0-rs
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p "$GITHUB_WORKSPACE/bin"
+      - uses: actions/download-artifact@v4
+        with:
+          name: mm0-rs
+          path: ./bin
+      - working-directory: mm0-c
+        run: gcc main.c -O2 -Wall -o $GITHUB_WORKSPACE/bin/mm0-c
+      # mm0-js verifies the same compiled libraries, as a second, independent
+      # implementation run beside mm0-c on every example. Plain verification,
+      # not `--index`: the claim being checked is the one mm0-c makes -- that
+      # the library verifies -- and a file legitimately compiled without an
+      # index would fail `--index` for no fault of its own. The index reader is
+      # covered by the tests job and the unit suite instead.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mm0-js/package-lock.json
+      - name: Build mm0-js
+        working-directory: mm0-js
+        # The browser is only needed by `npm run uitest`, which is not run
+        # here; downloading it would be most of this step's time.
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+        run: |
+          npm ci
+          npx tsc
+      # A PATH shim, so each example below reads `mm0-js <file>.mmb`, matching
+      # how mm0-c is invoked one line up.
+      - name: mm0-js on PATH
+        run: |
+          printf '#!/bin/sh\nexec node "%s/mm0-js/dist/tools/check.js" "$@"\n' \
+            "$GITHUB_WORKSPACE" > "$GITHUB_WORKSPACE/bin/mm0-js"
+          chmod +x "$GITHUB_WORKSPACE/bin/mm0-js"
+      - working-directory: bin
+        run: |
+          chmod +x mm0-rs
+          echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
+      # Both verifiers run on every example, and the step fails if either does.
+      # The compile still fails fast -- there is nothing to verify without a
+      # .mmb -- but past that, `|| rc=$?` keeps a failure in one verifier from
+      # aborting the step before the other runs, since a divergence is most
+      # worth seeing when they disagree.
+      - name: peano.mm1
+        working-directory: examples
+        run: |
+          mm0-rs compile -W peano.mm1 peano.mmb
+          rc=0
+          mm0-c peano.mmb < peano.mm0 || rc=$?
+          mm0-js peano.mmb || rc=$?
+          exit $rc
+      - name: peano_hex.mm1
+        working-directory: examples
+        run: |
+          mm0-rs join peano_hex.mm0 | tee peano_hex_join.mm0
+          mm0-rs compile -W peano_hex.mm1 peano_hex.mmb
+          rc=0
+          mm0-c peano_hex.mmb < peano_hex_join.mm0 || rc=$?
+          mm0-js peano_hex.mmb || rc=$?
+          exit $rc
+      - name: mm0.mm1
+        working-directory: examples
+        run: |
+          mm0-rs join mm0.mm0 | tee mm0_join.mm0
+          mm0-rs compile -W mm0.mm1 mm0.mmb
+          rc=0
+          mm0-c mm0.mmb < mm0_join.mm0 || rc=$?
+          mm0-js mm0.mmb || rc=$?
+          exit $rc
+      - name: x86.mm1
+        working-directory: examples
+        run: |
+          mm0-rs join x86.mm0 | tee x86_join.mm0
+          mm0-rs compile -W x86.mm1 x86.mmb
+          rc=0
+          mm0-c x86.mmb < x86_join.mm0 || rc=$?
+          mm0-js x86.mmb || rc=$?
+          exit $rc
+      - name: compiler.mm1
+        working-directory: examples
+        run: |
+          mm0-rs join compiler.mm0 | tee compiler_join.mm0
+          mm0-rs compile -W compiler.mm1 compiler.mmb
+          rc=0
+          # run: mm0-c compiler.mmb < x86_join.mm0
+          mm0-c compiler.mmb < compiler_join.mm0 || rc=$?
+          mm0-js compiler.mmb || rc=$?
+          exit $rc
+      - name: hello_mmc.mm1
+        working-directory: examples
+        run: |
+          mm0-rs join hello_mmc.mm0 | tee hello_mmc_join.mm0
+          mm0-rs compile -W hello_mmc.mm1 hello_mmc.mmb
+          rc=0
+          mm0-c hello_mmc.mmb < hello_mmc_join.mm0 || rc=$?
+          mm0-js hello_mmc.mmb || rc=$?
+          exit $rc
+      - name: hol.mm1
+        working-directory: examples
+        run: |
+          mm0-rs compile -W hol.mm1 hol.mmb
+          rc=0
+          mm0-c hol.mmb < hol.mm0 || rc=$?
+          mm0-js hol.mmb || rc=$?
+          exit $rc
+      - name: set.mm1
+        working-directory: examples
+        run: |
+          mm0-rs compile -W set.mm1 set.mmb
+          rc=0
+          mm0-c set.mmb < set.mm0 || rc=$?
+          mm0-js set.mmb || rc=$?
+          exit $rc
+
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    needs: build-mm0-rs
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p "$GITHUB_WORKSPACE/bin"
+      - uses: actions/download-artifact@v4
+        with:
+          name: mm0-rs
+          path: ./bin
+      - working-directory: mm0-c
+        run: gcc main.c -O2 -Wall -o $GITHUB_WORKSPACE/bin/mm0-c
+      # The mmb/ groups are mutants of a compiled library, so they have no .mm0
+      # interface to check against. NO_PARSER stubs out `parse_until`; without
+      # it every one of them fails in the parser before mm0-c reaches the .mmb,
+      # and the whole group passes for the wrong reason.
+      - working-directory: mm0-c
+        run: gcc main.c -O2 -Wall -DNO_PARSER -o $GITHUB_WORKSPACE/bin/mm0-c-np
+      - working-directory: bin
+        run: |
+          chmod +x mm0-rs
+          echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
+      - name: Install qemu-user
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qemu-user
+          # Fail here rather than inside run.sh if the package ever stops
+          # providing this binary.
+          qemu-x86_64 --version
+      # mm0-js decides the fail-index/ group on its own: the index is advisory,
+      # so no other verifier has an opinion about it.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mm0-js/package-lock.json
+      - name: Build mm0-js
+        working-directory: mm0-js
+        # The browser is only needed by `npm run uitest`, which is not run
+        # here; downloading it would be most of this job's time.
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+        run: |
+          npm ci
+          npx tsc
+      - working-directory: tests
+        env:
+          STRICT: 1
+        run: ./run-tests.sh
+
+  build-mm0-hs:
+    name: mm0-hs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: haskell-actions/setup@v2
+        with:
+          enable-stack: true
+          stack-no-global: true
+      # A cache entry is immutable, and one whose key is hit exactly is not
+      # written back, so a key decides its contents once and for all: it has to
+      # move with whatever the contents are built from, or they are frozen.
+      #
+      # GHC and the snapshot are built from the resolver and the dependency
+      # list, which is what this key hashes.
+      - name: Cache the stack snapshot
+        uses: actions/cache@v4
+        with:
+          path: ~/.stack
+          key: ${{ runner.os }}-stack-${{ hashFiles('mm0-hs/stack.yaml', 'mm0-hs/stack.yaml.lock', 'mm0-hs/package.yaml') }}
+          restore-keys: ${{ runner.os }}-stack-
+      # The package's own build products, which stack holds against the files of
+      # the package -- a set that reaches further than the sources (README.md is
+      # in it, by way of extra-source-files in the cabal file). Hashing the whole
+      # directory is the reading of that which cannot be too narrow: too narrow
+      # and a run rebuilds, cannot save what it built because its key was hit,
+      # and leaves the next run to do it again.
+      - name: Cache the mm0-hs build
+        uses: actions/cache@v4
+        with:
+          path: mm0-hs/.stack-work
+          key: ${{ runner.os }}-stack-work-${{ hashFiles('mm0-hs/**') }}
+          restore-keys: ${{ runner.os }}-stack-work-
+      - name: Build and test mm0-hs
+        working-directory: mm0-hs
+        run: stack test --install-ghc
+  mm0-js-unit:
+    name: mm0-js unit
+    runs-on: ubuntu-latest
+    # No dependency on mm0-rs: the .mmb fixtures the suite pins against are
+    # committed, so this runs on its own and in parallel with everything else.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mm0-js/package-lock.json
+      - working-directory: mm0-js
+        # The browser is not needed here; skipping its download is most of the
+        # install time.
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+        run: npm ci
+      - working-directory: mm0-js
+        run: npm test
+
+  mm0-js-ui:
+    name: mm0-js ui
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: mm0-js/package-lock.json
+      - working-directory: mm0-js
+        run: npm ci
+      # The UI suite drives a real Chromium, so it needs the browser the unit
+      # job skips, with its system libraries.
+      - working-directory: mm0-js
+        run: npx playwright install --with-deps chromium
+      - name: Build and run the UI suite
+        working-directory: mm0-js
+        run: |
+          npx tsc
+          # The suite drives the app over HTTP, so serve the built files first
+          # and wait for the server before starting. `no-store` matches the dev
+          # server the tests were written against.
+          # With a file, so the suite can exercise the `npm start file.mmb`
+          # path -- served under /open/, which is where the page looks when the
+          # address is opened with `?served`.
+          python3 tools/serve.py --port 8731 test/peano.mmb &
+          server=$!
+          trap 'kill $server 2>/dev/null || true' EXIT
+          for _ in $(seq 1 40); do
+            curl -sf http://localhost:8731/index.html >/dev/null 2>&1 && break
+            sleep 0.5
+          done
+          node dist/tools/uitest.js
+
+  # Publishes the homepage with the three tools as siblings, the layout
+  # site/build-local.sh assembles and serves locally. Pages must be set to
+  # deploy from GitHub Actions in the repository settings for this to land.
+  deploy-site:
+    name: Deploy site
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: build-mm0-rs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      # The same binary the rest of the workflow built: it compiles the
+      # explorer's libraries from examples/ and generates /doc.
+      - run: mkdir -p "$GITHUB_WORKSPACE/bin"
+      - uses: actions/download-artifact@v4
+        with:
+          name: mm0-rs
+          path: ./bin
+      - run: chmod +x "$GITHUB_WORKSPACE/bin/mm0-rs"
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - name: Cache the editor's wasm build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            m0e/target
+          key: ${{ runner.os }}-m0e-${{ hashFiles('m0e/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-m0e-
+      - name: Install wasm-pack
+        run: |
+          curl -sSf https://rustwasm.github.io/wasm-pack/installer/init.sh | sh
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build the site
+        env:
+          MM0RS: ${{ github.workspace }}/bin/mm0-rs
+        run: ./site/build-local.sh --no-serve
+      # Publishing from a workflow rather than from the gh-pages branch, so
+      # nothing built is committed. `enablement` asks GitHub to switch the
+      # source over; if it declines, set Settings > Pages > Source to GitHub
+      # Actions once by hand.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/_site
+      - id: deploy
+        uses: actions/deploy-pages@v4

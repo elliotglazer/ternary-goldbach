@@ -1,0 +1,54 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanning [1m../hol4-setup[0m
+Scanned 15 directories
+Building 1 theory file
+Starting work on RawStateHandoffTheory
+RawStateHandoffTheory                                       (7s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** RawStateHandoffTheory (status 1)
+ <<HOL message: Created theory "RawStateHandoff">>
+ Saved definition ____ "raw_mul_def"
+ Saved theorem _______ "raw_trace_compute"
+ Saved definition ____ "raw_trace_def"
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in RawStateHandoff)>>
+ Saved definition ____ "raw_produce_def"
+ Saved induction _____ "raw_produce_ind"
+ Saved definition ____ "raw_head_def"
+ Saved definition ____ "raw_heads_def"
+ Saved induction _____ "raw_heads_ind"
+ Saved theorem _______ "raw_get_compute"
+ Saved definition ____ "raw_get_def"
+ Saved induction _____ "raw_get_ind"
+ Saved definition ____ "raw_coord_ok_def"
+ Saved definition ____ "raw_shape_def"
+ Saved definition ____ "raw_consume_def"
+ Saved definition ____ "raw_pipeline_def"
+ Saved theorem _______ "raw_trace_length"
+ Saved theorem _______ "raw_produce_length"
+ Saved theorem _______ "raw_consume_success"
+ Proof of 
+ 
+ bases = [1; 2; 3; 41; 61; 10004; 262144; 265800] ∧ c = 61 ∧ n = 128 ∧
+ raw_produce n sources = traces ∧ raw_consume c traces = result ⇒
+ raw_pipeline bases c n sources = result
+ 
+ failed.
+ First unsolved sub-goal is
+ 
+ raw_consume 61 traces = result
+ 
+ Tactic failure proving "raw_pipeline_join"; heap saved to RawStateHandoff.raw_pipeline_join.dumpedheap.
+ Resume with: bin/hol --holstate=RawStateHandoff.raw_pipeline_join.dumpedheap
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/.hol/logs/RawStateHandoffTheory

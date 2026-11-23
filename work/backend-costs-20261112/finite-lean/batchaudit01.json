@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\AuditBatch1024.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\AuditBatch1024.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 16.369012699986342,
+  "user_cpu_seconds": 7.28125,
+  "system_cpu_seconds": 8.875,
+  "cpu_seconds": 16.15625,
+  "peak_working_set_bytes": 1265684480,
+  "observed_peak_private_bytes": 2836942848,
+  "memory_samples": 324,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "AuditBatch1024.lean",
+      "bytes": 134,
+      "sha256": "1372200E65DC58D73B0002420E6FBFDBF84FC3CA57E268B075B7A25A529F03A3"
+    },
+    {
+      "path": "batchaudit01.log",
+      "bytes": 472,
+      "sha256": "ACDBC407475ABB02CF9D00062D7689A4FC4FF0FC995031A3536F2DE264F0252A"
+    },
+    {
+      "path": "AuditBatch1024.olean",
+      "bytes": 1144,
+      "sha256": "97A149FC544389CFCCE37354ADA8E9C48D5F32B720C806BB5224035ED93BB8F5"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

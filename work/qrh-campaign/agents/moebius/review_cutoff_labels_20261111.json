@@ -1,0 +1,153 @@
+{
+  "scope": "independent divisor metadata and quoted-cost composition; no spectral circuit replay",
+  "checks": 110,
+  "result": "PASS",
+  "source_hashes": {
+    "r138": "0D48AF7655976B5B0A0BC2750CA92F26E30B33E1F45540015627EEFFC5C60D5F",
+    "r140": "DA26BF4BA4744CF5AF096670873FE9CA258735A8EFA4DE09D0F490A56F36F5F7"
+  },
+  "results": {
+    "150000": {
+      "counts": {
+        "all_conductors": {
+          "conductors": 149999,
+          "primitive_labels": 5543640187,
+          "real_primitive_labels": 121577,
+          "nonreal_inverse_pairs": 2771759305,
+          "unit_coefficients": 9118941848,
+          "nominal_conductor_height_nodes": 10979779734,
+          "coarse_residue_inputs": 120706437078428,
+          "coarse_primitive_outputs": 80459602925766,
+          "max_height_nodes": 426666668
+        },
+        "large_above10000": {
+          "conductors": 142500,
+          "primitive_labels": 5525163079,
+          "real_primitive_labels": 115491,
+          "nonreal_inverse_pairs": 2762523794,
+          "unit_coefficients": 9093611126,
+          "nominal_conductor_height_nodes": 2863650650,
+          "coarse_residue_inputs": 114223068442718,
+          "coarse_primitive_outputs": 75730502011007,
+          "max_height_nodes": 127989
+        },
+        "small_at_most10000": {
+          "conductors": 7499,
+          "primitive_labels": 18477108,
+          "real_primitive_labels": 6086,
+          "nonreal_inverse_pairs": 9235511,
+          "unit_coefficients": 25330722,
+          "nominal_conductor_height_nodes": 8116129084,
+          "coarse_residue_inputs": 6483368635710,
+          "coarse_primitive_outputs": 4729100914759,
+          "max_height_nodes": 426666668
+        }
+      },
+      "large_maximizers": [
+        10001
+      ]
+    },
+    "140000": {
+      "counts": {
+        "all_conductors": {
+          "conductors": 139999,
+          "primitive_labels": 4829158813,
+          "real_primitive_labels": 113481,
+          "nonreal_inverse_pairs": 2414522666,
+          "unit_coefficients": 7943636860,
+          "nominal_conductor_height_nodes": 10906251119,
+          "coarse_residue_inputs": 112067381988794,
+          "coarse_primitive_outputs": 74855673008489,
+          "max_height_nodes": 426666668
+        },
+        "large_above10000": {
+          "conductors": 132500,
+          "primitive_labels": 4810681705,
+          "real_primitive_labels": 107395,
+          "nonreal_inverse_pairs": 2405287155,
+          "unit_coefficients": 7918306138,
+          "nominal_conductor_height_nodes": 2790122035,
+          "coarse_residue_inputs": 105584013353084,
+          "coarse_primitive_outputs": 70126572093730,
+          "max_height_nodes": 127989
+        },
+        "small_at_most10000": {
+          "conductors": 7499,
+          "primitive_labels": 18477108,
+          "real_primitive_labels": 6086,
+          "nonreal_inverse_pairs": 9235511,
+          "unit_coefficients": 25330722,
+          "nominal_conductor_height_nodes": 8116129084,
+          "coarse_residue_inputs": 6483368635710,
+          "coarse_primitive_outputs": 4729100914759,
+          "max_height_nodes": 426666668
+        }
+      },
+      "large_maximizers": [
+        10001
+      ]
+    },
+    "138000": {
+      "counts": {
+        "all_conductors": {
+          "conductors": 137999,
+          "primitive_labels": 4692136729,
+          "real_primitive_labels": 111851,
+          "nonreal_inverse_pairs": 2346012439,
+          "unit_coefficients": 7718273228,
+          "nominal_conductor_height_nodes": 10891026048,
+          "coarse_residue_inputs": 110351807778156,
+          "coarse_primitive_outputs": 73739622075701,
+          "max_height_nodes": 426666668
+        },
+        "large_above10000": {
+          "conductors": 130500,
+          "primitive_labels": 4673659621,
+          "real_primitive_labels": 105765,
+          "nonreal_inverse_pairs": 2336776928,
+          "unit_coefficients": 7692942506,
+          "nominal_conductor_height_nodes": 2774896964,
+          "coarse_residue_inputs": 103868439142446,
+          "coarse_primitive_outputs": 69010521160942,
+          "max_height_nodes": 127989
+        },
+        "small_at_most10000": {
+          "conductors": 7499,
+          "primitive_labels": 18477108,
+          "real_primitive_labels": 6086,
+          "nonreal_inverse_pairs": 9235511,
+          "unit_coefficients": 25330722,
+          "nominal_conductor_height_nodes": 8116129084,
+          "coarse_residue_inputs": 6483368635710,
+          "coarse_primitive_outputs": 4729100914759,
+          "max_height_nodes": 426666668
+        }
+      },
+      "large_maximizers": [
+        10001
+      ]
+    }
+  },
+  "ratios": {
+    "general_complex_products": {
+      "exact": "1368268871329630/1520691663532347",
+      "scope": "arithmetic of stored totals only; full circuit recipe not replayed"
+    },
+    "complex_add_sub": {
+      "exact": "944746694109999/1050202190333921",
+      "scope": "arithmetic of stored totals only; full circuit recipe not replayed"
+    }
+  },
+  "root_composition": {
+    "labels_138_over_150": "4692136729/5543640187",
+    "complex_products_138_mixed_over_150_whole_axis": "684134435664815/1222539351615878",
+    "real_products_138_fixed_three_over_150_four": "2052403306994445/4890157406463512",
+    "real_additions_138_fixed_three_over_150_four": "2443321694662221/4084267285643749"
+  },
+  "root_pins_checked": 16,
+  "root_source_hashes": {
+    "reconcile_cutoff_precision_reuse_20261111.py": "F9B82CA50AF1BD48BCFECAC545D512349EC923381CC78F95F5235298388E4A3C",
+    "reconcile_cutoff_precision_reuse_20261111.json": "817E8FB021DAC5C993EEAA2631B8A9AA5A81B346904AA367F35A7E3CE85F6BFF",
+    "RECONCILED_CUTOFF_PRECISION_AND_REUSE_2026-11-11.md": "18CB96FB1F2F99F42703A40C40D1D8B343ED9F02A247799273B560591503421B"
+  }
+}

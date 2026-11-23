@@ -1,0 +1,9 @@
+#use "hol.ml";;
+#use "../checker.ml";;
+#use "../arithmetic_sound.ml";;
+#use "../encoding_sound.ml";;
+#use "../row_sound.ml";;
+#use "../residual_sound.ml";;
+#use "../stage_sound.ml";;
+check_axioms ();;
+print_string "BOOTSTRAP_SOUND_DONE\n";;

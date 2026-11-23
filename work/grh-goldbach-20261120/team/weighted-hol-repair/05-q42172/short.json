@@ -1,0 +1,56 @@
+{
+  "q": 42172,
+  "coarse_intervals": 45134,
+  "jobs": 9,
+  "hits": {
+    "8,8": 5,
+    "8,12": 9,
+    "8,16": 9,
+    "8,20": 9,
+    "12,8": 5,
+    "12,12": 9,
+    "12,16": 9,
+    "12,20": 9,
+    "16,8": 5,
+    "16,12": 9,
+    "16,16": 9,
+    "16,20": 9,
+    "20,12": 9,
+    "20,16": 9,
+    "20,20": 9,
+    "24,12": 9,
+    "24,16": 9,
+    "24,20": 9,
+    "32,12": 9,
+    "32,16": 9,
+    "32,20": 9,
+    "20,8": 3,
+    "24,8": 2
+  },
+  "first_order_at_16_bits": {
+    "8": 9
+  },
+  "unresolved": [],
+  "channels": [
+    {
+      "label": 13419,
+      "parity": 1,
+      "jobs": 3,
+      "raw_sha256": "8c98e2d8460e271ed4b62d08944ad0ca5510e3d464a456e6390cb9295c6bf0d0",
+      "sign_sha256": "1daa36a579fc73476f881adf461d46e3dc5668a295cba483aa3d760dc9e5b6c9"
+    },
+    {
+      "label": 15063,
+      "parity": 1,
+      "jobs": 6,
+      "raw_sha256": "dee050bc913cc22565be91dfa0dc3d730310b8870a93fc5d766e8f04dc14b7dc",
+      "sign_sha256": "7cc97e23736fa0f525e7fc34ecc8a3dc95d83339d3081892385c3a0e5f46133c"
+    }
+  ],
+  "inputs_sha256": {
+    "grid.json": "f39b7d385be9602d2248a465f1328e69327bea4c4f344239d116dc362d03ebde",
+    "spectrum.json": "1fed12635adb5c37ac7e121042b460987eb074c6c352619e4a5f3bdfbadfe7cd",
+    "counts.json": "d7ab4ab2e2738ee7e2fda48319882f33b0de72acbea62452d951df6d08f0b4ad"
+  },
+  "short_cpu_seconds": 0.140625
+}

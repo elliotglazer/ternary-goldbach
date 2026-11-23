@@ -1,0 +1,38 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 14 directories
+Building 1 theory file
+Starting work on DependentBlockTheory
+DependentBlockTheory                                        (8s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** DependentBlockTheory (status 1)
+ <<HOL message: Created theory "DependentBlock">>
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in DependentBlock)>>
+ Saved definition ____ "block_layer_def"
+ Saved induction _____ "block_layer_ind"
+ Saved definition ____ "block_rotate_def"
+ Saved theorem _______ "block_run_compute"
+ Saved definition ____ "block_run_def"
+ Saved definition ____ "layer_contract_def"
+ Saved induction _____ "layer_contract_ind"
+ Saved theorem _______ "block_contract_compute"
+ Saved definition ____ "block_contract_def"
+ Proof of 
+ 
+ ∀ws xs. LENGTH (block_layer s ws xs) = LENGTH xs
+ 
+ failed.
+ Tactic failure proving "block_layer_length"; heap saved to DependentBlock.block_layer_length.dumpedheap.
+ Resume with: bin/hol --holstate=DependentBlock.block_layer_length.dumpedheap
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/.hol/logs/DependentBlockTheory

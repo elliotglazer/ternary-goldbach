@@ -1,0 +1,27 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanning [1m../../hol4-setup[0m
+Scanned 15 directories
+Building 1 theory file
+Starting work on RoundSpecializationCVTheory
+RoundSpecializationCVTheory                                 (6s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** RoundSpecializationCVTheory (status 1)
+ <<HOL message: Created theory "RoundSpecializationCV">>
+ Saved theorem _______ "cv_positive_den_div_one_thm"
+ error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/round-specialization/RoundSpecializationCVScript.sml : HOL_ERR (HOL_ERROR {message = "No precondition generated! Use `cv_trans` instead of `cv_trans_pre`.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/round-specialization/RoundSpecializationCVScript : HOL_ERR (HOL_ERROR {message = "No precondition generated! Use `cv_trans` instead of `cv_trans_pre`.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ Finished translating positive_den_div_one, stored in cv_positive_den_div_one_thm
+ Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "No precondition generated! Use `cv_trans` instead of `cv_trans_pre`.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/round-specialization/.hol/logs/RoundSpecializationCVTheory

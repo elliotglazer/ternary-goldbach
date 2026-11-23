@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SYNTHETIC_MULTIPLICITY_BOOKKEEPING_ONLY",
+  "script_sha256": "d200271d12f828507ca00eaa33c0aaefd40ef5786204070c6503e802af79ebcc",
+  "T": "100",
+  "H": "110",
+  "nonreal": {
+    "positive_main": 4,
+    "inverse_positive_main": 2,
+    "direct_central": 10,
+    "K": 16,
+    "C": 16,
+    "auxiliary_counts": [
+      6,
+      3
+    ],
+    "W": "48",
+    "actual_integrated_added_count": "65"
+  },
+  "real": {
+    "positive_main": 4,
+    "direct_central": 6,
+    "K": 14,
+    "C": 14,
+    "positive_auxiliary_count": 4,
+    "W": "56",
+    "actual_integrated_added_count": "64"
+  },
+  "scope": "Stipulated finite multisets only. No winding certificates, actual L-functions, Turing bounds, or saturation data."
+}

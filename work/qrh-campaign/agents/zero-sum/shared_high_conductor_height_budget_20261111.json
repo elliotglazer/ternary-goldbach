@@ -1,0 +1,43 @@
+{
+  "status": "PASS_EXACT_SCALAR_REDUCED_HEIGHT_FIXED_BETA_0_555",
+  "input_receipt_sha256": "4e4127e970120a5bb5441cf0af3f419f6262f616c9fa9e715a70c1e8d91cca1a",
+  "source_sha256": "f644e2efac56ba3291f65d2c71e14df648235309a35664373738037a7c842545",
+  "finite_low_Cross_upper": "1/1000000000",
+  "finite_low_Cross_norm_upper": "1/31250",
+  "Aplus": {
+    "exact": "1291523384448441/250000000000000000000000",
+    "display": "5.16609353779376e-09"
+  },
+  "Astar": {
+    "exact": "94249/390625000000",
+    "display": "2.4127744e-07"
+  },
+  "Cross": {
+    "exact": "96029564515868228475256532875086686329/625000000000000000000000000000000000000000000",
+    "display": "1.53647303225389e-07"
+  },
+  "Astar_plus_Cross": {
+    "exact": "246827964515868228475256532875086686329/625000000000000000000000000000000000000000000",
+    "display": "3.94924743225389e-07"
+  },
+  "N": {
+    "exact": "1523457456815930045881/10000000000000000000000",
+    "display": "0.152345745681593"
+  },
+  "Ep": {
+    "exact": "400040001/10000000000000000",
+    "display": "4.00040001e-08"
+  },
+  "mixed_extra_norm": {
+    "exact": "13812876476427/25000000000000000000000",
+    "display": "5.5251505905708e-10"
+  },
+  "reusable_total_tail_caps": {
+    "N_energy": "129/1000",
+    "mixed_energy_original_low_star": "13/100000000",
+    "Aplus_energy": "3511/1000000000000000",
+    "max_primitive_tail": "757/100000000",
+    "star_tail": "133/10000000000000000000000"
+  },
+  "note": "Fixed beta=.555 only. The earlier coarse-lowCross sufficient comparison fails; no data discarded."
+}

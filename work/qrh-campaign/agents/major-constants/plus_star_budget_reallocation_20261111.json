@@ -1,0 +1,90 @@
+{
+  "scope": "exact scalar implications only; coefficient input conditional",
+  "checks": {
+    "positive_radius_after_removal": true,
+    "full_plus_radius": true,
+    "totient_sqrt": true,
+    "old_exact_constant": true,
+    "amgm_identity": true,
+    "selected_u": true,
+    "selected_reserve": true,
+    "integrated_plus_residual": true,
+    "main_norm": true,
+    "total_norm": true,
+    "weighted_main_norm": true,
+    "principal_weighted_norm": true,
+    "sqrt_j_lower": true,
+    "row_positive_4200": true,
+    "row_squared_4200": true,
+    "row_positive_4000": true,
+    "row_squared_4000": true,
+    "row_positive_3750": true,
+    "row_squared_3750": true,
+    "row_positive_3500": true,
+    "row_squared_3500": true,
+    "row_positive_2000": true,
+    "row_squared_2000": true,
+    "row_positive_650": true,
+    "row_squared_650": true,
+    "log_y_lower": true,
+    "exp_one_lower": true,
+    "log_2R_upper": true,
+    "sieve_coefficient": true,
+    "sqrt_ct": true,
+    "sqrt_small": true,
+    "conditional_B": true,
+    "sieve_size1": true,
+    "sieve_size2": true
+  },
+  "rho": "1/1953125",
+  "C": "914205504131/4687500000",
+  "old_error": "64019155993729/312500000000000000",
+  "u_max_linear": "492214121790863/41203125000000000000",
+  "selected_u": "597/50000000",
+  "cubic_reserve": "248809290863/4687500000000000000",
+  "rows": [
+    {
+      "A": "0",
+      "B": 4200,
+      "squared_reserve": "798908601/39062500000000000000"
+    },
+    {
+      "A": "1/1000000000000",
+      "B": 4000,
+      "squared_reserve": "269708601/39062500000000000000"
+    },
+    {
+      "A": "1/250000000000",
+      "B": 3750,
+      "squared_reserve": "330633601/39062500000000000000"
+    },
+    {
+      "A": "9/1000000000000",
+      "B": 3500,
+      "squared_reserve": "469683601/39062500000000000000"
+    },
+    {
+      "A": "1/10000000000",
+      "B": 2000,
+      "squared_reserve": "1070533601/39062500000000000000"
+    },
+    {
+      "A": "1/2500000000",
+      "B": 650,
+      "squared_reserve": "450658601/39062500000000000000"
+    }
+  ],
+  "conditional_sieve_product_upper": "95039699436000000000000000000000000000000000000000000000000003/2500000000000000000000000000000000000000000000000000000000000",
+  "conditional_B_upper": "11963648168242369/6250000000000",
+  "input_sha256": {
+    "work/qrh-blueprint/INTEGRATED_CUBIC_RESIDUAL_CONTRACT_2026-11-11.md": "943DE38EE628CFA9E7221100E75933D101C7593B613945F19B7CBDF90E97C128",
+    "work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md": "22A6A16880BE2FA5CB0FF393C533BD60B1AFCD32C751E5A0D64FE7ADAB7C40F7",
+    "work/qrh-blueprint/PLUS_RESIDUAL_TO_MAJOR_L2_UPPER_2026-11-11.md": "F3EBC1B68CC57B607496D9E6445137A08A0F17C3202D986301F8EC25F14F4663",
+    "work/qrh-campaign/agents/major-constants/PLUS_FINITE_RH_HEIGHT_REDUCTION_2026-11-11.md": "3F91F39B485607833A5FADD061BEC7602B1DCC02C77B8FB82CA10B6C076FA6A0",
+    "work/qrh-campaign/agents/major-constants/DIRECT_PLUS_RESIDUAL_ENERGY_TARGET_2026-11-11.md": "E69701B4AE8145B016015A2C355151DFAA5D4946D2281BAE3CC08A86422196B1",
+    "work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md": "AFDBBF90157F5170666C481D512D475A1F719366C8FB785D312A213864C38D0B",
+    "work/qrh-campaign/agents/audit/DIRECT_STAR_B_SOURCE_OBSTRUCTION_2026-11-11.md": "8C137D3E513B732E9664447F069539B8643B6678E6EAC57FFC706DFCD50A06FE",
+    "work/qrh-campaign/agents/audit/ETA_U_PRIME_COEFFICIENT_ENERGY_2026-11-11.md": "0B97BC320F7BEEA4B7CC9D8144FBB70CFC19A4AF756602BDA4DCBD1239399D5C",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/MajorTotal.lean": "106293987C887D3586DC3483260B135853730F3A20466D0D7E71ABC61AB9F84A"
+  }
+}

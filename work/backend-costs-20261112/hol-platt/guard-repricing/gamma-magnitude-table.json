@@ -1,0 +1,35 @@
+{
+  "ticks": 84881,
+  "indices": [
+    0,
+    84880
+  ],
+  "largest_q_for_length": 10004,
+  "rows": 125400,
+  "entries": 169762,
+  "generator_cpu_s": 2.203125,
+  "generator_wall_s": 2.2355729000119027,
+  "direct_check_cpu_s": 4.296875,
+  "direct_check_wall_s": 4.343942599996808,
+  "reflection_identity_ticks": 84881,
+  "tables": {
+    "16": {
+      "bytes": 509286,
+      "sha256": "a5682194b8f1049b19f028f338ec9973ac820820f8553bf3075915171fd2a40d"
+    },
+    "24": {
+      "bytes": 679048,
+      "sha256": "bea652361b24592515de478748f2eafc0e97fa07fe404787ac3aa62e949bcb7c"
+    }
+  },
+  "manifest_sha256": "a41d70db2bb439d73cc817f80b24cb598d3efa89cce1d19a5fa618abbe239637",
+  "certified_factor": "exp(pi*t/4) |Gamma((1/2+a+it)/2)| pi^(-(1+2a)/4); conductor factor omitted",
+  "format": "tick-major, parity even then odd; signed int8 floor(log2), unsigned big-endian fraction B bits; k=2^B+fraction, dyadic interval [k,k+1]*2^(exponent-B)",
+  "cpu_scope": "Single-thread native generation computed gamma once per entry and encoded both tables. Verification recomputed every entry at 192 bits using gamma directly. File writes excluded from timings.",
+  "sparse_integer_product_ns": 459.6529999980703,
+  "product_input_bit_widths": [
+    243,
+    179
+  ],
+  "product_scope": "Native integer center/radius product on already-loaded k, excluding lookup, serialization and HOL."
+}

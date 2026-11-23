@@ -1,0 +1,161 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c131071-series-hol/pair/NatPairScript.uo to produce theory-builder executable
+<<HOL message: Created theory "NatPair">>
+Saved definition ____ "np_def"
+Saved definition ____ "ip_def"
+Saved definition ____ "rnd_def"
+Saved theorem _______ "rnd_pre_rules"
+Saved theorem _______ "rnd_pre_ind"
+Saved theorem _______ "rnd_pre_strongind"
+Saved theorem _______ "rnd_pre_cases"
+Saved theorem _______ "cv_rnd_thm"
+Finished translating rnd, stored in cv_rnd_thm
+
+WARNING: definition of cv_rnd has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem rnd_pre[cv_pre]:
+  ∀v x. rnd_pre v x
+Proof
+  ho_match_mp_tac rnd_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "pre_ok"
+Saved theorem _______ "signed_compute"
+Saved definition ____ "signed_def"
+Saved definition ____ "bits_def"
+Saved definition ____ "unpk_def"
+Saved definition ____ "paired_def"
+Saved theorem _______ "hs_compute"
+Saved definition ____ "hs_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in NatPair)>>
+Saved definition ____ "col_def"
+Saved induction _____ "col_ind"
+Saved definition ____ "poscol_def"
+Saved induction _____ "poscol_ind"
+Saved definition ____ "cold_def"
+Starting translation of cold from NatPairTheory.
+Starting translation of paired from NatPairTheory.
+Starting translation of unpk from NatPairTheory.
+Saved theorem _______ "cv_unpk_thm"
+Finished translating unpk, stored in cv_unpk_thm
+Starting translation of paired from NatPairTheory.
+Starting translation of bits from NatPairTheory.
+Starting translation of np from NatPairTheory.
+Saved definition ____ "cv_np_def"
+Saved induction _____ "cv_np_ind"
+Saved theorem _______ "cv_np_thm"
+Finished translating np, stored in cv_np_thm
+Starting translation of bits from NatPairTheory.
+Starting translation of ABS from integerTheory.
+Saved theorem _______ "cv_ABS_thm"
+Finished translating ABS, stored in cv_ABS_thm
+Starting translation of bits from NatPairTheory.
+Saved theorem _______ "cv_bits_thm"
+Finished translating bits, stored in cv_bits_thm
+Starting translation of paired from NatPairTheory.
+Saved definition ____ "cv_paired_def"
+Saved induction _____ "cv_paired_ind"
+Saved theorem _______ "cv_paired_thm"
+Finished translating paired, stored in cv_paired_thm
+Starting translation of cold from NatPairTheory.
+Starting translation of hs from NatPairTheory.
+Saved definition ____ "cv_hs_def"
+Saved induction _____ "cv_hs_ind"
+Saved theorem _______ "cv_hs_thm"
+Finished translating hs, stored in cv_hs_thm
+Starting translation of cold from NatPairTheory.
+Starting translation of poscol from NatPairTheory.
+Saved definition ____ "cv_poscol_def"
+Saved induction _____ "cv_poscol_ind"
+Saved theorem _______ "cv_poscol_thm"
+Finished translating poscol, stored in cv_poscol_thm
+Starting translation of cold from NatPairTheory.
+Starting translation of col from NatPairTheory.
+Saved definition ____ "cv_col_def"
+Saved induction _____ "cv_col_ind"
+Saved theorem _______ "cv_col_thm"
+Finished translating col, stored in cv_col_thm
+Starting translation of cold from NatPairTheory.
+Saved theorem _______ "cv_cold_thm"
+Finished translating cold, stored in cv_cold_thm
+Starting translation of signed from NatPairTheory.
+Starting translation of ip from NatPairTheory.
+Saved definition ____ "cv_ip_def"
+Saved induction _____ "cv_ip_ind"
+Saved theorem _______ "cv_ip_thm"
+Finished translating ip, stored in cv_ip_thm
+Starting translation of signed from NatPairTheory.
+Saved definition ____ "cv_signed_def"
+Saved induction _____ "cv_signed_ind"
+Saved theorem _______ "cv_signed_thm"
+Finished translating signed, stored in cv_signed_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c131071-series-hol/pair/NatPairScript.sml:70: warning: Pattern is not exhaustive. Found near val [name, n, r, ...] = tokens ()
+TERMS low 0.020982
+ADMIT low_direct 1.72554
+ADMIT low_warm 2.793152
+ADMIT low_shared 2.586475
+ADMIT low_cold 2.147237
+SERIES low_direct 1 0.008187 0.000210000000001 0.000387
+SERIES low_warm 1 0.011768 0.000233 0.00067
+SERIES low_shared 1 0.010324 0.000160000000001 0.000691999999999
+SERIES low_cold 1 0.006116 0.000169999999999 0.000372
+SERIES low_direct 2 0.004925 0.000154 0.000347999999999
+SERIES low_warm 2 0.012453 0.000169 0.000601
+SERIES low_shared 2 0.010208 0.000151000000001 0.000664
+SERIES low_cold 2 0.006085 0.000183000000002 0.000323999999999
+SERIES low_direct 3 0.005767 0.000222000000001 0.000348000000001
+SERIES low_warm 3 0.012676 0.000228 0.000565
+SERIES low_shared 3 0.009306 0.000145999999999 0.000607
+SERIES low_cold 3 0.005269 0.000172000000001 0.000318
+SERIES low_direct 4 0.005674 0.000167000000001 0.000330999999999
+SERIES low_warm 4 0.010433 0.000303000000001 0.000999
+SERIES low_shared 4 0.01178 0.000162000000001 0.000651
+SERIES low_cold 4 0.004673 0.00014 0.000264000000001
+SERIES low_direct 5 0.004732 0.000145999999999 0.000304
+SERIES low_warm 5 0.009826 0.000140999999999 0.000787000000001
+SERIES low_shared 5 0.009362 0.000146000000001 0.000606999999999
+SERIES low_cold 5 0.005565 0.000181 0.000298000000001
+TERMS edge 0.053799
+ADMIT edge_direct 1.264449
+ADMIT edge_warm 3.825834
+ADMIT edge_shared 3.089026
+ADMIT edge_cold 2.302307
+SERIES edge_direct 1 0.00411 0.000245 0.000427999999999
+SERIES edge_warm 1 0.011667 0.000126000000002 0.000942999999999
+SERIES edge_shared 1 0.011871 0.000114 0.000762999999999
+SERIES edge_cold 1 0.003937 0.000138999999997 0.000382000000002
+SERIES edge_direct 2 0.004261 0.000116999999999 0.000464000000001
+SERIES edge_warm 2 0.012145 0.000142999999998 0.001027
+SERIES edge_shared 2 0.010859 0.000121 0.000776999999999
+SERIES edge_cold 2 0.004347 0.000120000000003 0.000399999999999
+SERIES edge_direct 3 0.005426 0.000121 0.000410000000002
+SERIES edge_warm 3 0.013522 0.000121 0.001057
+SERIES edge_shared 3 0.015473 0.000109999999999 0.000754000000001
+SERIES edge_cold 3 0.005019 0.000137000000002 0.000477999999998
+SERIES edge_direct 4 0.004554 0.000139000000001 0.000360999999998
+SERIES edge_warm 4 0.011112 0.000131 0.000944999999998
+SERIES edge_shared 4 0.010757 0.000122000000001 0.000757999999998
+SERIES edge_cold 4 0.003505 0.000112000000001 0.000447999999999
+SERIES edge_direct 5 0.004172 0.000122999999999 0.000361000000002
+SERIES edge_warm 5 0.012805 0.000137000000002 0.001055
+SERIES edge_shared 5 0.009736 0.000122999999999 0.000755999999999
+SERIES edge_cold 5 0.004012 0.000118000000001 0.000398000000001
+Exporting theory "NatPair" ... done.
+Theory "NatPair" took 21.0s to build
+Holmake: [1/1] NatPair

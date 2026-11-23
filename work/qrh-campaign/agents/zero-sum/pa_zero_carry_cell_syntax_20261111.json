@@ -1,0 +1,186 @@
+{
+  "status": "PASS_FORMAL_ALGEBRA_AND_STATIC_SYNTAX_ONLY",
+  "checks": 24,
+  "arguments": [
+    "X",
+    "x",
+    "y",
+    "A",
+    "a",
+    "c",
+    "u",
+    "v",
+    "e",
+    "w",
+    "f",
+    "d",
+    "k",
+    "B"
+  ],
+  "premises": [
+    [
+      "eq",
+      [
+        "mul",
+        "x",
+        "y"
+      ],
+      [
+        "add",
+        [
+          "mul",
+          "beta",
+          "u"
+        ],
+        "v"
+      ]
+    ],
+    [
+      "eq",
+      [
+        "add",
+        [
+          "add",
+          "v",
+          "a"
+        ],
+        "zero"
+      ],
+      [
+        "add",
+        [
+          "mul",
+          "beta",
+          "e"
+        ],
+        "w"
+      ]
+    ],
+    [
+      "eq",
+      [
+        "add",
+        [
+          "add",
+          "w",
+          "c"
+        ],
+        "zero"
+      ],
+      [
+        "add",
+        [
+          "mul",
+          "beta",
+          "f"
+        ],
+        "d"
+      ]
+    ],
+    [
+      "eq",
+      [
+        "add",
+        [
+          "add",
+          "u",
+          "e"
+        ],
+        "f"
+      ],
+      [
+        "add",
+        [
+          "mul",
+          "beta",
+          "zero"
+        ],
+        "k"
+      ]
+    ],
+    [
+      "eq",
+      [
+        "add",
+        [
+          "add",
+          [
+            "mul",
+            "X",
+            "y"
+          ],
+          "A"
+        ],
+        "k"
+      ],
+      "B"
+    ]
+  ],
+  "conclusion": [
+    "eq",
+    [
+      "add",
+      [
+        "add",
+        [
+          "mul",
+          [
+            "add",
+            [
+              "mul",
+              "beta",
+              "X"
+            ],
+            "x"
+          ],
+          "y"
+        ],
+        [
+          "add",
+          [
+            "mul",
+            "beta",
+            "A"
+          ],
+          "a"
+        ]
+      ],
+      "c"
+    ],
+    [
+      "add",
+      [
+        "mul",
+        "beta",
+        "B"
+      ],
+      "d"
+    ]
+  ],
+  "tree_sizes_atomic_beta": [
+    21,
+    9,
+    11,
+    11,
+    11,
+    9
+  ],
+  "beta_occurrences": 7,
+  "expanded_header_commands": 134,
+  "cached_call_commands": 21,
+  "fresh_call_commands": 41,
+  "row_core": "20mn+22n+1+D+C",
+  "row_core_13_by_3_constant": 847,
+  "scope": "No numeral/digit assignments, enumeration, table facts, proof emission, declarations or builds. Row/base composition remains conditional.",
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_CELL_LIFT_2026-11-11.md": "3670294B3CAE9C9459344571FEFAF80BB4D36FCD60EADE47AFEDB03E020EC74E",
+    "work/qrh-campaign/agents/prime-estimates/CLARIFICATION_PA_PRODUCT_CELL_CLOSED_FACT_COUNT_2026-11-11.md": "F0705C64C524D9AC3051C51507DA9BCF0FD368796C0EE63A43518AB1C035F9D2",
+    "work/qrh-campaign/agents/moebius/REVIEW_PA_RADIX256_PRODUCT_CELL_LIFT_2026-11-11.md": "DDA93BA814D78B2339E37C2588BC3DF8D0747BC5AF660BD51BAA9327569452EA",
+    "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_ROW_BASE_2026-11-11.md": "71D3F4BF6558618A84E652B1E041BBA26BA095679562ED951DFEA138DC9F5CAC",
+    "work/qrh-campaign/agents/moebius/MMB_ARITHMETIC_EVENT_EXPANSION_2026-11-11.md": "E57FCF240BB386E783A653AD28162AFFCA2D4C5273BD1915C6C4E930ACF9CCB6",
+    "work/qrh-campaign/agents/integration/EFFICIENCY_MM0_LADDER_ARITHMETIC_2026-11-11.md": "3D8116AC2D53E33DA76DF0FE7AE42211AAB4D7B5C3D954746587D8DC9EF21227",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm1": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm0": "463A7D6E4F4791313DEDCFD737053DCF2CC07B466371E263C38A994C6FB72052",
+    "work/formal-goldbach-bench/mm0/src/verifier.c": "71428A117C96A37B81E183CE57EF34B71E99EFECBA019E65A47CE27DD4FAA4B5"
+  }
+}

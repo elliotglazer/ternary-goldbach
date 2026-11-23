@@ -1,0 +1,178 @@
+{
+  "status": "PASS_INDEPENDENT_R132900_METADATA",
+  "author_receipt_sha256": "E94D87827C3A4D37CA34F07001F16EA7AEE8854684F8BC156C3D4AC6D96B65CF",
+  "rows": {
+    "all": {
+      "conductors": 132899,
+      "primitive_labels": 4351723951,
+      "coarse_residue_inputs": 105996466892478,
+      "full": {
+        "general_complex_products": 2723561559319894,
+        "complex_add_sub": 5637292564035782,
+        "quarter_turns": 251314378062644,
+        "negations": 60634924224,
+        "dyadic_scales": 243599872671552
+      },
+      "same_order": {
+        "general_complex_products": 1941557922157446,
+        "complex_add_sub": 3996039694160357,
+        "quarter_turns": 177248423464234,
+        "negations": 38585884732,
+        "dyadic_scales": 171721172292160
+      },
+      "G_order": {
+        "general_complex_products": 1940137684651640,
+        "complex_add_sub": 3983990254975193,
+        "quarter_turns": 177188075124068,
+        "negations": 38544022880,
+        "dyadic_scales": 171685764454592
+      },
+      "between_axes_only": {
+        "general_complex_products": 1944207606644306,
+        "complex_add_sub": 4039990235163318,
+        "quarter_turns": 177989939989853,
+        "negations": 41585104276,
+        "dyadic_scales": 171689880136640
+      },
+      "unit_coefficients": 7158345954,
+      "coarse_primitive_outputs": 70901831171273,
+      "nominal_conductor_height_nodes": 10851352539,
+      "max_height_nodes": 426666668,
+      "whole_axis": {
+        "general_complex_products": 4378998593151538,
+        "complex_add_sub": 10273983576331982,
+        "quarter_turns": 535460879511746,
+        "negations": 2762002272202,
+        "dyadic_scales": 526026905970400
+      }
+    },
+    "large": {
+      "conductors": 125400,
+      "primitive_labels": 4333246843,
+      "coarse_residue_inputs": 99513098256768,
+      "full": {
+        "general_complex_products": 2607460638032558,
+        "complex_add_sub": 5400371016768720,
+        "quarter_turns": 240054302964318,
+        "negations": 57789691484,
+        "dyadic_scales": 232751136096768
+      },
+      "same_order": {
+        "general_complex_products": 1849018578634950,
+        "complex_add_sub": 3808420069398260,
+        "quarter_turns": 168298416860166,
+        "negations": 36476401602,
+        "dyadic_scales": 163078435471936
+      },
+      "G_order": {
+        "general_complex_products": 1847683359499690,
+        "complex_add_sub": 3796803390649934,
+        "quarter_turns": 168236872075977,
+        "negations": 36434539750,
+        "dyadic_scales": 163045183990656
+      },
+      "between_axes_only": {
+        "general_complex_products": 1851503934864292,
+        "complex_add_sub": 3849917737815492,
+        "quarter_turns": 169007020652139,
+        "negations": 39250570800,
+        "dyadic_scales": 163049057400832
+      },
+      "unit_coefficients": 7133015232,
+      "coarse_primitive_outputs": 66172730256514,
+      "nominal_conductor_height_nodes": 2735223455,
+      "max_height_nodes": 127989,
+      "whole_axis": {
+        "general_complex_products": 4177915060902296,
+        "complex_add_sub": 9791843685676132,
+        "quarter_turns": 507082061846612,
+        "negations": 2593032081628,
+        "dyadic_scales": 498143940781504
+      }
+    },
+    "small": {
+      "conductors": 7499,
+      "primitive_labels": 18477108,
+      "coarse_residue_inputs": 6483368635710,
+      "full": {
+        "general_complex_products": 116100921287336,
+        "complex_add_sub": 236921547267062,
+        "quarter_turns": 11260075098326,
+        "negations": 2845232740,
+        "dyadic_scales": 10848736574784
+      },
+      "same_order": {
+        "general_complex_products": 92539343522496,
+        "complex_add_sub": 187619624762097,
+        "quarter_turns": 8950006604068,
+        "negations": 2109483130,
+        "dyadic_scales": 8642736820224
+      },
+      "G_order": {
+        "general_complex_products": 92454325151950,
+        "complex_add_sub": 187186864325259,
+        "quarter_turns": 8951203048091,
+        "negations": 2109483130,
+        "dyadic_scales": 8640580463936
+      },
+      "between_axes_only": {
+        "general_complex_products": 92703671780014,
+        "complex_add_sub": 190072497347826,
+        "quarter_turns": 8982919337714,
+        "negations": 2334533476,
+        "dyadic_scales": 8640822735808
+      },
+      "unit_coefficients": 25330722,
+      "coarse_primitive_outputs": 4729100914759,
+      "nominal_conductor_height_nodes": 8116129084,
+      "max_height_nodes": 426666668,
+      "whole_axis": {
+        "general_complex_products": 201083532249242,
+        "complex_add_sub": 482139890655850,
+        "quarter_turns": 28378817665134,
+        "negations": 168970190574,
+        "dyadic_scales": 27882965188896
+      }
+    }
+  },
+  "large_setup": {
+    "whole_axis": {
+      "axis_lengths": 12496,
+      "active_nodes": 12496,
+      "kernel_count": 12480,
+      "kernel_entries": 2127173008,
+      "chirp_entries": 784839302,
+      "max_padded_length": 524288,
+      "kernel_forward_operations": {
+        "general_complex_products": 15621796520,
+        "complex_add_sub": 37625062144,
+        "quarter_turns": 1063574024,
+        "negations": 0,
+        "dyadic_scales": 0
+      },
+      "CT_full_root_table_entry_upper": 0
+    },
+    "mixed_full_and_retained_for_pruning": {
+      "axis_lengths": 12496,
+      "active_nodes": 32942,
+      "kernel_count": 6004,
+      "kernel_entries": 337702368,
+      "chirp_entries": 140276846,
+      "max_padded_length": 262144,
+      "kernel_forward_operations": {
+        "general_complex_products": 2244782056,
+        "complex_add_sub": 5502647200,
+        "quarter_turns": 168845180,
+        "negations": 0,
+        "dyadic_scales": 0
+      },
+      "CT_full_root_table_entry_upper": 1116142487
+    }
+  },
+  "recursive_requests": 12781,
+  "top_axis_restrictions": 12523,
+  "small_index_tests": 210,
+  "shared_height_nodes": 127989,
+  "P24_seed_slots": 17223585528,
+  "scope": "Integer conductor/circuit metadata only; no transform or function values."
+}

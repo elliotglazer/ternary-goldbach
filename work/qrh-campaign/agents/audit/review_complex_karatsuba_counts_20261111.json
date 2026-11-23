@@ -1,0 +1,58 @@
+{
+  "status": "PASS_INTEGER_SUBTOTAL_REPLAY",
+  "scope": "Unsigned skeleton only; chunk proof-bridge costs excluded and not used by displayed paths",
+  "pins": {
+    "EFFICIENCY_COMPLEX_KARATSUBA_2026-11-11.md": "86D8A9435A9962CFF95194642E590D65C76B334E5AD24377959006E7AB17BEFF",
+    "complex_karatsuba_sizes_20261111.py": "3F9B491D6750A5CF178C65B5A25AA8FDD938B52D12189512B59DCE4C098CF213",
+    "complex_karatsuba_sizes_20261111.json": "30A7BDD7FC7AE93533329A8F4AB5253F692948F4E1F5E41D3C6EEDB75B334AC8",
+    "EFFICIENCY_COMPLEX_THREE_PRODUCT_2026-11-11.md": "83D8C2953A4AEE557786904C09CED8433972876AA0B6698EBA8BF2C3B5F39EF4",
+    "ERRATUM_COMPLEX_ADD_WIDTHS_2026-11-11.md": "AD8DC7692F68A44BF0D10BB6E348DD0D8A3368FF76FC5A94BBF07BFD76030362",
+    "EFFICIENCY_MM0_SQUARE_KARATSUBA_2026-11-11.md": "4ADB3C676ABA3A82128A8F27CBB91221B414689F94CDC5D60BA0FA75A8421FFA"
+  },
+  "rows": 25,
+  "schedules": 75,
+  "sanity_checks": 518,
+  "displayed_or_descendant_chunk_choices": [],
+  "byte_rows": [
+    [
+      128,
+      5386,
+      4348,
+      4418,
+      4377,
+      "schoolbook"
+    ],
+    [
+      192,
+      11074,
+      9072,
+      9174,
+      8840,
+      "unequal_split"
+    ],
+    [
+      256,
+      18562,
+      14855,
+      14989,
+      14601,
+      "unequal_split"
+    ],
+    [
+      512,
+      60482,
+      47008,
+      47270,
+      46556,
+      "unequal_split"
+    ],
+    [
+      1024,
+      190350,
+      145796,
+      146314,
+      144974,
+      "unequal_split"
+    ]
+  ]
+}

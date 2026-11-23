@@ -1,0 +1,52 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 21 directories
+Holmake: Building 2 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorSoundScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SectorSound">>
+Saved definition ____ "use_real_def"
+Saved definition ____ "multiplier_positive_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SectorSound)>>
+Saved theorem _______ "phase_coordinate"
+Saved theorem _______ "one_code"
+Saved theorem _______ "read_coordinate"
+Proof of 
+
+∀p q f g e r i pp qq ff gg xx yy.
+  (let
+     b = use_real (0 < p) (0 < q) (0 < f) (0 < g);
+     c = if b then r else i;
+     k = one (p,q) (f,g,e) (r,i)
+   in
+     k ≠ 0 ∧ 0 < oriented (0 < p) pp ∧ 0 < oriented (0 < q) qq ∧
+     0 < oriented (0 < f) ff ∧ 0 < oriented (0 < g) gg ∧
+     0 < oriented (0 < c) (if b then xx else yy) ∧
+     0 <
+     (pp * ff − qq * gg) * (pp * ff − qq * gg) +
+     (pp * gg + qq * ff) * (pp * gg + qq * ff) ∧
+     (pp * ff − qq * gg) * yy + (pp * gg + qq * ff) * xx = 0 ⇒
+     0 <
+     oriented (k = 2) ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy))
+
+failed.
+Tactic failure proving "one_hardy_sign"; heap saved to SectorSound.one_hardy_sign.dumpedheap.
+Resume with: bin/hol --holstate=SectorSound.one_hardy_sign.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorSoundScript - exited with code 1

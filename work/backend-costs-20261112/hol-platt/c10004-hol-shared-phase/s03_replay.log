@@ -1,0 +1,20 @@
+<<HOL message: Created theory "C10004SharedAudit">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004SharedAudit)>>
+SHARED_BOOTSTRAP_DONE
+TRAVERSAL_CV_TAG,actual_phase_encoding,DISK_THM,
+SHARED_START,1
+TRAVERSAL_CV_TAG,shared_checked_h1,DISK_THM,
+Saved theorem _______ "shared_checked_h1"
+SHARED_CPU,1,0.105827,3.443965,0.488653,0.0001,0.000073,4.243739
+SHARED_START,2
+TRAVERSAL_CV_TAG,shared_checked_h2,DISK_THM,
+Saved theorem _______ "shared_checked_h2"
+SHARED_CPU,2,0.096981,3.572293,0.715813,0.000094,0.000075,4.653073
+Exporting theory "C10004SharedAudit" ... done.
+Theory "C10004SharedAudit" took 10.5s to build
+SHARED_REPLAY_DONE

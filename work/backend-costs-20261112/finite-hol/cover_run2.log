@@ -1,0 +1,23 @@
+<<HOL message: Created theory "FiniteCoverResults">>
+HOL4_COVER_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in FiniteCoverResults)>>
+HOL4_COVER_TIME,all_primes,9.364021000,9.373117000
+HOL4_COVER_TIME,prime_tree,0.003266000,0.003273000
+Saved theorem _______ "cert_tree_primes"
+Saved theorem _______ "cv_cert_tree_thm"
+Finished translating cert_tree, stored in cv_cert_tree_thm
+Saved theorem _______ "cv_cert_witnesses_thm"
+Finished translating cert_witnesses, stored in cv_cert_witnesses_thm
+HOL4_COVER_TIME,input_translation,130.737295000,130.794875000
+HOL4_COVER_TIME,coverage,0.015064000,0.015061000
+HOL4_COVER_TIME,interval_assembly,0.016733000,0.016733000
+Saved theorem _______ "binary_interval"
+HOL4_COVER_INTERVAL,3999999997356537860,3999999997356539908,1024
+HOL4_COVER_REJECTED,empty_tree
+HOL4_COVER_REJECTED,wrong_origin
+HOL4_COVER_REJECTED,missing_witness
+HOL4_COVER_REJECTED,wrong_endpoint
+Exporting theory "FiniteCoverResults" ... done.
+Theory "FiniteCoverResults" took 2m20s to build
+HOL4_COVER_TIME,export,1.058295000,2.090407000
+HOL4_FINITE_COVER_BENCHMARK_DONE

@@ -1,0 +1,82 @@
+{
+  "status": "PASS conditional arithmetic only",
+  "pins_checked": 6,
+  "gates": [
+    {
+      "id": "tau",
+      "status": "unproved seed"
+    },
+    {
+      "id": "translated",
+      "status": "PASS"
+    },
+    {
+      "id": "S_output",
+      "status": "PASS"
+    },
+    {
+      "id": "root_argument",
+      "status": "PASS"
+    },
+    {
+      "id": "root_x",
+      "status": "PASS"
+    },
+    {
+      "id": "root_y",
+      "status": "PASS"
+    },
+    {
+      "id": "root_x_square",
+      "status": "PASS"
+    },
+    {
+      "id": "root_y_square",
+      "status": "PASS"
+    },
+    {
+      "id": "root_norm_square",
+      "status": "PASS"
+    },
+    {
+      "id": "root_norm",
+      "status": "PASS"
+    },
+    {
+      "id": "root_u_sum",
+      "status": "PASS"
+    },
+    {
+      "id": "root_u_half",
+      "status": "PASS"
+    },
+    {
+      "id": "root_u",
+      "status": "PASS"
+    },
+    {
+      "id": "root_v_denominator",
+      "status": "PASS"
+    },
+    {
+      "id": "root_v",
+      "status": "PASS"
+    },
+    {
+      "id": "root",
+      "status": "PASS"
+    },
+    {
+      "id": "A",
+      "status": "PASS"
+    }
+  ],
+  "arithmetic_gate_count": 16,
+  "domain_checks_passed": 6,
+  "independent_product_square_checks": 2,
+  "reciprocal_noncorner_regressions": 2,
+  "reciprocal_pole_rejected": true,
+  "old_snapshot_hulls_checked": 9,
+  "seed_and_translation_match_prior_lossless_diagnosis": true,
+  "scope": "No producer import, Arb import, generation, analytic seed validation or later graph replay."
+}

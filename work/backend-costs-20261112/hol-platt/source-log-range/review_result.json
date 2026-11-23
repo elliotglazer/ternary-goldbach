@@ -1,0 +1,61 @@
+{
+  "accepted_run": "range03",
+  "scope": "Actual range-reduced and finally rounded source_raw_log129 accuracy",
+  "exact_roots": [
+    "slr_domain_bounds",
+    "slr_reduced_ratio",
+    "slr_log_decomposition",
+    "slr_reduced_center_error",
+    "slr_abs_sub_triangle",
+    "slr_affine_error",
+    "slr_numerator_error",
+    "slr_from_two_numerator",
+    "slr_raw_regrid_error",
+    "slr_raw_budget",
+    "source_raw_log129_error"
+  ],
+  "exact_program_types": [
+    "source_raw_log129",
+    "source_log_from_two",
+    "slr_numerator",
+    "slr_error_bound"
+  ],
+  "manifest_counts": {
+    "source_expected.sha256": 21,
+    "range03_source.sha256": 6,
+    "range03_dependency.sha256": 51,
+    "range03_output.sha256": 3
+  },
+  "phase_cpu_seconds": {
+    "theory": 34.06,
+    "build": 5.0200000000000005,
+    "audit": 16.49
+  },
+  "accepted_phase_cpu_seconds": 55.57,
+  "container_elapsed_seconds": 190.5661711,
+  "all_recorded_experiment_phase_cpu_seconds": 152.33,
+  "recorded_time_files": [
+    "range01_theory.time",
+    "range02_theory.time",
+    "range03_audit.time",
+    "range03_build.time",
+    "range03_theory.time",
+    "rangediag01_run\\time.txt",
+    "rangediag02_run\\time.txt",
+    "rangediag03_run\\time.txt",
+    "rangediag04_run\\time.txt",
+    "rangediag05_run\\time.txt",
+    "rangediag06_run\\time.txt",
+    "rangediag07_run\\time.txt",
+    "rangediag08_run\\time.txt"
+  ],
+  "hashes": {
+    "SourceLogRangeScript.sml": "c3f719c28316555d1bc3b960fc969e4b9cf824a45e3d55702a6cd15ffb980926",
+    "range_audit.sml": "941a6af7771a277e4d3838dd0e3eb04f41deda5d66d3184e3e25a05659d4c89f",
+    "source_expected.sha256": "69e088cae2f3f463fc9cf63a1a5a317a771055869d91bc938131be1080d1a82b",
+    ".hol/objs/SourceLogRangeTheory.uo": "6697d04bcb7ac51fc4f2f72831d7ccb57fd63d7d605229c73ddd65050bee3116",
+    ".hol/objs/SourceLogRangeTheory.dat": "8edd9e7e625ca5077286a7c14df20a0bb680153dfa23bffe682bf47e60ddddd3",
+    "range03_audit.log": "34e167115ec80ab531b55b2190a008db86ca7cf9f2987454ed792cc6d62d1196"
+  },
+  "forecast_unchanged": true
+}

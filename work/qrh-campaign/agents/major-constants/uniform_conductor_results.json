@@ -1,0 +1,316 @@
+{
+  "warning": "No analytic estimate certified. Primitive E_c means Schar error BEFORE reconstruction. All finite sums are floating point. Source-upper I_q bounds rely on stated source Fourier bounds; optimistic quadrature is uncertified.",
+  "primitive_uniform_profile": "|E_chi| <= C_c*x^(7/8)",
+  "weight_formula": "W_c=2*c*primitiveCount(c)*sum_{odd squarefree r<=150000,c|r} I_r/phi(r)^3",
+  "geometry_sum_direct": 13.597558346247006,
+  "geometry_sum_by_conductor": 13.597558346247109,
+  "A_cap": 9.731162500793978e-07,
+  "x_minus_quarter": 2.1254504262688077e-07,
+  "beta_3_4_amplitude_gain": 0.0004610260758643493,
+  "conductor_dyadic_bins": [
+    {
+      "conductor_min": 1,
+      "conductor_max_exclusive": 2,
+      "geometry": 2.3009615446739624,
+      "source_upper": 877.1725554716173,
+      "optimistic_quadrature": 119.91955116630561
+    },
+    {
+      "conductor_min": 2,
+      "conductor_max_exclusive": 4,
+      "geometry": 0.7669871815085252,
+      "source_upper": 292.3908460540523,
+      "optimistic_quadrature": 39.97318370691055
+    },
+    {
+      "conductor_min": 4,
+      "conductor_max_exclusive": 8,
+      "geometry": 0.9021139550746852,
+      "source_upper": 343.9038331471759,
+      "optimistic_quadrature": 47.01560554351346
+    },
+    {
+      "conductor_min": 8,
+      "conductor_max_exclusive": 16,
+      "geometry": 0.5948697561809748,
+      "source_upper": 226.77611029381916,
+      "optimistic_quadrature": 31.00291425453549
+    },
+    {
+      "conductor_min": 16,
+      "conductor_max_exclusive": 32,
+      "geometry": 0.6573783558478575,
+      "source_upper": 250.60518246785387,
+      "optimistic_quadrature": 34.26068314583178
+    },
+    {
+      "conductor_min": 32,
+      "conductor_max_exclusive": 64,
+      "geometry": 0.7159923327805906,
+      "source_upper": 272.94826995724554,
+      "optimistic_quadrature": 37.31547260266425
+    },
+    {
+      "conductor_min": 64,
+      "conductor_max_exclusive": 128,
+      "geometry": 0.7123364432644197,
+      "source_upper": 271.5474141933708,
+      "optimistic_quadrature": 37.124922319385256
+    },
+    {
+      "conductor_min": 128,
+      "conductor_max_exclusive": 256,
+      "geometry": 0.7050241197755064,
+      "source_upper": 268.73068820577623,
+      "optimistic_quadrature": 36.74375835353417
+    },
+    {
+      "conductor_min": 256,
+      "conductor_max_exclusive": 512,
+      "geometry": 0.6921896634873885,
+      "source_upper": 263.69943636179556,
+      "optimistic_quadrature": 36.07460323244003
+    },
+    {
+      "conductor_min": 512,
+      "conductor_max_exclusive": 1024,
+      "geometry": 0.6861611566764201,
+      "source_upper": 260.99282710171667,
+      "optimistic_quadrature": 35.759438729776456
+    },
+    {
+      "conductor_min": 1024,
+      "conductor_max_exclusive": 2048,
+      "geometry": 0.6940705718297663,
+      "source_upper": 261.8131512521501,
+      "optimistic_quadrature": 36.1676420504204
+    },
+    {
+      "conductor_min": 2048,
+      "conductor_max_exclusive": 4096,
+      "geometry": 0.6940999441590365,
+      "source_upper": 252.09235506080512,
+      "optimistic_quadrature": 36.149073668699785
+    },
+    {
+      "conductor_min": 4096,
+      "conductor_max_exclusive": 8192,
+      "geometry": 0.6924763381196497,
+      "source_upper": 207.33141149662697,
+      "optimistic_quadrature": 36.00876194574687
+    },
+    {
+      "conductor_min": 8192,
+      "conductor_max_exclusive": 16384,
+      "geometry": 0.6914886695446811,
+      "source_upper": 107.01411487335338,
+      "optimistic_quadrature": 35.60727707465081
+    },
+    {
+      "conductor_min": 16384,
+      "conductor_max_exclusive": 32768,
+      "geometry": 0.6881168436330545,
+      "source_upper": 53.46589268078103,
+      "optimistic_quadrature": 34.201103099148455
+    },
+    {
+      "conductor_min": 32768,
+      "conductor_max_exclusive": 65536,
+      "geometry": 0.6584352126724181,
+      "source_upper": 26.427958678882433,
+      "optimistic_quadrature": 26.19182899657181
+    },
+    {
+      "conductor_min": 65536,
+      "conductor_max_exclusive": 131072,
+      "geometry": 0.6235119160019371,
+      "source_upper": 12.936696003751644,
+      "optimistic_quadrature": 12.936696003751644
+    },
+    {
+      "conductor_min": 131072,
+      "conductor_max_exclusive": 150001,
+      "geometry": 0.12134434101623394,
+      "source_upper": 1.6327304621024112,
+      "optimistic_quadrature": 1.6327304621024112
+    }
+  ],
+  "models": {
+    "source_upper": {
+      "total_weight": 4251.481473762877,
+      "principal_weight": 877.1725554716173,
+      "nonprincipal_weight": 3374.3089182912595,
+      "uniform_C_cap": 0.03281608190616979,
+      "all_certified_beta_3_4_C_cap": 71.1805332152741,
+      "hybrid_infinite_height_cutoffs": {
+        "0.1": {
+          "min_conductor_cutoff_in_model": 3569,
+          "A_at_cutoff": 9.729915439529677e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.9206235553000123e-12
+        },
+        "0.25": {
+          "min_conductor_cutoff_in_model": 20443,
+          "A_at_cutoff": 9.730688648184693e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.2003897220625075e-11
+        },
+        "0.5": {
+          "min_conductor_cutoff_in_model": 57265,
+          "A_at_cutoff": 9.730701792384431e-07,
+          "A_if_all_conductors_beta_le_3_4": 4.80155888825003e-11
+        },
+        "1": {
+          "min_conductor_cutoff_in_model": 106769,
+          "A_at_cutoff": 9.730883697417958e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.920623555300012e-10
+        },
+        "2": {
+          "min_conductor_cutoff_in_model": 136229,
+          "A_at_cutoff": 9.730225218922341e-07,
+          "A_if_all_conductors_beta_le_3_4": 7.682494221200048e-10
+        },
+        "5": {
+          "min_conductor_cutoff_in_model": 147611,
+          "A_at_cutoff": 9.722808684862374e-07,
+          "A_if_all_conductors_beta_le_3_4": 4.801558888250029e-09
+        },
+        "10": {
+          "min_conductor_cutoff_in_model": 149395,
+          "A_at_cutoff": 9.698651502871897e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.9206235553000116e-08
+        },
+        "25": {
+          "min_conductor_cutoff_in_model": 149911,
+          "A_at_cutoff": 9.527367206580994e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.2003897220625073e-07
+        },
+        "50": {
+          "min_conductor_cutoff_in_model": 149983,
+          "A_at_cutoff": 9.553717170945517e-07,
+          "A_if_all_conductors_beta_le_3_4": 4.801558888250029e-07
+        },
+        "100": {
+          "min_conductor_cutoff_in_model": null,
+          "A_at_cutoff": null,
+          "A_if_all_conductors_beta_le_3_4": 1.9206235553000117e-06
+        }
+      }
+    },
+    "optimistic_quadrature": {
+      "total_weight": 674.0852463559893,
+      "principal_weight": 119.91955116630561,
+      "nonprincipal_weight": 554.1656951896837,
+      "uniform_C_cap": 0.0824137093163285,
+      "all_certified_beta_3_4_C_cap": 178.76149231215638,
+      "hybrid_infinite_height_cutoffs": {
+        "0.1": {
+          "min_conductor_cutoff_in_model": 11,
+          "A_at_cutoff": 9.677532381348172e-07,
+          "A_if_all_conductors_beta_le_3_4": 3.0452067365723483e-13
+        },
+        "0.25": {
+          "min_conductor_cutoff_in_model": 16945,
+          "A_at_cutoff": 9.7303182385319e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.9032542103577173e-12
+        },
+        "0.5": {
+          "min_conductor_cutoff_in_model": 57263,
+          "A_at_cutoff": 9.731068870040564e-07,
+          "A_if_all_conductors_beta_le_3_4": 7.61301684143087e-12
+        },
+        "1": {
+          "min_conductor_cutoff_in_model": 106763,
+          "A_at_cutoff": 9.73088076417542e-07,
+          "A_if_all_conductors_beta_le_3_4": 3.045206736572348e-11
+        },
+        "2": {
+          "min_conductor_cutoff_in_model": 136221,
+          "A_at_cutoff": 9.729666607689151e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.218082694628939e-10
+        },
+        "5": {
+          "min_conductor_cutoff_in_model": 147601,
+          "A_at_cutoff": 9.72320868112703e-07,
+          "A_if_all_conductors_beta_le_3_4": 7.613016841430869e-10
+        },
+        "10": {
+          "min_conductor_cutoff_in_model": 149385,
+          "A_at_cutoff": 9.693909600088627e-07,
+          "A_if_all_conductors_beta_le_3_4": 3.0452067365723476e-09
+        },
+        "25": {
+          "min_conductor_cutoff_in_model": 149901,
+          "A_at_cutoff": 9.513019465084233e-07,
+          "A_if_all_conductors_beta_le_3_4": 1.9032542103577173e-08
+        },
+        "50": {
+          "min_conductor_cutoff_in_model": 149973,
+          "A_at_cutoff": 9.331435334488764e-07,
+          "A_if_all_conductors_beta_le_3_4": 7.613016841430869e-08
+        },
+        "100": {
+          "min_conductor_cutoff_in_model": 149997,
+          "A_at_cutoff": 6.666796815274281e-07,
+          "A_if_all_conductors_beta_le_3_4": 3.0452067365723476e-07
+        }
+      }
+    }
+  },
+  "hypothetical_heights": [
+    {
+      "C": 0.1,
+      "twist_cutoff_D": 77.82083471726801,
+      "decay_rate_a": 0.0035523602484592545,
+      "hypothetical_height_if_all_conductors_certified": 354.48401504114867,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 0.25,
+      "twist_cutoff_D": 143.34720317445135,
+      "decay_rate_a": 0.0019397674069348263,
+      "hypothetical_height_if_all_conductors_certified": 1122.8077642332912,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 0.5,
+      "twist_cutoff_D": 227.5495011158233,
+      "decay_rate_a": 0.0012251175287322238,
+      "hypothetical_height_if_all_conductors_certified": 2346.887854445559,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 1,
+      "twist_cutoff_D": 361.21231744609685,
+      "decay_rate_a": 0.0007730272729934664,
+      "hypothetical_height_if_all_conductors_certified": 4626.708228096928,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 2,
+      "twist_cutoff_D": 573.3888126978053,
+      "decay_rate_a": 0.0004874746753595152,
+      "hypothetical_height_if_all_conductors_certified": 8792.96124648141,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 5,
+      "twist_cutoff_D": 1056.1912234733638,
+      "decay_rate_a": 0.00026485274733937923,
+      "hypothetical_height_if_all_conductors_certified": 19838.359499339313,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 10,
+      "twist_cutoff_D": 1676.5990592211974,
+      "decay_rate_a": 0.0001669051961259362,
+      "hypothetical_height_if_all_conductors_certified": 36187.02788463811,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    },
+    {
+      "C": 25,
+      "twist_cutoff_D": 3088.321872380865,
+      "decay_rate_a": 9.063477732872518e-05,
+      "hypothetical_height_if_all_conductors_certified": 80534.39377659062,
+      "warning": "Requires unproved relative exponential tail with constant C and no bandwidth shift."
+    }
+  ]
+}

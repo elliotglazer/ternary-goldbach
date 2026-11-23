@@ -1,0 +1,29 @@
+{
+  "schema": "c8-benign-preflight-v5",
+  "authorize": "RUN_ONE_C8_SUPERVISOR_CAPABILITY_PREFLIGHT_V5",
+  "token": "a123f495589c4fd490017a2b631b9ed6",
+  "attempt_name": "c8_benign_attempt_20261111_v5",
+  "pins": {
+    "supervisor": "882762361FC9E3AE2AF876CB604E6EA8CCDA2E6C2251872DD79B2593F0953A85",
+    "child": "B0E008A7344824D1651D5F86B8232171508CCCF6016CB4A74DEB32F4F97A455D",
+    "specification": "BCA052F8F4533927679F5CC1C20944781D2C0A419DFF2C9AE08353C3B31301A4",
+    "executable": "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9",
+    "accepted_design": "EF2EF80F930AA029DE7418C9759A01465A867A40DFACAA0F9FE9B67ED8FC6B19",
+    "accepted_design_review": "AEA656CCB32B74151CB570EDFA58A63104771AF7E764DE9B95789299856251DF"
+  },
+  "static_review": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/qrh-campaign/agents/independent-feasibility/REVIEW_C8_DETACHED_V5_STATIC_2026-11-11.md",
+    "sha256": "E810BC4FA7D890A8789794E457E9872968F82D8EA31EC6A5E099EFECFEAECD1D"
+  },
+  "outer_runner_sha256": "00B5503D4C6E1B085A5B417AD432F985DFC60A4ADEEE318F133FB8DC437D2EA9",
+  "caps": {
+    "total_ns": 30000000000,
+    "normal_ns": 15000000000,
+    "timeout_ns": 1000000000,
+    "cleanup_ns": 2000000000,
+    "peak_bytes": 268435456,
+    "aggregate_peak_bytes": 268435456,
+    "output_bytes": 4194304,
+    "explicit_allocation_bytes": 50331648
+  }
+}

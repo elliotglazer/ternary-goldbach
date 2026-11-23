@@ -1,0 +1,241 @@
+{
+  "pins": {
+    "compiler": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "goldbach_commit": "23b2d68ca344203d4384e0aff7affa4ec034bef9",
+    "goldbach_large": "d6a6474bd661d116be713a575a51afa24ec9aed82a55578217c4bf785ed1f722"
+  },
+  "passed": {
+    "TernaryGoldbach.Statement": {
+      "source": "b83199792744c8729027ac24b151cc6a4dc2daadebf9c3dc1292c9f2e8c81c03",
+      "olean": "4e645cce9b5431d219aa64c26db3ea5004b6cc61731a9b756c0c78f1ece5ea2f",
+      "shared_receipt": "/mnt/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/adapter/linux_port_8g.json"
+    },
+    "GoldbachVersionAliases": {
+      "source": "5fe80ad24f276fa213adc17bc969617c1fcffa84dc825a7057fb05c47ee3d1d8",
+      "compiled_source": "5fe80ad24f276fa213adc17bc969617c1fcffa84dc825a7057fb05c47ee3d1d8",
+      "olean": "cd462c9496bb390cdd711ba3d5b6d3320e3ddf37680666b22af4ab3c880b74a6",
+      "module": "GoldbachVersionAliases",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 6.939,
+      "cpu_seconds": 5.971,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/GoldbachVersionAliases.log"
+    },
+    "TernaryGoldbach.CircleMethod": {
+      "source": "82f0ee32cac525bb2bf16933945dd48a6d28d377c441963b4d594ef201d842d0",
+      "compiled_source": "a855142435cb5fc3bcab6a1f32cd8624d2a6a8ca39a2eebac584a133f4e9f009",
+      "olean": "517df106a99fdaa40b6da9a06b8c98c065715a796bc827f456faf4a735e97e5d",
+      "module": "TernaryGoldbach.CircleMethod",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 507.274,
+      "cpu_seconds": 372.005,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/CircleMethod.log"
+    },
+    "TernaryGoldbach.Helfgott.Defs": {
+      "source": "f4f800ff5a8adae0d11342182ba4d9901f90b679dbfa084e196acbc4199a59ff",
+      "compiled_source": "f4f800ff5a8adae0d11342182ba4d9901f90b679dbfa084e196acbc4199a59ff",
+      "olean": "79c41e473741f602a61274a23ef4d3fb22ff9cce0840b40a7f75da983507c6a7",
+      "module": "TernaryGoldbach.Helfgott.Defs",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 449.828,
+      "cpu_seconds": 385.749,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/Defs.log"
+    },
+    "TernaryGoldbach.Helfgott.Decay": {
+      "source": "078683548505e1be3db1c220c0cd748db5d48243323c0eff9be9c57f604cde2e",
+      "compiled_source": "078683548505e1be3db1c220c0cd748db5d48243323c0eff9be9c57f604cde2e",
+      "olean": "eae3b8842698141b796713b9af0df941c2537512d0b09c919fc938abc9e005bc",
+      "module": "TernaryGoldbach.Helfgott.Decay",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 130.252,
+      "cpu_seconds": 65.909,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/Decay.log"
+    },
+    "GoldbachDependentIfAlias": {
+      "source": "a980c033e485674cdbdc223aa24b34b43372d16fba5a644f77e2bcf096b8e4bd",
+      "compiled_source": "a980c033e485674cdbdc223aa24b34b43372d16fba5a644f77e2bcf096b8e4bd",
+      "olean": "0e8138b39cdbe5ecb54c0eaac056df6953fc0286060eb95af2b4edb6250866cd",
+      "module": "GoldbachDependentIfAlias",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 2.929,
+      "cpu_seconds": 1.115,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/GoldbachDependentIfAlias.log"
+    },
+    "TernaryGoldbach.Helfgott.Numerics": {
+      "source": "4eb06492c0966b446c1496c8f2b49371e3b6843661462812d8f6745b08a363fb",
+      "compiled_source": "4eb06492c0966b446c1496c8f2b49371e3b6843661462812d8f6745b08a363fb",
+      "olean": "8c2fadefb123c2df084d07fe73cd055bd3bb7613fa194463604d40841b935f23",
+      "module": "TernaryGoldbach.Helfgott.Numerics",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 133.57,
+      "cpu_seconds": 83.009,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/Numerics.log"
+    },
+    "TernaryGoldbach.Helfgott.NonPrime": {
+      "source": "8eb0140131a911f4ceff327f3ca66f1881250355256c7c146875a320605cd39e",
+      "compiled_source": "8eb0140131a911f4ceff327f3ca66f1881250355256c7c146875a320605cd39e",
+      "olean": "5d3a6f7cf3a354f47ee86605b7d0ca0a5ccfddcb27629111b210e30b5fcc35c6",
+      "module": "TernaryGoldbach.Helfgott.NonPrime",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 127.863,
+      "cpu_seconds": 77.709,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/NonPrime.log"
+    },
+    "GoldbachFinsetProductAliases": {
+      "source": "b7608d263b5b717f0e3e8699528482828bb71d34d84e25826bb429abb6bb4908",
+      "compiled_source": "b7608d263b5b717f0e3e8699528482828bb71d34d84e25826bb429abb6bb4908",
+      "olean": "945e4470093db6f6cf9eba4fd49202534e51b86d4d10c3cb82ca8f97db39cb6b",
+      "module": "GoldbachFinsetProductAliases",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 9.963,
+      "cpu_seconds": 5.663,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/GoldbachFinsetProductAliases.log"
+    },
+    "TernaryGoldbach.Helfgott.SupNorms": {
+      "source": "ff222e877b67bc7f6aca91ed2b8973c925849c4785dc95c314f7e899c55c59e2",
+      "compiled_source": "ff222e877b67bc7f6aca91ed2b8973c925849c4785dc95c314f7e899c55c59e2",
+      "olean": "61293f73526ce067002da75bbcb54f05d0d674969d20cb21b34cd8461f45bfa0",
+      "module": "TernaryGoldbach.Helfgott.SupNorms",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 56.093,
+      "cpu_seconds": 45.299,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/SupNorms.log"
+    },
+    "TernaryGoldbach.Helfgott.Chebyshev": {
+      "source": "64ebfc0a0a731ea40ffd05213b5bb46aa7b21b3a7d3bc8ed72e6335da4622942",
+      "compiled_source": "64ebfc0a0a731ea40ffd05213b5bb46aa7b21b3a7d3bc8ed72e6335da4622942",
+      "olean": "3ed4bf3725051f624210081c122f8464e01e285ec8863794b6925c36c5c364a7",
+      "module": "TernaryGoldbach.Helfgott.Chebyshev",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 93.538,
+      "cpu_seconds": 66.789,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Helfgott/Chebyshev.log"
+    },
+    "TernaryGoldbach.Prelim.MoebiusCoprime": {
+      "source": "ef710a199c99b25a35cd289a1ab891ed6674c88d07cac7c0b8c704f580fbb26e",
+      "compiled_source": "ef710a199c99b25a35cd289a1ab891ed6674c88d07cac7c0b8c704f580fbb26e",
+      "olean": "2854eda2de69b60c1280b319732f7a134a860d624660fa7964cd91b591058922",
+      "module": "TernaryGoldbach.Prelim.MoebiusCoprime",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 73.969,
+      "cpu_seconds": 52.459,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Prelim/MoebiusCoprime.log"
+    },
+    "TernaryGoldbach.Explicit.MellinRotate": {
+      "source": "b3c94fed8319e2a6282f2dc1a2c2a7514e6992964137b3cd25257cef094a71dc",
+      "compiled_source": "b3c94fed8319e2a6282f2dc1a2c2a7514e6992964137b3cd25257cef094a71dc",
+      "olean": "311a3410c07a2fb85f0cd1afcd52c7a9d8650587114fa7dfa8825a6bf5c6a1e7",
+      "module": "TernaryGoldbach.Explicit.MellinRotate",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 469.692,
+      "cpu_seconds": 426.562,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Explicit/MellinRotate.log"
+    },
+    "GoldbachElementary": {
+      "source": "eb350bc9abfcce96d3ecd8b4a38967508253b1ae040f80a122b8d28a628c9fed",
+      "compiled_source": "eb350bc9abfcce96d3ecd8b4a38967508253b1ae040f80a122b8d28a628c9fed",
+      "olean": "9c6bce5231aa4814a27ce3f5bdfc278b77441185d8913305b2ac442a9b73ae7e",
+      "module": "GoldbachElementary",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 60.63,
+      "cpu_seconds": 32.504,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/GoldbachElementary.log"
+    },
+    "AuditElementary": {
+      "source": "36a5d6b668d6dd53ffb63eec7d26a0bc8804309268fece8f5be517d8d32161ff",
+      "compiled_source": "36a5d6b668d6dd53ffb63eec7d26a0bc8804309268fece8f5be517d8d32161ff",
+      "olean": "69fea53259ba2c4d689049717e120a4bd4b8999373cec828d19bb66f1860643a",
+      "module": "AuditElementary",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 29.948,
+      "cpu_seconds": 24.341,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/AuditElementary.log",
+      "axioms": {
+        "TernaryGoldbach.Helfgott.circle_identity_input": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "TernaryGoldbach.Helfgott.nonprime_input": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "TernaryGoldbach.Helfgott.final_inequality_crude": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "TernaryGoldbach.Explicit.GMellin": {
+      "source": "cb9c596c81c545a147588c9252333c7cf74e7118372ec470d0ff7a7f928720b6",
+      "compiled_source": "cb9c596c81c545a147588c9252333c7cf74e7118372ec470d0ff7a7f928720b6",
+      "olean": "ad9181c31736289ad685f14598bc287520a3023a3a05bb668fbb94199564326f",
+      "module": "TernaryGoldbach.Explicit.GMellin",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 30.75,
+      "cpu_seconds": 22.264,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Explicit/GMellin.log"
+    },
+    "GoldbachOrderAndLogDeriv": {
+      "source": "2ba3dfcb52a3e962507f0727eef51a0cb5a680efdb728b64d4f85fadd501da18",
+      "compiled_source": "2ba3dfcb52a3e962507f0727eef51a0cb5a680efdb728b64d4f85fadd501da18",
+      "olean": "10a6b51e2ad127d23541a18897096335745582f540a54caaf9dac9631be3bd9a",
+      "module": "GoldbachOrderAndLogDeriv",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 17.422,
+      "cpu_seconds": 10.335,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/GoldbachOrderAndLogDeriv.log"
+    },
+    "TernaryGoldbach.Explicit.Landau": {
+      "source": "7943d64e3b96b46eeb97239730d101543651eebe83ae0ba8fb0d8ce92df66e66",
+      "compiled_source": "60c2be27327cb2b1ef13bce5b12d889b430ffdd7316982296106e35a8c55653d",
+      "olean": "37585550c3f3ed4c0d3bf6965afc1f868570488f5320d1a1d1e6390c26e008d5",
+      "module": "TernaryGoldbach.Explicit.Landau",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 48.896,
+      "cpu_seconds": 20.851,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Explicit/Landau.log"
+    },
+    "TernaryGoldbach.Explicit.RectResidue": {
+      "source": "72b5e290f49ba18642104fc8d16bc00f4155890ca21c79bc68ec13d17098c809",
+      "compiled_source": "21c2ff71e05c662cd186d0a4febdc8ca258cc94db430492c70ba9a036206f440",
+      "olean": "f2ae24116b53fd32a40e3ff5e2a3908b0ae47f6a019dbcf48ec4b7d78b9f402a",
+      "module": "TernaryGoldbach.Explicit.RectResidue",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 28.213,
+      "cpu_seconds": 19.562,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/Explicit/RectResidue.log"
+    },
+    "TernaryGoldbach.MinorArcs.Montgomery": {
+      "source": "318fb7021f7723e37e781e066d1068994f6cebefbeaf8591c80f9ed0eb22e9d5",
+      "compiled_source": "318fb7021f7723e37e781e066d1068994f6cebefbeaf8591c80f9ed0eb22e9d5",
+      "olean": "56aa00e1a5a4b9fabe21a34cc1b276f4bba056fc4772a88d1287f00cad16f69c",
+      "module": "TernaryGoldbach.MinorArcs.Montgomery",
+      "code": 0,
+      "recheck_all_imports": false,
+      "wall_seconds": 31.468,
+      "cpu_seconds": 14.255,
+      "log": "/tmp/goldbach-large-23b2d68-4.33.1/TernaryGoldbach/MinorArcs/Montgomery.log"
+    }
+  }
+}

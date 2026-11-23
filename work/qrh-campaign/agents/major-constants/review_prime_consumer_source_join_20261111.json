@@ -1,0 +1,33 @@
+{
+  "scope": "independent exact scalar checks only; no spectral or prime certificates",
+  "checks": {
+    "height_floor": true,
+    "mass_endpoint_9/8": true,
+    "mass_endpoint_15/8": true,
+    "mass_log_bound": true,
+    "harmonic_log_bound": true,
+    "bin_count": true,
+    "harmonic_arithmetic": true,
+    "unweighted_moment": true,
+    "exponential_tail_ratio": true,
+    "weight_bound": true,
+    "weighted_moment": true,
+    "sqrt_endpoint": true,
+    "low_error": true,
+    "other_error_identity": true,
+    "other_error": true,
+    "smoothing_final": true,
+    "upper_range": true,
+    "finite_first": true,
+    "finite_second": true,
+    "small_psi_root": true,
+    "finite_nonprime_base": true,
+    "finite_nonprime_derivative": true
+  },
+  "count": 22,
+  "scalars": {
+    "unweighted_upper": "277096/717",
+    "other_L_error": "2188002001/1000000000000",
+    "relative_error_upper": "157000157/25000000000"
+  }
+}

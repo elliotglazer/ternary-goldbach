@@ -1,0 +1,24 @@
+# Complete h1 integer source-to-sign admission
+
+At conductor 10004 and height 5/64 HOL4 reconstructed all 4,800 tensor-order residues and mixed-grid Horner inputs, added their production raw heads, regridded each assembled value once, and checked all 2,301 completed integer signs. The exported theorem full_admit takes P20 coefficients and grid100 raw heads as inputs. The sign admission materializes no intermediate input or spectrum file. A separate exported equality predicate full_identity checked every one of the 4,800 assembled grid81 pairs and 2,301 spectrum centers against native reference arrays.
+
+| Single cold admission | CPU s |
+|---|---:|
+| Parse and construct literal HOL terms | 0.961223 |
+| Encode arguments and prepare CV | 0.068162 |
+| CV execution of the entire integer program | 0.960776 |
+| Decode Boolean and discharge premises | 0.000142 |
+| Total through storing the closed theorem | 2.409250 |
+
+The fresh process including loading and export took 21.82 s wall, 15.23 s CPU, and 1,045,076 KiB peak RSS. Its theory data occupied 4,298,662 bytes. Building the generic integration theory took 39.28 s wall and 12.04 s CPU; building the audit module took 18.97 s wall and 3.18 s CPU. Full identity validation ran in a separate fresh process in 32.21 s wall and 25.73 s CPU, with 914,344 KiB peak RSS. The identity predicate itself used 1.314 CPU s for CV execution and 4.000 s through theorem storage. The identity proof and sign proof had empty hypotheses, only DISK_THM oracle tags and the usual four HOL ancestor axioms.
+
+## Run boundary
+
+* The packed mixed cache contains 1,025 literals, one per fine anchor, with 20 signed coefficient pairs in degree-descending order. The decimal payload is 313,650 bytes. Each degree uses its measured signed width plus a bias. The unpacker recovers every supplied integer exactly. The highest 11 coefficient pairs at this low height are all zero on the specified mixed grids. The program still executes all 19 stages per residue. Timings at other heights can differ.
+* The raw head payload contains 300 blocks, each carrying 16 112-bit signed coordinate pairs on grid100, in 324,000 bytes. Its source is h1-rawhead.tsv with SHA256 68814315485e92cfeee9b962f72c85d9ac63221eceefe472bf2cc79ae2c3444d. An independent native regeneration including 4,801 phase states and all final analytic checks matched every production head in 0.0854 s wall and 0.09375 s CPU. The P20 cache's native finite Euler–Maclaurin generation, midpoint translations and checks previously took 12.57 s wall and 10.16 s CPU. These generation costs are outside the HOL timer.
+* HOL receives the 185 grid81 root pairs, the cached HOL equation encoding 2,301 phase pairs, two odd/even completion factors, one maximum radius and a packed expected-sign vector. The earlier native Gauss/phase generation took 0.374 s. The reusable phase definition/encoding theory cost 63.00 s wall and 21.45 s CPU, including 2.294 CPU s for its encoding proof. Root construction and analytic verification have separate artifacts under c10004-roots and c10004-root-analytic.
+* CRT residue generation, tie-down nearest anchor selection, the K20 schedule's 91,200 complex stages, grid94-to-100 export, head addition, grid100-to-81 regridding, character tensor and guard comparisons all execute inside the timed HOL conversion. The grid100 head uses retained grid120 states, which the upstream native process produced from floor inverse roots and Arb-rounded grid122 phase steps. Formal links to the underlying exact analytic objects, including the Euler–Maclaurin coefficients and the error envelope, remain open.
+
+All 2,301 decisions matched the native completed sign table. The maximum native provider radius was 13,308 grid units, which also covers the alternate direct-center delta bound of 13,303. Seven assembled source pairs differ by one grid unit from the direct-rounded reference. Relative to direct-Arb grid100 heads followed by the same Horner assembly, seven assembled source pairs differ; 2,259 spectrum centers change, by up to 11 in one coordinate. The identity proof uses the production-head spectrum. Both the separate h1-rawspectrum.tsv provider and h1-state-spectrum.tsv recomputation agree with those centers.
+
+C10004FullIntegerScript.sml contains the full program. full.sml runs the kernel and prepare.py builds the payloads, computes the independent native reference, and compares to the provider. prep.json and native_heads.json record native checks. The source and comparison arrays are only admission inputs in the explicit identity diagnostic. The separate kernel equation selection uses schematic CV arguments, and the packed-list encoding uses kernel INST on fresh-variable list templates. The measured total includes creating these templates for both payload shapes.

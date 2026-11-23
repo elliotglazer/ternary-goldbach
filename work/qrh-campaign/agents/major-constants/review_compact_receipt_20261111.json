@@ -1,0 +1,281 @@
+{
+  "scope": "Independent sparse-bit arithmetic and recorded branch checks only",
+  "source_sha256": "C39982174CAC9C51E9F816275082BCE322CA2AD143D9FCE61081DF72E57B11EF",
+  "counts": {
+    "ordered_raw_intervals": 2029,
+    "display_containments": 2029,
+    "display_directed_rounding": 2029,
+    "shared_box_equalities": 32,
+    "upper_halfplane": 56,
+    "translation_raw_arithmetic_enclosures_fail": 14,
+    "translation_domains": 16,
+    "root_domain_rotation_component_checks": 12,
+    "root_argument_exact_fail": 2,
+    "root_norm_square_pass": 12,
+    "root_u_square_pass": 12,
+    "root_v_quotient_pass": 9,
+    "coarse_inverse_fail": 24,
+    "inversion_imaginary_growth": 12,
+    "translation_raw_arithmetic_enclosures_pass": 2,
+    "root_argument_exact_pass": 10,
+    "root_v_quotient_fail": 3,
+    "rejected_mutations": 6,
+    "rejected_false_arithmetic_claims": 4
+  },
+  "binary_endpoint_occurrences": 4058,
+  "raw_translation_witness_failures": [
+    {
+      "point": 0,
+      "step": 0,
+      "n": -1,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 0,
+      "n": -1,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 2,
+      "n": 4,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 4,
+      "n": 2,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 6,
+      "n": -12,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 8,
+      "n": -2,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 1,
+      "step": 10,
+      "n": 6,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 2,
+      "step": 0,
+      "n": -1,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 0,
+      "n": -1,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 2,
+      "n": 4,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 4,
+      "n": 2,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 6,
+      "n": -12,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 8,
+      "n": -2,
+      "signs": [
+        1,
+        -1
+      ]
+    },
+    {
+      "point": 3,
+      "step": 10,
+      "n": 19,
+      "signs": [
+        1,
+        -1
+      ]
+    }
+  ],
+  "raw_quotient_witness_failures": [
+    {
+      "point": 1,
+      "step": 1,
+      "y_endpoint": 1,
+      "u_endpoint": 0,
+      "signs": [
+        1,
+        -1
+      ],
+      "y": [
+        65775792788951038096411612061864788594449234370318847354339537018441016150315,
+        -257
+      ],
+      "u": [
+        10908988074906219180853259525045293863052979818234192973529649381851608843347,
+        -254
+      ],
+      "v": [
+        [
+          87271115523917562917018797053157246307452779869075044848831902119243336616365,
+          -257
+        ],
+        [
+          87271115523917562917018797053157246307452779869075044848831902119243336616415,
+          -257
+        ]
+      ]
+    },
+    {
+      "point": 1,
+      "step": 5,
+      "y_endpoint": 0,
+      "u_endpoint": 0,
+      "signs": [
+        -1,
+        1
+      ],
+      "y": [
+        -80463587621610535728019516608242090651231125422073527264473684433091885260103,
+        -259
+      ],
+      "u": [
+        96601911127114446549838373231921978668154453315708732018536227246473441949193,
+        -258
+      ],
+      "v": [
+        [
+          -96447852941296601402586645164973453948784731250289541195978855681439602165835,
+          -258
+        ],
+        [
+          -96447852941296601402586645164973453948784731250289541195978855681439602156373,
+          -258
+        ]
+      ]
+    },
+    {
+      "point": 3,
+      "step": 5,
+      "y_endpoint": 0,
+      "u_endpoint": 0,
+      "signs": [
+        -1,
+        1
+      ],
+      "y": [
+        -80463597183263179333671201229286984254679797673227624938794486630313372131783,
+        -259
+      ],
+      "u": [
+        96526133563400775983265092697617421903608942399763289791719443721862495567991,
+        -258
+      ],
+      "v": [
+        [
+          -96523580521125962428937855566116322162407008784111206526994466599982958859207,
+          -258
+        ],
+        [
+          -96523580521125962428937855566116322162407008784111206526994466599982958849733,
+          -258
+        ]
+      ]
+    }
+  ],
+  "first_translation_exact_diagnostic": {
+    "point": 0,
+    "T": 1000000,
+    "r": "0",
+    "step": 0,
+    "n": -1,
+    "recorded_input_binary_re": [
+      {
+        "mantissa": "-57896044618542305854132046004956919652080144651701577215397953469767229054481",
+        "exponent": -255
+      },
+      {
+        "mantissa": "-57896044618542305854132046004956919652080144651701577215397953469767229054479",
+        "exponent": -255
+      }
+    ],
+    "recorded_output_binary_re": [
+      {
+        "mantissa": "31082640110290001034562265977759734291642114279939416787485936545745600507",
+        "exponent": -283
+      },
+      {
+        "mantissa": "31082640110290001034562265977759734291642114279939416787485936546015084549",
+        "exponent": -283
+      }
+    ],
+    "output_minus_input_plus_n": [
+      [
+        133693435,
+        -283
+      ],
+      [
+        -133693435,
+        -283
+      ]
+    ]
+  },
+  "min_exponent": -54699295540,
+  "max_exponent": 0,
+  "maximum_working_term_mantissa_bits_encountered": 767,
+  "diagnostic_completed": true
+}

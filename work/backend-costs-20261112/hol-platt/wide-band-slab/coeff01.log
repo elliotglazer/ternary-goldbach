@@ -1,0 +1,342 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/CoeffSlabScript.uo to produce theory-builder executable
+<<HOL message: Created theory "CoeffSlab">>
+Saved definition ____ "fromzig_def"
+Saved definition ____ "nextw_def"
+Saved theorem _______ "next_p_rules"
+Saved theorem _______ "next_p_ind"
+Saved theorem _______ "next_p_strongind"
+Saved theorem _______ "next_p_cases"
+Saved theorem _______ "cv_nextw_thm"
+Finished translating nextw, stored in cv_nextw_thm
+
+WARNING: definition of cv_nextw has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem next_p[cv_pre]:
+  ∀w r v. next_p w r v
+Proof
+  ho_match_mp_tac nextw_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "next_ok"
+Saved definition ____ "dot_def"
+Saved definition ____ "comp0_def"
+Saved definition ____ "comp1_def"
+Saved definition ____ "comp2_def"
+Saved definition ____ "comp3_def"
+Saved definition ____ "comp4_def"
+Saved definition ____ "comp5_def"
+Saved definition ____ "comp6_def"
+Saved definition ____ "dispatch_def"
+Saved definition ____ "outs_def"
+Saved definition ____ "ok_def"
+Saved definition ____ "decomp_def"
+Starting translation of ok from CoeffSlabTheory.
+Starting translation of outs from CoeffSlabTheory.
+Starting translation of dispatch from CoeffSlabTheory.
+Starting translation of comp4 from CoeffSlabTheory.
+Starting translation of comp3 from CoeffSlabTheory.
+Starting translation of comp2 from CoeffSlabTheory.
+Starting translation of comp1 from CoeffSlabTheory.
+Starting translation of comp0 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp0_thm"
+Finished translating comp0, stored in cv_comp0_thm
+Starting translation of comp1 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp1_thm"
+Finished translating comp1, stored in cv_comp1_thm
+Starting translation of comp2 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp2_thm"
+Finished translating comp2, stored in cv_comp2_thm
+Starting translation of comp3 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp3_thm"
+Finished translating comp3, stored in cv_comp3_thm
+Starting translation of comp4 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp4_thm"
+Finished translating comp4, stored in cv_comp4_thm
+Starting translation of dispatch from CoeffSlabTheory.
+Starting translation of comp6 from CoeffSlabTheory.
+Starting translation of comp5 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp5_thm"
+Finished translating comp5, stored in cv_comp5_thm
+Starting translation of comp6 from CoeffSlabTheory.
+Saved theorem _______ "cv_comp6_thm"
+Finished translating comp6, stored in cv_comp6_thm
+Starting translation of dispatch from CoeffSlabTheory.
+Saved theorem _______ "cv_dispatch_thm"
+Finished translating dispatch, stored in cv_dispatch_thm
+Starting translation of outs from CoeffSlabTheory.
+Starting translation of dot from CoeffSlabTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in CoeffSlab)>>
+Saved definition ____ "cv_dot_def"
+Saved induction _____ "cv_dot_ind"
+Saved theorem _______ "cv_dot_thm"
+Finished translating dot, stored in cv_dot_thm
+Starting translation of outs from CoeffSlabTheory.
+Starting translation of fromzig from CoeffSlabTheory.
+Saved theorem _______ "cv_fromzig_thm"
+Finished translating fromzig, stored in cv_fromzig_thm
+Starting translation of outs from CoeffSlabTheory.
+Saved definition ____ "cv_outs_def"
+Saved induction _____ "cv_outs_ind"
+Saved theorem _______ "cv_outs_thm"
+Finished translating outs, stored in cv_outs_thm
+Starting translation of ok from CoeffSlabTheory.
+Saved definition ____ "MAP_fromzig_1_def"
+Saved induction _____ "MAP_fromzig_1_ind"
+Starting translation of MAP_fromzig from CoeffSlabTheory.
+Saved definition ____ "cv_MAP_fromzig_def"
+Saved induction _____ "cv_MAP_fromzig_ind"
+Saved theorem _______ "cv_MAP_fromzig_thm"
+Finished translating MAP_fromzig, stored in cv_MAP_fromzig_thm
+Saved theorem _______ "MAP_fromzig_ho"
+Starting translation of ok from CoeffSlabTheory.
+Saved theorem _______ "cv_ok_thm"
+Finished translating ok, stored in cv_ok_thm
+Starting translation of decomp from CoeffSlabTheory.
+Saved definition ____ "MAP_dispatch_1_def"
+Saved induction _____ "MAP_dispatch_1_ind"
+Starting translation of MAP_dispatch from CoeffSlabTheory.
+Saved definition ____ "cv_MAP_dispatch_def"
+Saved induction _____ "cv_MAP_dispatch_ind"
+Saved theorem _______ "cv_MAP_dispatch_thm"
+Finished translating MAP_dispatch, stored in cv_MAP_dispatch_thm
+Saved theorem _______ "MAP_dispatch_ho"
+Starting translation of decomp from CoeffSlabTheory.
+Saved theorem _______ "cv_decomp_thm"
+Finished translating decomp, stored in cv_decomp_thm
+Saved definition ____ "digest_def"
+Saved definition ____ "live_def"
+Saved definition ____ "rawlive_def"
+Starting translation of live from CoeffSlabTheory.
+Starting translation of digest from CoeffSlabTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of live from CoeffSlabTheory.
+Saved theorem _______ "cv_live_thm"
+Finished translating live, stored in cv_live_thm
+Starting translation of rawlive from CoeffSlabTheory.
+Saved theorem _______ "cv_rawlive_thm"
+Finished translating rawlive, stored in cv_rawlive_thm
+Saved theorem _______ "pfx_compute"
+Saved definition ____ "pfx_def"
+Saved induction _____ "pfx_ind"
+Saved definition ____ "resident_def"
+Starting translation of resident from CoeffSlabTheory.
+Starting translation of pfx from CoeffSlabTheory.
+Saved theorem _______ "cv_pfx_thm"
+Finished translating pfx, stored in cv_pfx_thm
+Starting translation of resident from CoeffSlabTheory.
+Saved theorem _______ "cv_resident_thm"
+Finished translating resident, stored in cv_resident_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/CoeffSlabScript.sml:139: warning: Pattern is not exhaustive. Found near val [ga, gb] = tokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/CoeffSlabScript.sml:144: warning: Pattern is not exhaustive. Found near val [tag, k, b, ...] = tokens ()
+LITERAL b1j3200n8 0.031098
+SETUP b1j3200n8A1 0.087963
+SLAB b1j3200n8A1 1 0.429078 0.000157
+HITS b1j3200n8A1 0
+SETUP b1j3200n8B1 0.116105
+SLAB b1j3200n8B1 1 0.22262 0.000147
+HITS b1j3200n8B1 1
+SETUP b1j3200n8A2 0.00548
+SLAB b1j3200n8A2 2 0.126629 0.000133
+HITS b1j3200n8A2 3
+SETUP b1j3200n8B2 0.004403
+SLAB b1j3200n8B2 2 0.131945 0.000135
+HITS b1j3200n8B2 3
+SETUP b1j3200n8A3 0.004589
+SLAB b1j3200n8A3 3 0.131234 0.00014
+HITS b1j3200n8A3 3
+SETUP b1j3200n8B3 0.004726
+SLAB b1j3200n8B3 3 0.135888 0.000149
+HITS b1j3200n8B3 3
+LITERAL b1j3208n8 0.034592
+SETUP b1j3208n8A1 0.006585
+SLAB b1j3208n8A1 1 0.145916 0.000232
+HITS b1j3208n8A1 2
+SETUP b1j3208n8B1 0.00643
+SLAB b1j3208n8B1 1 0.12253 0.000138
+HITS b1j3208n8B1 3
+SETUP b1j3208n8A2 0.007009
+SLAB b1j3208n8A2 2 0.120514 0.000133
+HITS b1j3208n8A2 3
+SETUP b1j3208n8B2 0.004761
+SLAB b1j3208n8B2 2 0.115981 0.000133
+HITS b1j3208n8B2 3
+SETUP b1j3208n8A3 0.004376
+SLAB b1j3208n8A3 3 0.124598 0.00013
+HITS b1j3208n8A3 3
+SETUP b1j3208n8B3 0.004991
+SLAB b1j3208n8B3 3 0.121199 0.000155
+HITS b1j3208n8B3 3
+LITERAL b2j9601n8 0.029977
+SETUP b2j9601n8A1 0.025791
+SLAB b2j9601n8A1 1 0.079039 0.00013
+HITS b2j9601n8A1 0
+SETUP b2j9601n8B1 0.024201
+SLAB b2j9601n8B1 1 0.068649 0.000131
+HITS b2j9601n8B1 1
+SETUP b2j9601n8A2 0.004352
+SLAB b2j9601n8A2 2 0.072347 0.000198
+HITS b2j9601n8A2 3
+SETUP b2j9601n8B2 0.005031
+SLAB b2j9601n8B2 2 0.058997 0.000131
+HITS b2j9601n8B2 3
+SETUP b2j9601n8A3 0.004966
+SLAB b2j9601n8A3 3 0.063513 0.000134
+HITS b2j9601n8A3 3
+SETUP b2j9601n8B3 0.004885
+SLAB b2j9601n8B3 3 0.062025 0.00013
+HITS b2j9601n8B3 3
+LITERAL b2j9609n8 0.031791
+SETUP b2j9609n8A1 0.005002
+SLAB b2j9609n8A1 1 0.070731 0.000172
+HITS b2j9609n8A1 2
+SETUP b2j9609n8B1 0.005641
+SLAB b2j9609n8B1 1 0.061918 0.000127
+HITS b2j9609n8B1 3
+SETUP b2j9609n8A2 0.004528
+SLAB b2j9609n8A2 2 0.063172 0.000133
+HITS b2j9609n8A2 3
+SETUP b2j9609n8B2 0.004709
+SLAB b2j9609n8B2 2 0.062387 0.000159
+HITS b2j9609n8B2 3
+SETUP b2j9609n8A3 0.004325
+SLAB b2j9609n8A3 3 0.063055 0.000133
+HITS b2j9609n8A3 3
+SETUP b2j9609n8B3 0.004276
+SLAB b2j9609n8B3 3 0.065961 0.000132
+HITS b2j9609n8B3 3
+LITERAL b3j19201n8 0.029331
+SETUP b3j19201n8A1 0.010434
+SLAB b3j19201n8A1 1 0.025841 0.000128
+HITS b3j19201n8A1 0
+SETUP b3j19201n8B1 0.01137
+SLAB b3j19201n8B1 1 0.034947 0.000147
+HITS b3j19201n8B1 1
+SETUP b3j19201n8A2 0.005567
+SLAB b3j19201n8A2 2 0.026186 0.000252
+HITS b3j19201n8A2 3
+SETUP b3j19201n8B2 0.004119
+SLAB b3j19201n8B2 2 0.025467 0.000178
+HITS b3j19201n8B2 3
+SETUP b3j19201n8A3 0.004793
+SLAB b3j19201n8A3 3 0.027787 0.000147
+HITS b3j19201n8A3 3
+SETUP b3j19201n8B3 0.00459
+SLAB b3j19201n8B3 3 0.024154 0.000131
+HITS b3j19201n8B3 3
+LITERAL b3j19209n8 0.032337
+SETUP b3j19209n8A1 0.004859
+SLAB b3j19209n8A1 1 0.035268 0.000136
+HITS b3j19209n8A1 2
+SETUP b3j19209n8B1 0.004376
+SLAB b3j19209n8B1 1 0.024733 0.000134
+HITS b3j19209n8B1 3
+SETUP b3j19209n8A2 0.004317
+SLAB b3j19209n8A2 2 0.024327 0.000135
+HITS b3j19209n8A2 3
+SETUP b3j19209n8B2 0.004331
+SLAB b3j19209n8B2 2 0.027197 0.000141
+HITS b3j19209n8B2 3
+SETUP b3j19209n8A3 0.004288
+SLAB b3j19209n8A3 3 0.028004 0.000129
+HITS b3j19209n8A3 3
+SETUP b3j19209n8B3 0.004506
+SLAB b3j19209n8B3 3 0.025968 0.000133
+HITS b3j19209n8B3 3
+LITERAL b4j44801n8 0.035547
+SETUP b4j44801n8A1 0.004808
+SLAB b4j44801n8A1 1 0.013315 0.000131
+HITS b4j44801n8A1 0
+SETUP b4j44801n8B1 0.004938
+SLAB b4j44801n8B1 1 0.011945 0.000136
+HITS b4j44801n8B1 1
+SETUP b4j44801n8A2 0.004146
+SLAB b4j44801n8A2 2 0.011729 0.000146
+HITS b4j44801n8A2 3
+SETUP b4j44801n8B2 0.006068
+SLAB b4j44801n8B2 2 0.011662 0.000196
+HITS b4j44801n8B2 3
+SETUP b4j44801n8A3 0.004435
+SLAB b4j44801n8A3 3 0.015879 0.000194
+HITS b4j44801n8A3 3
+SETUP b4j44801n8B3 0.00418
+SLAB b4j44801n8B3 3 0.012973 0.000131
+HITS b4j44801n8B3 3
+LITERAL b4j44809n8 0.03283
+SETUP b4j44809n8A1 0.004281
+SLAB b4j44809n8A1 1 0.011814 0.000126
+HITS b4j44809n8A1 2
+SETUP b4j44809n8B1 0.004349
+SLAB b4j44809n8B1 1 0.012092 0.00013
+HITS b4j44809n8B1 3
+SETUP b4j44809n8A2 0.010889
+SLAB b4j44809n8A2 2 0.011837 0.000128
+HITS b4j44809n8A2 3
+SETUP b4j44809n8B2 0.004557
+SLAB b4j44809n8B2 2 0.012314 0.000129
+HITS b4j44809n8B2 3
+SETUP b4j44809n8A3 0.00437
+SLAB b4j44809n8A3 3 0.011671 0.000137
+HITS b4j44809n8A3 3
+SETUP b4j44809n8B3 0.004143
+SLAB b4j44809n8B3 3 0.011647 0.000133
+HITS b4j44809n8B3 3
+LITERAL b5j74121n8 0.030686
+SETUP b5j74121n8A1 0.015643
+SLAB b5j74121n8A1 1 0.012216 0.000136
+HITS b5j74121n8A1 0
+SETUP b5j74121n8B1 0.005373
+SLAB b5j74121n8B1 1 0.011098 0.000241
+HITS b5j74121n8B1 1
+SETUP b5j74121n8A2 0.004244
+SLAB b5j74121n8A2 2 0.011354 0.000134999999999
+HITS b5j74121n8A2 3
+SETUP b5j74121n8B2 0.004846
+SLAB b5j74121n8B2 2 0.011947 0.000134
+HITS b5j74121n8B2 3
+SETUP b5j74121n8A3 0.004376
+SLAB b5j74121n8A3 3 0.011675 0.000128999999999
+HITS b5j74121n8A3 3
+SETUP b5j74121n8B3 0.009824
+SLAB b5j74121n8B3 3 0.012067 0.00027
+HITS b5j74121n8B3 3
+LITERAL b5j74129n8 0.031142
+SETUP b5j74129n8A1 0.004325
+SLAB b5j74129n8A1 1 0.011699 0.000133
+HITS b5j74129n8A1 2
+SETUP b5j74129n8B1 0.004605
+SLAB b5j74129n8B1 1 0.011656 0.000132
+HITS b5j74129n8B1 3
+SETUP b5j74129n8A2 0.004318
+SLAB b5j74129n8A2 2 0.01959 0.00012
+HITS b5j74129n8A2 3
+SETUP b5j74129n8B2 0.00472
+SLAB b5j74129n8B2 2 0.013215 0.000124
+HITS b5j74129n8B2 3
+SETUP b5j74129n8A3 0.004249
+SLAB b5j74129n8A3 3 0.011881 0.000129
+HITS b5j74129n8A3 3
+SETUP b5j74129n8B3 0.00533
+SLAB b5j74129n8B3 3 0.011555 0.000132
+HITS b5j74129n8B3 3
+COEFFICIENT_REUSE_DONE
+Exporting theory "CoeffSlab" ... done.
+Theory "CoeffSlab" took 5.0s to build
+Holmake: [1/1] CoeffSlab

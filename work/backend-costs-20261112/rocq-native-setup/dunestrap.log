@@ -1,0 +1,4 @@
+dune build -j4 --root . theories_dune ltac2_dune
+touch .dune-stamp
+cp -a _build/default/theories_dune theories/dune && chmod +w theories/dune
+cp -a _build/default/ltac2_dune user-contrib/Ltac2/dune && chmod +w user-contrib/Ltac2/dune

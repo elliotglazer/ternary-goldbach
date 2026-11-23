@@ -1,0 +1,47 @@
+{
+  "q": 65537,
+  "label": 65536,
+  "order": 2,
+  "parity": 0,
+  "main": "690",
+  "H": "740",
+  "native_central_L": "[1.31438645058213574963892809397391174433463771945000812492900026042 +/- 4.90e-67]",
+  "main_signs": [
+    1,
+    -1
+  ],
+  "endpoint_sign": 1,
+  "coarse_samples": 9473,
+  "repair_probes": 1,
+  "phase_upper": "724515957996011/4294967296",
+  "rows": [
+    {
+      "tag": "coarse",
+      "positive_main_brackets": 1621,
+      "positive_aux_brackets": 127,
+      "K": 3242,
+      "W": "204105/32",
+      "upper_minus_K": "1061868763627/214748364800",
+      "strict_ordinary": false,
+      "strict_even_count": false
+    },
+    {
+      "tag": "repaired",
+      "positive_main_brackets": 1623,
+      "positive_aux_brackets": 127,
+      "K": 3246,
+      "W": "204105/32",
+      "upper_minus_K": "202875304427/214748364800",
+      "strict_ordinary": true,
+      "strict_even_count": true
+    }
+  ],
+  "input_hashes": {
+    "spectrum.py": "a88b567d152f0b856a5014b68120c74b22720aa61b6dc09583830773eda4e4e7",
+    "grid.py": "903346810caf70979af8826012ad02b0aaace552592bd3223bcaea715d47c325",
+    "repair.py": "71776f9c27006d901f12aad2db649189ae77aca12b8150c8729a824203dba855",
+    "real_character_scan.py": "c3694d68436105f5caac6a466cd32460a9787f69fc20d515a82816013b04398d",
+    "coefficients.tsv": "5fa209cc0c63ebc0e3e8519b69e1e23560194b358f31a7c039aa175503c21dc0",
+    "grid-65536.txt": "6b0a9197d6f538da438790389c1e0a73d0c0e5fd1129e241e6456b9f3baad61b"
+  }
+}

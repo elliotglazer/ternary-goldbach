@@ -1,0 +1,11 @@
+0 0.47
+8192 22.94
+16384 23.67
+{'q': 42248, 'labels': (4747, 28195), 'main': 21901, 'final': 22541, 'N': 131072, 'J': 17067, 'theta': 64, 'bits': 256, 'recurrence_terms': 5618541, 'empty': 2665, 'largest_m': 6886, 'cpu_seconds': 23.703125, 'wall_seconds': 24.01541539999016, 'sha256': {'spectrum.py': '492559e5f513b01f18adb00113a8eee11084f03f9560a836e3b1f80d61ae098b', 'coefficients.tsv': '821b5935937ac653628e190ee955f1eed7e89b5167cf4668e128e092f11214cb'}}
+4747 0.84375 35.53125
+28195 0.875 33.78125
+[{'label': 4747, 'coarse': 22542, 'discovery_requests': 9, 'edge_requests': 5, 'discovery_cpu': 0.03125, 'verification_cpu': 0.0625, 'raw_error': 7.709363293075167e-53, 'min_abs_coarse': 2.991626497907941e-29}, {'label': 28195, 'coarse': 22542, 'discovery_requests': 6, 'edge_requests': 5, 'discovery_cpu': 0.015625, 'verification_cpu': 0.03125, 'raw_error': 7.709363293075167e-53, 'min_abs_coarse': 5.278132723500451e-28}]
+(4747, 28195) coarse [(8280, 320, {'Rumely': 29.526315584387632, 'moderate': 30.65745330069214, 'elementary': 41.599079274609686}), (8280, 640, {'Rumely': 29.785447642579676, 'moderate': 30.350945467203857, 'elementary': 35.82572191887535})]
+(4747, 28195) edge [(8281, 320, {'Rumely': 28.526315584387632, 'moderate': 29.65745330069214, 'elementary': 40.599079274609686}), (8281, 640, {'Rumely': 28.78544756628573, 'moderate': 29.35094539090991, 'elementary': 34.82572184258141})]
+(4747, 28195) fixed [(8309, 320, {'Rumely': 0.5263155843876303, 'moderate': 1.657453300692141, 'elementary': 12.599079274609686}), (8309, 640, {'Rumely': 0.3538948319107294, 'moderate': 0.9193926565349102, 'elementary': 6.394169108206406})]
+42248 [(8309, 320, {'Rumely': 0.5259638497140259, 'moderate': 1.657101476592943}), (8309, 640, {'Rumely': 0.3538914414122701, 'moderate': 0.9193892219569534})]

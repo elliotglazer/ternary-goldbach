@@ -1,0 +1,82 @@
+{
+  "scope": "fixed rational witnesses only; no inputs, roots, transforms, conductor inventory or precision selection",
+  "checks": 86,
+  "pins": {
+    "zero-sum/MIXED_RADIX_CHARACTER_TRANSFORM_EFFICIENCY_2026-11-11.md": "C2DF53947BA4EC8B401148F63EBDE8EAB95C5C6EA029317EDF4C326D38A87E01",
+    "zero-sum/MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md": "4AD43D7D2163A185BC05DFD7C3AC22237B58979BC3F139E79A69D414675F30F4",
+    "audit/REVIEW_MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md": "1268986720865E47569FC5E568546194C0A61EDC9AE80CDD78502CDC77385537",
+    "independent-feasibility/BLUESTEIN_CACHED_NORMALIZATION_RESEARCH_2026-11-11.md": "FB29C85F85401EAB8512CC8AB0E58063380B159690C4E6B155F82A407C959BA9",
+    "independent-feasibility/BLUESTEIN_NORMALIZATION_CONTEXT_INTERFACE_2026-11-11.md": "412A96766A6DF164F1332D09BD8CBF41959DB6C0BF9388C3EFD87C94ECBC0ED7",
+    "integration/REVIEW_BLUESTEIN_CACHED_NORMALIZATION_2026-11-11.md": "09E6E7CF4E81F55A95E728D21DA0C19ADD6D62536042A5FD60160C1E27575CEA",
+    "audit/LARGE_CHARACTER_COMPLETE_ERROR_CONTRACT_2026-11-11.md": "96063365898AE39625876AD5FF47D604F83A8C66BF1587F47763489C9F0A1C3D",
+    "audit/LARGE_BRANCH_UNIFORM_STABILITY_ALLOCATION_2026-11-11.md": "6F856467F0EC3B1BD4EDA6817FC71BCA3DC6DA71F32BF96F3AE85E8D034032BA",
+    "independent-feasibility/SUBGRID100_TRANSFORM_INPUT_REGRID_2026-11-11.md": "B7E781617D7E9E041CB340549A52387EC32303CFDE086B7BD5170448905BD266",
+    "audit/SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md": "03680BE7C2518CA0065244E840DC64203D529E26BE2E867F4C31A37652009904",
+    "prime-estimates/REVIEW_SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md": "1E9D3CDE80AB9BD78FD250E9404BF9936AA782F92CD9D2BDCC799D6558869328"
+  },
+  "radix_scalar_fixtures": [
+    [
+      1,
+      "2",
+      6
+    ],
+    [
+      2,
+      "4",
+      8
+    ],
+    [
+      3,
+      "103/18",
+      10
+    ],
+    [
+      5,
+      "21843/2500",
+      14
+    ],
+    [
+      8,
+      "1727005085/134217728",
+      20
+    ],
+    [
+      12,
+      "13834292080241731/760840571584512",
+      28
+    ]
+  ],
+  "bluestein_scalar_fixtures": [
+    {
+      "n": 2,
+      "P": 4,
+      "q": 154,
+      "C_old": 688,
+      "C_new": 614
+    },
+    {
+      "n": 3,
+      "P": 8,
+      "q": 284,
+      "C_old": 1636,
+      "C_new": 1352
+    },
+    {
+      "n": 13,
+      "P": 32,
+      "q": 1692,
+      "C_old": 9020,
+      "C_new": 6968
+    },
+    {
+      "n": 257,
+      "P": 1024,
+      "q": 56542,
+      "C_old": 473240,
+      "C_new": 356726
+    }
+  ],
+  "mean_augmented_uniform_cap": 186,
+  "mean_augmented_final_only_cap": 176,
+  "runtime_widths": "unchanged sup-norm capacities; not average-based"
+}

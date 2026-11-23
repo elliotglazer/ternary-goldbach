@@ -1,0 +1,63 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanned 24 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/FusedCountScript.uo to produce theory-builder executable
+<<HOL message: Created theory "FusedCount">>
+Saved definition ____ "raw_window_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in FusedCount)>>
+Saved definition ____ "margins_def"
+Saved induction _____ "margins_ind"
+Saved definition ____ "optionally_def"
+<<HOL message: mk_functional: 
+  pattern completion has added 1 clause to the original specification.>>
+Saved definition ____ "fused_def"
+Saved definition ____ "outcome_def"
+Starting translation of outcome from FusedCountTheory.
+Starting translation of fused from FusedCountTheory.
+Starting translation of optionally from FusedCountTheory.
+Starting translation of margins from FusedCountTheory.
+Starting translation of raw_window from FusedCountTheory.
+Starting translation of encloses from EnclosureTheory.
+Saved theorem _______ "cv_encloses_thm"
+Finished translating encloses, stored in cv_encloses_thm
+Starting translation of raw_window from FusedCountTheory.
+Saved theorem _______ "cv_raw_window_thm"
+Finished translating raw_window, stored in cv_raw_window_thm
+Starting translation of margins from FusedCountTheory.
+Saved theorem _______ "cv_margins_thm"
+Finished translating margins, stored in cv_margins_thm
+Starting translation of optionally from FusedCountTheory.
+Saved theorem _______ "cv_optionally_thm"
+Finished translating optionally, stored in cv_optionally_thm
+Starting translation of fused from FusedCountTheory.
+Saved theorem _______ "cv_fused_thm"
+Finished translating fused, stored in cv_fused_thm
+Starting translation of outcome from FusedCountTheory.
+Saved theorem _______ "cv_outcome_thm"
+Finished translating outcome, stored in cv_outcome_thm
+Saved theorem _______ "implies_observation"
+Exporting theory "FusedCount" ... done.
+Theory "FusedCount" took 2.8s to build
+Holmake: [1/1] FusedCount

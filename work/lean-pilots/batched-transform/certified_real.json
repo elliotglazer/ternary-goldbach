@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\CertifiedReal.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\CertifiedReal.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 12.064657999988412,
+  "user_cpu_seconds": 5.5,
+  "system_cpu_seconds": 6.40625,
+  "cpu_seconds": 11.90625,
+  "peak_working_set_bytes": 1005031424,
+  "observed_peak_private_bytes": 2321829888,
+  "memory_samples": 239,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "CertifiedReal.lean",
+      "bytes": 1322,
+      "sha256": "391A7AA9EC72871C7E961D891DE6C0E747BFE7FCB57EDBD62CEDE49EFDCA351E"
+    },
+    {
+      "path": "certified_real.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "CertifiedReal.olean",
+      "bytes": 15504,
+      "sha256": "DDF41838A3248A3A74EB466D8437644CBDE9A7C3F6219FB32EAE2D509E9DECA3"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

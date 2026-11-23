@@ -1,0 +1,76 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../small-character-kernel[0m
+Holmake: Scanning [1m../../small-gaussian[0m
+Holmake: Scanning [1m../../small-gaussian-transform[0m
+Holmake: Scanning [1m../../full-height-count[0m
+Holmake: Scanning [1m../../grid-projection[0m
+Holmake: Scanning [1m../../grid-sign-join[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/SparseHeadScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SparseHead">>
+Saved theorem _______ "load_row_compute"
+Saved definition ____ "load_row_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SparseHead)>>
+Saved definition ____ "load_grid_def"
+Saved induction _____ "load_grid_ind"
+Saved theorem _______ "chunk_compute"
+Saved definition ____ "chunk_def"
+Saved definition ____ "unpack_def"
+Saved induction _____ "unpack_ind"
+Saved definition ____ "region_def"
+Saved definition ____ "panel_radius_def"
+Starting translation of panel_radius from SparseHeadTheory.
+Saved theorem _______ "cv_panel_radius_thm"
+Finished translating panel_radius, stored in cv_panel_radius_thm
+Saved definition ____ "panel_valid_def"
+Saved induction _____ "panel_valid_ind"
+<<HOL message: mk_functional: 
+  pattern completion has added 1 clause to the original specification.>>
+Saved definition ____ "observation_def"
+Saved definition ____ "exact_observation_def"
+Starting translation of exact_observation from SparseHeadTheory.
+Starting translation of observation from SparseHeadTheory.
+Starting translation of load_grid from SparseHeadTheory.
+Starting translation of load_row from SparseHeadTheory.
+Saved theorem _______ "cv_load_row_thm"
+Finished translating load_row, stored in cv_load_row_thm
+Starting translation of load_grid from SparseHeadTheory.
+Saved theorem _______ "cv_load_grid_thm"
+Finished translating load_grid, stored in cv_load_grid_thm
+Starting translation of observation from SparseHeadTheory.
+Starting translation of region from SparseHeadTheory.
+Starting translation of unpack from SparseHeadTheory.
+Starting translation of chunk from SparseHeadTheory.
+Saved theorem _______ "cv_chunk_thm"
+Finished translating chunk, stored in cv_chunk_thm
+Starting translation of unpack from SparseHeadTheory.
+Saved theorem _______ "cv_unpack_thm"
+Finished translating unpack, stored in cv_unpack_thm
+Starting translation of region from SparseHeadTheory.
+Saved theorem _______ "cv_region_thm"
+Finished translating region, stored in cv_region_thm
+Starting translation of observation from SparseHeadTheory.
+Saved theorem _______ "cv_observation_thm"
+Finished translating observation, stored in cv_observation_thm
+Starting translation of exact_observation from SparseHeadTheory.
+Saved theorem _______ "cv_exact_observation_thm"
+Finished translating exact_observation, stored in cv_exact_observation_thm
+<<HOL message: mk_functional: 
+  pattern completion has added 1 clause to the original specification.>>
+Saved definition ____ "pair_from_heads_def"
+Exporting theory "SparseHead" ... done.
+Theory "SparseHead" took 2.6s to build
+Holmake: [1/1] SparseHead

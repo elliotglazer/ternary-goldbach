@@ -1,0 +1,206 @@
+{
+  "schema": "conditional-ladder-zeta-cost-screen-1",
+  "date": "2026-11-11",
+  "scope": "Exact integer division for conditional cost models only; no measured or forecast times.",
+  "historical_model_constants": {
+    "PT_height": "3000175332800",
+    "PT_core_seconds": "27000000000",
+    "common_height": "100000000",
+    "old_search_microseconds": "15",
+    "old_kernel_microseconds": "55",
+    "K_B1e16": "181029996372",
+    "K_B2e16": "90804183483"
+  },
+  "formula": "proxy_seconds = 27000000000*(40000000000*Q-100000000)/3000175332800; threshold_microseconds = 1000000*proxy_seconds/K",
+  "rows": [
+    {
+      "q": "1",
+      "H": "40000000000",
+      "B": "575472930480000006",
+      "proxy_hours_interval": [
+        "99744",
+        "99745"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "1983",
+        "1984"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "3954",
+        "3955"
+      ],
+      "premium_to_70us_K2_interval": [
+        "56",
+        "57"
+      ]
+    },
+    {
+      "q": "2",
+      "H": "80000000000",
+      "B": "291628188810000006",
+      "proxy_hours_interval": [
+        "199738",
+        "199739"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "3972",
+        "3973"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "7918",
+        "7919"
+      ],
+      "premium_to_70us_K2_interval": [
+        "113",
+        "114"
+      ]
+    },
+    {
+      "q": "4",
+      "H": "160000000000",
+      "B": "149705817975000006",
+      "proxy_hours_interval": [
+        "399726",
+        "399727"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "7949",
+        "7950"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "15847",
+        "15848"
+      ],
+      "premium_to_70us_K2_interval": [
+        "226",
+        "227"
+      ]
+    },
+    {
+      "q": "8",
+      "H": "320000000000",
+      "B": "78744632557500006",
+      "proxy_hours_interval": [
+        "799703",
+        "799704"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "15903",
+        "15904"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "31704",
+        "31705"
+      ],
+      "premium_to_70us_K2_interval": [
+        "452",
+        "453"
+      ]
+    },
+    {
+      "q": "16",
+      "H": "640000000000",
+      "B": "43264039848750006",
+      "proxy_hours_interval": [
+        "1599656",
+        "1599657"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "31811",
+        "31812"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "63419",
+        "63420"
+      ],
+      "premium_to_70us_K2_interval": [
+        "905",
+        "906"
+      ]
+    },
+    {
+      "q": "32",
+      "H": "1280000000000",
+      "B": "25523743494375006",
+      "proxy_hours_interval": [
+        "3199563",
+        "3199564"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "63627",
+        "63628"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "126849",
+        "126850"
+      ],
+      "premium_to_70us_K2_interval": [
+        "1812",
+        "1813"
+      ]
+    },
+    {
+      "q": "47",
+      "H": "1880000000000",
+      "B": "20000000000000000",
+      "proxy_hours_interval": [
+        "4699475",
+        "4699476"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "93454",
+        "93455"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "186314",
+        "186315"
+      ],
+      "premium_to_70us_K2_interval": [
+        "2661",
+        "2662"
+      ]
+    },
+    {
+      "q": "48",
+      "H": "1920000000000",
+      "B": "20000000000000000",
+      "proxy_hours_interval": [
+        "4799469",
+        "4799470"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "95443",
+        "95444"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "190278",
+        "190279"
+      ],
+      "premium_to_70us_K2_interval": [
+        "2718",
+        "2719"
+      ]
+    },
+    {
+      "q": "50",
+      "H": "2000000000000",
+      "B": "20000000000000000",
+      "proxy_hours_interval": [
+        "4999457",
+        "4999458"
+      ],
+      "threshold_K1_microseconds_interval": [
+        "99420",
+        "99421"
+      ],
+      "threshold_K2_microseconds_interval": [
+        "198207",
+        "198208"
+      ],
+      "premium_to_70us_K2_interval": [
+        "2831",
+        "2832"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/NormalizedTranslateScript.uo to produce theory-builder executable
+<<HOL message: Created theory "NormalizedTranslate">>
+Saved definition ____ "poly_def"
+Saved theorem _______ "digs_compute"
+Saved definition ____ "digs_def"
+Saved definition ____ "coord_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in NormalizedTranslate)>>
+Saved theorem _______ "cells_compute"
+Saved definition ____ "cells_def"
+Saved induction _____ "cells_ind"
+Saved definition ____ "batch_def"
+Starting translation of batch from NormalizedTranslateTheory.
+Starting translation of cells from NormalizedTranslateTheory.
+Starting translation of coord from NormalizedTranslateTheory.
+Starting translation of digs from NormalizedTranslateTheory.
+Saved theorem _______ "cv_digs_thm"
+Finished translating digs, stored in cv_digs_thm
+Starting translation of coord from NormalizedTranslateTheory.
+Starting translation of poly from NormalizedTranslateTheory.
+Saved theorem _______ "cv_poly_thm"
+Finished translating poly, stored in cv_poly_thm
+Starting translation of coord from NormalizedTranslateTheory.
+Saved theorem _______ "cv_coord_thm"
+Finished translating coord, stored in cv_coord_thm
+Starting translation of cells from NormalizedTranslateTheory.
+Saved theorem _______ "cv_cells_thm"
+Finished translating cells, stored in cv_cells_thm
+Starting translation of batch from NormalizedTranslateTheory.
+Saved theorem _______ "cv_batch_thm"
+Finished translating batch, stored in cv_batch_thm
+Saved definition ____ "reject_def"
+Starting translation of reject from NormalizedTranslateTheory.
+Saved theorem _______ "cv_reject_thm"
+Finished translating reject, stored in cv_reject_thm
+Exporting theory "NormalizedTranslate" ... done.
+Theory "NormalizedTranslate" took 0.53043s to build
+Holmake: [1/1] NormalizedTranslate

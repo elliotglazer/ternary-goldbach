@@ -1,0 +1,54 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../small-time-selected-consumer[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/NormalizedMeaningScript.uo to produce theory-builder executable
+<<HOL message: Created theory "NormalizedMeaning">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in NormalizedMeaning)>>
+8 basis elements and 3 critical pairs
+8 basis elements and 2 critical pairs
+8 basis elements and 1 critical pairs
+8 basis elements and 0 critical pairs
+Generating HOL version of proof
+6 basis elements and 0 critical pairs
+Generating HOL version of proof
+6 basis elements and 0 critical pairs
+Generating HOL version of proof
+7 basis elements and 0 critical pairs
+Generating HOL version of proof
+6 basis elements and 0 critical pairs
+Generating HOL version of proof
+7 basis elements and 0 critical pairs
+Generating HOL version of proof
+7 basis elements and 0 critical pairs
+Generating HOL version of proof
+8 basis elements and 0 critical pairs
+Generating HOL version of proof
+Saved theorem _______ "normalized_term"
+Saved theorem _______ "derivative_term"
+1 basis elements and 0 critical pairs
+Proof of 
+
+∀d r. 0 < r ∧ -r ≤ d ∧ d ≤ r ⇒ abs (d / r) ≤ 1
+
+failed.
+Tactic failure proving "radius_closed"; heap saved to NormalizedMeaning.radius_closed.dumpedheap.
+Resume with: bin/hol --holstate=NormalizedMeaning.radius_closed.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/NormalizedMeaningScript - exited with code 1

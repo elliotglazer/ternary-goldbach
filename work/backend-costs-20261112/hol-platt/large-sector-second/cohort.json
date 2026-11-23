@@ -1,0 +1,195 @@
+{
+  "q": 131071,
+  "j": 5695,
+  "generator": 3,
+  "n": 131070,
+  "primitive": 131069,
+  "t_numerator": 28475,
+  "t_denominator": 64,
+  "taylor_order": 45,
+  "prec": 192,
+  "pilot_hash": "c421dbd3c1254b10d21e4065e74770dabbb2651e2e8837c7a20188d8f8a60471",
+  "transform_hash": "af0187a553408c1361e41d13f69f1613dda4325249d582ac562f3ad1929780f8",
+  "archive_hash": "09c6ce2a8ec48011336bbc822714d3bcb558960792e14dac4ec6f7c21e509db3",
+  "archived_positive": 51067,
+  "regenerated_signs": 51067,
+  "archive_phase_cpu": 16.640625,
+  "conrey_generator_exponent": 1,
+  "conrey_probes": [
+    {
+      "k": 1,
+      "conrey": 3,
+      "exponent": 1,
+      "sign": 1
+    },
+    {
+      "k": 2,
+      "conrey": 9,
+      "exponent": 2,
+      "sign": -1
+    },
+    {
+      "k": 7,
+      "conrey": 2187,
+      "exponent": 7,
+      "sign": 1
+    },
+    {
+      "k": 65535,
+      "conrey": 131070,
+      "exponent": 65535,
+      "sign": -1
+    },
+    {
+      "k": 131069,
+      "conrey": 87381,
+      "exponent": 131069,
+      "sign": -1
+    }
+  ],
+  "lane_k0": 7,
+  "lane_m": 510,
+  "lane_length": 257,
+  "phase_parts_grid28": [
+    [
+      3776331,
+      5748396
+    ],
+    [
+      -4248263284,
+      20518361403
+    ]
+  ],
+  "lane_sha256": "0d3c0629652589897e2fdfdcd10728c781fe3b198a1abaef74b23a1b34a6d033",
+  "runs": [
+    {
+      "bits": 24,
+      "radius": 1375329,
+      "cpu": 4.8125,
+      "counts": {
+        "simple": 131037,
+        "alternate": 131044,
+        "full": 131042,
+        "full_after_quadrant": 7,
+        "alternate_after_quadrant": 7,
+        "phase_straddle": 1,
+        "spectrum_straddle": 31,
+        "real_column": 65534
+      },
+      "simple_misses": [
+        16344,
+        18066,
+        21385,
+        26823,
+        27443,
+        29071,
+        29719,
+        33893,
+        36347,
+        37539,
+        38404,
+        38868,
+        43541,
+        44624,
+        50755,
+        50963,
+        50985,
+        52988,
+        60017,
+        61969,
+        64455,
+        65535,
+        69536,
+        70187,
+        72810,
+        79264,
+        81620,
+        94855,
+        96115,
+        113188,
+        128115,
+        130043
+      ],
+      "all_unresolved": [
+        16344,
+        18066,
+        21385,
+        29071,
+        29719,
+        33893,
+        36347,
+        37539,
+        38404,
+        38868,
+        43541,
+        44624,
+        50755,
+        50985,
+        52988,
+        60017,
+        64455,
+        69536,
+        70187,
+        72810,
+        79264,
+        81620,
+        113188,
+        128115,
+        130043
+      ]
+    },
+    {
+      "bits": 28,
+      "radius": 1375329,
+      "cpu": 4.96875,
+      "counts": {
+        "simple": 131064,
+        "alternate": 131066,
+        "full": 131066,
+        "full_after_quadrant": 2,
+        "alternate_after_quadrant": 2,
+        "phase_straddle": 1,
+        "spectrum_straddle": 4,
+        "real_column": 65534
+      },
+      "simple_misses": [
+        33893,
+        37539,
+        43541,
+        50755,
+        65535
+      ],
+      "all_unresolved": [
+        33893,
+        43541,
+        50755
+      ]
+    },
+    {
+      "bits": 32,
+      "radius": 1375329,
+      "cpu": 5.484375,
+      "counts": {
+        "simple": 131068,
+        "alternate": 131069,
+        "full": 131069,
+        "full_after_quadrant": 1,
+        "alternate_after_quadrant": 1,
+        "phase_straddle": 1,
+        "spectrum_straddle": 0,
+        "real_column": 65534
+      },
+      "simple_misses": [
+        65535
+      ],
+      "all_unresolved": []
+    }
+  ],
+  "sha256": {
+    "cohort.py": "e7ff9290cea3dc4c83c4ef1716a1d43b26c19502c0376c94e285403a4cf45f7c",
+    "input28.tsv": "d343f5aab96982cd06a7449a949ec68709551a2095a8d1e4e4f14580a0d536d0",
+    "roots28.tsv": "969bd7deb1b10f003780e37016ab151251583626ac90ddb2119dbfa85d3c4295",
+    "axis257-grid28.tsv": "0d3c0629652589897e2fdfdcd10728c781fe3b198a1abaef74b23a1b34a6d033"
+  },
+  "total_cpu": 34.234375
+}

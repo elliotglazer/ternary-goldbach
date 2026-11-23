@@ -1,0 +1,6005 @@
+{
+  "scope": "formal integer-state identities and valuation/height metadata only; no actual polynomial or spectral values",
+  "checks": 9568,
+  "pins": {
+    "major-constants/COMBINED_ODD_EVEN_HEIGHT_CONDITIONAL_COST_2026-11-11.md": "6143FA8444ED97084998D769E114DCAB3DC2C12DCAF9649C32CFA1989658487C",
+    "independent-feasibility/CLARIFICATION_OCCUPANCY_EVEN_HEIGHT_SCALE_2026-11-11.md": "33B70DABD780D347D183196D7A40D8D0958B264C6D1165EAF515DE366CE24384",
+    "major-constants/RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "AFA91F89C51BFC62FAB135997C6ED9FC7FCEAE3FBF6062F973F65AE69ADAC054",
+    "independent-feasibility/REVIEW_RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "0FC1801726CE19F28E0B512C3B24FA8D88B1531E3360E8566A1A799A8F955711",
+    "prime-estimates/NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "55576F70A22E3B94108C80CE6255D312437085E08281EFC6FBA34E65147E22BC",
+    "moebius/REVIEW_NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "995BADD0DDBA1F915A768DC34AAEE70BD9E356EE73A665594A6871ECAC83E234",
+    "prime-estimates/LARGE_RESIDUE_BUCKET_OCCUPANCY_2026-11-11.md": "99B76FC9277CA0297C9CF7301DF97FF9667CDE05C1AD0BBD8C5D32DF88D118C1",
+    "zero-sum/FINAL_ROUND_DENOMINATOR_DIGIT_REUSE_2026-11-11.md": "E5622749AB1A5A9D91743586B17DCE8C3E10C87237E2F48168CD47D7064385BF"
+  },
+  "width_exponents_above_reduced_Q": [
+    {
+      "delta": 0,
+      "power_two_state_exponent": 28,
+      "power_two_Newton_raw_exponent": 29,
+      "power_two_traversal_raw_exponent": 30,
+      "factorial_state_exponent": 25,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 27
+    },
+    {
+      "delta": 1,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 2,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 3,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 4,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 5,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 6,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 7,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 8,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 9,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 10,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 11,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 12,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 13,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    },
+    {
+      "delta": 14,
+      "power_two_state_exponent": 24,
+      "power_two_Newton_raw_exponent": 24,
+      "power_two_traversal_raw_exponent": 26,
+      "factorial_state_exponent": 24,
+      "factorial_Newton_raw_exponent": 24,
+      "factorial_traversal_raw_exponent": 26
+    }
+  ],
+  "class_summaries": [
+    {
+      "extra_nodes": 0,
+      "band": 1,
+      "odd": 61330,
+      "four_divisible": 63890,
+      "total": 125220
+    },
+    {
+      "extra_nodes": 0,
+      "band": 2,
+      "odd": 43202,
+      "four_divisible": 48044,
+      "total": 91246
+    },
+    {
+      "extra_nodes": 0,
+      "band": 3,
+      "odd": 0,
+      "four_divisible": 9696,
+      "total": 9696
+    },
+    {
+      "extra_nodes": 0,
+      "band": 4,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 0,
+      "band": 5,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 167,
+      "band": 1,
+      "odd": 61330,
+      "four_divisible": 63890,
+      "total": 125220
+    },
+    {
+      "extra_nodes": 167,
+      "band": 2,
+      "odd": 45818,
+      "four_divisible": 50646,
+      "total": 96464
+    },
+    {
+      "extra_nodes": 167,
+      "band": 3,
+      "odd": 0,
+      "four_divisible": 10051,
+      "total": 10051
+    },
+    {
+      "extra_nodes": 167,
+      "band": 4,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 167,
+      "band": 5,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 320,
+      "band": 1,
+      "odd": 61330,
+      "four_divisible": 63890,
+      "total": 125220
+    },
+    {
+      "extra_nodes": 320,
+      "band": 2,
+      "odd": 48061,
+      "four_divisible": 52877,
+      "total": 100938
+    },
+    {
+      "extra_nodes": 320,
+      "band": 3,
+      "odd": 207,
+      "four_divisible": 10339,
+      "total": 10546
+    },
+    {
+      "extra_nodes": 320,
+      "band": 4,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 320,
+      "band": 5,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 640,
+      "band": 1,
+      "odd": 61330,
+      "four_divisible": 63890,
+      "total": 125220
+    },
+    {
+      "extra_nodes": 640,
+      "band": 2,
+      "odd": 53891,
+      "four_divisible": 61330,
+      "total": 115221
+    },
+    {
+      "extra_nodes": 640,
+      "band": 3,
+      "odd": 897,
+      "four_divisible": 11025,
+      "total": 11922
+    },
+    {
+      "extra_nodes": 640,
+      "band": 4,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    },
+    {
+      "extra_nodes": 640,
+      "band": 5,
+      "odd": 0,
+      "four_divisible": 0,
+      "total": 0
+    }
+  ],
+  "classes": [
+    {
+      "extra_nodes": 0,
+      "band": 1,
+      "F": 1024,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 61330,
+          "first": 10241,
+          "last": 132899,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 10,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 343,
+              "b100_power_state_signed_bits": 468,
+              "b100_power_Newton_raw_signed_bits": 468,
+              "b100_power_traversal_raw_signed_bits": 470
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 9,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 31945,
+          "first": 10244,
+          "last": 265796,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 8,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 15973,
+          "first": 10248,
+          "last": 265800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 7986,
+          "first": 10256,
+          "last": 265776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3993,
+          "first": 10272,
+          "last": 265760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1997,
+          "first": 10304,
+          "last": 265792,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 998,
+          "first": 10368,
+          "last": 265600,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 499,
+          "first": 10496,
+          "last": 265472,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 250,
+          "first": 10752,
+          "last": 265728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 125,
+          "first": 11264,
+          "last": 265216,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 62,
+          "first": 14336,
+          "last": 264192,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 31,
+          "first": 12288,
+          "last": 258048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 15,
+          "first": 24576,
+          "last": 253952,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 8,
+          "first": 16384,
+          "last": 245760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 18,
+          "conductors": 1,
+          "first": 262144,
+          "last": 262144,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 0,
+      "band": 2,
+      "F": 2048,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 43202,
+          "first": 20481,
+          "last": 106883,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 11,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 337,
+              "b100_power_state_signed_bits": 462,
+              "b100_power_Newton_raw_signed_bits": 462,
+              "b100_power_traversal_raw_signed_bits": 464
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 10,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 318,
+              "b100_power_state_signed_bits": 443,
+              "b100_power_Newton_raw_signed_bits": 443,
+              "b100_power_traversal_raw_signed_bits": 445
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 24022,
+          "first": 20484,
+          "last": 212652,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 9,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 318,
+              "b100_power_state_signed_bits": 443,
+              "b100_power_Newton_raw_signed_bits": 443,
+              "b100_power_traversal_raw_signed_bits": 445
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 299,
+              "b100_power_state_signed_bits": 424,
+              "b100_power_Newton_raw_signed_bits": 424,
+              "b100_power_traversal_raw_signed_bits": 426
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 12011,
+          "first": 20488,
+          "last": 212648,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 299,
+              "b100_power_state_signed_bits": 424,
+              "b100_power_Newton_raw_signed_bits": 424,
+              "b100_power_traversal_raw_signed_bits": 426
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 280,
+              "b100_power_state_signed_bits": 405,
+              "b100_power_Newton_raw_signed_bits": 405,
+              "b100_power_traversal_raw_signed_bits": 407
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 6006,
+          "first": 20496,
+          "last": 212656,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 280,
+              "b100_power_state_signed_bits": 405,
+              "b100_power_Newton_raw_signed_bits": 405,
+              "b100_power_traversal_raw_signed_bits": 407
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 261,
+              "b100_power_state_signed_bits": 386,
+              "b100_power_Newton_raw_signed_bits": 386,
+              "b100_power_traversal_raw_signed_bits": 388
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3003,
+          "first": 20512,
+          "last": 212640,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 261,
+              "b100_power_state_signed_bits": 386,
+              "b100_power_Newton_raw_signed_bits": 386,
+              "b100_power_traversal_raw_signed_bits": 388
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 242,
+              "b100_power_state_signed_bits": 367,
+              "b100_power_Newton_raw_signed_bits": 367,
+              "b100_power_traversal_raw_signed_bits": 369
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1501,
+          "first": 20544,
+          "last": 212544,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 242,
+              "b100_power_state_signed_bits": 367,
+              "b100_power_Newton_raw_signed_bits": 367,
+              "b100_power_traversal_raw_signed_bits": 369
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 223,
+              "b100_power_state_signed_bits": 348,
+              "b100_power_Newton_raw_signed_bits": 348,
+              "b100_power_traversal_raw_signed_bits": 350
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 751,
+          "first": 20608,
+          "last": 212608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 223,
+              "b100_power_state_signed_bits": 348,
+              "b100_power_Newton_raw_signed_bits": 348,
+              "b100_power_traversal_raw_signed_bits": 350
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 204,
+              "b100_power_state_signed_bits": 329,
+              "b100_power_Newton_raw_signed_bits": 329,
+              "b100_power_traversal_raw_signed_bits": 331
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 375,
+          "first": 20736,
+          "last": 212224,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 204,
+              "b100_power_state_signed_bits": 329,
+              "b100_power_Newton_raw_signed_bits": 329,
+              "b100_power_traversal_raw_signed_bits": 331
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 185,
+              "b100_power_state_signed_bits": 310,
+              "b100_power_Newton_raw_signed_bits": 310,
+              "b100_power_traversal_raw_signed_bits": 312
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 188,
+          "first": 20992,
+          "last": 212480,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 185,
+              "b100_power_state_signed_bits": 310,
+              "b100_power_Newton_raw_signed_bits": 310,
+              "b100_power_traversal_raw_signed_bits": 312
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 166,
+              "b100_power_state_signed_bits": 291,
+              "b100_power_Newton_raw_signed_bits": 291,
+              "b100_power_traversal_raw_signed_bits": 293
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 94,
+          "first": 21504,
+          "last": 211968,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 166,
+              "b100_power_state_signed_bits": 291,
+              "b100_power_Newton_raw_signed_bits": 291,
+              "b100_power_traversal_raw_signed_bits": 293
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 47,
+          "first": 22528,
+          "last": 210944,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 23,
+          "first": 28672,
+          "last": 208896,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 146,
+              "b100_power_state_signed_bits": 275,
+              "b100_power_Newton_raw_signed_bits": 276,
+              "b100_power_traversal_raw_signed_bits": 277
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 146,
+              "b100_power_state_signed_bits": 275,
+              "b100_power_Newton_raw_signed_bits": 276,
+              "b100_power_traversal_raw_signed_bits": 277
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 12,
+          "first": 24576,
+          "last": 204800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 146,
+              "b100_power_state_signed_bits": 275,
+              "b100_power_Newton_raw_signed_bits": 276,
+              "b100_power_traversal_raw_signed_bits": 277
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 146,
+              "b100_power_state_signed_bits": 275,
+              "b100_power_Newton_raw_signed_bits": 276,
+              "b100_power_traversal_raw_signed_bits": 277
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 5,
+          "first": 49152,
+          "last": 180224,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 142,
+              "b100_power_state_signed_bits": 271,
+              "b100_power_Newton_raw_signed_bits": 272,
+              "b100_power_traversal_raw_signed_bits": 273
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 142,
+              "b100_power_state_signed_bits": 271,
+              "b100_power_Newton_raw_signed_bits": 272,
+              "b100_power_traversal_raw_signed_bits": 273
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 3,
+          "first": 32768,
+          "last": 163840,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 140,
+              "b100_power_state_signed_bits": 269,
+              "b100_power_Newton_raw_signed_bits": 270,
+              "b100_power_traversal_raw_signed_bits": 271
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 140,
+              "b100_power_state_signed_bits": 269,
+              "b100_power_Newton_raw_signed_bits": 270,
+              "b100_power_traversal_raw_signed_bits": 271
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 0,
+      "band": 3,
+      "F": 4096,
+      "classes": [
+        {
+          "s": 2,
+          "conductors": 4848,
+          "first": 40964,
+          "last": 79740,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 10,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 291,
+              "b100_power_state_signed_bits": 416,
+              "b100_power_Newton_raw_signed_bits": 416,
+              "b100_power_traversal_raw_signed_bits": 418
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 272,
+              "b100_power_state_signed_bits": 397,
+              "b100_power_Newton_raw_signed_bits": 397,
+              "b100_power_traversal_raw_signed_bits": 399
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 2424,
+          "first": 40968,
+          "last": 79736,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 272,
+              "b100_power_state_signed_bits": 397,
+              "b100_power_Newton_raw_signed_bits": 397,
+              "b100_power_traversal_raw_signed_bits": 399
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 253,
+              "b100_power_state_signed_bits": 378,
+              "b100_power_Newton_raw_signed_bits": 378,
+              "b100_power_traversal_raw_signed_bits": 380
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 1212,
+          "first": 40976,
+          "last": 79728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 253,
+              "b100_power_state_signed_bits": 378,
+              "b100_power_Newton_raw_signed_bits": 378,
+              "b100_power_traversal_raw_signed_bits": 380
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 234,
+              "b100_power_state_signed_bits": 359,
+              "b100_power_Newton_raw_signed_bits": 359,
+              "b100_power_traversal_raw_signed_bits": 361
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 606,
+          "first": 40992,
+          "last": 79712,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 234,
+              "b100_power_state_signed_bits": 359,
+              "b100_power_Newton_raw_signed_bits": 359,
+              "b100_power_traversal_raw_signed_bits": 361
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 215,
+              "b100_power_state_signed_bits": 340,
+              "b100_power_Newton_raw_signed_bits": 340,
+              "b100_power_traversal_raw_signed_bits": 342
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 303,
+          "first": 41024,
+          "last": 79680,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 215,
+              "b100_power_state_signed_bits": 340,
+              "b100_power_Newton_raw_signed_bits": 340,
+              "b100_power_traversal_raw_signed_bits": 342
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 196,
+              "b100_power_state_signed_bits": 321,
+              "b100_power_Newton_raw_signed_bits": 321,
+              "b100_power_traversal_raw_signed_bits": 323
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 152,
+          "first": 41088,
+          "last": 79744,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 196,
+              "b100_power_state_signed_bits": 321,
+              "b100_power_Newton_raw_signed_bits": 321,
+              "b100_power_traversal_raw_signed_bits": 323
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 177,
+              "b100_power_state_signed_bits": 302,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 304
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 76,
+          "first": 41216,
+          "last": 79616,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 177,
+              "b100_power_state_signed_bits": 302,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 304
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 158,
+              "b100_power_state_signed_bits": 283,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 285
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 38,
+          "first": 41472,
+          "last": 79360,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 158,
+              "b100_power_state_signed_bits": 283,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 285
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 19,
+          "first": 41984,
+          "last": 78848,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 120,
+              "b100_power_state_signed_bits": 245,
+              "b100_power_Newton_raw_signed_bits": 245,
+              "b100_power_traversal_raw_signed_bits": 247
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 9,
+          "first": 43008,
+          "last": 75776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 118,
+              "b100_power_state_signed_bits": 243,
+              "b100_power_Newton_raw_signed_bits": 243,
+              "b100_power_traversal_raw_signed_bits": 245
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 5,
+          "first": 45056,
+          "last": 77824,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 2,
+          "first": 57344,
+          "last": 73728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 1,
+          "first": 49152,
+          "last": 49152,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 88,
+              "b100_power_state_signed_bits": 217,
+              "b100_power_Newton_raw_signed_bits": 218,
+              "b100_power_traversal_raw_signed_bits": 219
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 88,
+              "b100_power_state_signed_bits": 217,
+              "b100_power_Newton_raw_signed_bits": 218,
+              "b100_power_traversal_raw_signed_bits": 219
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 1,
+          "first": 65536,
+          "last": 65536,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 0,
+      "band": 4,
+      "F": 8192,
+      "classes": []
+    },
+    {
+      "extra_nodes": 0,
+      "band": 5,
+      "F": 16384,
+      "classes": []
+    },
+    {
+      "extra_nodes": 167,
+      "band": 1,
+      "F": 1024,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 61330,
+          "first": 10241,
+          "last": 132899,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 10,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 343,
+              "b100_power_state_signed_bits": 468,
+              "b100_power_Newton_raw_signed_bits": 468,
+              "b100_power_traversal_raw_signed_bits": 470
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 9,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 31945,
+          "first": 10244,
+          "last": 265796,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 8,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 15973,
+          "first": 10248,
+          "last": 265800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 7986,
+          "first": 10256,
+          "last": 265776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3993,
+          "first": 10272,
+          "last": 265760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1997,
+          "first": 10304,
+          "last": 265792,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 998,
+          "first": 10368,
+          "last": 265600,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 499,
+          "first": 10496,
+          "last": 265472,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 250,
+          "first": 10752,
+          "last": 265728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 125,
+          "first": 11264,
+          "last": 265216,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 62,
+          "first": 14336,
+          "last": 264192,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 31,
+          "first": 12288,
+          "last": 258048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 15,
+          "first": 24576,
+          "last": 253952,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 8,
+          "first": 16384,
+          "last": 245760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 18,
+          "conductors": 1,
+          "first": 262144,
+          "last": 262144,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 167,
+      "band": 2,
+      "F": 2048,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 45818,
+          "first": 20481,
+          "last": 112115,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 11,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 338,
+              "b100_power_state_signed_bits": 463,
+              "b100_power_Newton_raw_signed_bits": 463,
+              "b100_power_traversal_raw_signed_bits": 465
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 10,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 319,
+              "b100_power_state_signed_bits": 444,
+              "b100_power_Newton_raw_signed_bits": 444,
+              "b100_power_traversal_raw_signed_bits": 446
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 25323,
+          "first": 20484,
+          "last": 223060,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 9,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 319,
+              "b100_power_state_signed_bits": 444,
+              "b100_power_Newton_raw_signed_bits": 444,
+              "b100_power_traversal_raw_signed_bits": 446
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 300,
+              "b100_power_state_signed_bits": 425,
+              "b100_power_Newton_raw_signed_bits": 425,
+              "b100_power_traversal_raw_signed_bits": 427
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 12662,
+          "first": 20488,
+          "last": 223064,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 300,
+              "b100_power_state_signed_bits": 425,
+              "b100_power_Newton_raw_signed_bits": 425,
+              "b100_power_traversal_raw_signed_bits": 427
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 281,
+              "b100_power_state_signed_bits": 406,
+              "b100_power_Newton_raw_signed_bits": 406,
+              "b100_power_traversal_raw_signed_bits": 408
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 6331,
+          "first": 20496,
+          "last": 223056,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 281,
+              "b100_power_state_signed_bits": 406,
+              "b100_power_Newton_raw_signed_bits": 406,
+              "b100_power_traversal_raw_signed_bits": 408
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 262,
+              "b100_power_state_signed_bits": 387,
+              "b100_power_Newton_raw_signed_bits": 387,
+              "b100_power_traversal_raw_signed_bits": 389
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3165,
+          "first": 20512,
+          "last": 223008,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 262,
+              "b100_power_state_signed_bits": 387,
+              "b100_power_Newton_raw_signed_bits": 387,
+              "b100_power_traversal_raw_signed_bits": 389
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 243,
+              "b100_power_state_signed_bits": 368,
+              "b100_power_Newton_raw_signed_bits": 368,
+              "b100_power_traversal_raw_signed_bits": 370
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1583,
+          "first": 20544,
+          "last": 223040,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 243,
+              "b100_power_state_signed_bits": 368,
+              "b100_power_Newton_raw_signed_bits": 368,
+              "b100_power_traversal_raw_signed_bits": 370
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 224,
+              "b100_power_state_signed_bits": 349,
+              "b100_power_Newton_raw_signed_bits": 349,
+              "b100_power_traversal_raw_signed_bits": 351
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 791,
+          "first": 20608,
+          "last": 222848,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 224,
+              "b100_power_state_signed_bits": 349,
+              "b100_power_Newton_raw_signed_bits": 349,
+              "b100_power_traversal_raw_signed_bits": 351
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 205,
+              "b100_power_state_signed_bits": 330,
+              "b100_power_Newton_raw_signed_bits": 330,
+              "b100_power_traversal_raw_signed_bits": 332
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 396,
+          "first": 20736,
+          "last": 222976,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 205,
+              "b100_power_state_signed_bits": 330,
+              "b100_power_Newton_raw_signed_bits": 330,
+              "b100_power_traversal_raw_signed_bits": 332
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 186,
+              "b100_power_state_signed_bits": 311,
+              "b100_power_Newton_raw_signed_bits": 311,
+              "b100_power_traversal_raw_signed_bits": 313
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 198,
+          "first": 20992,
+          "last": 222720,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 186,
+              "b100_power_state_signed_bits": 311,
+              "b100_power_Newton_raw_signed_bits": 311,
+              "b100_power_traversal_raw_signed_bits": 313
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 167,
+              "b100_power_state_signed_bits": 292,
+              "b100_power_Newton_raw_signed_bits": 292,
+              "b100_power_traversal_raw_signed_bits": 294
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 99,
+          "first": 21504,
+          "last": 222208,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 167,
+              "b100_power_state_signed_bits": 292,
+              "b100_power_Newton_raw_signed_bits": 292,
+              "b100_power_traversal_raw_signed_bits": 294
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 49,
+          "first": 22528,
+          "last": 219136,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 24,
+          "first": 28672,
+          "last": 217088,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 13,
+          "first": 24576,
+          "last": 221184,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 6,
+          "first": 49152,
+          "last": 212992,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 3,
+          "first": 32768,
+          "last": 163840,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 140,
+              "b100_power_state_signed_bits": 269,
+              "b100_power_Newton_raw_signed_bits": 270,
+              "b100_power_traversal_raw_signed_bits": 271
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 140,
+              "b100_power_state_signed_bits": 269,
+              "b100_power_Newton_raw_signed_bits": 270,
+              "b100_power_traversal_raw_signed_bits": 271
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 167,
+      "band": 3,
+      "F": 4096,
+      "classes": [
+        {
+          "s": 2,
+          "conductors": 5026,
+          "first": 40964,
+          "last": 81164,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 10,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 291,
+              "b100_power_state_signed_bits": 416,
+              "b100_power_Newton_raw_signed_bits": 416,
+              "b100_power_traversal_raw_signed_bits": 418
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 272,
+              "b100_power_state_signed_bits": 397,
+              "b100_power_Newton_raw_signed_bits": 397,
+              "b100_power_traversal_raw_signed_bits": 399
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 2513,
+          "first": 40968,
+          "last": 81160,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 272,
+              "b100_power_state_signed_bits": 397,
+              "b100_power_Newton_raw_signed_bits": 397,
+              "b100_power_traversal_raw_signed_bits": 399
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 253,
+              "b100_power_state_signed_bits": 378,
+              "b100_power_Newton_raw_signed_bits": 378,
+              "b100_power_traversal_raw_signed_bits": 380
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 1256,
+          "first": 40976,
+          "last": 81136,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 253,
+              "b100_power_state_signed_bits": 378,
+              "b100_power_Newton_raw_signed_bits": 378,
+              "b100_power_traversal_raw_signed_bits": 380
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 234,
+              "b100_power_state_signed_bits": 359,
+              "b100_power_Newton_raw_signed_bits": 359,
+              "b100_power_traversal_raw_signed_bits": 361
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 628,
+          "first": 40992,
+          "last": 81120,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 234,
+              "b100_power_state_signed_bits": 359,
+              "b100_power_Newton_raw_signed_bits": 359,
+              "b100_power_traversal_raw_signed_bits": 361
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 215,
+              "b100_power_state_signed_bits": 340,
+              "b100_power_Newton_raw_signed_bits": 340,
+              "b100_power_traversal_raw_signed_bits": 342
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 314,
+          "first": 41024,
+          "last": 81088,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 215,
+              "b100_power_state_signed_bits": 340,
+              "b100_power_Newton_raw_signed_bits": 340,
+              "b100_power_traversal_raw_signed_bits": 342
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 196,
+              "b100_power_state_signed_bits": 321,
+              "b100_power_Newton_raw_signed_bits": 321,
+              "b100_power_traversal_raw_signed_bits": 323
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 157,
+          "first": 41088,
+          "last": 81024,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 196,
+              "b100_power_state_signed_bits": 321,
+              "b100_power_Newton_raw_signed_bits": 321,
+              "b100_power_traversal_raw_signed_bits": 323
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 177,
+              "b100_power_state_signed_bits": 302,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 304
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 79,
+          "first": 41216,
+          "last": 81152,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 177,
+              "b100_power_state_signed_bits": 302,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 304
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 158,
+              "b100_power_state_signed_bits": 283,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 285
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 39,
+          "first": 41472,
+          "last": 80384,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 158,
+              "b100_power_state_signed_bits": 283,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 285
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 20,
+          "first": 41984,
+          "last": 80896,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 120,
+              "b100_power_state_signed_bits": 245,
+              "b100_power_Newton_raw_signed_bits": 245,
+              "b100_power_traversal_raw_signed_bits": 247
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 10,
+          "first": 43008,
+          "last": 79872,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 120,
+              "b100_power_state_signed_bits": 245,
+              "b100_power_Newton_raw_signed_bits": 245,
+              "b100_power_traversal_raw_signed_bits": 247
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 101,
+              "b100_power_state_signed_bits": 230,
+              "b100_power_Newton_raw_signed_bits": 231,
+              "b100_power_traversal_raw_signed_bits": 232
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 5,
+          "first": 45056,
+          "last": 77824,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 2,
+          "first": 57344,
+          "last": 73728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 1,
+          "first": 49152,
+          "last": 49152,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 88,
+              "b100_power_state_signed_bits": 217,
+              "b100_power_Newton_raw_signed_bits": 218,
+              "b100_power_traversal_raw_signed_bits": 219
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 88,
+              "b100_power_state_signed_bits": 217,
+              "b100_power_Newton_raw_signed_bits": 218,
+              "b100_power_traversal_raw_signed_bits": 219
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 1,
+          "first": 65536,
+          "last": 65536,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 167,
+      "band": 4,
+      "F": 8192,
+      "classes": []
+    },
+    {
+      "extra_nodes": 167,
+      "band": 5,
+      "F": 16384,
+      "classes": []
+    },
+    {
+      "extra_nodes": 320,
+      "band": 1,
+      "F": 1024,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 61330,
+          "first": 10241,
+          "last": 132899,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 10,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 343,
+              "b100_power_state_signed_bits": 468,
+              "b100_power_Newton_raw_signed_bits": 468,
+              "b100_power_traversal_raw_signed_bits": 470
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 9,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 31945,
+          "first": 10244,
+          "last": 265796,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 8,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 15973,
+          "first": 10248,
+          "last": 265800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 7986,
+          "first": 10256,
+          "last": 265776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3993,
+          "first": 10272,
+          "last": 265760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1997,
+          "first": 10304,
+          "last": 265792,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 998,
+          "first": 10368,
+          "last": 265600,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 499,
+          "first": 10496,
+          "last": 265472,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 250,
+          "first": 10752,
+          "last": 265728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 125,
+          "first": 11264,
+          "last": 265216,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 62,
+          "first": 14336,
+          "last": 264192,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 31,
+          "first": 12288,
+          "last": 258048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 15,
+          "first": 24576,
+          "last": 253952,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 8,
+          "first": 16384,
+          "last": 245760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 18,
+          "conductors": 1,
+          "first": 262144,
+          "last": 262144,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 320,
+      "band": 2,
+      "F": 2048,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 48061,
+          "first": 20481,
+          "last": 116601,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 11,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 339,
+              "b100_power_state_signed_bits": 464,
+              "b100_power_Newton_raw_signed_bits": 464,
+              "b100_power_traversal_raw_signed_bits": 466
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 10,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 320,
+              "b100_power_state_signed_bits": 445,
+              "b100_power_Newton_raw_signed_bits": 445,
+              "b100_power_traversal_raw_signed_bits": 447
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 26439,
+          "first": 20484,
+          "last": 231988,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 9,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 320,
+              "b100_power_state_signed_bits": 445,
+              "b100_power_Newton_raw_signed_bits": 445,
+              "b100_power_traversal_raw_signed_bits": 447
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 301,
+              "b100_power_state_signed_bits": 426,
+              "b100_power_Newton_raw_signed_bits": 426,
+              "b100_power_traversal_raw_signed_bits": 428
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 13219,
+          "first": 20488,
+          "last": 231976,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 301,
+              "b100_power_state_signed_bits": 426,
+              "b100_power_Newton_raw_signed_bits": 426,
+              "b100_power_traversal_raw_signed_bits": 428
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 282,
+              "b100_power_state_signed_bits": 407,
+              "b100_power_Newton_raw_signed_bits": 407,
+              "b100_power_traversal_raw_signed_bits": 409
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 6610,
+          "first": 20496,
+          "last": 231984,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 282,
+              "b100_power_state_signed_bits": 407,
+              "b100_power_Newton_raw_signed_bits": 407,
+              "b100_power_traversal_raw_signed_bits": 409
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 263,
+              "b100_power_state_signed_bits": 388,
+              "b100_power_Newton_raw_signed_bits": 388,
+              "b100_power_traversal_raw_signed_bits": 390
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3305,
+          "first": 20512,
+          "last": 231968,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 263,
+              "b100_power_state_signed_bits": 388,
+              "b100_power_Newton_raw_signed_bits": 388,
+              "b100_power_traversal_raw_signed_bits": 390
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 244,
+              "b100_power_state_signed_bits": 369,
+              "b100_power_Newton_raw_signed_bits": 369,
+              "b100_power_traversal_raw_signed_bits": 371
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1652,
+          "first": 20544,
+          "last": 231872,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 244,
+              "b100_power_state_signed_bits": 369,
+              "b100_power_Newton_raw_signed_bits": 369,
+              "b100_power_traversal_raw_signed_bits": 371
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 225,
+              "b100_power_state_signed_bits": 350,
+              "b100_power_Newton_raw_signed_bits": 350,
+              "b100_power_traversal_raw_signed_bits": 352
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 826,
+          "first": 20608,
+          "last": 231808,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 225,
+              "b100_power_state_signed_bits": 350,
+              "b100_power_Newton_raw_signed_bits": 350,
+              "b100_power_traversal_raw_signed_bits": 352
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 206,
+              "b100_power_state_signed_bits": 331,
+              "b100_power_Newton_raw_signed_bits": 331,
+              "b100_power_traversal_raw_signed_bits": 333
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 413,
+          "first": 20736,
+          "last": 231680,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 206,
+              "b100_power_state_signed_bits": 331,
+              "b100_power_Newton_raw_signed_bits": 331,
+              "b100_power_traversal_raw_signed_bits": 333
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 187,
+              "b100_power_state_signed_bits": 312,
+              "b100_power_Newton_raw_signed_bits": 312,
+              "b100_power_traversal_raw_signed_bits": 314
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 207,
+          "first": 20992,
+          "last": 231936,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 187,
+              "b100_power_state_signed_bits": 312,
+              "b100_power_Newton_raw_signed_bits": 312,
+              "b100_power_traversal_raw_signed_bits": 314
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 293,
+              "b100_power_traversal_raw_signed_bits": 295
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 103,
+          "first": 21504,
+          "last": 230400,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 293,
+              "b100_power_traversal_raw_signed_bits": 295
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 52,
+          "first": 22528,
+          "last": 231424,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 25,
+          "first": 28672,
+          "last": 225280,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 13,
+          "first": 24576,
+          "last": 221184,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 148,
+              "b100_power_state_signed_bits": 277,
+              "b100_power_Newton_raw_signed_bits": 278,
+              "b100_power_traversal_raw_signed_bits": 279
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 6,
+          "first": 49152,
+          "last": 212992,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 147,
+              "b100_power_state_signed_bits": 276,
+              "b100_power_Newton_raw_signed_bits": 277,
+              "b100_power_traversal_raw_signed_bits": 278
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 320,
+      "band": 3,
+      "F": 4096,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 207,
+          "first": 40961,
+          "last": 41373,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 12,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 311,
+              "b100_power_state_signed_bits": 436,
+              "b100_power_Newton_raw_signed_bits": 436,
+              "b100_power_traversal_raw_signed_bits": 438
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 11,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 292,
+              "b100_power_state_signed_bits": 417,
+              "b100_power_Newton_raw_signed_bits": 417,
+              "b100_power_traversal_raw_signed_bits": 419
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 5170,
+          "first": 40964,
+          "last": 82316,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 10,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 292,
+              "b100_power_state_signed_bits": 417,
+              "b100_power_Newton_raw_signed_bits": 417,
+              "b100_power_traversal_raw_signed_bits": 419
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 273,
+              "b100_power_state_signed_bits": 398,
+              "b100_power_Newton_raw_signed_bits": 398,
+              "b100_power_traversal_raw_signed_bits": 400
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 2585,
+          "first": 40968,
+          "last": 82312,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 273,
+              "b100_power_state_signed_bits": 398,
+              "b100_power_Newton_raw_signed_bits": 398,
+              "b100_power_traversal_raw_signed_bits": 400
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 254,
+              "b100_power_state_signed_bits": 379,
+              "b100_power_Newton_raw_signed_bits": 379,
+              "b100_power_traversal_raw_signed_bits": 381
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 1292,
+          "first": 40976,
+          "last": 82288,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 254,
+              "b100_power_state_signed_bits": 379,
+              "b100_power_Newton_raw_signed_bits": 379,
+              "b100_power_traversal_raw_signed_bits": 381
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 235,
+              "b100_power_state_signed_bits": 360,
+              "b100_power_Newton_raw_signed_bits": 360,
+              "b100_power_traversal_raw_signed_bits": 362
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 646,
+          "first": 40992,
+          "last": 82272,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 235,
+              "b100_power_state_signed_bits": 360,
+              "b100_power_Newton_raw_signed_bits": 360,
+              "b100_power_traversal_raw_signed_bits": 362
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 216,
+              "b100_power_state_signed_bits": 341,
+              "b100_power_Newton_raw_signed_bits": 341,
+              "b100_power_traversal_raw_signed_bits": 343
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 323,
+          "first": 41024,
+          "last": 82240,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 216,
+              "b100_power_state_signed_bits": 341,
+              "b100_power_Newton_raw_signed_bits": 341,
+              "b100_power_traversal_raw_signed_bits": 343
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 197,
+              "b100_power_state_signed_bits": 322,
+              "b100_power_Newton_raw_signed_bits": 322,
+              "b100_power_traversal_raw_signed_bits": 324
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 162,
+          "first": 41088,
+          "last": 82304,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 197,
+              "b100_power_state_signed_bits": 322,
+              "b100_power_Newton_raw_signed_bits": 322,
+              "b100_power_traversal_raw_signed_bits": 324
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 178,
+              "b100_power_state_signed_bits": 303,
+              "b100_power_Newton_raw_signed_bits": 303,
+              "b100_power_traversal_raw_signed_bits": 305
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 81,
+          "first": 41216,
+          "last": 82176,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 178,
+              "b100_power_state_signed_bits": 303,
+              "b100_power_Newton_raw_signed_bits": 303,
+              "b100_power_traversal_raw_signed_bits": 305
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 159,
+              "b100_power_state_signed_bits": 284,
+              "b100_power_Newton_raw_signed_bits": 284,
+              "b100_power_traversal_raw_signed_bits": 286
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 40,
+          "first": 41472,
+          "last": 81408,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 158,
+              "b100_power_state_signed_bits": 283,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 285
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 20,
+          "first": 41984,
+          "last": 80896,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 139,
+              "b100_power_state_signed_bits": 264,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 266
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 120,
+              "b100_power_state_signed_bits": 245,
+              "b100_power_Newton_raw_signed_bits": 245,
+              "b100_power_traversal_raw_signed_bits": 247
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 10,
+          "first": 43008,
+          "last": 79872,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 120,
+              "b100_power_state_signed_bits": 245,
+              "b100_power_Newton_raw_signed_bits": 245,
+              "b100_power_traversal_raw_signed_bits": 247
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 101,
+              "b100_power_state_signed_bits": 230,
+              "b100_power_Newton_raw_signed_bits": 231,
+              "b100_power_traversal_raw_signed_bits": 232
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 5,
+          "first": 45056,
+          "last": 77824,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 2,
+          "first": 57344,
+          "last": 73728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 2,
+          "first": 49152,
+          "last": 81920,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 102,
+              "b100_power_state_signed_bits": 231,
+              "b100_power_Newton_raw_signed_bits": 232,
+              "b100_power_traversal_raw_signed_bits": 233
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 102,
+              "b100_power_state_signed_bits": 231,
+              "b100_power_Newton_raw_signed_bits": 232,
+              "b100_power_traversal_raw_signed_bits": 233
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 1,
+          "first": 65536,
+          "last": 65536,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 320,
+      "band": 4,
+      "F": 8192,
+      "classes": []
+    },
+    {
+      "extra_nodes": 320,
+      "band": 5,
+      "F": 16384,
+      "classes": []
+    },
+    {
+      "extra_nodes": 640,
+      "band": 1,
+      "F": 1024,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 61330,
+          "first": 10241,
+          "last": 132899,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 10,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 343,
+              "b100_power_state_signed_bits": 468,
+              "b100_power_Newton_raw_signed_bits": 468,
+              "b100_power_traversal_raw_signed_bits": 470
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 9,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 31945,
+          "first": 10244,
+          "last": 265796,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 8,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 15973,
+          "first": 10248,
+          "last": 265800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 7,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 7986,
+          "first": 10256,
+          "last": 265776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 6,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3993,
+          "first": 10272,
+          "last": 265760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 5,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1997,
+          "first": 10304,
+          "last": 265792,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 4,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 998,
+          "first": 10368,
+          "last": 265600,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 3,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 499,
+          "first": 10496,
+          "last": 265472,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 2,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 250,
+          "first": 10752,
+          "last": 265728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 1,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 125,
+          "first": 11264,
+          "last": 265216,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 62,
+          "first": 14336,
+          "last": 264192,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 31,
+          "first": 12288,
+          "last": 258048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 15,
+          "first": 24576,
+          "last": 253952,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 171,
+              "b100_power_state_signed_bits": 300,
+              "b100_power_Newton_raw_signed_bits": 301,
+              "b100_power_traversal_raw_signed_bits": 302
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 8,
+          "first": 16384,
+          "last": 245760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 170,
+              "b100_power_state_signed_bits": 299,
+              "b100_power_Newton_raw_signed_bits": 300,
+              "b100_power_traversal_raw_signed_bits": 301
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 168,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 298,
+              "b100_power_traversal_raw_signed_bits": 299
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 164,
+              "b100_power_state_signed_bits": 293,
+              "b100_power_Newton_raw_signed_bits": 294,
+              "b100_power_traversal_raw_signed_bits": 295
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 18,
+          "conductors": 1,
+          "first": 262144,
+          "last": 262144,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 0,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 301,
+              "b100_power_Newton_raw_signed_bits": 302,
+              "b100_power_traversal_raw_signed_bits": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 640,
+      "band": 2,
+      "F": 2048,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 53891,
+          "first": 20481,
+          "last": 128261,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 11,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 342,
+              "b100_power_state_signed_bits": 467,
+              "b100_power_Newton_raw_signed_bits": 467,
+              "b100_power_traversal_raw_signed_bits": 469
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 10,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 323,
+              "b100_power_state_signed_bits": 448,
+              "b100_power_Newton_raw_signed_bits": 448,
+              "b100_power_traversal_raw_signed_bits": 450
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 30665,
+          "first": 20484,
+          "last": 265796,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 9,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 324,
+              "b100_power_state_signed_bits": 449,
+              "b100_power_Newton_raw_signed_bits": 449,
+              "b100_power_traversal_raw_signed_bits": 451
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 15333,
+          "first": 20488,
+          "last": 265800,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 8,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 305,
+              "b100_power_state_signed_bits": 430,
+              "b100_power_Newton_raw_signed_bits": 430,
+              "b100_power_traversal_raw_signed_bits": 432
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 7666,
+          "first": 20496,
+          "last": 265776,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 7,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 286,
+              "b100_power_state_signed_bits": 411,
+              "b100_power_Newton_raw_signed_bits": 411,
+              "b100_power_traversal_raw_signed_bits": 413
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 3833,
+          "first": 20512,
+          "last": 265760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 6,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 267,
+              "b100_power_state_signed_bits": 392,
+              "b100_power_Newton_raw_signed_bits": 392,
+              "b100_power_traversal_raw_signed_bits": 394
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 1917,
+          "first": 20544,
+          "last": 265792,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 5,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 248,
+              "b100_power_state_signed_bits": 373,
+              "b100_power_Newton_raw_signed_bits": 373,
+              "b100_power_traversal_raw_signed_bits": 375
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 958,
+          "first": 20608,
+          "last": 265600,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 4,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 229,
+              "b100_power_state_signed_bits": 354,
+              "b100_power_Newton_raw_signed_bits": 354,
+              "b100_power_traversal_raw_signed_bits": 356
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 479,
+          "first": 20736,
+          "last": 265472,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 3,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 210,
+              "b100_power_state_signed_bits": 335,
+              "b100_power_Newton_raw_signed_bits": 335,
+              "b100_power_traversal_raw_signed_bits": 337
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 240,
+          "first": 20992,
+          "last": 265728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 2,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 191,
+              "b100_power_state_signed_bits": 316,
+              "b100_power_Newton_raw_signed_bits": 316,
+              "b100_power_traversal_raw_signed_bits": 318
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 297,
+              "b100_power_traversal_raw_signed_bits": 299
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 120,
+          "first": 21504,
+          "last": 265216,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 1,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 172,
+              "b100_power_state_signed_bits": 297,
+              "b100_power_Newton_raw_signed_bits": 297,
+              "b100_power_traversal_raw_signed_bits": 299
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 60,
+          "first": 22528,
+          "last": 264192,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 29,
+          "first": 28672,
+          "last": 258048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 152,
+              "b100_power_state_signed_bits": 281,
+              "b100_power_Newton_raw_signed_bits": 282,
+              "b100_power_traversal_raw_signed_bits": 283
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 152,
+              "b100_power_state_signed_bits": 281,
+              "b100_power_Newton_raw_signed_bits": 282,
+              "b100_power_traversal_raw_signed_bits": 283
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 15,
+          "first": 24576,
+          "last": 253952,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 152,
+              "b100_power_state_signed_bits": 281,
+              "b100_power_Newton_raw_signed_bits": 282,
+              "b100_power_traversal_raw_signed_bits": 283
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 152,
+              "b100_power_state_signed_bits": 281,
+              "b100_power_Newton_raw_signed_bits": 282,
+              "b100_power_traversal_raw_signed_bits": 283
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 7,
+          "first": 49152,
+          "last": 245760,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 151,
+              "b100_power_state_signed_bits": 280,
+              "b100_power_Newton_raw_signed_bits": 281,
+              "b100_power_traversal_raw_signed_bits": 282
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 151,
+              "b100_power_state_signed_bits": 280,
+              "b100_power_Newton_raw_signed_bits": 281,
+              "b100_power_traversal_raw_signed_bits": 282
+            }
+          ]
+        },
+        {
+          "s": 15,
+          "conductors": 4,
+          "first": 32768,
+          "last": 229376,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 149,
+              "b100_power_state_signed_bits": 278,
+              "b100_power_Newton_raw_signed_bits": 279,
+              "b100_power_traversal_raw_signed_bits": 280
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 2,
+          "first": 65536,
+          "last": 196608,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 145,
+              "b100_power_state_signed_bits": 274,
+              "b100_power_Newton_raw_signed_bits": 275,
+              "b100_power_traversal_raw_signed_bits": 276
+            }
+          ]
+        },
+        {
+          "s": 17,
+          "conductors": 1,
+          "first": 131072,
+          "last": 131072,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 134,
+              "b100_power_state_signed_bits": 263,
+              "b100_power_Newton_raw_signed_bits": 264,
+              "b100_power_traversal_raw_signed_bits": 265
+            }
+          ]
+        },
+        {
+          "s": 18,
+          "conductors": 1,
+          "first": 262144,
+          "last": 262144,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 0,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 153,
+              "b100_power_state_signed_bits": 282,
+              "b100_power_Newton_raw_signed_bits": 283,
+              "b100_power_traversal_raw_signed_bits": 284
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 640,
+      "band": 3,
+      "F": 4096,
+      "classes": [
+        {
+          "s": 0,
+          "conductors": 897,
+          "first": 40961,
+          "last": 42753,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 0,
+              "delta": 12,
+              "uniform_state_bits_removed": 0,
+              "max_reduced_v19_bits": 312,
+              "b100_power_state_signed_bits": 437,
+              "b100_power_Newton_raw_signed_bits": 437,
+              "b100_power_traversal_raw_signed_bits": 439
+            },
+            {
+              "anchor_parity": "even",
+              "t": 1,
+              "delta": 11,
+              "uniform_state_bits_removed": 19,
+              "max_reduced_v19_bits": 293,
+              "b100_power_state_signed_bits": 418,
+              "b100_power_Newton_raw_signed_bits": 418,
+              "b100_power_traversal_raw_signed_bits": 420
+            }
+          ]
+        },
+        {
+          "s": 2,
+          "conductors": 5513,
+          "first": 40964,
+          "last": 85060,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 2,
+              "delta": 10,
+              "uniform_state_bits_removed": 38,
+              "max_reduced_v19_bits": 293,
+              "b100_power_state_signed_bits": 418,
+              "b100_power_Newton_raw_signed_bits": 418,
+              "b100_power_traversal_raw_signed_bits": 420
+            },
+            {
+              "anchor_parity": "even",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 274,
+              "b100_power_state_signed_bits": 399,
+              "b100_power_Newton_raw_signed_bits": 399,
+              "b100_power_traversal_raw_signed_bits": 401
+            }
+          ]
+        },
+        {
+          "s": 3,
+          "conductors": 2756,
+          "first": 40968,
+          "last": 85048,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 3,
+              "delta": 9,
+              "uniform_state_bits_removed": 57,
+              "max_reduced_v19_bits": 274,
+              "b100_power_state_signed_bits": 399,
+              "b100_power_Newton_raw_signed_bits": 399,
+              "b100_power_traversal_raw_signed_bits": 401
+            },
+            {
+              "anchor_parity": "even",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 255,
+              "b100_power_state_signed_bits": 380,
+              "b100_power_Newton_raw_signed_bits": 380,
+              "b100_power_traversal_raw_signed_bits": 382
+            }
+          ]
+        },
+        {
+          "s": 4,
+          "conductors": 1378,
+          "first": 40976,
+          "last": 85040,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 4,
+              "delta": 8,
+              "uniform_state_bits_removed": 76,
+              "max_reduced_v19_bits": 255,
+              "b100_power_state_signed_bits": 380,
+              "b100_power_Newton_raw_signed_bits": 380,
+              "b100_power_traversal_raw_signed_bits": 382
+            },
+            {
+              "anchor_parity": "even",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 236,
+              "b100_power_state_signed_bits": 361,
+              "b100_power_Newton_raw_signed_bits": 361,
+              "b100_power_traversal_raw_signed_bits": 363
+            }
+          ]
+        },
+        {
+          "s": 5,
+          "conductors": 689,
+          "first": 40992,
+          "last": 85024,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 5,
+              "delta": 7,
+              "uniform_state_bits_removed": 95,
+              "max_reduced_v19_bits": 236,
+              "b100_power_state_signed_bits": 361,
+              "b100_power_Newton_raw_signed_bits": 361,
+              "b100_power_traversal_raw_signed_bits": 363
+            },
+            {
+              "anchor_parity": "even",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 217,
+              "b100_power_state_signed_bits": 342,
+              "b100_power_Newton_raw_signed_bits": 342,
+              "b100_power_traversal_raw_signed_bits": 344
+            }
+          ]
+        },
+        {
+          "s": 6,
+          "conductors": 345,
+          "first": 41024,
+          "last": 85056,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 6,
+              "delta": 6,
+              "uniform_state_bits_removed": 114,
+              "max_reduced_v19_bits": 217,
+              "b100_power_state_signed_bits": 342,
+              "b100_power_Newton_raw_signed_bits": 342,
+              "b100_power_traversal_raw_signed_bits": 344
+            },
+            {
+              "anchor_parity": "even",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 198,
+              "b100_power_state_signed_bits": 323,
+              "b100_power_Newton_raw_signed_bits": 323,
+              "b100_power_traversal_raw_signed_bits": 325
+            }
+          ]
+        },
+        {
+          "s": 7,
+          "conductors": 172,
+          "first": 41088,
+          "last": 84864,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 7,
+              "delta": 5,
+              "uniform_state_bits_removed": 133,
+              "max_reduced_v19_bits": 198,
+              "b100_power_state_signed_bits": 323,
+              "b100_power_Newton_raw_signed_bits": 323,
+              "b100_power_traversal_raw_signed_bits": 325
+            },
+            {
+              "anchor_parity": "even",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 179,
+              "b100_power_state_signed_bits": 304,
+              "b100_power_Newton_raw_signed_bits": 304,
+              "b100_power_traversal_raw_signed_bits": 306
+            }
+          ]
+        },
+        {
+          "s": 8,
+          "conductors": 86,
+          "first": 41216,
+          "last": 84736,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 8,
+              "delta": 4,
+              "uniform_state_bits_removed": 152,
+              "max_reduced_v19_bits": 179,
+              "b100_power_state_signed_bits": 304,
+              "b100_power_Newton_raw_signed_bits": 304,
+              "b100_power_traversal_raw_signed_bits": 306
+            },
+            {
+              "anchor_parity": "even",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 160,
+              "b100_power_state_signed_bits": 285,
+              "b100_power_Newton_raw_signed_bits": 285,
+              "b100_power_traversal_raw_signed_bits": 287
+            }
+          ]
+        },
+        {
+          "s": 9,
+          "conductors": 43,
+          "first": 41472,
+          "last": 84480,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 9,
+              "delta": 3,
+              "uniform_state_bits_removed": 171,
+              "max_reduced_v19_bits": 159,
+              "b100_power_state_signed_bits": 284,
+              "b100_power_Newton_raw_signed_bits": 284,
+              "b100_power_traversal_raw_signed_bits": 286
+            },
+            {
+              "anchor_parity": "even",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 140,
+              "b100_power_state_signed_bits": 265,
+              "b100_power_Newton_raw_signed_bits": 265,
+              "b100_power_traversal_raw_signed_bits": 267
+            }
+          ]
+        },
+        {
+          "s": 10,
+          "conductors": 22,
+          "first": 41984,
+          "last": 84992,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 10,
+              "delta": 2,
+              "uniform_state_bits_removed": 190,
+              "max_reduced_v19_bits": 141,
+              "b100_power_state_signed_bits": 266,
+              "b100_power_Newton_raw_signed_bits": 266,
+              "b100_power_traversal_raw_signed_bits": 268
+            },
+            {
+              "anchor_parity": "even",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 122,
+              "b100_power_state_signed_bits": 247,
+              "b100_power_Newton_raw_signed_bits": 247,
+              "b100_power_traversal_raw_signed_bits": 249
+            }
+          ]
+        },
+        {
+          "s": 11,
+          "conductors": 11,
+          "first": 43008,
+          "last": 83968,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 11,
+              "delta": 1,
+              "uniform_state_bits_removed": 209,
+              "max_reduced_v19_bits": 121,
+              "b100_power_state_signed_bits": 246,
+              "b100_power_Newton_raw_signed_bits": 246,
+              "b100_power_traversal_raw_signed_bits": 248
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 102,
+              "b100_power_state_signed_bits": 231,
+              "b100_power_Newton_raw_signed_bits": 232,
+              "b100_power_traversal_raw_signed_bits": 233
+            }
+          ]
+        },
+        {
+          "s": 12,
+          "conductors": 5,
+          "first": 45056,
+          "last": 77824,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 100,
+              "b100_power_state_signed_bits": 229,
+              "b100_power_Newton_raw_signed_bits": 230,
+              "b100_power_traversal_raw_signed_bits": 231
+            }
+          ]
+        },
+        {
+          "s": 13,
+          "conductors": 2,
+          "first": 57344,
+          "last": 73728,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 99,
+              "b100_power_state_signed_bits": 228,
+              "b100_power_Newton_raw_signed_bits": 229,
+              "b100_power_traversal_raw_signed_bits": 230
+            }
+          ]
+        },
+        {
+          "s": 14,
+          "conductors": 2,
+          "first": 49152,
+          "last": 81920,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 102,
+              "b100_power_state_signed_bits": 231,
+              "b100_power_Newton_raw_signed_bits": 232,
+              "b100_power_traversal_raw_signed_bits": 233
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 102,
+              "b100_power_state_signed_bits": 231,
+              "b100_power_Newton_raw_signed_bits": 232,
+              "b100_power_traversal_raw_signed_bits": 233
+            }
+          ]
+        },
+        {
+          "s": 16,
+          "conductors": 1,
+          "first": 65536,
+          "last": 65536,
+          "parities": [
+            {
+              "anchor_parity": "odd",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            },
+            {
+              "anchor_parity": "even",
+              "t": 12,
+              "delta": 0,
+              "uniform_state_bits_removed": 228,
+              "max_reduced_v19_bits": 96,
+              "b100_power_state_signed_bits": 225,
+              "b100_power_Newton_raw_signed_bits": 226,
+              "b100_power_traversal_raw_signed_bits": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "extra_nodes": 640,
+      "band": 4,
+      "F": 8192,
+      "classes": []
+    },
+    {
+      "extra_nodes": 640,
+      "band": 5,
+      "F": 16384,
+      "classes": []
+    }
+  ],
+  "equal_addition_price_only": {
+    "initializer_additions_saved_by_full_factorial": 167,
+    "extra_additions_per_advance": 21,
+    "factorial_fewer_additions_for_L_at_most": 8,
+    "power_two_fewer_additions_for_L_at_least": 9
+  }
+}

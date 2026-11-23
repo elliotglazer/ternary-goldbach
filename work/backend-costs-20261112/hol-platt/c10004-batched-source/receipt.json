@@ -1,0 +1,43 @@
+{
+  "ctx_prec": 176,
+  "threads": 1,
+  "python_flint": "0.9.0",
+  "source_sha256": "19d2e7f74354cf3e0b2fd25e7ff6aa74f8bffe0a50be7954383305a1c4b94998",
+  "tail_enclosure": "[4.241187662478558093611443899369818439103260403811952e-32 +/- 5.21e-84]",
+  "initialization": {
+    "wall_seconds": 0.04645009999876493,
+    "cpu_seconds": 0.03125
+  },
+  "heights": [
+    {
+      "h": 1,
+      "coefficient_setup": {
+        "wall_seconds": 0.0611624999983178,
+        "cpu_seconds": 0.046875
+      },
+      "residue_evaluation": {
+        "wall_seconds": 0.19605999999839696,
+        "cpu_seconds": 0.171875
+      },
+      "matching_rows": 4800,
+      "reference_sha256": "5dd3e11e0a17097aefa165cbbf714081beb8ed4643a492b980421b5115842a59"
+    },
+    {
+      "h": 2,
+      "coefficient_setup": {
+        "wall_seconds": 0.0832109999973909,
+        "cpu_seconds": 0.078125
+      },
+      "residue_evaluation": {
+        "wall_seconds": 0.2735740000025544,
+        "cpu_seconds": 0.15625
+      },
+      "matching_rows": 4800,
+      "reference_sha256": "2ffbc22aff927d5988e2c7a06ee3d4ffe503f312f20017eb3cc97908b47a3543"
+    }
+  ],
+  "inclusive_wall_cpu": {
+    "wall_seconds": 0.701053699998738,
+    "cpu_seconds": 0.5
+  }
+}

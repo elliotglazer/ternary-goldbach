@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\Primes1024Part03.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\Primes1024Part03.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 21.973216999991564,
+  "user_cpu_seconds": 12.296875,
+  "system_cpu_seconds": 12.0,
+  "cpu_seconds": 24.296875,
+  "peak_working_set_bytes": 1457188864,
+  "observed_peak_private_bytes": 3149684736,
+  "memory_samples": 435,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "Primes1024Part03.lean",
+      "bytes": 54973,
+      "sha256": "1937051E983973EE1C8CAFEC9D58CE9922EB5960BEF725238DE9EEE116C90F2E"
+    },
+    {
+      "path": "part1024_03.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "Primes1024Part03.olean",
+      "bytes": 1455240,
+      "sha256": "85EA01D80AC82B1345E96CB87D229C053CBD277BF02455CE02D543E041295A31"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

@@ -1,0 +1,125 @@
+{
+  "scope": "Source-byte inventory and elementary exact checks only; no analytical evaluation.",
+  "expected_source_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "checks": {
+    "three_quarter_factors": true,
+    "actual_radial_exponent": true,
+    "gate_eta_reserve": true,
+    "consumer_m_minus_D_upper_below_Lcap": true,
+    "consumer_D_plus_one_upper_below_Lcap": true
+  },
+  "files": [
+    {
+      "path": "Moments/SectorLocalization.lean",
+      "lines": 609,
+      "sha256": "181462EC0585529C9D72C6CBC714668C9BB5F9BA0067F4868DEF1088C7ADFC6F"
+    },
+    {
+      "path": "Moments/DyadicCount.lean",
+      "lines": 173,
+      "sha256": "1A6DDE7DAABA53251D8A333BF222831D49A2CB6FDF6D42FB378A54C3D1915EF8"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssembly.lean",
+      "lines": 128,
+      "sha256": "ADCB9F1CE81EE71DD5C870C0656D7F58B9E10DC07FDED1AB73831C7B2D0F607F"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssemblyLive.lean",
+      "lines": 84,
+      "sha256": "60FD41CD2EB70E136532879F5DAF2ADC37BC60011AEA002850F37EE997C4DACC"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssemblySourceCaps.lean",
+      "lines": 85,
+      "sha256": "AA2DB5E2FDDD5110C794DC8852BF3766089B807DFDEA2F4FCA2CAE2D1799F610"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssemblyWindows.lean",
+      "lines": 72,
+      "sha256": "42C53BDDBEF765738AEA4FC7B1FC7744D969310902E9E2406B6A892BC25FED67"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssemblyRetained.lean",
+      "lines": 112,
+      "sha256": "2A332AF126B91FA1B2427016F4E2F62A35BAEADA3D8813CCDE421D65DC1FD84D"
+    },
+    {
+      "path": "Inversion/InitialDyadicAssemblyTail.lean",
+      "lines": 207,
+      "sha256": "803B67774E526D6089F223DB95C774428B2830963242029E150C4A8F2CC11C69"
+    },
+    {
+      "path": "Inversion/InitialDyadicTailGates.lean",
+      "lines": 88,
+      "sha256": "C52D01D0D3098FE1DE0CB11491BD6220F144EB75D5A77F896024FE7B877998D8"
+    },
+    {
+      "path": "Inversion/InitialDyadicTailBound.lean",
+      "lines": 122,
+      "sha256": "A2AF36AE04D612F40CC4FC0ED7E2761C2F31604CB0DAB18F40C246AC061C3795"
+    },
+    {
+      "path": "Inversion/InitialHighFrequencyTailAnnulus.lean",
+      "lines": 58,
+      "sha256": "F6655F20790F789043052A10B0F11B41B07FF86280CB79355EB35F8AE4DFF9D7"
+    },
+    {
+      "path": "Inversion/InitialHighFrequencyTailRapid.lean",
+      "lines": 66,
+      "sha256": "53FDA6A2E82B6C38E4595C3148BDEAB49235F36F685D8A0960F59BCF01473AED"
+    },
+    {
+      "path": "Inversion/InitialRetainedSupport.lean",
+      "lines": 82,
+      "sha256": "C4D70957B3F7478D4441F86F7AB607036C63976682838B392450779A4DAE625D"
+    },
+    {
+      "path": "Inversion/InitialRetainedSum.lean",
+      "lines": 140,
+      "sha256": "1333F109E0BDBCE15EDF180CC34387B4328B01C1B6D495C9EDC39E8E1C281489"
+    },
+    {
+      "path": "Inversion/InitialFiniteEnergy.lean",
+      "lines": 152,
+      "sha256": "A93012D7C56AAFEF323F21058B632584D99C60E4032033ECD5EF3DBE525F6981"
+    },
+    {
+      "path": "Inversion/InitialPhysicalLimit.lean",
+      "lines": 122,
+      "sha256": "E134A6C0CC9C484B4495535FBAA298B7F4926DE068A058BDD8E16ED93C1F7241"
+    },
+    {
+      "path": "Inversion/InitialTotalEnergy.lean",
+      "lines": 130,
+      "sha256": "15B1B715C4449310DE64E31FA4852233EE85E7B57C1D03F44ED3F78CEE5616F8"
+    },
+    {
+      "path": "Inversion/InitialRayAttachment.lean",
+      "lines": 439,
+      "sha256": "24DBF037655CB31F79DF0CAC21FF529255A43F5A5C93DBE78054D558E5601613"
+    },
+    {
+      "path": "Inversion/InitialPhysicalReassembly.lean",
+      "lines": 176,
+      "sha256": "2B3024A6AB5EE3D35BECCF45FFE078B4C520A1C94198657E41DDE1FA1FAAB973"
+    },
+    {
+      "path": "Inversion/InitialPhysicalMeasure.lean",
+      "lines": 482,
+      "sha256": "4E34DE8B8777EBB75998F7B484643D4DA6D63F222C352C531655836D0D8B0751"
+    },
+    {
+      "path": "Inversion/InitialZeroModeBudget.lean",
+      "lines": 60,
+      "sha256": "54EF5B0F8B3BBF3C5D8CF7E68411F6B539A2D05A89DDB34D84F744F0C68E4637"
+    },
+    {
+      "path": "QuadraticSieve/PrimePools.lean",
+      "lines": 677,
+      "sha256": "5C7D9F908A6A5EA19F52E9FE2E514170FB986E5F10298CC041B945139132A11F"
+    }
+  ],
+  "author_report_sha256": "D8188C5E8AA59E979BEC024567255CF28845215117F2426C70C31D93F60EBA4D",
+  "author_source_pins_verified": 25
+}

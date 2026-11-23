@@ -1,0 +1,208 @@
+{
+  "scope": "Byte reconciliation and exact rational scalar checks only; no Lean or analytic evaluation.",
+  "author_report_sha256": "7EBE8A5D2A7E2D4B78416A5BB34E1C7EF34E50155A25461A05C698F4989CEF7E",
+  "expected_source_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "verified_author_pins": [
+    {
+      "path": "Energy/State.lean",
+      "sha256": "B5118D2F6F04ED495A6317317B74A7D60BA1B32F2050AEB7EE7E9E4783D67222",
+      "lines": 75
+    },
+    {
+      "path": "Energy/Floor.lean",
+      "sha256": "C21817E4B2C47A5B2DEA174CC15897358A01B05F873880AF9727C2925093B54D",
+      "lines": 59
+    },
+    {
+      "path": "Energy/Bands.lean",
+      "sha256": "42FD3FE963D8DEEF1CC5772979B41A8273E80940641E9F24475FF33397A09C2E",
+      "lines": 106
+    },
+    {
+      "path": "Moments/NaturalMaskedFloor.lean",
+      "sha256": "12876AAAE7F7CE330AAA6007F8FE85BB81EEBC7FF647EC0C0C3074C2DA8677F8",
+      "lines": 173
+    },
+    {
+      "path": "Moments/PlainPositiveEnergy.lean",
+      "sha256": "4067E54974B6EF470B585B253A0E6906766B7F0F5DAEBB00FD48DD2740C2B609",
+      "lines": 52
+    },
+    {
+      "path": "Moments/PlainPositiveScale.lean",
+      "sha256": "DB598DF6BFA787FA463AE09C31DEF2974DB0065D10D793EB2AE3B6A7CC411B92",
+      "lines": 75
+    },
+    {
+      "path": "Moments/PlainGlobalEnergy.lean",
+      "sha256": "9C3EDA2702831D38D9107E2EE287D36E98BFB0D7EAA6A9E93979555CF2464E24",
+      "lines": 141
+    },
+    {
+      "path": "Moments/PlainGlobalActual.lean",
+      "sha256": "B213329E9D509F1F7FE50708F9B0BD897F3CB202B86C6860918826A04F102FA2",
+      "lines": 80
+    },
+    {
+      "path": "Moments/PlainGlobalBound.lean",
+      "sha256": "9EEDF1C9EA4E497A2E9564426A7C8A36CC06A85E8D31D52BF069940366D58699",
+      "lines": 103
+    },
+    {
+      "path": "Moments/CommonMaskEnergy.lean",
+      "sha256": "BA996F7F2AB3275035495BFA8CE42ED28C17AF089B79CCD75721C70619036AFF",
+      "lines": 392
+    },
+    {
+      "path": "Moments/CommonMaskExpansion.lean",
+      "sha256": "C8D1AFB70331A0AC672682CBA3B69926C919D9C931B4296AE3798BCCB587C688",
+      "lines": 390
+    },
+    {
+      "path": "Moments/CommonMaskRadialEnergy.lean",
+      "sha256": "20077F90F61AFEEC9C55A06A2E1133A4F851FDFF97E9645A97ECDE27ED5F5FA3",
+      "lines": 109
+    },
+    {
+      "path": "Moments/ReflectionMass.lean",
+      "sha256": "15213BA9EA109301049130D0F9ECE9E5545B88708214772A63F6F0859263751B",
+      "lines": 258
+    },
+    {
+      "path": "Moments/FiniteProfileExceptionalControl.lean",
+      "sha256": "9294C44A21FD53FB38507C1CF826A9A54DC77BF533EE4E1CB206565804FCBB27",
+      "lines": 94
+    },
+    {
+      "path": "Moments/RayMaskedFloor.lean",
+      "sha256": "DB656577472D2B9883298469914404B74EB6AE30A8BC475773D47874B2BE8057",
+      "lines": 129
+    },
+    {
+      "path": "Moments/RayMaskedFloorState.lean",
+      "sha256": "0ADDE65DA42896C3A2C06CA4E09B97363DE4A5763CEDA12F054C424F95CFB0CD",
+      "lines": 90
+    },
+    {
+      "path": "Moments/RayMaskedFloorSource.lean",
+      "sha256": "251DFA24333ACD6545A20E0C931B3F82F21B5274FF265033B9C8EEB7F716ACB3",
+      "lines": 134
+    },
+    {
+      "path": "Moments/RayMaskedFloorShared.lean",
+      "sha256": "BD7C97D4F8F8F84560CDC2745E1E170772576DA4806138CC4195638A517FC79E",
+      "lines": 97
+    },
+    {
+      "path": "Moments/RayMaskedFloorNatural.lean",
+      "sha256": "E0D563F8A84EC57CB75105467A55E41891BD097306F150B55F758556008EEE5A",
+      "lines": 114
+    },
+    {
+      "path": "Moments/RayMaskedFloorSlots.lean",
+      "sha256": "25090798011E816359E0E0CFF7DD25837A11324DCC675A603A3A2DBE9A4DA4DA",
+      "lines": 101
+    },
+    {
+      "path": "Moments/NaturalFixedRaySourceNaturalPrime.lean",
+      "sha256": "CA6A36E22778FA91B262985F24010BF55697A59FD9A654413D7DA8FB7CAE312A",
+      "lines": 99
+    },
+    {
+      "path": "Moments/NaturalFixedRaySourceRayPrime.lean",
+      "sha256": "1B06B3219B02319110AD35CE9B867B1BCCCF01F861A4E43D2119A0144C071516",
+      "lines": 49
+    },
+    {
+      "path": "Moments/PrimeHeight.lean",
+      "sha256": "A1EC164AF7FF7B0D757E3B6DBBD43DCF9CD394DBE50783C35FE970DD84F64B12",
+      "lines": 207
+    },
+    {
+      "path": "Hecke/Dyadic.lean",
+      "sha256": "15E88379D7386D4D0A873C8D2467EF28AF8ED5FB7392219D634F616B9D36C2A2",
+      "lines": 112
+    },
+    {
+      "path": "Hecke/DyadicContour.lean",
+      "sha256": "EE2E6A428199FBD1DFC34B23D7EAEA69E76FA3E7D0CD70208B620F5BBFE550E1",
+      "lines": 136
+    },
+    {
+      "path": "Hecke/DyadicJoins.lean",
+      "sha256": "29C9B2F656000932021428E972D62435D22937959A08CF37549250E6762B9048",
+      "lines": 47
+    },
+    {
+      "path": "Hecke/DyadicReflectedControl.lean",
+      "sha256": "D6D5B22F9AC3DC41566DCF7D3248E84F6D2FDAC28BBF621A265479FF97D8E0D1",
+      "lines": 92
+    },
+    {
+      "path": "Hecke/LogarithmicInput.lean",
+      "sha256": "9ADCC4FDE13E8A257CDC81F4A1DA752949FCFCF339B856A40411BFE901DC6F0D",
+      "lines": 228
+    },
+    {
+      "path": "Energy/NaturalHighStage.lean",
+      "sha256": "9A8E0F9C45BBEA861336F632D48A526A47694C0A71A860FE88B65E420ED492AB",
+      "lines": 102
+    },
+    {
+      "path": "Energy/NaturalZeroStage.lean",
+      "sha256": "7745F22169E40515D27022D4A88DA9E4BB94A47A50F876FBD2740F9014CD865E",
+      "lines": 137
+    },
+    {
+      "path": "Energy/ZeroGrowthOriginal.lean",
+      "sha256": "6282A4B2C61775A1C92E9F62344366560379EEFF92CA529389C8B57A411BCA7D",
+      "lines": 248
+    },
+    {
+      "path": "work/qrh-campaign/agents/major-constants/QRH_ENERGY_INDUCTION_MATH_AUDIT_2026-11-11.md",
+      "sha256": "C04D05F95C1747652F28576AC41372702F586F5D85E2849F12CD3E4D28A8D695",
+      "lines": 181
+    },
+    {
+      "path": "work/qrh-campaign/agents/independent-feasibility/REVIEW_QRH_ENERGY_INDUCTION_MATH_AUDIT_2026-11-11.md",
+      "sha256": "70B618789695E16ECD8F78F81E951D9A7AB02FA6ED55B78CE9A46CD7203C3877",
+      "lines": 133
+    },
+    {
+      "path": "work/qrh-campaign/agents/major-constants/QRH_CANONICAL_RANK_ANALYTIC_AUDIT_2026-11-11.md",
+      "sha256": "2767A7CC08CC13239EFDBC5242D47505FC44028016251407B21A542CDC98FF4B",
+      "lines": 290
+    },
+    {
+      "path": "work/qrh-campaign/agents/audit/QRH_REMAINING_SOURCE_OBLIGATIONS_2026-11-11.md",
+      "sha256": "B4FD23DBABB297E057E00A6DFDE4BD3A8164202AA40DC292C090E7C5C3858D07",
+      "lines": 72
+    },
+    {
+      "path": "work/qrh-blueprint/QRH_QUADRATIC_RETAINED_RESIDUE_RADIAL_FRONTIER_2026-11-11.md",
+      "sha256": "4C33F3D113D174FDB449DB67A8228CD6D29496D6B2AC85886C52B7FFB6ED971F",
+      "lines": 101
+    }
+  ],
+  "additional_read_source_pins": [
+    {
+      "path": "Moments/RayNonprincipal.lean",
+      "sha256": "B0E1D4D7F843992F272D0544E5EC43C68420A042B66C3727D542A86FE0190970",
+      "lines": 75
+    },
+    {
+      "path": "Moments/PrimeGlobal.lean",
+      "sha256": "8FFC0F6629F775AA1BD9DA2CC1FB61F4D37DD710B214035299C800EC8DFFFE9E",
+      "lines": 70
+    }
+  ],
+  "exact_scalar_checks": {
+    "original_growth_modulus": true,
+    "zero_floor_extra_le_one_half": true,
+    "positive_floor_extra": true,
+    "positive_floor_reserve": true,
+    "positive_kappa_lower": true,
+    "height_budget": true,
+    "height_auxiliary_smallness": true
+  }
+}

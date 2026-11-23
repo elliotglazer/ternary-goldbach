@@ -1,0 +1,1218 @@
+{
+  "scope": "raw field capacities at maximum candidate size; no timings or successful data",
+  "N": 1000000000000000000000000000,
+  "batch_geometry": [
+    {
+      "q": 1,
+      "product_bits": 90,
+      "product_bytes": 12,
+      "root_bytes": 12,
+      "smooth_inverse_bytes": 12,
+      "product_tree_multiplications": 0,
+      "crt_inverses": 0,
+      "crt_per_coordinate_mod_products": 0,
+      "crt_per_coordinate_lift_products": 0,
+      "optional_remainder_tree_divisions": 0,
+      "levels": [],
+      "proth_checker_squares": 44,
+      "smooth_checker_squares": 128,
+      "smooth_checker_other_products_min": 56,
+      "smooth_checker_other_products_max": 60,
+      "all_product_tree_value_bits": 90,
+      "all_crt_inverse_value_bits": 0,
+      "checker_square_raw_bits": 180
+    },
+    {
+      "q": 8,
+      "product_bits": 718,
+      "product_bytes": 90,
+      "root_bytes": 90,
+      "smooth_inverse_bytes": 90,
+      "product_tree_multiplications": 7,
+      "crt_inverses": 7,
+      "crt_per_coordinate_mod_products": 7,
+      "crt_per_coordinate_lift_products": 7,
+      "optional_remainder_tree_divisions": 14,
+      "levels": [
+        {
+          "factors_per_node": 2,
+          "nodes": 4,
+          "child_bits": 90,
+          "product_bits": 180,
+          "raw_two_child_product_bits": 180,
+          "signed_root_difference_bits": 91,
+          "inverse_modulus_bits": 90,
+          "crt_modmul_raw_bits": 180,
+          "crt_lift_mul_raw_bits": 180,
+          "remainder_parent_bits": 180,
+          "remainder_divisor_bits": 90
+        },
+        {
+          "factors_per_node": 4,
+          "nodes": 2,
+          "child_bits": 180,
+          "product_bits": 359,
+          "raw_two_child_product_bits": 360,
+          "signed_root_difference_bits": 181,
+          "inverse_modulus_bits": 180,
+          "crt_modmul_raw_bits": 360,
+          "crt_lift_mul_raw_bits": 360,
+          "remainder_parent_bits": 359,
+          "remainder_divisor_bits": 180
+        },
+        {
+          "factors_per_node": 8,
+          "nodes": 1,
+          "child_bits": 359,
+          "product_bits": 718,
+          "raw_two_child_product_bits": 718,
+          "signed_root_difference_bits": 360,
+          "inverse_modulus_bits": 359,
+          "crt_modmul_raw_bits": 718,
+          "crt_lift_mul_raw_bits": 718,
+          "remainder_parent_bits": 718,
+          "remainder_divisor_bits": 359
+        }
+      ],
+      "proth_checker_squares": 44,
+      "smooth_checker_squares": 128,
+      "smooth_checker_other_products_min": 56,
+      "smooth_checker_other_products_max": 60,
+      "all_product_tree_value_bits": 2876,
+      "all_crt_inverse_value_bits": 1079,
+      "checker_square_raw_bits": 1436
+    },
+    {
+      "q": 16,
+      "product_bits": 1436,
+      "product_bytes": 180,
+      "root_bytes": 180,
+      "smooth_inverse_bytes": 180,
+      "product_tree_multiplications": 15,
+      "crt_inverses": 15,
+      "crt_per_coordinate_mod_products": 15,
+      "crt_per_coordinate_lift_products": 15,
+      "optional_remainder_tree_divisions": 30,
+      "levels": [
+        {
+          "factors_per_node": 2,
+          "nodes": 8,
+          "child_bits": 90,
+          "product_bits": 180,
+          "raw_two_child_product_bits": 180,
+          "signed_root_difference_bits": 91,
+          "inverse_modulus_bits": 90,
+          "crt_modmul_raw_bits": 180,
+          "crt_lift_mul_raw_bits": 180,
+          "remainder_parent_bits": 180,
+          "remainder_divisor_bits": 90
+        },
+        {
+          "factors_per_node": 4,
+          "nodes": 4,
+          "child_bits": 180,
+          "product_bits": 359,
+          "raw_two_child_product_bits": 360,
+          "signed_root_difference_bits": 181,
+          "inverse_modulus_bits": 180,
+          "crt_modmul_raw_bits": 360,
+          "crt_lift_mul_raw_bits": 360,
+          "remainder_parent_bits": 359,
+          "remainder_divisor_bits": 180
+        },
+        {
+          "factors_per_node": 8,
+          "nodes": 2,
+          "child_bits": 359,
+          "product_bits": 718,
+          "raw_two_child_product_bits": 718,
+          "signed_root_difference_bits": 360,
+          "inverse_modulus_bits": 359,
+          "crt_modmul_raw_bits": 718,
+          "crt_lift_mul_raw_bits": 718,
+          "remainder_parent_bits": 718,
+          "remainder_divisor_bits": 359
+        },
+        {
+          "factors_per_node": 16,
+          "nodes": 1,
+          "child_bits": 718,
+          "product_bits": 1436,
+          "raw_two_child_product_bits": 1436,
+          "signed_root_difference_bits": 719,
+          "inverse_modulus_bits": 718,
+          "crt_modmul_raw_bits": 1436,
+          "crt_lift_mul_raw_bits": 1436,
+          "remainder_parent_bits": 1436,
+          "remainder_divisor_bits": 718
+        }
+      ],
+      "proth_checker_squares": 44,
+      "smooth_checker_squares": 128,
+      "smooth_checker_other_products_min": 56,
+      "smooth_checker_other_products_max": 60,
+      "all_product_tree_value_bits": 7188,
+      "all_crt_inverse_value_bits": 2876,
+      "checker_square_raw_bits": 2872
+    },
+    {
+      "q": 32,
+      "product_bits": 2871,
+      "product_bytes": 359,
+      "root_bytes": 359,
+      "smooth_inverse_bytes": 359,
+      "product_tree_multiplications": 31,
+      "crt_inverses": 31,
+      "crt_per_coordinate_mod_products": 31,
+      "crt_per_coordinate_lift_products": 31,
+      "optional_remainder_tree_divisions": 62,
+      "levels": [
+        {
+          "factors_per_node": 2,
+          "nodes": 16,
+          "child_bits": 90,
+          "product_bits": 180,
+          "raw_two_child_product_bits": 180,
+          "signed_root_difference_bits": 91,
+          "inverse_modulus_bits": 90,
+          "crt_modmul_raw_bits": 180,
+          "crt_lift_mul_raw_bits": 180,
+          "remainder_parent_bits": 180,
+          "remainder_divisor_bits": 90
+        },
+        {
+          "factors_per_node": 4,
+          "nodes": 8,
+          "child_bits": 180,
+          "product_bits": 359,
+          "raw_two_child_product_bits": 360,
+          "signed_root_difference_bits": 181,
+          "inverse_modulus_bits": 180,
+          "crt_modmul_raw_bits": 360,
+          "crt_lift_mul_raw_bits": 360,
+          "remainder_parent_bits": 359,
+          "remainder_divisor_bits": 180
+        },
+        {
+          "factors_per_node": 8,
+          "nodes": 4,
+          "child_bits": 359,
+          "product_bits": 718,
+          "raw_two_child_product_bits": 718,
+          "signed_root_difference_bits": 360,
+          "inverse_modulus_bits": 359,
+          "crt_modmul_raw_bits": 718,
+          "crt_lift_mul_raw_bits": 718,
+          "remainder_parent_bits": 718,
+          "remainder_divisor_bits": 359
+        },
+        {
+          "factors_per_node": 16,
+          "nodes": 2,
+          "child_bits": 718,
+          "product_bits": 1436,
+          "raw_two_child_product_bits": 1436,
+          "signed_root_difference_bits": 719,
+          "inverse_modulus_bits": 718,
+          "crt_modmul_raw_bits": 1436,
+          "crt_lift_mul_raw_bits": 1436,
+          "remainder_parent_bits": 1436,
+          "remainder_divisor_bits": 718
+        },
+        {
+          "factors_per_node": 32,
+          "nodes": 1,
+          "child_bits": 1436,
+          "product_bits": 2871,
+          "raw_two_child_product_bits": 2872,
+          "signed_root_difference_bits": 1437,
+          "inverse_modulus_bits": 1436,
+          "crt_modmul_raw_bits": 2872,
+          "crt_lift_mul_raw_bits": 2872,
+          "remainder_parent_bits": 2871,
+          "remainder_divisor_bits": 1436
+        }
+      ],
+      "proth_checker_squares": 44,
+      "smooth_checker_squares": 128,
+      "smooth_checker_other_products_min": 56,
+      "smooth_checker_other_products_max": 60,
+      "all_product_tree_value_bits": 17247,
+      "all_crt_inverse_value_bits": 7188,
+      "checker_square_raw_bits": 5742
+    },
+    {
+      "q": 64,
+      "product_bits": 5741,
+      "product_bytes": 718,
+      "root_bytes": 718,
+      "smooth_inverse_bytes": 718,
+      "product_tree_multiplications": 63,
+      "crt_inverses": 63,
+      "crt_per_coordinate_mod_products": 63,
+      "crt_per_coordinate_lift_products": 63,
+      "optional_remainder_tree_divisions": 126,
+      "levels": [
+        {
+          "factors_per_node": 2,
+          "nodes": 32,
+          "child_bits": 90,
+          "product_bits": 180,
+          "raw_two_child_product_bits": 180,
+          "signed_root_difference_bits": 91,
+          "inverse_modulus_bits": 90,
+          "crt_modmul_raw_bits": 180,
+          "crt_lift_mul_raw_bits": 180,
+          "remainder_parent_bits": 180,
+          "remainder_divisor_bits": 90
+        },
+        {
+          "factors_per_node": 4,
+          "nodes": 16,
+          "child_bits": 180,
+          "product_bits": 359,
+          "raw_two_child_product_bits": 360,
+          "signed_root_difference_bits": 181,
+          "inverse_modulus_bits": 180,
+          "crt_modmul_raw_bits": 360,
+          "crt_lift_mul_raw_bits": 360,
+          "remainder_parent_bits": 359,
+          "remainder_divisor_bits": 180
+        },
+        {
+          "factors_per_node": 8,
+          "nodes": 8,
+          "child_bits": 359,
+          "product_bits": 718,
+          "raw_two_child_product_bits": 718,
+          "signed_root_difference_bits": 360,
+          "inverse_modulus_bits": 359,
+          "crt_modmul_raw_bits": 718,
+          "crt_lift_mul_raw_bits": 718,
+          "remainder_parent_bits": 718,
+          "remainder_divisor_bits": 359
+        },
+        {
+          "factors_per_node": 16,
+          "nodes": 4,
+          "child_bits": 718,
+          "product_bits": 1436,
+          "raw_two_child_product_bits": 1436,
+          "signed_root_difference_bits": 719,
+          "inverse_modulus_bits": 718,
+          "crt_modmul_raw_bits": 1436,
+          "crt_lift_mul_raw_bits": 1436,
+          "remainder_parent_bits": 1436,
+          "remainder_divisor_bits": 718
+        },
+        {
+          "factors_per_node": 32,
+          "nodes": 2,
+          "child_bits": 1436,
+          "product_bits": 2871,
+          "raw_two_child_product_bits": 2872,
+          "signed_root_difference_bits": 1437,
+          "inverse_modulus_bits": 1436,
+          "crt_modmul_raw_bits": 2872,
+          "crt_lift_mul_raw_bits": 2872,
+          "remainder_parent_bits": 2871,
+          "remainder_divisor_bits": 1436
+        },
+        {
+          "factors_per_node": 64,
+          "nodes": 1,
+          "child_bits": 2871,
+          "product_bits": 5741,
+          "raw_two_child_product_bits": 5742,
+          "signed_root_difference_bits": 2872,
+          "inverse_modulus_bits": 2871,
+          "crt_modmul_raw_bits": 5742,
+          "crt_lift_mul_raw_bits": 5742,
+          "remainder_parent_bits": 5741,
+          "remainder_divisor_bits": 2871
+        }
+      ],
+      "proth_checker_squares": 44,
+      "smooth_checker_squares": 128,
+      "smooth_checker_other_products_min": 56,
+      "smooth_checker_other_products_max": 60,
+      "all_product_tree_value_bits": 40235,
+      "all_crt_inverse_value_bits": 17247,
+      "checker_square_raw_bits": 11482
+    }
+  ],
+  "campaign_geometry": [
+    {
+      "B": 1000000000000000,
+      "K": 2000000000000,
+      "D": 499999999999998,
+      "proth_offset_bits": 4,
+      "smooth_offset_bits": 4,
+      "batches": [
+        {
+          "q": 1,
+          "full_batches": 2000000000000,
+          "proth_positions_bytes": 1000000000000,
+          "smooth_positions_bytes": 1000000000000,
+          "smooth_lane_tags_bytes": 750000000000,
+          "roots_bytes": 24000000000000,
+          "smooth_inverses_bytes": 24000000000000,
+          "proth_root_total_bytes": 25000000000000,
+          "smooth_root_total_bytes": 49750000000000,
+          "factor_specific_total_bytes": 289750000000000,
+          "compact_one_base_bytes": 1000000000000,
+          "compact_six_base_bytes": 1750000000000,
+          "historical_11bit_offsets_same_K_bytes": 2750000000000
+        },
+        {
+          "q": 8,
+          "full_batches": 250000000000,
+          "proth_positions_bytes": 1000000000000,
+          "smooth_positions_bytes": 1000000000000,
+          "smooth_lane_tags_bytes": 750000000000,
+          "roots_bytes": 22500000000000,
+          "smooth_inverses_bytes": 22500000000000,
+          "proth_root_total_bytes": 23500000000000,
+          "smooth_root_total_bytes": 46750000000000,
+          "factor_specific_total_bytes": 271750000000000,
+          "compact_one_base_bytes": 1000000000000,
+          "compact_six_base_bytes": 1750000000000,
+          "historical_11bit_offsets_same_K_bytes": 2750000000000
+        },
+        {
+          "q": 16,
+          "full_batches": 125000000000,
+          "proth_positions_bytes": 1000000000000,
+          "smooth_positions_bytes": 1000000000000,
+          "smooth_lane_tags_bytes": 750000000000,
+          "roots_bytes": 22500000000000,
+          "smooth_inverses_bytes": 22500000000000,
+          "proth_root_total_bytes": 23500000000000,
+          "smooth_root_total_bytes": 46750000000000,
+          "factor_specific_total_bytes": 271750000000000,
+          "compact_one_base_bytes": 1000000000000,
+          "compact_six_base_bytes": 1750000000000,
+          "historical_11bit_offsets_same_K_bytes": 2750000000000
+        },
+        {
+          "q": 32,
+          "full_batches": 62500000000,
+          "proth_positions_bytes": 1000000000000,
+          "smooth_positions_bytes": 1000000000000,
+          "smooth_lane_tags_bytes": 750000000000,
+          "roots_bytes": 22437500000000,
+          "smooth_inverses_bytes": 22437500000000,
+          "proth_root_total_bytes": 23437500000000,
+          "smooth_root_total_bytes": 46625000000000,
+          "factor_specific_total_bytes": 271000000000000,
+          "compact_one_base_bytes": 1000000000000,
+          "compact_six_base_bytes": 1750000000000,
+          "historical_11bit_offsets_same_K_bytes": 2750000000000
+        },
+        {
+          "q": 64,
+          "full_batches": 31250000000,
+          "proth_positions_bytes": 1000000000000,
+          "smooth_positions_bytes": 1000000000000,
+          "smooth_lane_tags_bytes": 750000000000,
+          "roots_bytes": 22437500000000,
+          "smooth_inverses_bytes": 22437500000000,
+          "proth_root_total_bytes": 23437500000000,
+          "smooth_root_total_bytes": 46625000000000,
+          "factor_specific_total_bytes": 271000000000000,
+          "compact_one_base_bytes": 1000000000000,
+          "compact_six_base_bytes": 1750000000000,
+          "historical_11bit_offsets_same_K_bytes": 2750000000000
+        }
+      ]
+    },
+    {
+      "B": 2000000000000000,
+      "K": 1000000000000,
+      "D": 999999999999998,
+      "proth_offset_bits": 5,
+      "smooth_offset_bits": 5,
+      "batches": [
+        {
+          "q": 1,
+          "full_batches": 1000000000000,
+          "proth_positions_bytes": 625000000000,
+          "smooth_positions_bytes": 625000000000,
+          "smooth_lane_tags_bytes": 375000000000,
+          "roots_bytes": 12000000000000,
+          "smooth_inverses_bytes": 12000000000000,
+          "proth_root_total_bytes": 12625000000000,
+          "smooth_root_total_bytes": 25000000000000,
+          "factor_specific_total_bytes": 145000000000000,
+          "compact_one_base_bytes": 625000000000,
+          "compact_six_base_bytes": 1000000000000,
+          "historical_11bit_offsets_same_K_bytes": 1375000000000
+        },
+        {
+          "q": 8,
+          "full_batches": 125000000000,
+          "proth_positions_bytes": 625000000000,
+          "smooth_positions_bytes": 625000000000,
+          "smooth_lane_tags_bytes": 375000000000,
+          "roots_bytes": 11250000000000,
+          "smooth_inverses_bytes": 11250000000000,
+          "proth_root_total_bytes": 11875000000000,
+          "smooth_root_total_bytes": 23500000000000,
+          "factor_specific_total_bytes": 136000000000000,
+          "compact_one_base_bytes": 625000000000,
+          "compact_six_base_bytes": 1000000000000,
+          "historical_11bit_offsets_same_K_bytes": 1375000000000
+        },
+        {
+          "q": 16,
+          "full_batches": 62500000000,
+          "proth_positions_bytes": 625000000000,
+          "smooth_positions_bytes": 625000000000,
+          "smooth_lane_tags_bytes": 375000000000,
+          "roots_bytes": 11250000000000,
+          "smooth_inverses_bytes": 11250000000000,
+          "proth_root_total_bytes": 11875000000000,
+          "smooth_root_total_bytes": 23500000000000,
+          "factor_specific_total_bytes": 136000000000000,
+          "compact_one_base_bytes": 625000000000,
+          "compact_six_base_bytes": 1000000000000,
+          "historical_11bit_offsets_same_K_bytes": 1375000000000
+        },
+        {
+          "q": 32,
+          "full_batches": 31250000000,
+          "proth_positions_bytes": 625000000000,
+          "smooth_positions_bytes": 625000000000,
+          "smooth_lane_tags_bytes": 375000000000,
+          "roots_bytes": 11218750000000,
+          "smooth_inverses_bytes": 11218750000000,
+          "proth_root_total_bytes": 11843750000000,
+          "smooth_root_total_bytes": 23437500000000,
+          "factor_specific_total_bytes": 135625000000000,
+          "compact_one_base_bytes": 625000000000,
+          "compact_six_base_bytes": 1000000000000,
+          "historical_11bit_offsets_same_K_bytes": 1375000000000
+        },
+        {
+          "q": 64,
+          "full_batches": 15625000000,
+          "proth_positions_bytes": 625000000000,
+          "smooth_positions_bytes": 625000000000,
+          "smooth_lane_tags_bytes": 375000000000,
+          "roots_bytes": 11218750000000,
+          "smooth_inverses_bytes": 11218750000000,
+          "proth_root_total_bytes": 11843750000000,
+          "smooth_root_total_bytes": 23437500000000,
+          "factor_specific_total_bytes": 135625000000000,
+          "compact_one_base_bytes": 625000000000,
+          "compact_six_base_bytes": 1000000000000,
+          "historical_11bit_offsets_same_K_bytes": 1375000000000
+        }
+      ]
+    },
+    {
+      "B": 5000000000000000,
+      "K": 400000000000,
+      "D": 2499999999999998,
+      "proth_offset_bits": 7,
+      "smooth_offset_bits": 7,
+      "batches": [
+        {
+          "q": 1,
+          "full_batches": 400000000000,
+          "proth_positions_bytes": 350000000000,
+          "smooth_positions_bytes": 350000000000,
+          "smooth_lane_tags_bytes": 150000000000,
+          "roots_bytes": 4800000000000,
+          "smooth_inverses_bytes": 4800000000000,
+          "proth_root_total_bytes": 5150000000000,
+          "smooth_root_total_bytes": 10100000000000,
+          "factor_specific_total_bytes": 58100000000000,
+          "compact_one_base_bytes": 350000000000,
+          "compact_six_base_bytes": 500000000000,
+          "historical_11bit_offsets_same_K_bytes": 550000000000
+        },
+        {
+          "q": 8,
+          "full_batches": 50000000000,
+          "proth_positions_bytes": 350000000000,
+          "smooth_positions_bytes": 350000000000,
+          "smooth_lane_tags_bytes": 150000000000,
+          "roots_bytes": 4500000000000,
+          "smooth_inverses_bytes": 4500000000000,
+          "proth_root_total_bytes": 4850000000000,
+          "smooth_root_total_bytes": 9500000000000,
+          "factor_specific_total_bytes": 54500000000000,
+          "compact_one_base_bytes": 350000000000,
+          "compact_six_base_bytes": 500000000000,
+          "historical_11bit_offsets_same_K_bytes": 550000000000
+        },
+        {
+          "q": 16,
+          "full_batches": 25000000000,
+          "proth_positions_bytes": 350000000000,
+          "smooth_positions_bytes": 350000000000,
+          "smooth_lane_tags_bytes": 150000000000,
+          "roots_bytes": 4500000000000,
+          "smooth_inverses_bytes": 4500000000000,
+          "proth_root_total_bytes": 4850000000000,
+          "smooth_root_total_bytes": 9500000000000,
+          "factor_specific_total_bytes": 54500000000000,
+          "compact_one_base_bytes": 350000000000,
+          "compact_six_base_bytes": 500000000000,
+          "historical_11bit_offsets_same_K_bytes": 550000000000
+        },
+        {
+          "q": 32,
+          "full_batches": 12500000000,
+          "proth_positions_bytes": 350000000000,
+          "smooth_positions_bytes": 350000000000,
+          "smooth_lane_tags_bytes": 150000000000,
+          "roots_bytes": 4487500000000,
+          "smooth_inverses_bytes": 4487500000000,
+          "proth_root_total_bytes": 4837500000000,
+          "smooth_root_total_bytes": 9475000000000,
+          "factor_specific_total_bytes": 54350000000000,
+          "compact_one_base_bytes": 350000000000,
+          "compact_six_base_bytes": 500000000000,
+          "historical_11bit_offsets_same_K_bytes": 550000000000
+        },
+        {
+          "q": 64,
+          "full_batches": 6250000000,
+          "proth_positions_bytes": 350000000000,
+          "smooth_positions_bytes": 350000000000,
+          "smooth_lane_tags_bytes": 150000000000,
+          "roots_bytes": 4487500000000,
+          "smooth_inverses_bytes": 4487500000000,
+          "proth_root_total_bytes": 4837500000000,
+          "smooth_root_total_bytes": 9475000000000,
+          "factor_specific_total_bytes": 54350000000000,
+          "compact_one_base_bytes": 350000000000,
+          "compact_six_base_bytes": 500000000000,
+          "historical_11bit_offsets_same_K_bytes": 550000000000
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "K": 200000000000,
+      "D": 4999999999999998,
+      "proth_offset_bits": 8,
+      "smooth_offset_bits": 8,
+      "batches": [
+        {
+          "q": 1,
+          "full_batches": 200000000000,
+          "proth_positions_bytes": 200000000000,
+          "smooth_positions_bytes": 200000000000,
+          "smooth_lane_tags_bytes": 75000000000,
+          "roots_bytes": 2400000000000,
+          "smooth_inverses_bytes": 2400000000000,
+          "proth_root_total_bytes": 2600000000000,
+          "smooth_root_total_bytes": 5075000000000,
+          "factor_specific_total_bytes": 29075000000000,
+          "compact_one_base_bytes": 200000000000,
+          "compact_six_base_bytes": 275000000000,
+          "historical_11bit_offsets_same_K_bytes": 275000000000
+        },
+        {
+          "q": 8,
+          "full_batches": 25000000000,
+          "proth_positions_bytes": 200000000000,
+          "smooth_positions_bytes": 200000000000,
+          "smooth_lane_tags_bytes": 75000000000,
+          "roots_bytes": 2250000000000,
+          "smooth_inverses_bytes": 2250000000000,
+          "proth_root_total_bytes": 2450000000000,
+          "smooth_root_total_bytes": 4775000000000,
+          "factor_specific_total_bytes": 27275000000000,
+          "compact_one_base_bytes": 200000000000,
+          "compact_six_base_bytes": 275000000000,
+          "historical_11bit_offsets_same_K_bytes": 275000000000
+        },
+        {
+          "q": 16,
+          "full_batches": 12500000000,
+          "proth_positions_bytes": 200000000000,
+          "smooth_positions_bytes": 200000000000,
+          "smooth_lane_tags_bytes": 75000000000,
+          "roots_bytes": 2250000000000,
+          "smooth_inverses_bytes": 2250000000000,
+          "proth_root_total_bytes": 2450000000000,
+          "smooth_root_total_bytes": 4775000000000,
+          "factor_specific_total_bytes": 27275000000000,
+          "compact_one_base_bytes": 200000000000,
+          "compact_six_base_bytes": 275000000000,
+          "historical_11bit_offsets_same_K_bytes": 275000000000
+        },
+        {
+          "q": 32,
+          "full_batches": 6250000000,
+          "proth_positions_bytes": 200000000000,
+          "smooth_positions_bytes": 200000000000,
+          "smooth_lane_tags_bytes": 75000000000,
+          "roots_bytes": 2243750000000,
+          "smooth_inverses_bytes": 2243750000000,
+          "proth_root_total_bytes": 2443750000000,
+          "smooth_root_total_bytes": 4762500000000,
+          "factor_specific_total_bytes": 27200000000000,
+          "compact_one_base_bytes": 200000000000,
+          "compact_six_base_bytes": 275000000000,
+          "historical_11bit_offsets_same_K_bytes": 275000000000
+        },
+        {
+          "q": 64,
+          "full_batches": 3125000000,
+          "proth_positions_bytes": 200000000000,
+          "smooth_positions_bytes": 200000000000,
+          "smooth_lane_tags_bytes": 75000000000,
+          "roots_bytes": 2243750000000,
+          "smooth_inverses_bytes": 2243750000000,
+          "proth_root_total_bytes": 2443750000000,
+          "smooth_root_total_bytes": 4762500000000,
+          "factor_specific_total_bytes": 27200000000000,
+          "compact_one_base_bytes": 200000000000,
+          "compact_six_base_bytes": 275000000000,
+          "historical_11bit_offsets_same_K_bytes": 275000000000
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "K": 100000000000,
+      "D": 9999999999999998,
+      "proth_offset_bits": 9,
+      "smooth_offset_bits": 9,
+      "batches": [
+        {
+          "q": 1,
+          "full_batches": 100000000000,
+          "proth_positions_bytes": 112500000000,
+          "smooth_positions_bytes": 112500000000,
+          "smooth_lane_tags_bytes": 37500000000,
+          "roots_bytes": 1200000000000,
+          "smooth_inverses_bytes": 1200000000000,
+          "proth_root_total_bytes": 1312500000000,
+          "smooth_root_total_bytes": 2550000000000,
+          "factor_specific_total_bytes": 14550000000000,
+          "compact_one_base_bytes": 112500000000,
+          "compact_six_base_bytes": 150000000000,
+          "historical_11bit_offsets_same_K_bytes": 137500000000
+        },
+        {
+          "q": 8,
+          "full_batches": 12500000000,
+          "proth_positions_bytes": 112500000000,
+          "smooth_positions_bytes": 112500000000,
+          "smooth_lane_tags_bytes": 37500000000,
+          "roots_bytes": 1125000000000,
+          "smooth_inverses_bytes": 1125000000000,
+          "proth_root_total_bytes": 1237500000000,
+          "smooth_root_total_bytes": 2400000000000,
+          "factor_specific_total_bytes": 13650000000000,
+          "compact_one_base_bytes": 112500000000,
+          "compact_six_base_bytes": 150000000000,
+          "historical_11bit_offsets_same_K_bytes": 137500000000
+        },
+        {
+          "q": 16,
+          "full_batches": 6250000000,
+          "proth_positions_bytes": 112500000000,
+          "smooth_positions_bytes": 112500000000,
+          "smooth_lane_tags_bytes": 37500000000,
+          "roots_bytes": 1125000000000,
+          "smooth_inverses_bytes": 1125000000000,
+          "proth_root_total_bytes": 1237500000000,
+          "smooth_root_total_bytes": 2400000000000,
+          "factor_specific_total_bytes": 13650000000000,
+          "compact_one_base_bytes": 112500000000,
+          "compact_six_base_bytes": 150000000000,
+          "historical_11bit_offsets_same_K_bytes": 137500000000
+        },
+        {
+          "q": 32,
+          "full_batches": 3125000000,
+          "proth_positions_bytes": 112500000000,
+          "smooth_positions_bytes": 112500000000,
+          "smooth_lane_tags_bytes": 37500000000,
+          "roots_bytes": 1121875000000,
+          "smooth_inverses_bytes": 1121875000000,
+          "proth_root_total_bytes": 1234375000000,
+          "smooth_root_total_bytes": 2393750000000,
+          "factor_specific_total_bytes": 13612500000000,
+          "compact_one_base_bytes": 112500000000,
+          "compact_six_base_bytes": 150000000000,
+          "historical_11bit_offsets_same_K_bytes": 137500000000
+        },
+        {
+          "q": 64,
+          "full_batches": 1562500000,
+          "proth_positions_bytes": 112500000000,
+          "smooth_positions_bytes": 112500000000,
+          "smooth_lane_tags_bytes": 37500000000,
+          "roots_bytes": 1121875000000,
+          "smooth_inverses_bytes": 1121875000000,
+          "proth_root_total_bytes": 1234375000000,
+          "smooth_root_total_bytes": 2393750000000,
+          "factor_specific_total_bytes": 13612500000000,
+          "compact_one_base_bytes": 112500000000,
+          "compact_six_base_bytes": 150000000000,
+          "historical_11bit_offsets_same_K_bytes": 137500000000
+        }
+      ]
+    }
+  ],
+  "factor_specific_schedules": [
+    {
+      "F": 32089678420800,
+      "squares": 38,
+      "other_power_products": 22,
+      "unit_products": 10,
+      "total_modular_products": 70,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 6,
+          "first_power": 32,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 2,
+          "first_power": 5,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    },
+    {
+      "F": 32490799401060,
+      "squares": 38,
+      "other_power_products": 23,
+      "unit_products": 10,
+      "total_modular_products": 71,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 2,
+          "first_power": 2,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 5,
+          "first_power": 81,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    },
+    {
+      "F": 33092480871450,
+      "squares": 37,
+      "other_power_products": 25,
+      "unit_products": 10,
+      "total_modular_products": 72,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 1,
+          "first_power": 1,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 2,
+          "first_power": 3,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 2,
+          "first_power": 5,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 2,
+          "first_power": 11,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    },
+    {
+      "F": 33694162341840,
+      "squares": 37,
+      "other_power_products": 24,
+      "unit_products": 10,
+      "total_modular_products": 71,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 4,
+          "first_power": 8,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 2,
+          "first_power": 3,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 2,
+          "first_power": 7,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    },
+    {
+      "F": 35098085772750,
+      "squares": 37,
+      "other_power_products": 25,
+      "unit_products": 10,
+      "total_modular_products": 72,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 1,
+          "first_power": 1,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 3,
+          "first_power": 25,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 2,
+          "first_power": 7,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    },
+    {
+      "F": 36100888223400,
+      "squares": 38,
+      "other_power_products": 23,
+      "unit_products": 10,
+      "total_modular_products": 71,
+      "exponents": [
+        {
+          "prime": 2,
+          "e": 3,
+          "first_power": 4,
+          "final_power": null
+        },
+        {
+          "prime": 3,
+          "e": 3,
+          "first_power": 9,
+          "final_power": 3
+        },
+        {
+          "prime": 5,
+          "e": 2,
+          "first_power": 5,
+          "final_power": 5
+        },
+        {
+          "prime": 7,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 7
+        },
+        {
+          "prime": 11,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 11
+        },
+        {
+          "prime": 13,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 13
+        },
+        {
+          "prime": 17,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 17
+        },
+        {
+          "prime": 19,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 19
+        },
+        {
+          "prime": 23,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 23
+        },
+        {
+          "prime": 29,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 29
+        },
+        {
+          "prime": 31,
+          "e": 1,
+          "first_power": 1,
+          "final_power": 31
+        }
+      ]
+    }
+  ]
+}

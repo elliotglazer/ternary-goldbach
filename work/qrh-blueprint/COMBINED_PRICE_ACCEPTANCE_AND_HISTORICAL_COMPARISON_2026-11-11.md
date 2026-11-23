@@ -1,0 +1,24 @@
+# Combined prices accepted and historical savings compared
+
+2026-11-11. Root read the complete author and independent review, verified both output hashes and the exact independent review hash, and accepts the combined40 result at its conditional saved-metadata scope. Author `moebius/COMBINED_CONDUCTOR_PRECISION_PRICES_2026-11-11.md` has SHA256 C5A2B6B7A7E7688C566D62495A2FD99D68604B9FB8B1C8CC1BD10AC58D0AD41C; independent review `prime-estimates/REVIEW_COMBINED_CONDUCTOR_PRECISION_PRICES_2026-11-11.md` has SHA256 3C01C900EB797A1A13EDE16E0BEF3BECC27EDD40F3BFED161FEA4345519148E4. Agent paths are relative to work/qrh-campaign/agents.
+
+Both first runs passed without a price-result correction. Independent reconstruction matched333215 contexts,2099 precision-width classes, all133 forty-weight projections, every sharper/global/new price component, all converter branches, and full per-precision cache closure. Original S_base/D provenance and historical phase validation remain explicitly inherited through their accepted dependencies. No numerical samples, signs, completeness or formal proof objects were produced.
+
+For the main joined scenario, the fixed-three transform arithmetic core is3596036081178683240. Its separate124-unit unsigned converter core is6704309432889688 for54067011555562 actual complex input regrids. Their sum is3602740390611572928. Complete signed, range, shift, source binding, producer and proof costs are not contained in that sum.
+
+The transform-only core is18.1050678 percent below the global-p108 comparator4391036155239028824. Including the newly counted converter core leaves17.9523861 percent of that comparator as a reserve for the remaining differential costs. This is not a runtime saving. The same selected components are8.7289045 percent below the sharper predecessor3947296097673006294.
+
+The fixed-three cache scale/sum core is67002832768, a cold change of minus2490126976 against sharper local and plus2840214080 against global108. The complete cache has8467 kernel/p keys and363202368 entries. Its FFT has2388169382 general complex products and5865912000 complex additions. These FFT counts have different units and are not added to byte-template subtotals. Roots, chirps, setup widths, actual identities and cache lifetimes remain paid. Sunk comparison does not refund an earlier schedule.
+
+For the user's historical comparison, the accepted earlier padded-p134 arithmetic subtotal was7674906601984255182. The accepted local-width and normalized-cache chain preserves that selected conductor family, source labels, ordered axes, outputs and original heights. That older subtotal excludes the later41 guard layers. The new transform-plus-converter core is53.0581859 percent below it, or a2.1302969-fold reduction in these selected arithmetic units, despite including those guards. This is a comparison of sufficient candidate implementations, not identical numerical centers or measured checking time.
+
+Earlier mathematical/circuit changes are separate milestones. Declared original primitive-character labels18068152606 became4351723951 in the selected current family,75.914948 percent fewer labels. An intermediate original-RH domain restriction removed about46.8 percent of its height-weighted volume. Those are geometry, not runtime. Earlier whole-axis versus fixed-order circuit comparisons also changed conductor domains and heights; their operation ratios cannot be multiplied indiscriminately into the53.06 percent arithmetic comparison. The p134 subtotal already uses the reduced current family and heights.
+
+There is no established end-to-end core-hour saving. Finite binary coverage, prime ladders, principal/small-character certificates, actual source and raw-head production, interpolation/repairs/completeness, libraries and proof representation remain unpriced or incompletely priced. The new mean186/runtime692 improvements are mathematically reviewed but excluded from this accepted price. The separate producer audit has identified that the grid100 raw head still needs its matched concrete producer and cost; the saved EM finite-head scale count is a different component.
+
+Owned immutable width output: moebius/combined_precision_price_widths_20261111.json,918045 bytes, SHA25651844D5768117F3AA21E9FC8C84FD918D92008E9C51DB41AE742B565FF6F4A2B. Receipt: moebius/combined_precision_prices_20261111.json,534809 bytes, SHA25617930450145D8507AE4883D923C76E9F3A0FE3C6ABAD28F4BD700AB5ABFCDA7F. Independent checker/receipt identities and all limits are retained in the full review. Root computed the displayed percentages using exact integer ratios and parsed no inventory for this comparison.
+
+DRAFT_ANCHORS: none created; repository-wide state not audited.
+UNREGISTERED_SORRIES: none introduced; repository-wide state not audited.
+DRAFT_IMPORT_VIOLATIONS: no imports changed; repository-wide state not audited.
+SEALED_THIS_TURN: 0.

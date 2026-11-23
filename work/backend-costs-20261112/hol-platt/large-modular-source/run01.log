@@ -1,0 +1,184 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-modular-source/ModSourceScript.uo to produce theory-builder executable
+<<HOL message: Created theory "ModSource">>
+Saved definition ____ "hor_def"
+Saved definition ____ "rd_def"
+Saved definition ____ "digit_def"
+Saved definition ____ "mods_def"
+Saved definition ____ "refs_def"
+Saved definition ____ "cold_def"
+Saved theorem _______ "rd_pre_rules"
+Saved theorem _______ "rd_pre_ind"
+Saved theorem _______ "rd_pre_strongind"
+Saved theorem _______ "rd_pre_cases"
+Saved theorem _______ "cv_rd_thm"
+Finished translating rd, stored in cv_rd_thm
+
+WARNING: definition of cv_rd has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem rd_pre[cv_pre]:
+  ∀v x. rd_pre v x
+Proof
+  ho_match_mp_tac rd_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "rd_ok"
+Saved theorem _______ "digit_pre_rules"
+Saved theorem _______ "digit_pre_ind"
+Saved theorem _______ "digit_pre_strongind"
+Saved theorem _______ "digit_pre_cases"
+Saved theorem _______ "cv_digit_thm"
+Finished translating digit, stored in cv_digit_thm
+
+WARNING: definition of cv_digit has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem digit_pre[cv_pre]:
+  ∀v bias m x. digit_pre v bias m x
+Proof
+  ho_match_mp_tac digit_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "digit_ok"
+Starting translation of cold from ModSourceTheory.
+Starting translation of mods from ModSourceTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in ModSource)>>
+Saved definition ____ "cv_mods_def"
+Saved induction _____ "cv_mods_ind"
+Saved theorem _______ "cv_mods_thm"
+Finished translating mods, stored in cv_mods_thm
+Starting translation of cold from ModSourceTheory.
+Starting translation of hor from ModSourceTheory.
+Saved definition ____ "cv_hor_def"
+Saved induction _____ "cv_hor_ind"
+Saved theorem _______ "cv_hor_thm"
+Finished translating hor, stored in cv_hor_thm
+Starting translation of cold from ModSourceTheory.
+Saved theorem _______ "cv_cold_thm"
+Finished translating cold, stored in cv_cold_thm
+Starting translation of refs from ModSourceTheory.
+Saved definition ____ "cv_refs_def"
+Saved induction _____ "cv_refs_ind"
+Saved theorem _______ "cv_refs_thm"
+Finished translating refs, stored in cv_refs_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-modular-source/ModSourceScript.sml:69: warning: Pattern is not exhaustive. Found near val name :: fields = tokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-modular-source/ModSourceScript.sml:70: warning: Pattern is not exhaustive.
+Found near val [den, bias, center, ...] = map ii fields
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-modular-source/ModSourceScript.sml:72: warning: Pattern is not exhaustive. Found near val [x, y] = map ii (tokens ())
+ADMIT c131071h1k512_reference 1.241039
+ADMIT c131071h1k512_warm 1.284379
+ADMIT c131071h1k512_cold 1.174069
+MODCHECK c131071h1k512_reference 1 0.002318 0.000118
+MODCHECK c131071h1k512_warm 1 0.002407 0.00011
+MODCHECK c131071h1k512_cold 1 0.001885 0.0000939999999998
+MODCHECK c131071h1k512_cold 2 0.001832 0.0000770000000001
+MODCHECK c131071h1k512_warm 2 0.002141 0.0000780000000002
+MODCHECK c131071h1k512_reference 2 0.002128 0.0000789999999999
+MODCHECK c131071h1k512_reference 3 0.00226 0.0000899999999997
+MODCHECK c131071h1k512_warm 3 0.002183 0.0000780000000002
+MODCHECK c131071h1k512_cold 3 0.001925 0.0000720000000003
+MODCHECK c131071h1k512_cold 4 0.001907 0.0000839999999998
+MODCHECK c131071h1k512_warm 4 0.002339 0.000092
+MODCHECK c131071h1k512_reference 4 0.002626 0.000109
+MODCHECK c131071h1k512_reference 5 0.002465 0.000118
+MODCHECK c131071h1k512_warm 5 0.002324 0.000111
+MODCHECK c131071h1k512_cold 5 0.001903 0.000112
+MODCHECK c131071h1k512_cold 6 0.001871 0.0000989999999996
+MODCHECK c131071h1k512_warm 6 0.002404 0.000107
+MODCHECK c131071h1k512_reference 6 0.00238 0.0000969999999998
+MODCHECK c131071h1k512_reference 7 0.002092 0.0000879999999999
+MODCHECK c131071h1k512_warm 7 0.002281 0.0000869999999997
+MODCHECK c131071h1k512_cold 7 0.002054 0.0000849999999999
+ADMIT c265800h1k512_reference 0.247053
+ADMIT c265800h1k512_warm 0.497275
+ADMIT c265800h1k512_cold 0.357024
+MODCHECK c265800h1k512_reference 1 0.001464 0.000112000000001
+MODCHECK c265800h1k512_warm 1 0.001448 0.000104
+MODCHECK c265800h1k512_cold 1 0.000997 0.0000799999999996
+MODCHECK c265800h1k512_cold 2 0.000955 0.000107
+MODCHECK c265800h1k512_warm 2 0.001406 0.0000970000000002
+MODCHECK c265800h1k512_reference 2 0.001234 0.0000879999999999
+MODCHECK c265800h1k512_reference 3 0.001288 0.0000960000000001
+MODCHECK c265800h1k512_warm 3 0.001373 0.0000920000000004
+MODCHECK c265800h1k512_cold 3 0.001041 0.0000850000000003
+MODCHECK c265800h1k512_cold 4 0.001205 0.0000859999999996
+MODCHECK c265800h1k512_warm 4 0.002045 0.000115
+MODCHECK c265800h1k512_reference 4 0.001303 0.0000849999999994
+MODCHECK c265800h1k512_reference 5 0.001451 0.0000809999999998
+MODCHECK c265800h1k512_warm 5 0.001454 0.0000919999999995
+MODCHECK c265800h1k512_cold 5 0.001118 0.0000839999999993
+MODCHECK c265800h1k512_cold 6 0.001261 0.0000929999999997
+MODCHECK c265800h1k512_warm 6 0.001303 0.0000719999999994
+MODCHECK c265800h1k512_reference 6 0.001279 0.00011
+MODCHECK c265800h1k512_reference 7 0.001247 0.0000879999999999
+MODCHECK c265800h1k512_warm 7 0.001271 0.0000839999999993
+MODCHECK c265800h1k512_cold 7 0.001256 0.0000960000000001
+ADMIT c131072h6337k1_reference 0.195388
+ADMIT c131072h6337k1_warm 0.170525
+ADMIT c131072h6337k1_cold 0.206026
+MODCHECK c131072h6337k1_reference 1 0.001825 0.000117
+MODCHECK c131072h6337k1_warm 1 0.002505 0.000112
+MODCHECK c131072h6337k1_cold 1 0.001187 0.0000999999999998
+MODCHECK c131072h6337k1_cold 2 0.001768 0.000131000000001
+MODCHECK c131072h6337k1_warm 2 0.003899 0.000208
+MODCHECK c131072h6337k1_reference 2 0.002603 0.000107
+MODCHECK c131072h6337k1_reference 3 0.003678 0.000168
+MODCHECK c131072h6337k1_warm 3 0.004141 0.000118000000001
+MODCHECK c131072h6337k1_cold 3 0.001889 0.000129
+MODCHECK c131072h6337k1_cold 4 0.002228 0.000165
+MODCHECK c131072h6337k1_warm 4 0.010324 0.000133
+MODCHECK c131072h6337k1_reference 4 0.003133 0.000139
+MODCHECK c131072h6337k1_reference 5 0.004579 0.000207
+MODCHECK c131072h6337k1_warm 5 0.012196 0.000114
+MODCHECK c131072h6337k1_cold 5 0.001131 0.000105
+MODCHECK c131072h6337k1_cold 6 0.001192 0.000111
+MODCHECK c131072h6337k1_warm 6 0.002701 0.000179999999999
+MODCHECK c131072h6337k1_reference 6 0.001773 0.000112000000001
+MODCHECK c131072h6337k1_reference 7 0.001696 0.000167
+MODCHECK c131072h6337k1_warm 7 0.003118 0.000112
+MODCHECK c131072h6337k1_cold 7 0.001165 0.000147
+ADMIT c131072h6400k1_reference 0.22456
+ADMIT c131072h6400k1_warm 0.178537
+ADMIT c131072h6400k1_cold 0.180845
+MODCHECK c131072h6400k1_reference 1 0.001946 0.000115999999999
+MODCHECK c131072h6400k1_warm 1 0.002426 0.00011
+MODCHECK c131072h6400k1_cold 1 0.001254 0.0000989999999996
+MODCHECK c131072h6400k1_cold 2 0.001347 0.0000939999999998
+MODCHECK c131072h6400k1_warm 2 0.00238 0.000101000000001
+MODCHECK c131072h6400k1_reference 2 0.001603 0.0000859999999996
+MODCHECK c131072h6400k1_reference 3 0.001719 0.0000920000000004
+MODCHECK c131072h6400k1_warm 3 0.002784 0.0000929999999997
+MODCHECK c131072h6400k1_cold 3 0.001153 0.000095
+MODCHECK c131072h6400k1_cold 4 0.001092 0.0000900000000001
+MODCHECK c131072h6400k1_warm 4 0.002654 0.000106000000001
+MODCHECK c131072h6400k1_reference 4 0.001888 0.000100000000001
+MODCHECK c131072h6400k1_reference 5 0.001627 0.000129
+MODCHECK c131072h6400k1_warm 5 0.002545 0.0000979999999995
+MODCHECK c131072h6400k1_cold 5 0.001334 0.0000840000000002
+MODCHECK c131072h6400k1_cold 6 0.001323 0.0000780000000002
+MODCHECK c131072h6400k1_warm 6 0.002535 0.000114
+MODCHECK c131072h6400k1_reference 6 0.001888 0.0000819999999999
+MODCHECK c131072h6400k1_reference 7 0.00184 0.0000809999999998
+MODCHECK c131072h6400k1_warm 7 0.002554 0.0000970000000002
+MODCHECK c131072h6400k1_cold 7 0.001322 0.0000869999999997
+MODULAR_SOURCE_DONE
+Exporting theory "ModSource" ... done.
+Theory "ModSource" took 6.8s to build
+Holmake: [1/1] ModSource

@@ -1,0 +1,71 @@
+{
+  "source": "QuickActual.lean",
+  "exit_code": 0,
+  "wall_seconds": 14.773966900000232,
+  "user_seconds": 12.796875,
+  "kernel_cpu_seconds": 1.8125,
+  "results": [
+    {
+      "label": "actual_whole_each",
+      "width": 65536,
+      "masks": 168,
+      "reps": 1000,
+      "accepted": 1000,
+      "rejected": true,
+      "kernel_seconds": 3.3687975,
+      "ns_per_mask": 20052.366071428572
+    },
+    {
+      "label": "actual_whole_once",
+      "width": 65536,
+      "masks": 168,
+      "reps": 1000,
+      "accepted": 1000,
+      "rejected": true,
+      "kernel_seconds": 1.9406385,
+      "ns_per_mask": 11551.419642857143
+    },
+    {
+      "label": "actual_chunks_each",
+      "width": 65536,
+      "masks": 168,
+      "reps": 1000,
+      "accepted": 1000,
+      "rejected": true,
+      "kernel_seconds": 2.6724418,
+      "ns_per_mask": 15907.391666666666
+    },
+    {
+      "label": "actual_chunks_once",
+      "width": 65536,
+      "masks": 168,
+      "reps": 1000,
+      "accepted": 1000,
+      "rejected": true,
+      "kernel_seconds": 1.8030892,
+      "ns_per_mask": 10732.673809523809
+    },
+    {
+      "label": "actual_cached_inputs_build_check",
+      "width": 65536,
+      "masks": 168,
+      "reps": 1000,
+      "accepted": 1000,
+      "rejected": true,
+      "kernel_seconds": 2.0160411,
+      "ns_per_mask": 12000.244642857142
+    },
+    {
+      "label": "actual_reusable_steps",
+      "width": 65536,
+      "masks": 168,
+      "reps": 5,
+      "accepted": 5,
+      "rejected": true,
+      "kernel_seconds": 1.1116649,
+      "ns_per_mask": 1323410.5952380951
+    }
+  ],
+  "source_sha256": "7cff6c2c09f1dd7bf01cf88ffee0a13c5a655da314a44d6ff87fba7f1b100bfd",
+  "timing_note": "kernel_seconds is monotonic elapsed time inside checked declaration loop; kernel_cpu_seconds is Windows system CPU time for the entire process, not Lean logical-kernel time."
+}

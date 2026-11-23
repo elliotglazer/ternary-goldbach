@@ -1,0 +1,151 @@
+{
+  "scope": "fixed rational, polynomial and static schema checks; paper hash reads only",
+  "author_imported_or_executed": false,
+  "inventory_json_read": false,
+  "precision_population_or_mask_computed": false,
+  "checks": 67,
+  "check_names": [
+    "bounded paper major-constants/EM692_EXACT_TENSOR_ASSIGNMENT_PREFLIGHT_2026-11-11.md",
+    "pin major-constants/EM692_EXACT_TENSOR_ASSIGNMENT_PREFLIGHT_2026-11-11.md",
+    "bounded paper audit/SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+    "pin audit/SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+    "bounded paper prime-estimates/REVIEW_SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+    "pin prime-estimates/REVIEW_SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+    "bounded paper independent-feasibility/FULL_P20_GRID60_MAGNITUDE_SCOPE_COMPANION_2026-11-11.md",
+    "pin independent-feasibility/FULL_P20_GRID60_MAGNITUDE_SCOPE_COMPANION_2026-11-11.md",
+    "bounded paper major-constants/REVIEW_FULL_P20_GRID60_MAGNITUDE_SCOPE_2026-11-11.md",
+    "pin major-constants/REVIEW_FULL_P20_GRID60_MAGNITUDE_SCOPE_2026-11-11.md",
+    "bounded paper zero-sum/FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+    "pin zero-sum/FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+    "bounded paper integration/REVIEW_FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+    "pin integration/REVIEW_FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+    "bounded paper prime-estimates/TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+    "pin prime-estimates/TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+    "bounded paper major-constants/REVIEW_TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+    "pin major-constants/REVIEW_TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+    "bounded paper major-constants/COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+    "pin major-constants/COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+    "bounded paper integration/REVIEW_COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+    "pin integration/REVIEW_COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+    "Cg normalization",
+    "source magnitude p50",
+    "allowed magnitude parameter",
+    "tensor denominator positive",
+    "old local safety floor",
+    "old peak safety floor",
+    "three bit lower endpoint",
+    "three bit upper endpoint",
+    "three bit safety",
+    "intrinsic denominator loss",
+    "ratio reduction",
+    "strict two thirds ratio",
+    "ratio gap",
+    "regrid independent third",
+    "combined strict target",
+    "old tensor factor strengthens bound",
+    "exact W square cross terms",
+    "zero S still has rho T",
+    "nonnegative selector exponent",
+    "input bytes",
+    "individual encoded input cap",
+    "aggregate encoded input cap",
+    "59 precision labels",
+    "53 actual search labels",
+    "compact mask decimal capacity",
+    "record bytes 13",
+    "record bytes 27",
+    "record bytes 26",
+    "array record bound 125400",
+    "wrapper cap 125400",
+    "array record bound 37117",
+    "wrapper cap 37117",
+    "array record bound 6004",
+    "wrapper cap 6004",
+    "substantive rows",
+    "four file caps and reserve",
+    "candidate loop ceiling",
+    "interface loop ceiling",
+    "inherited chosen/predecessor ceiling",
+    "edges per closure",
+    "new node bit ceiling",
+    "new kernel bit ceiling",
+    "four alternative node bit ceiling",
+    "four alternative kernel bit ceiling",
+    "future selector scalar capacity"
+  ],
+  "paper_pins": [
+    {
+      "path": "major-constants/EM692_EXACT_TENSOR_ASSIGNMENT_PREFLIGHT_2026-11-11.md",
+      "sha256": "01BC1696B7AF781D5638968A18E551014658B86986823B2C65F7AAE15433292A",
+      "bytes": 20487
+    },
+    {
+      "path": "audit/SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+      "sha256": "03680BE7C2518CA0065244E840DC64203D529E26BE2E867F4C31A37652009904",
+      "bytes": 11831
+    },
+    {
+      "path": "prime-estimates/REVIEW_SQRT_HEAD_FINITE_EM_MAGNITUDE_2026-11-11.md",
+      "sha256": "1E9D3CDE80AB9BD78FD250E9404BF9936AA782F92CD9D2BDCC799D6558869328",
+      "bytes": 9831
+    },
+    {
+      "path": "independent-feasibility/FULL_P20_GRID60_MAGNITUDE_SCOPE_COMPANION_2026-11-11.md",
+      "sha256": "FE52146FBF51009631A9E232492A141053B9936AA90EB1B4017FE7A8D0021A5E",
+      "bytes": 8933
+    },
+    {
+      "path": "major-constants/REVIEW_FULL_P20_GRID60_MAGNITUDE_SCOPE_2026-11-11.md",
+      "sha256": "5140949742F0BF54941815DCFC8C34DEB96133A89517FE7EBC874380A03B2EBE",
+      "bytes": 8535
+    },
+    {
+      "path": "zero-sum/FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+      "sha256": "F0B7399E638A7EBD43FE37F9EAAD8DCFB0583FEA785F7425D9DAFF096D464DE6",
+      "bytes": 13117
+    },
+    {
+      "path": "integration/REVIEW_FUTURE_P50_EXACT_TENSOR_SELECTOR_2026-11-11.md",
+      "sha256": "372F685F72449A11C970ADD855EB5CB64D52E4512B669DB1AD2FC6102FB6DD37",
+      "bytes": 12253
+    },
+    {
+      "path": "prime-estimates/TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+      "sha256": "5E3B9FCDC374998149ABBF3262BF925E0D02C6BFBF399462D1C34ABB68218F6F",
+      "bytes": 11964
+    },
+    {
+      "path": "major-constants/REVIEW_TIGHTER_NORMALIZED_CHIRP_CONSTANT_2026-11-11.md",
+      "sha256": "E7482930B1A6B57FD6C186AD4612E655379D0978DD6C5EDA9C4D4D6D247920F5",
+      "bytes": 7233
+    },
+    {
+      "path": "major-constants/COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+      "sha256": "EBA33B23C531312243495B9B0321597FC26D8AEBA8E1CF24626457474EA3A997",
+      "bytes": 13443
+    },
+    {
+      "path": "integration/REVIEW_COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md",
+      "sha256": "8745235D810A1F06E8661961A05EF93C8DB24574121700DF6D924AE6EC2615C4",
+      "bytes": 10579
+    }
+  ],
+  "input_size_ledger_only": [
+    25110201,
+    1911933,
+    9568390,
+    2672728,
+    137719,
+    13957,
+    41665
+  ],
+  "three_bit_intrinsic_ratio": [
+    88576,
+    139041
+  ],
+  "three_bit_regrid_target_ratio": [
+    1359357149184,
+    4196258524692480
+  ],
+  "no_execution_authorization": true
+}

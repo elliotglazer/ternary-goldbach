@@ -1,0 +1,44 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpErrorScript.uo to produce theory-builder executable
+<<HOL message: Created theory "ChirpError">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in ChirpError)>>
+Saved theorem _______ "rounded_unit_step"
+Proof of 
+
+∀K G Z R z r d D E A B.
+  0 < G ∧ 0 ≤ E ∧ modu D = 1 ∧ modu (source_pair_value G d − D) ≤ E ∧
+  modu (source_pair_value G (Z 0) − z 0) ≤ A 0 ∧
+  modu (source_pair_value G (R 0) − r 0) ≤ B 0 ∧
+  (∀j. j < K ⇒
+       0 ≤ A j ∧ A j ≤ 1 ∧ 0 ≤ B j ∧ B j ≤ 1 ∧ modu (z j) = 1 ∧
+       modu (r j) = 1 ∧ z (SUC j) = z j * r j ∧ r (SUC j) = r j * D ∧
+       Z (SUC j) = source_mul G (Z j) (R j) ∧
+       R (SUC j) = source_mul G (R j) d ∧
+       A j + 2 * B j + 1 / &G ≤ A (SUC j) ∧ B j + 2 * E + 1 / &G ≤ B (SUC j)) ⇒
+  ∀j. j ≤ K ⇒
+      modu (source_pair_value G (Z j) − z j) ≤ A j ∧
+      modu (source_pair_value G (R j) − r j) ≤ B j
+
+failed.
+Tactic failure proving "chirp_pair_envelope"; heap saved to ChirpError.chirp_pair_envelope.dumpedheap.
+Resume with: bin/hol --holstate=ChirpError.chirp_pair_envelope.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpErrorScript - exited with code 1

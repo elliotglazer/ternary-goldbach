@@ -1,0 +1,58 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-character-kernel[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-gaussian[0m
+Holmake: Scanning [1m../../../backend-costs-20261112/hol-platt/small-gaussian-transform[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-short/ShortUnaryScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-short/short.sml:10: warning: Pattern is not exhaustive.
+Found near val [enc, _] = #2 (strip_comb (concl (... ...)))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/team/q10004-short/short.sml:26: warning: Pattern is not exhaustive. Found near val [d, wd, nk, ...] = line ins
+<<HOL message: Created theory "ShortUnary">>
+READ 0.000719
+TERMS 0.006227
+CONVERT kernels 0.013317
+WEIGHT_RESULT T
+Saved theorem _______ "weights_exact"
+KERNEL_WITH_ENCODING checked_0 0.105649
+Saved theorem _______ "checked_0"
+KERNEL_WITH_ENCODING checked_1 0.110003
+Saved theorem _______ "checked_1"
+KERNEL_WITH_ENCODING checked_2 0.07287
+Saved theorem _______ "checked_2"
+KERNEL_WITH_ENCODING checked_3 0.084246
+Saved theorem _______ "checked_3"
+KERNEL_WITH_ENCODING checked_4 0.062564
+Saved theorem _______ "checked_4"
+KERNEL_WITH_ENCODING checked_5 0.070443
+Saved theorem _______ "checked_5"
+KERNEL_WITH_ENCODING checked_6 0.061654
+Saved theorem _______ "checked_6"
+KERNEL_WITH_ENCODING checked_7 0.063988
+Saved theorem _______ "checked_7"
+KERNEL_WITH_ENCODING checked_8 0.048547
+Saved theorem _______ "checked_8"
+KERNEL_WITH_ENCODING checked_9 0.062232
+Saved theorem _______ "checked_9"
+KERNEL_WITH_ENCODING checked_10 0.055455
+Saved theorem _______ "checked_10"
+KERNEL_WITH_ENCODING checked_11 0.062543
+Saved theorem _______ "checked_11"
+KERNEL_WITH_ENCODING checked_12 0.063974
+Saved theorem _______ "checked_12"
+STRICT_ACTUAL_ROWS 13
+Exporting theory "ShortUnary" ... done.
+Theory "ShortUnary" took 1.6s to build
+Holmake: [1/1] ShortUnary

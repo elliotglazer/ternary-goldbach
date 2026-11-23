@@ -1,0 +1,44 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanned 21 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/stencil-perturbation/WindowPerturbationScript.uo to produce theory-builder executable
+<<HOL message: Created theory "WindowPerturbation">>
+Saved definition ____ "raw_center_def"
+Saved definition ____ "field_center_def"
+Saved definition ____ "reads_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in WindowPerturbation)>>
+Saved definition ____ "peak_def"
+Saved induction _____ "peak_ind"
+Saved theorem _______ "window_sum"
+Saved theorem _______ "enclosed_coordinate"
+Saved theorem _______ "bounded_fields"
+Proof of 
+
+∀ws ps raw tab j z cap r off den.
+  kernel_ok r off (&den) ws ∧ LENGTH ws = LENGTH ps ∧ reads tab j ps ∧
+  LIST_REL encloses raw ps ∧ dot_window tab j ws 0 0 = SOME (z,cap) ⇒
+  ABS (dot ws (MAP raw_center raw) − z) ≤ &(5 * den * cap)
+
+failed.
+Tactic failure proving "window_dot_error"; heap saved to WindowPerturbation.window_dot_error.dumpedheap.
+Resume with: bin/hol --holstate=WindowPerturbation.window_dot_error.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/stencil-perturbation/WindowPerturbationScript - exited with code 1

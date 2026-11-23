@@ -1,0 +1,78 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 35 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val require = fn: bool -> string -> unit
+val expected = “∀z w. modu (z + w) ≤ modu z + modu w”: term
+val show = fn: unit -> unit
+val step = fn: string -> tactic -> unit
+STEP,introduce
+OK..
+1 subgoal:
+GOAL_BEGIN
+|- modu (z + w) ≤ modu z + modu w
+GOAL_END
+STEP,cross_term
+OK..
+metis: r[+0+8]+0+0+0+1+1+0+2+1+1+1+1+8+8+16+5+5+4+5+4+4+4+4+4+4+4+4+5+4+4+2+4+14#
+1 subgoal:
+GOAL_BEGIN
+RE (z * conj w) ≤ modu z * modu w
+|- modu (z + w) ≤ modu z + modu w
+GOAL_END
+STEP,square_bound
+OK..
+1 subgoal:
+GOAL_BEGIN
+(modu (z + w))² ≤ (modu z + modu w)²
+RE (z * conj w) ≤ modu z * modu w
+|- modu (z + w) ≤ modu z + modu w
+GOAL_END
+STEP,nonnegative
+OK..
+1 subgoal:
+GOAL_BEGIN
+0 ≤ modu z + modu w
+0 ≤ modu (z + w)
+(modu (z + w))² ≤ (modu z + modu w)²
+RE (z * conj w) ≤ modu z * modu w
+|- modu (z + w) ≤ modu z + modu w
+GOAL_END
+STEP,sqrt_monotone
+OK..
+1 subgoal:
+GOAL_BEGIN
+0 ≤ modu z + modu w
+0 ≤ modu (z + w)
+(modu (z + w))² ≤ (modu z + modu w)²
+RE (z * conj w) ≤ modu z * modu w
+|- (0 ≤ (modu (z + w))² ∧ (modu (z + w))² ≤ (modu z + modu w)² ⇒
+ sqrt (modu (z + w))² ≤ sqrt (modu z + modu w)²) ⇒
+modu (z + w) ≤ modu z + modu w
+GOAL_END
+OK..
+
+Goal proved.
+ [...]
+⊢ (0 ≤ (modu (z + w))² ∧ (modu (z + w))² ≤ (modu z + modu w)² ⇒
+   sqrt (modu (z + w))² ≤ sqrt (modu z + modu w)²) ⇒
+  modu (z + w) ≤ modu z + modu w
+
+Goal proved.
+ [...] ⊢ modu (z + w) ≤ modu z + modu w
+
+Goal proved.
+ [.] ⊢ modu (z + w) ≤ modu z + modu w
+
+Goal proved.
+ [.] ⊢ modu (z + w) ≤ modu z + modu w
+
+Goal proved.
+⊢ modu (z + w) ≤ modu z + modu w
+SOURCE_STATE_DIAGNOSTIC_EXACT_CLOSED_THEOREM ⊢ ∀z w. modu (z + w) ≤ modu z + modu w

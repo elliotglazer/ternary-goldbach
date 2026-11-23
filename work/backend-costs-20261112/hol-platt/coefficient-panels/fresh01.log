@@ -1,0 +1,73 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/coefficient-panels/FreshTranslateScript.uo to produce theory-builder executable
+<<HOL message: Created theory "FreshTranslate">>
+Saved definition ____ "reject_def"
+Starting translation of reject from FreshTranslateTheory.
+Saved theorem _______ "cv_reject_thm"
+Finished translating reject, stored in cv_reject_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/coefficient-panels/FreshTranslateScript.sml:52: warning: Pattern is not exhaustive. Found near val [id, depth, den, ...] = tokens ()
+SETUP 1_0 0.042589
+SLAB 1_0 0 0.02841 0.00015
+FRESH 1 0 0.140622
+SETUP bad 0.05295
+SLAB bad 0 0.1649 0.00015
+SETUP 1_1 0.082402
+SLAB 1_1 0 0.028907 0.000122
+FRESH 1 1 0.197519
+SETUP 1_2 0.034083
+SLAB 1_2 0 0.038646 0.000154
+FRESH 1 2 0.136179
+SETUP 2_3 0.040756
+SLAB 2_3 0 0.040355 0.000146
+FRESH 2 3 0.14792
+SETUP 2_4 0.038346
+SLAB 2_4 0 0.038404 0.000118
+FRESH 2 4 0.141912
+SETUP 2_5 0.040883
+SLAB 2_5 0 0.029953 0.000119
+FRESH 2 5 0.133213
+SETUP 3_6 0.043885
+SLAB 3_6 0 0.033158 0.000173
+FRESH 3 6 0.142684
+SETUP 3_7 0.047088
+SLAB 3_7 0 0.034063 0.000123
+FRESH 3 7 0.151655
+SETUP 3_8 0.058478
+SLAB 3_8 0 0.034068 0.000128
+FRESH 3 8 0.155316
+SETUP 4_9 0.038723
+SLAB 4_9 0 0.030971 0.000126
+FRESH 4 9 0.13023
+SETUP 4_10 0.06051
+SLAB 4_10 0 0.031044 0.000119
+FRESH 4 10 0.150384
+SETUP 4_11 0.058123
+SLAB 4_11 0 0.038468 0.000131
+FRESH 4 11 0.159782
+SETUP 5_12 0.041527
+SLAB 5_12 0 0.031804 0.000129
+FRESH 5 12 0.134289
+SETUP 5_13 0.209839
+SLAB 5_13 0 0.053048 0.000141
+FRESH 5 13 0.318035
+SETUP 5_14 0.092578
+SLAB 5_14 0 0.028276 0.000153
+FRESH 5 14 0.183831
+COEFFICIENT_TRANSLATION_DONE
+Exporting theory "FreshTranslate" ... done.
+Theory "FreshTranslate" took 3.0s to build
+Holmake: [1/1] FreshTranslate

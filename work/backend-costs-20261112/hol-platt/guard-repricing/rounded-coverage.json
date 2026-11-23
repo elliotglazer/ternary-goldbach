@@ -1,0 +1,39 @@
+{
+  "principal": {
+    "conductor": 1,
+    "T": 100000000,
+    "grid_index": 1280000000,
+    "production_family": "separate zeta certificate"
+  },
+  "maximum_lift": "4/64",
+  "families": {
+    "small": {
+      "conductors": 7499,
+      "primitive_labels": 18477108,
+      "rounded_up_conductors": 5975,
+      "rounded_up_labels": 14688367,
+      "requested_grid_nodes": 3796745162,
+      "scheduler_grid_nodes": 3796745162,
+      "internal_guard_nodes": 0
+    },
+    "large": {
+      "conductors": 125400,
+      "primitive_labels": 4333246843,
+      "rounded_up_conductors": 97317,
+      "rounded_up_labels": 3341701887,
+      "requested_grid_nodes": 1603121397,
+      "scheduler_grid_nodes": 1608262797,
+      "internal_guard_nodes": 5141400
+    }
+  },
+  "sha256": {
+    "backend-costs-20261112/forecast-audit-20261113/PRINCIPAL_COMPLETENESS.md": "3d99cb1236008a209a0c69d5d4929711d3dafc4b5e47ff4f0e46808963e083f1",
+    "qrh-campaign/agents/prime-estimates/build_sign_only_minimal_theta_schedule_20261111.py": "88225615982b611ebfed86e00ec98ca6a1deb07afccb40cdfc8b9fce9a7f24b5",
+    "qrh-campaign/agents/integration/short_window_guard_ledger_20261111.py": "61b98033e06fd6b982fb762ebb1dff44cc08151ad9e70fb9b86b51ec123cfe2d",
+    "qrh-campaign/agents/prime-estimates/sign_only_minimal_theta_nonprincipal_schedule_20261111.json": "e767ec3b3e14f2a243837da85c811de5ed67ce701bdd08998c2329f9c687c24d",
+    "qrh-campaign/agents/integration/transform_structural_manifest_20261111.json": "a41d70db2bb439d73cc817f80b24cb598d3efa89cce1d19a5fa618abbe239637",
+    "qrh-campaign/agents/integration/short_window_guard_conductor_rows_20261111.json": "a75e4ee6ebbbd5ba82aa91377040228140596989e03667148b55900f53ade3ea",
+    "qrh-campaign/agents/integration/short_window_guard_ledger_20261111.json": "c04f477a1accdffdae76fea972d09c270332bcb6766edff060c2678daef970a4",
+    "backend-costs-20261112/hol-platt/time-pruning/count_time_fft.py": "e99137c22dbfd471d3de2bc45028a95b4b83aa424fd55d117cbabcc3af607b76"
+  }
+}

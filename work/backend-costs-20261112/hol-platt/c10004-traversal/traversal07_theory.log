@@ -1,0 +1,70 @@
+Holmake: Scanning $(HOLDIR)/src/sort
+Holmake: Scanning $(HOLDIR)/src/string
+Holmake: Scanning $(HOLDIR)/src/TeX
+Holmake: Scanning $(HOLDIR)/src/bag
+Holmake: Scanning $(HOLDIR)/src/n-bit
+Holmake: Scanning $(HOLDIR)/src/res_quan/src
+Holmake: Scanning $(HOLDIR)/src/finite_maps
+Holmake: Scanning $(HOLDIR)/src/integer
+Holmake: Scanning $(HOLDIR)/src/num/extra_theories
+Holmake: Scanning $(HOLDIR)/src/transfer
+Holmake: Scanning $(HOLDIR)/src/pred_set/src/more_theories
+Holmake: Scanning $(HOLDIR)/src/rational
+Holmake: Scanning $(HOLDIR)/src/num/theories/cv_compute/automation
+Holmake: Scanning ../../hol4-setup
+Holmake: Scanning ../c10004-transform
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-traversal/C10004TraversalBaseScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004TraversalBase">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004TraversalBase)>>
+Saved definition ____ "ft_pairs_def"
+Saved induction _____ "ft_pairs_ind"
+Saved theorem _______ "ft_take_compute"
+Saved definition ____ "ft_take_def"
+Saved induction _____ "ft_take_ind"
+Saved theorem _______ "ft_chunks_compute"
+Saved definition ____ "ft_chunks_def"
+Saved definition ____ "ft_heads_tails_def"
+Saved induction _____ "ft_heads_tails_ind"
+Saved theorem _______ "ft_transpose_compute"
+Saved definition ____ "ft_transpose_def"
+Saved definition ____ "ft_rows40_def"
+Saved definition ____ "ft_rows60_def"
+Saved definition ____ "ft_concat_def"
+Saved definition ____ "ft_tensor_def"
+Saved definition ____ "ft_checked_def"
+Saved theorem _______ "ft_checked_guards"
+Saved theorem _______ "ft_take_spec"
+Saved theorem _______ "ft_pairs_genlist"
+TRAVERSAL_STEP,chunk_step
+TRAVERSAL_STEP,chunk_lengths
+TRAVERSAL_STEP,chunk_shapes
+Saved theorem _______ "ft_chunks_genlist"
+Proof of 
+
+∀n columns f.
+  ft_heads_tails (GENLIST (λi. GENLIST (f i) (SUC columns)) n) =
+  SOME
+    (GENLIST (λi. f i 0) n,GENLIST (λi. GENLIST (λj. f i (SUC j)) columns) n)
+
+failed.
+First unsolved sub-goal is
+
+∀columns f.
+  (case
+     ft_heads_tails
+       (GENLIST (λx. f (SUC x) 0::GENLIST (λx'. f (SUC x) (SUC x')) columns)
+          n)
+   of
+     NONE => NONE
+   | SOME (heads,tails) =>
+     SOME (f 0 0::heads,GENLIST (λx. f 0 (SUC x)) columns::tails)) =
+  SOME
+    (f 0 0::GENLIST (λx. f (SUC x) 0) n,
+     GENLIST (λj. f 0 (SUC j)) columns::
+       GENLIST (λx. GENLIST (λj. f (SUC x) (SUC j)) columns) n)
+
+Tactic failure proving "ft_heads_tails_genlist"; heap saved to C10004TraversalBase.ft_heads_tails_genlist.dumpedheap.
+Resume with: bin/hol --holstate=C10004TraversalBase.ft_heads_tails_genlist.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-traversal/C10004TraversalBaseScript - exited with code 1

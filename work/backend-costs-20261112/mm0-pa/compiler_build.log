@@ -1,0 +1,112 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded bit-set v0.8.0
+  Downloaded anstyle-query v1.1.2
+  Downloaded anstyle v1.0.10
+  Downloaded autocfg v1.4.0
+  Downloaded futures-io v0.3.31
+  Downloaded colorchoice v1.0.3
+  Downloaded anstream v0.6.18
+  Downloaded anstyle-parse v0.2.6
+  Downloaded bit-vec v0.8.0
+  Downloaded byteorder v1.5.0
+  Downloaded arrayvec v0.7.6
+  Downloaded futures-task v0.3.31
+  Downloaded num-iter v0.1.45
+  Downloaded strsim v0.11.1
+  Downloaded memmap v0.7.0
+  Downloaded annotate-snippets v0.11.5
+  Downloaded arrayvec v0.5.2
+  Downloaded bitflags v2.9.0
+  Downloaded futures-sink v0.3.31
+  Downloaded futures-macro v0.3.31
+  Downloaded is_terminal_polyfill v1.70.1
+  Downloaded pin-utils v0.1.0
+  Downloaded futures-core v0.3.31
+  Downloaded clap_lex v0.7.4
+  Downloaded heck v0.5.0
+  Downloaded typed-arena v2.0.2
+  Downloaded if_chain v1.0.2
+  Downloaded num_cpus v1.16.0
+  Downloaded pathdiff v0.2.3
+  Downloaded instant v0.1.13
+  Downloaded cfg-if v1.0.0
+  Downloaded num-integer v0.1.46
+  Downloaded num-complex v0.4.6
+  Downloaded num v0.4.3
+  Downloaded utf8parse v0.2.2
+  Downloaded num-rational v0.4.2
+  Downloaded pretty v0.12.4
+  Downloaded quote v1.0.40
+  Downloaded slab v0.4.9
+  Downloaded futures-channel v0.3.31
+  Downloaded futures-executor v0.3.31
+  Downloaded either v1.15.0
+  Downloaded pin-project-lite v0.2.16
+  Downloaded proc-macro2 v1.0.95
+  Downloaded unicode-ident v1.0.18
+  Downloaded clap v4.5.38
+  Downloaded futures v0.3.31
+  Downloaded num-traits v0.2.19
+  Downloaded clap_derive v4.5.32
+  Downloaded memchr v2.7.4
+  Downloaded num-bigint v0.4.6
+  Downloaded zerocopy-derive v0.8.25
+  Downloaded clap_builder v4.5.38
+  Downloaded itertools v0.14.0
+  Downloaded futures-util v0.3.31
+  Downloaded unicode-width v0.1.14
+  Downloaded syn v2.0.101
+  Downloaded zerocopy v0.8.25
+  Downloaded unicode-width v0.2.0
+  Downloaded libc v0.2.172
+   Compiling autocfg v1.4.0
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling libc v0.2.172
+   Compiling anstyle v1.0.10
+   Compiling num-traits v0.2.19
+   Compiling slab v0.4.9
+   Compiling futures-sink v0.3.31
+   Compiling utf8parse v0.2.2
+   Compiling futures-core v0.3.31
+   Compiling memchr v2.7.4
+   Compiling quote v1.0.40
+   Compiling num-integer v0.1.46
+   Compiling syn v2.0.101
+   Compiling futures-channel v0.3.31
+   Compiling num-bigint v0.4.6
+   Compiling anstyle-parse v0.2.6
+   Compiling bitflags v2.9.0
+   Compiling pin-project-lite v0.2.16
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling anstyle-query v1.1.2
+   Compiling futures-io v0.3.31
+   Compiling zerocopy v0.8.25
+   Compiling pin-utils v0.1.0
+   Compiling pathdiff v0.2.3
+   Compiling colorchoice v1.0.3
+   Compiling futures-task v0.3.31
+   Compiling num-rational v0.4.2
+   Compiling anstream v0.6.18
+error: failed to build archive at `/tmp/goldbach-mm0-pa-target/release/build/syn/a98680b3cb78bc33/out/libsyn-a98680b3cb78bc33.rlib`: No space left on device (os error 28)
+
+error: failed to write to `/tmp/goldbach-mm0-pa-target/release/build/anstream/f9c4ca11c045f0db/out/rmetauDuYKg/full.rmeta`: No space left on device (os error 28)
+
+error: could not compile `syn` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `anstream` (lib) due to 1 previous error
+rustc-LLVM ERROR: IO failure on output stream: No space left on device
+error: could not compile `num-bigint` (lib)
+
+Caused by:
+  process didn't exit successfully: `/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/mm0-pa/rust/bin/rustc --crate-name num_bigint --edition=2021 /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/mm0-pa/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/num-bigint-0.4.6/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat,unused-externs-silent --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arbitrary", "default", "quickcheck", "rand", "serde", "std"))' -C metadata=0619196b2fbea79e -C extra-filename=-a970a440ba65f4cf --out-dir /tmp/goldbach-mm0-pa-target/release/build/num-bigint/a970a440ba65f4cf/out -C linker=gcc -L dependency=/tmp/goldbach-mm0-pa-target/release/build/num-traits/f249e45189ae52ee/out --extern num_integer=/tmp/goldbach-mm0-pa-target/release/build/num-integer/4112167c30486652/out/libnum_integer-4112167c30486652.rmeta --extern num_traits=/tmp/goldbach-mm0-pa-target/release/build/num-traits/f249e45189ae52ee/out/libnum_traits-f249e45189ae52ee.rmeta --cap-lints allow --force-warn=unused_crate_dependencies` (exit status: 101)
+error: linking with `gcc` failed: exit status: 1
+  |
+  = note:  "gcc" "-m64" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained/rcrt1.o" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained/crti.o" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained/crtbeginS.o" "/tmp/goldbach-mm0-pa-target/release/build/zerocopy/5ac211ba1ae2742b/out/rustcSUyr4Z/symbols.o" "<3 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*}.rlib" "-lunwind" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/liblibc-*.rlib" "-lc" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/{librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-L" "/tmp/goldbach-mm0-pa-target/release/build/zerocopy/5ac211ba1ae2742b/out/rustcSUyr4Z/raw-dylibs" "-Wl,-Bdynamic" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-nostartfiles" "-L" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained" "-L" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib" "-o" "/tmp/goldbach-mm0-pa-target/release/build/zerocopy/5ac211ba1ae2742b/out/build_script_build" "-Wl,--gc-sections" "-static-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained/crtendS.o" "<sysroot>/lib/rustlib/x86_64-unknown-linux-musl/lib/self-contained/crtn.o"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/usr/bin/../lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: final link failed: No space left on device
+          collect2: error: ld returned 1 exit status
+          
+
+error: could not compile `zerocopy` (build script) due to 1 previous error

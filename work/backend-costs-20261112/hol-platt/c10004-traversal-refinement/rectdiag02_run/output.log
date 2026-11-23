@@ -1,0 +1,49 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 35 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val require = fn: bool -> string -> unit
+val mark = fn:
+   string -> term list * term -> Context.t -> goal list * validation
+val expected =
+   “∀width rows.
+      EVERY (λrow. LENGTH row = width) rows ⇒
+      ft_transpose width rows =
+      SOME
+        (GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i rows)) (LENGTH rows))
+           width)”: term
+OK..
+metis: r[+0+7]+0+0+0+0+0+0+1#
+REFINE_STEP,rectangular
+ASSUM GENLIST (λi. GENLIST (λj. tx_pair j (tx_row i rows)) width) (LENGTH rows) =
+rows
+ASSUM EVERY (λrow. LENGTH row = width) rows
+GOAL ft_transpose width rows =
+SOME
+  (GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i rows)) (LENGTH rows)) width)
+REFINE_STEP,instantiated
+ASSUM GENLIST (λi. GENLIST (λj. tx_pair j (tx_row i rows)) width) (LENGTH rows) =
+rows
+ASSUM EVERY (λrow. LENGTH row = width) rows
+GOAL ft_transpose width
+  (GENLIST (λi. GENLIST ((λi j. tx_pair j (tx_row i rows)) i) width)
+     (LENGTH rows)) =
+SOME
+  (GENLIST
+     (λj. GENLIST (λi. (λi j. tx_pair j (tx_row i rows)) i j) (LENGTH rows))
+     width) ⇒
+ft_transpose width rows =
+SOME
+  (GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i rows)) (LENGTH rows)) width)
+REFINE_DIAGNOSTIC_EXACT_CLOSED_THEOREM ⊢ ∀width rows.
+    EVERY (λrow. LENGTH row = width) rows ⇒
+    ft_transpose width rows =
+    SOME
+      (GENLIST (λj. GENLIST (λi. tx_pair j (tx_row i rows)) (LENGTH rows))
+         width)

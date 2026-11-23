@@ -1,0 +1,76 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-check/RootRowsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "RootRows">>
+Saved definition ____ "quadrant_def"
+Saved definition ____ "pick_def"
+Saved definition ____ "wave_def"
+Saved definition ____ "rows_def"
+Saved definition ____ "expected_def"
+Saved definition ____ "rowok_def"
+Starting translation of rows from RootRowsTheory.
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "cv_rows_thm"
+Finished translating rows, stored in cv_rows_thm
+Starting translation of rowok from RootRowsTheory.
+Saved definition ____ "GENLIST_expected_1_def"
+Saved induction _____ "GENLIST_expected_1_ind"
+Starting translation of GENLIST_expected from RootRowsTheory.
+Starting translation of SNOC from listTheory.
+Saved definition ____ "cv_SNOC_def"
+Saved induction _____ "cv_SNOC_ind"
+Saved theorem _______ "cv_SNOC_thm"
+Finished translating SNOC, stored in cv_SNOC_thm
+Starting translation of GENLIST_expected from RootRowsTheory.
+Starting translation of expected from RootRowsTheory.
+Starting translation of wave from RootRowsTheory.
+Starting translation of pick from RootRowsTheory.
+Saved theorem _______ "cv_pick_thm"
+Finished translating pick, stored in cv_pick_thm
+Starting translation of wave from RootRowsTheory.
+Starting translation of quadrant from RootRowsTheory.
+Saved theorem _______ "cv_quadrant_thm"
+Finished translating quadrant, stored in cv_quadrant_thm
+Starting translation of wave from RootRowsTheory.
+Saved theorem _______ "cv_wave_thm"
+Finished translating wave, stored in cv_wave_thm
+Starting translation of expected from RootRowsTheory.
+Saved theorem _______ "cv_expected_thm"
+Finished translating expected, stored in cv_expected_thm
+Starting translation of GENLIST_expected from RootRowsTheory.
+Saved definition ____ "cv_GENLIST_expected_def"
+Saved induction _____ "cv_GENLIST_expected_ind"
+Saved theorem _______ "cv_GENLIST_expected_thm"
+Finished translating GENLIST_expected, stored in cv_GENLIST_expected_thm
+Saved theorem _______ "GENLIST_expected_ho"
+Starting translation of rowok from RootRowsTheory.
+Saved theorem _______ "cv_rowok_thm"
+Finished translating rowok, stored in cv_rowok_thm
+Saved definition ____ "p_checked_rows_def"
+Starting translation of p_checked_rows from RootRowsTheory.
+Saved definition ____ "EVERY_rowok_rows_1_def"
+Saved induction _____ "EVERY_rowok_rows_1_ind"
+Starting translation of EVERY_rowok_rows from RootRowsTheory.
+Saved theorem _______ "cv_EVERY_rowok_rows_thm"
+Finished translating EVERY_rowok_rows, stored in cv_EVERY_rowok_rows_thm
+Saved theorem _______ "EVERY_rowok_rows_ho"
+Starting translation of p_checked_rows from RootRowsTheory.
+Saved theorem _______ "cv_p_checked_rows_thm"
+Finished translating p_checked_rows, stored in cv_p_checked_rows_thm
+Saved theorem _______ "checked_rows"
+Exporting theory "RootRows" ... done.
+Theory "RootRows" took 6.6s to build
+Holmake: [1/1] RootRows

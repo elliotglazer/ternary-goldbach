@@ -1,0 +1,33 @@
+{
+  "scope": "scenario zero, 41 guards, band 1; select series if phi >= ratio*1025*(d+1)",
+  "input_sha256": {
+    "transform_structural_manifest_20261111.json": "a41d70db2bb439d73cc817f80b24cb598d3efa89cce1d19a5fa618abbe239637",
+    "counts.json": "552e20bb351e599233822bc5b33e407cb89a7cf80077f16cbfd78263912ff45a"
+  },
+  "min_units_per_initial_value": {
+    "2": {
+      "all_unit_residues": 44739119112240,
+      "units_retaining_direct": 5126923945838,
+      "eligible_unit_residues": 39612195166402,
+      "dense_numerators_including_nonunits": 72246310657973,
+      "cell_evaluations": 562364689950,
+      "max_initial_direct_evaluations": 9542653223600
+    },
+    "4": {
+      "all_unit_residues": 44739119112240,
+      "units_retaining_direct": 20269303376126,
+      "eligible_unit_residues": 24469815736114,
+      "dense_numerators_including_nonunits": 41782238848878,
+      "cell_evaluations": 272341604150,
+      "max_initial_direct_evaluations": 4453772362200
+    },
+    "8": {
+      "all_unit_residues": 44739119112240,
+      "units_retaining_direct": 43038963213308,
+      "eligible_unit_residues": 1700155898932,
+      "dense_numerators_including_nonunits": 2657786848853,
+      "cell_evaluations": 15239645675,
+      "max_initial_direct_evaluations": 187850129475
+    }
+  }
+}

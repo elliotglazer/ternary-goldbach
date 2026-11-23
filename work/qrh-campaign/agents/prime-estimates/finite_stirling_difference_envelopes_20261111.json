@@ -1,0 +1,2812 @@
+{
+  "status": "PASS_FINITE_STIRLING_ENVELOPES_AND_RAW_SUM_BOUNDS",
+  "checks": 576,
+  "assumptions": {
+    "degree_at_most": 19,
+    "absolute_base_at_most": "1/4",
+    "absolute_step_at_most": "1/20",
+    "coefficient_norm_at_most": "C>=0"
+  },
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/NEWTON_RESIDUE_DIFFERENCE_INITIALIZATION_2026-11-11.md": "55576F70A22E3B94108C80CE6255D312437085E08281EFC6FBA34E65147E22BC",
+    "work/qrh-campaign/agents/major-constants/RESIDUE_DIFFERENCE_TEN_GUARD_EXTENSION_2026-11-11.md": "AFA91F89C51BFC62FAB135997C6ED9FC7FCEAE3FBF6062F973F65AE69ADAC054",
+    "work/qrh-campaign/agents/major-constants/ROUNDED_INITIAL_DIFFERENCES_EXACT_TRAVERSAL_2026-11-11.md": "FB0B0F9AF9C53150E14C1F5FFDE7A39E78DD8A6BFA09FE7769BF234EBB965E46"
+  },
+  "common_denominator": 5242880000000000000000000,
+  "envelopes": [
+    {
+      "order": 0,
+      "numerator": 6990506666660308837890625,
+      "denominator": 5242880000000000000000000,
+      "reduced": "366503875925/274877906944",
+      "gap_to_four_thirds_crossproduct": 19073486328125
+    },
+    {
+      "order": 1,
+      "numerator": 499321904507108416390591,
+      "denominator": 5242880000000000000000000,
+      "reduced": "499321904507108416390591/5242880000000000000000000",
+      "gap_to_four_thirds_crossproduct": 19473554286478674750828227
+    },
+    {
+      "order": 2,
+      "numerator": 76818748956838460281116,
+      "denominator": 5242880000000000000000000,
+      "reduced": "19204687239209615070279/1310720000000000000000000",
+      "gap_to_four_thirds_crossproduct": 20741063753129484619156652
+    },
+    {
+      "order": 3,
+      "numerator": 19204610204391814857006,
+      "denominator": 5242880000000000000000000,
+      "reduced": "9602305102195907428503/2621440000000000000000000",
+      "gap_to_four_thirds_crossproduct": 20913906169386824555428982
+    },
+    {
+      "order": 4,
+      "numerator": 6982766419435924802400,
+      "denominator": 5242880000000000000000000,
+      "reduced": "8728458024294906003/6553600000000000000000",
+      "gap_to_four_thirds_crossproduct": 20950571700741692225592800
+    },
+    {
+      "order": 5,
+      "numerator": 3486387094666704763200,
+      "denominator": 5242880000000000000000000,
+      "reduced": "2178991934166690477/3276800000000000000000",
+      "gap_to_four_thirds_crossproduct": 20961060838715999885710400
+    },
+    {
+      "order": 6,
+      "numerator": 2298343442095855126080,
+      "denominator": 5242880000000000000000000,
+      "reduced": "7182323256549547269/16384000000000000000000",
+      "gap_to_four_thirds_crossproduct": 20964624969673712434621760
+    },
+    {
+      "order": 7,
+      "numerator": 1906338780625973092560,
+      "denominator": 5242880000000000000000000,
+      "reduced": "23829234757824663657/65536000000000000000000",
+      "gap_to_four_thirds_crossproduct": 20965800983658122080722320
+    },
+    {
+      "order": 8,
+      "numerator": 1841449792023265737600,
+      "denominator": 5242880000000000000000000,
+      "reduced": "575453060007270543/1638400000000000000000",
+      "gap_to_four_thirds_crossproduct": 20965995650623930202787200
+    },
+    {
+      "order": 9,
+      "numerator": 1880494446010017398400,
+      "denominator": 5242880000000000000000000,
+      "reduced": "587654514378130437/1638400000000000000000",
+      "gap_to_four_thirds_crossproduct": 20965878516661969947804800
+    },
+    {
+      "order": 10,
+      "numerator": 1858768528318196544000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "29043258254971821/81920000000000000000",
+      "gap_to_four_thirds_crossproduct": 20965943694415045410368000
+    },
+    {
+      "order": 11,
+      "numerator": 1665964476457581484800,
+      "denominator": 5242880000000000000000000,
+      "reduced": "260306949446497107/819200000000000000000",
+      "gap_to_four_thirds_crossproduct": 20966522106570627255545600
+    },
+    {
+      "order": 12,
+      "numerator": 1294001144962251264000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "2527345986254397/10240000000000000000",
+      "gap_to_four_thirds_crossproduct": 20967637996565113246208000
+    },
+    {
+      "order": 13,
+      "numerator": 842200158080945664000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "1644922183751847/10240000000000000000",
+      "gap_to_four_thirds_crossproduct": 20968993399525757163008000
+    },
+    {
+      "order": 14,
+      "numerator": 445863083304038400000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "4354131672891/51200000000000000",
+      "gap_to_four_thirds_crossproduct": 20970182410750087884800000
+    },
+    {
+      "order": 15,
+      "numerator": 185894774828066304000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "363075732086067/10240000000000000000",
+      "gap_to_four_thirds_crossproduct": 20970962315675515801088000
+    },
+    {
+      "order": 16,
+      "numerator": 58518971960537088000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "14286858388803/1280000000000000000",
+      "gap_to_four_thirds_crossproduct": 20971344443084118388736000
+    },
+    {
+      "order": 17,
+      "numerator": 13041990925996032000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "3184079815917/1280000000000000000",
+      "gap_to_four_thirds_crossproduct": 20971480874027222011904000
+    },
+    {
+      "order": 18,
+      "numerator": 1831078879838208000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "111760185537/320000000000000000",
+      "gap_to_four_thirds_crossproduct": 20971514506763360485376000
+    },
+    {
+      "order": 19,
+      "numerator": 121645100408832000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "14849255421/640000000000000000",
+      "gap_to_four_thirds_crossproduct": 20971519635064698773504000
+    }
+  ],
+  "raw_newton": [
+    {
+      "order": 1,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 2995931427042650498343546,
+      "secondary_or_top_numerator": 6990506666660308837890625,
+      "sum_numerator": 9986438093702959336234171,
+      "sum_reduced": "9986438093702959336234171/104857600000000000000000000",
+      "gap_to_four_thirds": 389471085718891121991297487
+    },
+    {
+      "order": 2,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 537731242697869221967812,
+      "secondary_or_top_numerator": 998643809014216832781182,
+      "sum_numerator": 1536375051712086054748994,
+      "sum_reduced": "768187525856043027374497/52428800000000000000000000",
+      "gap_to_four_thirds": 414821274844863741835753018
+    },
+    {
+      "order": 3,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 153636881635134518856048,
+      "secondary_or_top_numerator": 230456246870515380843348,
+      "sum_numerator": 384093128505649899699396,
+      "sum_reduced": "96023282126412474924849/26214400000000000000000000",
+      "gap_to_four_thirds": 418278120614483050300901812
+    },
+    {
+      "order": 4,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 62844897774923323221600,
+      "secondary_or_top_numerator": 76818440817567259428024,
+      "sum_numerator": 139663338592490582649624,
+      "sum_reduced": "17457917324061322831203/13107200000000000000000000",
+      "gap_to_four_thirds": 419011409984222528252051128
+    },
+    {
+      "order": 5,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 34863870946667047632000,
+      "secondary_or_top_numerator": 34913832097179624012000,
+      "sum_numerator": 69777703043846671644000,
+      "sum_reduced": "17444425760961667911/26214400000000000000000",
+      "gap_to_four_thirds": 419221066890868459985068000
+    },
+    {
+      "order": 6,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 25281777863054406386880,
+      "secondary_or_top_numerator": 20918322568000228579200,
+      "sum_numerator": 46200100431054634966080,
+      "sum_reduced": "144375313847045734269/327680000000000000000000",
+      "gap_to_four_thirds": 419291799698706836095101760
+    },
+    {
+      "order": 7,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 22876065367511677110720,
+      "secondary_or_top_numerator": 16088404094670985882560,
+      "sum_numerator": 38964469462182662993280,
+      "sum_reduced": "60881983534660410927/163840000000000000000000",
+      "gap_to_four_thirds": 419313506591613452011020160
+    },
+    {
+      "order": 8,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 23938847296302454588800,
+      "secondary_or_top_numerator": 15250710245007784740480,
+      "sum_numerator": 39189557541310239329280,
+      "sum_reduced": "7654210457287156119/20480000000000000000000",
+      "gap_to_four_thirds": 419312831327376069282012160
+    },
+    {
+      "order": 9,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 26326922244140243577600,
+      "secondary_or_top_numerator": 16573048128209391638400,
+      "sum_numerator": 42899970372349635216000,
+      "sum_reduced": "2681248148271852201/6553600000000000000000",
+      "gap_to_four_thirds": 419301700088882951094352000
+    },
+    {
+      "order": 10,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 27881527924772948160000,
+      "secondary_or_top_numerator": 18804944460100173984000,
+      "sum_numerator": 46686472384873122144000,
+      "sum_reduced": "1458952262027285067/3276800000000000000000",
+      "gap_to_four_thirds": 419290340582845380633568000
+    },
+    {
+      "order": 11,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 26655431623321303756800,
+      "secondary_or_top_numerator": 20446453811500161984000,
+      "sum_numerator": 47101885434821465740800,
+      "sum_reduced": "3679834799595427011/8192000000000000000000",
+      "gap_to_four_thirds": 419289094343695535602777600
+    },
+    {
+      "order": 12,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 21998019464358271488000,
+      "secondary_or_top_numerator": 19991573717490977817600,
+      "sum_numerator": 41989593181849249305600,
+      "sum_reduced": "1640218483665986301/4096000000000000000000",
+      "gap_to_four_thirds": 419304431220454452252083200
+    },
+    {
+      "order": 13,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 15159602845457021952000,
+      "secondary_or_top_numerator": 16822014884509266432000,
+      "sum_numerator": 31981617729966288384000,
+      "sum_reduced": "62464097128840407/204800000000000000000",
+      "gap_to_four_thirds": 419334455146810101134848000
+    },
+    {
+      "order": 14,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 8471398582776729600000,
+      "secondary_or_top_numerator": 11790802213133239296000,
+      "sum_numerator": 20262200795909968896000,
+      "sum_reduced": "19787305464755829/102400000000000000000",
+      "gap_to_four_thirds": 419369613397612270093312000
+    },
+    {
+      "order": 15,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 3717895496561326080000,
+      "secondary_or_top_numerator": 6687946249560576000000,
+      "sum_numerator": 10405841746121902080000,
+      "sum_reduced": "1016195483019717/10240000000000000000",
+      "gap_to_four_thirds": 419399182474761634293760000
+    },
+    {
+      "order": 16,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 1228898411171278848000,
+      "secondary_or_top_numerator": 2974316397249060864000,
+      "sum_numerator": 4203214808420339712000,
+      "sum_reduced": "1026175490336997/25600000000000000000",
+      "gap_to_four_thirds": 419417790355574738980864000
+    },
+    {
+      "order": 17,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 286923800371912704000,
+      "secondary_or_top_numerator": 994822523329130496000,
+      "sum_numerator": 1281746323701043200000,
+      "sum_reduced": "12517053942393/1024000000000000000",
+      "gap_to_four_thirds": 419426554761028896870400000
+    },
+    {
+      "order": 18,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 42114814236278784000,
+      "secondary_or_top_numerator": 234755836667928576000,
+      "sum_numerator": 276870650904207360000,
+      "sum_reduced": "6759537375591/2560000000000000000",
+      "gap_to_four_thirds": 419429569388047287377920000
+    },
+    {
+      "order": 19,
+      "denominator": 104857600000000000000000000,
+      "general_product_numerator": 2919482409811968000,
+      "secondary_or_top_numerator": 34790498716925952000,
+      "sum_numerator": 37709981126737920000,
+      "sum_reduced": "460326918051/1280000000000000000",
+      "gap_to_four_thirds": 419430286870056619786240000
+    }
+  ],
+  "constant_insertion_bound": "1466015503701/1099511627776",
+  "raw_advances": [
+    {
+      "order": 0,
+      "numerator": 7489828571167417254281216,
+      "denominator": 5242880000000000000000000,
+      "reduced": "14285714285216173657/10000000000000000000",
+      "gap_to_three_halves_crossproduct": 748982857665165491437568
+    },
+    {
+      "order": 1,
+      "numerator": 576140653463946876671707,
+      "denominator": 5242880000000000000000000,
+      "reduced": "576140653463946876671707/5242880000000000000000000",
+      "gap_to_three_halves_crossproduct": 14576358693072106246656586
+    },
+    {
+      "order": 2,
+      "numerator": 96023359161230275138122,
+      "denominator": 5242880000000000000000000,
+      "reduced": "48011679580615137569061/2621440000000000000000000",
+      "gap_to_three_halves_crossproduct": 15536593281677539449723756
+    },
+    {
+      "order": 3,
+      "numerator": 26187376623827739659406,
+      "denominator": 5242880000000000000000000,
+      "reduced": "13093688311913869829703/2621440000000000000000000",
+      "gap_to_three_halves_crossproduct": 15676265246752344520681188
+    },
+    {
+      "order": 4,
+      "numerator": 10469153514102629565600,
+      "denominator": 5242880000000000000000000,
+      "reduced": "13086441892628286957/6553600000000000000000",
+      "gap_to_three_halves_crossproduct": 15707701692971794740868800
+    },
+    {
+      "order": 5,
+      "numerator": 5784730536762559889280,
+      "denominator": 5242880000000000000000000,
+      "reduced": "9038641463691499827/8192000000000000000000",
+      "gap_to_three_halves_crossproduct": 15717070538926474880221440
+    },
+    {
+      "order": 6,
+      "numerator": 4204682222721828218640,
+      "denominator": 5242880000000000000000000,
+      "reduced": "52558527784022852733/65536000000000000000000",
+      "gap_to_three_halves_crossproduct": 15720230635554556343562720
+    },
+    {
+      "order": 7,
+      "numerator": 3747788572649238830160,
+      "denominator": 5242880000000000000000000,
+      "reduced": "46847357158115485377/65536000000000000000000",
+      "gap_to_three_halves_crossproduct": 15721144422854701522339680
+    },
+    {
+      "order": 8,
+      "numerator": 3721944238033283136000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "58155378719270049/81920000000000000000",
+      "gap_to_three_halves_crossproduct": 15721196111523933433728000
+    },
+    {
+      "order": 9,
+      "numerator": 3739262974328213942400,
+      "denominator": 5242880000000000000000000,
+      "reduced": "1168519679477566857/1638400000000000000000",
+      "gap_to_three_halves_crossproduct": 15721161474051343572115200
+    },
+    {
+      "order": 10,
+      "numerator": 3524733004775778028800,
+      "denominator": 5242880000000000000000000,
+      "reduced": "550739531996215317/819200000000000000000",
+      "gap_to_three_halves_crossproduct": 15721590533990448443942400
+    },
+    {
+      "order": 11,
+      "numerator": 2959965621419832748800,
+      "denominator": 5242880000000000000000000,
+      "reduced": "462494628346848867/819200000000000000000",
+      "gap_to_three_halves_crossproduct": 15722720068757160334502400
+    },
+    {
+      "order": 12,
+      "numerator": 2136201303043196928000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "1043067042501561/2560000000000000000",
+      "gap_to_three_halves_crossproduct": 15724367597393913606144000
+    },
+    {
+      "order": 13,
+      "numerator": 1288063241384984064000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "2515748518330047/10240000000000000000",
+      "gap_to_three_halves_crossproduct": 15726063873517230031872000
+    },
+    {
+      "order": 14,
+      "numerator": 631757858132104704000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "1233902066664267/10240000000000000000",
+      "gap_to_three_halves_crossproduct": 15727376484283735790592000
+    },
+    {
+      "order": 15,
+      "numerator": 244413746788603392000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "477370599196491/10240000000000000000",
+      "gap_to_three_halves_crossproduct": 15728151172506422793216000
+    },
+    {
+      "order": 16,
+      "numerator": 71560962886533120000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "218386727559/16000000000000000",
+      "gap_to_three_halves_crossproduct": 15728496878074226933760000
+    },
+    {
+      "order": 17,
+      "numerator": 14873069805834240000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "726224111613/256000000000000000",
+      "gap_to_three_halves_crossproduct": 15728610253860388331520000
+    },
+    {
+      "order": 18,
+      "numerator": 1952723980247040000,
+      "denominator": 5242880000000000000000000,
+      "reduced": "47673925299/128000000000000000",
+      "gap_to_three_halves_crossproduct": 15728636094552039505920000
+    }
+  ],
+  "maximum_envelope_order": 0,
+  "maximum_advance_order": 0,
+  "rounded_widths": [
+    {
+      "length": 1,
+      "p": 103,
+      "rounded_live_and_add_signed": 121,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 483,
+      "initial_residual_signed": 484,
+      "initial_doubled_residual_signed": 485
+    },
+    {
+      "length": 2,
+      "p": 104,
+      "rounded_live_and_add_signed": 122,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 484,
+      "initial_residual_signed": 485,
+      "initial_doubled_residual_signed": 486
+    },
+    {
+      "length": 3,
+      "p": 105,
+      "rounded_live_and_add_signed": 123,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 485,
+      "initial_residual_signed": 486,
+      "initial_doubled_residual_signed": 487
+    },
+    {
+      "length": 4,
+      "p": 106,
+      "rounded_live_and_add_signed": 124,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 486,
+      "initial_residual_signed": 487,
+      "initial_doubled_residual_signed": 488
+    },
+    {
+      "length": 5,
+      "p": 107,
+      "rounded_live_and_add_signed": 125,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 487,
+      "initial_residual_signed": 488,
+      "initial_doubled_residual_signed": 489
+    },
+    {
+      "length": 6,
+      "p": 108,
+      "rounded_live_and_add_signed": 126,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 488,
+      "initial_residual_signed": 489,
+      "initial_doubled_residual_signed": 490
+    },
+    {
+      "length": 7,
+      "p": 109,
+      "rounded_live_and_add_signed": 127,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 489,
+      "initial_residual_signed": 490,
+      "initial_doubled_residual_signed": 491
+    },
+    {
+      "length": 8,
+      "p": 110,
+      "rounded_live_and_add_signed": 128,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 490,
+      "initial_residual_signed": 491,
+      "initial_doubled_residual_signed": 492
+    },
+    {
+      "length": 9,
+      "p": 111,
+      "rounded_live_and_add_signed": 129,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 491,
+      "initial_residual_signed": 492,
+      "initial_doubled_residual_signed": 493
+    },
+    {
+      "length": 10,
+      "p": 112,
+      "rounded_live_and_add_signed": 130,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 492,
+      "initial_residual_signed": 493,
+      "initial_doubled_residual_signed": 494
+    },
+    {
+      "length": 11,
+      "p": 113,
+      "rounded_live_and_add_signed": 131,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 493,
+      "initial_residual_signed": 494,
+      "initial_doubled_residual_signed": 495
+    },
+    {
+      "length": 12,
+      "p": 114,
+      "rounded_live_and_add_signed": 132,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 494,
+      "initial_residual_signed": 495,
+      "initial_doubled_residual_signed": 496
+    },
+    {
+      "length": 13,
+      "p": 115,
+      "rounded_live_and_add_signed": 133,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 495,
+      "initial_residual_signed": 496,
+      "initial_doubled_residual_signed": 497
+    },
+    {
+      "length": 14,
+      "p": 116,
+      "rounded_live_and_add_signed": 134,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 496,
+      "initial_residual_signed": 497,
+      "initial_doubled_residual_signed": 498
+    },
+    {
+      "length": 15,
+      "p": 117,
+      "rounded_live_and_add_signed": 135,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 497,
+      "initial_residual_signed": 498,
+      "initial_doubled_residual_signed": 499
+    },
+    {
+      "length": 16,
+      "p": 118,
+      "rounded_live_and_add_signed": 136,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 498,
+      "initial_residual_signed": 499,
+      "initial_doubled_residual_signed": 500
+    },
+    {
+      "length": 17,
+      "p": 119,
+      "rounded_live_and_add_signed": 137,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 499,
+      "initial_residual_signed": 500,
+      "initial_doubled_residual_signed": 501
+    },
+    {
+      "length": 18,
+      "p": 120,
+      "rounded_live_and_add_signed": 138,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 500,
+      "initial_residual_signed": 501,
+      "initial_doubled_residual_signed": 502
+    },
+    {
+      "length": 19,
+      "p": 121,
+      "rounded_live_and_add_signed": 139,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 501,
+      "initial_residual_signed": 502,
+      "initial_doubled_residual_signed": 503
+    },
+    {
+      "length": 20,
+      "p": 122,
+      "rounded_live_and_add_signed": 140,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 502,
+      "initial_residual_signed": 503,
+      "initial_doubled_residual_signed": 504
+    },
+    {
+      "length": 21,
+      "p": 122,
+      "rounded_live_and_add_signed": 140,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 502,
+      "initial_residual_signed": 503,
+      "initial_doubled_residual_signed": 504
+    },
+    {
+      "length": 22,
+      "p": 123,
+      "rounded_live_and_add_signed": 141,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 503,
+      "initial_residual_signed": 504,
+      "initial_doubled_residual_signed": 505
+    },
+    {
+      "length": 23,
+      "p": 124,
+      "rounded_live_and_add_signed": 142,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 504,
+      "initial_residual_signed": 505,
+      "initial_doubled_residual_signed": 506
+    },
+    {
+      "length": 24,
+      "p": 125,
+      "rounded_live_and_add_signed": 143,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 505,
+      "initial_residual_signed": 506,
+      "initial_doubled_residual_signed": 507
+    },
+    {
+      "length": 25,
+      "p": 126,
+      "rounded_live_and_add_signed": 144,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 506,
+      "initial_residual_signed": 507,
+      "initial_doubled_residual_signed": 508
+    },
+    {
+      "length": 26,
+      "p": 127,
+      "rounded_live_and_add_signed": 145,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 507,
+      "initial_residual_signed": 508,
+      "initial_doubled_residual_signed": 509
+    },
+    {
+      "length": 27,
+      "p": 128,
+      "rounded_live_and_add_signed": 146,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 508,
+      "initial_residual_signed": 509,
+      "initial_doubled_residual_signed": 510
+    },
+    {
+      "length": 28,
+      "p": 129,
+      "rounded_live_and_add_signed": 147,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 509,
+      "initial_residual_signed": 510,
+      "initial_doubled_residual_signed": 511
+    },
+    {
+      "length": 29,
+      "p": 130,
+      "rounded_live_and_add_signed": 148,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 510,
+      "initial_residual_signed": 511,
+      "initial_doubled_residual_signed": 512
+    },
+    {
+      "length": 30,
+      "p": 131,
+      "rounded_live_and_add_signed": 149,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 511,
+      "initial_residual_signed": 512,
+      "initial_doubled_residual_signed": 513
+    },
+    {
+      "length": 31,
+      "p": 132,
+      "rounded_live_and_add_signed": 150,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 512,
+      "initial_residual_signed": 513,
+      "initial_doubled_residual_signed": 514
+    },
+    {
+      "length": 32,
+      "p": 133,
+      "rounded_live_and_add_signed": 151,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 513,
+      "initial_residual_signed": 514,
+      "initial_doubled_residual_signed": 515
+    },
+    {
+      "length": 33,
+      "p": 134,
+      "rounded_live_and_add_signed": 152,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 514,
+      "initial_residual_signed": 515,
+      "initial_doubled_residual_signed": 516
+    },
+    {
+      "length": 34,
+      "p": 135,
+      "rounded_live_and_add_signed": 153,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 515,
+      "initial_residual_signed": 516,
+      "initial_doubled_residual_signed": 517
+    },
+    {
+      "length": 35,
+      "p": 136,
+      "rounded_live_and_add_signed": 154,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 516,
+      "initial_residual_signed": 517,
+      "initial_doubled_residual_signed": 518
+    },
+    {
+      "length": 36,
+      "p": 137,
+      "rounded_live_and_add_signed": 155,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 517,
+      "initial_residual_signed": 518,
+      "initial_doubled_residual_signed": 519
+    },
+    {
+      "length": 37,
+      "p": 138,
+      "rounded_live_and_add_signed": 156,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 518,
+      "initial_residual_signed": 519,
+      "initial_doubled_residual_signed": 520
+    },
+    {
+      "length": 38,
+      "p": 139,
+      "rounded_live_and_add_signed": 157,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 519,
+      "initial_residual_signed": 520,
+      "initial_doubled_residual_signed": 521
+    },
+    {
+      "length": 39,
+      "p": 140,
+      "rounded_live_and_add_signed": 158,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 520,
+      "initial_residual_signed": 521,
+      "initial_doubled_residual_signed": 522
+    },
+    {
+      "length": 40,
+      "p": 141,
+      "rounded_live_and_add_signed": 159,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 521,
+      "initial_residual_signed": 522,
+      "initial_doubled_residual_signed": 523
+    },
+    {
+      "length": 41,
+      "p": 141,
+      "rounded_live_and_add_signed": 159,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 521,
+      "initial_residual_signed": 522,
+      "initial_doubled_residual_signed": 523
+    },
+    {
+      "length": 42,
+      "p": 142,
+      "rounded_live_and_add_signed": 160,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 522,
+      "initial_residual_signed": 523,
+      "initial_doubled_residual_signed": 524
+    },
+    {
+      "length": 43,
+      "p": 143,
+      "rounded_live_and_add_signed": 161,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 523,
+      "initial_residual_signed": 524,
+      "initial_doubled_residual_signed": 525
+    },
+    {
+      "length": 44,
+      "p": 144,
+      "rounded_live_and_add_signed": 162,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 524,
+      "initial_residual_signed": 525,
+      "initial_doubled_residual_signed": 526
+    },
+    {
+      "length": 45,
+      "p": 144,
+      "rounded_live_and_add_signed": 162,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 524,
+      "initial_residual_signed": 525,
+      "initial_doubled_residual_signed": 526
+    },
+    {
+      "length": 46,
+      "p": 145,
+      "rounded_live_and_add_signed": 163,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 525,
+      "initial_residual_signed": 526,
+      "initial_doubled_residual_signed": 527
+    },
+    {
+      "length": 47,
+      "p": 146,
+      "rounded_live_and_add_signed": 164,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 526,
+      "initial_residual_signed": 527,
+      "initial_doubled_residual_signed": 528
+    },
+    {
+      "length": 48,
+      "p": 146,
+      "rounded_live_and_add_signed": 164,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 526,
+      "initial_residual_signed": 527,
+      "initial_doubled_residual_signed": 528
+    },
+    {
+      "length": 49,
+      "p": 147,
+      "rounded_live_and_add_signed": 165,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 527,
+      "initial_residual_signed": 528,
+      "initial_doubled_residual_signed": 529
+    },
+    {
+      "length": 50,
+      "p": 148,
+      "rounded_live_and_add_signed": 166,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 528,
+      "initial_residual_signed": 529,
+      "initial_doubled_residual_signed": 530
+    },
+    {
+      "length": 51,
+      "p": 148,
+      "rounded_live_and_add_signed": 166,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 528,
+      "initial_residual_signed": 529,
+      "initial_doubled_residual_signed": 530
+    },
+    {
+      "length": 52,
+      "p": 149,
+      "rounded_live_and_add_signed": 167,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 529,
+      "initial_residual_signed": 530,
+      "initial_doubled_residual_signed": 531
+    },
+    {
+      "length": 53,
+      "p": 150,
+      "rounded_live_and_add_signed": 168,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 530,
+      "initial_residual_signed": 531,
+      "initial_doubled_residual_signed": 532
+    },
+    {
+      "length": 54,
+      "p": 150,
+      "rounded_live_and_add_signed": 168,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 530,
+      "initial_residual_signed": 531,
+      "initial_doubled_residual_signed": 532
+    },
+    {
+      "length": 55,
+      "p": 151,
+      "rounded_live_and_add_signed": 169,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 531,
+      "initial_residual_signed": 532,
+      "initial_doubled_residual_signed": 533
+    },
+    {
+      "length": 56,
+      "p": 151,
+      "rounded_live_and_add_signed": 169,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 531,
+      "initial_residual_signed": 532,
+      "initial_doubled_residual_signed": 533
+    },
+    {
+      "length": 57,
+      "p": 152,
+      "rounded_live_and_add_signed": 170,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 532,
+      "initial_residual_signed": 533,
+      "initial_doubled_residual_signed": 534
+    },
+    {
+      "length": 58,
+      "p": 153,
+      "rounded_live_and_add_signed": 171,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 533,
+      "initial_residual_signed": 534,
+      "initial_doubled_residual_signed": 535
+    },
+    {
+      "length": 59,
+      "p": 153,
+      "rounded_live_and_add_signed": 171,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 533,
+      "initial_residual_signed": 534,
+      "initial_doubled_residual_signed": 535
+    },
+    {
+      "length": 60,
+      "p": 154,
+      "rounded_live_and_add_signed": 172,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 534,
+      "initial_residual_signed": 535,
+      "initial_doubled_residual_signed": 536
+    },
+    {
+      "length": 61,
+      "p": 154,
+      "rounded_live_and_add_signed": 172,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 534,
+      "initial_residual_signed": 535,
+      "initial_doubled_residual_signed": 536
+    },
+    {
+      "length": 62,
+      "p": 155,
+      "rounded_live_and_add_signed": 173,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 535,
+      "initial_residual_signed": 536,
+      "initial_doubled_residual_signed": 537
+    },
+    {
+      "length": 63,
+      "p": 155,
+      "rounded_live_and_add_signed": 173,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 535,
+      "initial_residual_signed": 536,
+      "initial_doubled_residual_signed": 537
+    },
+    {
+      "length": 64,
+      "p": 156,
+      "rounded_live_and_add_signed": 174,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 536,
+      "initial_residual_signed": 537,
+      "initial_doubled_residual_signed": 538
+    },
+    {
+      "length": 65,
+      "p": 156,
+      "rounded_live_and_add_signed": 174,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 536,
+      "initial_residual_signed": 537,
+      "initial_doubled_residual_signed": 538
+    },
+    {
+      "length": 66,
+      "p": 157,
+      "rounded_live_and_add_signed": 175,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 537,
+      "initial_residual_signed": 538,
+      "initial_doubled_residual_signed": 539
+    },
+    {
+      "length": 67,
+      "p": 157,
+      "rounded_live_and_add_signed": 175,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 537,
+      "initial_residual_signed": 538,
+      "initial_doubled_residual_signed": 539
+    },
+    {
+      "length": 68,
+      "p": 158,
+      "rounded_live_and_add_signed": 176,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 538,
+      "initial_residual_signed": 539,
+      "initial_doubled_residual_signed": 540
+    },
+    {
+      "length": 69,
+      "p": 158,
+      "rounded_live_and_add_signed": 176,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 538,
+      "initial_residual_signed": 539,
+      "initial_doubled_residual_signed": 540
+    },
+    {
+      "length": 70,
+      "p": 159,
+      "rounded_live_and_add_signed": 177,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 539,
+      "initial_residual_signed": 540,
+      "initial_doubled_residual_signed": 541
+    },
+    {
+      "length": 71,
+      "p": 159,
+      "rounded_live_and_add_signed": 177,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 539,
+      "initial_residual_signed": 540,
+      "initial_doubled_residual_signed": 541
+    },
+    {
+      "length": 72,
+      "p": 159,
+      "rounded_live_and_add_signed": 177,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 539,
+      "initial_residual_signed": 540,
+      "initial_doubled_residual_signed": 541
+    },
+    {
+      "length": 73,
+      "p": 160,
+      "rounded_live_and_add_signed": 178,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 540,
+      "initial_residual_signed": 541,
+      "initial_doubled_residual_signed": 542
+    },
+    {
+      "length": 74,
+      "p": 160,
+      "rounded_live_and_add_signed": 178,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 540,
+      "initial_residual_signed": 541,
+      "initial_doubled_residual_signed": 542
+    },
+    {
+      "length": 75,
+      "p": 161,
+      "rounded_live_and_add_signed": 179,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 541,
+      "initial_residual_signed": 542,
+      "initial_doubled_residual_signed": 543
+    },
+    {
+      "length": 76,
+      "p": 161,
+      "rounded_live_and_add_signed": 179,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 541,
+      "initial_residual_signed": 542,
+      "initial_doubled_residual_signed": 543
+    },
+    {
+      "length": 77,
+      "p": 161,
+      "rounded_live_and_add_signed": 179,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 541,
+      "initial_residual_signed": 542,
+      "initial_doubled_residual_signed": 543
+    },
+    {
+      "length": 78,
+      "p": 162,
+      "rounded_live_and_add_signed": 180,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 542,
+      "initial_residual_signed": 543,
+      "initial_doubled_residual_signed": 544
+    },
+    {
+      "length": 79,
+      "p": 162,
+      "rounded_live_and_add_signed": 180,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 542,
+      "initial_residual_signed": 543,
+      "initial_doubled_residual_signed": 544
+    },
+    {
+      "length": 80,
+      "p": 163,
+      "rounded_live_and_add_signed": 181,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 543,
+      "initial_residual_signed": 544,
+      "initial_doubled_residual_signed": 545
+    },
+    {
+      "length": 81,
+      "p": 163,
+      "rounded_live_and_add_signed": 181,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 543,
+      "initial_residual_signed": 544,
+      "initial_doubled_residual_signed": 545
+    },
+    {
+      "length": 82,
+      "p": 163,
+      "rounded_live_and_add_signed": 181,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 543,
+      "initial_residual_signed": 544,
+      "initial_doubled_residual_signed": 545
+    },
+    {
+      "length": 83,
+      "p": 164,
+      "rounded_live_and_add_signed": 182,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 544,
+      "initial_residual_signed": 545,
+      "initial_doubled_residual_signed": 546
+    },
+    {
+      "length": 84,
+      "p": 164,
+      "rounded_live_and_add_signed": 182,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 544,
+      "initial_residual_signed": 545,
+      "initial_doubled_residual_signed": 546
+    },
+    {
+      "length": 85,
+      "p": 164,
+      "rounded_live_and_add_signed": 182,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 544,
+      "initial_residual_signed": 545,
+      "initial_doubled_residual_signed": 546
+    },
+    {
+      "length": 86,
+      "p": 165,
+      "rounded_live_and_add_signed": 183,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 545,
+      "initial_residual_signed": 546,
+      "initial_doubled_residual_signed": 547
+    },
+    {
+      "length": 87,
+      "p": 165,
+      "rounded_live_and_add_signed": 183,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 545,
+      "initial_residual_signed": 546,
+      "initial_doubled_residual_signed": 547
+    },
+    {
+      "length": 88,
+      "p": 166,
+      "rounded_live_and_add_signed": 184,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 546,
+      "initial_residual_signed": 547,
+      "initial_doubled_residual_signed": 548
+    },
+    {
+      "length": 89,
+      "p": 166,
+      "rounded_live_and_add_signed": 184,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 546,
+      "initial_residual_signed": 547,
+      "initial_doubled_residual_signed": 548
+    },
+    {
+      "length": 90,
+      "p": 166,
+      "rounded_live_and_add_signed": 184,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 546,
+      "initial_residual_signed": 547,
+      "initial_doubled_residual_signed": 548
+    },
+    {
+      "length": 91,
+      "p": 167,
+      "rounded_live_and_add_signed": 185,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 547,
+      "initial_residual_signed": 548,
+      "initial_doubled_residual_signed": 549
+    },
+    {
+      "length": 92,
+      "p": 167,
+      "rounded_live_and_add_signed": 185,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 547,
+      "initial_residual_signed": 548,
+      "initial_doubled_residual_signed": 549
+    },
+    {
+      "length": 93,
+      "p": 167,
+      "rounded_live_and_add_signed": 185,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 547,
+      "initial_residual_signed": 548,
+      "initial_doubled_residual_signed": 549
+    },
+    {
+      "length": 94,
+      "p": 168,
+      "rounded_live_and_add_signed": 186,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 548,
+      "initial_residual_signed": 549,
+      "initial_doubled_residual_signed": 550
+    },
+    {
+      "length": 95,
+      "p": 168,
+      "rounded_live_and_add_signed": 186,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 548,
+      "initial_residual_signed": 549,
+      "initial_doubled_residual_signed": 550
+    },
+    {
+      "length": 96,
+      "p": 168,
+      "rounded_live_and_add_signed": 186,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 548,
+      "initial_residual_signed": 549,
+      "initial_doubled_residual_signed": 550
+    },
+    {
+      "length": 97,
+      "p": 168,
+      "rounded_live_and_add_signed": 186,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 548,
+      "initial_residual_signed": 549,
+      "initial_doubled_residual_signed": 550
+    },
+    {
+      "length": 98,
+      "p": 169,
+      "rounded_live_and_add_signed": 187,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 549,
+      "initial_residual_signed": 550,
+      "initial_doubled_residual_signed": 551
+    },
+    {
+      "length": 99,
+      "p": 169,
+      "rounded_live_and_add_signed": 187,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 549,
+      "initial_residual_signed": 550,
+      "initial_doubled_residual_signed": 551
+    },
+    {
+      "length": 100,
+      "p": 169,
+      "rounded_live_and_add_signed": 187,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 549,
+      "initial_residual_signed": 550,
+      "initial_doubled_residual_signed": 551
+    },
+    {
+      "length": 101,
+      "p": 170,
+      "rounded_live_and_add_signed": 188,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 550,
+      "initial_residual_signed": 551,
+      "initial_doubled_residual_signed": 552
+    },
+    {
+      "length": 102,
+      "p": 170,
+      "rounded_live_and_add_signed": 188,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 550,
+      "initial_residual_signed": 551,
+      "initial_doubled_residual_signed": 552
+    },
+    {
+      "length": 103,
+      "p": 170,
+      "rounded_live_and_add_signed": 188,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 550,
+      "initial_residual_signed": 551,
+      "initial_doubled_residual_signed": 552
+    },
+    {
+      "length": 104,
+      "p": 171,
+      "rounded_live_and_add_signed": 189,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 551,
+      "initial_residual_signed": 552,
+      "initial_doubled_residual_signed": 553
+    },
+    {
+      "length": 105,
+      "p": 171,
+      "rounded_live_and_add_signed": 189,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 551,
+      "initial_residual_signed": 552,
+      "initial_doubled_residual_signed": 553
+    },
+    {
+      "length": 106,
+      "p": 171,
+      "rounded_live_and_add_signed": 189,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 551,
+      "initial_residual_signed": 552,
+      "initial_doubled_residual_signed": 553
+    },
+    {
+      "length": 107,
+      "p": 171,
+      "rounded_live_and_add_signed": 189,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 551,
+      "initial_residual_signed": 552,
+      "initial_doubled_residual_signed": 553
+    },
+    {
+      "length": 108,
+      "p": 172,
+      "rounded_live_and_add_signed": 190,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 552,
+      "initial_residual_signed": 553,
+      "initial_doubled_residual_signed": 554
+    },
+    {
+      "length": 109,
+      "p": 172,
+      "rounded_live_and_add_signed": 190,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 552,
+      "initial_residual_signed": 553,
+      "initial_doubled_residual_signed": 554
+    },
+    {
+      "length": 110,
+      "p": 172,
+      "rounded_live_and_add_signed": 190,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 552,
+      "initial_residual_signed": 553,
+      "initial_doubled_residual_signed": 554
+    },
+    {
+      "length": 111,
+      "p": 173,
+      "rounded_live_and_add_signed": 191,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 553,
+      "initial_residual_signed": 554,
+      "initial_doubled_residual_signed": 555
+    },
+    {
+      "length": 112,
+      "p": 173,
+      "rounded_live_and_add_signed": 191,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 553,
+      "initial_residual_signed": 554,
+      "initial_doubled_residual_signed": 555
+    },
+    {
+      "length": 113,
+      "p": 173,
+      "rounded_live_and_add_signed": 191,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 553,
+      "initial_residual_signed": 554,
+      "initial_doubled_residual_signed": 555
+    },
+    {
+      "length": 114,
+      "p": 173,
+      "rounded_live_and_add_signed": 191,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 553,
+      "initial_residual_signed": 554,
+      "initial_doubled_residual_signed": 555
+    },
+    {
+      "length": 115,
+      "p": 174,
+      "rounded_live_and_add_signed": 192,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 554,
+      "initial_residual_signed": 555,
+      "initial_doubled_residual_signed": 556
+    },
+    {
+      "length": 116,
+      "p": 174,
+      "rounded_live_and_add_signed": 192,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 554,
+      "initial_residual_signed": 555,
+      "initial_doubled_residual_signed": 556
+    },
+    {
+      "length": 117,
+      "p": 174,
+      "rounded_live_and_add_signed": 192,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 554,
+      "initial_residual_signed": 555,
+      "initial_doubled_residual_signed": 556
+    },
+    {
+      "length": 118,
+      "p": 174,
+      "rounded_live_and_add_signed": 192,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 554,
+      "initial_residual_signed": 555,
+      "initial_doubled_residual_signed": 556
+    },
+    {
+      "length": 119,
+      "p": 175,
+      "rounded_live_and_add_signed": 193,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 555,
+      "initial_residual_signed": 556,
+      "initial_doubled_residual_signed": 557
+    },
+    {
+      "length": 120,
+      "p": 175,
+      "rounded_live_and_add_signed": 193,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 555,
+      "initial_residual_signed": 556,
+      "initial_doubled_residual_signed": 557
+    },
+    {
+      "length": 121,
+      "p": 175,
+      "rounded_live_and_add_signed": 193,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 555,
+      "initial_residual_signed": 556,
+      "initial_doubled_residual_signed": 557
+    },
+    {
+      "length": 122,
+      "p": 175,
+      "rounded_live_and_add_signed": 193,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 555,
+      "initial_residual_signed": 556,
+      "initial_doubled_residual_signed": 557
+    },
+    {
+      "length": 123,
+      "p": 176,
+      "rounded_live_and_add_signed": 194,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 556,
+      "initial_residual_signed": 557,
+      "initial_doubled_residual_signed": 558
+    },
+    {
+      "length": 124,
+      "p": 176,
+      "rounded_live_and_add_signed": 194,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 556,
+      "initial_residual_signed": 557,
+      "initial_doubled_residual_signed": 558
+    },
+    {
+      "length": 125,
+      "p": 176,
+      "rounded_live_and_add_signed": 194,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 556,
+      "initial_residual_signed": 557,
+      "initial_doubled_residual_signed": 558
+    },
+    {
+      "length": 126,
+      "p": 176,
+      "rounded_live_and_add_signed": 194,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 556,
+      "initial_residual_signed": 557,
+      "initial_doubled_residual_signed": 558
+    },
+    {
+      "length": 127,
+      "p": 177,
+      "rounded_live_and_add_signed": 195,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 557,
+      "initial_residual_signed": 558,
+      "initial_doubled_residual_signed": 559
+    },
+    {
+      "length": 128,
+      "p": 177,
+      "rounded_live_and_add_signed": 195,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 557,
+      "initial_residual_signed": 558,
+      "initial_doubled_residual_signed": 559
+    },
+    {
+      "length": 129,
+      "p": 177,
+      "rounded_live_and_add_signed": 195,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 557,
+      "initial_residual_signed": 558,
+      "initial_doubled_residual_signed": 559
+    },
+    {
+      "length": 130,
+      "p": 177,
+      "rounded_live_and_add_signed": 195,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 557,
+      "initial_residual_signed": 558,
+      "initial_doubled_residual_signed": 559
+    },
+    {
+      "length": 131,
+      "p": 177,
+      "rounded_live_and_add_signed": 195,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 557,
+      "initial_residual_signed": 558,
+      "initial_doubled_residual_signed": 559
+    },
+    {
+      "length": 132,
+      "p": 178,
+      "rounded_live_and_add_signed": 196,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 558,
+      "initial_residual_signed": 559,
+      "initial_doubled_residual_signed": 560
+    },
+    {
+      "length": 133,
+      "p": 178,
+      "rounded_live_and_add_signed": 196,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 558,
+      "initial_residual_signed": 559,
+      "initial_doubled_residual_signed": 560
+    },
+    {
+      "length": 134,
+      "p": 178,
+      "rounded_live_and_add_signed": 196,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 558,
+      "initial_residual_signed": 559,
+      "initial_doubled_residual_signed": 560
+    },
+    {
+      "length": 135,
+      "p": 178,
+      "rounded_live_and_add_signed": 196,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 558,
+      "initial_residual_signed": 559,
+      "initial_doubled_residual_signed": 560
+    },
+    {
+      "length": 136,
+      "p": 179,
+      "rounded_live_and_add_signed": 197,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 559,
+      "initial_residual_signed": 560,
+      "initial_doubled_residual_signed": 561
+    },
+    {
+      "length": 137,
+      "p": 179,
+      "rounded_live_and_add_signed": 197,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 559,
+      "initial_residual_signed": 560,
+      "initial_doubled_residual_signed": 561
+    },
+    {
+      "length": 138,
+      "p": 179,
+      "rounded_live_and_add_signed": 197,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 559,
+      "initial_residual_signed": 560,
+      "initial_doubled_residual_signed": 561
+    },
+    {
+      "length": 139,
+      "p": 179,
+      "rounded_live_and_add_signed": 197,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 559,
+      "initial_residual_signed": 560,
+      "initial_doubled_residual_signed": 561
+    },
+    {
+      "length": 140,
+      "p": 179,
+      "rounded_live_and_add_signed": 197,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 559,
+      "initial_residual_signed": 560,
+      "initial_doubled_residual_signed": 561
+    },
+    {
+      "length": 141,
+      "p": 180,
+      "rounded_live_and_add_signed": 198,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 560,
+      "initial_residual_signed": 561,
+      "initial_doubled_residual_signed": 562
+    },
+    {
+      "length": 142,
+      "p": 180,
+      "rounded_live_and_add_signed": 198,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 560,
+      "initial_residual_signed": 561,
+      "initial_doubled_residual_signed": 562
+    },
+    {
+      "length": 143,
+      "p": 180,
+      "rounded_live_and_add_signed": 198,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 560,
+      "initial_residual_signed": 561,
+      "initial_doubled_residual_signed": 562
+    },
+    {
+      "length": 144,
+      "p": 180,
+      "rounded_live_and_add_signed": 198,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 560,
+      "initial_residual_signed": 561,
+      "initial_doubled_residual_signed": 562
+    },
+    {
+      "length": 145,
+      "p": 180,
+      "rounded_live_and_add_signed": 198,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 560,
+      "initial_residual_signed": 561,
+      "initial_doubled_residual_signed": 562
+    },
+    {
+      "length": 146,
+      "p": 181,
+      "rounded_live_and_add_signed": 199,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 561,
+      "initial_residual_signed": 562,
+      "initial_doubled_residual_signed": 563
+    },
+    {
+      "length": 147,
+      "p": 181,
+      "rounded_live_and_add_signed": 199,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 561,
+      "initial_residual_signed": 562,
+      "initial_doubled_residual_signed": 563
+    },
+    {
+      "length": 148,
+      "p": 181,
+      "rounded_live_and_add_signed": 199,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 561,
+      "initial_residual_signed": 562,
+      "initial_doubled_residual_signed": 563
+    },
+    {
+      "length": 149,
+      "p": 181,
+      "rounded_live_and_add_signed": 199,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 561,
+      "initial_residual_signed": 562,
+      "initial_doubled_residual_signed": 563
+    },
+    {
+      "length": 150,
+      "p": 181,
+      "rounded_live_and_add_signed": 199,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 561,
+      "initial_residual_signed": 562,
+      "initial_doubled_residual_signed": 563
+    },
+    {
+      "length": 151,
+      "p": 182,
+      "rounded_live_and_add_signed": 200,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 562,
+      "initial_residual_signed": 563,
+      "initial_doubled_residual_signed": 564
+    },
+    {
+      "length": 152,
+      "p": 182,
+      "rounded_live_and_add_signed": 200,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 562,
+      "initial_residual_signed": 563,
+      "initial_doubled_residual_signed": 564
+    },
+    {
+      "length": 153,
+      "p": 182,
+      "rounded_live_and_add_signed": 200,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 562,
+      "initial_residual_signed": 563,
+      "initial_doubled_residual_signed": 564
+    },
+    {
+      "length": 154,
+      "p": 182,
+      "rounded_live_and_add_signed": 200,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 562,
+      "initial_residual_signed": 563,
+      "initial_doubled_residual_signed": 564
+    },
+    {
+      "length": 155,
+      "p": 182,
+      "rounded_live_and_add_signed": 200,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 562,
+      "initial_residual_signed": 563,
+      "initial_doubled_residual_signed": 564
+    },
+    {
+      "length": 156,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 157,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 158,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 159,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 160,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 161,
+      "p": 183,
+      "rounded_live_and_add_signed": 201,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 563,
+      "initial_residual_signed": 564,
+      "initial_doubled_residual_signed": 565
+    },
+    {
+      "length": 162,
+      "p": 184,
+      "rounded_live_and_add_signed": 202,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 564,
+      "initial_residual_signed": 565,
+      "initial_doubled_residual_signed": 566
+    },
+    {
+      "length": 163,
+      "p": 184,
+      "rounded_live_and_add_signed": 202,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 564,
+      "initial_residual_signed": 565,
+      "initial_doubled_residual_signed": 566
+    },
+    {
+      "length": 164,
+      "p": 184,
+      "rounded_live_and_add_signed": 202,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 564,
+      "initial_residual_signed": 565,
+      "initial_doubled_residual_signed": 566
+    },
+    {
+      "length": 165,
+      "p": 184,
+      "rounded_live_and_add_signed": 202,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 564,
+      "initial_residual_signed": 565,
+      "initial_doubled_residual_signed": 566
+    },
+    {
+      "length": 166,
+      "p": 184,
+      "rounded_live_and_add_signed": 202,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 564,
+      "initial_residual_signed": 565,
+      "initial_doubled_residual_signed": 566
+    },
+    {
+      "length": 167,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 168,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 169,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 170,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 171,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 172,
+      "p": 185,
+      "rounded_live_and_add_signed": 203,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 565,
+      "initial_residual_signed": 566,
+      "initial_doubled_residual_signed": 567
+    },
+    {
+      "length": 173,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 174,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 175,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 176,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 177,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 178,
+      "p": 186,
+      "rounded_live_and_add_signed": 204,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 566,
+      "initial_residual_signed": 567,
+      "initial_doubled_residual_signed": 568
+    },
+    {
+      "length": 179,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 180,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 181,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 182,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 183,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 184,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 185,
+      "p": 187,
+      "rounded_live_and_add_signed": 205,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 567,
+      "initial_residual_signed": 568,
+      "initial_doubled_residual_signed": 569
+    },
+    {
+      "length": 186,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 187,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 188,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 189,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 190,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 191,
+      "p": 188,
+      "rounded_live_and_add_signed": 206,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 568,
+      "initial_residual_signed": 569,
+      "initial_doubled_residual_signed": 570
+    },
+    {
+      "length": 192,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 193,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 194,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 195,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 196,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 197,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 198,
+      "p": 189,
+      "rounded_live_and_add_signed": 207,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 569,
+      "initial_residual_signed": 570,
+      "initial_doubled_residual_signed": 571
+    },
+    {
+      "length": 199,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 200,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 201,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 202,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 203,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 204,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 205,
+      "p": 190,
+      "rounded_live_and_add_signed": 208,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 570,
+      "initial_residual_signed": 571,
+      "initial_doubled_residual_signed": 572
+    },
+    {
+      "length": 206,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 207,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 208,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 209,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 210,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 211,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 212,
+      "p": 191,
+      "rounded_live_and_add_signed": 209,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 571,
+      "initial_residual_signed": 572,
+      "initial_doubled_residual_signed": 573
+    },
+    {
+      "length": 213,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 214,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 215,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 216,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 217,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 218,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 219,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 220,
+      "p": 192,
+      "rounded_live_and_add_signed": 210,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 572,
+      "initial_residual_signed": 573,
+      "initial_doubled_residual_signed": 574
+    },
+    {
+      "length": 221,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 222,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 223,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 224,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 225,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 226,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 227,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 228,
+      "p": 193,
+      "rounded_live_and_add_signed": 211,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 573,
+      "initial_residual_signed": 574,
+      "initial_doubled_residual_signed": 575
+    },
+    {
+      "length": 229,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 230,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 231,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 232,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 233,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 234,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 235,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 236,
+      "p": 194,
+      "rounded_live_and_add_signed": 212,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 574,
+      "initial_residual_signed": 575,
+      "initial_doubled_residual_signed": 576
+    },
+    {
+      "length": 237,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 238,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 239,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 240,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 241,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 242,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 243,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 244,
+      "p": 195,
+      "rounded_live_and_add_signed": 213,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 575,
+      "initial_residual_signed": 576,
+      "initial_doubled_residual_signed": 577
+    },
+    {
+      "length": 245,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 246,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 247,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 248,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 249,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 250,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 251,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 252,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 253,
+      "p": 196,
+      "rounded_live_and_add_signed": 214,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 576,
+      "initial_residual_signed": 577,
+      "initial_doubled_residual_signed": 578
+    },
+    {
+      "length": 254,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 255,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 256,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 257,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 258,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 259,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    },
+    {
+      "length": 260,
+      "p": 197,
+      "rounded_live_and_add_signed": 215,
+      "exact_b100_initializer_signed": 480,
+      "initial_product_signed": 577,
+      "initial_residual_signed": 578,
+      "initial_doubled_residual_signed": 579
+    }
+  ],
+  "scope": "Pure finite coefficients/counts; no coefficient arrays, polynomial samples, integrals or builds."
+}

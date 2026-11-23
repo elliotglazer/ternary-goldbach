@@ -1,0 +1,21 @@
+<<HOL message: Created theory "C10004PackedTemplateAdmission">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX;bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004PackedTemplateAdmission)>>
+SHARED_BOOTSTRAP_DONE
+TRAVERSAL_CV_TAG,actual_phase_encoding,DISK_THM,
+BLOCK_TEMPLATE_CPU,0.002822
+BLOCK_INSTANTIATION_CPU,0.000438
+TRAVERSAL_CV_TAG,admit_h1,DISK_THM,
+Saved theorem _______ "admit_h1"
+PACKED_CPU,admit,1,16,4800,0.485914,0.053624,0.57706,0.000089,0.000115,1.349758
+BLOCK_INSTANTIATION_CPU,0.000292
+TRAVERSAL_CV_TAG,admit_h2,DISK_THM,
+Saved theorem _______ "admit_h2"
+PACKED_CPU,admit,2,16,4800,0.525433,0.038634,0.616453,0.000148,0.000095,1.427102
+Exporting theory "C10004PackedTemplateAdmission" ... done.
+Theory "C10004PackedTemplateAdmission" took 4.8s to build
+PACKED_REPLAY_DONE,admit

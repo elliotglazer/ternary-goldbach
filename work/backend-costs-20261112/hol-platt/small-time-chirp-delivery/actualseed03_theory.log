@@ -1,0 +1,96 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../small-time-selected-consumer[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 20 directories
+Holmake: Building 2 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/DyadicSeedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "DyadicSeed">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in DyadicSeed)>>
+Saved theorem _______ "nonnegative_sq_order"
+Saved theorem _______ "halve_box"
+Saved theorem _______ "ang_compute"
+Saved definition ____ "ang_def"
+Saved theorem _______ "ang_pos"
+Saved theorem _______ "next_box"
+Saved theorem _______ "ang_closed"
+Exporting theory "DyadicSeed" ... done.
+Theory "DyadicSeed" took 2.0s to build
+Holmake: [1/2] DyadicSeed
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ActualDyadicSeedsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "ActualDyadicSeeds">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in ActualDyadicSeeds)>>
+Saved theorem _______ "seed_524288_240_0"
+Saved theorem _______ "seed_524288_240_1"
+Saved theorem _______ "seed_524288_240_2"
+Saved theorem _______ "seed_524288_240_3"
+Saved theorem _______ "seed_524288_240_4"
+Saved theorem _______ "seed_524288_240_5"
+Saved theorem _______ "seed_524288_240_6"
+Saved theorem _______ "seed_524288_240_7"
+Saved theorem _______ "seed_524288_240_8"
+Saved theorem _______ "seed_524288_240_9"
+Saved theorem _______ "seed_524288_240_10"
+Saved theorem _______ "seed_524288_240_11"
+Saved theorem _______ "seed_524288_240_12"
+Saved theorem _______ "seed_524288_240_13"
+Saved theorem _______ "seed_524288_240_14"
+Saved theorem _______ "seed_524288_240_15"
+Saved theorem _______ "seed_524288_240_16"
+Saved theorem _______ "seed_524288_240_17"
+Saved theorem _______ "seed_524288_240_18"
+Saved theorem _______ "seed_262144_238_0"
+Saved theorem _______ "seed_262144_238_1"
+Saved theorem _______ "seed_262144_238_2"
+Saved theorem _______ "seed_262144_238_3"
+Saved theorem _______ "seed_262144_238_4"
+Saved theorem _______ "seed_262144_238_5"
+Saved theorem _______ "seed_262144_238_6"
+Saved theorem _______ "seed_262144_238_7"
+Saved theorem _______ "seed_262144_238_8"
+Saved theorem _______ "seed_262144_238_9"
+Saved theorem _______ "seed_262144_238_10"
+Saved theorem _______ "seed_262144_238_11"
+Saved theorem _______ "seed_262144_238_12"
+Saved theorem _______ "seed_262144_238_13"
+Saved theorem _______ "seed_262144_238_14"
+Saved theorem _______ "seed_262144_238_15"
+Saved theorem _______ "seed_262144_238_16"
+Saved theorem _______ "seed_262144_238_17"
+Saved theorem _______ "seed_524288_128_0"
+Saved theorem _______ "seed_524288_128_1"
+Saved theorem _______ "seed_524288_128_2"
+Saved theorem _______ "seed_524288_128_3"
+Saved theorem _______ "seed_524288_128_4"
+Saved theorem _______ "seed_524288_128_5"
+Saved theorem _______ "seed_524288_128_6"
+Saved theorem _______ "seed_524288_128_7"
+Saved theorem _______ "seed_524288_128_8"
+Saved theorem _______ "seed_524288_128_9"
+Saved theorem _______ "seed_524288_128_10"
+Saved theorem _______ "seed_524288_128_11"
+Saved theorem _______ "seed_524288_128_12"
+Saved theorem _______ "seed_524288_128_13"
+Saved theorem _______ "seed_524288_128_14"
+Saved theorem _______ "seed_524288_128_15"
+Saved theorem _______ "seed_524288_128_16"
+Saved theorem _______ "seed_524288_128_17"
+Saved theorem _______ "seed_524288_128_18"
+Exporting theory "ActualDyadicSeeds" ... done.
+Theory "ActualDyadicSeeds" took 12.2s to build
+Holmake: [2/2] ActualDyadicSeeds

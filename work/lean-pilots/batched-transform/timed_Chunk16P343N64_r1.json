@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayChunk16P343N64.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayChunk16P343N64.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 5.407669899999746,
+  "user_cpu_seconds": 2.625,
+  "system_cpu_seconds": 2.59375,
+  "cpu_seconds": 5.21875,
+  "peak_working_set_bytes": 463802368,
+  "observed_peak_private_bytes": 994136064,
+  "memory_samples": 107,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "Chunk16",
+      "precision": 343,
+      "butterflies": 64,
+      "repetitions": 10,
+      "declarations": 10,
+      "kernel_wall_ns": 1951855500
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=200000000,recdepth=512"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayChunk16P343N64.lean",
+      "bytes": 220,
+      "sha256": "9C5DBCE29EC1647EFB87F952487DA464FF32602D094FF59254F5F925803CE9BE"
+    },
+    {
+      "path": "timed_Chunk16P343N64_r1.log",
+      "bytes": 87,
+      "sha256": "7835C8DD895485C33B96B78198EBAFF823EB7DC97090CD91CB52A610EC720AF3"
+    },
+    {
+      "path": "ReplayChunk16P343N64.olean",
+      "bytes": 1560,
+      "sha256": "0E92BB3F4CEDC05B599D45937C575107D484E1E696E7657EA84871598B82F372"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

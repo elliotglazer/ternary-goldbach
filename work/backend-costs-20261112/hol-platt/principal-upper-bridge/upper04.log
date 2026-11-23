@@ -1,0 +1,34 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 16 directories
+line_from_principal_upper oracles=DISK_THM ⊢ ∀m top w U.
+    FINITE (units m top) ∧ w ⊆ units m top ∧
+    (∀b g i. (b,g,i) ∈ w ⇒ b = 1 / 2) ∧
+    (∀b g. 0 < b ∧ b < 1 ∧ 0 < g ∧ g ≤ top ⇒ m (1 − b) g = m b g) ∧
+    &CARD (units m top) ≤ U ∧ U < &(CARD w + 2) ⇒
+    ∀b g. 0 < b ∧ b < 1 ∧ 0 < g ∧ g ≤ top ∧ 0 < m b g ⇒ b = 1 / 2
+weighted_upper oracles=DISK_THM ⊢ ∀main top g e xs A.
+    main < top ∧
+    EVERY (λx. g x ≤ top ∧ ∀r. e x = SOME r ⇒ main < g x ∧ g x ≤ r ∧ r ≤ top)
+      xs ∧ weighted (λx. if g x ≤ main then top − main else top − g x) xs ≤ A ⇒
+    &low main g xs ≤ (A − weighted (λx. credit top (e x)) xs) / (top − main)
+weighted_lower oracles=DISK_THM ⊢ ∀main top g e xs.
+    main < top ∧
+    EVERY (λx. g x ≤ top ∧ ∀r. e x = SOME r ⇒ main < g x ∧ g x ≤ r ∧ r ≤ top)
+      xs ⇒
+    (top − main) * &low main g xs + weighted (λx. credit top (e x)) xs ≤
+    weighted (λx. if g x ≤ main then top − main else top − g x) xs
+UPPER_AUDIT_PASS

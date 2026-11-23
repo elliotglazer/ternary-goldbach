@@ -1,0 +1,37 @@
+{
+  "status": "prepared only; no SML typecheck or execution",
+  "input_pins": {
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\hol4-setup\\HOL-1de64f8521b4758508bd875fbaf11d1768261b92\\src\\thm\\Compute.sml": "7dab9dd6e848fdfe2eb7869865031cfdadba44a2fb3d7e74d98cea77f712e059",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\hol4-setup\\HOL-1de64f8521b4758508bd875fbaf11d1768261b92\\src\\num\\theories\\cv_compute\\cv_computeLib.sml": "b66d57885cb0d2dcf49f5d5fec665cb5fdca4edb9f726a2ced0ad579cdd08b6c",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\hol4-setup\\dependent.sml": "ecb62c8c7b1f1aaaa8df9617daf4145d7fcadbeedd9cf8579d3f57962c5e1ab1",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\hol-platt\\compiled-evaluator\\ClosureCompiler.sml.inc": "08bc1b75ad3ab92d0b51def4a1787a3a106d18919f6786d0fbbfa38cb94d2015"
+  },
+  "output_pins": {
+    "CompiledComputeBenchmark.sml": "bccac8c9d9662a5f45366dbd74e73b32becb33484974ac3da87a0a77b0d8d508",
+    "CvBenchmarkConfig.sml": "f5f285e8bf9c9d510e3ed43b7bd52b9883d41399f51ee10c9fb65041d5374aef",
+    "compiled_dependent.sml": "8d51a8d9a118fa608478ec77c2f0e6d605ae8131250fc367f204202e90a4c9b8"
+  },
+  "support_pins": {
+    "CompiledEvalChecks.sml": "0048a1b2979badfd1c1eaf6f72da352ec97a65fecfd319ab011c793f00b37bf0",
+    "CompiledWorkload.sml": "58f5dc21c3f33eff1e58c8ba06015a40ac72cb875cec34b87b3a59bf50a28aba",
+    "prepare_harness.py": "3cd71f94f911411b2f582cd4ae4bc381d7014821d1eafc23cc81b138e28720a2",
+    "Holmakefile": "7572d06333300c9546d69775464ef562e5cee3ab932847ac57a24bbee2db46b3",
+    "run_compiled.sh": "1be5d272248fe9471fe12602acbc763616bf9e0ba0b1a09ce6d75c7e491b8ae5"
+  },
+  "same_ast": "one code vector and one request AST per comparison, shared by stock/compiled",
+  "depths": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "controls": [
+    "checksum",
+    "bound",
+    "depth",
+    "input",
+    "coefficient"
+  ],
+  "kernel_change": false,
+  "theory_export": "stock references and closed source equations only; candidate creates no theorem"
+}

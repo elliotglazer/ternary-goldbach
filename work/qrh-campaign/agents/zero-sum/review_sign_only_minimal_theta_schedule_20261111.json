@@ -1,0 +1,88 @@
+{
+  "status": "PASS conditional API/metadata join only",
+  "checks": 150852,
+  "author_pins": {
+    "SIGN_ONLY_MINIMAL_THETA_NONPRINCIPAL_SCHEDULE_2026-11-11.md": "C1D2C360A296C961BD2FA46576521FEDB1AFE01527610DF1D21CC145E5565918",
+    "build_sign_only_minimal_theta_schedule_20261111.py": "88225615982B611EBFED86E00EC98CA6A1DEB07AFCCB40CDFC8B9FCE9A7F24B5",
+    "sign_only_minimal_theta_nonprincipal_schedule_20261111.json": "E767EC3B3E14F2A243837DA85C811DE5ED67CE701BDD08998C2329F9C687C24D"
+  },
+  "input_pins": {
+    "work/qrh-blueprint/MINIMAL_THETA_NONPRINCIPAL_SCHEDULE_2026-11-11.md": "654484AF0793EA0D5A2D51A2842E06753F4D8CEC0BF75A96953EF017D9B3173F",
+    "work/qrh-blueprint/minimal_theta_nonprincipal_schedule_20261111.json": "96483C8A5E47888AC9208A8B95CA1BD8261CBC9D42AFBCBAEE1A1ABF10AC9265",
+    "work/qrh-campaign/agents/zero-sum/REVIEW_MINIMAL_THETA_NONPRINCIPAL_SCHEDULE_2026-11-11.md": "C4DD11BAD42C5F6970FCABC93F90AC7506B5C01278C3EF02155AD6404B2B9F52",
+    "work/qrh-campaign/agents/audit/SMALL_THETA_RAW_POLYNOMIAL_SIGN_INTERFACE_2026-11-11.md": "076030481DEB4A922356A5BC0B8CCB243DF3FBB15A0DD427A29DEB044E82D430",
+    "work/qrh-campaign/agents/zero-sum/REVIEW_SMALL_THETA_RAW_POLYNOMIAL_SIGN_INTERFACE_2026-11-11.md": "5683768E8F7B8B93FD4CD2E45CDBED40BFA9CC1BAE238CF920A22B40FEBB820A",
+    "work/qrh-campaign/agents/audit/raw_small_theta_sign_scalars_20261111.json": "D6FA13513E2A01B4B3ACFFD0A93B7B0C811F864A1C4FDAB3E907FA23626532CB",
+    "work/qrh-campaign/agents/moebius/SMALL_THETA_SELECTED_CONSUMER_AUDIT_2026-11-11.md": "CA2006BBC18394CC20D74AED5A1F24D8432AA2A1D2CEA22B3AEDBAB284A6EA51"
+  },
+  "summaries": [
+    {
+      "extra_nodes": 0,
+      "deductions": {
+        "omega_complex_scalings": 1775431871117,
+        "final_Y_real_products": 1775431871117,
+        "positive_scale_real_updates": 3791938303,
+        "real_exp_seed_certificates": 7499
+      },
+      "raw_time_bits": [
+        241,
+        343
+      ],
+      "magnitude_bits": [
+        54,
+        69
+      ]
+    },
+    {
+      "extra_nodes": 167,
+      "deductions": {
+        "omega_complex_scalings": 1778517548153,
+        "final_Y_real_products": 1778517548153,
+        "positive_scale_real_updates": 3793190636,
+        "real_exp_seed_certificates": 7499
+      },
+      "raw_time_bits": [
+        241,
+        343
+      ],
+      "magnitude_bits": [
+        54,
+        69
+      ]
+    },
+    {
+      "extra_nodes": 320,
+      "deductions": {
+        "omega_complex_scalings": 1781344545677,
+        "final_Y_real_products": 1781344545677,
+        "positive_scale_real_updates": 3794337983,
+        "real_exp_seed_certificates": 7499
+      },
+      "raw_time_bits": [
+        241,
+        343
+      ],
+      "magnitude_bits": [
+        54,
+        69
+      ]
+    },
+    {
+      "extra_nodes": 640,
+      "deductions": {
+        "omega_complex_scalings": 1787257220237,
+        "final_Y_real_products": 1787257220237,
+        "positive_scale_real_updates": 3796737663,
+        "real_exp_seed_certificates": 7499
+      },
+      "raw_time_bits": [
+        241,
+        343
+      ],
+      "magnitude_bits": [
+        54,
+        69
+      ]
+    }
+  ]
+}

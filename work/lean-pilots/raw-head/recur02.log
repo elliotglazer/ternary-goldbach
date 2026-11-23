@@ -1,0 +1,21 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawRecurrence.lean:45:10: error(lean.unknownIdentifier): Unknown identifier `norm_mul`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawRecurrence.lean:44:58: error: unsolved goals
+b w z v z' : ℂ
+eps u : ℝ
+heps : 0 ≤ eps
+hb : ‖b‖ ≤ 1
+hw : ‖w‖ = 1
+hv : ‖v - w‖ ≤ eps
+hr : ‖z' - z * v‖ ≤ u
+hvnorm : ‖v‖ ≤ 1 + eps
+hfirst : ‖z - b‖ * ‖v‖ ≤ ‖z - b‖ * (1 + eps)
+hsecond : ‖b‖ * ‖v - w‖ ≤ eps
+⊢ ‖z' - z * v‖ + (‖(z - b) * v‖ + ‖b * (v - w)‖) = ‖z' - z * v‖ + (‖z - b‖ * ‖v‖ + ‖b‖ * ‖v - w‖)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawRecurrence.lean:116:16: error(lean.unknownIdentifier): Unknown identifier `norm_mul`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawRecurrence.lean:116:26: error(lean.unknownIdentifier): Unknown identifier `norm_pow`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawRecurrence.lean:116:4: error: Type mismatch: After simplification, term
+  hb
+ has type
+  ‖b‖ ≤ 1
+but is expected to have type
+  ‖b * w ^ j‖ ≤ 1

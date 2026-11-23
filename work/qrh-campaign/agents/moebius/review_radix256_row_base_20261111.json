@@ -1,0 +1,84 @@
+{
+  "status": "PASS_STATIC_ROW_BASE_IDENTITIES_AND_SIGNATURES",
+  "checks": 55,
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_ROW_BASE_2026-11-11.md": "71D3F4BF6558618A84E652B1E041BBA26BA095679562ED951DFEA138DC9F5CAC",
+    "work/qrh-campaign/agents/prime-estimates/radix256_product_row_syntax_20261111.py": "776BAEB7AE70115601404BB86207D9499D64246E11EACCBABDC7981BE178A176",
+    "work/qrh-campaign/agents/prime-estimates/radix256_product_row_syntax_20261111.json": "3C3372F84D1AA46997E98DC7C101C75DE13F6BA9A2B0710ADAA6EA5C0BE8430B"
+  },
+  "upstream_pins": {
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm1": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm0": "463A7D6E4F4791313DEDCFD737053DCF2CC07B466371E263C38A994C6FB72052",
+    "work/qrh-campaign/agents/moebius/MMB_ARITHMETIC_EVENT_EXPANSION_2026-11-11.md": "E57FCF240BB386E783A653AD28162AFFCA2D4C5273BD1915C6C4E930ACF9CCB6",
+    "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_CELL_LIFT_2026-11-11.md": "3670294B3CAE9C9459344571FEFAF80BB4D36FCD60EADE47AFEDB03E020EC74E",
+    "work/qrh-campaign/agents/prime-estimates/CLARIFICATION_PA_PRODUCT_CELL_CLOSED_FACT_COUNT_2026-11-11.md": "F0705C64C524D9AC3051C51507DA9BCF0FD368796C0EE63A43518AB1C035F9D2",
+    "work/qrh-campaign/agents/moebius/REVIEW_PA_RADIX256_PRODUCT_CELL_LIFT_2026-11-11.md": "DDA93BA814D78B2339E37C2588BC3DF8D0747BC5AF660BD51BAA9327569452EA"
+  },
+  "interfaces": {
+    "inner_base": {
+      "a": 2,
+      "h": 0,
+      "tree_sizes": [
+        9
+      ],
+      "beta_occurrences": 0,
+      "unshared_header_commands": 10,
+      "cached_call_commands": 4,
+      "fresh_call_commands": 12
+    },
+    "initial_outer": {
+      "a": 1,
+      "h": 1,
+      "tree_sizes": [
+        21,
+        3
+      ],
+      "beta_occurrences": 0,
+      "unshared_header_commands": 26,
+      "cached_call_commands": 4,
+      "fresh_call_commands": 24
+    },
+    "intermediate_row": {
+      "a": 11,
+      "h": 7,
+      "tree_sizes": [
+        21,
+        21,
+        13,
+        3,
+        3,
+        7,
+        7,
+        5
+      ],
+      "beta_occurrences": 4,
+      "unshared_header_commands": 120,
+      "cached_call_commands": 20,
+      "fresh_call_commands": 40
+    },
+    "terminal_row": {
+      "a": 10,
+      "h": 4,
+      "tree_sizes": [
+        5,
+        21,
+        13,
+        7,
+        13
+      ],
+      "beta_occurrences": 2,
+      "unshared_header_commands": 80,
+      "cached_call_commands": 16,
+      "fresh_call_commands": 20
+    }
+  },
+  "example": {
+    "m": 13,
+    "n": 3,
+    "events": 202,
+    "H": 370,
+    "R_without_D": 670,
+    "commands_without_D_C": 1042
+  },
+  "scope": "Formal polynomial identities and exact syntax/count metadata only; source/range/binding producers remain outside the conditional core. No author script execution, numeral values or proofs."
+}

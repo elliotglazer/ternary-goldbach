@@ -1,0 +1,8 @@
+CONTROL,valid,accepted=true,expected=true
+CONTROL,wrong,accepted=false,expected=false
+CONTROL,missing,accepted=false,expected=false
+CONTROL,reordered,accepted=false,expected=false
+CONTROL,badRoot,accepted=false,expected=false
+CONTROL,fastValid,accepted=true,expected=true
+CONTROL,fastWrong,accepted=false,expected=false
+CONTROL,fastMissing,accepted=false,expected=false

@@ -1,0 +1,36 @@
+val clk=Timer.startCPUTimer();
+fun cpu()=let val {usr,sys}=Timer.checkCPUTimer clk in Time.toReal(Time.+(usr,sys)) end;
+val io=TextIO.openIn "terms.txt";
+fun tokens()=case TextIO.inputLine io of SOME line=>String.tokens Char.isSpace line | NONE=>raise Fail "end";
+fun ii x=intSyntax.term_of_int(Arbint.fromString x);
+fun nn x=numSyntax.mk_numeral(Arbnum.fromString x);
+fun il xs=listSyntax.mk_list(map ii xs,type_of ``0:int``);
+fun app f xs=list_mk_comb(f,xs);
+fun stage label tm=let val t0=cpu()
+  val rep=cv_repLib.cv_rep_for [] tm
+  val ft=cv_typeLib.from_to_thm_for(type_of tm)
+  val cvtm=cv_miscLib.cv_rep_cv_tm(concl rep)
+  val conv=cv_computeLib.cv_compute(cv_eqs_for cvtm)
+  val ctx=UNDISCH_ALL(MATCH_MP(MATCH_MP cv_repTheory.cv_rep_eval rep) ft)
+  val t1=cpu() val _=print("ADMIT "^label^" "^Real.toString(t1-t0)^"\n")
+  fun go i=let val t=cpu() val raw=CONV_RULE(RAND_CONV(RAND_CONV conv)) ctx val t2=cpu()
+    val dec=CONV_RULE(RAND_CONV EVAL) raw
+    val th=List.foldl(fn(h,t)=>PROVE_HYP (prove(h,SIMP_TAC(srw_ss()) [])) t) dec (hyp dec)
+    val t3=cpu()
+    val _=if null(hyp th) andalso aconv(lhs(concl th)) tm andalso aconv(rhs(concl th)) T then () else raise Fail label
+    val _=print("SERIES "^label^" "^Int.toString i^" "^String.concatWith " " (map Real.toString [t2-t,t3-t2,cpu()-t3])^"\n")
+    in () end
+  in go end;
+fun nl xs=listSyntax.mk_list(map nn xs,type_of ``0:num``);
+fun run()=let val t0=cpu()
+ val [name,n,r,k,q,v,e,b,x,y,shift]=tokens()
+ val n=nn n val r=ii r val k=nn k val q=nn q val v=ii v val e=ii e val b=nn b val x=nn x val y=nn y val shift=nn shift
+ val dx=il(tokens()) val dy=il(tokens()) val xs=il(tokens()) val ys=il(tokens()) val [pos,neg]=map nn(tokens()) val ws=nl(tokens()) val hs=nl(tokens()) val ex=il(tokens())
+ val direct=app ``signed`` [n,r,dx,dy,v]
+ val cold=app ``cold`` [n,r,q,k,xs,ys,e,b,x,y,shift,v]
+ val warm=app ``provided`` [ws,hs,r,pos,neg,b,x,y,v]
+ val _=print("TERMS "^name^" "^Real.toString(cpu()-t0)^"\n")
+ val jobs=if String.isSuffix "full" name then [("direct",direct),("cold",cold)] else [("direct",direct),("warm",warm)]
+ val funcs=map(fn(id,tm)=>stage(name^"_"^id)(boolSyntax.mk_eq(tm,ex))) jobs
+ in List.app(fn i=>List.app(fn f=>f i)funcs)[1,2,3,4,5] end;
+val _=List.app (fn _=>run()) [1,2,3,4,5,6];

@@ -1,0 +1,51 @@
+{
+  "coordinator_authorized": true,
+  "target": {
+    "function": "zeta(s) represented by finite entire g(s) plus EM error, divided by s-1",
+    "rectangle": {
+      "left": "629/1250",
+      "right": "2",
+      "bottom": "7999999/8",
+      "top": "1000000"
+    },
+    "T": 1000000,
+    "N": 333334,
+    "B": 333335,
+    "M": 32,
+    "Taylor_length": 24,
+    "Taylor_degree": 23,
+    "outer_radius": "1",
+    "target_radius": "1/8",
+    "precision_bits": 192,
+    "new_models": 7,
+    "reused_top_models": 6,
+    "new_real_centers": [
+      "5/8",
+      "7/8",
+      "9/8",
+      "11/8",
+      "13/8",
+      "15/8"
+    ],
+    "left_model_center": [
+      "629/1250",
+      "15999999/16"
+    ],
+    "left_model_radius": "1/16",
+    "EM_zetaF_error_upper": "1/274877906944",
+    "finite_g_outer_upper": "281474976710656",
+    "finite_g_Taylor_error_upper": "1/14680064",
+    "left_finite_g_Taylor_error_upper": "1/263882790666240",
+    "seconds_cap": 180,
+    "memory_bytes_cap": 536870912,
+    "panel_visit_cap": 256,
+    "dyadic_depth_cap": 12
+  },
+  "producer_sha256": "AA4496B7EE84D4BCA497B5BDFFC237A6DC0949F45C5F9E134B29498C5B58D084",
+  "accepted_review": {
+    "path": "audit/REVIEW_HIGH_PRINCIPAL_SLAB_PREFLIGHT_2026-11-11.md",
+    "sha256": "1111EF1A55452E17059F51B662EA72B48A40354A3F7F59E2A1AC6A49AB2F1BD8"
+  },
+  "scope": "One bounded external research pilot under existing user authorization; no new user approval or Lean work",
+  "size_telemetry": "output_bytes is LF payload size; physical size measured separately"
+}

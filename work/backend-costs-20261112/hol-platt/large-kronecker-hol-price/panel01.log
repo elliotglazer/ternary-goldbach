@@ -1,0 +1,78 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-kronecker-hol-price/LargePanelScript.uo to produce theory-builder executable
+<<HOL message: Created theory "LargePanel">>
+Saved definition ____ "kr_mod_def"
+Starting translation of kr_mod from LargePanelTheory.
+Saved theorem _______ "cv_kr_mod_thm"
+Finished translating kr_mod, stored in cv_kr_mod_thm
+Saved definition ____ "kdiv_def"
+Starting translation of kdiv from LargePanelTheory.
+Saved theorem _______ "cv_kdiv_thm"
+Finished translating kdiv, stored in cv_kdiv_thm
+Saved definition ____ "kr_center_def"
+Starting translation of kr_center from LargePanelTheory.
+Saved theorem _______ "cv_kr_center_thm"
+Finished translating kr_center, stored in cv_kr_center_thm
+Saved definition ____ "kr_rot_def"
+Starting translation of kr_rot from LargePanelTheory.
+Saved theorem _______ "cv_kr_rot_thm"
+Finished translating kr_rot, stored in cv_kr_rot_thm
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in LargePanel)>>
+Saved definition ____ "kt_pairs_def"
+Saved induction _____ "kt_pairs_ind"
+Starting translation of kt_pairs from LargePanelTheory.
+Saved definition ____ "cv_kt_pairs_def"
+Saved induction _____ "cv_kt_pairs_ind"
+Saved theorem _______ "cv_kt_pairs_thm"
+Finished translating kt_pairs, stored in cv_kt_pairs_thm
+Saved theorem _______ "kt_pack_compute"
+Saved definition ____ "kt_pack_def"
+Starting translation of kt_pack from LargePanelTheory.
+Saved theorem _______ "cv_kt_pack_thm"
+Finished translating kt_pack, stored in cv_kt_pack_thm
+Saved theorem _______ "kt_powers_compute"
+Saved definition ____ "kt_powers_def"
+Starting translation of kt_powers from LargePanelTheory.
+Saved theorem _______ "cv_kt_powers_thm"
+Finished translating kt_powers, stored in cv_kt_powers_thm
+Saved definition ____ "kt_unpack_def"
+Starting translation of kt_unpack from LargePanelTheory.
+Saved definition ____ "cv_kt_unpack_def"
+Saved induction _____ "cv_kt_unpack_ind"
+Saved theorem _______ "cv_kt_unpack_thm"
+Finished translating kt_unpack, stored in cv_kt_unpack_thm
+Saved theorem _______ "lp_roots_compute"
+Saved definition ____ "lp_roots_def"
+Saved theorem _______ "lp_inputs_compute"
+Saved definition ____ "lp_inputs_def"
+Saved definition ____ "lp_chirp_def"
+Saved definition ____ "lp_conj_def"
+Saved definition ____ "lp_run_def"
+Saved definition ____ "lp_sum_def"
+Saved definition ____ "lp_pick_def"
+
+Exception raised at TotalDefn.xDefine:
+at Defn.Hol_defn: between line 89, character 2 and line 95, character 53:
+at Defn.parse_quote:
+at Preterm.type-analysis: on line 92, characters 48-54:
+  
+Type error in function application.
+  Function: lp_pick :rat -> (int # int) list -> int # int
+  Argument: n DIV 2 :num
+  Reason: Attempt to unify different type operators: rat$rat and num$num
+
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-kronecker-hol-price/LargePanelScript - exited with code 1

@@ -1,0 +1,69 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "workdir": "/tmp/goldbach-grh-port-zwivndb9",
+  "inputs": {
+    "/mnt/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/ternary-goldbach/TernaryGoldbach/Statement.lean": "3f61837d2c3a0dde3a1997f05af21c20c7fe6ee13e29891125495f6947596bf8",
+    "/mnt/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/FullGRH.lean": "e5e8c5691e16cc10a28123f2bfed636b35d24d058d2e5ac4444f9122fd184260",
+    "/verification/lean/src/Statements.lean": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  },
+  "upstream_oleans": {
+    "Statements.olean": "/verification/lean/.lake/build/lib/lean/Statements.olean",
+    "Mathlib.olean": "/verification/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib.olean"
+  },
+  "jobs": [
+    {
+      "module": "TernaryGoldbach/Statement",
+      "command": [
+        "/verification/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "-t0",
+        "-M8192",
+        "-o",
+        "TernaryGoldbach/Statement.olean",
+        "TernaryGoldbach/Statement.lean"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 332.6044797150007,
+      "cpu_seconds": 179.476052,
+      "log": "linux_TernaryGoldbach_Statement_8g.log",
+      "sha256_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_olean": "4e645cce9b5431d219aa64c26db3ea5004b6cc61731a9b756c0c78f1ece5ea2f"
+    },
+    {
+      "module": "FullGRH",
+      "command": [
+        "/verification/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "-t0",
+        "-M8192",
+        "-o",
+        "FullGRH.olean",
+        "FullGRH.lean"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 473.2117745739997,
+      "cpu_seconds": 308.172152,
+      "log": "linux_FullGRH_8g.log",
+      "sha256_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_olean": "0cdf84d197f7e8e7e1254e198f482b9d552206893a85a77baa59c24aef596e60"
+    },
+    {
+      "module": "PortAudit",
+      "command": [
+        "/verification/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "-t0",
+        "-M8192",
+        "-o",
+        "PortAudit.olean",
+        "PortAudit.lean"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 231.50745290400118,
+      "cpu_seconds": 125.93533600000006,
+      "log": "linux_PortAudit_8g.log",
+      "sha256_log": "fb7b2cd73b09f093ae0433b576f93ca7274c2c28d7044dd0a2e90402968825d1",
+      "sha256_olean": "bc86d5392864e3de77ecfa778f9d1365ddaec1b42525677cacd33ed71e9c06ab"
+    }
+  ]
+}

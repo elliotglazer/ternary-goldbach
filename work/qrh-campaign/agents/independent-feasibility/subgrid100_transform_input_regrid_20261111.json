@@ -1,0 +1,181 @@
+{
+  "scope": "fixed rational/synthetic signed-integer checks only; no metadata scan",
+  "checks": 391,
+  "sources": {
+    "integration/LARGE_CHARACTER_TRANSFORM_PA_COST_MODEL_2026-11-11.md": "DAEA81308B256EEDC68CDC86B20730613FD8F5EE0ECF485A9BCD772C4557F52C",
+    "audit/LARGE_CHARACTER_COMPLETE_ERROR_CONTRACT_2026-11-11.md": "96063365898AE39625876AD5FF47D604F83A8C66BF1587F47763489C9F0A1C3D",
+    "audit/LARGE_BRANCH_UNIFORM_STABILITY_ALLOCATION_2026-11-11.md": "6F856467F0EC3B1BD4EDA6817FC71BCA3DC6DA71F32BF96F3AE85E8D034032BA",
+    "prime-estimates/STORED_HURWITZ_DEGREE_MAGNITUDE_2026-11-11.md": "9B777E02CA50392D0BE0E6582807439E938970961A045B63758EB66A9EEE55D2",
+    "major-constants/REVIEW_STORED_HURWITZ_DEGREE_MAGNITUDE_2026-11-11.md": "1028156181791D6F0CD4CB0555A2625999CBF091ADD72F3CD9841BFAAD55F3F6",
+    "zero-sum/MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md": "4AD43D7D2163A185BC05DFD7C3AC22237B58979BC3F139E79A69D414675F30F4",
+    "independent-feasibility/BLUESTEIN_CACHED_NORMALIZATION_RESEARCH_2026-11-11.md": "FB29C85F85401EAB8512CC8AB0E58063380B159690C4E6B155F82A407C959BA9",
+    "independent-feasibility/BLUESTEIN_NORMALIZATION_CONTEXT_INTERFACE_2026-11-11.md": "412A96766A6DF164F1332D09BD8CBF41959DB6C0BF9388C3EFD87C94ECBC0ED7",
+    "integration/REVIEW_BLUESTEIN_CACHED_NORMALIZATION_2026-11-11.md": "09E6E7CF4E81F55A95E728D21DA0C19ADD6D62536042A5FD60160C1E27575CEA",
+    "major-constants/CONDUCTOR_LOCAL_TRANSFORM_PRECISION_PREFLIGHT_2026-11-11.md": "1F8A6AED9AF9F54263319EA126BC16AAE65D375F119252E30FACCCA11345B76A",
+    "independent-feasibility/REVIEW_CONDUCTOR_LOCAL_TRANSFORM_PRECISION_PREFLIGHT_2026-11-11.md": "15BA3154158D5FD272924CA2D6D4AD0A03203BC575FBE6B2EA04BFDBAF8DEDB2"
+  },
+  "blueprint_source": {
+    "path": "LOWER_TRANSFORM_PRECISION_ALLOCATION_2026-11-11.md",
+    "sha256": "EEBC987DD386E2ED50CC7F56C82714FC1EF51C8A3DF22C2579FFC108C0C1BD39"
+  },
+  "candidate_range": [
+    80,
+    108
+  ],
+  "V": 16384,
+  "source_center_bound": 8826,
+  "regridded_augmented_bound": 8828,
+  "C_global": 4196258524692480,
+  "R108_over_2^-45": [
+    2804840254168152529,
+    4294967296000000000
+  ],
+  "cases": [
+    {
+      "p": 80,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 94
+    },
+    {
+      "p": 81,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 95
+    },
+    {
+      "p": 82,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 96
+    },
+    {
+      "p": 83,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 97
+    },
+    {
+      "p": 84,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 98
+    },
+    {
+      "p": 85,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 99
+    },
+    {
+      "p": 86,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 100
+    },
+    {
+      "p": 87,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 101
+    },
+    {
+      "p": 88,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 102
+    },
+    {
+      "p": 89,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 103
+    },
+    {
+      "p": 90,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 104
+    },
+    {
+      "p": 91,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 105
+    },
+    {
+      "p": 92,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 106
+    },
+    {
+      "p": 93,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 107
+    },
+    {
+      "p": 94,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 108
+    },
+    {
+      "p": 95,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 109
+    },
+    {
+      "p": 96,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 110
+    },
+    {
+      "p": 97,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 111
+    },
+    {
+      "p": 98,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 112
+    },
+    {
+      "p": 99,
+      "regrid_indicator": 1,
+      "data_magnitude_bits_at_input": 113
+    },
+    {
+      "p": 100,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 114
+    },
+    {
+      "p": 101,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 115
+    },
+    {
+      "p": 102,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 116
+    },
+    {
+      "p": 103,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 117
+    },
+    {
+      "p": 104,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 118
+    },
+    {
+      "p": 105,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 119
+    },
+    {
+      "p": 106,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 120
+    },
+    {
+      "p": 107,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 121
+    },
+    {
+      "p": 108,
+      "regrid_indicator": 0,
+      "data_magnitude_bits_at_input": 122
+    }
+  ],
+  "source_or_sign_values_evaluated": false
+}

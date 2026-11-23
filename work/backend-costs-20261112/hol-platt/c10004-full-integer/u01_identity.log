@@ -1,0 +1,23 @@
+<<HOL message: Created theory "C10004FullIdentity">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX;bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004FullIdentity)>>
+SHARED_BOOTSTRAP_DONE
+TRAVERSAL_CV_TAG,actual_phase_encoding,DISK_THM,
+FULL_READY,identity,1.483971
+BLOCK_TEMPLATE_CPU,0.009858
+BLOCK_INSTANTIATION_CPU,0.001267
+BLOCK_TEMPLATE_CPU,0.362796
+BLOCK_INSTANTIATION_CPU,0.000675
+BLOCK_INSTANTIATION_CPU,0.000594
+BLOCK_TEMPLATE_CPU,0.003212
+BLOCK_INSTANTIATION_CPU,0.000258
+TRAVERSAL_CV_TAG,full_identity,DISK_THM,
+Saved theorem _______ "full_identity"
+FULL_CPU,identity,1.483971,0.449195,1.313935,0.00007,0.000063,3.999975
+Exporting theory "C10004FullIdentity" ... done.
+Theory "C10004FullIdentity" took 6.6s to build
+FULL_REPLAY_DONE,identity

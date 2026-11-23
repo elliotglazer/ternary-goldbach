@@ -1,0 +1,81 @@
+{
+  "scope": "Source-traced arithmetic roles only; unproved count and unmeasured prices",
+  "reference_source_sha256": "4f9fe96c14463dc6bd56f2f3e80c68d2865c4acd003cf6bc9ef569264b772346",
+  "model_json_sha256": "c4b06cca6ce42bebc1152dd471e4c2668f21cf4804785d929586e3308def98d8",
+  "stages": [
+    {
+      "name": "axis2",
+      "node_length": 2,
+      "repetitions": 2400,
+      "per_call": {
+        "complex_sub": 1
+      },
+      "total": {
+        "complex_sub": 2400
+      }
+    },
+    {
+      "name": "rows40",
+      "node_length": 40,
+      "repetitions": 60,
+      "per_call": {
+        "complex_add": 219,
+        "identity_action": 99,
+        "general_root_product": 178,
+        "complex_sub": 60,
+        "quarter_turn": 3
+      },
+      "total": {
+        "complex_add": 13140,
+        "identity_action": 5940,
+        "general_root_product": 10680,
+        "complex_sub": 3600,
+        "quarter_turn": 180
+      }
+    },
+    {
+      "name": "rows60",
+      "node_length": 60,
+      "repetitions": 39,
+      "per_call": {
+        "complex_add": 419,
+        "identity_action": 179,
+        "general_root_product": 360,
+        "complex_sub": 60,
+        "quarter_turn": 1
+      },
+      "total": {
+        "complex_add": 16341,
+        "identity_action": 6981,
+        "general_root_product": 14040,
+        "complex_sub": 2340,
+        "quarter_turn": 39
+      }
+    }
+  ],
+  "totals": {
+    "complex_sub": 8340,
+    "complex_add": 29481,
+    "identity_action": 12921,
+    "general_root_product": 24720,
+    "quarter_turn": 219
+  },
+  "priced_counts": {
+    "large_root_product": 24720,
+    "large_complex_add": 37821,
+    "large_quarter_turn": 219
+  },
+  "seconds_per_reference_butterfly": 9.0283203125e-06,
+  "planning_factors": {
+    "large_root_product": 0.25,
+    "large_complex_add": 0.02,
+    "large_quarter_turn": 0.005
+  },
+  "nominal_arithmetic_seconds_by_role": {
+    "large_root_product": 0.05579501953125,
+    "large_complex_add": 0.006829202050781249,
+    "large_quarter_turn": 9.8860107421875e-06
+  },
+  "nominal_arithmetic_seconds": 0.06263410759277344,
+  "excluded": "Indexing, copies, allocation, root-cache construction, guards, source/root generation, analytic completion, counting, first admission, export, retries; campaign allowances not applied"
+}

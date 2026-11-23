@@ -1,0 +1,9 @@
+<<HOL message: Created theory "StageFixtureResults">>
+HOL4_CONTEXT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/benchmark.sml:34: error: Type error in function application.
+   Function: = : ''a * ''a -> bool
+   Argument: (rand (concl result), boolSyntax.T) : term * term
+   Reason: Can't unify ''a to term (Requires equality type)
+Found near
+  let val result = cv_eval tm in
+     require (rand (... ...) = boolSyntax.T) "fixture rejected"; result end

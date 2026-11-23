@@ -1,0 +1,134 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 31 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val show = fn: string -> unit
+val expected =
+   “∀n x.
+      0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x”:
+   term
+OK..
+2 subgoals:
+OK..
+
+Goal proved.
+⊢ ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder 0 diffl (2 * x pow (2 * 0) / (1 − x²))) x
+
+Remaining subgoals:
+OK..
+1 subgoal:
+OK..
+metis: r[+0+5]+0+0+0+0+1#
+1 subgoal:
+OK..
+metis: r[+0+6]#
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+GOAL_STATE,product_positive
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL (sl_remainder (SUC n) diffl (2 * x pow (2 * SUC n) / (1 − x²))) x
+OK..
+1 subgoal:
+GOAL_STATE,denominator_positive
+ASSUM 0 < 1 − x * x
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL (sl_remainder (SUC n) diffl (2 * x pow (2 * SUC n) / (1 − x²))) x
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+GOAL_STATE,before_identity
+ASSUM 2 * SUC n = 2 * n + 2
+ASSUM 0 < 1 − x * x
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL ((λx. sl_remainder n x − 2 * x pow (2 * n + 1) / &(2 * n + 1)) diffl
+ (2 * x pow (2 * SUC n) / (1 − x²))) x
+OK..
+2 subgoals:
+GOAL_STATE,identity
+ASSUM 2 * SUC n = 2 * n + 2
+ASSUM 0 < 1 − x * x
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL 2 * x pow (2 * n) / (1 − x²) − 2 * x pow (2 * n) =
+2 * x pow (2 * SUC n) / (1 − x²)
+ASSUM 2 * x pow (2 * n) / (1 − x²) − 2 * x pow (2 * n) =
+2 * x pow (2 * SUC n) / (1 − x²)
+ASSUM 2 * SUC n = 2 * n + 2
+ASSUM 0 < 1 − x * x
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL ((λx. sl_remainder n x − 2 * x pow (2 * n + 1) / &(2 * n + 1)) diffl
+ (2 * x pow (2 * SUC n) / (1 − x²))) x
+OK..
+1 subgoal:
+GOAL_STATE,simplified_identity
+ASSUM 2 * SUC n = 2 * n + 2
+ASSUM 0 < 1 − x * x
+ASSUM 0 < (1 − x) * (1 + x)
+ASSUM 0 < 1 − x
+ASSUM 0 < 1 + x
+ASSUM ((λy. 2 * y pow (2 * n + 1) / &(2 * n + 1)) diffl (2 * x pow (2 * n))) x
+ASSUM (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+ASSUM x < 1
+ASSUM 0 ≤ x
+ASSUM ∀x. 0 ≤ x ∧ x < 1 ⇒ (sl_remainder n diffl (2 * x pow (2 * n) / (1 − x²))) x
+GOAL 2 * x pow (2 * n) / (1 − x * x) − 2 * x pow (2 * n) =
+2 * (x pow (2 * n) * (x * x)) / (1 − x * x)
+OK..
+1 subgoal:
+GOAL_STATE,only_denominator
+GOAL 0 < 1 − x * x ⇒
+2 * x pow (2 * n) / (1 − x * x) − 2 * x pow (2 * n) =
+2 * (x pow (2 * n) * (x * x)) / (1 − x * x)
+OK..
+3 basis elements and 1 critical pairs
+3 basis elements and 0 critical pairs
+Generating HOL version of proof
+DIAGNOSTIC_EXCEPTION HOL_ERR (at RealArith.?: linear_ineqs: no contradiction)
+GOAL_STATE,at_failure
+GOAL 0 < 1 − x * x ⇒
+2 * x pow (2 * n) / (1 − x * x) − 2 * x pow (2 * n) =
+2 * (x pow (2 * n) * (x * x)) / (1 − x * x)

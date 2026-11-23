@@ -1,0 +1,45 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../small-character-kernel[0m
+Holmake: Scanning [1m../../small-gaussian[0m
+Holmake: Scanning [1m../../small-gaussian-transform[0m
+Holmake: Scanning [1m../../full-height-count[0m
+Holmake: Scanning [1m../../grid-projection[0m
+Holmake: Scanning [1m../../grid-sign-join[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/HeadPairEvenScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/headobserve.sml:16: warning: Pattern is not exhaustive.
+Found near
+  val [[mb, ab, ...]] = replay.lines (map nat) (("target-" ^ lab) ^ ".txt")
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/headobserve.sml:32: warning: Pattern is not exhaustive.
+Found near
+  val [[h, phase, ...]] = replay.lines (map nat) (("pair-" ^ name) ^ ".txt")
+<<HOL message: Created theory "HeadPairEven">>
+HEAD_INPUT 2 0.440588 2.011836
+JOIN_EVAL 0.007354 0.779067 0.000126
+Saved theorem _______ "sparse_observation_2"
+HEAD_CHANNEL 2 3.462444
+HEAD_INPUT 3845 0.461901 1.848796
+JOIN_EVAL 0.00154 0.595101 0.000111
+Saved theorem _______ "sparse_observation_3845"
+HEAD_CHANNEL 3845 2.909303
+Saved theorem _______ "pair_from_sparse_raw_even"
+HEAD_PAIR_DONE even 0.009208
+Exporting theory "HeadPairEven" ... done.
+Theory "HeadPairEven" took 10.8s to build
+Holmake: [1/1] HeadPairEven

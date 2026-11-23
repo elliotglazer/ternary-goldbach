@@ -1,0 +1,27 @@
+{
+  "scope": "scalar bounds and immutable encoding sizes only; no evaluator imports, elementary/model/image evaluations",
+  "pins": {
+    "integration/rational_direct_g_j7_producer_20261111.py": "B633D322F0B696CDF59FEDB668CE62F4EE13E5BFAC28BC0959E9AF13E37315D7",
+    "moebius/rational_direct_g_j7_independent_20261111.py": "4762265952B7DD4E5382BC0426205A84BB766EFA43A872DDD6E148EF15674FDC",
+    "integration/small_em_batch_candidate_20261111_01.json": "2ADDFE3FE7D77B8CC10606886CC580D5C8103B30B0E4CD3BC9507AB27B198F7E"
+  },
+  "target_size_statistics": {
+    "rational_numerator_bits": 648,
+    "rational_denominator_bits": 648,
+    "dyadic_mantissa_bits": 192,
+    "dyadic_expanded_numerator_bits": 192,
+    "dyadic_denominator_exponent": 184
+  },
+  "all_target_json_integer_literal_bits": 27,
+  "old_coefficient_common_dyadic_exponent": 184,
+  "finite_g_common_denominator_bits": 17929,
+  "scalar_validator_common_denominator_bits": 8315,
+  "image_padding_common_denominator_bits": 446,
+  "image_common_denominator_strict_power2_exponent": 808,
+  "global_reduced_denominator_strict_power2_exponent": 20000,
+  "global_rational_magnitude_strict_power2_exponent": 6000,
+  "raw_helper_product_strict_power2_exponent": 52000,
+  "raw_helper_sum_strict_power2_exponent": 52001,
+  "rounding_witness_strict_power2_exponent": 27090,
+  "checked_bit_cap": 65536
+}

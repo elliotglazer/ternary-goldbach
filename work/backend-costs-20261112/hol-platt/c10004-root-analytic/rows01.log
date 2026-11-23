@@ -1,0 +1,39 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../c10004-root-check[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootRowsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004RootRows">>
+Saved definition ____ "scale_def"
+Saved definition ____ "near_def"
+Saved definition ____ "ang_def"
+Saved theorem _______ "pick_el"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004RootRows)>>
+Saved theorem _______ "quadrant_near"
+Proof of 
+
+∀q x. near (-q) (-x) ⇔ near q x
+
+failed.
+First unsolved sub-goal is
+
+2 * abs (-real_of_int q − -x * scale) < 1 ⇔
+2 * abs (real_of_int q − x * scale) < 1
+
+Tactic failure proving "near_neg"; heap saved to C10004RootRows.near_neg.dumpedheap.
+Resume with: bin/hol --holstate=C10004RootRows.near_neg.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootRowsScript - exited with code 1

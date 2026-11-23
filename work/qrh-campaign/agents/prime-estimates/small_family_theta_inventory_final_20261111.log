@@ -1,0 +1,1011 @@
+{
+  "status": "PASS_WHOLE_SMALL_FAMILY_CONDITIONAL_METADATA",
+  "checks": 262487,
+  "family": {
+    "conductors": 7499,
+    "primitive_labels": 18477108,
+    "even_labels": 9238543,
+    "odd_labels": 9238565,
+    "single_parity_conductors": [
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        12,
+        1,
+        0
+      ]
+    ]
+  },
+  "parameters": [
+    {
+      "theta": 64,
+      "odd": true,
+      "W": "625000",
+      "eps": "1/16604276106978466911004206549385055203464698089464397824",
+      "K": 162,
+      "L": 148,
+      "X": 10,
+      "C": 44,
+      "n0": 8192,
+      "Bpref": 11118121133111046,
+      "p": 302,
+      "B": 177147,
+      "M": 177148,
+      "sigma": "1/8216817879467653183974924671851378139631575850158318834079807871994898877424925489209284065999792554472696746868736",
+      "tail": "6523448907982732121383551143368071023133118782802155523667804560276655739148498040136374722876328598640318612294207593341360552461969839838003328405427617746062981/95657480355225612652674296005385986228211060216850579550732811194928904513208694575984944881236427223384992759091959319606541640420257127001129110051939456304833693984227340369265464462139287643269348883915960738986596338333869227582816790809640535131408295662772738174079080333329039209005056"
+    },
+    {
+      "theta": 64,
+      "odd": false,
+      "W": "1250000",
+      "eps": "1/16604276106978466911004206549385055203464698089464397824",
+      "K": 164,
+      "L": 148,
+      "X": 10,
+      "C": 44,
+      "n0": 8192,
+      "Bpref": 11118121133111046,
+      "p": 302,
+      "B": 177147,
+      "M": 177148,
+      "sigma": "1/8216817879467653183974924671851378139631575850158318834079807871994898877424925489209284065999792554472696746868736",
+      "tail": "95901325359467373914862604661002234642704232917188406475020440904158999089650716984151/1912165112055352865022150087246820088842979241256957701956197286668126550722844782424782424113627196900442393413910749325690300099901084540931670016"
+    },
+    {
+      "theta": 128,
+      "odd": true,
+      "W": "312500",
+      "eps": "1/57013834216201508980717752986357194980234943496694373634962454711050209585591478124544",
+      "K": 233,
+      "L": 219,
+      "X": 10,
+      "C": 44,
+      "n0": 8192,
+      "Bpref": 11118121133111046,
+      "p": 404,
+      "B": 177147,
+      "M": 177148,
+      "sigma": "1/41664216467492870664384144436015812077584999282192145456873308735855275750745381498479237658579552451452160523591936243966991210206579449286098944",
+      "tail": "2733358836816114590878810649650895468771768926295838964382480927537859777980765681563328277127320495757013029075693982592479326219156694207647337075316270179595636172254867001051523519331897381836509694418591280540152900622185695159203567066978014787236932111455738212332654136000311609183745709628694455110990001703/10855991341808514172383138388681624113749197024706659663735073841535382495764114832706178317628933972534014991008048327582170909376773167351139658695615760382230931932140566548709091739800215424758414567315466489888142312129846756908735497684992953154930091246358675222546880968218862902447552216909678580922246782269142405444887275445271937550127522892844987757607310241737740865264867219965767941553010752950156441014543864514388506644458244963620221306814463982197797131801419430511505803104444956710345827480070895358292198691931554012181286840239872672364702330501955988213465088"
+    },
+    {
+      "theta": 128,
+      "odd": false,
+      "W": "625000",
+      "eps": "1/57013834216201508980717752986357194980234943496694373634962454711050209585591478124544",
+      "K": 234,
+      "L": 219,
+      "X": 10,
+      "C": 44,
+      "n0": 8192,
+      "Bpref": 11118121133111046,
+      "p": 404,
+      "B": 177147,
+      "M": 177148,
+      "sigma": "1/41664216467492870664384144436015812077584999282192145456873308735855275750745381498479237658579552451452160523591936243966991210206579449286098944",
+      "tail": "6523448907982732121383551143368071023133118782802155523667804560276655739148498040136374722876328598640318612294207593341360552461969839838003328405427617746062981/95657480355225612652674296005385986228211060216850579550732811194928904513208694575984944881236427223384992759091959319606541640420257127001129110051939456304833693984227340369265464462139287643269348883915960738986596338333869227582816790809640535131408295662772738174079080333329039209005056"
+    }
+  ],
+  "scenarios": [
+    {
+      "extra": 0,
+      "theta": 64,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3791945802,
+        "primitive_grid_outputs": 1775431871117,
+        "Gaussian_terms_upper": 6011705398487,
+        "Gaussian_unit_gates_upper": 12023410796974,
+        "bucket_additions_upper": 11221194208339,
+        "odd_integer_scales_upper": 5897103024000,
+        "outer_complex_exp_upper": 3666989329,
+        "Gaussian_seed_unit_contractions_upper": 3666989329,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 6844643187,
+        "main_character_butterflies": 178774519697023,
+        "main_character_point_products": 35506875596080,
+        "main_character_inverse_dyadic_scales": 20967349847456,
+        "prefactor_contraction_complex_products": 1687516400381,
+        "radial_argument_prefactor_real_products": 3396964824169,
+        "cutoff_rational_divisions": 3666989329,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 14081196032,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 129247714213888,
+        "time_dft_complex_outputs": 12959915966464,
+        "omega_complex_scalings": 1775431871117,
+        "positive_scale_real_updates": 3791938303,
+        "final_Y_real_products": 1775431871117,
+        "frequency_conjugate_copies": 1687497923273,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3791945802,
+        "point_EM_character_butterflies": 94844686425215,
+        "point_EM_character_point_products": 18723346155792,
+        "point_EM_formal_P20_contractions": 52698948065480
+      },
+      "ranges": {
+        "V": [
+          "110625/32",
+          "1207810755/64"
+        ],
+        "N": [
+          "262144",
+          "2147483648"
+        ],
+        "R": [
+          "34135",
+          "279620268"
+        ],
+        "T": [
+          "55966381",
+          "458409473367"
+        ],
+        "seed_bits": [
+          "302",
+          "302"
+        ],
+        "sigma_bits": [
+          "382",
+          "382"
+        ],
+        "radial_bits": [
+          "417",
+          "430"
+        ],
+        "setup_bits": [
+          "422",
+          "434"
+        ],
+        "character_bits": [
+          "279",
+          "313"
+        ],
+        "gauss_bits": [
+          "402",
+          "436"
+        ],
+        "time_bits": [
+          "238",
+          "241"
+        ],
+        "scale_bits": [
+          "242",
+          "256"
+        ],
+        "transpose_complex_cells": [
+          "18432225",
+          "577888620"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 2,
+        "theta_at_least_character_calls": 7497
+      }
+    },
+    {
+      "extra": 0,
+      "theta": 128,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3791945802,
+        "primitive_grid_outputs": 1775431871117,
+        "Gaussian_terms_upper": 4271014086121,
+        "Gaussian_unit_gates_upper": 8542028172242,
+        "bucket_additions_upper": 7969016316193,
+        "odd_integer_scales_upper": 4156411711634,
+        "outer_complex_exp_upper": 2605203866,
+        "Gaussian_seed_unit_contractions_upper": 2605203866,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 4860882394,
+        "main_character_butterflies": 128941391789290,
+        "main_character_point_products": 25399177848072,
+        "main_character_inverse_dyadic_scales": 15046227780352,
+        "prefactor_contraction_complex_products": 1202865170991,
+        "radial_argument_prefactor_real_products": 2421291652611,
+        "cutoff_rational_divisions": 2605203866,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10003939328,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 89858217607168,
+        "time_dft_complex_outputs": 9237783904256,
+        "omega_complex_scalings": 1775431871117,
+        "positive_scale_real_updates": 3791938303,
+        "final_Y_real_products": 1775431871117,
+        "frequency_conjugate_copies": 1202846693883,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3791945802,
+        "point_EM_character_butterflies": 94844686425215,
+        "point_EM_character_point_products": 18723346155792,
+        "point_EM_formal_P20_contractions": 52698948065480
+      },
+      "ranges": {
+        "V": [
+          "110625/32",
+          "1207810755/64"
+        ],
+        "N": [
+          "262144",
+          "1073741824"
+        ],
+        "R": [
+          "34135",
+          "139810135"
+        ],
+        "T": [
+          "55966381",
+          "229204740781"
+        ],
+        "seed_bits": [
+          "404",
+          "404"
+        ],
+        "sigma_bits": [
+          "484",
+          "484"
+        ],
+        "radial_bits": [
+          "519",
+          "531"
+        ],
+        "setup_bits": [
+          "523",
+          "535"
+        ],
+        "character_bits": [
+          "381",
+          "415"
+        ],
+        "gauss_bits": [
+          "504",
+          "538"
+        ],
+        "time_bits": [
+          "338",
+          "340"
+        ],
+        "scale_bits": [
+          "341",
+          "356"
+        ],
+        "transpose_complex_cells": [
+          "15360300",
+          "415061460"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 488,
+        "theta_at_least_character_calls": 7011
+      }
+    },
+    {
+      "extra": 167,
+      "theta": 64,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3793198135,
+        "primitive_grid_outputs": 1778517548153,
+        "Gaussian_terms_upper": 6013607976827,
+        "Gaussian_unit_gates_upper": 12027215953654,
+        "bucket_additions_upper": 11224999365019,
+        "odd_integer_scales_upper": 5899005602340,
+        "outer_complex_exp_upper": 3668149859,
+        "Gaussian_seed_unit_contractions_upper": 3668149859,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 6846964247,
+        "main_character_butterflies": 179195845161919,
+        "main_character_point_products": 35588614877720,
+        "main_character_inverse_dyadic_scales": 21016007854112,
+        "prefactor_contraction_complex_products": 1691474240025,
+        "radial_argument_prefactor_real_products": 3404887466637,
+        "cutoff_rational_divisions": 3668149859,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 14085652480,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 129557981560832,
+        "time_dft_complex_outputs": 12990312349696,
+        "omega_complex_scalings": 1778517548153,
+        "positive_scale_real_updates": 3793190636,
+        "final_Y_real_products": 1778517548153,
+        "frequency_conjugate_copies": 1691455762917,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3793198135,
+        "point_EM_character_butterflies": 95012621437173,
+        "point_EM_character_point_products": 18755292120860,
+        "point_EM_formal_P20_contractions": 52783552676960
+      },
+      "ranges": {
+        "V": [
+          "222085/64",
+          "603905795/32"
+        ],
+        "N": [
+          "262144",
+          "2147483648"
+        ],
+        "R": [
+          "34135",
+          "279620268"
+        ],
+        "T": [
+          "55966381",
+          "458409473367"
+        ],
+        "seed_bits": [
+          "302",
+          "302"
+        ],
+        "sigma_bits": [
+          "382",
+          "382"
+        ],
+        "radial_bits": [
+          "417",
+          "430"
+        ],
+        "setup_bits": [
+          "422",
+          "434"
+        ],
+        "character_bits": [
+          "279",
+          "313"
+        ],
+        "gauss_bits": [
+          "402",
+          "436"
+        ],
+        "time_bits": [
+          "238",
+          "241"
+        ],
+        "scale_bits": [
+          "242",
+          "256"
+        ],
+        "transpose_complex_cells": [
+          "18432225",
+          "577888620"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 2,
+        "theta_at_least_character_calls": 7497
+      }
+    },
+    {
+      "extra": 167,
+      "theta": 128,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3793198135,
+        "primitive_grid_outputs": 1778517548153,
+        "Gaussian_terms_upper": 4272189208037,
+        "Gaussian_unit_gates_upper": 8544378416074,
+        "bucket_additions_upper": 7971366560025,
+        "odd_integer_scales_upper": 4157586833550,
+        "outer_complex_exp_upper": 2605920664,
+        "Gaussian_seed_unit_contractions_upper": 2605920664,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 4862315990,
+        "main_character_butterflies": 129070168525694,
+        "main_character_point_products": 25423104366744,
+        "main_character_inverse_dyadic_scales": 15059996816832,
+        "prefactor_contraction_complex_products": 1204094474269,
+        "radial_argument_prefactor_real_products": 2423754559955,
+        "cutoff_rational_divisions": 2605920664,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10006691840,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 89954059550720,
+        "time_dft_complex_outputs": 9247225020416,
+        "omega_complex_scalings": 1778517548153,
+        "positive_scale_real_updates": 3793190636,
+        "final_Y_real_products": 1778517548153,
+        "frequency_conjugate_copies": 1204075997161,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3793198135,
+        "point_EM_character_butterflies": 95012621437173,
+        "point_EM_character_point_products": 18755292120860,
+        "point_EM_formal_P20_contractions": 52783552676960
+      },
+      "ranges": {
+        "V": [
+          "222085/64",
+          "603905795/32"
+        ],
+        "N": [
+          "262144",
+          "1073741824"
+        ],
+        "R": [
+          "34135",
+          "139810135"
+        ],
+        "T": [
+          "55966381",
+          "229204740781"
+        ],
+        "seed_bits": [
+          "404",
+          "404"
+        ],
+        "sigma_bits": [
+          "484",
+          "484"
+        ],
+        "radial_bits": [
+          "519",
+          "531"
+        ],
+        "setup_bits": [
+          "523",
+          "535"
+        ],
+        "character_bits": [
+          "381",
+          "415"
+        ],
+        "gauss_bits": [
+          "504",
+          "538"
+        ],
+        "time_bits": [
+          "338",
+          "340"
+        ],
+        "scale_bits": [
+          "341",
+          "356"
+        ],
+        "transpose_complex_cells": [
+          "15360300",
+          "415061460"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 488,
+        "theta_at_least_character_calls": 7011
+      }
+    },
+    {
+      "extra": 320,
+      "theta": 64,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3794345482,
+        "primitive_grid_outputs": 1781344545677,
+        "Gaussian_terms_upper": 6015958220661,
+        "Gaussian_unit_gates_upper": 12031916441322,
+        "bucket_additions_upper": 11229699852687,
+        "odd_integer_scales_upper": 5901355846174,
+        "outer_complex_exp_upper": 3669583456,
+        "Gaussian_seed_unit_contractions_upper": 3669583456,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 6849831441,
+        "main_character_butterflies": 179641646009607,
+        "main_character_point_products": 35668833767216,
+        "main_character_inverse_dyadic_scales": 21064104449888,
+        "prefactor_contraction_complex_products": 1695436176499,
+        "radial_argument_prefactor_real_products": 3412819941167,
+        "cutoff_rational_divisions": 3669583456,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 14091157504,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 129870543716352,
+        "time_dft_complex_outputs": 13020740190208,
+        "omega_complex_scalings": 1781344545677,
+        "positive_scale_real_updates": 3794337983,
+        "final_Y_real_products": 1781344545677,
+        "frequency_conjugate_copies": 1695417699391,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3794345482,
+        "point_EM_character_butterflies": 95166478064895,
+        "point_EM_character_point_products": 18784559981072,
+        "point_EM_formal_P20_contractions": 52861064686280
+      },
+      "ranges": {
+        "V": [
+          "111425/32",
+          "1207812355/64"
+        ],
+        "N": [
+          "262144",
+          "2147483648"
+        ],
+        "R": [
+          "34135",
+          "279620268"
+        ],
+        "T": [
+          "55966381",
+          "458409473367"
+        ],
+        "seed_bits": [
+          "302",
+          "302"
+        ],
+        "sigma_bits": [
+          "382",
+          "382"
+        ],
+        "radial_bits": [
+          "417",
+          "430"
+        ],
+        "setup_bits": [
+          "422",
+          "434"
+        ],
+        "character_bits": [
+          "279",
+          "313"
+        ],
+        "gauss_bits": [
+          "402",
+          "436"
+        ],
+        "time_bits": [
+          "238",
+          "241"
+        ],
+        "scale_bits": [
+          "242",
+          "256"
+        ],
+        "transpose_complex_cells": [
+          "18432225",
+          "581575092"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 2,
+        "theta_at_least_character_calls": 7497
+      }
+    },
+    {
+      "extra": 320,
+      "theta": 128,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3794345482,
+        "primitive_grid_outputs": 1781344545677,
+        "Gaussian_terms_upper": 4272972622649,
+        "Gaussian_unit_gates_upper": 8545945245298,
+        "bucket_additions_upper": 7972933389249,
+        "odd_integer_scales_upper": 4158370248162,
+        "outer_complex_exp_upper": 2606398530,
+        "Gaussian_seed_unit_contractions_upper": 2606398530,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 4863271722,
+        "main_character_butterflies": 129211063280950,
+        "main_character_point_products": 25451990880456,
+        "main_character_inverse_dyadic_scales": 15077049215168,
+        "prefactor_contraction_complex_products": 1205482842215,
+        "radial_argument_prefactor_real_products": 2426534163043,
+        "cutoff_rational_divisions": 2606398530,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10008526848,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 90062828601344,
+        "time_dft_complex_outputs": 9257887727616,
+        "omega_complex_scalings": 1781344545677,
+        "positive_scale_real_updates": 3794337983,
+        "final_Y_real_products": 1781344545677,
+        "frequency_conjugate_copies": 1205464365107,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3794345482,
+        "point_EM_character_butterflies": 95166478064895,
+        "point_EM_character_point_products": 18784559981072,
+        "point_EM_formal_P20_contractions": 52861064686280
+      },
+      "ranges": {
+        "V": [
+          "111425/32",
+          "1207812355/64"
+        ],
+        "N": [
+          "262144",
+          "1073741824"
+        ],
+        "R": [
+          "34135",
+          "139810135"
+        ],
+        "T": [
+          "55966381",
+          "229204740781"
+        ],
+        "seed_bits": [
+          "404",
+          "404"
+        ],
+        "sigma_bits": [
+          "484",
+          "484"
+        ],
+        "radial_bits": [
+          "519",
+          "531"
+        ],
+        "setup_bits": [
+          "523",
+          "535"
+        ],
+        "character_bits": [
+          "381",
+          "415"
+        ],
+        "gauss_bits": [
+          "504",
+          "538"
+        ],
+        "time_bits": [
+          "338",
+          "340"
+        ],
+        "scale_bits": [
+          "341",
+          "356"
+        ],
+        "transpose_complex_cells": [
+          "15360300",
+          "415061460"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 493,
+        "theta_at_least_character_calls": 7006
+      }
+    },
+    {
+      "extra": 640,
+      "theta": 64,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3796745162,
+        "primitive_grid_outputs": 1787257220237,
+        "Gaussian_terms_upper": 6019987210091,
+        "Gaussian_unit_gates_upper": 12039974420182,
+        "bucket_additions_upper": 11237757831547,
+        "odd_integer_scales_upper": 5905384835604,
+        "outer_complex_exp_upper": 3672041051,
+        "Gaussian_seed_unit_contractions_upper": 3672041051,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 6854746631,
+        "main_character_butterflies": 180588493431667,
+        "main_character_point_products": 35840583130304,
+        "main_character_inverse_dyadic_scales": 21167181149024,
+        "prefactor_contraction_complex_products": 1703357113431,
+        "radial_argument_prefactor_real_products": 3428676560601,
+        "cutoff_rational_divisions": 3672041051,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 14100594688,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 130490037698560,
+        "time_dft_complex_outputs": 13081573326848,
+        "omega_complex_scalings": 1787257220237,
+        "positive_scale_real_updates": 3796737663,
+        "final_Y_real_products": 1787257220237,
+        "frequency_conjugate_copies": 1703338636323,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3796745162,
+        "point_EM_character_butterflies": 95488269704575,
+        "point_EM_character_point_products": 18845773806352,
+        "point_EM_formal_P20_contractions": 53023181307080
+      },
+      "ranges": {
+        "V": [
+          "112225/32",
+          "1207813955/64"
+        ],
+        "N": [
+          "262144",
+          "2147483648"
+        ],
+        "R": [
+          "34135",
+          "279620268"
+        ],
+        "T": [
+          "55966381",
+          "458409473367"
+        ],
+        "seed_bits": [
+          "302",
+          "302"
+        ],
+        "sigma_bits": [
+          "382",
+          "382"
+        ],
+        "radial_bits": [
+          "417",
+          "430"
+        ],
+        "setup_bits": [
+          "422",
+          "434"
+        ],
+        "character_bits": [
+          "279",
+          "313"
+        ],
+        "gauss_bits": [
+          "402",
+          "436"
+        ],
+        "time_bits": [
+          "238",
+          "241"
+        ],
+        "scale_bits": [
+          "242",
+          "256"
+        ],
+        "transpose_complex_cells": [
+          "18432225",
+          "585671172"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 2,
+        "theta_at_least_character_calls": 7497
+      }
+    },
+    {
+      "extra": 640,
+      "theta": 128,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3796745162,
+        "primitive_grid_outputs": 1787257220237,
+        "Gaussian_terms_upper": 4274875200989,
+        "Gaussian_unit_gates_upper": 8549750401978,
+        "bucket_additions_upper": 7976738545929,
+        "odd_integer_scales_upper": 4160272826502,
+        "outer_complex_exp_upper": 2607559060,
+        "Gaussian_seed_unit_contractions_upper": 2607559060,
+        "real_exp_seed_certificates": 14998,
+        "main_character_calls": 4865592782,
+        "main_character_butterflies": 129487303527630,
+        "main_character_point_products": 25504315078872,
+        "main_character_inverse_dyadic_scales": 15107909947904,
+        "prefactor_contraction_complex_products": 1208208168343,
+        "radial_argument_prefactor_real_products": 2431991778479,
+        "cutoff_rational_divisions": 2607559060,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10012983296,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 90276181311488,
+        "time_dft_complex_outputs": 9278818353152,
+        "omega_complex_scalings": 1787257220237,
+        "positive_scale_real_updates": 3796737663,
+        "final_Y_real_products": 1787257220237,
+        "frequency_conjugate_copies": 1208189691235,
+        "zero_imaginary_projections": 18477108,
+        "point_EM_character_calls": 3796745162,
+        "point_EM_character_butterflies": 95488269704575,
+        "point_EM_character_point_products": 18845773806352,
+        "point_EM_formal_P20_contractions": 53023181307080
+      },
+      "ranges": {
+        "V": [
+          "112225/32",
+          "1207813955/64"
+        ],
+        "N": [
+          "262144",
+          "1073741824"
+        ],
+        "R": [
+          "34135",
+          "139810135"
+        ],
+        "T": [
+          "55966381",
+          "229204740781"
+        ],
+        "seed_bits": [
+          "404",
+          "404"
+        ],
+        "sigma_bits": [
+          "484",
+          "484"
+        ],
+        "radial_bits": [
+          "519",
+          "531"
+        ],
+        "setup_bits": [
+          "523",
+          "535"
+        ],
+        "character_bits": [
+          "381",
+          "415"
+        ],
+        "gauss_bits": [
+          "504",
+          "538"
+        ],
+        "time_bits": [
+          "338",
+          "340"
+        ],
+        "scale_bits": [
+          "341",
+          "356"
+        ],
+        "transpose_complex_cells": [
+          "15360300",
+          "415061460"
+        ]
+      },
+      "calls": {
+        "theta_fewer_character_calls": 495,
+        "theta_at_least_character_calls": 7004
+      }
+    }
+  ]
+}

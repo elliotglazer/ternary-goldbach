@@ -1,0 +1,93 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/principal-rs-hol/RSBatchScript.uo to produce theory-builder executable
+<<HOL message: Created theory "RSBatch">>
+Saved definition ____ "mesh_phase_def"
+Saved theorem _______ "mesh_phase_pre_rules"
+Saved theorem _______ "mesh_phase_pre_ind"
+Saved theorem _______ "mesh_phase_pre_strongind"
+Saved theorem _______ "mesh_phase_pre_cases"
+Saved theorem _______ "cv_mesh_phase_thm"
+Finished translating mesh_phase, stored in cv_mesh_phase_thm
+
+WARNING: definition of cv_mesh_phase has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem mesh_phase_pre[cv_pre]:
+  ∀p f. mesh_phase_pre p f
+Proof
+  ho_match_mp_tac mesh_phase_ind (* for example *)
+  ...
+QED
+
+⊢ ∀p f.
+    mesh_phase_pre p f ⇔
+    ∀v. v = rr p f ⇒
+        ∀v'.
+          v' = f − v * p ⇒
+          ∀v''. v'' = eh v' 72 0 ⇒ ∀v0 v1. v'' = (v0,v1) ⇒ 2 ≠ 0
+Saved theorem _______ "mesh_phase_ok"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in RSBatch)>>
+Saved definition ____ "mesh_add_def"
+Saved induction _____ "mesh_add_ind"
+Starting translation of mesh_add from RSBatchTheory.
+Saved definition ____ "cv_mesh_add_def"
+Saved induction _____ "cv_mesh_add_ind"
+Saved theorem _______ "cv_mesh_add_thm"
+Finished translating mesh_add, stored in cv_mesh_add_thm
+Saved definition ____ "mesh_rows_def"
+Saved induction _____ "mesh_rows_ind"
+Starting translation of mesh_rows from RSBatchTheory.
+Saved theorem _______ "cv_mesh_rows_thm"
+Finished translating mesh_rows, stored in cv_mesh_rows_thm
+Saved definition ____ "mesh_check_def"
+Saved induction _____ "mesh_check_ind"
+Saved theorem _______ "mesh_check_pre_rules"
+Saved theorem _______ "mesh_check_pre_ind"
+Saved theorem _______ "mesh_check_pre_strongind"
+Saved theorem _______ "mesh_check_pre_cases"
+Saved theorem _______ "cv_mesh_check_thm"
+Finished translating mesh_check, stored in cv_mesh_check_thm
+
+WARNING: definition of cv_mesh_check has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem mesh_check_pre[cv_pre]:
+  ∀p h v inp. mesh_check_pre p h v inp
+Proof
+  ho_match_mp_tac mesh_check_ind (* for example *)
+  ...
+QED
+
+⊢ ∀p h v inp.
+    mesh_check_pre p h v inp ⇔
+    ∀v0 v1.
+      v = v0::v1 ⇒
+      ∀v0' v1'.
+        v0 = (v0',v1') ⇒
+        ∀v0 v1'.
+          inp = v0::v1' ⇒
+          ∀v0' v1''.
+            v0 = (v0',v1'') ⇒
+            ∀v0 v1'³'.
+              v1'' = (v0,v1'³') ⇒
+              ∀v. v = mesh_phase p (v0' − h) ⇒
+                  ∀v0 v1''.
+                    v = (v0,v1'') ⇒
+                    ∀v0 v1'³'. v1'' = (v0,v1'³') ⇒ mesh_check_pre p h v1 v1'
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/principal-rs-hol/RSBatchScript - with signal F

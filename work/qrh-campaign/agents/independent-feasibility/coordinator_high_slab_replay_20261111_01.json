@@ -1,0 +1,29 @@
+{
+  "coordinator_authorized": true,
+  "target": {
+    "function": "actual_zeta=zetaF/(s-1)",
+    "left": "629/1250",
+    "right": "2",
+    "bottom": "7999999/8",
+    "top": "1000000"
+  },
+  "independent_script_sha256": "757C1D30A2D030CF46863DDF1D43D4F1169ACD67E802CB41181BC0C6B7A1A620",
+  "candidate_sha256": "CF90E96C7531F57E455ABCE70D8D71FB06596E9E1490FADDBAFA6DE64FCB0B09",
+  "producer": {
+    "path": "zero-sum/high_slab_em_candidate_20261111.py",
+    "sha256": "AA4496B7EE84D4BCA497B5BDFFC237A6DC0949F45C5F9E134B29498C5B58D084"
+  },
+  "analytic_plan_review": {
+    "path": "audit/REVIEW_HIGH_PRINCIPAL_SLAB_PREFLIGHT_2026-11-11.md",
+    "sha256": "1111EF1A55452E17059F51B662EA72B48A40354A3F7F59E2A1AC6A49AB2F1BD8"
+  },
+  "source_adapter": {
+    "path": "mellin/HIGH_SLAB_ZETA_SOURCE_ADAPTER_2026-11-11.md",
+    "sha256": "C9C4CD0156CA987D5200DA3F4AACCF3C8F1B64BD0FEADCC3F6F12F5F10ED9ED5"
+  },
+  "source_adapter_review": {
+    "path": "audit/REVIEW_HIGH_PRINCIPAL_SLAB_PREFLIGHT_2026-11-11.md",
+    "sha256": "1111EF1A55452E17059F51B662EA72B48A40354A3F7F59E2A1AC6A49AB2F1BD8"
+  },
+  "scope": "One bounded independent13-model replay under existing research authorization;300sec512MiB; no Lean or production family scan"
+}

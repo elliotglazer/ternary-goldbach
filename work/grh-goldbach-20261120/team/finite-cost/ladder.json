@@ -1,0 +1,290 @@
+{
+  "saouter": {
+    "upper_bound": 1000000000000000000000000000,
+    "geometry": "saouter",
+    "first_prime": 3,
+    "permitted_max_gap": "B-2",
+    "scope": "Binary production/first acceptance and new ladder rungs after checker readiness.",
+    "assumption": "Millisecond price includes each rung's search, proof, gap checking, storage and assembly.",
+    "fixed_cutoffs": {
+      "2510000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 399105633632,
+          "ladder_hours": 11086.26760088889,
+          "combined_hours": 48197.610726224244
+        },
+        {
+          "rung_ms": 1,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 399105633632,
+          "ladder_hours": 110862.67600888888,
+          "combined_hours": 147974.01913422425
+        },
+        {
+          "rung_ms": 10,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 399105633632,
+          "ladder_hours": 1108626.760088889,
+          "combined_hours": 1145738.1032142243
+        }
+      ],
+      "10000000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 100043997089,
+          "ladder_hours": 2778.999919138889,
+          "combined_hours": 104744.67982690113
+        },
+        {
+          "rung_ms": 1,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 100043997089,
+          "ladder_hours": 27789.999191388888,
+          "combined_hours": 129755.67909915114
+        },
+        {
+          "rung_ms": 10,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 100043997089,
+          "ladder_hours": 277899.9919138889,
+          "combined_hours": 379865.67182165117
+        }
+      ],
+      "11000000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 90945438027,
+          "ladder_hours": 2526.2621674166667,
+          "combined_hours": 112895.9908986068
+        },
+        {
+          "rung_ms": 1,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 90945438027,
+          "ladder_hours": 25262.621674166665,
+          "combined_hours": 135632.3504053568
+        },
+        {
+          "rung_ms": 10,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 90945438027,
+          "ladder_hours": 252626.21674166666,
+          "combined_hours": 362995.9454728568
+        }
+      ]
+    },
+    "optimized": [
+      {
+        "rung_ms": 0.1,
+        "bound": 1586483609731074,
+        "integer_span": 4294967296,
+        "binary_hours": 26862.361781377218,
+        "minimum_new_rungs": 630324822687,
+        "modeled_new_rungs": 632076207429,
+        "ladder_hours": 17557.672428583333,
+        "combined_hours": 44420.03420996055,
+        "model_lower_bound_hours": 44420.03420992974,
+        "optimality_gap_hours": 3.0806404538452625e-08
+      },
+      {
+        "rung_ms": 1,
+        "bound": 5753546779656194,
+        "integer_span": 8589934592,
+        "binary_hours": 66278.22999412414,
+        "minimum_new_rungs": 173805834608,
+        "modeled_new_rungs": 173938729521,
+        "ladder_hours": 48316.31375583333,
+        "combined_hours": 114594.54374995746,
+        "model_lower_bound_hours": 114594.54374982184,
+        "optimality_gap_hours": 1.3562384992837906e-07
+      },
+      {
+        "rung_ms": 10,
+        "bound": 19843968678232066,
+        "integer_span": 17179869184,
+        "binary_hours": 174791.7002936709,
+        "minimum_new_rungs": 50393145454,
+        "modeled_new_rungs": 50404311178,
+        "ladder_hours": 140011.97549444446,
+        "combined_hours": 314803.67578811536,
+        "model_lower_bound_hours": 314803.67578779726,
+        "optimality_gap_hours": 3.181048668920994e-07
+      }
+    ]
+  },
+  "historic_1p2": {
+    "upper_bound": 1000000000000000000000000000,
+    "geometry": "historic_1p2",
+    "first_prime": 3,
+    "permitted_max_gap": "B-2",
+    "scope": "Binary production/first acceptance and new ladder rungs after checker readiness.",
+    "assumption": "Millisecond price includes each rung's search, proof, gap checking, storage and assembly.",
+    "fixed_cutoffs": {
+      "2510000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 478087649402,
+          "ladder_hours": 13280.21248338889,
+          "combined_hours": 50391.555608724244
+        },
+        {
+          "rung_ms": 1,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 478087649402,
+          "ladder_hours": 132802.1248338889,
+          "combined_hours": 169913.46795922425
+        },
+        {
+          "rung_ms": 10,
+          "bound": 2510000000000000,
+          "integer_span": 4294967296,
+          "binary_hours": 37111.343125335356,
+          "minimum_new_rungs": 398406374501,
+          "modeled_new_rungs": 478087649402,
+          "ladder_hours": 1328021.2483388889,
+          "combined_hours": 1365132.5914642243
+        }
+      ],
+      "10000000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 120000000000,
+          "ladder_hours": 3333.3333333333335,
+          "combined_hours": 105299.01324109557
+        },
+        {
+          "rung_ms": 1,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 120000000000,
+          "ladder_hours": 33333.333333333336,
+          "combined_hours": 135299.01324109558
+        },
+        {
+          "rung_ms": 10,
+          "bound": 10000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 101965.67990776224,
+          "minimum_new_rungs": 100000000000,
+          "modeled_new_rungs": 120000000000,
+          "ladder_hours": 333333.3333333333,
+          "combined_hours": 435299.0132410956
+        }
+      ],
+      "11000000000000000": [
+        {
+          "rung_ms": 0.1,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 109090909091,
+          "ladder_hours": 3030.3030303055557,
+          "combined_hours": 113400.03176149569
+        },
+        {
+          "rung_ms": 1,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 109090909091,
+          "ladder_hours": 30303.030303055555,
+          "combined_hours": 140672.75903424568
+        },
+        {
+          "rung_ms": 10,
+          "bound": 11000000000000000,
+          "integer_span": 8589934592,
+          "binary_hours": 110369.72873119013,
+          "minimum_new_rungs": 90909090909,
+          "modeled_new_rungs": 109090909091,
+          "ladder_hours": 303030.30303055554,
+          "combined_hours": 413400.0317617457
+        }
+      ]
+    },
+    "optimized": [
+      {
+        "rung_ms": 0.1,
+        "bound": 1733092318380034,
+        "integer_span": 4294967296,
+        "binary_hours": 28489.392605024193,
+        "minimum_new_rungs": 577003307553,
+        "modeled_new_rungs": 692403969064,
+        "ladder_hours": 19233.443585111112,
+        "combined_hours": 47722.836190135306,
+        "model_lower_bound_hours": 47722.83619008018,
+        "optimality_gap_hours": 5.5122654885053635e-08
+      },
+      {
+        "rung_ms": 1,
+        "bound": 6297882344816642,
+        "integer_span": 8589934592,
+        "binary_hours": 70852.85671489814,
+        "minimum_new_rungs": 158783531550,
+        "modeled_new_rungs": 190540237860,
+        "ladder_hours": 52927.84385,
+        "combined_hours": 123780.70056489814,
+        "model_lower_bound_hours": 123780.70056472125,
+        "optimality_gap_hours": 1.7689308151602745e-07
+      },
+      {
+        "rung_ms": 10,
+        "bound": 21733152993050624,
+        "integer_span": 17179869184,
+        "binary_hours": 188124.0436680113,
+        "minimum_new_rungs": 46012651745,
+        "modeled_new_rungs": 55215182094,
+        "ladder_hours": 153375.50581666667,
+        "combined_hours": 341499.54948467796,
+        "model_lower_bound_hours": 341499.54948262067,
+        "optimality_gap_hours": 2.057291567325592e-06
+      }
+    ]
+  }
+}

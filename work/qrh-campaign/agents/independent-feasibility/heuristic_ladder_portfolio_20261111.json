@@ -1,0 +1,533 @@
+{
+  "scope": "planning assumptions; probability bounds are conditional model arithmetic, not empirical or prime theorems",
+  "R31": "86822723/13271040",
+  "proth_survival_fraction_for_same_small_wheel": "26542080/86822723",
+  "smooth_single_base_success_among_uniform_units": "13271040/86822723",
+  "smooth_remaining_success_conditioned_quadratic_nonresidue": "26542080/86822723",
+  "Fs": [
+    32089678420800,
+    32490799401060,
+    33092480871450,
+    33694162341840,
+    35098085772750,
+    36100888223400
+  ],
+  "period": 1000716621552648000,
+  "union_per_period": 161084,
+  "smooth_union_density": "523/3249079940106000",
+  "naive_smooth_density": "821/4611597334344000",
+  "collision_fraction": "2439/25451",
+  "cross_proth_smooth_density": "233/3334241095472276869585305600",
+  "scenarios": [
+    {
+      "B": 10000000000000000,
+      "geometry": "fixed_proth",
+      "width": 4468415255281664,
+      "K_fixed": 181029996372,
+      "candidate_count_lower": 128,
+      "candidate_count_upper": 128,
+      "intensity_numerator": "2",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 15039167395375958,
+            "upper_scaled_integer": 15039167395375959,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 16092686514848131,
+            "upper_scaled_integer": 16092686514848132,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 2722540419,
+          "expected_failures_K_upper": 2913258982
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 124762085462504681,
+            "upper_scaled_integer": 124762085462504682,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 128986995169173734,
+            "upper_scaled_integer": 128986995169173735,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 22585679878,
+          "expected_failures_K_upper": 23350515268
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 354714190918325960,
+            "upper_scaled_integer": 354714190918325961,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 360621727929033058,
+            "upper_scaled_integer": 360621727929033059,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 64213908695,
+          "expected_failures_K_upper": 65283350099
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 350191780480357531,
+            "upper_scaled_integer": 350191780480357532,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 356169837243663247,
+            "upper_scaled_integer": 356169837243663248,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 63395216749,
+          "expected_failures_K_upper": 64477424345
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "geometry": "same_window_one_smooth",
+      "width": 4468415255281664,
+      "K_fixed": 181029996372,
+      "candidate_count_lower": 139,
+      "candidate_count_upper": 140,
+      "intensity_numerator": "86822723/13271040",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 165903769423,
+            "upper_scaled_integer": 165903769424,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 240557148946,
+            "upper_scaled_integer": 240557148947,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 30033,
+          "expected_failures_K_upper": 43549
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 506277584669315,
+            "upper_scaled_integer": 506277584669316,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 604332859407941,
+            "upper_scaled_integer": 604332859407942,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 91651429,
+          "expected_failures_K_upper": 109402376
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 23687576797388301,
+            "upper_scaled_integer": 23687576797388302,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 25827839800906930,
+            "upper_scaled_integer": 25827839800906931,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 4288161941,
+          "expected_failures_K_upper": 4675613746
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 20181993566029592,
+            "upper_scaled_integer": 20181993566029593,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 24044592326305481,
+            "upper_scaled_integer": 24044592326305482,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 3653546222,
+          "expected_failures_K_upper": 4352792462
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "geometry": "same_window_six_smooth",
+      "width": 4468415255281664,
+      "K_fixed": 181029996372,
+      "candidate_count_lower": 689,
+      "candidate_count_upper": 752,
+      "intensity_numerator": "86822723/13271040",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 1,
+            "upper_scaled_integer": 2,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 110,
+            "upper_scaled_integer": 111,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 1857178718,
+            "upper_scaled_integer": 1857178719,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 13458088515,
+            "upper_scaled_integer": 13458088516,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 336,
+          "expected_failures_K_upper": 2437
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 785661624,
+            "upper_scaled_integer": 785661625,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 6454354585,
+            "upper_scaled_integer": 6454354586,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 142,
+          "expected_failures_K_upper": 1169
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "geometry": "adaptive_proth_same_F_full_interval",
+      "H": 284,
+      "model_failure_lower": {
+        "lower_scaled_integer": 90305726629394,
+        "upper_scaled_integer": 90305726629395,
+        "scale": 1000000000000000000
+      },
+      "model_failure_upper": {
+        "lower_scaled_integer": 104943875477511,
+        "upper_scaled_integer": 104943875477512,
+        "scale": 1000000000000000000
+      },
+      "conditional_mean_deficit_at_log63": {
+        "lower_scaled_integer": 3047019281,
+        "upper_scaled_integer": 3047019282,
+        "scale": 100000000
+      },
+      "mean_raw_tests_at_log63": {
+        "lower_scaled_integer": 3149669426,
+        "upper_scaled_integer": 3149669427,
+        "scale": 100000000
+      },
+      "conditional_mean_progress_at_log63": {
+        "lower_scaled_integer": 8920287071737671,
+        "upper_scaled_integer": 8920287071737672,
+        "scale": 1
+      }
+    },
+    {
+      "B": 20000000000000000,
+      "geometry": "fixed_proth",
+      "width": 8972014882652160,
+      "K_fixed": 90804183483,
+      "candidate_count_lower": 256,
+      "candidate_count_upper": 256,
+      "intensity_numerator": "2",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 226176555946139,
+            "upper_scaled_integer": 226176555946140,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 258974559265174,
+            "upper_scaled_integer": 258974559265175,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 20537777,
+          "expected_failures_K_upper": 23515974
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 15565577968953322,
+            "upper_scaled_integer": 15565577968953323,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 16637644922772448,
+            "upper_scaled_integer": 16637644922772449,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 1413419597,
+          "expected_failures_K_upper": 1510767763
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 125822157238842599,
+            "upper_scaled_integer": 125822157238842600,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 130048030654521541,
+            "upper_scaled_integer": 130048030654521542,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 11425178252,
+          "expected_failures_K_upper": 11808905238
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 122634283116002917,
+            "upper_scaled_integer": 122634283116002918,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 126856952962177567,
+            "upper_scaled_integer": 126856952962177568,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 11135705945,
+          "expected_failures_K_upper": 11519142033
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "geometry": "same_window_one_smooth",
+      "width": 8972014882652160,
+      "K_fixed": 90804183483,
+      "candidate_count_lower": 279,
+      "candidate_count_upper": 280,
+      "intensity_numerator": "86822723/13271040",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 27524,
+            "upper_scaled_integer": 27525,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 51858,
+            "upper_scaled_integer": 51859,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 256316992738,
+            "upper_scaled_integer": 256316992739,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 346255062106,
+            "upper_scaled_integer": 346255062107,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 23274,
+          "expected_failures_K_upper": 31442
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 561101294532168,
+            "upper_scaled_integer": 561101294532169,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 649759056119188,
+            "upper_scaled_integer": 649759056119189,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 50950344,
+          "expected_failures_K_upper": 59000841
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 407312864299259,
+            "upper_scaled_integer": 407312864299260,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 518104901998466,
+            "upper_scaled_integer": 518104901998467,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 36985712,
+          "expected_failures_K_upper": 47046093
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "geometry": "same_window_six_smooth",
+      "width": 8972014882652160,
+      "K_fixed": 90804183483,
+      "candidate_count_lower": 1412,
+      "candidate_count_upper": 1475,
+      "intensity_numerator": "86822723/13271040",
+      "stress": [
+        {
+          "density_multiplier": "1",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1/2",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 0,
+            "upper_scaled_integer": 1,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1/4",
+          "cluster_size": 1,
+          "model_failure_lower": {
+            "lower_scaled_integer": 7,
+            "upper_scaled_integer": 8,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 74,
+            "upper_scaled_integer": 75,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        },
+        {
+          "density_multiplier": "1",
+          "cluster_size": 4,
+          "model_failure_lower": {
+            "lower_scaled_integer": 1,
+            "upper_scaled_integer": 2,
+            "scale": 1000000000000000000
+          },
+          "model_failure_upper": {
+            "lower_scaled_integer": 15,
+            "upper_scaled_integer": 16,
+            "scale": 1000000000000000000
+          },
+          "expected_failures_K_lower": 0,
+          "expected_failures_K_upper": 1
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "geometry": "adaptive_proth_same_F_full_interval",
+      "H": 568,
+      "model_failure_lower": {
+        "lower_scaled_integer": 8155124262,
+        "upper_scaled_integer": 8155124263,
+        "scale": 1000000000000000000
+      },
+      "model_failure_upper": {
+        "lower_scaled_integer": 11013217000,
+        "upper_scaled_integer": 11013217001,
+        "scale": 1000000000000000000
+      },
+      "conditional_mean_deficit_at_log63": {
+        "lower_scaled_integer": 3049999374,
+        "upper_scaled_integer": 3049999375,
+        "scale": 100000000
+      },
+      "mean_raw_tests_at_log63": {
+        "lower_scaled_integer": 3149999965,
+        "upper_scaled_integer": 3149999966,
+        "scale": 100000000
+      },
+      "conditional_mean_progress_at_log63": {
+        "lower_scaled_integer": 18911600217843297,
+        "upper_scaled_integer": 18911600217843298,
+        "scale": 1
+      }
+    }
+  ]
+}

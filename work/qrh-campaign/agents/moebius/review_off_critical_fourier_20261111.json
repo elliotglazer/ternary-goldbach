@@ -1,0 +1,68 @@
+{
+  "scope": "Exact scalar and affine-exponent audit only; no FFT or spectral data",
+  "producer_sha256": "BA7A5D0517972FD9C93496E6166DEC471B36C18CA0B6BBA734985016ECD24B25",
+  "passed": 43,
+  "checks": [
+    "reflection endpoints",
+    "L1 endpoint product",
+    "L1 multiplier",
+    "conductor exponent at right edge",
+    "uniform A ratio power",
+    "conductor upper power of two",
+    "A ratio is below two",
+    "uniform M ratio below three",
+    "single line M ratio",
+    "two unequal reciprocal denominators",
+    "time exponent",
+    "time denominators exceed half",
+    "time budget",
+    "frequency budget",
+    "frequency cutoff double exponential",
+    "radix two output multiplier",
+    "series Gaussian exponent above 300",
+    "both prefactor exponents below two",
+    "uniform numerator monotonicity",
+    "series ratio at most exp negative 1/200",
+    "series budget",
+    "series output budget",
+    "total budget including scaled normalized FFT error",
+    "reciprocal exponential a0 s0",
+    "reciprocal conductor a0 s0",
+    "positive Gaussian rate a0 s0",
+    "negative Gaussian rate a0 s0",
+    "common conductor amplitude a0 s0",
+    "reciprocal exponential a0 s1",
+    "reciprocal conductor a0 s1",
+    "positive Gaussian rate a0 s1",
+    "negative Gaussian rate a0 s1",
+    "common conductor amplitude a0 s1",
+    "reciprocal exponential a1 s0",
+    "reciprocal conductor a1 s0",
+    "positive Gaussian rate a1 s0",
+    "negative Gaussian rate a1 s0",
+    "common conductor amplitude a1 s0",
+    "reciprocal exponential a1 s1",
+    "reciprocal conductor a1 s1",
+    "positive Gaussian rate a1 s1",
+    "negative Gaussian rate a1 s1",
+    "common conductor amplitude a1 s1"
+  ],
+  "upper_bounds": {
+    "time": {
+      "numerator": "7456272001331182451337689956099844801824472251171875",
+      "denominator": "60708402882054033466233184588234965832575213720379360039119137804340758912662765568"
+    },
+    "frequency": {
+      "numerator": "103755464404638581772961453920226416730169317442732224990068344429333004258321165232181523064062890625",
+      "denominator": "506532662216918085755909163048237445191949002959281848144001138878253517018177263964807989373425756138696031080481053366991595590260226478013534525648677207893210669360535830528"
+    },
+    "series_per_coefficient": {
+      "numerator": "2751546244264917133689227406911478950677429541272103165901482588093422595436164116849779497570785015381053775603392240457354211444649770973627307866201",
+      "denominator": "4226356249085321970818718279332132852150778608288972177023685672213391220453798875795338047101257503157395159946057029431058780476021484298004311827703516615267093471992040673349852141411411528424193863265689507233184226342012493910707175190136291811916308647181903986688"
+    },
+    "total": {
+      "numerator": "46104070603964541049432076528507297753394589442226652781091509214613771200559526726965361315546090544359214163461186937896590558502074155718175674513965805446442460264916911133373414801984304446793360373786593208042294442516773939669936289045978604775277495141832677623574787",
+      "denominator": "375375841440235011498557884775462843065587979677475176833894969538131578130961585397370509929016569042427700959235273130959134533315112163088073045331995258001986346129545128866831417494457270615998988395895131307716516952234230855963230694361979883303731200000000000000000000000000000000000000000000000000"
+    }
+  }
+}

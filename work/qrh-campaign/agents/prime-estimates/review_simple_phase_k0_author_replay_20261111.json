@@ -1,0 +1,75 @@
+{
+  "status": "PASS: exact scalar assembly only; analytic and checker proofs remain open",
+  "scope": "all real t>=1500 after the monotonicity and amplitude lemmas in the note",
+  "checks": {
+    "coarse_phase_from_B3": {
+      "lhs": "144023/576000",
+      "rhs": "13/50",
+      "relation": "<"
+    },
+    "weak_U_phase": {
+      "lhs": "3151/150000",
+      "rhs": "1/40",
+      "relation": "<"
+    },
+    "tau_le_one_over_40_squared": {
+      "lhs": "1/12000",
+      "rhs": "1/1600",
+      "relation": "<"
+    },
+    "RS1_constant": {
+      "lhs": "42920164224558668222341/10435585762551398400000",
+      "rhs": "21/5",
+      "relation": "<"
+    },
+    "U_times_polynomial": {
+      "lhs": "26/125",
+      "rhs": "21/100",
+      "relation": "<"
+    },
+    "pi_fourth_root_upper": {
+      "lhs": "44/7",
+      "rhs": "1536953616/244140625",
+      "relation": "<"
+    },
+    "sqrt_t_lower_squared": {
+      "lhs": "1444",
+      "rhs": "1500",
+      "relation": "<"
+    },
+    "actual_phase_K0": {
+      "lhs": "3317717799/7457500000",
+      "rhs": "9/20",
+      "relation": "<"
+    },
+    "global_main_sum_phase": {
+      "lhs": "13/18750",
+      "rhs": "1/1000",
+      "relation": "<"
+    },
+    "simple_phase_using_045": {
+      "lhs": "16901/37500",
+      "rhs": "451/1000",
+      "relation": "<"
+    },
+    "simple_phase_exact_base": {
+      "lhs": "9968664997/22372500000",
+      "rhs": "451/1000",
+      "relation": "<"
+    },
+    "published_allowance_retained": {
+      "lhs": "451/1000",
+      "rhs": "47/100",
+      "relation": "<"
+    }
+  },
+  "values": {
+    "base_coefficient": "3317717799/7457500000",
+    "phase_relative_upper": "13/18750",
+    "base_045_plus_phase": "16901/37500",
+    "analytic_bound_selected": "451/1000 * t^(-3/4), t>=1500",
+    "arithmetic_room_if_using_047": "19/1000 * t^(-3/4)"
+  },
+  "uses_sharp_Gabcke_phase": false,
+  "uses_finite_zero_data": false
+}

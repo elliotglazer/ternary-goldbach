@@ -1,0 +1,39 @@
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/algebra/base[0m
+Scanning [1m$(HOLDIR)/src/algebra/construction[0m
+Scanning [1m$(HOLDIR)/src/algebra[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 17 directories
+Building 8 theory files
+Starting work on numberTheory
+Starting work on containerTheory
+Finished src/bag                                                       (0.000s) 
+containerTheory                            src/finite_maps  (1s)   [1/8]     OK
+Finished src/finite_maps [#theories: 1]                                (1.309s) 
+numberTheory                              src/algebra/base  (9s)   [2/8]     OK
+Starting work on combinatoricsTheory
+combinatoricsTheory                       src/algebra/base (11s)   [3/8]     OK
+Starting work on primeTheory
+primeTheory                               src/algebra/base (11s)   [4/8]     OK
+Starting work on monoidTheory
+Finished src/algebra/base [#theories: 3]                              (32.275s) 
+monoidTheory                      src/algebra/construction (10s)   [5/8]     OK
+Starting work on groupTheory
+groupTheory                       src/algebra/construction (16s)   [6/8]     OK
+Starting work on ringTheory
+ringTheory                        src/algebra/construction (23s)   [7/8]     OK
+Starting work on primeCertificateTheory
+Finished src/algebra/construction [#theories: 3]                      (50.852s) 
+primeCertificateTheory          examples/algebra/primality  (3s)   [8/8]     OK
+Finished examples/algebra/primality [#theories: 1]                     (3.439s) 

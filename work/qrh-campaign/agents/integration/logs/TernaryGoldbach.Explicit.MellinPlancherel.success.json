@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "MellinPlancherel.olean": "bab7a0cbf53e234fd16b10efd00f24205eb99e4007117d4a48660b84e1863f38"
+  },
+  "evidence": {
+    "exit_code": 0,
+    "module": "TernaryGoldbach.Explicit.MellinPlancherel",
+    "seconds": 241.4
+  },
+  "generation": "validated-legacy",
+  "key": {
+    "dependency_receipts": {
+      "TernaryGoldbach.Explicit.ExplicitFormula": "e6ef29965fcaca7ab68ebf4c727c452694003654d96569a6cb002352a80f7ebf",
+      "TernaryGoldbach.Prelim.PlancherelReal": "7fd33e9fa3821f8118ca4a2833b3433077d12b4ccff60202295d639c2d44c2ad"
+    },
+    "environment": {
+      "lean_binary_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+      "lean_options": [
+        "-j",
+        "2",
+        "-R",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach"
+      ],
+      "package_paths": [
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq"
+      ],
+      "project_manifest_sha256": "ea138f9d252387a27424093ef9be6d65e1af2638a51212aca408385029549c82"
+    },
+    "lean": "4.35.0",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "module": "TernaryGoldbach.Explicit.MellinPlancherel",
+    "source_sha256": "994b556d429e1ad83a47009775687f4eb47b5189c32488e668b731b83d8ff4c2"
+  }
+}

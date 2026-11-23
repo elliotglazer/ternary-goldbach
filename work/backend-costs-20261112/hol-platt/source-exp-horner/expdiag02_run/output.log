@@ -1,0 +1,22 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 37 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val checked = fn: string -> term -> tactic -> thm
+OK..
+metis: r[+0+4]+0+0+0+1#
+r[+0+4]+0+0+0+1#
+EXP_HORNER_DIAGNOSTIC_PASS,seh_round_pair_error
+val seh_round_pair_error =
+   ⊢ ∀s r t.
+       0 < s ⇒
+       modu
+         (pair_value 1 (round_scaled s r,round_scaled s t) −
+          pair_value s (r,t)) ≤ 1: thm
+OK..

@@ -1,0 +1,11 @@
+# One evaluator and its observed console host
+
+The coordinator's V4 `screen03` diagnostic identifies the extra job process as `C:\Windows\System32\conhost.exe`, created after the original Python process and belonging to the same job. V5 admits that observed role explicitly. It does not admit another numerical worker.
+
+`run_screen_v5.py` keeps `CREATE_NO_WINDOW`, the original worker file and all eight numerical tests unchanged. The hard active-process limit becomes 2. The process and combined-job committed-memory caps both remain 2 GiB; the combined-job cap does not become 4 GiB. The 300-second wall and sampled job-CPU limits remain, with console-host CPU included. Python event timings continue to measure the evaluator process separately.
+
+Every poll checks the complete bounded PID list and identities. The original process must match its retained handle, exact base-Python path, creation time and job membership. At most one extra identity may have the exact System32 console-host path and creation time no earlier than the original process. Its first accepted PID, creation time and image path are retained as an identity record; a later PID reuse, different creation time or second console host rejects the run. Candidate handles are closed after each observation, so later queries must match the retained identity record. Unavailable identities reject rather than justify absence.
+
+The job may report one lifetime process before the host appears or two after it has been identified. Any other lifetime count, limit termination, unknown image, or missing live original worker rejects. A host may already appear before GO; the same role check then applies rather than assuming a particular scheduling order. A second lifetime process that has already disappeared before it can be identified still rejects. The final and pre-close checks cannot turn a role failure into success.
+
+Raw first observations, the first accepted host identity, anomalies and final observations remain persisted under the existing 16-record/64-KiB cap. Prior runner files and run receipts are unchanged. No V5 launch, syntax execution, build or FLINT evaluation was performed by the author. The coordinator should review and invoke V5 with a fresh label.

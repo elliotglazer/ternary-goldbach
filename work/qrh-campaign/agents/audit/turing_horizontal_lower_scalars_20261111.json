@@ -1,0 +1,33 @@
+{
+  "status": "exact rational scalar checks passed; analytic proof not kernel checked",
+  "checks": {
+    "outer_left_real": true,
+    "inner_radius_gt_segment_radius": true,
+    "outer_radius_gt_inner": true,
+    "growth_coefficient": true,
+    "growth_below_16": true,
+    "log_radius_ratio_integral_lower": true,
+    "harnack_ratio": true,
+    "exp1_above_27_over_10": true,
+    "exp1_above_R_plus_1": true,
+    "log_96pi_lt6": true,
+    "common_budget_harmonic_coefficient": true,
+    "common_budget_zero_coefficient": true,
+    "lower_intercept": true,
+    "lower_intercept_below128": true,
+    "upper_intercept": true,
+    "final_turing_intercept": true,
+    "final_turing_slope": true,
+    "historical_intercept": true,
+    "historical_rounding": true,
+    "historical_slope": true
+  },
+  "count": 20,
+  "disk_lower_intercept_exact": "15898/125",
+  "disk_lower_slope": "21",
+  "rounded_lower": "I(t) > -128 - 21*log(Q*t/(2*pi))",
+  "conditional_turing": "|integral S| < 42 + (693/100)*log(Q*t2/(2*pi))",
+  "historical_intercept_exact": "215663/62500",
+  "historical_analytic_leaves_certified_here": false,
+  "lean_validation": false
+}

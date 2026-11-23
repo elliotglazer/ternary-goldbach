@@ -1,0 +1,92 @@
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 64 5117487 slice-or 16 3 good
+{"updates":64,"bytes":8822786,"update_bytes":12620,"cpu_seconds":0.008497519,"wall_seconds":0.008494232}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.089589414
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 64 5117487 slice-or 16 3 bad
+{"updates":64,"bytes":8822786,"update_bytes":12620,"cpu_seconds":0.003790754,"wall_seconds":0.003785133}
+
+CORRUPTED
+MM0_REJECT: unify failure at ref near theorem bench  : $ ok $;
+
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 0 5117487 slice-or 16 3 good
+{"updates":0,"bytes":8810160,"update_bytes":0,"cpu_seconds":0.003315890,"wall_seconds":0.003310609}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 0 5117487 slice-or 16 3 good
+{"updates":0,"bytes":8810160,"update_bytes":0,"cpu_seconds":0.004778606,"wall_seconds":0.004772853}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 0 5117487 slice-or 16 3 good
+{"updates":0,"bytes":8810160,"update_bytes":0,"cpu_seconds":0.004623684,"wall_seconds":0.004633522}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 0 5117487 slice-or 16 3 good
+{"updates":0,"bytes":8810160,"update_bytes":0,"cpu_seconds":0.004951091,"wall_seconds":0.004946992}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 0 5117487 slice-or 16 3 good
+{"updates":0,"bytes":8810160,"update_bytes":0,"cpu_seconds":0.003855351,"wall_seconds":0.003849919}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.066232951
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.079807234
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.084507444
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.088423546
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.082806148
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.070770327
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.066522784
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-profile sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.080430507
+BENCH_COUNTS proof=2229767 unify=5118198
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 500000 5117487 slice-or 16 3 good
+{"updates":500000,"bytes":107040809,"update_bytes":98230643,"cpu_seconds":0.328322305,"wall_seconds":0.329782798}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 500000 5117487 slice-or 16 3 good
+{"updates":500000,"bytes":107040809,"update_bytes":98230643,"cpu_seconds":0.284554859,"wall_seconds":0.284651038}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 500000 5117487 slice-or 16 3 good
+{"updates":500000,"bytes":107040809,"update_bytes":98230643,"cpu_seconds":0.262196568,"wall_seconds":0.262283472}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 500000 5117487 slice-or 16 3 good
+{"updates":500000,"bytes":107040809,"update_bytes":98230643,"cpu_seconds":0.304061977,"wall_seconds":0.304174182}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-emit reset-slice-prefix.prefix sparse-reset-slice-or.mmb 500000 5117487 slice-or 16 3 good
+{"updates":500000,"bytes":107040809,"update_bytes":98230643,"cpu_seconds":0.291904516,"wall_seconds":0.292064247}
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.841909754
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.732695305
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.695724809
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.794643535
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.670427644
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.745312668
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-timed sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.645731118
+
+cd /dev/shm/goldbach-mm0-bench && ./mm0-profile sparse-reset-slice-or.mmb < reset-slice-prefix.mm0
+BENCH_CPU_SECONDS=0.726459954
+BENCH_COUNTS proof=39948510 unify=72149431

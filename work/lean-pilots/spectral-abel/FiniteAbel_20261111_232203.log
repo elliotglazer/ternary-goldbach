@@ -1,0 +1,28 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral-abel\FiniteAbel.lean:17:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral-abel\FiniteAbel.lean:50:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ k ∈ Finset.Icc 0 N, ↑k ^ (-s) * if k = 0 then 0 else g k
+in the target expression
+  (∑ k ∈ Finset.Icc 0 N, ↑↑k ^ (-s) * if k = 0 then 0 else g k) =
+    (↑↑N ^ (-s) * ∑ k ∈ Finset.Icc 0 N, if k = 0 then 0 else g k) -
+      ∫ (t : ℝ) in Ioc 1 ↑N, deriv (fun x => ↑x ^ (-s)) t * ∑ k ∈ Finset.Icc 0 ⌊t⌋₊, if k = 0 then 0 else g k
+
+g : ℕ → ℂ
+N : ℕ
+s : ℂ
+hs : 0 < s.re
+hs0 : -s ≠ 0
+hd : ∀ (t : ℝ), 1 ≤ t → deriv (fun x => ↑x ^ (-s)) t = -s * ↑t ^ (-(s + 1))
+hc : ContinuousOn (fun t => -s * ↑t ^ (-(s + 1))) (Icc 1 ↑N)
+hi : IntegrableOn (deriv fun x => ↑x ^ (-s)) (Icc 1 ↑N) volume
+hab :
+  (∑ k ∈ Finset.Icc 0 N, ↑↑k ^ (-s) * if k = 0 then 0 else g k) =
+    (↑↑N ^ (-s) * ∑ k ∈ Finset.Icc 0 N, if k = 0 then 0 else g k) -
+      ∫ (t : ℝ) in Ioc 1 ↑N, deriv (fun x => ↑x ^ (-s)) t * ∑ k ∈ Finset.Icc 0 ⌊t⌋₊, if k = 0 then 0 else g k
+hleft : (∑ k ∈ Finset.Icc 0 N, ↑k ^ (-s) * if k = 0 then 0 else g k) = ∑ k ∈ Finset.Icc 1 N, g k * ↑k ^ (-s)
+⊢ ∑ k ∈ Finset.Icc 1 N, g k * ↑k ^ (-s) =
+    (∑ k ∈ Finset.Icc 1 N, g k) * ↑N ^ (-s) +
+      s * ∫ (t : ℝ) in Ioc 1 ↑N, (∑ k ∈ Finset.Icc 1 ⌊t⌋₊, g k) * ↑t ^ (-(s + 1))
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral-abel\FiniteAbel.lean:80:25: error(lean.unknownIdentifier): Unknown constant `Set.Ioi_subset_Ioi.mpr`

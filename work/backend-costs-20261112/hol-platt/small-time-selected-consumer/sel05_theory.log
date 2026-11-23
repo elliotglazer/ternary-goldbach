@@ -1,0 +1,71 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedHeadScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SelectedHead">>
+Saved definition ____ "hddiv_def"
+Starting translation of hddiv from SelectedHeadTheory.
+Saved theorem _______ "cv_hddiv_thm"
+Finished translating hddiv, stored in cv_hddiv_thm
+Saved definition ____ "halves_def"
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "halves_pre_rules"
+Saved theorem _______ "halves_pre_ind"
+Saved theorem _______ "halves_pre_strongind"
+Saved theorem _______ "halves_pre_cases"
+Saved theorem _______ "cv_halves_thm"
+Finished translating halves, stored in cv_halves_thm
+
+WARNING: definition of cv_halves has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem halves_pre[cv_pre]:
+  ∀w k x. halves_pre w k x
+Proof
+  ho_match_mp_tac halves_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "halves_ok"
+Saved theorem _______ "repeat_compute"
+Saved definition ____ "repeat_def"
+Starting translation of repblk from SelectedHeadTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SelectedHead)>>
+Saved definition ____ "cv_repblk_def"
+Saved induction _____ "cv_repblk_ind"
+Saved theorem _______ "cv_repblk_thm"
+Finished translating repblk, stored in cv_repblk_thm
+Saved definition ____ "hval_def"
+Starting translation of hval from SelectedHeadTheory.
+Saved theorem _______ "cv_hval_thm"
+Finished translating hval, stored in cv_hval_thm
+Saved theorem _______ "leaves_compute"
+Saved definition ____ "leaves_def"
+Starting translation of leaves from SelectedHeadTheory.
+Saved definition ____ "cv_leaves_def"
+Saved induction _____ "cv_leaves_ind"
+Saved theorem _______ "cv_leaves_thm"
+Finished translating leaves, stored in cv_leaves_thm
+Saved definition ____ "same_heads_def"
+Starting translation of same_heads from SelectedHeadTheory.
+Saved theorem _______ "cv_same_heads_thm"
+Finished translating same_heads, stored in cv_same_heads_thm
+Saved definition ____ "repeat_test_def"
+Starting translation of repeat_test from SelectedHeadTheory.
+Saved theorem _______ "cv_repeat_test_thm"
+Finished translating repeat_test, stored in cv_repeat_test_thm
+Exporting theory "SelectedHead" ... done.
+Theory "SelectedHead" took 0.35791s to build
+Holmake: [1/1] SelectedHead

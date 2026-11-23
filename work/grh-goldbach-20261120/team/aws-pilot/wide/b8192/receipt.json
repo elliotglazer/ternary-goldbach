@@ -1,0 +1,56 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "lean_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "fixture_sha256": "43f6b3bb8b60f96f7c3347964cca52bfcba0894ed1504911319df8ab22c62deb",
+  "source_bitmap_bytes": 1536,
+  "seed": {
+    "PrimeSupport": "b60f15c8aa5e55421278f5be40b784002f0290094261201a8e404ecc43767127",
+    "PrimeBitmap": "ae47e41d6e76cbc842c19f13bdd9763f70648920df5290bfc7f1be0b80f86e3d",
+    "BatchPrime": "25b61eb487e9dafab1d173e5faee22f88b0c92c86f6c0cdad6aa146850c83ea5"
+  },
+  "stages": [
+    {
+      "module": "Table",
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M4096",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\aws-pilot\\wide\\b8192\\Table.olean",
+        "Table.lean"
+      ],
+      "source_sha256": "be053bea218b6508070136243d7e9cf84c1fa6882c4deae739c8339239e4ea5d",
+      "source_bytes": 2264,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 0,
+      "wall_seconds": 104.60537330000079,
+      "user_seconds": 10.046875,
+      "system_seconds": 8.546875,
+      "max_rss_kib": 1252320,
+      "olean_sha256": "428483f44b7e6e87768adc0aa94da681c1350457809c6fad8a75e6f6310aa3f6",
+      "olean_bytes": 143832
+    },
+    {
+      "module": "Cover",
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M4096",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\aws-pilot\\wide\\b8192\\Cover.olean",
+        "Cover.lean"
+      ],
+      "source_sha256": "b98b6353756925ee5ed68a4b4004f5f2b12c8aa6dbdc472586b1a5e67d7908bd",
+      "source_bytes": 923,
+      "log_sha256": "f1b182be427af9dbded1783e2e809f95373c98113c2278abcc6033e6334c735e",
+      "exit_code": 1,
+      "wall_seconds": 27.497938600001362,
+      "user_seconds": 9.09375,
+      "system_seconds": 6.15625,
+      "max_rss_kib": 1235748
+    }
+  ],
+  "passed": false
+}

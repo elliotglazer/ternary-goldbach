@@ -1,0 +1,131 @@
+{
+  "actual_gates": [
+    {
+      "id": "S_output",
+      "rows": [
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 48,
+            "product": 43,
+            "sign_at_most_three": 13,
+            "sign_dominance": 2,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 572,
+            "working_exponent_bits": 10,
+            "working_mantissa_bits": 844
+          },
+          "scale_exponent": "0"
+        },
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 48,
+            "product": 43,
+            "sign_at_most_three": 13,
+            "sign_dominance": 2,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 572,
+            "working_exponent_bits": 334,
+            "working_mantissa_bits": 844
+          },
+          "scale_exponent": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 48,
+            "product": 43,
+            "sign_at_most_three": 13,
+            "sign_dominance": 2,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 572,
+            "working_exponent_bits": 334,
+            "working_mantissa_bits": 844
+          },
+          "scale_exponent": "-10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "rows": [
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 50,
+            "product": 42,
+            "sign_at_most_three": 12,
+            "sign_dominance": 1,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 578,
+            "working_exponent_bits": 10,
+            "working_mantissa_bits": 846
+          },
+          "scale_exponent": "0"
+        },
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 50,
+            "product": 42,
+            "sign_at_most_three": 12,
+            "sign_dominance": 1,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 578,
+            "working_exponent_bits": 334,
+            "working_mantissa_bits": 846
+          },
+          "scale_exponent": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "counts": {
+            "comparison": 4,
+            "guarded_left_shift": 50,
+            "product": 42,
+            "sign_at_most_three": 12,
+            "sign_dominance": 1,
+            "sign_near_top_merge": 21
+          },
+          "maxima": {
+            "guarded_left_shift": 578,
+            "working_exponent_bits": 334,
+            "working_mantissa_bits": 846
+          },
+          "scale_exponent": "-10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    }
+  ],
+  "additional_rejections": 5,
+  "branch_visits": {
+    "concave_or_linear": 18600,
+    "convex_interior": 7296,
+    "convex_left": 8335,
+    "convex_right": 8089
+  },
+  "compact_full_box_comparisons": 9504,
+  "origin_boxes_rejected": 256,
+  "pins": {
+    "integration/COMPACT_DYADIC_REPLAY_PLAN_2026-11-11.md": "85651AA198E92AEBDB541C48A2C42AC666B0F5A72A7DDB728545A83F01AD19A8",
+    "major-constants/REVIEW_COMPACT_DYADIC_REPLAY_PLAN_2026-11-11.md": "2BD81A05B6C84A27149C1BEE5827B4918DD4F7F454AB799B1DEA8E954398F9DC",
+    "prime-estimates/COMPACT_RECIPROCAL_RECTANGLE_2026-11-11.md": "53E2BCD126E06BCB280F579352BEB05BCB1C939AE4ACC97661F0525B3486434F",
+    "prime-estimates/compact_reciprocal_rectangle_20261111.json": "73EF65C8CC1CF9DAD2C025F5A03880F2DC66BC0DDDC541555B3E943337BFD8D7",
+    "prime-estimates/compact_reciprocal_rectangle_20261111.py": "E32289AA8773520002804572C3F95B207850C41574A9BE45ECB178A8E632426F"
+  },
+  "rational_exact_boundary_and_inward_checks": 4224,
+  "residual_comparisons": 10976,
+  "scope": "No analytic seed, modular value, general parser, Lean theorem, or kernel performance certified.",
+  "script_sha256": "1CACF212F26639293DCB96F39968256CA598BE53D5F9FE5270807D76BA85B3D1",
+  "status": "PASS bounded independent arithmetic review"
+}

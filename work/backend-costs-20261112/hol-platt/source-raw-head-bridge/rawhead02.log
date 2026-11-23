@@ -1,0 +1,61 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanning [1m../source-exp-horner[0m
+Holmake: Scanning [1m../source-inverse-root[0m
+Holmake: Scanning [1m../source-initial[0m
+Holmake: Scanning [1m../source-log-real[0m
+Holmake: Scanning [1m../source-log-horner[0m
+Holmake: Scanning [1m../source-log-range[0m
+Holmake: Scanning [1m../source-phase-range[0m
+Holmake: Scanning [1m../source-phase-taylor[0m
+Holmake: Scanning [1m../source-state-bounds[0m
+Holmake: Scanning [1m../source-raw-state-bridge[0m
+Holmake: Scanning [1m../../raw-state-handoff[0m
+Holmake: Scanned 30 directories
+Holmake: Building 2 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-raw-head-bridge/SourceRawHeadBridgeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceRawHeadBridge">>
+Saved definition ____ "srh_state_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceRawHeadBridge)>>
+Saved theorem _______ "srh_state_error"
+Saved theorem _______ "srh_embed_mul"
+Saved theorem _______ "srh_conj_exp"
+Saved theorem _______ "srh_log_exp"
+Saved theorem _______ "srh_target"
+Saved theorem _______ "srh_rounding"
+Exporting theory "SourceRawHeadBridge" ... done.
+Theory "SourceRawHeadBridge" took 3.6s to build
+Holmake: [1/2] SourceRawHeadBridge
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-raw-head-bridge/SourceRawHeadBoundsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceRawHeadBounds">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceRawHeadBounds)>>
+Saved theorem _______ "srh_amplitude_norm"
+Saved theorem _______ "srh_xnorm"
+Saved theorem _______ "srh_cnorm"
+Saved theorem _______ "srh_product_error"
+Saved theorem _______ "srh_head_error"
+Saved theorem _______ "srh_c_root"
+Saved theorem _______ "srh_c_sqrt"
+Saved theorem _______ "srh_c_initial"
+Saved theorem _______ "srh_c_envelope"
+Saved theorem _______ "srh_c_state"
+Saved theorem _______ "c10004_raw_head_error"
+Exporting theory "SourceRawHeadBounds" ... done.
+Theory "SourceRawHeadBounds" took 3.7s to build
+Holmake: [2/2] SourceRawHeadBounds

@@ -1,0 +1,28 @@
+{
+  "first_even": 15502926850,
+  "last_even": 21945377792,
+  "new_even_count": 3221225472,
+  "total_even_count": 10972688895,
+  "prior_module": "GoldbachBand01Prefix",
+  "modules": [
+    "GoldbachBand02Common",
+    "GoldbachBand02Shard0",
+    "GoldbachBand02Shard1",
+    "GoldbachBand02Shard2",
+    "GoldbachBand02Shard3",
+    "GoldbachBand02Shard4",
+    "GoldbachBand02Shard5",
+    "GoldbachBand02Shard6",
+    "GoldbachBand02Shard7",
+    "GoldbachBand02Shard8",
+    "GoldbachBand02Shard9",
+    "GoldbachBand02Shard10",
+    "GoldbachBand02Shard11",
+    "GoldbachBand02Prefix"
+  ],
+  "audit": "'SmallGoldbach.GoldbachBand02.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "produce_cpu_s": 145.375,
+  "verify_cpu_s": 726.578125,
+  "peak_rss_kib": 2416968,
+  "generated_bytes": 69337712
+}

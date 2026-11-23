@@ -1,0 +1,33 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 14 directories
+Building 1 theory file
+Starting work on BlockRoundTheory
+BlockRoundTheory                                            (8s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** BlockRoundTheory (status 1)
+ <<HOL message: Created theory "BlockRound">>
+ Saved definition ____ "round_scaled_def"
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in BlockRound)>>
+ Saved theorem _______ "round_scaled_residual"
+ Saved definition ____ "rounded_butterfly_def"
+ Saved definition ____ "local_residual_def"
+ Saved theorem _______ "rounded_butterfly_residual"
+ 
+ ERROR: failed to find a suitable induction theorem in DefnBase.
+ Stopping. Use cv_trans_pre instead (or one of its variants).
+ error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/BlockRoundScript.sml : HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/BlockRoundScript : HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Could not find appropriate induction", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/.hol/logs/BlockRoundTheory

@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayCondensedP0N4.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\ReplayCondensedP0N4.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 4.350192500001867,
+  "user_cpu_seconds": 1.796875,
+  "system_cpu_seconds": 2.5,
+  "cpu_seconds": 4.296875,
+  "peak_working_set_bytes": 449257472,
+  "observed_peak_private_bytes": 963923968,
+  "memory_samples": 86,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "Condensed",
+      "precision": 0,
+      "butterflies": 4,
+      "repetitions": 50,
+      "declarations": 8,
+      "kernel_wall_ns": 1169277900
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=200000000,recdepth=512"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayCondensedP0N4.lean",
+      "bytes": 207,
+      "sha256": "1D039F167878B0D00327C2200B503EFF3835D9B30965142696A06913B07721FB"
+    },
+    {
+      "path": "timed_CondensedP0N4_r0.log",
+      "bytes": 85,
+      "sha256": "9C402FC523C38E2B7C54A2E546FAB1DC800FC7205B5426EEFBB731F7142ADDF3"
+    },
+    {
+      "path": "ReplayCondensedP0N4.olean",
+      "bytes": 1560,
+      "sha256": "936B928576675AD3F1665301B3674A3565ED477A28504DF13AF050EA0F403188"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

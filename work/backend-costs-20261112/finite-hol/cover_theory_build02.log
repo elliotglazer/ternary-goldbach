@@ -1,0 +1,50 @@
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/algebra/base[0m
+Holmake: Scanning [1m$(HOLDIR)/src/algebra/construction[0m
+Holmake: Scanning [1m$(HOLDIR)/src/algebra[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m$(HOLDIR)/examples/algebra/primality[0m
+Holmake: Scanned 18 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/finite-hol/FiniteCoverScript.uo to produce theory-builder executable
+<<HOL message: Created theory "FiniteCover">>
+Saved theorem _______ "prime_tree_size_def"
+Saved theorem _______ "datatype_prime_tree"
+Saved theorem _______ "prime_tree_11"
+Saved theorem _______ "prime_tree_distinct"
+Saved theorem _______ "prime_tree_nchotomy"
+Saved theorem _______ "prime_tree_Axiom"
+Saved theorem _______ "prime_tree_induction"
+Saved theorem _______ "prime_tree_case_cong"
+Saved theorem _______ "prime_tree_case_eq"
+<<HOL message: Defined type: "prime_tree">>
+Saved definition ____ "tree_primes_def"
+Saved definition ____ "tree_contains_def"
+Saved theorem _______ "tree_primes_empty"
+Saved theorem _______ "tree_primes_node"
+Saved theorem _______ "tree_contains_prime"
+Saved definition ____ "binary_goldbach_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in FiniteCover)>>
+Saved definition ____ "checked_cover_def"
+Saved induction _____ "checked_cover_ind"
+Proof of 
+
+∀ws target.
+  tree_primes tree ∧ checked_cover target tree ws ⇒
+  ∀j. j < LENGTH ws ⇒ binary_goldbach (target + 2 * j)
+
+failed.
+Tactic failure proving "checked_cover_sound"; heap saved to FiniteCover.checked_cover_sound.dumpedheap.
+Resume with: bin/hol --holstate=FiniteCover.checked_cover_sound.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/finite-hol/FiniteCoverScript - exited with code 1

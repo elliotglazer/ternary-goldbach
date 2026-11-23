@@ -1,0 +1,75 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:23:32: error: unsolved goals
+h : chi4 = 1
+hh : -1 = 1 3
+hc : chi4 3 = -1
+⊢ False
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:56:2: error: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:92:70: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (↑?r).re
+in the target expression
+  RCLike.re ↑(centralIntegrand t) = centralIntegrand t
+
+h : IntegrableOn (fun x => RCLike.re (psum chi4 ⌊x⌋₊ * ↑x ^ (-(1 / 2 + 1)))) (Ioi 1) volume
+t : ℝ
+ht : t ∈ Ioi 1
+⊢ RCLike.re ↑(centralIntegrand t) = centralIntegrand t
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:103:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ?m.145), ↑(?m.150 x) ∂?m.147
+in the target expression
+  1 / 2 * ∫ (t : ℝ) in Ioi 1, ↑(centralIntegrand t) = ↑(1 / 2 * ∫ (t : ℝ) in Ioi 1, centralIntegrand t)
+
+he : ∫ (t : ℝ) in Ioi 1, psum chi4 ⌊t⌋₊ * ↑t ^ (-(1 / 2 + 1)) = ∫ (t : ℝ) in Ioi 1, ↑(centralIntegrand t)
+⊢ 1 / 2 * ∫ (t : ℝ) in Ioi 1, ↑(centralIntegrand t) = ↑(1 / 2 * ∫ (t : ℝ) in Ioi 1, centralIntegrand t)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:108:60: error: Application type mismatch: The argument
+  ht.left
+has type
+  1 ≤ t
+but is expected to have type
+  ↑1 ≤ t
+in the application
+  (Nat.le_floor_iff ?m.40).mpr ht.left
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:108:47: error: linarith failed to find a contradiction
+t : ℝ
+ht : t ∈ Icc 1 2
+a✝ : t < 0
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:123:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -(3 / 2) + 1
+in the target expression
+  1 / 2 * ((2 ^ (-(1 / 2)) - 1) / -(1 / 2)) = 1 - (√2)⁻¹
+
+he : ∫ (t : ℝ) in 1..2, centralIntegrand t = ∫ (t : ℝ) in 1..2, t ^ (-(3 / 2))
+⊢ 1 / 2 * ((2 ^ (-(1 / 2)) - 1) / -(1 / 2)) = 1 - (√2)⁻¹
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:134:36: error: linarith failed to find a contradiction
+t : ℝ
+ht : t ∈ Ioi 2
+a✝ : t < 0
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:142:41: error: linarith failed to find a contradiction
+hi : IntegrableOn centralIntegrand (Ioi 2) volume
+hp : IntegrableOn (fun t => t ^ (-(3 / 2))) (Ioi 2) volume
+t : ℝ
+ht : t ∈ Ioi 2
+a✝ : t < 0
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:151:2: error: linarith failed to find a contradiction
+hi : IntegrableOn centralIntegrand (Ioi 2) volume
+hp : IntegrableOn (fun t => t ^ (-(3 / 2))) (Ioi 2) volume
+hr : ∫ (t : ℝ) in Ioi 2, t ^ (-(3 / 2)) = -2 ^ (-(3 / 2) + 1) / (-(3 / 2) + 1)
+he : 2 ^ (-(1 / 2)) = 1 / √2
+hm : ∫ (x : ℝ) in Ioi 2, centralIntegrand x ≤ (√2)⁻¹ / (1 / 2)
+a✝ : 1 / √2 < 1 / 2 * ∫ (t : ℝ) in Ioi 2, centralIntegrand t
+⊢ False
+failed
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\spectral\CentralChi4.lean:177:75: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.134 = ?m.134
+but is expected to have type
+  True
+in the application
+  ⟨?m.132, rfl⟩

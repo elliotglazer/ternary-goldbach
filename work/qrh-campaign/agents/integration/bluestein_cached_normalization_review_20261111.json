@@ -1,0 +1,234 @@
+{
+  "verdict": "PASS_BOUNDED_PAPER_SOURCE_REVIEW",
+  "checks": 1693,
+  "pins": {
+    "independent-feasibility/BLUESTEIN_CACHED_NORMALIZATION_RESEARCH_2026-11-11.md": "FB29C85F85401EAB8512CC8AB0E58063380B159690C4E6B155F82A407C959BA9",
+    "independent-feasibility/bluestein_cached_normalization_20261111.py": "A0A26A3B03297871BE12B2DC4FC5F37006B071FED113CB325ACBDC6EFC0001F3",
+    "independent-feasibility/bluestein_cached_normalization_20261111_v2.json": "E8403465E72AB99A94F7F210801CE6FE17CE6679E9AEF29EEFBC3492B642B793",
+    "zero-sum/MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md": "4AD43D7D2163A185BC05DFD7C3AC22237B58979BC3F139E79A69D414675F30F4",
+    "independent-feasibility/MIXED_RADIX_INTERMEDIATE_WIDTH_2026-11-11.md": "5327CD0645A36F4081155D786FCEB43586559C1520A5A67CBAB2E68FBC77619A",
+    "zero-sum/FIXED_THREE_PRODUCT_TRANSFORM_REFINEMENT_2026-11-11.md": "087A3DF1B2DD49C5C0BB38E00DA9CD9830E41807C6F07A8BBB34502CFF65355D",
+    "integration/LARGE_CHARACTER_TRANSFORM_PA_COST_MODEL_2026-11-11.md": "DAEA81308B256EEDC68CDC86B20730613FD8F5EE0ECF485A9BCD772C4557F52C"
+  },
+  "general_identities": [
+    "2n(Cnew-Cexact)=R(27n-6P)+26n-6P-2",
+    "Cold-Cnew=R(9P/2+n-10)-6"
+  ],
+  "scalar_rows": [
+    {
+      "n": 2,
+      "C_gap": "74",
+      "C_relaxation_gap": "133/2"
+    },
+    {
+      "n": 3,
+      "C_gap": "284",
+      "C_relaxation_gap": "179/3"
+    },
+    {
+      "n": 4,
+      "C_gap": "294",
+      "C_relaxation_gap": "327/4"
+    },
+    {
+      "n": 5,
+      "C_gap": "798",
+      "C_relaxation_gap": "50"
+    },
+    {
+      "n": 6,
+      "C_gap": "810",
+      "C_relaxation_gap": "425/6"
+    },
+    {
+      "n": 7,
+      "C_gap": "822",
+      "C_relaxation_gap": "600/7"
+    },
+    {
+      "n": 8,
+      "C_gap": "834",
+      "C_relaxation_gap": "775/8"
+    },
+    {
+      "n": 9,
+      "C_gap": "1996",
+      "C_relaxation_gap": "377/9"
+    },
+    {
+      "n": 10,
+      "C_gap": "2010",
+      "C_relaxation_gap": "579/10"
+    },
+    {
+      "n": 11,
+      "C_gap": "2024",
+      "C_relaxation_gap": "71"
+    },
+    {
+      "n": 12,
+      "C_gap": "2038",
+      "C_relaxation_gap": "983/12"
+    },
+    {
+      "n": 13,
+      "C_gap": "2052",
+      "C_relaxation_gap": "1185/13"
+    },
+    {
+      "n": 14,
+      "C_gap": "2066",
+      "C_relaxation_gap": "1387/14"
+    },
+    {
+      "n": 15,
+      "C_gap": "2080",
+      "C_relaxation_gap": "1589/15"
+    },
+    {
+      "n": 16,
+      "C_gap": "2094",
+      "C_relaxation_gap": "1791/16"
+    },
+    {
+      "n": 17,
+      "C_gap": "4714",
+      "C_relaxation_gap": "628/17"
+    },
+    {
+      "n": 33,
+      "C_gap": "10776",
+      "C_relaxation_gap": "1151/33"
+    },
+    {
+      "n": 127,
+      "C_gap": "25374",
+      "C_relaxation_gap": "156"
+    },
+    {
+      "n": 257,
+      "C_gap": "116514",
+      "C_relaxation_gap": "9808/257"
+    },
+    {
+      "n": 1025,
+      "C_gap": "544510",
+      "C_relaxation_gap": "44422/1025"
+    },
+    {
+      "n": 4097,
+      "C_gap": "2490074",
+      "C_relaxation_gap": "201148/4097"
+    },
+    {
+      "n": 16385,
+      "C_gap": "11206326",
+      "C_relaxation_gap": "901618/16385"
+    },
+    {
+      "n": 65537,
+      "C_gap": "49806994",
+      "C_relaxation_gap": "3998248/65537"
+    }
+  ],
+  "local_price_examples": [
+    {
+      "n": 13,
+      "p": 112,
+      "product_difference": 9384,
+      "addition_difference": 5880,
+      "setup_additions": 3968,
+      "cache_addition_difference": 0
+    },
+    {
+      "n": 13,
+      "p": 134,
+      "product_difference": 18142,
+      "addition_difference": 6508,
+      "setup_additions": 4736,
+      "cache_addition_difference": -128
+    },
+    {
+      "n": 13,
+      "p": 152,
+      "product_difference": 12384,
+      "addition_difference": 7160,
+      "setup_additions": 5248,
+      "cache_addition_difference": 0
+    },
+    {
+      "n": 257,
+      "p": 112,
+      "product_difference": 1390002,
+      "addition_difference": 290412,
+      "setup_additions": 135168,
+      "cache_addition_difference": -4096
+    },
+    {
+      "n": 257,
+      "p": 134,
+      "product_difference": 1653420,
+      "addition_difference": 334648,
+      "setup_additions": 159744,
+      "cache_addition_difference": -8192
+    },
+    {
+      "n": 257,
+      "p": 152,
+      "product_difference": 1836952,
+      "addition_difference": 331372,
+      "setup_additions": 176128,
+      "cache_addition_difference": -4096
+    },
+    {
+      "n": 4097,
+      "p": 112,
+      "product_difference": 40667762,
+      "addition_difference": 7139236,
+      "setup_additions": 2162688,
+      "cache_addition_difference": -65536
+    },
+    {
+      "n": 4097,
+      "p": 134,
+      "product_difference": 52364028,
+      "addition_difference": 7420264,
+      "setup_additions": 2555904,
+      "cache_addition_difference": -131072
+    },
+    {
+      "n": 4097,
+      "p": 152,
+      "product_difference": 53852312,
+      "addition_difference": 7794596,
+      "setup_additions": 2818048,
+      "cache_addition_difference": -65536
+    },
+    {
+      "n": 65537,
+      "p": 112,
+      "product_difference": 1170597236,
+      "addition_difference": 159007368,
+      "setup_additions": 36700160,
+      "cache_addition_difference": -2097152
+    },
+    {
+      "n": 65537,
+      "p": 134,
+      "product_difference": 1349387434,
+      "addition_difference": 170335060,
+      "setup_additions": 42991616,
+      "cache_addition_difference": -3145728
+    },
+    {
+      "n": 65537,
+      "p": 152,
+      "product_difference": 1550397936,
+      "addition_difference": 169493128,
+      "setup_additions": 47185920,
+      "cache_addition_difference": -2097152
+    }
+  ],
+  "global_cost_fold": false,
+  "precision_selected": false
+}

@@ -1,0 +1,37 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../small-time-selected-consumer[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/DyadicSeedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "DyadicSeed">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in DyadicSeed)>>
+Saved theorem _______ "nonnegative_sq_order"
+Proof of 
+
+∀x cl cu sl su l h s t.
+  0 < cos x ∧ 0 ≤ l ∧ 0 ≤ h ∧ 0 ≤ s ∧ 0 ≤ t ∧ cl ≤ cos (2 * x) ∧
+  cos (2 * x) ≤ cu ∧ sl ≤ sin (2 * x) ∧ sin (2 * x) ≤ su ∧ 2 * l² ≤ 1 + cl ∧
+  1 + cu ≤ 2 * h² ∧ 2 * s * h ≤ sl ∧ su ≤ 2 * t * l ⇒
+  l ≤ cos x ∧ cos x ≤ h ∧ s ≤ sin x ∧ sin x ≤ t
+
+failed.
+Tactic failure proving "halve_box"; heap saved to DyadicSeed.halve_box.dumpedheap.
+Resume with: bin/hol --holstate=DyadicSeed.halve_box.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/DyadicSeedScript - exited with code 1

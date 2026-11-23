@@ -1,0 +1,44 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanned 24 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/MomentTransferScript.uo to produce theory-builder executable
+<<HOL message: Created theory "MomentTransfer">>
+Saved definition ____ "row_def"
+Saved definition ____ "absolute_row_def"
+Saved theorem _______ "series_compute"
+Saved definition ____ "series_def"
+Saved definition ____ "polynomial_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in MomentTransfer)>>
+Saved theorem _______ "row_add"
+Saved theorem _______ "row_scale"
+Saved theorem _______ "row_zero"
+Proof of 
+
+∀k zs d. row zs (polynomial k d) = series k d (λm. row zs (λx. x pow m))
+
+failed.
+Tactic failure proving "signed_moments"; heap saved to MomentTransfer.signed_moments.dumpedheap.
+Resume with: bin/hol --holstate=MomentTransfer.signed_moments.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/MomentTransferScript - exited with code 1

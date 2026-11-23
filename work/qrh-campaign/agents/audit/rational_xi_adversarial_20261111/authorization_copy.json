@@ -1,0 +1,68 @@
+{
+  "target": {
+    "T_input": 32,
+    "T_work": 14,
+    "eta": "1/33",
+    "center_re": "3/5",
+    "center_im": "14",
+    "rho": "1/64",
+    "h": "1/256",
+    "K": 928,
+    "degree": 6,
+    "b_expression": "pi/4-1/33",
+    "a": "1/66",
+    "kappa": "1/66",
+    "V": "29/8",
+    "rectangle_re": [
+      "379/640",
+      "389/640"
+    ],
+    "rectangle_im": [
+      "1791/128",
+      "1793/128"
+    ],
+    "ccw_vertices": [
+      [
+        "379/640",
+        "1791/128"
+      ],
+      [
+        "389/640",
+        "1791/128"
+      ],
+      [
+        "389/640",
+        "1793/128"
+      ],
+      [
+        "379/640",
+        "1793/128"
+      ],
+      [
+        "379/640",
+        "1791/128"
+      ]
+    ],
+    "node_grid_bits": 32,
+    "weight_grid_bits": 64,
+    "node_radius": "1/16777216",
+    "weight_radius": "1/281474976710656"
+  },
+  "coordinator_authorized": true,
+  "sixteen_mode_bound_accepted": true,
+  "seconds": 600,
+  "maximum_nodes": 929,
+  "scope": "One fixed small-rectangle external rational pilot; not Lean or production spectral coverage",
+  "spec_review": {
+    "path": "zero-sum/REVIEW_NEXT_RATIONAL_XI_PANEL_SPEC_2026-11-11.md",
+    "sha256": "2F05928D57B1E76F513095FE5CCA4D5930EF314EB658EE748016E52FBE84CC97"
+  },
+  "general_tail_review": {
+    "path": "mellin/REVIEW_THETA_JET_TAIL_TWO_FIFTHS_2026-11-11.md",
+    "sha256": "8C81655B87AA6855AEE4A28D34A8713FFEC95CABEEE8F538E82888A0409304CD"
+  },
+  "backend_review": {
+    "path": "audit/REVIEW_RATIONAL_XI_PANEL_BACKEND_2026-11-11.md",
+    "sha256": "91DA66968EE08FD35E50A31B39405ACFA9EC063234833D9E5A0085964621D7EA"
+  }
+}

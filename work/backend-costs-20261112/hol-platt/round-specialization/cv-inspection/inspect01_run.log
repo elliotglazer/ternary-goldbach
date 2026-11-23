@@ -1,0 +1,1178 @@
+CV_IMPORTED_TAG,positive_den_div_one:definition,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:definition,RoundSpecializationCV$cv_positive_den_div_one
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:definition
+⊢ ∀cv_n cv_d.
+    cv_positive_den_div_one cv_n cv_d =
+    cv_if (cv_int_lt cv_n (cv$Num 0))
+      (cv_int_add
+         (cv_int_neg
+            (cv_div (cv_sub (cv_abs (cv_int_neg cv_n)) (cv$Num 1)) cv_d))
+         (cv_int_neg (cv$Num 1))) (cv_div (cv_abs cv_n) cv_d)
+CV_EQUATION_TEXT_END,positive_den_div_one:definition
+CV_EQUATION_AST,positive_den_div_one:definition,(app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_n" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_d" ":cv") (app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (var "cv_n" ":cv")) (var "cv_d" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv_n" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (var "cv_d" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "cv_n" ":cv"))) (var "cv_d" ":cv"))))))))
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition,cv$cv_div,2
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:definition:rhs,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:definition:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,positive_den_div_one:representation,oracles=DISK_THM,axioms=
+CV_REPRESENTATION_AST,positive_den_div_one,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_type$from_int" ":int -> cv") (app (app (const "RoundSpecialization$positive_den_div_one" ":int -> num -> int") (var "n" ":int")) (var "d" ":num")))) (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (app (const "cv_type$from_int" ":int -> cv") (var "n" ":int"))) (app (const "cv$Num" ":num -> cv") (var "d" ":num"))))
+CV_IMPORTED_TAG,positive_den_div_one:reachable:0,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:reachable:0,cv_prim$cv_int_lt
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:reachable:0
+⊢ cv_int_lt i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv_lt (cv_abs j) (cv_abs i)) (cv$Num 1))
+    (cv_if (cv_ispair j) (cv$Num 0) (cv_lt i j))
+CV_EQUATION_TEXT_END,positive_den_div_one:reachable:0
+CV_EQUATION_AST,positive_den_div_one:reachable:0,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "j" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:0:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:0:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:0:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:0:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,positive_den_div_one:reachable:1,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:reachable:1,cv_prim$cv_int_add
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:reachable:1
+⊢ cv_int_add i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv$Pair (cv_add (cv_fst i) (cv_fst j)) (cv$Num 0))
+       (cv_if (cv_int_lt j (cv_fst i))
+          (cv$Pair (cv_sub (cv_fst i) j) (cv$Num 0)) (cv_sub j (cv_fst i))))
+    (cv_if (cv_ispair j)
+       (cv_if (cv_int_lt i (cv_fst j))
+          (cv$Pair (cv_sub (cv_fst j) i) (cv$Num 0)) (cv_sub i (cv_fst j)))
+       (cv_add i j))
+CV_EQUATION_TEXT_END,positive_den_div_one:reachable:1
+CV_EQUATION_AST,positive_den_div_one:reachable:1,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))) (var "i" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))))) (app (app (const "cv$cv_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:1:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:1:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:1:rhs.then.else,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.then.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:1:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:1:rhs.else.then,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:1:rhs.else.then:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,positive_den_div_one:reachable:2,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:reachable:2,cv_prim$cv_int_neg
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:reachable:2
+⊢ cv_int_neg x =
+  cv_if (cv_eq x (cv$Num 0)) x
+    (cv_if (cv_ispair x) (cv_fst x) (cv$Pair x (cv$Num 0)))
+CV_EQUATION_TEXT_END,positive_den_div_one:reachable:2
+CV_EQUATION_AST,positive_den_div_one:reachable:2,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "x" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (var "x" ":cv")) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "x" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:2:rhs,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:2:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:2:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,positive_den_div_one:reachable:3,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:reachable:3,cv_prim$cv_abs
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:reachable:3
+⊢ cv_abs i = cv_if (cv_ispair i) (cv_fst i) i
+CV_EQUATION_TEXT_END,positive_den_div_one:reachable:3
+CV_EQUATION_AST,positive_den_div_one:reachable:3,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:3:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:3:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,positive_den_div_one:reachable:4,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,positive_den_div_one:reachable:4,RoundSpecializationCV$cv_positive_den_div_one
+CV_EQUATION_TEXT_BEGIN,positive_den_div_one:reachable:4
+⊢ cv_positive_den_div_one cv_n cv_d =
+  cv_if (cv_int_lt cv_n (cv$Num 0))
+    (cv_int_add
+       (cv_int_neg
+          (cv_div (cv_sub (cv_abs (cv_int_neg cv_n)) (cv$Num 1)) cv_d))
+       (cv_int_neg (cv$Num 1))) (cv_div (cv_abs cv_n) cv_d)
+CV_EQUATION_TEXT_END,positive_den_div_one:reachable:4
+CV_EQUATION_AST,positive_den_div_one:reachable:4,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (var "cv_n" ":cv")) (var "cv_d" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv_n" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (var "cv_d" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "cv_n" ":cv"))) (var "cv_d" ":cv"))))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4,cv$cv_div,2
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,positive_den_div_one:reachable:4:rhs,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,positive_den_div_one:reachable:4:rhs:else,cv_prim$cv_total_int_div,0
+CV_CLOSURE_EQUATIONS,positive_den_div_one,5
+CV_CLOSURE_SYNTACTIC_COUNT,positive_den_div_one,cv$cv_div,2
+CV_CLOSURE_SYNTACTIC_COUNT,positive_den_div_one,cv$cv_mod,0
+CV_CLOSURE_SYNTACTIC_COUNT,positive_den_div_one,cv_prim$cv_int_div,0
+CV_CLOSURE_SYNTACTIC_COUNT,positive_den_div_one,cv_prim$cv_total_int_div,0
+CV_INSPECTION_CASE_DONE,positive_den_div_one
+CV_IMPORTED_TAG,round_scaled_one:definition,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:definition,RoundSpecializationCV$cv_round_scaled_one
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:definition
+⊢ ∀cv_s cv_r.
+    cv_round_scaled_one cv_s cv_r =
+    cv_positive_den_div_one (cv_int_add (cv_int_mul (cv$Num 2) cv_r) cv_s)
+      (cv_abs (cv_int_mul (cv$Num 2) cv_s))
+CV_EQUATION_TEXT_END,round_scaled_one:definition
+CV_EQUATION_AST,round_scaled_one:definition,(app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_s" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_r" ":cv") (app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (var "cv_r" ":cv"))) (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_r" ":cv"))) (var "cv_s" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_s" ":cv")))))))))
+CV_SYNTACTIC_COUNT,round_scaled_one:definition,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:definition,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:definition,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:definition,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:representation,oracles=DISK_THM,axioms=
+CV_REPRESENTATION_AST,round_scaled_one,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_type$from_int" ":int -> cv") (app (app (const "RoundSpecialization$round_scaled_one" ":int -> int -> int") (var "s" ":int")) (var "r" ":int")))) (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (app (const "cv_type$from_int" ":int -> cv") (var "s" ":int"))) (app (const "cv_type$from_int" ":int -> cv") (var "r" ":int"))))
+CV_IMPORTED_TAG,round_scaled_one:reachable:0,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:0,cv_prim$cv_int_neg
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:0
+⊢ cv_int_neg x =
+  cv_if (cv_eq x (cv$Num 0)) x
+    (cv_if (cv_ispair x) (cv_fst x) (cv$Pair x (cv$Num 0)))
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:0
+CV_EQUATION_AST,round_scaled_one:reachable:0,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "x" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (var "x" ":cv")) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "x" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:0:rhs,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:0:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:0:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:1,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:1,RoundSpecializationCV$cv_positive_den_div_one
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:1
+⊢ cv_positive_den_div_one cv_n cv_d =
+  cv_if (cv_int_lt cv_n (cv$Num 0))
+    (cv_int_add
+       (cv_int_neg
+          (cv_div (cv_sub (cv_abs (cv_int_neg cv_n)) (cv$Num 1)) cv_d))
+       (cv_int_neg (cv$Num 1))) (cv_div (cv_abs cv_n) cv_d)
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:1
+CV_EQUATION_AST,round_scaled_one:reachable:1,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (var "cv_n" ":cv")) (var "cv_d" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv_n" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (var "cv_d" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "cv_n" ":cv"))) (var "cv_d" ":cv"))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1,cv$cv_div,2
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:1:rhs,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:1:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:2,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:2,cv_prim$cv_int_lt
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:2
+⊢ cv_int_lt i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv_lt (cv_abs j) (cv_abs i)) (cv$Num 1))
+    (cv_if (cv_ispair j) (cv$Num 0) (cv_lt i j))
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:2
+CV_EQUATION_AST,round_scaled_one:reachable:2,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "j" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:2:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:2:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:2:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:2:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:3,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:3,cv_prim$cv_int_add
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:3
+⊢ cv_int_add i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv$Pair (cv_add (cv_fst i) (cv_fst j)) (cv$Num 0))
+       (cv_if (cv_int_lt j (cv_fst i))
+          (cv$Pair (cv_sub (cv_fst i) j) (cv$Num 0)) (cv_sub j (cv_fst i))))
+    (cv_if (cv_ispair j)
+       (cv_if (cv_int_lt i (cv_fst j))
+          (cv$Pair (cv_sub (cv_fst j) i) (cv$Num 0)) (cv_sub i (cv_fst j)))
+       (cv_add i j))
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:3
+CV_EQUATION_AST,round_scaled_one:reachable:3,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))) (var "i" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))))) (app (app (const "cv$cv_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:3:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:3:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:3:rhs.then.else,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.then.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:3:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:3:rhs.else.then,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:3:rhs.else.then:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:4,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:4,cv_prim$cv_int_mul
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:4
+⊢ cv_int_mul i j =
+  cv_if (cv_eq i (cv$Num 0)) (cv$Num 0)
+    (cv_if (cv_eq j (cv$Num 0)) (cv$Num 0)
+       (cv_if (cv_ispair i)
+          (cv_if (cv_ispair j) (cv_mul (cv_fst i) (cv_fst j))
+             (cv$Pair (cv_mul (cv_fst i) j) (cv$Num 0)))
+          (cv_if (cv_ispair j) (cv$Pair (cv_mul i (cv_fst j)) (cv$Num 0))
+             (cv_mul i j))))
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:4
+CV_EQUATION_AST,round_scaled_one:reachable:4,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:4:rhs,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:4:rhs.else,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:4:rhs.else.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:4:rhs.else.else.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:4:rhs.else.else.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:4:rhs.else.else.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:5,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:5,cv_prim$cv_abs
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:5
+⊢ cv_abs i = cv_if (cv_ispair i) (cv_fst i) i
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:5
+CV_EQUATION_AST,round_scaled_one:reachable:5,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,round_scaled_one:reachable:5:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:5:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,round_scaled_one:reachable:6,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,round_scaled_one:reachable:6,RoundSpecializationCV$cv_round_scaled_one
+CV_EQUATION_TEXT_BEGIN,round_scaled_one:reachable:6
+⊢ cv_round_scaled_one cv_s cv_r =
+  cv_positive_den_div_one (cv_int_add (cv_int_mul (cv$Num 2) cv_r) cv_s)
+    (cv_abs (cv_int_mul (cv$Num 2) cv_s))
+CV_EQUATION_TEXT_END,round_scaled_one:reachable:6
+CV_EQUATION_AST,round_scaled_one:reachable:6,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (var "cv_r" ":cv"))) (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_r" ":cv"))) (var "cv_s" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_s" ":cv")))))
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:6,cv$cv_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:6,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:6,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,round_scaled_one:reachable:6,cv_prim$cv_total_int_div,0
+CV_CLOSURE_EQUATIONS,round_scaled_one,7
+CV_CLOSURE_SYNTACTIC_COUNT,round_scaled_one,cv$cv_div,2
+CV_CLOSURE_SYNTACTIC_COUNT,round_scaled_one,cv$cv_mod,0
+CV_CLOSURE_SYNTACTIC_COUNT,round_scaled_one,cv_prim$cv_int_div,0
+CV_CLOSURE_SYNTACTIC_COUNT,round_scaled_one,cv_prim$cv_total_int_div,0
+CV_INSPECTION_CASE_DONE,round_scaled_one
+CV_IMPORTED_TAG,rounded_butterfly_one:definition,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:definition,RoundSpecializationCV$cv_rounded_butterfly_one
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:definition
+⊢ ∀cv_s cv_v1 cv_v0 cv_v.
+    cv_rounded_butterfly_one cv_s cv_v1 cv_v0 cv_v =
+    (let
+       cv0 = cv$Pair cv_v1 (cv$Pair cv_v0 cv_v)
+     in
+       cv_if (cv_ispair cv0)
+         (cv_if (cv_ispair (cv_fst cv0))
+            (cv_if (cv_ispair (cv_snd cv0))
+               (cv_if (cv_ispair (cv_fst (cv_snd cv0)))
+                  (cv_if (cv_ispair (cv_snd (cv_snd cv0)))
+                     (let
+                        cv1 =
+                          cv_int_mul (cv_fst (cv_snd (cv_snd cv0)))
+                            (cv_int_add (cv_fst (cv_fst (cv_snd cv0)))
+                               (cv_snd (cv_fst (cv_snd cv0))));
+                        cv2 =
+                          cv_int_mul (cv_snd (cv_fst (cv_snd cv0)))
+                            (cv_int_add (cv_fst (cv_snd (cv_snd cv0)))
+                               (cv_snd (cv_snd (cv_snd cv0))));
+                        cv3 =
+                          cv_int_mul (cv_fst (cv_fst (cv_snd cv0)))
+                            (cv_int_add (cv_snd (cv_snd (cv_snd cv0)))
+                               (cv_int_neg (cv_fst (cv_snd (cv_snd cv0)))));
+                        cv4 =
+                          cv_round_scaled_one cv_s
+                            (cv_int_add cv1 (cv_int_neg cv2));
+                        cv5 = cv_round_scaled_one cv_s (cv_int_add cv1 cv3)
+                      in
+                        cv$Pair
+                          (cv$Pair (cv_int_add (cv_fst (cv_fst cv0)) cv4)
+                             (cv_int_add (cv_snd (cv_fst cv0)) cv5))
+                          (cv$Pair
+                             (cv_int_add (cv_fst (cv_fst cv0))
+                                (cv_int_neg cv4))
+                             (cv_int_add (cv_snd (cv_fst cv0))
+                                (cv_int_neg cv5)))) (cv$Num 0)) (cv$Num 0))
+               (cv$Num 0)) (cv$Num 0)) (cv$Num 0))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:definition
+CV_EQUATION_AST,rounded_butterfly_one:definition,(app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_s" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_v1" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_v0" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "cv_v" ":cv") (app (app (const "min$=" ":cv -> cv -> bool") (app (app (app (app (const "RoundSpecializationCV$cv_rounded_butterfly_one" ":cv -> cv -> cv -> cv -> cv") (var "cv_s" ":cv")) (var "cv_v1" ":cv")) (var "cv_v0" ":cv")) (var "cv_v" ":cv"))) (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv0" ":cv") (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "cv0" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv1" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv2" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv3" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv4" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv5" ":cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (var "cv4" ":cv"))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (var "cv5" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv4" ":cv")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv5" ":cv"))))))) (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "cv1" ":cv")) (var "cv3" ":cv")))))) (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "cv1" ":cv")) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv2" ":cv"))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "cv_v1" ":cv")) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "cv_v0" ":cv")) (var "cv_v" ":cv")))))))))))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:definition:rhs.fun.arg.body,(app (const "cv$cv_ispair" ":cv -> cv") (var "cv0" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:definition:rhs.fun.arg.body.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:definition:rhs.fun.arg.body.then.then.then.then:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:representation,oracles=DISK_THM,axioms=
+CV_REPRESENTATION_AST,rounded_butterfly_one,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (app (const "cv_type$from_pair" ":(int # int -> cv) -> (int # int -> cv) -> (int # int) # int # int -> cv") (app (app (const "cv_type$from_pair" ":(int -> cv) -> (int -> cv) -> int # int -> cv") (const "cv_type$from_int" ":int -> cv")) (const "cv_type$from_int" ":int -> cv"))) (app (app (const "cv_type$from_pair" ":(int -> cv) -> (int -> cv) -> int # int -> cv") (const "cv_type$from_int" ":int -> cv")) (const "cv_type$from_int" ":int -> cv"))) (app (app (app (app (const "RoundSpecialization$rounded_butterfly_one" ":int -> int # int -> int # int -> int # int -> (int # int) # int # int") (var "s" ":int")) (var "v1" ":int # int")) (var "v0" ":int # int")) (var "v" ":int # int")))) (app (app (app (app (const "RoundSpecializationCV$cv_rounded_butterfly_one" ":cv -> cv -> cv -> cv -> cv") (app (const "cv_type$from_int" ":int -> cv") (var "s" ":int"))) (app (app (app (const "cv_type$from_pair" ":(int -> cv) -> (int -> cv) -> int # int -> cv") (const "cv_type$from_int" ":int -> cv")) (const "cv_type$from_int" ":int -> cv")) (var "v1" ":int # int"))) (app (app (app (const "cv_type$from_pair" ":(int -> cv) -> (int -> cv) -> int # int -> cv") (const "cv_type$from_int" ":int -> cv")) (const "cv_type$from_int" ":int -> cv")) (var "v0" ":int # int"))) (app (app (app (const "cv_type$from_pair" ":(int -> cv) -> (int -> cv) -> int # int -> cv") (const "cv_type$from_int" ":int -> cv")) (const "cv_type$from_int" ":int -> cv")) (var "v" ":int # int"))))
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:0,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:0,cv_prim$cv_int_neg
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:0
+⊢ cv_int_neg x =
+  cv_if (cv_eq x (cv$Num 0)) x
+    (cv_if (cv_ispair x) (cv_fst x) (cv$Pair x (cv$Num 0)))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:0
+CV_EQUATION_AST,rounded_butterfly_one:reachable:0,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "x" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (var "x" ":cv")) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "x" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:0:rhs,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "x" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:0:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "x" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:0:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:1,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:1,RoundSpecializationCV$cv_positive_den_div_one
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:1
+⊢ cv_positive_den_div_one cv_n cv_d =
+  cv_if (cv_int_lt cv_n (cv$Num 0))
+    (cv_int_add
+       (cv_int_neg
+          (cv_div (cv_sub (cv_abs (cv_int_neg cv_n)) (cv$Num 1)) cv_d))
+       (cv_int_neg (cv$Num 1))) (cv_div (cv_abs cv_n) cv_d)
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:1
+CV_EQUATION_AST,rounded_butterfly_one:reachable:1,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (var "cv_n" ":cv")) (var "cv_d" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv_n" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (var "cv_d" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "cv_n" ":cv"))) (var "cv_d" ":cv"))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1,cv$cv_div,2
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:1:rhs,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "cv_n" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:1:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:2,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:2,cv_prim$cv_int_lt
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:2
+⊢ cv_int_lt i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv_lt (cv_abs j) (cv_abs i)) (cv$Num 1))
+    (cv_if (cv_ispair j) (cv$Num 0) (cv_lt i j))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:2
+CV_EQUATION_AST,rounded_butterfly_one:reachable:2,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "j" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:2:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:2:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:2:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:2:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:3,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:3,cv_prim$cv_int_add
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:3
+⊢ cv_int_add i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv$Pair (cv_add (cv_fst i) (cv_fst j)) (cv$Num 0))
+       (cv_if (cv_int_lt j (cv_fst i))
+          (cv$Pair (cv_sub (cv_fst i) j) (cv$Num 0)) (cv_sub j (cv_fst i))))
+    (cv_if (cv_ispair j)
+       (cv_if (cv_int_lt i (cv_fst j))
+          (cv$Pair (cv_sub (cv_fst j) i) (cv$Num 0)) (cv_sub i (cv_fst j)))
+       (cv_add i j))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:3
+CV_EQUATION_AST,rounded_butterfly_one:reachable:3,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))) (var "i" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))))) (app (app (const "cv$cv_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:3:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:3:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:3:rhs.then.else,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.then.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:3:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:3:rhs.else.then,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:3:rhs.else.then:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:4,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:4,cv_prim$cv_abs
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:4
+⊢ cv_abs i = cv_if (cv_ispair i) (cv_fst i) i
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:4
+CV_EQUATION_AST,rounded_butterfly_one:reachable:4,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:4:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:4:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:5,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:5,RoundSpecializationCV$cv_round_scaled_one
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:5
+⊢ cv_round_scaled_one cv_s cv_r =
+  cv_positive_den_div_one (cv_int_add (cv_int_mul (cv$Num 2) cv_r) cv_s)
+    (cv_abs (cv_int_mul (cv$Num 2) cv_s))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:5
+CV_EQUATION_AST,rounded_butterfly_one:reachable:5,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (var "cv_r" ":cv"))) (app (app (const "RoundSpecializationCV$cv_positive_den_div_one" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_r" ":cv"))) (var "cv_s" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT2" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (var "cv_s" ":cv")))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:5,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:5,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:5,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:5,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:6,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:6,cv_prim$cv_int_mul
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:6
+⊢ cv_int_mul i j =
+  cv_if (cv_eq i (cv$Num 0)) (cv$Num 0)
+    (cv_if (cv_eq j (cv$Num 0)) (cv$Num 0)
+       (cv_if (cv_ispair i)
+          (cv_if (cv_ispair j) (cv_mul (cv_fst i) (cv_fst j))
+             (cv$Pair (cv_mul (cv_fst i) j) (cv$Num 0)))
+          (cv_if (cv_ispair j) (cv$Pair (cv_mul i (cv_fst j)) (cv$Num 0))
+             (cv_mul i j))))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:6
+CV_EQUATION_AST,rounded_butterfly_one:reachable:6,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_mul" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:6:rhs,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:6:rhs.else,(app (app (const "cv$cv_eq" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:6:rhs.else.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:6:rhs.else.else.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:6:rhs.else.else.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:6:rhs.else.else.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,rounded_butterfly_one:reachable:7,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,rounded_butterfly_one:reachable:7,RoundSpecializationCV$cv_rounded_butterfly_one
+CV_EQUATION_TEXT_BEGIN,rounded_butterfly_one:reachable:7
+⊢ cv_rounded_butterfly_one cv_s cv_v1 cv_v0 cv_v =
+  (let
+     cv0 = cv$Pair cv_v1 (cv$Pair cv_v0 cv_v)
+   in
+     cv_if (cv_ispair cv0)
+       (cv_if (cv_ispair (cv_fst cv0))
+          (cv_if (cv_ispair (cv_snd cv0))
+             (cv_if (cv_ispair (cv_fst (cv_snd cv0)))
+                (cv_if (cv_ispair (cv_snd (cv_snd cv0)))
+                   (let
+                      cv1 =
+                        cv_int_mul (cv_fst (cv_snd (cv_snd cv0)))
+                          (cv_int_add (cv_fst (cv_fst (cv_snd cv0)))
+                             (cv_snd (cv_fst (cv_snd cv0))));
+                      cv2 =
+                        cv_int_mul (cv_snd (cv_fst (cv_snd cv0)))
+                          (cv_int_add (cv_fst (cv_snd (cv_snd cv0)))
+                             (cv_snd (cv_snd (cv_snd cv0))));
+                      cv3 =
+                        cv_int_mul (cv_fst (cv_fst (cv_snd cv0)))
+                          (cv_int_add (cv_snd (cv_snd (cv_snd cv0)))
+                             (cv_int_neg (cv_fst (cv_snd (cv_snd cv0)))));
+                      cv4 =
+                        cv_round_scaled_one cv_s
+                          (cv_int_add cv1 (cv_int_neg cv2));
+                      cv5 = cv_round_scaled_one cv_s (cv_int_add cv1 cv3)
+                    in
+                      cv$Pair
+                        (cv$Pair (cv_int_add (cv_fst (cv_fst cv0)) cv4)
+                           (cv_int_add (cv_snd (cv_fst cv0)) cv5))
+                        (cv$Pair
+                           (cv_int_add (cv_fst (cv_fst cv0)) (cv_int_neg cv4))
+                           (cv_int_add (cv_snd (cv_fst cv0)) (cv_int_neg cv5))))
+                   (cv$Num 0)) (cv$Num 0)) (cv$Num 0)) (cv$Num 0)) (cv$Num 0))
+CV_EQUATION_TEXT_END,rounded_butterfly_one:reachable:7
+CV_EQUATION_AST,rounded_butterfly_one:reachable:7,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (app (app (const "RoundSpecializationCV$cv_rounded_butterfly_one" ":cv -> cv -> cv -> cv -> cv") (var "cv_s" ":cv")) (var "cv_v1" ":cv")) (var "cv_v0" ":cv")) (var "cv_v" ":cv"))) (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv0" ":cv") (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "cv0" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv1" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv2" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv3" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv4" ":cv") (app (app (const "bool$LET" ":(cv -> cv) -> cv -> cv") (abs (var "cv5" ":cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (var "cv4" ":cv"))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (var "cv5" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv4" ":cv")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv5" ":cv"))))))) (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "cv1" ":cv")) (var "cv3" ":cv")))))) (app (app (const "RoundSpecializationCV$cv_round_scaled_one" ":cv -> cv -> cv") (var "cv_s" ":cv")) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "cv1" ":cv")) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (var "cv2" ":cv"))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv_prim$cv_int_neg" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))))))) (app (app (const "cv_prim$cv_int_mul" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))) (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "cv_v1" ":cv")) (app (app (const "cv$Pair" ":cv -> cv -> cv") (var "cv_v0" ":cv")) (var "cv_v" ":cv")))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:7:rhs.fun.arg.body,(app (const "cv$cv_ispair" ":cv -> cv") (var "cv0" ":cv"))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "cv0" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv")))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then,(app (const "cv$cv_ispair" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (app (const "cv$cv_snd" ":cv -> cv") (var "cv0" ":cv"))))
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,rounded_butterfly_one:reachable:7:rhs.fun.arg.body.then.then.then.then:else,cv_prim$cv_total_int_div,0
+CV_CLOSURE_EQUATIONS,rounded_butterfly_one,8
+CV_CLOSURE_SYNTACTIC_COUNT,rounded_butterfly_one,cv$cv_div,2
+CV_CLOSURE_SYNTACTIC_COUNT,rounded_butterfly_one,cv$cv_mod,0
+CV_CLOSURE_SYNTACTIC_COUNT,rounded_butterfly_one,cv_prim$cv_int_div,0
+CV_CLOSURE_SYNTACTIC_COUNT,rounded_butterfly_one,cv_prim$cv_total_int_div,0
+CV_INSPECTION_CASE_DONE,rounded_butterfly_one
+CV_IMPORTED_TAG,stock_int_div:definition,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,stock_int_div:definition,cv_prim$cv_int_div
+CV_EQUATION_TEXT_BEGIN,stock_int_div:definition
+⊢ ∀i j.
+    cv_int_div i j =
+    cv_if (cv_ispair j)
+      (cv_if (cv_ispair i) (cv_div (cv_fst i) (cv_fst j))
+         (cv_int_add (cv$Pair (cv_div i (cv_fst j)) (cv$Num 0))
+            (cv_if (cv_mod i (cv_fst j)) (cv$Pair (cv$Num 1) (cv$Num 0))
+               (cv$Num 0))))
+      (cv_if (cv_ispair i)
+         (cv_int_add (cv$Pair (cv_div (cv_fst i) j) (cv$Num 0))
+            (cv_if (cv_mod (cv_fst i) j) (cv$Pair (cv$Num 1) (cv$Num 0))
+               (cv$Num 0))) (cv_div i j))
+CV_EQUATION_TEXT_END,stock_int_div:definition
+CV_EQUATION_AST,stock_int_div:definition,(app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "i" ":cv") (app (const "bool$!" ":(cv -> bool) -> bool") (abs (var "j" ":cv") (app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_div" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_mod" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_mod" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))))))
+CV_SYNTACTIC_COUNT,stock_int_div:definition,cv$cv_div,4
+CV_SYNTACTIC_COUNT,stock_int_div:definition,cv$cv_mod,2
+CV_SYNTACTIC_COUNT,stock_int_div:definition,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:definition:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:then,cv$cv_div,2
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:then,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:else,cv$cv_div,2
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:else,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:definition:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:else,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:definition:rhs.then.else.arg,(app (app (const "cv$cv_mod" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.then.else.arg:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:definition:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:then,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:definition:rhs.else.then.arg,(app (app (const "cv$cv_mod" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:definition:rhs.else.then.arg:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,stock_int_div:representation,oracles=DISK_THM,axioms=
+CV_REPRESENTATION_AST,stock_int_div,(app (app (const "min$==>" ":bool -> bool -> bool") (app (const "bool$~" ":bool -> bool") (app (app (const "min$=" ":int -> int -> bool") (var "j" ":int")) (app (const "integer$int_of_num" ":num -> int") (const "num$0" ":num"))))) (app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_type$from_int" ":int -> cv") (app (app (const "integer$int_div" ":int -> int -> int") (var "i" ":int")) (var "j" ":int")))) (app (app (const "cv_prim$cv_int_div" ":cv -> cv -> cv") (app (const "cv_type$from_int" ":int -> cv") (var "i" ":int"))) (app (const "cv_type$from_int" ":int -> cv") (var "j" ":int")))))
+CV_IMPORTED_TAG,stock_int_div:reachable:0,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,stock_int_div:reachable:0,cv_prim$cv_abs
+CV_EQUATION_TEXT_BEGIN,stock_int_div:reachable:0
+⊢ cv_abs i = cv_if (cv_ispair i) (cv_fst i) i
+CV_EQUATION_TEXT_END,stock_int_div:reachable:0
+CV_EQUATION_AST,stock_int_div:reachable:0,(app (app (const "min$=" ":cv -> cv -> bool") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:0:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:0:rhs:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,stock_int_div:reachable:1,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,stock_int_div:reachable:1,cv_prim$cv_int_lt
+CV_EQUATION_TEXT_BEGIN,stock_int_div:reachable:1
+⊢ cv_int_lt i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv_lt (cv_abs j) (cv_abs i)) (cv$Num 1))
+    (cv_if (cv_ispair j) (cv$Num 0) (cv_lt i j))
+CV_EQUATION_TEXT_END,stock_int_div:reachable:1
+CV_EQUATION_AST,stock_int_div:reachable:1,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (app (const "cv_prim$cv_abs" ":cv -> cv") (var "j" ":cv"))) (app (const "cv_prim$cv_abs" ":cv -> cv") (var "i" ":cv")))) (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))) (app (app (const "cv$cv_lt" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:1:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:1:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:1:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:1:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,stock_int_div:reachable:2,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,stock_int_div:reachable:2,cv_prim$cv_int_add
+CV_EQUATION_TEXT_BEGIN,stock_int_div:reachable:2
+⊢ cv_int_add i j =
+  cv_if (cv_ispair i)
+    (cv_if (cv_ispair j) (cv$Pair (cv_add (cv_fst i) (cv_fst j)) (cv$Num 0))
+       (cv_if (cv_int_lt j (cv_fst i))
+          (cv$Pair (cv_sub (cv_fst i) j) (cv$Num 0)) (cv_sub j (cv_fst i))))
+    (cv_if (cv_ispair j)
+       (cv_if (cv_int_lt i (cv_fst j))
+          (cv$Pair (cv_sub (cv_fst j) i) (cv$Num 0)) (cv_sub i (cv_fst j)))
+       (cv_add i j))
+CV_EQUATION_TEXT_END,stock_int_div:reachable:2
+CV_EQUATION_AST,stock_int_div:reachable:2,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_add" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))) (var "i" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (const "cv$cv_sub" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv"))))) (app (app (const "cv$cv_add" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:2:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:2:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:2:rhs.then.else,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "j" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv")))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.then.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:2:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:2:rhs.else.then,(app (app (const "cv_prim$cv_int_lt" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:2:rhs.else.then:else,cv_prim$cv_total_int_div,0
+CV_IMPORTED_TAG,stock_int_div:reachable:3,oracles=DISK_THM,axioms=
+CV_EQUATION_HEAD,stock_int_div:reachable:3,cv_prim$cv_int_div
+CV_EQUATION_TEXT_BEGIN,stock_int_div:reachable:3
+⊢ cv_int_div i j =
+  cv_if (cv_ispair j)
+    (cv_if (cv_ispair i) (cv_div (cv_fst i) (cv_fst j))
+       (cv_int_add (cv$Pair (cv_div i (cv_fst j)) (cv$Num 0))
+          (cv_if (cv_mod i (cv_fst j)) (cv$Pair (cv$Num 1) (cv$Num 0))
+             (cv$Num 0))))
+    (cv_if (cv_ispair i)
+       (cv_int_add (cv$Pair (cv_div (cv_fst i) j) (cv$Num 0))
+          (cv_if (cv_mod (cv_fst i) j) (cv$Pair (cv$Num 1) (cv$Num 0))
+             (cv$Num 0))) (cv_div i j))
+CV_EQUATION_TEXT_END,stock_int_div:reachable:3
+CV_EQUATION_AST,stock_int_div:reachable:3,(app (app (const "min$=" ":cv -> cv -> bool") (app (app (const "cv_prim$cv_int_div" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_mod" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))) (app (app (const "cv_prim$cv_int_add" ":cv -> cv -> cv") (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (app (const "cv$cv_div" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (app (app (const "cv$cv_if" ":cv -> cv -> cv -> cv") (app (app (const "cv$cv_mod" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))) (app (app (const "cv$Pair" ":cv -> cv -> cv") (app (const "cv$Num" ":num -> cv") (app (const "arithmetic$NUMERAL" ":num -> num") (app (const "arithmetic$BIT1" ":num -> num") (const "arithmetic$ZERO" ":num"))))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num")))) (app (const "cv$Num" ":num -> cv") (const "num$0" ":num"))))) (app (app (const "cv$cv_div" ":cv -> cv -> cv") (var "i" ":cv")) (var "j" ":cv")))))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3,cv$cv_div,4
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3,cv$cv_mod,2
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:3:rhs,(app (const "cv$cv_ispair" ":cv -> cv") (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:then,cv$cv_div,2
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:then,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:else,cv$cv_div,2
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:else,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:3:rhs.then,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:else,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:3:rhs.then.else.arg,(app (app (const "cv$cv_mod" ":cv -> cv -> cv") (var "i" ":cv")) (app (const "cv$cv_fst" ":cv -> cv") (var "j" ":cv")))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.then.else.arg:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:3:rhs.else,(app (const "cv$cv_ispair" ":cv -> cv") (var "i" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:then,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:then,cv$cv_mod,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:else,cv$cv_div,1
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else:else,cv_prim$cv_total_int_div,0
+CV_IF_CONDITION_AST,stock_int_div:reachable:3:rhs.else.then.arg,(app (app (const "cv$cv_mod" ":cv -> cv -> cv") (app (const "cv$cv_fst" ":cv -> cv") (var "i" ":cv"))) (var "j" ":cv"))
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:then,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:then,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:then,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:then,cv_prim$cv_total_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:else,cv$cv_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:else,cv$cv_mod,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:else,cv_prim$cv_int_div,0
+CV_SYNTACTIC_COUNT,stock_int_div:reachable:3:rhs.else.then.arg:else,cv_prim$cv_total_int_div,0
+CV_CLOSURE_EQUATIONS,stock_int_div,4
+CV_CLOSURE_SYNTACTIC_COUNT,stock_int_div,cv$cv_div,4
+CV_CLOSURE_SYNTACTIC_COUNT,stock_int_div,cv$cv_mod,2
+CV_CLOSURE_SYNTACTIC_COUNT,stock_int_div,cv_prim$cv_int_div,0
+CV_CLOSURE_SYNTACTIC_COUNT,stock_int_div,cv_prim$cv_total_int_div,0
+CV_INSPECTION_CASE_DONE,stock_int_div
+CV_INSPECTION_SCOPE,syntactic occurrences per stored equation; not dynamic calls or timings
+HOL4_ROUND_CV_INSPECTION_DONE

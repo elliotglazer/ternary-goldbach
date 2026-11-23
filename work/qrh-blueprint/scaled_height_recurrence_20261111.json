@@ -1,0 +1,81 @@
+{
+  "status": "PASS_EXACT_SCALARS_AND_COUNTS_NO_FUNCTION_VALUES",
+  "pins": {
+    "integration/SHARED_HURWITZ_EM_SEED_CIRCUIT_2026-11-11.md": "1E1D5099D398EE978D635729873F4D3941BC186BD91D086198B39962DF8E564E",
+    "integration/REVIEW_SCALED_HURWITZ_EM_SEED_PRECISION_2026-11-11.md": "043E2E1630B19EC8EED9496FAA5D9AE6AF9C20944F7F2F5589B48E5A119C4F26",
+    "moebius/ELEMENTARY_HURWITZ_LEAF_BASELINE_2026-11-11.md": "0541F20C55B843683E3C496F8AEA63036A8A7AAF55A49C4F2B97ACC3FAC17C9D",
+    "integration/REVIEW_ELEMENTARY_HURWITZ_LEAF_BASELINE_2026-11-11.md": "11EA2E715600A6F7E3A3646A64C21F645FB89038B915BF24A01C13D2AC4566DA",
+    "zero-sum/GRID_ELEMENTARY_ANCHOR_REUSE_2026-11-11.md": "E564A8DDEC5F0AD69F5CF22DFC89147F81EA165B6E6D17B4CF0EFB0EEA3824AF",
+    "independent-feasibility/REVIEW_GRID_ELEMENTARY_ANCHOR_REUSE_2026-11-11.md": "335D5B97A2071E9AFBEFF363C9FA4542CB974B8EB4D0F66B33A4E4FCECC17A29"
+  },
+  "bands": [
+    {
+      "V": 500,
+      "D": 512,
+      "N": 220,
+      "heights": 6401,
+      "first_j": 0,
+      "last_j": 6400,
+      "points": 113153,
+      "introduced": 113153,
+      "updates": 724179200
+    },
+    {
+      "V": 1000,
+      "D": 1024,
+      "N": 387,
+      "heights": 6400,
+      "first_j": 6401,
+      "last_j": 12800,
+      "points": 397313,
+      "introduced": 284160,
+      "updates": 2542519040
+    },
+    {
+      "V": 2000,
+      "D": 2048,
+      "N": 720,
+      "heights": 12800,
+      "first_j": 12801,
+      "last_j": 25600,
+      "points": 1476609,
+      "introduced": 1079296,
+      "updates": 18899515904
+    },
+    {
+      "V": 5000,
+      "D": 4096,
+      "N": 1720,
+      "heights": 38400,
+      "first_j": 25601,
+      "last_j": 64000,
+      "points": 7049217,
+      "introduced": 5572608,
+      "updates": 270684360192
+    },
+    {
+      "V": 10000,
+      "D": 8192,
+      "N": 3387,
+      "heights": 63988,
+      "first_j": 64001,
+      "last_j": 127988,
+      "points": 27754497,
+      "introduced": 20705280,
+      "updates": 1775934048756
+    }
+  ],
+  "delta_bits": 118,
+  "recurrence_error_bound_over_delta": "701/1024",
+  "step_error_upper_over_eps": "517/1024",
+  "unique_arguments": 27754497,
+  "height_argument_pairs": 2068812377589,
+  "initializations": 27754497,
+  "step_phase_certificates": 27754497,
+  "recurrence_updates": 2068784623092,
+  "em_grid_conversions": 2068812377589,
+  "raw_state_and_step_bytes_at_144_signed_bits_per_coordinate": 1998323784,
+  "log_degree_at_144_bits": 21,
+  "log_nonanchor_horner_stages": 582822471,
+  "script_sha256": "F9A4A552EFAD7CE139D4E61D9378E40A9B0138CE8CB2CBB03848DAAE23D9AB3F"
+}

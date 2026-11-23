@@ -1,0 +1,60 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:74:13: error: Type mismatch
+  add_le_add_right (hstep N k) ?m.372
+has type
+  ?m.372 + ‖a (N + 1) k - (1 + z / ↑(k + 1) * a N (k + 1))‖ ≤ ?m.372 + δ
+but is expected to have type
+  ‖a (N + 1) k - (1 + z / ↑(k + 1) * a N (k + 1))‖ + ‖z / ↑(k + 1)‖ * ‖a N (k + 1) - expHorner z N (k + 1)‖ ≤
+    δ + ‖z / ↑(k + 1)‖ * ‖a N (k + 1) - expHorner z N (k + 1)‖
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:87:6: error: Tactic `apply` failed: could not unify the conclusion of `div_le_div₀ (norm_nonneg z) ?m.136 ?m.137`
+  ?m.130 / ?m.131 ≤ ‖z‖ / ?m.133
+with the goal
+  ‖z‖ / ↑(k + 1) ≤ 4 / 5
+
+Note: The full type of `div_le_div₀ (norm_nonneg z) ?m.136 ?m.137` is
+  ?m.133 ≤ ?m.131 → ?m.130 / ?m.131 ≤ ‖z‖ / ?m.133
+
+z : ℂ
+a : ℕ → ℕ → ℂ
+δ : ℝ
+hz : ‖z‖ ≤ 4
+hδ : 0 ≤ δ
+hzero : ∀ (k : ℕ), a 0 k = 1
+hstep : ∀ (N k : ℕ), ‖a (N + 1) k - (1 + z / ↑(k + 1) * a N (k + 1))‖ ≤ δ
+N : ℕ
+ih : ∀ (k : ℕ), 4 ≤ k → ‖a N k - expHorner z N k‖ ≤ 5 * δ
+k : ℕ
+hk : 4 ≤ k
+⊢ ‖z‖ / ↑(k + 1) ≤ 4 / 5
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:87:44: error: unsolved goals
+z : ℂ
+a : ℕ → ℕ → ℂ
+δ : ℝ
+hz : ‖z‖ ≤ 4
+hδ : 0 ≤ δ
+hzero : ∀ (k : ℕ), a 0 k = 1
+hstep : ∀ (N k : ℕ), ‖a (N + 1) k - (1 + z / ↑(k + 1) * a N (k + 1))‖ ≤ δ
+N : ℕ
+ih : ∀ (k : ℕ), 4 ≤ k → ‖a N k - expHorner z N k‖ ≤ 5 * δ
+k : ℕ
+hk : 4 ≤ k
+⊢ 0 < ?m.133
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:87:40: error: Application type mismatch: The argument
+  hz
+has type
+  ‖z‖ ≤ 4
+but is expected to have type
+  ?m.130 ≤ ‖z‖
+in the application
+  div_le_div₀ (norm_nonneg z) hz
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:115:8: error: Type mismatch
+  add_le_add_left (mul_le_mul hc (hchild N) (norm_nonneg (a N (k + 1) - expHorner z N (k + 1))) hC) δ
+has type
+  ‖z / ↑(k + 1)‖ * ‖a N (k + 1) - expHorner z N (k + 1)‖ + δ ≤ C * (B * δ) + δ
+but is expected to have type
+  δ + ‖z / ↑(k + 1)‖ * ‖a N (k + 1) - expHorner z N (k + 1)‖ ≤ δ + C * (B * δ)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawExpHorner.lean:135:4: error: Type mismatch: After simplification, term
+  expHorner_factor_le hz 1
+ has type
+  ‖z‖ / 2 ≤ 4 / 2
+but is expected to have type
+  ‖z‖ / 2 ≤ 2

@@ -1,0 +1,110 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_METADATA",
+  "checks": 4478,
+  "pins": {
+    "zero-sum/GRID_ELEMENTARY_ANCHOR_REUSE_2026-11-11.md": "E564A8DDEC5F0AD69F5CF22DFC89147F81EA165B6E6D17B4CF0EFB0EEA3824AF",
+    "zero-sum/grid_elementary_anchor_metadata_20261111.py": "10AB9F92831A32605FD89F37C9BBD385A9B580D53B382D22D7F0FC72D7B1DC54",
+    "zero-sum/grid_elementary_anchor_metadata_20261111.json": "3F9CDE0D49019291509B8382133085CCD6B02F9E496D17C1CB70A4F4C01AABED",
+    "integration/SHARED_HURWITZ_EM_SEED_CIRCUIT_2026-11-11.md": "1E1D5099D398EE978D635729873F4D3941BC186BD91D086198B39962DF8E564E",
+    "major-constants/FINITE_EM_INNER_ROUNDING_ALLOCATION_2026-11-11.md": "60B4BC4414A75B90BF036E0CBA2CAB6F12C270CF7DE1F45C767341D872D383E9",
+    "zero-sum/REVIEW_FINITE_EM_INNER_ROUNDING_ALLOCATION_2026-11-11.md": "E2AFC3467382506F4D68CDB9E7AA0307C911B0F2195032E505C4EC8E69D6401B",
+    "prime-estimates/SCALED_HURWITZ_EM_SEED_PRECISION_2026-11-11.md": "251B95AE92B6277C0B14C69F3CFE697F3100FD27C2D7963E4B42676FF4DAB231"
+  },
+  "grids": [
+    {
+      "D": 8192,
+      "total_points": 27754497,
+      "anchor_count": 1046,
+      "nonanchor_points": 27753451,
+      "max_block_points": 214438,
+      "denominator_bound": 27762688,
+      "denominator_bits": 25,
+      "first_blocks": [
+        [
+          8192,
+          64
+        ],
+        [
+          8256,
+          64
+        ],
+        [
+          8320,
+          65
+        ]
+      ],
+      "last_blocks": [
+        [
+          27235322,
+          212775
+        ],
+        [
+          27448097,
+          214438
+        ],
+        [
+          27662535,
+          100154
+        ]
+      ],
+      "anchor_plan_sha256": "72954bc78ffd20770771f8e17217732d40ca65549891d47b6e26a37867862fd9",
+      "degree19_horner_stages_per_function": 527315569,
+      "degree17_horner_stages_per_function": 471808667,
+      "degree19_amplitude_coefficient_slots": 20920,
+      "degree17_amplitude_coefficient_slots": 18828,
+      "all_log135_and_amplitude121_stages": 999124236,
+      "fixed64_anchor_count": 433665,
+      "log135_raw_denominator_bit_cap": 170,
+      "amplitude121_raw_denominator_bit_cap": 151
+    },
+    {
+      "D": 16384,
+      "total_points": 55508993,
+      "anchor_count": 1045,
+      "nonanchor_points": 55507948,
+      "max_block_points": 427281,
+      "denominator_bound": 55525376,
+      "denominator_bits": 26,
+      "first_blocks": [
+        [
+          16384,
+          128
+        ],
+        [
+          16512,
+          129
+        ],
+        [
+          16641,
+          130
+        ]
+      ],
+      "last_blocks": [
+        [
+          54268035,
+          423969
+        ],
+        [
+          54692004,
+          427281
+        ],
+        [
+          55119285,
+          406092
+        ]
+      ],
+      "anchor_plan_sha256": "32cbba133b971ba40569c0cbfbba0c8b2086b53dc626e6e0770890fe0ff0843c",
+      "degree19_horner_stages_per_function": 1054651012,
+      "degree17_horner_stages_per_function": 943635116,
+      "degree19_amplitude_coefficient_slots": 20900,
+      "degree17_amplitude_coefficient_slots": 18810,
+      "all_log135_and_amplitude121_stages": 1998286128,
+      "fixed64_anchor_count": 867329,
+      "log135_raw_denominator_bit_cap": 171,
+      "amplitude121_raw_denominator_bit_cap": 152
+    }
+  ],
+  "log_error_fraction": "9/16",
+  "amplitude_error_fraction": "21/32",
+  "scope": "Integer partitions, rational tails, counts, denominator caps and direct scaled-leaf allocation only; no elementary values."
+}

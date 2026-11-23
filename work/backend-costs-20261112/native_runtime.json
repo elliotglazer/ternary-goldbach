@@ -1,0 +1,56 @@
+{
+  "proof_acceptance": false,
+  "rows": [
+    {
+      "repetitions": 1000,
+      "bound_multiple": 1024,
+      "accepted": 1000,
+      "inner_ns": 321373100,
+      "wall_seconds": 0.46545550000155345,
+      "ns_per_stage": 321373.1,
+      "ns_per_butterfly": 5021.4546875
+    },
+    {
+      "repetitions": 10000,
+      "bound_multiple": 1024,
+      "accepted": 10000,
+      "inner_ns": 3179350700,
+      "wall_seconds": 3.2154980000050273,
+      "ns_per_stage": 317935.07,
+      "ns_per_butterfly": 4967.73546875
+    },
+    {
+      "repetitions": 10000,
+      "bound_multiple": 1024,
+      "accepted": 10000,
+      "inner_ns": 3835937000,
+      "wall_seconds": 3.8693716999841854,
+      "ns_per_stage": 383593.7,
+      "ns_per_butterfly": 5993.6515625
+    },
+    {
+      "repetitions": 10000,
+      "bound_multiple": 1024,
+      "accepted": 10000,
+      "inner_ns": 3175497100,
+      "wall_seconds": 3.210324399988167,
+      "ns_per_stage": 317549.71,
+      "ns_per_butterfly": 4961.71421875
+    },
+    {
+      "repetitions": 1000,
+      "bound_multiple": 0,
+      "accepted": 0,
+      "inner_ns": 1359400,
+      "wall_seconds": 0.03838700000778772,
+      "ns_per_stage": 1359.4,
+      "ns_per_butterfly": 21.240625
+    }
+  ],
+  "artifact_sha256": {
+    "NativeBaseline.lean": "94a4a0c9e56a51ffe065136b872f7f3aee10337032d7fff1359120b6885cb0e7",
+    "NativeBaseline.c": "772b153891f5f162781f5bcfc69562c6289ca01eee3715a02363f97ae8f0c2b1",
+    "NativeBaseline.exe": "9504134ad92e3b3815a740c8a3396198aad8b149afa608a174c6fdf1d5e5be1a"
+  },
+  "median_ns_per_stage": 317935.07
+}

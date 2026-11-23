@@ -1,0 +1,29 @@
+{
+  "scope": "Independent internal exact-type and transitive axiom probe; not public-anchor adoption",
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-j",
+    "1",
+    "-t",
+    "0",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\audit\\BinarySemanticProbe.lean"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 16.75637970000389,
+  "source_pins": {
+    "BinaryPilot.lean": "FF3C1F408E1E83C368DEF8788686731BD9A5323AFB0E6A40CE98837946FABEFD",
+    "BinarySupport.lean": "690E5341CA663D37B93DDD3FAF37C115B80D0666A610D6D593AB3A629918F669",
+    "PilotPrimes.lean": "6575142C02AFC8158631D43EB3C1CECB56AA8F690A13964A9A6338CBE7D7DE79"
+  },
+  "olean_pins": {
+    "BinaryPilot.olean": "6D8410A0EE3EF7CF03D53F40E85A940DD69833553245875EE59423E83AAE208B",
+    "BinarySupport.olean": "BFCFEFB7108CCB22A7FC91273CBDAAB235DD797D822BBEB3223B146939FD3DE3",
+    "PilotPrimes.olean": "0AE1DF9DD4B0DFCAE06F0AB75074E1326868CEE81DB10B9C5AC14627561154B8"
+  },
+  "probe_text": "import BinaryPilot\n\nexample : \u2200 n : Nat,\n    3999999997356523524 \u2264 n \u2192 n \u2264 3999999997356523650 \u2192\n    Even n \u2192 \u2203 p q : Nat, Nat.Prime p \u2227 Nat.Prime q \u2227 n = p + q :=\n  BinaryPilot.binary_interval\n\n#check BinaryPilot.binary_interval\n#print axioms BinaryPilot.binary_interval\n#print axioms BinaryPilot.lucasNat\n#print axioms BinaryPilot.source_0_sound\n#print axioms BinaryPilot.prime_3999999988766605261\n",
+  "probe_sha256": "590C1D742C8D43E845895295ADE9422521210CC1A63412C0263AB4277F8934F4",
+  "log_sha256": "E34A28FB613EF6521F17514CE293007E5A3797FB96F3C29149E41504FBB0FA12",
+  "script_sha256": "C21FF5F69870954FBB20733EA2CD33CC0DD2DB4428F40D6CD9EF454B54A9B456",
+  "lean_executable_sha256": "EC7A472D1C12A09B0C0C718F7427C2BE527B3F5F07810FDBE076C2507C7A91EA",
+  "temporary_probe_deleted": true
+}

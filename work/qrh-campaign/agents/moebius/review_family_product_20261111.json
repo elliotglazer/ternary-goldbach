@@ -1,0 +1,93 @@
+{
+  "status": "PASS_INDEPENDENT_SYNTHETIC_PRODUCT_ALGEBRA",
+  "producer_pins": {
+    "FAMILY_PRODUCT_CERTIFICATION_FEASIBILITY_2026-11-11.md": "B701615E4D93727BF7A2C290C41F94EDEB40C0E9FE2BCFAB4A725CB6AC4B8973",
+    "family_product_certificate_checks_20261111.py": "3F877AE40F2D89ABFC45E8981CBC8696149233D8909BC9146992A7EAE1B1A6C0",
+    "family_product_certificate_checks_20261111.json": "68FAA891D5954CAC21D5460583578513083D0515459C2DF5F140A047A7B3401E"
+  },
+  "rows": [
+    {
+      "c": 5,
+      "primitive_rank": 3,
+      "projector": {
+        "1": [
+          "3/4",
+          "0"
+        ],
+        "2": [
+          "-1/4",
+          "0"
+        ],
+        "3": [
+          "-1/4",
+          "0"
+        ],
+        "4": [
+          "-1/4",
+          "0"
+        ]
+      },
+      "nontrivial_compressed_determinant": [
+        "0",
+        "0"
+      ],
+      "moment_checks": [
+        {
+          "k": 1,
+          "exact_moment": "82824215/27873846"
+        },
+        {
+          "k": 2,
+          "exact_moment": "555064916882952997/188022212381275272"
+        },
+        {
+          "k": 3,
+          "exact_moment": "89898977643092313438947/30559196457696561022368"
+        }
+      ]
+    },
+    {
+      "c": 8,
+      "primitive_rank": 2,
+      "projector": {
+        "1": [
+          "1/2",
+          "0"
+        ],
+        "3": [
+          "0",
+          "0"
+        ],
+        "5": [
+          "-1/2",
+          "0"
+        ],
+        "7": [
+          "0",
+          "0"
+        ]
+      },
+      "nontrivial_compressed_determinant": [
+        "0",
+        "0"
+      ],
+      "moment_checks": [
+        {
+          "k": 1,
+          "exact_moment": "66960503066/37560007485"
+        },
+        {
+          "k": 2,
+          "exact_moment": "2275143302681656552786/1410754162273256025225"
+        },
+        {
+          "k": 3,
+          "exact_moment": "78401405997319969168607598017066/52987936894478400922772348809125"
+        }
+      ]
+    }
+  ],
+  "half_residual_k9": "149991/262144",
+  "two_thirds_residual_k16": "214735479898112/617673396283947",
+  "scope": "Nontrivial rational-complex synthetic convolution arrays only; no spectral evidence"
+}

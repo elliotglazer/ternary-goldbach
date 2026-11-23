@@ -1,0 +1,300 @@
+{
+  "schema": "mixture-root-cost-screen-1",
+  "scope": "Integer/rational composition of frozen model enclosures; no analytic evaluation or measured forecast.",
+  "reference_height": "3000175332800",
+  "common_height": "100000000",
+  "reference_core_seconds": "27000000000",
+  "K_B2e16": "90804183483",
+  "inputs": {
+    "height_model_json": "4752D2D6F4E46B930C86B16EF0280CC9406C3D851B342930B25CCBD197D26741",
+    "previous_screen_json": "2F25C3D1F3F8CB54BAA74170ECDAEC84E9A68F7411DB732325B00A3E480E48C4"
+  },
+  "mixture_rows": [
+    {
+      "Q": "1",
+      "r_ppm": [
+        "115737",
+        "115738"
+      ],
+      "coefficient_only_us": [
+        "457",
+        "458"
+      ],
+      "half_share_us": [
+        "2206",
+        "2207"
+      ],
+      "linear_us": [
+        "3954",
+        "3955"
+      ]
+    },
+    {
+      "Q": "2",
+      "r_ppm": [
+        "163486",
+        "163487"
+      ],
+      "coefficient_only_us": [
+        "1294",
+        "1295"
+      ],
+      "half_share_us": [
+        "4606",
+        "4607"
+      ],
+      "linear_us": [
+        "7918",
+        "7919"
+      ]
+    },
+    {
+      "Q": "4",
+      "r_ppm": [
+        "231066",
+        "231067"
+      ],
+      "coefficient_only_us": [
+        "3661",
+        "3662"
+      ],
+      "half_share_us": [
+        "9754",
+        "9755"
+      ],
+      "linear_us": [
+        "15847",
+        "15848"
+      ]
+    },
+    {
+      "Q": "8",
+      "r_ppm": [
+        "326678",
+        "326679"
+      ],
+      "coefficient_only_us": [
+        "10357",
+        "10358"
+      ],
+      "half_share_us": [
+        "21031",
+        "21032"
+      ],
+      "linear_us": [
+        "31704",
+        "31705"
+      ]
+    },
+    {
+      "Q": "16",
+      "r_ppm": [
+        "461922",
+        "461923"
+      ],
+      "coefficient_only_us": [
+        "29294",
+        "29295"
+      ],
+      "half_share_us": [
+        "46357",
+        "46358"
+      ],
+      "linear_us": [
+        "63419",
+        "63420"
+      ]
+    },
+    {
+      "Q": "32",
+      "r_ppm": [
+        "653207",
+        "653208"
+      ],
+      "coefficient_only_us": [
+        "82858",
+        "82859"
+      ],
+      "half_share_us": [
+        "104853",
+        "104854"
+      ],
+      "linear_us": [
+        "126849",
+        "126850"
+      ]
+    },
+    {
+      "Q": "47",
+      "r_ppm": [
+        "791615",
+        "791616"
+      ],
+      "coefficient_only_us": [
+        "147489",
+        "147490"
+      ],
+      "half_share_us": [
+        "166901",
+        "166902"
+      ],
+      "linear_us": [
+        "186314",
+        "186315"
+      ]
+    }
+  ],
+  "binary_slopes": [
+    {
+      "Q": "1",
+      "extra_even": "277736465240000003",
+      "us_per_rung_per_ns_extra_even": [
+        "3058",
+        "3059"
+      ]
+    },
+    {
+      "Q": "2",
+      "extra_even": "135814094405000003",
+      "us_per_rung_per_ns_extra_even": [
+        "1495",
+        "1496"
+      ]
+    },
+    {
+      "Q": "4",
+      "extra_even": "64852908987500003",
+      "us_per_rung_per_ns_extra_even": [
+        "714",
+        "715"
+      ]
+    },
+    {
+      "Q": "8",
+      "extra_even": "29372316278750003",
+      "us_per_rung_per_ns_extra_even": [
+        "323",
+        "324"
+      ]
+    },
+    {
+      "Q": "16",
+      "extra_even": "11632019924375003",
+      "us_per_rung_per_ns_extra_even": [
+        "128",
+        "129"
+      ]
+    },
+    {
+      "Q": "32",
+      "extra_even": "2761871747187503",
+      "us_per_rung_per_ns_extra_even": [
+        "30",
+        "31"
+      ]
+    },
+    {
+      "Q": "47",
+      "extra_even": "0",
+      "us_per_rung_per_ns_extra_even": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "pair_switches": [
+    {
+      "Q_from": "1",
+      "Q_to": "2",
+      "removed_even": "141922370835000000",
+      "coefficient_only_ns_interval_milli": [
+        "535",
+        "536"
+      ],
+      "linear_ns_interval_milli": [
+        "2536",
+        "2537"
+      ]
+    },
+    {
+      "Q_from": "2",
+      "Q_to": "4",
+      "removed_even": "70961185417500000",
+      "coefficient_only_ns_interval_milli": [
+        "3029",
+        "3030"
+      ],
+      "linear_ns_interval_milli": [
+        "10145",
+        "10146"
+      ]
+    },
+    {
+      "Q_from": "4",
+      "Q_to": "8",
+      "removed_even": "35480592708750000",
+      "coefficient_only_ns_interval_milli": [
+        "17135",
+        "17136"
+      ],
+      "linear_ns_interval_milli": [
+        "40583",
+        "40584"
+      ]
+    },
+    {
+      "Q_from": "8",
+      "Q_to": "16",
+      "removed_even": "17740296354375000",
+      "coefficient_only_ns_interval_milli": [
+        "96932",
+        "96934"
+      ],
+      "linear_ns_interval_milli": [
+        "162332",
+        "162333"
+      ]
+    },
+    {
+      "Q_from": "16",
+      "Q_to": "32",
+      "removed_even": "8870148177187500",
+      "coefficient_only_ns_interval_milli": [
+        "548334",
+        "548337"
+      ],
+      "linear_ns_interval_milli": [
+        "649331",
+        "649332"
+      ]
+    },
+    {
+      "Q_from": "32",
+      "Q_to": "47",
+      "removed_even": "2761871747187503",
+      "coefficient_only_ns_interval_milli": [
+        "2124900",
+        "2124911"
+      ],
+      "linear_ns_interval_milli": [
+        "1955081",
+        "1955082"
+      ]
+    },
+    {
+      "Q_from": "1",
+      "Q_to": "47",
+      "removed_even": "277736465240000003",
+      "coefficient_only_ns_interval_milli": [
+        "48071",
+        "48072"
+      ],
+      "linear_ns_interval_milli": [
+        "59621",
+        "59622"
+      ]
+    }
+  ],
+  "pair_units": "All *_ns_interval_milli endpoints are integer thousandths of a nanosecond per removed even integer.",
+  "root_option": "44 modular squarings per actual-product batch; no timing factor is inferred."
+}

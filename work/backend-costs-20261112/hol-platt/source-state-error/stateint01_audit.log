@@ -1,0 +1,34 @@
+SOURCE_STATE_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+SOURCE_STATE_ROOT,ss_modu_triangle,⊢ ∀z w. modu (z + w) ≤ modu z + modu w
+SOURCE_STATE_ROOT,ss_source_mul_eq,⊢ ∀scale u v. source_mul scale u v = four_product_round (&scale) u v
+SOURCE_STATE_ROOT,ss_source_mul_error,⊢ ∀grid scale u v.
+    0 < grid ∧ 0 < scale ⇒
+    modu
+      (source_pair_value grid (source_mul scale u v) −
+       source_pair_value grid u * source_pair_value scale v) ≤ 1 / &grid
+SOURCE_STATE_ROOT,ss_product_error,⊢ ∀u v z w err eps.
+    0 ≤ err ∧ 0 ≤ eps ∧ modu z ≤ 1 ∧ modu w = 1 ∧ modu (u − z) ≤ err ∧
+    modu (v − w) ≤ eps ⇒
+    modu (u * v − z * w) ≤ (1 + eps) * err + eps
+SOURCE_STATE_ROOT,ss_source_update_error,⊢ ∀grid scale u v z w err eps.
+    0 < grid ∧ 0 < scale ∧ 0 ≤ err ∧ 0 ≤ eps ∧ modu z ≤ 1 ∧ modu w = 1 ∧
+    modu (source_pair_value grid u − z) ≤ err ∧
+    modu (source_pair_value scale v − w) ≤ eps ⇒
+    modu (source_pair_value grid (source_mul scale u v) − z * w) ≤
+    (1 + eps) * err + eps + 1 / &grid
+SOURCE_STATE_ROOT,ss_envelope_nonneg,⊢ ∀initialError stepError roundError.
+    0 ≤ initialError ∧ 0 ≤ stepError ∧ 0 ≤ roundError ⇒
+    ∀n. 0 ≤ source_error_envelope initialError stepError roundError n
+SOURCE_STATE_ROOT,ss_exact_state_norm,⊢ ∀exact w.
+    modu (exact 0) ≤ 1 ∧ modu w = 1 ∧ (∀n. exact (SUC n) = exact n * w) ⇒
+    ∀n. modu (exact n) ≤ 1
+SOURCE_STATE_ROOT,source_state_error_from_initial_and_step,⊢ ∀grid scale initial step exact w initialError stepError.
+    0 < grid ∧ 0 < scale ∧ 0 ≤ initialError ∧ 0 ≤ stepError ∧
+    modu (exact 0) ≤ 1 ∧ modu w = 1 ∧ (∀n. exact (SUC n) = exact n * w) ∧
+    modu (source_pair_value grid initial − exact 0) ≤ initialError ∧
+    modu (source_pair_value scale step − w) ≤ stepError ⇒
+    ∀n. modu
+          (source_pair_value grid (source_state scale initial step n) −
+           exact n) ≤
+        source_error_envelope initialError stepError (1 / &grid) n
+SOURCE_STATE_EXACT_AUDIT_DONE_CONDITIONAL_PRODUCERS

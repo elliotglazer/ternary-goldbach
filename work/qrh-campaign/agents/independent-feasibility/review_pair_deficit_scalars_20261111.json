@@ -1,0 +1,36 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL_GUARDS",
+  "checks": 235,
+  "pins": {
+    "major-constants/TURING_SPECTRAL_SURPLUS_REDUCTION_2026-11-11.md": "6E7CD152D57679AFBEF754D9A1C0060AAA3F28C6E2DB1F6EFB4BD24A6B15C401",
+    "major-constants/turing_spectral_surplus_scalars_20261111.py": "9D834E4AAF2490211CC8635A20FE44BE5076653A1C60C16AFCB934EB9519E1D5",
+    "major-constants/turing_spectral_surplus_scalars_20261111.json": "31097AAF676A81004A79D2E564EE3318DEA6ACDBF1C275E9E99AED38CC05073D",
+    "major-constants/REVIEW_FAMILY_PRODUCTION_COMPLETENESS_PLAN_2026-11-11.md": "3033D761A2FE3F1B140A750CD1261D640EF8D1E98FA81711A438EB899A8AFE58",
+    "zero-sum/FAMILY_PRODUCTION_ENDPOINT_ADDENDUM_2026-11-11.md": "6759192EED071A69B064D793CA307FD563BCB436ACCFB28238C77C5AB74E87F4",
+    "integration/ELEMENTARY_TURING_PAPER_ASSEMBLY_2026-11-11.md": "72275B5CBA95FDD4F933C2150399C214B2509D9EF91D08A494104466DC8D597C",
+    "zero-sum/CONDITIONAL_R132900_SPECTRAL_PRUNING_INVENTORY_2026-11-11.md": "7AA9BF4D456CE25685D69427966DC7F61D0914DD091A95B74F9C242B95CADB27"
+  },
+  "rows": [
+    {
+      "h": 200,
+      "D_upper": "1/4",
+      "surplus": "413/5000"
+    },
+    {
+      "h": 250,
+      "D_upper": "1/2",
+      "surplus": "519/3125"
+    },
+    {
+      "h": 375,
+      "D_upper": "1",
+      "surplus": "346/3125"
+    },
+    {
+      "h": 500,
+      "D_upper": "5/4",
+      "surplus": "519/6250"
+    }
+  ],
+  "scope": "Guard implications and metadata only. No measured D, signs, zero counts or evaluator-domain extension."
+}

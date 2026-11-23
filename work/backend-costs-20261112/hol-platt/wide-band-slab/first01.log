@@ -1,0 +1,181 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/FirstBandSlabScript.uo to produce theory-builder executable
+<<HOL message: Created theory "FirstBandSlab">>
+Saved definition ____ "fromzig_def"
+Saved definition ____ "nextw_def"
+Saved theorem _______ "next_p_rules"
+Saved theorem _______ "next_p_ind"
+Saved theorem _______ "next_p_strongind"
+Saved theorem _______ "next_p_cases"
+Saved theorem _______ "cv_nextw_thm"
+Finished translating nextw, stored in cv_nextw_thm
+
+WARNING: definition of cv_nextw has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem next_p[cv_pre]:
+  ∀w r v. next_p w r v
+Proof
+  ho_match_mp_tac nextw_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "next_ok"
+Saved definition ____ "dot_def"
+Saved definition ____ "comp0_def"
+Saved definition ____ "comp1_def"
+Saved definition ____ "comp2_def"
+Saved definition ____ "comp3_def"
+Saved definition ____ "comp4_def"
+Saved definition ____ "comp5_def"
+Saved definition ____ "comp6_def"
+Saved definition ____ "dispatch_def"
+Saved definition ____ "outs_def"
+Saved definition ____ "ok_def"
+Saved definition ____ "decomp_def"
+Starting translation of ok from FirstBandSlabTheory.
+Starting translation of outs from FirstBandSlabTheory.
+Starting translation of dispatch from FirstBandSlabTheory.
+Starting translation of comp4 from FirstBandSlabTheory.
+Starting translation of comp3 from FirstBandSlabTheory.
+Starting translation of comp2 from FirstBandSlabTheory.
+Starting translation of comp1 from FirstBandSlabTheory.
+Starting translation of comp0 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp0_thm"
+Finished translating comp0, stored in cv_comp0_thm
+Starting translation of comp1 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp1_thm"
+Finished translating comp1, stored in cv_comp1_thm
+Starting translation of comp2 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp2_thm"
+Finished translating comp2, stored in cv_comp2_thm
+Starting translation of comp3 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp3_thm"
+Finished translating comp3, stored in cv_comp3_thm
+Starting translation of comp4 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp4_thm"
+Finished translating comp4, stored in cv_comp4_thm
+Starting translation of dispatch from FirstBandSlabTheory.
+Starting translation of comp6 from FirstBandSlabTheory.
+Starting translation of comp5 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp5_thm"
+Finished translating comp5, stored in cv_comp5_thm
+Starting translation of comp6 from FirstBandSlabTheory.
+Saved theorem _______ "cv_comp6_thm"
+Finished translating comp6, stored in cv_comp6_thm
+Starting translation of dispatch from FirstBandSlabTheory.
+Saved theorem _______ "cv_dispatch_thm"
+Finished translating dispatch, stored in cv_dispatch_thm
+Starting translation of outs from FirstBandSlabTheory.
+Starting translation of dot from FirstBandSlabTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in FirstBandSlab)>>
+Saved definition ____ "cv_dot_def"
+Saved induction _____ "cv_dot_ind"
+Saved theorem _______ "cv_dot_thm"
+Finished translating dot, stored in cv_dot_thm
+Starting translation of outs from FirstBandSlabTheory.
+Starting translation of fromzig from FirstBandSlabTheory.
+Saved theorem _______ "cv_fromzig_thm"
+Finished translating fromzig, stored in cv_fromzig_thm
+Starting translation of outs from FirstBandSlabTheory.
+Saved definition ____ "cv_outs_def"
+Saved induction _____ "cv_outs_ind"
+Saved theorem _______ "cv_outs_thm"
+Finished translating outs, stored in cv_outs_thm
+Starting translation of ok from FirstBandSlabTheory.
+Saved definition ____ "MAP_fromzig_1_def"
+Saved induction _____ "MAP_fromzig_1_ind"
+Starting translation of MAP_fromzig from FirstBandSlabTheory.
+Saved definition ____ "cv_MAP_fromzig_def"
+Saved induction _____ "cv_MAP_fromzig_ind"
+Saved theorem _______ "cv_MAP_fromzig_thm"
+Finished translating MAP_fromzig, stored in cv_MAP_fromzig_thm
+Saved theorem _______ "MAP_fromzig_ho"
+Starting translation of ok from FirstBandSlabTheory.
+Saved theorem _______ "cv_ok_thm"
+Finished translating ok, stored in cv_ok_thm
+Starting translation of decomp from FirstBandSlabTheory.
+Saved definition ____ "MAP_dispatch_1_def"
+Saved induction _____ "MAP_dispatch_1_ind"
+Starting translation of MAP_dispatch from FirstBandSlabTheory.
+Saved definition ____ "cv_MAP_dispatch_def"
+Saved induction _____ "cv_MAP_dispatch_ind"
+Saved theorem _______ "cv_MAP_dispatch_thm"
+Finished translating MAP_dispatch, stored in cv_MAP_dispatch_thm
+Saved theorem _______ "MAP_dispatch_ho"
+Starting translation of decomp from FirstBandSlabTheory.
+Saved theorem _______ "cv_decomp_thm"
+Finished translating decomp, stored in cv_decomp_thm
+Saved definition ____ "digest_def"
+Saved definition ____ "live_def"
+Saved definition ____ "rawlive_def"
+Starting translation of live from FirstBandSlabTheory.
+Starting translation of digest from FirstBandSlabTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of live from FirstBandSlabTheory.
+Saved theorem _______ "cv_live_thm"
+Finished translating live, stored in cv_live_thm
+Starting translation of rawlive from FirstBandSlabTheory.
+Saved theorem _______ "cv_rawlive_thm"
+Finished translating rawlive, stored in cv_rawlive_thm
+Saved theorem _______ "pfx_compute"
+Saved definition ____ "pfx_def"
+Saved induction _____ "pfx_ind"
+Saved definition ____ "resident_def"
+Starting translation of resident from FirstBandSlabTheory.
+Starting translation of pfx from FirstBandSlabTheory.
+Saved theorem _______ "cv_pfx_thm"
+Finished translating pfx, stored in cv_pfx_thm
+Starting translation of resident from FirstBandSlabTheory.
+Saved theorem _______ "cv_resident_thm"
+Finished translating resident, stored in cv_resident_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/FirstBandSlabScript.sml:127: warning: Pattern is not exhaustive. Found near val [name, v, b, ...] = tokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/FirstBandSlabScript.sml:139: warning: Pattern is not exhaustive. Found near val [name, k, b, ...] = rtokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/FirstBandSlabScript.sml:144: warning: Pattern is not exhaustive. Found near val [n, count, expected] = rtokens ()
+SAMPLES b1j3200n8 0 0
+SETUP b1j3200n8_groups0 0.185516
+SAMPLES b1j3200n8 8 5024
+SETUP b1j3200n8_groups8 0.419552
+SAMPLES b1j3200n8 32 19928
+SETUP b1j3200n8_groups32 0.191506
+SAMPLES b1j3200n8 43 27048
+SETUP b1j3200n8_groups43 0.147603
+SLAB b1j3200n8_groups0 1 0.017704 0.000147
+SLAB b1j3200n8_groups8 1 0.059875 0.000127
+SLAB b1j3200n8_groups32 1 0.166132 0.000135
+SLAB b1j3200n8_groups43 1 0.228516 0.000126
+SLAB b1j3200n8_groups43 2 0.232155 0.000131
+SLAB b1j3200n8_groups32 2 0.183442 0.000164
+SLAB b1j3200n8_groups8 2 0.051195 0.000131
+SLAB b1j3200n8_groups0 2 0.013444 0.000128
+SLAB b1j3200n8_groups0 3 0.013442 0.000117
+SLAB b1j3200n8_groups8 3 0.056457 0.000127
+SLAB b1j3200n8_groups32 3 0.159738 0.000127
+SLAB b1j3200n8_groups43 3 0.221706 0.000122
+SLAB b1j3200n8_groups43 4 0.224882 0.000124
+SLAB b1j3200n8_groups32 4 0.158739 0.000122
+SLAB b1j3200n8_groups8 4 0.049991 0.000127
+SLAB b1j3200n8_groups0 4 0.013351 0.00012
+SLAB b1j3200n8_groups0 5 0.015099 0.000119
+SLAB b1j3200n8_groups8 5 0.049343 0.000126
+SLAB b1j3200n8_groups32 5 0.185287 0.000124
+SLAB b1j3200n8_groups43 5 0.214267 0.000127
+WEIGHTED_SLAB_DONE
+Exporting theory "FirstBandSlab" ... done.
+Theory "FirstBandSlab" took 4.4s to build
+Holmake: [1/1] FirstBandSlab

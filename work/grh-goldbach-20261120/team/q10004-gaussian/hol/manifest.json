@@ -1,0 +1,62 @@
+{
+  "rows": [
+    {
+      "pair": [
+        6559,
+        7707
+      ],
+      "guard": 320,
+      "phase_numerator": 3416198609916285,
+      "allowance": 18,
+      "K": 31752,
+      "weight": 417140736,
+      "expected": false
+    },
+    {
+      "pair": [
+        6559,
+        7707
+      ],
+      "guard": 640,
+      "phase_numerator": 6846212194872337,
+      "allowance": 18,
+      "K": 31752,
+      "weight": 1677205504,
+      "expected": true
+    },
+    {
+      "pair": [
+        5499,
+        7659
+      ],
+      "guard": 320,
+      "phase_numerator": 3416252297007485,
+      "allowance": 18,
+      "K": 31751,
+      "weight": 426844160,
+      "expected": false
+    },
+    {
+      "pair": [
+        5499,
+        7659
+      ],
+      "guard": 640,
+      "phase_numerator": 6846319569054737,
+      "allowance": 18,
+      "K": 31751,
+      "weight": 1696956417,
+      "expected": true
+    }
+  ],
+  "inputs": {
+    "spectrum.json": "aa31717fe44c5001c32999b223b7a6c36e169399cd044dc94d67d7c768349e09",
+    "grid.json": "d926552bafe5757710a980e6f2fc74001892433bbc6b92d9997de6da3c6a6d49",
+    "repair.py": "25c26adbfcbf7111464f7ad5b28f8db6923a20e419f8779ba592cc793c7aa8e2",
+    "signs-6559.tsv": "6260818f6ba1008377a963ba261c0c3a59b3bc21154b7373efe5026f08bdb59e",
+    "signs-7707.tsv": "39564b45b1bc91fb455d0ea0c4a4f5f039529ed0f8a3e5ddb1d8e02426aa41e5",
+    "signs-5499.tsv": "fe8f018b20f8b4a6f66c6d97070fe3f2d2865fac59586ab0376fed2a31c3a3a0",
+    "signs-7659.tsv": "68129495ac7b5447d72bfc021f3906e26e360f361f4b5baa08de5dcf041db3f3"
+  },
+  "packet_sha256": "5417c167f625dd54e346fc855450a068b97ddd9cc5321d10f6bdc6efa8fd2ef5"
+}

@@ -1,0 +1,226 @@
+{
+  "scope": "Independent exact source-envelope, prefix-width and saved-count review; no function values, author imports or population scans.",
+  "checks": 34515,
+  "pins": {
+    "work/qrh-campaign/agents/prime-estimates/SHORT_OUTPUT_HORNER_PREFIX_COMPOSITION_2026-11-11.md": "716B9E5FFE726D629E97F2CA85CA972D351051A209CB0D5DC0B6CAC21F60C98B",
+    "work/qrh-campaign/agents/prime-estimates/short_horner_prefix_composition_20261111.py": "B7625DA3DD556966A009FFD2E884D952F93B288F0157B049FFDDD6E784F26969",
+    "work/qrh-campaign/agents/prime-estimates/short_horner_prefix_composition_20261111.json": "99671C5858B20FF3940186D33CCFB19E730C9D364FF3B3EB5B2E6B8641F399FE",
+    "work/qrh-campaign/agents/prime-estimates/SHORTER_HURWITZ_OUTPUT_ORDER_2026-11-11.md": "0EAED4F960DFC4F590564A9B8A86E9C22BB621FCE362CCAB7A13D2D3976A1D2A",
+    "work/qrh-campaign/agents/prime-estimates/shorter_hurwitz_output_orders_20261111.json": "4385975F56DE8CA2E4B42319DA3B0A2F5F1EB38C4520772F0E8BFC9602692B38",
+    "work/qrh-campaign/agents/prime-estimates/stored_hurwitz_degree_bounds_20261111.json": "E947C32ED8EA30BA14ED64A7DFF83AA1C8E3F3F222AAD1AD8DAA8484013781BE",
+    "work/qrh-campaign/agents/major-constants/REVIEW_STORED_HURWITZ_DEGREE_MAGNITUDE_2026-11-11.md": "1028156181791D6F0CD4CB0555A2625999CBF091ADD72F3CD9841BFAAD55F3F6",
+    "work/qrh-campaign/agents/prime-estimates/optimize_degree_horner_grids_20261111.json": "9BA037D7AAFB7A0F053C109ABD9751112B586805236A14D9467EFD29B32871CE",
+    "work/qrh-campaign/agents/moebius/FIXED_HORNER_DEGREE_ENVELOPE_REPRICING_2026-11-11.md": "96734A7E4A0C93857EE538A59890451C40644AAAA0D0F07FE9D82B936509C0D3",
+    "work/qrh-campaign/agents/moebius/fixed_horner_degree_envelope_costs_20261111.json": "4F114004CC63EF912619A4318227731CECC5041AADAAD9F63DE38DE3B44468B9",
+    "work/qrh-campaign/agents/independent-feasibility/REVIEW_FIXED_HORNER_DEGREE_ENVELOPE_REPRICING_2026-11-11.md": "57D7DEDBA4D5497861DD641F4CC68416CA89EEAD0358F2151DA005ABCE319468",
+    "work/qrh-campaign/agents/prime-estimates/large_residue_bucket_occupancy_20261111.json": "19E0AC3EB1F860A38151F46F792595DEDE7BA7D0180A244425C6C969EFBF58DB",
+    "work/qrh-campaign/agents/moebius/REVIEW_LARGE_RESIDUE_BUCKET_OCCUPANCY_2026-11-11.md": "C6096D0C677E09F850065EDD2103B0348E28392D482CCEE568136B387768C86E",
+    "work/qrh-campaign/agents/integration/REVIEW_SHORTER_HURWITZ_OUTPUT_ORDER_2026-11-11.md": "B15D0C3B15B8005A6B3DC3CFE1A1CDE157448B83904950487CD124F87647536E",
+    "work/qrh-campaign/agents/prime-estimates/STORED_HURWITZ_DEGREE_MAGNITUDE_2026-11-11.md": "9B777E02CA50392D0BE0E6582807439E938970961A045B63758EB66A9EEE55D2"
+  },
+  "cases": 66,
+  "selected_summaries": [
+    {
+      "cohort": "first_four",
+      "profile": "uniform100",
+      "K": 18,
+      "products": 11666,
+      "initial_signed_bits": 61,
+      "error_in_u": "137438953467/68719476736"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "uniform100",
+      "K": 19,
+      "products": 12114,
+      "initial_signed_bits": 57,
+      "error_in_u": "549755813883/274877906944"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "uniform100",
+      "K": 20,
+      "products": 12562,
+      "initial_signed_bits": 53,
+      "error_in_u": "2199023255547/1099511627776"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "root_linear",
+      "K": 18,
+      "products": 10646,
+      "initial_signed_bits": 44,
+      "error_in_u": "1376247/524288"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "root_linear",
+      "K": 19,
+      "products": 10974,
+      "initial_signed_bits": 39,
+      "error_in_u": "2752503/1048576"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "root_linear",
+      "K": 20,
+      "products": 11272,
+      "initial_signed_bits": 34,
+      "error_in_u": "5505015/2097152"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "fixed_15442",
+      "K": 18,
+      "products": 10226,
+      "initial_signed_bits": 32,
+      "error_in_u": "2589/1024"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "fixed_15442",
+      "K": 19,
+      "products": 10494,
+      "initial_signed_bits": 28,
+      "error_in_u": "2619/1024"
+    },
+    {
+      "cohort": "first_four",
+      "profile": "fixed_15442",
+      "K": 20,
+      "products": 10702,
+      "initial_signed_bits": 24,
+      "error_in_u": "5253/2048"
+    },
+    {
+      "cohort": "final",
+      "profile": "uniform100",
+      "K": 18,
+      "products": 11096,
+      "initial_signed_bits": 53,
+      "error_in_u": "137438953467/68719476736"
+    },
+    {
+      "cohort": "final",
+      "profile": "uniform100",
+      "K": 19,
+      "products": 11484,
+      "initial_signed_bits": 48,
+      "error_in_u": "549755813883/274877906944"
+    },
+    {
+      "cohort": "final",
+      "profile": "uniform100",
+      "K": 20,
+      "products": 11872,
+      "initial_signed_bits": 44,
+      "error_in_u": "2199023255547/1099511627776"
+    },
+    {
+      "cohort": "final",
+      "profile": "root_linear",
+      "K": 18,
+      "products": 10076,
+      "initial_signed_bits": 36,
+      "error_in_u": "1376247/524288"
+    },
+    {
+      "cohort": "final",
+      "profile": "root_linear",
+      "K": 19,
+      "products": 10344,
+      "initial_signed_bits": 30,
+      "error_in_u": "2752503/1048576"
+    },
+    {
+      "cohort": "final",
+      "profile": "root_linear",
+      "K": 20,
+      "products": 10552,
+      "initial_signed_bits": 25,
+      "error_in_u": "5505015/2097152"
+    },
+    {
+      "cohort": "final",
+      "profile": "fixed_15442",
+      "K": 18,
+      "products": 9656,
+      "initial_signed_bits": 24,
+      "error_in_u": "2589/1024"
+    },
+    {
+      "cohort": "final",
+      "profile": "fixed_15442",
+      "K": 19,
+      "products": 9830,
+      "initial_signed_bits": 19,
+      "error_in_u": "2619/1024"
+    },
+    {
+      "cohort": "final",
+      "profile": "fixed_15442",
+      "K": 20,
+      "products": 9970,
+      "initial_signed_bits": 15,
+      "error_in_u": "5253/2048"
+    }
+  ],
+  "scenarios": [
+    {
+      "extra": 0,
+      "units": [
+        44637243437690,
+        10919369148972,
+        3364154098594,
+        1007584876992,
+        33710391000
+      ],
+      "old": 1139279177111712,
+      "new": 1080290989644456,
+      "removed": 58988187467256
+    },
+    {
+      "extra": 167,
+      "units": [
+        45025549919846,
+        11616394228382,
+        3452729611768,
+        1024238648084,
+        34363088912
+      ],
+      "old": 1161912234442848,
+      "new": 1101748834505028,
+      "removed": 60163399937820
+    },
+    {
+      "extra": 320,
+      "units": [
+        45314009913208,
+        12319025747444,
+        3536856397630,
+        1039766491894,
+        34968277312
+      ],
+      "old": 1182647909722272,
+      "new": 1121408081109366,
+      "removed": 61239828612906
+    },
+    {
+      "extra": 640,
+      "units": [
+        45646121092426,
+        14049044900428,
+        3722665567810,
+        1073103787432,
+        36256353632
+      ],
+      "old": 1226016642332832,
+      "new": 1162526298064904,
+      "removed": 63490344267928
+    }
+  ],
+  "within_band_weighting": false,
+  "source_work_reduced": false,
+  "FD_counts_reused": false,
+  "runtime_claim": false
+}

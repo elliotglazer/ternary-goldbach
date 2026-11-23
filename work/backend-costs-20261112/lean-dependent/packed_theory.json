@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\PackedProbe.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\PackedProbe.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 3.338997200015001,
+  "user_cpu_seconds": 0.65625,
+  "system_cpu_seconds": 2.5625,
+  "cpu_seconds": 3.21875,
+  "peak_working_set_bytes": 461709312,
+  "observed_peak_private_bytes": 962805760,
+  "memory_samples": 66,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "PackedProbe.lean",
+      "bytes": 1073,
+      "sha256": "63E0AC032CC76C70827DE74DB4844AEBB5B12FFA3919DB4F0A396139C65E248B"
+    },
+    {
+      "path": "packed_theory.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "PackedProbe.olean",
+      "bytes": 66768,
+      "sha256": "1CBB4DEBC3DF84B8D0EE38B0E366A5A13011949F27D468D0BC74E440CF8FDCB6"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

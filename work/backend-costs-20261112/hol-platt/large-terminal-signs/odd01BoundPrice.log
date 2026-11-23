@@ -1,0 +1,200 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/BoundPriceScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "BoundPrice">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/BoundPriceScript.sml:33: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/BoundPriceScript.sml:42: warning: Pattern is not exhaustive.
+Found near val [sc, chk, mask] = hd (replay.lines (fn ...) (t ^ "cfg.txt"))
+FUSED bound24h1 1 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005945 0.004024 0.000165
+Saved theorem _______ "bound24h1false"
+FUSED bound24h1 1 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005345 0.003988 0.000151
+Saved theorem _______ "bound24h1true"
+FUSED bound24h1 64 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005222 0.048456 0.000140999999999
+FUSED bound24h1 64 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005267 0.052721 0.000127
+FUSED bound24h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005864 0.964446 0.00011
+FUSED bound24h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004488 0.743161 0.000195000000001
+FUSED bound24h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005607 0.810132 0.000143
+FUSED bound24h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005525 0.945472 0.000195000000001
+FUSED bound24h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006133 0.869273 0.000152
+FUSED bound24h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004627 0.694801 0.000214
+FUSED bound24h2 1 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005312 0.004323 0.000137
+Saved theorem _______ "bound24h2false"
+FUSED bound24h2 1 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005636 0.004514 0.000138
+Saved theorem _______ "bound24h2true"
+FUSED bound24h2 64 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005283 0.04468 0.000127000000001
+FUSED bound24h2 64 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005393 0.065447 0.000156
+FUSED bound24h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004189 0.823058 0.000157
+FUSED bound24h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004563 0.710181 0.000213
+FUSED bound24h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00549 0.73733 0.000197999999999
+FUSED bound24h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006468 0.882971 0.000273999999999
+FUSED bound24h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004808 0.852468 0.000238
+FUSED bound24h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004561 0.773277 0.000192999999999
+FUSED bound28h1 1 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005896 0.00522 0.000143000000001
+Saved theorem _______ "bound28h1false"
+FUSED bound28h1 1 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006241 0.006782 0.000326000000001
+Saved theorem _______ "bound28h1true"
+FUSED bound28h1 64 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006009 0.058842 0.000143999999999
+FUSED bound28h1 64 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006768 0.103133 0.000143999999999
+FUSED bound28h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006591 0.956327 0.000157000000002
+FUSED bound28h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004574 0.686579 0.000181999999999
+FUSED bound28h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00472 0.757767 0.000176
+FUSED bound28h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00459 0.935857 0.000162
+FUSED bound28h1 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00506 0.875986 0.000199000000002
+FUSED bound28h1 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005781 0.777457 0.000143999999999
+FUSED bound28h2 1 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.007387 0.004283 0.000164000000002
+Saved theorem _______ "bound28h2false"
+FUSED bound28h2 1 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.007573 0.00407 0.000145
+Saved theorem _______ "bound28h2true"
+FUSED bound28h2 64 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005662 0.052633 0.000173
+FUSED bound28h2 64 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006235 0.058401 0.000143000000001
+FUSED bound28h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005584 0.850124 0.000240999999999
+FUSED bound28h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006276 0.844535 0.000232
+FUSED bound28h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.006358 0.944995 0.000146000000001
+FUSED bound28h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.011024 1.059571 0.000246000000001
+FUSED bound28h2 1024 false
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.014952 1.028494 0.000146000000001
+FUSED bound28h2 1024 true
+SCHEMA cv_absrun input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005824 1.033348 0.000174000000001
+Exporting theory "BoundPrice" ... done.
+Theory "BoundPrice" took 25.6s to build
+Holmake: [1/1] BoundPrice

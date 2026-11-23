@@ -1,0 +1,25 @@
+BinarySupport.lean:49:8: error: unsolved goals
+case nil
+t : â„•
+h : Nat.testBit 0 t = true
+âŠ¢ âˆƒ x âˆˆ [], x.testBit t = true
+BinarySupport.lean:52:6: error: Type mismatch: After simplification, term
+  h
+ has type
+  (x.lor (List.foldr Nat.lor 0 xs)).testBit t = true
+but is expected to have type
+  x.testBit t = true âˆ¨ (List.foldr Nat.lor 0 xs).testBit t = true
+BinarySupport.lean:49:50: warning: This simp argument is unused:
+  Nat.testBit_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [unionMasks, List.foldr_nil, Bool.false_eq_true] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+BinarySupport.lean:49:68: warning: This simp argument is unused:
+  Bool.false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [unionMasks, List.foldr_nil, Nat.testBit_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

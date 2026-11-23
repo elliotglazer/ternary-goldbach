@@ -1,0 +1,23 @@
+import "mm0-0d414c0bfdaaeb7fea571895127abc1fa5a3d956/examples/peano.mm1";
+
+-- All computational rules below are proved from the ordinary PA library.
+-- There are no concrete arithmetic axioms, hex-sort axioms or eval-based admissions.
+theorem paAdd00 (a b c: nat) (h: $ a + b = c $):
+  $ b0 a + b0 b = b0 c $ = '(eqtr addb00 (b0eq h));
+theorem paAdd01 (a b c: nat) (h: $ a + b = c $):
+  $ b0 a + b1 b = b1 c $ = '(eqtr addb01 (b1eq h));
+theorem paAdd10 (a b c: nat) (h: $ a + b = c $):
+  $ b1 a + b0 b = b1 c $ = '(eqtr addb10 (b1eq h));
+theorem paAdd11 (a b c d: nat) (h: $ a + b = c $) (s: $ suc c = d $):
+  $ b1 a + b1 b = b0 d $ = '(eqtr addb11 (b0eq (eqtr (suceq h) s)));
+theorem paSuccZero: $ suc 0 = b1 0 $ = '(eqcom b10);
+theorem paSuccOdd (a b: nat) (h: $ suc a = b $):
+  $ suc (b1 a) = b0 b $ = '(eqtr sucb1 (b0eq h));
+theorem paMulB0 (a b: nat): $ a * b0 b = b0 (a * b) $ = 'muladd;
+theorem paMulB1 (a b: nat): $ a * b1 b = b0 (a * b) + a $ =
+  '(eqtr mulS (addeq1 paMulB0));
+theorem paMulOne (a: nat): $ a * b1 0 = a $ = '(eqtr (muleq2 b10) mul12);
+theorem paMulEven (a b c: nat) (h: $ a * b = c $):
+  $ a * b0 b = b0 c $ = '(eqtr paMulB0 (b0eq h));
+theorem paMulOdd (a b c d: nat) (h: $ a * b = c $) (s: $ b0 c + a = d $):
+  $ a * b1 b = d $ = '(eqtr paMulB1 (eqtr (addeq1 (b0eq h)) s));

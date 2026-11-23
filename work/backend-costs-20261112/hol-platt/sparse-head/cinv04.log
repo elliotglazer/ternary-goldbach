@@ -1,0 +1,84 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanning [1m../interpolation-geometry[0m
+Holmake: Scanning [1m../sparse-stream[0m
+Holmake: Scanned 26 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/ChannelInvariantScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "ChannelInvariant">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in ChannelInvariant)>>
+Saved definition ____ "scatter_def"
+Saved induction _____ "scatter_ind"
+Saved definition ____ "raw_map_def"
+Saved induction _____ "raw_map_ind"
+Saved definition ____ "matches_def"
+Saved induction _____ "matches_ind"
+Saved definition ____ "channel_ok_def"
+Saved definition ____ "source_code_def"
+Saved theorem _______ "matches_mem"
+Saved theorem _______ "channel_enclosures"
+Saved theorem _______ "retained_from_bounds"
+Starting translation of channel_ok from ChannelInvariantTheory.
+Starting translation of matches from ChannelInvariantTheory.
+Starting translation of encloses from EnclosureTheory.
+Saved theorem _______ "cv_encloses_thm"
+Finished translating encloses, stored in cv_encloses_thm
+Starting translation of matches from ChannelInvariantTheory.
+Saved theorem _______ "cv_matches_thm"
+Finished translating matches, stored in cv_matches_thm
+Starting translation of channel_ok from ChannelInvariantTheory.
+Starting translation of raw_map from ChannelInvariantTheory.
+Starting translation of scatter from ChannelInvariantTheory.
+Saved theorem _______ "cv_scatter_thm"
+Finished translating scatter, stored in cv_scatter_thm
+Starting translation of raw_map from ChannelInvariantTheory.
+Starting translation of slots from SparseHeadLinkTheory.
+Saved definition ____ "cv_slots_def"
+Saved induction _____ "cv_slots_ind"
+Saved theorem _______ "cv_slots_thm"
+Finished translating slots, stored in cv_slots_thm
+Starting translation of raw_map from ChannelInvariantTheory.
+Saved theorem _______ "cv_raw_map_thm"
+Finished translating raw_map, stored in cv_raw_map_thm
+Starting translation of channel_ok from ChannelInvariantTheory.
+Saved theorem _______ "cv_channel_ok_thm"
+Finished translating channel_ok, stored in cv_channel_ok_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/ChannelInvariantScript.sml:72: warning: Pattern is not exhaustive. Found near val [l, idx, m, ...] = args
+READ_GROUP 0
+READ_GROUP 8
+READ_GROUP 16
+READ_GROUP 24
+READ_GROUP 32
+READ_GROUP 40
+READ_GROUP 48
+READ_GROUP 56
+READ_GROUP 64
+READ_GROUP 72
+READ_GROUP 80
+ARCHIVED_INPUTS
+SOURCE_DEFINED
+DATA_ENCODED

@@ -1,0 +1,299 @@
+{
+  "scope": "Static saved-data inventory and exact integer symbolic cost/denominator checks only. No evaluator imports or analytic/model/transform computations.",
+  "files": {
+    "integration/small_em_batch_candidate_20261111_01.json": {
+      "sha256": "2ADDFE3FE7D77B8CC10606886CC580D5C8103B30B0E4CD3BC9507AB27B198F7E",
+      "bytes": 8058388
+    },
+    "independent-feasibility/small_em_batch_independent_replay_20261111_01.json": {
+      "sha256": "2D0CF58A1825978455B029ABE3A73382745955D7EE1A74106A8FF98116A3EE80",
+      "bytes": 6155890
+    },
+    "integration/small_em_batch_candidate_20261111.py": {
+      "sha256": "23D358590279AA810EAE764D3FEEA0756C51DF8CF0EA6F05B457A192BB82822C",
+      "bytes": 34401
+    },
+    "independent-feasibility/review_small_em_batch_prepared_20261111.py": {
+      "sha256": "A6F6A8C78B4DC70F657564D19398ADF2E9F8922B005969B7ABAAA62BFBBC5A9A",
+      "bytes": 34402
+    },
+    "integration/FINITE_EM_RATIONAL_CHECKER_BLUEPRINT_2026-11-11.md": {
+      "sha256": "F6B784776E24F767FA3A45C3006394F0E718FF491712077FC9EBDC74EDE92F22",
+      "bytes": 28963
+    },
+    "major-constants/FINITE_EM_RATIONAL_ELEMENTARY_BUDGET_2026-11-11.md": {
+      "sha256": "50D1FFB0385A0F2FCE3BA9EF3BBB4FFD3BAC5A0103E95A8329E79A25D524A541",
+      "bytes": 16007
+    }
+  },
+  "sections": {
+    "elementary": {
+      "compact_json_bytes": 476675,
+      "stats": {
+        "dyadic_count": 6148,
+        "max_mantissa_bits": 192,
+        "min_exponent": -221,
+        "max_exponent": 0,
+        "rational_count": 0,
+        "max_numerator_bits": 0,
+        "max_denominator_bits": 0
+      }
+    },
+    "bins": {
+      "compact_json_bytes": 701582,
+      "stats": {
+        "dyadic_count": 2048,
+        "max_mantissa_bits": 192,
+        "min_exponent": -220,
+        "max_exponent": 0,
+        "rational_count": 3072,
+        "max_numerator_bits": 221,
+        "max_denominator_bits": 222
+      }
+    },
+    "moments": {
+      "compact_json_bytes": 4352286,
+      "stats": {
+        "dyadic_count": 86016,
+        "max_mantissa_bits": 192,
+        "min_exponent": -343,
+        "max_exponent": 0,
+        "rational_count": 0,
+        "max_numerator_bits": 0,
+        "max_denominator_bits": 0
+      }
+    },
+    "transforms": {
+      "compact_json_bytes": 1808107,
+      "stats": {
+        "dyadic_count": 21504,
+        "max_mantissa_bits": 192,
+        "min_exponent": -314,
+        "max_exponent": -110,
+        "rational_count": 0,
+        "max_numerator_bits": 0,
+        "max_denominator_bits": 0
+      }
+    },
+    "main_jets": {
+      "compact_json_bytes": 147436,
+      "stats": {
+        "dyadic_count": 768,
+        "max_mantissa_bits": 192,
+        "min_exponent": -225,
+        "max_exponent": 0,
+        "rational_count": 640,
+        "max_numerator_bits": 226,
+        "max_denominator_bits": 297
+      }
+    },
+    "corrections": {
+      "compact_json_bytes": 492646,
+      "stats": {
+        "dyadic_count": 3160,
+        "max_mantissa_bits": 192,
+        "min_exponent": -405,
+        "max_exponent": 0,
+        "rational_count": 691,
+        "max_numerator_bits": 1939,
+        "max_denominator_bits": 1998
+      }
+    },
+    "g_jets": {
+      "compact_json_bytes": 37463,
+      "stats": {
+        "dyadic_count": 512,
+        "max_mantissa_bits": 192,
+        "min_exponent": -187,
+        "max_exponent": -52,
+        "rational_count": 16,
+        "max_numerator_bits": 15,
+        "max_denominator_bits": 11
+      }
+    },
+    "panels": {
+      "compact_json_bytes": 14342,
+      "stats": {
+        "dyadic_count": 0,
+        "max_mantissa_bits": 0,
+        "min_exponent": null,
+        "max_exponent": null,
+        "rational_count": 48,
+        "max_numerator_bits": 651,
+        "max_denominator_bits": 651
+      }
+    },
+    "endpoints": {
+      "compact_json_bytes": 15298,
+      "stats": {
+        "dyadic_count": 0,
+        "max_mantissa_bits": 0,
+        "min_exponent": null,
+        "max_exponent": null,
+        "rational_count": 45,
+        "max_numerator_bits": 605,
+        "max_denominator_bits": 605
+      }
+    }
+  },
+  "whole_target_compact_json_bytes": 68025,
+  "j7_slice_compact_json_bytes": 10799,
+  "target_stats": {
+    "dyadic_count": 512,
+    "max_mantissa_bits": 192,
+    "min_exponent": -187,
+    "max_exponent": -52,
+    "rational_count": 119,
+    "max_numerator_bits": 651,
+    "max_denominator_bits": 651
+  },
+  "j7_stats": {
+    "dyadic_count": 64,
+    "max_mantissa_bits": 192,
+    "min_exponent": -184,
+    "max_exponent": -52,
+    "rational_count": 28,
+    "max_numerator_bits": 648,
+    "max_denominator_bits": 648
+  },
+  "moment_zero_claims": 10368,
+  "moment_nonzero_claims": 1920,
+  "saved_bin_segments": [
+    {
+      "q": 0,
+      "k": 0,
+      "first_n": 1,
+      "last_n": 2
+    },
+    {
+      "q": -1,
+      "k": 31,
+      "first_n": 3,
+      "last_n": 10
+    },
+    {
+      "q": -2,
+      "k": 30,
+      "first_n": 11,
+      "last_n": 50
+    },
+    {
+      "q": -3,
+      "k": 29,
+      "first_n": 51,
+      "last_n": 244
+    },
+    {
+      "q": -4,
+      "k": 28,
+      "first_n": 245,
+      "last_n": 1024
+    }
+  ],
+  "bin_counts": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    780,
+    194,
+    40,
+    8
+  ],
+  "factor_common_denominator": "22216338068250185472232349296338004455066378494891248853874911817264342086018586996942758560180664062500000000000000000000000000000000",
+  "factor_common_denominator_bits": 443,
+  "denominator_designs": [
+    {
+      "leaf_grid_b": 1025,
+      "named_gate_grid_g": 513,
+      "uniform_moment_denominator_bits": 40113,
+      "uniform_direct_main_denominator_bits": 15929,
+      "correction_R_denominator_bits": 855,
+      "correction_Q_denominator_bits": 869,
+      "log_B_coefficient_common_denominator_bits": 15416,
+      "fresh_phase_full_correction_denominator_bits": 17309,
+      "FFT_one_stage_denominator_exponent": 1539,
+      "FFT_no_interstage_rounding_denominator_exponent": 5643,
+      "exact_contraction_denominator_exponent_before_scale": 582,
+      "phase_step_product_denominator_exponent": 1538
+    }
+  ],
+  "symbolic_counts": {
+    "batch": {
+      "main_phases": 1024,
+      "fresh_B_phases": 8,
+      "moment_contributions": 393216,
+      "residual_recurrence_steps": 376832,
+      "main_log_weight_updates": 15360,
+      "normalized_FFTs": 384,
+      "butterflies": 30720,
+      "FFT_complex_additions": 61440,
+      "dense_moment_gates": 12288,
+      "FFT_stage_output_gates": 61440,
+      "exact_Horner_final_gates": 128,
+      "correction_gates": 128,
+      "assembly_gates": 128,
+      "total_named_gates_exact_Horner": 74112,
+      "total_named_gates_24_Horner_updates": 77184
+    },
+    "direct_fresh": {
+      "complex_phase_certificates": 8200,
+      "main_coefficient_contributions": 131072,
+      "main_derivative_recurrence_steps": 122880
+    },
+    "direct_phase_reuse": {
+      "complex_base_and_step_certificates": 2050,
+      "phase_recurrence_products": 7175,
+      "phase_output_gates_including_base": 8200,
+      "main_log_power_recurrence_steps": 15360,
+      "B_log_power_recurrence_steps": 15,
+      "main_coefficient_contributions": 131072,
+      "nontrivial_complex_real_products": 122880,
+      "main_sum_gates": 128,
+      "correction_gates": 128,
+      "assembly_gates": 128,
+      "total_named_gates": 8584
+    },
+    "shared": {
+      "logs_including_exact_log1": 1025,
+      "Bernoulli_factors": 16,
+      "correction_multiplications_upper": 7488,
+      "rational_image_Horner_complex_products": 255,
+      "rational_image_Horner_complex_adds": 255,
+      "rational_image_reciprocals": 17
+    }
+  },
+  "direct_phase_reuse_scalar_checks": {
+    "status": "PASS",
+    "phase_bound": "2^15*epsilon",
+    "main_bound": "2^72*epsilon",
+    "correction_bound": "2^78*epsilon",
+    "assembled_bound": "2^84*epsilon",
+    "epsilon": "2^-512"
+  },
+  "qualification": "Compact JSON sizes are encodings of existing target values, not proof-term bytes or new rational witnesses. Denominator bounds are for the explicitly specified exact-center schedules."
+}

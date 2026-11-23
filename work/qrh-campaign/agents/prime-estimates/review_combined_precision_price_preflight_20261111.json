@@ -1,0 +1,115 @@
+{
+  "scope": "Paper/schema review, streaming hashes and fixed arithmetic only; no inventory JSON parsed or folded",
+  "author_sha256": "369F28970D508C5179524F9B5D5019E587BA87B39F2959515029A198F4EF379C",
+  "checks": 54,
+  "input_bytes": 73619701,
+  "input_pins": {
+    "integration/transform_structural_manifest_20261111.json": {
+      "bytes": 25110201,
+      "sha256": "A41D70DB2BB439D73CC817F80B24CB598D3EFA89CCE1D19A5FA618ABBE239637"
+    },
+    "integration/sharper_conductor_precision_rows_20261111.json": {
+      "bytes": 20920838,
+      "sha256": "8FD72DC7FD9EACCCF986BE92502AE13491F974744C9E6A6E32BD63ADC27ED085"
+    },
+    "integration/sharper_conductor_precision_caches_20261111.json": {
+      "bytes": 1871369,
+      "sha256": "129ADFCF668378CA94140DB27F3A3D6EF43995E05EB1413D3BE8AC603061D831"
+    },
+    "integration/sharper_conductor_precision_metadata_20261111.json": {
+      "bytes": 5188,
+      "sha256": "8CEA147C264CC963CAE2EBAFE58F32E4CCD53A99378D7403161510993862227F"
+    },
+    "integration/short_window_guard_conductor_rows_20261111.json": {
+      "bytes": 12794207,
+      "sha256": "A75E4EE6EBBBD5BA82AA91377040228140596989E03667148B55900F53ADE3EA"
+    },
+    "integration/short_window_guard_ledger_20261111.json": {
+      "bytes": 41665,
+      "sha256": "C04F477A1ACCDFFDAE76FEA972D09C270332BCB6766EDFF060C2678DAEF970A4"
+    },
+    "moebius/sharper_precision_price_widths_20261111.json": {
+      "bytes": 320815,
+      "sha256": "61D422B596A8BA77801CA53CE515A6B94FFE923894FDA931C7593827399A17E4"
+    },
+    "moebius/sharper_precision_delta_prices_20261111.json": {
+      "bytes": 162624,
+      "sha256": "4599278B2CCC3EA5A06EB0BE168D5245C53ADF0AF83D06B4ECD4C96F708321A1"
+    },
+    "major-constants/combined_conductor_precision_rows_20261111.json": {
+      "bytes": 9568390,
+      "sha256": "2B9C245DCA582C93BFFCB022CEE858D09B07637D1D1D1F37D5C1FE5BDF94DBCB"
+    },
+    "major-constants/combined_conductor_precision_nodes_20261111.json": {
+      "bytes": 2672728,
+      "sha256": "D3F0280F22D0D79EA8B99B46FF679F4BBFE2DED0C64B809C0322B75D3EC975C9"
+    },
+    "major-constants/combined_conductor_precision_caches_20261111.json": {
+      "bytes": 137719,
+      "sha256": "6D992A88D3018394731B62387053C9E2A8C03EAFD95BDA750FC9E72FDDC54778"
+    },
+    "major-constants/combined_conductor_precision_summary_20261111.json": {
+      "bytes": 13957,
+      "sha256": "493FAB7C41A216839CDA318DE0A80BB55C3CE9E5D4D6B8F4E47B44930A06C95B"
+    }
+  },
+  "support_pins": {
+    "major-constants/COMBINED_CONDUCTOR_PRECISION_ASSIGNMENT_PREFLIGHT_2026-11-11.md": {
+      "bytes": 20153,
+      "sha256": "B563B8CC28DC1F2BCF08390BCF9385AD504432940A0C22D263BC9002037158B2"
+    },
+    "major-constants/COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md": {
+      "bytes": 13443,
+      "sha256": "EBA33B23C531312243495B9B0321597FC26D8AEBA8E1CF24626457474EA3A997"
+    },
+    "integration/REVIEW_COMBINED_CONDUCTOR_PRECISION_SAVED_PASS_2026-11-11.md": {
+      "bytes": 10579,
+      "sha256": "8745235D810A1F06E8661961A05EF93C8DB24574121700DF6D924AE6EC2615C4"
+    },
+    "major-constants/combined_conductor_precision_assignment_20261111.py": {
+      "bytes": 31165,
+      "sha256": "F67CF569467ED444A0BB8ED0F576166F4B289B8E5710CB769F08D3F22AF78408"
+    },
+    "major-constants/COMBINED_PRECISION_COMPACT_ROW_AMENDMENT_2026-11-11.md": {
+      "bytes": 5523,
+      "sha256": "AACBB5CA78AA460F811FBDF90040741E9A546AC23381F9A9BF8DA9F53DC5A25B"
+    },
+    "integration/REVIEW_COMBINED_PRECISION_COMPACT_ROW_AMENDMENT_2026-11-11.md": {
+      "bytes": 5297,
+      "sha256": "2D30DECAACF68512804F9E8106461463A6DCB1A5282471FC76C95D10F0B10172"
+    },
+    "independent-feasibility/SUBGRID100_TRANSFORM_INPUT_REGRID_2026-11-11.md": {
+      "bytes": 18921,
+      "sha256": "B7E781617D7E9E041CB340549A52387EC32303CFDE086B7BD5170448905BD266"
+    },
+    "independent-feasibility/SUBGRID100_ERROR_MAGNITUDE_COMPANION_2026-11-11.md": {
+      "bytes": 5504,
+      "sha256": "39EC80DDC3388A9E470647CC4486D448108BB1FFD0D4CC58C13B61FBE3A4A761"
+    },
+    "audit/REVIEW_SUBGRID100_TRANSFORM_INPUT_REGRID_2026-11-11.md": {
+      "bytes": 10928,
+      "sha256": "8431B9FF6B172F8ED36644413C359F5B8E2FEB58D9EBF0F88E500F152113EBAD"
+    },
+    "audit/REVIEW_SUBGRID_REGRID_ARITHMETIC_COST_INTERFACE_2026-11-11.md": {
+      "bytes": 8046,
+      "sha256": "56B27935FF994E3F25F735825196076DF72C8DBC33D2A61D4787B61E3BBDD5F0"
+    },
+    "zero-sum/SUBGRID_REGRID_ARITHMETIC_COST_INTERFACE_2026-11-11.md": {
+      "bytes": 11238,
+      "sha256": "E2457D3CA0E4436575DBAEA81413D91601312033AC6086233CFB7977D790225D"
+    },
+    "moebius/SHARPER_PRECISION_DELTA_PRICES_2026-11-11.md": {
+      "bytes": 16223,
+      "sha256": "D12934F2624BD88564B6E0E19C251D2465B338E34EF08755798180F672F42BB1"
+    },
+    "prime-estimates/REVIEW_SHARPER_PRECISION_DELTA_PRICES_2026-11-11.md": {
+      "bytes": 10456,
+      "sha256": "402537CDCA633BD94D4AA2F23FB6334FB0B317541929F30D1B6DD787DAB5F470"
+    }
+  },
+  "schema_fields": 13,
+  "context_total": 6383132,
+  "context_live_cap": 220108,
+  "width_class_cap": 3857,
+  "execution_authorized": false
+}

@@ -1,0 +1,23 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:39:6: error: invalid 'calc' step, failed to synthesize `Trans` instance
+  Trans LE.le LE.le ?m.208
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:38:66: error: `gcongr` did not make progress.
+
+t : ℝ
+h : |t| ≤ 6e14
+h₁ : |t| + 22 ≤ 1e15
+h₂ : 1.25 * (|t| + 11) ≤ 1e15
+⊢ (9200 * 1e15 * 1e15 ^ 9 + 20 * 1e15 ^ 3 * 1e15 ^ 2) / 0.355 ≤
+    (9200 * 1e15 * 1e15 ^ 9 + 20 * 1e15 ^ 3 * 1e15 ^ 2) / 0.355
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:39:15: error: unsolved goals
+t : ℝ
+h : |t| ≤ 6e14
+h₁ : |t| + 22 ≤ 1e15
+h₂ : 1.25 * (|t| + 11) ≤ 1e15
+⊢ (9200 * 1e15 * 1e15 ^ 9 + 20 * 1e15 ^ 3 * 1e15 ^ 2) / 0.355 ≤ ?m.177
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:47:17: error(lean.unknownIdentifier): Unknown constant `Real.exp_one_lt_d9`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:52:51: error: unsolved goals
+⊢ ⌊250000000000000 / 3⌋₊ < 100000000000000
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:87:77: error(lean.unknownIdentifier): Unknown constant `Real.exp_one_gt_d9`
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:99:33: error(lean.unknownIdentifier): Unknown constant `Real.exp_one_lt_d9`

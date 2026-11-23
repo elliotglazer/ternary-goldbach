@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXACT_COUNTS_AND_EDGE_CHECKS",
+  "checks": {
+    "target_count": true,
+    "equal_size_threshold": true,
+    "total_size_threshold": true,
+    "union_threshold": true,
+    "mask_bytes": true,
+    "dense_slots": true,
+    "modulus_bits": true,
+    "array_bytes": true,
+    "chain_10000000000000000": true,
+    "chain_20000000000000000": true,
+    "carry_cap_2": true,
+    "carry_cap_3": true,
+    "carry_cap_10": true,
+    "carry_cap_16": true,
+    "merge_language_states": true,
+    "merge_reachability_differs": true
+  },
+  "pins": {
+    "prime-estimates/SPARSE_THREE_PRIME_BASIS_FRONTIER_2026-11-11.md": "F394A98D39555F0AAA4AA033004DE07C8EC136B0659AD17FF4519BAB947CBA89",
+    "prime-estimates/three_prime_basis_sizes_20261111.py": "1628102F9719F8670899BE642E59B7D4F90FC719ABF5FADEA34673ECDB8719B8",
+    "prime-estimates/three_prime_basis_sizes_20261111.json": "066B84F47AE77195B5EF6C1C2FB7B4E4E4FECC9BBFD15672F5CFA04AA00F8F0C"
+  },
+  "scope": "Paper review support only; no actual compressed catalogue or coverage certificate."
+}

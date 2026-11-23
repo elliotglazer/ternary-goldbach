@@ -1,0 +1,377 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardCompareScript.uo to produce theory-builder executable
+<<HOL message: Created theory "GuardCompare">>
+Saved definition ____ "fromzig_def"
+Saved definition ____ "nextw_def"
+Saved theorem _______ "next_p_rules"
+Saved theorem _______ "next_p_ind"
+Saved theorem _______ "next_p_strongind"
+Saved theorem _______ "next_p_cases"
+Saved theorem _______ "cv_nextw_thm"
+Finished translating nextw, stored in cv_nextw_thm
+
+WARNING: definition of cv_nextw has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem next_p[cv_pre]:
+  ∀w r v. next_p w r v
+Proof
+  ho_match_mp_tac nextw_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "next_ok"
+Saved definition ____ "dot_def"
+Saved definition ____ "comp0_def"
+Saved definition ____ "comp1_def"
+Saved definition ____ "comp2_def"
+Saved definition ____ "comp3_def"
+Saved definition ____ "comp4_def"
+Saved definition ____ "comp5_def"
+Saved definition ____ "comp6_def"
+Saved definition ____ "dispatch_def"
+Saved definition ____ "outs_def"
+Saved definition ____ "ok_def"
+Saved definition ____ "decomp_def"
+Starting translation of ok from GuardCompareTheory.
+Starting translation of outs from GuardCompareTheory.
+Starting translation of dispatch from GuardCompareTheory.
+Starting translation of comp4 from GuardCompareTheory.
+Starting translation of comp3 from GuardCompareTheory.
+Starting translation of comp2 from GuardCompareTheory.
+Starting translation of comp1 from GuardCompareTheory.
+Starting translation of comp0 from GuardCompareTheory.
+Saved theorem _______ "cv_comp0_thm"
+Finished translating comp0, stored in cv_comp0_thm
+Starting translation of comp1 from GuardCompareTheory.
+Saved theorem _______ "cv_comp1_thm"
+Finished translating comp1, stored in cv_comp1_thm
+Starting translation of comp2 from GuardCompareTheory.
+Saved theorem _______ "cv_comp2_thm"
+Finished translating comp2, stored in cv_comp2_thm
+Starting translation of comp3 from GuardCompareTheory.
+Saved theorem _______ "cv_comp3_thm"
+Finished translating comp3, stored in cv_comp3_thm
+Starting translation of comp4 from GuardCompareTheory.
+Saved theorem _______ "cv_comp4_thm"
+Finished translating comp4, stored in cv_comp4_thm
+Starting translation of dispatch from GuardCompareTheory.
+Starting translation of comp6 from GuardCompareTheory.
+Starting translation of comp5 from GuardCompareTheory.
+Saved theorem _______ "cv_comp5_thm"
+Finished translating comp5, stored in cv_comp5_thm
+Starting translation of comp6 from GuardCompareTheory.
+Saved theorem _______ "cv_comp6_thm"
+Finished translating comp6, stored in cv_comp6_thm
+Starting translation of dispatch from GuardCompareTheory.
+Saved theorem _______ "cv_dispatch_thm"
+Finished translating dispatch, stored in cv_dispatch_thm
+Starting translation of outs from GuardCompareTheory.
+Starting translation of dot from GuardCompareTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in GuardCompare)>>
+Saved definition ____ "cv_dot_def"
+Saved induction _____ "cv_dot_ind"
+Saved theorem _______ "cv_dot_thm"
+Finished translating dot, stored in cv_dot_thm
+Starting translation of outs from GuardCompareTheory.
+Starting translation of fromzig from GuardCompareTheory.
+Saved theorem _______ "cv_fromzig_thm"
+Finished translating fromzig, stored in cv_fromzig_thm
+Starting translation of outs from GuardCompareTheory.
+Saved definition ____ "cv_outs_def"
+Saved induction _____ "cv_outs_ind"
+Saved theorem _______ "cv_outs_thm"
+Finished translating outs, stored in cv_outs_thm
+Starting translation of ok from GuardCompareTheory.
+Saved definition ____ "MAP_fromzig_1_def"
+Saved induction _____ "MAP_fromzig_1_ind"
+Starting translation of MAP_fromzig from GuardCompareTheory.
+Saved definition ____ "cv_MAP_fromzig_def"
+Saved induction _____ "cv_MAP_fromzig_ind"
+Saved theorem _______ "cv_MAP_fromzig_thm"
+Finished translating MAP_fromzig, stored in cv_MAP_fromzig_thm
+Saved theorem _______ "MAP_fromzig_ho"
+Starting translation of ok from GuardCompareTheory.
+Saved theorem _______ "cv_ok_thm"
+Finished translating ok, stored in cv_ok_thm
+Starting translation of decomp from GuardCompareTheory.
+Saved definition ____ "MAP_dispatch_1_def"
+Saved induction _____ "MAP_dispatch_1_ind"
+Starting translation of MAP_dispatch from GuardCompareTheory.
+Saved definition ____ "cv_MAP_dispatch_def"
+Saved induction _____ "cv_MAP_dispatch_ind"
+Saved theorem _______ "cv_MAP_dispatch_thm"
+Finished translating MAP_dispatch, stored in cv_MAP_dispatch_thm
+Saved theorem _______ "MAP_dispatch_ho"
+Starting translation of decomp from GuardCompareTheory.
+Saved theorem _______ "cv_decomp_thm"
+Finished translating decomp, stored in cv_decomp_thm
+Saved definition ____ "digest_def"
+Saved definition ____ "live_def"
+Saved definition ____ "rawlive_def"
+Starting translation of live from GuardCompareTheory.
+Starting translation of digest from GuardCompareTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of live from GuardCompareTheory.
+Saved theorem _______ "cv_live_thm"
+Finished translating live, stored in cv_live_thm
+Starting translation of rawlive from GuardCompareTheory.
+Saved theorem _______ "cv_rawlive_thm"
+Finished translating rawlive, stored in cv_rawlive_thm
+Saved theorem _______ "pfx_compute"
+Saved definition ____ "pfx_def"
+Saved induction _____ "pfx_ind"
+Saved definition ____ "resident_def"
+Starting translation of resident from GuardCompareTheory.
+Starting translation of pfx from GuardCompareTheory.
+Saved theorem _______ "cv_pfx_thm"
+Finished translating pfx, stored in cv_pfx_thm
+Starting translation of resident from GuardCompareTheory.
+Saved theorem _______ "cv_resident_thm"
+Finished translating resident, stored in cv_resident_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardCompareScript.sml:127: warning: Pattern is not exhaustive. Found near val [name, v, b, ...] = tokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardCompareScript.sml:139: warning: Pattern is not exhaustive. Found near val [name, k, b, ...] = rtokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardCompareScript.sml:144: warning: Pattern is not exhaustive. Found near val [n, count, expected] = rtokens ()
+SAMPLES j7041coarse 0 0
+SETUP j7041coarse_groups0 0.325106
+SAMPLES j7041coarse 8 4120
+SETUP j7041coarse_groups8 0.934325
+SAMPLES j7041coarse 32 16304
+SETUP j7041coarse_groups32 0.373279
+SAMPLES j7041coarse 64 32336
+SETUP j7041coarse_groups64 0.265846
+SLAB j7041coarse_groups0 1 0.025593 0.000266
+SLAB j7041coarse_groups8 1 0.108195 0.000228
+SLAB j7041coarse_groups32 1 0.259148 0.000167
+SLAB j7041coarse_groups64 1 0.494499 0.000227
+SLAB j7041coarse_groups64 2 0.470657 0.000229
+SLAB j7041coarse_groups32 2 0.274851 0.000162
+SLAB j7041coarse_groups8 2 0.082819 0.00017
+SLAB j7041coarse_groups0 2 0.023614 0.000163
+SLAB j7041coarse_groups0 3 0.026343 0.000167
+SLAB j7041coarse_groups8 3 0.113319 0.000179
+SLAB j7041coarse_groups32 3 0.265561 0.00016
+SLAB j7041coarse_groups64 3 0.48963 0.000175
+SLAB j7041coarse_groups64 4 0.580634 0.000171
+SLAB j7041coarse_groups32 4 0.296495 0.000178
+SLAB j7041coarse_groups8 4 0.089456 0.000164
+SLAB j7041coarse_groups0 4 0.025174 0.00067
+SLAB j7041coarse_groups0 5 0.024159 0.000225
+SLAB j7041coarse_groups8 5 0.077218 0.000172
+SLAB j7041coarse_groups32 5 0.289055 0.000273
+SLAB j7041coarse_groups64 5 0.500517 0.000178
+SAMPLES j7041fine789 0 0
+SETUP j7041fine789_groups0 0.05178
+SAMPLES j7041fine789 8 1040
+SETUP j7041fine789_groups8 0.050224
+SAMPLES j7041fine789 32 4080
+SETUP j7041fine789_groups32 0.047359
+SAMPLES j7041fine789 64 8104
+SETUP j7041fine789_groups64 0.052833
+SLAB j7041fine789_groups0 1 0.027329 0.00048
+SLAB j7041fine789_groups8 1 0.04365 0.000175
+SLAB j7041fine789_groups32 1 0.114098 0.000207000000001
+SLAB j7041fine789_groups64 1 0.129374 0.000166
+SLAB j7041fine789_groups64 2 0.145289 0.000183
+SLAB j7041fine789_groups32 2 0.099176 0.000174
+SLAB j7041fine789_groups8 2 0.037692 0.000719
+SLAB j7041fine789_groups0 2 0.028973 0.000173
+SLAB j7041fine789_groups0 3 0.021197 0.000175
+SLAB j7041fine789_groups8 3 0.038272 0.000178999999999
+SLAB j7041fine789_groups32 3 0.08147 0.000189
+SLAB j7041fine789_groups64 3 0.140514 0.000172
+SLAB j7041fine789_groups64 4 0.204755 0.000693
+SLAB j7041fine789_groups32 4 0.078509 0.000181000000001
+SLAB j7041fine789_groups8 4 0.03825 0.000188999999999
+SLAB j7041fine789_groups0 4 0.029772 0.000175
+SLAB j7041fine789_groups0 5 0.028285 0.00018
+SLAB j7041fine789_groups8 5 0.044746 0.000188
+SLAB j7041fine789_groups32 5 0.087597 0.000214
+SLAB j7041fine789_groups64 5 0.189824 0.000419999999998
+SAMPLES j7041fine790 0 0
+SETUP j7041fine790_groups0 0.114398
+SAMPLES j7041fine790 8 2048
+SETUP j7041fine790_groups8 0.100967
+SAMPLES j7041fine790 32 8120
+SETUP j7041fine790_groups32 0.158556
+SAMPLES j7041fine790 64 16160
+SETUP j7041fine790_groups64 0.115892
+SLAB j7041fine790_groups0 1 0.026554 0.000164
+SLAB j7041fine790_groups8 1 0.062259 0.000190999999999
+SLAB j7041fine790_groups32 1 0.168181 0.000218
+SLAB j7041fine790_groups64 1 0.255818 0.000177000000001
+SLAB j7041fine790_groups64 2 0.256359 0.000195000000001
+SLAB j7041fine790_groups32 2 0.145 0.000196000000001
+SLAB j7041fine790_groups8 2 0.056393 0.000198000000001
+SLAB j7041fine790_groups0 2 0.024514 0.0002
+SLAB j7041fine790_groups0 3 0.026475 0.000238
+SLAB j7041fine790_groups8 3 0.061405 0.000167999999999
+SLAB j7041fine790_groups32 3 0.14401 0.000168
+SLAB j7041fine790_groups64 3 0.247275 0.00018
+SLAB j7041fine790_groups64 4 0.266395 0.000183999999999
+SLAB j7041fine790_groups32 4 0.1531 0.000197
+SLAB j7041fine790_groups8 4 0.059006 0.000173999999999
+SLAB j7041fine790_groups0 4 0.025601 0.000170000000001
+SLAB j7041fine790_groups0 5 0.029679 0.000185
+SLAB j7041fine790_groups8 5 0.062024 0.000299
+SLAB j7041fine790_groups32 5 0.141269 0.000169
+SLAB j7041fine790_groups64 5 0.247002 0.000169
+SAMPLES j7041fine791 0 0
+SETUP j7041fine791_groups0 0.056347
+SAMPLES j7041fine791 8 1032
+SETUP j7041fine791_groups8 0.0605
+SAMPLES j7041fine791 32 4104
+SETUP j7041fine791_groups32 0.10472
+SAMPLES j7041fine791 64 8072
+SETUP j7041fine791_groups64 0.060845
+SLAB j7041fine791_groups0 1 0.020947 0.000268999999999
+SLAB j7041fine791_groups8 1 0.038003 0.000173999999999
+SLAB j7041fine791_groups32 1 0.087166 0.000233
+SLAB j7041fine791_groups64 1 0.15214 0.000183
+SLAB j7041fine791_groups64 2 0.14446 0.000208000000001
+SLAB j7041fine791_groups32 2 0.087942 0.000190999999999
+SLAB j7041fine791_groups8 2 0.040387 0.000179999999999
+SLAB j7041fine791_groups0 2 0.024596 0.000194
+SLAB j7041fine791_groups0 3 0.028948 0.000181000000001
+SLAB j7041fine791_groups8 3 0.035277 0.000181
+SLAB j7041fine791_groups32 3 0.081844 0.000162000000001
+SLAB j7041fine791_groups64 3 0.143944 0.000381000000001
+SLAB j7041fine791_groups64 4 0.144296 0.000166999999999
+SLAB j7041fine791_groups32 4 0.088127 0.000247999999999
+SLAB j7041fine791_groups8 4 0.040688 0.000474000000001
+SLAB j7041fine791_groups0 4 0.023924 0.000172000000001
+SLAB j7041fine791_groups0 5 0.030218 0.000167000000001
+SLAB j7041fine791_groups8 5 0.040377 0.000187
+SLAB j7041fine791_groups32 5 0.077241 0.000185999999999
+SLAB j7041fine791_groups64 5 0.122958 0.00018
+SAMPLES j60001coarse 0 0
+SETUP j60001coarse_groups0 0.011352
+SAMPLES j60001coarse 8 48
+SETUP j60001coarse_groups8 0.012938
+SAMPLES j60001coarse 32 160
+SETUP j60001coarse_groups32 0.011077
+SAMPLES j60001coarse 64 328
+SETUP j60001coarse_groups64 0.011038
+SLAB j60001coarse_groups0 1 0.022744 0.000283999999999
+SLAB j60001coarse_groups8 1 0.026187 0.000176999999999
+SLAB j60001coarse_groups32 1 0.040072 0.000174000000001
+SLAB j60001coarse_groups64 1 0.026252 0.000176999999999
+SLAB j60001coarse_groups64 2 0.02652 0.000172000000001
+SLAB j60001coarse_groups32 2 0.023611 0.000221
+SLAB j60001coarse_groups8 2 0.023548 0.000173
+SLAB j60001coarse_groups0 2 0.022071 0.000178
+SLAB j60001coarse_groups0 3 0.019354 0.000171
+SLAB j60001coarse_groups8 3 0.027395 0.000461
+SLAB j60001coarse_groups32 3 0.022936 0.000168
+SLAB j60001coarse_groups64 3 0.026671 0.000171
+SLAB j60001coarse_groups64 4 0.034152 0.000187
+SLAB j60001coarse_groups32 4 0.029107 0.000183999999999
+SLAB j60001coarse_groups8 4 0.022144 0.000183000000002
+SLAB j60001coarse_groups0 4 0.020683 0.000254999999999
+SLAB j60001coarse_groups0 5 0.019626 0.000154999999999
+SLAB j60001coarse_groups8 5 0.024006 0.000204999999999
+SLAB j60001coarse_groups32 5 0.024413 0.000186999999999
+SLAB j60001coarse_groups64 5 0.030095 0.000287999999999
+SAMPLES j60001fine6325 0 0
+SETUP j60001fine6325_groups0 0.012012
+SAMPLES j60001fine6325 8 8
+SETUP j60001fine6325_groups8 0.010942
+SAMPLES j60001fine6325 32 40
+SETUP j60001fine6325_groups32 0.010613
+SAMPLES j60001fine6325 64 80
+SETUP j60001fine6325_groups64 0.010361
+SLAB j60001fine6325_groups0 1 0.020669 0.000294
+SLAB j60001fine6325_groups8 1 0.023099 0.000257
+SLAB j60001fine6325_groups32 1 0.024119 0.000179000000001
+SLAB j60001fine6325_groups64 1 0.022398 0.000176
+SLAB j60001fine6325_groups64 2 0.020889 0.0002
+SLAB j60001fine6325_groups32 2 0.02192 0.000169999999999
+SLAB j60001fine6325_groups8 2 0.02329 0.000176
+SLAB j60001fine6325_groups0 2 0.020394 0.000168
+SLAB j60001fine6325_groups0 3 0.023035 0.000177000000001
+SLAB j60001fine6325_groups8 3 0.02284 0.000169999999999
+SLAB j60001fine6325_groups32 3 0.024289 0.000177000000001
+SLAB j60001fine6325_groups64 3 0.02285 0.000228
+SLAB j60001fine6325_groups64 4 0.02335 0.000173999999999
+SLAB j60001fine6325_groups32 4 0.022324 0.000166
+SLAB j60001fine6325_groups8 4 0.021446 0.000176999999999
+SLAB j60001fine6325_groups0 4 0.021905 0.000204999999999
+SLAB j60001fine6325_groups0 5 0.03496 0.000248000000001
+SLAB j60001fine6325_groups8 5 0.020923 0.000156
+SLAB j60001fine6325_groups32 5 0.032472 0.000556
+SLAB j60001fine6325_groups64 5 0.022967 0.000178
+SAMPLES j60001fine6326 0 0
+SETUP j60001fine6326_groups0 0.016982
+SAMPLES j60001fine6326 8 24
+SETUP j60001fine6326_groups8 0.0137
+SAMPLES j60001fine6326 32 88
+SETUP j60001fine6326_groups32 0.010633
+SAMPLES j60001fine6326 64 176
+SETUP j60001fine6326_groups64 0.010222
+SLAB j60001fine6326_groups0 1 0.023496 0.000171
+SLAB j60001fine6326_groups8 1 0.025507 0.000218
+SLAB j60001fine6326_groups32 1 0.024822 0.000165000000001
+SLAB j60001fine6326_groups64 1 0.021374 0.000177000000001
+SLAB j60001fine6326_groups64 2 0.018947 0.000166999999999
+SLAB j60001fine6326_groups32 2 0.020759 0.000178
+SLAB j60001fine6326_groups8 2 0.022194 0.000171
+SLAB j60001fine6326_groups0 2 0.019858 0.000198999999999
+SLAB j60001fine6326_groups0 3 0.020946 0.000166
+SLAB j60001fine6326_groups8 3 0.022112 0.000173
+SLAB j60001fine6326_groups32 3 0.038167 0.000161
+SLAB j60001fine6326_groups64 3 0.024649 0.00015
+SLAB j60001fine6326_groups64 4 0.022282 0.000189000000001
+SLAB j60001fine6326_groups32 4 0.019766 0.000173999999999
+SLAB j60001fine6326_groups8 4 0.021267 0.000162000000001
+SLAB j60001fine6326_groups0 4 0.021166 0.000166
+SLAB j60001fine6326_groups0 5 0.01944 0.000165999999998
+SLAB j60001fine6326_groups8 5 0.019375 0.000159
+SLAB j60001fine6326_groups32 5 0.021881 0.000168
+SLAB j60001fine6326_groups64 5 0.022832 0.000159999999999
+SAMPLES j60001fine6327 0 0
+SETUP j60001fine6327_groups0 0.009957
+SAMPLES j60001fine6327 8 16
+SETUP j60001fine6327_groups8 0.01211
+SAMPLES j60001fine6327 32 32
+SETUP j60001fine6327_groups32 0.010834
+SAMPLES j60001fine6327 64 72
+SETUP j60001fine6327_groups64 0.010642
+SLAB j60001fine6327_groups0 1 0.02053 0.000157
+SLAB j60001fine6327_groups8 1 0.018505 0.000205999999999
+SLAB j60001fine6327_groups32 1 0.019657 0.000188
+SLAB j60001fine6327_groups64 1 0.021542 0.000181999999999
+SLAB j60001fine6327_groups64 2 0.02119 0.000181000000001
+SLAB j60001fine6327_groups32 2 0.035203 0.000156
+SLAB j60001fine6327_groups8 2 0.019556 0.000166999999999
+SLAB j60001fine6327_groups0 2 0.022139 0.000166999999999
+SLAB j60001fine6327_groups0 3 0.02268 0.000173999999999
+SLAB j60001fine6327_groups8 3 0.020747 0.000199
+SLAB j60001fine6327_groups32 3 0.018833 0.00027
+SLAB j60001fine6327_groups64 3 0.023008 0.000178
+SLAB j60001fine6327_groups64 4 0.025123 0.000183
+SLAB j60001fine6327_groups32 4 0.02086 0.000204
+SLAB j60001fine6327_groups8 4 0.021555 0.000238
+SLAB j60001fine6327_groups0 4 0.019906 0.000181000000001
+SLAB j60001fine6327_groups0 5 0.020818 0.000195
+SLAB j60001fine6327_groups8 5 0.018775 0.000183
+SLAB j60001fine6327_groups32 5 0.021803 0.000171
+SLAB j60001fine6327_groups64 5 0.026879 0.00018
+WEIGHTED_SLAB_DONE
+Exporting theory "GuardCompare" ... done.
+Theory "GuardCompare" took 17.1s to build
+Holmake: [1/1] GuardCompare

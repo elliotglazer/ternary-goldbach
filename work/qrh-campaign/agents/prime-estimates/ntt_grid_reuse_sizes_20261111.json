@@ -1,0 +1,387 @@
+{
+  "scope": "grid metadata and proof-template arithmetic only",
+  "W": 262144,
+  "D": 524288,
+  "T": 2097152,
+  "ell": 21,
+  "one_transform_nonunity_products": 19922945,
+  "one_transform_mod_adds": 44040192,
+  "isolated_products_per_cell": 61865987,
+  "shared_limit_products_per_cell": 22020097,
+  "asymptotic_product_ratio": "22020097/61865987",
+  "narrow_span_isolated_products": 13893635,
+  "rows": [
+    {
+      "B": 10000000000000000,
+      "L": 4294967296,
+      "R": 1164153,
+      "J": 16384,
+      "last_width": 937459713,
+      "last_tiles": 3577,
+      "cells": 19073469945,
+      "source_cache_raw_bytes": 137438953472,
+      "anchor_cache_raw_bytes": 9765623169024,
+      "shared_transforms": 19074650482,
+      "isolated_transforms": 57220409835,
+      "shared_mod_muls": 420023178089206130,
+      "isolated_mod_muls": 1179999043662260715,
+      "mul_ratio": "84004635617841226/235999808732452143",
+      "shared_mod_adds": 840051269560172544,
+      "isolated_mod_adds": 2519997835452088320,
+      "logical_cached_operand_residues_read": 79999931284193280,
+      "both_operands_uncached_read_bytes": 319999725136773120,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 19073482752,
+          "row_strip_source_transforms": 19073482752,
+          "row_strip_anchor_transforms": 1164153,
+          "tile_strip_upper_muls": 799999932559560185,
+          "row_strip_upper_muls": 800022799498219890
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 2384185344,
+          "row_strip_source_transforms": 2384199680,
+          "row_strip_anchor_transforms": 1164153,
+          "tile_strip_upper_muls": 467499978211333625,
+          "row_strip_upper_muls": 467523130765332850
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 298023168,
+          "row_strip_source_transforms": 298024960,
+          "row_strip_anchor_transforms": 1164153,
+          "tile_strip_upper_muls": 425937483917805305,
+          "row_strip_upper_muls": 425960386558382450
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 37252896,
+          "row_strip_source_transforms": 37257216,
+          "row_strip_anchor_transforms": 1164153,
+          "tile_strip_upper_muls": 420742172131114265,
+          "row_strip_upper_muls": 420765125136896370
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "L": 17179869184,
+      "R": 291038,
+      "J": 65536,
+      "last_width": 5232427009,
+      "last_tiles": 19961,
+      "cells": 19073420793,
+      "source_cache_raw_bytes": 549755813888,
+      "anchor_cache_raw_bytes": 2441403695104,
+      "shared_transforms": 19073777367,
+      "isolated_transforms": 57220262379,
+      "shared_mod_muls": 420005679987867351,
+      "isolated_mod_muls": 1179996002825267691,
+      "mul_ratio": "20000270475612731/56190285848822271",
+      "shared_mod_adds": 840012817407934464,
+      "isolated_mod_adds": 2519991341461536768,
+      "logical_cached_operand_residues_read": 79999725125763072,
+      "both_operands_uncached_read_bytes": 319998900503052288,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 19073466368,
+          "row_strip_source_transforms": 19073466368,
+          "row_strip_anchor_transforms": 291038,
+          "tile_strip_upper_muls": 799999503062814201,
+          "row_strip_upper_muls": 800003995726757591
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 2384183296,
+          "row_strip_source_transforms": 2384199680,
+          "row_strip_anchor_transforms": 291038,
+          "tile_strip_upper_muls": 467499834329927161,
+          "row_strip_upper_muls": 467504653411401431
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 298022912,
+          "row_strip_source_transforms": 298057728,
+          "row_strip_anchor_transforms": 291038,
+          "tile_strip_upper_muls": 425937375738316281,
+          "row_strip_upper_muls": 425942562039512791
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 37252864,
+          "row_strip_source_transforms": 37289984,
+          "row_strip_anchor_transforms": 291038,
+          "tile_strip_upper_muls": 420742068414364921,
+          "row_strip_upper_muls": 420747300618026711
+        }
+      ]
+    },
+    {
+      "B": 10000000000000000,
+      "L": 68719476736,
+      "R": 72759,
+      "J": 262144,
+      "last_width": 39592165377,
+      "last_tiles": 151033,
+      "cells": 19073224185,
+      "source_cache_raw_bytes": 2199023255552,
+      "anchor_cache_raw_bytes": 610346729472,
+      "shared_transforms": 19073559088,
+      "isolated_transforms": 57219672555,
+      "shared_mod_muls": 420000918910495280,
+      "isolated_mod_muls": 1179983839477295595,
+      "mul_ratio": "84000183782099056/235996767895459119",
+      "shared_mod_adds": 840003204358864896,
+      "isolated_mod_adds": 2519965365499330560,
+      "logical_cached_operand_residues_read": 79998900492042240,
+      "both_operands_uncached_read_bytes": 319995601968168960,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 19073335296,
+          "row_strip_source_transforms": 19073335296,
+          "row_strip_anchor_transforms": 72759,
+          "tile_strip_upper_muls": 799996479405706745,
+          "row_strip_upper_muls": 799992706298767920
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 2384166912,
+          "row_strip_source_transforms": 2384199680,
+          "row_strip_anchor_transforms": 72759,
+          "tile_strip_upper_muls": 467499095595535865,
+          "row_strip_upper_muls": 467495975323658800
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 298020864,
+          "row_strip_source_transforms": 298057728,
+          "row_strip_anchor_transforms": 72759,
+          "tile_strip_upper_muls": 425936922619264505,
+          "row_strip_upper_muls": 425933883951770160
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 37252608,
+          "row_strip_source_transforms": 37486592,
+          "row_strip_anchor_transforms": 72759,
+          "tile_strip_upper_muls": 420741650997230585,
+          "row_strip_upper_muls": 420742539540654640
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "L": 4294967296,
+      "R": 2328306,
+      "J": 16384,
+      "last_width": 1874919425,
+      "last_tiles": 7153,
+      "cells": 38146956273,
+      "source_cache_raw_bytes": 137438953472,
+      "anchor_cache_raw_bytes": 19531246338048,
+      "shared_transforms": 38149300963,
+      "isolated_transforms": 114440868819,
+      "shared_mod_muls": 840046390516130531,
+      "isolated_mod_muls": 2359999100874986451,
+      "mul_ratio": "840046390516130531/2359999100874986451",
+      "shared_mod_adds": 1680102539076304896,
+      "isolated_mod_adds": 5039997835435573248,
+      "logical_cached_operand_residues_read": 159999931283668992,
+      "both_operands_uncached_read_bytes": 639999725134675968,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 38146965504,
+          "row_strip_source_transforms": 38146965504,
+          "row_strip_anchor_transforms": 2328306,
+          "tile_strip_upper_muls": 1599999899456838641,
+          "row_strip_upper_muls": 1600045959751688931
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 4768370688,
+          "row_strip_source_transforms": 4768382976,
+          "row_strip_anchor_transforms": 2328306,
+          "tile_strip_upper_muls": 934999990760385521,
+          "row_strip_upper_muls": 935046295868383971
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 596046336,
+          "row_strip_source_transforms": 596049920,
+          "row_strip_anchor_transforms": 2328306,
+          "tile_strip_upper_muls": 851875002173328881,
+          "row_strip_upper_muls": 851921133872014051
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 16384,
+          "tile_strip_anchor_transforms": 74505792,
+          "row_strip_source_transforms": 74514432,
+          "row_strip_anchor_transforms": 2328306,
+          "tile_strip_upper_muls": 841484378599946801,
+          "row_strip_upper_muls": 841530611029041891
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "L": 17179869184,
+      "R": 582076,
+      "J": 65536,
+      "last_width": 10464854017,
+      "last_tiles": 39921,
+      "cells": 38146907121,
+      "source_cache_raw_bytes": 549755813888,
+      "anchor_cache_raw_bytes": 4882807390208,
+      "shared_transforms": 38147554733,
+      "isolated_transforms": 114440721363,
+      "shared_mod_muls": 840011497392668077,
+      "isolated_mod_muls": 2359996060037993427,
+      "mul_ratio": "840011497392668077/2359996060037993427",
+      "shared_mod_adds": 1680025634771828736,
+      "isolated_mod_adds": 5039991341445021696,
+      "logical_cached_operand_residues_read": 159999725125238784,
+      "both_operands_uncached_read_bytes": 639998900500955136,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 38146932736,
+          "row_strip_source_transforms": 38146932736,
+          "row_strip_anchor_transforms": 582076,
+          "tile_strip_upper_muls": 1599999143542561777,
+          "row_strip_upper_muls": 1600009434540572077
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 4768366592,
+          "row_strip_source_transforms": 4768399360,
+          "row_strip_anchor_transforms": 582076,
+          "tile_strip_upper_muls": 934999806076787697,
+          "row_strip_upper_muls": 935010749909859757
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 596045824,
+          "row_strip_source_transforms": 596049920,
+          "row_strip_anchor_transforms": 582076,
+          "tile_strip_upper_muls": 851874888893565937,
+          "row_strip_upper_muls": 851885261495958957
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 65536,
+          "tile_strip_anchor_transforms": 74505728,
+          "row_strip_source_transforms": 74514432,
+          "row_strip_anchor_transforms": 582076,
+          "tile_strip_upper_muls": 841484274245663217,
+          "row_strip_upper_muls": 841494738652986797
+        }
+      ]
+    },
+    {
+      "B": 20000000000000000,
+      "L": 68719476736,
+      "R": 145519,
+      "J": 262144,
+      "last_width": 10464854017,
+      "last_tiles": 39921,
+      "cells": 38146710513,
+      "source_cache_raw_bytes": 2199023255552,
+      "anchor_cache_raw_bytes": 1220701847552,
+      "shared_transforms": 38147118176,
+      "isolated_transforms": 114440131539,
+      "shared_mod_muls": 840002387574707296,
+      "isolated_mod_muls": 2359983896690021331,
+      "mul_ratio": "36521842938030752/102607995508261797",
+      "shared_mod_adds": 1680006408717729792,
+      "isolated_mod_adds": 5039965365482815488,
+      "logical_cached_operand_residues_read": 159998900491517952,
+      "both_operands_uncached_read_bytes": 639995601966071808,
+      "schedules": [
+        {
+          "cap": 1,
+          "retained_raw_bytes": 8388608,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 38146932736,
+          "row_strip_source_transforms": 38146932736,
+          "row_strip_anchor_transforms": 145519,
+          "tile_strip_upper_muls": 1599998731225701361,
+          "row_strip_upper_muls": 1599996407712240736
+        },
+        {
+          "cap": 8,
+          "retained_raw_bytes": 67108864,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 4768366592,
+          "row_strip_source_transforms": 4768399360,
+          "row_strip_anchor_transforms": 145519,
+          "tile_strip_upper_muls": 934999393759927281,
+          "row_strip_upper_muls": 934997723081528416
+        },
+        {
+          "cap": 64,
+          "retained_raw_bytes": 536870912,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 596045824,
+          "row_strip_source_transforms": 596115456,
+          "row_strip_anchor_transforms": 145519,
+          "tile_strip_upper_muls": 851874476576705521,
+          "row_strip_upper_muls": 851873540337751136
+        },
+        {
+          "cap": 512,
+          "retained_raw_bytes": 4294967296,
+          "tile_strip_source_transforms": 262144,
+          "tile_strip_anchor_transforms": 74505728,
+          "row_strip_source_transforms": 74711040,
+          "row_strip_anchor_transforms": 145519,
+          "tile_strip_upper_muls": 841483861928802801,
+          "row_strip_upper_muls": 841485628835026016
+        }
+      ]
+    }
+  ]
+}

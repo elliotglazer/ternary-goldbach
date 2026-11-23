@@ -1,0 +1,51 @@
+{
+  "actual_file_bytes": 204498,
+  "counts": {
+    "Horner_additions": 299,
+    "Horner_multiplications": 299,
+    "analytic_right_visits": 1,
+    "bernoulli_corrections": 224,
+    "failed_halfplane_attempts": 0,
+    "imported_top_models": 6,
+    "logarithms": 333335,
+    "main_sum_series_exponentials": 2333338,
+    "model_reuse_panel_visits": 0,
+    "new_model_builds": 7,
+    "other_series_exponentials": 14,
+    "panel_quotients": 13,
+    "panel_visits": 14,
+    "pochhammer_updates": 441
+  },
+  "elapsed_seconds_recorded": 36.29981419999967,
+  "exact_crossings": [
+    0,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "minimum_margin": "59497651057820038109888342225681522796535744544368568403/392318858461667547739736838950479151006397215279002157056",
+  "minimum_margin_decimal_strict_lower": "15165636261/100000000000",
+  "minimum_margin_panel": "t0",
+  "peak_working_set_bytes_recorded": 74231808,
+  "producer_sha256": "AA4496B7EE84D4BCA497B5BDFFC237A6DC0949F45C5F9E134B29498C5B58D084",
+  "receipt_sha256": "CF90E96C7531F57E455ABCE70D8D71FB06596E9E1490FADDBAFA6DE64FCB0B09",
+  "reported_LF_payload_bytes": 200234,
+  "rotation_counts": {
+    "-i": 3,
+    "1": 11
+  },
+  "scope": "Checks stored boxes/margins, enclosing imports, geometry and exact arithmetic only. Does not independently establish new EM coefficients or image enclosures.",
+  "script_sha256": "F22BD8E477566ACBD57A6ACFE71FDEA3E6C3EDD2C46DFAA6532F4B3FAEF16E06",
+  "status": "PASS_SAVED_DATA_INSPECTION_ONLY",
+  "winding": 0
+}

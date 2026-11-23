@@ -1,0 +1,35 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-coordinate-sources/PreDiagonalScript.uo to produce theory-builder executable
+<<HOL message: Created theory "PreDiagonal">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in PreDiagonal)>>
+Saved theorem _______ "ss_modu_add_square"
+Saved theorem _______ "ss_modu_triangle"
+Saved theorem _______ "ss_modu_sub_triangle"
+Saved theorem _______ "unit_unpost"
+Proof of 
+
+∀c h u v z d r e b.
+  modu c = 1 ∧ modu (c − h) ≤ d ∧ modu u ≤ b ∧ modu (h * u − v) ≤ r ∧
+  modu (v − z) ≤ e ⇒
+  modu (u − conj c * z) ≤ d * b + r + e
+
+failed.
+Tactic failure proving "remove_diagonal"; heap saved to PreDiagonal.remove_diagonal.dumpedheap.
+Resume with: bin/hol --holstate=PreDiagonal.remove_diagonal.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-coordinate-sources/PreDiagonalScript - exited with code 1

@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_PREPARATION_ONLY",
+  "source": {
+    "path": "rational_j7_host_20261111.py",
+    "sha256": "5E54971F8D8B8B008556C60648C0D451F5270DCB99FDB5161954C88543BF31FB",
+    "bytes": 21074
+  },
+  "contract": {
+    "path": "RATIONAL_J7_HOST_PREPARATION_2026-11-11.md",
+    "sha256": "37A792EC451CB94D61EED6F7565F6E8160158861657681501A2FABCE7A0EF9E3"
+  },
+  "infrastructure_pins": {
+    "rational_j7_supervision_20261111_common.py": "0BB49255BCF82307BACFB3BA353A3D83217C2023D37DCCDAFE6DDE98623CF154",
+    "rational_j7_supervision_20261111_managed.py": "F90F2DCC39A2659C2AF372EFEC19CCA73A3E679CE2AFDDAC12DABC0E209423C9",
+    "rational_j7_supervision_20261111_native.py": "CFC956B179C45AFAEAB5EA1DB42B05C06C643D0A10EC1682CBE0433248248E13",
+    "rational_j7_supervision_20261111_run.py": "755300B91BA4780D5713DEC6C192E6F60AF50ABE6330F1C258F95C59DD28486C"
+  },
+  "ast_parse": true,
+  "compile_on_text": true,
+  "create_process_sites": 1,
+  "detached_suspended_extended_flags": 524300,
+  "explicit_handle_inheritance": true,
+  "target_modules_imported": false,
+  "native_calls": 0,
+  "process_launches": 0,
+  "numerical_evaluations": 0,
+  "runtime_authorizations_created": 0,
+  "additional_H_job_capability": "OPEN; requires separate evidence and independent review",
+  "static_review": "PENDING"
+}

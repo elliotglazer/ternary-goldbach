@@ -1,0 +1,286 @@
+{
+  "scope": "Fixed metadata and conditional Fermi sensitivities only; no prime search, build, timing run or inventory",
+  "seconds_per_core_year": 31557600,
+  "old_component_pins_unchanged": true,
+  "observations": {
+    "hol_primality_phase_seconds": "1281/20000",
+    "hol_prime_roles_sum_of_medians_seconds": "452703/250000",
+    "hol_prime_roles_per_requested_root_seconds": "150901/32750000",
+    "hol_arithmetic_per_requested_root_seconds": "427/2620000",
+    "hol_process_per_requested_root_seconds_diagnostic": "1309/39300",
+    "lean_anchor_closure_per_root_elapsed_seconds": "199339/4400000"
+  },
+  "L_frontier": [
+    {
+      "L": 4294967296,
+      "source_bytes": 536936448,
+      "anchor_records": 596046336,
+      "old_lean_anchor_check_years": "18238397/17532000",
+      "hol_arithmetic_only_proxy_years": "165697777/53828718750",
+      "hol_prime_roles_proxy_years": "58557283951/672858984375",
+      "hol_full_process_allocation_proxy_years": "2031835036/3229723125"
+    },
+    {
+      "L": 17179869184,
+      "source_bytes": 2147549184,
+      "anchor_records": 149011456,
+      "old_lean_anchor_check_years": "6839393/26298000",
+      "hol_arithmetic_only_proxy_years": "62136613/80743078125",
+      "hol_prime_roles_proxy_years": "43917925238/2018576953125",
+      "hol_full_process_allocation_proxy_years": "1523874968/9689169375"
+    },
+    {
+      "L": 68719476736,
+      "source_bytes": 8590000128,
+      "anchor_records": 37252608,
+      "old_lean_anchor_check_years": "1139891/17532000",
+      "hol_arithmetic_only_proxy_years": "10356031/53828718750",
+      "hol_prime_roles_proxy_years": "3659801953/672858984375",
+      "hol_full_process_allocation_proxy_years": "126988708/3229723125"
+    }
+  ],
+  "central_lean": {
+    "old_years": {
+      "generation": 10.555195806361823,
+      "checking": 7.875427593913595,
+      "total": 18.430623400275415
+    },
+    "anchor_check_years": "1139891/17532000",
+    "source_check_years": "1/5",
+    "anchor_check_fraction_of_total": "56994550000000000/16156284472681428789",
+    "free_source_and_anchor_check_fraction": "232314550000000000/16156284472681428789",
+    "new_anchor_proxy_years": "4834568767/90399375000",
+    "reanchored_total_years": "532823629453927150037/28927800000000000000"
+  },
+  "central_mm0": {
+    "old_total_years": 720.482969091558,
+    "anchor_check_years": "2328304/986175",
+    "max_anchor_check_plus_equal_proof_generation_saving_years": "4656608/986175",
+    "no_new_PA_rate": true
+  },
+  "ladder_geometry": {
+    "F": 35184372088832,
+    "README_S": 111616,
+    "README_max_offset": 2047,
+    "README_gap_bound": 3999161284732911616,
+    "README_window_span": 72022409665839104,
+    "README_index_cap": 268435456,
+    "claim_rungs": 254638308,
+    "claim_native_hours": "21219859/20000000",
+    "claim_check_hours": "233418449/60000000",
+    "candidate_rows": [
+      {
+        "B": 1000000000000000,
+        "necessary_new_primes": 989000000000,
+        "max_Proth_index_jump": 28,
+        "max_fixed_S_if_all2048_offsets_allowed": -2019,
+        "min_index_bits_for_count": 40
+      },
+      {
+        "B": 10000000000000000,
+        "necessary_new_primes": 98900000000,
+        "max_Proth_index_jump": 284,
+        "max_fixed_S_if_all2048_offsets_allowed": -1763,
+        "min_index_bits_for_count": 37
+      },
+      {
+        "B": 20000000000000000,
+        "necessary_new_primes": 49450000000,
+        "max_Proth_index_jump": 568,
+        "max_fixed_S_if_all2048_offsets_allowed": -1479,
+        "min_index_bits_for_count": 36
+      },
+      {
+        "B": 100000000000000000,
+        "necessary_new_primes": 9890000000,
+        "max_Proth_index_jump": 2842,
+        "max_fixed_S_if_all2048_offsets_allowed": 795,
+        "min_index_bits_for_count": 34
+      },
+      {
+        "B": 4000000000000000000,
+        "necessary_new_primes": 247250000,
+        "max_Proth_index_jump": 113686,
+        "max_fixed_S_if_all2048_offsets_allowed": 111639,
+        "min_index_bits_for_count": 28
+      }
+    ]
+  },
+  "lean_special_check_sensitivity": [
+    {
+      "B": 10000000000000000,
+      "special_check_seconds_assumed": "11/200000",
+      "years": "19290989979775079631/1071400000000000000"
+    },
+    {
+      "B": 10000000000000000,
+      "special_check_seconds_assumed": "33/200000",
+      "years": "532823629453927150037/28927800000000000000"
+    },
+    {
+      "B": 10000000000000000,
+      "special_check_seconds_assumed": "1/1000",
+      "years": "23098639979775079631/1071400000000000000"
+    },
+    {
+      "B": 10000000000000000,
+      "special_check_seconds_assumed": "1/100",
+      "years": "178085919939325238893/3214200000000000000"
+    },
+    {
+      "B": 10000000000000000,
+      "special_check_seconds_assumed": "1/10",
+      "years": "1265985919939325238893/3214200000000000000"
+    },
+    {
+      "B": 20000000000000000,
+      "special_check_seconds_assumed": "11/200000",
+      "years": "297526167459545010461/9861750000000000000"
+    },
+    {
+      "B": 20000000000000000,
+      "special_check_seconds_assumed": "33/200000",
+      "years": "299565979959545010461/9861750000000000000"
+    },
+    {
+      "B": 20000000000000000,
+      "special_check_seconds_assumed": "1/1000",
+      "years": "315050011209545010461/9861750000000000000"
+    },
+    {
+      "B": 20000000000000000,
+      "special_check_seconds_assumed": "1/100",
+      "years": "481943761209545010461/9861750000000000000"
+    },
+    {
+      "B": 20000000000000000,
+      "special_check_seconds_assumed": "1/10",
+      "years": "2150881261209545010461/9861750000000000000"
+    },
+    {
+      "B": 100000000000000000,
+      "special_check_seconds_assumed": "11/200000",
+      "years": "54587867491526550397/394470000000000000"
+    },
+    {
+      "B": 100000000000000000,
+      "special_check_seconds_assumed": "33/200000",
+      "years": "54604185991526550397/394470000000000000"
+    },
+    {
+      "B": 100000000000000000,
+      "special_check_seconds_assumed": "1/1000",
+      "years": "54728058241526550397/394470000000000000"
+    },
+    {
+      "B": 100000000000000000,
+      "special_check_seconds_assumed": "1/100",
+      "years": "56063208241526550397/394470000000000000"
+    },
+    {
+      "B": 100000000000000000,
+      "special_check_seconds_assumed": "1/10",
+      "years": "69414708241526550397/394470000000000000"
+    }
+  ],
+  "HOL_unpriced_frontier": {
+    "B": 10000000000000000,
+    "L": 68719476736,
+    "tiles": 19073486329,
+    "anchor_records": 37252608,
+    "assumed_K": 118680000000,
+    "same_native_binary_search_years": "1015625/157788",
+    "tile_acceptance_seconds_sensitivities": {
+      "1/1000": "19073486329/31557600000",
+      "1/100": "19073486329/3155760000",
+      "1/10": "19073486329/315576000"
+    },
+    "ladder_acceptance_seconds_sensitivities": {
+      "1/10000": "4945/13149",
+      "1/1000": "49450/13149",
+      "1/100": "494500/13149",
+      "1/10": "4945000/13149"
+    },
+    "not_full_totals": true
+  },
+  "central_cutoff_break_even": [
+    {
+      "backend": "Lean",
+      "B1": 10000000000000000,
+      "B2": 20000000000000000,
+      "total_rung_generation_plus_check_seconds_threshold": "180003833102638582113/24725000000000000000000"
+    },
+    {
+      "backend": "Lean",
+      "B1": 20000000000000000,
+      "B2": 100000000000000000,
+      "total_rung_generation_plus_check_seconds_threshold": "45000956273709114561/618125000000000000000"
+    },
+    {
+      "backend": "MM0_stock_conditional",
+      "B1": 10000000000000000,
+      "B2": 20000000000000000,
+      "total_rung_generation_plus_check_seconds_threshold": "2035822629518227023/49450000000000000000"
+    },
+    {
+      "backend": "MM0_stock_conditional",
+      "B1": 20000000000000000,
+      "B2": 100000000000000000,
+      "total_rung_generation_plus_check_seconds_threshold": "16286577588679156167/39560000000000000000"
+    }
+  ],
+  "pins": [
+    {
+      "path": "work/backend-costs-20261112/finite-hol/BATCH_REPORT.md",
+      "sha256": "FAC52C0F64281D135D4984F216BC5DF9CED9A70C912E021CA075E66417F3755E"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-hol/BATCH_RESULTS.json",
+      "sha256": "D59E4C1E38CA8455B12C2EF806708B3079C714DDD985410020A7ED1C231BF2E6"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-hol/NATIVE_BATCH_RESULTS.json",
+      "sha256": "E76322EDC3C4362DF6B94AEB6552A1C963F6203AD064B8D17A2AA670853FCFE2"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/REPORT.md",
+      "sha256": "3BC20B6004D89FC8CAFF720435959A07374201A4472BE7304596C9CF8EC582D8"
+    },
+    {
+      "path": "work/backend-costs-20261112/finite-lean/RESULTS.json",
+      "sha256": "59A306540D853BAEB47A715CE19ABB02FCB51EEE689383DCD71AAF8FAA6344D4"
+    },
+    {
+      "path": "work/qrh-blueprint/estimates-20261111/FINITE_COST_ESTIMATE.md",
+      "sha256": "F03C9E49433988ECCEF97D6A10CCA073F7BD024F1B92511285CCD7D65CA1BFCE"
+    },
+    {
+      "path": "work/qrh-blueprint/estimates-20261111/finite_cost_scenarios.py",
+      "sha256": "C842CFE3897E1A503781241DEFE0416260134E151ECF1B6CE6900DF49F13664B"
+    },
+    {
+      "path": "work/qrh-blueprint/estimates-20261111/finite_cost_scenarios.json",
+      "sha256": "48FC76488941526A4B2CA5B5198B06D6051DA67D78DFBA342C5F8B9374E9363B"
+    },
+    {
+      "path": "work/qrh-blueprint/BINARY_BLOCK_SCALING_2026-11-11.md",
+      "sha256": "982115AD458F718039B391DAEA714E25C5E80823C49B537ED78FEC8F155480CD"
+    },
+    {
+      "path": "work/ternary-goldbach/README.md",
+      "sha256": "D884FCAD91275B30AED6A96223503EF1ED5E3B234B8FAFD85D095CDCE7C5C3D7"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Spec.lean",
+      "sha256": "0009820117E19E6B41B92C6879145569ABA9D4FDE25BF7FFE926AC0B3602901F"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Check.lean",
+      "sha256": "A7993B4D1E8A70112403B85B15CF586B4DA84B962A04416531BDE9F35817A42D"
+    },
+    {
+      "path": "work/ternary-goldbach/LadderHints.lean",
+      "sha256": "3AA4E7D3357E5D544288249ED13616B3D9F9151C21D1DAE82AEFD7355C53505D"
+    }
+  ]
+}

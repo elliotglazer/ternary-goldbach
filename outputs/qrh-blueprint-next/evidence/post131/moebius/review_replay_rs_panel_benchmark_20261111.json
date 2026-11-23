@@ -1,0 +1,236 @@
+{
+  "precision_bits": 128,
+  "python": "3.14.7",
+  "python_flint": "0.9.0",
+  "scope": "Bounded library timing and enclosure diagnostic only; no full contour or explicit RS proof certificate.",
+  "runs": [
+    {
+      "sigma": "0.5025",
+      "height": 10000,
+      "point_calls": 32,
+      "point_seconds": 0.021656099997926503,
+      "source_predicted_RS": false,
+      "min_point_accuracy_bits": 112,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.009713399998872774,
+          "min_relative_accuracy_bits": -11
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.009676099998614518,
+          "min_relative_accuracy_bits": -6
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.010197100000368664,
+          "min_relative_accuracy_bits": 2
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.009810499999730382,
+          "min_relative_accuracy_bits": 6
+        }
+      ]
+    },
+    {
+      "sigma": "0.5025",
+      "height": 100000,
+      "point_calls": 32,
+      "point_seconds": 0.056987599997228244,
+      "source_predicted_RS": true,
+      "min_point_accuracy_bits": 112,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.003111699999863049,
+          "min_relative_accuracy_bits": -11
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.003038599999854341,
+          "min_relative_accuracy_bits": -3
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.00298560000010184,
+          "min_relative_accuracy_bits": 1
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.003570400000171503,
+          "min_relative_accuracy_bits": 5
+        }
+      ]
+    },
+    {
+      "sigma": "0.5025",
+      "height": 1000000,
+      "point_calls": 32,
+      "point_seconds": 0.04219150000062655,
+      "source_predicted_RS": true,
+      "min_point_accuracy_bits": 111,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.0033709999988786876,
+          "min_relative_accuracy_bits": -14
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.0042477999995753635,
+          "min_relative_accuracy_bits": -5
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.003560599998309044,
+          "min_relative_accuracy_bits": -1
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.004798900001333095,
+          "min_relative_accuracy_bits": 3
+        }
+      ]
+    },
+    {
+      "sigma": "0.555",
+      "height": 10000,
+      "point_calls": 32,
+      "point_seconds": 0.02135679999992135,
+      "source_predicted_RS": false,
+      "min_point_accuracy_bits": 119,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.009734100000059698,
+          "min_relative_accuracy_bits": -8
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.009725600000820123,
+          "min_relative_accuracy_bits": -3
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.009706499997264473,
+          "min_relative_accuracy_bits": 2
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.009727199998451397,
+          "min_relative_accuracy_bits": 6
+        }
+      ]
+    },
+    {
+      "sigma": "0.555",
+      "height": 100000,
+      "point_calls": 32,
+      "point_seconds": 0.05591609999828506,
+      "source_predicted_RS": true,
+      "min_point_accuracy_bits": 117,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.00341380000099889,
+          "min_relative_accuracy_bits": -9
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.003437400002439972,
+          "min_relative_accuracy_bits": -2
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.002850400000170339,
+          "min_relative_accuracy_bits": 2
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.003432599998632213,
+          "min_relative_accuracy_bits": 6
+        }
+      ]
+    },
+    {
+      "sigma": "0.555",
+      "height": 1000000,
+      "point_calls": 32,
+      "point_seconds": 0.04201000000102795,
+      "source_predicted_RS": true,
+      "min_point_accuracy_bits": 115,
+      "panels": [
+        {
+          "width_power_minus": 4,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.0033703000008245,
+          "min_relative_accuracy_bits": -11
+        },
+        {
+          "width_power_minus": 8,
+          "calls": 16,
+          "halfplane_nonzero": 0,
+          "seconds": 0.004242999999405583,
+          "min_relative_accuracy_bits": -4
+        },
+        {
+          "width_power_minus": 12,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.0035567000013543293,
+          "min_relative_accuracy_bits": 0
+        },
+        {
+          "width_power_minus": 16,
+          "calls": 16,
+          "halfplane_nonzero": 16,
+          "seconds": 0.004760600000736304,
+          "min_relative_accuracy_bits": 4
+        }
+      ]
+    }
+  ]
+}

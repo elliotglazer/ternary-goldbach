@@ -1,0 +1,121 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../hol4-setup[0m
+Holmake: Scanning [1m../c10004-transform[0m
+Holmake: Scanning [1m../c10004-projection[0m
+Holmake: Scanning [1m../c10004-traversal[0m
+Holmake: Scanning [1m../c10004-traversal-refinement[0m
+Holmake: Scanning [1m../c10004-traversal-cv[0m
+Holmake: Scanning [1m../c10004-hol-shared-phase[0m
+Holmake: Scanning [1m../c10004-horner-price[0m
+Holmake: Scanning [1m../c10004-packed-input-hol[0m
+Holmake: Scanning [1m../c10004-full-integer[0m
+Holmake: Scanned 24 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-linked-integer/C10004LinkedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004Linked">>
+Saved definition ____ "linked_r122_def"
+Saved definition ____ "linked_r140_def"
+Saved definition ____ "linked_state_def"
+Saved definition ____ "linked_raw_def"
+Saved theorem _______ "linked_unroll_compute"
+Saved definition ____ "linked_unroll_def"
+Saved definition ____ "linked_blocks_def"
+Saved definition ____ "linked_walk_def"
+Saved definition ____ "linked_heads_def"
+Saved definition ____ "linked_coeff2_def"
+Saved definition ____ "linked_both_def"
+Saved definition ____ "linked_identity_def"
+Saved theorem _______ "linked_r122pre_rules"
+Saved theorem _______ "linked_r122pre_ind"
+Saved theorem _______ "linked_r122pre_strongind"
+Saved theorem _______ "linked_r122pre_cases"
+Saved theorem _______ "cv_linked_r122_thm"
+Finished translating linked_r122, stored in cv_linked_r122_thm
+
+WARNING: definition of cv_linked_r122 has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem linked_r122pre[cv_pre]:
+  ∀x. linked_r122pre x
+Proof
+  ho_match_mp_tac linked_r122_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "linked_r122pre_ok"
+Saved theorem _______ "linked_r140pre_rules"
+Saved theorem _______ "linked_r140pre_ind"
+Saved theorem _______ "linked_r140pre_strongind"
+Saved theorem _______ "linked_r140pre_cases"
+Saved theorem _______ "cv_linked_r140_thm"
+Finished translating linked_r140, stored in cv_linked_r140_thm
+
+WARNING: definition of cv_linked_r140 has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem linked_r140pre[cv_pre]:
+  ∀x. linked_r140pre x
+Proof
+  ho_match_mp_tac linked_r140_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "linked_r140pre_ok"
+Starting translation of linked_state from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_state_thm"
+Finished translating linked_state, stored in cv_linked_state_thm
+Starting translation of linked_raw from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_raw_thm"
+Finished translating linked_raw, stored in cv_linked_raw_thm
+Starting translation of linked_unroll from C10004LinkedTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004Linked)>>
+Saved definition ____ "cv_linked_unroll_def"
+Saved induction _____ "cv_linked_unroll_ind"
+Saved theorem _______ "cv_linked_unroll_thm"
+Finished translating linked_unroll, stored in cv_linked_unroll_thm
+Starting translation of linked_blocks from C10004LinkedTheory.
+Saved definition ____ "cv_linked_blocks_def"
+Saved induction _____ "cv_linked_blocks_ind"
+Saved theorem _______ "cv_linked_blocks_thm"
+Finished translating linked_blocks, stored in cv_linked_blocks_thm
+Starting translation of linked_walk from C10004LinkedTheory.
+Saved definition ____ "cv_linked_walk_def"
+Saved induction _____ "cv_linked_walk_ind"
+Saved theorem _______ "cv_linked_walk_thm"
+Finished translating linked_walk, stored in cv_linked_walk_thm
+Starting translation of linked_heads from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_heads_thm"
+Finished translating linked_heads, stored in cv_linked_heads_thm
+Starting translation of linked_coeff2 from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_coeff2_thm"
+Finished translating linked_coeff2, stored in cv_linked_coeff2_thm
+Starting translation of linked_both from C10004LinkedTheory.
+Saved definition ____ "MAP_linked_coeff2_1_def"
+Saved induction _____ "MAP_linked_coeff2_1_ind"
+Starting translation of MAP_linked_coeff2 from C10004LinkedTheory.
+Saved definition ____ "cv_MAP_linked_coeff2_def"
+Saved induction _____ "cv_MAP_linked_coeff2_ind"
+Saved theorem _______ "cv_MAP_linked_coeff2_thm"
+Finished translating MAP_linked_coeff2, stored in cv_MAP_linked_coeff2_thm
+Saved theorem _______ "MAP_linked_coeff2_ho"
+Starting translation of linked_both from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_both_thm"
+Finished translating linked_both, stored in cv_linked_both_thm
+Starting translation of linked_identity from C10004LinkedTheory.
+Saved theorem _______ "cv_linked_identity_thm"
+Finished translating linked_identity, stored in cv_linked_identity_thm
+Exporting theory "C10004Linked" ... done.
+Theory "C10004Linked" took 0.78896s to build
+Holmake: [1/1] C10004Linked

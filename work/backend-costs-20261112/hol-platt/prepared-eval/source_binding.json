@@ -1,0 +1,24 @@
+{
+  "status": "source-only; not built or run",
+  "baseline_sha256": "ECB62C8C7B1F1AAAA8DF9617DAF4145D7FCADBEEDD9CF8579D3F57962C5E1AB1",
+  "baseline_path": "../../hol4-setup/dependent.sml",
+  "adapter_sha256": "13A8941A49FA2CB238370008B10D13FC106C42B95353E18EB145683776D27807",
+  "driver_sha256": "50077F647A0BC91B892FC6DBB3ABAC95D4B0B5084872A8BAAC2C0D6E35EDEEA4",
+  "depths": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "calls_per_depth_per_process": 3,
+  "fresh_processes_per_mode": 3,
+  "modes": [
+    "stock",
+    "fresh",
+    "retained"
+  ],
+  "contract": "unchanged block_accept and block_accept_sound; all five original corruption terms retained",
+  "runner_default": "smoke: one fresh process per mode; full: three per mode",
+  "controls": "five unchanged mathematical rejections plus actual incompatible-closure CacheMismatch; no resource-error rejection",
+  "equation_metadata": "closed equation theorems saved once per ordered set; exported theorem names, count and per-use ID logged"
+}

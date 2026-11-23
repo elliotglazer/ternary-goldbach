@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\BlockP343N2048.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\BlockP343N2048.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 6.6174448000092525,
+  "user_cpu_seconds": 3.515625,
+  "system_cpu_seconds": 2.890625,
+  "cpu_seconds": 6.40625,
+  "peak_working_set_bytes": 801198080,
+  "observed_peak_private_bytes": 1324253184,
+  "memory_samples": 131,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "BlockP343N2048.lean",
+      "bytes": 518,
+      "sha256": "98AC37390FC4C86B4429D3D755C4339F2D5636C8EAC0051DD9BEA4FCE3C2E903"
+    },
+    {
+      "path": "build_block_2048.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "BlockP343N2048.olean",
+      "bytes": 9592,
+      "sha256": "8884C8E5D705ADCB5B4A63F63CF52D6A40037BC1AAC641F1E9ED39765A5EB42A"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

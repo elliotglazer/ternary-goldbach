@@ -1,0 +1,425 @@
+{
+  "T": "555",
+  "sub": 20480,
+  "order": 192,
+  "remainder": 5.489958105706728e-57,
+  "analytic_radius": 3.8544287981998804e-53,
+  "channels": [
+    {
+      "label": 40343,
+      "coarse": 7745,
+      "discovery_requests": 1,
+      "edge_requests": 5,
+      "discovery_cpu": 0.015625,
+      "verification_cpu": 0.03125,
+      "raw_error": 3.8549777940110446e-53,
+      "min_abs_coarse": 2.0084146430444227e-27
+    },
+    {
+      "label": 151967,
+      "coarse": 7745,
+      "discovery_requests": 3,
+      "edge_requests": 5,
+      "discovery_cpu": 0.0,
+      "verification_cpu": 0.015625,
+      "raw_error": 3.8549777940110446e-53,
+      "min_abs_coarse": 1.149040305303496e-27
+    },
+    {
+      "label": 139583,
+      "coarse": 7745,
+      "discovery_requests": 1,
+      "edge_requests": 5,
+      "discovery_cpu": 0.015625,
+      "verification_cpu": 0.0,
+      "raw_error": 3.8549777940110446e-53,
+      "min_abs_coarse": 1.2038011584221253e-27
+    },
+    {
+      "label": 143267,
+      "coarse": 7745,
+      "discovery_requests": 1,
+      "edge_requests": 5,
+      "discovery_cpu": 0.015625,
+      "verification_cpu": 0.0,
+      "raw_error": 3.8549777940110446e-53,
+      "min_abs_coarse": 1.0678331673025105e-26
+    }
+  ],
+  "counts": {
+    "(40343, 151967)": {
+      "coarse": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1374,
+            1370
+          ],
+          "K": 2744,
+          "aux": [
+            66,
+            66
+          ],
+          "W_ticks": 429035520,
+          "phase_upper": "302653338269861/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 9.525617642039434,
+            "moderate": 10.653237134562806,
+            "elementary": 21.79116979734041
+          },
+          "exact_margin": {
+            "Rumely": "-915431223769/107374182400",
+            "moderate": "-1036508444837/107374182400",
+            "elementary": "-2232434858129/107374182400"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1374,
+            1370
+          ],
+          "K": 2744,
+          "aux": [
+            132,
+            132
+          ],
+          "W_ticks": 1725194240,
+          "phase_upper": "309756738272149/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 9.368954826202243,
+            "moderate": 9.932554921107366,
+            "elementary": 15.513219190761447
+          },
+          "exact_margin": {
+            "Rumely": "-449304841003/53687091200",
+            "moderate": "-959125781397/107374182400",
+            "elementary": "-7791725223/536870912"
+          }
+        }
+      ],
+      "edge": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1374,
+            1371
+          ],
+          "K": 2745,
+          "aux": [
+            66,
+            66
+          ],
+          "W_ticks": 429035520,
+          "phase_upper": "302653338269861/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 8.525617642039434,
+            "moderate": 9.653237134562806,
+            "elementary": 20.79116979734041
+          },
+          "exact_margin": {
+            "Rumely": "-808057041369/107374182400",
+            "moderate": "-929134262437/107374182400",
+            "elementary": "-2125060675729/107374182400"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1374,
+            1371
+          ],
+          "K": 2745,
+          "aux": [
+            132,
+            132
+          ],
+          "W_ticks": 1725194240,
+          "phase_upper": "309756738272149/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 8.368954826202243,
+            "moderate": 8.932554921107366,
+            "elementary": 14.513219190761447
+          },
+          "exact_margin": {
+            "Rumely": "-395617749803/53687091200",
+            "moderate": "-851751598997/107374182400",
+            "elementary": "-7254854311/536870912"
+          }
+        }
+      ],
+      "fixed": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1376,
+            1377
+          ],
+          "K": 2753,
+          "aux": [
+            66,
+            66
+          ],
+          "W_ticks": 429035520,
+          "phase_upper": "302653338269861/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 0.5256176420394332,
+            "moderate": 1.6532371345628052,
+            "elementary": 12.791169797340409
+          },
+          "exact_margin": {
+            "Rumely": "50936417831/107374182400",
+            "moderate": "-70140803237/107374182400",
+            "elementary": "-1266067216529/107374182400"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1376,
+            1377
+          ],
+          "K": 2753,
+          "aux": [
+            132,
+            132
+          ],
+          "W_ticks": 1725194240,
+          "phase_upper": "309756738272149/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 0.36895482620224357,
+            "moderate": 0.9325549211073667,
+            "elementary": 6.513219190761447
+          },
+          "exact_margin": {
+            "Rumely": "33878979797/53687091200",
+            "moderate": "7241860203/107374182400",
+            "elementary": "-2959887015/536870912"
+          }
+        }
+      ]
+    },
+    "(139583, 143267)": {
+      "coarse": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1374,
+            1377
+          ],
+          "K": 2751,
+          "aux": [
+            65,
+            64
+          ],
+          "W_ticks": 414740480,
+          "phase_upper": "302707025361061/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 5.206867642039433,
+            "moderate": 6.3344871345628055,
+            "elementary": 17.472419797340407
+          },
+          "exact_margin": {
+            "Rumely": "-451708973529/107374182400",
+            "moderate": "-572786194597/107374182400",
+            "elementary": "-1768712607889/107374182400"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1374,
+            1377
+          ],
+          "K": 2751,
+          "aux": [
+            132,
+            130
+          ],
+          "W_ticks": 1694515200,
+          "phase_upper": "309810425363349/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 5.209579826202243,
+            "moderate": 5.773179921107367,
+            "elementary": 11.353844190761446
+          },
+          "exact_margin": {
+            "Rumely": "-226000096043/53687091200",
+            "moderate": "-512516291477/107374182400",
+            "elementary": "-27793388867/2684354560"
+          }
+        }
+      ],
+      "edge": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1375,
+            1377
+          ],
+          "K": 2752,
+          "aux": [
+            66,
+            64
+          ],
+          "W_ticks": 414740481,
+          "phase_upper": "302707025361061/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 4.206867489451542,
+            "moderate": 5.334486981974915,
+            "elementary": 16.472419644752517
+          },
+          "exact_margin": {
+            "Rumely": "-68866954949/21474836480",
+            "moderate": "-465411995813/107374182400",
+            "elementary": "-332267681821/21474836480"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1375,
+            1377
+          ],
+          "K": 2752,
+          "aux": [
+            132,
+            130
+          ],
+          "W_ticks": 1694515201,
+          "phase_upper": "309810425363349/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 4.209579749908298,
+            "moderate": 4.773179844813422,
+            "elementary": 10.3538441144675
+          },
+          "exact_margin": {
+            "Rumely": "-172313000747/53687091200",
+            "moderate": "-81028420177/21474836480",
+            "elementary": "-125545170511/13421772800"
+          }
+        }
+      ],
+      "fixed": [
+        {
+          "extra": 320,
+          "main_label_counts": [
+            1377,
+            1377
+          ],
+          "K": 2754,
+          "aux": [
+            66,
+            66
+          ],
+          "W_ticks": 425772801,
+          "phase_upper": "302707025361061/4294967296",
+          "allowance": {
+            "Rumely": "8385400397/2147483648",
+            "moderate": "18",
+            "elementary": "337636308987/2147483648"
+          },
+          "U_minus_K": {
+            "Rumely": 0.5234690519515425,
+            "moderate": 1.6510885444749146,
+            "elementary": 12.789021207252517
+          },
+          "exact_margin": {
+            "Rumely": "10233424187/21474836480",
+            "moderate": "-69910100133/107374182400",
+            "elementary": "-50633460537/4294967296"
+          }
+        },
+        {
+          "extra": 640,
+          "main_label_counts": [
+            1377,
+            1377
+          ],
+          "K": 2754,
+          "aux": [
+            132,
+            132
+          ],
+          "W_ticks": 1718654721,
+          "phase_upper": "309810425363349/2147483648",
+          "allowance": {
+            "Rumely": "16793311937/4294967296",
+            "moderate": "18",
+            "elementary": "676528674531/4294967296"
+          },
+          "U_minus_K": {
+            "Rumely": 0.3678805311582983,
+            "moderate": 0.9314806260634214,
+            "elementary": 6.512144895717501
+          },
+          "exact_margin": {
+            "Rumely": "33936655573/53687091200",
+            "moderate": "1471442351/21474836480",
+            "elementary": "-73982756431/13421772800"
+          }
+        }
+      ]
+    }
+  },
+  "total_cpu": 0.46875,
+  "sha256": {
+    "spectrum.json": "aafcd9e65f2a015720ad09e5b9f3fb912ce85e25e796114777349a2101ebb859",
+    "grid.json": "007b2bef8962ffdaa9058d3a85b4c9f5f47dac0ed508fe5843064f1d6e94ff17",
+    "repair.py": "45aef7627af22af69822623d7aac0b07112a29ed424275decc01aaad410192aa",
+    "signs-40343.tsv": "cbce95bd5cf2f0aafa23970b21cd2bfef113b8bc68e520c36f63d85a68bbd926",
+    "signs-151967.tsv": "af00206448aa6a425871257c980363981b451568d47b48f33398a078d07a8a44",
+    "signs-139583.tsv": "754da18f092691d5f9be2bc66898e26253348307c918f26a5dcdc294c81f963a",
+    "signs-143267.tsv": "124da7763a5caf5132fba34270c853c48c22d876ffe67cad638861c11aade531"
+  }
+}

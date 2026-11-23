@@ -1,0 +1,437 @@
+{
+  "controls": [
+    {
+      "group": "control",
+      "name": "outputs_fixture1",
+      "result": "T",
+      "prepare": 0.00134,
+      "execute": 2.501549,
+      "decode": 0.000296,
+      "discharge": 0.0002,
+      "audit_store": 0.000362,
+      "total": 2.503776
+    },
+    {
+      "group": "control",
+      "name": "outputs_fixture2",
+      "result": "T",
+      "prepare": 0.001672,
+      "execute": 2.522272,
+      "decode": 0.000274,
+      "discharge": 0.000227,
+      "audit_store": 0.000367,
+      "total": 2.524842
+    },
+    {
+      "group": "control",
+      "name": "impulse_all_channels",
+      "result": "T",
+      "prepare": 0.0021,
+      "execute": 0.23392,
+      "decode": 0.000117,
+      "discharge": 5.9e-05,
+      "audit_store": 0.000281,
+      "total": 0.236528
+    },
+    {
+      "group": "control",
+      "name": "short_input_rejected",
+      "result": "T",
+      "prepare": 0.001525,
+      "execute": 0.111143,
+      "decode": 0.000105,
+      "discharge": 7.3e-05,
+      "audit_store": 0.000252,
+      "total": 0.113122
+    },
+    {
+      "group": "control",
+      "name": "invalid_root_rejected",
+      "result": "T",
+      "prepare": 0.001325,
+      "execute": 0.097274,
+      "decode": 0.000104,
+      "discharge": 5.7e-05,
+      "audit_store": 0.000263,
+      "total": 0.099044
+    },
+    {
+      "group": "control",
+      "name": "input_range_rejected",
+      "result": "T",
+      "prepare": 0.002421,
+      "execute": 0.007267,
+      "decode": 6.6e-05,
+      "discharge": 5.9e-05,
+      "audit_store": 0.000257,
+      "total": 0.010092
+    },
+    {
+      "group": "control",
+      "name": "changed_output",
+      "result": "F",
+      "prepare": 0.001126,
+      "execute": 0.375174,
+      "decode": 0.000187,
+      "discharge": 0.000102,
+      "audit_store": 0.000269,
+      "total": 0.376884
+    }
+  ],
+  "reference_first": [
+    {
+      "group": "first",
+      "name": "reference_fixture1_run0",
+      "result": "T",
+      "prepare": 0.001459,
+      "execute": 2.125627,
+      "decode": 0.000199,
+      "discharge": 0.000139,
+      "audit_store": 0.000427,
+      "total": 2.127877
+    },
+    {
+      "group": "first",
+      "name": "sequential_fixture1_run0",
+      "result": "T",
+      "prepare": 0.001374,
+      "execute": 0.371584,
+      "decode": 7.3e-05,
+      "discharge": 6e-05,
+      "audit_store": 0.000255,
+      "total": 0.373368
+    },
+    {
+      "group": "first",
+      "name": "reference_fixture2_run0",
+      "result": "T",
+      "prepare": 0.001424,
+      "execute": 2.210319,
+      "decode": 0.000119,
+      "discharge": 5.5e-05,
+      "audit_store": 0.000263,
+      "total": 2.212202
+    },
+    {
+      "group": "first",
+      "name": "sequential_fixture2_run0",
+      "result": "T",
+      "prepare": 0.001392,
+      "execute": 0.38264,
+      "decode": 6.7e-05,
+      "discharge": 5.4e-05,
+      "audit_store": 0.000216,
+      "total": 0.384393
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run1",
+      "result": "T",
+      "prepare": 0.00111,
+      "execute": 2.065944,
+      "decode": 0.000168,
+      "discharge": 8.1e-05,
+      "audit_store": 0.000274,
+      "total": 2.067603
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run1",
+      "result": "T",
+      "prepare": 0.001359,
+      "execute": 0.369319,
+      "decode": 0.000122,
+      "discharge": 0.000121,
+      "audit_store": 0.000262,
+      "total": 0.371214
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run1",
+      "result": "T",
+      "prepare": 0.001256,
+      "execute": 2.104753,
+      "decode": 0.000142,
+      "discharge": 7.2e-05,
+      "audit_store": 0.000369,
+      "total": 2.106625
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run1",
+      "result": "T",
+      "prepare": 0.001737,
+      "execute": 0.407898,
+      "decode": 6.8e-05,
+      "discharge": 5.7e-05,
+      "audit_store": 0.000288,
+      "total": 0.410079
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run2",
+      "result": "T",
+      "prepare": 0.001234,
+      "execute": 2.324644,
+      "decode": 0.000199,
+      "discharge": 0.000152,
+      "audit_store": 0.000537,
+      "total": 2.326794
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run2",
+      "result": "T",
+      "prepare": 0.001862,
+      "execute": 0.358202,
+      "decode": 7.5e-05,
+      "discharge": 0.000102,
+      "audit_store": 0.000399,
+      "total": 0.360669
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run2",
+      "result": "T",
+      "prepare": 0.001303,
+      "execute": 2.162647,
+      "decode": 0.000126,
+      "discharge": 5.3e-05,
+      "audit_store": 0.000271,
+      "total": 2.164425
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run2",
+      "result": "T",
+      "prepare": 0.001378,
+      "execute": 0.362385,
+      "decode": 7e-05,
+      "discharge": 6e-05,
+      "audit_store": 0.000387,
+      "total": 0.364304
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run3",
+      "result": "T",
+      "prepare": 0.001181,
+      "execute": 2.312074,
+      "decode": 0.000148,
+      "discharge": 5.9e-05,
+      "audit_store": 0.00027,
+      "total": 2.313755
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run3",
+      "result": "T",
+      "prepare": 0.001455,
+      "execute": 0.376982,
+      "decode": 7e-05,
+      "discharge": 5.4e-05,
+      "audit_store": 0.00027,
+      "total": 0.378855
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run3",
+      "result": "T",
+      "prepare": 0.001223,
+      "execute": 2.084666,
+      "decode": 6.9e-05,
+      "discharge": 5.6e-05,
+      "audit_store": 0.000219,
+      "total": 2.086254
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run3",
+      "result": "T",
+      "prepare": 0.001129,
+      "execute": 0.368984,
+      "decode": 7e-05,
+      "discharge": 5.7e-05,
+      "audit_store": 0.000267,
+      "total": 0.370527
+    }
+  ],
+  "sequential_first": [
+    {
+      "group": "first",
+      "name": "sequential_fixture1_run0",
+      "result": "T",
+      "prepare": 0.001275,
+      "execute": 0.389937,
+      "decode": 6.8e-05,
+      "discharge": 5.8e-05,
+      "audit_store": 0.000461,
+      "total": 0.391828
+    },
+    {
+      "group": "first",
+      "name": "reference_fixture1_run0",
+      "result": "T",
+      "prepare": 0.00124,
+      "execute": 2.141099,
+      "decode": 6.9e-05,
+      "discharge": 5.6e-05,
+      "audit_store": 0.000231,
+      "total": 2.142718
+    },
+    {
+      "group": "first",
+      "name": "sequential_fixture2_run0",
+      "result": "T",
+      "prepare": 0.001282,
+      "execute": 0.369552,
+      "decode": 0.000126,
+      "discharge": 5.6e-05,
+      "audit_store": 0.00021,
+      "total": 0.37125
+    },
+    {
+      "group": "first",
+      "name": "reference_fixture2_run0",
+      "result": "T",
+      "prepare": 0.001014,
+      "execute": 2.134272,
+      "decode": 0.000112,
+      "discharge": 8.9e-05,
+      "audit_store": 0.000303,
+      "total": 2.135803
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run1",
+      "result": "T",
+      "prepare": 0.001365,
+      "execute": 0.366055,
+      "decode": 6.9e-05,
+      "discharge": 5.4e-05,
+      "audit_store": 0.000215,
+      "total": 0.367775
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run1",
+      "result": "T",
+      "prepare": 0.001264,
+      "execute": 2.163518,
+      "decode": 9.3e-05,
+      "discharge": 7.4e-05,
+      "audit_store": 0.000311,
+      "total": 2.165291
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run1",
+      "result": "T",
+      "prepare": 0.00124,
+      "execute": 0.421802,
+      "decode": 6.8e-05,
+      "discharge": 5.4e-05,
+      "audit_store": 0.000223,
+      "total": 0.423412
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run1",
+      "result": "T",
+      "prepare": 0.001208,
+      "execute": 2.176321,
+      "decode": 6.8e-05,
+      "discharge": 5.6e-05,
+      "audit_store": 0.00027,
+      "total": 2.177948
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run2",
+      "result": "T",
+      "prepare": 0.001247,
+      "execute": 0.367547,
+      "decode": 7e-05,
+      "discharge": 8.5e-05,
+      "audit_store": 0.000246,
+      "total": 0.369218
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run2",
+      "result": "T",
+      "prepare": 0.001182,
+      "execute": 2.167137,
+      "decode": 0.000232,
+      "discharge": 0.000218,
+      "audit_store": 0.000404,
+      "total": 2.169206
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run2",
+      "result": "T",
+      "prepare": 0.001585,
+      "execute": 0.382894,
+      "decode": 8.1e-05,
+      "discharge": 0.000102,
+      "audit_store": 0.000272,
+      "total": 0.384957
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run2",
+      "result": "T",
+      "prepare": 0.001179,
+      "execute": 2.2437,
+      "decode": 0.000139,
+      "discharge": 0.000171,
+      "audit_store": 0.000461,
+      "total": 2.245676
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture1_run3",
+      "result": "T",
+      "prepare": 0.001333,
+      "execute": 0.384095,
+      "decode": 6.5e-05,
+      "discharge": 5.3e-05,
+      "audit_store": 0.000244,
+      "total": 0.385812
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture1_run3",
+      "result": "T",
+      "prepare": 0.001093,
+      "execute": 2.17471,
+      "decode": 0.000199,
+      "discharge": 0.00011,
+      "audit_store": 0.00035,
+      "total": 2.176495
+    },
+    {
+      "group": "warm",
+      "name": "sequential_fixture2_run3",
+      "result": "T",
+      "prepare": 0.001897,
+      "execute": 0.391662,
+      "decode": 6.8e-05,
+      "discharge": 5.5e-05,
+      "audit_store": 0.000239,
+      "total": 0.393946
+    },
+    {
+      "group": "warm",
+      "name": "reference_fixture2_run3",
+      "result": "T",
+      "prepare": 0.001109,
+      "execute": 2.25796,
+      "decode": 6.6e-05,
+      "discharge": 5.3e-05,
+      "audit_store": 0.000258,
+      "total": 2.259468
+    }
+  ]
+}

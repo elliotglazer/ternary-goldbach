@@ -1,0 +1,40 @@
+{
+  "strata_using_original_precision_immediately": [
+    "18"
+  ],
+  "original_hours_in_those_strata": 2809.316795524875,
+  "coarse_first_pass_hours_in_measured_strata": 246376.9228426167,
+  "original_hours_in_measured_strata": 410724.66446861066,
+  "retry_fraction_break_even_against_original_transform": 0.40014091152432874,
+  "five_component_hours_by_original_cost_weighted_retry_fraction": {
+    "0": [
+      615903.5699108362,
+      633548.8286284134
+    ],
+    "0.01": [
+      620010.8165555223,
+      637656.0752730995
+    ],
+    "0.1": [
+      656976.0363576972,
+      674621.2950752744
+    ],
+    "0.25": [
+      718584.7360279888,
+      736229.994745566
+    ],
+    "0.5": [
+      821265.9021451415,
+      838911.1608627187
+    ],
+    "1": [
+      1026628.2343794468,
+      1044273.493097024
+    ]
+  },
+  "room_to_800000_at_zero_retries_before_unpriced_work": [
+    184096.43008916383,
+    166451.17137158662
+  ],
+  "scope": "Size-weighted benchmark extrapolation for five components. Unpriced stages and generation of precision-specific inputs are excluded. A full-price retry redoes the affected covered work. Retrying individual Fourier modes directly is a different schedule."
+}

@@ -1,0 +1,54 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-selected-consumer/SelectedBiasScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SelectedBias">>
+Saved theorem _______ "tz_compute"
+Saved definition ____ "tz_def"
+Starting translation of tz from SelectedBiasTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SelectedBias)>>
+Saved definition ____ "cv_tz_def"
+Saved induction _____ "cv_tz_ind"
+Saved theorem _______ "cv_tz_thm"
+Finished translating tz, stored in cv_tz_thm
+Saved definition ____ "dq_def"
+Starting translation of dq from SelectedBiasTheory.
+Saved theorem _______ "cv_dq_thm"
+Finished translating dq, stored in cv_dq_thm
+Saved definition ____ "nd_def"
+Starting translation of nd from SelectedBiasTheory.
+Saved theorem _______ "cv_nd_thm"
+Finished translating nd, stored in cv_nd_thm
+Saved theorem _______ "sweep_compute"
+Saved definition ____ "sweep_def"
+Starting translation of sweep from SelectedBiasTheory.
+Saved definition ____ "cv_sweep_def"
+Saved induction _____ "cv_sweep_ind"
+Saved theorem _______ "cv_sweep_thm"
+Finished translating sweep, stored in cv_sweep_thm
+Saved theorem _______ "groups_compute"
+Saved definition ____ "groups_def"
+Starting translation of groups from SelectedBiasTheory.
+Saved definition ____ "cv_groups_def"
+Saved induction _____ "cv_groups_ind"
+Saved theorem _______ "cv_groups_thm"
+Finished translating groups, stored in cv_groups_thm
+Saved definition ____ "bias_test_def"
+Starting translation of bias_test from SelectedBiasTheory.
+Saved theorem _______ "cv_bias_test_thm"
+Finished translating bias_test, stored in cv_bias_test_thm
+Exporting theory "SelectedBias" ... done.
+Theory "SelectedBias" took 1.6s to build
+Holmake: [1/1] SelectedBias

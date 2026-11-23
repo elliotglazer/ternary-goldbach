@@ -1,0 +1,13 @@
+# Interpolation of a mildly tilted Hardy function
+
+The backend paper in `work/qrh-campaign/agents/prime-estimates/NONPRINCIPAL_SMALL_CONDUCTOR_BACKEND_COST_2026-11-11.md`, equations (1)–(7), permits every integer θ ≥ 1 with V ≥ 2θ and W = qV/θ ≥ 1 for a primitive nonprincipal character. The observed θ range 64–128 belongs to the historical cost inventory. A larger θ shortens the time-period cutoff and makes the requested raw absolute tolerance smaller. The factor 3^θ compensates for the final positive scaling exp(θt/V). At small θ the historical fixed N, X and n₀ need a fresh admission check. At q=265800, V=505 the rational tests pass with Δ=5/64 for θ=2,4,8. See `low_tilt_selector.py` and its output for the explicit periods, cutoffs and finite-polynomial remainder. These scalar checks inherit the paper's Fourier identity, contour shift and majorants.
+
+## Direct derivative estimate
+
+Use the actual tilted function F(t)=∫G(x) exp(ixt)dx and the source bound |G(x)| ≤ 2W exp(|x|−exp(2|x|)/W). For every derivative order r, absolute integrability of |x|ʳG(x) justifies differentiation under the integral. For integer k≥1 let λ=2k−1. The bound xʳ≤(r/(λe))ʳexp(λx) for x≥0 follows by maximizing xʳexp(−λx). Substitute y=exp(2x)/W in the resulting integral over x≥0. Extending its lower limit from 1/W to zero gives
+
+    sup |F⁽ʳ⁾| ≤ 2 W^(k+1) (k−1)! (r/((2k−1)e))^r.
+
+For even r, use the r consecutive coarse samples with node offsets 1−r/2 through r/2. The interpolation error at offset x∈[0,1] is bounded by the displayed derivative bound times Δʳ times the product of the distances to these nodes divided by r!. Pairing symmetric factors gives (j+x)(j+1−x) ≤ (j+1/2)² for each j. This bound holds on the whole cell, including its midpoint. The rational calculator uses a positive Taylor lower bound for e and minimizes over integer k. Its results are in normalized F units. Multiplying raw-sum errors by ω converts them to F units in the historical Gaussian transform convention.
+
+In an implementation, each Hurwitz source interval must be phase-aligned and rescaled by its actual positive height-dependent factor to enclose F at that node. Form the signed Lagrange linear combination of those intervals with outward rounding. Accept a sign only if adding the direct remainder symmetrically still excludes zero. This test incorporates the weighted node radii and preserves cancellations of centers. It does not require producing a Gaussian array or applying the historical discrete periodization estimates. The spectral identity, majorant and character/phase bridge must still be established in the proof assistant. A high-derivative inequality alone does not establish which candidates pass or prove all necessary brackets.

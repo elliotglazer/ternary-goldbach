@@ -1,0 +1,32 @@
+{
+  "conditional_assumption": "Apply four channels' observed interior-probe frequency and unit processing rates to every small-family character. This is not a sampling estimate.",
+  "conductors": 7499,
+  "labels": 18477108,
+  "coarse_640": 1787257220237,
+  "interior_probe_per_cell": 0.00026513009049773754,
+  "order_offset_kernels_at_most": 36855,
+  "radius_parameter_classes": 691,
+  "order_radius_checks_at_most": 6219,
+  "scenarios": [
+    {
+      "edge_probes_per_label": 4,
+      "interior_jobs": 473850770,
+      "edge_jobs": 73908432,
+      "count_phase_cpu_hours": 3701.3054880157792,
+      "count_whole_process_cpu_hours": 18719.5352770399,
+      "sparse_dot_phase_cpu_hours": 5037.721627294513,
+      "sparse_whole_process_cpu_hours": 51452.52738084795,
+      "discovery_cpu_hours": 388.47663210642816
+    },
+    {
+      "edge_probes_per_label": 6,
+      "interior_jobs": 473850770,
+      "edge_jobs": 110862648,
+      "count_phase_cpu_hours": 3701.3819969667284,
+      "count_whole_process_cpu_hours": 18719.922224837355,
+      "sparse_dot_phase_cpu_hours": 5377.588219189601,
+      "sparse_whole_process_cpu_hours": 54923.73845979531,
+      "discovery_cpu_hours": 388.47663210642816
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 14 directories
+Building 33 theory files
+Starting work on integerTheory
+Finished $(HOLDIR)/src/res_quan/src                                    (0.000s) 
+Starting work on ternaryComparisonsTheory
+Starting work on fcpTheory
+Starting work on schneiderUtilsContextTheory
+ternaryComparisonsTheory                $(HOLDIR)/src/sort  (0s)  [1/33]     OK
+Starting work on stringTheory
+schneiderUtilsContextTheory         $(HOLDIR)/src/rational  (0s)  [2/33]     OK
+Starting work on sum_numTheory
+fcpTheory                              $(HOLDIR)/src/n-bit  (1s)  [3/33]     OK
+Starting work on bagTheory
+integerTheory                        $(HOLDIR)/src/integer  (6s)  [4/33]     OK
+Starting work on int_arithTheory
+stringTheory                          $(HOLDIR)/src/string  (1s)  [5/33]     OK
+sum_numTheory                          $(HOLDIR)/src/n-bit  (0s)  [6/33]     OK
+Starting work on intReduceTheory
+Starting work on ASCIInumbersTheory
+int_arithTheory                      $(HOLDIR)/src/integer  (1s)  [7/33]     OK
+intReduceTheory                      $(HOLDIR)/src/integer  (0s)  [8/33]     OK
+Starting work on cooperTheory
+Starting work on sortingTheory
+bagTheory                                $(HOLDIR)/src/bag  (6s)  [9/33]     OK
+ASCIInumbersTheory                    $(HOLDIR)/src/string  (1s) [10/33]     OK
+cooperTheory                         $(HOLDIR)/src/integer  (0s) [11/33]     OK
+Starting work on OmegaTheory
+Starting work on wordsTheory
+Starting work on primeFactorTheory
+sortingTheory                           $(HOLDIR)/src/sort  (3s) [12/33]     OK
+OmegaTheory                          $(HOLDIR)/src/integer  (2s) [13/33]     OK
+Starting work on intExtensionTheory
+Starting work on finite_mapTheory
+Finished $(HOLDIR)/src/sort [#theories: 2]                             (3.823s) 
+primeFactorTheory                        $(HOLDIR)/src/bag  (0s) [14/33]     OK
+Starting work on transferTheory
+Finished $(HOLDIR)/src/bag [#theories: 2]                              (7.056s) 
+Finished $(HOLDIR)/src/string [#theories: 2]                           (2.901s) 
+intExtensionTheory                  $(HOLDIR)/src/rational  (3s) [15/33]     OK
+Starting work on fracTheory
+transferTheory                      $(HOLDIR)/src/transfer  (0s) [16/33]     OK
+Starting work on liftingTheory
+finite_mapTheory                 $(HOLDIR)/src/finite_maps  (5s) [17/33]     OK
+Starting work on alistTheory
+wordsTheory                            $(HOLDIR)/src/n-bit (11s) [18/33]     OK
+fracTheory                          $(HOLDIR)/src/rational  (5s) [19/33]     OK
+liftingTheory                       $(HOLDIR)/src/transfer  (0s) [20/33]     OK
+Starting work on ratTheory
+Starting work on bitstringTheory
+Starting work on integer_wordTheory
+alistTheory                      $(HOLDIR)/src/finite_maps  (2s) [21/33]     OK
+Starting work on sptreeTheory
+bitstringTheory                        $(HOLDIR)/src/n-bit  (6s) [22/33]     OK
+Starting work on blastTheory
+ratTheory                           $(HOLDIR)/src/rational  (9s) [23/33]     OK
+Starting work on cv_typeTheory
+integer_wordTheory                   $(HOLDIR)/src/integer (11s) [24/33]     OK
+Starting work on finite_setTheory
+Finished $(HOLDIR)/src/integer [#theories: 6]                         (23.918s) 
+Finished $(HOLDIR)/src/rational [#theories: 4]                        (18.560s) 
+Finished $(HOLDIR)/src/transfer [#theories: 2]                         (1.661s) 
+blastTheory                            $(HOLDIR)/src/n-bit  (5s) [25/33]     OK
+cv_typeTheory $(HOLDIR)/.../theories/cv_compute/automation  (2s) [26/33]     OK
+Starting work on byteTheory
+Starting work on cv_repTheory
+sptreeTheory                     $(HOLDIR)/src/finite_maps (13s) [27/33]     OK
+Finished $(HOLDIR)/src/finite_maps [#theories: 3]                     (20.925s) 
+finite_setTheory  $(HOLDIR)/src/pred_set/src/more_theories  (3s) [28/33]     OK
+Finished $(HOLDIR)/src/pred_set/src/more_theories [#theories: 1]       (3.955s) 
+cv_repTheory  $(HOLDIR)/.../theories/cv_compute/automation  (3s) [29/33]     OK
+Starting work on cv_primTheory
+byteTheory                             $(HOLDIR)/src/n-bit (12s) [30/33]     OK
+Finished $(HOLDIR)/src/n-bit [#theories: 6]                           (39.073s) 
+cv_primTheory $(HOLDIR)/.../theories/cv_compute/automation  (5s) [31/33]     OK
+Starting work on cv_stdTheory
+cv_stdTheory  $(HOLDIR)/.../theories/cv_compute/automation  (7s) [32/33]     OK
+Starting work on StageCheckTheory
+Finished $(HOLDIR)/src/num/theories/cv_compute/automation [#theories: 4] (19.211s) 
+StageCheckTheory                       /mnt/.../hol4-setup  (6s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** StageCheckTheory in /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup (status 1)
+ <<HOL message: Created theory "StageCheck">>
+ Saved definition ____ "within_def"
+ Saved definition ____ "stage_one_def"
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in StageCheck)>>
+ Saved definition ____ "stage_check_def"
+ Saved induction _____ "stage_check_ind"
+ Saved definition ____ "butterfly_spec_def"
+ Saved theorem _______ "residual_pair"
+ Saved theorem _______ "three_real"
+ Saved theorem _______ "three_imag"
+ Proof of 
+ 
+ stage_one s b (ur,ui,vr,vi,wr,wi) (pr,pi,mr,mi) ⇒
+ butterfly_spec s b (ur,ui,vr,vi,wr,wi) (pr,pi,mr,mi)
+ 
+ failed.
+ Tactic failure proving "stage_one_sound_coordinates"; heap saved to StageCheck.stage_one_sound_coordinates.dumpedheap.
+ Resume with: bin/hol --holstate=StageCheck.stage_one_sound_coordinates.dumpedheap
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/.hol/logs/StageCheckTheory

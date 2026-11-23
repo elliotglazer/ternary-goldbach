@@ -1,0 +1,48 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 39 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> INITIAL_DEF ⊢ ($! :(num -> bool) -> bool)
+    (λ(A :num).
+       ($! :(num -> bool) -> bool)
+         (λ(D :num).
+            ($! :(num -> bool) -> bool)
+              (λ(amplitude_bits :num).
+                 ($! :(num -> bool) -> bool)
+                   (λ(state_bits :num).
+                      ($= :(rat # int) option -> (rat # int) option -> bool)
+                        ((source_initial :num ->
+                                          num ->
+                                          num -> num -> (rat # int) option)
+                           (A :num) (D :num) (amplitude_bits :num)
+                           (state_bits :num))
+                        (if
+                           prim_rec$< (0 :num) (D :num) ∧
+                           arithmetic$<= (D :num) (A :num) ∧
+                           arithmetic$<= (amplitude_bits :num)
+                             (state_bits :num)
+                         then
+                           (SOME :rat # int -> (rat # int) option)
+                             (($, :rat -> int -> rat # int)
+                                (rat$rat_mul
+                                   (rat$rat_of_num
+                                      ((source_inverse_root :num ->
+                                                             num ->
+                                                             num -> num)
+                                         (A :num) (D :num)
+                                         (arithmetic$EXP (2 :num)
+                                            (amplitude_bits :num))) :rat)
+                                   (rat$rat_of_num
+                                      (arithmetic$EXP (2 :num)
+                                         (arithmetic$- (state_bits :num)
+                                            (amplitude_bits :num))) :rat) :
+                                 rat) (0 :int))
+                         else (NONE :(rat # int) option))))))
+SOURCE_INITIAL_TYPE :num -> num -> num -> num -> (rat # int) option
+SOURCE_PAIR_VALUE_TYPE :num -> int # int -> real # real

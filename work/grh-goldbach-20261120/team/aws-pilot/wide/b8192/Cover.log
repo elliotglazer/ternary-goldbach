@@ -1,0 +1,13 @@
+Cover.lean:19:12: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`
+Cover.lean:15:77: error: unsolved goals
+tree : BatchPrime.Tree
+first bits origin width : ℕ
+ss : List ℕ
+ht : treeValid tree tree = true
+hs : PrimeBitmap first bits
+ha : goodShifts tree first origin ss = true
+hc : shiftedUnion bits ss &&& 2 ^ width - 1 = 2 ^ width - 1
+he : origin % 2 = 0
+s : ℕ
+hmem : s ∈ ss
+⊢ Nat.Prime (origin - (first + 2 * s)) ∧ first + 2 * s ≤ origin

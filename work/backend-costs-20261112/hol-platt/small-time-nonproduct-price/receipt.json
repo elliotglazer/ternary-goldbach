@@ -1,0 +1,139 @@
+{
+  "source_sha256": "e767ec3b3e14f2a243837da85c811de5ed67ce701bdd08998c2329f9c687c24d",
+  "T": 65536,
+  "counts": {
+    "positive_source_pairs": 1202865170991,
+    "prechirp_pairs": 2405711864874,
+    "packed_source_triplets": 2405711864874,
+    "packed_kernel_triplets": 9002338536,
+    "chirps": 6397142169,
+    "products": 1051852215,
+    "pieces": 1836492654,
+    "complex_output_tiles": 35871686,
+    "samples": 1775431871117,
+    "output_bytes": 67632351766249,
+    "source_spool_write_bytes": 513449058206421,
+    "kernel_spool_write_bytes": 1962026779815,
+    "pair_operand_capacity_bytes": 9404247455914392
+  },
+  "by_width": {
+    "552": {
+      "positive_source_pairs": 786192821875,
+      "prechirp_pairs": 1572374535049,
+      "packed_source_triplets": 1572374535049,
+      "packed_kernel_triplets": 5196177245,
+      "chirps": 3598393732,
+      "products": 638542494,
+      "pieces": 1105317111,
+      "complex_output_tiles": 20842643,
+      "samples": 1026565956783,
+      "output_bytes": 36961422645294,
+      "source_spool_write_bytes": 318911826447558,
+      "kernel_spool_write_bytes": 1067237450415,
+      "pair_operand_capacity_bytes": 5410899505473507
+    },
+    "616": {
+      "positive_source_pairs": 230579661281,
+      "prechirp_pairs": 461155187640,
+      "packed_source_triplets": 461155187640,
+      "packed_kernel_triplets": 2312204293,
+      "chirps": 1684901042,
+      "products": 241218072,
+      "pieces": 429444636,
+      "complex_output_tiles": 6698300,
+      "samples": 387112340862,
+      "output_bytes": 14841003717294,
+      "source_spool_write_bytes": 100991029802712,
+      "kernel_spool_write_bytes": 517875045759,
+      "pair_operand_capacity_bytes": 2264746847389386
+    },
+    "680": {
+      "positive_source_pairs": 120250974304,
+      "prechirp_pairs": 240499850745,
+      "packed_source_triplets": 240499850745,
+      "packed_kernel_triplets": 859811081,
+      "chirps": 637466045,
+      "products": 103539564,
+      "pieces": 179623437,
+      "complex_output_tiles": 5253378,
+      "samples": 227262169823,
+      "output_bytes": 9636221868951,
+      "source_spool_write_bytes": 58555506957153,
+      "kernel_spool_write_bytes": 208907760594,
+      "pair_operand_capacity_bytes": 999569248218903
+    },
+    "744": {
+      "positive_source_pairs": 65841713531,
+      "prechirp_pairs": 131682291440,
+      "packed_source_triplets": 131682291440,
+      "packed_kernel_triplets": 634145917,
+      "chirps": 476381350,
+      "products": 68552085,
+      "pieces": 122107470,
+      "complex_output_tiles": 3077365,
+      "samples": 134491403649,
+      "output_bytes": 6193703534710,
+      "source_spool_write_bytes": 34990694998998,
+      "kernel_spool_write_bytes": 168006523047,
+      "pair_operand_capacity_bytes": 729031854832596
+    }
+  },
+  "per_event_wall_seconds": {
+    "552": {
+      "regrid_pair": 3.6916198731251626e-07,
+      "prechirp_pair": 1.0298385619833539e-06,
+      "pack_three_source_fields": 1.2525772095095533e-06,
+      "pack_three_kernel_fields": 1.5546554564815906e-06,
+      "split_product": 0.010028800003055949,
+      "add_piece": 0.0009291000023949891,
+      "finalize_three_tiles": 0.013657199997396674,
+      "extract_complete_emit": 2.9372100830427073e-06,
+      "chirp": 5.9373046852329026e-06
+    },
+    "616": {
+      "regrid_pair": 2.8144226071891154e-07,
+      "prechirp_pair": 1.4790237427009245e-06,
+      "pack_three_source_fields": 1.399429321313761e-06,
+      "pack_three_kernel_fields": 1.461358642540489e-06,
+      "split_product": 0.011675599998852704,
+      "add_piece": 0.0011812000011559576,
+      "finalize_three_tiles": 0.016317900001013186,
+      "extract_complete_emit": 2.9911453246489472e-06,
+      "chirp": 6.369970705577543e-06
+    },
+    "680": {
+      "regrid_pair": 6.661804199392662e-07,
+      "prechirp_pair": 2.589373779282589e-06,
+      "pack_three_source_fields": 7.3322982788726065e-06,
+      "pack_three_kernel_fields": 1.8656753539847415e-06,
+      "split_product": 0.01209059999382589,
+      "add_piece": 0.0009865000029094517,
+      "finalize_three_tiles": 0.019362200000614394,
+      "extract_complete_emit": 3.5938766479448603e-06,
+      "chirp": 8.498828126590752e-06
+    },
+    "744": {
+      "regrid_pair": 3.151275634882822e-07,
+      "prechirp_pair": 1.74366455074626e-06,
+      "pack_three_source_fields": 1.7610076904484018e-06,
+      "pack_three_kernel_fields": 1.605006408667009e-06,
+      "split_product": 0.013085300000966527,
+      "add_piece": 0.0015607000023010187,
+      "finalize_three_tiles": 0.020796199998585507,
+      "extract_complete_emit": 4.1828628539741786e-06,
+      "chirp": 9.946533200633212e-06
+    }
+  },
+  "model_one_worker_wall_hours": {
+    "regrid_pair": 126.66243027827714,
+    "prechirp_pair": 876.0292090691144,
+    "pack_three_source_fields": 1280.6068800786982,
+    "pack_three_kernel_fields": 3.9108782326108873,
+    "split_product": 3158.072426866916,
+    "add_piece": 528.3282735694498,
+    "finalize_three_tiles": 155.46355195155587,
+    "extract_complete_emit": 1542.3501247903057,
+    "chirp": 11.737107641828727
+  },
+  "total_modeled_wall_hours": 7683.160882478756
+}

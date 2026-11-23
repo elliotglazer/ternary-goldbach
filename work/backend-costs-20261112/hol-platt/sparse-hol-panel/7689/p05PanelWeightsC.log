@@ -1,0 +1,70 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../small-character-kernel[0m
+Holmake: Scanning [1m../../small-gaussian[0m
+Holmake: Scanning [1m../../small-gaussian-transform[0m
+Holmake: Scanning [1m../../full-height-count[0m
+Holmake: Scanning [1m../../grid-projection[0m
+Holmake: Scanning [1m../../grid-sign-join[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/PanelWeightsCScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "PanelWeightsC">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/PanelWeightsCScript.sml:12: warning: Pattern is not exhaustive. Found near val [k, r, o1, ...] = line ()
+START 10
+ENCODING 10
+CHECK 10
+JOIN_EVAL 0.001963 1.30133 0.000449000000001
+BASIS 10
+KERNEL 10
+Saved theorem _______ "basis_10"
+Saved theorem _______ "radius_10"
+START 11
+ENCODING 11
+CHECK 11
+JOIN_EVAL 0.000515 0.036011 0.000200999999999
+BASIS 11
+KERNEL 11
+Saved theorem _______ "basis_11"
+Saved theorem _______ "radius_11"
+START 12
+ENCODING 12
+CHECK 12
+JOIN_EVAL 0.000605 0.115861 0.000378
+BASIS 12
+KERNEL 12
+Saved theorem _______ "basis_12"
+Saved theorem _______ "radius_12"
+START 13
+ENCODING 13
+CHECK 13
+JOIN_EVAL 0.001366 0.481789 0.000454999999999
+BASIS 13
+KERNEL 13
+Saved theorem _______ "basis_13"
+Saved theorem _______ "radius_13"
+START 14
+ENCODING 14
+CHECK 14
+JOIN_EVAL 0.000985 0.077961 0.000862000000001
+BASIS 14
+KERNEL 14
+Saved theorem _______ "basis_14"
+Saved theorem _______ "radius_14"
+Exporting theory "PanelWeightsC" ... done.
+Theory "PanelWeightsC" took 13.4s to build
+Holmake: [1/1] PanelWeightsC

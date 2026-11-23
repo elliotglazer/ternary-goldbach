@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT_SCALARS_ONLY",
+  "checks": {
+    "norm_factor_square": true,
+    "L_factor": true,
+    "pi_factor_lt_19": true,
+    "exp3_gt_19": true,
+    "Z_positive": true,
+    "upper_intercept": true,
+    "difference_intercept": true,
+    "difference_slope": true,
+    "Turing_intercept_round": true,
+    "Turing_slope_round": true,
+    "allowance_delta_intercept": true,
+    "allowance_delta_slope": true
+  },
+  "upper_bound": "1717/500 + (3/4)*log(Q*t/(2*pi))",
+  "conditional_Turing_bound": "11/5 + (8/25)*log(Q*t2/(2*pi))",
+  "conditions": "Turing consequence still requires lower horizontal bound and Littlewood identity; no Lean proof.",
+  "script_sha256": "9369b77d2e46b5f90e9aeb0fd1641bd9d428c630cf4e1da180bf0c41862fa0fb"
+}

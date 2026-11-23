@@ -1,0 +1,143 @@
+{
+  "source": "direct_arb",
+  "bands": [
+    {
+      "band": 1,
+      "lo": 0,
+      "hi": 6401,
+      "grid": 1024,
+      "j": 6400,
+      "center": 960,
+      "degree": 160,
+      "p": 121,
+      "field": 1156,
+      "seed_max_bits": 141,
+      "groups": 51208,
+      "last_groups": 6401,
+      "cells": 6561025,
+      "pre_round_complex_error_output_units": 7.729250418852565e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 2.125
+    },
+    {
+      "band": 2,
+      "lo": 6401,
+      "hi": 12801,
+      "grid": 2048,
+      "j": 12800,
+      "center": 1984,
+      "degree": 152,
+      "p": 121,
+      "field": 1108,
+      "seed_max_bits": 140,
+      "groups": 102400,
+      "last_groups": 6400,
+      "cells": 13113600,
+      "pre_round_complex_error_output_units": 7.0833169312086066e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 2.046875
+    },
+    {
+      "band": 3,
+      "lo": 12801,
+      "hi": 25601,
+      "grid": 4096,
+      "j": 25600,
+      "center": 4032,
+      "degree": 148,
+      "p": 121,
+      "field": 1084,
+      "seed_max_bits": 140,
+      "groups": 409600,
+      "last_groups": 12800,
+      "cells": 52441600,
+      "pre_round_complex_error_output_units": 7.689269706817017e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 2.15625
+    },
+    {
+      "band": 4,
+      "lo": 25601,
+      "hi": 64001,
+      "grid": 8192,
+      "j": 64000,
+      "center": 8128,
+      "degree": 172,
+      "p": 122,
+      "field": 1230,
+      "seed_max_bits": 147,
+      "groups": 2457600,
+      "last_groups": 38400,
+      "cells": 314611200,
+      "pre_round_complex_error_output_units": 4.5657334156644295e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 3.359375
+    },
+    {
+      "band": 5,
+      "lo": 64001,
+      "hi": 84241,
+      "grid": 16384,
+      "j": 84240,
+      "center": 16320,
+      "degree": 128,
+      "p": 120,
+      "field": 962,
+      "seed_max_bits": 135,
+      "groups": 2590720,
+      "last_groups": 20240,
+      "cells": 331632400,
+      "pre_round_complex_error_output_units": 8.1366830403119e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 1.890625
+    },
+    {
+      "band": 6,
+      "lo": 84241,
+      "hi": 84881,
+      "grid": 16384,
+      "j": 84880,
+      "center": 16320,
+      "degree": 132,
+      "p": 120,
+      "field": 986,
+      "seed_max_bits": 136,
+      "groups": 81920,
+      "last_groups": 640,
+      "cells": 10486400,
+      "pre_round_complex_error_output_units": 5.679493175307039e-06,
+      "max_direct_rounded_delta": 0,
+      "compared_direct_offsets": [
+        -64,
+        0,
+        64
+      ],
+      "native_reference_cpu": 2.09375
+    }
+  ]
+}

@@ -1,0 +1,1149 @@
+{
+  "status": "exact integer counts; radical/log/kernel and budget figures floating diagnostics",
+  "rows": [
+    {
+      "q": 90090,
+      "Q": 45045,
+      "factors": {
+        "2": 1,
+        "3": 2,
+        "5": 1,
+        "7": 1,
+        "11": 1,
+        "13": 1
+      },
+      "phi": 17280,
+      "delta_min": 0.2718370065308841,
+      "delta_max": 13.32001332001332,
+      "admissible_conductors": 16,
+      "nonzero_gauss_characters": 11520,
+      "even": 5760,
+      "odd": 5760,
+      "W": 95.54022391128822,
+      "W_lower": "68788960927/720000000",
+      "W_upper": "68788961407/720000000",
+      "main": 0.0,
+      "certificate_candidates": [
+        {
+          "blocks": 1,
+          "conductors": [
+            45045
+          ],
+          "characters": 5940,
+          "remaining_mass_coefficient": 0.07099915893619078,
+          "remaining_W_fraction": 0.2363756865326541
+        },
+        {
+          "blocks": 2,
+          "conductors": [
+            45045,
+            9009
+          ],
+          "characters": 7920,
+          "remaining_mass_coefficient": 0.03497971819949621,
+          "remaining_W_fraction": 0.12254129492034788
+        },
+        {
+          "blocks": 3,
+          "conductors": [
+            45045,
+            9009,
+            6435
+          ],
+          "characters": 9108,
+          "remaining_mass_coefficient": 0.01741029887517128,
+          "remaining_W_fraction": 0.06481672267700421
+        },
+        {
+          "blocks": 4,
+          "conductors": [
+            45045,
+            9009,
+            6435,
+            4095
+          ],
+          "characters": 9768,
+          "remaining_mass_coefficient": 0.010038093958400385,
+          "remaining_W_fraction": 0.039234345620802975
+        },
+        {
+          "blocks": 5,
+          "conductors": [
+            45045,
+            9009,
+            6435,
+            4095,
+            3465
+          ],
+          "characters": 10308,
+          "remaining_mass_coefficient": 0.004604861478190301,
+          "remaining_W_fraction": 0.01998059305158967
+        },
+        {
+          "blocks": 8,
+          "conductors": [
+            45045,
+            9009,
+            6435,
+            4095,
+            3465,
+            1287,
+            819,
+            693
+          ],
+          "characters": 11104,
+          "remaining_mass_coefficient": 0.0009583104693946974,
+          "remaining_W_fraction": 0.0046917463050141365
+        }
+      ],
+      "W_over_sqrtq": 0.3183082986569544,
+      "mass_upper_sum": 475.6017720616693,
+      "y_factor": 0.0007498942093324559,
+      "error_if_common_Z1": 0.07164506066940128,
+      "error_if_common_mass_kernel1": 0.3566510148173004,
+      "Z_cap_for_uniform_04712": 0.6576866508276177,
+      "K_cap_for_uniform_04712": 0.13211794735573065,
+      "Z_cap_for_endpoint_0598": 0.8346702402269001,
+      "K_cap_for_endpoint_0598": 0.16767090942004864,
+      "F_beta875_delta_min": 0.9774015999022038,
+      "F_series_tail": 6.244372879174675e-23,
+      "top_conductors": [
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 45045,
+          "quotient": 2,
+          "primitive": 5940,
+          "even": 2970,
+          "odd": 2970,
+          "gauss_squared": 45045,
+          "W_contribution": 72.95683789277398,
+          "mass_upper_contribution": 380.9228719546887,
+          "W_fraction": 0.7636243134673459,
+          "mass_fraction": 0.8009282015570287
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 9009,
+          "quotient": 10,
+          "primitive": 1980,
+          "even": 990,
+          "odd": 990,
+          "gauss_squared": 9009,
+          "W_contribution": 10.875763263445005,
+          "mass_upper_contribution": 48.03269619691892,
+          "W_fraction": 0.11383439161230621,
+          "mass_fraction": 0.10099351814587167
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 6435,
+          "quotient": 14,
+          "primitive": 1188,
+          "even": 594,
+          "odd": 594,
+          "gauss_squared": 6435,
+          "W_contribution": 5.515018557312386,
+          "mass_upper_contribution": 23.429197219651762,
+          "W_fraction": 0.05772457224334365,
+          "mass_fraction": 0.04926221598815615
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 4095,
+          "quotient": 22,
+          "primitive": 660,
+          "even": 330,
+          "odd": 330,
+          "gauss_squared": 4095,
+          "W_contribution": 2.444146032132468,
+          "mass_upper_contribution": 9.830993258813823,
+          "W_fraction": 0.02558237705620123,
+          "mass_fraction": 0.02067064051548378
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 3465,
+          "quotient": 26,
+          "primitive": 540,
+          "even": 270,
+          "odd": 270,
+          "gauss_squared": 3465,
+          "W_contribution": 1.8395078315951796,
+          "mass_upper_contribution": 7.245331958286039,
+          "W_fraction": 0.0192537525692133,
+          "mass_fraction": 0.015234030619521256
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 1287,
+          "quotient": 70,
+          "primitive": 396,
+          "even": 198,
+          "odd": 198,
+          "gauss_squared": 1287,
+          "W_contribution": 0.8221304260882211,
+          "mass_upper_contribution": 2.831034571070036,
+          "W_fraction": 0.008605071167214264,
+          "mass_fraction": 0.005952531587083631
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 819,
+          "quotient": 110,
+          "primitive": 220,
+          "even": 110,
+          "odd": 110,
+          "gauss_squared": 819,
+          "W_contribution": 0.3643517783189723,
+          "mass_upper_contribution": 1.1723171647919903,
+          "W_fraction": 0.0038135956082464614,
+          "mass_fraction": 0.0024649133658820365
+        },
+        {
+          "q": 90090,
+          "Q": 45045,
+          "c": 693,
+          "quotient": 130,
+          "primitive": 180,
+          "even": 90,
+          "odd": 90,
+          "gauss_squared": 693,
+          "W_contribution": 0.27421763710600383,
+          "mass_upper_contribution": 0.8594021878437011,
+          "W_fraction": 0.0028701799711148114,
+          "mass_fraction": 0.0018069785234783903
+        }
+      ],
+      "thresholds": [
+        {
+          "C": 100,
+          "conductors": 4,
+          "characters": 72,
+          "W_fraction": 0.0003691477724271408,
+          "mass_fraction": 0.0001502770659218534
+        },
+        {
+          "C": 1000,
+          "conductors": 10,
+          "characters": 816,
+          "W_fraction": 0.01137552188437541,
+          "mass_fraction": 0.006958861586854785
+        },
+        {
+          "C": 5000,
+          "conductors": 13,
+          "characters": 2412,
+          "W_fraction": 0.06481672267700421,
+          "mass_fraction": 0.04881606430894345
+        },
+        {
+          "C": 10000,
+          "conductors": 15,
+          "characters": 5580,
+          "W_fraction": 0.2363756865326541,
+          "mass_fraction": 0.19907179844297127
+        },
+        {
+          "C": 20000,
+          "conductors": 15,
+          "characters": 5580,
+          "W_fraction": 0.2363756865326541,
+          "mass_fraction": 0.19907179844297127
+        },
+        {
+          "C": 50000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        },
+        {
+          "C": 100000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        },
+        {
+          "C": 200000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        },
+        {
+          "C": 300000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "q": 120120,
+      "Q": 60060,
+      "factors": {
+        "2": 3,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "11": 1,
+        "13": 1
+      },
+      "phi": 23040,
+      "delta_min": 0.20387775489816307,
+      "delta_max": 9.99000999000999,
+      "admissible_conductors": 32,
+      "nonzero_gauss_characters": 11520,
+      "even": 5760,
+      "odd": 5760,
+      "W": 92.28476972535367,
+      "W_lower": "1063120545691/11520000000",
+      "W_upper": "1063120551451/11520000000",
+      "main": 0.0,
+      "certificate_candidates": [
+        {
+          "blocks": 1,
+          "conductors": [
+            120120
+          ],
+          "characters": 2970,
+          "remaining_mass_coefficient": 0.17316726382714076,
+          "remaining_W_fraction": 0.5158815842091542
+        },
+        {
+          "blocks": 2,
+          "conductors": [
+            120120,
+            40040
+          ],
+          "characters": 5940,
+          "remaining_mass_coefficient": 0.07331321287626616,
+          "remaining_W_fraction": 0.23637568653265414
+        },
+        {
+          "blocks": 3,
+          "conductors": [
+            120120,
+            40040,
+            24024
+          ],
+          "characters": 6930,
+          "remaining_mass_coefficient": 0.04880661820278044,
+          "remaining_W_fraction": 0.1642075740747982
+        },
+        {
+          "blocks": 4,
+          "conductors": [
+            120120,
+            40040,
+            24024,
+            8008
+          ],
+          "characters": 7920,
+          "remaining_mass_coefficient": 0.036241634460030876,
+          "remaining_W_fraction": 0.12254129492034789
+        },
+        {
+          "blocks": 5,
+          "conductors": [
+            120120,
+            40040,
+            24024,
+            8008,
+            17160
+          ],
+          "characters": 8514,
+          "remaining_mass_coefficient": 0.024240593683935725,
+          "remaining_W_fraction": 0.08594538254065807
+        },
+        {
+          "blocks": 8,
+          "conductors": [
+            120120,
+            40040,
+            24024,
+            8008,
+            17160,
+            5720,
+            10920,
+            9240
+          ],
+          "characters": 9708,
+          "remaining_mass_coefficient": 0.009308576715068798,
+          "remaining_W_fraction": 0.03639175550186346
+        }
+      ],
+      "W_over_sqrtq": 0.26627008144158576,
+      "mass_upper_sum": 486.0990594364725,
+      "y_factor": 0.0007498942093324559,
+      "error_if_common_Z1": 0.06920381442662185,
+      "error_if_common_mass_kernel1": 0.364522869833364,
+      "Z_cap_for_uniform_04712": 0.6808873237755161,
+      "K_cap_for_uniform_04712": 0.12926486621138525,
+      "Z_cap_for_endpoint_0598": 0.8641142182040716,
+      "K_cap_for_endpoint_0598": 0.16405006365536584,
+      "F_beta875_delta_min": 1.1002093666066326,
+      "F_series_tail": 3.536323592281617e-29,
+      "top_conductors": [
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 120120,
+          "quotient": 1,
+          "primitive": 2970,
+          "even": 1485,
+          "odd": 1485,
+          "gauss_squared": 120120,
+          "W_contribution": 44.67675652106123,
+          "mass_upper_contribution": 255.17680177389957,
+          "W_fraction": 0.4841184157908458,
+          "mass_fraction": 0.52494814960087
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 40040,
+          "quotient": 3,
+          "primitive": 2970,
+          "even": 1485,
+          "odd": 1485,
+          "gauss_squared": 40040,
+          "W_contribution": 25.794137403954075,
+          "mass_upper_contribution": 133.15751703131983,
+          "W_fraction": 0.2795058976765001,
+          "mass_fraction": 0.2739308263333967
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 24024,
+          "quotient": 5,
+          "primitive": 990,
+          "even": 495,
+          "odd": 495,
+          "gauss_squared": 24024,
+          "W_contribution": 6.660017639686663,
+          "mass_upper_contribution": 32.680069226432764,
+          "W_fraction": 0.07216811245785594,
+          "mass_fraction": 0.06722923772845454
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 8008,
+          "quotient": 15,
+          "primitive": 990,
+          "even": 495,
+          "odd": 495,
+          "gauss_squared": 8008,
+          "W_contribution": 3.8451629770807503,
+          "mass_upper_contribution": 16.755675115740278,
+          "W_fraction": 0.04166627915445031,
+          "mass_fraction": 0.034469671953623784
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 17160,
+          "quotient": 7,
+          "primitive": 594,
+          "even": 297,
+          "odd": 297,
+          "gauss_squared": 17160,
+          "W_contribution": 3.3772453468488934,
+          "mass_upper_contribution": 16.003645083188854,
+          "W_fraction": 0.03659591237968981,
+          "mass_fraction": 0.03292260038878011
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 5720,
+          "quotient": 21,
+          "primitive": 594,
+          "even": 297,
+          "odd": 297,
+          "gauss_squared": 5720,
+          "W_contribution": 1.9498535101226195,
+          "mass_upper_contribution": 8.168642283132634,
+          "W_fraction": 0.021128659863653868,
+          "mass_fraction": 0.016804480742263567
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 10920,
+          "quotient": 11,
+          "primitive": 330,
+          "even": 165,
+          "odd": 165,
+          "gauss_squared": 10920,
+          "W_contribution": 1.4967276588931713,
+          "mass_upper_contribution": 6.754246423025848,
+          "W_fraction": 0.01621857716443942,
+          "mass_fraction": 0.01389479426447759
+        },
+        {
+          "q": 120120,
+          "Q": 60060,
+          "c": 9240,
+          "quotient": 13,
+          "primitive": 270,
+          "even": 135,
+          "odd": 135,
+          "gauss_squared": 9240,
+          "W_contribution": 1.1264638913154295,
+          "mass_upper_contribution": 4.9892759472520005,
+          "W_fraction": 0.01220639001070133,
+          "mass_fraction": 0.010263907840175612
+        }
+      ],
+      "thresholds": [
+        {
+          "C": 100,
+          "conductors": 5,
+          "characters": 38,
+          "W_fraction": 0.00013972557533769344,
+          "mass_fraction": 5.1743663641443295e-05
+        },
+        {
+          "C": 1000,
+          "conductors": 16,
+          "characters": 496,
+          "W_fraction": 0.004989452412523085,
+          "mass_fraction": 0.0028181445086878235
+        },
+        {
+          "C": 5000,
+          "conductors": 24,
+          "characters": 1812,
+          "W_fraction": 0.03639175550186346,
+          "mass_fraction": 0.02553633114795807
+        },
+        {
+          "C": 10000,
+          "conductors": 27,
+          "characters": 3666,
+          "W_fraction": 0.11139308453066896,
+          "mass_fraction": 0.08707439168402102
+        },
+        {
+          "C": 20000,
+          "conductors": 29,
+          "characters": 4590,
+          "W_fraction": 0.1642075740747982,
+          "mass_fraction": 0.13389178633727872
+        },
+        {
+          "C": 50000,
+          "conductors": 31,
+          "characters": 8550,
+          "W_fraction": 0.5158815842091542,
+          "mass_fraction": 0.47505185039912995
+        },
+        {
+          "C": 100000,
+          "conductors": 31,
+          "characters": 8550,
+          "W_fraction": 0.5158815842091542,
+          "mass_fraction": 0.47505185039912995
+        },
+        {
+          "C": 200000,
+          "conductors": 32,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        },
+        {
+          "C": 300000,
+          "conductors": 32,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "q": 180180,
+      "Q": 90090,
+      "factors": {
+        "2": 2,
+        "3": 2,
+        "5": 1,
+        "7": 1,
+        "11": 1,
+        "13": 1
+      },
+      "phi": 34560,
+      "delta_min": 0.13591850326544205,
+      "delta_max": 6.66000666000666,
+      "admissible_conductors": 16,
+      "nonzero_gauss_characters": 11520,
+      "even": 5760,
+      "odd": 5760,
+      "W": 95.54022391128822,
+      "W_lower": "41273376653/432000000",
+      "W_upper": "41273376797/432000000",
+      "main": 0.0,
+      "certificate_candidates": [
+        {
+          "blocks": 1,
+          "conductors": [
+            180180
+          ],
+          "characters": 5940,
+          "remaining_mass_coefficient": 0.08273771068997532,
+          "remaining_W_fraction": 0.2363756865326541
+        },
+        {
+          "blocks": 2,
+          "conductors": [
+            180180,
+            36036
+          ],
+          "characters": 7920,
+          "remaining_mass_coefficient": 0.04106518897484839,
+          "remaining_W_fraction": 0.12254129492034788
+        },
+        {
+          "blocks": 3,
+          "conductors": [
+            180180,
+            36036,
+            25740
+          ],
+          "characters": 9108,
+          "remaining_mass_coefficient": 0.020629134385775308,
+          "remaining_W_fraction": 0.06481672267700421
+        },
+        {
+          "blocks": 4,
+          "conductors": [
+            180180,
+            36036,
+            25740,
+            16380
+          ],
+          "characters": 9768,
+          "remaining_mass_coefficient": 0.011986493996286861,
+          "remaining_W_fraction": 0.039234345620802975
+        },
+        {
+          "blocks": 5,
+          "conductors": [
+            180180,
+            36036,
+            25740,
+            16380,
+            13860
+          ],
+          "characters": 10308,
+          "remaining_mass_coefficient": 0.005597109154116108,
+          "remaining_W_fraction": 0.01998059305158967
+        },
+        {
+          "blocks": 8,
+          "conductors": [
+            180180,
+            36036,
+            25740,
+            16380,
+            13860,
+            5148,
+            3276,
+            2772
+          ],
+          "characters": 11104,
+          "remaining_mass_coefficient": 0.0011913052736611993,
+          "remaining_W_fraction": 0.0046917463050141365
+        }
+      ],
+      "W_over_sqrtq": 0.22507795648828527,
+      "mass_upper_sum": 541.8252088958445,
+      "y_factor": 0.0007498942093324559,
+      "error_if_common_Z1": 0.07164506066940128,
+      "error_if_common_mass_kernel1": 0.40631158662134204,
+      "Z_cap_for_uniform_04712": 0.6576866508276177,
+      "K_cap_for_uniform_04712": 0.11597011148961649,
+      "Z_cap_for_endpoint_0598": 0.8346702402269001,
+      "K_cap_for_endpoint_0598": 0.1471776881807951,
+      "F_beta875_delta_min": 1.203028773843964,
+      "F_series_tail": 5.546117235843684e-38,
+      "top_conductors": [
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 180180,
+          "quotient": 1,
+          "primitive": 5940,
+          "even": 2970,
+          "odd": 2970,
+          "gauss_squared": 180180,
+          "W_contribution": 72.95683789277398,
+          "mass_upper_contribution": 431.4926984426339,
+          "W_fraction": 0.7636243134673459,
+          "mass_fraction": 0.7963688129645147
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 36036,
+          "quotient": 5,
+          "primitive": 1980,
+          "even": 990,
+          "odd": 990,
+          "gauss_squared": 36036,
+          "W_contribution": 10.875763263445005,
+          "mass_upper_contribution": 55.571200839413265,
+          "W_fraction": 0.11383439161230621,
+          "mass_fraction": 0.10256296666716325
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 25740,
+          "quotient": 7,
+          "primitive": 1188,
+          "even": 594,
+          "odd": 594,
+          "gauss_squared": 25740,
+          "W_contribution": 5.515018557312386,
+          "mass_upper_contribution": 27.251916783388616,
+          "W_fraction": 0.05772457224334365,
+          "mass_fraction": 0.05029650953104191
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 16380,
+          "quotient": 11,
+          "primitive": 660,
+          "even": 330,
+          "odd": 330,
+          "gauss_squared": 16380,
+          "W_contribution": 2.444146032132468,
+          "mass_upper_contribution": 11.525146189863221,
+          "W_fraction": 0.02558237705620123,
+          "mass_fraction": 0.02127096709536582
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 13860,
+          "quotient": 13,
+          "primitive": 540,
+          "even": 270,
+          "odd": 270,
+          "gauss_squared": 13860,
+          "W_contribution": 1.8395078315951796,
+          "mass_upper_contribution": 8.520381625374176,
+          "W_fraction": 0.0192537525692133,
+          "mass_fraction": 0.015725332608162303
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 5148,
+          "quotient": 35,
+          "primitive": 396,
+          "even": 198,
+          "odd": 198,
+          "gauss_squared": 5148,
+          "W_contribution": 0.8221304260882211,
+          "mass_upper_contribution": 3.400891957965633,
+          "W_fraction": 0.008605071167214264,
+          "mass_fraction": 0.006276732610681075
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 3276,
+          "quotient": 55,
+          "primitive": 220,
+          "even": 110,
+          "odd": 110,
+          "gauss_squared": 3276,
+          "W_contribution": 0.3643517783189723,
+          "mass_upper_contribution": 1.4248665726657885,
+          "W_fraction": 0.0038135956082464614,
+          "mass_fraction": 0.002629753192121579
+        },
+        {
+          "q": 180180,
+          "Q": 90090,
+          "c": 2772,
+          "quotient": 65,
+          "primitive": 180,
+          "even": 90,
+          "odd": 90,
+          "gauss_squared": 2772,
+          "W_contribution": 0.27421763710600383,
+          "mass_upper_contribution": 1.049475369863538,
+          "W_fraction": 0.0028701799711148114,
+          "mass_fraction": 0.0019369260651460006
+        }
+      ],
+      "thresholds": [
+        {
+          "C": 100,
+          "conductors": 1,
+          "characters": 4,
+          "W_fraction": 7.268608090025575e-06,
+          "mass_fraction": 2.1215065737933378e-06
+        },
+        {
+          "C": 1000,
+          "conductors": 5,
+          "characters": 116,
+          "W_fraction": 0.0006574285032953762,
+          "mass_fraction": 0.00032636085497336173
+        },
+        {
+          "C": 5000,
+          "conductors": 10,
+          "characters": 816,
+          "W_fraction": 0.01137552188437541,
+          "mass_fraction": 0.007498678523071004
+        },
+        {
+          "C": 10000,
+          "conductors": 11,
+          "characters": 1212,
+          "W_fraction": 0.01998059305158967,
+          "mass_fraction": 0.01377541113375208
+        },
+        {
+          "C": 20000,
+          "conductors": 13,
+          "characters": 2412,
+          "W_fraction": 0.06481672267700421,
+          "mass_fraction": 0.05077171083728021
+        },
+        {
+          "C": 50000,
+          "conductors": 15,
+          "characters": 5580,
+          "W_fraction": 0.2363756865326541,
+          "mass_fraction": 0.20363118703548536
+        },
+        {
+          "C": 100000,
+          "conductors": 15,
+          "characters": 5580,
+          "W_fraction": 0.2363756865326541,
+          "mass_fraction": 0.20363118703548536
+        },
+        {
+          "C": 200000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        },
+        {
+          "C": 300000,
+          "conductors": 16,
+          "characters": 11520,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        }
+      ]
+    },
+    {
+      "q": 240240,
+      "Q": 120120,
+      "factors": {
+        "2": 4,
+        "3": 1,
+        "5": 1,
+        "7": 1,
+        "11": 1,
+        "13": 1
+      },
+      "phi": 46080,
+      "delta_min": 0.10193887744908153,
+      "delta_max": 4.995004995004995,
+      "admissible_conductors": 32,
+      "nonzero_gauss_characters": 23040,
+      "even": 11520,
+      "odd": 11520,
+      "W": 130.51037294607318,
+      "W_lower": "1503479493907/11520000000",
+      "W_upper": "1503479499667/11520000000",
+      "main": 0.0,
+      "certificate_candidates": [
+        {
+          "blocks": 1,
+          "conductors": [
+            240240
+          ],
+          "characters": 5940,
+          "remaining_mass_coefficient": 0.26239357802560065,
+          "remaining_W_fraction": 0.5158815842091541
+        },
+        {
+          "blocks": 2,
+          "conductors": [
+            240240,
+            80080
+          ],
+          "characters": 11880,
+          "remaining_mass_coefficient": 0.11169811990041545,
+          "remaining_W_fraction": 0.23637568653265414
+        },
+        {
+          "blocks": 3,
+          "conductors": [
+            240240,
+            80080,
+            48048
+          ],
+          "characters": 13860,
+          "remaining_mass_coefficient": 0.0745927054771052,
+          "remaining_W_fraction": 0.1642075740747982
+        },
+        {
+          "blocks": 4,
+          "conductors": [
+            240240,
+            80080,
+            48048,
+            16016
+          ],
+          "characters": 15840,
+          "remaining_mass_coefficient": 0.05540986481250322,
+          "remaining_W_fraction": 0.12254129492034788
+        },
+        {
+          "blocks": 5,
+          "conductors": [
+            240240,
+            80080,
+            48048,
+            16016,
+            34320
+          ],
+          "characters": 17028,
+          "remaining_mass_coefficient": 0.03719654070302881,
+          "remaining_W_fraction": 0.08594538254065807
+        },
+        {
+          "blocks": 8,
+          "conductors": [
+            240240,
+            80080,
+            48048,
+            16016,
+            34320,
+            11440,
+            21840,
+            18480
+          ],
+          "characters": 19416,
+          "remaining_mass_coefficient": 0.014398680161590603,
+          "remaining_W_fraction": 0.03639175550186346
+        }
+      ],
+      "W_over_sqrtq": 0.26627008144158576,
+      "mass_upper_sum": 732.6793310325634,
+      "y_factor": 0.0007498942093324559,
+      "error_if_common_Z1": 0.09786897293007948,
+      "error_if_common_mass_kernel1": 0.5494319876388968,
+      "Z_cap_for_uniform_04712": 0.48146004386562774,
+      "K_cap_for_uniform_04712": 0.08576129723078424,
+      "Z_cap_for_endpoint_0598": 0.6110210234118111,
+      "K_cap_for_endpoint_0598": 0.10883967687608016,
+      "F_beta875_delta_min": 1.2424780079378672,
+      "F_series_tail": 3.1408862997409567e-44,
+      "top_conductors": [
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 240240,
+          "quotient": 1,
+          "primitive": 5940,
+          "even": 2970,
+          "odd": 2970,
+          "gauss_squared": 240240,
+          "W_contribution": 63.182474994925414,
+          "mass_upper_contribution": 382.7718710734055,
+          "W_fraction": 0.48411841579084586,
+          "mass_fraction": 0.522427554403597
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 80080,
+          "quotient": 3,
+          "primitive": 5940,
+          "even": 2970,
+          "odd": 2970,
+          "gauss_squared": 80080,
+          "W_contribution": 36.47841894638698,
+          "mass_upper_contribution": 200.9556231396052,
+          "W_fraction": 0.27950589767649997,
+          "mass_fraction": 0.27427499948224127
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 48048,
+          "quotient": 5,
+          "primitive": 1980,
+          "even": 990,
+          "odd": 990,
+          "gauss_squared": 48048,
+          "W_contribution": 9.418687271688928,
+          "mass_upper_contribution": 49.480865382786334,
+          "W_fraction": 0.07216811245785594,
+          "mass_fraction": 0.0675341357221761
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 16016,
+          "quotient": 15,
+          "primitive": 1980,
+          "even": 990,
+          "odd": 990,
+          "gauss_squared": 16016,
+          "W_contribution": 5.4378816317225045,
+          "mass_upper_contribution": 25.58072915602087,
+          "W_fraction": 0.04166627915445031,
+          "mass_fraction": 0.034913949489976746
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 34320,
+          "quotient": 7,
+          "primitive": 1188,
+          "even": 594,
+          "odd": 594,
+          "gauss_squared": 34320,
+          "W_contribution": 4.776146172975133,
+          "mass_upper_contribution": 24.28785805092112,
+          "W_fraction": 0.0365959123796898,
+          "mass_fraction": 0.03314936974773438
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 11440,
+          "quotient": 21,
+          "primitive": 1188,
+          "even": 594,
+          "odd": 594,
+          "gauss_squared": 11440,
+          "W_contribution": 2.7575092786561934,
+          "mass_upper_contribution": 12.507884593914712,
+          "W_fraction": 0.021128659863653865,
+          "mass_fraction": 0.01707143093048275
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 21840,
+          "quotient": 11,
+          "primitive": 660,
+          "even": 330,
+          "odd": 330,
+          "gauss_squared": 21840,
+          "W_contribution": 2.1166925543856547,
+          "mass_upper_contribution": 10.285536633145444,
+          "W_fraction": 0.016218577164439422,
+          "mass_fraction": 0.01403825138434035
+        },
+        {
+          "q": 240240,
+          "Q": 120120,
+          "c": 18480,
+          "quotient": 13,
+          "primitive": 540,
+          "even": 270,
+          "odd": 270,
+          "gauss_squared": 18480,
+          "W_contribution": 1.5930605126218527,
+          "mass_upper_contribution": 7.6080144124182585,
+          "W_fraction": 0.01220639001070133,
+          "mass_fraction": 0.01038382562491056
+        }
+      ],
+      "thresholds": [
+        {
+          "C": 100,
+          "conductors": 3,
+          "characters": 20,
+          "W_fraction": 2.5115752527538757e-05,
+          "mass_fraction": 8.600483617003758e-06
+        },
+        {
+          "C": 1000,
+          "conductors": 12,
+          "characters": 400,
+          "W_fraction": 0.0014262545673735117,
+          "mass_fraction": 0.000759040934511218
+        },
+        {
+          "C": 5000,
+          "conductors": 21,
+          "characters": 2028,
+          "W_fraction": 0.01452519653294884,
+          "mass_fraction": 0.00955254074117866
+        },
+        {
+          "C": 10000,
+          "conductors": 24,
+          "characters": 3624,
+          "W_fraction": 0.03639175550186346,
+          "mass_fraction": 0.02620648321454092
+        },
+        {
+          "C": 20000,
+          "conductors": 27,
+          "characters": 7332,
+          "W_fraction": 0.11139308453066897,
+          "mass_fraction": 0.08857568925991097
+        },
+        {
+          "C": 50000,
+          "conductors": 30,
+          "characters": 11160,
+          "W_fraction": 0.23637568653265414,
+          "mass_fraction": 0.2032974461141618
+        },
+        {
+          "C": 100000,
+          "conductors": 31,
+          "characters": 17100,
+          "W_fraction": 0.5158815842091541,
+          "mass_fraction": 0.47757244559640305
+        },
+        {
+          "C": 200000,
+          "conductors": 31,
+          "characters": 17100,
+          "W_fraction": 0.5158815842091541,
+          "mass_fraction": 0.47757244559640305
+        },
+        {
+          "C": 300000,
+          "conductors": 32,
+          "characters": 23040,
+          "W_fraction": 1.0,
+          "mass_fraction": 1.0
+        }
+      ]
+    }
+  ]
+}

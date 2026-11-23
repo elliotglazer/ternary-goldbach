@@ -1,0 +1,119 @@
+<<HOL message: Created theory "CompactFusedResults">>
+HANDOFF_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in CompactFusedResults)>>
+HANDOFF_PHASE,common_scale_two_pre_setup,0.026791000,0.027444000
+COMPACT_MODE,fused,integer_signs_only
+HANDOFF_PHASE,construct_sources,0.000768000,0.000768000
+HANDOFF_PHASE,define_sources,0.002093000,0.002098000
+Saved theorem _______ "cv_compact_integer_sources_thm"
+Finished translating compact_integer_sources, stored in cv_compact_integer_sources_thm
+HANDOFF_PHASE,translate_sources,0.012550000,0.013766000
+HANDOFF_PHASE,compact_pipeline_representation,0.000746000,0.000748000
+HANDOFF_PHASE,compact_pipeline_from_to,0.000026000,0.000026000
+HANDOFF_PHASE,compact_pipeline_code_equations,0.000726000,0.000728000
+HANDOFF_PHASE,compact_pipeline_prepare_conversion,0.000674000,0.000674000
+HANDOFF_PHASE,compact_pipeline_proof_context,0.000198000,0.000199000
+HANDOFF_PHASE,compact_pipeline_compute,0.003682000,0.003691000
+HANDOFF_PHASE,compact_pipeline_decode,0.001258000,0.001263000
+HANDOFF_PHASE,compact_pipeline_close,0.000086000,0.000086000
+HANDOFF_PHASE,compact_pipeline_normalize_boolean,0.000040000,0.000039000
+HANDOFF_TAG,compact_pipeline,DISK_THM,
+HANDOFF_PHASE,public_literal_binding,0.000544000,0.000545000
+HANDOFF_PHASE,bind_sign_semantics,0.001449000,0.001454000
+HANDOFF_TAG,compact_integer_pipeline,DISK_THM,
+HANDOFF_TAG,compact_sign_semantics,DISK_THM,
+Saved theorem _______ "compact_integer_pipeline"
+Saved theorem _______ "compact_sign_semantics"
+HANDOFF_PHASE,save_primary,0.002011000,0.002849000
+COMPACT_PRIMARY_COMPLETE,4,129,1032
+HANDOFF_PHASE,validation_load_old_full_theory,0.670780000,1.015806000
+HANDOFF_TAG,old_full_readback,DISK_THM,
+HANDOFF_PHASE,validation_old_full_mask_representation,3.260686000,3.262099000
+HANDOFF_PHASE,validation_old_full_mask_from_to,0.000045000,0.000043000
+HANDOFF_PHASE,validation_old_full_mask_code_equations,0.002535000,0.002539000
+HANDOFF_PHASE,validation_old_full_mask_prepare_conversion,0.000029000,0.000029000
+HANDOFF_PHASE,validation_old_full_mask_proof_context,0.037208000,0.037239000
+HANDOFF_PHASE,validation_old_full_mask_compute,0.008446000,0.008454000
+HANDOFF_PHASE,validation_old_full_mask_decode,0.001468000,0.001475000
+HANDOFF_PHASE,validation_old_full_mask_close,0.000081000,0.000081000
+HANDOFF_PHASE,validation_old_full_mask_normalize_boolean,0.000040000,0.000040000
+HANDOFF_TAG,validation_old_full_mask,DISK_THM,
+HANDOFF_PHASE,validation_compose_old_full,0.000979000,0.000982000
+HANDOFF_PHASE,validation_expand_compact,0.000424000,0.000424000
+HANDOFF_TAG,old_full_derived_mask,DISK_THM,
+Saved theorem _______ "old_full_derived_mask"
+COMPACT_MATCHED_OLD_FULL_SIGNS,1032
+HANDOFF_PHASE,control_base_label_representation,0.003489000,0.003536000
+HANDOFF_PHASE,control_base_label_from_to,0.000011000,0.000012000
+HANDOFF_PHASE,control_base_label_code_equations,0.000913000,0.000915000
+HANDOFF_PHASE,control_base_label_prepare_conversion,0.000578000,0.000577000
+HANDOFF_PHASE,control_base_label_proof_context,0.000444000,0.000467000
+HANDOFF_PHASE,control_base_label_compute,0.000444000,0.000444000
+HANDOFF_PHASE,control_base_label_decode,0.000062000,0.000063000
+HANDOFF_PHASE,control_base_label_close,0.000067000,0.000066000
+HANDOFF_PHASE,control_base_label_normalize_boolean,0.000038000,0.000039000
+HANDOFF_TAG,control_base_label,DISK_THM,
+Saved theorem _______ "reject_base_label"
+HANDOFF_REJECTED,base_label
+HANDOFF_PHASE,control_denominator_representation,0.004078000,0.004088000
+HANDOFF_PHASE,control_denominator_from_to,0.000008000,0.000007000
+HANDOFF_PHASE,control_denominator_code_equations,0.000403000,0.000404000
+HANDOFF_PHASE,control_denominator_prepare_conversion,0.000380000,0.000381000
+HANDOFF_PHASE,control_denominator_proof_context,0.000284000,0.000286000
+HANDOFF_PHASE,control_denominator_compute,0.000156000,0.000157000
+HANDOFF_PHASE,control_denominator_decode,0.000045000,0.000046000
+HANDOFF_PHASE,control_denominator_close,0.000066000,0.000068000
+HANDOFF_PHASE,control_denominator_normalize_boolean,0.000037000,0.000040000
+HANDOFF_TAG,control_denominator,DISK_THM,
+Saved theorem _______ "reject_denominator"
+HANDOFF_REJECTED,denominator
+HANDOFF_PHASE,control_depth_representation,0.003417000,0.003429000
+HANDOFF_PHASE,control_depth_from_to,0.000010000,0.000010000
+HANDOFF_PHASE,control_depth_code_equations,0.000457000,0.000457000
+HANDOFF_PHASE,control_depth_prepare_conversion,0.000360000,0.000361000
+HANDOFF_PHASE,control_depth_proof_context,0.000330000,0.000332000
+HANDOFF_PHASE,control_depth_compute,0.000175000,0.000175000
+HANDOFF_PHASE,control_depth_decode,0.000056000,0.000057000
+HANDOFF_PHASE,control_depth_close,0.000078000,0.000078000
+HANDOFF_PHASE,control_depth_normalize_boolean,0.000038000,0.000038000
+HANDOFF_TAG,control_depth,DISK_THM,
+Saved theorem _______ "reject_depth"
+HANDOFF_REJECTED,depth
+HANDOFF_PHASE,control_final_mask_representation,0.004266000,0.004273000
+HANDOFF_PHASE,control_final_mask_from_to,0.000011000,0.000050000
+HANDOFF_PHASE,control_final_mask_code_equations,0.000493000,0.000494000
+HANDOFF_PHASE,control_final_mask_prepare_conversion,0.000431000,0.000432000
+HANDOFF_PHASE,control_final_mask_proof_context,0.000337000,0.000339000
+HANDOFF_PHASE,control_final_mask_compute,0.004043000,0.004054000
+HANDOFF_PHASE,control_final_mask_decode,0.000066000,0.000065000
+HANDOFF_PHASE,control_final_mask_close,0.000077000,0.000079000
+HANDOFF_PHASE,control_final_mask_normalize_boolean,0.000035000,0.000037000
+HANDOFF_TAG,control_final_mask,DISK_THM,
+Saved theorem _______ "reject_final_mask"
+HANDOFF_REJECTED,final_mask
+HANDOFF_PHASE,control_negative_ties_representation,0.000612000,0.000616000
+HANDOFF_PHASE,control_negative_ties_from_to,0.000004000,0.000006000
+HANDOFF_PHASE,control_negative_ties_code_equations,0.000068000,0.000070000
+HANDOFF_PHASE,control_negative_ties_prepare_conversion,0.000039000,0.000041000
+HANDOFF_PHASE,control_negative_ties_proof_context,0.000055000,0.000055000
+HANDOFF_PHASE,control_negative_ties_compute,0.000020000,0.000020000
+HANDOFF_PHASE,control_negative_ties_decode,0.000057000,0.000059000
+HANDOFF_PHASE,control_negative_ties_close,0.000088000,0.000089000
+HANDOFF_PHASE,control_negative_ties_normalize_boolean,0.000035000,0.000035000
+HANDOFF_TAG,control_negative_ties,DISK_THM,
+Saved theorem _______ "control_negative_ties"
+HANDOFF_PHASE,control_sign_codes_representation,0.000470000,0.000473000
+HANDOFF_PHASE,control_sign_codes_from_to,0.000006000,0.000006000
+HANDOFF_PHASE,control_sign_codes_code_equations,0.000047000,0.000047000
+HANDOFF_PHASE,control_sign_codes_prepare_conversion,0.000022000,0.000022000
+HANDOFF_PHASE,control_sign_codes_proof_context,0.000044000,0.000043000
+HANDOFF_PHASE,control_sign_codes_compute,0.000013000,0.000014000
+HANDOFF_PHASE,control_sign_codes_decode,0.000053000,0.000053000
+HANDOFF_PHASE,control_sign_codes_close,0.000061000,0.000061000
+HANDOFF_PHASE,control_sign_codes_normalize_boolean,0.000033000,0.000034000
+HANDOFF_TAG,control_sign_codes,DISK_THM,
+Saved theorem _______ "control_sign_codes"
+Exporting theory "CompactFusedResults" ... done.
+Theory "CompactFusedResults" took 4.6s to build
+HANDOFF_PHASE,theory_export,0.577229000,0.651998000
+COMPACT_DONE

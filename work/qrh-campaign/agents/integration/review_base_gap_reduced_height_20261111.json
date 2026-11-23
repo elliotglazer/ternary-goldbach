@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "scope": "Exact rational/polynomial checks and source binding, no analytic values",
+  "pins": [
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor933.lean",
+      "sha256": "554F00DE4FA6F8F0B6B184F8E8535B8AC5C28C0DB47FA2A95119B6BA4899F66E"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor713.lean",
+      "sha256": "11325BE6F77A7A762747542F30E2A9035782765A801C603F14107E84ED5D7433"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Explicit/ZeroSumBound.lean",
+      "sha256": "A1294627F676EC49BED1BD86407A9460DC569B77AF8CBE8D65F1F49129BF17D4"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Explicit/ExplicitBound.lean",
+      "sha256": "151587294597BB275C2973E9E7D149605673936903780AE72C8D5E9F5E729D3B"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap.lean",
+      "sha256": "ABF8667E1A8D5C72AA81F1B3F40481933A1ABC5A1CE3FAA0BE9705AC8CAF418B"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap2.lean",
+      "sha256": "AAD66405B48CFBFE46DE3196CE82D3CAB57136353F482CA3DF4B591A27B9C60E"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/Bombieri.lean",
+      "sha256": "F3236E24D824647816AB0370CB57FB958C642194643393F20E785096888D3C79"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/MinorTotal.lean",
+      "sha256": "6319681CA96E5408071C60036AF55769EF9A63DE2453DDBD3D17008B979FA742"
+    },
+    {
+      "path": "work/qrh-campaign/agents/zero-sum/AGGREGATE_NONPRINCIPAL_BASE_GAP_TARGET_2026-11-11.md",
+      "sha256": "CFDA417AFFF112EBDF7BBB822FE7C884F3F8FCB4307BBC2F5AAC3B6856D5D264"
+    },
+    {
+      "path": "work/qrh-campaign/agents/integration/BASE_GAP_ACTUAL_SOURCE_JOIN_2026-11-11.md",
+      "sha256": "F0BC1D7899044C27E819743BBA4B157D51F42848B87A51D37764CDB8B3B6C9E0"
+    }
+  ],
+  "checks": {
+    "pin:work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor933.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor713.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/Explicit/ZeroSumBound.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/Explicit/ExplicitBound.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap2.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/Bombieri.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/MinorTotal.lean": true,
+    "pin:work/qrh-campaign/agents/zero-sum/AGGREGATE_NONPRINCIPAL_BASE_GAP_TARGET_2026-11-11.md": true,
+    "pin:work/qrh-campaign/agents/integration/BASE_GAP_ACTUAL_SOURCE_JOIN_2026-11-11.md": true,
+    "height_floor": true,
+    "ceiling_below_old_real_height": true,
+    "odd_induced_even_twist": true,
+    "common_ratio": true,
+    "ratio": true,
+    "old_twist_cap": true,
+    "conductor_sqrt_cap": true,
+    "low_scale_sqrt": true,
+    "low_E1_numerator": true,
+    "weighted_low": true,
+    "zero_term": true,
+    "vertical_term": true,
+    "weighted_small": true,
+    "B_monotonic": true,
+    "A_monotonic": true,
+    "positive_Taylor_B": true,
+    "positive_Taylor_A": true,
+    "rhoB": true,
+    "c3": true,
+    "B_multiplier": true,
+    "rhoA": true,
+    "A_tail": true,
+    "B_tail": true,
+    "full_error": true,
+    "saved_A": true,
+    "saved_B": true,
+    "saved_total": true,
+    "coprime": true,
+    "amplitude": true,
+    "main_term": true,
+    "ghat": true,
+    "not_old_guard": true,
+    "conditional_plus_domination": true
+  },
+  "A_tail": "3682304426131778177198699/156250000000000000000000000",
+  "B_tail": "2353399503/2500000000000000",
+  "total": "3682685888600718802198699/156250000000000000000000000",
+  "amplitude": "6136759/250000000"
+}

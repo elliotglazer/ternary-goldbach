@@ -1,0 +1,91 @@
+{
+  "rows": [
+    {
+      "module": "PackedWideInputs",
+      "exit": 0,
+      "wall_seconds": 15.761780600001657,
+      "cpu_seconds": 4.3125,
+      "timeout": false,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\operator01\\PackedWideInputs.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\PackedWideInputs.lean"
+      ],
+      "source_sha256": "37592185f06b91d76e90947783512c710721be0ad5126544a092ed0ae423da82",
+      "olean_sha256": "d11251a11f4c518ce3d245d99a8d2da996aff573fab9b0ee514f0a8523b63b98"
+    },
+    {
+      "module": "PackedArithmetic0",
+      "exit": 0,
+      "wall_seconds": 28.406858999998803,
+      "cpu_seconds": 5.03125,
+      "timeout": false,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\operator01\\PackedArithmetic0.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\PackedArithmetic0.lean"
+      ],
+      "source_sha256": "070015d9fd78227c97814e5c34983346b31ccad043c9e0bfc92156f705c12eaf",
+      "olean_sha256": "7786825139720ff8b629da5bcb7dff61b78e9ae0256704cbe3f39b035a54dd47"
+    },
+    {
+      "module": "PackedArithmetic1",
+      "exit": 0,
+      "wall_seconds": 4.159709799998382,
+      "cpu_seconds": 3.5,
+      "timeout": false,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\operator01\\PackedArithmetic1.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\PackedArithmetic1.lean"
+      ],
+      "source_sha256": "80a1ff432e157e2897d81ade8b4e1eae53f6dabd75864331f5396f067d874bde",
+      "olean_sha256": "804e86883218241c65e5bc9a5a12e6021dc64d7af5b474d5963e5ef0a8a4dabb"
+    },
+    {
+      "module": "PackedReplay",
+      "exit": 0,
+      "wall_seconds": 4.242386999998416,
+      "cpu_seconds": 3.296875,
+      "timeout": false,
+      "command": [
+        "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+        "-t0",
+        "-j1",
+        "-M2048",
+        "-o",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\operator01\\PackedReplay.olean",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\PackedReplay.lean"
+      ],
+      "source_sha256": "d9093e8ab4523c3a779e257d877dd1690134201bbb524d725da2d4f41a32e6c9",
+      "olean_sha256": "02f9633b0fd225e4367050e9fcd2c7bfb1e566279ca8c899d4223fd83dfc6515"
+    }
+  ],
+  "lean_path": [
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost\\wide262144-cache\\operator01",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\grh-goldbach-20261120\\team\\finite-cost",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\prime-cert",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean"
+  ]
+}

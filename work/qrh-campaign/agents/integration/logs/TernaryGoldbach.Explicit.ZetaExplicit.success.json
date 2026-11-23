@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "ZetaExplicit.olean": "809c3622b7a8ad62b804e7dd1b9f1b391652e51f26e15da869d0c72d6abb7ee2"
+  },
+  "evidence": {
+    "command": [
+      "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+      "-M4096",
+      "-j",
+      "2",
+      "-R",
+      "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach",
+      "-o",
+      "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\integration\\artifacts\\TernaryGoldbach\\Explicit\\_partial_ac23d09887b5470299334db2143d854e\\ZetaExplicit.olean",
+      "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\ZetaExplicit.lean"
+    ],
+    "exit_code": 0,
+    "seconds": 1671.061999999998
+  },
+  "generation": "4c2512dbb0cd4c7c87e8b6b479d2f34f",
+  "key": {
+    "dependency_receipts": {
+      "TernaryGoldbach.Explicit.ZeroSums": "af41026a7b61652692e88124606e4d45481e6a0a39338fa0f409b97acf524434",
+      "TernaryGoldbach.Explicit.ZetaDatum": "73fa9a013e18f3542fc7f506e610e8739f9f513998e8cf7682bfddbc8ec96566"
+    },
+    "environment": {
+      "lean_binary_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+      "lean_options": [
+        "-j",
+        "2",
+        "-R",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach"
+      ],
+      "package_paths": [
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq"
+      ],
+      "project_manifest_sha256": "ea138f9d252387a27424093ef9be6d65e1af2638a51212aca408385029549c82"
+    },
+    "lean": "4.35.0",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "module": "TernaryGoldbach.Explicit.ZetaExplicit",
+    "source_sha256": "a2252356b4a2fce4bc0b2b0eff9a26b43dfaeba9b05db94bfeaa444a423b94e2"
+  }
+}

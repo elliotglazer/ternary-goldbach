@@ -1,0 +1,54 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanning [1m../source-exp-horner[0m
+Holmake: Scanning [1m../source-inverse-root[0m
+Holmake: Scanning [1m../source-initial[0m
+Holmake: Scanning [1m../source-log-real[0m
+Holmake: Scanning [1m../source-log-horner[0m
+Holmake: Scanning [1m../source-log-range[0m
+Holmake: Scanning [1m../source-phase-range[0m
+Holmake: Scanning [1m../source-phase-taylor[0m
+Holmake: Scanning [1m../source-state-bounds[0m
+Holmake: Scanned 28 directories
+SOURCE_RAW_STATE_ROOT,srb_target_step,⊢ ∀x n.
+    0 < x ⇒
+    srb_target x (5 * &SUC n / 64) =
+    srb_target x (5 * &n / 64) *
+    (cos (-(5 / 64) * ln (&x)),sin (-(5 / 64) * ln (&x)))
+SOURCE_RAW_STATE_ROOT,srb_log2_gate,⊢ ∀x. 0 < x ∧ x < 2 ** 19 ⇒ source_log_domain x 1 (LOG2 x) ∧ LOG2 x ≤ 18
+SOURCE_RAW_STATE_ROOT,source_raw_state_from_domain,⊢ ∀k x initial.
+    source_log_domain x 1 k ∧ k ≤ 18 ∧ source_raw_initial x = SOME initial ⇒
+    ∀j. j ≤ 90000 ⇒
+        modu
+          (source_pair_value (2 ** 120)
+             (source_state (2 ** 122) initial
+                (source_raw_step (source_raw_log129 k x)) j) −
+           srb_target x (5 * &j / 64)) < 1 / 2 pow 96
+SOURCE_RAW_STATE_ROOT,c10004_raw_state_error,⊢ ∀x. 1 ≤ x ∧ x ≤ 10004 ⇒
+      ∃initial.
+        source_raw_initial x = SOME initial ∧
+        ∀j. j ≤ 90000 ⇒
+            modu
+              (source_pair_value (2 ** 120)
+                 (source_state (2 ** 122) initial
+                    (source_raw_step (source_raw_log129 (LOG2 x) x)) j) −
+               exp ((-(1 / 2),-(5 * &j / 64)) * complex_of_real (ln (&x)))) <
+            1 / 2 pow 96
+SOURCE_RAW_STATE_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+SOURCE_RAW_STATE_AUDIT_DONE

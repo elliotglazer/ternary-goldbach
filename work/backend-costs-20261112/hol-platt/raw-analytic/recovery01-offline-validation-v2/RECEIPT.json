@@ -1,0 +1,36 @@
+{
+  "full_graph_nodes": 1227,
+  "graph_status_source_sha256": "9c4ad829b57c9ee093e49a39b19ff71680cca11030351717a472eb624835612f",
+  "graph_validation_sha256": "33a10b73c801512716c66f28bb89bdd36d705265aa5228300f8663cac4fb1b76",
+  "linux_graph_returncode": 0,
+  "linux_graph_wall_seconds": 30.787056400004076,
+  "normalization": "Remove exactly one leading nine-byte Holmake: prefix including its space; parse entire remaining UTF-8 JSON value",
+  "normalized_sha256": "452e41cd91c2892dcea17c29a27c616c9aad4005b56f4387cb35ebc9a25e7f78",
+  "offline_only": true,
+  "original_source_boundary_helper_checks": 62,
+  "output_function_source_sha256": "b9a679bc109622736a99f700f4f1bfb7625ddc6d0ca515aae8ee595bc5695b8b",
+  "pins": {
+    "PREFLIGHT_FAILURE_READONLY_SNAPSHOT.json": "59027e210e968ee8d8ca5825fde2ddae5e63aeb246acf38d2b45829987f861fe",
+    "dependency-build-win01/logs/recovery01_command.json": "87e13d4f0eb324cac8023f5117897464df3ef6b7735a5a92f1989a8db286f07b",
+    "dependency-build-win01/logs/recovery01_graph.out": "c2c0b4f8a54f73fa50ad04da7565aa61fc18023ea2955a49e4152cb9a18babac",
+    "dependency-build-win01/logs/recovery01_result.json": "219020afdacf600eb0c5d66b4bc6907fd7b9f656bac9c488b7d2ddbe594474ba",
+    "recover_preflight_windows.py": "9530f4c29d7b19b1e19fa6e95f3cf77b76e56d3c6b0e125fd639ea603aa00305"
+  },
+  "previous_offline_attempt": "Strict all-node checker rejected implicit hol.state aggregate edge; normalized graph preserved in recovery01-offline-validation. No process launched and no original/stage file changed.",
+  "prior_attempt_performed_actual_partial_build": true,
+  "processes_launched": 0,
+  "prospective_local_compilations": 93,
+  "protected_existing_stage_files": 126,
+  "raw_bytes": 678396,
+  "raw_graph_and_previous_artifacts_preserved": true,
+  "remaining_build_not_executed": true,
+  "script_sha256": "89e799275bc961466fde63f00fb2b1377167aa24bf6b3d8388c6c39ab225f9b9",
+  "stage_usage_before_offline_output": {
+    "bytes": 4463034,
+    "files": 186
+  },
+  "staged_source_helper_checks": 46,
+  "status": "PASS",
+  "strict_component_nodes": 777,
+  "unchanged_object_files": 40
+}

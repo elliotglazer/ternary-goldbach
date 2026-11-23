@@ -1,0 +1,57 @@
+{
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "stages": {
+    "PrimeSupport": {
+      "cpu_seconds": 10.6875,
+      "wall_seconds": 10.793933699998888,
+      "output": "'lucasNat' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    "PrimeBitmap": {
+      "cpu_seconds": 10.96875,
+      "wall_seconds": 11.114987400003884,
+      "output": ""
+    },
+    "Table": {
+      "cpu_seconds": 11.109375,
+      "wall_seconds": 11.322550099997898,
+      "output": ""
+    },
+    "PrefixCheck": {
+      "cpu_seconds": 11.625,
+      "wall_seconds": 11.842016599999624,
+      "output": ""
+    },
+    "PrefixSource": {
+      "cpu_seconds": 10.59375,
+      "wall_seconds": 10.680819200002588,
+      "output": ""
+    },
+    "PrefixJoin": {
+      "cpu_seconds": 10.40625,
+      "wall_seconds": 10.585844200002612,
+      "output": ""
+    },
+    "PrefixFactorial": {
+      "cpu_seconds": 10.015625,
+      "wall_seconds": 10.079382999996596,
+      "output": ""
+    },
+    "FastHex": {
+      "cpu_seconds": 3.515625,
+      "wall_seconds": 3.722149100001843,
+      "output": ""
+    },
+    "Power9": {
+      "cpu_seconds": 92.203125,
+      "wall_seconds": 86.63207649999822,
+      "output": ""
+    },
+    "audit": {
+      "cpu_seconds": 11.359375,
+      "wall_seconds": 11.484657500004687,
+      "output": "'SmallGoldbach.Power9.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    }
+  },
+  "cpu_seconds": 182.484375,
+  "wall_seconds": 178.25841730000684
+}

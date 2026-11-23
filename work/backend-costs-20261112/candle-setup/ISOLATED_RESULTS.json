@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "markers": {
+    "ENCODING_SOUND_DONE": true,
+    "ROW_EXACT_DONE": true,
+    "RESIDUAL_SOUND_DONE": true,
+    "STAGE_EXACT_DONE": true,
+    "BOOTSTRAP_SOUND_DONE": true,
+    "INTEGER_EXPORT_DONE": true,
+    "REJECTED_rounding": true,
+    "REJECTED_missing": true,
+    "REJECTED_reordered": true,
+    "REJECTED_coefficient": true,
+    "CONTROLS_DONE": true,
+    "COMPACT_PROOF_DONE": true,
+    "COMPACT_EXPORT_DONE": true,
+    "ISOLATED_REPRODUCTION_DONE": true,
+    "BALANCED_LISTS_DONE": true
+  },
+  "errors": [],
+  "exit_status": 0,
+  "kernel_channel_present": true,
+  "intervals": {
+    "first": {
+      "cpu_seconds": 0.15504744000000414,
+      "wall_seconds": 0.1988837709999416
+    },
+    "repeat100": {
+      "cpu_seconds": 9.008258002000005,
+      "wall_seconds": 9.01052685000002
+    },
+    "compact_conclusion": {
+      "cpu_seconds": 5.817221177999997,
+      "wall_seconds": 5.945571556999994
+    },
+    "compact_export": {
+      "cpu_seconds": 4.2542289179999955,
+      "wall_seconds": 6.0231676889999335
+    }
+  },
+  "kernel_output_isolated": true,
+  "resources": {
+    "User time (seconds)": "123.33",
+    "System time (seconds)": "5.09",
+    "Elapsed (wall clock) time (h:mm:ss or m:ss)": "2m 31.54s",
+    "Maximum resident set size (kbytes)": "3328440"
+  },
+  "statement": "closed integer residual theorem, numerals represented by proved balanced arithmetic expressions",
+  "real_coordinate_interpretation": false,
+  "root_certification": false,
+  "spectral_inputs": false,
+  "artifacts": {
+    "checker.ml": {
+      "bytes": 3315,
+      "sha256": "c3ec48d016d5a3c324036371325468c9348a418a1602163f816db53f3b0a9d6d"
+    },
+    "arithmetic_sound.ml": {
+      "bytes": 936,
+      "sha256": "91e96889f9cc64551065f3868180b9055ba55470ff4db787d28fdbecf76b49b1"
+    },
+    "encoding_sound.ml": {
+      "bytes": 4305,
+      "sha256": "cdfbae18d98e2c5683d6d8c824475570c6918c13effe0d740f031c00a3aa9222"
+    },
+    "row_sound.ml": {
+      "bytes": 2336,
+      "sha256": "1177e79cc6788f9a6ea9cb967709af65890049e877dd877699c8fa57c652435e"
+    },
+    "residual_sound.ml": {
+      "bytes": 1858,
+      "sha256": "ee0d07f1b4fb66fdb57fd3a776f0784be942319e5910a764d0eb0b1867a726be"
+    },
+    "stage_sound.ml": {
+      "bytes": 2007,
+      "sha256": "dc6f53c262f722c4975ac7273b00abe63fdf65f5917f0c63d91402ecacd8d1c7"
+    },
+    "export_integer.ml": {
+      "bytes": 1520,
+      "sha256": "823d0c57dfc658070549503187ecb449e9e123a11ab1204b0161cb8863f9e47c"
+    },
+    "bootstrap_sound.ml": {
+      "bytes": 241,
+      "sha256": "27f249af8c3a3677307081e2144f2d8520680950c3b176eb19d1e7cbe0251f28"
+    },
+    "fixture.ml": {
+      "bytes": 91486,
+      "sha256": "075827ba4bb6608eab92a27501f10376d99f65a0308c7f19c3aa9717125c6bd9"
+    },
+    "controls.ml": {
+      "bytes": 364406,
+      "sha256": "5ab95df120881c7abdc5c69a78c8a739d9f21ec9025e738504c10a863fc52aa8"
+    },
+    "compact_export.ml": {
+      "bytes": 2311,
+      "sha256": "f1bdec6dd1574b8837123bd9a3ac51999c9c6c12542e16f9d470f073ae7ed684"
+    },
+    "reproduce_isolated.ml": {
+      "bytes": 231,
+      "sha256": "1017eee89926736f258676d523e169b44367ed151c2582530f22d344996e5d0a"
+    },
+    "reproduce_isolated.log": {
+      "bytes": 3734172,
+      "sha256": "730675bad66adacc4d89c4d0f1eb5f4c9158eb05ca204217ec52c63e2659de4c"
+    },
+    "reproduce_isolated.time": {
+      "bytes": 1214,
+      "sha256": "c4256f54deac1eace3d08e8aeb151e99e95a822907f4efc6ed8e11972f88a053"
+    },
+    "balance_lists.ml": {
+      "bytes": 1125,
+      "sha256": "3c77530f36fbabc2ebb8de93532c35ae1a3baf34cca3f9441f42ed177b575ca9"
+    },
+    "isolated_export.sexp": {
+      "bytes": 326228857,
+      "sha256": "1eda20002f3ecf44f666845ef3d8f892bbb20fbe2c0df27cf4e6c6fce604623c"
+    },
+    "build_export.json": {
+      "bytes": 2090,
+      "sha256": "414c140b17280ebd5516308e61bf24d7c1b42713be814a09815f81bf25315ebc"
+    },
+    "build_export.py": {
+      "bytes": 2110,
+      "sha256": "7c0854e500ebbc34571df96848ebb3d02ad4876bbf7cc77cc75dfac040600ff3"
+    }
+  }
+}

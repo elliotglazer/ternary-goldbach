@@ -1,0 +1,285 @@
+{
+  "status": "PASS one-edge diagnosis; frozen endpoint-hull replay still fails as recorded",
+  "pins": {
+    "prime-estimates/principal_theta_modular_pilot_20261111.py": "EAFAC6A19BE3947CBF6D4BA6F900FE3E8BAB58E1C1963E0C1DC35A61A6F55B14",
+    "prime-estimates/principal_theta_modular_pilot_20261111.json": "C39982174CAC9C51E9F816275082BCE322CA2AD143D9FCE61081DF72E57B11EF",
+    "integration/PRINCIPAL_THETA_MODULAR_ACCELERATION_2026-11-11.md": "C64EDFEB89B0F15B8B225241248BC7A751C385247843CE3AFEBF8FCF0382E84D"
+  },
+  "precision_bits": 256,
+  "locator": "points[0].steps[0] (T=1000000,r=0,n=-1)",
+  "components": {
+    "re": {
+      "input": {
+        "mid": {
+          "mantissa": "-3618502788658894115883252875309807478255009040731348575962372091860451815905",
+          "exponent": -251
+        },
+        "rad": {
+          "mantissa": "134742021",
+          "exponent": -283
+        },
+        "exact_lo": {
+          "mantissa": "-15541351137774749927245405253553588987161494978125474055734559861123748345095922384901",
+          "exponent": -283
+        },
+        "exact_hi": {
+          "mantissa": "-15541351137774749927245405253553588987161494978125474055734559861123748345095652900859",
+          "exponent": -283
+        },
+        "export_lo": {
+          "mantissa": "-57896044618542305854132046004956919652080144651701577215397953469767229054481",
+          "exponent": -255
+        },
+        "export_hi": {
+          "mantissa": "-57896044618542305854132046004956919652080144651701577215397953469767229054479",
+          "exponent": -255
+        },
+        "lower_export_inflation": {
+          "mantissa": "133693435",
+          "exponent": -283
+        },
+        "upper_export_inflation": {
+          "mantissa": "133693435",
+          "exponent": -283
+        }
+      },
+      "output": {
+        "mid": {
+          "mantissa": "7236991103340406211689642159677980069919050270677408386833485343",
+          "exponent": -251
+        },
+        "rad": {
+          "mantissa": "134742021",
+          "exponent": -283
+        },
+        "exact_lo": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936545745600507",
+          "exponent": -283
+        },
+        "exact_hi": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936546015084549",
+          "exponent": -283
+        },
+        "export_lo": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936545745600507",
+          "exponent": -283
+        },
+        "export_hi": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936546015084549",
+          "exponent": -283
+        },
+        "lower_export_inflation": {
+          "mantissa": "0",
+          "exponent": 0
+        },
+        "upper_export_inflation": {
+          "mantissa": "0",
+          "exponent": 0
+        }
+      },
+      "exact_shift": "1",
+      "internal_translation_is_exact": true,
+      "exported_hull_lower_deficit": {
+        "mantissa": "133693435",
+        "exponent": -283
+      },
+      "exported_hull_upper_deficit": {
+        "mantissa": "133693435",
+        "exponent": -283
+      },
+      "exported_hull_contained": false,
+      "input_exact_endpoint_mantissa_bits": [
+        283,
+        283
+      ],
+      "input_export_endpoint_mantissa_bits": [
+        255,
+        255
+      ],
+      "output_exact_endpoint_mantissa_bits": [
+        245,
+        245
+      ]
+    },
+    "im": {
+      "input": {
+        "mid": {
+          "mantissa": "30354171086835693803600982608904217579578550895788231921314308983436815390633",
+          "exponent": -273
+        },
+        "rad": {
+          "mantissa": "134479873",
+          "exponent": -300
+        },
+        "exact_lo": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286059261951",
+          "exponent": -300
+        },
+        "exact_hi": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286328221697",
+          "exponent": -300
+        },
+        "export_lo": {
+          "mantissa": "60708342173671387607201965217808435159157101791576463842628617966873630781263",
+          "exponent": -274
+        },
+        "export_hi": {
+          "mantissa": "60708342173671387607201965217808435159157101791576463842628617966873630781269",
+          "exponent": -274
+        },
+        "lower_export_inflation": {
+          "mantissa": "66846719",
+          "exponent": -300
+        },
+        "upper_export_inflation": {
+          "mantissa": "66846719",
+          "exponent": -300
+        }
+      },
+      "output": {
+        "mid": {
+          "mantissa": "30354171086835693803600982608904217579578550895788231921314308983436815390633",
+          "exponent": -273
+        },
+        "rad": {
+          "mantissa": "134479873",
+          "exponent": -300
+        },
+        "exact_lo": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286059261951",
+          "exponent": -300
+        },
+        "exact_hi": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286328221697",
+          "exponent": -300
+        },
+        "export_lo": {
+          "mantissa": "60708342173671387607201965217808435159157101791576463842628617966873630781263",
+          "exponent": -274
+        },
+        "export_hi": {
+          "mantissa": "60708342173671387607201965217808435159157101791576463842628617966873630781269",
+          "exponent": -274
+        },
+        "lower_export_inflation": {
+          "mantissa": "66846719",
+          "exponent": -300
+        },
+        "upper_export_inflation": {
+          "mantissa": "66846719",
+          "exponent": -300
+        }
+      },
+      "exact_shift": "0",
+      "internal_translation_is_exact": true,
+      "exported_hull_lower_deficit": {
+        "mantissa": "0",
+        "exponent": 0
+      },
+      "exported_hull_upper_deficit": {
+        "mantissa": "0",
+        "exponent": 0
+      },
+      "exported_hull_contained": true,
+      "input_exact_endpoint_mantissa_bits": [
+        282,
+        282
+      ],
+      "input_export_endpoint_mantissa_bits": [
+        256,
+        256
+      ],
+      "output_exact_endpoint_mantissa_bits": [
+        282,
+        282
+      ]
+    }
+  },
+  "same_input_ball_reexport_at_283_bits_is_exact": true,
+  "lossless_proposed_payload": {
+    "re": {
+      "input": {
+        "mid": {
+          "mantissa": "-3618502788658894115883252875309807478255009040731348575962372091860451815905",
+          "exponent": -251
+        },
+        "rad": {
+          "mantissa": "134742021",
+          "exponent": -283
+        },
+        "lo": {
+          "mantissa": "-15541351137774749927245405253553588987161494978125474055734559861123748345095922384901",
+          "exponent": -283
+        },
+        "hi": {
+          "mantissa": "-15541351137774749927245405253553588987161494978125474055734559861123748345095652900859",
+          "exponent": -283
+        }
+      },
+      "output": {
+        "mid": {
+          "mantissa": "7236991103340406211689642159677980069919050270677408386833485343",
+          "exponent": -251
+        },
+        "rad": {
+          "mantissa": "134742021",
+          "exponent": -283
+        },
+        "lo": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936545745600507",
+          "exponent": -283
+        },
+        "hi": {
+          "mantissa": "31082640110290001034562265977759734291642114279939416787485936546015084549",
+          "exponent": -283
+        }
+      }
+    },
+    "im": {
+      "input": {
+        "mid": {
+          "mantissa": "30354171086835693803600982608904217579578550895788231921314308983436815390633",
+          "exponent": -273
+        },
+        "rad": {
+          "mantissa": "134479873",
+          "exponent": -300
+        },
+        "lo": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286059261951",
+          "exponent": -300
+        },
+        "hi": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286328221697",
+          "exponent": -300
+        }
+      },
+      "output": {
+        "mid": {
+          "mantissa": "30354171086835693803600982608904217579578550895788231921314308983436815390633",
+          "exponent": -273
+        },
+        "rad": {
+          "mantissa": "134479873",
+          "exponent": -300
+        },
+        "lo": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286059261951",
+          "exponent": -300
+        },
+        "hi": {
+          "mantissa": "4074067878598377531623002104334636653148692298765061257615881325646878993286328221697",
+          "exponent": -300
+        }
+      }
+    }
+  },
+  "local_api_contracts": {
+    "mid": "arb.mid(self)\n\nReturns the midpoint of *self* as an exact *arb*:\n\n    >>> from flint import arb, ctx\n    >>> ctx.prec = 53\n    >>> arb(\"1 +/- 0.3\").mid()\n    1.00000000000000",
+    "rad": "arb.rad(self)\n\nReturns the radius of *self* as an exact *arb*:\n\n    >>> print(arb(\"1 +/- 0.3\").rad().str(5, radius=False))\n    0.30000",
+    "lower": "arb.lower(self)\n\nLower bound for *self* (towards `-\\infty`).\nThe output is an *arb* holding an exact floating-point number\nthat has been rounded down to the current precision.\n\n    >>> print(arb(\"-5 +/- 2\").lower().str(5, radius=False))\n    -7.0000",
+    "upper": "arb.upper(self)\n\nUpper bound for *self* (towards `+\\infty`).\nThe output is an *arb* holding an exact floating-point number\nthat has been rounded up to the current precision.\n\n    >>> print(arb(\"-5 +/- 2\").upper().str(5, radius=False))\n    -3.0000",
+    "man_exp": "arb.man_exp(self)\n\nDecomposes *self* into an integer mantissa and an exponent,\nreturning an *fmpz* pair. Requires that *self* is exact\nand finite.\n\n    >>> from flint import arb, ctx\n    >>> ctx.prec = 53\n    >>> arb(\"1.1\").mid().man_exp() # doctest: +SKIP\n    (4953959590107545, -52)\n    >>> arb(\"1.1\").rad().man_exp() # doctest: +SKIP\n    (1, -52)\n    >>> arb(0).man_exp()\n    (0, 0)\n    >>> arb(\"1.1\").man_exp()\n    Traceback (most recent call last):\n      ...\n    ValueError: man_exp requires an exact, finite value\n    >>> arb(\"+inf\").man_exp()\n    Traceback (most recent call last):\n      ...\n    ValueError: man_exp requires an exact, finite value"
+  },
+  "scope": "One initial translation only. No reduction loop, series, Gaussian jets, node grid, FFT, full pilot or Lean run. Original receipt unchanged. No conclusion about other failed translation/root operations."
+}

@@ -1,0 +1,50 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpPacketsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "ChirpPackets">>
+Saved definition ____ "sdiv_def"
+Starting translation of sdiv from ChirpPacketsTheory.
+Saved theorem _______ "cv_sdiv_thm"
+Finished translating sdiv, stored in cv_sdiv_thm
+Saved definition ____ "cr_def"
+Starting translation of cr from ChirpPacketsTheory.
+Saved theorem _______ "cv_cr_thm"
+Finished translating cr, stored in cv_cr_thm
+Saved definition ____ "cmul_def"
+Starting translation of cmul from ChirpPacketsTheory.
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "cv_cmul_thm"
+Finished translating cmul, stored in cv_cmul_thm
+Saved definition ____ "emit_def"
+Starting translation of emit from ChirpPacketsTheory.
+Starting translation of ABS from integerTheory.
+Saved theorem _______ "cv_ABS_thm"
+Finished translating ABS, stored in cv_ABS_thm
+Starting translation of emit from ChirpPacketsTheory.
+Saved theorem _______ "cv_emit_thm"
+Finished translating emit, stored in cv_emit_thm
+Saved theorem _______ "row_compute"
+Saved definition ____ "row_def"
+Starting translation of row from ChirpPacketsTheory.
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpPacketsScript.sml : HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpPacketsScript : HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Cannot find definition of FST", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-time-chirp-delivery/ChirpPacketsScript - exited with code 1

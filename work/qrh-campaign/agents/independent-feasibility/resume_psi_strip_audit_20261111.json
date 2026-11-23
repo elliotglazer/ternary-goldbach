@@ -1,0 +1,43 @@
+{
+  "status": "PASS: conditional paper/scalar audit only",
+  "source_sha256": {
+    "work\\qrh-campaign\\agents\\integration\\RESUME_PSI_FROM_FINITE_STRIP_2026-11-11.md": "d4a026f5b7190f0aa577a70a88e7bfcb79740f9ca549ee9b7ac0ef0c782b3826",
+    "work\\qrh-campaign\\agents\\integration\\resume_psi_finite_strip_20261111.py": "30fbfa0e84c83613ebb46756ea6f0a442724181332b07595e14ce1ae3ccc1398",
+    "work\\qrh-campaign\\agents\\integration\\RESUME_PRINCIPAL_REVIEW_2026-11-11.md": "92dc7fe1b0fed4fd7b9ceaf50e5c0e289e84d9650fa297b7ca881a957fa66e11",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\XiPartial.lean": "8f47e96329bf7f1cc69f82c3ab5a422087f692becb74ef70a7908bc323623770",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\Xi.lean": "988edfbca182f1a7618c88a6ea9b253bfefebfa3da86c3cdc74f5dac19523d1f",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\WeilBridge.lean": "285f825f4916b8d8f40256090f56e773140ab2fc2c48e3f057f68a838e17c73e",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\ZetaDatum.lean": "f657b07b406241c98f2484641d867beb63bcc792a56ca4d54ce0257bb20e50d5",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\ZeroSumGen.lean": "9096c5d611a09ffcf5a4516bfddc1e518b9917c52b5bc206216af86a31a52389",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\ZetaZeroSums.lean": "21c97198134c5ceedbcd597fa11e05982fe8878ffd24bbb60bccc8e2032943aa",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\GaussSmooth.lean": "40acfcf56e61c411baf8dd3e7b5504b3db48f34740b256a4d03f1cdbe37feba8",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\ZetaExplicit.lean": "a2252356b4a2fce4bc0b2b0eff9a26b43dfaeba9b05db94bfeaa444a423b94e2",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\PsiExplicit.lean": "33a24c9e1606011aac8930ec978ba027e90a2a66e0888db18915acc2fbf85bb1",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\PsiSandwich.lean": "d5fcfd9946a959dd5bb484046239e902f53c470c36a26517aa876e3cfba3164a",
+    "work\\ternary-goldbach\\TernaryGoldbach\\Explicit\\PsiLarge.lean": "d370555a164da01e37e5bdb14efa774dc79fe43682eed21d42c90ba2d1b165f2"
+  },
+  "extra_exact_checks": {
+    "mass_endpoint_margins": [
+      "0",
+      "3/100"
+    ],
+    "mass_count_upper": "75/2",
+    "low_log_derivative_upper_at_35": "489/14000"
+  },
+  "replayed_exact_endpoint_bounds": {
+    "low": 0.006284723441728986,
+    "high_small": 1.0475767453543732e-97,
+    "high_large": 9.992802993045812e-10,
+    "vertical": 1.3949160090552452e-08,
+    "leak": 3.5153988180415745e-06,
+    "shift": 0.0010000146940252685,
+    "cut": 8.827415672479149e-10,
+    "conservative_budget": 0.008005031005022
+  },
+  "open": [
+    "finite zeta strip beta<=111/200 through H=60343058",
+    "genuine global 7/8 provider closure",
+    "analytic bridge formalization including actual multiplicities",
+    "psi envelope on [1e9,exp(35))"
+  ]
+}

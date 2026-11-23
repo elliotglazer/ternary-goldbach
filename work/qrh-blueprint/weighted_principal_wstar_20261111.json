@@ -1,0 +1,34 @@
+{
+  "status": "PASS_EXACT_WEIGHTED_PRINCIPAL_WSTAR",
+  "scope": "Conditional source-mathematics scalar bounds only; no actual energy estimate",
+  "M3_bound": "32/13",
+  "principal_intermediate": "475381/250000000000",
+  "principal_budget": "951/500000000",
+  "allocations": [
+    {
+      "A_bound": "9/1000000000000",
+      "B_bound": 45,
+      "sqrtB_upper_allowed": "49799/7375",
+      "squared_margin": "32362276/54390625"
+    },
+    {
+      "A_bound": "1/250000000000",
+      "B_bound": 62,
+      "sqrtB_upper_allowed": "174397/22125",
+      "squared_margin": "64344859/489515625"
+    },
+    {
+      "A_bound": "1/1000000000000",
+      "B_bound": 81,
+      "sqrtB_upper_allowed": "199397/22125",
+      "squared_margin": "108397984/489515625"
+    },
+    {
+      "A_bound": "0",
+      "B_bound": 102,
+      "sqrtB_upper_allowed": "74799/7375",
+      "squared_margin": "47046651/54390625"
+    }
+  ],
+  "coarse_B_ceiling_for_this_allocation": "9217296/87025"
+}

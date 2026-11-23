@@ -1,0 +1,128 @@
+{
+  "source_commit": "23b2d68ca344203d4384e0aff7affa4ec034bef9",
+  "files": [
+    {
+      "file": "work\\ternary-goldbach\\TernaryGoldbach\\Prelim\\SmallMertensProd.lean",
+      "sha256": "b0bf3168621fceaed9cdd5983ce4f922d0055e75fcc081efeebf0d0705ee7f5d",
+      "imports": [
+        "TernaryGoldbach.Prelim.RamareWalk\r"
+      ],
+      "markers": [],
+      "kernel_decide": 100
+    },
+    {
+      "file": "work\\ternary-goldbach\\TernaryGoldbach\\Prelim\\RamareWalk.lean",
+      "sha256": "0c9d24a28f39fb5c25a6d0aae0e9ac4d3424f6dd891b7f25f0d5009d141a3391",
+      "imports": [
+        "TernaryGoldbach.Prelim.LogWalk\r"
+      ],
+      "markers": [],
+      "kernel_decide": 23
+    },
+    {
+      "file": "work\\ternary-goldbach\\TernaryGoldbach\\Prelim\\LogWalk.lean",
+      "sha256": "bf0010e89096a99cc7ca96e47c3fa396d1740d4e15c6e186d2fa15dc9436fef1",
+      "imports": [
+        "TernaryGoldbach.Prelim.RamareHarm\r"
+      ],
+      "markers": [],
+      "kernel_decide": 0
+    },
+    {
+      "file": "work\\ternary-goldbach\\TernaryGoldbach\\Prelim\\RamareHarm.lean",
+      "sha256": "c3b8a2152965c022e8d2d1c7ac6871742d71e6954fe8b891eb6f50a291bba688",
+      "imports": [
+        "Mathlib\r"
+      ],
+      "markers": [],
+      "kernel_decide": 0
+    },
+    {
+      "file": "work\\ternary-goldbach\\TernaryGoldbach\\Prelim\\MertensProduct.lean",
+      "sha256": "8182dc2b990dc8d65ac76d3cc55847b26922e2062cd154c14367d5db97f71a0f",
+      "imports": [
+        "TernaryGoldbach.Prelim.LambdaMu\r",
+        "TernaryGoldbach.Prelim.PNTMertens\r",
+        "TernaryGoldbach.Prelim.SmallMertensProd\r",
+        "TernaryGoldbach.Prelim.MertensWindow\r"
+      ],
+      "markers": [
+        {
+          "line": 67,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 98,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 120,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 222,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 259,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 528,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 636,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 940,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1292,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1320,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1373,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1432,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1945,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 1995,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 2219,
+          "token": "PlattGRH"
+        },
+        {
+          "line": 2255,
+          "token": "PlattGRH"
+        }
+      ],
+      "kernel_decide": 0
+    }
+  ],
+  "independent_finite_arithmetic": {
+    "prime_count": 303,
+    "max_prime": 1999,
+    "primorial_bit_length": 2799,
+    "primorial_greater_than_2_pow_1000": true,
+    "inv_2000_theta_lower_numerator": 1939839200302529137722656397952172,
+    "denominator": 1000000000000000000000000000000,
+    "theta_lower_gt_1000": true
+  },
+  "status": "Source and Python arithmetic evidence only; no Lean compilation or axiom print."
+}

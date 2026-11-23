@@ -1,0 +1,85 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M1024",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\arithmetic-calibration\\small_r2.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\arithmetic-calibration\\ArithmeticSmall.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 5.4556949000107124,
+  "user_cpu_seconds": 4.25,
+  "system_cpu_seconds": 1.140625,
+  "cpu_seconds": 5.390625,
+  "peak_working_set_bytes": 493146112,
+  "observed_peak_private_bytes": 990617600,
+  "memory_samples": 108,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "precision": 74,
+      "fixture": 0,
+      "repetitions": 100,
+      "declarations_per_bundle": 21,
+      "accepted": 2100,
+      "corrupt_rejected": true,
+      "proof_pool_generation_ns": 7154000,
+      "kernel_bundle_wall_ns": 557291700
+    },
+    {
+      "precision": 100,
+      "fixture": 0,
+      "repetitions": 100,
+      "declarations_per_bundle": 21,
+      "accepted": 2100,
+      "corrupt_rejected": true,
+      "proof_pool_generation_ns": 4015900,
+      "kernel_bundle_wall_ns": 740184600
+    },
+    {
+      "precision": 100,
+      "fixture": 2,
+      "repetitions": 100,
+      "declarations_per_bundle": 21,
+      "accepted": 2100,
+      "corrupt_rejected": true,
+      "proof_pool_generation_ns": 6215300,
+      "kernel_bundle_wall_ns": 907991300
+    },
+    {
+      "precision": 120,
+      "fixture": 0,
+      "repetitions": 100,
+      "declarations_per_bundle": 21,
+      "accepted": 2100,
+      "corrupt_rejected": true,
+      "proof_pool_generation_ns": 4804300,
+      "kernel_bundle_wall_ns": 853664100
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=200000000,recdepth=512"
+  ],
+  "artifacts": [
+    {
+      "path": "ArithmeticSmall.lean",
+      "bytes": 56947,
+      "sha256": "5FBE4F54B92D99A01E37FF394E4E826329ACD39FBBE0E529E7D481B532CFCF07"
+    },
+    {
+      "path": "small_r2.log",
+      "bytes": 240,
+      "sha256": "07A76C393065C700090E04EE6A71604814B0A74352422D227FD02D9C7D60D56F"
+    },
+    {
+      "path": "small_r2.olean",
+      "bytes": 896488,
+      "sha256": "D30B864763CC59AFEF4317B1F16F582857F15382F765A7D9E2B041084070710C"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

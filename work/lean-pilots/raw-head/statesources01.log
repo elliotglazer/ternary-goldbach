@@ -1,0 +1,164 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:59:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  ‖RawHead.expIntegerValue (2 ^ 122) step_1 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑1)))‖ < 1 / 2 ^ 120
+but is expected to have type
+  ‖RawHead.expIntegerValue (2 ^ 122) step_1 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 1)))‖ < 1 / 2 ^ 120
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:71:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 1 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower (↑1) 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 1 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 1 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:75:52: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:117:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_2 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑2)))‖ (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_2 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 2)))‖ (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:129:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 2 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 2 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 2 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 2 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:133:52: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:175:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_3 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑3)))‖ (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_3 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 3)))‖ (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:187:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 3 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 3 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 3 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 3 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:191:52: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:233:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_41 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑41)))‖ (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_41 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 41)))‖ (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:245:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 41 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 41 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 41 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 41 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:249:54: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:291:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_61 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑61)))‖ (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_61 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 61)))‖ (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:303:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 61 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 61 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 61 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 61 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:307:54: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:349:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_10004 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑10004)))‖
+    (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_10004 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 10004)))‖
+    (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:361:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 10004 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 10004 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 10004 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 10004 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:365:60: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:407:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_262144 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑262144)))‖
+    (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_262144 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 262144)))‖
+    (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:419:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 262144 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 262144 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 262144 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 262144 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:423:62: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:465:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_265800 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log ↑265800)))‖
+    (1 / 2 ^ 120)
+but is expected to have type
+  @LT.lt ℝ Real.instLT
+    ‖RawHead.expIntegerValue (2 ^ 122) step_265800 - Complex.exp (Complex.I * (-↑(5 / 64) * ↑(Real.log 265800)))‖
+    (1 / 2 ^ 120)
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:477:2: error: Type mismatch: After simplification, term
+  RawHead.inverseRootCandidate_initialization_error (of_decide_eq_true (id (Eq.refl true)))
+    (pow_pos
+      (Mathlib.Meta.Positivity.pos_of_isNat (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 2)) (Eq.refl (Nat.ble 1 2)))
+      98)
+ has type
+  ‖↑(↑(RawHead.inverseRootCandidate 265800 (2 ^ 98)) / ↑(2 ^ 98)) - RawHead.integerPower 265800 0‖ < 1 / ↑(2 ^ 98)
+but is expected to have type
+  ‖↑(↑(RawHead.inverseRootCandidate 265800 (2 ^ 98)) / 2 ^ 98) - RawHead.integerPower 265800 0‖ < 1 / 2 ^ 98
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\lean-pilots\raw-head\RawStateSources.lean:481:62: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

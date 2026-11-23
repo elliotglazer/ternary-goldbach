@@ -1,0 +1,25 @@
+{
+  "status": "external candidate certificates only; no Lean or finite-zeta proof",
+  "format_version": 1,
+  "script_sha256": "1c67c3503e632f2661624e333a7f0f2ab2c2e01b7c99a140f3d865ce94ae0d78",
+  "base_json_sha256": "9ab3c71a6e989bed8a71c95e30f51143d4f3876d49ed3220b4e4c0943a4a506e",
+  "initial_endpoint": 1143945143,
+  "initial_global_index": 538,
+  "initial_theta_lower_scaled": 1143897412516878876,
+  "initial_theta_upper_scaled": 1143901830920767298,
+  "initial_log_box": [
+    20857748766,
+    20857748786
+  ],
+  "scale": 1000000000,
+  "log_box_width_limit_scaled": 100,
+  "grid_divisor": 4000,
+  "checkpoint_divisor": 10000,
+  "endpoint": 5000000000,
+  "remaining_windows_expected": 5901,
+  "batch_windows": 64,
+  "prior_stress_json_sha256": "eadd08660ecd980aeedbc12f87eb495bc2432f56c6c4a8dc626c4c699b67e593",
+  "prior_relaxation_json_sha256": "bab7cb9cc59412da30c6ff9869ae6fcfb02c5e45b70d9adb1d686858a2eba928",
+  "classification_hash_format": "SHA256 of W bytes; byte i is1 iff n=a+1+i survives complete sieve, otherwise0; n in(a,b]",
+  "proof_status": "all new counts/logs external; no new Lean count proofs"
+}

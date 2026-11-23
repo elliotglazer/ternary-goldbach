@@ -1,0 +1,31 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 37 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> CAST_PRODUCT_RULE,⊢ ∀m n. &m * &n = &(m * n)
+val saved_expected =
+   “∀A B.
+      0 < B ∧ 3 * A ≤ B ⇒
+      0 ≤ &A / &B ∧ &A / &B ≤ 1 / 3 ∧ 0 ≤ (&A / &B)² ∧ (&A / &B)² ≤ 1 / 9”:
+   term
+val checked = fn: string * term * tactic -> thm
+OK..
+metis: r[+0+10]+0+0+0+0+0+0+0+0+0+1#
+1 subgoal:
+HORNER_DIAGNOSTIC_FAIL,slh_ratio_range,HOL_ERR (at goalStack.extract_thm: no theorem proved)
+ASSUM (1 / 3)² = 1 / 9
+ASSUM (&A / &B)² ≤ (1 / 3)²
+ASSUM &A / &B ≤ 1 / 3
+ASSUM 0 ≤ &A / &B
+ASSUM 3 * &A ≤ &B
+ASSUM 0 ≤ &A
+ASSUM 0 < &B
+ASSUM 3 * A ≤ B
+ASSUM 0 < B
+GOAL (&A / &B)² ≤ 1 / 9

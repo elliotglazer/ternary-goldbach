@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-11-11T07:45:08.789037+00:00",
+  "native_flags": "-O3 -march=native",
+  "scalar_flags": "-O3 -march=x86-64 -fno-vectorize -fno-slp-vectorize",
+  "compiler": "C:/Users/glaze/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanc.exe",
+  "note": "Final wide raw files match these ten-strategy binaries. bulk_large_run_1.json predates the final two tiled modes; its original executable was overwritten, so its exact executable hash is unavailable.",
+  "files": [
+    {
+      "path": "bulk_check.c",
+      "bytes": 8076,
+      "sha256": "3e23a8f867f762e9b53ec1dc55f7e1edada622f51b52b139bd6d9ec8600ffab1"
+    },
+    {
+      "path": "bulk_check.exe",
+      "bytes": 96768,
+      "sha256": "6ecd2de6a489e292388f1d115aa57c2ce62bb331777f5f9f4eb5dfd5d6b35ca9"
+    },
+    {
+      "path": "bulk_scalar.exe",
+      "bytes": 94720,
+      "sha256": "3fcbb447ac0324e2be753634cf1814a3d264c7a49504cc50b0e970b0997a42fd"
+    },
+    {
+      "path": "bulk_check.s",
+      "bytes": 87342,
+      "sha256": "3d6a382cd8622aa256bde70bd717e7b1ab62ec862344646382ea06b40741e980"
+    },
+    {
+      "path": "bulk_scalar.s",
+      "bytes": 69531,
+      "sha256": "ba3f3f7d37376f41fd2636c74a0c8847ff576171d5a292f074a9015da891b74c"
+    },
+    {
+      "path": "make_bulk_fixtures.py",
+      "bytes": 2989,
+      "sha256": "c1953da6ef6e93a4ec5615fc4c4c161997fe784aee1d41834e56bb19bf4a0d5b"
+    },
+    {
+      "path": "make_large_fixtures.py",
+      "bytes": 3582,
+      "sha256": "bb56529d294bf4fd0b28ddfcd80631c0959077d5aad116f0d6f23c81cbbb1cb3"
+    },
+    {
+      "path": "make_wide_fixtures.py",
+      "bytes": 2087,
+      "sha256": "ae95ebb7f0ca100454362819cf58c6857b6b4f5c3b2ba5c6d561b27b2b788cee"
+    },
+    {
+      "path": "bulk_actual.bin",
+      "bytes": 12589072,
+      "sha256": "4c2f9c607f71381ee2b7f8d7922e0bf7ef106193500b244d5585c10afe5bc966"
+    },
+    {
+      "path": "bulk_actual.json",
+      "bytes": 33510,
+      "sha256": "43514b5b88f9a09ca08cd8472ab00d27781ea80f34c03cb90232423949b41bec"
+    },
+    {
+      "path": "bulk_large.bin",
+      "bytes": 3687568,
+      "sha256": "053c18d8817573c9d1991b8743827cfbd13c54342550a3bc2b3a3ea0db8e9605"
+    },
+    {
+      "path": "bulk_large.json",
+      "bytes": 430577,
+      "sha256": "a8ab14ffed11a561ea1d23fe70e778bdc8e5aab9a5c985a04854b0023a1f5d57"
+    },
+    {
+      "path": "bulk_wide.bin",
+      "bytes": 84181264,
+      "sha256": "9028414423e5c9186b0c3ad3c0073c2421fb591621b2802003d10a6162f91cff"
+    },
+    {
+      "path": "bulk_wide.json",
+      "bytes": 1339,
+      "sha256": "7326513bc96874522f28e8ac52dad0b4a7e2c7995c1272b7dab2cf303b70730e"
+    },
+    {
+      "path": "bulk_wide_native.json",
+      "bytes": 14553,
+      "sha256": "8d38b40122564a28f055b49aff0fe4d10519da21a54f587b7cfd2746d2bca5cd"
+    },
+    {
+      "path": "bulk_wide_scalar.json",
+      "bytes": 14554,
+      "sha256": "d22770efd4e4c3a449a9de773048d87143c06dafa1ac23203efdf6014e52594c"
+    },
+    {
+      "path": "bulk_large_run_1.json",
+      "bytes": 15732,
+      "sha256": "b7a6c0784bea54c361f358c1e5fb1cf9e27649aef35a3e2bfd65575f637f4553"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 14200,
+      "sha256": "09f3ae125e1de0cbd255450e86ac06f1ebdab2f1a86277ec0fa49e4609c6f22f"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 10994,
+      "sha256": "d75edbe01a9f4fa77f8d2d44d32daef622613d2f6d4d811e7e4bfc5e4d8f59f3"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 1900,
+      "sha256": "60dfd9568de1112b69e9aba9e563065259835a24d796cbb4129e5a50e8c614da"
+    },
+    {
+      "path": "hash_manifest.py",
+      "bytes": 1482,
+      "sha256": "ee9c06765d4ae749104087c47d8325b7cc195b0b8ff613a9cac2c8e6fb8fba47"
+    }
+  ]
+}

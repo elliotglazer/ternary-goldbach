@@ -1,0 +1,127 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 35 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val it =
+   [([],
+     “∀[0;32mp[0m [0;32mtree[0m [0;32ma[0m [0;32mfs[0m. tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mp[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mp[0m”)]:
+   goal list
+OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  node_valid [0;1;34mtree[0m [0;1;34mp[0m [0;1;34ma[0m [0;1;34mfs[0m
+   ------------------------------------
+        prime [0;1;34mp[0m
+   
+   : proof
+OK..
+2 subgoals:
+val it =
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  node_valid [0;1;34mtree[0m [0;1;34mp[0m [0;1;34ma[0m [0;1;34mfs[0m
+    3.  [0;1;34mp[0m ≠ 2
+   ------------------------------------
+        prime [0;1;34mp[0m
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  node_valid [0;1;34mtree[0m [0;1;34mp[0m [0;1;34ma[0m [0;1;34mfs[0m
+    3.  [0;1;34mp[0m = 2
+   ------------------------------------
+        prime [0;1;34mp[0m
+
+2 subgoals
+   : proof
+OK..
+
+Goal proved.
+ [....] ⊢ prime p
+
+Remaining subgoals:
+val it =
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  node_valid [0;1;34mtree[0m [0;1;34mp[0m [0;1;34ma[0m [0;1;34mfs[0m
+    3.  [0;1;34mp[0m ≠ 2
+   ------------------------------------
+        prime [0;1;34mp[0m
+   
+   : proof
+OK..
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  [0;1;34mp[0m ≠ 2
+    3.  1 < [0;1;34mp[0m
+    4.  PROD [0;1;34mfs[0m = [0;1;34mp[0m − 1
+    5.  EVERY (λ[0;32mq[0m. [0;32mq[0m < [0;1;34mp[0m ∧ cert_contains [0;32mq[0m [0;1;34mtree[0m) [0;1;34mfs[0m
+    6.  [0;1;34ma[0m ** ([0;1;34mp[0m − 1) MOD [0;1;34mp[0m = 1
+    7.  EVERY (λ[0;32mq[0m. [0;1;34ma[0m ** (([0;1;34mp[0m − 1) DIV [0;32mq[0m) MOD [0;1;34mp[0m ≠ 1) [0;1;34mfs[0m
+   ------------------------------------
+        prime [0;1;34mp[0m
+   
+   : proof
+OK..
+metis: r[+0+13]+0+0+0+0+0+0+0+0+1+0+1+0+1+0+0+2+4#
+1 subgoal:
+val it =
+   
+    0.  ∀[0;32mm[0m. [0;32mm[0m < [0;1;34mp[0m ⇒
+            ∀[0;32mtree[0m [0;32ma[0m [0;32mfs[0m.
+              tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mm[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mm[0m
+    1.  tree_valid [0;1;34mtree[0m [0;1;34mtree[0m
+    2.  [0;1;34mp[0m ≠ 2
+    3.  1 < [0;1;34mp[0m
+    4.  PROD [0;1;34mfs[0m = [0;1;34mp[0m − 1
+    5.  EVERY (λ[0;32mq[0m. [0;32mq[0m < [0;1;34mp[0m ∧ cert_contains [0;32mq[0m [0;1;34mtree[0m) [0;1;34mfs[0m
+    6.  [0;1;34ma[0m ** ([0;1;34mp[0m − 1) MOD [0;1;34mp[0m = 1
+    7.  EVERY (λ[0;32mq[0m. [0;1;34ma[0m ** (([0;1;34mp[0m − 1) DIV [0;32mq[0m) MOD [0;1;34mp[0m ≠ 1) [0;1;34mfs[0m
+    8.  EVERY prime [0;1;34mfs[0m
+   ------------------------------------
+        prime [0;1;34mp[0m
+   
+   : proof
+OK..
+metis: r[+0+15]+0+0+0+0+0+0+0+0+0+0+0+0+0+0+1+1#
+
+Goal proved.
+ [.........] ⊢ prime p
+
+Goal proved.
+ [........] ⊢ prime p
+
+Goal proved.
+ [....] ⊢ prime p
+
+Goal proved.
+ [...] ⊢ prime p
+val it =
+   Initial goal proved.
+   ⊢ ∀[0;32mp[0m [0;32mtree[0m [0;32ma[0m [0;32mfs[0m. tree_valid [0;32mtree[0m [0;32mtree[0m ∧ node_valid [0;32mtree[0m [0;32mp[0m [0;32ma[0m [0;32mfs[0m ⇒ prime [0;32mp[0m:
+   proof
+Exception- HOL_ERR (at goalStack.top_goals: no goals) raised
+> 

@@ -1,0 +1,200 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/FusedPriceScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "FusedPrice">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/FusedPriceScript.sml:33: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/FusedPriceScript.sml:42: warning: Pattern is not exhaustive.
+Found near val [sc, chk, mask] = hd (replay.lines (fn ...) (t ^ "cfg.txt"))
+FUSED fu24h1 1 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003869 0.004132 0.000135999999999
+Saved theorem _______ "fu24h1false"
+FUSED fu24h1 1 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003624 0.002581 0.000112000000001
+Saved theorem _______ "fu24h1true"
+FUSED fu24h1 64 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004088 0.112922 0.00012
+FUSED fu24h1 64 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00295 0.036257 0.000126
+FUSED fu24h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002979 0.160574 0.000136
+FUSED fu24h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004099 0.137007 0.00011
+FUSED fu24h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002826 0.14657 0.000135999999999
+FUSED fu24h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002656 0.141245 0.000114
+FUSED fu24h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003022 0.15666 0.000121
+FUSED fu24h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002803 0.136305 0.000112
+FUSED fu24h2 1 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00417 0.002666 0.000136
+Saved theorem _______ "fu24h2false"
+FUSED fu24h2 1 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004504 0.002589 0.000107
+Saved theorem _______ "fu24h2true"
+FUSED fu24h2 64 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004779 0.042082 0.000115
+FUSED fu24h2 64 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.005479 0.050435 0.000111
+FUSED fu24h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.007442 0.239013 0.000133
+FUSED fu24h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002956 0.150253 0.000375999999999
+FUSED fu24h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003666 0.152369 0.000184
+FUSED fu24h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002883 0.21161 0.000221
+FUSED fu24h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004049 0.17723 0.000255
+FUSED fu24h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002945 0.154604 0.000117
+FUSED fu28h1 1 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004161 0.00339 0.000129
+Saved theorem _______ "fu28h1false"
+FUSED fu28h1 1 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003731 0.006035 0.000344
+Saved theorem _______ "fu28h1true"
+FUSED fu28h1 64 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.017158 0.089514 0.000122
+FUSED fu28h1 64 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003325 0.043433 0.000115
+FUSED fu28h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003425 0.162905 0.000125000000001
+FUSED fu28h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00413 0.160982 0.000151
+FUSED fu28h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003933 0.19906 0.000204
+FUSED fu28h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004046 0.168561 0.000119
+FUSED fu28h1 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.002958 0.16384 0.000166999999999
+FUSED fu28h1 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004381 0.154222 0.000121
+FUSED fu28h2 1 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.00312 0.004575 0.000211
+Saved theorem _______ "fu28h2false"
+FUSED fu28h2 1 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004142 0.002033 0.000164
+Saved theorem _______ "fu28h2true"
+FUSED fu28h2 64 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004736 0.037827 0.000109999999999
+FUSED fu28h2 64 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003571 0.042501 0.000125000000001
+FUSED fu28h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003822 0.204815 0.000131999999999
+FUSED fu28h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.004308 0.14819 0.000159
+FUSED fu28h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003339 1.07862 0.000176999999999
+FUSED fu28h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.009639 0.347094 0.000246000000001
+FUSED fu28h2 256 false
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.008924 0.176533 0.000138
+FUSED fu28h2 256 true
+SCHEMA cv_compare_run input0 input1 input2 input3 input4 input5 input6 input7 input8
+EVAL_ENTER
+JOIN_EVAL 0.003452 0.153959 0.00029
+Exporting theory "FusedPrice" ... done.
+Theory "FusedPrice" took 8.9s to build
+Holmake: [1/1] FusedPrice

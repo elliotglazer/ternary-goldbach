@@ -1,0 +1,63 @@
+{
+  "accepted_run": "logtail05",
+  "scope": "Analytic logarithm polynomial tail only; no integer producer or campaign timing",
+  "exact_roots": [
+    "sl_log_difference_diff",
+    "sl_odd_term_diff",
+    "sl_log_partial_zero",
+    "sl_remainder_zero",
+    "sl_remainder_suc",
+    "sl_remainder_diff",
+    "sl_remainder_mvt",
+    "sl_remainder_derivative_bound",
+    "sl_remainder_bound",
+    "sl_log_partial_error",
+    "sl_log_partial45_error",
+    "sl_log_two45_error"
+  ],
+  "manifest_counts": {
+    "source_expected.sha256": 5,
+    "logtail05_source.sha256": 6,
+    "logtail05_dependency.sha256": 41,
+    "logtail05_output.sha256": 3
+  },
+  "phase_cpu_seconds": {
+    "theory": 20.86,
+    "build": 5.68,
+    "audit": 8.35
+  },
+  "accepted_phase_cpu_seconds": 34.89,
+  "container_elapsed_seconds": 163.3633086,
+  "all_recorded_experiment_phase_cpu_seconds": 156.65,
+  "recorded_time_files": [
+    "logauditdiag01_run\\time.txt",
+    "logdiffdiag01_run\\time.txt",
+    "logdiffdiag02_run\\time.txt",
+    "logdiffdiag03_run\\time.txt",
+    "logdiffdiag04_run\\time.txt",
+    "logdiffdiag05_run\\time.txt",
+    "logdiffdiag06_run\\time.txt",
+    "logdiffdiag07_run\\time.txt",
+    "logtail01_theory.time",
+    "logtail02_theory.time",
+    "logtail03_theory.time",
+    "logtail04_audit.time",
+    "logtail04_build.time",
+    "logtail04_theory.time",
+    "logtail05_audit.time",
+    "logtail05_build.time",
+    "logtail05_theory.time",
+    "logtaildiag01_run\\time.txt",
+    "logtaildiag02_run\\time.txt",
+    "logtaildiag03_run\\time.txt",
+    "logtaildiag04_run\\time.txt"
+  ],
+  "hashes": {
+    "SourceLogTailScript.sml": "e95cddf353628f08691d03d28bce4c20809f5cfc59ea7978d0b054d1165cb24e",
+    "log_tail_audit.sml": "ef3d003c6c3c22def73c28064d31c2ab70593d5c89e6fdca1d2bb50d0b1a554e",
+    "source_expected.sha256": "6831c19a335026672aeeabb09a7e3dc954ceb31cfdd087ec790c93e1c64f4a44",
+    ".hol/objs/SourceLogTailTheory.uo": "0fe4d8fbf602eadeacf3fec84fa84cb3796d6e25d1717299fe7220aa62095c4d",
+    ".hol/objs/SourceLogTailTheory.dat": "51551c3a6945b6663a02b8015b477848883639a0b764dc1d856eb6baa745b11b",
+    "logtail05_audit.log": "01a8db8b1c1132de165244f898aa8b74ed4740e703cfce8ec1139f711f22eced"
+  }
+}

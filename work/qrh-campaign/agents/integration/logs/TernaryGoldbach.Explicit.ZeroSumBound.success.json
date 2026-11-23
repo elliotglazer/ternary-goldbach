@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "ZeroSumBound.olean": "83a7dfcdcefc94e1baa09e04bc9f0bd6e57528dae7edb62983fce70487f5bd24"
+  },
+  "evidence": {
+    "exit_code": 0,
+    "seconds": 45.278636800008826
+  },
+  "generation": "a766b4c983734a4b857e88ed220b19e4",
+  "key": {
+    "dependency_receipts": {
+      "TernaryGoldbach.Explicit.LineZeros": "ecdc907a54713449c6e8431a5ab99f0eac6503d84e8f44bd057e41d5d380aec2",
+      "TernaryGoldbach.Explicit.ZeroSums": "af41026a7b61652692e88124606e4d45481e6a0a39338fa0f409b97acf524434"
+    },
+    "environment": {
+      "lean_binary_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+      "lean_options": [
+        "-j",
+        "2",
+        "-R",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach"
+      ],
+      "package_paths": [
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq"
+      ],
+      "project_manifest_sha256": "ea138f9d252387a27424093ef9be6d65e1af2638a51212aca408385029549c82"
+    },
+    "lean": "4.35.0",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "module": "TernaryGoldbach.Explicit.ZeroSumBound",
+    "source_sha256": "a1294627f676ec49bed1bd86407a9460dc569b77af8cbe8d65f1f49129bf17d4"
+  }
+}

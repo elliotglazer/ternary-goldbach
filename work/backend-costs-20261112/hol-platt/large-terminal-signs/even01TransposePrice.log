@@ -1,0 +1,72 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/TransposePriceScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "TransposePrice">>
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/TransposePriceScript.sml:33: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+STREAM low 1
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.010377 0.088365 0.000145
+Saved theorem _______ "low_counts"
+STREAM low 0
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.010462 0.017494 0.000136
+STREAM low 8
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.012629 0.767064 0.000146000000001
+STREAM low 8
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.010631 0.695219 0.000140999999999
+STREAM low 0
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.008289 0.01061 0.000145
+STREAM high 1
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.015844 0.092938 0.000144000000001
+Saved theorem _______ "high_counts"
+STREAM high 0
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.006635 0.006116 0.000154
+STREAM high 8
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.005457 0.347012 0.000155999999999
+STREAM high 8
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.00767 0.379356 0.000221000000002
+STREAM high 0
+SCHEMA cv_tiled input0 input1 input2 input3 input4 input5
+EVAL_ENTER
+JOIN_EVAL 0.007571 0.007582 0.000147
+Exporting theory "TransposePrice" ... done.
+Theory "TransposePrice" took 8.0s to build
+Holmake: [1/1] TransposePrice

@@ -1,0 +1,170 @@
+{
+  "scope": "Exact hypothetical coverage geometry and source pins, not analytic coverage or runtime.",
+  "hypothetical_rows": [
+    {
+      "B": 4000000000000000000,
+      "S": 111616,
+      "W_lad": 2048,
+      "hypothetical_C": 250000000000000000000000000,
+      "first_uncovered_odd": 250000000000000000000000001,
+      "first_rung": 63659577,
+      "last_rung": 254638308,
+      "suffix_rungs": 190978732,
+      "first_chunk": 15541,
+      "last_chunk": 62167,
+      "retained_whole_chunk_rungs": 190984192
+    },
+    {
+      "B": 4000000000000000000,
+      "S": 111616,
+      "W_lad": 2048,
+      "hypothetical_C": 500000000000000000000000000,
+      "first_uncovered_odd": 500000000000000000000000001,
+      "first_rung": 127319154,
+      "last_rung": 254638308,
+      "suffix_rungs": 127319155,
+      "first_chunk": 31083,
+      "last_chunk": 62167,
+      "retained_whole_chunk_rungs": 127324160
+    },
+    {
+      "B": 4000000000000000000,
+      "S": 111616,
+      "W_lad": 2048,
+      "hypothetical_C": 750000000000000000000000000,
+      "first_uncovered_odd": 750000000000000000000000001,
+      "first_rung": 190978731,
+      "last_rung": 254638308,
+      "suffix_rungs": 63659578,
+      "first_chunk": 46625,
+      "last_chunk": 62167,
+      "retained_whole_chunk_rungs": 63664128
+    },
+    {
+      "B": 10000000000000000,
+      "S": 157,
+      "W_lad": 128,
+      "hypothetical_C": 250000000000000000000000000,
+      "first_uncovered_odd": 250000000000000000000000001,
+      "first_rung": 45257499093,
+      "last_rung": 181029996372,
+      "suffix_rungs": 135772497280,
+      "first_chunk": 11049194,
+      "last_chunk": 44196776,
+      "retained_whole_chunk_rungs": 135772499968
+    },
+    {
+      "B": 10000000000000000,
+      "S": 157,
+      "W_lad": 128,
+      "hypothetical_C": 500000000000000000000000000,
+      "first_uncovered_odd": 500000000000000000000000001,
+      "first_rung": 90514998186,
+      "last_rung": 181029996372,
+      "suffix_rungs": 90514998187,
+      "first_chunk": 22098388,
+      "last_chunk": 44196776,
+      "retained_whole_chunk_rungs": 90515001344
+    },
+    {
+      "B": 10000000000000000,
+      "S": 157,
+      "W_lad": 128,
+      "hypothetical_C": 750000000000000000000000000,
+      "first_uncovered_odd": 750000000000000000000000001,
+      "first_rung": 135772497279,
+      "last_rung": 181029996372,
+      "suffix_rungs": 45257499094,
+      "first_chunk": 33147582,
+      "last_chunk": 44196776,
+      "retained_whole_chunk_rungs": 45257502720
+    },
+    {
+      "B": 20000000000000000,
+      "S": 313,
+      "W_lad": 256,
+      "hypothetical_C": 250000000000000000000000000,
+      "first_uncovered_odd": 250000000000000000000000001,
+      "first_rung": 22701045870,
+      "last_rung": 90804183483,
+      "suffix_rungs": 68103137614,
+      "first_chunk": 5542247,
+      "last_chunk": 22168990,
+      "retained_whole_chunk_rungs": 68103143424
+    },
+    {
+      "B": 20000000000000000,
+      "S": 313,
+      "W_lad": 256,
+      "hypothetical_C": 500000000000000000000000000,
+      "first_uncovered_odd": 500000000000000000000000001,
+      "first_rung": 45402091741,
+      "last_rung": 90804183483,
+      "suffix_rungs": 45402091743,
+      "first_chunk": 11084495,
+      "last_chunk": 22168990,
+      "retained_whole_chunk_rungs": 45402095616
+    },
+    {
+      "B": 20000000000000000,
+      "S": 313,
+      "W_lad": 256,
+      "hypothetical_C": 750000000000000000000000000,
+      "first_uncovered_odd": 750000000000000000000000001,
+      "first_rung": 68103137612,
+      "last_rung": 90804183483,
+      "suffix_rungs": 22701045872,
+      "first_chunk": 16626742,
+      "last_chunk": 22168990,
+      "retained_whole_chunk_rungs": 22701051904
+    }
+  ],
+  "original_chunks": 62168,
+  "original_file_base_chunks": 485,
+  "original_extra_chunk_files": 88,
+  "fallback_patch": {
+    "A": 100000000000000000000,
+    "B": 20000000000000000,
+    "C": 100020000000000000000,
+    "m": 34,
+    "F": 17179869184,
+    "W_lad": 2048,
+    "S": 1162106,
+    "g": 19964829057941504,
+    "last_required": 5009,
+    "padded32": 5024,
+    "padded4096": 8192,
+    "last_cell_low": 100003828751228993541,
+    "last_cell_high": 100023793580286935043
+  },
+  "bertrand_source": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib\\Mathlib\\NumberTheory\\Bertrand.lean",
+    "sha256": "91AED0AE5E324993157982FF06A5EB8002FD7224C2A3FA1B47DB937650CEF9DD"
+  },
+  "pins": [
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Check.lean",
+      "sha256": "A7993B4D1E8A70112403B85B15CF586B4DA84B962A04416531BDE9F35817A42D"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Spec.lean",
+      "sha256": "0009820117E19E6B41B92C6879145569ABA9D4FDE25BF7FFE926AC0B3602901F"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Main.lean",
+      "sha256": "A68289240152DDF2D6ADBD98A0055B45284D924F4F64820D851C01CA6FA250E9"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Ladder/Data.lean",
+      "sha256": "A07F94E80C0AA4DC3EF9032A8CB418AB3DC6FFA1040A51DFB3DA5E874BD879F3"
+    },
+    {
+      "path": "work/ternary-goldbach/scripts/gen_ladder.py",
+      "sha256": "D2D149A3A9ADAF8CAA7B244C6119CE92677A437C56F1B9D4696989F0B34270CD"
+    },
+    {
+      "path": "work/qrh-blueprint/HYBRID_LADDER_COST_FRONTIER_2026-11-11.md",
+      "sha256": "AB81BBFF4BA1CC729579A365C4C3D4C4677B78164239A3AC148BE29AFFE290CB"
+    }
+  ]
+}

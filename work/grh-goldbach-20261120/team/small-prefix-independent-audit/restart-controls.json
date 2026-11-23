@@ -1,0 +1,11 @@
+{
+  "producer_sha": "2053c8fdb00f4277f53760053c8a4e093aa50231b52a0d91d3d5fcf426bcbcdc",
+  "tested_predicate": "receipt.get('exit') == 0 and receipt['source_sha256'] == check.sha(HERE / (mod + '.lean')) and (receipt['olean_sha256'] == check.sha(HERE / (mod + '.olean')))",
+  "results": {
+    "complete": true,
+    "dependency_changed": true,
+    "source_changed": false,
+    "olean_changed": false,
+    "olean_missing": "FileNotFoundError"
+  }
+}

@@ -1,0 +1,45 @@
+Holmake: Scanning $(HOLDIR)/src/sort
+Holmake: Scanning $(HOLDIR)/src/string
+Holmake: Scanning $(HOLDIR)/src/TeX
+Holmake: Scanning $(HOLDIR)/src/bag
+Holmake: Scanning $(HOLDIR)/src/n-bit
+Holmake: Scanning $(HOLDIR)/src/res_quan/src
+Holmake: Scanning $(HOLDIR)/src/finite_maps
+Holmake: Scanning $(HOLDIR)/src/integer
+Holmake: Scanning $(HOLDIR)/src/num/extra_theories
+Holmake: Scanning $(HOLDIR)/src/transfer
+Holmake: Scanning $(HOLDIR)/src/pred_set/src/more_theories
+Holmake: Scanning $(HOLDIR)/src/rational
+Holmake: Scanning $(HOLDIR)/src/num/theories/cv_compute/automation
+Holmake: Scanning ../../hol4-setup
+Holmake: Scanning ../c10004-transform
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-projection/C10004ProjectionScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004Projection">>
+Saved theorem _______ "txp_pair_el"
+Saved theorem _______ "txp_row_el"
+Saved theorem _______ "txp_pair_genlist"
+Saved theorem _______ "txp_row_genlist"
+Saved theorem _______ "txp_pair_tl"
+Saved theorem _______ "txp_omit_at"
+Saved theorem _______ "txp_flatten_at"
+Saved definition ____ "txp_full2_def"
+Saved definition ____ "txp_selected2_def"
+Saved definition ____ "txp_full40_def"
+Saved definition ____ "txp_selected40_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004Projection)>>
+Saved theorem _______ "txp_stage2"
+Proof of 
+
+j61 < 60 ⇒
+GENLIST (λj41. tx_pair (40 * j61 + j41) (txp_selected2 cache xs)) 40 =
+GENLIST
+  (λj41.
+     tx_pair (2 * (40 * ((2 * j61 + 1) DIV 2) + j41) + (2 * j61 + 1) MOD 2)
+       (txp_full2 cache xs)) 40
+
+failed.
+Tactic failure proving "txp_line40"; heap saved to C10004Projection.txp_line40.dumpedheap.
+Resume with: bin/hol --holstate=C10004Projection.txp_line40.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-projection/C10004ProjectionScript - exited with code 1

@@ -1,0 +1,19 @@
+{
+  "lo": 99995904,
+  "hi": 100000000,
+  "step": 8,
+  "res": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "bits": 80,
+  "threads": 1,
+  "policy": "stop each window on exact local saturation; retain all failed stages"
+}

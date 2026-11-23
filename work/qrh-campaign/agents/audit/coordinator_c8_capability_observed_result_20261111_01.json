@@ -1,0 +1,75 @@
+{
+  "additional_tool_output_reserve_bytes": 65536,
+  "failure": "RuntimeError: unexpected process tree/limit violation",
+  "full_capability_established": false,
+  "inner_record_sha256": "2E98F8A15E6C9646538B9A5ECB7E870F8045CA2D505EA1E85FA1DD567B8D0384",
+  "inventory": [
+    {
+      "bytes": 1371,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_authorization_20261111_01.json",
+      "sha256": "9B4CDC4E4C675FE0BC254D4C3C21AB5E71D857F231ACB8CBEFE1D6D16C5756EC"
+    },
+    {
+      "bytes": 1228,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_execution_decision_20261111_01.json",
+      "sha256": "3318E6BDFE2029ED0531F742BA19461F9557CA449E4E128DDECB6DD5E23D0FED"
+    },
+    {
+      "bytes": 999,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_01_v2.json",
+      "sha256": "92888F50181BF8C9E0E02B58658ED2A8ACA690B83266658B276E8B53E98B7D79"
+    },
+    {
+      "bytes": 170,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_01_v2.started",
+      "sha256": "7FB752CE4FA72AFCABFB5A615BEF4359429FBCA07026D41B07B55D8445BAECF3"
+    },
+    {
+      "bytes": 0,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_01_v2.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "bytes": 550,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\coordinator_c8_capability_20261111_01_v2.stdout",
+      "sha256": "5988E50DC06C504C8088210339700BBA52E9EC18E51DB1B3C0116FCDD9E92320"
+    },
+    {
+      "bytes": 1211,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_01\\attempt.json",
+      "sha256": "235012D500CE46B080ECBEC95E98F090F03BAC4A6A5C6C8B30A2BF116BE83178"
+    },
+    {
+      "bytes": 1616,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_01\\completion.json",
+      "sha256": "2E98F8A15E6C9646538B9A5ECB7E870F8045CA2D505EA1E85FA1DD567B8D0384"
+    },
+    {
+      "bytes": 32,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_01\\normal.baseline.ack",
+      "sha256": "4C2C1B65799767F168C24B48D2465C298B83E97E8C75BACD7E81B94CE6F8EC66"
+    },
+    {
+      "bytes": 32,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_01\\normal.held.ack",
+      "sha256": "4C2C1B65799767F168C24B48D2465C298B83E97E8C75BACD7E81B94CE6F8EC66"
+    },
+    {
+      "bytes": 787,
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\audit\\c8_benign_attempt_20261111_01\\normal.jsonl",
+      "sha256": "8312387BE40C15890E87BE85E6FA7FB5C596419E208CD906A8B686F7E085D2A3"
+    }
+  ],
+  "observed_outer_exit_code": 1,
+  "outer_record_sha256": "92888F50181BF8C9E0E02B58658ED2A8ACA690B83266658B276E8B53E98B7D79",
+  "raw_failing_job_counters_retained": false,
+  "remaining_associated_descendants": [],
+  "retained_bytes_before_this_record": 7996,
+  "retry_authorized": false,
+  "status": "FAILED_CAPABILITY_ATTEMPT_NO_RETRY",
+  "supervisor_original_handle_exit_observed": true,
+  "timeout_fixture_executed": false,
+  "tool_chunk": "d340b9",
+  "tool_wall_ns_upper_bound": 1425636900,
+  "tool_wall_seconds": 1.4256369
+}

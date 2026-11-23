@@ -1,0 +1,966 @@
+{
+  "status": "PASS_CONDITIONAL_R138000_INTEGER_INVENTORY",
+  "candidate_status": "Mathematical adoption not asserted; R138000 is a pending candidate.",
+  "domain": "Odd 3<=c<=R; 4 divides c<=2R; conductor1 excluded.",
+  "heights": "100000000/c for odd or c<=125000, else200+75000000/c; unchanged.",
+  "nominal_grid": "J=ceil(64H/5)+1; coarse nonnegative grid only, no auxiliary/guard nodes.",
+  "circuit": "Pinned mixed-radix rule; all unit-group outputs, no primitive pruning.",
+  "source_receipt_sha256": "2ac4dbaf9d0c41d1dfd8006ac280619dff6c3059d7da7faef6f1c477d2ce4d3f",
+  "profiles": {
+    "150000": {
+      "all_conductors": {
+        "conductors": 149999,
+        "primitive_labels": 5543640187,
+        "real_primitive_labels": 121577,
+        "nonreal_inverse_pairs": 2771759305,
+        "unit_coefficients": 9118941848,
+        "nominal_conductor_height_nodes": 10979779734,
+        "coarse_residue_inputs": 120706437078428,
+        "coarse_primitive_outputs": 80459602925766,
+        "max_height_nodes": 426666668,
+        "operations": {
+          "general_complex_products": 3157484248352030,
+          "complex_add_sub": 6538134689270588,
+          "quarter_turns": 291057561331362,
+          "negations": 69435961024,
+          "dyadic_scales": 282253994320896
+        }
+      },
+      "large_above10000": {
+        "conductors": 142500,
+        "primitive_labels": 5525163079,
+        "real_primitive_labels": 115491,
+        "nonreal_inverse_pairs": 2762523794,
+        "unit_coefficients": 9093611126,
+        "nominal_conductor_height_nodes": 2863650650,
+        "coarse_residue_inputs": 114223068442718,
+        "coarse_primitive_outputs": 75730502011007,
+        "max_height_nodes": 127989,
+        "operations": {
+          "general_complex_products": 3041383327064694,
+          "complex_add_sub": 6301213142003526,
+          "quarter_turns": 279797486233036,
+          "negations": 66590728284,
+          "dyadic_scales": 271405257746112
+        }
+      },
+      "small_at_most10000": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "real_primitive_labels": 6086,
+        "nonreal_inverse_pairs": 9235511,
+        "unit_coefficients": 25330722,
+        "nominal_conductor_height_nodes": 8116129084,
+        "coarse_residue_inputs": 6483368635710,
+        "coarse_primitive_outputs": 4729100914759,
+        "max_height_nodes": 426666668,
+        "operations": {
+          "general_complex_products": 116100921287336,
+          "complex_add_sub": 236921547267062,
+          "quarter_turns": 11260075098326,
+          "negations": 2845232740,
+          "dyadic_scales": 10848736574784
+        }
+      },
+      "large_setup": {
+        "axis_lengths": 13943,
+        "active_nodes": 37117,
+        "active_choice_counts": {
+          "radix2": 16,
+          "direct_prime": 4,
+          "split": 30625,
+          "bluestein": 6472
+        },
+        "kernel_count": 6472,
+        "kernel_entries": 382342624,
+        "chirp_entries": 153585028,
+        "max_padded_length": 262144,
+        "kernel_forward_operations": {
+          "general_complex_products": 2559613840,
+          "complex_add_sub": 6266229664,
+          "quarter_turns": 191164840,
+          "negations": 0,
+          "dyadic_scales": 0
+        },
+        "CT_full_root_table_entry_upper": 1436913503,
+        "direct_prime_root_entries": 26,
+        "plan_sha256": "fa64e941393518f8debe960c0b81d977e0100cc033a9028287f6d86cc2917d5b"
+      },
+      "all_conductor_setup_diagnostic": {
+        "axis_lengths": 13943,
+        "active_nodes": 37117,
+        "active_choice_counts": {
+          "radix2": 16,
+          "direct_prime": 4,
+          "split": 30625,
+          "bluestein": 6472
+        },
+        "kernel_count": 6472,
+        "kernel_entries": 382342624,
+        "chirp_entries": 153585028,
+        "max_padded_length": 262144,
+        "kernel_forward_operations": {
+          "general_complex_products": 2559613840,
+          "complex_add_sub": 6266229664,
+          "quarter_turns": 191164840,
+          "negations": 0,
+          "dyadic_scales": 0
+        },
+        "CT_full_root_table_entry_upper": 1436913503,
+        "direct_prime_root_entries": 26,
+        "plan_sha256": "fa64e941393518f8debe960c0b81d977e0100cc033a9028287f6d86cc2917d5b"
+      }
+    },
+    "138000": {
+      "all_conductors": {
+        "conductors": 137999,
+        "primitive_labels": 4692136729,
+        "real_primitive_labels": 111851,
+        "nonreal_inverse_pairs": 2346012439,
+        "unit_coefficients": 7718273228,
+        "nominal_conductor_height_nodes": 10891026048,
+        "coarse_residue_inputs": 110351807778156,
+        "coarse_primitive_outputs": 73739622075701,
+        "max_height_nodes": 426666668,
+        "operations": {
+          "general_complex_products": 2852638663946596,
+          "complex_add_sub": 5905401711927056,
+          "quarter_turns": 263214662213812,
+          "negations": 63184252592,
+          "dyadic_scales": 255181662942336
+        }
+      },
+      "large_above10000": {
+        "conductors": 130500,
+        "primitive_labels": 4673659621,
+        "real_primitive_labels": 105765,
+        "nonreal_inverse_pairs": 2336776928,
+        "unit_coefficients": 7692942506,
+        "nominal_conductor_height_nodes": 2774896964,
+        "coarse_residue_inputs": 103868439142446,
+        "coarse_primitive_outputs": 69010521160942,
+        "max_height_nodes": 127989,
+        "operations": {
+          "general_complex_products": 2736537742659260,
+          "complex_add_sub": 5668480164659994,
+          "quarter_turns": 251954587115486,
+          "negations": 60339019852,
+          "dyadic_scales": 244332926367552
+        }
+      },
+      "small_at_most10000": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "real_primitive_labels": 6086,
+        "nonreal_inverse_pairs": 9235511,
+        "unit_coefficients": 25330722,
+        "nominal_conductor_height_nodes": 8116129084,
+        "coarse_residue_inputs": 6483368635710,
+        "coarse_primitive_outputs": 4729100914759,
+        "max_height_nodes": 426666668,
+        "operations": {
+          "general_complex_products": 116100921287336,
+          "complex_add_sub": 236921547267062,
+          "quarter_turns": 11260075098326,
+          "negations": 2845232740,
+          "dyadic_scales": 10848736574784
+        }
+      },
+      "large_setup": {
+        "axis_lengths": 12933,
+        "active_nodes": 34217,
+        "active_choice_counts": {
+          "radix2": 16,
+          "direct_prime": 4,
+          "split": 28071,
+          "bluestein": 6126
+        },
+        "kernel_count": 6126,
+        "kernel_entries": 349646304,
+        "chirp_entries": 143630374,
+        "max_padded_length": 262144,
+        "kernel_forward_operations": {
+          "general_complex_products": 2329463004,
+          "complex_add_sub": 5707840416,
+          "quarter_turns": 174817026,
+          "negations": 0,
+          "dyadic_scales": 0
+        },
+        "CT_full_root_table_entry_upper": 1210093865,
+        "direct_prime_root_entries": 26,
+        "plan_sha256": "af2932afd77dce5111c8f44b4ead6168f55e3dcc063b1e06d04fc5f6e71d1b8f"
+      },
+      "all_conductor_setup_diagnostic": {
+        "axis_lengths": 12933,
+        "active_nodes": 34217,
+        "active_choice_counts": {
+          "radix2": 16,
+          "direct_prime": 4,
+          "split": 28071,
+          "bluestein": 6126
+        },
+        "kernel_count": 6126,
+        "kernel_entries": 349646304,
+        "chirp_entries": 143630374,
+        "max_padded_length": 262144,
+        "kernel_forward_operations": {
+          "general_complex_products": 2329463004,
+          "complex_add_sub": 5707840416,
+          "quarter_turns": 174817026,
+          "negations": 0,
+          "dyadic_scales": 0
+        },
+        "CT_full_root_table_entry_upper": 1210093865,
+        "direct_prime_root_entries": 26,
+        "plan_sha256": "af2932afd77dce5111c8f44b4ead6168f55e3dcc063b1e06d04fc5f6e71d1b8f"
+      }
+    }
+  },
+  "comparisons": {
+    "all_conductors": {
+      "conductors": {
+        "old": 149999,
+        "new": 137999,
+        "removed": 12000,
+        "ratio": {
+          "exact": "137999/149999",
+          "lower": "919999/1000000",
+          "upper": "23/25"
+        }
+      },
+      "primitive_labels": {
+        "old": 5543640187,
+        "new": 4692136729,
+        "removed": 851503458,
+        "ratio": {
+          "exact": "4692136729/5543640187",
+          "lower": "846399/1000000",
+          "upper": "529/625"
+        }
+      },
+      "real_primitive_labels": {
+        "old": 121577,
+        "new": 111851,
+        "removed": 9726,
+        "ratio": {
+          "exact": "111851/121577",
+          "lower": "920001/1000000",
+          "upper": "460001/500000"
+        }
+      },
+      "nonreal_inverse_pairs": {
+        "old": 2771759305,
+        "new": 2346012439,
+        "removed": 425746866,
+        "ratio": {
+          "exact": "2346012439/2771759305",
+          "lower": "423199/500000",
+          "upper": "846399/1000000"
+        }
+      },
+      "unit_coefficients": {
+        "old": 9118941848,
+        "new": 7718273228,
+        "removed": 1400668620,
+        "ratio": {
+          "exact": "1929568307/2279735462",
+          "lower": "529/625",
+          "upper": "846401/1000000"
+        }
+      },
+      "nominal_conductor_height_nodes": {
+        "old": 10979779734,
+        "new": 10891026048,
+        "removed": 88753686,
+        "ratio": {
+          "exact": "259310144/261423327",
+          "lower": "247979/250000",
+          "upper": "991917/1000000"
+        }
+      },
+      "coarse_residue_inputs": {
+        "old": 120706437078428,
+        "new": 110351807778156,
+        "removed": 10354629300272,
+        "ratio": {
+          "exact": "27587951944539/30176609269607",
+          "lower": "114277/125000",
+          "upper": "914217/1000000"
+        }
+      },
+      "coarse_primitive_outputs": {
+        "old": 80459602925766,
+        "new": 73739622075701,
+        "removed": 6719980850065,
+        "ratio": {
+          "exact": "73739622075701/80459602925766",
+          "lower": "2864/3125",
+          "upper": "916481/1000000"
+        }
+      },
+      "max_height_nodes": {
+        "old": 426666668,
+        "new": 426666668,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "operations": {
+        "general_complex_products": {
+          "old": 3157484248352030,
+          "new": 2852638663946596,
+          "removed": 304845584405434,
+          "ratio": {
+            "exact": "1426319331973298/1578742124176015",
+            "lower": "903453/1000000",
+            "upper": "451727/500000"
+          }
+        },
+        "complex_add_sub": {
+          "old": 6538134689270588,
+          "new": 5905401711927056,
+          "removed": 632732977343532,
+          "ratio": {
+            "exact": "1476350427981764/1634533672317647",
+            "lower": "112903/125000",
+            "upper": "36129/40000"
+          }
+        },
+        "quarter_turns": {
+          "old": 291057561331362,
+          "new": 263214662213812,
+          "removed": 27842899117550,
+          "ratio": {
+            "exact": "131607331106906/145528780665681",
+            "lower": "452169/500000",
+            "upper": "904339/1000000"
+          }
+        },
+        "negations": {
+          "old": 69435961024,
+          "new": 63184252592,
+          "removed": 6251708432,
+          "ratio": {
+            "exact": "3949015787/4339747564",
+            "lower": "227491/250000",
+            "upper": "181993/200000"
+          }
+        },
+        "dyadic_scales": {
+          "old": 282253994320896,
+          "new": 255181662942336,
+          "removed": 27072331378560,
+          "ratio": {
+            "exact": "17039373861/18847088296",
+            "lower": "180817/200000",
+            "upper": "452043/500000"
+          }
+        }
+      }
+    },
+    "large_above10000": {
+      "conductors": {
+        "old": 142500,
+        "new": 130500,
+        "removed": 12000,
+        "ratio": {
+          "exact": "87/95",
+          "lower": "915789/1000000",
+          "upper": "91579/100000"
+        }
+      },
+      "primitive_labels": {
+        "old": 5525163079,
+        "new": 4673659621,
+        "removed": 851503458,
+        "ratio": {
+          "exact": "4673659621/5525163079",
+          "lower": "422943/500000",
+          "upper": "845887/1000000"
+        }
+      },
+      "real_primitive_labels": {
+        "old": 115491,
+        "new": 105765,
+        "removed": 9726,
+        "ratio": {
+          "exact": "35255/38497",
+          "lower": "183157/200000",
+          "upper": "457893/500000"
+        }
+      },
+      "nonreal_inverse_pairs": {
+        "old": 2762523794,
+        "new": 2336776928,
+        "removed": 425746866,
+        "ratio": {
+          "exact": "1168388464/1381261897",
+          "lower": "211471/250000",
+          "upper": "169177/200000"
+        }
+      },
+      "unit_coefficients": {
+        "old": 9093611126,
+        "new": 7692942506,
+        "removed": 1400668620,
+        "ratio": {
+          "exact": "3846471253/4546805563",
+          "lower": "211493/250000",
+          "upper": "845973/1000000"
+        }
+      },
+      "nominal_conductor_height_nodes": {
+        "old": 2863650650,
+        "new": 2774896964,
+        "removed": 88753686,
+        "ratio": {
+          "exact": "198206926/204546475",
+          "lower": "484503/500000",
+          "upper": "969007/1000000"
+        }
+      },
+      "coarse_residue_inputs": {
+        "old": 114223068442718,
+        "new": 103868439142446,
+        "removed": 10354629300272,
+        "ratio": {
+          "exact": "51934219571223/57111534221359",
+          "lower": "909347/1000000",
+          "upper": "227337/250000"
+        }
+      },
+      "coarse_primitive_outputs": {
+        "old": 75730502011007,
+        "new": 69010521160942,
+        "removed": 6719980850065,
+        "ratio": {
+          "exact": "69010521160942/75730502011007",
+          "lower": "28477/31250",
+          "upper": "182253/200000"
+        }
+      },
+      "max_height_nodes": {
+        "old": 127989,
+        "new": 127989,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "operations": {
+        "general_complex_products": {
+          "old": 3041383327064694,
+          "new": 2736537742659260,
+          "removed": 304845584405434,
+          "ratio": {
+            "exact": "1368268871329630/1520691663532347",
+            "lower": "899767/1000000",
+            "upper": "112471/125000"
+          }
+        },
+        "complex_add_sub": {
+          "old": 6301213142003526,
+          "new": 5668480164659994,
+          "removed": 632732977343532,
+          "ratio": {
+            "exact": "944746694109999/1050202190333921",
+            "lower": "179917/200000",
+            "upper": "449793/500000"
+          }
+        },
+        "quarter_turns": {
+          "old": 279797486233036,
+          "new": 251954587115486,
+          "removed": 27842899117550,
+          "ratio": {
+            "exact": "4063783663153/4512862681178",
+            "lower": "900489/1000000",
+            "upper": "90049/100000"
+          }
+        },
+        "negations": {
+          "old": 66590728284,
+          "new": 60339019852,
+          "removed": 6251708432,
+          "ratio": {
+            "exact": "15084754963/16647682071",
+            "lower": "906117/1000000",
+            "upper": "453059/500000"
+          }
+        },
+        "dyadic_scales": {
+          "old": 271405257746112,
+          "new": 244332926367552,
+          "removed": 27072331378560,
+          "ratio": {
+            "exact": "424189108277/471189683587",
+            "lower": "900251/1000000",
+            "upper": "225063/250000"
+          }
+        }
+      }
+    },
+    "large_setup": {
+      "axis_lengths": {
+        "old": 13943,
+        "new": 12933,
+        "removed": 1010,
+        "ratio": {
+          "exact": "12933/13943",
+          "lower": "463781/500000",
+          "upper": "927563/1000000"
+        }
+      },
+      "active_nodes": {
+        "old": 37117,
+        "new": 34217,
+        "removed": 2900,
+        "ratio": {
+          "exact": "34217/37117",
+          "lower": "230467/250000",
+          "upper": "921869/1000000"
+        }
+      },
+      "kernel_count": {
+        "old": 6472,
+        "new": 6126,
+        "removed": 346,
+        "ratio": {
+          "exact": "3063/3236",
+          "lower": "473269/500000",
+          "upper": "946539/1000000"
+        }
+      },
+      "kernel_entries": {
+        "old": 382342624,
+        "new": 349646304,
+        "removed": 32696320,
+        "ratio": {
+          "exact": "10926447/11948207",
+          "lower": "228621/250000",
+          "upper": "182897/200000"
+        }
+      },
+      "chirp_entries": {
+        "old": 153585028,
+        "new": 143630374,
+        "removed": 9954654,
+        "ratio": {
+          "exact": "71815187/76792514",
+          "lower": "58449/62500",
+          "upper": "187037/200000"
+        }
+      },
+      "max_padded_length": {
+        "old": 262144,
+        "new": 262144,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "CT_full_root_table_entry_upper": {
+        "old": 1436913503,
+        "new": 1210093865,
+        "removed": 226819638,
+        "ratio": {
+          "exact": "1210093865/1436913503",
+          "lower": "210537/250000",
+          "upper": "842149/1000000"
+        }
+      },
+      "direct_prime_root_entries": {
+        "old": 26,
+        "new": 26,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      }
+    }
+  },
+  "comparisons_to_R140000": {
+    "all_conductors": {
+      "conductors": {
+        "old": 139999,
+        "new": 137999,
+        "removed": 2000,
+        "ratio": {
+          "exact": "137999/139999",
+          "lower": "492857/500000",
+          "upper": "197143/200000"
+        }
+      },
+      "primitive_labels": {
+        "old": 4829158813,
+        "new": 4692136729,
+        "removed": 137022084,
+        "ratio": {
+          "exact": "4692136729/4829158813",
+          "lower": "485813/500000",
+          "upper": "971627/1000000"
+        }
+      },
+      "real_primitive_labels": {
+        "old": 113481,
+        "new": 111851,
+        "removed": 1630,
+        "ratio": {
+          "exact": "111851/113481",
+          "lower": "246409/250000",
+          "upper": "985637/1000000"
+        }
+      },
+      "nonreal_inverse_pairs": {
+        "old": 2414522666,
+        "new": 2346012439,
+        "removed": 68510227,
+        "ratio": {
+          "exact": "2346012439/2414522666",
+          "lower": "7773/8000",
+          "upper": "485813/500000"
+        }
+      },
+      "unit_coefficients": {
+        "old": 7943636860,
+        "new": 7718273228,
+        "removed": 225363632,
+        "ratio": {
+          "exact": "1929568307/1985909215",
+          "lower": "971629/1000000",
+          "upper": "97163/100000"
+        }
+      },
+      "nominal_conductor_height_nodes": {
+        "old": 10906251119,
+        "new": 10891026048,
+        "removed": 15225071,
+        "ratio": {
+          "exact": "10891026048/10906251119",
+          "lower": "249651/250000",
+          "upper": "199721/200000"
+        }
+      },
+      "coarse_residue_inputs": {
+        "old": 112067381988794,
+        "new": 110351807778156,
+        "removed": 1715574210638,
+        "ratio": {
+          "exact": "55175903889078/56033690994397",
+          "lower": "984691/1000000",
+          "upper": "246173/250000"
+        }
+      },
+      "coarse_primitive_outputs": {
+        "old": 74855673008489,
+        "new": 73739622075701,
+        "removed": 1116050932788,
+        "ratio": {
+          "exact": "73739622075701/74855673008489",
+          "lower": "98509/100000",
+          "upper": "985091/1000000"
+        }
+      },
+      "max_height_nodes": {
+        "old": 426666668,
+        "new": 426666668,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "operations": {
+        "general_complex_products": {
+          "old": 2903152795655032,
+          "new": 2852638663946596,
+          "removed": 50514131708436,
+          "ratio": {
+            "exact": "713159665986649/725788198913758",
+            "lower": "4913/5000",
+            "upper": "982601/1000000"
+          }
+        },
+        "complex_add_sub": {
+          "old": 6010285031790722,
+          "new": 5905401711927056,
+          "removed": 104883319863666,
+          "ratio": {
+            "exact": "2952700855963528/3005142515895361",
+            "lower": "982549/1000000",
+            "upper": "19651/20000"
+          }
+        },
+        "quarter_turns": {
+          "old": 267852461846351,
+          "new": 263214662213812,
+          "removed": 4637799632539,
+          "ratio": {
+            "exact": "263214662213812/267852461846351",
+            "lower": "196537/200000",
+            "upper": "491343/500000"
+          }
+        },
+        "negations": {
+          "old": 64520514776,
+          "new": 63184252592,
+          "removed": 1336262184,
+          "ratio": {
+            "exact": "7898031574/8065064347",
+            "lower": "979289/1000000",
+            "upper": "97929/100000"
+          }
+        },
+        "dyadic_scales": {
+          "old": 259692689531648,
+          "new": 255181662942336,
+          "removed": 4511026589312,
+          "ratio": {
+            "exact": "1993606741737/2028849136966",
+            "lower": "982629/1000000",
+            "upper": "98263/100000"
+          }
+        }
+      }
+    },
+    "large_above10000": {
+      "conductors": {
+        "old": 132500,
+        "new": 130500,
+        "removed": 2000,
+        "ratio": {
+          "exact": "261/265",
+          "lower": "196981/200000",
+          "upper": "492453/500000"
+        }
+      },
+      "primitive_labels": {
+        "old": 4810681705,
+        "new": 4673659621,
+        "removed": 137022084,
+        "ratio": {
+          "exact": "4673659621/4810681705",
+          "lower": "971517/1000000",
+          "upper": "485759/500000"
+        }
+      },
+      "real_primitive_labels": {
+        "old": 107395,
+        "new": 105765,
+        "removed": 1630,
+        "ratio": {
+          "exact": "21153/21479",
+          "lower": "492411/500000",
+          "upper": "984823/1000000"
+        }
+      },
+      "nonreal_inverse_pairs": {
+        "old": 2405287155,
+        "new": 2336776928,
+        "removed": 68510227,
+        "ratio": {
+          "exact": "2336776928/2405287155",
+          "lower": "242879/250000",
+          "upper": "971517/1000000"
+        }
+      },
+      "unit_coefficients": {
+        "old": 7918306138,
+        "new": 7692942506,
+        "removed": 225363632,
+        "ratio": {
+          "exact": "3846471253/3959153069",
+          "lower": "485769/500000",
+          "upper": "971539/1000000"
+        }
+      },
+      "nominal_conductor_height_nodes": {
+        "old": 2790122035,
+        "new": 2774896964,
+        "removed": 15225071,
+        "ratio": {
+          "exact": "2774896964/2790122035",
+          "lower": "994543/1000000",
+          "upper": "62159/62500"
+        }
+      },
+      "coarse_residue_inputs": {
+        "old": 105584013353084,
+        "new": 103868439142446,
+        "removed": 1715574210638,
+        "ratio": {
+          "exact": "51934219571223/52792006676542",
+          "lower": "983751/1000000",
+          "upper": "122969/125000"
+        }
+      },
+      "coarse_primitive_outputs": {
+        "old": 70126572093730,
+        "new": 69010521160942,
+        "removed": 1116050932788,
+        "ratio": {
+          "exact": "932574610283/947656379645",
+          "lower": "196817/200000",
+          "upper": "492043/500000"
+        }
+      },
+      "max_height_nodes": {
+        "old": 127989,
+        "new": 127989,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "operations": {
+        "general_complex_products": {
+          "old": 2787051874367696,
+          "new": 2736537742659260,
+          "removed": 50514131708436,
+          "ratio": {
+            "exact": "684134435664815/696762968591924",
+            "lower": "1571/1600",
+            "upper": "245469/250000"
+          }
+        },
+        "complex_add_sub": {
+          "old": 5773363484523660,
+          "new": 5668480164659994,
+          "removed": 104883319863666,
+          "ratio": {
+            "exact": "104971854901111/106914138602290",
+            "lower": "981833/1000000",
+            "upper": "490917/500000"
+          }
+        },
+        "quarter_turns": {
+          "old": 256592386748025,
+          "new": 251954587115486,
+          "removed": 4637799632539,
+          "ratio": {
+            "exact": "251954587115486/256592386748025",
+            "lower": "39277/40000",
+            "upper": "490963/500000"
+          }
+        },
+        "negations": {
+          "old": 61675282036,
+          "new": 60339019852,
+          "removed": 1336262184,
+          "ratio": {
+            "exact": "15084754963/15418820509",
+            "lower": "978333/1000000",
+            "upper": "489167/500000"
+          }
+        },
+        "dyadic_scales": {
+          "old": 248843952956864,
+          "new": 244332926367552,
+          "removed": 4511026589312,
+          "ratio": {
+            "exact": "3817701974493/3888186764951",
+            "lower": "61367/62500",
+            "upper": "981873/1000000"
+          }
+        }
+      }
+    },
+    "large_setup": {
+      "axis_lengths": {
+        "old": 13103,
+        "new": 12933,
+        "removed": 170,
+        "ratio": {
+          "exact": "12933/13103",
+          "lower": "39481/40000",
+          "upper": "493513/500000"
+        }
+      },
+      "active_nodes": {
+        "old": 34721,
+        "new": 34217,
+        "removed": 504,
+        "ratio": {
+          "exact": "34217/34721",
+          "lower": "246371/250000",
+          "upper": "197097/200000"
+        }
+      },
+      "kernel_count": {
+        "old": 6181,
+        "new": 6126,
+        "removed": 55,
+        "ratio": {
+          "exact": "6126/6181",
+          "lower": "991101/1000000",
+          "upper": "495551/500000"
+        }
+      },
+      "kernel_entries": {
+        "old": 354678240,
+        "new": 349646304,
+        "removed": 5031936,
+        "ratio": {
+          "exact": "520307/527795",
+          "lower": "246453/250000",
+          "upper": "985813/1000000"
+        }
+      },
+      "chirp_entries": {
+        "old": 145093425,
+        "new": 143630374,
+        "removed": 1463051,
+        "ratio": {
+          "exact": "143630374/145093425",
+          "lower": "247479/250000",
+          "upper": "989917/1000000"
+        }
+      },
+      "max_padded_length": {
+        "old": 262144,
+        "new": 262144,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      },
+      "CT_full_root_table_entry_upper": {
+        "old": 1247555730,
+        "new": 1210093865,
+        "removed": 37461865,
+        "ratio": {
+          "exact": "242018773/249511146",
+          "lower": "969971/1000000",
+          "upper": "242493/250000"
+        }
+      },
+      "direct_prime_root_entries": {
+        "old": 26,
+        "new": 26,
+        "removed": 0,
+        "ratio": {
+          "exact": "1",
+          "lower": "1",
+          "upper": "1"
+        }
+      }
+    }
+  },
+  "prior_R140000_receipt_sha256": "da26bf4ba4744cf5af096670873fe9ca258735a8efa4de09d0f490a56f36f5f7",
+  "shared_seed_scope": "Same maximum coarse height index; unchanged fixed P24 alpha seed schedule if reused verbatim.",
+  "exclusions": "No theta/time work priced below10000; no roots, L-values, signs, Turing evidence, runtime or total proof-cost ratio."
+}

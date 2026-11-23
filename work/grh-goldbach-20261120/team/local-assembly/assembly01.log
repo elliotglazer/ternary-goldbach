@@ -1,0 +1,15 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\Assembly.lean:37:61: error: No goals to be solved
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\Assembly.lean:60:2: error: linarith failed to find a contradiction
+v : ℝ
+hv : 31000000 ≤ v
+hp : 0 < v
+hd : 2.8 / v ≤ 1e-4
+hd0 : 0 ≤ 2.8 / v
+hd2 : 2.8 / v * (2.8 / v) ≤ 1e-4 * 1e-4
+h1 : rexp ((2.8 / v) ^ 2 / 8) ≤ 1.001
+h2 : rexp (6.3 / v) ≤ 1.001
+h3 : rexp (56.8 / v) ≤ 1.001
+h : 253.3 * rexp ((2.8 / v) ^ 2 / 8) * (rexp (6.3 / v) + rexp (56.8 / v)) ≤ 253.3 * 1.001 * (1.001 + 1.001)
+a✝ : 255 < 253.3 * rexp ((2.8 / v) ^ 2 / 8) * (rexp (6.3 / v) + rexp (56.8 / v)) / 2.8
+⊢ False
+failed

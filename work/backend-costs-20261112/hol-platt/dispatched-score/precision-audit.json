@@ -1,0 +1,178 @@
+{
+  "q10004_j1_p81": {
+    "count": 2301,
+    "common_binary_scale": -243,
+    "overlap_zero": 0,
+    "worst": {
+      "mode": [
+        10,
+        24
+      ],
+      "hard_bits": 63,
+      "v": "-9852399604519012730619996807910800690071093843977219670848217441156298540",
+      "d": "562410998457122840911459227911083088423667080193856506"
+    },
+    "worst_strict": {
+      "mode": [
+        10,
+        24
+      ],
+      "hard_bits": 63,
+      "v": "-9852399604519012730619996807910800690071093843977219670848217441156298540",
+      "d": "562410998457122840911459227911083088423667080193856506"
+    },
+    "lower_percentile_bits": {
+      "0": 63,
+      "1": 67,
+      "5": 70,
+      "10": 71,
+      "25": 72,
+      "50": 73,
+      "75": 74,
+      "90": 75,
+      "95": 75,
+      "99": 76,
+      "100": 76
+    },
+    "below_requested_bits": {
+      "4": 0,
+      "8": 0,
+      "12": 0,
+      "16": 0,
+      "20": 0,
+      "24": 0,
+      "32": 0,
+      "40": 0,
+      "48": 0,
+      "56": 0,
+      "64": 1
+    },
+    "max_physical_source_radius": {
+      "numerator": "626854412472877175416571626237630090327597876376919500",
+      "denominator": "14134776518227074636666380005943348126619871175004951664972849610340958208"
+    }
+  },
+  "q131071_j5695": {
+    "24": {
+      "count": 131069,
+      "common_binary_scale": -72,
+      "overlap_zero": 84,
+      "worst": {
+        "mode": 43541,
+        "hard_bits": null,
+        "v": "-350409735454772712144",
+        "d": "145251634971138115245895"
+      },
+      "worst_strict": {
+        "mode": 75623,
+        "hard_bits": -8,
+        "v": "-126842216588751400470376",
+        "d": "126174491536378182301030"
+      },
+      "lower_percentile_bits": {
+        "0": null,
+        "1": 3,
+        "5": 6,
+        "10": 7,
+        "25": 8,
+        "50": 10,
+        "75": 11,
+        "90": 12,
+        "95": 13,
+        "99": 14,
+        "100": 16
+      },
+      "below_requested_bits": {
+        "4": 1462,
+        "8": 20203,
+        "12": 110533,
+        "16": 131068,
+        "20": 131069,
+        "24": 131069,
+        "32": 131069,
+        "40": 131069,
+        "48": 131069,
+        "56": 131069,
+        "64": 131069
+      },
+      "max_physical_source_radius": {
+        "numerator": "146685673966452435508571",
+        "denominator": "4722366482869645213696"
+      }
+    },
+    "28": {
+      "count": 131069,
+      "common_binary_scale": -84,
+      "overlap_zero": 10,
+      "worst": {
+        "mode": 43541,
+        "hard_bits": null,
+        "v": "-1425613765218505679247096",
+        "d": "37184406378296229285672612"
+      },
+      "worst_strict": {
+        "mode": 70187,
+        "hard_bits": -3,
+        "v": "-40400106624193069134565018",
+        "d": "35357909155931297601563867"
+      },
+      "lower_percentile_bits": {
+        "0": null,
+        "1": 7,
+        "5": 10,
+        "10": 11,
+        "25": 12,
+        "50": 14,
+        "75": 15,
+        "90": 16,
+        "95": 17,
+        "99": 18,
+        "100": 20
+      },
+      "below_requested_bits": {
+        "4": 87,
+        "8": 1379,
+        "12": 20136,
+        "16": 110523,
+        "20": 131068,
+        "24": 131069,
+        "32": 131069,
+        "40": 131069,
+        "48": 131069,
+        "56": 131069,
+        "64": 131069
+      },
+      "max_physical_source_radius": {
+        "numerator": "37551520811805611136311668",
+        "denominator": "19342813113834066795298816"
+      }
+    }
+  },
+  "sha256": {
+    "c10004-full-integer\\spectrum.tsv": "f1ba9ff582a4d1cd8ca77f022268a075a04f27bbb3baf43c833f72fabf8f046a",
+    "c10004-hol-shared-phase\\phases.tsv": "64ec562df59822bbb40a4945b40a96850380981446ddce481728dd033b3b8417",
+    "c10004-full-integer\\params.tsv": "dd2dc7c952344f3432793f914f0ad2c16ad1005046d646ec9531681e8210c3c5",
+    "large-sector-second\\input28.tsv": "d343f5aab96982cd06a7449a949ec68709551a2095a8d1e4e4f14580a0d536d0",
+    "large-sector-second\\roots28.tsv": "969bd7deb1b10f003780e37016ab151251583626ac90ddb2119dbfa85d3c4295",
+    "large-sector-second\\cohort.json": "8849258e921fb6f7a0c7cb87c0233da183fbd5fd8210d3a7f69ec25351aef03a",
+    "large-coarse-sign\\prime-131071.json": "09c6ce2a8ec48011336bbc822714d3bcb558960792e14dac4ec6f7c21e509db3",
+    "large-terminal-signs\\even24n64zs.txt": "8abad775f513f990b4c3df32a334c199efba9768736639046de5216f5331b573",
+    "large-terminal-signs\\even24n64ws.txt": "c8f4592b5f89c3c4970044022ca2ebece5c45fdda370e076cb59e256092ddd06",
+    "large-terminal-signs\\even24n64abs.txt": "a9b021e918071bbd2e616965656b690025c070cc7d9f7bff64779afde58d1174",
+    "large-terminal-signs\\even24n256zs.txt": "0c64820d4a67fa8d3d1395c2d6cf36b2998316923deb88828900e5933062c5a0",
+    "large-terminal-signs\\even24n256ws.txt": "d5724b91e771aa4c110c44edd95909d233bc1da511211b20f15e3c446e1db91e",
+    "large-terminal-signs\\even24n256abs.txt": "a7bb6c71bd67f659a417f9eacbb6f835cab942fe8eae1da5526a58186b7d84df",
+    "large-terminal-signs\\even24n1024zs.txt": "f5b528eb0384f0422f5829cef9f846c21c5185cd24b1e08981d249d3d9cddbfa",
+    "large-terminal-signs\\even24n1024ws.txt": "f673cdd46615f9c4bcff08cde4e4ae691b2b5c52e09ddfd2e47db36d7e951592",
+    "large-terminal-signs\\even24n1024abs.txt": "e59ab280224810c0f6bba3cf8ea7c62b47eee32e6aa392ada14cbfd63209d10b",
+    "large-terminal-signs\\even28n64zs.txt": "86289f8d10f27ad64250959a95688854baefb7e85c4cc682ad287600c68be149",
+    "large-terminal-signs\\even28n64ws.txt": "770a9f41a1d067cf75632fd7a5137c03fab9ae29c37578d5749271e686fbf3d0",
+    "large-terminal-signs\\even28n64abs.txt": "bfb67f6ad44fcd90a2c24075b18c060dd1a8aa4502564f552b7ff8f0c86b7d8b",
+    "large-terminal-signs\\even28n256zs.txt": "976adb7bb7c4840fa806e7cb669370b556b1933264a04a011a27e991d3344e76",
+    "large-terminal-signs\\even28n256ws.txt": "bd2f159ddb62a75a13551a51ae1d0a150fc5d8d91a97c51ed5f1fe09e4fcd2a0",
+    "large-terminal-signs\\even28n256abs.txt": "5aa0fd263d869c71bcc41f6247e5af5bec17bf65bcb14ecd978dd4708ecf1329",
+    "large-terminal-signs\\even28n1024zs.txt": "49018ae0046f06a0141871e5e789cb1c6edea3e01e80607bb3ea1cbcffdb7295",
+    "large-terminal-signs\\even28n1024ws.txt": "369d83880ea60b3d866fcab14019c15e3bae52096ff792a942a3836b4041b445",
+    "large-terminal-signs\\even28n1024abs.txt": "63dfca05a66130a979c6d1dc99388884bc343acaf3dd6e4804ac18b41521c8b5"
+  }
+}

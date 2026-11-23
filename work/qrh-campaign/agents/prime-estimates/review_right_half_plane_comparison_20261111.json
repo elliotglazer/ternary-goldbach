@@ -1,0 +1,29 @@
+{
+  "status": "PASS independent source-replay and alternate rational calculation",
+  "original_replay_byte_identical": true,
+  "original_output_sha256": "331ce3d0c1325f226f168b572d77d9590b29d4ba9bc539cf44c15f3d5a2f37b3",
+  "alternate_pi_terms": [
+    32,
+    12
+  ],
+  "alternate_atan_terms": 40,
+  "alternate_log_terms": 40,
+  "alternate_x_rounding_decimal_places": 25,
+  "alternate_S": [
+    "24568394220345823727/50000000000000000000",
+    "24568394220345934413/50000000000000000000"
+  ],
+  "alternate_F": [
+    "174714550863210896162645643/100000000000000000000",
+    "43678637715802724040661411/25000000000000000000"
+  ],
+  "alternate_count_interval": [
+    "87357293749999668427146549/50000000000000000000",
+    "174714612499999336854514469/100000000000000000000"
+  ],
+  "unique_integer": 1747146,
+  "arctan_nonnegative_tests": 10,
+  "log_test_count": 6,
+  "frozen_inputs_unchanged": true,
+  "scope": "Conditional on accepted EM endpoint and analytic branch/count formula; no Lean or new EM evaluation"
+}

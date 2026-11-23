@@ -1,0 +1,333 @@
+{
+  "heights": 8,
+  "maximum_bytes": 837030720,
+  "original_occupied_calls": 25188581137,
+  "manifest_sha256": "a41d70db2bb439d73cc817f80b24cb598d3efa89cce1d19a5fa618abbe239637",
+  "scenarios": {
+    "32": {
+      "bands": [
+        {
+          "lo": 0,
+          "groups": 3919,
+          "calls_even_if_empty": 3199451400,
+          "group_sizes": [
+            24,
+            32,
+            32
+          ],
+          "max_raw_buffer": 837030720
+        },
+        {
+          "lo": 6401,
+          "groups": 3143,
+          "calls_even_if_empty": 3843104400,
+          "group_sizes": [
+            3,
+            32,
+            32
+          ],
+          "max_raw_buffer": 678049920
+        },
+        {
+          "lo": 12801,
+          "groups": 1022,
+          "calls_even_if_empty": 5197310805,
+          "group_sizes": [
+            6,
+            32.0,
+            32
+          ],
+          "max_raw_buffer": 250857600
+        },
+        {
+          "lo": 25601,
+          "groups": 323,
+          "calls_even_if_empty": 7563417108,
+          "group_sizes": [
+            3,
+            32,
+            32
+          ],
+          "max_raw_buffer": 110295360
+        },
+        {
+          "lo": 64001,
+          "groups": 26,
+          "calls_even_if_empty": 504313915,
+          "group_sizes": [
+            25,
+            32.0,
+            32
+          ],
+          "max_raw_buffer": 40560000
+        }
+      ],
+      "calls_all_bands": 20307597628,
+      "avoided_calls_against_old_exact_occupancy": 4880983509,
+      "hours_saved_if_fixed_rates_transfer": [
+        7229.27890833,
+        14545.33085682
+      ]
+    },
+    "64": {
+      "bands": [
+        {
+          "lo": 0,
+          "groups": 2429,
+          "calls_even_if_empty": 1977298800,
+          "group_sizes": [
+            17,
+            51,
+            64
+          ],
+          "max_raw_buffer": 837017760
+        },
+        {
+          "lo": 6401,
+          "groups": 1732,
+          "calls_even_if_empty": 2006532426,
+          "group_sizes": [
+            7,
+            64.0,
+            64
+          ],
+          "max_raw_buffer": 837017760
+        },
+        {
+          "lo": 12801,
+          "groups": 511,
+          "calls_even_if_empty": 2600279863,
+          "group_sizes": [
+            38,
+            64,
+            64
+          ],
+          "max_raw_buffer": 496910400
+        },
+        {
+          "lo": 25601,
+          "groups": 162,
+          "calls_even_if_empty": 3791572926,
+          "group_sizes": [
+            3,
+            64.0,
+            64
+          ],
+          "max_raw_buffer": 219222720
+        },
+        {
+          "lo": 64001,
+          "groups": 13,
+          "calls_even_if_empty": 262717090,
+          "group_sizes": [
+            57,
+            64,
+            64
+          ],
+          "max_raw_buffer": 80663040
+        }
+      ],
+      "calls_all_bands": 10638401105,
+      "avoided_calls_against_old_exact_occupancy": 14550180032,
+      "hours_saved_if_fixed_rates_transfer": [
+        21550.433314062222,
+        43359.53649535999
+      ]
+    },
+    "128": {
+      "bands": [
+        {
+          "lo": 0,
+          "groups": 2136,
+          "calls_even_if_empty": 1736699525,
+          "group_sizes": [
+            3,
+            48.0,
+            128
+          ],
+          "max_raw_buffer": 837021600
+        },
+        {
+          "lo": 6401,
+          "groups": 1429,
+          "calls_even_if_empty": 1517735280,
+          "group_sizes": [
+            16,
+            60,
+            128
+          ],
+          "max_raw_buffer": 837021600
+        },
+        {
+          "lo": 12801,
+          "groups": 258,
+          "calls_even_if_empty": 1302575598,
+          "group_sizes": [
+            90,
+            128.0,
+            128
+          ],
+          "max_raw_buffer": 836801280
+        },
+        {
+          "lo": 25601,
+          "groups": 81,
+          "calls_even_if_empty": 1905699993,
+          "group_sizes": [
+            67,
+            128,
+            128
+          ],
+          "max_raw_buffer": 436489920
+        },
+        {
+          "lo": 64001,
+          "groups": 7,
+          "calls_even_if_empty": 142467575,
+          "group_sizes": [
+            57,
+            128,
+            128
+          ],
+          "max_raw_buffer": 159510720
+        }
+      ],
+      "calls_all_bands": 6605177971,
+      "avoided_calls_against_old_exact_occupancy": 18583403166,
+      "hours_saved_if_fixed_rates_transfer": [
+        27524.08491142,
+        55378.54143468
+      ]
+    },
+    "256": {
+      "bands": [
+        {
+          "lo": 0,
+          "groups": 2077,
+          "calls_even_if_empty": 1688259050,
+          "group_sizes": [
+            3,
+            48,
+            256
+          ],
+          "max_raw_buffer": 837021600
+        },
+        {
+          "lo": 6401,
+          "groups": 1370,
+          "calls_even_if_empty": 1421022480,
+          "group_sizes": [
+            16,
+            59.0,
+            256
+          ],
+          "max_raw_buffer": 837021600
+        },
+        {
+          "lo": 12801,
+          "groups": 189,
+          "calls_even_if_empty": 881051656,
+          "group_sizes": [
+            48,
+            160,
+            256
+          ],
+          "max_raw_buffer": 836948160
+        },
+        {
+          "lo": 25601,
+          "groups": 41,
+          "calls_even_if_empty": 962784009,
+          "group_sizes": [
+            77,
+            256,
+            256
+          ],
+          "max_raw_buffer": 835645440
+        },
+        {
+          "lo": 64001,
+          "groups": 4,
+          "calls_even_if_empty": 82580400,
+          "group_sizes": [
+            57,
+            256.0,
+            256
+          ],
+          "max_raw_buffer": 312918720
+        }
+      ],
+      "calls_all_bands": 5035697595,
+      "avoided_calls_against_old_exact_occupancy": 20152883542,
+      "hours_saved_if_fixed_rates_transfer": [
+        29848.659734984445,
+        60055.59295516
+      ]
+    },
+    "512": {
+      "bands": [
+        {
+          "lo": 0,
+          "groups": 2069,
+          "calls_even_if_empty": 1681729800,
+          "group_sizes": [
+            17,
+            48,
+            499
+          ],
+          "max_raw_buffer": 837018240
+        },
+        {
+          "lo": 6401,
+          "groups": 1362,
+          "calls_even_if_empty": 1408839126,
+          "group_sizes": [
+            35,
+            59.0,
+            499
+          ],
+          "max_raw_buffer": 837018240
+        },
+        {
+          "lo": 12801,
+          "groups": 181,
+          "calls_even_if_empty": 831727873,
+          "group_sizes": [
+            99,
+            157,
+            499
+          ],
+          "max_raw_buffer": 837018240
+        },
+        {
+          "lo": 25601,
+          "groups": 30,
+          "calls_even_if_empty": 657807777,
+          "group_sizes": [
+            155,
+            334.5,
+            499
+          ],
+          "max_raw_buffer": 836965440
+        },
+        {
+          "lo": 64001,
+          "groups": 2,
+          "calls_even_if_empty": 54496510,
+          "group_sizes": [
+            313,
+            412.5,
+            512
+          ],
+          "max_raw_buffer": 549174720
+        }
+      ],
+      "calls_all_bands": 4634601086,
+      "avoided_calls_against_old_exact_occupancy": 20553980051,
+      "hours_saved_if_fixed_rates_transfer": [
+        30442.728231092224,
+        61250.86055198
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-horner-price/PackedPriceScript.uo to produce theory-builder executable
+<<HOL message: Created theory "PackedPrice">>
+Saved definition ____ "actual_round_def"
+Saved theorem _______ "actual_rpre_rules"
+Saved theorem _______ "actual_rpre_ind"
+Saved theorem _______ "actual_rpre_strongind"
+Saved theorem _______ "actual_rpre_cases"
+Saved theorem _______ "cv_actual_round_thm"
+Finished translating actual_round, stored in cv_actual_round_thm
+
+WARNING: definition of cv_actual_round has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem actual_rpre[cv_pre]:
+  ∀r m d. actual_rpre r m d
+Proof
+  ho_match_mp_tac actual_round_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "actual_rpre_ok"
+Saved definition ____ "actual_steps_def"
+Saved definition ____ "actual_cell_def"
+Saved definition ____ "actual_groups_def"
+Starting translation of actual_steps from PackedPriceTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in PackedPrice)>>
+Saved theorem _______ "cv_actual_steps_thm"
+Finished translating actual_steps, stored in cv_actual_steps_thm
+Starting translation of actual_cell from PackedPriceTheory.
+Saved definition ____ "cv_actual_cell_def"
+Saved induction _____ "cv_actual_cell_ind"
+Saved theorem _______ "cv_actual_cell_thm"
+Finished translating actual_cell, stored in cv_actual_cell_thm
+Starting translation of actual_groups from PackedPriceTheory.
+Saved definition ____ "cv_actual_groups_def"
+Saved induction _____ "cv_actual_groups_ind"
+Saved theorem _______ "cv_actual_groups_thm"
+Finished translating actual_groups, stored in cv_actual_groups_thm
+ACTUAL_GROUP 0 0.73222 0.005356 0.024798
+ACTUAL_GROUP 1 0.345467 0.006663 0.023222
+ACTUAL_GROUP 2 0.76486 0.005571 0.070152
+ACTUAL_GROUP 3 0.466104 0.005999 0.028762
+ACTUAL_GROUP 4 0.338544 0.006547 0.050507
+ACTUAL_GROUP 5 0.318375 0.005617 0.327557
+ACTUAL_GROUP 6 0.542953 0.004482 0.025221
+ACTUAL_GROUP 7 0.324425 0.00605 0.02685
+ACTUAL_GROUP 8 0.336421 0.008955 0.454046
+ACTUAL_GROUP 9 0.715558 0.017296 0.0788
+ACTUAL_GROUP 10 0.371398 0.005801 0.030579
+ACTUAL_GROUP 11 0.386097 0.005786 0.029025
+ACTUAL_GROUP 12 0.36429 0.006344 0.029314
+ACTUAL_GROUP 13 0.368564 0.005835 0.055337
+ACTUAL_GROUP 14 0.362385 0.009713 0.034196
+ACTUAL_GROUP 15 0.410572 0.005976 0.026963
+ACTUAL_GROUP 16 0.345053 0.007157 0.061726
+ACTUAL_GROUP 17 0.35861 0.005815 0.029161
+ACTUAL_GROUP 18 0.399195 0.008148 0.031745
+ACTUAL_GROUP 19 0.420847 0.005801 0.034016
+ACTUAL_GROUP 20 0.416513 0.0069 0.031085
+ACTUAL_GROUP 21 0.424945 0.006098 0.037114
+ACTUAL_GROUP 22 0.385052 0.010849 0.078038
+ACTUAL_GROUP 23 0.427848 0.009638 0.131613
+ACTUAL_GROUP 24 0.449299 0.00899 0.09786
+ACTUAL_GROUP 25 0.369629 0.006344 0.055293
+ACTUAL_GROUP 26 0.395401 0.008303 0.036094
+ACTUAL_GROUP 27 0.416552 0.006483 0.032211
+ACTUAL_GROUP 28 0.389512 0.005942 0.032521
+ACTUAL_GROUP 29 0.46087 0.008399 0.038295
+ACTUAL_GROUP 30 0.466063 0.010493 0.047824
+ACTUAL_GROUP 31 0.448256 0.008388 0.030924
+ACTUAL_GROUP 32 0.349861 0.00586 0.028292
+ACTUAL_GROUP 33 0.463189 0.007085 0.040212
+ACTUAL_GROUP 34 0.352946 0.006269 0.025747
+ACTUAL_GROUP 35 0.326616 0.006039 0.024184
+ACTUAL_GROUP 36 0.32494 0.006155 0.02475
+ACTUAL_GROUP 37 0.389451 0.006572 0.033654
+ACTUAL_GROUP 38 0.357781 0.006451 0.030634
+ACTUAL_GROUP 39 0.319625 0.006446 0.060846
+ACTUAL_GROUP 40 0.327033 0.00608 0.052214
+ACTUAL_GROUP 41 0.282792 0.005399 0.021473
+ACTUAL_GROUP 42 0.28422 0.005741 0.026888
+ACTUAL_GROUP 43 0.299113 0.00579 0.027489
+ACTUAL_GROUP 44 0.36166 0.006049 0.02691
+ACTUAL_GROUP 45 0.35969 0.009328 0.031794
+ACTUAL_GROUP 46 0.399309 0.006417 0.04876
+ACTUAL_GROUP 47 0.384168 0.008574 0.039671
+ACTUAL_GROUP 48 0.427832 0.013881 0.042452
+ACTUAL_GROUP 49 0.50947 0.008398 0.037388
+ACTUAL_GROUP 50 0.488533 0.005986 0.035584
+ACTUAL_GROUP 51 0.366098 0.005463 0.024669
+ACTUAL_GROUP 52 0.323361 0.006322 0.030677
+ACTUAL_GROUP 53 0.333592 0.005836 0.029676
+ACTUAL_GROUP 54 0.36757 0.005761 0.041147
+ACTUAL_GROUP 55 0.321164 0.006106 0.026239
+ACTUAL_GROUP 56 0.289484 0.004469 0.025084
+ACTUAL_GROUP 57 0.246006 0.005791 0.021414
+ACTUAL_GROUP 58 0.33581 0.009019 0.037901
+ACTUAL_GROUP 59 0.372655 0.0146 0.024525
+ACTUAL_GROUP 60 0.277426 0.004741 0.021849
+ACTUAL_GROUP 61 0.271665 0.490082 0.085805
+ACTUAL_GROUP 62 0.552785 0.004804 0.026125
+ACTUAL_GROUP 63 0.565223 0.015618 0.108062
+ACTUAL_GROUP 64 0.010959 0.000147 0.000596
+Exporting theory "PackedPrice" ... done.
+Theory "PackedPrice" took 30.6s to build
+Holmake: [1/1] PackedPrice

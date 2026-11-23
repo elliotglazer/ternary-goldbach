@@ -1,0 +1,111 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-bluestein-hol/BlueScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Blue">>
+Saved definition ____ "blue_mul_def"
+Saved definition ____ "blue_add_def"
+Saved definition ____ "blue_sub_def"
+Saved definition ____ "blue_conj_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Blue)>>
+Saved definition ____ "blue_even_def"
+Saved induction _____ "blue_even_ind"
+Saved definition ____ "blue_odd_def"
+Saved induction _____ "blue_odd_ind"
+Saved definition ____ "blue_zip_mul_def"
+Saved definition ____ "blue_zip_add_def"
+Saved definition ____ "blue_zip_sub_def"
+Saved theorem _______ "blue_fft_compute"
+Saved definition ____ "blue_fft_def"
+Saved definition ____ "blue_conjs_def"
+Saved definition ____ "blue_run_def"
+Saved theorem _______ "blue_mul_pre_rules"
+Saved theorem _______ "blue_mul_pre_ind"
+Saved theorem _______ "blue_mul_pre_strongind"
+Saved theorem _______ "blue_mul_pre_cases"
+Saved theorem _______ "cv_blue_mul_thm"
+Finished translating blue_mul, stored in cv_blue_mul_thm
+
+WARNING: definition of cv_blue_mul has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem blue_mul_pre[cv_pre]:
+  ∀v0 v. blue_mul_pre v0 v
+Proof
+  ho_match_mp_tac blue_mul_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "blue_mul_pre_ok"
+Starting translation of blue_run from BlueTheory.
+Starting translation of blue_zip_mul from BlueTheory.
+Saved definition ____ "cv_blue_zip_mul_def"
+Saved induction _____ "cv_blue_zip_mul_ind"
+Saved theorem _______ "cv_blue_zip_mul_thm"
+Finished translating blue_zip_mul, stored in cv_blue_zip_mul_thm
+Starting translation of blue_run from BlueTheory.
+Starting translation of blue_fft from BlueTheory.
+Starting translation of blue_even from BlueTheory.
+Saved definition ____ "cv_blue_even_def"
+Saved induction _____ "cv_blue_even_ind"
+Saved theorem _______ "cv_blue_even_thm"
+Finished translating blue_even, stored in cv_blue_even_thm
+Starting translation of blue_fft from BlueTheory.
+Starting translation of blue_odd from BlueTheory.
+Saved definition ____ "cv_blue_odd_def"
+Saved induction _____ "cv_blue_odd_ind"
+Saved theorem _______ "cv_blue_odd_thm"
+Finished translating blue_odd, stored in cv_blue_odd_thm
+Starting translation of blue_fft from BlueTheory.
+Starting translation of blue_zip_add from BlueTheory.
+Starting translation of blue_add from BlueTheory.
+Saved theorem _______ "cv_blue_add_thm"
+Finished translating blue_add, stored in cv_blue_add_thm
+Starting translation of blue_zip_add from BlueTheory.
+Saved definition ____ "cv_blue_zip_add_def"
+Saved induction _____ "cv_blue_zip_add_ind"
+Saved theorem _______ "cv_blue_zip_add_thm"
+Finished translating blue_zip_add, stored in cv_blue_zip_add_thm
+Starting translation of blue_fft from BlueTheory.
+Starting translation of blue_zip_sub from BlueTheory.
+Starting translation of blue_sub from BlueTheory.
+Saved theorem _______ "cv_blue_sub_thm"
+Finished translating blue_sub, stored in cv_blue_sub_thm
+Starting translation of blue_zip_sub from BlueTheory.
+Saved definition ____ "cv_blue_zip_sub_def"
+Saved induction _____ "cv_blue_zip_sub_ind"
+Saved theorem _______ "cv_blue_zip_sub_thm"
+Finished translating blue_zip_sub, stored in cv_blue_zip_sub_thm
+Starting translation of blue_fft from BlueTheory.
+Saved definition ____ "cv_blue_fft_def"
+Saved induction _____ "cv_blue_fft_ind"
+Saved theorem _______ "cv_blue_fft_thm"
+Finished translating blue_fft, stored in cv_blue_fft_thm
+Starting translation of blue_run from BlueTheory.
+Starting translation of blue_conjs from BlueTheory.
+Starting translation of blue_conj from BlueTheory.
+Saved theorem _______ "cv_blue_conj_thm"
+Finished translating blue_conj, stored in cv_blue_conj_thm
+Starting translation of blue_conjs from BlueTheory.
+Saved definition ____ "cv_blue_conjs_def"
+Saved induction _____ "cv_blue_conjs_ind"
+Saved theorem _______ "cv_blue_conjs_thm"
+Finished translating blue_conjs, stored in cv_blue_conjs_thm
+Starting translation of blue_run from BlueTheory.
+Saved theorem _______ "cv_blue_run_thm"
+Finished translating blue_run, stored in cv_blue_run_thm
+Exporting theory "Blue" ... done.
+Theory "Blue" took 1.1s to build
+Holmake: [1/1] Blue

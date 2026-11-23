@@ -1,0 +1,23 @@
+{
+  "scope": "independent exact rational and integer source-bound checks only",
+  "N0": "989000000000000000000000000",
+  "tests": {
+    "sqrt_two_pi_lower": true,
+    "c0_bound_identity": true,
+    "scale_identity": true,
+    "chebyshev_floor": true,
+    "crude_root_floor": true,
+    "sqrt_N_floor": true,
+    "unchanged_strict_crude": true,
+    "top_odd_same_floor": true,
+    "gap": true,
+    "source_index": true,
+    "source_Proth": true
+  },
+  "rungs_required": 251837287,
+  "chunks_required": 61484,
+  "retained_half_open_end": 251838465,
+  "prefix_before_L126": 61198,
+  "partial_L126_chunks": 286,
+  "removed_chunks": 684
+}

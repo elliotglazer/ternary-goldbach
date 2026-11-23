@@ -1,0 +1,20 @@
+<<HOL message: Created theory "C10004Map">>
+Saved definition ____ "local41_def"
+Saved definition ____ "local61_def"
+Saved definition ____ "residue_def"
+Saved definition ____ "unit_map_def"
+Saved definition ____ "expected_units_def"
+Saved definition ____ "inv_input_def"
+Saved definition ____ "retained_label_def"
+Saved definition ____ "inv_label_def"
+
+Exception raised at TotalDefn.xDefine:
+at Defn.Hol_defn: between line 36, character 2 and line 40, character 38:
+at Defn.parse_quote:
+at Preterm.type-analysis: on line 38, characters 20-30:
+  
+Type error in function application.
+  Function: retained_label :num -> rat # num # num
+  Argument: inv_label i :rat
+  Reason: Attempt to unify different type operators: num$num and rat$rat
+

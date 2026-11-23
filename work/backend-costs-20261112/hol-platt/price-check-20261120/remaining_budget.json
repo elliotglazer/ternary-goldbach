@@ -1,0 +1,107 @@
+{
+  "large_axis_native_single_worker_wall_hours": [
+    85757.6484597193,
+    122263.0452859701
+  ],
+  "small_time_products_native_cpu_hours": 86425.67032552084,
+  "small_time_products_hol_paired_cpu_hours": 96634.9479308499,
+  "band1_samples": 44739119112240,
+  "scenarios": [
+    {
+      "small_product_price": "native",
+      "large_price_convention": "linear within native bins",
+      "target": 400000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 227816.68121475982,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 18.33160930852473,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 2.7006192198057257,
+        "6337\u20136400": 4.564349675567772
+      }
+    },
+    {
+      "small_product_price": "native",
+      "large_price_convention": "linear within native bins",
+      "target": 800000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 627816.6812147599,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 50.51820637556525,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 0.9799773186824173,
+        "6337\u20136400": 1.6562716890216156
+      }
+    },
+    {
+      "small_product_price": "native",
+      "large_price_convention": "native bin endpoints",
+      "target": 400000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 191311.28438850906,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 15.394148062477347,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 3.2159425924479788,
+        "6337\u20136400": 5.435304029844109
+      }
+    },
+    {
+      "small_product_price": "native",
+      "large_price_convention": "native bin endpoints",
+      "target": 800000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 591311.2843885091,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 47.58074512951786,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 1.0404775354780806,
+        "6337\u20136400": 1.7585238476665248
+      }
+    },
+    {
+      "small_product_price": "HOL paired rate",
+      "large_price_convention": "linear within native bins",
+      "target": 400000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 217607.40360943077,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 17.51010454695401,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 2.8273215785672403,
+        "6337\u20136400": 4.778490886541007
+      }
+    },
+    {
+      "small_product_price": "HOL paired rate",
+      "large_price_convention": "linear within native bins",
+      "target": 800000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 617607.4036094309,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 49.696701613994534,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 0.996176704303257,
+        "6337\u20136400": 1.6836504693993233
+      }
+    },
+    {
+      "small_product_price": "HOL paired rate",
+      "large_price_convention": "native bin endpoints",
+      "target": 400000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 181102.00678318,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 14.57264330090663,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 3.397235175960932,
+        "6337\u20136400": 5.741708849402386
+      }
+    },
+    {
+      "small_product_price": "HOL paired rate",
+      "large_price_convention": "native bin endpoints",
+      "target": 800000,
+      "hypothetical_hours_left_for_band1_and_all_other_work": 581102.00678318,
+      "microseconds_per_band1_complex_if_it_gets_whole_remainder": 46.75924036794714,
+      "measured_delayed_kernel_to_allowance_by_height": {
+        "1\u201364": 1.0587574998867526,
+        "6337\u20136400": 1.789419039778841
+      }
+    }
+  ],
+  "comparison": "Each scenario treats native single-worker large-axis wall time as attainable HOL CPU time. The small product row uses either native or benchmark-scaled stock HOL rates. Other costs remain open.",
+  "sha256": {
+    "large-kronecker-price\\price.json": "42c90f4f694ec5d0676d5bb3c73faf96db199d3bf35e6457dfc58bd8e86dfae2",
+    "c10000-kronecker-time-price\\tiles.json": "bc04cd5fefdfba8b59f151dba5fea7f30aac80592320ea4b2cc11e0f37b18ebb",
+    "c10004-effective-degree\\counts.json": "552e20bb351e599233822bc5b33e407cb89a7cf80077f16cbfd78263912ff45a",
+    "c10004-lane-horner\\throughput.json": "e17f108a7945f4865f4d13047ce7060ef0a32d8e2e4dc83309e7bfc06f074618",
+    "c10000-kronecker-time-hol\\projection.json": "e59c0bb1edbbf4468ef253a0b213d552182b005cd5e25273276d82d462d747a8"
+  }
+}

@@ -1,0 +1,35 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-kronecker-hol/KronProductsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "KronProducts">>
+Saved theorem _______ "kp_repeat_compute"
+Saved definition ____ "kp_repeat_def"
+Saved definition ____ "kp_full_def"
+Starting translation of kp_repeat from KronProductsTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in KronProducts)>>
+Saved theorem _______ "cv_kp_repeat_thm"
+Finished translating kp_repeat, stored in cv_kp_repeat_thm
+Starting translation of kp_full from KronProductsTheory.
+Saved theorem _______ "cv_kp_full_thm"
+Finished translating kp_full, stored in cv_kp_full_thm
+KR_LOAD 0.160557
+KR_RUN rep0 2.314824 0.063521 0.000115 0.00000400000000012
+KR_RUN rep1 1.832364 0.101358 0.000311 0.00000700000000009
+KR_RUN rep8 1.76301 0.092259 0.000112 0.00000299999999998
+KR_RUN rep24 1.827428 0.148905 0.000107 0.00000400000000012
+Exporting theory "KronProducts" ... done.
+Theory "KronProducts" took 9.1s to build
+Holmake: [1/1] KronProducts

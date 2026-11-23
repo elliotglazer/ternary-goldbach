@@ -1,0 +1,107 @@
+{
+  "status": "PASS_SAVED_DATA_CONSISTENCY_ONLY",
+  "receipt_sha256": "CF90E96C7531F57E455ABCE70D8D71FB06596E9E1490FADDBAFA6DE64FCB0B09",
+  "producer_sha256": "AA4496B7EE84D4BCA497B5BDFFC237A6DC0949F45C5F9E134B29498C5B58D084",
+  "review_script_sha256": "59C6120523CC7F33150B76F214A3CB55F3C121C8D76657245171026319AE2920",
+  "baseline": {
+    "panels": 14,
+    "models": 13,
+    "coefficient_boxes": 312,
+    "old_coefficient_containments": 144,
+    "side_lengths": {
+      "bottom": "1871/1250",
+      "right": "1/8",
+      "top": "1871/1250",
+      "left": "1/8"
+    },
+    "twice_area": "1871/5000",
+    "minimum_saved_margin": "59497651057820038109888342225681522796535744544368568403/392318858461667547739736838950479151006397215279002157056",
+    "crossings": [
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "winding": 0
+  },
+  "negative_controls": [
+    {
+      "case": "target",
+      "rejected": true,
+      "reason": "exact target"
+    },
+    {
+      "case": "gap",
+      "rejected": true,
+      "reason": "oriented panel endpoints"
+    },
+    {
+      "case": "orientation",
+      "rejected": true,
+      "reason": "closed adjacency"
+    },
+    {
+      "case": "wrong_model",
+      "rejected": true,
+      "reason": "side/model association"
+    },
+    {
+      "case": "model_center",
+      "rejected": true,
+      "reason": "model center"
+    },
+    {
+      "case": "model_radius",
+      "rejected": true,
+      "reason": "model radius"
+    },
+    {
+      "case": "lost_positive_image",
+      "rejected": true,
+      "reason": "strict whole-box margin"
+    },
+    {
+      "case": "false_margin",
+      "rejected": true,
+      "reason": "strict whole-box margin"
+    },
+    {
+      "case": "wrong_rotation",
+      "rejected": true,
+      "reason": "chosen signed coordinate"
+    },
+    {
+      "case": "zero_vertex",
+      "rejected": true,
+      "reason": "both shared vertices in panel halfplane"
+    },
+    {
+      "case": "crossing",
+      "rejected": true,
+      "reason": "exact crossing list"
+    },
+    {
+      "case": "winding",
+      "rejected": true,
+      "reason": "exact winding zero"
+    },
+    {
+      "case": "old_box_narrowing",
+      "rejected": true,
+      "reason": "full old coefficient containment"
+    }
+  ],
+  "actual_file_bytes": 204498,
+  "saved_output_bytes": 200234,
+  "scope": "No analytic model recomputation; new coefficient and image true-value containment remains separate."
+}

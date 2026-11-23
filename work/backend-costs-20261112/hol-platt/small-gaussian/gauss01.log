@@ -1,0 +1,87 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-gaussian/GaussScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Gauss">>
+Saved definition ____ "gcut_def"
+Saved definition ____ "gmul_def"
+Saved definition ____ "entry_def"
+Saved theorem _______ "terms_compute"
+Saved definition ____ "terms_def"
+Saved definition ____ "plus_def"
+Saved definition ____ "zipplus_def"
+Saved theorem _______ "buckets_compute"
+Saved definition ____ "buckets_def"
+Saved definition ____ "produce_def"
+Saved definition ____ "eqvec_def"
+Saved theorem _______ "gloop_compute"
+Saved definition ____ "gloop_def"
+Saved definition ____ "signature_def"
+Saved definition ____ "test_def"
+Starting translation of test from GaussTheory.
+Starting translation of produce from GaussTheory.
+Starting translation of entry from GaussTheory.
+Saved theorem _______ "cv_entry_thm"
+Finished translating entry, stored in cv_entry_thm
+Starting translation of produce from GaussTheory.
+Starting translation of gmul from GaussTheory.
+Starting translation of gcut from GaussTheory.
+Saved theorem _______ "cv_gcut_thm"
+Finished translating gcut, stored in cv_gcut_thm
+Starting translation of gmul from GaussTheory.
+Saved theorem _______ "cv_gmul_thm"
+Finished translating gmul, stored in cv_gmul_thm
+Starting translation of produce from GaussTheory.
+Starting translation of terms from GaussTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Gauss)>>
+Saved definition ____ "cv_terms_def"
+Saved induction _____ "cv_terms_ind"
+Saved theorem _______ "cv_terms_thm"
+Finished translating terms, stored in cv_terms_thm
+Starting translation of produce from GaussTheory.
+Starting translation of buckets from GaussTheory.
+Starting translation of zipplus from GaussTheory.
+Starting translation of plus from GaussTheory.
+Saved theorem _______ "cv_plus_thm"
+Finished translating plus, stored in cv_plus_thm
+Starting translation of zipplus from GaussTheory.
+Saved definition ____ "cv_zipplus_def"
+Saved induction _____ "cv_zipplus_ind"
+Saved theorem _______ "cv_zipplus_thm"
+Finished translating zipplus, stored in cv_zipplus_thm
+Starting translation of buckets from GaussTheory.
+Saved theorem _______ "cv_buckets_thm"
+Finished translating buckets, stored in cv_buckets_thm
+Starting translation of produce from GaussTheory.
+Saved theorem _______ "cv_produce_thm"
+Finished translating produce, stored in cv_produce_thm
+Starting translation of test from GaussTheory.
+Starting translation of gloop from GaussTheory.
+Starting translation of eqvec from GaussTheory.
+Saved theorem _______ "cv_eqvec_thm"
+Finished translating eqvec, stored in cv_eqvec_thm
+Starting translation of gloop from GaussTheory.
+Saved theorem _______ "cv_gloop_thm"
+Finished translating gloop, stored in cv_gloop_thm
+Starting translation of test from GaussTheory.
+Starting translation of signature from GaussTheory.
+Saved theorem _______ "cv_signature_thm"
+Finished translating signature, stored in cv_signature_thm
+Starting translation of test from GaussTheory.
+Saved theorem _______ "cv_test_thm"
+Finished translating test, stored in cv_test_thm
+Exporting theory "Gauss" ... done.
+Theory "Gauss" took 0.73818s to build
+Holmake: [1/1] Gauss

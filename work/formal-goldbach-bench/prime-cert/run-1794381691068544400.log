@@ -1,0 +1,73 @@
+PrimeSamples32.lean:9:13: warning: This simp argument is unused:
+  Nat.Prime.dvd_mul hq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.prime_dvd_prime_iff_eq hq prime_2] at hd
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'prime_3999999988766605309' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988766605261' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988766605193' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988766605099' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988765673297' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988766107327' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988766040709' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999988765879447' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176670707' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176670627' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176670623' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176670593' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980175864121' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176594789' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176195003' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999980176382437' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928637063159' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928637063129' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928637063093' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928637063089' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928636075751' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928636623547' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928636585183' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_3999999928636925483' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793368063' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793368059' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793367949' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793367889' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985792685463' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793146801' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985792775139' depends on axioms: [propext, Classical.choice, Quot.sound]
+'prime_1999999985793034427' depends on axioms: [propext, Classical.choice, Quot.sound]
+prime_3999999988766605309 : Nat.Prime 3999999988766605309
+prime_3999999988766605261 : Nat.Prime 3999999988766605261
+prime_3999999988766605193 : Nat.Prime 3999999988766605193
+prime_3999999988766605099 : Nat.Prime 3999999988766605099
+prime_3999999988765673297 : Nat.Prime 3999999988765673297
+prime_3999999988766107327 : Nat.Prime 3999999988766107327
+prime_3999999988766040709 : Nat.Prime 3999999988766040709
+prime_3999999988765879447 : Nat.Prime 3999999988765879447
+prime_3999999980176670707 : Nat.Prime 3999999980176670707
+prime_3999999980176670627 : Nat.Prime 3999999980176670627
+prime_3999999980176670623 : Nat.Prime 3999999980176670623
+prime_3999999980176670593 : Nat.Prime 3999999980176670593
+prime_3999999980175864121 : Nat.Prime 3999999980175864121
+prime_3999999980176594789 : Nat.Prime 3999999980176594789
+prime_3999999980176195003 : Nat.Prime 3999999980176195003
+prime_3999999980176382437 : Nat.Prime 3999999980176382437
+prime_3999999928637063159 : Nat.Prime 3999999928637063159
+prime_3999999928637063129 : Nat.Prime 3999999928637063129
+prime_3999999928637063093 : Nat.Prime 3999999928637063093
+prime_3999999928637063089 : Nat.Prime 3999999928637063089
+prime_3999999928636075751 : Nat.Prime 3999999928636075751
+prime_3999999928636623547 : Nat.Prime 3999999928636623547
+prime_3999999928636585183 : Nat.Prime 3999999928636585183
+prime_3999999928636925483 : Nat.Prime 3999999928636925483
+prime_1999999985793368063 : Nat.Prime 1999999985793368063
+prime_1999999985793368059 : Nat.Prime 1999999985793368059
+prime_1999999985793367949 : Nat.Prime 1999999985793367949
+prime_1999999985793367889 : Nat.Prime 1999999985793367889
+prime_1999999985792685463 : Nat.Prime 1999999985792685463
+prime_1999999985793146801 : Nat.Prime 1999999985793146801
+prime_1999999985792775139 : Nat.Prime 1999999985792775139
+prime_1999999985793034427 : Nat.Prime 1999999985793034427
+
+{"exit": 0, "wall_seconds": 27.704577900000004, "whole_process_cpu_seconds": 35.265625, "args": ["-j", "1", "-t", "0", "-o", "PrimeSamples32.olean", "PrimeSamples32.lean"]}

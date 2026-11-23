@@ -1,0 +1,75 @@
+{
+  "deadline": "2026-11-21T15:00:00-08:00",
+  "utilization": 0.7,
+  "binary_only": {
+    "4000000000000000": {
+      "best_span": 8589934592,
+      "total_core_hours": 51541.34067444784,
+      "table_core_hours": 14340.079272786457,
+      "blocks": 465662,
+      "assembly_allowance_hours": 10308.268134889568,
+      "planning_cpu_seconds_per_block_after_table": 287.6003217913014,
+      "allowed_seconds_per_block_10h_10000cores": 430.3029120219574,
+      "min_cores": {
+        "10": 7364,
+        "18": 4091,
+        "24": 3068,
+        "29": 2539
+      },
+      "max_all_in_price_per_allocated_core_hour_for_10000_USD": 0.13581330847046288,
+      "conditional_fleet_start_times": {
+        "2048": {
+          "wall_hours": 35.952386073136054,
+          "latest_start": "2026-11-20T03:02-08:00"
+        },
+        "4096": {
+          "wall_hours": 17.976193036568027,
+          "latest_start": "2026-11-20T21:01-08:00"
+        },
+        "8192": {
+          "wall_hours": 8.988096518284014,
+          "latest_start": "2026-11-21T06:00-08:00"
+        },
+        "10000": {
+          "wall_hours": 7.363048667778263,
+          "latest_start": "2026-11-21T07:38-08:00"
+        }
+      }
+    },
+    "10000000000000000": {
+      "best_span": 8589934592,
+      "total_core_hours": 101965.67990776224,
+      "table_core_hours": 14340.079272786457,
+      "blocks": 1164154,
+      "assembly_allowance_hours": 20393.13598155245,
+      "planning_cpu_seconds_per_block_after_table": 270.97116213654965,
+      "allowed_seconds_per_block_10h_10000cores": 172.12131265963845,
+      "min_cores": {
+        "10": 14567,
+        "18": 8093,
+        "24": 6070,
+        "29": 5023
+      },
+      "max_all_in_price_per_allocated_core_hour_for_10000_USD": 0.06865054993339105,
+      "conditional_fleet_start_times": {
+        "2048": {
+          "wall_hours": 71.12561377494576,
+          "latest_start": "2026-11-18T15:52-08:00"
+        },
+        "4096": {
+          "wall_hours": 35.56280688747288,
+          "latest_start": "2026-11-20T03:26-08:00"
+        },
+        "8192": {
+          "wall_hours": 17.78140344373644,
+          "latest_start": "2026-11-20T21:13-08:00"
+        },
+        "10000": {
+          "wall_hours": 14.566525701108892,
+          "latest_start": "2026-11-21T00:26-08:00"
+        }
+      }
+    }
+  },
+  "timing_scope": "Available window starts after validated checker and data path are ready."
+}

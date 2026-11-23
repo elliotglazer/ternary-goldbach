@@ -1,0 +1,46 @@
+SOURCE_LOG_RANGE_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+SOURCE_LOG_RANGE_TYPE,source_raw_log129,:num -> num -> int
+SOURCE_LOG_RANGE_TYPE,source_log_from_two,:num -> num -> num -> int -> num -> num -> num -> int
+SOURCE_LOG_RANGE_TYPE,slr_numerator,:num -> num -> num -> num -> int
+SOURCE_LOG_RANGE_TYPE,slr_error_bound,:num -> real
+SOURCE_LOG_RANGE_ROOT,slr_domain_bounds,⊢ ∀A D k.
+    source_log_domain A D k ⇒
+    0 < D ∧ 0 < 2 ** k * D ∧ 0 < A ∧ 0 < A + 2 ** k * D ∧
+    3 * (A − 2 ** k * D) ≤ A + 2 ** k * D
+SOURCE_LOG_RANGE_ROOT,slr_reduced_ratio,⊢ ∀A D k.
+    source_log_domain A D k ⇒
+    (1 + &(A − 2 ** k * D) / &(A + 2 ** k * D)) /
+    (1 − &(A − 2 ** k * D) / &(A + 2 ** k * D)) =
+    &A / &(2 ** k * D)
+SOURCE_LOG_RANGE_ROOT,slr_log_decomposition,⊢ ∀A D k.
+    source_log_domain A D k ⇒
+    ln (&A / &D) = &k * ln 2 + ln (&A / &(2 ** k * D))
+SOURCE_LOG_RANGE_ROOT,slr_reduced_center_error,⊢ ∀grid A D k.
+    0 < grid ∧ source_log_domain A D k ⇒
+    abs
+      (real_of_int
+         (source_log_center grid (A − 2 ** k * D) (A + 2 ** k * D) 45) /
+       &grid − ln (&A / &(2 ** k * D))) ≤ slr_error_bound grid
+SOURCE_LOG_RANGE_ROOT,slr_abs_sub_triangle,⊢ ∀a b c. abs (a − c) ≤ abs (a − b) + abs (b − c)
+SOURCE_LOG_RANGE_ROOT,slr_affine_error,⊢ ∀k a b c d e.
+    0 ≤ k ∧ abs (a − c) ≤ e ∧ abs (b − d) ≤ e ⇒
+    abs (k * a + b − (k * c + d)) ≤ (k + 1) * e
+SOURCE_LOG_RANGE_ROOT,slr_numerator_error,⊢ ∀grid A D k.
+    0 < grid ∧ source_log_domain A D k ⇒
+    abs (real_of_int (slr_numerator grid k A D) / &grid − ln (&A / &D)) ≤
+    (&k + 1) * slr_error_bound grid
+SOURCE_LOG_RANGE_ROOT,slr_from_two_numerator,⊢ ∀grid out_div k A D.
+    source_log_from_two grid 45 out_div (source_log_center grid 1 3 45) k A D =
+    round_scaled (&out_div) (slr_numerator grid k A D)
+SOURCE_LOG_RANGE_ROOT,slr_raw_regrid_error,⊢ ∀k x.
+    abs
+      (real_of_int (source_raw_log129 k x) / 2 pow 129 −
+       real_of_int (slr_numerator (2 ** 137) k x 1) / 2 pow 137) ≤
+    1 / 2 pow 130
+SOURCE_LOG_RANGE_ROOT,slr_raw_budget,⊢ ∀k. k ≤ 18 ⇒
+      (&k + 1) * slr_error_bound (2 ** 137) + 1 / 2 pow 130 < 1 / 2 pow 128
+SOURCE_LOG_RANGE_ROOT,source_raw_log129_error,⊢ ∀k x.
+    source_log_domain x 1 k ∧ k ≤ 18 ⇒
+    abs (real_of_int (source_raw_log129 k x) / 2 pow 129 − ln (&x)) ≤
+    1 / 2 pow 128
+SOURCE_LOG_RANGE_EXACT_AUDIT_DONE

@@ -1,0 +1,47 @@
+{
+  "status": "PASS: external structural/math replay; no new Lean or full-range count proof",
+  "input_sha256": {
+    "RESUME_PSI_KERNEL_REPLAY_ARCHITECTURE_2026-11-11.md": "a610492380f798e3c369f052af33662e60546180936956da78f721e42a900d97",
+    "resume_psi_kernel_replay_sizing_20261111.py": "9345b75e48ac08927850e4bfb0cca0d07a17f55136b299ddaa1f004bf6090deb",
+    "resume_psi_kernel_replay_sizing_20261111.json": "9b2c790fc5ae6d012e93d767b3c0a5e4e7c40272cdab6a070e3f614428cad724"
+  },
+  "all_grid_and_cell_endpoints_checked": true,
+  "all_theta_states_recomputed": true,
+  "complete_small_base_recomputed": true,
+  "sizing": {
+    "pattern_payload_bytes_rounded_individually": 100387363,
+    "pattern_payload_bytes_fixed_width_upper": 114753536,
+    "pattern_hex_digits_no_leading_zeros": 200771450,
+    "pattern_hex_digits_fixed_width_upper": 229507072,
+    "pattern_chunks_of_64": 110,
+    "last_pattern_chunk_size": 28,
+    "base_integer_chunks_of_256_for_0_through_70710": 277,
+    "windows": 6439,
+    "subcells": 125271,
+    "subcells_per_window_min": 8,
+    "subcells_per_window_max": 39,
+    "count_modules_at_128_declarations": 979,
+    "syntactic_one_pass_base_leaf_visits": 877398084,
+    "syntactic_pcL7_leaf_occurrences": 16034688,
+    "syntactic_one_pass_outer_chunk_result_visits": 13779810,
+    "syntactic_one_pass_outer_binary_ors": 13654539,
+    "syntactic_one_pass_all_binary_ors": 877272813,
+    "dynamic_kernel_work_bound_claimed": false,
+    "true_prime_bits_over_all_cells": 184106689,
+    "materialized_all_cell_masks_bytes_fixed_width": 513110016,
+    "new_endpoint_log_boxes": 6439,
+    "new_log_boolean_checks": 12878
+  },
+  "balanced_tree_operations_syntactic_only": {
+    "inner_binary_OR_operations": 863618274,
+    "outer_binary_OR_operations": 13654539,
+    "total_binary_OR_operations": 877272813,
+    "outer_chunk_result_visits": 13779810
+  },
+  "final_theta_scaled": [
+    4999882220821805278,
+    4999930929840072558
+  ],
+  "lower_interpolation_coefficient": "7/20000",
+  "upper_interpolation_coefficient": "572053/1440000000"
+}

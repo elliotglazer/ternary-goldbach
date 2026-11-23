@@ -1,0 +1,268 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 31 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val show = fn: string -> unit
+val expected =
+   “($! :(num -> bool) -> bool)
+      (λ(n :num).
+         ($! :(real -> bool) -> bool)
+           (λ(x :real).
+              realax$real_lte (0 :real) (x :real) ∧
+              realax$real_lt (x :real) (1 :real) ⇒
+              ($diffl :(real -> real) -> real -> real -> bool)
+                ((sl_remainder :num -> real -> real) (n :num))
+                (realax$real_mul (2 :real)
+                   ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+                 realax$real_sub (1 :real) (x :real)²) (x :real)))”: term
+OK..
+2 subgoals:
+OK..
+
+Goal proved.
+⊢ ($! :(real -> bool) -> bool)
+    (λ(x :real).
+       realax$real_lte (0 :real) (x :real) ∧
+       realax$real_lt (x :real) (1 :real) ⇒
+       ($diffl :(real -> real) -> real -> real -> bool)
+         ((sl_remainder :num -> real -> real) (0 :num))
+         (realax$real_mul (2 :real)
+            ((x :real) pow arithmetic$* (2 :num) (0 :num)) /
+          realax$real_sub (1 :real) (x :real)²) (x :real))
+
+Remaining subgoals:
+OK..
+1 subgoal:
+OK..
+metis: r[+0+5]+0+0+0+0+1#
+1 subgoal:
+OK..
+metis: r[+0+6]#
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+GOAL_STATE,before_identity
+ASSUM ($= :num -> num -> bool) (arithmetic$* (2 :num) ((SUC :num -> num) (n :num)))
+  (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (2 :num))
+ASSUM realax$real_lt (0 :real) (realax$real_sub (1 :real) (x :real))
+ASSUM realax$real_lt (0 :real) (realax$real_add (1 :real) (x :real))
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(y :real).
+     realax$real_mul (2 :real)
+       ((y :real) pow arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+     (realax$real_of_num
+        (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)))
+  (x :real)
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  ((sl_remainder :num -> real -> real) (n :num))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+ASSUM realax$real_lt (x :real) (1 :real)
+ASSUM realax$real_lte (0 :real) (x :real)
+ASSUM ($! :(real -> bool) -> bool)
+  (λ(x :real).
+     realax$real_lte (0 :real) (x :real) ∧ realax$real_lt (x :real) (1 :real) ⇒
+     ($diffl :(real -> real) -> real -> real -> bool)
+       ((sl_remainder :num -> real -> real) (n :num))
+       (realax$real_mul (2 :real)
+          ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+        realax$real_sub (1 :real) (x :real)²) (x :real))
+GOAL ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(x :real).
+     realax$real_sub ((sl_remainder :num -> real -> real) (n :num) (x :real))
+       (realax$real_mul (2 :real)
+          ((x :real) pow
+           arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+        (realax$real_of_num
+           (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real)))
+  (realax$real_mul (2 :real)
+     ((x :real) pow arithmetic$* (2 :num) ((SUC :num -> num) (n :num))) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+OK..
+2 subgoals:
+GOAL_STATE,identity
+ASSUM ($= :num -> num -> bool) (arithmetic$* (2 :num) ((SUC :num -> num) (n :num)))
+  (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (2 :num))
+ASSUM realax$real_lt (0 :real) (realax$real_sub (1 :real) (x :real))
+ASSUM realax$real_lt (0 :real) (realax$real_add (1 :real) (x :real))
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(y :real).
+     realax$real_mul (2 :real)
+       ((y :real) pow arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+     (realax$real_of_num
+        (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)))
+  (x :real)
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  ((sl_remainder :num -> real -> real) (n :num))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+ASSUM realax$real_lt (x :real) (1 :real)
+ASSUM realax$real_lte (0 :real) (x :real)
+ASSUM ($! :(real -> bool) -> bool)
+  (λ(x :real).
+     realax$real_lte (0 :real) (x :real) ∧ realax$real_lt (x :real) (1 :real) ⇒
+     ($diffl :(real -> real) -> real -> real -> bool)
+       ((sl_remainder :num -> real -> real) (n :num))
+       (realax$real_mul (2 :real)
+          ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+        realax$real_sub (1 :real) (x :real)²) (x :real))
+GOAL ($= :real -> real -> bool)
+  (realax$real_sub
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+      realax$real_sub (1 :real) (x :real)²)
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num))))
+  (realax$real_mul (2 :real)
+     ((x :real) pow arithmetic$* (2 :num) ((SUC :num -> num) (n :num))) /
+   realax$real_sub (1 :real) (x :real)²)
+ASSUM ($= :real -> real -> bool)
+  (realax$real_sub
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+      realax$real_sub (1 :real) (x :real)²)
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num))))
+  (realax$real_mul (2 :real)
+     ((x :real) pow arithmetic$* (2 :num) ((SUC :num -> num) (n :num))) /
+   realax$real_sub (1 :real) (x :real)²)
+ASSUM ($= :num -> num -> bool) (arithmetic$* (2 :num) ((SUC :num -> num) (n :num)))
+  (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (2 :num))
+ASSUM realax$real_lt (0 :real) (realax$real_sub (1 :real) (x :real))
+ASSUM realax$real_lt (0 :real) (realax$real_add (1 :real) (x :real))
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(y :real).
+     realax$real_mul (2 :real)
+       ((y :real) pow arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+     (realax$real_of_num
+        (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)))
+  (x :real)
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  ((sl_remainder :num -> real -> real) (n :num))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+ASSUM realax$real_lt (x :real) (1 :real)
+ASSUM realax$real_lte (0 :real) (x :real)
+ASSUM ($! :(real -> bool) -> bool)
+  (λ(x :real).
+     realax$real_lte (0 :real) (x :real) ∧ realax$real_lt (x :real) (1 :real) ⇒
+     ($diffl :(real -> real) -> real -> real -> bool)
+       ((sl_remainder :num -> real -> real) (n :num))
+       (realax$real_mul (2 :real)
+          ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+        realax$real_sub (1 :real) (x :real)²) (x :real))
+GOAL ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(x :real).
+     realax$real_sub ((sl_remainder :num -> real -> real) (n :num) (x :real))
+       (realax$real_mul (2 :real)
+          ((x :real) pow
+           arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+        (realax$real_of_num
+           (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real)))
+  (realax$real_mul (2 :real)
+     ((x :real) pow arithmetic$* (2 :num) ((SUC :num -> num) (n :num))) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+OK..
+1 subgoal:
+GOAL_STATE,simplified_identity
+ASSUM ($= :num -> num -> bool) (arithmetic$* (2 :num) ((SUC :num -> num) (n :num)))
+  (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (2 :num))
+ASSUM realax$real_lt (0 :real) (realax$real_sub (1 :real) (x :real))
+ASSUM realax$real_lt (0 :real) (realax$real_add (1 :real) (x :real))
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(y :real).
+     realax$real_mul (2 :real)
+       ((y :real) pow arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+     (realax$real_of_num
+        (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)))
+  (x :real)
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  ((sl_remainder :num -> real -> real) (n :num))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+ASSUM realax$real_lt (x :real) (1 :real)
+ASSUM realax$real_lte (0 :real) (x :real)
+ASSUM ($! :(real -> bool) -> bool)
+  (λ(x :real).
+     realax$real_lte (0 :real) (x :real) ∧ realax$real_lt (x :real) (1 :real) ⇒
+     ($diffl :(real -> real) -> real -> real -> bool)
+       ((sl_remainder :num -> real -> real) (n :num))
+       (realax$real_mul (2 :real)
+          ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+        realax$real_sub (1 :real) (x :real)²) (x :real))
+GOAL ($= :real -> real -> bool)
+  (realax$real_sub
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+      realax$real_sub (1 :real) (realax$real_mul (x :real) (x :real)))
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num))))
+  (realax$real_mul (2 :real)
+     (realax$real_mul ((x :real) pow arithmetic$* (2 :num) (n :num))
+        (realax$real_mul (x :real) (x :real))) /
+   realax$real_sub (1 :real) (realax$real_mul (x :real) (x :real)))
+OK..
+8 basis elements and 10 critical pairs
+8 basis elements and 9 critical pairs
+8 basis elements and 8 critical pairs
+8 basis elements and 7 critical pairs
+8 basis elements and 6 critical pairs
+8 basis elements and 5 critical pairs
+8 basis elements and 4 critical pairs
+8 basis elements and 3 critical pairs
+8 basis elements and 2 critical pairs
+8 basis elements and 1 critical pairs
+8 basis elements and 0 critical pairs
+DIAGNOSTIC_EXCEPTION HOL_ERR (at RealArith.?: linear_ineqs: no contradiction)
+GOAL_STATE,at_failure
+ASSUM ($= :num -> num -> bool) (arithmetic$* (2 :num) ((SUC :num -> num) (n :num)))
+  (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (2 :num))
+ASSUM realax$real_lt (0 :real) (realax$real_sub (1 :real) (x :real))
+ASSUM realax$real_lt (0 :real) (realax$real_add (1 :real) (x :real))
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  (λ(y :real).
+     realax$real_mul (2 :real)
+       ((y :real) pow arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) /
+     (realax$real_of_num
+        (arithmetic$+ (arithmetic$* (2 :num) (n :num)) (1 :num)) :real))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)))
+  (x :real)
+ASSUM ($diffl :(real -> real) -> real -> real -> bool)
+  ((sl_remainder :num -> real -> real) (n :num))
+  (realax$real_mul (2 :real) ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+   realax$real_sub (1 :real) (x :real)²) (x :real)
+ASSUM realax$real_lt (x :real) (1 :real)
+ASSUM realax$real_lte (0 :real) (x :real)
+ASSUM ($! :(real -> bool) -> bool)
+  (λ(x :real).
+     realax$real_lte (0 :real) (x :real) ∧ realax$real_lt (x :real) (1 :real) ⇒
+     ($diffl :(real -> real) -> real -> real -> bool)
+       ((sl_remainder :num -> real -> real) (n :num))
+       (realax$real_mul (2 :real)
+          ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+        realax$real_sub (1 :real) (x :real)²) (x :real))
+GOAL ($= :real -> real -> bool)
+  (realax$real_sub
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num)) /
+      realax$real_sub (1 :real) (realax$real_mul (x :real) (x :real)))
+     (realax$real_mul (2 :real)
+        ((x :real) pow arithmetic$* (2 :num) (n :num))))
+  (realax$real_mul (2 :real)
+     (realax$real_mul ((x :real) pow arithmetic$* (2 :num) (n :num))
+        (realax$real_mul (x :real) (x :real))) /
+   realax$real_sub (1 :real) (realax$real_mul (x :real) (x :real)))

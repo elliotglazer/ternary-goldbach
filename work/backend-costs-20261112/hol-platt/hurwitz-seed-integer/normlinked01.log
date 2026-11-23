@@ -1,0 +1,34 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/NormalizedLinkedScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/seedbench.sml:32: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+<<HOL message: Created theory "NormalizedLinked">>
+Saved definition ____ "normalized_link_def"
+Starting translation of normalized_link from NormalizedLinkedTheory.
+Saved theorem _______ "cv_normalized_link_thm"
+Finished translating normalized_link, stored in cv_normalized_link_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-seed-integer/NormalizedLinkedScript.sml:27: warning: Pattern is not exhaustive. Found near val id :: args = fields ()
+JOIN_EVAL 0.002965 12.783353 0.000128
+Saved theorem _______ "normalized_pair_1"
+LINKED 1 0.665664 12.789014
+JOIN_EVAL 0.005195 94.881238 0.000349999999997
+Saved theorem _______ "normalized_pair_6"
+LINKED 6 5.263954 94.894922
+NORMALIZED_LINK_DONE
+Exporting theory "NormalizedLinked" ... done.
+Theory "NormalizedLinked" took 1m57s to build
+Holmake: [1/1] NormalizedLinked

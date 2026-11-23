@@ -1,0 +1,124 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-character-kernel/SmallFFTScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SmallFFT">>
+Saved definition ____ "divs_def"
+Saved definition ____ "addz_def"
+Saved definition ____ "subz_def"
+Saved definition ____ "mulz_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SmallFFT)>>
+Saved definition ____ "split_par_def"
+Saved induction _____ "split_par_ind"
+Saved theorem _______ "root_tree_compute"
+Saved definition ____ "root_tree_def"
+Saved definition ____ "merge_fft_def"
+Saved definition ____ "fft_def"
+Saved definition ____ "point_def"
+Saved definition ____ "work_def"
+Saved definition ____ "vec_eq_def"
+Saved theorem _______ "loop_compute"
+Saved definition ____ "loop_def"
+Saved definition ____ "safe_mod_def"
+Saved theorem _______ "inputs_compute"
+Saved definition ____ "inputs_def"
+Saved theorem _______ "roots_compute"
+Saved definition ____ "roots_def"
+Saved definition ____ "digest_def"
+Saved definition ____ "panel_def"
+Starting translation of panel from SmallFFTTheory.
+Starting translation of divs from SmallFFTTheory.
+Saved theorem _______ "cv_divs_thm"
+Finished translating divs, stored in cv_divs_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of roots from SmallFFTTheory.
+Starting translation of mulz from SmallFFTTheory.
+Saved theorem _______ "cv_mulz_thm"
+Finished translating mulz, stored in cv_mulz_thm
+Starting translation of roots from SmallFFTTheory.
+Saved definition ____ "cv_roots_def"
+Saved induction _____ "cv_roots_ind"
+Saved theorem _______ "cv_roots_thm"
+Finished translating roots, stored in cv_roots_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of root_tree from SmallFFTTheory.
+Starting translation of split_par from SmallFFTTheory.
+Saved definition ____ "cv_split_par_def"
+Saved induction _____ "cv_split_par_ind"
+Saved theorem _______ "cv_split_par_thm"
+Finished translating split_par, stored in cv_split_par_thm
+Starting translation of root_tree from SmallFFTTheory.
+Saved definition ____ "cv_root_tree_def"
+Saved induction _____ "cv_root_tree_ind"
+Saved theorem _______ "cv_root_tree_thm"
+Finished translating root_tree, stored in cv_root_tree_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of inputs from SmallFFTTheory.
+Starting translation of safe_mod from SmallFFTTheory.
+Saved theorem _______ "cv_safe_mod_thm"
+Finished translating safe_mod, stored in cv_safe_mod_thm
+Starting translation of inputs from SmallFFTTheory.
+Saved definition ____ "cv_inputs_def"
+Saved induction _____ "cv_inputs_ind"
+Saved theorem _______ "cv_inputs_thm"
+Finished translating inputs, stored in cv_inputs_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of work from SmallFFTTheory.
+Starting translation of point from SmallFFTTheory.
+Starting translation of addz from SmallFFTTheory.
+Saved theorem _______ "cv_addz_thm"
+Finished translating addz, stored in cv_addz_thm
+Starting translation of point from SmallFFTTheory.
+Saved definition ____ "cv_point_def"
+Saved induction _____ "cv_point_ind"
+Saved theorem _______ "cv_point_thm"
+Finished translating point, stored in cv_point_thm
+Starting translation of work from SmallFFTTheory.
+Starting translation of fft from SmallFFTTheory.
+Starting translation of merge_fft from SmallFFTTheory.
+Starting translation of subz from SmallFFTTheory.
+Saved theorem _______ "cv_subz_thm"
+Finished translating subz, stored in cv_subz_thm
+Starting translation of merge_fft from SmallFFTTheory.
+Saved definition ____ "cv_merge_fft_def"
+Saved induction _____ "cv_merge_fft_ind"
+Saved theorem _______ "cv_merge_fft_thm"
+Finished translating merge_fft, stored in cv_merge_fft_thm
+Starting translation of fft from SmallFFTTheory.
+Saved definition ____ "cv_fft_def"
+Saved induction _____ "cv_fft_ind"
+Saved theorem _______ "cv_fft_thm"
+Finished translating fft, stored in cv_fft_thm
+Starting translation of work from SmallFFTTheory.
+Saved theorem _______ "cv_work_thm"
+Finished translating work, stored in cv_work_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of loop from SmallFFTTheory.
+Starting translation of vec_eq from SmallFFTTheory.
+Saved theorem _______ "cv_vec_eq_thm"
+Finished translating vec_eq, stored in cv_vec_eq_thm
+Starting translation of loop from SmallFFTTheory.
+Saved theorem _______ "cv_loop_thm"
+Finished translating loop, stored in cv_loop_thm
+Starting translation of panel from SmallFFTTheory.
+Starting translation of digest from SmallFFTTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of panel from SmallFFTTheory.
+Saved theorem _______ "cv_panel_thm"
+Finished translating panel, stored in cv_panel_thm
+Exporting theory "SmallFFT" ... done.
+Theory "SmallFFT" took 0.82896s to build
+Holmake: [1/1] SmallFFT

@@ -1,0 +1,20 @@
+{
+  "exit": 0,
+  "seconds": 209.67199999999866,
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "AuditExtensions.olean",
+    "AuditExtensions.lean"
+  ],
+  "source_sha256": {
+    "ShiftedWeight.lean": "14525937836415ca2cb1bcbfe019a97efadfe9cf146f956e9edb07cd6cae3f48",
+    "LocalMellin.lean": "75125e3a835a14a6e06947ffebb68f6ef1d54bffeccacecf52c9094cb1a0e1c1"
+  },
+  "audit_sha256": "76d0311b057e4c6b682efe114d7af3a9fb96a0db49d3ef0e34a63df1332b3e27",
+  "scope": "Mathlib-only source. The project-dependent zero sum is checked separately.",
+  "import_sha256": "cb108968546ee369eabac31f686336f3a857ea7db18d6dc887771b6ead080d86"
+}

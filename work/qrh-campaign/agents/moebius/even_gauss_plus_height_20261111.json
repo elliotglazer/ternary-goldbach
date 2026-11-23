@@ -1,0 +1,228 @@
+{
+  "scope": "conditional paper profile, exact rational checks only",
+  "checks": {
+    "EB": true,
+    "count_growth": true,
+    "IA_constant": true,
+    "IA_slope": true,
+    "odd_unchanged_2_root": true,
+    "odd_unchanged_2_EA": true,
+    "odd_unchanged_2_E2": true,
+    "odd_unchanged_100_root": true,
+    "odd_unchanged_100_EA": true,
+    "odd_unchanged_100_E2": true,
+    "odd_unchanged_1000_root": true,
+    "odd_unchanged_1000_EA": true,
+    "odd_unchanged_1000_E2": true,
+    "odd_unchanged_10000_root": true,
+    "odd_unchanged_10000_EA": true,
+    "odd_unchanged_10000_E2": true,
+    "four_divisible_4_root": true,
+    "four_divisible_4_EA": true,
+    "four_divisible_4_E2": true,
+    "four_divisible_100_root": true,
+    "four_divisible_100_EA": true,
+    "four_divisible_100_E2": true,
+    "four_divisible_1000_root": true,
+    "four_divisible_1000_EA": true,
+    "four_divisible_1000_E2": true,
+    "four_divisible_10000_root": true,
+    "four_divisible_10000_EA": true,
+    "four_divisible_10000_E2": true,
+    "low_term": true,
+    "root_x": true,
+    "odd_ambient": true,
+    "even_ambient": true,
+    "energy_max": true,
+    "rho": true,
+    "old_rho": true,
+    "Z": true,
+    "base_dominance": true,
+    "star_dominance": true,
+    "line_A": true,
+    "line_B": true,
+    "height_4": true,
+    "height_96": true,
+    "height_100": true,
+    "height_996": true,
+    "height_1000": true,
+    "height_9996": true,
+    "height_10000": true,
+    "height_60000": true,
+    "height_100000": true,
+    "height_125000": true,
+    "height_265800": true
+  },
+  "bands": [
+    {
+      "kind": "odd_unchanged",
+      "L": 2,
+      "U": 100,
+      "u": "23",
+      "sl": "707/500",
+      "su": "10",
+      "EA": "1061/10000000000000000000000000",
+      "G": "5024424861425539669/505000000",
+      "E2": "3009315658611174499735041879/126250000000000000000000000000000000"
+    },
+    {
+      "kind": "odd_unchanged",
+      "L": 100,
+      "U": 1000,
+      "u": "43/2",
+      "sl": "10",
+      "su": "32",
+      "EA": "1133/10000000000000000000000",
+      "G": "65373810279019/1562500",
+      "E2": "9497024176243545478737/390625000000000000000000000000"
+    },
+    {
+      "kind": "odd_unchanged",
+      "L": 1000,
+      "U": 10000,
+      "u": "41/2",
+      "sl": "1581/50",
+      "su": "100",
+      "EA": "9023/1000000000000000000000",
+      "G": "4226443137037789/790500000",
+      "E2": "197193607169243802812031/6587500000000000000000000000000"
+    },
+    {
+      "kind": "odd_unchanged",
+      "L": 10000,
+      "U": 265800,
+      "u": "39/2",
+      "sl": "100",
+      "su": "516",
+      "EA": "5781/10000000000000000000",
+      "G": "20943194720201/12500000",
+      "E2": "18609890750392172571/125000000000000000000000000"
+    },
+    {
+      "kind": "four_divisible",
+      "L": 4,
+      "U": 100,
+      "u": "113/5",
+      "sl": "2",
+      "su": "10",
+      "EA": "179/250000000000000000000000",
+      "G": "17760080655522769/5000000",
+      "E2": "750888226115641274568381/31250000000000000000000000000000"
+    },
+    {
+      "kind": "four_divisible",
+      "L": 100,
+      "U": 1000,
+      "u": "211/10",
+      "sl": "10",
+      "su": "32",
+      "EA": "67/100000000000000000000",
+      "G": "65373810279019/1562500",
+      "E2": "106729013981346238143/3906250000000000000000000000"
+    },
+    {
+      "kind": "four_divisible",
+      "L": 1000,
+      "U": 10000,
+      "u": "201/10",
+      "sl": "1581/50",
+      "su": "100",
+      "EA": "4891/100000000000000000000",
+      "G": "4226443137037789/790500000",
+      "E2": "189377207578305558486471/3293750000000000000000000000000"
+    },
+    {
+      "kind": "four_divisible",
+      "L": 10000,
+      "U": 265800,
+      "u": "191/10",
+      "sl": "100",
+      "su": "516",
+      "EA": "359/125000000000000000",
+      "G": "20943194720201/12500000",
+      "E2": "126091948925718880749/195312500000000000000000000"
+    }
+  ],
+  "even_energy": "247009/500000000000000000",
+  "rho": "379/500000000",
+  "examples": [
+    {
+      "c": 4,
+      "coupled": 19206058,
+      "new": 18872043,
+      "base": 13500000
+    },
+    {
+      "c": 96,
+      "coupled": 800445,
+      "new": 786527,
+      "base": 562500
+    },
+    {
+      "c": 100,
+      "coupled": 718333,
+      "new": 704972,
+      "base": 540000
+    },
+    {
+      "c": 996,
+      "coupled": 72302,
+      "new": 70961,
+      "base": 54217
+    },
+    {
+      "c": 1000,
+      "coupled": 68674,
+      "new": 67337,
+      "base": 54000
+    },
+    {
+      "c": 9996,
+      "coupled": 7051,
+      "new": 6917,
+      "base": 5403
+    },
+    {
+      "c": 10000,
+      "coupled": 6714,
+      "new": 6580,
+      "base": 5400
+    },
+    {
+      "c": 60000,
+      "coupled": 1286,
+      "new": 1264,
+      "base": 900
+    },
+    {
+      "c": 100000,
+      "coupled": 852,
+      "new": 838,
+      "base": 540
+    },
+    {
+      "c": 125000,
+      "coupled": 722,
+      "new": 711,
+      "base": 432
+    },
+    {
+      "c": 265800,
+      "coupled": 455,
+      "new": 455,
+      "base": 204
+    }
+  ],
+  "pins": {
+    "work/qrh-campaign/agents/major-constants/COUPLED_PLUS_HEIGHT_CUBIC_BUDGET_2026-11-11.md": "6767F9E14E5B6D7264D972085EA9C70359C87544403D37DAE315CBEF2510FC54",
+    "work/qrh-campaign/agents/prime-estimates/REVIEW_FINITE_RH_CONSUMER_DEMAND_MATRIX_2026-11-11.md": "BF51DF7E0C1B99A59FCECF73941BD18DBA55029700EE2AFB84948B95703B289A",
+    "work/qrh-campaign/agents/audit/FINITE_RH_CONSUMER_DEMAND_MATRIX_2026-11-11.md": "54B08C6DA98CFD0F27FE055371CFFF07A167BC8987225F7865439515623F9A4E",
+    "work/qrh-campaign/agents/audit/REVIEW_PLUS_FINITE_RH_HEIGHT_REDUCTION_2026-11-11.md": "55690D3DE67252888EB84C29F40674CAA126E3C5B4E43F4D56CB3AD20421A4E9",
+    "work/qrh-campaign/agents/moebius/REVIEW_WSTAR_LOWER_FLOORS_AND_SQUAREFREE_PROFILE_2026-11-11.md": "422940369A04ED695A45EF28F20F154349932CEBC0242EEEE15FF3373D5CE6A4",
+    "work/qrh-campaign/agents/moebius/REVIEW_MIXED_CONDUCTOR_WSTAR_PROFILE_2026-11-11.md": "8713202EA752207E7B0C5DC80FD6A68BD7A3A1FC5DF30E5F44BF9B1D252E30FD",
+    "work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md": "22A6A16880BE2FA5CB0FF393C533BD60B1AFCD32C751E5A0D64FE7ADAB7C40F7",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Thm714.lean": "7BBF8F06B1A0B703A0C00FF1E5E64997792C4E93629CED591FCB6A646301FD3F",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Prop942.lean": "35B170971DBD0F1C6646CD86ECE8C3A86021085C1B07730141CD6311D9CA5716",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/ArcChars.lean": "0A5BA0770CC02C94C0A802FF78FC297FE7B5776153516033ECC189331A6041CF"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "status": "PASS_INDEPENDENT_STATIC_STRUCTURE_FOLD",
+  "checks": 2617127,
+  "pins": {
+    "integration/TRANSFORM_STRUCTURAL_MULTIPLICITY_INVENTORY_2026-11-11.md": "01F1446FF10D2EFD690DF06552F35DAD26C1453A49F4BB4F84D794D997FD55BB",
+    "integration/transform_structural_inventory_20261111.py": "584A16F00A905AD68C3FE11F4128FE2205F772FB67916EF312B596518F1ADB55",
+    "integration/transform_structural_manifest_20261111.json": "A41D70DB2BB439D73CC817F80B24CB598D3EFA89CCE1D19A5FA618ABBE239637",
+    "integration/transform_structural_events_20261111.json": "06CD20AAC9B0A0E8E40C798543193DA1E80404BBF4FA325B0F7F9E104B1FA30B",
+    "integration/transform_structural_inventory_20261111.json": "503FB2C859473372990408464F4F333E1C67FF1FBC83E8585F05AED44B836CC0"
+  },
+  "upstream_pins": {
+    "zero-sum/conditional_r132900_pruning_inventory_20261111.py": "074E6B512F595DD174C45F3D273212FDFCF76CD6EFF6F82699F260E447CA986D",
+    "zero-sum/mixed_radix_character_inventory_20261111.json": "2AC4DBAF9D0C41D1DFD8006AC280619DFF6C3059D7DA7FAEF6F1C477D2CE4D3F",
+    "zero-sum/mixed_radix_precision_metadata_20261111.json": "8BAE81D30CA893F7728E9B13249A96A56D22A9EB87612E9D6B0FCD453140EE8E",
+    "independent-feasibility/mixed_radix_width_metadata_20261111.json": "364B00C1BA63A06CC5B1C3E0CC777280151BB05E0E5B56063231596B0249B48F",
+    "independent-feasibility/MIXED_RADIX_INTERMEDIATE_WIDTH_2026-11-11.md": "5327CD0645A36F4081155D786FCEB43586559C1520A5A67CBAB2E68FBC77619A",
+    "major-constants/combined_odd_even_height_inventory_20261111.py": "4C1B0FA0DA303A5EE475493A8CE66EB3723B3C9DFD9369DF9687069AF3F3E154",
+    "major-constants/combined_odd_even_height_inventory_20261111.json": "BCBAA29AE9A963A46170C5B7B355C0399EE6A622EDBE355ECD24BFE92042C2EE",
+    "major-constants/reconciled_nonprincipal_schedule_20261111.json": "0E83C9AB65725FBD34F0D34FC462E9EC805A040717DA92B1AB262CC7A9345397",
+    "prime-estimates/large_residue_bucket_occupancy_20261111.json": "19E0AC3EB1F860A38151F46F792595DEDE7BA7D0180A244425C6C969EFBF58DB",
+    "zero-sum/TRANSFORM_SAVED_MULTIPLICITY_EVIDENCE_MAP_2026-11-11.md": "90A9730692DE696AD7F92A1AA5CAAE7FFAF378ED0822E78AD8F01517B325111F"
+  },
+  "plan_nodes": 37117,
+  "requests": 35190,
+  "conductors": 125400,
+  "contexts": 220108,
+  "event_classes": 138126,
+  "scenarios": [
+    {
+      "extra_nodes": 0,
+      "operations": {
+        "general_complex_products": 1004103686197888,
+        "complex_add_sub": 2079886046397995,
+        "quarter_turns": 92117812144056,
+        "negations": 19872754128,
+        "dyadic_scales": 88576420247296
+      },
+      "root_products": 915527265950592,
+      "kernel_products": 88576420247296
+    },
+    {
+      "extra_nodes": 167,
+      "operations": {
+        "general_complex_products": 1024618166379118,
+        "complex_add_sub": 2122384498321844,
+        "quarter_turns": 93986171544503,
+        "negations": 20269359088,
+        "dyadic_scales": 90374781940928
+      },
+      "root_products": 934243384438190,
+      "kernel_products": 90374781940928
+    },
+    {
+      "extra_nodes": 320,
+      "operations": {
+        "general_complex_products": 1043412869778688,
+        "complex_add_sub": 2161320205773035,
+        "quarter_turns": 95697902013176,
+        "negations": 20632715728,
+        "dyadic_scales": 92022382774016
+      },
+      "root_products": 951390487004672,
+      "kernel_products": 92022382774016
+    },
+    {
+      "extra_nodes": 640,
+      "operations": {
+        "general_complex_products": 1082722053359488,
+        "complex_add_sub": 2242754365148075,
+        "quarter_turns": 99277991882296,
+        "negations": 21392677328,
+        "dyadic_scales": 95468345300736
+      },
+      "root_products": 987253708058752,
+      "kernel_products": 95468345300736
+    }
+  ],
+  "setup": {
+    "axis_lengths": 12496,
+    "active_nodes": 32942,
+    "kernel_count": 6004,
+    "kernel_entries": 337702368,
+    "chirp_entries": 140276846,
+    "max_padded_length": 262144,
+    "kernel_forward_operations": {
+      "general_complex_products": 2244782056,
+      "complex_add_sub": 5502647200,
+      "quarter_turns": 168845180,
+      "negations": 0,
+      "dyadic_scales": 0
+    },
+    "CT_full_root_table_entry_upper": 1116142487
+  },
+  "scope": "Saved rows and compressed DAGs only; no author execution, unit enumeration, values, arithmetic admission or timing claim."
+}

@@ -1,0 +1,146 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-axis-sample/fast/FastAxisScript.uo to produce theory-builder executable
+<<HOL message: Created theory "FastAxis">>
+Saved definition ____ "kr_mod_def"
+Starting translation of kr_mod from FastAxisTheory.
+Saved theorem _______ "cv_kr_mod_thm"
+Finished translating kr_mod, stored in cv_kr_mod_thm
+Saved definition ____ "kdiv_def"
+Starting translation of kdiv from FastAxisTheory.
+Saved theorem _______ "cv_kdiv_thm"
+Finished translating kdiv, stored in cv_kdiv_thm
+Saved definition ____ "kr_center_def"
+Starting translation of kr_center from FastAxisTheory.
+Saved theorem _______ "cv_kr_center_thm"
+Finished translating kr_center, stored in cv_kr_center_thm
+Saved definition ____ "kr_rot_def"
+Starting translation of kr_rot from FastAxisTheory.
+Saved theorem _______ "cv_kr_rot_thm"
+Finished translating kr_rot, stored in cv_kr_rot_thm
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in FastAxis)>>
+Saved definition ____ "kt_pairs_def"
+Saved induction _____ "kt_pairs_ind"
+Starting translation of kt_pairs from FastAxisTheory.
+Saved definition ____ "cv_kt_pairs_def"
+Saved induction _____ "cv_kt_pairs_ind"
+Saved theorem _______ "cv_kt_pairs_thm"
+Finished translating kt_pairs, stored in cv_kt_pairs_thm
+Saved theorem _______ "kt_pack_compute"
+Saved definition ____ "kt_pack_def"
+Starting translation of kt_pack from FastAxisTheory.
+Saved theorem _______ "cv_kt_pack_thm"
+Finished translating kt_pack, stored in cv_kt_pack_thm
+Saved theorem _______ "kt_powers_compute"
+Saved definition ____ "kt_powers_def"
+Starting translation of kt_powers from FastAxisTheory.
+Saved theorem _______ "cv_kt_powers_thm"
+Finished translating kt_powers, stored in cv_kt_powers_thm
+Saved definition ____ "kt_unpack_def"
+Starting translation of kt_unpack from FastAxisTheory.
+Saved definition ____ "cv_kt_unpack_def"
+Saved induction _____ "cv_kt_unpack_ind"
+Saved theorem _______ "cv_kt_unpack_thm"
+Finished translating kt_unpack, stored in cv_kt_unpack_thm
+Saved theorem _______ "lp_roots_compute"
+Saved definition ____ "lp_roots_def"
+Saved theorem _______ "lp_inputs_compute"
+Saved definition ____ "lp_inputs_def"
+Saved definition ____ "lp_chirp_def"
+Saved definition ____ "lp_conj_def"
+Saved definition ____ "lp_run_def"
+Saved definition ____ "lp_sum_def"
+Saved definition ____ "lp_pick_def"
+Saved theorem _______ "lp_repeat_compute"
+Saved definition ____ "lp_repeat_def"
+Saved definition ____ "lp_top_def"
+Starting translation of lp_roots from FastAxisTheory.
+Saved definition ____ "cv_lp_roots_def"
+Saved induction _____ "cv_lp_roots_ind"
+Saved theorem _______ "cv_lp_roots_thm"
+Finished translating lp_roots, stored in cv_lp_roots_thm
+Starting translation of lp_inputs from FastAxisTheory.
+Saved definition ____ "cv_lp_inputs_def"
+Saved induction _____ "cv_lp_inputs_ind"
+Saved theorem _______ "cv_lp_inputs_thm"
+Finished translating lp_inputs, stored in cv_lp_inputs_thm
+Starting translation of lp_chirp from FastAxisTheory.
+Saved definition ____ "cv_lp_chirp_def"
+Saved induction _____ "cv_lp_chirp_ind"
+Saved theorem _______ "cv_lp_chirp_thm"
+Finished translating lp_chirp, stored in cv_lp_chirp_thm
+Starting translation of lp_conj from FastAxisTheory.
+Saved definition ____ "cv_lp_conj_def"
+Saved induction _____ "cv_lp_conj_ind"
+Saved theorem _______ "cv_lp_conj_thm"
+Finished translating lp_conj, stored in cv_lp_conj_thm
+Starting translation of lp_run from FastAxisTheory.
+Saved theorem _______ "cv_lp_run_thm"
+Finished translating lp_run, stored in cv_lp_run_thm
+Starting translation of lp_sum from FastAxisTheory.
+Saved theorem _______ "cv_lp_sum_thm"
+Finished translating lp_sum, stored in cv_lp_sum_thm
+Starting translation of lp_pick from FastAxisTheory.
+Saved theorem _______ "cv_lp_pick_thm"
+Finished translating lp_pick, stored in cv_lp_pick_thm
+Starting translation of lp_repeat from FastAxisTheory.
+Saved theorem _______ "cv_lp_repeat_thm"
+Finished translating lp_repeat, stored in cv_lp_repeat_thm
+Starting translation of lp_top from FastAxisTheory.
+Saved theorem _______ "cv_lp_top_thm"
+Finished translating lp_top, stored in cv_lp_top_thm
+Saved definition ____ "unpack_acc_def"
+Saved theorem _______ "unpack_acc_equiv"
+Saved definition ____ "rotate2_def"
+Saved definition ____ "rotlist_def"
+Saved definition ____ "foldcyc_def"
+Saved definition ____ "alternative_def"
+Starting translation of alternative from FastAxisTheory.
+Starting translation of rotlist from FastAxisTheory.
+Starting translation of rotate2 from FastAxisTheory.
+Saved theorem _______ "cv_rotate2_thm"
+Finished translating rotate2, stored in cv_rotate2_thm
+Starting translation of rotlist from FastAxisTheory.
+Saved definition ____ "cv_rotlist_def"
+Saved induction _____ "cv_rotlist_ind"
+Saved theorem _______ "cv_rotlist_thm"
+Finished translating rotlist, stored in cv_rotlist_thm
+Starting translation of alternative from FastAxisTheory.
+Starting translation of foldcyc from FastAxisTheory.
+Saved theorem _______ "cv_foldcyc_thm"
+Finished translating foldcyc, stored in cv_foldcyc_thm
+Starting translation of alternative from FastAxisTheory.
+Starting translation of unpack_acc from FastAxisTheory.
+Saved definition ____ "cv_unpack_acc_def"
+Saved induction _____ "cv_unpack_acc_ind"
+Saved theorem _______ "cv_unpack_acc_thm"
+Finished translating unpack_acc, stored in cv_unpack_acc_thm
+Starting translation of alternative from FastAxisTheory.
+Saved theorem _______ "cv_alternative_thm"
+Finished translating alternative, stored in cv_alternative_thm
+Saved theorem _______ "fast_repeat_compute"
+Saved definition ____ "fast_repeat_def"
+Saved definition ____ "fast_top_def"
+Starting translation of fast_top from FastAxisTheory.
+Starting translation of fast_repeat from FastAxisTheory.
+Saved theorem _______ "cv_fast_repeat_thm"
+Finished translating fast_repeat, stored in cv_fast_repeat_thm
+Starting translation of fast_top from FastAxisTheory.
+Saved theorem _______ "cv_fast_top_thm"
+Finished translating fast_top, stored in cv_fast_top_thm
+Exporting theory "FastAxis" ... done.
+Theory "FastAxis" took 1.4s to build
+Holmake: [1/1] FastAxis

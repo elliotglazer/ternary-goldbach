@@ -1,0 +1,66 @@
+<<HOL message: Created theory "C10004TransformFullDiagnostics">>
+TRANSFORM_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRANSFORM_TAG,tx_mul_cached_identity,DISK_THM,
+TRANSFORM_GENERIC,tx_mul_cached_identity,⊢ tx_mul (tx_cache_entry (wr,wi)) (vr,vi) =
+  (round_scaled tx_scale (vr * wr − vi * wi),
+   round_scaled tx_scale (vr * wi + vi * wr))
+TRANSFORM_TAG,tx_omit_projection,DISK_THM,
+TRANSFORM_GENERIC,tx_omit_projection,⊢ ∀fuel n cache xs. tx_omit fuel n cache xs = TL (tx_full fuel n cache xs)
+TRANSFORM_TAG,tx_full_length,DISK_THM,
+TRANSFORM_GENERIC,tx_full_length,⊢ ∀fuel n cache xs. LENGTH (tx_full fuel n cache xs) = n
+TRANSFORM_TAG,tx_omit_length,DISK_THM,
+TRANSFORM_GENERIC,tx_omit_length,⊢ ∀fuel n cache xs. LENGTH (tx_omit fuel n cache xs) = n − 1
+TRANSFORM_TAG,tx_tensor_full_length,DISK_THM,
+TRANSFORM_GENERIC,tx_tensor_full_length,⊢ LENGTH (tx_tensor_full cache xs) = 4800
+TRANSFORM_TAG,tx_tensor_selected_length,DISK_THM,
+TRANSFORM_GENERIC,tx_tensor_selected_length,⊢ LENGTH (tx_tensor_selected cache xs) = 2301
+TRANSFORM_TAG,tx_checked_contract,DISK_THM,
+TRANSFORM_GENERIC,tx_checked_contract,⊢ tx_checked roots xs = SOME ys ⇒
+  tx_roots_ok roots ∧ tx_input_ok xs ∧ tx_output_ok ys ∧
+  ys = tx_tensor_selected (tx_cache roots) xs
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004TransformFullDiagnostics)>>
+TRANSFORM_TAG,root_packet,DISK_THM,
+Saved theorem _______ "checked_root_packet"
+TRANSFORM_CONTROL,root_packet,T,0.029
+TRANSFORM_TAG,short_root_packet,DISK_THM,
+Saved theorem _______ "checked_short_root_packet"
+TRANSFORM_CONTROL,short_root_packet,F,0.004
+TRANSFORM_TAG,wrong_exact_root,DISK_THM,
+Saved theorem _______ "checked_wrong_exact_root"
+TRANSFORM_CONTROL,wrong_exact_root,F,0.004
+TRANSFORM_TAG,root_out_of_range,DISK_THM,
+Saved theorem _______ "checked_root_out_of_range"
+TRANSFORM_CONTROL,root_out_of_range,F,0.004
+TRANSFORM_TAG,all_local_projections,DISK_THM,
+Saved theorem _______ "checked_all_local_projections"
+TRANSFORM_CONTROL,all_local_projections,T,0.084
+TRANSFORM_TAG,negative_half_tie,DISK_THM,
+Saved theorem _______ "checked_negative_half_tie"
+TRANSFORM_CONTROL,negative_half_tie,T,0.001
+TRANSFORM_TAG,positive_half_tie,DISK_THM,
+Saved theorem _______ "checked_positive_half_tie"
+TRANSFORM_CONTROL,positive_half_tie,T,0.001
+TRANSFORM_TAG,short_input_rejected,DISK_THM,
+Saved theorem _______ "checked_short_input_rejected"
+TRANSFORM_CONTROL,short_input_rejected,T,0.114
+TRANSFORM_TAG,invalid_root_rejected,DISK_THM,
+Saved theorem _______ "checked_invalid_root_rejected"
+TRANSFORM_CONTROL,invalid_root_rejected,T,0.111
+TRANSFORM_TAG,input_range_rejected,DISK_THM,
+Saved theorem _______ "checked_input_range_rejected"
+TRANSFORM_CONTROL,input_range_rejected,T,0.006
+TRANSFORM_TAG,tensor_projection_h1,DISK_THM,
+Saved theorem _______ "checked_tensor_projection_h1"
+TRANSFORM_CONTROL,tensor_projection_h1,T,6.362
+TRANSFORM_TAG,tensor_projection_h2,DISK_THM,
+Saved theorem _______ "checked_tensor_projection_h2"
+TRANSFORM_CONTROL,tensor_projection_h2,T,6.321
+TRANSFORM_TAG,checked_h1,DISK_THM,
+Saved theorem _______ "checked_checked_h1"
+TRANSFORM_CONTROL,checked_h1,T,2.142
+TRANSFORM_TAG,checked_h2,DISK_THM,
+Saved theorem _______ "checked_checked_h2"
+TRANSFORM_CONTROL,checked_h2,T,2.123
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-transform/transform_audit.sml : NeedsTranslation ([?, ?], ?)
+error in load transform_audit : NeedsTranslation ([?, ?], ?)
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/num/theories/cv_compute/automation/cv_repLib.sml:119: NeedsTranslation ([?, ?], ?)

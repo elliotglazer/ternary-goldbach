@@ -1,0 +1,36 @@
+{
+  "scope": "One local block per sigma; built-in FLINT zeta trusted for samples; analytic Cauchy alias formula separately stated in report; not a full contour certificate.",
+  "precision": 128,
+  "runs": [
+    {
+      "sigma": "0.5025",
+      "height": 1000000,
+      "block_length": "1/4",
+      "samples": 64,
+      "sample_seconds": 0.0897757000020647,
+      "dft_seconds": 0.0015342999977292493,
+      "M_bound": "[44835.88107538145213559018035360469011 +/- 8.07e-33]",
+      "alias_plus_truncation_error": "[3.240743977815352346927992045316401428e-15 +/- 8.08e-52]",
+      "panel_seconds": 0.0042412000002514105,
+      "panel_calls": 3,
+      "leaves": 2,
+      "maxdepth": 1,
+      "complete_local_nonvanishing": true
+    },
+    {
+      "sigma": "0.555",
+      "height": 1000000,
+      "block_length": "1/4",
+      "samples": 64,
+      "sample_seconds": 0.08683079999900656,
+      "dft_seconds": 0.0014863000033074059,
+      "M_bound": "[44835.88107538145213559018035360469011 +/- 8.07e-33]",
+      "alias_plus_truncation_error": "[3.240743977815352346927992045316401428e-15 +/- 8.08e-52]",
+      "panel_seconds": 4.810000245925039e-05,
+      "panel_calls": 1,
+      "leaves": 1,
+      "maxdepth": 0,
+      "complete_local_nonvanishing": true
+    }
+  ]
+}

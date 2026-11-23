@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M1024",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\arithmetic-calibration\\arithmetic_r1.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\arithmetic-calibration\\ArithmeticCalibration.lean"
+  ],
+  "exit_code": 1,
+  "stop": "1 GiB observed private cap",
+  "wall_seconds": 4.85459780000383,
+  "user_cpu_seconds": 3.734375,
+  "system_cpu_seconds": 1.0625,
+  "cpu_seconds": 4.796875,
+  "peak_working_set_bytes": 543195136,
+  "observed_peak_private_bytes": 1074012160,
+  "memory_samples": 96,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "ArithmeticCalibration.lean",
+      "bytes": 268127,
+      "sha256": "A36DDD19D705662B15299B274E84C338D08BB80955DB70B7F74F7CFC1022956B"
+    },
+    {
+      "path": "arithmetic_r1.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

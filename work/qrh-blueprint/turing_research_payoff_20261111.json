@@ -1,0 +1,270 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL_TRANSFORM_PAYOFF",
+  "source_sha256": "8BEAD899428DE523323FCA7D833ECE6F4C5443213D32D4F32B964B18B218F7F9",
+  "scope": "Fixed large-conductor transform operations only; unchanged per-category prices; no numerical success or runtime conclusion",
+  "comparisons": [
+    {
+      "old_h": 200,
+      "new_h": 50,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 1572367343232,
+          "denominator": 14423280315209
+        },
+        "complex_add_sub": {
+          "numerator": 24430247812512,
+          "denominator": 222994667219929
+        },
+        "quarter_turns": {
+          "numerator": 10740269607360,
+          "denominator": 98469567906563
+        },
+        "negations": {
+          "numerator": 2279884800,
+          "denominator": 21278047201
+        },
+        "dyadic_scales": {
+          "numerator": 107686328960,
+          "denominator": 992948623363
+        }
+      },
+      "minimum": {
+        "numerator": 2279884800,
+        "denominator": 21278047201
+      },
+      "maximum": {
+        "numerator": 24430247812512,
+        "denominator": 222994667219929
+      }
+    },
+    {
+      "old_h": 50,
+      "new_h": 45,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 262061223872,
+          "denominator": 64254564859885
+        },
+        "complex_add_sub": {
+          "numerator": 4071707968752,
+          "denominator": 992822097037085
+        },
+        "quarter_turns": {
+          "numerator": 358008986912,
+          "denominator": 87729298299203
+        },
+        "negations": {
+          "numerator": 75996160,
+          "denominator": 18998162401
+        },
+        "dyadic_scales": {
+          "numerator": 10768632896,
+          "denominator": 2655786883209
+        }
+      },
+      "minimum": {
+        "numerator": 75996160,
+        "denominator": 18998162401
+      },
+      "maximum": {
+        "numerator": 4071707968752,
+        "denominator": 992822097037085
+      }
+    },
+    {
+      "old_h": 50,
+      "new_h": 30,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 1048244895488,
+          "denominator": 64254564859885
+        },
+        "complex_add_sub": {
+          "numerator": 16286831875008,
+          "denominator": 992822097037085
+        },
+        "quarter_turns": {
+          "numerator": 1432035947648,
+          "denominator": 87729298299203
+        },
+        "negations": {
+          "numerator": 303984640,
+          "denominator": 18998162401
+        },
+        "dyadic_scales": {
+          "numerator": 43074531584,
+          "denominator": 2655786883209
+        }
+      },
+      "minimum": {
+        "numerator": 303984640,
+        "denominator": 18998162401
+      },
+      "maximum": {
+        "numerator": 16286831875008,
+        "denominator": 992822097037085
+      }
+    },
+    {
+      "old_h": 50,
+      "new_h": 25,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 262061223872,
+          "denominator": 12850912971977
+        },
+        "complex_add_sub": {
+          "numerator": 4071707968752,
+          "denominator": 198564419407417
+        },
+        "quarter_turns": {
+          "numerator": 1790044934560,
+          "denominator": 87729298299203
+        },
+        "negations": {
+          "numerator": 379980800,
+          "denominator": 18998162401
+        },
+        "dyadic_scales": {
+          "numerator": 53843164480,
+          "denominator": 2655786883209
+        }
+      },
+      "minimum": {
+        "numerator": 379980800,
+        "denominator": 18998162401
+      },
+      "maximum": {
+        "numerator": 4071707968752,
+        "denominator": 198564419407417
+      }
+    },
+    {
+      "old_h": 50,
+      "new_h": 15,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 1834428567104,
+          "denominator": 64254564859885
+        },
+        "complex_add_sub": {
+          "numerator": 4071707968752,
+          "denominator": 141831728148155
+        },
+        "quarter_turns": {
+          "numerator": 2506062908384,
+          "denominator": 87729298299203
+        },
+        "negations": {
+          "numerator": 531973120,
+          "denominator": 18998162401
+        },
+        "dyadic_scales": {
+          "numerator": 75380430272,
+          "denominator": 2655786883209
+        }
+      },
+      "minimum": {
+        "numerator": 531973120,
+        "denominator": 18998162401
+      },
+      "maximum": {
+        "numerator": 4071707968752,
+        "denominator": 141831728148155
+      }
+    },
+    {
+      "old_h": 50,
+      "new_h": 0,
+      "component_saving_fractions": {
+        "general_complex_products": {
+          "numerator": 524122447744,
+          "denominator": 12850912971977
+        },
+        "complex_add_sub": {
+          "numerator": 8143415937504,
+          "denominator": 198564419407417
+        },
+        "quarter_turns": {
+          "numerator": 3580089869120,
+          "denominator": 87729298299203
+        },
+        "negations": {
+          "numerator": 759961600,
+          "denominator": 18998162401
+        },
+        "dyadic_scales": {
+          "numerator": 107686328960,
+          "denominator": 2655786883209
+        }
+      },
+      "minimum": {
+        "numerator": 759961600,
+        "denominator": 18998162401
+      },
+      "maximum": {
+        "numerator": 8143415937504,
+        "denominator": 198564419407417
+      }
+    }
+  ],
+  "conditional_width_frontier": [
+    {
+      "b": {
+        "numerator": 121,
+        "denominator": 4
+      },
+      "conditional_D_cap": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "first_multiple_of_5_h": 45,
+      "reserve": {
+        "numerator": 7,
+        "denominator": 45
+      },
+      "previous_reserve": {
+        "numerator": -1,
+        "denominator": 80
+      }
+    },
+    {
+      "b": {
+        "numerator": 18,
+        "denominator": 1
+      },
+      "conditional_D_cap": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "first_multiple_of_5_h": 25,
+      "reserve": {
+        "numerator": 3,
+        "denominator": 50
+      },
+      "previous_reserve": {
+        "numerator": -3,
+        "denominator": 10
+      }
+    },
+    {
+      "b": {
+        "numerator": 9,
+        "denominator": 1
+      },
+      "conditional_D_cap": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "first_multiple_of_5_h": 15,
+      "reserve": {
+        "numerator": 3,
+        "denominator": 10
+      },
+      "previous_reserve": {
+        "numerator": -3,
+        "denominator": 10
+      }
+    }
+  ]
+}

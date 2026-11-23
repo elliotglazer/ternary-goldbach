@@ -1,0 +1,754 @@
+{
+  "error": "Actual build returned 1",
+  "evidence_pins": {
+    "recover_preflight_windows.py": "9530f4c29d7b19b1e19fa6e95f3cf77b76e56d3c6b0e125fd639ea603aa00305",
+    "recovery01-offline-validation-v2/RECEIPT.json": "e6e5b91478c0e7b808dd914bac09b208110ffa924f2c4752e9681bb89a748b3d",
+    "recovery01-offline-validation-v2/graph.json": "452e41cd91c2892dcea17c29a27c616c9aad4005b56f4387cb35ebc9a25e7f78",
+    "recovery01-offline-validation-v2/graph_validation.json": "33a10b73c801512716c66f28bb89bdd36d705265aa5228300f8663cac4fb1b76",
+    "validate_recovery_offline_v2.py": "89e799275bc961466fde63f00fb2b1377167aa24bf6b3d8388c6c39ab225f9b9"
+  },
+  "gnu_time": {
+    "Elapsed (wall clock) time (h:mm:ss or m:ss)": "7m 57.88s",
+    "Exit status": "1",
+    "Maximum resident set size (kbytes)": "991468",
+    "System time (seconds)": "38.77",
+    "User time (seconds)": "195.85"
+  },
+  "linux_timeout_and_file_limits_authoritative": true,
+  "local_object_inventory": [
+    {
+      "bytes": 0,
+      "path": ".hol/objs/complexPP.ui",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 444,
+      "path": ".hol/objs/complexPP.uo",
+      "sha256": "37d5202ef7e8aacfa1059ae5ba10bb0c63e42078729ebe397eb665d9d7a6d771"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/complexTheory.cachekey",
+      "sha256": "c174393127a57cd5d8f2635163e195fb155f6c537cd65cd692d8795915dc0d9d"
+    },
+    {
+      "bytes": 62013,
+      "path": ".hol/objs/complexTheory.dat",
+      "sha256": "d5e162bab6432359e2d60396435aacfe139d00046982e55eaa6880807270588f"
+    },
+    {
+      "bytes": 7545,
+      "path": ".hol/objs/complexTheory.sig",
+      "sha256": "b815c14a429b77fdbebeb5fbdac6fa023a1483cb513413f060a769efe025de2f"
+    },
+    {
+      "bytes": 22045,
+      "path": ".hol/objs/complexTheory.sml",
+      "sha256": "44df73d516d96cc5e45208b393fa1af8a2e6f8adc616657b78bd80dfcc0dd225"
+    },
+    {
+      "bytes": 408,
+      "path": ".hol/objs/complexTheory.ui",
+      "sha256": "a1089475949d54fafe7e2fdaab6b8c71b1f1a332d39d317141efbb1ae4d6f992"
+    },
+    {
+      "bytes": 1087,
+      "path": ".hol/objs/complexTheory.uo",
+      "sha256": "f790f920ac69ddbcc1829f5119b0ad7794a277b97d004bc5c049b7ad96fe31be"
+    },
+    {
+      "bytes": 409,
+      "path": ".hol/objs/Cond_rewrite.ui",
+      "sha256": "9b0e8a4556d60ab5edb4cbadc039781439998186f0578e951ac8ddfa3cd0f6d0"
+    },
+    {
+      "bytes": 686,
+      "path": ".hol/objs/Cond_rewrite.uo",
+      "sha256": "1e5d82066f5028bd897056eaa3ad71af2ec96b0f0d48c58bdafa63dc010a9497"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/derivativeTheory.cachekey",
+      "sha256": "1b23526e5cdf5884cd2e614b6eca807a7418e3f1157b7746f5679b0093ef4e0d"
+    },
+    {
+      "bytes": 69622,
+      "path": ".hol/objs/derivativeTheory.dat",
+      "sha256": "e9a13c08247bdd33bdcaf3c38b1d8cc2ca93b37bebb797dddffd5618d9c47811"
+    },
+    {
+      "bytes": 5490,
+      "path": ".hol/objs/derivativeTheory.sig",
+      "sha256": "065b5b6abf4ec035b80591966dda4eeff427deb5148ee5b5429cd3eb43e11182"
+    },
+    {
+      "bytes": 16468,
+      "path": ".hol/objs/derivativeTheory.sml",
+      "sha256": "13d4f02e7708f48a2eae22e93a155c6b333d5fde95fb3fbd0c87901b0dd3b21e"
+    },
+    {
+      "bytes": 414,
+      "path": ".hol/objs/derivativeTheory.ui",
+      "sha256": "83a5a80b014584be2bce2e99e1c9f23503e8481ed0eb8f06392a5493bf62c8c0"
+    },
+    {
+      "bytes": 928,
+      "path": ".hol/objs/derivativeTheory.uo",
+      "sha256": "ec3b6e48f6d45f48075472f7bab769db56bcf4492fc57642f8f169068b660a96"
+    },
+    {
+      "bytes": 414,
+      "path": ".hol/objs/Diff.ui",
+      "sha256": "08f73457e6e9893baf639c8a6aaacc1bf0bae81abd170f47f924f207ca2f591a"
+    },
+    {
+      "bytes": 1482,
+      "path": ".hol/objs/Diff.uo",
+      "sha256": "295e96ab000f48ff1038898f5dc1389a5d097d0d3ceeb97c5e35c1af1cb473f0"
+    },
+    {
+      "bytes": 401,
+      "path": ".hol/objs/hol88Lib.ui",
+      "sha256": "420191a4588a0356831a7b50d7692aa37d208680746cd013d5da0f98d2eb8faf"
+    },
+    {
+      "bytes": 735,
+      "path": ".hol/objs/hol88Lib.uo",
+      "sha256": "892eab130a8cccc9b654c167e312c10485c8439aecb37ba5a2b476709ee6afa2"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/hratTheory.cachekey",
+      "sha256": "13d7dfcb34cacef0bbcc9980c8942813a2a8b893c6252cfe91ad9efe57491098"
+    },
+    {
+      "bytes": 13806,
+      "path": ".hol/objs/hratTheory.dat",
+      "sha256": "2eb83153d4776e7e2b7be01ffb6a1ad809dbbc402faee6d8126284bd2fd33615"
+    },
+    {
+      "bytes": 1523,
+      "path": ".hol/objs/hratTheory.sig",
+      "sha256": "03e6948ed2ce0ffec6cfaf2ef702dd9302d3973acbfe3999e2de785e6557671f"
+    },
+    {
+      "bytes": 4761,
+      "path": ".hol/objs/hratTheory.sml",
+      "sha256": "478d30a01e88984caed6245e8b0636a7783adbe4590704fa763210812ea75838"
+    },
+    {
+      "bytes": 402,
+      "path": ".hol/objs/hratTheory.ui",
+      "sha256": "e907cfc4d508b5260c4969b313500c2773a766b0c1364795eb70a2ea93c94692"
+    },
+    {
+      "bytes": 752,
+      "path": ".hol/objs/hratTheory.uo",
+      "sha256": "f6c06207a1cad91857ba78f40b47d668a79ba9bfe6725d00f85ae6802a0b3b27"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/hrealTheory.cachekey",
+      "sha256": "b713e9038264956c8ebff3e73d93691e798060b6041e0df52c1b2601c2f40d1a"
+    },
+    {
+      "bytes": 31177,
+      "path": ".hol/objs/hrealTheory.dat",
+      "sha256": "96597dc990aa32320b1322cc0bcfe37ca8e59bd26ce28aa17ee0a654e2f335af"
+    },
+    {
+      "bytes": 3521,
+      "path": ".hol/objs/hrealTheory.sig",
+      "sha256": "5f186d38902a0c762146e375ebf607d4cc6d582a8a9bf121df8a5edf40641edc"
+    },
+    {
+      "bytes": 10393,
+      "path": ".hol/objs/hrealTheory.sml",
+      "sha256": "54336dc9ac3ad3241cd200be020cceec18fb33c894ceb5edfc29a39e3357bf0e"
+    },
+    {
+      "bytes": 404,
+      "path": ".hol/objs/hrealTheory.ui",
+      "sha256": "6d0a303ee59b578b67f328c81e10f5fd141f3b8da60017e418332292bb44d911"
+    },
+    {
+      "bytes": 904,
+      "path": ".hol/objs/hrealTheory.uo",
+      "sha256": "d46f324dd4d14cce962c5f2f0553495139fc13f8aa039eea39a9d58bb6c2185d"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/intrealTheory.cachekey",
+      "sha256": "f1312a3d8b4816f31a456da587c4bda855d6642921b98c0df872d3708f6733b6"
+    },
+    {
+      "bytes": 22952,
+      "path": ".hol/objs/intrealTheory.dat",
+      "sha256": "ba16244bbb08ec230967dbd0e52f08cead4d8567aff07951215dd1303f3483dd"
+    },
+    {
+      "bytes": 1464,
+      "path": ".hol/objs/intrealTheory.sig",
+      "sha256": "3a052536ec6442bfe5c7fb6afb07aa0ccdc074c48e7aba5f9abb1d85ee4e7e34"
+    },
+    {
+      "bytes": 4675,
+      "path": ".hol/objs/intrealTheory.sml",
+      "sha256": "a81e32c7faf43c3f1e81ea23abe0fe022bc45a1f9b61313852421569a2bc1311"
+    },
+    {
+      "bytes": 408,
+      "path": ".hol/objs/intrealTheory.ui",
+      "sha256": "ed77547083a03184e7c625ea2889327d41d0d35c5ab0c2a6fa4971e02b03adee"
+    },
+    {
+      "bytes": 973,
+      "path": ".hol/objs/intrealTheory.uo",
+      "sha256": "db104e502dd9b81210aefda9ddc95d081c8c42dd975aa18d4874acdcb74717ca"
+    },
+    {
+      "bytes": 401,
+      "path": ".hol/objs/isqrtLib.ui",
+      "sha256": "b65a195ce3905b455e68a70c6a1a7aab936c4975e8177d4b0b196c665e5d5004"
+    },
+    {
+      "bytes": 1166,
+      "path": ".hol/objs/isqrtLib.uo",
+      "sha256": "03d10b08097e5996c671f3acea97fbadbf6bc2bff6f9736071031c97c9848cb6"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/limTheory.cachekey",
+      "sha256": "bf28e887279a2deae9ca5662ea3120f85489fd130a283746143b857c6e157470"
+    },
+    {
+      "bytes": 61964,
+      "path": ".hol/objs/limTheory.dat",
+      "sha256": "29c8643db5d5343eb018bbf609be35c3fa6336a97f904ede5b77f849eb79ee89"
+    },
+    {
+      "bytes": 5422,
+      "path": ".hol/objs/limTheory.sig",
+      "sha256": "8ead86e4ee1cf865dbf0df9f0ad4021672207c111c28e96e6413a98fb1b0059d"
+    },
+    {
+      "bytes": 15982,
+      "path": ".hol/objs/limTheory.sml",
+      "sha256": "6525a0f9a759b46b99e992fd8aa6b656f933994f417c536fef6724e4cf88bd38"
+    },
+    {
+      "bytes": 400,
+      "path": ".hol/objs/limTheory.ui",
+      "sha256": "4d8c3fa5f34558ca1438310423a5c697419311c0d1ab01a5b87dd266690a729b"
+    },
+    {
+      "bytes": 1079,
+      "path": ".hol/objs/limTheory.uo",
+      "sha256": "d16f863314e911b8e9cd810f5efbdcc537bc7fff8b3a8ddd44ea510f3094fa2f"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/metricTheory.cachekey",
+      "sha256": "a4de419fa3620af435a7d336ad130ab268f3bdf855c5060ce96fa5f6396e1f20"
+    },
+    {
+      "bytes": 64241,
+      "path": ".hol/objs/metricTheory.dat",
+      "sha256": "857e1755fd61631caed0b16eb4e8fb238538dbbcc5fa74d0761db64712b4c878"
+    },
+    {
+      "bytes": 5368,
+      "path": ".hol/objs/metricTheory.sig",
+      "sha256": "32a5f0d26305ff4ab4faf27eb006125eec03fac5b7977cc8e7e3ad91a801d109"
+    },
+    {
+      "bytes": 15798,
+      "path": ".hol/objs/metricTheory.sml",
+      "sha256": "4632025181c7a70b1ed79a221a350d79e94ad3144e502c214706b75ac72b98ea"
+    },
+    {
+      "bytes": 406,
+      "path": ".hol/objs/metricTheory.ui",
+      "sha256": "1163826c8313cf93fbdf006c4040a95fc3576fc42f605a0b57d3d2d4803c3490"
+    },
+    {
+      "bytes": 1093,
+      "path": ".hol/objs/metricTheory.uo",
+      "sha256": "84a0f59e7550d0d4c3a6658bac9636df3775af561bee57c588af824246bfc4de"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/netsTheory.cachekey",
+      "sha256": "10c260a38a484eaa0e8fdb4d51a719b5771e55d3cffb79d955164ad4f6351d81"
+    },
+    {
+      "bytes": 44299,
+      "path": ".hol/objs/netsTheory.dat",
+      "sha256": "ce0fe2dc5388991d60ac86124e3156d86671e33b9f6492e8b7c997806b1945f0"
+    },
+    {
+      "bytes": 3544,
+      "path": ".hol/objs/netsTheory.sig",
+      "sha256": "bad9c89c7e58057f5d5218ffa164ad2c94e3fddc62cd93b55f39a0b09fc69b42"
+    },
+    {
+      "bytes": 10536,
+      "path": ".hol/objs/netsTheory.sml",
+      "sha256": "76ed46976d3771a48961084511310252a91e41aec28fb5b5eaf7bf39c07ea86b"
+    },
+    {
+      "bytes": 402,
+      "path": ".hol/objs/netsTheory.ui",
+      "sha256": "8010974287c6c485098e4fc4315bf1611d61dc1ebf3a90ec9e24a5d32ec623e8"
+    },
+    {
+      "bytes": 1091,
+      "path": ".hol/objs/netsTheory.uo",
+      "sha256": "c8d09dcb9bfe020dbde28169a8e75c93412e0b2e347d862d214083d6bd6962f4"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/powserTheory.cachekey",
+      "sha256": "28c78a50f9c2f8bda7eb820e72723fe586736063ac9ba96fd454669aac00da43"
+    },
+    {
+      "bytes": 7339,
+      "path": ".hol/objs/powserTheory.dat",
+      "sha256": "70f23a5ffa2904852cb98e041244c90c22af907007344a765c3a555e4c9eafa5"
+    },
+    {
+      "bytes": 525,
+      "path": ".hol/objs/powserTheory.sig",
+      "sha256": "b83a4786859c54dae49fac7bbd5aaf6e1d6c806d1c5c5f738025a7465c34276a"
+    },
+    {
+      "bytes": 1959,
+      "path": ".hol/objs/powserTheory.sml",
+      "sha256": "8b4538b177ff45566b46ea23408feef9bdca119b5e8f19ac716a7720a82b413e"
+    },
+    {
+      "bytes": 406,
+      "path": ".hol/objs/powserTheory.ui",
+      "sha256": "9fb03d6c0827d5a9a5b1ad82b824a6aab894566bd18a7a8fee15ebc0347efe41"
+    },
+    {
+      "bytes": 906,
+      "path": ".hol/objs/powserTheory.uo",
+      "sha256": "3adeb15e8555d7dbf72c8c7fa03c86097570373d760a028a670d233eb815341d"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/real_arithTheory.cachekey",
+      "sha256": "fb23b9fbe86771b464516f9c9e06feb18cbc6850586c642040e8e3962506bbf7"
+    },
+    {
+      "bytes": 5138,
+      "path": ".hol/objs/real_arithTheory.dat",
+      "sha256": "81ea60a12b63d34a3d9ac9c1287a21541a3d0ed23e0778d466427bc07e6ff2d9"
+    },
+    {
+      "bytes": 85,
+      "path": ".hol/objs/real_arithTheory.sig",
+      "sha256": "cd9378c4b818ff4dc7b07d355f1fe8e315130b6815e8320372272c511d971035"
+    },
+    {
+      "bytes": 797,
+      "path": ".hol/objs/real_arithTheory.sml",
+      "sha256": "b6345fb3a31b65b3121f0b854ba2e6b992184df5675888a12ad517f01ba69014"
+    },
+    {
+      "bytes": 414,
+      "path": ".hol/objs/real_arithTheory.ui",
+      "sha256": "09ee34501b24cb9ef5d8b08d318d652ae14f8b72e375d999dbdea0db7028b4b2"
+    },
+    {
+      "bytes": 921,
+      "path": ".hol/objs/real_arithTheory.uo",
+      "sha256": "113f26f37ad67074f1430d9450d66ca8be05d682b0347c0d660fcdcfdaaffa6e"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/real_sigmaTheory.cachekey",
+      "sha256": "66500748871a82a033e28562001fe5f88d513ec75470d5ecf281a42a848e48fd"
+    },
+    {
+      "bytes": 140675,
+      "path": ".hol/objs/real_sigmaTheory.dat",
+      "sha256": "5fc51d5524e072a2cdab0ab9d26d78c778cf595418b8f9e43395e13d50d64170"
+    },
+    {
+      "bytes": 11494,
+      "path": ".hol/objs/real_sigmaTheory.sig",
+      "sha256": "fa2acf671d217ab126d738ba33b4d66b2dc8091d5d0665dbc1d23dcfb336854e"
+    },
+    {
+      "bytes": 33405,
+      "path": ".hol/objs/real_sigmaTheory.sml",
+      "sha256": "dc095f011f2be2728a44a7f5c148a85c5f4e7746569ab24e33677f790ed91d7f"
+    },
+    {
+      "bytes": 414,
+      "path": ".hol/objs/real_sigmaTheory.ui",
+      "sha256": "a035f5ee91f56b25cf154f164826b90e212dc2065997faf114fac052bac72ddc"
+    },
+    {
+      "bytes": 1162,
+      "path": ".hol/objs/real_sigmaTheory.uo",
+      "sha256": "3893e8b83a9941f60f241398675579d0ddfde7581d02164b09f842486da019ca"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/real_topologyTheory.cachekey",
+      "sha256": "8a9b3d09b74d31f44909575dfa599ef7c9480bfa83906018d3b1ca57c51263ce"
+    },
+    {
+      "bytes": 695255,
+      "path": ".hol/objs/real_topologyTheory.dat",
+      "sha256": "eb75d4219df0d0baa93ef6901604f202d83a7c6be18c7bc5aca9f57bb9ef9707"
+    },
+    {
+      "bytes": 56572,
+      "path": ".hol/objs/real_topologyTheory.sig",
+      "sha256": "5f81f9185b92f967646ec795a41edc929a6eefb43340af3f8f1c25b889db3631"
+    },
+    {
+      "bytes": 164302,
+      "path": ".hol/objs/real_topologyTheory.sml",
+      "sha256": "3a52c3f49e4ff9f9fb80c3315b65e8ef0bc9fa0744ca2d358569f75147af8e6a"
+    },
+    {
+      "bytes": 420,
+      "path": ".hol/objs/real_topologyTheory.ui",
+      "sha256": "4e713e62b13d3501b11114d6bdc51cf3ef0c88a0322ff2196751c310404d5b5e"
+    },
+    {
+      "bytes": 928,
+      "path": ".hol/objs/real_topologyTheory.uo",
+      "sha256": "345e7f407b6826f204939f87e6cced9613e0ba7ca4aa219a68a49d33e10cfcdb"
+    },
+    {
+      "bytes": 655,
+      "path": ".hol/objs/RealArith.ui",
+      "sha256": "fe8150aeeda295ad6c9b8fb73fea807e81790b948622460fc8a22b01b3e823ed"
+    },
+    {
+      "bytes": 1781,
+      "path": ".hol/objs/RealArith.uo",
+      "sha256": "0624500059d91030dd182467fd031312a73b3a5c07249bf6ae845fa98958c4d7"
+    },
+    {
+      "bytes": 453,
+      "path": ".hol/objs/RealArith0.ui",
+      "sha256": "3a2d4a02c2fe8affe59908afbb563730a38d6b658ffedf1add6d7b2973716eb9"
+    },
+    {
+      "bytes": 1421,
+      "path": ".hol/objs/RealArith0.uo",
+      "sha256": "4c350bf34cd23779db9f3d2e02c675924958f4374bc36f82197585cf458278ae"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/realaxTheory.cachekey",
+      "sha256": "447cec3ae74b579fbcb79756eab500d42c90c163c9d261eede3f2a739b74a2cc"
+    },
+    {
+      "bytes": 52359,
+      "path": ".hol/objs/realaxTheory.dat",
+      "sha256": "70ffdd218d78cd24abbe9e861874a388d057694acf97bf8735472444f86b9c7a"
+    },
+    {
+      "bytes": 4134,
+      "path": ".hol/objs/realaxTheory.sig",
+      "sha256": "cfc2b8f632e6453179f8e5b8b27588b54e660d8ebc7cc2a83a4d2b9fb32f51be"
+    },
+    {
+      "bytes": 11572,
+      "path": ".hol/objs/realaxTheory.sml",
+      "sha256": "2cefc2954278f8e4e97facc5cbf4deb02f2d5ee9c32673d01aa454c74d4b4a91"
+    },
+    {
+      "bytes": 406,
+      "path": ".hol/objs/realaxTheory.ui",
+      "sha256": "155afc67cc4efa2d7823303c76f273371ded713e17671904c4693b687ebe42df"
+    },
+    {
+      "bytes": 1114,
+      "path": ".hol/objs/realaxTheory.uo",
+      "sha256": "186332accfab331d394ccb81a282926f43a4bd8cabd867739fa6f230577c07c8"
+    },
+    {
+      "bytes": 578,
+      "path": ".hol/objs/RealField.ui",
+      "sha256": "dc8e0794d9c0fec83eea55cb9612a44da8e8b81c4b9ab950adc5b52b8f91e429"
+    },
+    {
+      "bytes": 2326,
+      "path": ".hol/objs/RealField.uo",
+      "sha256": "8d5912c839175fb250c42e9aaa31be4d77aed735ba2674e2df11108361be1a1c"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/RealFieldContextTheory.cachekey",
+      "sha256": "253f4e31f939d52483189076606f94b988dfcbf697c945825b4776529846057c"
+    },
+    {
+      "bytes": 6348,
+      "path": ".hol/objs/RealFieldContextTheory.dat",
+      "sha256": "aa0b39b93b6bea5c8467633f552a2bfdab8e3cfe79c8ecb6481be401ce55720c"
+    },
+    {
+      "bytes": 624,
+      "path": ".hol/objs/RealFieldContextTheory.sig",
+      "sha256": "d283d265f9bf6725cacd37173769ee73191f3f3d88ea0c33db0498107c1197de"
+    },
+    {
+      "bytes": 2374,
+      "path": ".hol/objs/RealFieldContextTheory.sml",
+      "sha256": "2ecb004890ccd526c38623a8225d54df9013e17ce410d290780b16cd5fdec978"
+    },
+    {
+      "bytes": 426,
+      "path": ".hol/objs/RealFieldContextTheory.ui",
+      "sha256": "c2eb8b5847b9ea685ae5def8d84c2cad98aa0113452a1837f05759b1c995c653"
+    },
+    {
+      "bytes": 937,
+      "path": ".hol/objs/RealFieldContextTheory.uo",
+      "sha256": "8918e312c0e4efa5450694b5b166e10b50a41b26ba8b209f419fb150de393d31"
+    },
+    {
+      "bytes": 467,
+      "path": ".hol/objs/realLib.ui",
+      "sha256": "b6abb24c3b82462c62cdef73138659b10903d39bf2434b255bde82baf603465e"
+    },
+    {
+      "bytes": 1476,
+      "path": ".hol/objs/realLib.uo",
+      "sha256": "d10821b6688a9311184f09040e1440f7605bff88934734725313343f2c0d1ddb"
+    },
+    {
+      "bytes": 0,
+      "path": ".hol/objs/realPP.ui",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 438,
+      "path": ".hol/objs/realPP.uo",
+      "sha256": "5e1dc9f91bad9cb9b00049bec5de21f471087ca6cb4d23975ddc69e33f62eb25"
+    },
+    {
+      "bytes": 522,
+      "path": ".hol/objs/realSimps.ui",
+      "sha256": "dfb98bdea93b31830764b4d07df7f5cd4fc9e93bce0069f6e1e3a4620c35929a"
+    },
+    {
+      "bytes": 1777,
+      "path": ".hol/objs/realSimps.uo",
+      "sha256": "fdc0bf614dbcb941811d79fdc663ab6a4c595b50aeb6c67058b72865beb0942f"
+    },
+    {
+      "bytes": 429,
+      "path": ".hol/objs/realSyntax.ui",
+      "sha256": "fd2ee4fe767d4e249071c21198263e26df0a2d40654b8887c373e455c3f02ae8"
+    },
+    {
+      "bytes": 938,
+      "path": ".hol/objs/realSyntax.uo",
+      "sha256": "87f24d2aaff47062264bbfa7afa899011fd632b1ac9b1e50b60505cd1413b998"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/realTheory.cachekey",
+      "sha256": "2df3f273cc3ba153ae5613908b9a5fdb5ac2a5fa42ec59f7bdd4963cd1a0a7e0"
+    },
+    {
+      "bytes": 199506,
+      "path": ".hol/objs/realTheory.dat",
+      "sha256": "82102b17955a98975ca99eb6454ce94379c4a675adfe530b707cd0858e6625c5"
+    },
+    {
+      "bytes": 18079,
+      "path": ".hol/objs/realTheory.sig",
+      "sha256": "0b5661fb6f48708a535911950a99ce339d66b0bcd620ffab6e35917073e2cb30"
+    },
+    {
+      "bytes": 51296,
+      "path": ".hol/objs/realTheory.sml",
+      "sha256": "4fcec3e8e2e32c326d701a39bcf4475265e25232ca2552d108566fc07a178b93"
+    },
+    {
+      "bytes": 402,
+      "path": ".hol/objs/realTheory.ui",
+      "sha256": "583e2570ff255fc553dfa23dda305ac9e2bff1e2c98ac37cbb3d9d7a1f4c7e12"
+    },
+    {
+      "bytes": 907,
+      "path": ".hol/objs/realTheory.uo",
+      "sha256": "303c7fef244a0c16bfed85a6b949136cd9e2056a8c53563f19cc7fc4c912604b"
+    },
+    {
+      "bytes": 432,
+      "path": ".hol/objs/res_quanLib.ui",
+      "sha256": "60c429f216d515dd4a5c1a662bfabca2d8687cb9489d5b988157646f3d9f2f4c"
+    },
+    {
+      "bytes": 1366,
+      "path": ".hol/objs/res_quanLib.uo",
+      "sha256": "ee33e76031f2a54cd5295e07dc71656e91d5253bf45a68f238c8b425192829f6"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/res_quanTheory.cachekey",
+      "sha256": "4d75c4a0c742a16fb32d8712818740fdb0a7fd48ac0d4405eef145ec7cf9dee4"
+    },
+    {
+      "bytes": 14608,
+      "path": ".hol/objs/res_quanTheory.dat",
+      "sha256": "e01a8fa959a6c02b30f64f5c0bd114b46bcba9c4f112b0a8ab7308d479d6ec1e"
+    },
+    {
+      "bytes": 1924,
+      "path": ".hol/objs/res_quanTheory.sig",
+      "sha256": "1facc1ba631319e0c4b7267f16eeb9c0c9cea5812906dff293fc372433af1f13"
+    },
+    {
+      "bytes": 6077,
+      "path": ".hol/objs/res_quanTheory.sml",
+      "sha256": "d6725825813faf2c8c3aac0992184d4759e029d9613768a4b8489ec7f685f26d"
+    },
+    {
+      "bytes": 410,
+      "path": ".hol/objs/res_quanTheory.ui",
+      "sha256": "5a775f04ca3bf2ca9539142911820a2b64d24e45fbbc6d8d3da5202790390476"
+    },
+    {
+      "bytes": 764,
+      "path": ".hol/objs/res_quanTheory.uo",
+      "sha256": "fee61f4716fd4028595b9552a64f0b2970ea175b2c791763b570cddbdbfec113"
+    },
+    {
+      "bytes": 564,
+      "path": ".hol/objs/res_quanTools.ui",
+      "sha256": "b5522a5a3bc83d0c70ee013bb102ebbe76abfdef4fa9f8932111b1ce4a9ac56b"
+    },
+    {
+      "bytes": 923,
+      "path": ".hol/objs/res_quanTools.uo",
+      "sha256": "811ff2d58a5245f1d7fb59c263b02ff0ceac2e92cc88cc2a9d686854da11ee00"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/seqTheory.cachekey",
+      "sha256": "0e4a09df4a1d5af3b8f27ba9350a50a2b7ebf34f73f8daa744f45bea4c998abb"
+    },
+    {
+      "bytes": 36594,
+      "path": ".hol/objs/seqTheory.dat",
+      "sha256": "e220cb60a89f44d2ed2357b7ffbe89c34e7ca6e719e910db2e07871e219d547e"
+    },
+    {
+      "bytes": 2756,
+      "path": ".hol/objs/seqTheory.sig",
+      "sha256": "31012a418b3f0d6f2451502e1596d0f3e01929da8ed909f3b1286794dc45fbdb"
+    },
+    {
+      "bytes": 8163,
+      "path": ".hol/objs/seqTheory.sml",
+      "sha256": "458c41a5e92c5db20225be188d88e2245e9e9055cf8fa1ca195121d349326b15"
+    },
+    {
+      "bytes": 400,
+      "path": ".hol/objs/seqTheory.ui",
+      "sha256": "1ffcc1ff624ab5aa5439d3fee36782d3bcebc2124eb46a2969c459779b1dd7da"
+    },
+    {
+      "bytes": 907,
+      "path": ".hol/objs/seqTheory.uo",
+      "sha256": "f8ecd1a31b8c72026305a50fa781ba449869e208eaafb6da276c7d9c75573dfc"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/topologyTheory.cachekey",
+      "sha256": "b2249bd9650d2e1b3b814d0456fccef298213d0398a17d186911e65b47ed1b28"
+    },
+    {
+      "bytes": 132594,
+      "path": ".hol/objs/topologyTheory.dat",
+      "sha256": "a2633edc127dea81ac6acb6cd087c4cbe973215c3f612552618de47794fcc95d"
+    },
+    {
+      "bytes": 14322,
+      "path": ".hol/objs/topologyTheory.sig",
+      "sha256": "8563c39d1b6e31c72b6268ae3ea866be4fee6719d9a1c1f7527ed6fd919aef4b"
+    },
+    {
+      "bytes": 42063,
+      "path": ".hol/objs/topologyTheory.sml",
+      "sha256": "2e7977af7c1994f32b6f8e41911f5fa7c18b02a044b0245a6080a4578de6aff8"
+    },
+    {
+      "bytes": 410,
+      "path": ".hol/objs/topologyTheory.ui",
+      "sha256": "183e236535f7c4473af70eb844f93b80b7e4999d97f354236a5eaaff4322d0ef"
+    },
+    {
+      "bytes": 796,
+      "path": ".hol/objs/topologyTheory.uo",
+      "sha256": "af8c12b7f44266aae100de033f01c2b0094da6b98ce34bbf2acd620a89f1f481"
+    },
+    {
+      "bytes": 41,
+      "path": ".hol/objs/transcTheory.cachekey",
+      "sha256": "4d2e4b73da53654d046151f7edae7f95fda1f58190c9fb7b61f0890a29ac67fe"
+    },
+    {
+      "bytes": 142280,
+      "path": ".hol/objs/transcTheory.dat",
+      "sha256": "fe0f2a8c88e494400423feec93b70f6a4f3b752a9178138eed28808183aad82f"
+    },
+    {
+      "bytes": 9958,
+      "path": ".hol/objs/transcTheory.sig",
+      "sha256": "70ffed8d0aebd82c8c6dff63153bd67a4fa905a5ef0d2f2a696036bf78e84989"
+    },
+    {
+      "bytes": 28113,
+      "path": ".hol/objs/transcTheory.sml",
+      "sha256": "7f862f87eb63ba8cdbce03c89099d35b948aed8d6f9c5c2f31cd05fda8f470ff"
+    },
+    {
+      "bytes": 406,
+      "path": ".hol/objs/transcTheory.ui",
+      "sha256": "054ec1bf05e6bfe3daded4a40856f3e3240fea4a90ba898d36ea577987e4b627"
+    },
+    {
+      "bytes": 909,
+      "path": ".hol/objs/transcTheory.uo",
+      "sha256": "86c69fb11fb4320177eeb0d76b0bfef6e03f227c9236fb0d9225a36abf786308"
+    }
+  ],
+  "postcheck_errors": [],
+  "protected_old_files": {
+    "Holmakefile": "b0a469efe1501fdd6d7cb0d6a9f49ab81665dfff25eed7231508354b89abb18d",
+    "logs\\graph.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs\\graph.out": "5b9112def37299d82f8bf35f8808c7a03728fede4fcc5fe76f29bd46f161f747",
+    "logs\\graph_command.json": "4f4960ae7a266f7c2100a50f11bf4053e55768e8d78b6fc6292406b4c44005d4",
+    "logs\\graph_result.json": "764f4c1474f73b61ba2bd900c146b6bb9c4b74f5ae68c286100e3ee9b1eecc02",
+    "logs\\recovery01_STARTED.json": "d8da8a6cbf6214c235ef9555ba6039759516ec38bd377ca60aacf7a59c3e661c",
+    "logs\\recovery01_command.json": "87e13d4f0eb324cac8023f5117897464df3ef6b7735a5a92f1989a8db286f07b",
+    "logs\\recovery01_graph.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs\\recovery01_graph.out": "c2c0b4f8a54f73fa50ad04da7565aa61fc18023ea2955a49e4152cb9a18babac",
+    "logs\\recovery01_result.json": "219020afdacf600eb0c5d66b4bc6907fd7b9f656bac9c488b7d2ddbe594474ba",
+    "windows_stage_binding.json": "ffa4de80d9ff15b2c985ef9953f11764ee355e04a76b5d5fa33819d8404bb7e0"
+  },
+  "returncode": 1,
+  "script_sha256": "aa82c8d7b8c4bbfeb9c633e36ec0001628f21b28b2d55f85ff561937854c0ade",
+  "stage_usage_after": {
+    "bytes": 18678211,
+    "files": 376
+  },
+  "status": "FAIL",
+  "windows_launcher_timed_out": false,
+  "windows_timeout_does_not_certify_linux_process_exit": true,
+  "windows_wall_seconds": 478.9811901000212
+}

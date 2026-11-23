@@ -1,0 +1,81 @@
+{
+  "status": "PASS_BOUNDED_STATIC_SOURCE_REVIEW",
+  "checks": 1359,
+  "author_pins": {
+    "MMB_ARITHMETIC_EVENT_EXPANSION_2026-11-11.md": "E57FCF240BB386E783A653AD28162AFFCA2D4C5273BD1915C6C4E930ACF9CCB6",
+    "mmb_arithmetic_event_expansion_20261111.py": "2BDBDD0E6FE9778F30C665AA93E62AF43C3CFDFFA9BBDE850996C5F5DCB5048E",
+    "mmb_arithmetic_event_expansion_20261111.json": "022682B141671DC2C2F5FEC6F58715BE076735B45DE8CF8BB047E5FCA32146F8"
+  },
+  "source_pins": {
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm0": "463A7D6E4F4791313DEDCFD737053DCF2CC07B466371E263C38A994C6FB72052",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm1": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+    "work/mm0-efficient/toolchain-sources/examples__peano_hex.mm0": "E2F5E461C568E0E3EF784B507E9111272B38956093DF98B943CCC4CD806E351B",
+    "work/mm0-efficient/toolchain-sources/examples__peano_hex.mm1": "76FE94B569ECBF0AA051AF20AFE9C207BF8EC0B562C83C4F5D841118F2CC2D94",
+    "work/formal-goldbach-bench/mm0/src/mmb.md": "E93F3058650104B3F538FD8B2C583239C1E2FB076C7A75FA93B4FE93C16BC9A0",
+    "work/formal-goldbach-bench/mm0/src/verifier.c": "71428A117C96A37B81E183CE57EF34B71E99EFECBA019E65A47CE27DD4FAA4B5",
+    "work/formal-goldbach-bench/mm0/src/verifier_types.c": "87A0B9470DE5AE0BEFF5EDFA565952520957A39B250591B0067EBC4786B5490E",
+    "work/formal-goldbach-bench/mm0/src/types.c": "B3FC325B9269F50298B1D388C80B6544845A7185BC99DF0DD9970FF306A215D1",
+    "work/qrh-campaign/agents/integration/EFFICIENCY_MM0_LADDER_ARITHMETIC_2026-11-11.md": "3D8116AC2D53E33DA76DF0FE7AE42211AAB4D7B5C3D954746587D8DC9EF21227",
+    "work/qrh-campaign/agents/moebius/SIGNED_HORNER_SCHEDULE_AND_BREAK_EVEN_2026-11-11.md": "531DD23307CED3ED958198C750393D933287809B9E42EF738888370AA4DE4474",
+    "work/qrh-campaign/agents/moebius/signed_horner_schedule_costs_20261111.json": "0DF6FF38D7F14A9C3596423BE109E5EEC6CAF18E031F4329B907E43F5A60FF37",
+    "work/qrh-campaign/agents/moebius/fixed_horner_degree_envelope_costs_20261111.json": "4F114004CC63EF912619A4318227731CECC5041AADAAD9F63DE38DE3B44468B9",
+    "work/qrh-campaign/agents/independent-feasibility/REVIEW_SIGNED_HORNER_SCHEDULE_AND_BREAK_EVEN_2026-11-11.md": "40AE12EEFE142B932820F6462E6DE7CE127679A0CE220010148C698E984BBFF1"
+  },
+  "source_parsed_headers": {
+    "add_xx0": {
+      "source_line": 457,
+      "hex_variables": [
+        "b",
+        "d",
+        "f"
+      ],
+      "expression_sizes": [
+        11,
+        5,
+        8
+      ],
+      "arguments": 6,
+      "premises": 2,
+      "unify_commands": 27,
+      "fresh_commands": 14,
+      "cached_commands": 10,
+      "fresh_byte_upper": 48
+    },
+    "mul_x2x": {
+      "source_line": 556,
+      "hex_variables": [
+        "c",
+        "f"
+      ],
+      "expression_sizes": [
+        9,
+        5,
+        8,
+        5
+      ],
+      "arguments": 7,
+      "premises": 3,
+      "unify_commands": 31,
+      "fresh_commands": 16,
+      "cached_commands": 12,
+      "fresh_byte_upper": 54
+    }
+  },
+  "dag_algebra_cases": 648,
+  "rectangle_events": [
+    39,
+    117,
+    39,
+    6,
+    1
+  ],
+  "real_round_events": [
+    202,
+    202,
+    33,
+    33,
+    7,
+    31
+  ],
+  "scope": "No MMB output, proofs, compilation, ABI measurement, arithmetic instances, runtime estimate or backend validation"
+}

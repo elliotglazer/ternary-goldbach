@@ -1,0 +1,80 @@
+{
+  "python": "3.14.7",
+  "files": {
+    "c10004-full-integer\\spectrum.tsv": "f1ba9ff582a4d1cd8ca77f022268a075a04f27bbb3baf43c833f72fabf8f046a",
+    "c10004-hol-shared-phase\\phases.tsv": "64ec562df59822bbb40a4945b40a96850380981446ddce481728dd033b3b8417",
+    "c10004-full-integer\\params.tsv": "dd2dc7c952344f3432793f914f0ad2c16ad1005046d646ec9531681e8210c3c5"
+  },
+  "samples": [
+    {
+      "rows": 2,
+      "median_elapsed_ns_per_selected_row": 785.8777777777777,
+      "minimum_elapsed_ns_per_selected_row": 741.4333333333333,
+      "maximum_elapsed_ns_per_selected_row": 846.5666666666667,
+      "max_center_bits": 255,
+      "max_radius_bits": 179
+    },
+    {
+      "rows": 32,
+      "median_elapsed_ns_per_selected_row": 764.0235765124555,
+      "minimum_elapsed_ns_per_selected_row": 737.3443060498221,
+      "maximum_elapsed_ns_per_selected_row": 989.6352313167259,
+      "max_center_bits": 255,
+      "max_radius_bits": 179
+    },
+    {
+      "rows": 256,
+      "median_elapsed_ns_per_selected_row": 841.8080357142857,
+      "minimum_elapsed_ns_per_selected_row": 773.7723214285714,
+      "maximum_elapsed_ns_per_selected_row": 1122.2544642857142,
+      "max_center_bits": 255,
+      "max_radius_bits": 179
+    },
+    {
+      "rows": 2301,
+      "median_elapsed_ns_per_selected_row": 924.5726495726495,
+      "minimum_elapsed_ns_per_selected_row": 858.011009705925,
+      "maximum_elapsed_ns_per_selected_row": 1243.8541213964943,
+      "max_center_bits": 256,
+      "max_radius_bits": 179
+    }
+  ],
+  "pre_postchirp_tiles": [
+    {
+      "tag": "even24n64",
+      "strict_ball_sign_matched": 64,
+      "ball_overlaps_zero": 0,
+      "median_elapsed_ns_per_tap": 1344.9932795698924
+    },
+    {
+      "tag": "even24n256",
+      "strict_ball_sign_matched": 256,
+      "ball_overlaps_zero": 0,
+      "median_elapsed_ns_per_tap": 1457.3709239130435
+    },
+    {
+      "tag": "even24n1024",
+      "strict_ball_sign_matched": 1022,
+      "ball_overlaps_zero": 2,
+      "median_elapsed_ns_per_tap": 1677.81982421875
+    },
+    {
+      "tag": "even28n64",
+      "strict_ball_sign_matched": 64,
+      "ball_overlaps_zero": 0,
+      "median_elapsed_ns_per_tap": 1676.9153225806451
+    },
+    {
+      "tag": "even28n256",
+      "strict_ball_sign_matched": 256,
+      "ball_overlaps_zero": 0,
+      "median_elapsed_ns_per_tap": 1777.5985054347825
+    },
+    {
+      "tag": "even28n1024",
+      "strict_ball_sign_matched": 1024,
+      "ball_overlaps_zero": 0,
+      "median_elapsed_ns_per_tap": 2334.9365234375
+    }
+  ]
+}

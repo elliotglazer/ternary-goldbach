@@ -1,0 +1,6 @@
+INCLUDES = ../../hol4-setup $(HOLDIR)/src/num/extra_theories
+
+all: SourceArithmeticTheory.uo
+
+source_audit.exe: source_audit.uo
+	$(HOLMOSMLC) -o $@ $<

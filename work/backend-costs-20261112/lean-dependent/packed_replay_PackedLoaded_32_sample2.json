@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayPackedLoadedP343N32.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\lean-dependent\\ReplayPackedLoadedP343N32.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 7.275052000011783,
+  "user_cpu_seconds": 1.203125,
+  "system_cpu_seconds": 5.96875,
+  "cpu_seconds": 7.171875,
+  "peak_working_set_bytes": 867090432,
+  "observed_peak_private_bytes": 2201747456,
+  "memory_samples": 144,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "PackedLoaded",
+      "precision": 343,
+      "butterflies": 32,
+      "repetitions": 1,
+      "declarations": 3,
+      "kernel_wall_ns": 1472400
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayPackedLoadedP343N32.lean",
+      "bytes": 201,
+      "sha256": "32931EA4EE7A2D98E849A675B91D7B532D4A548AEC53E3A4940D1ACF8568699F"
+    },
+    {
+      "path": "packed_replay_PackedLoaded_32_sample2.log",
+      "bytes": 81,
+      "sha256": "E81C5CACAAEF8C9A916FD02B8904E5419E574F696C59A40B196793DF0CD6D478"
+    },
+    {
+      "path": "ReplayPackedLoadedP343N32.olean",
+      "bytes": 1568,
+      "sha256": "30B711346D8E333335F646B523DE987A0518CA506E205467AA008127E02F5962"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

@@ -1,0 +1,77 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "GuardEnvelope">>
+Saved theorem _______ "rising_compute"
+Saved definition ____ "rising_def"
+Saved theorem _______ "exp_sum_numerator_compute"
+Saved definition ____ "exp_sum_numerator_def"
+Saved definition ____ "tail_num_def"
+Saved definition ____ "tail_den_def"
+Saved definition ____ "grid_den_def"
+Saved definition ____ "grid_num_def"
+Saved definition ____ "charge_def"
+Saved definition ____ "envelope_ok_def"
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Starting translation of charge from GuardEnvelopeTheory.
+Saved theorem _______ "cv_charge_thm"
+Finished translating charge, stored in cv_charge_thm
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Starting translation of grid_den from GuardEnvelopeTheory.
+Saved theorem _______ "cv_grid_den_thm"
+Finished translating grid_den, stored in cv_grid_den_thm
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Starting translation of tail_num from GuardEnvelopeTheory.
+Starting translation of rising from GuardEnvelopeTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in GuardEnvelope)>>
+Saved definition ____ "cv_rising_def"
+Saved induction _____ "cv_rising_ind"
+Saved theorem _______ "cv_rising_thm"
+Finished translating rising, stored in cv_rising_thm
+Starting translation of tail_num from GuardEnvelopeTheory.
+Saved theorem _______ "cv_tail_num_thm"
+Finished translating tail_num, stored in cv_tail_num_thm
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Starting translation of tail_den from GuardEnvelopeTheory.
+Starting translation of FACT from arithmeticTheory.
+Saved definition ____ "cv_FACT_def"
+Saved induction _____ "cv_FACT_ind"
+Saved theorem _______ "cv_FACT_thm"
+Finished translating FACT, stored in cv_FACT_thm
+Starting translation of tail_den from GuardEnvelopeTheory.
+Saved theorem _______ "cv_tail_den_thm"
+Finished translating tail_den, stored in cv_tail_den_thm
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Starting translation of grid_num from GuardEnvelopeTheory.
+Saved theorem _______ "cv_grid_num_thm"
+Finished translating grid_num, stored in cv_grid_num_thm
+Starting translation of envelope_ok from GuardEnvelopeTheory.
+Saved theorem _______ "cv_envelope_ok_thm"
+Finished translating envelope_ok, stored in cv_envelope_ok_thm
+Starting translation of exp_sum_numerator from GuardEnvelopeTheory.
+Saved definition ____ "cv_exp_sum_numerator_def"
+Saved induction _____ "cv_exp_sum_numerator_ind"
+Saved theorem _______ "cv_exp_sum_numerator_thm"
+Finished translating exp_sum_numerator, stored in cv_exp_sum_numerator_thm
+Saved theorem _______ "rising_mono"
+Saved theorem _______ "tail_num_mono"
+Saved theorem _______ "tail_den_antitone"
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript.sml:67:1-8: parse error: expected 'QED'
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript.sml:65: error: Value or constructor (QED) has not been declared Found near decide_tac QED
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript.sml : Fail "Static Errors"
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript : Fail "Static Errors"
+Uncaught exception at ./basis/FinalPolyML.sml:492: Fail "Static Errors"
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/guard-repricing/GuardEnvelopeScript - exited with code 1

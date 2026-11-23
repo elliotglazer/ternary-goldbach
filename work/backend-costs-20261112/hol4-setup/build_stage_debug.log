@@ -1,0 +1,70 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 14 directories
+Building 1 theory file
+Starting work on StageCheckTheory
+StageCheckTheory                                            (6s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** StageCheckTheory (status 1)
+ <<HOL message: Created theory "StageCheck">>
+ Saved definition ____ "within_def"
+ Saved definition ____ "stage_one_def"
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in StageCheck)>>
+ Saved definition ____ "stage_check_def"
+ Saved induction _____ "stage_check_ind"
+ Saved definition ____ "butterfly_spec_def"
+ Saved theorem _______ "residual_pair"
+ Saved theorem _______ "three_real"
+ Saved theorem _______ "three_imag"
+ STAGE_COORDINATE_GOAL
+ (pi + mi = 2 * ui ∧ -s ≤ 2 * (vr * wi + vi * wr − (pi − ui) * s) ∧
+  2 * (vr * wi + vi * wr − (pi − ui) * s) < s ⇒
+  within s (2 * (ui * s + (vr * wi + vi * wr) − pi * s)) ∧
+  within s (2 * (ui * s − (vr * wi + vi * wr) − mi * s))) ⇒
+ (pr + mr = 2 * ur ∧ -s ≤ 2 * (vr * wr − vi * wi − (pr − ur) * s) ∧
+  2 * (vr * wr − vi * wi − (pr − ur) * s) < s ⇒
+  within s (2 * (ur * s + (vr * wr − vi * wi) − pr * s)) ∧
+  within s (2 * (ur * s − (vr * wr − vi * wi) − mr * s))) ⇒
+ within b ur ∧ within b ui ∧ within b vr ∧ within b vi ∧ within s wr ∧
+ within s wi ∧ within (4 * b) pr ∧ within (4 * b) pi ∧ within (4 * b) mr ∧
+ within (4 * b) mi ∧ within s (2 * (ur * s + (vr * wr − vi * wi) − pr * s)) ∧
+ within s (2 * (ui * s + (vr * wi + vi * wr) − pi * s)) ∧
+ within s (2 * (ur * s − (vr * wr − vi * wi) − mr * s)) ∧
+ within s (2 * (ui * s − (vr * wi + vi * wr) − mi * s))
+ 
+ ASSUMPTIONS
+ (λt.
+    (λu.
+       (λv.
+          (λrr.
+             (λii.
+                within b ur ∧ within b ui ∧ within b vr ∧ within b vi ∧
+                within s wr ∧ within s wi ∧ within (4 * b) pr ∧
+                within (4 * b) pi ∧ within (4 * b) mr ∧ within (4 * b) mi ∧
+                within (4 * b * s) t ∧ within (4 * b * s) u ∧
+                within (4 * b * s) v ∧ pr + mr = 2 * ur ∧ pi + mi = 2 * ui ∧
+                -s ≤ 2 * (rr − (pr − ur) * s) ∧ 2 * (rr − (pr − ur) * s) < s ∧
+                -s ≤ 2 * (ii − (pi − ui) * s) ∧ 2 * (ii − (pi − ui) * s) < s)
+               (t + v)) (t − u)) (vr * (wi − wr))) (vi * (wr + wi)))
+   (wr * (vr + vi))
+ 
+ Proof of 
+ 
+ stage_one s b (ur,ui,vr,vi,wr,wi) (pr,pi,mr,mi) ⇒
+ butterfly_spec s b (ur,ui,vr,vi,wr,wi) (pr,pi,mr,mi)
+ 
+ failed.
+ Tactic failure proving "stage_one_sound_coordinates"; heap saved to StageCheck.stage_one_sound_coordinates.dumpedheap.
+ Resume with: bin/hol --holstate=StageCheck.stage_one_sound_coordinates.dumpedheap
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/.hol/logs/StageCheckTheory

@@ -1,0 +1,3 @@
+PRE_INCLUDES = .. ../../source-raw-state-bridge ../../source-phase-taylor ../../raw-pair-round-proof ../../source-state-error ../../source-inverse-root ../../source-initial ../../source-state-bounds ../../source-log-real ../../source-log-horner ../../source-log-range ../../source-phase-range ../../source-exp-horner ../../../raw-state-handoff
+INCLUDES = ../../source-producer ../../raw-analytic/dependency-build-win01 ../../c10004-full-integer ../../c10004-packed-input-hol ../../c10004-horner-price ../../c10004-hol-shared-phase ../../c10004-traversal-cv ../../c10004-traversal ../../c10004-traversal-refinement ../../c10004-projection ../../c10004-transform ../../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+all: H1RawCvTheory.uo

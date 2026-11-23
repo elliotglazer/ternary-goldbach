@@ -1,0 +1,70 @@
+{
+  "endpoint_policy": "inclusive; omit all purpose-built endpoint probes",
+  "rows": [
+    {
+      "labels": [
+        15869,
+        27222
+      ],
+      "guard": 320,
+      "T": "1160",
+      "H": "1185",
+      "main_counts": [
+        2702,
+        2702
+      ],
+      "K": 5404,
+      "W_ticks": 406691840,
+      "W": "49645/32",
+      "phase_upper": "146733267412487/1073741824",
+      "allowances": {
+        "Rumely": "2031623041/536870912",
+        "moderate": "18"
+      },
+      "U_minus_K": {
+        "Rumely": "13063705611/26843545600",
+        "moderate": "43591919111/26843545600"
+      },
+      "approximate": {
+        "Rumely": 0.4866609577462077,
+        "moderate": 1.623925533555448
+      }
+    },
+    {
+      "labels": [
+        15869,
+        27222
+      ],
+      "guard": 640,
+      "T": "1160",
+      "H": "1210",
+      "main_counts": [
+        2702,
+        2702
+      ],
+      "K": 5404,
+      "W_ticks": 1629798400,
+      "W": "99475/16",
+      "phase_upper": "1187243601120433/4294967296",
+      "allowances": {
+        "Rumely": "16264121161/4294967296",
+        "moderate": "18"
+      },
+      "U_minus_K": {
+        "Rumely": "14669799591/42949672960",
+        "moderate": "195439578289/214748364800"
+      },
+      "approximate": {
+        "Rumely": 0.3415578881045803,
+        "moderate": 0.9100864561693743
+      }
+    }
+  ],
+  "signed_inputs": {
+    "spectrum.json": "2749daa21fe2bc3d12a301482b44caeb28c556f9b0ebd5742443ad42fe83fe5a",
+    "grid.json": "d200493752bb6e09fb61bf6b3540e0134603a6d22677eead4fa83635cd8a98e1",
+    "repair.py": "b71df0320e7fc428f6eb8c2d9e76d430f3b515e6d334a4858e81ffe8761dc233",
+    "signs-15869.tsv": "009861dd5d90a260e553380377bcbc11d90f53aa7407340b0e87ca5af7b4b5b9",
+    "signs-27222.tsv": "14b89fae6d65e2e551e5d8b43346f9ce90aa9ff1a4a6a09366d9638caaabd267"
+  }
+}

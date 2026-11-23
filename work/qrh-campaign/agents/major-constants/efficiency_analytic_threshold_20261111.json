@@ -1,0 +1,132 @@
+{
+  "scope": "exact rational/integer metadata; no candidate primes or L-values evaluated",
+  "records": [
+    {
+      "threshold": "1000000000000000000000000000",
+      "nonprime_normalized_upper": {
+        "numerator": "2082434414823",
+        "denominator": "790569415042075",
+        "upper_decimal_15": "2634094331505"
+      },
+      "major_sufficient_if_minor_unchanged": {
+        "numerator": "41118862973124001",
+        "denominator": "39528470752103750",
+        "upper_decimal_15": "1040234094331505"
+      },
+      "plus_sqrtq_error_upper": {
+        "numerator": "187203915431767",
+        "denominator": "442718872423560000000",
+        "upper_decimal_15": "422850543"
+      },
+      "star_sqrtq_main_error_upper": {
+        "numerator": "587500",
+        "denominator": "395284707521",
+        "upper_decimal_15": "1486270501"
+      },
+      "proth_exponent": 45,
+      "step_coefficient": 111616,
+      "step": "3927138875067072512",
+      "window_span": "72022409665839104",
+      "rungs_through_threshold": 254638308,
+      "rung_count_ratio_to_original": {
+        "numerator": "1",
+        "denominator": "1",
+        "upper_decimal_15": "1000000000000000"
+      },
+      "unchanged_old_grid_rungs": 254638308,
+      "interval_cover_necessary_rungs": 250000000
+    },
+    {
+      "threshold": "10000000000000000000000000000",
+      "nonprime_normalized_upper": {
+        "numerator": "539890403843",
+        "denominator": "625000000000000",
+        "upper_decimal_15": "863824646149"
+      },
+      "major_sufficient_if_minor_unchanged": {
+        "numerator": "649039890403843",
+        "denominator": "625000000000000",
+        "upper_decimal_15": "1038463824646149"
+      },
+      "plus_sqrtq_error_upper": {
+        "numerator": "37",
+        "denominator": "200000000",
+        "upper_decimal_15": "185000000"
+      },
+      "star_sqrtq_main_error_upper": {
+        "numerator": "47",
+        "denominator": "100000000",
+        "upper_decimal_15": "470000000"
+      },
+      "proth_exponent": 47,
+      "step_coefficient": 26374,
+      "step": "3711810517883420672",
+      "window_span": "288089638663356416",
+      "rungs_through_threshold": 2694103039,
+      "rung_count_ratio_to_original": {
+        "numerator": "2694103039",
+        "denominator": "254638308",
+        "upper_decimal_15": "10580116794524099"
+      },
+      "unchanged_old_grid_rungs": 2546383084,
+      "interval_cover_necessary_rungs": 2500000000
+    },
+    {
+      "threshold": "100000000000000000000000000000",
+      "nonprime_normalized_upper": {
+        "numerator": "2236688815921",
+        "denominator": "7905694150420925",
+        "upper_decimal_15": "282921243014"
+      },
+      "major_sufficient_if_minor_unchanged": {
+        "numerator": "410259246964633639",
+        "denominator": "395284707521046250",
+        "upper_decimal_15": "1037882921243014"
+      },
+      "plus_sqrtq_error_upper": {
+        "numerator": "486039154317679",
+        "denominator": "4427188724235720000000",
+        "upper_decimal_15": "109785055"
+      },
+      "star_sqrtq_main_error_upper": {
+        "numerator": "4700000",
+        "denominator": "31622776601683",
+        "upper_decimal_15": "148627051"
+      },
+      "proth_exponent": 49,
+      "step_coefficient": 5058,
+      "step": "2847400864404996096",
+      "window_span": "1152358554653425664",
+      "rungs_through_threshold": 35119747714,
+      "rung_count_ratio_to_original": {
+        "numerator": "17559873857",
+        "denominator": "127319154",
+        "upper_decimal_15": "137920126746993623"
+      },
+      "unchanged_old_grid_rungs": 25463830840,
+      "interval_cover_necessary_rungs": 25000000000
+    }
+  ],
+  "log10_upper_proof_taylor_degree": 24,
+  "even_endpoint_height": {
+    "numerator": "450",
+    "denominator": "1",
+    "upper_decimal_15": "450000000000000000"
+  },
+  "even_endpoint_admissible_floor_lower": {
+    "numerator": "814159",
+    "denominator": "2500",
+    "upper_decimal_15": "325663600000000000"
+  },
+  "even_endpoint_admissible_floor_upper": {
+    "numerator": "40708",
+    "denominator": "125",
+    "upper_decimal_15": "325664000000000000"
+  },
+  "uniform_height_factor_necessary_lower": {
+    "numerator": "814159",
+    "denominator": "1125000",
+    "upper_decimal_15": "723696888888889"
+  },
+  "fixed_m45_proth_ceiling": "1237940039285380274899124224"
+}

@@ -1,0 +1,165 @@
+{
+  "status": "PASS_STATIC_SOURCE_AND_COUNTING_METADATA",
+  "checks": 56,
+  "scope": "No compiled MMB, proof generator, proof execution, arithmetic values or timing. Header stencils are explicit unshared source models.",
+  "pins": {
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm0": "463A7D6E4F4791313DEDCFD737053DCF2CC07B466371E263C38A994C6FB72052",
+    "work/mm0-efficient/toolchain-sources/examples__peano.mm1": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+    "work/mm0-efficient/toolchain-sources/examples__peano_hex.mm0": "E2F5E461C568E0E3EF784B507E9111272B38956093DF98B943CCC4CD806E351B",
+    "work/mm0-efficient/toolchain-sources/examples__peano_hex.mm1": "76FE94B569ECBF0AA051AF20AFE9C207BF8EC0B562C83C4F5D841118F2CC2D94",
+    "work/formal-goldbach-bench/mm0/src/mmb.md": "E93F3058650104B3F538FD8B2C583239C1E2FB076C7A75FA93B4FE93C16BC9A0",
+    "work/formal-goldbach-bench/mm0/src/verifier.c": "71428A117C96A37B81E183CE57EF34B71E99EFECBA019E65A47CE27DD4FAA4B5",
+    "work/formal-goldbach-bench/mm0/src/verifier_types.c": "87A0B9470DE5AE0BEFF5EDFA565952520957A39B250591B0067EBC4786B5490E",
+    "work/formal-goldbach-bench/mm0/src/types.c": "B3FC325B9269F50298B1D388C80B6544845A7185BC99DF0DD9970FF306A215D1",
+    "work/qrh-campaign/agents/integration/EFFICIENCY_MM0_LADDER_ARITHMETIC_2026-11-11.md": "3D8116AC2D53E33DA76DF0FE7AE42211AAB4D7B5C3D954746587D8DC9EF21227",
+    "work/qrh-campaign/agents/moebius/SIGNED_HORNER_SCHEDULE_AND_BREAK_EVEN_2026-11-11.md": "531DD23307CED3ED958198C750393D933287809B9E42EF738888370AA4DE4474",
+    "work/qrh-campaign/agents/moebius/signed_horner_schedule_costs_20261111.json": "0DF6FF38D7F14A9C3596423BE109E5EEC6CAF18E031F4329B907E43F5A60FF37",
+    "work/qrh-campaign/agents/moebius/fixed_horner_degree_envelope_costs_20261111.json": "4F114004CC63EF912619A4318227731CECC5041AADAAD9F63DE38DE3B44468B9",
+    "work/qrh-campaign/agents/independent-feasibility/REVIEW_SIGNED_HORNER_SCHEDULE_AND_BREAK_EVEN_2026-11-11.md": "40AE12EEFE142B932820F6462E6DE7CE127679A0CE220010148C698E984BBFF1"
+  },
+  "source_lemma_models": {
+    "add_xx0": {
+      "expression_args": 6,
+      "hypotheses": 2,
+      "formal_expression_shapes": [
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          3,
+          7
+        ]
+      ],
+      "unshared_unify_constructors": 12,
+      "unshared_unify_variable_refs": 12,
+      "unshared_unify_commands_including_end": 27,
+      "call_commands_fresh_binary_equality": 14,
+      "call_commands_cached_conclusion": 10,
+      "fresh_call_shortest_encoding_upper_bytes": 48
+    },
+    "mul_x2x": {
+      "expression_args": 7,
+      "hypotheses": 3,
+      "formal_expression_shapes": [
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          4,
+          7
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "unshared_unify_constructors": 12,
+      "unshared_unify_variable_refs": 15,
+      "unshared_unify_commands_including_end": 31,
+      "call_commands_fresh_binary_equality": 16,
+      "call_commands_cached_conclusion": 12,
+      "fresh_call_shortest_encoding_upper_bytes": 54
+    }
+  },
+  "dag_counting_checks": [
+    {
+      "V": 1,
+      "H": 2,
+      "R": 7,
+      "T": 2,
+      "C": 4,
+      "body_commands_with_end": 15
+    },
+    {
+      "V": 1,
+      "H": 3,
+      "R": 8,
+      "T": 2,
+      "C": 4,
+      "body_commands_with_end": 17
+    },
+    {
+      "V": 7,
+      "H": 10,
+      "R": 31,
+      "T": 19,
+      "C": 37,
+      "body_commands_with_end": 80
+    },
+    {
+      "V": 20,
+      "H": 25,
+      "R": 94,
+      "T": 41,
+      "C": 72,
+      "body_commands_with_end": 193
+    },
+    {
+      "V": 1,
+      "H": 0,
+      "R": 1,
+      "T": 0,
+      "C": 0,
+      "body_commands_with_end": 3
+    }
+  ],
+  "command_byte_lengths": {
+    "0": 1,
+    "1": 2,
+    "255": 2,
+    "256": 3,
+    "65535": 3,
+    "65536": 5,
+    "4294967295": 5
+  },
+  "rectangle": {
+    "columns": 13,
+    "rows": 3,
+    "digit_products": 39,
+    "full_adders": 117,
+    "fused_lifts": 39,
+    "row_steps": 6,
+    "base": 1,
+    "template_events": 202
+  },
+  "rounding": {
+    "source": "first_four/uniform100/uncancelled/stage0",
+    "input_magnitude_bits": 104,
+    "rounded_magnitude_bits": 102,
+    "small_factor_bits": 18,
+    "divisor_bits": 20,
+    "product_instances": 2,
+    "unsigned_add_instances": 4,
+    "product_template_events": 404,
+    "addition_events": {
+      "residual_add": 33,
+      "range_add": 33,
+      "guard_add": 7,
+      "coefficient_add": 31
+    },
+    "signed_add_bridges": 3,
+    "signed_product_bridges": 2,
+    "nearest_implications": 1,
+    "real_template_total": 508,
+    "complex_template_total": 1016,
+    "range_slack_prerejection_bits": 21
+  },
+  "missing_byte_template_arities": "Not assigned: PA-only fused cell, row/base, adder and signed bridges require actual proved statements."
+}

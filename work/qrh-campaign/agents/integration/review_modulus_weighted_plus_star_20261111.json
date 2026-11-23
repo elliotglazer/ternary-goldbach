@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact finite metadata and scalar review, no analytic evaluation",
+  "author_sha256": "A86643A179B34576117DF2F9125E78B7029696A367D5057EAA8531769B30DE1A",
+  "pins": [
+    {
+      "path": "work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md",
+      "sha256": "AFDBBF90157F5170666C481D512D475A1F719366C8FB785D312A213864C38D0B"
+    },
+    {
+      "path": "work/qrh-campaign/agents/audit/DIRECT_STAR_B_SOURCE_OBSTRUCTION_V2_2026-11-11.md",
+      "sha256": "65B892756EA24A086C673082D3CA551AF99EECA5DDA63CB3523EE3F5514A88A9"
+    },
+    {
+      "path": "work/qrh-campaign/agents/major-constants/DIRECT_PLUS_RESIDUAL_ENERGY_TARGET_2026-11-11.md",
+      "sha256": "E69701B4AE8145B016015A2C355151DFAA5D4946D2281BAE3CC08A86422196B1"
+    },
+    {
+      "path": "work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md",
+      "sha256": "22A6A16880BE2FA5CB0FF393C533BD60B1AFCD32C751E5A0D64FE7ADAB7C40F7"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/Bombieri.lean",
+      "sha256": "F3236E24D824647816AB0370CB57FB958C642194643393F20E785096888D3C79"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveProof.lean",
+      "sha256": "FB71222C80D0377BDF6739529E527F4BE6A0C908286FF87F0EC19D67DDE9CAF1"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveWeights.lean",
+      "sha256": "4577368FF4AD237E00D04259B813AFE2755ED165766070711CA33FB75E6F2304"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSievePrimes.lean",
+      "sha256": "B701BA5355E6ECEAEEF466015BDE4EC477C570BCF6B76A5D95A7043B7804C836"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/LSQuot1.lean",
+      "sha256": "9AAEAC8990CA63FE1267F24280EE89A956455EC9AC59A6246A56FDE5469E762E"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/Prelim/Ramare.lean",
+      "sha256": "151775B338EC19177D3E2447468D2B45210F588ADD56E590F867D956BCF13A9D"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor933.lean",
+      "sha256": "554F00DE4FA6F8F0B6B184F8E8535B8AC5C28C0DB47FA2A95119B6BA4899F66E"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Eta2Moments.lean",
+      "sha256": "3DDC63BE9937E6022B77B80238CC1666A3B122161CC0CFA02081E0E9A2DF0871"
+    },
+    {
+      "path": "work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap.lean",
+      "sha256": "ABF8667E1A8D5C72AA81F1B3F40481933A1ABC5A1CE3FAA0BE9705AC8CAF418B"
+    }
+  ],
+  "checks": {
+    "pin:work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md": true,
+    "pin:work/qrh-campaign/agents/audit/DIRECT_STAR_B_SOURCE_OBSTRUCTION_V2_2026-11-11.md": true,
+    "pin:work/qrh-campaign/agents/major-constants/DIRECT_PLUS_RESIDUAL_ENERGY_TARGET_2026-11-11.md": true,
+    "pin:work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/Bombieri.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveProof.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSieveWeights.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/LargeSievePrimes.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/LSQuot1.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/Prelim/Ramare.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MajorArcs/Cor933.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MajorArcs/Eta2Moments.lean": true,
+    "pin:work/ternary-goldbach/TernaryGoldbach/MinorArcs/BaseGap.lean": true,
+    "all_ambient_pairs": true,
+    "term_count": true,
+    "floor_sum": true,
+    "G_bounds": true,
+    "directed_receipt": true,
+    "q1_q2": true,
+    "q3": true,
+    "four_divisible": true,
+    "endpoint_R_over_3": true,
+    "eta2_log_cancellation": true,
+    "moments_and_test": true,
+    "test_norm": true,
+    "V_lower": true,
+    "target_ceiling": true,
+    "obstruction": true,
+    "mixed_sqrt_bound": true,
+    "allocation_total": true,
+    "allocation_target": true,
+    "principal_integrated_bound": true
+  },
+  "terms": 13468,
+  "floor_sum": 67935707915980013489,
+  "G_lower": "67935707915980013489/18446744073709551616",
+  "G_upper": "67935707915980026957/18446744073709551616",
+  "target_ceiling": "39463877/234000",
+  "comparison_lower": "2793/10"
+}

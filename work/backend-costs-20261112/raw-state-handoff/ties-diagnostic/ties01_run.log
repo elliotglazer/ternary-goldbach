@@ -1,0 +1,10 @@
+<<HOL message: Created theory "HandoffTiesDiagnostic">>
+HANDOFF_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TIES_DIAGNOSTIC,decoded
+ [.] ⊢ round_scaled 2 (-5) = -2 ∧ round_scaled 2 5 = 3 ⇔ T
+TIES_DIAGNOSTIC,old_closed
+⊢ round_scaled_pre 2 (-5) ∧ round_scaled_pre 2 5 ⇒
+  round_scaled 2 (-5) = -2 ∧ round_scaled 2 5 = 3
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/raw-state-handoff/ties-diagnostic/ties_diagnostic.sml : HOL_ERR (HOL_ERROR {message = "", origins = [{origin_function = "EQT_ELIM", origin_structure = "Drule", source_location = Loc_Unknown}]})
+error in load ties_diagnostic : HOL_ERR (HOL_ERROR {message = "", origins = [{origin_function = "EQT_ELIM", origin_structure = "Drule", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/1/Drule.sml:307: HOL_ERR (HOL_ERROR {message = "", origins = [{origin_function = "EQT_ELIM", origin_structure = "Drule", source_location = Loc_Unknown}]})

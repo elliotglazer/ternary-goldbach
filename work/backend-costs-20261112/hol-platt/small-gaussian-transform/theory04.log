@@ -1,0 +1,50 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-gaussian-transform/MatchedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Matched">>
+Saved definition ____ "fold_residue_def"
+Saved theorem _______ "folded_slice_compute"
+Saved definition ____ "folded_slice_def"
+Saved definition ____ "matched_pair_def"
+Saved definition ____ "matched_after_def"
+Saved definition ____ "matched_def"
+Starting translation of matched from MatchedTheory.
+Starting translation of matched_after from MatchedTheory.
+Starting translation of matched_pair from MatchedTheory.
+Starting translation of folded_slice from MatchedTheory.
+Starting translation of fold_residue from MatchedTheory.
+Saved theorem _______ "cv_fold_residue_thm"
+Finished translating fold_residue, stored in cv_fold_residue_thm
+Starting translation of folded_slice from MatchedTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Matched)>>
+Saved definition ____ "cv_folded_slice_def"
+Saved induction _____ "cv_folded_slice_ind"
+Saved theorem _______ "cv_folded_slice_thm"
+Finished translating folded_slice, stored in cv_folded_slice_thm
+Starting translation of matched_pair from MatchedTheory.
+Saved theorem _______ "cv_matched_pair_thm"
+Finished translating matched_pair, stored in cv_matched_pair_thm
+Starting translation of matched_after from MatchedTheory.
+Saved theorem _______ "cv_matched_after_thm"
+Finished translating matched_after, stored in cv_matched_after_thm
+Starting translation of matched from MatchedTheory.
+Saved theorem _______ "cv_matched_thm"
+Finished translating matched, stored in cv_matched_thm
+Exporting theory "Matched" ... done.
+Theory "Matched" took 0.35212s to build
+Holmake: [1/1] Matched

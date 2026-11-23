@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\Controls1024.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\Controls1024.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 14.194096699997317,
+  "user_cpu_seconds": 5.953125,
+  "system_cpu_seconds": 7.921875,
+  "cpu_seconds": 13.875,
+  "peak_working_set_bytes": 1282314240,
+  "observed_peak_private_bytes": 2847645696,
+  "memory_samples": 281,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "Controls1024.lean",
+      "bytes": 1270,
+      "sha256": "3C036DDEC94320228E7300788099A46B3F304B2718D917905EA2958D09982173"
+    },
+    {
+      "path": "controls1024_01.log",
+      "bytes": 429,
+      "sha256": "0F890B31C6DBD7F51B905CDE89554CACF7D3A843CBF4591C51B15C7E5114E60A"
+    },
+    {
+      "path": "Controls1024.olean",
+      "bytes": 16080,
+      "sha256": "659BDB98569DB9D5DD420AB44148463E0156973B143FDA6BFA0653C9054BB58A"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

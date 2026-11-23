@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\BatchData1024.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\BatchData1024.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 22.075726199982455,
+  "user_cpu_seconds": 12.75,
+  "system_cpu_seconds": 8.265625,
+  "cpu_seconds": 21.015625,
+  "peak_working_set_bytes": 1488191488,
+  "observed_peak_private_bytes": 3064057856,
+  "memory_samples": 437,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "BatchData1024.lean",
+      "bytes": 171908,
+      "sha256": "0026850572C53CE109DEBDF0DBF5AEC97EAE4E3A4095B48C5377B85129FF0DB3"
+    },
+    {
+      "path": "batchdata02.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "BatchData1024.olean",
+      "bytes": 12437952,
+      "sha256": "5BC4EC0DCDFD40BFFC50381B3DCE2C7A8D01F616D6EBD11918A222E7530F0437"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

@@ -1,0 +1,53 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../../small-character-kernel[0m
+Holmake: Scanning [1m../../small-gaussian[0m
+Holmake: Scanning [1m../../small-gaussian-transform[0m
+Holmake: Scanning [1m../../full-height-count[0m
+Holmake: Scanning [1m../../grid-projection[0m
+Holmake: Scanning [1m../../grid-sign-join[0m
+Holmake: Scanning [1m../../grid-enclosure[0m
+Holmake: Scanned 21 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/FusedBaselineScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/fusedworker.sml:6: warning: Pattern is not exhaustive.
+Found near
+  val [[mb, ab, ...]] = replay.lines (map nat) (("target-" ^ lab) ^ ".txt")
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-hol-panel/7689/fusedworker.sml:25: warning: Pattern is not exhaustive.
+Found near
+  val [[h, phase, ...]] = replay.lines (map nat) (("pair-" ^ tag) ^ ".txt")
+<<HOL message: Created theory "FusedBaseline">>
+JOIN_EVAL 0.005721 1.13689 0.000232
+Saved theorem _______ "outcome_2"
+FUSED_CHANNEL 2 0.117537 2.413212 3.557548
+JOIN_EVAL 0.002398 0.764929 0.000134
+Saved theorem _______ "outcome_3845"
+FUSED_CHANNEL 3845 0.000855 2.446464 3.214785
+Saved theorem _______ "pair_even"
+FUSED_PAIR even 0.01731
+JOIN_EVAL 0.00293 0.799824 0.000123
+Saved theorem _______ "outcome_14"
+FUSED_CHANNEL 14 0.000594 0.751896 1.555624
+JOIN_EVAL 0.00187 0.673511 0.000152999999999
+Saved theorem _______ "outcome_4943"
+FUSED_CHANNEL 4943 0.000608 0.665691 1.341931
+Saved theorem _______ "pair_odd"
+FUSED_PAIR odd 0.012135
+FUSED_WORKER 9.699889
+Exporting theory "FusedBaseline" ... done.
+Theory "FusedBaseline" took 14.2s to build
+Holmake: [1/1] FusedBaseline

@@ -1,0 +1,6 @@
+BinaryPilot.binary_interval (n : â„•) :
+  3999999997356523524 â‰¤ n â†’ n â‰¤ 3999999997356523650 â†’ Even n â†’ âˆƒ p q, Nat.Prime p âˆ§ Nat.Prime q âˆ§ n = p + q
+'BinaryPilot.binary_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPilot.lucasNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPilot.source_0_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryPilot.prime_3999999988766605261' depends on axioms: [propext, Classical.choice, Quot.sound]

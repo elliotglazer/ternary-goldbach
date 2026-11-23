@@ -1,0 +1,209 @@
+{
+  "scope": "Residue counts, not actual prime or window frequencies",
+  "F": 35184372088832,
+  "tables": [
+    {
+      "base": 3,
+      "F_mod_base": 2,
+      "candidate_nonresidues": [
+        2
+      ],
+      "k_classes": [
+        2
+      ]
+    },
+    {
+      "base": 5,
+      "F_mod_base": 2,
+      "candidate_nonresidues": [
+        2,
+        3
+      ],
+      "k_classes": [
+        1,
+        3
+      ]
+    },
+    {
+      "base": 7,
+      "F_mod_base": 1,
+      "candidate_nonresidues": [
+        3,
+        5,
+        6
+      ],
+      "k_classes": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "base": 11,
+      "F_mod_base": 10,
+      "candidate_nonresidues": [
+        2,
+        6,
+        7,
+        8,
+        10
+      ],
+      "k_classes": [
+        2,
+        4,
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "base": 13,
+      "F_mod_base": 5,
+      "candidate_nonresidues": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "k_classes": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "base": 17,
+      "F_mod_base": 15,
+      "candidate_nonresidues": [
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14
+      ],
+      "k_classes": [
+        2,
+        3,
+        4,
+        6,
+        12,
+        14,
+        15,
+        16
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "bases": [
+        3
+      ],
+      "wheel": 3,
+      "admissible": 2,
+      "first_base_counts": [
+        1
+      ],
+      "no_selected_base": 1,
+      "covered_fraction": "1/2"
+    },
+    {
+      "bases": [
+        3,
+        5
+      ],
+      "wheel": 15,
+      "admissible": 8,
+      "first_base_counts": [
+        4,
+        2
+      ],
+      "no_selected_base": 2,
+      "covered_fraction": "3/4"
+    },
+    {
+      "bases": [
+        3,
+        5,
+        7
+      ],
+      "wheel": 105,
+      "admissible": 48,
+      "first_base_counts": [
+        24,
+        12,
+        6
+      ],
+      "no_selected_base": 6,
+      "covered_fraction": "7/8"
+    },
+    {
+      "bases": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "wheel": 1155,
+      "admissible": 480,
+      "first_base_counts": [
+        240,
+        120,
+        60,
+        30
+      ],
+      "no_selected_base": 30,
+      "covered_fraction": "15/16"
+    },
+    {
+      "bases": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "wheel": 15015,
+      "admissible": 5760,
+      "first_base_counts": [
+        2880,
+        1440,
+        720,
+        360,
+        180
+      ],
+      "no_selected_base": 180,
+      "covered_fraction": "31/32"
+    },
+    {
+      "bases": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "wheel": 255255,
+      "admissible": 92160,
+      "first_base_counts": [
+        46080,
+        23040,
+        11520,
+        5760,
+        2880,
+        1440
+      ],
+      "no_selected_base": 1440,
+      "covered_fraction": "63/64"
+    }
+  ],
+  "negative_controls": 1
+}

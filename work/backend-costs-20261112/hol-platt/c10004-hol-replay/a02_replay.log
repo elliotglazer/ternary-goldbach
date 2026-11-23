@@ -1,0 +1,18 @@
+<<HOL message: Created theory "C10004ActualReplayInst">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004ActualReplayInst)>>
+ACTUAL_START,1
+TRAVERSAL_CV_TAG,ft_checked_actual_1,DISK_THM,
+Saved theorem _______ "ft_checked_actual_1"
+ACTUAL_CPU,1,5.762261,0.660461,2.673576,0.000805
+ACTUAL_START,2
+TRAVERSAL_CV_TAG,ft_checked_actual_2,DISK_THM,
+Saved theorem _______ "ft_checked_actual_2"
+ACTUAL_CPU,2,4.506782,0.650317,2.776179,0.00022
+Exporting theory "C10004ActualReplayInst" ... done.
+Theory "C10004ActualReplayInst" took 21.2s to build
+ACTUAL_REPLAY_DONE

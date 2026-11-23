@@ -1,0 +1,135 @@
+{
+  "source_sha256": "e1abf0b7a80c5dcbe872ffa38e444e2023d2e3e3338a8504e9f543dc1f53e0a5",
+  "B": 8590983168,
+  "root_count_with_duplicates": 4096,
+  "distinct_roots": 4055,
+  "smooth_count": 1572,
+  "smooth_fraction": 0.38766954377311963,
+  "cases": {
+    "small_cache": {
+      "file": "small_cache.bin",
+      "nodes": 10304,
+      "roots": 0,
+      "bytes": 586647,
+      "bytes_per_root": null,
+      "factor_count_histogram": {
+        "0": 1,
+        "1": 4,
+        "2": 1281,
+        "3": 3897,
+        "4": 3584,
+        "5": 1288,
+        "6": 217,
+        "7": 32
+      },
+      "sha256": "677bc4c09e2f259f31b6f537127e9c32ce7949e9fa7fe9e15e8bd9b514b1d6ef",
+      "first_nontrivial_offset": 41,
+      "last_node_offset": 586577
+    },
+    "full_pratt": {
+      "file": "full_pratt.bin",
+      "nodes": 17649,
+      "roots": 4055,
+      "bytes": 1107137,
+      "bytes_per_root": 273.0300863131936,
+      "factor_count_histogram": {
+        "0": 1,
+        "1": 4,
+        "2": 1564,
+        "3": 5083,
+        "4": 5719,
+        "5": 3295,
+        "6": 1371,
+        "7": 495,
+        "8": 99,
+        "9": 14,
+        "11": 3,
+        "10": 1
+      },
+      "sha256": "753be47c22c0e9ceaea06543a32456292a977a45878c7af1ffb7816aac1e6062",
+      "first_nontrivial_offset": 41,
+      "last_node_offset": 1074636
+    },
+    "partial_pock": {
+      "file": "partial_pock.bin",
+      "nodes": 16386,
+      "roots": 4055,
+      "bytes": 639494,
+      "bytes_per_root": 157.70505548705302,
+      "factor_count_histogram": {
+        "0": 1,
+        "1": 11007,
+        "2": 5215,
+        "3": 157,
+        "4": 6
+      },
+      "sha256": "63c74e2c3015f852ead7264cf756f87765d7dd4ee84c1fc8d77bbc71b4f893fa",
+      "first_nontrivial_offset": 41,
+      "last_node_offset": 607020
+    },
+    "cached_pock": {
+      "file": "cached_pock.bin",
+      "nodes": 7345,
+      "roots": 4055,
+      "bytes": 304542,
+      "bytes_per_root": 75.10283600493219,
+      "factor_count_histogram": {
+        "1": 4960,
+        "2": 2292,
+        "3": 87,
+        "4": 6
+      },
+      "sha256": "643236b8c9afd19dd175991f4f47563e6db9cdb5dc46aa4a445c6bd6f5fcab05",
+      "first_nontrivial_offset": 16,
+      "last_node_offset": 272068
+    },
+    "smooth_pock": {
+      "file": "smooth_pock.bin",
+      "nodes": 1572,
+      "roots": 1572,
+      "bytes": 78019,
+      "bytes_per_root": 49.63040712468193,
+      "factor_count_histogram": {
+        "1": 295,
+        "2": 1227,
+        "3": 46,
+        "4": 4
+      },
+      "sha256": "0bff55aa06c58d723b2651cb60a31a6fef00c2495d45d9d18f9c19cd0337086d",
+      "first_nontrivial_offset": 16,
+      "last_node_offset": 65400
+    },
+    "cached_inverse": {
+      "file": "cached_inverse.bin",
+      "nodes": 7345,
+      "roots": 4055,
+      "bytes": 383174,
+      "bytes_per_root": 94.49420468557337,
+      "factor_count_histogram": {
+        "1": 4960,
+        "2": 2292,
+        "3": 87,
+        "4": 6
+      },
+      "sha256": "241217b436888ffef06b2af201ec6ce7a49532a59142e54c0e10a861eb16d0e2",
+      "first_nontrivial_offset": 16,
+      "last_node_offset": 350692
+    },
+    "smooth_inverse": {
+      "file": "smooth_inverse.bin",
+      "nodes": 1572,
+      "roots": 1572,
+      "bytes": 101243,
+      "bytes_per_root": 64.40394402035624,
+      "factor_count_histogram": {
+        "1": 295,
+        "2": 1227,
+        "3": 46,
+        "4": 4
+      },
+      "sha256": "a6853af5e460d980bed3908126e9987ee9974da8768070dbf1ac21b73480e526",
+      "first_nontrivial_offset": 16,
+      "last_node_offset": 88608
+    }
+  }
+}

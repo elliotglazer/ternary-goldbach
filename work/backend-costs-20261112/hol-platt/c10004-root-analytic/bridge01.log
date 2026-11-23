@@ -1,0 +1,73 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../c10004-root-check[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 17 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "C10004RootBridge">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004RootBridge)>>
+Saved theorem _______ "chebU_continuous"
+Saved theorem _______ "chebU_sign_root"
+Saved definition ____ "grid_def"
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml:53: error: Value or constructor (only) has not been declared
+Found near
+  Q.store_thm_at
+  (
+  DB_dtype.mkloc
+  (
+     "/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml"
+     ,
+     ...
+     )) ("run_value", [... ...], fn ...) HOLctxt
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml:53: error: Type error in function application.
+   Function: simp only : tactic
+   Argument:
+      [real_of_int_sub, real_of_int_mul, real_of_int_num, GSYM grid_def] :
+      thm list
+   Reason: Can't unify thm list to term list * term (Incompatible types)
+Found near
+  Q.store_thm_at
+  (
+  DB_dtype.mkloc
+  (
+     "/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml"
+     ,
+     ...
+     )) ("run_value", [... ...], fn ...) HOLctxt
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml:50: error: Type error in function application.
+   Function: >> : (goal, thm) gentactic * tactic -> (goal, thm) gentactic
+   Argument:
+      (
+         (
+         (
+         (((... >> ...) >> (... by ...)) >> asm_rewrite_tac [...]) >>
+         first_x_assum irule) >> asm_rewrite_tac []),
+         simp only [real_of_int_sub, real_of_int_mul, ...]
+         ) : (goal, thm) gentactic * (Context.t -> goal list * validation)
+   Reason: Can't unify Context.t to term list * term (Incompatible types)
+Found near
+  Q.store_thm_at
+  (
+  DB_dtype.mkloc
+  (
+     "/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml"
+     ,
+     ...
+     )) ("run_value", [... ...], fn ...) HOLctxt
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript.sml : Fail "Static Errors"
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript : Fail "Static Errors"
+Uncaught exception at ./basis/FinalPolyML.sml:492: Fail "Static Errors"
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10004-root-analytic/C10004RootBridgeScript - exited with code 1

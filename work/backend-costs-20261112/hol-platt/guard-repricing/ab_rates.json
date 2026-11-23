@@ -1,0 +1,128 @@
+{
+  "cases": [
+    {
+      "start": 7041,
+      "samples": 32336,
+      "coarse": {
+        "tag": "j7041coarse",
+        "samples": 32336,
+        "cpu_s": 0.494726,
+        "empty_cpu_s": 0.025844,
+        "marginal_cpu_s": 0.468882,
+        "medians_by_n": [
+          0.025844,
+          0.08961999999999999,
+          0.275013,
+          0.494726
+        ]
+      },
+      "fine": [
+        {
+          "tag": "j7041fine789",
+          "samples": 8104,
+          "cpu_s": 0.145472,
+          "empty_cpu_s": 0.028465,
+          "marginal_cpu_s": 0.11700699999999999,
+          "medians_by_n": [
+            0.028465,
+            0.038450999999999,
+            0.087811,
+            0.145472
+          ]
+        },
+        {
+          "tag": "j7041fine790",
+          "samples": 16160,
+          "cpu_s": 0.25599500000000097,
+          "empty_cpu_s": 0.026712999999999997,
+          "marginal_cpu_s": 0.22928200000000099,
+          "medians_by_n": [
+            0.026712999999999997,
+            0.061572999999999004,
+            0.145196000000001,
+            0.25599500000000097
+          ]
+        },
+        {
+          "tag": "j7041fine791",
+          "samples": 8072,
+          "cpu_s": 0.144462999999999,
+          "empty_cpu_s": 0.02479,
+          "marginal_cpu_s": 0.119672999999999,
+          "medians_by_n": [
+            0.02479,
+            0.040564,
+            0.08739899999999999,
+            0.144462999999999
+          ]
+        }
+      ],
+      "coarse_to_fine_cpu": 0.9062077555730588,
+      "coarse_to_fine_marginal": 1.0062666054313443
+    },
+    {
+      "start": 60001,
+      "samples": 328,
+      "coarse": {
+        "tag": "j60001coarse",
+        "samples": 328,
+        "cpu_s": 0.026842,
+        "empty_cpu_s": 0.020937999999999,
+        "marginal_cpu_s": 0.005904000000001002,
+        "medians_by_n": [
+          0.020937999999999,
+          0.024210999999999,
+          0.024599999999999,
+          0.026842
+        ]
+      },
+      "fine": [
+        {
+          "tag": "j60001fine6325",
+          "samples": 80,
+          "cpu_s": 0.023077999999999998,
+          "empty_cpu_s": 0.022109999999999002,
+          "marginal_cpu_s": 0.0009680000000009958,
+          "medians_by_n": [
+            0.022109999999999002,
+            0.023009999999999,
+            0.024298000000001003,
+            0.023077999999999998
+          ]
+        },
+        {
+          "tag": "j60001fine6326",
+          "samples": 176,
+          "cpu_s": 0.022471000000001,
+          "empty_cpu_s": 0.021112,
+          "marginal_cpu_s": 0.0013590000000010018,
+          "medians_by_n": [
+            0.021112,
+            0.022285,
+            0.022049000000000003,
+            0.022471000000001
+          ]
+        },
+        {
+          "tag": "j60001fine6327",
+          "samples": 72,
+          "cpu_s": 0.023186000000000002,
+          "empty_cpu_s": 0.021013,
+          "marginal_cpu_s": 0.0021730000000000013,
+          "medians_by_n": [
+            0.021013,
+            0.019722999999999002,
+            0.021064,
+            0.023186000000000002
+          ]
+        }
+      ],
+      "coarse_to_fine_cpu": 0.3905142940277822,
+      "coarse_to_fine_marginal": 1.31199999999964
+    }
+  ],
+  "log": "gridab01.log",
+  "log_sha256": "08c7f8ae98945ce44925f37a3d8e3f49c827cf61cb3afa0252871e29a960f4d8",
+  "fixture_sha256": "1ae5f0f23a8663452e43ae6e9372280cc7b672549b568dd0d784983cf7706dec",
+  "scope": "Matched residue set and eight heights, 64 conductors. The two edge cells in each fine-grid test are clipped to the physical coarse cell. The raw three-call fine cost includes their fixed overhead; the marginal comparison subtracts each empty control."
+}

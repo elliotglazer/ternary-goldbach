@@ -1,0 +1,5 @@
+# Explicit positive-grid absolute values
+
+Pair03 proved the first real residual lemma and stopped at round_scaled_real_error. Four saved-state diagnostics preserved the exact original theorem. The successful errordiag04 keeps the field identity intact with bool_ss, uses the existing unconditional REAL_ABS_DIV rule, and proves abs(real_of_int s)=real_of_int s explicitly from positivity. ABS_REFL is an equivalence characterizing this identity; it does not by itself rewrite the absolute-value term. The older ABS_DIV rule also has a nonzero side condition. Errordiag04 produced the exact closed theorem.
+
+Pair04 integrates that verified repair into the second lemma. It applies the same explicit positive-grid identity and restricted unconditional division rewrites to the coordinate-error lemma; that analogous change remains to be validated by the full build. No definition, theorem statement or hypothesis changes. The prior source, receipts, diagnostic sources and failed heap remain preserved.

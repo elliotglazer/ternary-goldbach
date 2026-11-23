@@ -1,0 +1,249 @@
+{
+  "scope": "static syntax and formal polynomial identities; no proof emission or concrete digit arithmetic",
+  "checks": 2157,
+  "signatures": {
+    "reflexive": {
+      "args": 1,
+      "premises": 0,
+      "header": 4,
+      "cached_call": 3,
+      "fresh_call": 5,
+      "conclusion_constructor_edges": 2,
+      "HR": 2
+    },
+    "zero_word_step": {
+      "args": 1,
+      "premises": 1,
+      "header": 20,
+      "cached_call": 4,
+      "fresh_call": 18,
+      "conclusion_constructor_edges": 14,
+      "HR": 3
+    },
+    "initial_carry_transport": {
+      "args": 2,
+      "premises": 2,
+      "header": 48,
+      "cached_call": 6,
+      "fresh_call": 26,
+      "conclusion_constructor_edges": 20,
+      "HR": 5
+    },
+    "concat_start": {
+      "args": 1,
+      "premises": 0,
+      "header": 8,
+      "cached_call": 3,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 6,
+      "HR": 2
+    },
+    "concat_step": {
+      "args": 5,
+      "premises": 1,
+      "header": 42,
+      "cached_call": 8,
+      "fresh_call": 28,
+      "conclusion_constructor_edges": 20,
+      "HR": 7
+    },
+    "concat_finish": {
+      "args": 3,
+      "premises": 1,
+      "header": 12,
+      "cached_call": 6,
+      "fresh_call": 8,
+      "conclusion_constructor_edges": 2,
+      "HR": 5
+    },
+    "positive_transport": {
+      "args": 2,
+      "premises": 2,
+      "header": 12,
+      "cached_call": 6,
+      "fresh_call": 8,
+      "conclusion_constructor_edges": 2,
+      "HR": 5
+    },
+    "final_transport": {
+      "args": 6,
+      "premises": 4,
+      "header": 24,
+      "cached_call": 12,
+      "fresh_call": 16,
+      "conclusion_constructor_edges": 4,
+      "HR": 11
+    },
+    "padded_inner_base": {
+      "args": 2,
+      "premises": 0,
+      "header": 22,
+      "cached_call": 4,
+      "fresh_call": 24,
+      "conclusion_constructor_edges": 20,
+      "HR": 3
+    },
+    "bit_affine_start": {
+      "args": 1,
+      "premises": 0,
+      "header": 8,
+      "cached_call": 3,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 6,
+      "HR": 2
+    },
+    "bit_affine_0": {
+      "args": 4,
+      "premises": 1,
+      "header": 19,
+      "cached_call": 7,
+      "fresh_call": 16,
+      "conclusion_constructor_edges": 9,
+      "HR": 6
+    },
+    "bit_congruence_0": {
+      "args": 2,
+      "premises": 1,
+      "header": 10,
+      "cached_call": 5,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 4,
+      "HR": 4
+    },
+    "bit_range_0": {
+      "args": 2,
+      "premises": 1,
+      "header": 10,
+      "cached_call": 5,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 4,
+      "HR": 4
+    },
+    "bit_affine_1": {
+      "args": 4,
+      "premises": 1,
+      "header": 19,
+      "cached_call": 7,
+      "fresh_call": 16,
+      "conclusion_constructor_edges": 9,
+      "HR": 6
+    },
+    "bit_congruence_1": {
+      "args": 2,
+      "premises": 1,
+      "header": 10,
+      "cached_call": 5,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 4,
+      "HR": 4
+    },
+    "bit_range_1": {
+      "args": 2,
+      "premises": 1,
+      "header": 10,
+      "cached_call": 5,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 4,
+      "HR": 4
+    },
+    "byte_glue": {
+      "args": 4,
+      "premises": 2,
+      "header": 36,
+      "cached_call": 8,
+      "fresh_call": 22,
+      "conclusion_constructor_edges": 14,
+      "HR": 7
+    },
+    "zero_bit_step": {
+      "args": 1,
+      "premises": 1,
+      "header": 9,
+      "cached_call": 4,
+      "fresh_call": 7,
+      "conclusion_constructor_edges": 3,
+      "HR": 3
+    },
+    "symmetry": {
+      "args": 2,
+      "premises": 1,
+      "header": 8,
+      "cached_call": 5,
+      "fresh_call": 7,
+      "conclusion_constructor_edges": 2,
+      "HR": 4
+    },
+    "transitivity": {
+      "args": 3,
+      "premises": 2,
+      "header": 12,
+      "cached_call": 7,
+      "fresh_call": 9,
+      "conclusion_constructor_edges": 2,
+      "HR": 6
+    },
+    "positive_b0": {
+      "args": 1,
+      "premises": 1,
+      "header": 9,
+      "cached_call": 4,
+      "fresh_call": 7,
+      "conclusion_constructor_edges": 3,
+      "HR": 3
+    },
+    "positive_b1": {
+      "args": 1,
+      "premises": 0,
+      "header": 5,
+      "cached_call": 3,
+      "fresh_call": 6,
+      "conclusion_constructor_edges": 3,
+      "HR": 2
+    }
+  },
+  "binding_V": "5n+m+4",
+  "binding_H": "2n+m+9",
+  "binding_HR": "20n+3m+26",
+  "binding_HR_C_upper": "4mn+21m+80n+62",
+  "binary_decoder_HR_C_upper_per_length": "622L+200",
+  "positive_producer_HR_C_upper": "48m+6",
+  "three_binary_lengths": "m,n,m+n",
+  "full_binding_HR_C_upper": "4mn+1313m+1324n+668",
+  "source_pins": [
+    {
+      "path": "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_ROW_BASE_2026-11-11.md",
+      "sha256": "71D3F4BF6558618A84E652B1E041BBA26BA095679562ED951DFEA138DC9F5CAC",
+      "bytes": 18024
+    },
+    {
+      "path": "work/qrh-campaign/agents/moebius/REVIEW_PA_RADIX256_PRODUCT_ROW_BASE_2026-11-11.md",
+      "sha256": "DFF5635A401C45F7C69910B779706F9EAF84843FC5CF3CCD86D1CB0DD64273A7",
+      "bytes": 8803
+    },
+    {
+      "path": "work/qrh-campaign/agents/prime-estimates/PA_RADIX256_PRODUCT_CELL_LIFT_2026-11-11.md",
+      "sha256": "3670294B3CAE9C9459344571FEFAF80BB4D36FCD60EADE47AFEDB03E020EC74E",
+      "bytes": 15698
+    },
+    {
+      "path": "work/qrh-campaign/agents/moebius/MMB_ARITHMETIC_EVENT_EXPANSION_2026-11-11.md",
+      "sha256": "E57FCF240BB386E783A653AD28162AFFCA2D4C5273BD1915C6C4E930ACF9CCB6",
+      "bytes": 19969
+    },
+    {
+      "path": "work/mm0-efficient/toolchain-sources/examples__peano.mm1",
+      "sha256": "13FD383AA02E434CBA1350E9A8F12C440B5114D22F26506FECE4AECDF1370079",
+      "bytes": 335771
+    },
+    {
+      "path": "work/formal-goldbach-bench/mm0/src/mmb.md",
+      "sha256": "E93F3058650104B3F538FD8B2C583239C1E2FB076C7A75FA93B4FE93C16BC9A0",
+      "bytes": 39485
+    },
+    {
+      "path": "work/formal-goldbach-bench/mm0/src/verifier.c",
+      "sha256": "71428A117C96A37B81E183CE57EF34B71E99EFECBA019E65A47CE27DD4FAA4B5",
+      "bytes": 31817
+    }
+  ]
+}

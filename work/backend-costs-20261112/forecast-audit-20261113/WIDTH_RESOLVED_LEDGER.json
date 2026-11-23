@@ -1,0 +1,4604 @@
+{
+  "scope": "Bounded extraction of saved summaries and 2099 existing width classes; no regenerated inventory, producer values, builds or timings. All counts conditional on the cited schedules.",
+  "sources": [
+    {
+      "path": "work/qrh-campaign/agents/moebius/combined_precision_price_widths_20261111.json",
+      "bytes": 918045,
+      "sha256": "51844D5768117F3AA21E9FC8C84FD918D92008E9C51DB41AE742B565FF6F4A2B"
+    },
+    {
+      "path": "work/qrh-campaign/agents/moebius/combined_precision_prices_20261111.json",
+      "bytes": 534809,
+      "sha256": "17930450145D8507AE4883D923C76E9F3A0FE3C6ABAD28F4BD700AB5ABFCDA7F"
+    },
+    {
+      "path": "work/qrh-campaign/agents/major-constants/reconciled_nonprincipal_schedule_20261111.json",
+      "bytes": 130504,
+      "sha256": "0E83C9AB65725FBD34F0D34FC462E9EC805A040717DA92B1AB262CC7A9345397"
+    },
+    {
+      "path": "work/qrh-campaign/agents/prime-estimates/sign_only_minimal_theta_nonprincipal_schedule_20261111.json",
+      "bytes": 5737880,
+      "sha256": "E767EC3B3E14F2A243837DA85C811DE5ED67CE701BDD08998C2329F9C687C24D"
+    },
+    {
+      "path": "work/qrh-campaign/agents/integration/guarded_residue_evaluation_frontier_20261111.json",
+      "bytes": 354324,
+      "sha256": "DA5B4B1C09A5D6F10D8B1133AF5F2BD95E9711BDB309DD1F1FEAB4E8E7E1A5F7"
+    }
+  ],
+  "large": [
+    {
+      "extra_nodes": 0,
+      "includes_41_guard_nodes": true,
+      "transform": {
+        "add": 2090319798067922,
+        "kernel": 89017934196032,
+        "neg": 19970124208,
+        "quarter": 92576511158537,
+        "root": 920122241148146,
+        "scale": 0
+      },
+      "metadata": {
+        "conductor_height_nodes": 1528006797,
+        "primitive_outputs": 36468561640066,
+        "residue_inputs": 60254515577760
+      },
+      "em_source": {
+        "source_coefficients": 7543088084,
+        "head_reciprocal_scales": 10969166595220,
+        "head_accumulator_additions": 11386294892080,
+        "E_contracting_complex_stages": 58114704402,
+        "Bernoulli_weighted_terms": 703333562176,
+        "Bernoulli_accumulator_additions": 703333562176,
+        "source_translation_updates": 150847656960,
+        "P20_fine_anchor_coefficient_deliveries": 14367196500,
+        "shared_height_R_recurrence_steps": 2210506,
+        "coarse_anchor_instances": 276318993,
+        "base_height_argument_pairs": 417295106833,
+        "initial_B_certificates": 7049217,
+        "step_cis_certificates": 7049217,
+        "step_grid_conversions": 7049217,
+        "fine_state_complex_updates": 417288057616,
+        "state_to_EM_grid_conversions": 417295106833,
+        "final_coefficient_power2_scales": 6632648000,
+        "final_coefficient_rounds": 6632648000
+      },
+      "horner_semantic": {
+        "complex_stages": 1144835795977440,
+        "natural_product_instances_including_round_witness": 4579343183909760,
+        "natural_add_instances": 9158686367819520,
+        "coordinate_nearest_implications": 2289671591954880,
+        "grid94_to100_coordinate_shifts": 120509031155520
+      },
+      "raw_head": {
+        "complex_heads": 60254515577760,
+        "real_products": 241018062311040,
+        "post_adds": 120509031155520,
+        "coordinate_rounds": 120509031155520,
+        "round_witness_adds": 241018062311040,
+        "assembly_real_adds": 120509031155520,
+        "conductor_cache_complex_scales": 1528006797
+      }
+    },
+    {
+      "extra_nodes": 167,
+      "includes_41_guard_nodes": true,
+      "transform": {
+        "add": 2132818249991771,
+        "kernel": 90816295889664,
+        "neg": 20366729168,
+        "quarter": 94444870558984,
+        "root": 938838359635744,
+        "scale": 0
+      },
+      "metadata": {
+        "conductor_height_nodes": 1548948597,
+        "primitive_outputs": 37192213862847,
+        "residue_inputs": 61445729121504
+      },
+      "em_source": {
+        "source_coefficients": 7562245656,
+        "head_reciprocal_scales": 10996876654720,
+        "head_accumulator_additions": 11415031250080,
+        "E_contracting_complex_stages": 58350068858,
+        "Bernoulli_weighted_terms": 706379616124,
+        "Bernoulli_accumulator_additions": 706379616124,
+        "source_translation_updates": 151565890560,
+        "P20_fine_anchor_coefficient_deliveries": 14421922400,
+        "shared_height_R_recurrence_steps": 2215015,
+        "coarse_anchor_instances": 277003192,
+        "base_height_argument_pairs": 418321839032,
+        "initial_B_certificates": 7049217,
+        "step_cis_certificates": 7049217,
+        "step_grid_conversions": 7049217,
+        "fine_state_complex_updates": 418314789815,
+        "state_to_EM_grid_conversions": 418321839032,
+        "final_coefficient_power2_scales": 6687373900,
+        "final_coefficient_rounds": 6687373900
+      },
+      "horner_semantic": {
+        "complex_stages": 1167468853308576,
+        "natural_product_instances_including_round_witness": 4669875413234304,
+        "natural_add_instances": 9339750826468608,
+        "coordinate_nearest_implications": 2334937706617152,
+        "grid94_to100_coordinate_shifts": 122891458243008
+      },
+      "raw_head": {
+        "complex_heads": 61445729121504,
+        "real_products": 245782916486016,
+        "post_adds": 122891458243008,
+        "coordinate_rounds": 122891458243008,
+        "round_witness_adds": 245782916486016,
+        "assembly_real_adds": 122891458243008,
+        "conductor_cache_complex_scales": 1548948597
+      }
+    },
+    {
+      "extra_nodes": 320,
+      "includes_41_guard_nodes": true,
+      "transform": {
+        "add": 2171753957442962,
+        "kernel": 92463896722752,
+        "neg": 20730085808,
+        "quarter": 96156601027657,
+        "root": 955985462202226,
+        "scale": 0
+      },
+      "metadata": {
+        "conductor_height_nodes": 1568134797,
+        "primitive_outputs": 37855200629826,
+        "residue_inputs": 62537080452000
+      },
+      "em_source": {
+        "source_coefficients": 7579797204,
+        "head_reciprocal_scales": 11022263715220,
+        "head_accumulator_additions": 11441358572080,
+        "E_contracting_complex_stages": 58565702162,
+        "Bernoulli_weighted_terms": 709170312256,
+        "Bernoulli_accumulator_additions": 709170312256,
+        "source_translation_updates": 152223912960,
+        "P20_fine_anchor_coefficient_deliveries": 14472060500,
+        "shared_height_R_recurrence_steps": 2219146,
+        "coarse_anchor_instances": 277630033,
+        "base_height_argument_pairs": 419262497873,
+        "initial_B_certificates": 7049217,
+        "step_cis_certificates": 7049217,
+        "step_grid_conversions": 7049217,
+        "fine_state_complex_updates": 419255448656,
+        "state_to_EM_grid_conversions": 419262497873,
+        "final_coefficient_power2_scales": 6737512000,
+        "final_coefficient_rounds": 6737512000
+      },
+      "horner_semantic": {
+        "complex_stages": 1188204528588000,
+        "natural_product_instances_including_round_witness": 4752818114352000,
+        "natural_add_instances": 9505636228704000,
+        "coordinate_nearest_implications": 2376409057176000,
+        "grid94_to100_coordinate_shifts": 125074160904000
+      },
+      "raw_head": {
+        "complex_heads": 62537080452000,
+        "real_products": 250148321808000,
+        "post_adds": 125074160904000,
+        "coordinate_rounds": 125074160904000,
+        "round_witness_adds": 250148321808000,
+        "assembly_real_adds": 125074160904000,
+        "conductor_cache_complex_scales": 1568134797
+      }
+    },
+    {
+      "extra_nodes": 640,
+      "includes_41_guard_nodes": true,
+      "transform": {
+        "add": 2253188116818002,
+        "kernel": 95909859249472,
+        "neg": 21490047408,
+        "quarter": 99736690896777,
+        "root": 991848683256306,
+        "scale": 0
+      },
+      "metadata": {
+        "conductor_height_nodes": 1608262797,
+        "primitive_outputs": 39241839619586,
+        "residue_inputs": 64819645326240
+      },
+      "em_source": {
+        "source_coefficients": 7616506324,
+        "head_reciprocal_scales": 11075360835220,
+        "head_accumulator_additions": 11496422252080,
+        "E_contracting_complex_stages": 59016699922,
+        "Bernoulli_weighted_terms": 715007062336,
+        "Bernoulli_accumulator_additions": 715007062336,
+        "source_translation_updates": 153600168960,
+        "P20_fine_anchor_coefficient_deliveries": 14576924500,
+        "shared_height_R_recurrence_steps": 2227786,
+        "coarse_anchor_instances": 278941073,
+        "base_height_argument_pairs": 421229888913,
+        "initial_B_certificates": 7049217,
+        "step_cis_certificates": 7049217,
+        "step_grid_conversions": 7049217,
+        "fine_state_complex_updates": 421222839696,
+        "state_to_EM_grid_conversions": 421229888913,
+        "final_coefficient_power2_scales": 6842376000,
+        "final_coefficient_rounds": 6842376000
+      },
+      "horner_semantic": {
+        "complex_stages": 1231573261198560,
+        "natural_product_instances_including_round_witness": 4926293044794240,
+        "natural_add_instances": 9852586089588480,
+        "coordinate_nearest_implications": 2463146522397120,
+        "grid94_to100_coordinate_shifts": 129639290652480
+      },
+      "raw_head": {
+        "complex_heads": 64819645326240,
+        "real_products": 259278581304960,
+        "post_adds": 129639290652480,
+        "coordinate_rounds": 129639290652480,
+        "round_witness_adds": 259278581304960,
+        "assembly_real_adds": 129639290652480,
+        "conductor_cache_complex_scales": 1608262797
+      }
+    }
+  ],
+  "small": [
+    {
+      "extra_nodes": 0,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3791945802,
+        "primitive_grid_outputs": 1775431871117,
+        "Gaussian_terms_upper": 4271014086121,
+        "Gaussian_unit_gates_upper": 8542028172242,
+        "bucket_additions_upper": 7969016316193,
+        "odd_integer_scales_upper": 4156411711634,
+        "outer_complex_exp_upper": 2605203866,
+        "Gaussian_seed_unit_contractions_upper": 2605203866,
+        "real_exp_seed_certificates": 7499,
+        "main_character_calls": 4860882394,
+        "main_character_butterflies": 128941391789290,
+        "main_character_point_products": 25399177848072,
+        "main_character_inverse_dyadic_scales": 15046227780352,
+        "prefactor_contraction_complex_products": 1202865170991,
+        "radial_argument_prefactor_real_products": 2421291652611,
+        "cutoff_rational_divisions": 2605203866,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10003939328,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 89858217607168,
+        "time_dft_complex_outputs": 9237783904256,
+        "omega_complex_scalings": 0,
+        "positive_scale_real_updates": 0,
+        "final_Y_real_products": 0,
+        "frequency_conjugate_copies": 1202846693883,
+        "zero_imaginary_projections": 18477108
+      },
+      "fractional_bits": {
+        "seed": [
+          302,
+          404
+        ],
+        "sigma": [
+          382,
+          484
+        ],
+        "radial": [
+          417,
+          523
+        ],
+        "setup": [
+          422,
+          527
+        ],
+        "character": [
+          279,
+          411
+        ],
+        "gauss": [
+          402,
+          534
+        ],
+        "time_raw_sign": [
+          241,
+          343
+        ]
+      }
+    },
+    {
+      "extra_nodes": 167,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3793198135,
+        "primitive_grid_outputs": 1778517548153,
+        "Gaussian_terms_upper": 4272189208037,
+        "Gaussian_unit_gates_upper": 8544378416074,
+        "bucket_additions_upper": 7971366560025,
+        "odd_integer_scales_upper": 4157586833550,
+        "outer_complex_exp_upper": 2605920664,
+        "Gaussian_seed_unit_contractions_upper": 2605920664,
+        "real_exp_seed_certificates": 7499,
+        "main_character_calls": 4862315990,
+        "main_character_butterflies": 129070168525694,
+        "main_character_point_products": 25423104366744,
+        "main_character_inverse_dyadic_scales": 15059996816832,
+        "prefactor_contraction_complex_products": 1204094474269,
+        "radial_argument_prefactor_real_products": 2423754559955,
+        "cutoff_rational_divisions": 2605920664,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10006691840,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 89954059550720,
+        "time_dft_complex_outputs": 9247225020416,
+        "omega_complex_scalings": 0,
+        "positive_scale_real_updates": 0,
+        "final_Y_real_products": 0,
+        "frequency_conjugate_copies": 1204075997161,
+        "zero_imaginary_projections": 18477108
+      },
+      "fractional_bits": {
+        "seed": [
+          302,
+          404
+        ],
+        "sigma": [
+          382,
+          484
+        ],
+        "radial": [
+          417,
+          523
+        ],
+        "setup": [
+          422,
+          527
+        ],
+        "character": [
+          279,
+          411
+        ],
+        "gauss": [
+          402,
+          534
+        ],
+        "time_raw_sign": [
+          241,
+          343
+        ]
+      }
+    },
+    {
+      "extra_nodes": 320,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3794345482,
+        "primitive_grid_outputs": 1781344545677,
+        "Gaussian_terms_upper": 4272972622649,
+        "Gaussian_unit_gates_upper": 8545945245298,
+        "bucket_additions_upper": 7972933389249,
+        "odd_integer_scales_upper": 4158370248162,
+        "outer_complex_exp_upper": 2606398530,
+        "Gaussian_seed_unit_contractions_upper": 2606398530,
+        "real_exp_seed_certificates": 7499,
+        "main_character_calls": 4863271722,
+        "main_character_butterflies": 129211063280950,
+        "main_character_point_products": 25451990880456,
+        "main_character_inverse_dyadic_scales": 15077049215168,
+        "prefactor_contraction_complex_products": 1205482842215,
+        "radial_argument_prefactor_real_products": 2426534163043,
+        "cutoff_rational_divisions": 2606398530,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10008526848,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 90062828601344,
+        "time_dft_complex_outputs": 9257887727616,
+        "omega_complex_scalings": 0,
+        "positive_scale_real_updates": 0,
+        "final_Y_real_products": 0,
+        "frequency_conjugate_copies": 1205464365107,
+        "zero_imaginary_projections": 18477108
+      },
+      "fractional_bits": {
+        "seed": [
+          302,
+          404
+        ],
+        "sigma": [
+          382,
+          484
+        ],
+        "radial": [
+          417,
+          523
+        ],
+        "setup": [
+          422,
+          527
+        ],
+        "character": [
+          279,
+          411
+        ],
+        "gauss": [
+          402,
+          534
+        ],
+        "time_raw_sign": [
+          241,
+          343
+        ]
+      }
+    },
+    {
+      "extra_nodes": 640,
+      "totals": {
+        "conductors": 7499,
+        "primitive_labels": 18477108,
+        "even_labels": 9238543,
+        "odd_labels": 9238565,
+        "unit_residues": 25330722,
+        "conductor_grid_nodes": 3796745162,
+        "primitive_grid_outputs": 1787257220237,
+        "Gaussian_terms_upper": 4274875200989,
+        "Gaussian_unit_gates_upper": 8549750401978,
+        "bucket_additions_upper": 7976738545929,
+        "odd_integer_scales_upper": 4160272826502,
+        "outer_complex_exp_upper": 2607559060,
+        "Gaussian_seed_unit_contractions_upper": 2607559060,
+        "real_exp_seed_certificates": 7499,
+        "main_character_calls": 4865592782,
+        "main_character_butterflies": 129487303527630,
+        "main_character_point_products": 25504315078872,
+        "main_character_inverse_dyadic_scales": 15107909947904,
+        "prefactor_contraction_complex_products": 1208208168343,
+        "radial_argument_prefactor_real_products": 2431991778479,
+        "cutoff_rational_divisions": 2607559060,
+        "tilt_cis_certificates": 22494,
+        "conductor_positive_roots": 14998,
+        "phase_positive_roots": 18477108,
+        "phase_divisions": 18477108,
+        "K_complex_products": 18477108,
+        "eighth_root_undo_complex_products_upper": 18477108,
+        "fixed_setup_arithmetic_upper": 221845280,
+        "gauss_character_calls": 7499,
+        "gauss_character_butterflies": 1005598874,
+        "gauss_character_point_products": 191293204,
+        "gauss_character_inverse_dyadic_scales": 113309696,
+        "additive_root_cis": 25330722,
+        "character_root_cis_upper": 41412194,
+        "eighth_root_cis_upper": 59992,
+        "time_root_cis_upper": 10012983296,
+        "blue_kernel_builds": 11067,
+        "blue_kernel_butterflies": 163605472,
+        "blue_kernel_entries": 24654496,
+        "time_butterflies": 90276181311488,
+        "time_dft_complex_outputs": 9278818353152,
+        "omega_complex_scalings": 0,
+        "positive_scale_real_updates": 0,
+        "final_Y_real_products": 0,
+        "frequency_conjugate_copies": 1208189691235,
+        "zero_imaginary_projections": 18477108
+      },
+      "fractional_bits": {
+        "seed": [
+          302,
+          404
+        ],
+        "sigma": [
+          382,
+          484
+        ],
+        "radial": [
+          417,
+          523
+        ],
+        "setup": [
+          422,
+          527
+        ],
+        "character": [
+          279,
+          411
+        ],
+        "gauss": [
+          402,
+          534
+        ],
+        "time_raw_sign": [
+          241,
+          343
+        ]
+      }
+    }
+  ],
+  "full20_horner_profiles": {
+    "band1_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "2294994337631148807989260805224034281293133/4514346853574658135247187271956303601205248",
+      "target_ratio": "47068051341128407188849945068359375/15083066945010368010742392296520548352",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9858,
+      "addition_events": 2688,
+      "template_sum": 12546,
+      "initial_signed_bits": 18,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 21,
+          "Lbits": 19,
+          "add_magnitude_bits": [
+            39,
+            40,
+            22,
+            25
+          ],
+          "raw_X_signed": 39,
+          "raw_Lv_signed": 39,
+          "doubled_residual_signed": 41,
+          "product_events": 208,
+          "addition_events": 76
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 25,
+          "Lbits": 23,
+          "add_magnitude_bits": [
+            43,
+            44,
+            22,
+            29
+          ],
+          "raw_X_signed": 43,
+          "raw_Lv_signed": 43,
+          "doubled_residual_signed": 45,
+          "product_events": 238,
+          "addition_events": 84
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 29,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 298,
+          "addition_events": 100
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 41,
+          "Lbits": 39,
+          "add_magnitude_bits": [
+            59,
+            60,
+            22,
+            44
+          ],
+          "raw_X_signed": 59,
+          "raw_Lv_signed": 59,
+          "doubled_residual_signed": 61,
+          "product_events": 358,
+          "addition_events": 108
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 44,
+          "Lbits": 42,
+          "add_magnitude_bits": [
+            62,
+            63,
+            22,
+            48
+          ],
+          "raw_X_signed": 62,
+          "raw_Lv_signed": 62,
+          "doubled_residual_signed": 64,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 48,
+          "Lbits": 48,
+          "add_magnitude_bits": [
+            68,
+            69,
+            22,
+            53
+          ],
+          "raw_X_signed": 68,
+          "raw_Lv_signed": 68,
+          "doubled_residual_signed": 70,
+          "product_events": 388,
+          "addition_events": 120
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 53,
+          "Lbits": 57,
+          "add_magnitude_bits": [
+            77,
+            78,
+            22,
+            62
+          ],
+          "raw_X_signed": 77,
+          "raw_Lv_signed": 77,
+          "doubled_residual_signed": 79,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 62,
+          "Lbits": 60,
+          "add_magnitude_bits": [
+            80,
+            81,
+            22,
+            66
+          ],
+          "raw_X_signed": 80,
+          "raw_Lv_signed": 80,
+          "doubled_residual_signed": 82,
+          "product_events": 508,
+          "addition_events": 140
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 66,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            69
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 538,
+          "addition_events": 144
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 69,
+          "Lbits": 69,
+          "add_magnitude_bits": [
+            89,
+            90,
+            22,
+            73
+          ],
+          "raw_X_signed": 89,
+          "raw_Lv_signed": 89,
+          "doubled_residual_signed": 91,
+          "product_events": 568,
+          "addition_events": 156
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 73,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 85,
+          "Lbits": 83,
+          "add_magnitude_bits": [
+            103,
+            104,
+            22,
+            87
+          ],
+          "raw_X_signed": 103,
+          "raw_Lv_signed": 103,
+          "doubled_residual_signed": 105,
+          "product_events": 688,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 87,
+          "Lbits": 87,
+          "add_magnitude_bits": [
+            107,
+            108,
+            22,
+            91
+          ],
+          "raw_X_signed": 107,
+          "raw_Lv_signed": 107,
+          "doubled_residual_signed": 109,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 91,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            98
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 98,
+          "Lbits": 96,
+          "add_magnitude_bits": [
+            116,
+            117,
+            22,
+            107
+          ],
+          "raw_X_signed": 116,
+          "raw_Lv_signed": 116,
+          "doubled_residual_signed": 118,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    },
+    "band2_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "1151526290555556714703298794176548933411295214189959/2269582467910076035952608887752256135576238218543104",
+      "target_ratio": "12271802076330404023648783129945220947265625/5798759981476518458402489806235340453858770944",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9858,
+      "addition_events": 2688,
+      "template_sum": 12546,
+      "initial_signed_bits": 18,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 21,
+          "Lbits": 19,
+          "add_magnitude_bits": [
+            39,
+            40,
+            22,
+            25
+          ],
+          "raw_X_signed": 39,
+          "raw_Lv_signed": 39,
+          "doubled_residual_signed": 41,
+          "product_events": 208,
+          "addition_events": 76
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 25,
+          "Lbits": 23,
+          "add_magnitude_bits": [
+            43,
+            44,
+            22,
+            29
+          ],
+          "raw_X_signed": 43,
+          "raw_Lv_signed": 43,
+          "doubled_residual_signed": 45,
+          "product_events": 238,
+          "addition_events": 84
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 29,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 298,
+          "addition_events": 100
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 41,
+          "Lbits": 39,
+          "add_magnitude_bits": [
+            59,
+            60,
+            22,
+            44
+          ],
+          "raw_X_signed": 59,
+          "raw_Lv_signed": 59,
+          "doubled_residual_signed": 61,
+          "product_events": 358,
+          "addition_events": 108
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 44,
+          "Lbits": 42,
+          "add_magnitude_bits": [
+            62,
+            63,
+            22,
+            48
+          ],
+          "raw_X_signed": 62,
+          "raw_Lv_signed": 62,
+          "doubled_residual_signed": 64,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 48,
+          "Lbits": 48,
+          "add_magnitude_bits": [
+            68,
+            69,
+            22,
+            53
+          ],
+          "raw_X_signed": 68,
+          "raw_Lv_signed": 68,
+          "doubled_residual_signed": 70,
+          "product_events": 388,
+          "addition_events": 120
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 53,
+          "Lbits": 57,
+          "add_magnitude_bits": [
+            77,
+            78,
+            22,
+            62
+          ],
+          "raw_X_signed": 77,
+          "raw_Lv_signed": 77,
+          "doubled_residual_signed": 79,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 62,
+          "Lbits": 60,
+          "add_magnitude_bits": [
+            80,
+            81,
+            22,
+            66
+          ],
+          "raw_X_signed": 80,
+          "raw_Lv_signed": 80,
+          "doubled_residual_signed": 82,
+          "product_events": 508,
+          "addition_events": 140
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 66,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            69
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 538,
+          "addition_events": 144
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 69,
+          "Lbits": 69,
+          "add_magnitude_bits": [
+            89,
+            90,
+            22,
+            73
+          ],
+          "raw_X_signed": 89,
+          "raw_Lv_signed": 89,
+          "doubled_residual_signed": 91,
+          "product_events": 568,
+          "addition_events": 156
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 73,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 85,
+          "Lbits": 83,
+          "add_magnitude_bits": [
+            103,
+            104,
+            22,
+            87
+          ],
+          "raw_X_signed": 103,
+          "raw_Lv_signed": 103,
+          "doubled_residual_signed": 105,
+          "product_events": 688,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 87,
+          "Lbits": 87,
+          "add_magnitude_bits": [
+            107,
+            108,
+            22,
+            91
+          ],
+          "raw_X_signed": 107,
+          "raw_Lv_signed": 107,
+          "doubled_residual_signed": 109,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 91,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            98
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 98,
+          "Lbits": 96,
+          "add_magnitude_bits": [
+            116,
+            117,
+            22,
+            107
+          ],
+          "raw_X_signed": 116,
+          "raw_Lv_signed": 116,
+          "doubled_residual_signed": 118,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    },
+    "band3_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "2638751287623856361967758605450991903378190647828766460693933/5204687566740480370281918640962073178674543181382306704130048",
+      "target_ratio": "392852933393891906686187833126207037555269012451171875/226064699072252980510008193587372331089542769464548786176",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9858,
+      "addition_events": 2688,
+      "template_sum": 12546,
+      "initial_signed_bits": 18,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 21,
+          "Lbits": 19,
+          "add_magnitude_bits": [
+            39,
+            40,
+            22,
+            25
+          ],
+          "raw_X_signed": 39,
+          "raw_Lv_signed": 39,
+          "doubled_residual_signed": 41,
+          "product_events": 208,
+          "addition_events": 76
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 25,
+          "Lbits": 23,
+          "add_magnitude_bits": [
+            43,
+            44,
+            22,
+            29
+          ],
+          "raw_X_signed": 43,
+          "raw_Lv_signed": 43,
+          "doubled_residual_signed": 45,
+          "product_events": 238,
+          "addition_events": 84
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 29,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 298,
+          "addition_events": 100
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 41,
+          "Lbits": 39,
+          "add_magnitude_bits": [
+            59,
+            60,
+            22,
+            44
+          ],
+          "raw_X_signed": 59,
+          "raw_Lv_signed": 59,
+          "doubled_residual_signed": 61,
+          "product_events": 358,
+          "addition_events": 108
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 44,
+          "Lbits": 42,
+          "add_magnitude_bits": [
+            62,
+            63,
+            22,
+            48
+          ],
+          "raw_X_signed": 62,
+          "raw_Lv_signed": 62,
+          "doubled_residual_signed": 64,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 48,
+          "Lbits": 48,
+          "add_magnitude_bits": [
+            68,
+            69,
+            22,
+            53
+          ],
+          "raw_X_signed": 68,
+          "raw_Lv_signed": 68,
+          "doubled_residual_signed": 70,
+          "product_events": 388,
+          "addition_events": 120
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 53,
+          "Lbits": 57,
+          "add_magnitude_bits": [
+            77,
+            78,
+            22,
+            62
+          ],
+          "raw_X_signed": 77,
+          "raw_Lv_signed": 77,
+          "doubled_residual_signed": 79,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 62,
+          "Lbits": 60,
+          "add_magnitude_bits": [
+            80,
+            81,
+            22,
+            66
+          ],
+          "raw_X_signed": 80,
+          "raw_Lv_signed": 80,
+          "doubled_residual_signed": 82,
+          "product_events": 508,
+          "addition_events": 140
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 66,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            69
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 538,
+          "addition_events": 144
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 69,
+          "Lbits": 69,
+          "add_magnitude_bits": [
+            89,
+            90,
+            22,
+            73
+          ],
+          "raw_X_signed": 89,
+          "raw_Lv_signed": 89,
+          "doubled_residual_signed": 91,
+          "product_events": 568,
+          "addition_events": 156
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 73,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 85,
+          "Lbits": 83,
+          "add_magnitude_bits": [
+            103,
+            104,
+            22,
+            87
+          ],
+          "raw_X_signed": 103,
+          "raw_Lv_signed": 103,
+          "doubled_residual_signed": 105,
+          "product_events": 688,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 87,
+          "Lbits": 87,
+          "add_magnitude_bits": [
+            107,
+            108,
+            22,
+            91
+          ],
+          "raw_X_signed": 107,
+          "raw_Lv_signed": 107,
+          "doubled_residual_signed": 109,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 91,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            98
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 98,
+          "Lbits": 96,
+          "add_magnitude_bits": [
+            116,
+            117,
+            22,
+            107
+          ],
+          "raw_X_signed": 116,
+          "raw_Lv_signed": 116,
+          "doubled_residual_signed": 118,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    },
+    "band4_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "3487642285863496434697957309267806703715691780248335738483181567533/5457510469982465944748733120865446845401837790961133634589869211648",
+      "target_ratio": "31715893751719314896529351326702030813251615589936981201171875/237046017894386741291262351599072529444548399034058708013285376",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9858,
+      "addition_events": 2688,
+      "template_sum": 12546,
+      "initial_signed_bits": 18,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 21,
+          "Lbits": 19,
+          "add_magnitude_bits": [
+            39,
+            40,
+            22,
+            25
+          ],
+          "raw_X_signed": 39,
+          "raw_Lv_signed": 39,
+          "doubled_residual_signed": 41,
+          "product_events": 208,
+          "addition_events": 76
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 25,
+          "Lbits": 23,
+          "add_magnitude_bits": [
+            43,
+            44,
+            22,
+            29
+          ],
+          "raw_X_signed": 43,
+          "raw_Lv_signed": 43,
+          "doubled_residual_signed": 45,
+          "product_events": 238,
+          "addition_events": 84
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 29,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 298,
+          "addition_events": 100
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 41,
+          "Lbits": 39,
+          "add_magnitude_bits": [
+            59,
+            60,
+            22,
+            44
+          ],
+          "raw_X_signed": 59,
+          "raw_Lv_signed": 59,
+          "doubled_residual_signed": 61,
+          "product_events": 358,
+          "addition_events": 108
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 44,
+          "Lbits": 42,
+          "add_magnitude_bits": [
+            62,
+            63,
+            22,
+            48
+          ],
+          "raw_X_signed": 62,
+          "raw_Lv_signed": 62,
+          "doubled_residual_signed": 64,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 48,
+          "Lbits": 48,
+          "add_magnitude_bits": [
+            68,
+            69,
+            22,
+            53
+          ],
+          "raw_X_signed": 68,
+          "raw_Lv_signed": 68,
+          "doubled_residual_signed": 70,
+          "product_events": 388,
+          "addition_events": 120
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 53,
+          "Lbits": 57,
+          "add_magnitude_bits": [
+            77,
+            78,
+            22,
+            62
+          ],
+          "raw_X_signed": 77,
+          "raw_Lv_signed": 77,
+          "doubled_residual_signed": 79,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 62,
+          "Lbits": 60,
+          "add_magnitude_bits": [
+            80,
+            81,
+            22,
+            66
+          ],
+          "raw_X_signed": 80,
+          "raw_Lv_signed": 80,
+          "doubled_residual_signed": 82,
+          "product_events": 508,
+          "addition_events": 140
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 66,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            69
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 538,
+          "addition_events": 144
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 69,
+          "Lbits": 69,
+          "add_magnitude_bits": [
+            89,
+            90,
+            22,
+            73
+          ],
+          "raw_X_signed": 89,
+          "raw_Lv_signed": 89,
+          "doubled_residual_signed": 91,
+          "product_events": 568,
+          "addition_events": 156
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 73,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 85,
+          "Lbits": 83,
+          "add_magnitude_bits": [
+            103,
+            104,
+            22,
+            87
+          ],
+          "raw_X_signed": 103,
+          "raw_Lv_signed": 103,
+          "doubled_residual_signed": 105,
+          "product_events": 688,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 87,
+          "Lbits": 87,
+          "add_magnitude_bits": [
+            107,
+            108,
+            22,
+            91
+          ],
+          "raw_X_signed": 107,
+          "raw_Lv_signed": 107,
+          "doubled_residual_signed": 109,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 91,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            98
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 98,
+          "Lbits": 96,
+          "add_magnitude_bits": [
+            116,
+            117,
+            22,
+            107
+          ],
+          "raw_X_signed": 116,
+          "raw_Lv_signed": 116,
+          "doubled_residual_signed": 118,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    },
+    "band5_declared_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "279436951681088597527235887343569720155431077696665449448374578643763100688857401846517758963450778167100459/515741694850067590412951718796743230543467045109298243269829224332579160393034346571516602092492453467652096",
+      "target_ratio": "912331602244067948949304347507330114233291674862823486328125/8742596646604919687532155449697480800353374206518840132733239296",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9144,
+      "addition_events": 2544,
+      "template_sum": 11688,
+      "initial_signed_bits": 9,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 8,
+          "Lbits": 6,
+          "add_magnitude_bits": [
+            26,
+            27,
+            22,
+            12
+          ],
+          "raw_X_signed": 26,
+          "raw_Lv_signed": 26,
+          "doubled_residual_signed": 28,
+          "product_events": 72,
+          "addition_events": 60
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 12,
+          "Lbits": 10,
+          "add_magnitude_bits": [
+            30,
+            31,
+            22,
+            17
+          ],
+          "raw_X_signed": 30,
+          "raw_Lv_signed": 30,
+          "doubled_residual_signed": 32,
+          "product_events": 140,
+          "addition_events": 64
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 21,
+          "Lbits": 27,
+          "add_magnitude_bits": [
+            47,
+            48,
+            22,
+            33
+          ],
+          "raw_X_signed": 47,
+          "raw_Lv_signed": 47,
+          "doubled_residual_signed": 49,
+          "product_events": 238,
+          "addition_events": 88
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 33,
+          "Lbits": 31,
+          "add_magnitude_bits": [
+            51,
+            52,
+            22,
+            37
+          ],
+          "raw_X_signed": 51,
+          "raw_Lv_signed": 51,
+          "doubled_residual_signed": 53,
+          "product_events": 298,
+          "addition_events": 96
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 37,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 328,
+          "addition_events": 100
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 41,
+          "Lbits": 41,
+          "add_magnitude_bits": [
+            61,
+            62,
+            22,
+            47
+          ],
+          "raw_X_signed": 61,
+          "raw_Lv_signed": 61,
+          "doubled_residual_signed": 63,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 47,
+          "Lbits": 51,
+          "add_magnitude_bits": [
+            71,
+            72,
+            22,
+            57
+          ],
+          "raw_X_signed": 71,
+          "raw_Lv_signed": 71,
+          "doubled_residual_signed": 73,
+          "product_events": 418,
+          "addition_events": 124
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 57,
+          "Lbits": 55,
+          "add_magnitude_bits": [
+            75,
+            76,
+            22,
+            61
+          ],
+          "raw_X_signed": 75,
+          "raw_Lv_signed": 75,
+          "doubled_residual_signed": 77,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 61,
+          "Lbits": 59,
+          "add_magnitude_bits": [
+            79,
+            80,
+            22,
+            64
+          ],
+          "raw_X_signed": 79,
+          "raw_Lv_signed": 79,
+          "doubled_residual_signed": 81,
+          "product_events": 508,
+          "addition_events": 132
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 64,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            70
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 508,
+          "addition_events": 144
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 70,
+          "Lbits": 74,
+          "add_magnitude_bits": [
+            94,
+            95,
+            22,
+            79
+          ],
+          "raw_X_signed": 94,
+          "raw_Lv_signed": 94,
+          "doubled_residual_signed": 96,
+          "product_events": 598,
+          "addition_events": 156
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 79,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 85,
+          "Lbits": 85,
+          "add_magnitude_bits": [
+            105,
+            106,
+            22,
+            89
+          ],
+          "raw_X_signed": 105,
+          "raw_Lv_signed": 105,
+          "doubled_residual_signed": 107,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 89,
+          "Lbits": 90,
+          "add_magnitude_bits": [
+            110,
+            111,
+            22,
+            94
+          ],
+          "raw_X_signed": 110,
+          "raw_Lv_signed": 110,
+          "doubled_residual_signed": 112,
+          "product_events": 748,
+          "addition_events": 180
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 94,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            107
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    },
+    "band5_actual_K20_b94": {
+      "K": 20,
+      "b0": 94,
+      "min_grid": 65,
+      "grids": [
+        94,
+        94,
+        94,
+        94,
+        91,
+        89,
+        89,
+        89,
+        83,
+        81,
+        81,
+        81,
+        75,
+        73,
+        73,
+        73,
+        65,
+        65,
+        65,
+        65
+      ],
+      "admitted": true,
+      "alpha_ratio": "157288919813396320237310315474965808720304050052002785344941371661833366629365833432515370213625337390409795715446568472833/290336763093274057010466097339957332737206421448057513620821589624550184874045738153331068909427130993261615018914927869952",
+      "target_ratio": "5834915808705244722824374677281468815948897930027865467076241438147934406021463448312715627253055572509765625/166105151075977767662074179530313490934853583166399779340526689735029966574684806886315464336978437487273755803648",
+      "evaluation_ratio": "3325149/8388608",
+      "evaluation_factor": "5253/2048",
+      "product_events": 9144,
+      "addition_events": 2544,
+      "template_sum": 11688,
+      "initial_signed_bits": 9,
+      "output_signed_bits": 108,
+      "reencoded_output_signed_bits": 114,
+      "output_reencoding_shift": 6,
+      "conversion_coordinate_count": 40,
+      "signed_add_bridges": 114,
+      "signed_product_bridges": 76,
+      "range_implications": 38,
+      "real_add_instances": 152,
+      "alignment_shift_instances": 14,
+      "alignment_bit_distance": 58,
+      "stages": [
+        {
+          "j": 18,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 8,
+          "Lbits": 6,
+          "add_magnitude_bits": [
+            26,
+            27,
+            22,
+            12
+          ],
+          "raw_X_signed": 26,
+          "raw_Lv_signed": 26,
+          "doubled_residual_signed": 28,
+          "product_events": 72,
+          "addition_events": 60
+        },
+        {
+          "j": 17,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 12,
+          "Lbits": 10,
+          "add_magnitude_bits": [
+            30,
+            31,
+            22,
+            17
+          ],
+          "raw_X_signed": 30,
+          "raw_Lv_signed": 30,
+          "doubled_residual_signed": 32,
+          "product_events": 140,
+          "addition_events": 64
+        },
+        {
+          "j": 16,
+          "grids": [
+            65,
+            65
+          ],
+          "Mbits": 17,
+          "Lbits": 15,
+          "add_magnitude_bits": [
+            35,
+            36,
+            22,
+            21
+          ],
+          "raw_X_signed": 35,
+          "raw_Lv_signed": 35,
+          "doubled_residual_signed": 37,
+          "product_events": 174,
+          "addition_events": 72
+        },
+        {
+          "j": 15,
+          "grids": [
+            65,
+            73
+          ],
+          "Mbits": 21,
+          "Lbits": 27,
+          "add_magnitude_bits": [
+            47,
+            48,
+            22,
+            33
+          ],
+          "raw_X_signed": 47,
+          "raw_Lv_signed": 47,
+          "doubled_residual_signed": 49,
+          "product_events": 238,
+          "addition_events": 88
+        },
+        {
+          "j": 14,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 33,
+          "Lbits": 31,
+          "add_magnitude_bits": [
+            51,
+            52,
+            22,
+            37
+          ],
+          "raw_X_signed": 51,
+          "raw_Lv_signed": 51,
+          "doubled_residual_signed": 53,
+          "product_events": 298,
+          "addition_events": 96
+        },
+        {
+          "j": 13,
+          "grids": [
+            73,
+            73
+          ],
+          "Mbits": 37,
+          "Lbits": 35,
+          "add_magnitude_bits": [
+            55,
+            56,
+            22,
+            41
+          ],
+          "raw_X_signed": 55,
+          "raw_Lv_signed": 55,
+          "doubled_residual_signed": 57,
+          "product_events": 328,
+          "addition_events": 100
+        },
+        {
+          "j": 12,
+          "grids": [
+            73,
+            75
+          ],
+          "Mbits": 41,
+          "Lbits": 41,
+          "add_magnitude_bits": [
+            61,
+            62,
+            22,
+            47
+          ],
+          "raw_X_signed": 61,
+          "raw_Lv_signed": 61,
+          "doubled_residual_signed": 63,
+          "product_events": 388,
+          "addition_events": 108
+        },
+        {
+          "j": 11,
+          "grids": [
+            75,
+            81
+          ],
+          "Mbits": 47,
+          "Lbits": 51,
+          "add_magnitude_bits": [
+            71,
+            72,
+            22,
+            57
+          ],
+          "raw_X_signed": 71,
+          "raw_Lv_signed": 71,
+          "doubled_residual_signed": 73,
+          "product_events": 418,
+          "addition_events": 124
+        },
+        {
+          "j": 10,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 57,
+          "Lbits": 55,
+          "add_magnitude_bits": [
+            75,
+            76,
+            22,
+            61
+          ],
+          "raw_X_signed": 75,
+          "raw_Lv_signed": 75,
+          "doubled_residual_signed": 77,
+          "product_events": 478,
+          "addition_events": 132
+        },
+        {
+          "j": 9,
+          "grids": [
+            81,
+            81
+          ],
+          "Mbits": 61,
+          "Lbits": 59,
+          "add_magnitude_bits": [
+            79,
+            80,
+            22,
+            64
+          ],
+          "raw_X_signed": 79,
+          "raw_Lv_signed": 79,
+          "doubled_residual_signed": 81,
+          "product_events": 508,
+          "addition_events": 132
+        },
+        {
+          "j": 8,
+          "grids": [
+            81,
+            83
+          ],
+          "Mbits": 64,
+          "Lbits": 64,
+          "add_magnitude_bits": [
+            84,
+            85,
+            22,
+            70
+          ],
+          "raw_X_signed": 84,
+          "raw_Lv_signed": 84,
+          "doubled_residual_signed": 86,
+          "product_events": 508,
+          "addition_events": 144
+        },
+        {
+          "j": 7,
+          "grids": [
+            83,
+            89
+          ],
+          "Mbits": 70,
+          "Lbits": 74,
+          "add_magnitude_bits": [
+            94,
+            95,
+            22,
+            79
+          ],
+          "raw_X_signed": 94,
+          "raw_Lv_signed": 94,
+          "doubled_residual_signed": 96,
+          "product_events": 598,
+          "addition_events": 156
+        },
+        {
+          "j": 6,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 79,
+          "Lbits": 77,
+          "add_magnitude_bits": [
+            97,
+            98,
+            22,
+            82
+          ],
+          "raw_X_signed": 97,
+          "raw_Lv_signed": 97,
+          "doubled_residual_signed": 99,
+          "product_events": 628,
+          "addition_events": 168
+        },
+        {
+          "j": 5,
+          "grids": [
+            89,
+            89
+          ],
+          "Mbits": 82,
+          "Lbits": 80,
+          "add_magnitude_bits": [
+            100,
+            101,
+            22,
+            85
+          ],
+          "raw_X_signed": 100,
+          "raw_Lv_signed": 100,
+          "doubled_residual_signed": 102,
+          "product_events": 658,
+          "addition_events": 168
+        },
+        {
+          "j": 4,
+          "grids": [
+            89,
+            91
+          ],
+          "Mbits": 85,
+          "Lbits": 85,
+          "add_magnitude_bits": [
+            105,
+            106,
+            22,
+            89
+          ],
+          "raw_X_signed": 105,
+          "raw_Lv_signed": 105,
+          "doubled_residual_signed": 107,
+          "product_events": 688,
+          "addition_events": 180
+        },
+        {
+          "j": 3,
+          "grids": [
+            91,
+            94
+          ],
+          "Mbits": 89,
+          "Lbits": 90,
+          "add_magnitude_bits": [
+            110,
+            111,
+            22,
+            94
+          ],
+          "raw_X_signed": 110,
+          "raw_Lv_signed": 110,
+          "doubled_residual_signed": 112,
+          "product_events": 748,
+          "addition_events": 180
+        },
+        {
+          "j": 2,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 94,
+          "Lbits": 92,
+          "add_magnitude_bits": [
+            112,
+            113,
+            22,
+            96
+          ],
+          "raw_X_signed": 112,
+          "raw_Lv_signed": 112,
+          "doubled_residual_signed": 114,
+          "product_events": 748,
+          "addition_events": 184
+        },
+        {
+          "j": 1,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 96,
+          "Lbits": 94,
+          "add_magnitude_bits": [
+            114,
+            115,
+            22,
+            97
+          ],
+          "raw_X_signed": 114,
+          "raw_Lv_signed": 114,
+          "doubled_residual_signed": 116,
+          "product_events": 748,
+          "addition_events": 192
+        },
+        {
+          "j": 0,
+          "grids": [
+            94,
+            94
+          ],
+          "Mbits": 97,
+          "Lbits": 95,
+          "add_magnitude_bits": [
+            115,
+            116,
+            22,
+            107
+          ],
+          "raw_X_signed": 115,
+          "raw_Lv_signed": 115,
+          "doubled_residual_signed": 117,
+          "product_events": 778,
+          "addition_events": 196
+        }
+      ]
+    }
+  },
+  "width_classes_main": {
+    "root": {
+      "classes": 589,
+      "fractional_p": [
+        80,
+        105
+      ],
+      "data_unsigned_capacity_a": [
+        99,
+        154
+      ],
+      "coefficient_unsigned_capacity_b": [
+        81,
+        106
+      ],
+      "raw_3product_sum_capacity_a_plus_b_plus2": [
+        182,
+        262
+      ]
+    },
+    "kernel": {
+      "classes": 184,
+      "fractional_p": [
+        87,
+        105
+      ],
+      "data_unsigned_capacity_a": [
+        107,
+        137
+      ],
+      "coefficient_unsigned_capacity_b": [
+        87,
+        105
+      ],
+      "raw_3product_sum_capacity_a_plus_b_plus2": [
+        196,
+        244
+      ]
+    },
+    "add": {
+      "classes": 607,
+      "fractional_p": [
+        80,
+        105
+      ],
+      "data_unsigned_capacity_a": [
+        97,
+        155
+      ],
+      "coefficient_unsigned_capacity_b": [
+        80,
+        105
+      ],
+      "raw_3product_sum_capacity_a_plus_b_plus2": null
+    },
+    "quarter": {
+      "classes": 571,
+      "fractional_p": [
+        80,
+        105
+      ],
+      "data_unsigned_capacity_a": [
+        98,
+        154
+      ],
+      "coefficient_unsigned_capacity_b": [
+        80,
+        105
+      ],
+      "raw_3product_sum_capacity_a_plus_b_plus2": null
+    },
+    "neg": {
+      "classes": 148,
+      "fractional_p": [
+        91,
+        104
+      ],
+      "data_unsigned_capacity_a": [
+        108,
+        136
+      ],
+      "coefficient_unsigned_capacity_b": [
+        91,
+        104
+      ],
+      "raw_3product_sum_capacity_a_plus_b_plus2": null
+    }
+  },
+  "em_setup": {
+    "distinct_arguments_union": 7049217,
+    "final_active_arguments": 6148097,
+    "retired_at_final_transition": 901120,
+    "introduced_at_final_transition": 0,
+    "log_grid_points": 7049217,
+    "log_anchors": 960,
+    "log_degree21_stages": 148013397,
+    "initial_B_certificates": 7049217,
+    "step_cis_certificates": 7049217,
+    "step_grid_conversions": 7049217,
+    "gamma_constants": 159,
+    "highest_Bernoulli_index": 318,
+    "new_gamma_constants_above_m64": 95,
+    "D4096_lambda_table_entries": 28,
+    "additional_lambda_entries_above_P27": 1,
+    "raw_union_state_step_bytes_at_72_each": 507543624,
+    "raw_final_state_step_bytes_at_72_each": 442662984,
+    "scope": "Raw two-array layout only, not peak memory. Elementary accuracy remains inherited; setup proof costs are not expanded."
+  },
+  "large_setup_selected": {
+    "three": {
+      "totals": {
+        "kernel_keys": 8467,
+        "kernel_entries": 363202368,
+        "chirp_entries": 150746135,
+        "scaled_cache_complex_rounds": 363202368,
+        "exact_real_cache_sums": 726404736,
+        "scaled_cache_round_add_core": 46761337600,
+        "scaled_cache_sum_add_core": 20241495168,
+        "kernel_fft_general_complex_products": 2388169382,
+        "kernel_fft_complex_add_sub": 5865912000,
+        "kernel_fft_quarter_turns": 181592717,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "total_added_normalized_setup_add_core": 67002832768
+      },
+      "by_p": {
+        "80": {},
+        "81": {},
+        "82": {},
+        "83": {},
+        "84": {},
+        "85": {},
+        "86": {},
+        "87": {
+          "kernel_keys": 1,
+          "kernel_entries": 32,
+          "chirp_entries": 13,
+          "scaled_cache_complex_rounds": 32,
+          "exact_real_cache_sums": 64,
+          "scaled_cache_round_add_core": 3200,
+          "scaled_cache_sum_add_core": 1472,
+          "kernel_fft_general_complex_products": 34,
+          "kernel_fft_complex_add_sub": 160,
+          "kernel_fft_quarter_turns": 15,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "88": {
+          "kernel_keys": 6,
+          "kernel_entries": 352,
+          "chirp_entries": 132,
+          "scaled_cache_complex_rounds": 352,
+          "exact_real_cache_sums": 704,
+          "scaled_cache_round_add_core": 35200,
+          "scaled_cache_sum_add_core": 17600,
+          "kernel_fft_general_complex_products": 524,
+          "kernel_fft_complex_add_sub": 2080,
+          "kernel_fft_quarter_turns": 170,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "89": {
+          "kernel_keys": 15,
+          "kernel_entries": 1504,
+          "chirp_entries": 581,
+          "scaled_cache_complex_rounds": 1504,
+          "exact_real_cache_sums": 3008,
+          "scaled_cache_round_add_core": 162176,
+          "scaled_cache_sum_add_core": 75200,
+          "kernel_fft_general_complex_products": 2846,
+          "kernel_fft_complex_add_sub": 10144,
+          "kernel_fft_quarter_turns": 737,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "90": {
+          "kernel_keys": 26,
+          "kernel_entries": 4320,
+          "chirp_entries": 1632,
+          "scaled_cache_complex_rounds": 4320,
+          "exact_real_cache_sums": 8640,
+          "scaled_cache_round_add_core": 466560,
+          "scaled_cache_sum_add_core": 216000,
+          "kernel_fft_general_complex_products": 9908,
+          "kernel_fft_complex_add_sub": 32672,
+          "kernel_fft_quarter_turns": 2134,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "91": {
+          "kernel_keys": 35,
+          "kernel_entries": 6624,
+          "chirp_entries": 2569,
+          "scaled_cache_complex_rounds": 6624,
+          "exact_real_cache_sums": 13248,
+          "scaled_cache_round_add_core": 715392,
+          "scaled_cache_sum_add_core": 331200,
+          "kernel_fft_general_complex_products": 15686,
+          "kernel_fft_complex_add_sub": 51104,
+          "kernel_fft_quarter_turns": 3277,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "92": {
+          "kernel_keys": 71,
+          "kernel_entries": 25056,
+          "chirp_entries": 9877,
+          "scaled_cache_complex_rounds": 25056,
+          "exact_real_cache_sums": 50112,
+          "scaled_cache_round_add_core": 2706048,
+          "scaled_cache_sum_add_core": 1252800,
+          "kernel_fft_general_complex_products": 71054,
+          "kernel_fft_complex_add_sub": 216992,
+          "kernel_fft_quarter_turns": 12457,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "93": {
+          "kernel_keys": 120,
+          "kernel_entries": 74208,
+          "chirp_entries": 30002,
+          "scaled_cache_complex_rounds": 74208,
+          "exact_real_cache_sums": 148416,
+          "scaled_cache_round_add_core": 8399488,
+          "scaled_cache_sum_add_core": 3710400,
+          "kernel_fft_general_complex_products": 242672,
+          "kernel_fft_complex_add_sub": 707488,
+          "kernel_fft_quarter_turns": 36984,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "94": {
+          "kernel_keys": 191,
+          "kernel_entries": 192992,
+          "chirp_entries": 77009,
+          "scaled_cache_complex_rounds": 192992,
+          "exact_real_cache_sums": 385984,
+          "scaled_cache_round_add_core": 22334080,
+          "scaled_cache_sum_add_core": 9649600,
+          "kernel_fft_general_complex_products": 704638,
+          "kernel_fft_complex_add_sub": 1987488,
+          "kernel_fft_quarter_turns": 96305,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "95": {
+          "kernel_keys": 272,
+          "kernel_entries": 363744,
+          "chirp_entries": 146438,
+          "scaled_cache_complex_rounds": 363744,
+          "exact_real_cache_sums": 727488,
+          "scaled_cache_round_add_core": 42182272,
+          "scaled_cache_sum_add_core": 18187200,
+          "kernel_fft_general_complex_products": 1391776,
+          "kernel_fft_complex_add_sub": 3873696,
+          "kernel_fft_quarter_turns": 181600,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "96": {
+          "kernel_keys": 412,
+          "kernel_entries": 964576,
+          "chirp_entries": 384942,
+          "scaled_cache_complex_rounds": 964576,
+          "exact_real_cache_sums": 1929152,
+          "scaled_cache_round_add_core": 111888000,
+          "scaled_cache_sum_add_core": 52087104,
+          "kernel_fft_general_complex_products": 4087096,
+          "kernel_fft_complex_add_sub": 11066272,
+          "kernel_fft_quarter_turns": 481876,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "97": {
+          "kernel_keys": 526,
+          "kernel_entries": 2217824,
+          "chirp_entries": 900072,
+          "scaled_cache_complex_rounds": 2217824,
+          "exact_real_cache_sums": 4435648,
+          "scaled_cache_round_add_core": 257267328,
+          "scaled_cache_sum_add_core": 119762496,
+          "kernel_fft_general_complex_products": 10253084,
+          "kernel_fft_complex_add_sub": 27157536,
+          "kernel_fft_quarter_turns": 1108386,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "98": {
+          "kernel_keys": 635,
+          "kernel_entries": 4006496,
+          "chirp_entries": 1634969,
+          "scaled_cache_complex_rounds": 4006496,
+          "exact_real_cache_sums": 8012992,
+          "scaled_cache_round_add_core": 487691136,
+          "scaled_cache_sum_add_core": 216350784,
+          "kernel_fft_general_complex_products": 19470582,
+          "kernel_fft_complex_add_sub": 50958112,
+          "kernel_fft_quarter_turns": 2002613,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "99": {
+          "kernel_keys": 856,
+          "kernel_entries": 9773280,
+          "chirp_entries": 3985560,
+          "scaled_cache_complex_rounds": 9773280,
+          "exact_real_cache_sums": 19546560,
+          "scaled_cache_round_add_core": 1211884928,
+          "scaled_cache_sum_add_core": 527757120,
+          "kernel_fft_general_complex_products": 51660784,
+          "kernel_fft_complex_add_sub": 132637984,
+          "kernel_fft_quarter_turns": 4885784,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "100": {
+          "kernel_keys": 1042,
+          "kernel_entries": 20037632,
+          "chirp_entries": 8027356,
+          "scaled_cache_complex_rounds": 20037632,
+          "exact_real_cache_sums": 40075264,
+          "scaled_cache_round_add_core": 2484666368,
+          "scaled_cache_sum_add_core": 1082032128,
+          "kernel_fft_general_complex_products": 113174564,
+          "kernel_fft_complex_add_sub": 286457856,
+          "kernel_fft_quarter_turns": 10017774,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "101": {
+          "kernel_keys": 1230,
+          "kernel_entries": 39370784,
+          "chirp_entries": 16324924,
+          "scaled_cache_complex_rounds": 39370784,
+          "exact_real_cache_sums": 78741568,
+          "scaled_cache_round_add_core": 4881976960,
+          "scaled_cache_sum_add_core": 2126022336,
+          "kernel_fft_general_complex_products": 235776444,
+          "kernel_fft_complex_add_sub": 589660320,
+          "kernel_fft_quarter_turns": 19684162,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "102": {
+          "kernel_keys": 1094,
+          "kernel_entries": 65568768,
+          "chirp_entries": 26518336,
+          "scaled_cache_complex_rounds": 65568768,
+          "exact_real_cache_sums": 131137536,
+          "scaled_cache_round_add_core": 8130527232,
+          "scaled_cache_sum_add_core": 3540713472,
+          "kernel_fft_general_complex_products": 423135372,
+          "kernel_fft_complex_add_sub": 1042972672,
+          "kernel_fft_quarter_turns": 32783290,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "103": {
+          "kernel_keys": 739,
+          "kernel_entries": 62783488,
+          "chirp_entries": 23994873,
+          "scaled_cache_complex_rounds": 62783488,
+          "exact_real_cache_sums": 125566976,
+          "scaled_cache_round_add_core": 8287420416,
+          "scaled_cache_sum_add_core": 3390308352,
+          "kernel_fft_general_complex_products": 422446534,
+          "kernel_fft_complex_add_sub": 1033240576,
+          "kernel_fft_quarter_turns": 31391005,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "104": {
+          "kernel_keys": 1188,
+          "kernel_entries": 155713536,
+          "chirp_entries": 68178936,
+          "scaled_cache_complex_rounds": 155713536,
+          "exact_real_cache_sums": 311427072,
+          "scaled_cache_round_add_core": 20554186752,
+          "scaled_cache_sum_add_core": 9031385088,
+          "kernel_fft_general_complex_products": 1089997128,
+          "kernel_fft_complex_add_sub": 2647130112,
+          "kernel_fft_quarter_turns": 77855580,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "105": {
+          "kernel_keys": 8,
+          "kernel_entries": 2097152,
+          "chirp_entries": 527914,
+          "scaled_cache_complex_rounds": 2097152,
+          "exact_real_cache_sums": 4194304,
+          "scaled_cache_round_add_core": 276824064,
+          "scaled_cache_sum_add_core": 121634816,
+          "kernel_fft_general_complex_products": 15728656,
+          "kernel_fft_complex_add_sub": 37748736,
+          "kernel_fft_quarter_turns": 1048568,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "106": {},
+        "107": {},
+        "108": {}
+      },
+      "exponent_entry_histogram": [
+        [
+          87,
+          5,
+          32
+        ],
+        [
+          88,
+          5,
+          32
+        ],
+        [
+          88,
+          6,
+          320
+        ],
+        [
+          89,
+          5,
+          32
+        ],
+        [
+          89,
+          6,
+          320
+        ],
+        [
+          89,
+          7,
+          1152
+        ],
+        [
+          90,
+          5,
+          32
+        ],
+        [
+          90,
+          6,
+          320
+        ],
+        [
+          90,
+          7,
+          1152
+        ],
+        [
+          90,
+          8,
+          2816
+        ],
+        [
+          91,
+          5,
+          32
+        ],
+        [
+          91,
+          6,
+          320
+        ],
+        [
+          91,
+          7,
+          1152
+        ],
+        [
+          91,
+          8,
+          5120
+        ],
+        [
+          92,
+          5,
+          32
+        ],
+        [
+          92,
+          6,
+          320
+        ],
+        [
+          92,
+          7,
+          1152
+        ],
+        [
+          92,
+          8,
+          5120
+        ],
+        [
+          92,
+          9,
+          18432
+        ],
+        [
+          93,
+          5,
+          32
+        ],
+        [
+          93,
+          6,
+          320
+        ],
+        [
+          93,
+          7,
+          1152
+        ],
+        [
+          93,
+          8,
+          5120
+        ],
+        [
+          93,
+          9,
+          19456
+        ],
+        [
+          93,
+          10,
+          48128
+        ],
+        [
+          94,
+          5,
+          32
+        ],
+        [
+          94,
+          6,
+          320
+        ],
+        [
+          94,
+          7,
+          1152
+        ],
+        [
+          94,
+          8,
+          5120
+        ],
+        [
+          94,
+          9,
+          19456
+        ],
+        [
+          94,
+          10,
+          74752
+        ],
+        [
+          94,
+          11,
+          92160
+        ],
+        [
+          95,
+          5,
+          32
+        ],
+        [
+          95,
+          6,
+          320
+        ],
+        [
+          95,
+          7,
+          1152
+        ],
+        [
+          95,
+          8,
+          4864
+        ],
+        [
+          95,
+          9,
+          19456
+        ],
+        [
+          95,
+          10,
+          75776
+        ],
+        [
+          95,
+          11,
+          253952
+        ],
+        [
+          95,
+          12,
+          8192
+        ],
+        [
+          96,
+          5,
+          32
+        ],
+        [
+          96,
+          6,
+          320
+        ],
+        [
+          96,
+          7,
+          1152
+        ],
+        [
+          96,
+          8,
+          3584
+        ],
+        [
+          96,
+          9,
+          11264
+        ],
+        [
+          96,
+          10,
+          77824
+        ],
+        [
+          96,
+          11,
+          296960
+        ],
+        [
+          96,
+          12,
+          573440
+        ],
+        [
+          97,
+          5,
+          32
+        ],
+        [
+          97,
+          6,
+          320
+        ],
+        [
+          97,
+          7,
+          1024
+        ],
+        [
+          97,
+          8,
+          512
+        ],
+        [
+          97,
+          11,
+          299008
+        ],
+        [
+          97,
+          12,
+          1064960
+        ],
+        [
+          97,
+          13,
+          851968
+        ],
+        [
+          98,
+          5,
+          32
+        ],
+        [
+          98,
+          6,
+          320
+        ],
+        [
+          98,
+          7,
+          256
+        ],
+        [
+          98,
+          12,
+          1138688
+        ],
+        [
+          98,
+          13,
+          2850816
+        ],
+        [
+          98,
+          14,
+          16384
+        ],
+        [
+          99,
+          5,
+          32
+        ],
+        [
+          99,
+          6,
+          192
+        ],
+        [
+          99,
+          13,
+          4186112
+        ],
+        [
+          99,
+          14,
+          5586944
+        ],
+        [
+          100,
+          14,
+          14106624
+        ],
+        [
+          100,
+          15,
+          5931008
+        ],
+        [
+          101,
+          5,
+          32
+        ],
+        [
+          101,
+          14,
+          901120
+        ],
+        [
+          101,
+          15,
+          38469632
+        ],
+        [
+          102,
+          15,
+          6127616
+        ],
+        [
+          102,
+          16,
+          59441152
+        ],
+        [
+          103,
+          16,
+          34078720
+        ],
+        [
+          103,
+          17,
+          28704768
+        ],
+        [
+          104,
+          17,
+          155713536
+        ],
+        [
+          105,
+          18,
+          2097152
+        ]
+      ]
+    },
+    "four": {
+      "totals": {
+        "kernel_keys": 8467,
+        "kernel_entries": 363202368,
+        "chirp_entries": 150746135,
+        "scaled_cache_complex_rounds": 363202368,
+        "exact_real_cache_sums": 0,
+        "scaled_cache_round_add_core": 46761337600,
+        "scaled_cache_sum_add_core": 0,
+        "kernel_fft_general_complex_products": 2388169382,
+        "kernel_fft_complex_add_sub": 5865912000,
+        "kernel_fft_quarter_turns": 181592717,
+        "kernel_fft_negations": 0,
+        "kernel_fft_dyadic_scales": 0,
+        "total_added_normalized_setup_add_core": 46761337600
+      },
+      "by_p": {
+        "80": {},
+        "81": {},
+        "82": {},
+        "83": {},
+        "84": {},
+        "85": {},
+        "86": {},
+        "87": {
+          "kernel_keys": 1,
+          "kernel_entries": 32,
+          "chirp_entries": 13,
+          "scaled_cache_complex_rounds": 32,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 3200,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 34,
+          "kernel_fft_complex_add_sub": 160,
+          "kernel_fft_quarter_turns": 15,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "88": {
+          "kernel_keys": 6,
+          "kernel_entries": 352,
+          "chirp_entries": 132,
+          "scaled_cache_complex_rounds": 352,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 35200,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 524,
+          "kernel_fft_complex_add_sub": 2080,
+          "kernel_fft_quarter_turns": 170,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "89": {
+          "kernel_keys": 15,
+          "kernel_entries": 1504,
+          "chirp_entries": 581,
+          "scaled_cache_complex_rounds": 1504,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 162176,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 2846,
+          "kernel_fft_complex_add_sub": 10144,
+          "kernel_fft_quarter_turns": 737,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "90": {
+          "kernel_keys": 26,
+          "kernel_entries": 4320,
+          "chirp_entries": 1632,
+          "scaled_cache_complex_rounds": 4320,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 466560,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 9908,
+          "kernel_fft_complex_add_sub": 32672,
+          "kernel_fft_quarter_turns": 2134,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "91": {
+          "kernel_keys": 35,
+          "kernel_entries": 6624,
+          "chirp_entries": 2569,
+          "scaled_cache_complex_rounds": 6624,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 715392,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 15686,
+          "kernel_fft_complex_add_sub": 51104,
+          "kernel_fft_quarter_turns": 3277,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "92": {
+          "kernel_keys": 71,
+          "kernel_entries": 25056,
+          "chirp_entries": 9877,
+          "scaled_cache_complex_rounds": 25056,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 2706048,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 71054,
+          "kernel_fft_complex_add_sub": 216992,
+          "kernel_fft_quarter_turns": 12457,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "93": {
+          "kernel_keys": 120,
+          "kernel_entries": 74208,
+          "chirp_entries": 30002,
+          "scaled_cache_complex_rounds": 74208,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 8399488,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 242672,
+          "kernel_fft_complex_add_sub": 707488,
+          "kernel_fft_quarter_turns": 36984,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "94": {
+          "kernel_keys": 191,
+          "kernel_entries": 192992,
+          "chirp_entries": 77009,
+          "scaled_cache_complex_rounds": 192992,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 22334080,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 704638,
+          "kernel_fft_complex_add_sub": 1987488,
+          "kernel_fft_quarter_turns": 96305,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "95": {
+          "kernel_keys": 272,
+          "kernel_entries": 363744,
+          "chirp_entries": 146438,
+          "scaled_cache_complex_rounds": 363744,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 42182272,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 1391776,
+          "kernel_fft_complex_add_sub": 3873696,
+          "kernel_fft_quarter_turns": 181600,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "96": {
+          "kernel_keys": 412,
+          "kernel_entries": 964576,
+          "chirp_entries": 384942,
+          "scaled_cache_complex_rounds": 964576,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 111888000,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 4087096,
+          "kernel_fft_complex_add_sub": 11066272,
+          "kernel_fft_quarter_turns": 481876,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "97": {
+          "kernel_keys": 526,
+          "kernel_entries": 2217824,
+          "chirp_entries": 900072,
+          "scaled_cache_complex_rounds": 2217824,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 257267328,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 10253084,
+          "kernel_fft_complex_add_sub": 27157536,
+          "kernel_fft_quarter_turns": 1108386,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "98": {
+          "kernel_keys": 635,
+          "kernel_entries": 4006496,
+          "chirp_entries": 1634969,
+          "scaled_cache_complex_rounds": 4006496,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 487691136,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 19470582,
+          "kernel_fft_complex_add_sub": 50958112,
+          "kernel_fft_quarter_turns": 2002613,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "99": {
+          "kernel_keys": 856,
+          "kernel_entries": 9773280,
+          "chirp_entries": 3985560,
+          "scaled_cache_complex_rounds": 9773280,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 1211884928,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 51660784,
+          "kernel_fft_complex_add_sub": 132637984,
+          "kernel_fft_quarter_turns": 4885784,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "100": {
+          "kernel_keys": 1042,
+          "kernel_entries": 20037632,
+          "chirp_entries": 8027356,
+          "scaled_cache_complex_rounds": 20037632,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 2484666368,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 113174564,
+          "kernel_fft_complex_add_sub": 286457856,
+          "kernel_fft_quarter_turns": 10017774,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "101": {
+          "kernel_keys": 1230,
+          "kernel_entries": 39370784,
+          "chirp_entries": 16324924,
+          "scaled_cache_complex_rounds": 39370784,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 4881976960,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 235776444,
+          "kernel_fft_complex_add_sub": 589660320,
+          "kernel_fft_quarter_turns": 19684162,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "102": {
+          "kernel_keys": 1094,
+          "kernel_entries": 65568768,
+          "chirp_entries": 26518336,
+          "scaled_cache_complex_rounds": 65568768,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 8130527232,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 423135372,
+          "kernel_fft_complex_add_sub": 1042972672,
+          "kernel_fft_quarter_turns": 32783290,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "103": {
+          "kernel_keys": 739,
+          "kernel_entries": 62783488,
+          "chirp_entries": 23994873,
+          "scaled_cache_complex_rounds": 62783488,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 8287420416,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 422446534,
+          "kernel_fft_complex_add_sub": 1033240576,
+          "kernel_fft_quarter_turns": 31391005,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "104": {
+          "kernel_keys": 1188,
+          "kernel_entries": 155713536,
+          "chirp_entries": 68178936,
+          "scaled_cache_complex_rounds": 155713536,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 20554186752,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 1089997128,
+          "kernel_fft_complex_add_sub": 2647130112,
+          "kernel_fft_quarter_turns": 77855580,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "105": {
+          "kernel_keys": 8,
+          "kernel_entries": 2097152,
+          "chirp_entries": 527914,
+          "scaled_cache_complex_rounds": 2097152,
+          "exact_real_cache_sums": 0,
+          "scaled_cache_round_add_core": 276824064,
+          "scaled_cache_sum_add_core": 0,
+          "kernel_fft_general_complex_products": 15728656,
+          "kernel_fft_complex_add_sub": 37748736,
+          "kernel_fft_quarter_turns": 1048568,
+          "kernel_fft_negations": 0,
+          "kernel_fft_dyadic_scales": 0
+        },
+        "106": {},
+        "107": {},
+        "108": {}
+      },
+      "exponent_entry_histogram": [
+        [
+          87,
+          5,
+          32
+        ],
+        [
+          88,
+          5,
+          32
+        ],
+        [
+          88,
+          6,
+          320
+        ],
+        [
+          89,
+          5,
+          32
+        ],
+        [
+          89,
+          6,
+          320
+        ],
+        [
+          89,
+          7,
+          1152
+        ],
+        [
+          90,
+          5,
+          32
+        ],
+        [
+          90,
+          6,
+          320
+        ],
+        [
+          90,
+          7,
+          1152
+        ],
+        [
+          90,
+          8,
+          2816
+        ],
+        [
+          91,
+          5,
+          32
+        ],
+        [
+          91,
+          6,
+          320
+        ],
+        [
+          91,
+          7,
+          1152
+        ],
+        [
+          91,
+          8,
+          5120
+        ],
+        [
+          92,
+          5,
+          32
+        ],
+        [
+          92,
+          6,
+          320
+        ],
+        [
+          92,
+          7,
+          1152
+        ],
+        [
+          92,
+          8,
+          5120
+        ],
+        [
+          92,
+          9,
+          18432
+        ],
+        [
+          93,
+          5,
+          32
+        ],
+        [
+          93,
+          6,
+          320
+        ],
+        [
+          93,
+          7,
+          1152
+        ],
+        [
+          93,
+          8,
+          5120
+        ],
+        [
+          93,
+          9,
+          19456
+        ],
+        [
+          93,
+          10,
+          48128
+        ],
+        [
+          94,
+          5,
+          32
+        ],
+        [
+          94,
+          6,
+          320
+        ],
+        [
+          94,
+          7,
+          1152
+        ],
+        [
+          94,
+          8,
+          5120
+        ],
+        [
+          94,
+          9,
+          19456
+        ],
+        [
+          94,
+          10,
+          74752
+        ],
+        [
+          94,
+          11,
+          92160
+        ],
+        [
+          95,
+          5,
+          32
+        ],
+        [
+          95,
+          6,
+          320
+        ],
+        [
+          95,
+          7,
+          1152
+        ],
+        [
+          95,
+          8,
+          4864
+        ],
+        [
+          95,
+          9,
+          19456
+        ],
+        [
+          95,
+          10,
+          75776
+        ],
+        [
+          95,
+          11,
+          253952
+        ],
+        [
+          95,
+          12,
+          8192
+        ],
+        [
+          96,
+          5,
+          32
+        ],
+        [
+          96,
+          6,
+          320
+        ],
+        [
+          96,
+          7,
+          1152
+        ],
+        [
+          96,
+          8,
+          3584
+        ],
+        [
+          96,
+          9,
+          11264
+        ],
+        [
+          96,
+          10,
+          77824
+        ],
+        [
+          96,
+          11,
+          296960
+        ],
+        [
+          96,
+          12,
+          573440
+        ],
+        [
+          97,
+          5,
+          32
+        ],
+        [
+          97,
+          6,
+          320
+        ],
+        [
+          97,
+          7,
+          1024
+        ],
+        [
+          97,
+          8,
+          512
+        ],
+        [
+          97,
+          11,
+          299008
+        ],
+        [
+          97,
+          12,
+          1064960
+        ],
+        [
+          97,
+          13,
+          851968
+        ],
+        [
+          98,
+          5,
+          32
+        ],
+        [
+          98,
+          6,
+          320
+        ],
+        [
+          98,
+          7,
+          256
+        ],
+        [
+          98,
+          12,
+          1138688
+        ],
+        [
+          98,
+          13,
+          2850816
+        ],
+        [
+          98,
+          14,
+          16384
+        ],
+        [
+          99,
+          5,
+          32
+        ],
+        [
+          99,
+          6,
+          192
+        ],
+        [
+          99,
+          13,
+          4186112
+        ],
+        [
+          99,
+          14,
+          5586944
+        ],
+        [
+          100,
+          14,
+          14106624
+        ],
+        [
+          100,
+          15,
+          5931008
+        ],
+        [
+          101,
+          5,
+          32
+        ],
+        [
+          101,
+          14,
+          901120
+        ],
+        [
+          101,
+          15,
+          38469632
+        ],
+        [
+          102,
+          15,
+          6127616
+        ],
+        [
+          102,
+          16,
+          59441152
+        ],
+        [
+          103,
+          16,
+          34078720
+        ],
+        [
+          103,
+          17,
+          28704768
+        ],
+        [
+          104,
+          17,
+          155713536
+        ],
+        [
+          105,
+          18,
+          2097152
+        ]
+      ]
+    }
+  }
+}

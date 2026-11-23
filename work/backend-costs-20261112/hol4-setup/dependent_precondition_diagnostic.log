@@ -1,0 +1,23 @@
+<<HOL message: Created theory "DependentBlockResults">>
+HOL4_CONTEXT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+Saved theorem _______ "cv_block_scale_thm"
+Finished translating block_scale, stored in cv_block_scale_thm
+HOL4_TIME,translate_block_scale,0.001519000,0.002588000
+HOL4_POSITIVE_SCALE_RAW,⊢ 0 < block_scale ⇔ T
+HOL4_TIME,construct_inputs,0.040858000,0.040856000
+Saved theorem _______ "cv_block_inputs_thm"
+Finished translating block_inputs, stored in cv_block_inputs_thm
+HOL4_TIME,translate_block_inputs,3.114235000,3.117946000
+HOL4_TIME,construct_coefficients,0.020830000,0.020832000
+Saved theorem _______ "cv_block_coefficients_thm"
+Finished translating block_coefficients, stored in cv_block_coefficients_thm
+HOL4_TIME,translate_block_coefficients,1.008741000,1.020468000
+HOL4_UNCLOSED_RESULT,⊢ block_accept_pre block_scale block_coefficients 1 block_inputs
+    36695977855841144185773134324833391052745039826692497979801421430190766017415756929120296849762010984873984
+    (-269001972351751389709886921768394919312485780552601038146096230023136643293557991675429071553632057860731992978531580212654525496833687245284754952877974185604868942732856403666526115106478874293788802526513374190805842225119714) ⇒
+  block_accept block_scale block_coefficients 1 block_inputs
+    36695977855841144185773134324833391052745039826692497979801421430190766017415756929120296849762010984873984
+    (-269001972351751389709886921768394919312485780552601038146096230023136643293557991675429071553632057860731992978531580212654525496833687245284754952877974185604868942732856403666526115106478874293788802526513374190805842225119714)
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/dependent.sml : HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})
+error in load dependent : HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/portableML/Portable.sml:25: HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})

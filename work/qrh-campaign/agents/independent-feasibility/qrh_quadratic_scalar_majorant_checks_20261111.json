@@ -1,0 +1,53 @@
+{
+  "status": "PASS_EXACT_BOOKKEEPING_ONLY",
+  "unit_factor_counts": [
+    2,
+    2,
+    2,
+    5,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    4,
+    4,
+    2,
+    4
+  ],
+  "row_factor_counts": [
+    7,
+    7,
+    8,
+    3,
+    2,
+    7,
+    8,
+    2,
+    4
+  ],
+  "row_allowances": [
+    16,
+    24,
+    24,
+    65536,
+    1536,
+    10,
+    6,
+    32768,
+    1
+  ],
+  "sum_row_allowances": 99921,
+  "claimed_cap": 262144,
+  "selected_loss": 259,
+  "next_divisor_loss": 260,
+  "sources": {
+    "QuadraticSieve/PoissonConstants.lean": "E0914B906B537C1D987169FAC2943E49E47F62579F719E485A46C20117ACCFF2",
+    "QuadraticSieve/GlobalBinLoss.lean": "9E969886E08722743F7C36F19B470031253FC4F2C613133288CE3A3AC600D68B",
+    "QuadraticSieve/PoissonComparison.lean": "428339EF45AACFAB07DE6594CE4BCC58945746C0B326DC1098910396A9F74925",
+    "CubicSieve/ArithmeticBins.lean": "99CDCE95094560A32F5E7601A4DA24554B47883C8F5683DC43CC23BCAD661A2A"
+  },
+  "limitations": "Finite arithmetic and exponent identities only; not analytic inequalities, builds or provider validation."
+}

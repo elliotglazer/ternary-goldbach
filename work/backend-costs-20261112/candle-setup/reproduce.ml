@@ -1,0 +1,10 @@
+#use "hol.ml";;
+#use "../checker.ml";;
+#use "../fixture.ml";;
+#use "../arithmetic_sound.ml";;
+#use "../controls.ml";;
+#use "../repeat_inside.ml";;
+run_inside 1000;;
+run_inside 10000;;
+check_axioms ();;
+print_string "CANDLE_REPRODUCTION_DONE\n";;

@@ -1,0 +1,58 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/c10000-kronecker-hol/KronTreeScript.uo to produce theory-builder executable
+<<HOL message: Created theory "KronTree">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in KronTree)>>
+Saved definition ____ "kt_pairs_def"
+Saved induction _____ "kt_pairs_ind"
+Saved theorem _______ "kt_pack_compute"
+Saved definition ____ "kt_pack_def"
+Saved theorem _______ "kt_powers_compute"
+Saved definition ____ "kt_powers_def"
+Saved definition ____ "kt_unpack_def"
+Saved definition ____ "kt_post_def"
+Saved definition ____ "kt_full_def"
+Starting translation of kt_pairs from KronTreeTheory.
+Saved definition ____ "cv_kt_pairs_def"
+Saved induction _____ "cv_kt_pairs_ind"
+Saved theorem _______ "cv_kt_pairs_thm"
+Finished translating kt_pairs, stored in cv_kt_pairs_thm
+Starting translation of kt_pack from KronTreeTheory.
+Saved theorem _______ "cv_kt_pack_thm"
+Finished translating kt_pack, stored in cv_kt_pack_thm
+Starting translation of kt_powers from KronTreeTheory.
+Saved theorem _______ "cv_kt_powers_thm"
+Finished translating kt_powers, stored in cv_kt_powers_thm
+Starting translation of kt_unpack from KronTreeTheory.
+Saved definition ____ "cv_kt_unpack_def"
+Saved induction _____ "cv_kt_unpack_ind"
+Saved theorem _______ "cv_kt_unpack_thm"
+Finished translating kt_unpack, stored in cv_kt_unpack_thm
+Starting translation of kt_post from KronTreeTheory.
+Saved definition ____ "cv_kt_post_def"
+Saved induction _____ "cv_kt_post_ind"
+Saved theorem _______ "cv_kt_post_thm"
+Finished translating kt_post, stored in cv_kt_post_thm
+Starting translation of kt_full from KronTreeTheory.
+Saved theorem _______ "cv_kt_full_thm"
+Finished translating kt_full, stored in cv_kt_full_thm
+KR_LOAD 0.218414
+KR_RUN tree_cold 1.969662 0.130528 0.526615 0.002606
+Saved theorem _______ "kt_actual_full_500"
+KR_RUN tree_warm 1.708408 0.141977 0.419879 0.004768
+Exporting theory "KronTree" ... done.
+Theory "KronTree" took 7.2s to build
+Holmake: [1/1] KronTree

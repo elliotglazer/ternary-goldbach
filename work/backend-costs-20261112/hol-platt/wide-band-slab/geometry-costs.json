@@ -1,0 +1,146 @@
+{
+  "bands": [
+    {
+      "band": 1,
+      "calls": 1736699525,
+      "geometry_epochs": 2734700,
+      "mean_uses": 635.0603448275862,
+      "plain_setup_seconds": 0.144826,
+      "warm_setup_seconds": 0.006836,
+      "first_setup_seconds": 0.149305,
+      "plain_setup_hours": 69866.45705768056,
+      "setup_with_geometry_reuse_hours": 3406.0244242222225,
+      "literal_geometry_read_hours": 2.5045294166666663,
+      "literal_coefficient_read_hours": 16542.062975625002,
+      "second_height_plain_trials": [
+        0.144826,
+        0.120408,
+        0.267649
+      ],
+      "second_height_reuse_trials": [
+        0.015189,
+        0.006114,
+        0.006836
+      ]
+    },
+    {
+      "band": 2,
+      "calls": 1517735280,
+      "geometry_epochs": 6450252,
+      "mean_uses": 235.29860228716646,
+      "plain_setup_seconds": 0.049905,
+      "warm_setup_seconds": 0.005496,
+      "first_setup_seconds": 0.057813,
+      "plain_setup_hours": 21039.605319,
+      "setup_with_geometry_reuse_hours": 2410.81414799,
+      "literal_geometry_read_hours": 2.949198553333333,
+      "literal_coefficient_read_hours": 13664.465841033334,
+      "second_height_plain_trials": [
+        0.048198,
+        0.062869,
+        0.049905
+      ],
+      "second_height_reuse_trials": [
+        0.006966,
+        0.005496,
+        0.004597
+      ]
+    },
+    {
+      "band": 3,
+      "calls": 1302575598,
+      "geometry_epochs": 9709890,
+      "mean_uses": 134.1493670886076,
+      "plain_setup_seconds": 0.019266,
+      "warm_setup_seconds": 0.005625,
+      "first_setup_seconds": 0.15253,
+      "plain_setup_hours": 6970.950408629999,
+      "setup_with_geometry_reuse_hours": 2431.5053136666666,
+      "literal_geometry_read_hours": 1.8125128000053943,
+      "literal_coefficient_read_hours": 12540.9083963,
+      "second_height_plain_trials": [
+        0.017928,
+        0.019266,
+        0.026063
+      ],
+      "second_height_reuse_trials": [
+        0.005625,
+        0.00503,
+        0.005975
+      ]
+    },
+    {
+      "band": 4,
+      "calls": 1905699993,
+      "geometry_epochs": 35655936,
+      "mean_uses": 53.446920955882355,
+      "plain_setup_seconds": 0.008211,
+      "warm_setup_seconds": 0.007263,
+      "first_setup_seconds": 0.011404,
+      "plain_setup_hours": 4346.5840673675,
+      "setup_with_geometry_reuse_hours": 3885.763966704167,
+      "literal_geometry_read_hours": 2.010598613343238,
+      "literal_coefficient_read_hours": 18785.702361552085,
+      "second_height_plain_trials": [
+        0.008211,
+        0.007701,
+        0.009665
+      ],
+      "second_height_reuse_trials": [
+        0.007263,
+        0.006243,
+        0.007864
+      ]
+    },
+    {
+      "band": 5,
+      "calls": 142467575,
+      "geometry_epochs": 13517625,
+      "mean_uses": 10.539393939393939,
+      "plain_setup_seconds": 0.01006,
+      "warm_setup_seconds": 0.006612,
+      "first_setup_seconds": 0.011658,
+      "plain_setup_hours": 398.11772347222217,
+      "setup_with_geometry_reuse_hours": 280.6126504583333,
+      "literal_geometry_read_hours": 0.8861554166629118,
+      "literal_coefficient_read_hours": 1584.8330488958334,
+      "second_height_plain_trials": [
+        0.01006,
+        0.01063,
+        0.008884
+      ],
+      "second_height_reuse_trials": [
+        0.008037,
+        0.006612,
+        0.00526
+      ]
+    }
+  ],
+  "totals": {
+    "plain_setup_hours": 102621.71457615028,
+    "setup_with_geometry_reuse_hours": 12414.72050304139,
+    "literal_geometry_read_hours": 10.162994800011543,
+    "literal_coefficient_read_hours": 63117.972623406255
+  },
+  "partial_with_geometry_reuse_and_literal_input": {
+    "24": [
+      734220.5201550676,
+      734749.8768934435
+    ],
+    "28": [
+      764934.5806289269,
+      765463.9373673028
+    ]
+  },
+  "headroom_to_twice_historical": {
+    "24": [
+      65779.47984493244,
+      65250.12310655648
+    ],
+    "28": [
+      35065.419371073134,
+      34536.06263269717
+    ]
+  },
+  "log_sha256": "31d28241036a048c8c9d6ea85b185160299f207e61c7ed8381eff706564b15fa"
+}

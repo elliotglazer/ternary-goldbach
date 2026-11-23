@@ -1,0 +1,85 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-terminal-signs/TransposeScanScript.uo to produce theory-builder executable
+<<HOL message: Created theory "TransposeScan">>
+Saved definition ____ "lowhi_def"
+Saved definition ____ "rebit_def"
+Saved theorem _______ "transpose_compute"
+Saved definition ____ "transpose_def"
+Saved definition ____ "matchrow_def"
+Saved definition ____ "allblocks_def"
+Saved theorem _______ "tiled_compute"
+Saved definition ____ "tiled_def"
+Starting translation of tiled from TransposeScanTheory.
+Starting translation of allblocks from TransposeScanTheory.
+Starting translation of TAKE from listTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in TransposeScan)>>
+Saved definition ____ "cv_TAKE_def"
+Saved induction _____ "cv_TAKE_ind"
+Saved theorem _______ "cv_TAKE_thm"
+Finished translating TAKE, stored in cv_TAKE_thm
+Starting translation of allblocks from TransposeScanTheory.
+Starting translation of LENGTH from listTheory.
+Saved definition ____ "cv_LENGTH_def"
+Saved induction _____ "cv_LENGTH_ind"
+Saved theorem _______ "cv_LENGTH_thm"
+Finished translating LENGTH, stored in cv_LENGTH_thm
+Starting translation of allblocks from TransposeScanTheory.
+Starting translation of transpose from TransposeScanTheory.
+Starting translation of rebit from TransposeScanTheory.
+Saved definition ____ "cv_rebit_def"
+Saved induction _____ "cv_rebit_ind"
+Saved theorem _______ "cv_rebit_thm"
+Finished translating rebit, stored in cv_rebit_thm
+Starting translation of transpose from TransposeScanTheory.
+Starting translation of lowhi from TransposeScanTheory.
+Saved definition ____ "cv_lowhi_def"
+Saved induction _____ "cv_lowhi_ind"
+Saved theorem _______ "cv_lowhi_thm"
+Finished translating lowhi, stored in cv_lowhi_thm
+Starting translation of transpose from TransposeScanTheory.
+Starting translation of APPEND from listTheory.
+Saved definition ____ "cv_APPEND_def"
+Saved induction _____ "cv_APPEND_ind"
+Saved theorem _______ "cv_APPEND_thm"
+Finished translating APPEND, stored in cv_APPEND_thm
+Starting translation of transpose from TransposeScanTheory.
+Saved definition ____ "cv_transpose_def"
+Saved induction _____ "cv_transpose_ind"
+Saved theorem _______ "cv_transpose_thm"
+Finished translating transpose, stored in cv_transpose_thm
+Starting translation of allblocks from TransposeScanTheory.
+Starting translation of DROP from listTheory.
+Saved theorem _______ "cv_DROP_thm"
+Finished translating DROP, stored in cv_DROP_thm
+Starting translation of allblocks from TransposeScanTheory.
+Starting translation of matchrow from TransposeScanTheory.
+Saved theorem _______ "cv_matchrow_thm"
+Finished translating matchrow, stored in cv_matchrow_thm
+Starting translation of allblocks from TransposeScanTheory.
+Saved theorem _______ "cv_allblocks_thm"
+Finished translating allblocks, stored in cv_allblocks_thm
+Starting translation of tiled from TransposeScanTheory.
+Saved theorem _______ "cv_tiled_thm"
+Finished translating tiled, stored in cv_tiled_thm
+Exporting theory "TransposeScan" ... done.
+Theory "TransposeScan" took 0.35512s to build
+Holmake: [1/1] TransposeScan

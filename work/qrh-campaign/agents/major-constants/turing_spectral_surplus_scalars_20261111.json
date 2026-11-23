@@ -1,0 +1,50 @@
+{
+  "scope": "Conditional guard allocation only; measured D is not supplied",
+  "cT_cap": 128160000,
+  "large_labels": 4333246843,
+  "rows": [
+    {
+      "h": 200,
+      "required_measured_D_upper": "1/4",
+      "log_upper": 18,
+      "B_upper": "8337/50",
+      "strict_spectral_reserve": "413/5000",
+      "extra_dense_steps": 2560,
+      "extra_large_branch_outputs": 11093111918080
+    },
+    {
+      "h": 250,
+      "required_measured_D_upper": "1/2",
+      "log_upper": 18,
+      "B_upper": "8337/50",
+      "strict_spectral_reserve": "519/3125",
+      "extra_dense_steps": 3200,
+      "extra_large_branch_outputs": 13866389897600
+    },
+    {
+      "h": 375,
+      "required_measured_D_upper": "1",
+      "log_upper": 18,
+      "B_upper": "8337/50",
+      "strict_spectral_reserve": "346/3125",
+      "extra_dense_steps": 4800,
+      "extra_large_branch_outputs": 20799584846400
+    },
+    {
+      "h": 500,
+      "required_measured_D_upper": "5/4",
+      "log_upper": 18,
+      "B_upper": "8337/50",
+      "strict_spectral_reserve": "519/6250",
+      "extra_dense_steps": 6400,
+      "extra_large_branch_outputs": 27732779795200
+    }
+  ],
+  "dense_h1000_outputs": 55465559590400,
+  "unproved_Rumely_analytic_route": {
+    "h": 6,
+    "D_upper": "1/2",
+    "B_upper": "40753/10000",
+    "reserve": "4247/30000"
+  }
+}

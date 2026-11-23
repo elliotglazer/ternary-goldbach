@@ -1,0 +1,114 @@
+{
+  "scope": "independent exact scalar reconstruction and saved pins only; no analytic evaluation",
+  "checks": {
+    "author note pin": true,
+    "input work/qrh-blueprint/INTEGRATED_CUBIC_RESIDUAL_CONTRACT_2026-11-11.md": true,
+    "input work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md": true,
+    "input work/qrh-blueprint/PLUS_RESIDUAL_TO_MAJOR_L2_UPPER_2026-11-11.md": true,
+    "input work/qrh-campaign/agents/major-constants/PLUS_FINITE_RH_HEIGHT_REDUCTION_2026-11-11.md": true,
+    "input work/qrh-campaign/agents/major-constants/DIRECT_PLUS_RESIDUAL_ENERGY_TARGET_2026-11-11.md": true,
+    "input work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md": true,
+    "input work/qrh-campaign/agents/audit/DIRECT_STAR_B_SOURCE_OBSTRUCTION_2026-11-11.md": true,
+    "input work/qrh-campaign/agents/audit/ETA_U_PRIME_COEFFICIENT_ENERGY_2026-11-11.md": true,
+    "input work/ternary-goldbach/TernaryGoldbach/MajorArcs/MajorTotal.lean": true,
+    "nine inputs": true,
+    "independent coefficient review": true,
+    "corrected B predecessor": true,
+    "orthogonal plus energy": true,
+    "totient radius": true,
+    "positive AMGM envelope": true,
+    "strict old allowance and grid maximality": true,
+    "integrated plus": true,
+    "total moment": true,
+    "weighted principal": true,
+    "integrated principal and total norm": true,
+    "lower root witness": true,
+    "positive frontier 4200": true,
+    "frontier squared 4200": true,
+    "positive frontier 4000": true,
+    "frontier squared 4000": true,
+    "positive frontier 3750": true,
+    "frontier squared 3750": true,
+    "positive frontier 3500": true,
+    "frontier squared 3500": true,
+    "positive frontier 2000": true,
+    "frontier squared 2000": true,
+    "positive frontier 650": true,
+    "frontier squared 650": true,
+    "all saved rows": true,
+    "uniform log lower": true,
+    "uniform log upper": true,
+    "coefficient sieve upper": true,
+    "small energy root": true,
+    "uniform B budget": true,
+    "sieve domains": true,
+    "saved scalar rho": true,
+    "saved scalar C": true,
+    "saved scalar old_error": true,
+    "saved scalar u_max_linear": true,
+    "saved scalar selected_u": true,
+    "saved scalar cubic_reserve": true,
+    "saved scalar conditional_sieve_product_upper": true,
+    "saved scalar conditional_B_upper": true,
+    "reported boolean count only": true
+  },
+  "check_count": 50,
+  "recomputed": {
+    "rho": "1/1953125",
+    "C": "914205504131/4687500000",
+    "old_error": "64019155993729/312500000000000000",
+    "u_max_linear": "492214121790863/41203125000000000000",
+    "selected_u": "597/50000000",
+    "cubic_reserve": "248809290863/4687500000000000000",
+    "conditional_sieve_product_upper": "95039699436000000000000000000000000000000000000000000000000003/2500000000000000000000000000000000000000000000000000000000000",
+    "conditional_B_upper": "11963648168242369/6250000000000"
+  },
+  "rows": [
+    {
+      "A": "0",
+      "B": 4200,
+      "squared_reserve": "798908601/39062500000000000000"
+    },
+    {
+      "A": "1/1000000000000",
+      "B": 4000,
+      "squared_reserve": "269708601/39062500000000000000"
+    },
+    {
+      "A": "1/250000000000",
+      "B": 3750,
+      "squared_reserve": "330633601/39062500000000000000"
+    },
+    {
+      "A": "9/1000000000000",
+      "B": 3500,
+      "squared_reserve": "469683601/39062500000000000000"
+    },
+    {
+      "A": "1/10000000000",
+      "B": 2000,
+      "squared_reserve": "1070533601/39062500000000000000"
+    },
+    {
+      "A": "1/2500000000",
+      "B": 650,
+      "squared_reserve": "450658601/39062500000000000000"
+    }
+  ],
+  "author_sha256": {
+    "work\\qrh-campaign\\agents\\major-constants\\PLUS_STAR_CUBIC_BUDGET_REALLOCATION_2026-11-11.md": "7A5B81DA0290BE52D8E64A521702D0299114FF9DE2923E1897AE608E5241ECAD",
+    "work\\qrh-campaign\\agents\\major-constants\\plus_star_budget_reallocation_20261111.py": "1EF89EB87CA60FC98D71EB63111E304A0D48C34AFD42706E47C35F74B86ED6DC",
+    "work\\qrh-campaign\\agents\\major-constants\\plus_star_budget_reallocation_20261111.json": "107C37AF8925AC5E209198E85724B37F4080E3E1768A91AC616FF479922584C2"
+  },
+  "input_sha256": {
+    "work/qrh-blueprint/INTEGRATED_CUBIC_RESIDUAL_CONTRACT_2026-11-11.md": "943DE38EE628CFA9E7221100E75933D101C7593B613945F19B7CBDF90E97C128",
+    "work/qrh-blueprint/WEIGHTED_PRINCIPAL_WSTAR_BUDGET_2026-11-11.md": "22A6A16880BE2FA5CB0FF393C533BD60B1AFCD32C751E5A0D64FE7ADAB7C40F7",
+    "work/qrh-blueprint/PLUS_RESIDUAL_TO_MAJOR_L2_UPPER_2026-11-11.md": "F3EBC1B68CC57B607496D9E6445137A08A0F17C3202D986301F8EC25F14F4663",
+    "work/qrh-campaign/agents/major-constants/PLUS_FINITE_RH_HEIGHT_REDUCTION_2026-11-11.md": "3F91F39B485607833A5FADD061BEC7602B1DCC02C77B8FB82CA10B6C076FA6A0",
+    "work/qrh-campaign/agents/major-constants/DIRECT_PLUS_RESIDUAL_ENERGY_TARGET_2026-11-11.md": "E69701B4AE8145B016015A2C355151DFAA5D4946D2281BAE3CC08A86422196B1",
+    "work/qrh-campaign/agents/audit/WSTAR_WEIGHTED_SPECTRAL_STATISTIC_2026-11-11.md": "AFDBBF90157F5170666C481D512D475A1F719366C8FB785D312A213864C38D0B",
+    "work/qrh-campaign/agents/audit/DIRECT_STAR_B_SOURCE_OBSTRUCTION_2026-11-11.md": "8C137D3E513B732E9664447F069539B8643B6678E6EAC57FFC706DFCD50A06FE",
+    "work/qrh-campaign/agents/audit/ETA_U_PRIME_COEFFICIENT_ENERGY_2026-11-11.md": "0B97BC320F7BEEA4B7CC9D8144FBB70CFC19A4AF756602BDA4DCBD1239399D5C",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/MajorTotal.lean": "106293987C887D3586DC3483260B135853730F3A20466D0D7E71ABC61AB9F84A"
+  }
+}

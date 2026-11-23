@@ -1,0 +1,37 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M1024",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\core_dev01.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\StageCheck.lean"
+  ],
+  "exit_code": 1,
+  "stop": null,
+  "wall_seconds": 29.511220400003367,
+  "user_cpu_seconds": 1.15625,
+  "system_cpu_seconds": 2.765625,
+  "cpu_seconds": 3.921875,
+  "peak_working_set_bytes": 470962176,
+  "observed_peak_private_bytes": 980537344,
+  "memory_samples": 585,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "StageCheck.lean",
+      "bytes": 3753,
+      "sha256": "4D164CC9232C6C0E3ED789D006D3DE9B441A845F4C19A82561FD89DC6DC1692E"
+    },
+    {
+      "path": "core_dev01.log",
+      "bytes": 414,
+      "sha256": "EEC5958C7280E4032589443CAA1956EE3C692CD4F012A3696148797A3EA42821"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

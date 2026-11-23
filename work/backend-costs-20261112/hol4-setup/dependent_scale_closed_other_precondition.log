@@ -1,0 +1,17 @@
+<<HOL message: Created theory "DependentBlockResults">>
+HOL4_CONTEXT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+Saved theorem _______ "cv_block_scale_thm"
+Finished translating block_scale, stored in cv_block_scale_thm
+HOL4_TIME,translate_block_scale,0.001533000,0.002792000
+HOL4_POSITIVE_SCALE_RAW,⊢ 0 < block_scale ⇔ T
+HOL4_TIME,construct_inputs,0.046569000,0.046567000
+Saved theorem _______ "cv_block_inputs_thm"
+Finished translating block_inputs, stored in cv_block_inputs_thm
+HOL4_TIME,translate_block_inputs,2.671617000,2.674576000
+HOL4_TIME,construct_coefficients,0.020847000,0.020852000
+Saved theorem _______ "cv_block_coefficients_thm"
+Finished translating block_coefficients, stored in cv_block_coefficients_thm
+HOL4_TIME,translate_block_coefficients,1.080721000,1.082057000
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/dependent.sml : HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})
+error in load dependent : HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/portableML/Portable.sml:25: HOL_ERR (HOL_ERROR {message = "not an \"=\"", origins = [{origin_function = "lhs", origin_structure = "boolSyntax", source_location = Loc_Unknown}]})

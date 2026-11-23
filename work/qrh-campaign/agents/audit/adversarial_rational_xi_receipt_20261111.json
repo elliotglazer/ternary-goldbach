@@ -1,0 +1,129 @@
+{
+  "scope": "Full receipt arithmetic/structure plus actual backend node-zero replay; no independent analytic soundness claim",
+  "candidate_sha256": "1B55E8A2665EF872056DE9747670E6F47017863A49D9E2C9A2D6604B6F74D09F",
+  "backend_sha256": "DEE8AC9AA39F25023C77003BC2AAA5970388A016207AD5A8EE0DF8F6D912F84A",
+  "structural_positive": {
+    "nodes": 929,
+    "signed_weights": 1857,
+    "products": 12999,
+    "real_margin": "38298917929334686432095733439357895762079/2722258935367507707706996859454145691648",
+    "nonconstant_norm_upper": "5036321197660915222794245251845311766369/2722258935367507707706996859454145691648"
+  },
+  "structural_mutations": [
+    {
+      "name": "target_T_input",
+      "rejected": true,
+      "reason": "exact target"
+    },
+    {
+      "name": "missing_node",
+      "rejected": true,
+      "reason": "complete unique nodes"
+    },
+    {
+      "name": "duplicate_node",
+      "rejected": true,
+      "reason": "complete unique nodes"
+    },
+    {
+      "name": "missing_signed_weight",
+      "rejected": true,
+      "reason": "complete unique signed weights"
+    },
+    {
+      "name": "duplicate_signed_weight",
+      "rejected": true,
+      "reason": "complete unique signed weights"
+    },
+    {
+      "name": "node_center_changed",
+      "rejected": true,
+      "reason": "node center from P box"
+    },
+    {
+      "name": "node_radius_zero",
+      "rejected": true,
+      "reason": "node radius from P box"
+    },
+    {
+      "name": "weight_center_changed",
+      "rejected": true,
+      "reason": "exact signed center sums"
+    },
+    {
+      "name": "coefficient_changed",
+      "rejected": true,
+      "reason": "exact signed center sums"
+    }
+  ],
+  "backend_replays": [
+    {
+      "name": "valid_one_node_PARTIAL",
+      "exit_code": 0,
+      "expected_acceptance": true,
+      "wall_seconds": 1.496433000000252,
+      "packet_sha256": "71EC39643B24F8C8A0D0C88EF6844FFD8F876A6F7B797E7E0B865E9AF13AABD5",
+      "log_sha256": "0EE06E1B83CACDBFF68917ACF66A12C73917E0750A6D4B8244C1966C6F03EFE0",
+      "maximum_node_index_evaluated": 0
+    },
+    {
+      "name": "target_T_input",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.3504579000000376,
+      "packet_sha256": "3D4FB40158308EE731B2B7FF69195319BD485EDC68CF9519446AC1BB6BE093DA",
+      "log_sha256": "D0A6F697F6D831B617B303C881CBE3EEA7954BF87BA4BAC36087FB1244159240",
+      "maximum_node_index_evaluated": null
+    },
+    {
+      "name": "word_integer",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.5770675000021583,
+      "packet_sha256": "83685938B7324DA0F3517EDFF5499E334EA0CF3FC2CE7089280CE088F8CFBD5D",
+      "log_sha256": "188F9845A0100C25B501896460B8AC34C31B21D4B01303F4C8E1E0564A9395E6",
+      "maximum_node_index_evaluated": 0
+    },
+    {
+      "name": "missing_theta_tail",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.53997530000197,
+      "packet_sha256": "59B3345CDE12A33F2FCC4E7E1CA8C67470174C1820DCE8F060C220FD0F00478A",
+      "log_sha256": "188F9845A0100C25B501896460B8AC34C31B21D4B01303F4C8E1E0564A9395E6",
+      "maximum_node_index_evaluated": 0
+    },
+    {
+      "name": "false_P_box",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.446548600004462,
+      "packet_sha256": "4636D7A5F923052D1E92985103015F543F7AD067C8514C809212B20AB0A8BE01",
+      "log_sha256": "188F9845A0100C25B501896460B8AC34C31B21D4B01303F4C8E1E0564A9395E6",
+      "maximum_node_index_evaluated": 0
+    },
+    {
+      "name": "changed_node_center",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.474584399999003,
+      "packet_sha256": "29564649A28A92722700F81F53DE83AE8A9C9BA793C1B62D5016706677808877",
+      "log_sha256": "188F9845A0100C25B501896460B8AC34C31B21D4B01303F4C8E1E0564A9395E6",
+      "maximum_node_index_evaluated": 0
+    },
+    {
+      "name": "false_node_radius",
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "wall_seconds": 1.4665721999990637,
+      "packet_sha256": "996B72F9C5B467A27E950E340B2E2E0107E810066C5A457872EC6CAD5203BCAF",
+      "log_sha256": "188F9845A0100C25B501896460B8AC34C31B21D4B01303F4C8E1E0564A9395E6",
+      "maximum_node_index_evaluated": 0
+    }
+  ],
+  "author_receipt_unchanged": true,
+  "no_new_grid_points": true,
+  "independently_checked_weight_radius_truth": false,
+  "full_grid_analytic_replay": false,
+  "pass_all": true
+}

@@ -1,0 +1,1255 @@
+{
+  "hol_commit": "1de64f8521b4758508bd875fbaf11d1768261b92",
+  "zip_sha256": "e1e1fe92a8553c85c6ca0b67e101509976d7ebff217860d93c0ce84017dbe838",
+  "zip_bytes": 3061041,
+  "theory_count": 55,
+  "selected": 52,
+  "uncompressed_bytes": 53257724,
+  "theories": [
+    {
+      "theory": "ArchiveLoader",
+      "source": "work/backend-costs-20261112/hol-platt/archive-loader/ArchiveLoaderScript.sml",
+      "source_sha256": "4bb37f84edd3e0e5864e23710dd93977ef55df26acb1a0d27b133e3270207226",
+      "selected": true,
+      "parents": [
+        "CountReceipt"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/archive-loader/ArchiveLoaderTheory.dat": {
+          "bytes": 316,
+          "sha256": "1dfd299c60a7f348717d0ff718d18f5c681f8f5970cbbf526661ca6577b5eb90"
+        },
+        "work/backend-costs-20261112/hol-platt/archive-loader/ArchiveLoaderTheory.sig": {
+          "bytes": 61,
+          "sha256": "cad74d28442d54aab877a1ec199da2e7a5bf346cf1593d5cd73f648d184e3fae"
+        },
+        "work/backend-costs-20261112/hol-platt/archive-loader/ArchiveLoaderTheory.sml": {
+          "bytes": 818,
+          "sha256": "716a80f21b4d5e6836f90d260e60a3502b2c7de894999f7723d991599342d64f"
+        }
+      }
+    },
+    {
+      "theory": "SectorMask",
+      "source": "work/backend-costs-20261112/hol-platt/sector-mask/SectorMaskScript.sml",
+      "source_sha256": "1f688190e701fc0b4b0da5155108ca05365377c020ce9dc70b5b5f8c550d26f1",
+      "selected": true,
+      "parents": [
+        "Sector"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorMaskTheory.dat": {
+          "bytes": 9959,
+          "sha256": "36789c7fa91071d6056ff38822ebb0d4723e9842fd7bc8a177023c0cb25a1ed5"
+        },
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorMaskTheory.sig": {
+          "bytes": 412,
+          "sha256": "fc43057338e3922fde972ba6f68f0f2bb67e8fdb4388f293688baa06ec0c5b76"
+        },
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorMaskTheory.sml": {
+          "bytes": 1659,
+          "sha256": "913ad83a049965ef0f64c34f1497b03979223239eba6ba35342684ba8e46a1c0"
+        }
+      }
+    },
+    {
+      "theory": "SectorScan",
+      "source": "work/backend-costs-20261112/hol-platt/sector-mask/SectorScanScript.sml",
+      "source_sha256": "9ae07e3388733d2bd4e9ad56f8433b397eed96386b82907caa42739fa2ace687",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorScanTheory.dat": {
+          "bytes": 5060,
+          "sha256": "e347b0ca5db25d0dff127b1876f34f62135e74d6bc55594f29a2815b18e427e7"
+        },
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorScanTheory.sig": {
+          "bytes": 250,
+          "sha256": "b0fd23fc0980c52d18555a37a6e2a30b651e11a886e4a54e6e3d9d04a37f1ad0"
+        },
+        "work/backend-costs-20261112/hol-platt/sector-mask/SectorScanTheory.sml": {
+          "bytes": 1296,
+          "sha256": "fc5f675e5f3d818b45828260734b6b4804791c2601f376c98bbe4e62af22e407"
+        }
+      }
+    },
+    {
+      "theory": "EndpointExport",
+      "source": "work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportScript.sml",
+      "source_sha256": "66c45e7b7657961591d414c70c93cf7e51aaaaf7362b93f15a1c805d1acf9784",
+      "selected": true,
+      "parents": [
+        "CountReceipt"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportTheory.dat": {
+          "bytes": 9759749,
+          "sha256": "bc1e902ed37513974d15b4ad576d6127105c65df9d041cdbcc7bb8944ec75c03"
+        },
+        "work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportTheory.sig": {
+          "bytes": 7299,
+          "sha256": "33b406703e6d40c4c7155d2d1b8a346e8f935501b412f3e738612232875e5819"
+        },
+        "work/backend-costs-20261112/hol-platt/endpoint-export/EndpointExportTheory.sml": {
+          "bytes": 22342,
+          "sha256": "f6287fa4947f632624a6e98c24efa6b90501eb269cd257f57b3a94dd22f766be"
+        }
+      }
+    },
+    {
+      "theory": "EndpointPanel",
+      "source": "work/backend-costs-20261112/hol-platt/endpoint-export-panel/EndpointPanelScript.sml",
+      "source_sha256": "5b97cbfee36390f3e35067c9c55ff606e61d71afb44f4eb6aaf586476966671f",
+      "selected": true,
+      "parents": [
+        "EndpointExport"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/endpoint-export-panel/EndpointPanelTheory.dat": {
+          "bytes": 563079,
+          "sha256": "dc0a92e44897f631659939718a74c075b969ed2d64d11ed0e7b54a078015a4bb"
+        },
+        "work/backend-costs-20261112/hol-platt/endpoint-export-panel/EndpointPanelTheory.sig": {
+          "bytes": 4120,
+          "sha256": "e65ddbd4015b1aca658f3af7d9c5cb8a77f74c1495a3a3664ed5a2707a6e41c5"
+        },
+        "work/backend-costs-20261112/hol-platt/endpoint-export-panel/EndpointPanelTheory.sml": {
+          "bytes": 12856,
+          "sha256": "a0c525058942eb7f59ecc0909c7ce090044772952ea6c716cada5fa05607ffec"
+        }
+      }
+    },
+    {
+      "theory": "CompactRadii",
+      "source": "work/backend-costs-20261112/hol-platt/guard-compact/CompactRadiiScript.sml",
+      "source_sha256": "549ad446bbc29f33acd030f907c3ab02055a46f8e2cd91def0c6b4031b42ae8f",
+      "selected": true,
+      "parents": [
+        "CompactSign"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactRadiiTheory.dat": {
+          "bytes": 14224,
+          "sha256": "aca9504f4ae080cdaf1fbcd072554bc131f1b66d94a6a92b1f35656680de9f8a"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactRadiiTheory.sig": {
+          "bytes": 563,
+          "sha256": "67cbec813218619e393dd3fd9e9c05f1de87dbb5975929eda29a6049e8113392"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactRadiiTheory.sml": {
+          "bytes": 2099,
+          "sha256": "f5ed43d65106f1061c898dbd6ee8666735c8e667e14b7601515da51b392d8e97"
+        }
+      }
+    },
+    {
+      "theory": "CompactSign",
+      "source": "work/backend-costs-20261112/hol-platt/guard-compact/CompactSignScript.sml",
+      "source_sha256": "996c19b7b1f3a382f9f699ecac76d26765748778b236c8c8f504f0ff9e6b176b",
+      "selected": true,
+      "parents": [
+        "FallbackScore"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactSignTheory.dat": {
+          "bytes": 15233,
+          "sha256": "ec95387f626e10ec05e27d6c1396588f38d394ccc39640fa987e8372552b44fc"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactSignTheory.sig": {
+          "bytes": 614,
+          "sha256": "d0d6cd9203ddd0509d0c63680a19c729f5c493cae0c51d62fde7b9605444f9dd"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/CompactSignTheory.sml": {
+          "bytes": 2225,
+          "sha256": "64350689a067c1b50d47d6472a891793bba33e59466af4585bd523437903af36"
+        }
+      }
+    },
+    {
+      "theory": "SpectralNode",
+      "source": "work/backend-costs-20261112/hol-platt/guard-compact/SpectralNodeScript.sml",
+      "source_sha256": "79a9b037cdb7a0f904acb304594dc76abd2dfa180767bf623d94191c560d3810",
+      "selected": true,
+      "parents": [
+        "CompactRadii"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/guard-compact/SpectralNodeTheory.dat": {
+          "bytes": 8428,
+          "sha256": "0b5ad194ffe5f55a2526a1d1536b956df696322b5724f201669f9a4f6bf7357d"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/SpectralNodeTheory.sig": {
+          "bytes": 538,
+          "sha256": "b53dd801ddc97353a19c106d52165a0b2a1ad7890d523c2f366f3307fe49a6e7"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/SpectralNodeTheory.sml": {
+          "bytes": 2037,
+          "sha256": "6a1dd474c12f9c87153963c608c7a1e303f29f8a4768757d6c642290ea90a372"
+        }
+      }
+    },
+    {
+      "theory": "Q131071Node",
+      "source": "work/backend-costs-20261112/hol-platt/guard-compact/Q131071NodeScript.sml",
+      "source_sha256": "25fbabd3f2ffa096773c0e6734a66b838b4a24e84284eb7ffbddabf3685bc97a",
+      "selected": true,
+      "parents": [
+        "SpectralNode"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/guard-compact/Q131071NodeTheory.dat": {
+          "bytes": 19106,
+          "sha256": "2431177210d7035b84bd979403334b3217bd84d1953ffb14c87f134454895a2b"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/Q131071NodeTheory.sig": {
+          "bytes": 225,
+          "sha256": "fcc1dbc3eb80f8d929841e66c26102f8f3360b312bb90b9150fb4aa9f6997406"
+        },
+        "work/backend-costs-20261112/hol-platt/guard-compact/Q131071NodeTheory.sml": {
+          "bytes": 1222,
+          "sha256": "4ded528f61e794a3f099fee7d4fcde289a3d2b933115356922e9d4b5fe214261"
+        }
+      }
+    },
+    {
+      "theory": "BernoulliPhase",
+      "source": "work/backend-costs-20261112/hol-platt/source-log-real/BernoulliPhaseScript.sml",
+      "source_sha256": "5b22719fed24b9a9b032cf6b69f8a00d64a3d3fbb652a953ad44e3902a8cfe58",
+      "selected": true,
+      "parents": [
+        "RealFieldContext"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/source-log-real/BernoulliPhaseTheory.dat": {
+          "bytes": 4002,
+          "sha256": "a998537a7d46c6c7bd81e37b6725eb0624af5827e9e3b423656af53e57818a37"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/BernoulliPhaseTheory.sig": {
+          "bytes": 267,
+          "sha256": "5d2fb02d6f2412a0628cc492f27ba1e18960265183aceaec74cdee0dbdb5db6b"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/BernoulliPhaseTheory.sml": {
+          "bytes": 1280,
+          "sha256": "f27b424c5e1f99fc0ce006bf298c7075b8fa0e946d74e5c018b74ce80eb8b273"
+        }
+      }
+    },
+    {
+      "theory": "SourceLogTail",
+      "source": "work/backend-costs-20261112/hol-platt/source-log-real/SourceLogTailScript.sml",
+      "source_sha256": "e95cddf353628f08691d03d28bce4c20809f5cfc59ea7978d0b054d1165cb24e",
+      "selected": true,
+      "parents": [
+        "transc"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/source-log-real/SourceLogTailTheory.dat": {
+          "bytes": 10115,
+          "sha256": "51551c3a6945b6663a02b8015b477848883639a0b764dc1d856eb6baa745b11b"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/SourceLogTailTheory.sig": {
+          "bytes": 619,
+          "sha256": "a3f5259d3721f7cd3f8b078fb116eaf8935b02fef80a3bc6149616594d428cfc"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/SourceLogTailTheory.sml": {
+          "bytes": 2289,
+          "sha256": "8575e57cc5d058999843aaf1bc907292aa1db00b42a182173847fee19f75dad0"
+        }
+      }
+    },
+    {
+      "theory": "TuringSchedule",
+      "source": "work/backend-costs-20261112/hol-platt/source-log-real/TuringScheduleScript.sml",
+      "source_sha256": "f1d7d1b03f1a2de178f3cd2c6fed32ae8b86facac9204acc6003f6a5381f1193",
+      "selected": true,
+      "parents": [
+        "SourceLogTail"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/source-log-real/TuringScheduleTheory.dat": {
+          "bytes": 4436,
+          "sha256": "a13f8b0fde62ac2166160ec9919393cd14ae296387239868fdad17dea26a46f2"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/TuringScheduleTheory.sig": {
+          "bytes": 211,
+          "sha256": "81f32469baa042dc9af8078c85b38948ef0d25fd88ee8b045df198f251b5bf7f"
+        },
+        "work/backend-costs-20261112/hol-platt/source-log-real/TuringScheduleTheory.sml": {
+          "bytes": 1188,
+          "sha256": "1caa39c98ca35b022cfb9e8f0fded1798c79dcbebe2c2339d47bc0ab6cb85596"
+        }
+      }
+    },
+    {
+      "theory": "PhaseMass",
+      "source": "work/backend-costs-20261112/hol-platt/phase-integral/PhaseMassScript.sml",
+      "source_sha256": "0e1959364ee8fe52943598c2f9d8c51048af6cff8ca5ccb06c0481adcafdc404",
+      "selected": true,
+      "parents": [
+        "integral"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/phase-integral/PhaseMassTheory.dat": {
+          "bytes": 7136,
+          "sha256": "e0eabf0009e61bbf31cb0be6dc19f16d673827a5d69e26deb7d324983fa943aa"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-integral/PhaseMassTheory.sig": {
+          "bytes": 458,
+          "sha256": "4037f9b0b931635dce204e67250baf154db41ef2b4bb224998e9c8e9639a138d"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-integral/PhaseMassTheory.sml": {
+          "bytes": 1790,
+          "sha256": "aebfff114cc4fcca760c27a6c43fcad5e27cf028c6bfe134a17184d02bea4caa"
+        }
+      }
+    },
+    {
+      "theory": "PeriodicKernel",
+      "source": "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicKernelScript.sml",
+      "source_sha256": "fc8bdf3309670c9faa09565b8a993508a7d74a72dca5c177879e5284edec5ea4",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicKernelTheory.dat": {
+          "bytes": 5183,
+          "sha256": "a96bbf8f970862c677169c75f438a462ec04609e7b5cd0f9747a386bf1460be4"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicKernelTheory.sig": {
+          "bytes": 320,
+          "sha256": "563801e1e71d0a8fe6f58fb3d4c81a16a5203fda61f30c6deaec065470016f17"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicKernelTheory.sml": {
+          "bytes": 1483,
+          "sha256": "22a0c4215c7f87bd774d8cc5218c155352d0a751569fca505d72c63139c38143"
+        }
+      }
+    },
+    {
+      "theory": "PeriodicMass",
+      "source": "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicMassScript.sml",
+      "source_sha256": "55131ba7a19efa14745a6eb64cd2dd9ec7dce1707bc0c0dffc1004eab1233983",
+      "selected": true,
+      "parents": [
+        "PeriodicKernel"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicMassTheory.dat": {
+          "bytes": 6900,
+          "sha256": "8cbd814a0d1e3a0e6df3761f822f40183e268f24ff0df2b5ee479375905791ac"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicMassTheory.sig": {
+          "bytes": 438,
+          "sha256": "8635b57840c28f7adcccfe5ff409256e78d95e3dddeb372ca607558622bfb0c9"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/PeriodicMassTheory.sml": {
+          "bytes": 1767,
+          "sha256": "a7121df899050c050027b09ab14013e6c2cc405d742a1bfd75ed7cff92361ca8"
+        }
+      }
+    },
+    {
+      "theory": "ComplexRemainder",
+      "source": "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/ComplexRemainderScript.sml",
+      "source_sha256": "ecdbb8d26a37c59bd8a1af369a479086d8832a2f1088123417680451259b92cd",
+      "selected": true,
+      "parents": [
+        "PeriodicMass"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/ComplexRemainderTheory.dat": {
+          "bytes": 5381,
+          "sha256": "f187d1ffae3e15502d2653244eed7590bc5df8f0e548f26b5588ae6ca1d63061"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/ComplexRemainderTheory.sig": {
+          "bytes": 387,
+          "sha256": "d2bff58412c24870773b5b41b8feb75ad3d0fee986c5f7d3d6ac98996ec87ea7"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-bernoulli-kernel/ComplexRemainderTheory.sml": {
+          "bytes": 1622,
+          "sha256": "4ad23a232ea724a466c00aea6c9c3c27eb894973ec441eaebd04730fda7657ce"
+        }
+      }
+    },
+    {
+      "theory": "FullCount",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/FullCountScript.sml",
+      "source_sha256": "6c7903ae5d9cb1e59e6652ff9aff660bdd50d9bde8e29031a33401b22120d090",
+      "selected": true,
+      "parents": [
+        "cv_prim"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/FullCountTheory.dat": {
+          "bytes": 19257,
+          "sha256": "d802618eb462e81643180f54112ef26e9ebb14cfa0a58e96e3d5349840306d9c"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/FullCountTheory.sig": {
+          "bytes": 729,
+          "sha256": "79e1057be55054ef268601710188834c16b547397610bebf65b475372ce70a51"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/FullCountTheory.sml": {
+          "bytes": 2564,
+          "sha256": "f49bda08d93c2644aa455fd10aacca9500c0f8d28146eef1ebf9c2cffc47b608"
+        }
+      }
+    },
+    {
+      "theory": "CountReceipt",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptScript.sml",
+      "source_sha256": "1127f9f0edef9aeb79b1ffa3f78cd93f9abcd6f788d2b39fdbf0bb3928953b54",
+      "selected": true,
+      "parents": [
+        "FullCount"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptTheory.dat": {
+          "bytes": 1685809,
+          "sha256": "78a6ddd45d17a2e484510992af917212be2a6f24bc4f6ca4fa5319b45bcf956b"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptTheory.sig": {
+          "bytes": 733,
+          "sha256": "26309b480a49ac113d770b7b68e2b570dd4d830fd33326b7a0be2e52e47ae626"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/CountReceiptTheory.sml": {
+          "bytes": 2587,
+          "sha256": "fb4768c1d77bf8909da7c53f7dd4c16a194b4e1dc25bab1d64ba6186c5caa898"
+        }
+      }
+    },
+    {
+      "theory": "ShortGuard",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/ShortGuardScript.sml",
+      "source_sha256": "0ef5de65811446402a96818ba651b4f0507f220e85d7b274c75fe96e9b57713c",
+      "selected": true,
+      "parents": [
+        "CountReceipt"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/ShortGuardTheory.dat": {
+          "bytes": 16539,
+          "sha256": "55a141dfbec447883a087f653f6d6d866fff693de7cecebb33c7bd2727b4ee79"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/ShortGuardTheory.sig": {
+          "bytes": 410,
+          "sha256": "328692f4314dbe39f83d7999957aa7a73972b26afecaa15ab1306ea424f15203"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/ShortGuardTheory.sml": {
+          "bytes": 1671,
+          "sha256": "43338d2691305ea65ea5f3efc727fb97ebd6cf97deed1f6d4981770d171c0df7"
+        }
+      }
+    },
+    {
+      "theory": "Rumely167",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/Rumely167Script.sml",
+      "source_sha256": "a949390c54112f23e21efc1d70b914f81ee2ba02e7f24b04ef493110d76a5633",
+      "selected": true,
+      "parents": [
+        "hol"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/Rumely167Theory.dat": {
+          "bytes": 2330,
+          "sha256": "9168a030ab4bdf3b0eb62287ebe8751f7dc4369718ddc86f3a90e1494c0c17e9"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/Rumely167Theory.sig": {
+          "bytes": 189,
+          "sha256": "6ab758d8cc4c4bda442ad8ef9b5129109a986d40681a5fdaf0b8a1e6f59f6e27"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/Rumely167Theory.sml": {
+          "bytes": 1028,
+          "sha256": "eb00b135d76ab4c369b98497d5320a62cc592f6e3f2a68769c15bc28d0bf5255"
+        }
+      }
+    },
+    {
+      "theory": "OffLinePair",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/OffLinePairScript.sml",
+      "source_sha256": "10c03398f192869912f9a754b44e8e0921e34b0b5df27fce3e79f6decb0ac51e",
+      "selected": true,
+      "parents": [
+        "hol"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/OffLinePairTheory.dat": {
+          "bytes": 1755,
+          "sha256": "57374cadc985ea64c2896609ac7b92ce785a0e00875aefde174f4b83c8658453"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/OffLinePairTheory.sig": {
+          "bytes": 122,
+          "sha256": "95e8d05da5c0517adc039247ac8f5bdd118723c44300e636251e8ddb7546417a"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/OffLinePairTheory.sml": {
+          "bytes": 916,
+          "sha256": "4fbeefbb5ab2de62293e2f9bf671fd391d49fbcff57992264e73bbd49eb50d95"
+        }
+      }
+    },
+    {
+      "theory": "GuardChoice",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/GuardChoiceScript.sml",
+      "source_sha256": "5334b82880a7e0d00f3511cb6e3b1be18b08b04e579df26949b55f685107f919",
+      "selected": true,
+      "parents": [
+        "FullCount"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/GuardChoiceTheory.dat": {
+          "bytes": 2028,
+          "sha256": "c92e5346d53576e0aba31a4ffbd885387763bb540fc109bb599fff2767f752d0"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/GuardChoiceTheory.sig": {
+          "bytes": 118,
+          "sha256": "4179befe6674a69298a446433842ffec9f69736fcd561571572e84ac1d7867fc"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/GuardChoiceTheory.sml": {
+          "bytes": 910,
+          "sha256": "dac3eab919445a58f40d9899ba22a1009d47042876ec94a32c6496823a1f82e0"
+        }
+      }
+    },
+    {
+      "theory": "Width25Coverage",
+      "source": "work/backend-costs-20261112/hol-platt/full-height-count/Width25CoverageScript.sml",
+      "source_sha256": "c96471ed824efd0afc332f0790cd461c5d899dc03be0775d6e61886e5570f3e0",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/full-height-count/Width25CoverageTheory.dat": {
+          "bytes": 2259,
+          "sha256": "87aa4d8cddf2fb68dbafd254b77b131a15e0e2bb53bf231a2ffbac4ad6f63b04"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/Width25CoverageTheory.sig": {
+          "bytes": 125,
+          "sha256": "be749b66d62e97a7d2d311b2aa52d7c8ebc15baabbf22e48276428758d57d4f9"
+        },
+        "work/backend-costs-20261112/hol-platt/full-height-count/Width25CoverageTheory.sml": {
+          "bytes": 962,
+          "sha256": "cda3a2e344c826a555a28a9f58aab2e49c843acbd0ae3d1b76aedb7559f30383"
+        }
+      }
+    },
+    {
+      "theory": "RootSignChain",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/RootSignChainScript.sml",
+      "source_sha256": "6ad61a02a9626aca28e37314c046a4bd71571feccbee001009706ac0c355d59d",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RootSignChainTheory.dat": {
+          "bytes": 5605,
+          "sha256": "033a808547c0e5163894ff40c4d570502dea178adc98e919dc4dc44320fb345f"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RootSignChainTheory.sig": {
+          "bytes": 265,
+          "sha256": "09472a616ce52df07be10151c72ebecd0940a7339f722630162febae177d2de2"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RootSignChainTheory.sml": {
+          "bytes": 1364,
+          "sha256": "a536cfe38464a90209f4ac182e89f9395f0f88a296f24040e5f2b569a08c98cb"
+        }
+      }
+    },
+    {
+      "theory": "RoundedHeight",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/RoundedHeightScript.sml",
+      "source_sha256": "73b128d3bea842dbcdf736a0db5f6578b47dca3e970970fff5c50657e909783e",
+      "selected": true,
+      "parents": [
+        "real"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RoundedHeightTheory.dat": {
+          "bytes": 2362,
+          "sha256": "753f258b48044339dfa6311d1996888fe11a6f8dc152a6418c3d60a9c227d97e"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RoundedHeightTheory.sig": {
+          "bytes": 148,
+          "sha256": "86cfe9bccc345eb2943d947554ea20fac46270010c38f9e167a02d6e71086831"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/RoundedHeightTheory.sml": {
+          "bytes": 997,
+          "sha256": "e0261098c87838fb072930d69c44c21d0ae38e8158571ef9b958a48d33918e49"
+        }
+      }
+    },
+    {
+      "theory": "ZeroFreeGap",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/ZeroFreeGapScript.sml",
+      "source_sha256": "ab8c49e32a3915b0872fcaeefa6d889e016f5146da289d218d343d1368e10ba8",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/ZeroFreeGapTheory.dat": {
+          "bytes": 6562,
+          "sha256": "564e347d72053634f1f4822eed88cf47b874d91c821738f69f3bd65a1f203de6"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/ZeroFreeGapTheory.sig": {
+          "bytes": 344,
+          "sha256": "8b7b5387c73428be6d6edc3d2830149773f06f3c05216ba411378877aa7082c6"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/ZeroFreeGapTheory.sml": {
+          "bytes": 1493,
+          "sha256": "c748ea6f4fad9941c5267813998223d58fe5f2d2867c27e7776b6510be44a0e6"
+        }
+      }
+    },
+    {
+      "theory": "CofactorNeighbourhood",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/CofactorNeighbourhoodScript.sml",
+      "source_sha256": "73546f93edae22b9538b12ad068262b31071ad34683430989371dcef13092bee",
+      "selected": true,
+      "parents": [
+        "ZeroFreeGap"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/CofactorNeighbourhoodTheory.dat": {
+          "bytes": 2880,
+          "sha256": "7f581b3e969afe595b93be1b32906a90e20a53d058cc555193a0b7b779bba6bb"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/CofactorNeighbourhoodTheory.sig": {
+          "bytes": 166,
+          "sha256": "bb5c8684c61ed0b98ab4298a4966d742ed417efa4d411603719c866584d1cf72"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/CofactorNeighbourhoodTheory.sml": {
+          "bytes": 1082,
+          "sha256": "9bccf3fc5b09e799c0a5729680a169f7b66f486b4e0a325d811fed109e0380dc"
+        }
+      }
+    },
+    {
+      "theory": "IsolatedCells",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/IsolatedCellsScript.sml",
+      "source_sha256": "5334135ca3296a4339bbbe34141293124a2e647cd3d78869270e08a09eb2bd6d",
+      "selected": true,
+      "parents": [
+        "CofactorNeighbourhood"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/IsolatedCellsTheory.dat": {
+          "bytes": 7256,
+          "sha256": "d78a7e0c980bc4e7cf3e2b8b72a9456a2a7645e12905211a1551be1e107f17a1"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/IsolatedCellsTheory.sig": {
+          "bytes": 323,
+          "sha256": "2d9335aa25485e6bfbc6e121f157673201c1b0b65119c89ee028ae41dcc3d31c"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/IsolatedCellsTheory.sml": {
+          "bytes": 1430,
+          "sha256": "bf429010a6da440e5649e64968d3046322140e48b45d7d05787323caa71f1172"
+        }
+      }
+    },
+    {
+      "theory": "StripParameter",
+      "source": "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterScript.sml",
+      "source_sha256": "6f302d267bd32aad8d7b1ee0150e51000fa80de221d8d28f434a54454d8f2c4b",
+      "selected": true,
+      "parents": [
+        "Omega"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterTheory.dat": {
+          "bytes": 7725,
+          "sha256": "589251fd03ab9dc5ddcee8de5f0c92540a175d3fc8cba5a39722dda94ff860a4"
+        },
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterTheory.sig": {
+          "bytes": 240,
+          "sha256": "ea1626f4546cd7121e7918df3a82fddde9a9d440184d603424eefd78f4a1666c"
+        },
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterTheory.sml": {
+          "bytes": 1244,
+          "sha256": "d8081dd978ee30264f857a61926af41e5c41e823576194e65b1c99009b4fa246"
+        }
+      }
+    },
+    {
+      "theory": "StripParameterAcceptance",
+      "source": "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceScript.sml",
+      "source_sha256": "cee7a8b13750022465982039cb341aa73e12ab786ae37554db03f159d6514a98",
+      "selected": true,
+      "parents": [
+        "StripParameter"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceTheory.dat": {
+          "bytes": 760948,
+          "sha256": "2cd380819492ff019c17eaebfb5435067d28f9780f26f435caf811d3cc776387"
+        },
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceTheory.sig": {
+          "bytes": 16613,
+          "sha256": "f0e277b5d2676fa08dece4b78268d2ca91809b65ee8ae739c467f27a72b91993"
+        },
+        "work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceTheory.sml": {
+          "bytes": 47000,
+          "sha256": "13ea5e0db0f11c4a9327fe66f1c058978616eccbce22d5931752c2b4c60a27a5"
+        }
+      }
+    },
+    {
+      "theory": "FallbackScore",
+      "source": "work/backend-costs-20261112/hol-platt/fallback-score/FallbackScoreScript.sml",
+      "source_sha256": "52ea905478cbe485749fbe2da5e7ec6ba2def3e6f5cf7e0f1fb0394266e8cca4",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/fallback-score/FallbackScoreTheory.dat": {
+          "bytes": 5875,
+          "sha256": "81bdcf9c84a844cdbd63c63dfbcc44154d65a5fe68903a5fd8edb70a83a77665"
+        },
+        "work/backend-costs-20261112/hol-platt/fallback-score/FallbackScoreTheory.sig": {
+          "bytes": 268,
+          "sha256": "d5830981593cbce76520b677f4b125a5b296a59f676e4fb41cbf4e138efdd2c7"
+        },
+        "work/backend-costs-20261112/hol-platt/fallback-score/FallbackScoreTheory.sml": {
+          "bytes": 1375,
+          "sha256": "ef1ac58f22d7232ee53f911f545d2ba891d122b93823364265fa537cfd2915c0"
+        }
+      }
+    },
+    {
+      "theory": "DispatchedScore",
+      "source": "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedScoreScript.sml",
+      "source_sha256": "d9c17048734cad92ed9ee71ddc89eac2d53eecc4007bfbd9aba7d8450e0ac278",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedScoreTheory.dat": {
+          "bytes": 2910,
+          "sha256": "9a8149e53575982caa2c60ad6be957ceb1d728dae3eba0431343e891aa3769bf"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedScoreTheory.sig": {
+          "bytes": 115,
+          "sha256": "f37510e0cf4665402ab35d341e1018d2e77424ecb489bd0427f50d42b075f762"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedScoreTheory.sml": {
+          "bytes": 939,
+          "sha256": "169cb37a863300935589e7d2e9c45e88ea504ab34a207e90430763291053ff6e"
+        }
+      }
+    },
+    {
+      "theory": "DispatchedFixture",
+      "source": "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedFixtureScript.sml",
+      "source_sha256": "a3bdf69ff4168296c13f2ff0be3d5369b66d6963376437c05d5217741c3edc87",
+      "selected": true,
+      "parents": [
+        "DispatchedScore"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedFixtureTheory.dat": {
+          "bytes": 12515,
+          "sha256": "043aec9db5aa6f248c2c7f0235867986d5df7f9aefed3d13268c3e8b65fc9a1d"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedFixtureTheory.sig": {
+          "bytes": 211,
+          "sha256": "2633f63fdb1adfd554b4900b9bf9f6227019e2ef9c1a9730986846cdd288bdf3"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/DispatchedFixtureTheory.sml": {
+          "bytes": 1201,
+          "sha256": "8ee7588dc381dbbea4fe4eb8f4f72448a14061af127eb62f2cd5499d5f7ab806"
+        }
+      }
+    },
+    {
+      "theory": "InclusiveBracket",
+      "source": "work/backend-costs-20261112/hol-platt/dispatched-score/InclusiveBracketScript.sml",
+      "source_sha256": "1f0157fd4739ef2c50d1df73ba68b87b517e304ab5e694ecb62e2497a96332a4",
+      "selected": true,
+      "parents": [
+        "ZeroFreeGap"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/dispatched-score/InclusiveBracketTheory.dat": {
+          "bytes": 3922,
+          "sha256": "9304585b86ca4c9bab18a61dd7bfd9dddbdb1c110c0df9e92698edae47bee112"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/InclusiveBracketTheory.sig": {
+          "bytes": 279,
+          "sha256": "aa7f6ca00d6b285f745073aa3c75af9b4dd70dee17e3f110a3b9e825b328910d"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/InclusiveBracketTheory.sml": {
+          "bytes": 1398,
+          "sha256": "17177c8be2ee50ac1ee2935b3c977abc31c6b76a22dfaa4f522c5912d6c95541"
+        }
+      }
+    },
+    {
+      "theory": "RepairAmplitude",
+      "source": "work/backend-costs-20261112/hol-platt/dispatched-score/RepairAmplitudeScript.sml",
+      "source_sha256": "f9a090009c6390fcb6b9eb1d2e658d1740af41c581ebadcbd04dc7f94a679c9e",
+      "selected": true,
+      "parents": [
+        "FallbackScore"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/dispatched-score/RepairAmplitudeTheory.dat": {
+          "bytes": 3563,
+          "sha256": "91259a08b9ae5f08286adf4b9c8639c414bcf1511a51e3f35832ef55e3f690b6"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/RepairAmplitudeTheory.sig": {
+          "bytes": 194,
+          "sha256": "93e005a878b1005912ef4139e66a413d46e616965139ddb01f10bae383a0af5b"
+        },
+        "work/backend-costs-20261112/hol-platt/dispatched-score/RepairAmplitudeTheory.sml": {
+          "bytes": 1069,
+          "sha256": "7f5c26a87439f963204d6bafc2d4379b046feb1a006a0489a88c8385b32b569f"
+        }
+      }
+    },
+    {
+      "theory": "ActualSign",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/ActualSignScript.sml",
+      "source_sha256": "ddecf4c5a429bf629fefef4a8abdb6ec3216e6b80aecea1a96184b2cb204e802",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/ActualSignTheory.dat": {
+          "bytes": 5684,
+          "sha256": "bbced9c47e8954a6ddac19c3f35908395b14b52de9e4dca94c410fe67c948cf1"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ActualSignTheory.sig": {
+          "bytes": 236,
+          "sha256": "980385e7523cce5cabae942ff49b12041c563a4dcb6d855020fe5e8a9b7e212a"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ActualSignTheory.sml": {
+          "bytes": 1195,
+          "sha256": "b969b7ebd508c0e560652b2c5ed707aa71c7f548156f61b6ad54c7cfe687728f"
+        }
+      }
+    },
+    {
+      "theory": "PanelBatch",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/PanelBatchScript.sml",
+      "source_sha256": "aa8bb31d736c42300bfdd7223646155da5d504d4d9f88106b24e4a363a346a08",
+      "selected": true,
+      "parents": [
+        "PanelKernel"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/PanelBatchTheory.dat": {
+          "bytes": 333998,
+          "sha256": "39bc65fa17dddbd8704ab8f4b3916a6da5e6827ff3d31a0888b00f4cf7e4405f"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelBatchTheory.sig": {
+          "bytes": 152,
+          "sha256": "9f63e6c78196f1301a0b37c4ae6a968f54b5c8fd9d6ac0e56a10de0a9aa574c0"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelBatchTheory.sml": {
+          "bytes": 928,
+          "sha256": "b764230a2f9c948db981b9775a8604d2380ec38a3b38aeee1b97018e921d8c28"
+        }
+      }
+    },
+    {
+      "theory": "PanelJoin",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/PanelJoinScript.sml",
+      "source_sha256": "5d732e7c8fa3daa7bea61dbfcccad7cfce49a8a0dc224314e7ef0a240d8dc58d",
+      "selected": true,
+      "parents": [],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/PanelJoinTheory.dat": {
+          "bytes": 3525,
+          "sha256": "220bd243af66e5b9f0eda062163c424cae3d5768cfd17d50ed0b7a1039714175"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelJoinTheory.sig": {
+          "bytes": 141,
+          "sha256": "dfa35fab72fd486a20d8671899b672b250a1e91611c8510ccb3050c1cbee2982"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelJoinTheory.sml": {
+          "bytes": 987,
+          "sha256": "04c4fd837de861e2f092a93e7937026ee10166f6618c8b703cd33f28908763b2"
+        }
+      }
+    },
+    {
+      "theory": "PanelKernel",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/PanelKernelScript.sml",
+      "source_sha256": "fbe9f617e9f1ec18363ed1116b6f428725dc1c76b166864505418ea9e50cbc75",
+      "selected": true,
+      "parents": [
+        "ShortKernel"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/PanelKernelTheory.dat": {
+          "bytes": 14010,
+          "sha256": "4084d0f5805b6249ce84f6e056ec88491722d9a302aef703bf079a4e92a36fee"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelKernelTheory.sig": {
+          "bytes": 545,
+          "sha256": "ba8eac0354297349fcdb48f017da26374acc7674a5460706e358229675b37dd2"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelKernelTheory.sml": {
+          "bytes": 2052,
+          "sha256": "f5d851c715337c637d37a0b7c4d345ec642634f698f446f729f8b857090e03bd"
+        }
+      }
+    },
+    {
+      "theory": "PanelUnary",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/PanelUnaryScript.sml",
+      "source_sha256": "eec6cad04ad596c4ad46ea047283365a1711ae65f2176bdb834dfc288106dc18",
+      "selected": true,
+      "parents": [
+        "PanelKernel"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/PanelUnaryTheory.dat": {
+          "bytes": 458024,
+          "sha256": "a21a19eaa8f641edb0d26239be940fadda98d14f3b04e31e974eb99e79c2b540"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelUnaryTheory.sig": {
+          "bytes": 13655,
+          "sha256": "21752f48dac89b76364dbfbaf5523d5154b351eb44f6935c77ae8a3664128462"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/PanelUnaryTheory.sml": {
+          "bytes": 38209,
+          "sha256": "be1dbe7dbcfef66e5f77ca09355fb6ef5fa245d90d4eb8d8dee8e580530e2a86"
+        }
+      }
+    },
+    {
+      "theory": "ShortBatch",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/ShortBatchScript.sml",
+      "source_sha256": "097a04f5948930be12a4cd49af577257577a26ca8bdbc5dbab4b3516aa39b955",
+      "selected": true,
+      "parents": [
+        "ShortKernel"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/ShortBatchTheory.dat": {
+          "bytes": 95076,
+          "sha256": "a24bf2d68c51a418b15b9337056640b3a3ae7b8ae1ba7c5d8ad5fa790dba055a"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortBatchTheory.sig": {
+          "bytes": 210,
+          "sha256": "605643986025497ff5245d0ee8c53a7ffab7e7f399e6fb5a48af523863986d42"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortBatchTheory.sml": {
+          "bytes": 1092,
+          "sha256": "0c37ae21a0bbac40598056dcc76cc39fb7b27d4bb3c4516ce135c3e53ec5bf1b"
+        }
+      }
+    },
+    {
+      "theory": "ShortKernel",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/ShortKernelScript.sml",
+      "source_sha256": "70438161bc97e60d7b356c196f7ee9f08df8c06aa98c48e311ee0fd4235a3ef4",
+      "selected": true,
+      "parents": [
+        "cv_std"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/ShortKernelTheory.dat": {
+          "bytes": 22696,
+          "sha256": "05d59159920bad19086bb3aa062da4ce6d72eeb4c581e376a585b4e47e001b30"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortKernelTheory.sig": {
+          "bytes": 851,
+          "sha256": "25d44373ff8a439e1ba887519b829e64c2e1a8239c3553729284a32d88d6a1be"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortKernelTheory.sml": {
+          "bytes": 2913,
+          "sha256": "30dfe3c9b01ffca2c587dcdc09401895074f67c0c5849439581278b82b0bd4bc"
+        }
+      }
+    },
+    {
+      "theory": "ShortUnary",
+      "source": "work/grh-goldbach-20261120/team/q10004-short/ShortUnaryScript.sml",
+      "source_sha256": "055e063eca55ad2d25ebb8cb1fdde2a060a7915a8fc88b337bf236782bb37b24",
+      "selected": true,
+      "parents": [
+        "ShortKernel"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-short/ShortUnaryTheory.dat": {
+          "bytes": 103213,
+          "sha256": "68a6ce0501981f86bf0871a4c97c0119f6573681680afe30ea8041955f1f3f48"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortUnaryTheory.sig": {
+          "bytes": 828,
+          "sha256": "f67297ac0eaf6db87005a2c74b72f04885ac1b255d776db505a1738ed44940b7"
+        },
+        "work/grh-goldbach-20261120/team/q10004-short/ShortUnaryTheory.sml": {
+          "bytes": 2808,
+          "sha256": "28f158fb602e4357f984e2f08a18e5b3708eb38b4c24893b32844285748ec858"
+        }
+      }
+    },
+    {
+      "theory": "Q265800Receipt",
+      "source": "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ReceiptScript.sml",
+      "source_sha256": "ec061b840898e75cb93032f5181421d2f33cb8763e005d97eb4a82d1b55eecca",
+      "selected": true,
+      "parents": [
+        "Q265800Scan"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ReceiptTheory.dat": {
+          "bytes": 269441,
+          "sha256": "ae30d7a06d01dc4affa7360f16f245ad2e8fd99cac8fd1e50082bd840a0e2612"
+        },
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ReceiptTheory.sig": {
+          "bytes": 1271,
+          "sha256": "b9073676d5e75c53e2ce0f8625de233efd0f4261bcb3eeb583980fa479d58c68"
+        },
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ReceiptTheory.sml": {
+          "bytes": 4121,
+          "sha256": "bd7ebdf1bf4c876943deca8f2144ff06cb6bee8d044c7bb48bb14ad9404232af"
+        }
+      }
+    },
+    {
+      "theory": "Q265800Scan",
+      "source": "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ScanScript.sml",
+      "source_sha256": "a17f9722269f87e2deaee101da52aca1b666fce4797a44a6155ced4ca4064d93",
+      "selected": true,
+      "parents": [
+        "cv_prim"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ScanTheory.dat": {
+          "bytes": 19014,
+          "sha256": "55cafe2bfc9e5b0bbc3c2888b1d04d75c6d2392ab480d6760610f799cb9e8977"
+        },
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ScanTheory.sig": {
+          "bytes": 731,
+          "sha256": "bd613a647d58fb7f2a1d0570760ad619be8820f3f4352883ad2ad7dd27b10546"
+        },
+        "work/grh-goldbach-20261120/team/high-conductor-full/hol/Q265800ScanTheory.sml": {
+          "bytes": 2576,
+          "sha256": "e62982ef346379a62ccbbb59158933af91dc74788d81672731e27deb9578f8f1"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Scan",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ScanScript.sml",
+      "source_sha256": "f58e471167e75743ee5d4f066f6bf981a50cb60bbbfc2b824dc66726adf6aa05",
+      "selected": true,
+      "parents": [
+        "cv_prim"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ScanTheory.dat": {
+          "bytes": 19423,
+          "sha256": "4246de296274615bd48e49ca1ea881f9c760ca92268d265a252635060597007d"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ScanTheory.sig": {
+          "bytes": 730,
+          "sha256": "212d14f7e355df6866a7ee03ee6012e32d2cea49901408983510457f55ea345b"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ScanTheory.sml": {
+          "bytes": 2570,
+          "sha256": "f1411220b7c189804a5887a87471cae0a938c3eb0a8eaa4b60d899eda3dda7fd"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Receipt",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ReceiptScript.sml",
+      "source_sha256": "7e0e5f42fdcf37d883114bf84585b19235a5bb07c29da8e57aed2dc005fee377",
+      "selected": true,
+      "parents": [
+        "Q10004Scan"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ReceiptTheory.dat": {
+          "bytes": 3441337,
+          "sha256": "03504fb075713d579762d4ded6a2e9deedde29fcee116ff669dd45a982c64308"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ReceiptTheory.sig": {
+          "bytes": 1270,
+          "sha256": "4fbfd2783767f8f30fa3665546881e1969990c804360f0096ed00b3f6fcc7d89"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ReceiptTheory.sml": {
+          "bytes": 4114,
+          "sha256": "3d2a9866703100180292e9fd6a018565884da2d12f4bc5d373a466262743c85a"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Window",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowScript.sml",
+      "source_sha256": "3293f246c2069a8d47fb354579720652f86be828df91f5f5be0bbdd8830e0279",
+      "selected": true,
+      "parents": [
+        "Q10004Receipt"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowTheory.dat": {
+          "bytes": 1040177,
+          "sha256": "6def713d162499ad1d005ba67588735febf919e40ab977ef481819cd3db24214"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowTheory.sig": {
+          "bytes": 1163,
+          "sha256": "5e0ae0f0399c798aab7d246d34c7f38ac0c6849d52f026f28214987196f11990"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004WindowTheory.sml": {
+          "bytes": 3805,
+          "sha256": "3b7d3aec84291b88f2f1f39bf9a96e2f09b812ed8b677678f7046d48d504e544"
+        }
+      }
+    },
+    {
+      "theory": "Q10004All",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllScript.sml",
+      "source_sha256": "2fc6afe19d0305422af71ee1e13d11d0afb81390041e6231d00710edeaa2da08",
+      "selected": true,
+      "parents": [
+        "Q10004Window"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllTheory.dat": {
+          "bytes": 12314753,
+          "sha256": "166ef743cce18a8e3a5c73fec6a6eeee2999a9994b427178693a3a65840cdf92"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllTheory.sig": {
+          "bytes": 997,
+          "sha256": "2775e232d43626f32a2f61508bb2fd238b83be19f10d305c4ebf9649659f589e"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004AllTheory.sml": {
+          "bytes": 3359,
+          "sha256": "449ccaf01714cdc988eaedd979dcf97184375b7168a1bad228af5faefc6ca114"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Fused",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004FusedScript.sml",
+      "source_sha256": "5e8c46606e252d0ecc5711c35dfbe46b817c66b0213a75adb98b74452a343dac",
+      "selected": true,
+      "parents": [
+        "Q10004Window"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004FusedTheory.dat": {
+          "bytes": 17432406,
+          "sha256": "03ed742d4f24bc92ed09fa078859a1098dd5ab815c17f430b09efde70079444f"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004FusedTheory.sig": {
+          "bytes": 2282,
+          "sha256": "b26b29ac4fa733d12fde2e5a98b9d2e0cc5dad20078f27e75d4ddee563db49c9"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004FusedTheory.sml": {
+          "bytes": 7050,
+          "sha256": "cb18e830e4e7fdf7c17a9b80475b4b5d2707ff396c7aa35c82bd993095d87caa"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Project",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ProjectScript.sml",
+      "source_sha256": "a0a97c323e8deb16497b4cf1dc9f759b35604791f7784adfc4e990fb72044f09",
+      "selected": true,
+      "parents": [
+        "Q10004Compressed"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ProjectTheory.dat": {
+          "bytes": 9274,
+          "sha256": "ec9c764cb911a00315ad104e19083491ea01f65b94bef5590f868098c6e6035c"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ProjectTheory.sig": {
+          "bytes": 439,
+          "sha256": "c41a9b2a82ee3a5c2eb6313bb67e4c546b0994b12c104d5122eeeb81dddd82f2"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004ProjectTheory.sml": {
+          "bytes": 1765,
+          "sha256": "35d85cbc6e3ea8a640d6f89864cf179b052714366841bc4a6c50d07b2a31eb8f"
+        }
+      }
+    },
+    {
+      "theory": "Q10004Compressed",
+      "source": "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004CompressedScript.sml",
+      "source_sha256": "b56b5bb2bf7124f9f29143d368f4ce9fd7cbf0903b11752a8f4ba5d4f055f7f2",
+      "selected": true,
+      "parents": [
+        "Q10004All"
+      ],
+      "files": {
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004CompressedTheory.dat": {
+          "bytes": 4282893,
+          "sha256": "5533e948556f3aa77d5f8ab569800b5794e96c8f7012c098879b6820eb7d8331"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004CompressedTheory.sig": {
+          "bytes": 1666,
+          "sha256": "50cf024c108042ef2ec5a50c70a48fd621fc48f80deac45d9ce2061528d32421"
+        },
+        "work/grh-goldbach-20261120/team/q10004-gaussian/hol/Q10004CompressedTheory.sml": {
+          "bytes": 5334,
+          "sha256": "305c31675cfca05eaac8e74937cbc5c169e1a30150ce7e893a38c2c554720761"
+        }
+      }
+    },
+    {
+      "theory": "Sector",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorScript.sml",
+      "source_sha256": "0283c16a732f605331a66121371f4a51f338523a9f588b6cbc8eac8593554b07",
+      "selected": false,
+      "parents": [
+        "LargeTerminal"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorTheory.dat": {
+          "bytes": 26813,
+          "sha256": "26f029d5b8ed8f6de353b4e7296cd7165c6b59792a8e072e1acc5db36db2f5a6"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorTheory.sig": {
+          "bytes": 822,
+          "sha256": "0577ed51e5a7e55cd2d6e0a65a0d916b2c7f737fbc675c3b7f6ccdf0dfb6eb6e"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/SectorTheory.sml": {
+          "bytes": 2846,
+          "sha256": "251701bfe3f00027e3145ff75563880a1490b90fda736a2a16344be2e334f0fc"
+        }
+      }
+    },
+    {
+      "theory": "integral",
+      "source": "work/backend-costs-20261112/hol-platt/phase-integral/integralScript.sml",
+      "source_sha256": "28d2d9883d28b0ca0f8ea542f3e1237c1c890338e7c5157f53cc0991c214f536",
+      "selected": false,
+      "parents": [],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/phase-integral/integralTheory.dat": {
+          "bytes": 43828,
+          "sha256": "e567c4a308cd500e8b60a17e3401ef6f85ee35a380931c2b2a65ff80a13c6a0d"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-integral/integralTheory.sig": {
+          "bytes": 2941,
+          "sha256": "e4f817caac90e0dcd2b7d7c39979f2c92fb6d556b5e3d4a1211253946cefca8b"
+        },
+        "work/backend-costs-20261112/hol-platt/phase-integral/integralTheory.sml": {
+          "bytes": 8832,
+          "sha256": "2299789b45d2b428fb2427d709d5044848297890b598106fe5bd9a0f87d37e43"
+        }
+      }
+    },
+    {
+      "theory": "LargeTerminal",
+      "source": "work/backend-costs-20261112/hol-platt/large-terminal-signs/LargeTerminalScript.sml",
+      "source_sha256": "ed80c5b9a80c327b80384bc22a178c7f0b5d14314786b93866f8c895d95cd1a3",
+      "selected": false,
+      "parents": [
+        "cv_prim"
+      ],
+      "files": {
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/LargeTerminalTheory.dat": {
+          "bytes": 32234,
+          "sha256": "67cec53295dcb7f4e6a87de56835196949f3b5c4a00cccd64106433df3083ca5"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/LargeTerminalTheory.sig": {
+          "bytes": 1032,
+          "sha256": "6fdfe7b93cfb22d44823438b7cb2afc9bb4dcd0ca74bd3b5670ef63b8d379b10"
+        },
+        "work/backend-costs-20261112/hol-platt/large-terminal-signs/LargeTerminalTheory.sml": {
+          "bytes": 3403,
+          "sha256": "f8b476dbe1061189e099a26df3570c8c6199c09e38788d0a24cd10bad1074180"
+        }
+      }
+    }
+  ]
+}

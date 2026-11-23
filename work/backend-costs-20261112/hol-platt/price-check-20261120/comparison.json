@@ -1,0 +1,54 @@
+{
+  "two_low_nodes_cpu_microseconds_per_residue": {
+    "direct": 167.64322916666666,
+    "batch": 50.455729166666664
+  },
+  "two_high_nodes_cpu_microseconds_per_residue": {
+    "direct": 4840.494791666667,
+    "batch": 844.7265625
+  },
+  "high_low_direct_cpu_ratio": 28.87378640776699,
+  "high_direct_batched_cpu_ratio": 5.730250481695569,
+  "two_low_nodes_hol_transform_cpu_seconds": [
+    {
+      "height_index": 1,
+      "encode": 5.762261,
+      "execute": 0.660461,
+      "decode": 2.673576,
+      "discharge": 0.000805
+    },
+    {
+      "height_index": 2,
+      "encode": 4.506782,
+      "execute": 0.650317,
+      "decode": 2.776179,
+      "discharge": 0.00022
+    }
+  ],
+  "aggregate_ceiling_microseconds_per_residue_if_budget_all_for_source": {
+    "160000": 9.55944951970707,
+    "400000": 23.898623799267675,
+    "800000": 47.79724759853535
+  },
+  "hours_if_all_residues_cost_exactly_like_two_low_nodes": {
+    "direct": 2805905.989813585,
+    "batch": 844495.9775167101
+  },
+  "small_character_two_rows_at_frozen_planning_unit_prices_hours": {
+    "dense": 409273.47659443505,
+    "primitive_slice_projection": 303389.09244471096,
+    "difference": 105884.3841497241
+  },
+  "scope": "The source scenarios are sensitivity calculations, not an all-height rate. Character-row prices are assumed; no formal hour saving is measured.",
+  "sha256": {
+    "forecast-audit-20261113\\end_to_end_model.json": "c4b06cca6ce42bebc1152dd471e4c2668f21cf4804785d929586e3308def98d8",
+    "hol-platt\\c10004-reference\\receipt.json": "37884bf59d636e9198d5bed6b6fbdc9231cc617c66e2a56a6f39fc0fd6cad560",
+    "hol-platt\\c10004-batched-source\\receipt.json": "93348eb19f822095ca759874d34d7c234ab5dd76ba30adadf0dcf1cc3a13f02a",
+    "hol-platt\\c10004-high-reference\\receipt.json": "9b512a32d4ccf9c48c392d2a540544470d565c4b8a7c7153e4af5b7bb4836d00",
+    "hol-platt\\c10004-batched-high\\adaptive.json": "76e7431789be23a91e63de781f7e568fd6fc06f92357cd6c84872fc7e9fe51c3",
+    "hol-platt\\c10004-hol-replay\\a02_compare.json": "4fd498273a183e5c6655d22de822ba53e805a4bfcf09b82cb05a3545262b0f23",
+    "hol-platt\\small-price-20261120\\fold.json": "be3d974c309af5fbf279eb7c5509c10b01e0d1d96dda720d73000edb130751bd",
+    "hol-platt\\time-pruning\\counts.json": "e33e41e16fa0d09fa19d96cf0d57f4f67cca2fa8ecb38d69e90eff1eafff046b",
+    "hol-platt\\c10004-hol-replay\\a02_replay.log": "739d5d5d508fab05c1a5e6a3638dcf7c820e9bdbb8352c2ca570230396fcb29a"
+  }
+}

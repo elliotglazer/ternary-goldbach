@@ -1,0 +1,347 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/GeoSlabScript.uo to produce theory-builder executable
+<<HOL message: Created theory "GeoSlab">>
+Saved definition ____ "fromzig_def"
+Saved definition ____ "nextw_def"
+Saved theorem _______ "next_p_rules"
+Saved theorem _______ "next_p_ind"
+Saved theorem _______ "next_p_strongind"
+Saved theorem _______ "next_p_cases"
+Saved theorem _______ "cv_nextw_thm"
+Finished translating nextw, stored in cv_nextw_thm
+
+WARNING: definition of cv_nextw has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem next_p[cv_pre]:
+  ∀w r v. next_p w r v
+Proof
+  ho_match_mp_tac nextw_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "next_ok"
+Saved definition ____ "dot_def"
+Saved definition ____ "comp0_def"
+Saved definition ____ "comp1_def"
+Saved definition ____ "comp2_def"
+Saved definition ____ "comp3_def"
+Saved definition ____ "comp4_def"
+Saved definition ____ "comp5_def"
+Saved definition ____ "comp6_def"
+Saved definition ____ "dispatch_def"
+Saved definition ____ "outs_def"
+Saved definition ____ "ok_def"
+Saved definition ____ "decomp_def"
+Starting translation of ok from GeoSlabTheory.
+Starting translation of outs from GeoSlabTheory.
+Starting translation of dispatch from GeoSlabTheory.
+Starting translation of comp4 from GeoSlabTheory.
+Starting translation of comp3 from GeoSlabTheory.
+Starting translation of comp2 from GeoSlabTheory.
+Starting translation of comp1 from GeoSlabTheory.
+Starting translation of comp0 from GeoSlabTheory.
+Saved theorem _______ "cv_comp0_thm"
+Finished translating comp0, stored in cv_comp0_thm
+Starting translation of comp1 from GeoSlabTheory.
+Saved theorem _______ "cv_comp1_thm"
+Finished translating comp1, stored in cv_comp1_thm
+Starting translation of comp2 from GeoSlabTheory.
+Saved theorem _______ "cv_comp2_thm"
+Finished translating comp2, stored in cv_comp2_thm
+Starting translation of comp3 from GeoSlabTheory.
+Saved theorem _______ "cv_comp3_thm"
+Finished translating comp3, stored in cv_comp3_thm
+Starting translation of comp4 from GeoSlabTheory.
+Saved theorem _______ "cv_comp4_thm"
+Finished translating comp4, stored in cv_comp4_thm
+Starting translation of dispatch from GeoSlabTheory.
+Starting translation of comp6 from GeoSlabTheory.
+Starting translation of comp5 from GeoSlabTheory.
+Saved theorem _______ "cv_comp5_thm"
+Finished translating comp5, stored in cv_comp5_thm
+Starting translation of comp6 from GeoSlabTheory.
+Saved theorem _______ "cv_comp6_thm"
+Finished translating comp6, stored in cv_comp6_thm
+Starting translation of dispatch from GeoSlabTheory.
+Saved theorem _______ "cv_dispatch_thm"
+Finished translating dispatch, stored in cv_dispatch_thm
+Starting translation of outs from GeoSlabTheory.
+Starting translation of dot from GeoSlabTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in GeoSlab)>>
+Saved definition ____ "cv_dot_def"
+Saved induction _____ "cv_dot_ind"
+Saved theorem _______ "cv_dot_thm"
+Finished translating dot, stored in cv_dot_thm
+Starting translation of outs from GeoSlabTheory.
+Starting translation of fromzig from GeoSlabTheory.
+Saved theorem _______ "cv_fromzig_thm"
+Finished translating fromzig, stored in cv_fromzig_thm
+Starting translation of outs from GeoSlabTheory.
+Saved definition ____ "cv_outs_def"
+Saved induction _____ "cv_outs_ind"
+Saved theorem _______ "cv_outs_thm"
+Finished translating outs, stored in cv_outs_thm
+Starting translation of ok from GeoSlabTheory.
+Saved definition ____ "MAP_fromzig_1_def"
+Saved induction _____ "MAP_fromzig_1_ind"
+Starting translation of MAP_fromzig from GeoSlabTheory.
+Saved definition ____ "cv_MAP_fromzig_def"
+Saved induction _____ "cv_MAP_fromzig_ind"
+Saved theorem _______ "cv_MAP_fromzig_thm"
+Finished translating MAP_fromzig, stored in cv_MAP_fromzig_thm
+Saved theorem _______ "MAP_fromzig_ho"
+Starting translation of ok from GeoSlabTheory.
+Saved theorem _______ "cv_ok_thm"
+Finished translating ok, stored in cv_ok_thm
+Starting translation of decomp from GeoSlabTheory.
+Saved definition ____ "MAP_dispatch_1_def"
+Saved induction _____ "MAP_dispatch_1_ind"
+Starting translation of MAP_dispatch from GeoSlabTheory.
+Saved definition ____ "cv_MAP_dispatch_def"
+Saved induction _____ "cv_MAP_dispatch_ind"
+Saved theorem _______ "cv_MAP_dispatch_thm"
+Finished translating MAP_dispatch, stored in cv_MAP_dispatch_thm
+Saved theorem _______ "MAP_dispatch_ho"
+Starting translation of decomp from GeoSlabTheory.
+Saved theorem _______ "cv_decomp_thm"
+Finished translating decomp, stored in cv_decomp_thm
+Saved definition ____ "digest_def"
+Saved definition ____ "live_def"
+Saved definition ____ "rawlive_def"
+Starting translation of live from GeoSlabTheory.
+Starting translation of digest from GeoSlabTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of live from GeoSlabTheory.
+Saved theorem _______ "cv_live_thm"
+Finished translating live, stored in cv_live_thm
+Starting translation of rawlive from GeoSlabTheory.
+Saved theorem _______ "cv_rawlive_thm"
+Finished translating rawlive, stored in cv_rawlive_thm
+Saved theorem _______ "pfx_compute"
+Saved definition ____ "pfx_def"
+Saved induction _____ "pfx_ind"
+Saved definition ____ "resident_def"
+Starting translation of resident from GeoSlabTheory.
+Starting translation of pfx from GeoSlabTheory.
+Saved theorem _______ "cv_pfx_thm"
+Finished translating pfx, stored in cv_pfx_thm
+Starting translation of resident from GeoSlabTheory.
+Saved theorem _______ "cv_resident_thm"
+Finished translating resident, stored in cv_resident_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/GeoSlabScript.sml:139: warning: Pattern is not exhaustive. Found near val [ng] = tokens ()
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/wide-band-slab/GeoSlabScript.sml:146: warning: Pattern is not exhaustive. Found near val [tag, k, b, ...] = tokens ()
+GEOMLOAD 43 0.003297
+COEFFLOAD b1j3200n8 0.034089
+SETUP b1j3200n8_plain1 0.149136
+SLAB b1j3200n8_plain1 1 0.263787 0.000125
+HITS b1j3200n8_plain1 0
+SETUP b1j3200n8_reuse1 0.149305
+SLAB b1j3200n8_reuse1 1 0.637859 0.000155
+HITS b1j3200n8_reuse1 0
+SETUP b1j3200n8_reuse2 0.006546
+SLAB b1j3200n8_reuse2 2 0.254667 0.00012
+HITS b1j3200n8_reuse2 2
+SETUP b1j3200n8_plain2 0.121566
+SLAB b1j3200n8_plain2 2 0.629941 0.00015
+HITS b1j3200n8_plain2 0
+SETUP b1j3200n8_plain3 0.116969
+SLAB b1j3200n8_plain3 3 0.277245 0.000181
+HITS b1j3200n8_plain3 0
+SETUP b1j3200n8_reuse3 0.006771
+SLAB b1j3200n8_reuse3 3 0.297884 0.000149
+HITS b1j3200n8_reuse3 2
+COEFFLOAD b1j3208n8 0.034491
+SETUP b1j3208n8_plain1 0.144826
+SLAB b1j3208n8_plain1 1 0.657759 0.000146
+HITS b1j3208n8_plain1 0
+SETUP b1j3208n8_reuse1 0.015189
+SLAB b1j3208n8_reuse1 1 0.39289 0.000145
+HITS b1j3208n8_reuse1 2
+SETUP b1j3208n8_reuse2 0.006114
+SLAB b1j3208n8_reuse2 2 0.256986 0.000127
+HITS b1j3208n8_reuse2 2
+SETUP b1j3208n8_plain2 0.120408
+SLAB b1j3208n8_plain2 2 0.743308 0.000152
+HITS b1j3208n8_plain2 0
+SETUP b1j3208n8_plain3 0.267649
+SLAB b1j3208n8_plain3 3 0.2592 0.000237
+HITS b1j3208n8_plain3 0
+SETUP b1j3208n8_reuse3 0.006836
+SLAB b1j3208n8_reuse3 3 0.265012 0.000126000000001
+HITS b1j3208n8_reuse3 2
+GEOMLOAD 97 0.001646
+COEFFLOAD b2j9601n8 0.031627
+SETUP b2j9601n8_plain1 0.047706
+SLAB b2j9601n8_plain1 1 0.159763 0.000174
+HITS b2j9601n8_plain1 0
+SETUP b2j9601n8_reuse1 0.057813
+SLAB b2j9601n8_reuse1 1 0.159856 0.000131000000001
+HITS b2j9601n8_reuse1 0
+SETUP b2j9601n8_reuse2 0.006609
+SLAB b2j9601n8_reuse2 2 0.120514 0.000197999999999
+HITS b2j9601n8_reuse2 2
+SETUP b2j9601n8_plain2 0.096084
+SLAB b2j9601n8_plain2 2 0.134146 0.000151
+HITS b2j9601n8_plain2 0
+SETUP b2j9601n8_plain3 0.106932
+SLAB b2j9601n8_plain3 3 0.125549 0.000179
+HITS b2j9601n8_plain3 0
+SETUP b2j9601n8_reuse3 0.00492
+SLAB b2j9601n8_reuse3 3 0.16034 0.000128
+HITS b2j9601n8_reuse3 2
+COEFFLOAD b2j9609n8 0.033196
+SETUP b2j9609n8_plain1 0.048198
+SLAB b2j9609n8_plain1 1 0.190228 0.000199
+HITS b2j9609n8_plain1 0
+SETUP b2j9609n8_reuse1 0.006966
+SLAB b2j9609n8_reuse1 1 0.143391 0.000183
+HITS b2j9609n8_reuse1 2
+SETUP b2j9609n8_reuse2 0.005496
+SLAB b2j9609n8_reuse2 2 0.174757 0.000291
+HITS b2j9609n8_reuse2 2
+SETUP b2j9609n8_plain2 0.062869
+SLAB b2j9609n8_plain2 2 0.153557 0.000157999999999
+HITS b2j9609n8_plain2 0
+SETUP b2j9609n8_plain3 0.049905
+SLAB b2j9609n8_plain3 3 0.202281 0.000181000000001
+HITS b2j9609n8_plain3 0
+SETUP b2j9609n8_reuse3 0.004597
+SLAB b2j9609n8_reuse3 3 0.143766 0.000133
+HITS b2j9609n8_reuse3 2
+GEOMLOAD 128 0.000672000000002
+COEFFLOAD b3j19201n8 0.037962
+SETUP b3j19201n8_plain1 0.027706
+SLAB b3j19201n8_plain1 1 0.049102 0.000146000000001
+HITS b3j19201n8_plain1 0
+SETUP b3j19201n8_reuse1 0.15253
+SLAB b3j19201n8_reuse1 1 0.045632 0.000149
+HITS b3j19201n8_reuse1 0
+SETUP b3j19201n8_reuse2 0.00689
+SLAB b3j19201n8_reuse2 2 0.05787 0.000166
+HITS b3j19201n8_reuse2 2
+SETUP b3j19201n8_plain2 0.02172
+SLAB b3j19201n8_plain2 2 0.048377 0.000182000000001
+HITS b3j19201n8_plain2 0
+SETUP b3j19201n8_plain3 0.019769
+SLAB b3j19201n8_plain3 3 0.055123 0.000165000000001
+HITS b3j19201n8_plain3 0
+SETUP b3j19201n8_reuse3 0.004944
+SLAB b3j19201n8_reuse3 3 0.075569 0.000175
+HITS b3j19201n8_reuse3 2
+COEFFLOAD b3j19209n8 0.031358
+SETUP b3j19209n8_plain1 0.017928
+SLAB b3j19209n8_plain1 1 0.056406 0.000146000000001
+HITS b3j19209n8_plain1 0
+SETUP b3j19209n8_reuse1 0.005625
+SLAB b3j19209n8_reuse1 1 0.046992 0.000131
+HITS b3j19209n8_reuse1 2
+SETUP b3j19209n8_reuse2 0.00503
+SLAB b3j19209n8_reuse2 2 0.047052 0.000138
+HITS b3j19209n8_reuse2 2
+SETUP b3j19209n8_plain2 0.019266
+SLAB b3j19209n8_plain2 2 0.098588 0.000164
+HITS b3j19209n8_plain2 0
+SETUP b3j19209n8_plain3 0.026063
+SLAB b3j19209n8_plain3 3 0.04347 0.000135
+HITS b3j19209n8_plain3 0
+SETUP b3j19209n8_reuse3 0.005975
+SLAB b3j19209n8_reuse3 3 0.042614 0.000245
+HITS b3j19209n8_reuse3 2
+GEOMLOAD 43 0.000203000000001
+COEFFLOAD b4j44801n8 0.034472
+SETUP b4j44801n8_plain1 0.006579
+SLAB b4j44801n8_plain1 1 0.02588 0.000157
+HITS b4j44801n8_plain1 0
+SETUP b4j44801n8_reuse1 0.011404
+SLAB b4j44801n8_reuse1 1 0.022503 0.000131
+HITS b4j44801n8_reuse1 0
+SETUP b4j44801n8_reuse2 0.005512
+SLAB b4j44801n8_reuse2 2 0.019384 0.000178999999999
+HITS b4j44801n8_reuse2 2
+SETUP b4j44801n8_plain2 0.010134
+SLAB b4j44801n8_plain2 2 0.016031 0.000166
+HITS b4j44801n8_plain2 0
+SETUP b4j44801n8_plain3 0.008524
+SLAB b4j44801n8_plain3 3 0.032558 0.000191000000001
+HITS b4j44801n8_plain3 0
+SETUP b4j44801n8_reuse3 0.040716
+SLAB b4j44801n8_reuse3 3 0.0151 0.000207000000001
+HITS b4j44801n8_reuse3 2
+COEFFLOAD b4j44809n8 0.036503
+SETUP b4j44809n8_plain1 0.008211
+SLAB b4j44809n8_plain1 1 0.021307 0.000151000000001
+HITS b4j44809n8_plain1 0
+SETUP b4j44809n8_reuse1 0.007263
+SLAB b4j44809n8_reuse1 1 0.019832 0.000128999999999
+HITS b4j44809n8_reuse1 2
+SETUP b4j44809n8_reuse2 0.006243
+SLAB b4j44809n8_reuse2 2 0.021639 0.000152
+HITS b4j44809n8_reuse2 2
+SETUP b4j44809n8_plain2 0.007701
+SLAB b4j44809n8_plain2 2 0.022348 0.000151000000001
+HITS b4j44809n8_plain2 0
+SETUP b4j44809n8_plain3 0.009665
+SLAB b4j44809n8_plain3 3 0.024757 0.000150000000001
+HITS b4j44809n8_plain3 0
+SETUP b4j44809n8_reuse3 0.007864
+SLAB b4j44809n8_reuse3 3 0.019536 0.000175
+HITS b4j44809n8_reuse3 2
+GEOMLOAD 128 0.000235999999999
+COEFFLOAD b5j74121n8 0.042318
+SETUP b5j74121n8_plain1 0.012081
+SLAB b5j74121n8_plain1 1 0.023216 0.000166
+HITS b5j74121n8_plain1 0
+SETUP b5j74121n8_reuse1 0.011658
+SLAB b5j74121n8_reuse1 1 0.019198 0.000125000000001
+HITS b5j74121n8_reuse1 0
+SETUP b5j74121n8_reuse2 0.007155
+SLAB b5j74121n8_reuse2 2 0.021324 0.000181
+HITS b5j74121n8_reuse2 2
+SETUP b5j74121n8_plain2 0.007903
+SLAB b5j74121n8_plain2 2 0.015311 0.000146000000001
+HITS b5j74121n8_plain2 0
+SETUP b5j74121n8_plain3 0.038519
+SLAB b5j74121n8_plain3 3 0.03132 0.000128
+HITS b5j74121n8_plain3 0
+SETUP b5j74121n8_reuse3 0.008622
+SLAB b5j74121n8_reuse3 3 0.02042 0.00014
+HITS b5j74121n8_reuse3 2
+COEFFLOAD b5j74129n8 0.037776
+SETUP b5j74129n8_plain1 0.01006
+SLAB b5j74129n8_plain1 1 0.02381 0.000134999999998
+HITS b5j74129n8_plain1 0
+SETUP b5j74129n8_reuse1 0.008037
+SLAB b5j74129n8_reuse1 1 0.016321 0.000205000000001
+HITS b5j74129n8_reuse1 2
+SETUP b5j74129n8_reuse2 0.006612
+SLAB b5j74129n8_reuse2 2 0.023007 0.000188
+HITS b5j74129n8_reuse2 2
+SETUP b5j74129n8_plain2 0.01063
+SLAB b5j74129n8_plain2 2 0.01739 0.000126
+HITS b5j74129n8_plain2 0
+SETUP b5j74129n8_plain3 0.008884
+SLAB b5j74129n8_plain3 3 0.017268 0.000166999999999
+HITS b5j74129n8_plain3 0
+SETUP b5j74129n8_reuse3 0.00526
+SLAB b5j74129n8_reuse3 3 0.0145 0.000133
+HITS b5j74129n8_reuse3 2
+GEOMETRY_DONE
+Exporting theory "GeoSlab" ... done.
+Theory "GeoSlab" took 11.6s to build
+Holmake: [1/1] GeoSlab

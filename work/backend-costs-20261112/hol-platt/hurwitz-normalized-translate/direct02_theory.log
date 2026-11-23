@@ -1,0 +1,85 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../small-time-selected-consumer[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanned 20 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/DirectTranslateScript.uo to produce theory-builder executable
+<<HOL message: Created theory "DirectTranslate">>
+Saved theorem _______ "choice_compute"
+Saved definition ____ "choice_def"
+Saved definition ____ "nquot_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in DirectTranslate)>>
+Saved theorem _______ "weight_compute"
+Saved definition ____ "weight_def"
+Saved induction _____ "weight_ind"
+Saved definition ____ "eval_def"
+Saved definition ____ "fits_def"
+Saved theorem _______ "offsets_compute"
+Saved definition ____ "offsets_def"
+Saved induction _____ "offsets_ind"
+Saved theorem _______ "orders_compute"
+Saved definition ____ "orders_def"
+Saved definition ____ "direct_def"
+Starting translation of direct from DirectTranslateTheory.
+Starting translation of orders from DirectTranslateTheory.
+Starting translation of choice from DirectTranslateTheory.
+Saved definition ____ "cv_choice_def"
+Saved induction _____ "cv_choice_ind"
+Saved theorem _______ "cv_choice_thm"
+Finished translating choice, stored in cv_choice_thm
+Starting translation of orders from DirectTranslateTheory.
+Starting translation of offsets from DirectTranslateTheory.
+Saved theorem _______ "cv_rep_pair_datatype"
+Saved theorem _______ "cv_rep_list_datatype"
+Starting translation of fits from DirectTranslateTheory.
+Starting translation of nquot from DirectTranslateTheory.
+Saved theorem _______ "cv_nquot_thm"
+Finished translating nquot, stored in cv_nquot_thm
+Starting translation of fits from DirectTranslateTheory.
+Starting translation of eval from DirectTranslateTheory.
+Saved theorem _______ "cv_eval_thm"
+Finished translating eval, stored in cv_eval_thm
+Starting translation of fits from DirectTranslateTheory.
+Saved theorem _______ "cv_fits_thm"
+Finished translating fits, stored in cv_fits_thm
+Starting translation of offsets from DirectTranslateTheory.
+Saved theorem _______ "cv_offsets_thm"
+Finished translating offsets, stored in cv_offsets_thm
+Starting translation of orders from DirectTranslateTheory.
+Starting translation of weight from DirectTranslateTheory.
+Saved definition ____ "cv_weight_def"
+Saved induction _____ "cv_weight_ind"
+
+ERROR: failed to prove precondition.
+
+  ∀weight_pre.
+    (∀v0 m k w scale cap v.
+       (∀v'.
+          v' = (v0,v) ⇒
+          ∀v0 v1.
+            v' = (v0,v1) ⇒
+            ∀n. v0 = SUC n ⇒ ∀v0 v1'. v1 = v0::v1' ⇒ ... ... cap v1') ⇒
+       weight_pre v0 m k w scale cap v) ⇒
+    ∀v0 m k w scale cap v. weight_pre v0 m k w scale cap v
+
+Stopping. Use cv_trans_pre instead (or one of its variants).
+error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/DirectTranslateScript.sml : HOL_ERR (HOL_ERROR {message = "Could not prove a precondition.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/DirectTranslateScript : HOL_ERR (HOL_ERROR {message = "Could not prove a precondition.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Uncaught exception at /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/HOL-1de64f8521b4758508bd875fbaf11d1768261b92/src/prekernel/Feedback.sml:196: HOL_ERR (HOL_ERROR {message = "Could not prove a precondition.", origins = [{origin_function = "failwith", origin_structure = "??", source_location = Loc_Unknown}]})
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/hurwitz-normalized-translate/DirectTranslateScript - exited with code 1

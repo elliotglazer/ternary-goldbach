@@ -1,0 +1,42 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanned 9 directories
+Holmake: Building 2 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterScript.uo to produce theory-builder executable
+<<HOL message: Created theory "StripParameter">>
+Saved definition ____ "prod_def"
+Saved definition ____ "numerator_def"
+Saved definition ____ "denominator_def"
+Saved definition ____ "geometry_def"
+Saved definition ____ "mass_def"
+Saved definition ____ "row_def"
+Exporting theory "StripParameter" ... done.
+Theory "StripParameter" took 0.18579s to build
+Holmake: [1/2] StripParameter
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceScript.uo to produce theory-builder executable
+<<HOL message: Created theory "StripParameterAcceptance">>
+PARAMETER_TIME start 0.002
+
+Exception raised at TotalDefn.xDefine:
+at Defn.Hol_defn: roughly on line 9, characters 2-201:
+at Defn.parse_quote:
+at Preterm.type-analysis: on line 9, characters 36-200:
+  
+Type error in function application.
+  Function: $= sg0 :int # int # num # int list # num -> bool
+  Argument: (23040,4096,24,
+ [(-1826,24427,-155830,645582,-2085728,7592049,12653414,-2464951,713538,
+   -167373,25823,-1911)],544944437313405518632319222735757585791582208000) :int #
+int #
+int #
+(int # int # int # int # int # int # int # int # int # int # int # int) list
+# int
+  Reason: Attempt to unify different type operators: integer$int and pair$prod
+
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/strip-parameter-hol/StripParameterAcceptanceScript - exited with code 1

@@ -1,0 +1,108 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 37 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val checked = fn: string -> term -> tactic -> thm
+OK..
+metis: r[+0+4]+0+0+0+1#
+r[+0+4]+0+0+0+1#
+EXP_HORNER_DIAGNOSTIC_PASS,seh_round_pair_error
+val seh_round_pair_error =
+   ⊢ ∀s r t.
+       0 < s ⇒
+       modu
+         (pair_value 1 (round_scaled s r,round_scaled s t) −
+          pair_value s (r,t)) ≤ 1: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_affine_distance
+val seh_affine_distance =
+   ⊢ ∀a t u v.
+       modu (seh_affine a t u − seh_affine a t v) = abs t * modu (u − v): thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_affine_scale
+val seh_affine_scale =
+   ⊢ ∀a t z. seh_affine a t (a * z) = a * seh_affine 1 t z: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_den_positive
+val seh_den_positive = ⊢ ∀d k. 0 < d ⇒ 0 < &d * &(k + 1): thm
+OK..
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+3 basis elements and 0 critical pairs
+Generating HOL version of proof
+3 basis elements and 0 critical pairs
+Generating HOL version of proof
+4 basis elements and 1 critical pairs
+4 basis elements and 0 critical pairs
+Generating HOL version of proof
+5 basis elements and 2 critical pairs
+5 basis elements and 1 critical pairs
+5 basis elements and 0 critical pairs
+Generating HOL version of proof
+EXP_HORNER_DIAGNOSTIC_PASS,seh_exact_affine
+val seh_exact_affine =
+   ⊢ ∀grid d k p u.
+       0 < d ⇒
+       seh_affine (&grid) (real_of_int p / &d / &(k + 1)) (pair_value 1 u) =
+       pair_value (&d * &(k + 1))
+         (&grid * (&d * &(k + 1)) − p * SND u,p * FST u): thm
+OK..
+metis: r[+0+4]+0+0+0+1#
+EXP_HORNER_DIAGNOSTIC_PASS,seh_actual_step_error
+val seh_actual_step_error =
+   ⊢ ∀grid d k p u.
+       0 < d ⇒
+       modu
+         (pair_value 1 (source_exp_step grid p d k u) −
+          seh_affine (&grid) (real_of_int p / &d / &(k + 1)) (pair_value 1 u)) ≤
+       1: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_update_error
+val seh_update_error =
+   ⊢ ∀a t eps z u v.
+       modu (z − seh_affine a t u) ≤ 1 ∧ modu (u − v) ≤ eps ⇒
+       modu (z − seh_affine a t v) ≤ 1 + abs t * eps: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_bound_nonnegative
+val seh_bound_nonnegative = ⊢ ∀k. 0 ≤ seh_bound k: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_bound_step
+val seh_bound_step =
+   ⊢ ∀k phase.
+       abs phase ≤ 2 ⇒
+       1 + abs (phase / &(k + 1)) * seh_bound (SUC k) ≤ seh_bound k: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,seh_initial_exact
+val seh_initial_exact =
+   ⊢ ∀grid k phase. pair_value 1 (&grid,0) = &grid * seh_ideal phase 0 k: thm
+OK..
+metis: r[+0+7]+0+0+0+0+0+0+1#
+EXP_HORNER_DIAGNOSTIC_PASS,source_exp_horner_error
+val source_exp_horner_error =
+   ⊢ ∀grid d p.
+       0 < d ∧ abs (real_of_int p / &d) ≤ 2 ⇒
+       ∀n k.
+         modu
+           (pair_value 1 (source_exp_horner grid p d n k) −
+            &grid * seh_ideal (real_of_int p / &d) n k) ≤ seh_bound k: thm
+OK..
+EXP_HORNER_DIAGNOSTIC_PASS,source_exp_horner_zero_error
+val source_exp_horner_zero_error =
+   ⊢ ∀grid d p.
+       0 < d ∧ abs (real_of_int p / &d) ≤ 2 ⇒
+       ∀n. modu
+             (pair_value 1 (source_exp_horner grid p d n 0) −
+              &grid * seh_ideal (real_of_int p / &d) n 0) ≤ 9: thm
+EXP_HORNER_DIAGNOSTIC_ALL_DONE

@@ -1,0 +1,24 @@
+{
+  "scope": "Abstract charged scheduling only; no arithmetic evaluator data",
+  "checks": 58129,
+  "cases": 3509,
+  "cache_streams": 781,
+  "pins": {
+    "major-constants/ONLINE_SPARSE_POLYPHASE_SWITCHING_2026-11-11.md": "078A8C9A9DA83888C837F1D13995EF87B2E7D14733587616D793F823AB7C0F52",
+    "major-constants/online_polyphase_switching_20261111.py": "B4DDCBF0D9B3A155C0D921D68B43DE3978CB4FD126CCB8FB9857219F13D01FBF",
+    "major-constants/online_polyphase_switching_20261111.json": "E23E7BB25C69DB258D79C057BC259C617C204216DD9439BE8A8FED0E13AEB92A",
+    "major-constants/SMALL_THETA_OFFGRID_ARITHMETIC_SCHEDULE_2026-11-11.md": "8B299BFBDB936C6B85E0AEE6A3D61B0104A2D40D9E604DA98E1E8A76AAD8A0B9",
+    "independent-feasibility/REVIEW_SMALL_THETA_OFFGRID_ARITHMETIC_SCHEDULE_2026-11-11.md": "F231302A5FBB884B4A4020E7D104264A8BEBAB9FB71D47BB45715907CE8BD01B"
+  },
+  "covers": [
+    "all stopping prefixes",
+    "K=0",
+    "empty stream",
+    "zero and rational rents",
+    "large rent jump",
+    "lazy setup",
+    "duplicate queries",
+    "overlapping cache stencils"
+  ],
+  "comparator": "same realized requests; fixed purchase; nonnegative local-minus-dense rents"
+}

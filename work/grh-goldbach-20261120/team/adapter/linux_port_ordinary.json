@@ -1,0 +1,31 @@
+{
+  "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "workdir": "/tmp/goldbach-grh-port-zdwkvusc",
+  "inputs": {
+    "/mnt/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/ternary-goldbach/TernaryGoldbach/Statement.lean": "3f61837d2c3a0dde3a1997f05af21c20c7fe6ee13e29891125495f6947596bf8",
+    "/mnt/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/grh-goldbach-20261120/FullGRH.lean": "e5e8c5691e16cc10a28123f2bfed636b35d24d058d2e5ac4444f9122fd184260",
+    "/verification/lean/src/Statements.lean": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  },
+  "upstream_oleans": {
+    "Statements.olean": "/verification/lean/.lake/build/lib/lean/Statements.olean",
+    "Mathlib.olean": "/verification/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib.olean"
+  },
+  "jobs": [
+    {
+      "module": "TernaryGoldbach/Statement",
+      "command": [
+        "/verification/lean-4.33.1-linux/bin/lean",
+        "-j1",
+        "-M8192",
+        "-o",
+        "TernaryGoldbach/Statement.olean",
+        "TernaryGoldbach/Statement.lean"
+      ],
+      "exit_code": 124,
+      "wall_seconds": 602.1899083919998,
+      "cpu_seconds": 439.82786000000004,
+      "log": "linux_TernaryGoldbach_Statement_ordinary.log",
+      "sha256_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

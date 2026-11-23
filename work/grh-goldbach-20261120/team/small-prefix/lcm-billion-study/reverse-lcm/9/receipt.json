@@ -1,0 +1,36 @@
+{
+  "power": 9,
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "emit_cpu_seconds": 0.015625,
+  "inputs": {
+    "PrimeBitmap.lean": "3f2a51e21acb33c5130084b7563eb9e5b4cd58e5e038e919da94607efc80b93b",
+    "Table.lean": "be053bea218b6508070136243d7e9cf84c1fa6882c4deae739c8339239e4ea5d",
+    "PrefixCheck.lean": "d10aa064cb06b8ce3212c63d2e2c9f35d73b9865b1744828f37f2a16b2097089",
+    "PrefixSource.lean": "50c769896b88db949fc47df39b08f5339f3c9a437418edc723e74c06d35f754f",
+    "PrefixJoin.lean": "4bbf9ad8972280e5866fbc3c8ecfa58cea0e23ef1a3aeffcad42e00329ec036c",
+    "FastHex.lean": "7375aeb6cc6f1919cf90c92af280faadfe975c2ff3539ac6538623b9c8bd4d97",
+    "PrefixFactorial.lean": "773b49a781bad095102fe39d5d7ed847c7a87f4f460891c646188c8f820060bc",
+    "LcmBridge.lean": "8e6df4aea34a0701249e17d158638c6152526b2cd732dc0ab4672754bcea6b5a",
+    "Power9.lean": "85aa0a717d28cf38e4f49df4902fd90d9696e2ac7f68033fce5f3f3c1d957774"
+  },
+  "source_sha256": "c7a96c2764fb3d87970254d5b5f1d4b91b88fa5c29a6a24846d5306cbd289a10",
+  "olean_sha256": "75351f86146bf9348ed453e9b8635c3a097e13af03889adc009bcaa814d98b0c",
+  "olean_bytes": 12005528,
+  "proof": {
+    "cpu_seconds": 120.296875,
+    "wall_seconds": 114.9611159999913,
+    "output": "",
+    "user_seconds": 96.828125,
+    "system_seconds": 23.46875,
+    "max_rss_kib": 2852416
+  },
+  "audit": {
+    "cpu_seconds": 10.046875,
+    "wall_seconds": 10.18973470000492,
+    "output": "'SmallGoldbach.Power9.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SmallGoldbach.Power9.binaryGoldbachUpToPower' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "user_seconds": 6.234375,
+    "system_seconds": 3.8125,
+    "max_rss_kib": 1088984
+  },
+  "cpu_seconds": 130.359375
+}

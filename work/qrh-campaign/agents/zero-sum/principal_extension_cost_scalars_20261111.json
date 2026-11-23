@@ -1,0 +1,96 @@
+{
+  "status": "PASS_EXACT_METADATA_ONLY",
+  "scope": "No special functions, zeros, primes, FFTs, timing or feasible-parameter claims",
+  "rows": [
+    {
+      "H": 100000000000,
+      "added_height": 99900000000,
+      "added_main_term_million_enclosure": [
+        357700000000,
+        357701000000
+      ],
+      "point_grid_1_over8_intervals": 799200000000,
+      "point_grid_1_over100_intervals": 9990000000000,
+      "one_bit_grid_payload_bytes": 99900000000,
+      "direct_EM_Nceil_t_plus40_head_terms": 39999960032367600000000,
+      "RS_main_terms_endpoint_upper": 126157,
+      "direct_RS_1_over8_main_terms_upper": 100824674400000000,
+      "direct_RS_1_over8_main_terms_lower_last_half": 35682400000000000,
+      "endpoint_phase_log_guard_bits": 37
+    },
+    {
+      "H": 1000000000000,
+      "added_height": 999900000000,
+      "added_main_term_million_enclosure": [
+        3945703000000,
+        3945704000000
+      ],
+      "point_grid_1_over8_intervals": 7999200000000,
+      "point_grid_1_over100_intervals": 99990000000000,
+      "one_bit_grid_payload_bytes": 999900000000,
+      "direct_EM_Nceil_t_plus40_head_terms": 3999999960323967600000000,
+      "RS_main_terms_endpoint_upper": 398943,
+      "direct_RS_1_over8_main_terms_upper": 3191224845600000000,
+      "direct_RS_1_over8_main_terms_lower_last_half": 1128376000000000000,
+      "endpoint_phase_log_guard_bits": 40
+    },
+    {
+      "H": 3000000000000,
+      "added_height": 2999900000000,
+      "added_main_term_million_enclosure": [
+        12362155000000,
+        12362156000000
+      ],
+      "point_grid_1_over8_intervals": 23999200000000,
+      "point_grid_1_over100_intervals": 299990000000000,
+      "one_bit_grid_payload_bytes": 2999900000000,
+      "direct_EM_Nceil_t_plus40_head_terms": 35999999960971967600000000,
+      "RS_main_terms_endpoint_upper": 690989,
+      "direct_RS_1_over8_main_terms_upper": 16583183208800000000,
+      "direct_RS_1_over8_main_terms_lower_last_half": 5863224000000000000,
+      "endpoint_phase_log_guard_bits": 42
+    },
+    {
+      "H": 9000000000000,
+      "added_height": 8999900000000,
+      "added_main_term_million_enclosure": [
+        38660607000000,
+        38660608000000
+      ],
+      "point_grid_1_over8_intervals": 71999200000000,
+      "point_grid_1_over100_intervals": 899990000000000,
+      "one_bit_grid_payload_bytes": 8999900000000,
+      "direct_EM_Nceil_t_plus40_head_terms": 323999999962915967600000000,
+      "RS_main_terms_endpoint_upper": 1196827,
+      "direct_RS_1_over8_main_terms_upper": 86170586538400000000,
+      "direct_RS_1_over8_main_terms_lower_last_half": 30466224000000000000,
+      "endpoint_phase_log_guard_bits": 44
+    },
+    {
+      "H": 10000000000000,
+      "added_height": 9999900000000,
+      "added_main_term_million_enclosure": [
+        43123944000000,
+        43123945000000
+      ],
+      "point_grid_1_over8_intervals": 79999200000000,
+      "point_grid_1_over100_intervals": 999990000000000,
+      "one_bit_grid_payload_bytes": 9999900000000,
+      "direct_EM_Nceil_t_plus40_head_terms": 399999999963239967600000000,
+      "RS_main_terms_endpoint_upper": 1261567,
+      "direct_RS_1_over8_main_terms_upper": 100924350746400000000,
+      "direct_RS_1_over8_main_terms_lower_last_half": 35682480000000000000,
+      "endpoint_phase_log_guard_bits": 44
+    }
+  ],
+  "literal_window": {
+    "N": 32768,
+    "K": 44,
+    "radix_two_butterflies": 80265216,
+    "convolution_pointwise_products": 2883584,
+    "gamma_base_nodes": 32768,
+    "dense_two_KN_tables_complex_slots": 2883584
+  },
+  "machin_pi_interval_width_lt_2_minus350": true,
+  "rounded_pi_interval_width_le_2_minus69": true
+}

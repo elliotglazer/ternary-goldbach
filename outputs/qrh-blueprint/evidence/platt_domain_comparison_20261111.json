@@ -1,0 +1,192 @@
+{
+  "status": "exact requested-height vs published-domain arithmetic only; no finite zero theorem certified",
+  "publication": "Platt, Numerical computations concerning the GRH, accepted manuscript Theorem9.1; arXiv1305.3087v1 Theorem7.1",
+  "published_height": "max(1e8/c,200+(7.5e7 if even c else3.75e7)/c), exact rational",
+  "parity": "modulus/conductor parity, not character parity",
+  "active_conductors": 150000,
+  "primitive_characters": 5543640188,
+  "stats": {
+    "original_plus": {
+      "inside": 41667,
+      "outside": 108333,
+      "equality": 0,
+      "inside_chars": 1140703839,
+      "outside_chars": 4402936349,
+      "odd_outside": 33333,
+      "even_outside": 75000,
+      "min_outside": 4,
+      "max_outside": 300000,
+      "max_ratio": "8/3",
+      "max_ratio_c": 300000,
+      "max_excess": "5171629",
+      "max_excess_c": 4,
+      "ceiling_only_exceptions": 34,
+      "weighted_height_topup_lower": "1017503679330498277/500000",
+      "weighted_height_topup_upper": "203500735866110479/100000"
+    },
+    "original_star": {
+      "inside": 75000,
+      "outside": 75000,
+      "equality": 1,
+      "inside_chars": 1847865075,
+      "outside_chars": 3695775113,
+      "odd_outside": 25000,
+      "even_outside": 50000,
+      "min_outside": 100001,
+      "max_outside": 300000,
+      "max_ratio": "20/9",
+      "max_ratio_c": 300000,
+      "max_excess": "550",
+      "max_excess_c": 300000,
+      "ceiling_only_exceptions": 75,
+      "weighted_height_topup_lower": "1106160353523842663/1000000",
+      "weighted_height_topup_upper": "553080176761958817/500000"
+    },
+    "reduced_plus": {
+      "inside": 96233,
+      "outside": 53767,
+      "equality": 0,
+      "inside_chars": 3843878990,
+      "outside_chars": 1699761198,
+      "odd_outside": 0,
+      "even_outside": 53767,
+      "min_outside": 84748,
+      "max_outside": 300000,
+      "max_ratio": "10/9",
+      "max_ratio_c": 300000,
+      "max_excess": "2021735/31239",
+      "max_excess_c": 124956,
+      "ceiling_only_exceptions": 105,
+      "weighted_height_topup_lower": "33949834001939927/500000",
+      "weighted_height_topup_upper": "67899668003933591/1000000"
+    },
+    "reduced_star": {
+      "inside": 150000,
+      "outside": 0,
+      "equality": 0,
+      "inside_chars": 5543640188,
+      "outside_chars": 0,
+      "odd_outside": 0,
+      "even_outside": 0,
+      "min_outside": null,
+      "max_outside": null,
+      "max_ratio": "0",
+      "max_ratio_c": null,
+      "max_excess": "0",
+      "max_excess_c": null,
+      "ceiling_only_exceptions": 0,
+      "weighted_height_topup_lower": "0",
+      "weighted_height_topup_upper": "0"
+    }
+  },
+  "samples": [
+    {
+      "c": 1,
+      "primitive_characters": 1,
+      "published_height_exact": "100000000",
+      "original_plus": 60343058,
+      "original_star": 1231487,
+      "reduced_plus": 41485915,
+      "reduced_star": 846648
+    },
+    {
+      "c": 3,
+      "primitive_characters": 1,
+      "published_height_exact": "100000000/3",
+      "original_plus": 20114486,
+      "original_star": 410496,
+      "reduced_plus": 13828772,
+      "reduced_star": 282216
+    },
+    {
+      "c": 4,
+      "primitive_characters": 1,
+      "published_height_exact": "25000000",
+      "original_plus": 30171629,
+      "original_star": 615744,
+      "reduced_plus": 20743058,
+      "reduced_star": 423324
+    },
+    {
+      "c": 83333,
+      "primitive_characters": 82005,
+      "published_height_exact": "100000000/83333",
+      "original_plus": 1200,
+      "original_star": 1000,
+      "reduced_plus": 698,
+      "reduced_star": 250
+    },
+    {
+      "c": 83335,
+      "primitive_characters": 35685,
+      "published_height_exact": "20000000/16667",
+      "original_plus": 1200,
+      "original_star": 1000,
+      "reduced_plus": 698,
+      "reduced_star": 250
+    },
+    {
+      "c": 85136,
+      "primitive_characters": 18660,
+      "published_height_exact": "6250000/5321",
+      "original_plus": 1618,
+      "original_star": 1000,
+      "reduced_plus": 1175,
+      "reduced_star": 250
+    },
+    {
+      "c": 85140,
+      "primitive_characters": 4428,
+      "published_height_exact": "5000000/4257",
+      "original_plus": 1618,
+      "original_star": 1000,
+      "reduced_plus": 1175,
+      "reduced_star": 250
+    },
+    {
+      "c": 85144,
+      "primitive_characters": 19710,
+      "published_height_exact": "12500000/10643",
+      "original_plus": 1618,
+      "original_star": 1000,
+      "reduced_plus": 1175,
+      "reduced_star": 250
+    },
+    {
+      "c": 100000,
+      "primitive_characters": 16000,
+      "published_height_exact": "1000",
+      "original_plus": 1407,
+      "original_star": 1000,
+      "reduced_plus": 1030,
+      "reduced_star": 250
+    },
+    {
+      "c": 125000,
+      "primitive_characters": 20000,
+      "published_height_exact": "800",
+      "original_plus": 1200,
+      "original_star": 1000,
+      "reduced_plus": 864,
+      "reduced_star": 250
+    },
+    {
+      "c": 149999,
+      "primitive_characters": 144963,
+      "published_height_exact": "100000000/149999",
+      "original_plus": 1200,
+      "original_star": 1000,
+      "reduced_plus": 500,
+      "reduced_star": 250
+    },
+    {
+      "c": 300000,
+      "primitive_characters": 16000,
+      "published_height_exact": "450",
+      "original_plus": 1200,
+      "original_star": 1000,
+      "reduced_plus": 500,
+      "reduced_star": 250
+    }
+  ]
+}

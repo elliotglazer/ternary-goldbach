@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scope": "Compiled generic batch-prime soundness, evaluator translation and three-prime probe only",
+  "probe_primes": [
+    2,
+    3,
+    7
+  ],
+  "rejected_controls": 5,
+  "axioms": [
+    "bool.BOOL_CASES_AX",
+    "bool.ETA_AX",
+    "bool.INFINITY_AX",
+    "bool.SELECT_AX"
+  ],
+  "full_fixture_measured": false,
+  "artifacts": {
+    "BatchPrimeScript.sml": "4acf386084ba31791c7e37ad6abb8e9c9e72af97306f6afbaff5d057949e96d1",
+    ".hol/objs/BatchPrimeTheory.dat": "90f1974d38468c2a46f3687223b7b55624266eb65799a3dad5b303555eea74c1",
+    "batch_probe.sml": "d39087c9b97f05107461a94ac3d73009cbf6e0a4795799b10df3d3ceb9479168",
+    "batch_probe02.log": "8d129116367d7ad9845ec244b58b5877fa30cad03271731c3fea07dbdcdaf923"
+  }
+}

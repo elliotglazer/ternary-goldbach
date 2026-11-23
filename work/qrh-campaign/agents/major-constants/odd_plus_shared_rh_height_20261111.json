@@ -1,0 +1,177 @@
+{
+  "scope": "odd-only conditional height theorem; rational scalar witnesses, no spectrum",
+  "checks": {
+    "sqrt_odd_conductor": true,
+    "growth_at_440": true,
+    "IA_constant": true,
+    "IA_odd_slope": true,
+    "EB_witness": true,
+    "lower_root_3": true,
+    "upper_root_3": true,
+    "u_ge10_3": true,
+    "EA_witness_3": true,
+    "scaled_E2_3": true,
+    "lower_root_100": true,
+    "upper_root_100": true,
+    "u_ge10_100": true,
+    "EA_witness_100": true,
+    "scaled_E2_100": true,
+    "lower_root_1000": true,
+    "upper_root_1000": true,
+    "u_ge10_1000": true,
+    "EA_witness_1000": true,
+    "scaled_E2_1000": true,
+    "lower_root_10000": true,
+    "upper_root_10000": true,
+    "u_ge10_10000": true,
+    "EA_witness_10000": true,
+    "scaled_E2_10000": true,
+    "coefficient": true,
+    "target_coefficient": true,
+    "energy_cap": true,
+    "full_orthogonal_radius": true,
+    "base_dominance": true,
+    "star_dominance": true,
+    "height_example_3": true,
+    "height_example_5": true,
+    "height_example_99": true,
+    "height_example_101": true,
+    "height_example_999": true,
+    "height_example_1001": true,
+    "height_example_9999": true,
+    "height_example_10001": true,
+    "height_example_60001": true,
+    "height_example_100001": true,
+    "height_example_132899": true
+  },
+  "EB": "4727/1000000000000000000",
+  "bands": [
+    {
+      "lower": 3,
+      "upper_for_bound": 100,
+      "u": "21",
+      "sl": "433/250",
+      "su": "10",
+      "EA": "1039/1000000000000000000000",
+      "G": "993466142171399059/649500000",
+      "scaled_E2": "2044227564225250072771137/5412500000000000000000000000000"
+    },
+    {
+      "lower": 100,
+      "upper_for_bound": 1000,
+      "u": "20",
+      "sl": "10",
+      "su": "32",
+      "EA": "3711/50000000000000000000",
+      "G": "1151401481183/78125",
+      "scaled_E2": "61262142962564170161/195312500000000000000000000"
+    },
+    {
+      "lower": 1000,
+      "upper_for_bound": 10000,
+      "u": "39/2",
+      "sl": "1581/50",
+      "su": "100",
+      "EA": "5781/10000000000000000000",
+      "G": "197795503315021/79050000",
+      "scaled_E2": "59162054271437170638981/164687500000000000000000000000"
+    },
+    {
+      "lower": 10000,
+      "upper_for_bound": 132900,
+      "u": "96/5",
+      "sl": "100",
+      "su": "365",
+      "EA": "193/100000000000000000",
+      "G": "883702060393/1000000",
+      "scaled_E2": "122724266490007054803/312500000000000000000000000"
+    }
+  ],
+  "examples": [
+    {
+      "c": 3,
+      "candidate": 11690722,
+      "coupled_fallback": 12804105,
+      "base": 9000000,
+      "star": 363700
+    },
+    {
+      "c": 5,
+      "candidate": 7014514,
+      "coupled_fallback": 7682543,
+      "base": 5400000,
+      "star": 218220
+    },
+    {
+      "c": 99,
+      "candidate": 354459,
+      "coupled_fallback": 388198,
+      "base": 272728,
+      "star": 11022
+    },
+    {
+      "c": 101,
+      "candidate": 330908,
+      "coupled_fallback": 355711,
+      "base": 267327,
+      "star": 10803
+    },
+    {
+      "c": 999,
+      "candidate": 33635,
+      "coupled_fallback": 36143,
+      "base": 27028,
+      "star": 1093
+    },
+    {
+      "c": 1001,
+      "candidate": 32734,
+      "coupled_fallback": 34403,
+      "base": 26974,
+      "star": 1091
+    },
+    {
+      "c": 9999,
+      "candidate": 3457,
+      "coupled_fallback": 3624,
+      "base": 2701,
+      "star": 300
+    },
+    {
+      "c": 10001,
+      "candidate": 3407,
+      "coupled_fallback": 3457,
+      "base": 2700,
+      "star": 300
+    },
+    {
+      "c": 60001,
+      "candidate": 735,
+      "coupled_fallback": 743,
+      "base": 450,
+      "star": 300
+    },
+    {
+      "c": 100001,
+      "candidate": 521,
+      "coupled_fallback": 526,
+      "base": 270,
+      "star": 300
+    },
+    {
+      "c": 132899,
+      "candidate": 442,
+      "coupled_fallback": 455,
+      "base": 204,
+      "star": 300
+    }
+  ],
+  "input_sha256": {
+    "work/qrh-campaign/agents/major-constants/COUPLED_PLUS_HEIGHT_CUBIC_BUDGET_2026-11-11.md": "6767F9E14E5B6D7264D972085EA9C70359C87544403D37DAE315CBEF2510FC54",
+    "work/qrh-campaign/agents/zero-sum/REVIEW_COUPLED_PLUS_HEIGHT_CUBIC_BUDGET_2026-11-11.md": "A410B45323B9EB77E006E6E47403C6C4A8EC69E2E59E6C66FF44089E80FED6A5",
+    "work/qrh-blueprint/SHARED_RH_STAR_BUDGET_2026-11-11.md": "A5457ABF7E67FD98C88F46B8F08DF4F8BD35B44B48A3B734E5F660F94CCAA993",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Thm714.lean": "7BBF8F06B1A0B703A0C00FF1E5E64997792C4E93629CED591FCB6A646301FD3F",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/Prop942.lean": "35B170971DBD0F1C6646CD86ECE8C3A86021085C1B07730141CD6311D9CA5716",
+    "work/ternary-goldbach/TernaryGoldbach/MajorArcs/ArcChars.lean": "0A5BA0770CC02C94C0A802FF78FC297FE7B5776153516033ECC189331A6041CF"
+  }
+}

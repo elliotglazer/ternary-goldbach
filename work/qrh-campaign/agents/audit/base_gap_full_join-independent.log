@@ -1,0 +1,61 @@
+{
+  "status": "Complete conditional paper coverage only; finite spectrum, global QRH validation, analytic producer replacements and Lean proofs remain obligations.",
+  "source_pin": "23b2d68ca344203d4384e0aff7affa4ec034bef9",
+  "spectral_profile": "Original uniform beta<=111/200 through Hp(c); weighted alternative not substituted.",
+  "reduced_q_domain": [
+    1,
+    150000
+  ],
+  "u_domain": [
+    "1200000/49",
+    1200000
+  ],
+  "y_domain": "y>=1e25",
+  "finite_full_gap_count": 149997,
+  "joined_exception_count": 3,
+  "conditional_covered_count": 150000,
+  "remaining_uncovered_denominators": 0,
+  "joins": [
+    {
+      "q": 1,
+      "finite_u_interval": [
+        "1200000/49",
+        486477
+      ],
+      "high_u_interval": [
+        190000,
+        1200000
+      ],
+      "overlap": 296477
+    },
+    {
+      "q": 2,
+      "finite_u_interval": [
+        "1200000/49",
+        972954
+      ],
+      "high_u_interval": [
+        300000,
+        1200000
+      ],
+      "overlap": 672954
+    },
+    {
+      "q": 3,
+      "finite_u_interval": [
+        "1200000/49",
+        1068377
+      ],
+      "high_u_interval": [
+        300000,
+        1200000
+      ],
+      "overlap": 768377
+    }
+  ],
+  "not_claimed": [
+    "finite spectral truth",
+    "unconditional analytic producers",
+    "Lean theorem closure"
+  ]
+}

@@ -1,0 +1,132 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanned 24 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/MomentRatesScript.uo to produce theory-builder executable
+<<HOL message: Created theory "MomentRates">>
+Saved definition ____ "points_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in MomentRates)>>
+Saved definition ____ "step_def"
+Saved induction _____ "step_ind"
+Saved definition ____ "mass_def"
+Saved induction _____ "mass_ind"
+Saved theorem _______ "numer_compute"
+Saved definition ____ "numer_def"
+Saved definition ____ "rate_ok_def"
+Starting translation of rate_ok from MomentRatesTheory.
+Starting translation of numer from MomentRatesTheory.
+Starting translation of mass from MomentRatesTheory.
+Saved theorem _______ "cv_rep_pair_datatype"
+Starting translation of ABS from integerTheory.
+Saved theorem _______ "cv_ABS_thm"
+Finished translating ABS, stored in cv_ABS_thm
+Starting translation of mass from MomentRatesTheory.
+Saved definition ____ "cv_mass_def"
+Saved induction _____ "cv_mass_ind"
+Saved theorem _______ "cv_mass_thm"
+Finished translating mass, stored in cv_mass_thm
+Starting translation of numer from MomentRatesTheory.
+Starting translation of step from MomentRatesTheory.
+Saved definition ____ "cv_step_def"
+Saved induction _____ "cv_step_ind"
+Saved theorem _______ "cv_step_thm"
+Finished translating step, stored in cv_step_thm
+Starting translation of numer from MomentRatesTheory.
+Saved theorem _______ "cv_numer_thm"
+Finished translating numer, stored in cv_numer_thm
+Starting translation of rate_ok from MomentRatesTheory.
+Starting translation of points from MomentRatesTheory.
+Saved definition ____ "cv_points_def"
+Saved induction _____ "cv_points_ind"
+Saved theorem _______ "cv_points_thm"
+Finished translating points, stored in cv_points_thm
+Starting translation of rate_ok from MomentRatesTheory.
+Starting translation of FACT from arithmeticTheory.
+Saved definition ____ "cv_FACT_def"
+Saved induction _____ "cv_FACT_ind"
+Saved theorem _______ "cv_FACT_thm"
+Finished translating FACT, stored in cv_FACT_thm
+Starting translation of rate_ok from MomentRatesTheory.
+Saved theorem _______ "cv_rate_ok_thm"
+Finished translating rate_ok, stored in cv_rate_ok_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/MomentRatesScript.sml:36: warning: Pattern is not exhaustive. Found near val [idx, r, f, ...] = line ()
+Saved theorem _______ "kernel_0_rate"
+Saved theorem _______ "kernel_1_rate"
+Saved theorem _______ "kernel_2_rate"
+Saved theorem _______ "kernel_3_rate"
+Saved theorem _______ "kernel_4_rate"
+Saved theorem _______ "kernel_5_rate"
+Saved theorem _______ "kernel_6_rate"
+Saved theorem _______ "kernel_7_rate"
+Saved theorem _______ "kernel_8_rate"
+Saved theorem _______ "kernel_9_rate"
+Saved theorem _______ "kernel_10_rate"
+Saved theorem _______ "kernel_11_rate"
+Saved theorem _______ "kernel_12_rate"
+Saved theorem _______ "kernel_13_rate"
+Saved theorem _______ "kernel_14_rate"
+Saved theorem _______ "kernel_15_rate"
+Saved theorem _______ "kernel_16_rate"
+Saved theorem _______ "kernel_17_rate"
+Saved theorem _______ "kernel_18_rate"
+Saved theorem _______ "kernel_19_rate"
+Saved theorem _______ "kernel_20_rate"
+Saved theorem _______ "kernel_21_rate"
+Saved theorem _______ "kernel_22_rate"
+Saved theorem _______ "kernel_23_rate"
+Saved theorem _______ "kernel_24_rate"
+Saved theorem _______ "kernel_25_rate"
+Saved theorem _______ "kernel_26_rate"
+Saved theorem _______ "kernel_27_rate"
+Saved theorem _______ "kernel_28_rate"
+Saved theorem _______ "kernel_29_rate"
+Saved theorem _______ "kernel_30_rate"
+Saved theorem _______ "kernel_31_rate"
+Saved theorem _______ "kernel_32_rate"
+Saved theorem _______ "kernel_33_rate"
+Saved theorem _______ "kernel_34_rate"
+Saved theorem _______ "kernel_35_rate"
+Saved theorem _______ "kernel_36_rate"
+Saved theorem _______ "kernel_37_rate"
+Saved theorem _______ "kernel_38_rate"
+Saved theorem _______ "kernel_39_rate"
+Saved theorem _______ "kernel_40_rate"
+Saved theorem _______ "kernel_41_rate"
+Saved theorem _______ "kernel_42_rate"
+Saved theorem _______ "kernel_43_rate"
+Saved theorem _______ "kernel_44_rate"
+Saved theorem _______ "kernel_45_rate"
+Saved theorem _______ "kernel_46_rate"
+Saved theorem _______ "kernel_47_rate"
+Saved theorem _______ "kernel_48_rate"
+Saved theorem _______ "kernel_49_rate"
+Saved theorem _______ "kernel_50_rate"
+Saved theorem _______ "kernel_51_rate"
+Saved theorem _______ "kernel_52_rate"
+Saved theorem _______ "kernel_53_rate"
+Saved theorem _______ "kernel_54_rate"
+EXACT_TAYLOR_RATES 55
+Exporting theory "MomentRates" ... done.
+Theory "MomentRates" took 2m48s to build
+Holmake: [1/1] MomentRates

@@ -1,0 +1,131 @@
+{
+  "scope": "single fixed candidate; exact rational and finite-polynomial witnesses only",
+  "candidate": {
+    "H": 88000000,
+    "K": "13/2",
+    "delta": "13/176000000"
+  },
+  "positive_exp_polynomial_degree": 80,
+  "checks": {
+    "positive_H_below_3e10": true,
+    "delta_bounds": true,
+    "delta_below_K": true,
+    "a_below_old": true,
+    "deltaH_eq_K": true,
+    "positive_small_exp_argument": true,
+    "exp_delta2_half_upper": true,
+    "exp_abs_a_half_upper": true,
+    "exp_delta2_eighth_upper": true,
+    "exp_delta2_half_plus_a_upper": true,
+    "line_le1143": true,
+    "sqrt_x_lower_square": true,
+    "Vg_le37000": true,
+    "c3_dynamic": true,
+    "tail_factor_lt5": true,
+    "exp_negative_certificate": true,
+    "den_positive": true,
+    "upper_relative_budget": true,
+    "lower_relative_budget": true,
+    "upper_sqrt_budget": true,
+    "lower_sqrt_budget": true,
+    "upper_constant_budget": true,
+    "lower_constant_budget": true,
+    "upper_cutoff_domain": true,
+    "lower_cutoff_domain": true
+  },
+  "values": {
+    "H": {
+      "numerator": "88000000",
+      "denominator": "1"
+    },
+    "K": {
+      "numerator": "13",
+      "denominator": "2"
+    },
+    "delta": {
+      "numerator": "13",
+      "denominator": "176000000"
+    },
+    "a": {
+      "numerator": "169",
+      "denominator": "352000000"
+    },
+    "line_majorant": {
+      "numerator": "285591074590789",
+      "denominator": "250000000000"
+    },
+    "Vg_majorant": {
+      "numerator": "10612363212709877357277",
+      "denominator": "309408437500000000"
+    },
+    "geometric_t": {
+      "numerator": "169",
+      "denominator": "80000000"
+    },
+    "geometric_r_lower": {
+      "numerator": "169",
+      "denominator": "80000169"
+    },
+    "tail_factor": {
+      "numerator": "1253992385515960751492226663",
+      "denominator": "276470480000000000000000000"
+    },
+    "exp_positive_partial_sum_0_through80": {
+      "numerator": "39150516705805612452405228825744954783910952224377253557728436773596801655561724127291636285336896647656148595216102368889490744555316447025462548368319558702067605014202049884517052205208784009",
+      "denominator": "26197905305549454120861396819927613453553937675031366067389194202670067673069554646808198420822903415062625306825396962564822913099238465903924396200107261272648581120000000000000000000"
+    },
+    "g_upper": {
+      "numerator": "7",
+      "denominator": "10000000000"
+    },
+    "tail_absolute_upper": {
+      "numerator": "7",
+      "denominator": "2000000000"
+    },
+    "unsmoothing_den_lower": {
+      "numerator": "4999999993",
+      "denominator": "5000000000"
+    },
+    "exp_shift_upper": {
+      "numerator": "3838052146701183175434053472028561",
+      "denominator": "3838050304000000000000000000000000"
+    },
+    "upper_relative_coefficient": {
+      "numerator": "1861507629665034053472028561",
+      "denominator": "3838050298626729574400000000000000"
+    },
+    "lower_relative_coefficient": {
+      "numerator": "107011",
+      "denominator": "220000000000"
+    },
+    "upper_relative_margin": {
+      "numerator": "22975066960690167558371439",
+      "denominator": "3838050298626729574400000000000000"
+    },
+    "lower_relative_margin": {
+      "numerator": "1009",
+      "denominator": "220000000000"
+    },
+    "exp_a_upper": {
+      "numerator": "123904059488028561",
+      "denominator": "123904000000000000"
+    },
+    "upper_constant": {
+      "numerator": "619520869628814388583800073",
+      "denominator": "15487999978316800"
+    },
+    "lower_constant": {
+      "numerator": "20000037000",
+      "denominator": "1"
+    }
+  },
+  "pins": {
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiExplicit.lean": "33A24C9E1606011AAC8930EC978BA027E90A2A66E0888DB18915ACC2FBF85BB1",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiLarge.lean": "D370555A164DA01E37E5BDB14EFA774DC79FE43682EED21D42C90BA2D1B165F2",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiPlateau.lean": "9138464FF2638DEEB39EAA58E7FB39F0CFD68895CE599CCB189EF3F6EE8F8D4D",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiPlateau1e8.lean": "F5BEB066695D24085A74706C9FFE3219A2A053E2C1854FC3E209BD0CD78E392C",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/PsiRange.lean": "69E94599D2120C5FCE3B737E623C2F355654FB5989CE0FF8E9A035513EB30037",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/ZetaZeroSums.lean": "21C97198134C5CEEDBCD597FA11E05982FE8878FFD24BBB60BCCC8E2032943AA",
+    "work/ternary-goldbach/TernaryGoldbach/Explicit/ZeroSumGen.lean": "9096C5D611A09FFCF5A4516BFDDC1E518B9917C52B5BC206216AF86A31A52389"
+  }
+}

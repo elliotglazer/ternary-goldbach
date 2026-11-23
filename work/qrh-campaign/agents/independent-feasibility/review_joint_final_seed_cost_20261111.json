@@ -1,0 +1,181 @@
+{
+  "scope": "Independent cost algebra only; joint analytic proof reused at its reviewed scope",
+  "checks": 372,
+  "pins": {
+    "zero-sum/JOINT_FINAL_SEED_CONDITIONAL_COST_COMPARISON_2026-11-11.md": "369DD6AB04FC68ACB675BBFB24518E2CD025C0D8416D07A99A5BC747F7E86249",
+    "zero-sum/joint_final_seed_cost_comparison_20261111.py": "D3205492D6BB3268389CF77018883FE933B3DB4F5FE043D3E23B4C6FF809BD51",
+    "zero-sum/joint_final_seed_cost_comparison_20261111.json": "30EF060C3A13338B6336F208012475A48B5B6B511D92CB58499AE9358D07CECD",
+    "major-constants/JOINT_QUARTER_MESH_HEAD_TRADEOFF_2026-11-11.md": "AA1A7464A38CA5FDEDF21F000965C765DE22DFB2C8D4F796EC5C0B0A7A8F1D9F",
+    "major-constants/joint_quarter_mesh_head_tradeoff_20261111.json": "F1686B1C1A3183082D9126F4FE680BE6DB42A88D31F82071B752759EE3DE9BD4",
+    "audit/REVIEW_JOINT_QUARTER_MESH_HEAD_TRADEOFF_2026-11-11.md": "2F057C0F2507452AC959587E13FD1AE8F9117FC75CBC3BA1C6364E8C5BF0064A",
+    "independent-feasibility/FINAL_SEED_CONDITIONAL_COST_CHOICE_2026-11-11.md": "DEB728C9991A4B906B49D65651CD8E6C994CF814C0091809A3CB7138A157D1B2",
+    "independent-feasibility/final_seed_cost_choice_20261111.json": "7E8ABFDC0F2A212B975738DE94D17448F8A6C9EA597D3203A01933A4FB8882E9",
+    "zero-sum/REVIEW_FINAL_SEED_CONDITIONAL_COST_CHOICE_2026-11-11.md": "168F3FE5497E9923DE193324E470EA5F37337A724525C35589E19BD5328EA5F9"
+  },
+  "rows": {
+    "B": {
+      "head_scales": 508457257,
+      "head_adds": 528013948,
+      "gamma_scales": 14157056,
+      "gamma_adds": 14157056,
+      "E_stages": 1253522,
+      "source_slots": 221204,
+      "coarse_anchors": 8193,
+      "R_stages": 26,
+      "shift_updates": 2703360,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 19562497
+    },
+    "Q": {
+      "head_scales": 264047553,
+      "head_adds": 273827092,
+      "gamma_scales": 7341824,
+      "gamma_adds": 7341824,
+      "E_stages": 630938,
+      "source_slots": 114716,
+      "coarse_anchors": 4097,
+      "R_stages": 27,
+      "shift_updates": 4300800,
+      "normalization_scales": 327700,
+      "normalization_rounds": 327700,
+      "argument_pairs": 9781249
+    },
+    "C": {
+      "head_scales": 319516500,
+      "head_adds": 331806000,
+      "gamma_scales": 56628224,
+      "gamma_adds": 56628224,
+      "E_stages": 4399634,
+      "source_slots": 221204,
+      "coarse_anchors": 8193,
+      "R_stages": 26,
+      "shift_updates": 2703360,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 12296193
+    },
+    "J": {
+      "head_scales": 165928500,
+      "head_adds": 172074000,
+      "gamma_scales": 29367296,
+      "gamma_adds": 29367296,
+      "E_stages": 2204186,
+      "source_slots": 114716,
+      "coarse_anchors": 4097,
+      "R_stages": 27,
+      "shift_updates": 4300800,
+      "normalization_scales": 327700,
+      "normalization_rounds": 327700,
+      "argument_pairs": 6148097
+    }
+  },
+  "setups": {
+    "B": {
+      "union": 19562497,
+      "introduced": 12513280,
+      "log_stages": 410791416,
+      "anchors": 1001,
+      "new_gamma": 0
+    },
+    "Q": {
+      "union": 9781249,
+      "introduced": 2732032,
+      "log_stages": 205385187,
+      "anchors": 1002,
+      "new_gamma": 0
+    },
+    "C": {
+      "union": 13197313,
+      "introduced": 6148096,
+      "log_stages": 296046954,
+      "anchors": 959,
+      "new_gamma": 192
+    },
+    "J": {
+      "union": 7049217,
+      "introduced": 0,
+      "log_stages": 148013397,
+      "anchors": 960,
+      "new_gamma": 192
+    }
+  },
+  "differences": {
+    "BJ": {
+      "per_height": {
+        "head_scales": 342528757,
+        "head_adds": 355939948,
+        "gamma_scales": -15210240,
+        "gamma_adds": -15210240,
+        "E_stages": -950664,
+        "source_slots": 106488,
+        "coarse_anchors": 4096,
+        "R_stages": -1,
+        "shift_updates": -1597440,
+        "normalization_scales": -327700,
+        "normalization_rounds": -327700,
+        "argument_pairs": 13414400
+      },
+      "setup": {
+        "union": 12513280,
+        "introduced": 12513280,
+        "log_stages": 262778019,
+        "anchors": 41,
+        "new_gamma": -192
+      }
+    },
+    "QJ": {
+      "per_height": {
+        "head_scales": 98119053,
+        "head_adds": 101753092,
+        "gamma_scales": -22025472,
+        "gamma_adds": -22025472,
+        "E_stages": -1573248,
+        "source_slots": 0,
+        "coarse_anchors": 0,
+        "R_stages": 0,
+        "shift_updates": 0,
+        "normalization_scales": 0,
+        "normalization_rounds": 0,
+        "argument_pairs": 3633152
+      },
+      "setup": {
+        "union": 2732032,
+        "introduced": 2732032,
+        "log_stages": 57371790,
+        "anchors": 42,
+        "new_gamma": -192
+      }
+    },
+    "CJ": {
+      "per_height": {
+        "head_scales": 153588000,
+        "head_adds": 159732000,
+        "gamma_scales": 27260928,
+        "gamma_adds": 27260928,
+        "E_stages": 2195448,
+        "source_slots": 106488,
+        "coarse_anchors": 4096,
+        "R_stages": -1,
+        "shift_updates": -1597440,
+        "normalization_scales": -327700,
+        "normalization_rounds": -327700,
+        "argument_pairs": 6148096
+      },
+      "setup": {
+        "union": 6148096,
+        "introduced": 6148096,
+        "log_stages": 148033557,
+        "anchors": -1,
+        "new_gamma": 0
+      }
+    }
+  },
+  "H": [
+    20199,
+    20366,
+    20519,
+    20839
+  ],
+  "m": 256
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\StageFast.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\StageFast.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 2.9357319999980973,
+  "user_cpu_seconds": 0.671875,
+  "system_cpu_seconds": 2.203125,
+  "cpu_seconds": 2.875,
+  "peak_working_set_bytes": 471588864,
+  "observed_peak_private_bytes": 977063936,
+  "memory_samples": 58,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "StageFast.lean",
+      "bytes": 3359,
+      "sha256": "874397E2738E23A9DBC09B49F3D2A4991D2CBF04560BC334CD2CCC57DBDD1A37"
+    },
+    {
+      "path": "fast_dev02.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "StageFast.olean",
+      "bytes": 387784,
+      "sha256": "9A9CB31E87D4EB8A894945895C79095BB2CDE9E30B8D29E1DEAF752A748A112B"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

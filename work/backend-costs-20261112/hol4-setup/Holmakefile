@@ -1,0 +1,15 @@
+INCLUDES = $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: StageCheckTheory.uo benchmark.exe
+
+benchmark.exe: benchmark.uo
+	$(HOLMOSMLC) -o $@ $<
+
+profile.exe: profile.uo
+	$(HOLMOSMLC) -o $@ $<
+
+constructed.exe: constructed.uo
+	$(HOLMOSMLC) -o $@ $<
+
+dependent.exe: dependent.uo
+	$(HOLMOSMLC) -o $@ $<

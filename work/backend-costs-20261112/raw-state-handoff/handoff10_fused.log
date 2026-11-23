@@ -1,0 +1,161 @@
+<<HOL message: Created theory "HandoffFused">>
+HANDOFF_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in HandoffFused)>>
+HANDOFF_PHASE,common_scale_two_pre_setup,0.001771000,0.002609000
+HANDOFF_MODE,fused,integer_only
+HANDOFF_FIXTURE,01C3E9F1AF2FD8DF40C9EF770840078E02EC356737727637C58397836C5C6BF9
+HANDOFF_PHASE,construct_sources,0.000753000,0.000754000
+HANDOFF_PHASE,define_sources,0.001908000,0.001920000
+Saved theorem _______ "cv_accepted_integer_sources_thm"
+Finished translating accepted_integer_sources, stored in cv_accepted_integer_sources_thm
+HANDOFF_PHASE,translate_sources,0.011970000,0.013153000
+HANDOFF_PHASE,construct_final_outputs,0.025853000,0.025877000
+HANDOFF_PHASE,fused_pipeline_representation,0.000750000,0.000752000
+HANDOFF_PHASE,fused_pipeline_from_to,0.000041000,0.000041000
+HANDOFF_PHASE,fused_pipeline_code_equations,0.000353000,0.000354000
+HANDOFF_PHASE,fused_pipeline_prepare_conversion,0.000428000,0.000431000
+HANDOFF_PHASE,fused_pipeline_proof_context,0.000094000,0.000094000
+HANDOFF_PHASE,fused_pipeline_compute,0.015590000,0.015603000
+HANDOFF_PHASE,fused_pipeline_decode,0.543517000,0.543659000
+HANDOFF_PHASE,fused_pipeline_close,0.000135000,0.000136000
+HANDOFF_PHASE,fused_pipeline_normalize_boolean,0.000066000,0.000066000
+HANDOFF_TAG,fused_pipeline,DISK_THM,
+HANDOFF_PHASE,bind_final_outputs,0.002234000,0.002249000
+HANDOFF_PHASE,public_literal_binding,0.028168000,0.028195000
+HANDOFF_TAG,final_integer_pipeline,DISK_THM,
+Saved theorem _______ "final_integer_pipeline"
+HANDOFF_PHASE,save_final,0.023564000,0.024462000
+HANDOFF_PRIMARY_COMPLETE,516,8,129
+HANDOFF_PHASE,control_construct_seed,0.000852000,0.000853000
+HANDOFF_PHASE,control_define_seed,0.001997000,0.002004000
+Saved theorem _______ "cv_control_seed_thm"
+Finished translating control_seed, stored in cv_control_seed_thm
+HANDOFF_PHASE,control_translate_seed,0.012811000,0.014427000
+HANDOFF_PHASE,control_seed_representation,4.610272000,4.619091000
+HANDOFF_PHASE,control_seed_from_to,0.000015000,0.000016000
+HANDOFF_PHASE,control_seed_code_equations,0.003560000,0.003573000
+HANDOFF_PHASE,control_seed_prepare_conversion,0.000688000,0.000693000
+HANDOFF_PHASE,control_seed_proof_context,0.028659000,0.028764000
+HANDOFF_PHASE,control_seed_compute,0.011493000,0.011497000
+HANDOFF_PHASE,control_seed_decode,0.000079000,0.000079000
+HANDOFF_PHASE,control_seed_close,0.000093000,0.000093000
+HANDOFF_PHASE,control_seed_normalize_boolean,0.000052000,0.000052000
+HANDOFF_TAG,control_seed,DISK_THM,
+Saved theorem _______ "reject_seed"
+HANDOFF_REJECTED,seed
+HANDOFF_PHASE,control_construct_step,0.001653000,0.001658000
+HANDOFF_PHASE,control_define_step,0.006453000,0.006463000
+Saved theorem _______ "cv_control_step_thm"
+Finished translating control_step, stored in cv_control_step_thm
+HANDOFF_PHASE,control_translate_step,0.030034000,0.032424000
+HANDOFF_PHASE,control_step_representation,3.765306000,3.768746000
+HANDOFF_PHASE,control_step_from_to,0.000012000,0.000013000
+HANDOFF_PHASE,control_step_code_equations,0.003177000,0.003189000
+HANDOFF_PHASE,control_step_prepare_conversion,0.000396000,0.000398000
+HANDOFF_PHASE,control_step_proof_context,0.020222000,0.020239000
+HANDOFF_PHASE,control_step_compute,0.010247000,0.010256000
+HANDOFF_PHASE,control_step_decode,0.000063000,0.000063000
+HANDOFF_PHASE,control_step_close,0.000077000,0.000078000
+HANDOFF_PHASE,control_step_normalize_boolean,0.000044000,0.000044000
+HANDOFF_TAG,control_step,DISK_THM,
+Saved theorem _______ "reject_step"
+HANDOFF_REJECTED,step
+HANDOFF_PHASE,control_interior_representation,5.947451000,5.949473000
+HANDOFF_PHASE,control_interior_from_to,0.000010000,0.000011000
+HANDOFF_PHASE,control_interior_code_equations,0.006029000,0.006043000
+HANDOFF_PHASE,control_interior_prepare_conversion,0.000293000,0.000293000
+HANDOFF_PHASE,control_interior_proof_context,0.040559000,0.040576000
+HANDOFF_PHASE,control_interior_compute,0.017425000,0.017440000
+HANDOFF_PHASE,control_interior_decode,0.000067000,0.000065000
+HANDOFF_PHASE,control_interior_close,0.000102000,0.000101000
+HANDOFF_PHASE,control_interior_normalize_boolean,0.000049000,0.000050000
+HANDOFF_TAG,control_interior,DISK_THM,
+Saved theorem _______ "reject_interior"
+HANDOFF_REJECTED,interior
+HANDOFF_PHASE,control_row_index_representation,6.551119000,6.556090000
+HANDOFF_PHASE,control_row_index_from_to,0.000015000,0.000017000
+HANDOFF_PHASE,control_row_index_code_equations,0.005923000,0.005940000
+HANDOFF_PHASE,control_row_index_prepare_conversion,0.000318000,0.000318000
+HANDOFF_PHASE,control_row_index_proof_context,0.052902000,0.052916000
+HANDOFF_PHASE,control_row_index_compute,0.018675000,0.018687000
+HANDOFF_PHASE,control_row_index_decode,0.000092000,0.000092000
+HANDOFF_PHASE,control_row_index_close,0.000090000,0.000090000
+HANDOFF_PHASE,control_row_index_normalize_boolean,0.000061000,0.000061000
+HANDOFF_TAG,control_row_index,DISK_THM,
+Saved theorem _______ "reject_row_index"
+HANDOFF_REJECTED,row_index
+HANDOFF_PHASE,control_dropped_row_representation,6.530495000,6.545126000
+HANDOFF_PHASE,control_dropped_row_from_to,0.000046000,0.000047000
+HANDOFF_PHASE,control_dropped_row_code_equations,0.005951000,0.005967000
+HANDOFF_PHASE,control_dropped_row_prepare_conversion,0.000087000,0.000087000
+HANDOFF_PHASE,control_dropped_row_proof_context,0.084985000,0.085021000
+HANDOFF_PHASE,control_dropped_row_compute,0.016011000,0.016018000
+HANDOFF_PHASE,control_dropped_row_decode,0.000069000,0.000068000
+HANDOFF_PHASE,control_dropped_row_close,0.000115000,0.000117000
+HANDOFF_PHASE,control_dropped_row_normalize_boolean,0.000056000,0.000056000
+HANDOFF_TAG,control_dropped_row,DISK_THM,
+Saved theorem _______ "reject_dropped_row"
+HANDOFF_REJECTED,dropped_row
+HANDOFF_PHASE,control_repeated_row_representation,7.237944000,7.263577000
+HANDOFF_PHASE,control_repeated_row_from_to,0.000011000,0.000076000
+HANDOFF_PHASE,control_repeated_row_code_equations,0.007775000,0.007797000
+HANDOFF_PHASE,control_repeated_row_prepare_conversion,0.000159000,0.000158000
+HANDOFF_PHASE,control_repeated_row_proof_context,0.164218000,0.164232000
+HANDOFF_PHASE,control_repeated_row_compute,0.023875000,0.023891000
+HANDOFF_PHASE,control_repeated_row_decode,0.000086000,0.000087000
+HANDOFF_PHASE,control_repeated_row_close,0.000127000,0.000128000
+HANDOFF_PHASE,control_repeated_row_normalize_boolean,0.000053000,0.000054000
+HANDOFF_TAG,control_repeated_row,DISK_THM,
+Saved theorem _______ "reject_repeated_row"
+HANDOFF_REJECTED,repeated_row
+HANDOFF_PHASE,control_final_entry_representation,3.471786000,3.472853000
+HANDOFF_PHASE,control_final_entry_from_to,0.000017000,0.000019000
+HANDOFF_PHASE,control_final_entry_code_equations,0.003395000,0.003412000
+HANDOFF_PHASE,control_final_entry_prepare_conversion,0.000435000,0.000436000
+HANDOFF_PHASE,control_final_entry_proof_context,0.065920000,0.065950000
+HANDOFF_PHASE,control_final_entry_compute,0.011373000,0.011385000
+HANDOFF_PHASE,control_final_entry_decode,0.000077000,0.000075000
+HANDOFF_PHASE,control_final_entry_close,0.000096000,0.000096000
+HANDOFF_PHASE,control_final_entry_normalize_boolean,0.000050000,0.000051000
+HANDOFF_TAG,control_final_entry,DISK_THM,
+Saved theorem _______ "reject_final_entry"
+HANDOFF_REJECTED,final_entry
+HANDOFF_PHASE,control_base_label_representation,3.279204000,3.288830000
+HANDOFF_PHASE,control_base_label_from_to,0.000012000,0.000011000
+HANDOFF_PHASE,control_base_label_code_equations,0.003397000,0.003479000
+HANDOFF_PHASE,control_base_label_prepare_conversion,0.000450000,0.000453000
+HANDOFF_PHASE,control_base_label_proof_context,0.030398000,0.030411000
+HANDOFF_PHASE,control_base_label_compute,0.006914000,0.006924000
+HANDOFF_PHASE,control_base_label_decode,0.000073000,0.000072000
+HANDOFF_PHASE,control_base_label_close,0.000086000,0.000085000
+HANDOFF_PHASE,control_base_label_normalize_boolean,0.000044000,0.000044000
+HANDOFF_TAG,control_base_label,DISK_THM,
+Saved theorem _______ "reject_base_label"
+HANDOFF_REJECTED,base_label
+HANDOFF_PHASE,control_denominator_representation,3.610361000,3.619852000
+HANDOFF_PHASE,control_denominator_from_to,0.000014000,0.000013000
+HANDOFF_PHASE,control_denominator_code_equations,0.002959000,0.002973000
+HANDOFF_PHASE,control_denominator_prepare_conversion,0.000500000,0.000502000
+HANDOFF_PHASE,control_denominator_proof_context,0.021336000,0.021349000
+HANDOFF_PHASE,control_denominator_compute,0.006716000,0.006727000
+HANDOFF_PHASE,control_denominator_decode,0.000080000,0.000079000
+HANDOFF_PHASE,control_denominator_close,0.000094000,0.000095000
+HANDOFF_PHASE,control_denominator_normalize_boolean,0.000045000,0.000045000
+HANDOFF_TAG,control_denominator,DISK_THM,
+Saved theorem _______ "reject_denominator"
+HANDOFF_REJECTED,denominator
+HANDOFF_PHASE,control_negative_ties_representation,0.000687000,0.000692000
+HANDOFF_PHASE,control_negative_ties_from_to,0.000012000,0.000012000
+HANDOFF_PHASE,control_negative_ties_code_equations,0.000089000,0.000090000
+HANDOFF_PHASE,control_negative_ties_prepare_conversion,0.000054000,0.000055000
+HANDOFF_PHASE,control_negative_ties_proof_context,0.000065000,0.000066000
+HANDOFF_PHASE,control_negative_ties_compute,0.000058000,0.000060000
+HANDOFF_PHASE,control_negative_ties_decode,0.000090000,0.000091000
+HANDOFF_PHASE,control_negative_ties_close,0.000134000,0.000134000
+HANDOFF_PHASE,control_negative_ties_normalize_boolean,0.000047000,0.000047000
+HANDOFF_TAG,control_negative_ties,DISK_THM,
+Saved theorem _______ "control_negative_ties"
+Exporting theory "HandoffFused" ... done.
+Theory "HandoffFused" took 50.0s to build
+HANDOFF_PHASE,theory_export,4.204669000,4.628280000
+HANDOFF_DONE

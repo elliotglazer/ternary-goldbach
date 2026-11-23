@@ -1,0 +1,34 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/CenteredProductScript.uo to produce theory-builder executable
+<<HOL message: Created theory "CenteredProduct">>
+Saved theorem _______ "node_product_compute"
+Saved definition ____ "node_product_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in CenteredProduct)>>
+Saved theorem _______ "product_nonneg"
+Saved theorem _______ "product_snoc"
+Proof of 
+
+∀h x.
+  node_product (2 * SUC h) (1 − &SUC h) x =
+  abs (x + &h) * (node_product (2 * h) (1 − &h) x * abs (x − &SUC h))
+
+failed.
+Tactic failure proving "centered_step"; heap saved to CenteredProduct.centered_step.dumpedheap.
+Resume with: bin/hol --holstate=CenteredProduct.centered_step.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/interpolation-geometry/CenteredProductScript - exited with code 1

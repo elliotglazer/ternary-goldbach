@@ -1,0 +1,231 @@
+{
+  "status": "PASS_INDEPENDENT_COMBINED_HEIGHT_METADATA",
+  "checks": 251068,
+  "pins": {
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\independent-feasibility\\review_coupled_plus_cost_20261111.py": "9AA5978290D0B42541C4E1160BF002D712A5457D0CC362153D2E85E6DFC6E8F9",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\coupled_plus_height_inventory_20261111.py": "3ED2792A965169994B716B12DDE43034E58FC8FDD9D1B8E28AE065D3C39FFF11",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\coupled_plus_height_inventory_20261111.json": "676388307D0353800DB72B85ED9252C83E3BA4F62F3D54F63A5C3B43A7DB4267",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\ODD_PLUS_SHARED_RH_HEIGHT_2026-11-11.md": "C4EE2B2F674F6376D987C778FC7886A03A93BC81E61C0BC56D0B1C25E2E4A14D",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\moebius\\EVEN_GAUSS_PLUS_HEIGHT_PROFILE_2026-11-11.md": "D3408AA27763D7E3C475E7B27DB124FDE9C16EDC916CEE061563B31D9A2DD88B",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\COMBINED_ODD_EVEN_HEIGHT_CONDITIONAL_COST_2026-11-11.md": "6143FA8444ED97084998D769E114DCAB3DC2C12DCAF9649C32CFA1989658487C",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\combined_odd_even_height_inventory_20261111.json": "BCBAA29AE9A963A46170C5B7B355C0399EE6A622EDBE355ECD24BFE92042C2EE",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\combined_odd_even_height_inventory_20261111.py": "4C1B0FA0DA303A5EE475493A8CE66EB3723B3C9DFD9369DF9687069AF3F3E154"
+  },
+  "reused_reviewer_scope": "Pinned independent circuit definitions and P27 ledger only; no author code execution",
+  "totals": [
+    {
+      "conductors": 125400,
+      "primitive_labels": 4333246843,
+      "unit_coefficients": 7133015232,
+      "conductor_height_nodes": 1729026050,
+      "residue_inputs": 65920064426356,
+      "primitive_outputs": 40474902420727,
+      "max_nodes": 102145,
+      "max_node_conductors": [
+        10004
+      ],
+      "operations": {
+        "general_complex_products": 1120925963188476,
+        "complex_add_sub": 2319745161470097,
+        "quarter_turns": 102708998603521,
+        "negations": 22187990916,
+        "dyadic_scales": 98879283658304
+      }
+    },
+    {
+      "conductors": 125400,
+      "primitive_labels": 4333246843,
+      "unit_coefficients": 7133015232,
+      "conductor_height_nodes": 1545129536,
+      "residue_inputs": 60719106537478,
+      "primitive_outputs": 36733644379717,
+      "max_nodes": 85902,
+      "max_node_conductors": [
+        10004
+      ],
+      "operations": {
+        "general_complex_products": 1016146569565796,
+        "complex_add_sub": 2104881781255801,
+        "quarter_turns": 93230703713452,
+        "negations": 20114065256,
+        "dyadic_scales": 89642894251776
+      }
+    },
+    {
+      "conductors": 125400,
+      "primitive_labels": 4333246843,
+      "unit_coefficients": 7133015232,
+      "conductor_height_nodes": 1522865397,
+      "residue_inputs": 59962061953248,
+      "primitive_outputs": 36290898519503,
+      "max_nodes": 84200,
+      "max_node_conductors": [
+        10004
+      ],
+      "operations": {
+        "general_complex_products": 1004103686197888,
+        "complex_add_sub": 2079886046397995,
+        "quarter_turns": 92117812144056,
+        "negations": 19872754128,
+        "dyadic_scales": 88576420247296
+      }
+    }
+  ],
+  "per_extra_node": {
+    "general_complex_products": 122841198690,
+    "complex_add_sub": 254481748047,
+    "quarter_turns": 11187780841,
+    "negations": 2374880,
+    "dyadic_scales": 10768632896
+  },
+  "exceeds": {
+    "0": {
+      "H4_main": 0,
+      "current_main": 0
+    },
+    "167": {
+      "H4_main": 88193,
+      "current_main": 16002
+    },
+    "320": {
+      "H4_main": 109037,
+      "current_main": 39520
+    },
+    "640": {
+      "H4_main": 121093,
+      "current_main": 51450
+    }
+  },
+  "scenarios": [
+    {
+      "extra_nodes": 0,
+      "global_nodes": 84200,
+      "totals": {
+        "independent_P27_source_coefficients": 9689335840,
+        "head_reciprocal_scales": 22183711078363,
+        "head_accumulator_additions": 23036970463732,
+        "E_contracting_complex_stages": 54908986960,
+        "Bernoulli_weighted_terms": 620117493760,
+        "Bernoulli_accumulator_additions": 620117493760,
+        "P27_to_P20_midpoint_shift_updates": 118404633600,
+        "P20_fine_anchor_coefficient_deliveries": 14353760800,
+        "shared_height_R_recurrence_steps": 2189200,
+        "coarse_anchor_instances": 358886120,
+        "base_height_argument_pairs": 853470708456,
+        "initial_B_certificates": 27754497,
+        "step_cis_certificates": 27754497,
+        "step_grid_conversions": 27754497,
+        "fine_state_complex_updates": 853442953959,
+        "state_to_EM_grid_conversions": 853470708456
+      },
+      "operations": {
+        "general_complex_products": 1004103686197888,
+        "complex_add_sub": 2079886046397995,
+        "quarter_turns": 92117812144056,
+        "negations": 19872754128,
+        "dyadic_scales": 88576420247296
+      }
+    },
+    {
+      "extra_nodes": 167,
+      "global_nodes": 84367,
+      "totals": {
+        "independent_P27_source_coefficients": 9726276908,
+        "head_reciprocal_scales": 22304196277282,
+        "head_accumulator_additions": 23162089861048,
+        "E_contracting_complex_stages": 55118325134,
+        "Bernoulli_weighted_terms": 622481722112,
+        "Bernoulli_accumulator_additions": 622481722112,
+        "P27_to_P20_midpoint_shift_updates": 118856094720,
+        "P20_fine_anchor_coefficient_deliveries": 14408486700,
+        "shared_height_R_recurrence_steps": 2193542,
+        "coarse_anchor_instances": 360254351,
+        "base_height_argument_pairs": 858105709455,
+        "initial_B_certificates": 27754497,
+        "step_cis_certificates": 27754497,
+        "step_grid_conversions": 27754497,
+        "fine_state_complex_updates": 858077954958,
+        "state_to_EM_grid_conversions": 858105709455
+      },
+      "operations": {
+        "general_complex_products": 1024618166379118,
+        "complex_add_sub": 2122384498321844,
+        "quarter_turns": 93986171544503,
+        "negations": 20269359088,
+        "dyadic_scales": 90374781940928
+      }
+    },
+    {
+      "extra_nodes": 320,
+      "global_nodes": 84520,
+      "totals": {
+        "independent_P27_source_coefficients": 9760121120,
+        "head_reciprocal_scales": 22414580920603,
+        "head_accumulator_additions": 23276720207092,
+        "E_contracting_complex_stages": 55310114000,
+        "Bernoulli_weighted_terms": 624647751680,
+        "Bernoulli_accumulator_additions": 624647751680,
+        "P27_to_P20_midpoint_shift_updates": 119269708800,
+        "P20_fine_anchor_coefficient_deliveries": 14458624800,
+        "shared_height_R_recurrence_steps": 2197520,
+        "coarse_anchor_instances": 361507880,
+        "base_height_argument_pairs": 862352147496,
+        "initial_B_certificates": 27754497,
+        "step_cis_certificates": 27754497,
+        "step_grid_conversions": 27754497,
+        "fine_state_complex_updates": 862324392999,
+        "state_to_EM_grid_conversions": 862352147496
+      },
+      "operations": {
+        "general_complex_products": 1043412869778688,
+        "complex_add_sub": 2161320205773035,
+        "quarter_turns": 95697902013176,
+        "negations": 20632715728,
+        "dyadic_scales": 92022382774016
+      }
+    },
+    {
+      "extra_nodes": 640,
+      "global_nodes": 84840,
+      "totals": {
+        "independent_P27_source_coefficients": 9830906400,
+        "head_reciprocal_scales": 22645450762843,
+        "head_accumulator_additions": 23516469950452,
+        "E_contracting_complex_stages": 55711241040,
+        "Bernoulli_weighted_terms": 629178009600,
+        "Bernoulli_accumulator_additions": 629178009600,
+        "P27_to_P20_midpoint_shift_updates": 120134784000,
+        "P20_fine_anchor_coefficient_deliveries": 14563488800,
+        "shared_height_R_recurrence_steps": 2205840,
+        "coarse_anchor_instances": 364129640,
+        "base_height_argument_pairs": 871233586536,
+        "initial_B_certificates": 27754497,
+        "step_cis_certificates": 27754497,
+        "step_grid_conversions": 27754497,
+        "fine_state_complex_updates": 871205832039,
+        "state_to_EM_grid_conversions": 871233586536
+      },
+      "operations": {
+        "general_complex_products": 1082722053359488,
+        "complex_add_sub": 2242754365148075,
+        "quarter_turns": 99277991882296,
+        "negations": 21392677328,
+        "dyadic_scales": 95468345300736
+      }
+    }
+  ],
+  "unchanged_setup": {
+    "distinct_x_arguments": 27754497,
+    "log_bits": 144,
+    "log_nonanchor_Horner_stages": 582822471,
+    "init_p": 120,
+    "step_cis_p": 138,
+    "state_error_bits": 140,
+    "EM_rounding_error_bits": 122,
+    "initial_cis_terms_per_argument": 74,
+    "step_cis_terms_per_argument": 83,
+    "raw_dense_state_step_bytes": 1998323784,
+    "exact_Bernoulli_constants": 64
+  },
+  "scope": "Old V10000/N3387 retained; no values, builds or runtime inference"
+}

@@ -1,0 +1,42 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\Chunk8P343N64.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\lean-pilots\\batched-transform\\Chunk8P343N64.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 3.8443238999898313,
+  "user_cpu_seconds": 1.171875,
+  "system_cpu_seconds": 2.578125,
+  "cpu_seconds": 3.75,
+  "peak_working_set_bytes": 480034816,
+  "observed_peak_private_bytes": 1008357376,
+  "memory_samples": 76,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [],
+  "limits_lines": [],
+  "artifacts": [
+    {
+      "path": "Chunk8P343N64.lean",
+      "bytes": 1888,
+      "sha256": "BA31C9B666E1DDCE449A18EBA12DE8B6B125CC984D9B42FEA9ECC046FCFF6B6F"
+    },
+    {
+      "path": "build_Chunk8P343N64.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "Chunk8P343N64.olean",
+      "bytes": 48336,
+      "sha256": "8026914E695201F6EF6A1482710DA896C1F69A85D9CA5E34A1B77164A4D72017"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

@@ -1,0 +1,69 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-dynamic-phases/DynamicPhaseScript.uo to produce theory-builder executable
+<<HOL message: Created theory "DynamicPhase">>
+Saved definition ____ "divd_def"
+Saved definition ____ "times_def"
+Saved definition ____ "tick_def"
+Saved theorem _______ "advance_compute"
+Saved definition ____ "advance_def"
+Saved definition ____ "digit_def"
+Saved definition ____ "class_def"
+Saved definition ____ "quadrant_def"
+Saved theorem _______ "strip_compute"
+Saved definition ____ "strip_def"
+Starting translation of advance from DynamicPhaseTheory.
+Starting translation of tick from DynamicPhaseTheory.
+Starting translation of times from DynamicPhaseTheory.
+Starting translation of divd from DynamicPhaseTheory.
+Saved theorem _______ "cv_divd_thm"
+Finished translating divd, stored in cv_divd_thm
+Starting translation of times from DynamicPhaseTheory.
+Saved theorem _______ "cv_times_thm"
+Finished translating times, stored in cv_times_thm
+Starting translation of tick from DynamicPhaseTheory.
+Saved theorem _______ "cv_tick_thm"
+Finished translating tick, stored in cv_tick_thm
+Starting translation of advance from DynamicPhaseTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in DynamicPhase)>>
+Saved theorem _______ "cv_advance_thm"
+Finished translating advance, stored in cv_advance_thm
+Starting translation of strip from DynamicPhaseTheory.
+Starting translation of quadrant from DynamicPhaseTheory.
+Starting translation of digit from DynamicPhaseTheory.
+Starting translation of int_exp from integerTheory.
+Saved definition ____ "cv_int_exp_def"
+Saved induction _____ "cv_int_exp_ind"
+Saved theorem _______ "cv_int_exp_thm"
+Finished translating int_exp, stored in cv_int_exp_thm
+Starting translation of digit from DynamicPhaseTheory.
+Saved theorem _______ "cv_digit_thm"
+Finished translating digit, stored in cv_digit_thm
+Starting translation of quadrant from DynamicPhaseTheory.
+Starting translation of class from DynamicPhaseTheory.
+Saved theorem _______ "cv_class_thm"
+Finished translating class, stored in cv_class_thm
+Starting translation of quadrant from DynamicPhaseTheory.
+Saved theorem _______ "cv_quadrant_thm"
+Finished translating quadrant, stored in cv_quadrant_thm
+Starting translation of strip from DynamicPhaseTheory.
+Saved theorem _______ "cv_strip_thm"
+Finished translating strip, stored in cv_strip_thm
+Exporting theory "DynamicPhase" ... done.
+Theory "DynamicPhase" took 0.80592s to build
+Holmake: [1/1] DynamicPhase

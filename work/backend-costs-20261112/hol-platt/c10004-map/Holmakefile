@@ -1,0 +1,6 @@
+INCLUDES = $(HOLDIR)/src/num/theories/cv_compute/automation $(HOLDIR)/src/sort $(HOLDIR)/src/num/extra_theories
+
+all: C10004MapTheory.uo
+
+map_audit.exe: map_audit.uo
+	$(HOLMOSMLC) -o $@ $<

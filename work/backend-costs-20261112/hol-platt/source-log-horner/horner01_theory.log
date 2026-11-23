@@ -1,0 +1,37 @@
+Holmake: Scanning $(HOLDIR)/src/sort
+Holmake: Scanning $(HOLDIR)/src/string
+Holmake: Scanning $(HOLDIR)/src/TeX
+Holmake: Scanning $(HOLDIR)/src/bag
+Holmake: Scanning $(HOLDIR)/src/n-bit
+Holmake: Scanning $(HOLDIR)/src/res_quan/src
+Holmake: Scanning $(HOLDIR)/src/finite_maps
+Holmake: Scanning $(HOLDIR)/src/integer
+Holmake: Scanning $(HOLDIR)/src/num/extra_theories
+Holmake: Scanning $(HOLDIR)/src/transfer
+Holmake: Scanning $(HOLDIR)/src/pred_set/src/more_theories
+Holmake: Scanning $(HOLDIR)/src/rational
+Holmake: Scanning $(HOLDIR)/src/num/theories/cv_compute/automation
+Holmake: Scanning /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup
+Holmake: Scanning ../raw-analytic/dependency-build-win01
+Holmake: Scanning ../raw-pair-round-proof
+Holmake: Scanning ../source-log-real
+Holmake: Scanning ../source-producer
+Holmake: Scanned 19 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-log-horner/SourceLogHornerScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceLogHorner">>
+Saved theorem _______ "slh_ideal_compute"
+Saved definition ____ "slh_ideal_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceLogHorner)>>
+Saved theorem _______ "slh_ideal_append"
+Saved theorem _______ "slh_partial_eq_ideal"
+Proof of 
+
+∀A B.
+  0 < B ∧ 3 * A ≤ B ⇒
+  0 ≤ &A / &B ∧ &A / &B ≤ 1 / 3 ∧ 0 ≤ (&A / &B)² ∧ (&A / &B)² ≤ 1 / 9
+
+failed.
+Tactic failure proving "slh_ratio_range"; heap saved to SourceLogHorner.slh_ratio_range.dumpedheap.
+Resume with: bin/hol --holstate=SourceLogHorner.slh_ratio_range.dumpedheap
+Holmake: Failed script build for /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-log-horner/SourceLogHornerScript - exited with code 1

@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "LGrowthPoly.olean": "67f45a70e6d6e993366353bf8fd08db933f4c7646a17816fe753ef09ea0bbdc5"
+  },
+  "evidence": {
+    "exit_code": 0,
+    "seconds": 294.8677267000312
+  },
+  "generation": "66219cc0a5264c57aa4e0b478fba4278",
+  "key": {
+    "dependency_receipts": {
+      "TernaryGoldbach.Explicit.GammaBounds": "6b5d77354b3511a542d0a3582cf658b9882570bf9cf65d0f84105d1ada3d2439",
+      "TernaryGoldbach.Explicit.LGrowthLeft": "2e12a7203cb905bcab985555380cad103b7d1b9f0b33163fa955db9814566e9a"
+    },
+    "environment": {
+      "lean_binary_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+      "lean_options": [
+        "-j",
+        "2",
+        "-R",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\ternary-goldbach"
+      ],
+      "package_paths": [
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\mathlib",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\aesop",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\batteries",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Cli",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\importGraph",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\LeanSearchClient",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\plausible",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\proofwidgets",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\formalization\\z-in-q\\.lake\\packages\\Qq"
+      ],
+      "project_manifest_sha256": "ea138f9d252387a27424093ef9be6d65e1af2638a51212aca408385029549c82"
+    },
+    "lean": "4.35.0",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "module": "TernaryGoldbach.Explicit.LGrowthPoly",
+    "source_sha256": "7bb4f31ace0dd5b4d5778a4fe952dddf85fab910ceac02832a1a43d8a810ff57"
+  }
+}

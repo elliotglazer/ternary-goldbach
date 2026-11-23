@@ -1,0 +1,9 @@
+dune build  --root . theories_dune ltac2_dune
+File "perf/dune", line 6, characters 36-40:
+6 |  (foreign_stubs (language c) (names perf))
+                                        ^^^^
+perf.c:11:10: fatal error: linux/perf_event.h: No such file or directory
+   11 | #include <linux/perf_event.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:146: .dune-stamp] Error 1

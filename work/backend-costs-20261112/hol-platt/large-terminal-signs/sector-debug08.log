@@ -1,0 +1,80 @@
+
+---------------------------------------------------------------------
+     HOL4 [Trindemossen 2 (stdknl, )]
+
+     For introductory HOL help, type: help "hol";
+     To exit type <Control>-D
+---------------------------------------------------------------------
+** Load path (see loadPath variable) now contains 37 entries
+** after consulting Holmakefiles and any holproject.toml
+
+> val show_goal = fn: string -> unit
+start ∀p q f g e r i pp qq ff gg xx yy.
+  (let
+     b = use_real (0 < p) (0 < q) (0 < f) (0 < g);
+     c = if b then r else i;
+     k = one (p,q) (f,g,e) (r,i)
+   in
+     k ≠ 0 ∧ 0 < oriented (0 < p) pp ∧ 0 < oriented (0 < q) qq ∧
+     0 < oriented (0 < f) ff ∧ 0 < oriented (0 < g) gg ∧
+     0 < oriented (0 < c) (if b then xx else yy) ∧
+     0 <
+     (pp * ff − qq * gg) * (pp * ff − qq * gg) +
+     (pp * gg + qq * ff) * (pp * gg + qq * ff) ∧
+     (pp * ff − qq * gg) * yy + (pp * gg + qq * ff) * xx = 0 ⇒
+     0 <
+     oriented (k = 2) ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy))
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+simplified one (p,q) (f,g,e) (r,i) ≠ 0 ∧ 0 < oriented (0 < p) pp ∧
+0 < oriented (0 < q) qq ∧ 0 < oriented (0 < f) ff ∧ 0 < oriented (0 < g) gg ∧
+0 <
+oriented (0 < if use_real (0 < p) (0 < q) (0 < f) (0 < g) then r else i)
+  (if use_real (0 < p) (0 < q) (0 < f) (0 < g) then xx else yy) ∧
+0 <
+(pp * ff − qq * gg) * (pp * ff − qq * gg) +
+(pp * gg + qq * ff) * (pp * gg + qq * ff) ∧
+(pp * ff − qq * gg) * yy + (pp * gg + qq * ff) * xx = 0 ⇒
+0 <
+oriented (one (p,q) (f,g,e) (r,i) = 2)
+  ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy)
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+OK..
+1 subgoal:
+specialized (0 < oriented (0 < p) pp ∧ 0 < oriented (0 < q) qq ∧
+ 0 < oriented (0 < f) ff ∧ 0 < oriented (0 < g) gg ∧
+ 0 <
+ oriented (0 < if use_real (0 < p) (0 < q) (0 < f) (0 < g) then r else i)
+   (if use_real (0 < p) (0 < q) (0 < f) (0 < g) then xx else yy) ∧
+ 0 <
+ (pp * ff − qq * gg) * (pp * ff − qq * gg) +
+ (pp * gg + qq * ff) * (pp * gg + qq * ff) ∧
+ (pp * ff − qq * gg) * yy + (pp * gg + qq * ff) * xx = 0 ⇒
+ 0 <
+ oriented
+   (multiplier_positive (0 < p) (0 < q) (0 < f) (0 < g) ⇔
+    0 < if use_real (0 < p) (0 < q) (0 < f) (0 < g) then r else i)
+   ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy)) ⇒
+0 <
+oriented (one (p,q) (f,g,e) (r,i) = 2)
+  ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy)
+OK..
+1 subgoal:
+end 0 <
+oriented
+  (multiplier_positive (0 < p) (0 < q) (0 < f) (0 < g) ⇔
+   0 < if use_real (0 < p) (0 < q) (0 < f) (0 < g) then r else i)
+  ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy) ⇒
+0 <
+oriented (one (p,q) (f,g,e) (r,i) = 2)
+  ((pp * ff − qq * gg) * xx − (pp * gg + qq * ff) * yy)
+> 

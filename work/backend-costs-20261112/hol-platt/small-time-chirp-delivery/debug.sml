@@ -1,0 +1,14 @@
+e(rpt gen_tac >> strip_tac);
+e(Induct_on `j`);
+e(metis_tac[]);
+e(disch_tac);
+e(qpat_x_assum `!i. i<_ ==> _` (qspec_then `j` mp_tac));
+e(impl_tac >- decide_tac >> strip_tac);
+e(qpat_x_assum `j<=_ ==> _` mp_tac);
+e(impl_tac >- decide_tac >> strip_tac);
+p();
+e(mp_tac (Q.SPECL [`G`,`Z j`,`R j`,`z j`,`r j`,`A j`,`B j`] rounded_unit_step));
+e(mp_tac (Q.SPECL [`G`,`R j`,`d`,`r j`,`D`,`B j`,`E`] rounded_unit_step));
+e(asm_rewrite_tac[]);
+e(REAL_ASM_ARITH_TAC);
+p();

@@ -1,0 +1,36 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\clang.exe",
+    "-DHIGHWATER",
+    "--target=x86_64-linux-musl",
+    "-O3",
+    "-static",
+    "-nostdlib",
+    "-nostdinc",
+    "-isystem",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\include",
+    "-isystem",
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\include\\clang",
+    "-fuse-ld=lld",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crt1.o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crti.o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\timed-src\\main.c",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\libc.a",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crtn.o",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\mm0-highwater"
+  ],
+  "sha256": "92511e777171a62d52b54a1c420eb7f7d7591353c380f648150a70ec660c103f",
+  "runs": [
+    {
+      "case": "actual-reset-or",
+      "exit_code": 0,
+      "output": "stack highwater: 45 / 65536\nheap highwater: 1032193 / 4194304\nstore highwater: 77404708 / 1073741824\nhypothesis stack highwater: 9 / 256\nunify stack highwater: 11 / 256\nunify heap highwater: 25 / 65536\nBENCH_CPU_SECONDS=0.442617436\n"
+    },
+    {
+      "case": "sparse-reset-slice-or",
+      "exit_code": 0,
+      "output": "stack highwater: 62 / 65536\nheap highwater: 1162579 / 4194304\nstore highwater: 86201020 / 1073741824\nhypothesis stack highwater: 17 / 256\nunify stack highwater: 11 / 256\nunify heap highwater: 34 / 65536\nBENCH_CPU_SECONDS=0.751405535\n"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "markers": {
+    "ENCODING_SOUND_DONE": true,
+    "ROW_EXACT_DONE": true,
+    "RESIDUAL_SOUND_DONE": true,
+    "STAGE_EXACT_DONE": true,
+    "BOOTSTRAP_SOUND_DONE": true,
+    "INTEGER_EXPORT_DONE": true,
+    "REJECTED_rounding": true,
+    "REJECTED_missing": true,
+    "REJECTED_reordered": true,
+    "REJECTED_coefficient": true,
+    "CONTROLS_DONE": true,
+    "CACHED_COMPARE_DONE": true,
+    "SOUND_REPRODUCTION_DONE": false,
+    "DISTINCT_P100N64_DONE": true,
+    "DISTINCT_P343N64_DONE": true,
+    "DISTINCT_P415N64_DONE": true,
+    "DISTINCT_P343N256_DONE": true
+  },
+  "errors": [],
+  "exit_status": 1,
+  "resources": {
+    "User time (seconds)": "149.83",
+    "System time (seconds)": "4.74",
+    "Elapsed (wall clock) time (h:mm:ss or m:ss)": "2m 55.24s",
+    "Maximum resident set size (kbytes)": "3328876"
+  },
+  "timings": [
+    {
+      "label": "first",
+      "repetitions": 1,
+      "cpu_seconds": 0.1211227459999975,
+      "wall_seconds": 0.15873940899996342,
+      "cpu_ms_per_call": 121.1227459999975,
+      "wall_ms_per_call": 158.73940899996342
+    },
+    {
+      "label": "repeat100",
+      "repetitions": 100,
+      "cpu_seconds": 7.570838066000007,
+      "wall_seconds": 7.573918656999922,
+      "cpu_ms_per_call": 75.70838066000007,
+      "wall_ms_per_call": 75.73918656999922
+    },
+    {
+      "label": "distinct_P100N64_r0",
+      "repetitions": 1,
+      "cpu_seconds": 0.018407667999994715,
+      "wall_seconds": 0.018941001000030155,
+      "cpu_ms_per_call": 18.407667999994715,
+      "wall_ms_per_call": 18.941001000030155
+    },
+    {
+      "label": "distinct_P100N64_r1",
+      "repetitions": 1,
+      "cpu_seconds": 0.02100464999999474,
+      "wall_seconds": 0.02153563199999553,
+      "cpu_ms_per_call": 21.00464999999474,
+      "wall_ms_per_call": 21.53563199999553
+    },
+    {
+      "label": "distinct_P100N64_r2",
+      "repetitions": 1,
+      "cpu_seconds": 0.02030519199999503,
+      "wall_seconds": 0.020744612999806122,
+      "cpu_ms_per_call": 20.30519199999503,
+      "wall_ms_per_call": 20.744612999806122
+    },
+    {
+      "label": "distinct_P343N64_r0",
+      "repetitions": 1,
+      "cpu_seconds": 0.06871792000001165,
+      "wall_seconds": 0.06946853700014799,
+      "cpu_ms_per_call": 68.71792000001165,
+      "wall_ms_per_call": 69.46853700014799
+    },
+    {
+      "label": "distinct_P343N64_r1",
+      "repetitions": 1,
+      "cpu_seconds": 0.06682940000000315,
+      "wall_seconds": 0.06751855900006376,
+      "cpu_ms_per_call": 66.82940000000315,
+      "wall_ms_per_call": 67.51855900006376
+    },
+    {
+      "label": "distinct_P343N64_r2",
+      "repetitions": 1,
+      "cpu_seconds": 0.1510091699999947,
+      "wall_seconds": 0.15603542300004847,
+      "cpu_ms_per_call": 151.0091699999947,
+      "wall_ms_per_call": 156.03542300004847
+    },
+    {
+      "label": "distinct_P415N64_r0",
+      "repetitions": 1,
+      "cpu_seconds": 0.07643141600000547,
+      "wall_seconds": 0.07705894400010038,
+      "cpu_ms_per_call": 76.43141600000547,
+      "wall_ms_per_call": 77.05894400010038
+    },
+    {
+      "label": "distinct_P415N64_r1",
+      "repetitions": 1,
+      "cpu_seconds": 0.07816214499999319,
+      "wall_seconds": 0.07863750100000289,
+      "cpu_ms_per_call": 78.16214499999319,
+      "wall_ms_per_call": 78.63750100000289
+    },
+    {
+      "label": "distinct_P415N64_r2",
+      "repetitions": 1,
+      "cpu_seconds": 0.08077734299999406,
+      "wall_seconds": 0.0814622559998952,
+      "cpu_ms_per_call": 80.77734299999406,
+      "wall_ms_per_call": 81.4622559998952
+    },
+    {
+      "label": "distinct_P343N256_r0",
+      "repetitions": 1,
+      "cpu_seconds": 0.3640513619999979,
+      "wall_seconds": 0.3649256839998998,
+      "cpu_ms_per_call": 364.0513619999979,
+      "wall_ms_per_call": 364.9256839998998
+    },
+    {
+      "label": "distinct_P343N256_r1",
+      "repetitions": 1,
+      "cpu_seconds": 0.48423379200002614,
+      "wall_seconds": 0.48484473099983916,
+      "cpu_ms_per_call": 484.23379200002614,
+      "wall_ms_per_call": 484.84473099983916
+    },
+    {
+      "label": "distinct_P343N256_r2",
+      "repetitions": 1,
+      "cpu_seconds": 0.279669881000018,
+      "wall_seconds": 0.28027596900005847,
+      "cpu_ms_per_call": 279.669881000018,
+      "wall_ms_per_call": 280.27596900005847
+    },
+    {
+      "label": "prepare",
+      "repetitions": 1,
+      "cpu_seconds": 0.0015195770000104858,
+      "wall_seconds": 0.0022177850000844046,
+      "cpu_ms_per_call": 1.5195770000104858,
+      "wall_ms_per_call": 2.2177850000844046
+    },
+    {
+      "label": "cached1",
+      "repetitions": 100,
+      "cpu_seconds": 8.145610704000006,
+      "wall_seconds": 8.14675843000009,
+      "cpu_ms_per_call": 81.45610704000006,
+      "wall_ms_per_call": 81.46758430000091
+    },
+    {
+      "label": "cached2",
+      "repetitions": 100,
+      "cpu_seconds": 7.745055176999983,
+      "wall_seconds": 7.746092965000116,
+      "cpu_ms_per_call": 77.45055176999983,
+      "wall_ms_per_call": 77.46092965000116
+    },
+    {
+      "label": "cached3",
+      "repetitions": 100,
+      "cpu_seconds": 7.612325117000012,
+      "wall_seconds": 7.6172173059999295,
+      "cpu_ms_per_call": 76.12325117000012,
+      "wall_ms_per_call": 76.1721730599993
+    },
+    {
+      "label": "constant_prepared",
+      "repetitions": 100,
+      "cpu_seconds": 0.020598274000008132,
+      "wall_seconds": 0.021151142000007894,
+      "cpu_ms_per_call": 0.20598274000008132,
+      "wall_ms_per_call": 0.21151142000007894
+    },
+    {
+      "label": "constant_wrapper",
+      "repetitions": 100,
+      "cpu_seconds": 0.13694591699999137,
+      "wall_seconds": 0.13753018100010195,
+      "cpu_ms_per_call": 1.3694591699999137,
+      "wall_ms_per_call": 1.3753018100010195
+    }
+  ],
+  "distinct_stage_medians": {
+    "P100N64": {
+      "cpu_ms": 20.30519199999503,
+      "wall_ms": 20.744612999806122
+    },
+    "P343N64": {
+      "cpu_ms": 68.71792000001165,
+      "wall_ms": 69.46853700014799
+    },
+    "P415N64": {
+      "cpu_ms": 78.16214499999319,
+      "wall_ms": 78.63750100000289
+    },
+    "P343N256": {
+      "cpu_ms": 364.0513619999979,
+      "wall_ms": 364.9256839998998
+    }
+  },
+  "integer_soundness": "generic stage theorem and closed literal residual theorem",
+  "real_coordinate_interpretation": false,
+  "root_certification": false,
+  "spectral_inputs": false,
+  "artifacts": {
+    "checker.ml": {
+      "bytes": 3315,
+      "sha256": "c3ec48d016d5a3c324036371325468c9348a418a1602163f816db53f3b0a9d6d"
+    },
+    "arithmetic_sound.ml": {
+      "bytes": 936,
+      "sha256": "91e96889f9cc64551065f3868180b9055ba55470ff4db787d28fdbecf76b49b1"
+    },
+    "encoding_sound.ml": {
+      "bytes": 4305,
+      "sha256": "cdfbae18d98e2c5683d6d8c824475570c6918c13effe0d740f031c00a3aa9222"
+    },
+    "row_sound.ml": {
+      "bytes": 2336,
+      "sha256": "1177e79cc6788f9a6ea9cb967709af65890049e877dd877699c8fa57c652435e"
+    },
+    "residual_sound.ml": {
+      "bytes": 1858,
+      "sha256": "ee0d07f1b4fb66fdb57fd3a776f0784be942319e5910a764d0eb0b1867a726be"
+    },
+    "stage_sound.ml": {
+      "bytes": 2007,
+      "sha256": "dc6f53c262f722c4975ac7273b00abe63fdf65f5917f0c63d91402ecacd8d1c7"
+    },
+    "export_integer.ml": {
+      "bytes": 1520,
+      "sha256": "823d0c57dfc658070549503187ecb449e9e123a11ab1204b0161cb8863f9e47c"
+    },
+    "bootstrap_sound.ml": {
+      "bytes": 241,
+      "sha256": "27f249af8c3a3677307081e2144f2d8520680950c3b176eb19d1e7cbe0251f28"
+    },
+    "reproduce_sound.ml": {
+      "bytes": 374,
+      "sha256": "38677b0fd8a5454ee566cc61ca7f8047e675cf0c88bc94d0f5ef81babd336522"
+    },
+    "fixture.ml": {
+      "bytes": 91486,
+      "sha256": "075827ba4bb6608eab92a27501f10376d99f65a0308c7f19c3aa9717125c6bd9"
+    },
+    "controls.ml": {
+      "bytes": 364406,
+      "sha256": "5ab95df120881c7abdc5c69a78c8a739d9f21ec9025e738504c10a863fc52aa8"
+    },
+    "cached_compare.ml": {
+      "bytes": 1103,
+      "sha256": "4cadb2c86b89cfdd67234301af35786e360abdf0b90d2e8654ffd90077bfd0f2"
+    },
+    "reproduce_sound.log": {
+      "bytes": 2556099,
+      "sha256": "fb90c8542dccb3f37b54542ac51445920f3cca7900d8224619568c3f230b185d"
+    },
+    "reproduce_sound.time": {
+      "bytes": 3321,
+      "sha256": "745929a9dffd92f3d3c212a9b0038497684a4e2fabf54ba42b0dab92064a6a18"
+    },
+    "distinct_P100N64.ml": {
+      "bytes": 45037,
+      "sha256": "fe0cab9639e4ceb8d9cc147fd3b5a92149329fbfdca56155b37539696b62a048"
+    },
+    "distinct_P343N64.ml": {
+      "bytes": 91844,
+      "sha256": "de32839d7847743506960a15fe700646c0442ed150bb9849ec800eb4f6ee1f92"
+    },
+    "distinct_P415N64.ml": {
+      "bytes": 105613,
+      "sha256": "2e483328d4ae4cef07947e6abce585e9a5ad1bde0d9243e74460a676bfbb06ba"
+    },
+    "distinct_P343N256.ml": {
+      "bytes": 364996,
+      "sha256": "bc1f8968ffd20e4c2def7fe03c7565b258b380ca4347409b3a5825f097a0e87b"
+    }
+  }
+}

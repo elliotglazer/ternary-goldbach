@@ -1,0 +1,56 @@
+{
+  "scope": "Exact scalar implication only; no Lean proof or new finite zero assertion",
+  "A": 1500,
+  "T": 1000000,
+  "N_A": 1069,
+  "Q_A_safe_upper": "417/250",
+  "analytic_count": "N(t)<=t/(2*pi)*(log(t/(2*pi))-1)+7/8+5*log(t)+20 for t>=1500",
+  "exact_N_T_used": false,
+  "low_head_upper": "3571/750",
+  "high_mass_lower_rounded_down": "9072023958327/1000000000000",
+  "high_mass_upper_rounded_up": "1134002994791/125000000000",
+  "primary_delta": "2/625",
+  "rows": [
+    {
+      "delta": "1/400",
+      "beta_lower": "199/400",
+      "beta_upper": "201/400",
+      "W_lower_rounded_down": "23734947663819/1000000000000",
+      "W_upper_rounded_up": "1186747383191/50000000000",
+      "safe_cap": "4747/200",
+      "margin_lower_rounded_down": "13252616809/50000000000"
+    },
+    {
+      "delta": "3/1000",
+      "beta_lower": "497/1000",
+      "beta_upper": "503/1000",
+      "W_lower_rounded_down": "23909750559577/1000000000000",
+      "W_upper_rounded_up": "11954875279789/500000000000",
+      "safe_cap": "2391/100",
+      "margin_lower_rounded_down": "45124720211/500000000000"
+    },
+    {
+      "delta": "2/625",
+      "beta_lower": "621/1250",
+      "beta_upper": "629/1250",
+      "W_lower_rounded_down": "23980532761131/1000000000000",
+      "W_upper_rounded_up": "5995133190283/250000000000",
+      "safe_cap": "23981/1000",
+      "margin_lower_rounded_down": "4866809717/250000000000"
+    },
+    {
+      "delta": "13/4000",
+      "beta_lower": "1987/4000",
+      "beta_upper": "2013/4000",
+      "W_lower_rounded_down": "5999576466283/250000000000",
+      "W_upper_rounded_up": "23998305865133/1000000000000",
+      "safe_cap": "23999/1000",
+      "margin_lower_rounded_down": "1694134867/1000000000000"
+    }
+  ],
+  "model_limit_interval": [
+    "81369/25000000",
+    "325477/100000000"
+  ],
+  "script_sha256": "542867e6669fd724bb1ac34fe778a94c9f0b608b934aa20e2cab41bb2557f3e9"
+}

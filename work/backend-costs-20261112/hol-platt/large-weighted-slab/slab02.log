@@ -1,0 +1,272 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanned 14 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-weighted-slab/SlabScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Slab">>
+Saved definition ____ "fromzig_def"
+Saved definition ____ "nextw_def"
+Saved theorem _______ "next_p_rules"
+Saved theorem _______ "next_p_ind"
+Saved theorem _______ "next_p_strongind"
+Saved theorem _______ "next_p_cases"
+Saved theorem _______ "cv_nextw_thm"
+Finished translating nextw, stored in cv_nextw_thm
+
+WARNING: definition of cv_nextw has a precondition.
+You can set up the precondition proof as follows:
+
+Theorem next_p[cv_pre]:
+  ∀w r v. next_p w r v
+Proof
+  ho_match_mp_tac nextw_ind (* for example *)
+  ...
+QED
+
+Saved theorem _______ "next_ok"
+Saved definition ____ "dot_def"
+Saved definition ____ "comp0_def"
+Saved definition ____ "comp1_def"
+Saved definition ____ "comp2_def"
+Saved definition ____ "comp3_def"
+Saved definition ____ "comp4_def"
+Saved definition ____ "comp5_def"
+Saved definition ____ "comp6_def"
+Saved definition ____ "dispatch_def"
+Saved definition ____ "outs_def"
+Saved definition ____ "ok_def"
+Saved definition ____ "decomp_def"
+Starting translation of ok from SlabTheory.
+Starting translation of outs from SlabTheory.
+Starting translation of dispatch from SlabTheory.
+Starting translation of comp4 from SlabTheory.
+Starting translation of comp3 from SlabTheory.
+Starting translation of comp2 from SlabTheory.
+Starting translation of comp1 from SlabTheory.
+Starting translation of comp0 from SlabTheory.
+Saved theorem _______ "cv_comp0_thm"
+Finished translating comp0, stored in cv_comp0_thm
+Starting translation of comp1 from SlabTheory.
+Saved theorem _______ "cv_comp1_thm"
+Finished translating comp1, stored in cv_comp1_thm
+Starting translation of comp2 from SlabTheory.
+Saved theorem _______ "cv_comp2_thm"
+Finished translating comp2, stored in cv_comp2_thm
+Starting translation of comp3 from SlabTheory.
+Saved theorem _______ "cv_comp3_thm"
+Finished translating comp3, stored in cv_comp3_thm
+Starting translation of comp4 from SlabTheory.
+Saved theorem _______ "cv_comp4_thm"
+Finished translating comp4, stored in cv_comp4_thm
+Starting translation of dispatch from SlabTheory.
+Starting translation of comp6 from SlabTheory.
+Starting translation of comp5 from SlabTheory.
+Saved theorem _______ "cv_comp5_thm"
+Finished translating comp5, stored in cv_comp5_thm
+Starting translation of comp6 from SlabTheory.
+Saved theorem _______ "cv_comp6_thm"
+Finished translating comp6, stored in cv_comp6_thm
+Starting translation of dispatch from SlabTheory.
+Saved theorem _______ "cv_dispatch_thm"
+Finished translating dispatch, stored in cv_dispatch_thm
+Starting translation of outs from SlabTheory.
+Starting translation of dot from SlabTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Slab)>>
+Saved definition ____ "cv_dot_def"
+Saved induction _____ "cv_dot_ind"
+Saved theorem _______ "cv_dot_thm"
+Finished translating dot, stored in cv_dot_thm
+Starting translation of outs from SlabTheory.
+Starting translation of fromzig from SlabTheory.
+Saved theorem _______ "cv_fromzig_thm"
+Finished translating fromzig, stored in cv_fromzig_thm
+Starting translation of outs from SlabTheory.
+Saved definition ____ "cv_outs_def"
+Saved induction _____ "cv_outs_ind"
+Saved theorem _______ "cv_outs_thm"
+Finished translating outs, stored in cv_outs_thm
+Starting translation of ok from SlabTheory.
+Saved definition ____ "MAP_fromzig_1_def"
+Saved induction _____ "MAP_fromzig_1_ind"
+Starting translation of MAP_fromzig from SlabTheory.
+Saved definition ____ "cv_MAP_fromzig_def"
+Saved induction _____ "cv_MAP_fromzig_ind"
+Saved theorem _______ "cv_MAP_fromzig_thm"
+Finished translating MAP_fromzig, stored in cv_MAP_fromzig_thm
+Saved theorem _______ "MAP_fromzig_ho"
+Starting translation of ok from SlabTheory.
+Saved theorem _______ "cv_ok_thm"
+Finished translating ok, stored in cv_ok_thm
+Starting translation of decomp from SlabTheory.
+Saved definition ____ "MAP_dispatch_1_def"
+Saved induction _____ "MAP_dispatch_1_ind"
+Starting translation of MAP_dispatch from SlabTheory.
+Saved definition ____ "cv_MAP_dispatch_def"
+Saved induction _____ "cv_MAP_dispatch_ind"
+Saved theorem _______ "cv_MAP_dispatch_thm"
+Finished translating MAP_dispatch, stored in cv_MAP_dispatch_thm
+Saved theorem _______ "MAP_dispatch_ho"
+Starting translation of decomp from SlabTheory.
+Saved theorem _______ "cv_decomp_thm"
+Finished translating decomp, stored in cv_decomp_thm
+Saved definition ____ "digest_def"
+Saved definition ____ "live_def"
+Saved definition ____ "rawlive_def"
+Starting translation of live from SlabTheory.
+Starting translation of digest from SlabTheory.
+Saved theorem _______ "cv_digest_thm"
+Finished translating digest, stored in cv_digest_thm
+Starting translation of live from SlabTheory.
+Saved theorem _______ "cv_live_thm"
+Finished translating live, stored in cv_live_thm
+Starting translation of rawlive from SlabTheory.
+Saved theorem _______ "cv_rawlive_thm"
+Finished translating rawlive, stored in cv_rawlive_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/large-weighted-slab/SlabScript.sml:114: warning: Pattern is not exhaustive. Found near val [name, v, b, ...] = tokens ()
+LOAD c131068h1n8 0.287284
+SETUP c131068h1n8_full 0.007203
+SETUP c131068h1n8_extract 0.000571
+SETUP c131068h1n8_live 0.004977
+SETUP c131068h1n8_rawlive 0.000518
+SLAB c131068h1n8_full 1 0.020516 0.000179
+SLAB c131068h1n8_extract 1 0.044894 0.000229
+SLAB c131068h1n8_live 1 0.008408 0.000132
+SLAB c131068h1n8_rawlive 1 0.038781 0.000138
+SLAB c131068h1n8_rawlive 2 0.032233 0.000127
+SLAB c131068h1n8_live 2 0.007938 0.000279
+SLAB c131068h1n8_extract 2 0.044527 0.000121
+SLAB c131068h1n8_full 2 0.030847 0.000128
+SLAB c131068h1n8_full 3 0.019416 0.000254
+SLAB c131068h1n8_extract 3 0.042697 0.000158
+SLAB c131068h1n8_live 3 0.007822 0.000214
+SLAB c131068h1n8_rawlive 3 0.031564 0.000119
+SLAB c131068h1n8_rawlive 4 0.043825 0.000122
+SLAB c131068h1n8_live 4 0.01037 0.000263
+SLAB c131068h1n8_extract 4 0.047844 0.000216
+SLAB c131068h1n8_full 4 0.023078 0.000412
+SLAB c131068h1n8_full 5 0.019265 0.000125
+SLAB c131068h1n8_extract 5 0.060899 0.000122
+SLAB c131068h1n8_live 5 0.007895 0.000214
+SLAB c131068h1n8_rawlive 5 0.03304 0.000168
+SLAB c131068h1n8_rawlive 6 0.03058 0.000149
+SLAB c131068h1n8_live 6 0.008042 0.000224
+SLAB c131068h1n8_extract 6 0.061163 0.000219
+SLAB c131068h1n8_full 6 0.022015 0.000226
+SLAB c131068h1n8_full 7 0.020498 0.000213
+SLAB c131068h1n8_extract 7 0.04718 0.000217
+SLAB c131068h1n8_live 7 0.008907 0.000132
+SLAB c131068h1n8_rawlive 7 0.045094 0.000123
+LOAD c131068h1n32 1.865732
+SETUP c131068h1n32_full 0.025507
+SETUP c131068h1n32_extract 0.001507
+SETUP c131068h1n32_live 0.02312
+SETUP c131068h1n32_rawlive 0.000574
+SLAB c131068h1n32_full 1 0.221361 0.000218
+SLAB c131068h1n32_extract 1 0.55422 0.000123
+SLAB c131068h1n32_live 1 0.107479 0.000128
+SLAB c131068h1n32_rawlive 1 0.448348 0.000147999999999
+SLAB c131068h1n32_rawlive 2 0.425864 0.000252000000001
+SLAB c131068h1n32_live 2 0.098122 0.000215
+SLAB c131068h1n32_extract 2 0.513858 0.000145
+SLAB c131068h1n32_full 2 0.198463 0.000239000000001
+SLAB c131068h1n32_full 3 0.20086 0.000126
+SLAB c131068h1n32_extract 3 0.477696 0.000302
+SLAB c131068h1n32_live 3 0.096363 0.000258000000001
+SLAB c131068h1n32_rawlive 3 0.385307 0.000223
+SLAB c131068h1n32_rawlive 4 0.382647 0.000231
+SLAB c131068h1n32_live 4 0.087368 0.00012
+SLAB c131068h1n32_extract 4 0.485985 0.000138
+SLAB c131068h1n32_full 4 0.186199 0.000128
+SLAB c131068h1n32_full 5 0.188058 0.000296000000001
+SLAB c131068h1n32_extract 5 0.474882 0.000120000000001
+SLAB c131068h1n32_live 5 0.086728 0.000137
+SLAB c131068h1n32_rawlive 5 0.398424 0.000159
+SLAB c131068h1n32_rawlive 6 0.399777 0.000166
+SLAB c131068h1n32_live 6 0.087428 0.000142
+SLAB c131068h1n32_extract 6 0.503164 0.000119
+SLAB c131068h1n32_full 6 0.223559 0.000127000000001
+SLAB c131068h1n32_full 7 0.199341 0.000133
+SLAB c131068h1n32_extract 7 0.506819 0.000128999999999
+SLAB c131068h1n32_live 7 0.085695 0.000122999999999
+SLAB c131068h1n32_rawlive 7 0.395979 0.000219999999999
+LOAD c131068h6337n8 0.141077
+SETUP c131068h6337n8_full 0.004968
+SETUP c131068h6337n8_extract 0.000539
+SETUP c131068h6337n8_live 0.004866
+SETUP c131068h6337n8_rawlive 0.000629999999999
+SLAB c131068h6337n8_full 1 0.025476 0.000126
+SLAB c131068h6337n8_extract 1 0.045271 0.000140999999999
+SLAB c131068h6337n8_live 1 0.014189 0.000176999999999
+SLAB c131068h6337n8_rawlive 1 0.057322 0.000172000000001
+SLAB c131068h6337n8_rawlive 2 0.031818 0.000135
+SLAB c131068h6337n8_live 2 0.013639 0.000207
+SLAB c131068h6337n8_extract 2 0.044863 0.000119999999999
+SLAB c131068h6337n8_full 2 0.025719 0.000127000000001
+SLAB c131068h6337n8_full 3 0.025867 0.000122000000001
+SLAB c131068h6337n8_extract 3 0.044733 0.000116
+SLAB c131068h6337n8_live 3 0.01355 0.000132000000001
+SLAB c131068h6337n8_rawlive 3 0.029611 0.000199
+SLAB c131068h6337n8_rawlive 4 0.032224 0.000121999999999
+SLAB c131068h6337n8_live 4 0.014152 0.000124000000001
+SLAB c131068h6337n8_extract 4 0.045271 0.000126
+SLAB c131068h6337n8_full 4 0.025577 0.000126
+SLAB c131068h6337n8_full 5 0.025927 0.000122000000001
+SLAB c131068h6337n8_extract 5 0.050488 0.000136999999999
+SLAB c131068h6337n8_live 5 0.013389 0.000125000000001
+SLAB c131068h6337n8_rawlive 5 0.04062 0.000213
+SLAB c131068h6337n8_rawlive 6 0.044132 0.00015
+SLAB c131068h6337n8_live 6 0.015018 0.000129999999999
+SLAB c131068h6337n8_extract 6 0.045808 0.000131
+SLAB c131068h6337n8_full 6 0.02643 0.000126
+SLAB c131068h6337n8_full 7 0.027991 0.000133999999999
+SLAB c131068h6337n8_extract 7 0.042219 0.000132000000001
+SLAB c131068h6337n8_live 7 0.013875 0.000131
+SLAB c131068h6337n8_rawlive 7 0.03145 0.00014
+LOAD c131068h6337n32 1.874954
+SETUP c131068h6337n32_full 0.023303
+SETUP c131068h6337n32_extract 0.000493000000001
+SETUP c131068h6337n32_live 0.022231
+SETUP c131068h6337n32_rawlive 0.000475
+SLAB c131068h6337n32_full 1 0.284265 0.000347000000001
+SLAB c131068h6337n32_extract 1 0.470517 0.000133
+SLAB c131068h6337n32_live 1 0.153955 0.000163000000001
+SLAB c131068h6337n32_rawlive 1 0.366865 0.000127000000001
+SLAB c131068h6337n32_rawlive 2 0.369383 0.000154000000002
+SLAB c131068h6337n32_live 2 0.155874 0.000126000000002
+SLAB c131068h6337n32_extract 2 0.474449 0.000233000000001
+SLAB c131068h6337n32_full 2 0.253693 0.000123000000002
+SLAB c131068h6337n32_full 3 0.252587 0.000135
+SLAB c131068h6337n32_extract 3 0.466107 0.000154000000002
+SLAB c131068h6337n32_live 3 0.152212 0.000119999999999
+SLAB c131068h6337n32_rawlive 3 0.365337 0.000143999999999
+SLAB c131068h6337n32_rawlive 4 0.366969 0.000123000000002
+SLAB c131068h6337n32_live 4 0.152195 0.000126999999999
+SLAB c131068h6337n32_extract 4 0.4722 0.000123000000002
+SLAB c131068h6337n32_full 4 0.272394 0.000129000000001
+SLAB c131068h6337n32_full 5 0.252415 0.000126999999999
+SLAB c131068h6337n32_extract 5 0.470247 0.000167999999999
+SLAB c131068h6337n32_live 5 0.155042 0.000261000000002
+SLAB c131068h6337n32_rawlive 5 0.374289 0.000231999999997
+SLAB c131068h6337n32_rawlive 6 0.384854 0.000125999999998
+SLAB c131068h6337n32_live 6 0.155454 0.000124
+SLAB c131068h6337n32_extract 6 0.476234 0.000129999999999
+SLAB c131068h6337n32_full 6 0.256877 0.000130000000002
+SLAB c131068h6337n32_full 7 0.254859 0.000126000000002
+SLAB c131068h6337n32_extract 7 0.469344 0.000124
+SLAB c131068h6337n32_live 7 0.156232 0.000132000000001
+SLAB c131068h6337n32_rawlive 7 0.370994 0.000167999999999
+WEIGHTED_SLAB_DONE
+Exporting theory "Slab" ... done.
+Theory "Slab" took 24.2s to build
+Holmake: [1/1] Slab

@@ -1,0 +1,164 @@
+{
+  "status": "PASS_SAVED_DATA_AUDIT_OF_FAILED_ATTEMPT",
+  "capability_status": "FAIL",
+  "accounting_independent_little_endian_decode": [
+    {
+      "job": "inner",
+      "stage": "fresh_job_preassignment",
+      "decoded": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 0,
+        "TotalProcesses": 0,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "17B0761F87B081D5CF10757CCC89F12BE355C70E2E29DF288B65B30710DCBCD1"
+    },
+    {
+      "job": "inner",
+      "stage": "postassignment_before_resume",
+      "decoded": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 531,
+        "TotalProcesses": 1,
+        "ActiveProcesses": 1,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "ED95B6B98889A309B564AB1E7FA6D3A074FDE49E6375DFE962D27252157ED3F0"
+    },
+    {
+      "job": "inner",
+      "stage": "postexit_before_handle_close",
+      "decoded": {
+        "TotalUserTime": 1250000,
+        "TotalKernelTime": 1093750,
+        "ThisPeriodTotalUserTime": 1250000,
+        "ThisPeriodTotalKernelTime": 1093750,
+        "TotalPageFaultCount": 18725,
+        "TotalProcesses": 2,
+        "ActiveProcesses": 1,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "072399682733C35BF352E0B0969C97D46BB7877F4D302A8E4F6A2AE63B6A2297"
+    },
+    {
+      "job": "outer",
+      "stage": "fresh_job_preassignment",
+      "decoded": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 0,
+        "TotalProcesses": 0,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "17B0761F87B081D5CF10757CCC89F12BE355C70E2E29DF288B65B30710DCBCD1"
+    },
+    {
+      "job": "outer",
+      "stage": "postassignment_before_resume",
+      "decoded": {
+        "TotalUserTime": 0,
+        "TotalKernelTime": 0,
+        "ThisPeriodTotalUserTime": 0,
+        "ThisPeriodTotalKernelTime": 0,
+        "TotalPageFaultCount": 530,
+        "TotalProcesses": 1,
+        "ActiveProcesses": 1,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "660EF18F0B9B2F6275627821900ACC2794AE9CAE52BB3913D5511B58326BCC81"
+    },
+    {
+      "job": "outer",
+      "stage": "postexit_before_exitcode_rejection",
+      "decoded": {
+        "TotalUserTime": 3125000,
+        "TotalKernelTime": 3437500,
+        "ThisPeriodTotalUserTime": 3125000,
+        "ThisPeriodTotalKernelTime": 3437500,
+        "TotalPageFaultCount": 27236,
+        "TotalProcesses": 4,
+        "ActiveProcesses": 0,
+        "TotalTerminatedProcesses": 0
+      },
+      "raw_sha256": "ADFEE9813C182CB01274CB2137FEB1D0E41BFDF250DCE43E2D81592E6A756A5A"
+    }
+  ],
+  "checks": {
+    "six_native_success_records": true,
+    "all_layouts_and_raw_fields_agree": true,
+    "both_failing_total_predicates_confirmed": true,
+    "normal_log_prefix_identity_and_ack_checks": true,
+    "only_normal_case_timeout_not_run": true,
+    "saved_source_and_receipt_bindings": true,
+    "postexit_memory_record_consistency": true
+  },
+  "normal_elapsed_launch_to_exit_ns": 314823300,
+  "outer_launch_to_observed_exit_ns": 765392700,
+  "postexit_minus_last_observed_peak_bytes": 16777216,
+  "conservative_observer_plus_child_peak_bytes": 74780672,
+  "inventory": [
+    {
+      "path": "audit/coordinator_c8_capability_authorization_20261111_v3.json",
+      "bytes": 1447,
+      "sha256": "75B92D613496C52029A35C373545E59320BA81532E48A5054E19281EF6CC5C07"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v3.json",
+      "bytes": 4070,
+      "sha256": "727E556E3EDCCD293CAD453087A9CADEB243351C0D28B267306966BAC574DF8C"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v3/attempt.json",
+      "bytes": 1282,
+      "sha256": "3936E81727B9F8D9F20F683EB6C03B7CCC400B5E3535B05B2209CD887E1397A4"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v3/completion.json",
+      "bytes": 7267,
+      "sha256": "66268C3710419CE4FC20B5DB42D5B77150AB4EC8C0AA337BF05A8707B17C83C8"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v3/normal.baseline.ack",
+      "bytes": 32,
+      "sha256": "0D3284FD2DBF0CFD794E896AA2D14F94F7E82A629AD120FF59C8BEBCEE056F0B"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v3/normal.held.ack",
+      "bytes": 32,
+      "sha256": "0D3284FD2DBF0CFD794E896AA2D14F94F7E82A629AD120FF59C8BEBCEE056F0B"
+    },
+    {
+      "path": "audit/c8_benign_attempt_20261111_v3/normal.jsonl",
+      "bytes": 787,
+      "sha256": "C57938E8EE05032598600534CC4A392C3C70C82DA25C9DEC3BE3F15D614019CB"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v3.started",
+      "bytes": 170,
+      "sha256": "1E4022B59DA2F25F3D271379EBDA59EFF14799F0B2BC3BBEAE26A6B6E3508A77"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v3.stdout",
+      "bytes": 559,
+      "sha256": "E02FA1FB555767B3A1724C960F5A25D663F0CE1E01424D9C1E9A17126C45BA92"
+    },
+    {
+      "path": "audit/coordinator_c8_capability_20261111_v3.stderr",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "listed_bytes": 15646,
+  "no_API_or_process_execution": true,
+  "limits": "Saved counters do not identify additional processes or prove count semantics; no full capability acceptance."
+}

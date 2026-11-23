@@ -1,0 +1,201 @@
+{
+  "scope": "Frozen JSON/source inspection and aggregate subtraction only; no conductor/axis schedule regeneration",
+  "checks": 24,
+  "pins": {
+    "full": {
+      "path": "zero-sum/mixed_radix_character_inventory_20261111.json",
+      "sha256": "2AC4DBAF9D0C41D1DFD8006AC280619DFF6C3059D7DA7FAEF6F1C477D2CE4D3F"
+    },
+    "pruned": {
+      "path": "zero-sum/conditional_r132900_pruning_inventory_20261111.json",
+      "sha256": "E94D87827C3A4D37CA34F07001F16EA7AEE8854684F8BC156C3D4AC6D96B65CF"
+    },
+    "precision": {
+      "path": "zero-sum/mixed_radix_precision_metadata_20261111.json",
+      "sha256": "8BAE81D30CA893F7728E9B13249A96A56D22A9EB87612E9D6B0FCD453140EE8E"
+    },
+    "width": {
+      "path": "independent-feasibility/mixed_radix_width_metadata_20261111.json",
+      "sha256": "364B00C1BA63A06CC5B1C3E0CC777280151BB05E0E5B56063231596B0249B48F"
+    },
+    "combined": {
+      "path": "major-constants/combined_odd_even_height_inventory_20261111.json",
+      "sha256": "BCBAA29AE9A963A46170C5B7B355C0399EE6A622EDBE355ECD24BFE92042C2EE"
+    },
+    "reconciled": {
+      "path": "major-constants/reconciled_nonprincipal_schedule_20261111.json",
+      "sha256": "0E83C9AB65725FBD34F0D34FC462E9EC805A040717DA92B1AB262CC7A9345397"
+    },
+    "full_source": {
+      "path": "zero-sum/mixed_radix_character_inventory_20261111.py",
+      "sha256": "405864B2DF656C24111A21331592A255B92C6CE238E789D4B494BD8CE30865CD"
+    },
+    "pruned_source": {
+      "path": "zero-sum/primitive_output_pruning_inventory_20261111.py",
+      "sha256": "EFA92DB65FC1419243CF9A6FF1DE063E19718E5AE4ADCB297D195B34D25F41D5"
+    },
+    "r132900_source": {
+      "path": "zero-sum/conditional_r132900_pruning_inventory_20261111.py",
+      "sha256": "074E6B512F595DD174C45F3D273212FDFCF76CD6EFF6F82699F260E447CA986D"
+    },
+    "combined_source": {
+      "path": "major-constants/combined_odd_even_height_inventory_20261111.py",
+      "sha256": "4C1B0FA0DA303A5EE475493A8CE66EB3723B3C9DFD9369DF9687069AF3F3E154"
+    },
+    "precision_source": {
+      "path": "zero-sum/mixed_radix_precision_metadata_20261111.py",
+      "sha256": "3750A9C8FD77163C878694959158762D183F1425E4F85F983230A841BAEBDC42"
+    },
+    "width_source": {
+      "path": "independent-feasibility/mixed_radix_width_metadata_20261111.py",
+      "sha256": "CA571F8B74849F3F70EE2DA8867D1AD212B8D3140B2D7CE3E448001B3836DE24"
+    },
+    "full_note": {
+      "path": "zero-sum/MIXED_RADIX_CHARACTER_TRANSFORM_EFFICIENCY_2026-11-11.md",
+      "sha256": "C2DF53947BA4EC8B401148F63EBDE8EAB95C5C6EA029317EDF4C326D38A87E01"
+    },
+    "pruned_note": {
+      "path": "zero-sum/PRIMITIVE_OUTPUT_PRUNING_EFFICIENCY_2026-11-11.md",
+      "sha256": "CB4085D00AED0BFDA9ADC1BB7306DB24EF052502C99F30D45E15AEF6EEC3F8B8"
+    },
+    "full_review": {
+      "path": "independent-feasibility/REVIEW_MIXED_RADIX_CHARACTER_TRANSFORM_EFFICIENCY_2026-11-11.md",
+      "sha256": "BABEF1416D8D02864360DD523DE18F468FD0DCDD3FA5C583F6BD564C76A19AB9"
+    },
+    "precision_review": {
+      "path": "audit/REVIEW_MIXED_RADIX_PRECISION_ERROR_SUPPLEMENT_2026-11-11.md",
+      "sha256": "1268986720865E47569FC5E568546194C0A61EDC9AE80CDD78502CDC77385537"
+    },
+    "width_review": {
+      "path": "major-constants/REVIEW_MIXED_RADIX_INTERMEDIATE_WIDTH_2026-11-11.md",
+      "sha256": "A1D0815D5B186F0E07CCCFDD4EE3035D5E74D780CC4364ED49866AC30B56EF2F"
+    },
+    "reconciled_review": {
+      "path": "zero-sum/REVIEW_RECONCILED_NONPRINCIPAL_OPERATION_SCHEDULE_2026-11-11.md",
+      "sha256": "712090B83A3C31F58C2642B329B8122661F9AB4D675F0665342D69FAD47E562D"
+    }
+  },
+  "plan_sha256": "fa64e941393518f8debe960c0b81d977e0100cc033a9028287f6d86cc2917d5b",
+  "current_scenarios": [
+    {
+      "extra_nodes": 0,
+      "operations": {
+        "all_general_products": 1004103686197888,
+        "cached_kernel_products": 88576420247296,
+        "unit_root_products": 915527265950592,
+        "complex_add_sub": 2079886046397995,
+        "quarter_turns": 92117812144056,
+        "negations": 19872754128,
+        "inverse_dyadic_scales": 88576420247296
+      },
+      "residue_inputs": 59962061953248,
+      "primitive_outputs": 36290898519503
+    },
+    {
+      "extra_nodes": 167,
+      "operations": {
+        "all_general_products": 1024618166379118,
+        "cached_kernel_products": 90374781940928,
+        "unit_root_products": 934243384438190,
+        "complex_add_sub": 2122384498321844,
+        "quarter_turns": 93986171544503,
+        "negations": 20269359088,
+        "inverse_dyadic_scales": 90374781940928
+      },
+      "residue_inputs": 61153275496992,
+      "primitive_outputs": 37014550742284
+    },
+    {
+      "extra_nodes": 320,
+      "operations": {
+        "all_general_products": 1043412869778688,
+        "cached_kernel_products": 92022382774016,
+        "unit_root_products": 951390487004672,
+        "complex_add_sub": 2161320205773035,
+        "quarter_turns": 95697902013176,
+        "negations": 20632715728,
+        "inverse_dyadic_scales": 92022382774016
+      },
+      "residue_inputs": 62244626827488,
+      "primitive_outputs": 37677537509263
+    },
+    {
+      "extra_nodes": 640,
+      "operations": {
+        "all_general_products": 1082722053359488,
+        "cached_kernel_products": 95468345300736,
+        "unit_root_products": 987253708058752,
+        "complex_add_sub": 2242754365148075,
+        "quarter_turns": 99277991882296,
+        "negations": 21392677328,
+        "inverse_dyadic_scales": 95468345300736
+      },
+      "residue_inputs": 64527191701728,
+      "primitive_outputs": 39064176499023
+    }
+  ],
+  "per_extra_node": {
+    "all_general_products": 122841198690,
+    "cached_kernel_products": 10768632896,
+    "unit_root_products": 112072565794,
+    "complex_add_sub": 254481748047,
+    "quarter_turns": 11187780841,
+    "negations": 2374880,
+    "inverse_dyadic_scales": 10768632896
+  },
+  "precision_width_join": {
+    "key": "axis_rows[].n",
+    "matched_rows": 13943,
+    "precision_fields": [
+      "n",
+      "old_C",
+      "new_C",
+      "old_D",
+      "new_D"
+    ],
+    "width_fields": [
+      "n",
+      "old_peak",
+      "mixed_peak",
+      "old_bits",
+      "mixed_bits"
+    ],
+    "occurrence_weights_saved": false,
+    "actual_bit_precision_saved": false
+  },
+  "manifest_status": {
+    "full_plan_saved": false,
+    "full_plan_hash_saved": true,
+    "full_plan_node_count": 37117,
+    "pruned_requests_saved": false,
+    "pruned_request_count": 12781,
+    "pruned_top_restrictions_saved": false,
+    "pruned_top_restriction_count": 12523,
+    "current_conductor_height_table_saved": false,
+    "current_examples": 7
+  },
+  "setup": {
+    "axis_lengths": 12496,
+    "active_nodes": 32942,
+    "kernel_count": 6004,
+    "kernel_entries": 337702368,
+    "chirp_entries": 140276846,
+    "max_padded_length": 262144,
+    "kernel_forward_operations": {
+      "general_complex_products": 2244782056,
+      "complex_add_sub": 5502647200,
+      "quarter_turns": 168845180,
+      "negations": 0,
+      "dyadic_scales": 0
+    },
+    "CT_full_root_table_entry_upper": 1116142487
+  },
+  "missing_correlations": [
+    "conductor and scenario height multiplicity by node request",
+    "actual CT tree and primitive restriction per invocation",
+    "outer original-order prefix magnitude by axis occurrence",
+    "Bluestein padded length and FFT stage by kernel/root gate count",
+    "input bound B, fractional precision and coefficient radius by occurrence",
+    "distinct cache entries by precision and checked lifetime"
+  ]
+}

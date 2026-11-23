@@ -1,0 +1,10 @@
+INCLUDES = ../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
+
+all: typed_dependent.exe
+
+TypedWorkload.uo: TypedBlock.uo TypedStockCompute.uo TypedCvConfig.uo
+
+typed_dependent.uo: TypedWorkload.uo
+
+typed_dependent.exe: typed_dependent.uo
+	$(HOLMOSMLC) -o $@ $<

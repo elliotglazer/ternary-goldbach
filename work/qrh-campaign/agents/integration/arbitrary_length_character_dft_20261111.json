@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "exact small algebraic diagnostics and rational error bounds only",
+  "ring": "Q[X]/(X^8-X^4+1), X=exp(2*pi*i/24)",
+  "cases": [
+    {
+      "m": 1,
+      "padding_length": 1,
+      "positive_dft_matches": true
+    },
+    {
+      "m": 2,
+      "padding_length": 4,
+      "positive_dft_matches": true
+    },
+    {
+      "m": 3,
+      "padding_length": 8,
+      "positive_dft_matches": true
+    },
+    {
+      "m": 4,
+      "padding_length": 8,
+      "positive_dft_matches": true
+    }
+  ],
+  "odd_case_negative_sign_distinguished": true,
+  "corruptions_rejected": [
+    "chirp square modulo m",
+    "dropped negative differences",
+    "N rather than N^2 scale"
+  ],
+  "rational_bound_cases": 21,
+  "actual_L_function_samples": 0,
+  "script_sha256": "74430B4B7CC49586CEF3114C43CCD186F8DF49E7E3AF23EECB8B55256840D727"
+}

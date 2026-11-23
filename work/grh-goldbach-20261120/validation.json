@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-20",
+  "checked": {
+    "Gap.lean": {
+      "result": "Lean 4.35.0 accepts the file at trust level zero with no warnings",
+      "receipt": "gap04.json",
+      "source_sha256": "a9450f60a16c37ecb6bd3f920b9e0fe32ab552b46df106715428aa4f03a5aa4c",
+      "cpu_seconds": 36.078125,
+      "wall_seconds": 140.2719182,
+      "meaning": "Elementary prime extraction, the numerical Schoenfeld-expression bound, and the Bertrand transition. Not the RH-dependent Schoenfeld estimate."
+    }
+  },
+  "pending": {
+    "FiniteReduction.lean": "Written but not yet compiled. Internal conditional lemma with both theta and binary inputs explicit.",
+    "FullGRH.lean": "Written but not yet compiled. Takes full GRH as an argument; does not import the released proof."
+  },
+  "build_observation": {
+    "Statement.lean": "Fresh compilation of the unchanged upstream statement module hit a 600-second wall cap with no diagnostics and 37.046875 CPU seconds. This is not evidence of a mathematical or elaboration failure.",
+    "receipt": "statement01.json",
+    "memory_observation": "System memory load was 92 percent with 2.23 GiB available during the attempt.",
+    "cache_found": "work/qrh-campaign/agents/integration/artifacts/TernaryGoldbach/Statement.olean exists. Its historical log records successful downstream imports but no captured original build exit. Audit before reuse."
+  },
+  "scope": "Only Gap.lean is presently counted as new checked Lean proof progress. No GRH proof, Zinoviev theorem, Schoenfeld estimate, full binary certificate, or full ternary theorem was validated in this pilot.",
+  "dependencies": "Existing Mathlib artifacts remained read-only; no Lake update, dependency rebuild or full GRH archive download was performed."
+}

@@ -1,0 +1,18 @@
+<<HOL message: Created theory "C10004PackedIdentity">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX;bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004PackedIdentity)>>
+SHARED_BOOTSTRAP_DONE
+TRAVERSAL_CV_TAG,actual_phase_encoding,DISK_THM,
+TRAVERSAL_CV_TAG,identity_h1,DISK_THM,
+Saved theorem _______ "identity_h1"
+PACKED_CPU,identity,1,16,4800,0.64056,6.933468,0.249166,0.000096,0.000063,8.226272
+TRAVERSAL_CV_TAG,identity_h2,DISK_THM,
+Saved theorem _______ "identity_h2"
+PACKED_CPU,identity,2,16,4800,0.789709,7.626598,0.301613,0.0001,0.00008,9.123957
+Exporting theory "C10004PackedIdentity" ... done.
+Theory "C10004PackedIdentity" took 20.8s to build
+PACKED_REPLAY_DONE,identity

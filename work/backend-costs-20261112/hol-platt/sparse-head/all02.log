@@ -1,0 +1,89 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanned 24 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/SparseAllRepairsScript.uo to produce theory-builder executable
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:44: warning: Pattern is not exhaustive.
+Found near val [_, dec] = #2 (strip_comb (concl ft))
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/grid-sign-join/replay.sml:62: warning: Pattern is not exhaustive. Found near val [til, js, ks] = args
+<<HOL message: Created theory "SparseAllRepairs">>
+Saved definition ____ "checked_job_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SparseAllRepairs)>>
+Saved definition ____ "jobs_ok_def"
+Saved induction _____ "jobs_ok_ind"
+Saved definition ____ "all_ok_def"
+Starting translation of all_ok from SparseAllRepairsTheory.
+Starting translation of jobs_ok from SparseAllRepairsTheory.
+Starting translation of checked_job from SparseAllRepairsTheory.
+Saved definition ____ "MAP_raw_center_1_def"
+Saved induction _____ "MAP_raw_center_1_ind"
+Starting translation of MAP_raw_center from SparseAllRepairsTheory.
+Starting translation of raw_center from WindowPerturbationTheory.
+Saved theorem _______ "cv_raw_center_thm"
+Finished translating raw_center, stored in cv_raw_center_thm
+Starting translation of MAP_raw_center from SparseAllRepairsTheory.
+Saved definition ____ "cv_MAP_raw_center_def"
+Saved induction _____ "cv_MAP_raw_center_ind"
+Saved theorem _______ "cv_MAP_raw_center_thm"
+Finished translating MAP_raw_center, stored in cv_MAP_raw_center_thm
+Saved theorem _______ "MAP_raw_center_ho"
+Starting translation of checked_job from SparseAllRepairsTheory.
+Saved definition ____ "LIST_REL_encloses_1_def"
+Saved induction _____ "LIST_REL_encloses_1_ind"
+Starting translation of LIST_REL_encloses from SparseAllRepairsTheory.
+Starting translation of encloses from EnclosureTheory.
+Saved theorem _______ "cv_encloses_thm"
+Finished translating encloses, stored in cv_encloses_thm
+Starting translation of LIST_REL_encloses from SparseAllRepairsTheory.
+Saved theorem _______ "cv_LIST_REL_encloses_thm"
+Finished translating LIST_REL_encloses, stored in cv_LIST_REL_encloses_thm
+Saved theorem _______ "LIST_REL_encloses_ho"
+Starting translation of checked_job from SparseAllRepairsTheory.
+Starting translation of reads from WindowPerturbationTheory.
+Saved theorem _______ "cv_reads_thm"
+Finished translating reads, stored in cv_reads_thm
+Starting translation of checked_job from SparseAllRepairsTheory.
+Saved theorem _______ "cv_checked_job_thm"
+Finished translating checked_job, stored in cv_checked_job_thm
+Starting translation of jobs_ok from SparseAllRepairsTheory.
+Saved theorem _______ "cv_jobs_ok_thm"
+Finished translating jobs_ok, stored in cv_jobs_ok_thm
+Starting translation of all_ok from SparseAllRepairsTheory.
+Saved theorem _______ "cv_all_ok_thm"
+Finished translating all_ok, stored in cv_all_ok_thm
+JOIN_EVAL 0.001772 0.798559 0.000122999999999
+Saved theorem _______ "all_repair_margins_3"
+ALL_REPAIR 3 27 8.413032 9.215414
+JOIN_EVAL 0.002382 1.052188 0.000132000000001
+Saved theorem _______ "all_repair_margins_6667"
+ALL_REPAIR 6667 30 21.518265 22.575757
+JOIN_EVAL 0.00217799999999 0.880414 0.000128000000004
+Saved theorem _______ "all_repair_margins_11"
+ALL_REPAIR 11 19 4.716183 5.602904
+JOIN_EVAL 0.00198999999999 0.992311 0.000487000000007
+Saved theorem _______ "all_repair_margins_9091"
+ALL_REPAIR 9091 27 75.654183 76.651455
+Exporting theory "SparseAllRepairs" ... done.
+Theory "SparseAllRepairs" took 2m00s to build
+Holmake: [1/1] SparseAllRepairs

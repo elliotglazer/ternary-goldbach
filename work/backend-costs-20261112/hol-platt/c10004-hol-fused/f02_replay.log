@@ -1,0 +1,19 @@
+<<HOL message: Created theory "C10004ActualFused">>
+TRAVERSAL_CV_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+TRAVERSAL_CV_TAG,ft_checked_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,ft_checked_refines,⊢ ∀roots xs. ft_checked roots xs = tx_checked roots xs
+TRAVERSAL_CV_TAG,cvfast_public_refines,DISK_THM,
+TRAVERSAL_CV_GENERIC,cvfast_public_refines,⊢ ∀fixture. cvfast_public_success fixture ⇔ test_public_success fixture
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in C10004ActualFused)>>
+FUSED_BOOTSTRAP_DONE
+FUSED_START,1
+TRAVERSAL_CV_TAG,fused_checked_h1,DISK_THM,
+Saved theorem _______ "fused_checked_h1"
+FUSED_CPU,1,0.473234,7.725888,0.729775,0.000132,0.000075,9.399101
+FUSED_START,2
+TRAVERSAL_CV_TAG,fused_checked_h2,DISK_THM,
+Saved theorem _______ "fused_checked_h2"
+FUSED_CPU,2,0.221954,8.504172,0.727175,0.000097,0.000076,9.914515
+Exporting theory "C10004ActualFused" ... done.
+Theory "C10004ActualFused" took 22.9s to build
+FUSED_REPLAY_DONE

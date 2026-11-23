@@ -1,0 +1,21 @@
+{
+  "n": 500,
+  "width_bytes": 79,
+  "backend": "fmpz",
+  "arithmetic": "three exact integer products, cyclic fold; rounded prechirp and last output",
+  "checked_direct_outputs": 500,
+  "median_wall_milliseconds": {
+    "prechirp": 1.1298,
+    "pack_input": 0.4092,
+    "pack_kernel": 0.3059,
+    "three_products": 2.7134,
+    "cyclic_reduce_unpack": 0.419,
+    "postchirp": 1.9571,
+    "warm_all": 7.8879,
+    "cold_all": 8.7027
+  },
+  "sha256": {
+    "inputs.tsv": "3936c51487d2e1cc4e9408238c4dbb95bafb740e753734964e9db63a0762983b",
+    "chirps.tsv": "9b2834e7425a0b466caef21e248414c7ccb40923c1958391d3f4f56e6704f10c"
+  }
+}

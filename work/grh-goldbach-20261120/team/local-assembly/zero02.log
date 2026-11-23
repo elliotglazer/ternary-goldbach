@@ -1,0 +1,62 @@
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:159:6: error: invalid 'calc' step, failed to synthesize `Trans` instance
+  Trans LE.le LE.le ?m.1130
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:158:26: error: `gcongr` did not make progress.
+
+a δ x : ℝ
+ha : |a| ≤ 1
+hd : 8e-14 ≤ δ
+hd' : δ ≤ 1e-7
+hx : 0 ≤ x
+hX : x ≤ 1e27
+hdp : 0 ≤ δ
+hsq : 8e-14 * 8e-14 ≤ δ * δ
+hsq' : δ * δ ≤ 1e-7 * 1e-7
+d : ℝ := 1 - rexp (-(4.4 * δ ^ 2 * 5e14))
+hz : 1e-12 ≤ 4.4 * δ ^ 2 * 5e14
+hden : 1e-13 ≤ d
+hdpos : 0 < d
+hden2 : 1e-13 * 1e-13 ≤ d * d
+hrad : 1 ≤ log (10 / 3)
+hrpos : 0 < log (10 / 3)
+hZ : log (jensenBound 5e14 / 0.355) / log (10 / 3) ≤ 2000
+hc : 10 * 4.4 / 5e14 / log (10 / 3) ≤ 1
+hB1 : 2 * (log (jensenBound 5e14 / 0.355) / log (10 / 3)) / d ≤ 4e16
+hB2 : 2 * (10 * 4.4 / 5e14 / log (10 / 3)) / d ^ 2 ≤ 2e26
+hS :
+  2 * (log (jensenBound 5e14 / 0.355) / log (10 / 3)) / d + 2 * (10 * 4.4 / 5e14 / log (10 / 3)) / d ^ 2 ≤ 4e16 + 2e26
+hex : rexp (δ ^ 2 / 2 + |a|) ≤ 9
+harg : 200 ≤ δ ^ 2 * 5e14 ^ 2 / 2
+hg : rexp (-(δ ^ 2 * 5e14 ^ 2 / 2)) ≤ 1e-60
+⊢ 2 * 9 * 1e-60 ≤ 2 * 9 * 1e-60
+C:\Users\glaze\Documents\Codex\2026-11-10\https-github-com-sthubbar-goldbach-lean\work\grh-goldbach-20261120\team\local-assembly\ZeroBudget.lean:159:15: error: unsolved goals
+a δ x : ℝ
+ha : |a| ≤ 1
+hd : 8e-14 ≤ δ
+hd' : δ ≤ 1e-7
+hx : 0 ≤ x
+hX : x ≤ 1e27
+hdp : 0 ≤ δ
+hsq : 8e-14 * 8e-14 ≤ δ * δ
+hsq' : δ * δ ≤ 1e-7 * 1e-7
+d : ℝ := 1 - rexp (-(4.4 * δ ^ 2 * 5e14))
+hz : 1e-12 ≤ 4.4 * δ ^ 2 * 5e14
+hden : 1e-13 ≤ d
+hdpos : 0 < d
+hden2 : 1e-13 * 1e-13 ≤ d * d
+hrad : 1 ≤ log (10 / 3)
+hrpos : 0 < log (10 / 3)
+hZ : log (jensenBound 5e14 / 0.355) / log (10 / 3) ≤ 2000
+hc : 10 * 4.4 / 5e14 / log (10 / 3) ≤ 1
+hB1 : 2 * (log (jensenBound 5e14 / 0.355) / log (10 / 3)) / d ≤ 4e16
+hB2 : 2 * (10 * 4.4 / 5e14 / log (10 / 3)) / d ^ 2 ≤ 2e26
+hS :
+  2 * (log (jensenBound 5e14 / 0.355) / log (10 / 3)) / d + 2 * (10 * 4.4 / 5e14 / log (10 / 3)) / d ^ 2 ≤ 4e16 + 2e26
+hex : rexp (δ ^ 2 / 2 + |a|) ≤ 9
+harg : 200 ≤ δ ^ 2 * 5e14 ^ 2 / 2
+hg : rexp (-(δ ^ 2 * 5e14 ^ 2 / 2)) ≤ 1e-60
+⊢ 2 * 9 * 1e-60 ≤ ?m.1122
+'GrhGoldbach.ZeroBudget.lineWindows_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrhGoldbach.ZeroBudget.mid_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrhGoldbach.ZeroBudget.high_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

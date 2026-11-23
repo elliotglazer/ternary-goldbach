@@ -1,0 +1,44 @@
+{
+  "status": "source only; no HOL execution",
+  "inputs": {
+    "hol-platt\\prepared-eval\\prepared_dependent.sml": "50077F647A0BC91B892FC6DBB3ABAC95D4B0B5084872A8BAAC2C0D6E35EDEEA4",
+    "hol4-setup\\dependent.sml": "ECB62C8C7B1F1AAAA8DF9617DAF4145D7FCADBEEDD9CF8579D3F57962C5E1AB1",
+    "hol-platt\\prepared-eval\\PreparedEval.sml": "13A8941A49FA2CB238370008B10D13FC106C42B95353E18EB145683776D27807"
+  },
+  "decimal_string_count": 788,
+  "decimal_string_sequence_sha256": "CF2C5742E5BA23674165D763CE1A01C7E68E6E6E64B6139D4FC05E13D9AE56FC",
+  "output_sha256": "026690424A64D4BD73E605FEA3975E995301E3E5C3E3860C73CABC12DC02BC25",
+  "depths": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "controls": [
+    "checksum",
+    "bound",
+    "depth",
+    "input",
+    "coefficient"
+  ],
+  "implementations": [
+    "old",
+    "one"
+  ],
+  "default_modes": [
+    "stock",
+    "retained"
+  ],
+  "optional_mode": "fresh",
+  "fixture_arithmetic_evaluated": false,
+  "local_sources": {
+    "RoundSpecializationScript.sml": "37CB4079D95F48B1F1FF9974525C909DDA21F829FD39FB341027EB9CD5380DAF",
+    "RoundSpecializationCVScript.sml": "269681276C74C1EE027CD31A8C146EE38D896BC7CE1C4166DB24E90EB72CD336",
+    "dependent\\RoundDependentScript.sml": "FD8A98AD0FB0E3E75BD5BC40757210BC551136E98EA362C8375368FEE31C19AE",
+    "dependent\\prepare_driver.py": "8AAEE688073C01692BF0FB2873FB19EA1CB46E8C1FABC191F5819C3665C6059F"
+  },
+  "translation_preconditions": {
+    "old": "positive scale closes original block_accept_pre",
+    "one": "none; natural-DIV definitions are total; mathematical positivity is retained"
+  }
+}

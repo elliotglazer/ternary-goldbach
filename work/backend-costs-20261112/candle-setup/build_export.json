@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\clang.exe",
+    "--target=x86_64-linux-musl",
+    "-O2",
+    "-DEVAL",
+    "-static",
+    "-nostdlib",
+    "-nostdinc",
+    "-isystem",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\include",
+    "-isystem",
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\include\\clang",
+    "-fuse-ld=lld",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crt1.o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crti.o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\candle-setup\\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\\candle\\build\\cake.S",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\candle-setup\\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\\candle\\build\\basis_ffi_export.c",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\libc.a",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\formal-goldbach-bench\\mm0\\sysroot\\usr\\lib\\crtn.o",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\candle-setup\\candle-6a9acd58867610c78fee0f3dd9ed4c4c14087b18\\candle\\build\\cake-export"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 11.17052019998664,
+  "change": "Kernel FFI bytes are written to a separate file; timestamp instrumentation retained; prover assembly unchanged",
+  "binary_sha256": "0725cff5680fd2677edb1b6a0106d25e99b469310415391d0a41e40a217a6eb0"
+}

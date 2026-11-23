@@ -1,0 +1,16 @@
+# Stock HOL4 signed tile handling
+
+tile04_bench.log contains closed Boolean evaluations using cv_eval. Each result passed a conclusion check, an empty-hypothesis check, and an oracle/axiom tag check. TileCostScript.sml is the evaluator. bench.sml constructs the public input from four small scalar arguments and times the full conversion on one worker. The signed operands have compact repeated blocks, while the balanced pack visits individually generated seed-dependent signed lanes. The three-lane consumer recursively splits signed values, forms real and imaginary components, multiplies by seed-dependent chirp surrogates, rounds, tests sign and accumulates the number of detected signs. Its only public output is a Boolean. It exercises the arithmetic shape of the consumer. The production chirp certificates, sample margins and mathematical refinement remain separate.
+
+| Signed lane width | Split incremental s per 65,536-lane tile, median [min,max] | Balanced pack µs/lane at length 4,096 | Three-tile extraction + postchirp + sign µs/sample at length 4,096 |
+| --- | --- | --- | --- |
+| 544 | 0.699 [0.675,0.809] | 19.3 | 84.4 |
+| 552 | 0.723 [0.718,0.821] | 21.2 | 86.2 |
+| 616 | 0.785 [0.780,0.846] | 23.0 | 99.7 |
+| 744 | 0.871 [0.778,0.889] | 25.8 | 121.7 |
+
+The split timing subtracts mode 3 from mode 2 at each seed. Both create the same three source tiles, form the signed double-width value z=a+B*b, and return a scalar nonzero check. Mode 2 obtains high and low by balanced signed division, then adds both and c. Mode 3 adds c to z. The measured difference includes this change in Boolean sink arithmetic. Mode 5 versus 0 adds one extra tile but its three-seed deltas cross zero or have unstable signs at several widths. Independent add throughput remains unresolved by this experiment. Pack and extraction columns are total evaluation time. At length 65,536 the dense scalar payload is 4,456,448 bytes for width 544 and 6,094,848 bytes for width 744. It stays inside the evaluator.
+
+The geometry gives 1,836,492,654 retained scalar pieces and 1,775,431,871,117 real output samples. A split producing either one or two retained pieces gives a lower/upper call count of 918,246,327 and 1,836,492,654. At the displayed median rates, applying the single width 544 to every split gives 178,195–356,391 core-hours; width 744 gives 222,222–444,445. The true call count needs the per-product retention schedule and the width mix. These endpoints omit interval replay overhead and performance variation. At 4,096 lanes the observed consumer rate maps to 41,613–60,032 core-hours across those endpoint widths. Extrapolating its per-sample rate to length 65,536 is unvalidated. The packing count depends on transform reuse. Exact independent products, data provenance, certified transcendental postchirps and output persistence are outside these measurements.
+
+paired-times.csv records three-seed median, minimum and maximum values. Its campaign column for the split is the one-piece-per-call case. Negative add differences are paired measurement noise. The 3 repeats use fixed execution order in one warm process; they describe local spread and do not establish confidence intervals or cold-start performance.

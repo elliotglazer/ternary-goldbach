@@ -1,0 +1,80 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanned 16 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/small-gaussian-transform/FusedScript.uo to produce theory-builder executable
+<<HOL message: Created theory "Fused">>
+Saved definition ____ "fetch_def"
+Saved theorem _______ "fetch_from_list"
+Saved definition ____ "crt_res_def"
+Saved definition ____ "pair16_def"
+Saved theorem _______ "slice_compute"
+Saved definition ____ "slice_def"
+Saved definition ____ "mirrors_def"
+Saved definition ____ "transform500_def"
+Saved definition ____ "primitive_rows_def"
+Saved definition ____ "block_def"
+Saved definition ____ "after_table_def"
+Saved definition ____ "fused_def"
+Starting translation of fused from FusedTheory.
+Starting translation of after_table from FusedTheory.
+Starting translation of mirrors from FusedTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in Fused)>>
+Saved definition ____ "cv_mirrors_def"
+Saved induction _____ "cv_mirrors_ind"
+Saved theorem _______ "cv_mirrors_thm"
+Finished translating mirrors, stored in cv_mirrors_thm
+Starting translation of after_table from FusedTheory.
+Starting translation of block from FusedTheory.
+Starting translation of transform500 from FusedTheory.
+Saved theorem _______ "cv_transform500_thm"
+Finished translating transform500, stored in cv_transform500_thm
+Starting translation of block from FusedTheory.
+Starting translation of slice from FusedTheory.
+Starting translation of pair16 from FusedTheory.
+Starting translation of fetch from FusedTheory.
+Saved theorem _______ "cv_fetch_thm"
+Finished translating fetch, stored in cv_fetch_thm
+Starting translation of pair16 from FusedTheory.
+Starting translation of crt_res from FusedTheory.
+Saved theorem _______ "cv_crt_res_thm"
+Finished translating crt_res, stored in cv_crt_res_thm
+Starting translation of pair16 from FusedTheory.
+Saved theorem _______ "cv_pair16_thm"
+Finished translating pair16, stored in cv_pair16_thm
+Starting translation of slice from FusedTheory.
+Saved definition ____ "cv_slice_def"
+Saved induction _____ "cv_slice_ind"
+Saved theorem _______ "cv_slice_thm"
+Finished translating slice, stored in cv_slice_thm
+Starting translation of block from FusedTheory.
+Starting translation of primitive_rows from FusedTheory.
+Saved definition ____ "cv_primitive_rows_def"
+Saved induction _____ "cv_primitive_rows_ind"
+Saved theorem _______ "cv_primitive_rows_thm"
+Finished translating primitive_rows, stored in cv_primitive_rows_thm
+Starting translation of block from FusedTheory.
+Saved theorem _______ "cv_block_thm"
+Finished translating block, stored in cv_block_thm
+Starting translation of after_table from FusedTheory.
+Saved theorem _______ "cv_after_table_thm"
+Finished translating after_table, stored in cv_after_table_thm
+Starting translation of fused from FusedTheory.
+Saved theorem _______ "cv_fused_thm"
+Finished translating fused, stored in cv_fused_thm
+Exporting theory "Fused" ... done.
+Theory "Fused" took 0.44068s to build
+Holmake: [1/1] Fused

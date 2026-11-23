@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-t0",
+    "-j1",
+    "-M4096",
+    "-o",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\ReplayAnchors1024.olean",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\backend-costs-20261112\\finite-lean\\ReplayAnchors1024.lean"
+  ],
+  "exit_code": 0,
+  "stop": null,
+  "wall_seconds": 23.987094799987972,
+  "user_cpu_seconds": 16.03125,
+  "system_cpu_seconds": 7.78125,
+  "cpu_seconds": 23.8125,
+  "peak_working_set_bytes": 1289023488,
+  "observed_peak_private_bytes": 2860285952,
+  "memory_samples": 475,
+  "measurement": "Windows process times and peak working set; private memory sampled every50ms; kernel loop is elapsed time",
+  "rows": [
+    {
+      "variant": "anchors",
+      "width": 1024,
+      "repetitions": 1,
+      "declarations": 4144,
+      "proof_pool_generation_ns": 505687200,
+      "kernel_bundle_wall_ns": 5339382100
+    }
+  ],
+  "limits_lines": [
+    "LIMITS,trust=0,heartbeats=0,recdepth=65536"
+  ],
+  "artifacts": [
+    {
+      "path": "ReplayAnchors1024.lean",
+      "bytes": 169,
+      "sha256": "C60B9354105C3B747052951924280A528BAF2FC926B093435D58768E116B227E"
+    },
+    {
+      "path": "anchors1024_sample2.log",
+      "bytes": 90,
+      "sha256": "120D274FD5D1B6802BB2862CA2E7F0BF70C2150B16726291FDB4737F68699993"
+    },
+    {
+      "path": "ReplayAnchors1024.olean",
+      "bytes": 1568,
+      "sha256": "2F49432BB5344BF792150FD18F9868CEEC0AEAF3992E4368D85D37FC4A516E04"
+    }
+  ],
+  "no_native_decide": true,
+  "dependency_builds": false
+}

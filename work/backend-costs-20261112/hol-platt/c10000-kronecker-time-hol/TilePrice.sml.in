@@ -1,0 +1,49 @@
+Theory TilePrice
+Ancestors integer cv_std
+Libs intLib cv_transLib
+val _=intLib.ARITH_TAC;
+Definition tp_mod_def:
+  tp_mod (z:int) d = if d=0 then 0 else z % d
+End
+Definition tp_repeat_def:
+  (tp_repeat 0 (x:int) (y:int) acc = acc) /\
+  (tp_repeat (SUC n) x y acc =
+    tp_repeat n x y (acc + tp_mod ((x + &n)*y) 65537))
+End
+Definition tp_div_def:
+  tp_div (a:num) b = if b=0 then 0 else a DIV b
+End
+Definition tp_price_def:
+  tp_price (bytes:num) reps =
+    let scale = tp_div ((2 ** (8*bytes))-1) ((2**1024)-1);
+        x = ~((&SEEDA) * &scale):int; y = (&SEEDB) * &scale:int
+    in tp_repeat reps x y (tp_mod (x+y) 65537)
+End
+val _=cv_auto_trans tp_mod_def;
+val _=cv_auto_trans tp_repeat_def;
+val _=cv_auto_trans tp_div_def;
+val _=cv_auto_trans tp_price_def;
+fun cpu c=let val {usr,sys}=Timer.checkCPUTimer c in Time.toReal(Time.+(usr,sys)) end;
+fun one(bytes,n,e)=
+ let val clock=Timer.startCPUTimer()
+     val wall=Timer.startRealTimer()
+     fun num i=numSyntax.mk_numeral(Arbnum.fromInt i)
+     val tm=list_mk_comb(``tp_price``,[num bytes,num n])
+     val rep=cv_repLib.cv_rep_for [] tm
+     val ft=cv_typeLib.from_to_thm_for(type_of tm)
+     val ctx=UNDISCH_ALL(MATCH_MP(MATCH_MP cv_repTheory.cv_rep_eval rep) ft)
+     val cvtm=rand(rhs(concl ctx))
+     val conv=cv_computeLib.cv_compute(cv_eqs_for cvtm)
+     val t1=cpu clock
+     val w1=Time.toReal(Timer.checkRealTimer wall)
+     val raw=CONV_RULE(RAND_CONV(RAND_CONV conv)) ctx
+     val t2=cpu clock
+     val w2=Time.toReal(Timer.checkRealTimer wall)
+     val dec=CONV_RULE(RAND_CONV EVAL) raw
+     val th=List.foldl(fn(h,t)=>PROVE_HYP(prove(h,SIMP_TAC (srw_ss()) [])) t) dec (hyp dec)
+     val expct=intSyntax.term_of_int(Arbint.fromInt e)
+     val (oracles,axs)=Tag.dest_tag(tag th)
+     val _=if null(hyp th) andalso null axs andalso List.all(fn s=>s="DISK_THM") oracles andalso aconv(lhs(concl th)) tm andalso aconv(rhs(concl th)) expct then () else raise Fail "result mismatch"
+     val _=print("TILE " ^ Int.toString bytes ^ " " ^ Int.toString n ^ " " ^ Int.toString e ^ " " ^ String.concatWith " " (map Real.toString [t1,t2-t1,w2-w1,cpu clock-t2]) ^ "\n")
+ in () end;
+

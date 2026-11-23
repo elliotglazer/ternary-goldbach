@@ -1,0 +1,44 @@
+Scanning [1m$(HOLDIR)/src/sort[0m
+Scanning [1m$(HOLDIR)/src/string[0m
+Scanning [1m$(HOLDIR)/src/TeX[0m
+Scanning [1m$(HOLDIR)/src/bag[0m
+Scanning [1m$(HOLDIR)/src/n-bit[0m
+Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Scanning [1m$(HOLDIR)/src/integer[0m
+Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Scanning [1m$(HOLDIR)/src/transfer[0m
+Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Scanning [1m$(HOLDIR)/src/rational[0m
+Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Scanned 14 directories
+Building 1 theory file
+Starting work on DependentBlockTheory
+DependentBlockTheory                                        (8s)        FAIL<1>
+*** Holmake aborted - 1 target failed:
+*** DependentBlockTheory (status 1)
+ <<HOL message: Created theory "DependentBlock">>
+ <<HOL warning: Context.snapshot: ambient context read while a proof was running (in DependentBlock)>>
+ Saved definition ____ "block_layer_def"
+ Saved induction _____ "block_layer_ind"
+ Saved definition ____ "block_rotate_def"
+ Saved theorem _______ "block_run_compute"
+ Saved definition ____ "block_run_def"
+ Saved definition ____ "layer_contract_def"
+ Saved induction _____ "layer_contract_ind"
+ Saved theorem _______ "block_contract_compute"
+ Saved definition ____ "block_contract_def"
+ Saved theorem _______ "block_layer_length"
+ error in quse /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/DependentBlockScript.sml : Fail "Static Errors"
+ error in load /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/DependentBlockScript : Fail "Static Errors"
+ /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/DependentBlockScript.sml:58:1-8: parse error: expected 'QED'
+ /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/DependentBlockScript.sml:56: error: Value or constructor (QED) has not been declared
+ Found near Cases >> simp [block_rotate_def] QED
+ /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/DependentBlockScript.sml:56: error: Type error in function application.
+    Function: >> : (goal, thm) gentactic * tactic -> (goal, thm) gentactic
+    Argument: (Cases, simp [block_rotate_def] QED) :
+       tactic * (Context.t -> goal list * validation)
+    Reason: Can't unify Context.t to term list * term (Incompatible types)
+ Found near Cases >> simp [block_rotate_def] QED
+ Uncaught exception at ./basis/FinalPolyML.sml:492: Fail "Static Errors"
+ Full log: /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/.hol/logs/DependentBlockTheory

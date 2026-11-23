@@ -1,0 +1,71 @@
+{
+  "source": "PackedBench.lean",
+  "exit_code": 0,
+  "wall_seconds": 8.328050999999505,
+  "user_seconds": 7.09375,
+  "kernel_cpu_seconds": 1.171875,
+  "results": [
+    {
+      "label": "packed_check",
+      "width": 1024,
+      "masks": 110,
+      "reps": 10000,
+      "accepted": 10000,
+      "rejected": true,
+      "kernel_seconds": 0.7381166,
+      "ns_per_mask": 671.0150909090909
+    },
+    {
+      "label": "packed_build_check",
+      "width": 1024,
+      "masks": 110,
+      "reps": 10000,
+      "accepted": 10000,
+      "rejected": true,
+      "kernel_seconds": 0.671902,
+      "ns_per_mask": 610.82
+    },
+    {
+      "label": "packed_check",
+      "width": 16384,
+      "masks": 168,
+      "reps": 2000,
+      "accepted": 2000,
+      "rejected": true,
+      "kernel_seconds": 0.7864964,
+      "ns_per_mask": 2340.763095238095
+    },
+    {
+      "label": "packed_build_check",
+      "width": 16384,
+      "masks": 168,
+      "reps": 2000,
+      "accepted": 2000,
+      "rejected": true,
+      "kernel_seconds": 0.6872487,
+      "ns_per_mask": 2045.3830357142858
+    },
+    {
+      "label": "packed_check",
+      "width": 65536,
+      "masks": 168,
+      "reps": 2000,
+      "accepted": 2000,
+      "rejected": true,
+      "kernel_seconds": 2.0192732,
+      "ns_per_mask": 6009.741666666667
+    },
+    {
+      "label": "packed_build_check",
+      "width": 65536,
+      "masks": 168,
+      "reps": 2000,
+      "accepted": 2000,
+      "rejected": true,
+      "kernel_seconds": 1.9056624,
+      "ns_per_mask": 5671.614285714286
+    }
+  ],
+  "source_sha256": "957483a3be153593107c3547608d5cff600cdf38b2615ff2a242f7d967bf44fa",
+  "timing_note": "kernel_seconds is monotonic elapsed time inside checked declaration loop; kernel_cpu_seconds is Windows system CPU time for the entire process, not Lean logical-kernel time."
+}

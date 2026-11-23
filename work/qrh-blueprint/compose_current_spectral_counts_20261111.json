@@ -1,0 +1,122 @@
+{
+  "scope": "large-branch transform and residue-Horner operation categories only",
+  "pins": {
+    "zero-sum/CONDITIONAL_R132900_SPECTRAL_PRUNING_INVENTORY_2026-11-11.md": "7AA9BF4D456CE25685D69427966DC7F61D0914DD091A95B74F9C242B95CADB27",
+    "major-constants/REVIEW_CONDITIONAL_R132900_SPECTRAL_PRUNING_INVENTORY_2026-11-11.md": "6B36841BB9BD406E7DE65170AAC29D00F4575970A16F4D1C78B4CAD5FD4AAEEF",
+    "zero-sum/MIXED_RADIX_CHARACTER_TRANSFORM_EFFICIENCY_2026-11-11.md": "C2DF53947BA4EC8B401148F63EBDE8EAB95C5C6EA029317EDF4C326D38A87E01",
+    "zero-sum/R138000_HURWITZ_SEED_CONTRACTION_EFFICIENCY_2026-11-11.md": "3151FEBCBE953FA458CBFE437222B810468B2E4F173C723F159F67285601D853",
+    "independent-feasibility/REVIEW_R138000_HURWITZ_SEED_CONTRACTION_EFFICIENCY_2026-11-11.md": "CCA39412B798FA2A49AFD56755D67F527D745A8EB8EF43BB83D4CBCB2CD96201",
+    "integration/SHIFTED_HURWITZ_JET_SEED_EFFICIENCY_2026-11-11.md": "861CA2C6F326C57AABDA40B72D723D537223BC0986F0AC25AAE5C6CD37DB2895",
+    "independent-feasibility/REVIEW_SHIFTED_HURWITZ_JET_SEED_EFFICIENCY_2026-11-11.md": "F190270EC3A359A1251E24C1039826EFE13897499DE540EA9F877331804748BB"
+  },
+  "rows": {
+    "R150000_whole_axis_P24_four": {
+      "G": 4890157406463512,
+      "A": 11446911736111484,
+      "residue_inputs": 114223068442718,
+      "P": 24,
+      "Horner_stages": 2627130574182514,
+      "real_products": 24814890774219076,
+      "real_additions": 37928399433515020,
+      "real_products_ratio": {
+        "num": 1,
+        "den": 1,
+        "display": 1.0
+      },
+      "real_additions_ratio": {
+        "num": 1,
+        "den": 1,
+        "display": 1.0
+      }
+    },
+    "R132900_fixed_pruned_P24_four": {
+      "G": 1849018578634950,
+      "A": 3808420069398260,
+      "residue_inputs": 99513098256768,
+      "P": 24,
+      "Horner_stages": 2288801259905664,
+      "real_products": 11973676834351128,
+      "real_additions": 15892479815877748,
+      "real_products_ratio": {
+        "num": 2993419208587782,
+        "den": 6203722693554769,
+        "display": 0.482519828247277
+      },
+      "real_additions_ratio": {
+        "num": 3973119953969437,
+        "den": 9482099858378755,
+        "display": 0.419012667374372
+      }
+    },
+    "R132900_fixed_pruned_P20_four": {
+      "G": 1849018578634950,
+      "A": 3808420069398260,
+      "residue_inputs": 99513098256768,
+      "P": 20,
+      "Horner_stages": 1890748866878592,
+      "real_products": 11177572048296984,
+      "real_additions": 15096375029823604,
+      "real_products_ratio": {
+        "num": 2794393012074246,
+        "den": 6203722693554769,
+        "display": 0.4504380917892129
+      },
+      "real_additions_ratio": {
+        "num": 3774093757455901,
+        "den": 9482099858378755,
+        "display": 0.3980229921456653
+      }
+    },
+    "R132900_fixed_pruned_P20_fixed_three": {
+      "G": 1849018578634950,
+      "A": 3808420069398260,
+      "residue_inputs": 99513098256768,
+      "P": 20,
+      "Horner_stages": 1890748866878592,
+      "real_products": 9328553469662034,
+      "real_additions": 16945393608458554,
+      "real_products_ratio": {
+        "num": 4664276734831017,
+        "den": 12407445387109538,
+        "display": 0.37592563088586084
+      },
+      "real_additions_ratio": {
+        "num": 8472696804229277,
+        "den": 18964199716757510,
+        "display": 0.44677323223623666
+      }
+    },
+    "R132900_fixed_pruned_P20_Gauss": {
+      "G": 1849018578634950,
+      "A": 3808420069398260,
+      "residue_inputs": 99513098256768,
+      "P": 20,
+      "Horner_stages": 1890748866878592,
+      "real_products": 9328553469662034,
+      "real_additions": 20643430765728454,
+      "real_products_ratio": {
+        "num": 4664276734831017,
+        "den": 12407445387109538,
+        "display": 0.37592563088586084
+      },
+      "real_additions_ratio": {
+        "num": 10321715382864227,
+        "den": 18964199716757510,
+        "display": 0.5442737124173795
+      }
+    }
+  },
+  "excluded": [
+    "seeds",
+    "elementary heads and phases",
+    "coefficient setup",
+    "quarter turns, negations, dyadic scales",
+    "input or displacement enclosures",
+    "rounding proofs",
+    "interpolation, signs and completeness",
+    "small conductor branch",
+    "binary proof and ladder",
+    "foundations, serialization and assembly"
+  ],
+  "runtime_claim": false
+}

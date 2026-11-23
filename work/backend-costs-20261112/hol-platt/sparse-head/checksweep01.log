@@ -1,0 +1,113 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m../small-character-kernel[0m
+Holmake: Scanning [1m../small-gaussian[0m
+Holmake: Scanning [1m../small-gaussian-transform[0m
+Holmake: Scanning [1m../full-height-count[0m
+Holmake: Scanning [1m../grid-projection[0m
+Holmake: Scanning [1m../grid-sign-join[0m
+Holmake: Scanning [1m../grid-enclosure[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../stencil-perturbation[0m
+Holmake: Scanning [1m../interpolation-geometry[0m
+Holmake: Scanning [1m../small-time-selected-consumer[0m
+Holmake: Scanning [1m../sparse-stream[0m
+Holmake: Scanned 27 directories
+Holmake: Building 1 theory file
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/CheckedDigitsScript.uo to produce theory-builder executable
+<<HOL message: Created theory "CheckedDigits">>
+Saved theorem _______ "checked_compute"
+Saved definition ____ "checked_def"
+Starting translation of checked from CheckedDigitsTheory.
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in CheckedDigits)>>
+Saved definition ____ "cv_checked_def"
+Saved induction _____ "cv_checked_ind"
+Saved theorem _______ "cv_checked_thm"
+Finished translating checked, stored in cv_checked_thm
+Saved theorem _______ "value_agrees"
+Saved definition ____ "checkedrow_def"
+Starting translation of checkedrow from CheckedDigitsTheory.
+Saved theorem _______ "cv_checkedrow_thm"
+Finished translating checkedrow, stored in cv_checkedrow_thm
+/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/sparse-head/CheckedDigitsScript.sml:42: warning: Pattern is not exhaustive.
+Found near val [w, e, m, ...] = readf (((... ^ ...) ^ row) ^ ".hex")
+3,0,3,5.204,5.208
+3,0,2,2.333,2.337
+3,0,2,2.451,2.455
+3,0,3,2.242,2.245
+3,128,2,4.796,4.804
+3,128,3,4.033,4.036
+3,128,3,1.858,1.860
+3,128,2,2.088,2.091
+3,512,3,2.012,2.030
+3,512,2,2.101,2.109
+3,512,2,1.989,1.992
+3,512,3,1.822,1.825
+3,1024,2,2.114,2.118
+3,1024,3,2.210,2.212
+3,1024,3,2.492,2.496
+3,1024,2,2.367,2.371
+6667,0,3,2.247,2.250
+6667,0,2,1.975,1.979
+6667,0,2,2.051,2.054
+6667,0,3,3.896,3.903
+6667,128,2,2.010,2.016
+6667,128,3,6.740,6.745
+6667,128,3,2.359,2.363
+6667,128,2,2.628,2.633
+6667,512,3,2.518,2.521
+6667,512,2,2.950,2.953
+6667,512,2,3.036,3.041
+6667,512,3,2.724,2.730
+6667,1024,2,2.391,2.395
+6667,1024,3,2.424,2.428
+6667,1024,3,4.135,4.140
+6667,1024,2,2.857,2.860
+11,0,3,5.626,5.630
+11,0,2,2.699,2.703
+11,0,2,2.553,2.558
+11,0,3,2.884,2.888
+11,128,2,2.975,2.979
+11,128,3,2.783,2.787
+11,128,3,2.644,2.648
+11,128,2,2.568,2.572
+11,512,3,2.715,2.719
+11,512,2,2.985,2.991
+11,512,2,2.426,2.429
+11,512,3,2.593,2.597
+11,1024,2,2.710,2.714
+11,1024,3,2.651,2.656
+11,1024,3,2.780,2.790
+11,1024,2,4.729,4.784
+9091,0,3,2.685,2.727
+9091,0,2,2.084,2.087
+9091,0,2,2.208,2.211
+9091,0,3,2.285,2.288
+9091,128,2,2.210,2.213
+9091,128,3,2.325,2.330
+9091,128,3,2.331,2.335
+9091,128,2,2.563,2.566
+9091,512,3,3.912,3.916
+9091,512,2,4.517,4.519
+9091,512,2,5.983,5.986
+9091,512,3,2.232,2.235
+9091,1024,2,2.280,2.283
+9091,1024,3,2.356,2.359
+9091,1024,3,2.188,2.191
+9091,1024,2,2.515,2.518
+SELECT_DONE
+Exporting theory "CheckedDigits" ... done.
+Theory "CheckedDigits" took 3m39s to build
+Holmake: [1/1] CheckedDigits

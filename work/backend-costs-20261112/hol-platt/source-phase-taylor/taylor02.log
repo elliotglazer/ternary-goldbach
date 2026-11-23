@@ -1,0 +1,100 @@
+Holmake: Scanning [1m$(HOLDIR)/src/sort[0m
+Holmake: Scanning [1m$(HOLDIR)/src/string[0m
+Holmake: Scanning [1m$(HOLDIR)/src/TeX[0m
+Holmake: Scanning [1m$(HOLDIR)/src/bag[0m
+Holmake: Scanning [1m$(HOLDIR)/src/n-bit[0m
+Holmake: Scanning [1m$(HOLDIR)/src/res_quan/src[0m
+Holmake: Scanning [1m$(HOLDIR)/src/finite_maps[0m
+Holmake: Scanning [1m$(HOLDIR)/src/integer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/extra_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/transfer[0m
+Holmake: Scanning [1m$(HOLDIR)/src/pred_set/src/more_theories[0m
+Holmake: Scanning [1m$(HOLDIR)/src/rational[0m
+Holmake: Scanning [1m$(HOLDIR)/src/num/theories/cv_compute/automation[0m
+Holmake: Scanning [1m/mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup[0m
+Holmake: Scanning [1m../raw-analytic/dependency-build-win01[0m
+Holmake: Scanning [1m../raw-pair-round-proof[0m
+Holmake: Scanning [1m../source-producer[0m
+Holmake: Scanning [1m../source-state-error[0m
+Holmake: Scanning [1m../source-exp-horner[0m
+Holmake: Scanning [1m../source-log-real[0m
+Holmake: Scanning [1m../source-log-horner[0m
+Holmake: Scanning [1m../source-log-range[0m
+Holmake: Scanning [1m../source-phase-range[0m
+Holmake: Scanned 24 directories
+Holmake: Building 3 theory files
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-phase-taylor/SourcePhaseTaylorScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourcePhaseTaylor">>
+Saved theorem _______ "spt_d_compute"
+Saved definition ____ "spt_d_def"
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourcePhaseTaylor)>>
+Saved theorem _______ "spt_diff"
+Saved theorem _______ "spt_derivative_bound"
+Saved theorem _______ "spt_sum_head"
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+Saved theorem _______ "spt_sum_horner"
+Saved theorem _______ "spt_mclaurin_cos"
+Saved theorem _______ "spt_mclaurin_sin"
+Exporting theory "SourcePhaseTaylor" ... done.
+Theory "SourcePhaseTaylor" took 0.91066s to build
+Holmake: [1/3] SourcePhaseTaylor
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-phase-taylor/SourceRawTaylorScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceRawTaylor">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceRawTaylor)>>
+Saved theorem _______ "srt_cos_poly"
+Saved theorem _______ "srt_sin_poly"
+Saved theorem _______ "srt_remainder_term"
+Saved theorem _______ "srt_taylor"
+Saved theorem _______ "source_raw_taylor72_error"
+Exporting theory "SourceRawTaylor" ... done.
+Theory "SourceRawTaylor" took 1.8s to build
+Holmake: [2/3] SourceRawTaylor
+Holmake: Linking /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol-platt/source-phase-taylor/SourceRawStepScript.uo to produce theory-builder executable
+<<HOL message: Created theory "SourceRawStep">>
+<<HOL warning: Context.snapshot: ambient context read while a proof was running (in SourceRawStep)>>
+Saved theorem _______ "srs_lipschitz_ordered"
+Saved theorem _______ "srs_lipschitz"
+Saved theorem _______ "srs_phase_perturbation"
+2 basis elements and 0 critical pairs
+Generating HOL version of proof
+3 basis elements and 1 critical pairs
+3 basis elements and 0 critical pairs
+Generating HOL version of proof
+2 basis elements and 0 critical pairs
+Generating HOL version of proof
+3 basis elements and 1 critical pairs
+3 basis elements and 0 critical pairs
+Generating HOL version of proof
+Saved theorem _______ "srs_normalize"
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+1 basis elements and 0 critical pairs
+Generating HOL version of proof
+Saved theorem _______ "srs_regrid"
+Saved theorem _______ "srs_raw_horner72"
+Saved theorem _______ "srs_raw_regrid9"
+Saved theorem _______ "srs_raw_budget"
+Saved theorem _______ "srs_four_errors"
+Saved theorem _______ "source_raw_step_error"
+Exporting theory "SourceRawStep" ... done.
+Theory "SourceRawStep" took 2.8s to build
+Holmake: [3/3] SourceRawStep

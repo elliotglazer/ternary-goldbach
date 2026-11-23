@@ -1,0 +1,199 @@
+File "dune", lines 35-39, characters 0-153:
+35 | (rule
+36 |  (targets revision)
+37 |  (mode fallback)
+38 |  (deps (:rev-script dev/tools/make_git_revision.sh))
+39 |  (action (with-stdout-to revision (bash %{rev-script}))))
+(cd _build/default && /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/rocq-native-setup/bin/bash -e -u -o pipefail -c dev/tools/make_git_revision.sh) > _build/default/revision
+Error loading shared library libreadline.so.8: No such file or directory (needed by /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash)
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: unstifle_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_make_bare_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_bind_key_if_unbound_in_map: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_macro_dumper: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: previous_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_vi_end_word: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_parse_and_bind: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_redisplay: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_emacs_editing_mode: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_push_macro_input: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_bind_key_in_map: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: clear_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: add_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_redraw_prompt_last_line: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_completion_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_function_of_keyseq_len: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_get: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_get_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_kill_text: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: remove_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_truncate_file: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_generic_bind: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_read_key: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_tilde_expand: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: read_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_add_defun: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_expand: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_newline: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_vi_editing_mode: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_translate_keyseq: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_forced_update_display: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_set_timeout: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_read_init_file: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_username_completion_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_insert: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_invoking_keyseqs: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: append_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_tab_insert: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: free_history_entry: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_unbind_key_in_map: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_set_signals: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: readline: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_variable_value: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_set_pos: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_unbind_function_in_map: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: read_history_range: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_is_stifled: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_menu_complete: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: stifle_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: replace_history_entry: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_insert_text: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_get_keymap_by_name: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_set_screen_size: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_clear_signals: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_vi_bWord: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_get_termcap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_begin_undo_group: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_ding: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: where_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_delete_text: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_function_of_keyseq: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_bind_keyseq: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_reset_terminal: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_tokenize: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_forward_word: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_copy_text: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_yank_last_arg: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_function_dumper: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: _rl_find_next_mbchar: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_vi_insertion_mode: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_end_undo_group: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_variable_bind: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_named_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_initialize: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_vi_start_inserting: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_complete: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_complete: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_complete_internal: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_list: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: tilde_expand: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_funmap_names: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_set_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_variable_dumper: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_bind_keyseq_in_map: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: write_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_on_new_line: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_clear_visible_line: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_matches: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_mode: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_add_undo: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_cleanup_after_signal: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_list_funmap_names: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: using_history: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_get_time: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: remove_history_range: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_crlf: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_trim_arg_from_keyseq: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_length: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_found_quote: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_type: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_point: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_lines_written_to_file: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_max_entries: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_write_timestamps: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_suppress_quote: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_basic_word_break_characters: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_mark: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_directory_rewrite_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_end: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_directory_completion_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completer_word_break_characters: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_dispatching: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_quoting_desired: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_search_delimiter_chars: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_executing_keyseq: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_key_sequence_length: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_dequoting_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_rewrite_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_stat_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: vi_insertion_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_prep_term_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_menu_completion_entry_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_attempted_completion_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_comment_char: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_completion_desired: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_done: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_append_character: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_sort_completion_matches: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_lines_read_from_file: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: emacs_ctlx_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_deprep_term_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_editing_mode: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: tilde_additional_prefixes: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_subst_char: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_readline_state: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_attempted_completion_over: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: vi_movement_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_quote_characters: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_filename_quoting_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_quotes_inhibit_expansion: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_readline_name: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_line_buffer: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: emacs_meta_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_char_is_quoted_p: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_entry_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_last_func: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_ignore_some_completions_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_invoking_key: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_instream: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: tilde_expansion_preexpansion_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: tilde_additional_suffixes: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_suppress_append: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_inhibit_expansion_function: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completer_quote_characters: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_quote_character: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_base: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_terminal_name: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_expansion_char: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_outstream: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: emacs_standard_keymap: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_startup_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: history_quoting_state: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_signal_event_hook: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_special_prefixes: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_explicit_arg: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_num_chars_to_read: symbol not found
+Error relocating /mnt/host/c/Users/glaze/Documents/Codex/2026-11-10/https-github-com-sthubbar-goldbach-lean/work/backend-costs-20261112/hol4-setup/sysroot/bin/bash: rl_completion_mark_symlink_dirs: symbol not found
+Command exited with non-zero status 1
+	Command being timed: "../run.sh dune build -p rocq-runtime,coq-core,coq -j 4"
+	User time (seconds): 49.38
+	System time (seconds): 45.32
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3m 9.54s
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 366984
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 21251
+	Minor (reclaiming a frame) page faults: 3595617
+	Voluntary context switches: 1794162
+	Involuntary context switches: 1490
+	Swaps: 0
+	File system inputs: 2638892
+	File system outputs: 130304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

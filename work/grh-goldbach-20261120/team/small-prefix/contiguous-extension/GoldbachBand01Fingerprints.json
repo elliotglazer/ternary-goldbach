@@ -1,0 +1,81 @@
+{
+  "GoldbachBand01Common": {
+    "source": "bd313be2b4ef8eb9d65ac42aeeac27208a8172b466e54e7c0f656d9b556a7350",
+    "imports": {
+      "Power10Common": "55dd1b224a35e81a43815a6461e091eb2df7b51a48d2a103e775d285e9b853a5",
+      "FastHex": "e7f943fa87072cbf8d098f38c51a0f33af481ced2488a52ea54879b054433640"
+    },
+    "object": "10979f30fdb4db7b1fe9d57abc33eadf3e2a7816935cd18f75037b340df2ab78"
+  },
+  "GoldbachBand01Shard0": {
+    "source": "2359531bfd3d6978ef14bda180e9362d3b2d724524e90c8bb6b0c58debcda0be",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "f9b669adb318723b71fdaf090a5d59d45baa07ddf6accd0ac01aa1813146d89a"
+  },
+  "GoldbachBand01Shard1": {
+    "source": "c6c96070c09f646004ce8f3cc1123bb93570c20ffb5ca7bdafa28dc79fbab862",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "582c4eee405839171231a01e09128db104c6640401f41c949fcda916d5271642"
+  },
+  "GoldbachBand01Shard2": {
+    "source": "06a538edf35d3f0cb226b79ebce9178bceaf2d90098e397d8baabcf781f29871",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "3f26990783dcb533abe032ea28a11e9f9667cdb8d93e6d57f39cdfc600b0281f"
+  },
+  "GoldbachBand01Shard3": {
+    "source": "2705a58c0ecf8c862c625ae04a6e0f02fd29f6c1e7742d371dae041679d761be",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "cc66c9988d9584a8138c406eee1e1cfb586c9db86365b2494315d6252df7f3e0"
+  },
+  "GoldbachBand01Shard4": {
+    "source": "5217e735afed0bc53b5fcb0331aabdcc760030532ba8821bde8e01c65e033374",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "495b2fd9d6f6a6a5b399d9577969494930df012ecf743b8266839bdab9ff18c4"
+  },
+  "GoldbachBand01Shard5": {
+    "source": "f7e9d4dd5738a8f66ca43a05f17a4016888ebf7f47c72fe43d41f54fa6e01dc3",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "363c7173b17b31ed292c2d99de4f6e00c3ae5ec9c7ca1d72b6dee255a9dafd3a"
+  },
+  "GoldbachBand01Shard6": {
+    "source": "d2f8b65197dab82f1f990842ef56c65c589e4f5a360464932525939d091be726",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "8ba91b4fdebaecb29f94e02ce6c2b89fadfd69c232d485342708d413f48dcce8"
+  },
+  "GoldbachBand01Shard7": {
+    "source": "4e755a50169e1e682be9f7b83931c7eaade07baf677f857b6688586450d0f22e",
+    "imports": {
+      "GoldbachBand01Common": "d4a16bfd070b4aec637dd2d37349a5a31bff9af5aaf2a6dd7945bec2b5d81f56"
+    },
+    "object": "d7e2d64971f97cb58e859a73ae8d79386026db167928887b7de51920c9b14a22"
+  },
+  "GoldbachBand01Prefix": {
+    "source": "b220861030230b2848304e064987ba0c46eb007ce4c05ee97f5577a8e17be57f",
+    "imports": {
+      "ExtendedPrefixB": "bb9639f3774eff06935292a0ce2e6de3640365fc4fa9ddf7d7da14cfb267cb4a",
+      "GoldbachBand01Shard0": "efed205371f41ad5b5a2882071dd161bbfc0cd8fb008e7b560a39c4adf6e38ab",
+      "GoldbachBand01Shard1": "124b1127a30513b2ff2e58e42ebc1d86aaf86f9fc74f209a149ebdbebf94bdbd",
+      "GoldbachBand01Shard2": "1fff11fafe7c00db61f0410fda4e1d94c011b325ab456a6c154c1a6e58f256b0",
+      "GoldbachBand01Shard3": "063e763907f3d5b16b88be982aa815ee85a1ba2ba5d59b77c8e6140d7292c8b8",
+      "GoldbachBand01Shard4": "28486e813eacc6db814f3267774c2a889ebb3f645110dc9902d957153fe73fe9",
+      "GoldbachBand01Shard5": "d35c5c0e21e4aad83408bb0789b734eeb41af9db4ee672beee9ca18624d444be",
+      "GoldbachBand01Shard6": "0028b3babf03967d4ef2923628fefd2c60b3a5be87afc2313a629e83d6e031ed",
+      "GoldbachBand01Shard7": "bec9fa38eae5f479ac06d80ff447c8aabdbaabaeb44d327a90a6bc745528d403"
+    },
+    "object": "b83892a1e9caebcdcd38a7a0e712432ed457eb516126d33fc519acb2411f641b"
+  }
+}

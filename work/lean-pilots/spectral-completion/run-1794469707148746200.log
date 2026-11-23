@@ -1,0 +1,5 @@
+'SpectralCompletion.gammaPhase_enclosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralCompletion.completion_factor_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SpectralCompletion.completed_product_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+SpectralCompletion.completed_product_positive {L : ℂ} (hLre : 1 / 4 < L.re) (hLim : |L.im| < 1 / 2) :
+  0 < (4 ^ (SpectralCompletion.samplePoint / 2) * ((SpectralCompletion.samplePoint + 1).Gammaℝ * L)).re

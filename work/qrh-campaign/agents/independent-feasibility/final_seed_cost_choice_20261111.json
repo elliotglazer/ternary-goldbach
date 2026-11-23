@@ -1,0 +1,250 @@
+{
+  "scope": "Conditional common-price model, no values or runtime estimates",
+  "prefix": {
+    "J": 84840,
+    "H": 20839,
+    "last_height_numerator": 424195,
+    "last_height_denominator": 64
+  },
+  "pins": {
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\independent-feasibility\\RETUNED_FINAL_SHARED_SEED_BAND_2026-11-11.md": "8F08560DDB2BDFEBEABA0D4D5A44FCBCC625BFD43D1027AF05BF62233863FD9B",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\prime-estimates\\REVIEW_RETUNED_FINAL_SHARED_SEED_BAND_2026-11-11.md": "6D5AA23A7050AC5C54E103AFD9C33BBAF5AF84836FCB7DD05FDD50CA9853BCFF",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\zero-sum\\QUARTER_MESH_P28_SHARED_SEED_2026-11-11.md": "A0CD531E1FD20280E49B1EC0AE95E32809C7965222C40916BD4712F7F3A5EA19",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\prime-estimates\\REVIEW_QUARTER_MESH_P28_SHARED_SEED_2026-11-11.md": "8D50DDB6C7398D10930F8437ABE9B3E0C672F9AD1F85851D040EF1BD6D385B6A",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\FINAL_SEED_HEAD_CORRECTION_TRADEOFF_2026-11-11.md": "3B760B39986F6A80C1ADB71BCABDEFDE28947964225383AF1073E6601162DE4F",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\independent-feasibility\\REVIEW_FINAL_SEED_HEAD_CORRECTION_TRADEOFF_2026-11-11.md": "7BB25BC96EE9C27FE03038968EFC9E9F52A4B3064D9F0986865CF68AC8E77365",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\independent-feasibility\\REVIEW_COMBINED_ODD_EVEN_HEIGHT_CONDITIONAL_COST_2026-11-11.md": "F32FABEF789BEF16B64D16040C1FE48D324F0D84DDBA1FF47F0D30DE2C3A6EAA",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\zero-sum\\quarter_mesh_p28_seed_20261111.json": "B78FB6A57D6261EEC59D08D8EA4D0121489644C5D09A52E4BBC51E35DD99A9BE",
+    "C:\\Users\\glaze\\Documents\\Codex\\2026-11-10\\https-github-com-sthubbar-goldbach-lean\\work\\qrh-campaign\\agents\\major-constants\\seed_head_correction_tradeoff_20261111.json": "A430173E669CCD088931EF11E95D473BB5FBF96BA668EF5A3D3B337D2E4D9522"
+  },
+  "per_height": {
+    "B": {
+      "head_scales": 508457257,
+      "head_adds": 528013948,
+      "gamma_scales": 14157056,
+      "gamma_adds": 14157056,
+      "E_stages": 1253522,
+      "source_slots": 221204,
+      "coarse_anchors": 8193,
+      "R_stages": 26,
+      "shift_updates": 2703360,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 19562497
+    },
+    "Q": {
+      "head_scales": 264047553,
+      "head_adds": 273827092,
+      "gamma_scales": 7341824,
+      "gamma_adds": 7341824,
+      "E_stages": 630938,
+      "source_slots": 114716,
+      "coarse_anchors": 4097,
+      "R_stages": 27,
+      "shift_updates": 4300800,
+      "normalization_scales": 327700,
+      "normalization_rounds": 327700,
+      "argument_pairs": 9781249
+    },
+    "C": {
+      "head_scales": 319516500,
+      "head_adds": 331806000,
+      "gamma_scales": 56628224,
+      "gamma_adds": 56628224,
+      "E_stages": 4399634,
+      "source_slots": 221204,
+      "coarse_anchors": 8193,
+      "R_stages": 26,
+      "shift_updates": 2703360,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 12296193
+    }
+  },
+  "setup": {
+    "B": {
+      "union": 19562497,
+      "introduced": 12513280,
+      "log_stages": 410791416,
+      "anchors": 1001,
+      "new_gamma": 0
+    },
+    "Q": {
+      "union": 9781249,
+      "introduced": 2732032,
+      "log_stages": 205385187,
+      "anchors": 1002,
+      "new_gamma": 0
+    },
+    "C": {
+      "union": 13197313,
+      "introduced": 6148096,
+      "log_stages": 296046954,
+      "anchors": 959,
+      "new_gamma": 192
+    }
+  },
+  "totals": {
+    "B": {
+      "head_scales": 10595740778623,
+      "head_adds": 11003282662372,
+      "gamma_scales": 295018889984,
+      "gamma_adds": 295018889984,
+      "E_stages": 26122144958,
+      "source_slots": 4609670156,
+      "coarse_anchors": 170733927,
+      "R_stages": 541814,
+      "shift_updates": 56335319040,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 407662874983,
+      "fine_state_updates": 407650361703
+    },
+    "Q": {
+      "head_scales": 5502486956967,
+      "head_adds": 5706282770188,
+      "gamma_scales": 152996270336,
+      "gamma_adds": 152996270336,
+      "E_stages": 13148116982,
+      "source_slots": 2390566724,
+      "coarse_anchors": 85377383,
+      "R_stages": 562653,
+      "shift_updates": 89624371200,
+      "normalization_scales": 6828940300,
+      "normalization_rounds": 6828940300,
+      "argument_pairs": 203831447911,
+      "fine_state_updates": 203828715879
+    },
+    "C": {
+      "head_scales": 6658404343500,
+      "head_adds": 6914505234000,
+      "gamma_scales": 1180075559936,
+      "gamma_adds": 1180075559936,
+      "E_stages": 91683972926,
+      "source_slots": 4609670156,
+      "coarse_anchors": 170733927,
+      "R_stages": 541814,
+      "shift_updates": 56335319040,
+      "normalization_scales": 0,
+      "normalization_rounds": 0,
+      "argument_pairs": 256240365927,
+      "fine_state_updates": 256234217831
+    }
+  },
+  "gains": {
+    "B-to-Q": {
+      "per_height": {
+        "head_scales": 244409704,
+        "head_adds": 254186856,
+        "gamma_scales": 6815232,
+        "gamma_adds": 6815232,
+        "E_stages": 622584,
+        "source_slots": 106488,
+        "coarse_anchors": 4096,
+        "R_stages": -1,
+        "shift_updates": -1597440,
+        "normalization_scales": -327700,
+        "normalization_rounds": -327700,
+        "argument_pairs": 9781248
+      },
+      "fixed": {
+        "union": 9781248,
+        "introduced": 9781248,
+        "log_stages": 205406229,
+        "anchors": -1,
+        "new_gamma": 0
+      },
+      "totals": {
+        "head_scales": 5093253821656,
+        "head_adds": 5296999892184,
+        "gamma_scales": 142022619648,
+        "gamma_adds": 142022619648,
+        "E_stages": 12974027976,
+        "source_slots": 2219103432,
+        "coarse_anchors": 85356544,
+        "R_stages": -20839,
+        "shift_updates": -33289052160,
+        "normalization_scales": -6828940300,
+        "normalization_rounds": -6828940300,
+        "argument_pairs": 203831427072,
+        "fine_state_updates": 203821645824
+      }
+    },
+    "B-to-C": {
+      "per_height": {
+        "head_scales": 188940757,
+        "head_adds": 196207948,
+        "gamma_scales": -42471168,
+        "gamma_adds": -42471168,
+        "E_stages": -3146112,
+        "source_slots": 0,
+        "coarse_anchors": 0,
+        "R_stages": 0,
+        "shift_updates": 0,
+        "normalization_scales": 0,
+        "normalization_rounds": 0,
+        "argument_pairs": 7266304
+      },
+      "fixed": {
+        "union": 6365184,
+        "introduced": 6365184,
+        "log_stages": 114744462,
+        "anchors": 42,
+        "new_gamma": -192
+      },
+      "totals": {
+        "head_scales": 3937336435123,
+        "head_adds": 4088777428372,
+        "gamma_scales": -885056669952,
+        "gamma_adds": -885056669952,
+        "E_stages": -65561827968,
+        "source_slots": 0,
+        "coarse_anchors": 0,
+        "R_stages": 0,
+        "shift_updates": 0,
+        "normalization_scales": 0,
+        "normalization_rounds": 0,
+        "argument_pairs": 151422509056,
+        "fine_state_updates": 151416143872
+      }
+    },
+    "C-to-Q": {
+      "per_height": {
+        "head_scales": 55468947,
+        "head_adds": 57978908,
+        "gamma_scales": 49286400,
+        "gamma_adds": 49286400,
+        "E_stages": 3768696,
+        "source_slots": 106488,
+        "coarse_anchors": 4096,
+        "R_stages": -1,
+        "shift_updates": -1597440,
+        "normalization_scales": -327700,
+        "normalization_rounds": -327700,
+        "argument_pairs": 2514944
+      },
+      "fixed": {
+        "union": 3416064,
+        "introduced": 3416064,
+        "log_stages": 90661767,
+        "anchors": -43,
+        "new_gamma": 192
+      },
+      "totals": {
+        "head_scales": 1155917386533,
+        "head_adds": 1208222463812,
+        "gamma_scales": 1027079289600,
+        "gamma_adds": 1027079289600,
+        "E_stages": 78535855944,
+        "source_slots": 2219103432,
+        "coarse_anchors": 85356544,
+        "R_stages": -20839,
+        "shift_updates": -33289052160,
+        "normalization_scales": -6828940300,
+        "normalization_rounds": -6828940300,
+        "argument_pairs": 52408918016,
+        "fine_state_updates": 52405501952
+      }
+    }
+  }
+}

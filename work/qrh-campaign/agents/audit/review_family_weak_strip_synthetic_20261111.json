@@ -1,0 +1,73 @@
+{
+  "status": "PASS_INDEPENDENT_RATIONAL_REPLAY",
+  "source_sha256": "8BBDDA6E2F60AE21C77128F624910928841D509E79EA78BFE45805F66C54865C",
+  "records": {
+    "allowed_off_line/full": {
+      "panels": 20,
+      "winding": 4
+    },
+    "allowed_off_line/forbidden_right": {
+      "panels": 20,
+      "winding": 0
+    },
+    "allowed_off_line/upper_cluster": {
+      "panels": 10,
+      "winding": 2
+    },
+    "allowed_off_line/lower_cluster": {
+      "panels": 10,
+      "winding": 2
+    },
+    "double_critical/full": {
+      "panels": 20,
+      "winding": 4
+    },
+    "double_critical/forbidden_right": {
+      "panels": 20,
+      "winding": 0
+    },
+    "double_critical/upper_cluster": {
+      "panels": 8,
+      "winding": 2
+    },
+    "double_critical/lower_cluster": {
+      "panels": 8,
+      "winding": 2
+    },
+    "triple_critical/full": {
+      "panels": 32,
+      "winding": 6
+    },
+    "triple_critical/forbidden_right": {
+      "panels": 26,
+      "winding": 0
+    },
+    "triple_critical/upper_cluster": {
+      "panels": 12,
+      "winding": 3
+    },
+    "triple_critical/lower_cluster": {
+      "panels": 12,
+      "winding": 3
+    },
+    "exact_beta_boundary/full": {
+      "panels": 20,
+      "winding": 4
+    },
+    "exact_beta_boundary/deflated_right": {
+      "panels": 7,
+      "winding": 0
+    }
+  },
+  "total_panels": 225,
+  "negative_controls_rejected": [
+    "zero_margin",
+    "missing_panel",
+    "wrong_winding",
+    "wrong_image",
+    "reversed_panels",
+    "wrong_axis"
+  ],
+  "whole_panel_method": "degree-n exact rational interpolation to Bernstein coefficients, then positive convex weights",
+  "scope": "synthetic polynomial method validation only; no L-functions or Lean proof"
+}

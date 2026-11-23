@@ -1,0 +1,72 @@
+<<HOL message: Created theory "DependentBlockResults">>
+HOL4_CONTEXT_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
+Saved theorem _______ "cv_block_scale_thm"
+Finished translating block_scale, stored in cv_block_scale_thm
+HOL4_TIME,translate_block_scale,0.001756000,0.002815000
+HOL4_POSITIVE_SCALE_RAW,⊢ 0 < block_scale ⇔ T
+HOL4_TIME,construct_inputs,0.044103000,0.044104000
+Saved theorem _______ "cv_block_inputs_thm"
+Finished translating block_inputs, stored in cv_block_inputs_thm
+HOL4_TIME,translate_block_inputs,3.258838000,3.261460000
+HOL4_TIME,construct_coefficients,0.018668000,0.018668000
+Saved theorem _______ "cv_block_coefficients_thm"
+Finished translating block_coefficients, stored in cv_block_coefficients_thm
+HOL4_TIME,translate_block_coefficients,0.649891000,0.652081000
+HOL4_TIME,depth1_r0,0.045564000,0.046114000
+HOL4_TIME,depth1_r1,0.036204000,0.036205000
+HOL4_TIME,depth1_r2,0.044034000,0.044059000
+HOL4_TIME,derive_depth1,0.000055000,0.000050000
+HOL4_TAG,depth1,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth1"
+HOL4_BLOCK_CONCLUSION,depth1,505
+HOL4_TIME,depth8_r0,0.037280000,0.037287000
+HOL4_TIME,depth8_r1,0.040802000,0.040848000
+HOL4_TIME,depth8_r2,0.040557000,0.040565000
+HOL4_TIME,derive_depth8,0.000053000,0.000048000
+HOL4_TAG,depth8,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth8"
+HOL4_BLOCK_CONCLUSION,depth8,507
+HOL4_TIME,depth32_r0,0.045979000,0.046018000
+HOL4_TIME,depth32_r1,0.050278000,0.050293000
+HOL4_TIME,depth32_r2,0.042105000,0.042132000
+HOL4_TIME,derive_depth32,0.000059000,0.000054000
+HOL4_TAG,depth32,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth32"
+HOL4_BLOCK_CONCLUSION,depth32,515
+HOL4_TIME,depth128_r0,0.070830000,0.070861000
+HOL4_TIME,depth128_r1,0.072952000,0.072966000
+HOL4_TIME,depth128_r2,0.073960000,0.074008000
+HOL4_TIME,derive_depth128,0.000046000,0.000042000
+HOL4_TAG,depth128,oracles=DISK_THM,axioms=
+Saved theorem _______ "certified_depth128"
+HOL4_BLOCK_CONCLUSION,depth128,545
+Saved theorem _______ "cv_block_changed_inputs_thm"
+Finished translating block_changed_inputs, stored in cv_block_changed_inputs_thm
+HOL4_TIME,translate_block_changed_inputs,2.615733000,2.622349000
+Saved theorem _______ "cv_block_changed_coefficients_thm"
+Finished translating block_changed_coefficients, stored in cv_block_changed_coefficients_thm
+HOL4_TIME,translate_block_changed_coefficients,1.094506000,1.101689000
+HOL4_TAG,checksum,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_checksum"
+HOL4_REJECTED_checksum
+HOL4_TIME,control_checksum,0.124945000,0.126637000
+HOL4_TAG,bound,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_bound"
+HOL4_REJECTED_bound
+HOL4_TIME,control_bound,0.036245000,0.037964000
+HOL4_TAG,depth,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_depth"
+HOL4_REJECTED_depth
+HOL4_TIME,control_depth,0.038268000,0.039821000
+HOL4_TAG,input,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_input"
+HOL4_REJECTED_input
+HOL4_TIME,control_input,0.036361000,0.037973000
+HOL4_TAG,coefficient,oracles=DISK_THM,axioms=
+Saved theorem _______ "rejected_coefficient"
+HOL4_REJECTED_coefficient
+HOL4_TIME,control_coefficient,0.055264000,0.056689000
+Exporting theory "DependentBlockResults" ... done.
+Theory "DependentBlockResults" took 13.1s to build
+HOL4_TIME,theory_export,1.377083000,1.578249000
+HOL4_DEPENDENT_BLOCK_BENCHMARK_DONE
