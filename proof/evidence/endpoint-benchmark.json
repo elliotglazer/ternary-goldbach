@@ -1,0 +1,35 @@
+{
+  "lean_version": "4.35.0",
+  "requested_block": {
+    "left_exclusive": 3999999862561046528,
+    "right_inclusive": 4000000000000000000,
+    "even_targets": 68719476736,
+    "native_uncovered": 0,
+    "primality_checked_anchor_count": 512,
+    "kernel_accepted": false
+  },
+  "terminal_tile": {
+    "even_targets": 262144,
+    "first_even": 3999999999999475714,
+    "last_even": 4000000000000000000,
+    "kernel_accepted": true,
+    "theorem": "EndData.certifiedTile262143",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source_sha256": "7e578c2c6ba45c5248b46360c7c504dfab59a9efa1725d1e609d458b622a06cb",
+    "object_sha256": "047b094840782899e0b0d94821d6e4a5116dc94740351753599212f43bd7d934"
+  },
+  "cpu_seconds": {
+    "full-source-sieve": 177.501688,
+    "full-native-cover": 80.869844,
+    "anchor-kernel": 116.82993699999997,
+    "basis-kernel": 106.272457,
+    "last-tile-generation": 19.185454,
+    "checkpoint-generation": 0.154077,
+    "closed-tile-kernel": 41.077815
+  },
+  "complete_interval_core_hours": null
+}
