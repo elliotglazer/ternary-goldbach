@@ -2,6 +2,34 @@
 
 Stock Lean 4.33.1 accepted `CompletedGoldbach.ternary_goldbach : TernaryGoldbach.Statement`. The statement says that every odd natural number greater than five is a sum of three primes. The final run imported the compiled RH and primitive Dirichlet GRH release. The saved theorem lists `propext`, `Classical.choice`, and `Quot.sound` as its axioms. [Theorem](CompletedGoldbach.lean) · [Kernel log](evidence/CompletedGoldbach.log) · [Saved-object audit](evidence/CompletedGoldbach-metadata.log) · [Receipt and hashes](evidence/CompletedGoldbach-receipt.json)
 
+## Build with Lake
+
+Run these commands from the repository root in a Linux or macOS shell with Python 3 and Lean 4.33.1 (the version in `lean-toolchain`).
+
+```sh
+lake build inspect
+lake build sources
+```
+
+The first command checks the shipped object's SHA-256, then uses Lean to inspect the theorem's type, proof application and exported axioms. The second verifies the bundled ZIP and extracts the sources and certificates into `.lake/build/replay/`. Both work without Mathlib or the RH/GRH release.
+
+For a full replay, use a built Mathlib checkout at `0df444a360eaa60ab8c11dca51a86af692955474` and the extracted RH/GRH release. The release supplies `Main.olean` and its transitive imports. [RH/GRH archives and checksums](https://photos.proofsandreasons.io/alp-oleans-357309b5dd12/)
+
+```sh
+export MATHLIB=/absolute/path/to/mathlib4
+export GRH_LIB=/absolute/path/to/alp-oleans/lib
+lake build
+```
+
+The default target checks the release's `Main.olean` hash, restores the pinned sources, and runs the original `reproduce.py`. That script checks the Mathlib revision, verifies the source hashes, fetches missing pinned sources, and rebuilds the local modules. The final kernel link writes `.lake/build/replay/CompletedGoldbach.olean`. Lake then checks its saved theorem and axiom list. Each invocation of the default target replays the local compilation.
+
+After the full build, start the editor from a shell with the same dependency paths so that Lean can resolve the imports in the final source.
+
+```sh
+export LEAN_PATH="$(python3 -B proof/lake_build.py lean-path)"
+code . proof/CompletedGoldbach.lean
+```
+
 ## Read the proof
 
 1. A prime-gap bound and the binary Goldbach certificate through **564,386,325,504** cover odd inputs through **2 × 10¹⁹**. [Finite reduction](FiniteAtHeight.lean) · [Binary prefix](ProductPrefix564386325504.lean)
