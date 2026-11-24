@@ -6,6 +6,25 @@ Harald Helfgott proved that every odd integer greater than five is a sum of thre
 
 Start with the [finite and analytic proof](proof/CompletedFiniteRows.lean), then the [final theorem](proof/CompletedGoldbach.lean). Stock Lean 4.33.1 accepted `CompletedGoldbach.ternary_goldbach : TernaryGoldbach.Statement`. The final link supplied `riemannHypothesis` and `LFunction_eq_zero_re_of_isPrimitive` from the upstream compiled release. The saved theorem has no remaining hypotheses and its exported axiom set is `propext`, `Classical.choice`, and `Quot.sound`. [Independent checks of Alpöge’s development](https://math.mit.edu/~drew/grh/) · [Goldbach kernel receipt](proof/evidence/CompletedGoldbach-receipt.json) · [Proof bundle and replay instructions](proof/README.md)
 
+### Compilation time
+
+Using the released RH/GRH objects, the closed Goldbach theorem took **at least 5.19 core-hours** of recorded CPU time. The binary Goldbach check accounted for **3.49 of the 5.07 core-hours** recorded before the final link (69%). The table counts each timed Goldbach module once.
+
+| Build step | CPU time | Elapsed time |
+| --- | ---: | ---: |
+| Verify binary Goldbach through 100,328,530,944 | 1 h 36 min | — |
+| Extend binary Goldbach through 564,386,325,504 | 1 h 53 min | — |
+| Check the prime-gap argument, analytic estimates, and infinite tail | 46 min 46 sec | — |
+| Check the additional modules for the 223 analytic intervals | 47 min 27 sec | — |
+| Combine the finite and analytic results, with RH and GRH as hypotheses | 19 sec | — |
+| Import the released RH/GRH objects, check the closed theorem, and write it to disk | 7 min 40 sec | 38 min 21 sec |
+| **Goldbach total using the released objects** | **≥ 5.19 core-hours** | **Unmeasured end to end** |
+| Optional upstream RH/GRH source build | **≈ 530 additional core-hours** | **7 h 58 min** in an independent build on a 192-core server, including restarts |
+
+The local figures cover 405 of 415 binary modules and 130 of 317 other Goldbach modules. Dashes mark stages without an aggregate elapsed-time measurement. The timings exclude certificate generation, downloads, and mathlib setup. [Per-module CPU timings](proof/evidence/analytic-progress.json) · [Final-link timing log](proof/evidence/CompletedGoldbach.log)
+
+Budget roughly **535 core-hours** for the recorded Goldbach work plus a source build of RH/GRH, with additional time for the 197 untimed Goldbach modules. This estimate combines our local measurements with the upstream compiler estimate. The elapsed time in the last row comes from Andrew Sutherland’s separate sandboxed rebuild. [Upstream CPU estimate](https://proofsandreasons.io/rh-oleans.html) · [Independent rebuild timeline](https://math.mit.edu/~drew/grh/sandbox-timeline.txt)
+
 ## November 22 research checkpoint
 
 - **Finite binary Goldbach in Lean.** The closed contiguous prefix reaches **100,328,530,944**. Additional high-endpoint shards are recorded separately. The finite handoff names the checked declarations, their axioms, and the commands for replay. [Finite handoff](work/publish-handoffs/finite.md)
