@@ -1,0 +1,18 @@
+Ternary Goldbach research archive
+
+Original contributions by Elliot Glazer and contributors are licensed under the Apache License, Version 2.0.
+
+This development builds on Charlie Reams’s Lean formalization of Harald Andrés Helfgott’s ternary Goldbach theorem. The following notice is reproduced from that formalization.
+
+Ternary Goldbach in Lean 4
+Copyright 2026 Charlie Reams
+
+A formalization of H. A. Helfgott's proof of the ternary Goldbach conjecture
+(H. A. Helfgott, "The ternary Goldbach problem", arXiv:1501.05438).
+Canonical repository: https://github.com/calr3/ternary-goldbach
+
+TernaryGoldbach/Prelim/PNTMertens.lean is derived from the PrimeNumberTheoremAnd
+project (https://github.com/AlexKontorovich/PrimeNumberTheoremAnd), licensed under
+the Apache License 2.0.
+
+The final theorem uses Levent Alpöge’s RH and primitive Dirichlet GRH declarations from the compiled release hosted by Proofs & Reasons. The replay manifest also identifies four source files from Steve Hubbard’s goldbach-lean project, fetched at the pinned revision during replay.
