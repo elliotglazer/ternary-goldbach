@@ -1,0 +1,28 @@
+{
+  "declaration": "CompletedGoldbach.ternary_goldbach",
+  "type": "TernaryGoldbach.Statement",
+  "statement_source_commit": "23b2d68ca344203d4384e0aff7affa4ec034bef9",
+  "statement_source_sha256": "b83199792744c8729027ac24b151cc6a4dc2daadebf9c3dc1292c9f2e8c81c03",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "binary_prefix": 564386325504,
+  "analytic_bridge": "ProfileAssembly",
+  "release_inputs": [
+    "riemannHypothesis",
+    "LFunction_eq_zero_re_of_isPrimitive"
+  ],
+  "release_main_sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "object_sha256": "b13579410a20c49d91c353a59a011727fd8c266959922089694d1e7e8352acc3",
+  "ordinary_source_sha256": "7998d9f542c3fada0e2202dfbe241eae1f5c13e92c933214e1543dfe0b81352b",
+  "finite_rows_sha256": "a93ac91d1b73e7f13617b7575c1064a6839f304bd85deb3d6a895c74b58a0b1d",
+  "rebuilt_release_from_source": false,
+  "final_stage_cpu_seconds": {
+    "finite_and_analytic_join": 18.52,
+    "released_proof_specialization_and_write": 459.76,
+    "saved_theorem_inspection": 1.85
+  }
+}

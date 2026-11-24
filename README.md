@@ -1,8 +1,12 @@
 # Ternary Goldbach research archive
 
-This repository preserves the November 2026 investigation into a kernel-checked proof that every odd integer greater than five is the sum of three primes. The finite computation, analytic estimates, and proposed ways to combine them have different proof status.
+This repository contains the November 2026 Lean proof that every odd natural number greater than five is a sum of three primes, together with the research archive.
 
-## Where the proof stands on 22 November 2026
+## Completed proof · November 24, 2026
+
+Start with the [finite and analytic proof](proof/CompletedFiniteRows.lean), then the [final theorem](proof/CompletedGoldbach.lean). Stock Lean 4.33.1 accepted `CompletedGoldbach.ternary_goldbach : TernaryGoldbach.Statement` using the released RH and primitive Dirichlet GRH objects. The saved theorem has no remaining hypotheses and its exported axiom set is `propext`, `Classical.choice`, and `Quot.sound`. [Kernel receipt](proof/evidence/CompletedGoldbach-receipt.json) · [Proof bundle and replay instructions](proof/README.md)
+
+## November 22 research checkpoint
 
 - **Finite binary Goldbach in Lean.** The closed contiguous prefix reaches **100,328,530,944**. Additional high-endpoint shards are recorded separately. The finite handoff names the checked declarations, their axioms, and the commands for replay. [Finite handoff](work/publish-handoffs/finite.md)
 - **Large odd integers.** The archive includes the full-GRH adapter, the partial port of the large-case argument, and the work on Zinoviev’s conditional route. The all-input Lean theorem still has open analytic and integration obligations. [Large-case handoff](work/publish-handoffs/large-case.md) · [Zinoviev handoff](work/publish-handoffs/zinoviev.md)
@@ -39,4 +43,3 @@ python archive/restore.py --assets release-data --restore
 For a Git-only integrity check, run `python archive/restore.py`. To validate both Git and the downloaded archives without extracting them, run `python archive/restore.py --assets release-data`. Restoration uses hard links on the checkout filesystem to protect existing files. These commands verify the saved bytes. The agent handoffs give the separate proof-replay commands.
 
 The snapshot preserves locally authored source, dated research notes, proofs, receipts, experiment inputs, and reproducible build instructions. Upstream proof exports and vendored toolchains have source pins or download manifests. Machine caches, installed binaries, private account details, and raw chat sessions were omitted. The original project paths are retained so scripts and evidence links can be followed. Some historical logs contain machine-specific paths and timing measurements.
-
