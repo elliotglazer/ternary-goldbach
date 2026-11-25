@@ -38,3 +38,5 @@ The TernaryGoldbach.Helfgott.Defs public Lake target passed on the pinned depend
 The ScaledEval Lake target passed with the pinned Mathlib strong induction recursor.
 
 The SingularWindow Lake target passed after selecting the three nonnegative finite product comparisons.
+
+The public SmallMertens Lake target rebuilt both the exported Taylor-sum equality and its majorant consumer.

@@ -26,7 +26,7 @@ def taylorSum (f : ℚ) : ℕ → ℚ
   | 0 => 0
   | k+1 => taylorSum f k + f ^ k / (k.factorial : ℚ)
 
-private theorem taylorSum_eq (f : ℚ) (k : ℕ) :
+theorem taylorSum_eq (f : ℚ) (k : ℕ) :
     taylorSum f k = ∑ i ∈ range k, f ^ i / (i.factorial : ℚ) := by
   induction k with
   | zero => simp [taylorSum]
