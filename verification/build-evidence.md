@@ -50,3 +50,7 @@ The immutable community mirror reports root tree `5eb1240f03e791edd3fc7aa84a3a7d
 The compact upstream Main lacks a Lean `module` header. Lean 4.35 rejects importing such a module from the Goldbach module system. The local CompactGRH library declares Main and Statements as its roots and covers Lib and New. Its 794 files were checked against the port manifest, and its module names are disjoint from the 735 Goldbach module names. The project lockfile uses the nine upstream dependency records. The earlier external-GRH dependency was removed. Full elaboration on 4.35 is pending.
 
 The joint worker validated all 794 packaged paths and converted hashes against `CompactGRH/source-manifest.json` using its source-manifest reader.
+
+## Lean 4.35.0 package routing and challenge
+
+A fresh checkout of source commit `831a43890890f06e179f8e1d893e971a4647641d` used the stock Windows Lean 4.35.0 release and local checkouts matching all nine lockfile revisions. `lake --no-build query +Main:lean +GoldbachSolution:lean +GoldbachChallenge:lean` resolved the compact `Main` to `CompactGRH/src/Main.lean` and the challenge and solution to their corresponding package-root files. The compiler accepted `GoldbachChallenge.lean` with the expected warning for its trusted statement placeholder. Full solution elaboration and exported-proof kernel verification remain pending.
