@@ -1,0 +1,85 @@
+{
+  "commit": "fc729595d20448d3689f706378879a30a323a762",
+  "tree": "6601d6cb30d3841b5da240713778a8781a9aec04",
+  "policy": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "lean": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 1529
+  },
+  "issues": [],
+  "files": 1550,
+  "bytes": 364781127,
+  "source_cap_bytes": 524288000,
+  "package_paths_and_revs": [
+    [
+      "mathlib",
+      "56a005855ea17e0b0958f73ec801ae140b0a1679"
+    ],
+    [
+      "plausible",
+      "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+    ],
+    [
+      "LeanSearchClient",
+      "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+    ],
+    [
+      "importGraph",
+      "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+    ],
+    [
+      "proofwidgets",
+      "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+    ],
+    [
+      "aesop",
+      "4a174c490d8707121c4a9290800489f105d85e07"
+    ],
+    [
+      "Qq",
+      "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+    ],
+    [
+      "batteries",
+      "66e469188fe07963e5cf666c7d4433f45b8131c5"
+    ],
+    [
+      "Cli",
+      "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+    ]
+  ],
+  "metadata": "accepted",
+  "comparator": "accepted",
+  "compiled_artifacts": [],
+  "compact_modules": 794,
+  "tg_modules": 735,
+  "challenge": "GoldbachChallenge",
+  "solution": "GoldbachSolution",
+  "challenge_input_equivalence": {
+    "previous_commit": "c81ce0b68c3157e6fa4dd0473151ca301e407031",
+    "unchanged_blobs": [
+      "GoldbachChallenge.lean",
+      "comparator.json",
+      "lean-toolchain",
+      "GoldbachSolution.lean"
+    ],
+    "remaining_manifest_entries": "identical as parsed, including mathlib",
+    "removed_external_dependency": "GRH"
+  },
+  "scope": "Source archive, metadata, comparator and manifest preflight; full solution build, protected kernel replay and hosted resource acceptance remain unmeasured.",
+  "compact_source_manifest": {
+    "converted_files_matching": 794,
+    "upstream_source_tree": "b834f80c6399db99d54ce171ba541c4a95a4f90f",
+    "sha256": "e105198dc610795f5f1cf2a331a92129677e0b3d75a36f484a63d89b7c770c45"
+  },
+  "changes_from_prior_receipt": [
+    "CompactGRH/source-manifest.json",
+    "CompactGRH/src/Lib/General/Analysis/HolomorphicIntegral.lean",
+    "README.md",
+    "ScaledEval.lean",
+    "source-manifest.json",
+    "verification/build-evidence.md"
+  ]
+}
