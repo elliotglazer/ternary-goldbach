@@ -16,7 +16,7 @@ import urllib.request
 
 REGION='us-east-1'
 ORIGINAL='8d5d2316fd2b2865037aa8d5b820c17217e1b6771cf34d7373886c6a74090592'
-RECOVERY='8f7ff3a96296f230c74601ca0a40327853476c833afa7effc971930871c83d05'
+RECOVERY='f10e44f76d03fa8f7a0329f1da81efe5a7324ac183d949e0c2a5c7bed7d62d13'
 
 def aws(service,action,*args):
     cmd=['aws','--region',REGION,'--no-cli-pager','--output','json','--cli-connect-timeout','8','--cli-read-timeout','20',service,action,*args]
@@ -207,7 +207,7 @@ else:
     r={'status':'failed','error':'tool setup or worker startup failed','steps':[]}
     p=attempt/'startup-receipt.json';raw=(json.dumps(r)+chr(10)).encode();p.write_bytes(raw)
 sha=lambda b:hashlib.sha256(b).hexdigest()
-summary={k:r[k] for k in ('status','error','axioms','compact','challenge_export','solution_export','comparator_accepts','con_ron','within_330_minutes','profile_outcome','baseline_elapsed_seconds','resource_profile') if k in r}
+summary={k:r[k] for k in ('status','error','failure_details','axioms','compact','challenge_export','solution_export','comparator_accepts','con_ron','within_330_minutes','profile_outcome','baseline_elapsed_seconds','resource_profile') if k in r}
 summary.update(commit=sys.argv[2],tree=sys.argv[3],driver_exit=int(sys.argv[4]),receipt_path=str(p),receipt_sha256=sha(raw))
 summary['steps']=[{k:s[k] for k in ('name','exit','wall_seconds','cpu_seconds','cgroup_sampled_peak_bytes','cgroup_lifetime_peak_bytes') if k in s} for s in r['steps'] if s.get('name','') in {'mathlib-cache','challenge-build','challenge-export','compact-main-shard','joint-source-build','axioms','solution-export','comparator','con-ron','extra-paranoid'} or s.get('exit',0)]
 msg=json.dumps(summary,sort_keys=True,separators=(',',':')).encode()

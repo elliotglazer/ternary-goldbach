@@ -52,6 +52,59 @@ def verify_manifest(data,before,after):
         seen.add(name)
     require(seen==set(before),'incomplete conversion manifest')
 
+def failed_build_details(source, evidence, steps):
+    """Report diagnostic locations and retained project artifacts from an incomplete run."""
+    result = {
+        "source_error_count": 0, "source_error_modules": 0, "representative_errors": [],
+        "failed_lake_targets": [], "completed_oleans": {"compact": 0, "goldbach": 0},
+    }
+    seen_paths = set()
+    location = re.compile(r"^(?:(error):\s*)?(.+?\.lean):(\d+):(\d+):\s*(.*)$")
+    failed_target = re.compile(r"✖\s+\[[^\]]+\]\s+(?:Building|Running|Replaying)\s+(\S+)")
+    ansi = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]")
+    for record in steps:
+        if not record.get("exit"):
+            continue
+        log = evidence / (record["name"] + ".log")
+        if not log.is_file():
+            continue
+        with log.open(errors="replace") as stream:
+            for raw in stream:
+                line = ansi.sub("", raw).strip()
+                target = failed_target.search(line)
+                if target and len(result["failed_lake_targets"]) < 12:
+                    name = target.group(1)[:180]
+                    if name not in result["failed_lake_targets"]:
+                        result["failed_lake_targets"].append(name)
+                match = location.match(line)
+                if not match:
+                    continue
+                prefix, path, row, col, message = match.groups()
+                if not prefix and not message.startswith("error:"):
+                    continue
+                path = path.removeprefix("/project/").removeprefix("./")
+                result["source_error_count"] += 1
+                if path not in seen_paths:
+                    seen_paths.add(path)
+                    if len(result["representative_errors"]) < 12:
+                        result["representative_errors"].append({
+                            "path": path[:180], "line": int(row), "column": int(col),
+                            "message": message.removeprefix("error:").strip()[:220],
+                        })
+    result["source_error_modules"] = len(seen_paths)
+    lib = source / ".lake/build/lib/lean"
+    for obj in lib.rglob("*.olean"):
+        # Lake writes the matching trace after successful output. A killed compiler may leave a partial object.
+        if obj.is_symlink() or not obj.is_file() or not obj.stat().st_size or not obj.with_suffix(".trace").is_file():
+            continue
+        relative = obj.relative_to(lib).with_suffix(".lean")
+        if (source / "CompactGRH" / "src" / relative).is_file():
+            result["completed_oleans"]["compact"] += 1
+        elif (source / relative).is_file():
+            result["completed_oleans"]["goldbach"] += 1
+    return result
+
+
 def cgroup_stats():
     """Read the aggregate cgroup v2 counters for the whole systemd job."""
     scope = next((line[3:] for line in Path('/proc/self/cgroup').read_text().splitlines() if line.startswith('0::')), None)
@@ -379,6 +432,10 @@ def main():
     except BaseException as exc:
         state["status"]="failed"
         state["error"]=str(exc)
+        try:
+            state["failure_details"] = failed_build_details(source, evidence, state["steps"])
+        except (OSError, ValueError) as diagnostic_error:
+            state["failure_details"] = {"collection_error": str(diagnostic_error)[:220]}
         raise
     finally:
         stop.set()

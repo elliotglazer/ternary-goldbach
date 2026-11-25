@@ -3,8 +3,10 @@
 This package runs the joint source build on the existing stopped `tg-grh-source-replay` EC2 instance in us-east-1. Use an immutable public Goldbach commit containing the integrated compact source and its reviewed Git tree. The pilot reuses the original 600 GiB encrypted evidence volume and existing scheduled stop. The launcher validates both pins before changing AWS state.
 
 ```sh
-python3 compact_joint_stack.py --commit REVIEWED_COMMIT --tree REVIEWED_TREE --shard-main --profile palomar-32x64
+python3 compact_joint_stack.py --commit REVIEWED_COMMIT --tree REVIEWED_TREE --profile palomar-32x64
 ```
+
+The default build submits the compact Main and GoldbachSolution roots together. Lake continues independent work when one module fails. Use `--shard-main` for a separate compact-GRH timing. With that option, a failed compact compile stops the run before GoldbachSolution is submitted. Failed-run summaries include up to twelve source locations, the number of source-error headers and affected files, separately counted compact and Goldbach objects with Lake completion traces, and the location of the full build log on the retained volume. A later clean run starts with fresh project objects.
 
 The worker imports the pinned Mathlib cache, compiles all 794 converted compact GRH modules and the full Goldbach solution, validates the proof edges and three axioms, exports the separate challenge and solution, and judges the exports with stock Lean 4.35 and NanoDa. It then attempts the pinned con-ron override using the registry's exit classifier. `--extra-paranoid` requests a separate additional Lean paranoid pass after baseline timing.
 
