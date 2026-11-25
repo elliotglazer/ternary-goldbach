@@ -42,7 +42,7 @@ theorem exp_le_T12up {f : ℚ} (h0 : 0 ≤ f) (h1 : f ≤ 1) : Real.exp f ≤ ((
   have h := Real.exp_bound hf1 (n := 12) (by norm_num)
   rw [abs_of_nonneg hf0] at h
   have h' := (abs_le.1 h).2
-  unfold T12up T12; push_cast
+  rw [T12up, T12, taylorSum_eq]; push_cast
   norm_num [Nat.factorial] at h' ⊢
   linarith
 

@@ -40,3 +40,5 @@ The ScaledEval Lake target passed with the pinned Mathlib strong induction recur
 The SingularWindow Lake target passed after selecting the three nonnegative finite product comparisons.
 
 The public SmallMertens Lake target rebuilt both the exported Taylor-sum equality and its majorant consumer.
+
+The public SmallMertens Lake target rebuilt both the exported Taylor-sum equality and its majorant consumer.
