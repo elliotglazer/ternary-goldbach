@@ -11,7 +11,7 @@ def timesPhi (p u v : ℕ) := if p ∣ u then p*v else (p-1)*v
 theorem timesPhi_eq {p u : ℕ} (hp : p.Prime) :
     timesPhi p u u.totient = (p*u).totient := by
   by_cases hd : p ∣ u
-  · simp only [timesPhi, if_pos hd, Nat.totient_mul_of_prime_of_dvd hp hd]
+  · simp only [timesPhi, if_pos hd, Nat.totient_mul_of_dvd hd]
   · simp only [timesPhi, if_neg hd, Nat.totient_mul_of_prime_of_not_dvd hp hd]
 
 def ok (u v : ℕ) : Bool :=
@@ -63,7 +63,7 @@ theorem all_totient (table : ∀ m, 1 ≤ m → m ≤ 1165 → ok (2*m) (2*m).to
     ∀ n, 2331 ≤ n → 120*n < n.totient^2 := by
   have evenCase (m : ℕ) : 2331 ≤ 2*m → 120*(2*m) < (2*m).totient^2 := by
     induction m using Nat.strong_induction_on with
-    | h m ih =>
+    | ind m ih =>
       intro hhigh
       let p := m.minFac
       have hp : p.Prime := Nat.minFac_prime (by omega)
