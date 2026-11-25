@@ -211,7 +211,7 @@ theorem prod_upper_bound {R : ℕ} (hR : 200 ≤ R) :
   have hrest : ∏ p ∈ oddPrimes R \ oddPrimes 200, (1 + 1 / ((p : ℝ) - 1) ^ 2) ≤ Real.exp (1 / 199) := by
     calc ∏ p ∈ oddPrimes R \ oddPrimes 200, (1 + 1 / ((p : ℝ) - 1) ^ 2)
         ≤ ∏ p ∈ oddPrimes R \ oddPrimes 200, Real.exp (1 / ((p : ℝ) - 1) ^ 2) := by
-          refine Finset.prod_le_prod (fun p _ => by positivity) (fun p _ => ?_)
+          refine Finset.prod_le_prod₀ (fun p _ => by positivity) (fun p _ => ?_)
           have := Real.add_one_le_exp (1 / ((p : ℝ) - 1) ^ 2); linarith
       _ = Real.exp (∑ p ∈ oddPrimes R \ oddPrimes 200, 1 / ((p : ℝ) - 1) ^ 2) := (Real.exp_sum _ _).symm
       _ ≤ Real.exp (1 / 199) := Real.exp_le_exp.2 (sum_rest_le hR)

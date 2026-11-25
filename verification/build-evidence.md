@@ -26,3 +26,5 @@ Focused public Lake targets passed for `ProfileTape16positive`, `ProfileTape1pos
 The SmallPsi target passed in 17 seconds (18,292 jobs including cached prerequisites). A recursive finite sum is proved equal to the original Taylor sum. The imported 586-case check and the von Mangoldt bound each use the standard three axioms.
 
 The public ScaledLiteral Lake target passed on the pinned dependencies.
+
+The public SingularBase Lake target passed on the pinned dependencies.
