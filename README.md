@@ -6,6 +6,6 @@ The `CompactGRH` library builds all 794 modules of Sernau’s compact packaging 
 
 Use `lake build GoldbachSolution` to build the solution and `lake build GoldbachChallenge` to build the independent theorem statement. Comparator inputs appear in `comparator.json`. A protected verification must pin its own trusted statement and comparator configuration.
 
-**Verification in progress.** Full replay of the Goldbach solution on Lean 4.35.0 and protected Comparator verification are pending. The earlier Lean 4.37 port tests are recorded in `verification/build-evidence.md`. The historical Lean 4.33.1 release used different GRH proof artifacts.
+**Verification in progress.** Full replay of the Goldbach solution on Lean 4.35.0 and protected Comparator verification are pending. The earlier Lean 4.37 port tests are recorded in `verification/build-evidence.md`. The historical Lean 4.33.1 release checked the closed theorem using previously compiled RH and GRH artifacts. Its [original receipt](proof/evidence/CompletedGoldbach-receipt.json) records the theorem, three axioms, source hashes and compiled object hash. The [Lean 4.33.1 release package](https://github.com/elliotglazer/ternary-goldbach/tree/a664692883ac3deeea2c5471dba897147c728f89) preserves the original build inputs and evidence.
 
 The 735 Goldbach source hashes are in `source-manifest.json`. Historical attribution is in `NOTICE` and the upstream licenses and notices are in `licenses/`.
