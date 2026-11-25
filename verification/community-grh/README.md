@@ -6,7 +6,7 @@ From this directory in AWS CloudShell, `python3 cloudshell.py render --autorun` 
 
 The r7i.8xlarge has 32 vCPUs and 256 GiB of RAM. The instance has no inbound security-group rules. It stops after the driver exits, with a second stop scheduled after 12 hours. A 12-hour run costs about $26.30 at the regional list prices checked November 25, 2026, excluding transfer. The encrypted 600 GiB data volume is retained for the Goldbach link and costs about $48 per month until removed. The root volume also incurs storage charges until the stack is removed.
 
-After the stack reaches CREATE_COMPLETE, use `python3 cloudshell.py status`, `python3 cloudshell.py console`, or `python3 cloudshell.py tail`. The driver receipt is `/work/replay/evidence/receipt.json`. Check step exit codes and the final status. Interrupted runs may have partial receipts. The pin, source tree, dependency hashes, object manifest, exports and execution measurements are written by the driver.
+After the stack reaches CREATE_COMPLETE, use `python3 cloudshell.py status`, `python3 cloudshell.py console`, or `python3 cloudshell.py tail`. If Systems Manager returns `InvalidInstanceId`, `python3 cloudshell.py health` queries EC2 state, both EC2 health checks and SSM registration without sending a command to the worker. The driver receipt is `/work/replay/evidence/receipt.json`. Check step exit codes and the final status. Interrupted runs may have partial receipts. The pin, source tree, dependency hashes, object manifest, exports and execution measurements are written by the driver.
 
 ## Goldbach proof and verification status
 

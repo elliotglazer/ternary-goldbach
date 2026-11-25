@@ -97,6 +97,21 @@ def host_and_volume(stack):
     d=aws('cloudformation','describe-stacks','--stack-name',stack)['Stacks'][0]
     return {r['OutputKey']:r['OutputValue'] for r in d['Outputs']}
 
+def health(instance):
+    result = aws('ec2', 'describe-instances', '--instance-ids', instance)
+    worker = result['Reservations'][0]['Instances'][0]
+    reason = worker.get('StateTransitionReason') or (worker.get('StateReason') or {}).get('Message')
+    print('EC2:', worker['State']['Name'], '| reason:', reason or '-')
+    result = aws('ec2', 'describe-instance-status', '--include-all-instances', '--instance-ids', instance)
+    checks = result['InstanceStatuses']
+    if checks:
+        print('System check:', checks[0]['SystemStatus']['Status'], '| instance check:', checks[0]['InstanceStatus']['Status'])
+    else:
+        print('EC2 status checks unavailable')
+    result = aws('ssm', 'describe-instance-information', '--filters', 'Key=InstanceIds,Values='+instance)
+    records = result['InstanceInformationList']
+    print('SSM:', records[0]['PingStatus'] if records else 'unregistered')
+
 def ssm(instance, cmd, timeout=150):
     res=aws('ssm','send-command','--instance-ids',instance,'--document-name','AWS-RunShellScript','--parameters',json.dumps({'commands':[cmd],'executionTimeout':[str(timeout)]}))
     cid=res['Command']['CommandId']
@@ -112,7 +127,7 @@ def ssm(instance, cmd, timeout=150):
 
 def main():
     a=argparse.ArgumentParser()
-    a.add_argument('action',choices=['render','launch','start','status','console','tail'])
+    a.add_argument('action',choices=['render','launch','start','status','health','console','tail'])
     a.add_argument('--stack',default='tg-grh-source-replay')
     a.add_argument('--runner',type=Path)
     a.add_argument('--autorun',action='store_true',help='Start the pinned source replay when the new host is ready')
@@ -125,6 +140,8 @@ def main():
         print(aws('cloudformation','create-stack','--stack-name',args.stack,'--capabilities','CAPABILITY_IAM','--template-body',json.dumps(spec)))
         print('The source replay will start on boot.' if args.autorun else 'Wait for stack CREATE_COMPLETE before start.');return
     info=host_and_volume(args.stack); instance=info['Instance']
+    if args.action=='health':
+        health(instance);return
     print(info)
     if args.action=='status':
         s=aws('ec2','describe-instances','--instance-ids',instance)['Reservations'][0]['Instances'][0]
