@@ -1,0 +1,45 @@
+{
+  "bubblewrap_sha256": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71",
+  "execution": "Non-root Linux process, nested Ubuntu bubblewrap, read-only exports, stock Lean and NanoDa executables; declaration fixtures only.",
+  "fixture_export_sha256": {
+    "challenge.export": "ad988b32d070c5219a85da3fb42b8b2c5fcc07f6e58530dd2652219aecb0512a",
+    "positive.export": "d632e02946be1e70a696b9578c13215a0eac29aa8d39d1bbdbd9d103b6359c25",
+    "unapproved-axiom.export": "ee3a91aadb217cc6c7632fb6edc36978b446f5192d12ed2928c930c1e5a0781a",
+    "wrong-type.export": "991e72634408bfa6cfb9501e979c09e25dfc62fec2e237afe34b03130eab9249"
+  },
+  "lake_version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "official_binary_sha256": {
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "old_worker_sha256": "f10e44f76d03fa8f7a0329f1da81efe5a7324ac183d949e0c2a5c7bed7d62d13",
+  "outcomes": [
+    {
+      "exit": 1,
+      "fixed": false,
+      "fixture": "positive",
+      "transcript": "Running nanoda kernel on solution\nnanoda kernel rejected the solution\nRunning Lean default kernel on solution\nLean default kernel rejected the solution\nbwrap: Only the last --chdir option will take effect\nbwrap: Can't mkdir /home: Read-only file system\nbwrap: Can't mkdir /home: Read-only file system\nerror: nanoda exited with 1\n"
+    },
+    {
+      "exit": 0,
+      "fixed": true,
+      "fixture": "positive",
+      "transcript": "Running nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\nbwrap: Only the last --chdir option will take effect\n"
+    },
+    {
+      "exit": 1,
+      "fixed": true,
+      "fixture": "wrong-type",
+      "transcript": "bwrap: Only the last --chdir option will take effect\nerror: Challenge and solution theorem statement do not match: 'PalomarTernaryGoldbach.ternary_goldbach'\n"
+    },
+    {
+      "exit": 1,
+      "fixed": true,
+      "fixture": "unapproved-axiom",
+      "transcript": "bwrap: Only the last --chdir option will take effect\nerror: Illegal axiom detected: 'PalomarTernaryGoldbach.ExtraAssumption'\n"
+    }
+  ],
+  "release_archive_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "worker_sha256": "65e185d6f035bb52b966d8a1ac11050a4931ce1bf2937e0e35e8d04abde76f16"
+}

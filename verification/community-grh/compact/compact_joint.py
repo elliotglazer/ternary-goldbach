@@ -340,7 +340,10 @@ def main():
                    "--setenv","HOME","/tmp/home","--setenv","PATH","/tool/bin:/usr/bin:/bin","--setenv","LANG","C.UTF-8",
                    "--setenv","LEAN_ABORT_ON_PANIC","1","--setenv","LEAN_NUM_THREADS",str(args.threads),"--setenv","LAKE_ARTIFACT_CACHE","false","--chdir","/project"]
             if work==empty:
-                argv+=["--dir","/tmp/judge","--chdir","/tmp/judge"]
+                # The stock Linux comparator masks these paths inside its own read-only root.
+                # Precreate empty mountpoints without exposing the host directories.
+                argv+=["--dir","/home","--dir","/root","--dir","/run/user","--dir","/var",
+                       "--dir","/tmp/judge","--chdir","/tmp/judge"]
             if work!=empty:
                 argv+=["--ro-bind",str(pack),"/project/.lake/packages"]
                 argv+=["--bind",str(work/".lake/config"),"/project/.lake/config"]
