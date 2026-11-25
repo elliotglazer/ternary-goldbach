@@ -77,6 +77,10 @@ def _candidate_payloads(console, marker):
 
 def read_summary(console, commit, tree):
     console = console_text(console)
+    # Some EC2 serial captures insert bracketed UTC timestamps within a single
+    # base64 token. Brackets are outside the base64 alphabet. Remove only this
+    # precise, observed decoration; authentication still requires the SHA-256.
+    console=re.sub(r"(?<=[A-Za-z0-9+/=])\[\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{6}\](?=[A-Za-z0-9+/=])","",console)
     markers=list(SUMMARY_MARKER.finditer(console))
     if not markers: raise ValueError("No terminal V1 marker is present")
     for marker in reversed(markers):

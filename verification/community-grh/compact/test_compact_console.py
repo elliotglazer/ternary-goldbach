@@ -33,6 +33,11 @@ def main():
         assert w.exact_receipt(note+ref+mark+payload,c,t,a)==(s,msg)
         outer=base64.b64encode((ref+mark+payload).encode()).decode()
         assert w.exact_receipt(outer,c,t,a)==(s,msg)
+    # The real AWS JSON (SHA ad02b990468cb695a5cb2b277901864c916d21c9e76ec20de78d873072f7cca2)
+    # placed this exact decoration after 913 base64 characters with no newline. Payload is anonymized.
+    stamp="[2026-11-25T23:32:22.452205]"
+    assert w.exact_receipt(ref+mark+body[:913]+stamp+body[913:],c,t,a)==(s,msg)
+    assert w.exact_receipt(ref+mark+body[:913]+"[unknown]"+body[913:],c,t,a) is None
     valid=ref+mark+body+"\n"
     bad=ref+mark+body[:913]+"\n"
     conflict=ref.replace(" "+d," "+"e"*64)+mark+body+"\n"
