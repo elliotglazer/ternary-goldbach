@@ -1,0 +1,31 @@
+{
+  "platform": "Linux x86_64",
+  "toolchain": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "proofwidgets_git_commit": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+  "mathlib_git_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target": "lake build proofwidgets/widgetJsAll",
+  "input": "git archive of the exact ProofWidgets revision, with Mathlib\u2019s errorOnBuild configuration",
+  "network": "Disabled by a separate Linux network namespace",
+  "npm_invocations": 0,
+  "dependency_mount": "Read-only bind remount verified from /proc/self/mountinfo",
+  "cold_readonly": {
+    "exit": 1,
+    "error": "errno 30 on widget/package-lock.json.hash",
+    "seconds": 0.63
+  },
+  "writable": {
+    "exit": 0,
+    "seconds": 0.56,
+    "changed_files_under_widget": [
+      "widget/package-lock.json.hash"
+    ]
+  },
+  "warm_readonly": {
+    "exit": 0,
+    "seconds": 0.59
+  },
+  "generated_lake_hash": "179e66574f04806e",
+  "upstream_trace_output": "179e66574f04806e.art",
+  "package_lock_sha256": "3850e21b0823d6200db6da336ce1bd17a463db97ce314585ae47ed81a7327a7d",
+  "scope": "ProofWidgets widgetJsAll target only. The complete downstream solution was not run in this fixture."
+}
