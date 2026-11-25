@@ -39,28 +39,55 @@ def console_text(raw):
     return decoded if "TG435_RECEIPT_" in decoded else raw
 
 
+def _decode_summary_piece(encoded, expected_digest):
+    if len(encoded) > 4 * ((MAX_COMPRESSED_BYTES + 2) // 3):
+        raise ValueError("The encoded summary exceeds the accepted size")
+    compressed = base64.b64decode(encoded, validate=True)
+    with gzip.GzipFile(fileobj=io.BytesIO(compressed)) as stream:
+        payload = stream.read(MAX_SUMMARY_BYTES + 1)
+    if len(payload)>MAX_SUMMARY_BYTES or hashlib.sha256(payload).hexdigest()!=expected_digest:
+        raise ValueError("Summary SHA-256 or size mismatch")
+    return payload
+
+def _candidate_payloads(console, marker):
+    digest, encoded = marker.groups()
+    # Only join complete base64 fragments. A successful candidate must also
+    # pass gzip CRC, decompressed length, and the producer's SHA-256.
+    maximum = 4 * ((MAX_COMPRESSED_BYTES + 2) // 3)
+    suffix = console[marker.end():marker.end()+maximum*2]
+    lines = iter(suffix.splitlines())
+    remainder = next(lines, "")
+    for _ in range(160):
+        if len(encoded)>maximum: return
+        try:
+            yield _decode_summary_piece(encoded,digest)
+            return
+        except (ValueError,OSError,EOFError,zlib.error):
+            pass
+        if remainder.strip(): return
+        try:
+            line=next(lines).strip()
+        except StopIteration: return
+        # A Linux console or capture tool may prepend a fresh timestamp on each continuation.
+        fragment=re.sub(r"^\[\s*\d+(?:\.\d+)?\]\s*", "", line)
+        fragment=re.sub(r"^\d{4}-\d\d-\d\d[T ]\d\d:\d\d:\d\d(?:\.\d+)?Z\s+", "", fragment)
+        if not re.fullmatch(r"[A-Za-z0-9+/]+={0,2}|={1,2}",fragment): return
+        encoded+=fragment
+        remainder=""
+
 def read_summary(console, commit, tree):
     console = console_text(console)
-    matches = list(SUMMARY_MARKER.finditer(console))
-    if not matches:
-        raise ValueError("The available console output contains no completed receipt marker.")
-    expected_digest, encoded = matches[-1].groups()
-    if len(encoded) > 4 * ((MAX_COMPRESSED_BYTES + 2) // 3):
-        raise ValueError("The encoded summary exceeds the accepted size.")
-    compressed = base64.b64decode(encoded, validate=True)
-    with gzip.GzipFile(fileobj=io.BytesIO(compressed)) as handle:
-        payload = handle.read(MAX_SUMMARY_BYTES + 1)
-    if len(payload) > MAX_SUMMARY_BYTES or hashlib.sha256(payload).hexdigest() != expected_digest:
-        raise ValueError("The receipt summary has an invalid size or SHA-256.")
-    summary = json.loads(payload)
-    if not isinstance(summary, dict):
-        raise ValueError("The receipt summary must be a JSON object.")
-    if summary.get("commit") != commit or summary.get("tree") != tree:
-        raise ValueError("The console summary belongs to a different proof commit or tree.")
-    receipt_ref = (summary.get("receipt_path"), summary.get("receipt_sha256"))
-    if receipt_ref not in REFERENCE_MARKER.findall(console):
-        raise ValueError("The console lacks the matching full-receipt reference.")
-    return summary, payload
+    markers=list(SUMMARY_MARKER.finditer(console))
+    if not markers: raise ValueError("No terminal V1 marker is present")
+    for marker in reversed(markers):
+        for payload in _candidate_payloads(console, marker):
+            summary=json.loads(payload)
+            if not isinstance(summary,dict) or summary.get("commit")!=commit or summary.get("tree")!=tree:
+                continue
+            if (summary.get("receipt_path"),summary.get("receipt_sha256")) not in REFERENCE_MARKER.findall(console):
+                continue
+            return summary,payload
+    raise ValueError("Terminal summary incomplete, corrupt, or belongs to different pins")
 
 
 def main():

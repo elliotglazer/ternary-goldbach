@@ -2,6 +2,9 @@
 """Read a single compact EC2 attempt using SSM while online and its console on stop."""
 import argparse
 import json
+import os
+import zlib
+import hashlib
 from pathlib import Path
 import re
 import subprocess
@@ -34,24 +37,64 @@ print(json.dumps(d,ensure_ascii=True))
 TG_STATUS
 """
 
+def matching_references(raw, commit, attempt):
+    prefix = f"/work/compact-joint-runs/{commit}-{attempt}/"
+    allowed={prefix+"run/evidence/receipt.json",prefix+"startup-receipt.json"}
+    return [m for m in REFERENCE_MARKER.finditer(console_text(raw)) if m.group(1) in allowed]
+
+def exact_reference(raw, commit, attempt):
+    refs=matching_references(raw,commit,attempt)
+    if len({m.groups() for m in refs})>1:
+        raise ValueError("Conflicting full receipt references for this attempt")
+    return refs[-1].groups() if refs else None
+
 def exact_receipt(raw, commit, tree, attempt):
-    """Validate a marker pair within the exact retained attempt, including startup failure."""
-    base = f"/work/compact-joint-runs/{commit}-{attempt}/"
-    allowed = {base + "run/evidence/receipt.json", base + "startup-receipt.json"}
-    text = console_text(raw)
-    refs = list(REFERENCE_MARKER.finditer(text))
-    for i in range(len(refs)-1, -1, -1):
-        ref = refs[i]
-        if ref.group(1) not in allowed:
-            continue
-        piece = text[ref.start():refs[i+1].start() if i+1 < len(refs) else None]
-        if not SUMMARY_MARKER.search(piece):
-            continue
-        summary, payload = read_summary(piece, commit, tree)
-        if summary.get("receipt_path") not in allowed:
-            raise ValueError("Receipt path does not belong to this attempt")
-        return summary, payload
+    expected=exact_reference(raw,commit,attempt)
+    if not expected:return None
+    text=console_text(raw)
+    refs=list(REFERENCE_MARKER.finditer(text))
+    for i in range(len(refs)-1,-1,-1):
+        ref=refs[i]
+        if ref.groups()!=expected:continue
+        piece=text[ref.start():refs[i+1].start() if i+1<len(refs) else None]
+        try: summary,payload=read_summary(piece,commit,tree)
+        except (ValueError,OSError,EOFError,zlib.error):continue
+        if (summary.get("receipt_path"),summary.get("receipt_sha256"))==expected:
+            return summary,payload
     return None
+
+def preserve_console(text,attempt):
+    raw=text.encode("utf-8")
+    name=Path("compact-console-"+attempt+"-"+hashlib.sha256(raw).hexdigest()[:16]+".txt")
+    try:
+        fd=os.open(name,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
+    except FileExistsError:
+        if name.is_symlink() or name.read_bytes()!=raw:raise ValueError("Local transcript path conflict")
+    else:
+        with os.fdopen(fd,"wb") as f:f.write(raw)
+    return name
+
+def reference_diagnostic(raw,commit,attempt):
+    text=console_text(raw)
+    matched=matching_references(raw,commit,attempt)
+    if not matched:return []
+    selected=matched[-1]
+    start=max(0,selected.start()-10000)
+    previous=[m.end() for m in REFERENCE_MARKER.finditer(text,0,selected.start())]
+    if previous:start=max(start,previous[-1])
+    before=text[start:selected.start()]
+    hints=[]
+    path=f"/work/compact-joint-runs/{commit}-{attempt}/"
+    stage=re.compile(r"\b\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ ([A-Za-z0-9_-]{1,80})\s*$")
+    for line in before.splitlines():
+        m=stage.search(line)
+        if m:
+            hints.append("stage "+m.group(1))
+        elif path in line and re.search(r"\bfailed with -?\d+\b",line):
+            # Return only the stage and numeric exit, never arbitrary surrounding console text.
+            match=re.search(r"\b([A-Za-z0-9_-]{1,80}) failed with (-?\d+)\b",line)
+            if match:hints.append("error "+match.group(1)+" exit "+match.group(2))
+    return hints[-3:]
 
 def live(instance, commit, attempt):
     managed = aws("ssm", "describe-instance-information", "--filters", "Key=InstanceIds,Values="+instance)["InstanceInformationList"]
@@ -84,8 +127,13 @@ def main():
     stopped_at=None; previous=None
     while True:
         state = aws("ec2","describe-instances","--instance-ids",a.instance)["Reservations"][0]["Instances"][0]["State"]["Name"]
-        result=exact_receipt(aws("ec2","get-console-output","--instance-id",a.instance,"--latest").get("Output") or "",
-                             a.commit,a.tree,a.attempt)
+        serial=aws("ec2","get-console-output","--instance-id",a.instance,"--latest").get("Output") or ""
+        try:
+            reference=exact_reference(serial,a.commit,a.attempt)
+            result=exact_receipt(serial,a.commit,a.tree,a.attempt)
+        except ValueError as exc:
+            saved=preserve_console(serial,a.attempt)
+            sys.exit(f"EC2 {state} | unverified: {exc} | raw console: {saved}")
         if result:
             s,raw=result
             out=Path("compact-receipt-"+a.attempt+".json")
@@ -96,6 +144,17 @@ def main():
                 if k in s: print(k, json.dumps(s[k],ensure_ascii=True))
             print("Saved",out)
             return
+        if reference:
+            saved=preserve_console(serial,a.attempt)
+            status="EC2 "+state+" | terminal mathematical status unverified | raw console "+str(saved)
+            if status!=previous:
+                print(status,flush=True)
+                print("TG435_REF_ONLY",*reference,flush=True)
+                for hint in reference_diagnostic(serial,a.commit,a.attempt):print("Nearby log (unverified):",hint,flush=True)
+            if state in {"stopped","terminated"} or not a.watch:return 2
+            previous=status
+            time.sleep(60)
+            continue
         status = state
         if state=="running":
             try: status += " | "+live(a.instance,a.commit,a.attempt)
@@ -109,4 +168,4 @@ def main():
         time.sleep(60)
 
 if __name__=="__main__":
-    main()
+    sys.exit(main())
