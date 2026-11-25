@@ -77,3 +77,9 @@ intervals, using the existing `Checked.join` theorem. The original single
 check hit a 2,560 MiB process limit. The split proof compiled under a
 1,024 MiB limit in 24.75 seconds on the same local Lean 4.35 installation.
 It proves the same statement and uses the same certificate inputs.
+
+Stock Lean 4.35 compiled the full Landau module in 16.85 seconds. In the
+factorization proof the rational function is written as its finite-support
+product. In the logarithm argument the ball's connectedness follows from
+convexity. Both changes are inside proofs, and all theorem statements retain
+their original types.
