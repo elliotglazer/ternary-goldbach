@@ -1,0 +1,298 @@
+{
+  "project_commit": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "host": "Windows x86_64",
+  "threads_per_process": 1,
+  "profile_modules": [
+    "ProfileG0R0N4Data",
+    "ProfileG1R12N1Data",
+    "ProfileG2R0N12Data",
+    "ProfileG3R0N12Data",
+    "ProfileG3R12N9Data",
+    "ProfileG3R21N1Data",
+    "ProfileG3R22N1Data",
+    "ProfileG3R47N4Data"
+  ],
+  "project_modules": {
+    "DirectData": {
+      "source": "DirectData.lean",
+      "source_sha256": "2f7b767a800b605079ff2673d6c4ea6614af87e7db2c02aead7045caa49646e5",
+      "olean_sha256": "bb9e63f89fa2f9e64eab1b889483a1cf4d268e0c74bcd5922e8f8c2aefaaf96c",
+      "olean_bytes": 64632,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileG0R0N4Data": {
+      "source": "ProfileG0R0N4Data.lean",
+      "source_sha256": "01e3da4950b5ca3e4c4ff403c4576b47e6190c21936df6e93a0e7c1bb4ddf738",
+      "olean_sha256": "22d7027d612ab27c3c6c35d29dc05cecbc0b24f61cedb38b17c3c9cff187740d",
+      "olean_bytes": 322448,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape1positive",
+        "ProfileTape1touching",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 33.58,
+        "peak_working_set_mib": 1567.6,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileG1R12N1Data": {
+      "source": "ProfileG1R12N1Data.lean",
+      "source_sha256": "daefe1c4bffd0979df0683d6e1a37defc75df8717e48ae93c545394ccc9e569b",
+      "olean_sha256": "bc8ec9598f90a96acd61d47e82c69b91a2a824f39e35418402b62165ea343c68",
+      "olean_bytes": 122104,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape2positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 11.83,
+        "peak_working_set_mib": null,
+        "lean_memory_limit_mib": 1024
+      }
+    },
+    "ProfileG2R0N12Data": {
+      "source": "ProfileG2R0N12Data.lean",
+      "source_sha256": "c37ee627483c167ee465ce84d01c7db412f543d16d66e010160592e8979dfc5b",
+      "olean_sha256": "2b87e7ff521566d3b3dbed5f24daaabdace3909eb513134aa416ef8a23d87a61",
+      "olean_bytes": 929032,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape1positive",
+        "ProfileTape1touching",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 73.24,
+        "peak_working_set_mib": 929.1,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileG3R0N12Data": {
+      "source": "ProfileG3R0N12Data.lean",
+      "source_sha256": "690923099be6f9de908846cc3bf8da49579b482f356319bdd616bab69286888d",
+      "olean_sha256": "64b838458be2be76742cc74291def5d5e81c2acac4c352195a478e31ee45350c",
+      "olean_bytes": 2117248,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape16positive",
+        "ProfileTape2touching",
+        "ProfileTape8positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 192.09,
+        "peak_working_set_mib": 1244.82,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileG3R12N9Data": {
+      "source": "ProfileG3R12N9Data.lean",
+      "source_sha256": "7fcf235f614d50d2ca5aa14bd0446da2e894a2731906e51395df877f240cd091",
+      "olean_sha256": "1fc46cb03a6c04c3ad5f220621c20aceb74a24fbe740e449070146196dc27041",
+      "olean_bytes": 2270872,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape16positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 217.84,
+        "peak_working_set_mib": 1196.9,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileG3R21N1Data": {
+      "source": "ProfileG3R21N1Data.lean",
+      "source_sha256": "32c7a7704105a9d25292b67fbb2d607ec238d6ab8020ccaf1de9e2c7d2e57aba",
+      "olean_sha256": "9754591c1b8ae533076c88705ba0b9dd033e5e9781c855e44f149e8d75e032f4",
+      "olean_bytes": 294816,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape16positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 24.61,
+        "cpu_seconds": 23.53,
+        "peak_working_set_mib": 806.41,
+        "lean_memory_limit_mib": 1024
+      }
+    },
+    "ProfileG3R22N1Data": {
+      "source": "ProfileG3R22N1Data.lean",
+      "source_sha256": "c9bbbb292e4666a2adad71a1d3b97a64c4a3f810260df63799f9066ffa7fff11",
+      "olean_sha256": "4f4f14ad463814c05605177cd9d1fe30e2f29a09753964a0abb81b0129e6209b",
+      "olean_bytes": 294816,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape16positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 30.11,
+        "peak_working_set_mib": 1008.6,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileG3R47N4Data": {
+      "source": "ProfileG3R47N4Data.lean",
+      "source_sha256": "bef1ddfad191ec862c37b761f94cb9bca32a72bb2339eb923349210a7b953051",
+      "olean_sha256": "c0cbc68ea9267c23d1b67eb70fe289136b860f3d2e2d30ba4de14d441a571150",
+      "olean_bytes": 329472,
+      "project_imports": [
+        "DirectData",
+        "ProfileTape1positive",
+        "ScaledLiteral"
+      ],
+      "toolchain_imports": [
+        "Init.Data.Array.Basic"
+      ],
+      "timing": {
+        "wall_seconds": 23.87,
+        "peak_working_set_mib": 808.8,
+        "lean_memory_limit_mib": 2560
+      }
+    },
+    "ProfileTape16positive": {
+      "source": "ProfileTape16positive.lean",
+      "source_sha256": "f05fd9c376daa722e441bf9bf9983c3d763670a9a2f27ebf0d1863e610997bd4",
+      "olean_sha256": "bdfd446bfbca2346ec2ce2e91c8c877969d110e4ae3052864ed489f4d73ac7d2",
+      "olean_bytes": 197632,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileTape1positive": {
+      "source": "ProfileTape1positive.lean",
+      "source_sha256": "fce0a6e17e54ff3aaad8fcf8394cfe131cc8b15a78bdc98235599832b3d0c896",
+      "olean_sha256": "5ab466503f278a2b035ab88f2f7d56de70c3cd5aa479dae9cb42f464455ee3ee",
+      "olean_bytes": 63000,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileTape1touching": {
+      "source": "ProfileTape1touching.lean",
+      "source_sha256": "8d16f8501586ebec87bb4b57e56c7ddaba692f1fdb0c2a7f5ae5450a01b658ad",
+      "olean_sha256": "1e7e25fa59899c5564b8f4a424974bdefcbb64d5c5e005e1f80da2ae91571887",
+      "olean_bytes": 61480,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileTape2positive": {
+      "source": "ProfileTape2positive.lean",
+      "source_sha256": "544ccd3c6f0cba480ffc1752eb109580a670b00ac94b33bdff06f16787e62213",
+      "olean_sha256": "895b14a55869e2cec9dd180878fd779bb43ae08bb1fb1a80c0cb150b4328d49a",
+      "olean_bytes": 74656,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileTape2touching": {
+      "source": "ProfileTape2touching.lean",
+      "source_sha256": "a755878e52af1ebc1e6b3c2dec2203548a1b723a05e13d9cb6dda40a2408d124",
+      "olean_sha256": "4e1efe0a6479da4cce1a8b8654a2c9bb0c4e998168414373f954d4a3fcce4fe2",
+      "olean_bytes": 71664,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ProfileTape8positive": {
+      "source": "ProfileTape8positive.lean",
+      "source_sha256": "97da015840574f3b92b73fe50cda704df49858ed0b3b81369a4bbdaf7a33ae30",
+      "olean_sha256": "4866abc0c1bc65426abbb1758af3238fe95dc1ad4aed714e2ac5d2aad639aca6",
+      "olean_bytes": 127448,
+      "project_imports": [
+        "ScaledRefs"
+      ],
+      "toolchain_imports": []
+    },
+    "ScaledData": {
+      "source": "ScaledData.lean",
+      "source_sha256": "e915ed3699a01da88954e761e2e5226161edafc6ca412554d38cf7462b59c7c4",
+      "olean_sha256": "9022f3cd341e8bc0694f4c5fc58f40eea2768e71fc9cbf519d5e289e018d2f90",
+      "olean_bytes": 283824,
+      "project_imports": [],
+      "toolchain_imports": [
+        "Std"
+      ]
+    },
+    "ScaledLiteral": {
+      "source": "ScaledLiteral.lean",
+      "source_sha256": "e31707099d116cd12a35ca6cd0c4279b150daf93e42ae65bf3c7cb60c4fee211",
+      "olean_sha256": "baaef939fd80929a6b8fc4a9999eaf594e150b95059b0ac8b5f7d799c9b89891",
+      "olean_bytes": 109960,
+      "project_imports": [
+        "ScaledData"
+      ],
+      "toolchain_imports": [
+        "Lean"
+      ]
+    },
+    "ScaledRefs": {
+      "source": "ScaledRefs.lean",
+      "source_sha256": "8ca24b88c34732c97c9c2491f115e4eadec280091d5b2076ef96de55b0f7fa61",
+      "olean_sha256": "1c1323ff89ef01a926f90046cbc4e5c968ae73f5d64273fea3ea6aa36395bb73",
+      "olean_bytes": 243024,
+      "project_imports": [
+        "ScaledData"
+      ],
+      "toolchain_imports": []
+    }
+  },
+  "axiom_counts": {
+    "checked": {
+      "propext, Classical.choice, Quot.sound": 44
+    },
+    "cap": {
+      "propext": 44
+    }
+  },
+  "audit": {
+    "source": "profile-audit-all.lean",
+    "source_sha256": "f94a9f9d0d15b9efbecb57b486533274f0e583b207cd254e510dcd33fd943e6b",
+    "stdout": "audit.log",
+    "stdout_sha256": "eadf7efb7e6d782d61fd93953829c28409839a9c39de8ab26eb79346cec8f4ca",
+    "olean_sha256": "35e9597a3649419d97a7b4f818620f76a9b9c64ac352cd2d18196cdad80d7e0c",
+    "exit_code": 0,
+    "wall_seconds": 3.01,
+    "peak_working_set_mib": 465.04
+  },
+  "profile_module_wall_seconds_sum": 607.17
+}
