@@ -1,0 +1,191 @@
+{
+  "single": {
+    "theorem": "SmallGoldbach.Power10.block0",
+    "type": "SmallGoldbach.Covered 6 1258291206",
+    "steps": {
+      "export": {
+        "argv": [
+          "leanexport",
+          "Power10Block00",
+          "--",
+          "SmallGoldbach.Power10.block0"
+        ],
+        "start_utc": "2026-11-25T22:21:53.547514+00:00",
+        "start_available_kib": 14394560,
+        "status": 0,
+        "wall_seconds": 207.649,
+        "user_seconds": 82.537959,
+        "system_seconds": 18.958537,
+        "peak_rss_kib": 2695420,
+        "end_available_kib": 5777228
+      },
+      "leanchecker": {
+        "argv": [
+          "leanchecker",
+          "--silent",
+          "--from-export",
+          "block0.ndjson"
+        ],
+        "start_utc": "2026-11-25T22:25:21.669766+00:00",
+        "start_available_kib": 5831452,
+        "status": 0,
+        "wall_seconds": 154.505,
+        "user_seconds": 128.931464,
+        "system_seconds": 14.362945,
+        "peak_rss_kib": 1777964,
+        "end_available_kib": 11436692
+      },
+      "nanoda": {
+        "argv": [
+          "nanoda_bin",
+          "nanoda.json"
+        ],
+        "start_utc": "2026-11-25T22:27:56.391307+00:00",
+        "start_available_kib": 11436692,
+        "status": 0,
+        "wall_seconds": 126.202,
+        "user_seconds": 116.013903,
+        "system_seconds": 5.800695,
+        "peak_rss_kib": 1147184,
+        "end_available_kib": 6035476
+      }
+    },
+    "toolchain": "Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
+    "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+    "sources": {
+      "Power10Block00.lean": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+      "Power10Block00.olean": "a803ba772cef968351ac5b98bc7b905084810a33f949926ac61147d3a310097d",
+      "Power10Block00.olean.private": "31ee4c70a9c119c10f0332119201b38930e7ca7c76ad005998c14a2e6c2bbcc0"
+    },
+    "exporter_selected_roots": 1,
+    "cpu_affinity": 0,
+    "export_bytes": 20337444,
+    "export_sha256": "abf0bd7f3b83946955a81dcab04fd02d18d8af8ab859e7f686d85746fcc669bc"
+  },
+  "pair": {
+    "theorem": "GoldbachBenchmark.firstTwo",
+    "type": "SmallGoldbach.Covered 6 1258291206 \u2227 SmallGoldbach.Covered 1258291206 2516582406",
+    "steps": {
+      "export": {
+        "argv": [
+          "leanexport",
+          "FirstTwoBlocks",
+          "--",
+          "GoldbachBenchmark.firstTwo"
+        ],
+        "start_utc": "2026-11-25T22:30:09.776240+00:00",
+        "start_available_kib": 10239084,
+        "status": 0,
+        "wall_seconds": 90.14,
+        "user_seconds": 76.801303,
+        "system_seconds": 6.360006,
+        "peak_rss_kib": 2709348,
+        "end_available_kib": 10983624
+      },
+      "leanchecker": {
+        "argv": [
+          "leanchecker",
+          "--silent",
+          "--from-export",
+          "first-two.ndjson"
+        ],
+        "start_utc": "2026-11-25T22:31:39.982167+00:00",
+        "start_available_kib": 10973588,
+        "status": 0,
+        "wall_seconds": 250.304,
+        "user_seconds": 229.801468,
+        "system_seconds": 15.313149,
+        "peak_rss_kib": 1786916,
+        "end_available_kib": 9977432
+      },
+      "nanoda": {
+        "argv": [
+          "nanoda_bin",
+          "nanoda.json"
+        ],
+        "start_utc": "2026-11-25T22:35:50.362309+00:00",
+        "start_available_kib": 9971508,
+        "status": 0,
+        "wall_seconds": 219.243,
+        "user_seconds": 198.79192,
+        "system_seconds": 15.352525,
+        "peak_rss_kib": 1150948,
+        "end_available_kib": 10468388
+      }
+    },
+    "toolchain": "Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
+    "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+    "sources": {
+      "Power10Block00.lean": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+      "Power10Block00.olean": "a803ba772cef968351ac5b98bc7b905084810a33f949926ac61147d3a310097d",
+      "Power10Block00.olean.private": "31ee4c70a9c119c10f0332119201b38930e7ca7c76ad005998c14a2e6c2bbcc0",
+      "Power10Block01.lean": "bc399c82768b6fd8051a76d018d784a0901ff884251f417226eafee149860b24",
+      "Power10Block01.olean": "740439ffb148b2db479d3e3fb3c2bffc7540e429f9b10b9315fa8e120d5dcd7f",
+      "Power10Block01.olean.private": "9d97b6ee90a9a337e3786d5fcc27c3cf21ff1b156bf56cc86734c90dcd3e2c0f",
+      "FirstTwoBlocks.olean": "4738323d27040b00f32c34f7a2c3df1f776bff5da969bc7a8d8b2c3f908d5abd",
+      "FirstTwoBlocks.lean": "bfc6908fc4fc9bfca869913f2f60df31fa97fe5e66fd2be90c7e34083874c650"
+    },
+    "exporter_selected_roots": 1,
+    "cpu_affinity": 0,
+    "export_bytes": 25478920,
+    "export_sha256": "78f2eb72b3777a74901e2f4f1d35a7ec948aea237ce530595048ce0d027fec1a"
+  },
+  "comparison": {
+    "roots": {
+      "SmallGoldbach.Power10.block0": 2870,
+      "SmallGoldbach.Power10.block1": 3771,
+      "GoldbachBenchmark.firstTwo": 3772
+    },
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pair_theorems": 3772,
+    "single_theorems": 2870,
+    "single_bytes": 20337444,
+    "pair_bytes": 25478920,
+    "extra_bytes": 5141476,
+    "phases": {
+      "export": {
+        "single_wall": 207.649,
+        "pair_wall": 90.14,
+        "added_wall": -117.509,
+        "single_cpu": 101.49649600000001,
+        "pair_cpu": 83.161309,
+        "added_cpu": -18.335187000000005,
+        "single_peak_kib": 2695420,
+        "pair_peak_kib": 2709348
+      },
+      "leanchecker": {
+        "single_wall": 154.505,
+        "pair_wall": 250.304,
+        "added_wall": 95.799,
+        "single_cpu": 143.294409,
+        "pair_cpu": 245.114617,
+        "added_cpu": 101.82020800000001,
+        "single_peak_kib": 1777964,
+        "pair_peak_kib": 1786916
+      },
+      "nanoda": {
+        "single_wall": 126.202,
+        "pair_wall": 219.243,
+        "added_wall": 93.041,
+        "single_cpu": 121.814598,
+        "pair_cpu": 214.14444500000002,
+        "added_cpu": 92.32984700000002,
+        "single_peak_kib": 1147184,
+        "pair_peak_kib": 1150948
+      }
+    }
+  },
+  "conditions": {
+    "affinity_cores": 1,
+    "niceness": 12,
+    "nanoda_threads": 1,
+    "nanoda_hard_axiom_errors": true,
+    "other_load": "shared machine, no cache reset",
+    "scope": "public first and second binary blocks only",
+    "full_replay_330_minutes": "undetermined"
+  }
+}

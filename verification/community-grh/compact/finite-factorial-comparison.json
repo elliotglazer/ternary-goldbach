@@ -1,0 +1,158 @@
+{
+  "rows": 64,
+  "bounds": [
+    6,
+    33554438
+  ],
+  "reference_factorial": 100000,
+  "localized_factorial": 5793,
+  "reference_factorial_bits": 1516705,
+  "localized_factorial_bits": 64064,
+  "offsets_and_intervals": "identical; only inverse/factorial witnesses changed",
+  "census": {
+    "selected_root": "ProductPrefix564386325504",
+    "transitive_local_modules": 415,
+    "counted_modules": 368,
+    "by_verifier": {
+      "prime_product": {
+        "modules": 188,
+        "interval_claims": 14817,
+        "row_records": 118536,
+        "anchor_offsets": 10383852,
+        "even_candidates": 232028897280,
+        "source_bytes": 148840082
+      },
+      "other_factorial": {
+        "modules": 172,
+        "interval_claims": 21536,
+        "row_records": 172288,
+        "anchor_offsets": 11754238,
+        "even_candidates": 45164265472,
+        "source_bytes": 164612521
+      },
+      "small_factorial": {
+        "modules": 8,
+        "interval_claims": 2385,
+        "row_records": 19074,
+        "anchor_offsets": 1479253,
+        "even_candidates": 4999999998,
+        "source_bytes": 19189038
+      }
+    },
+    "fields": [
+      "family",
+      "modules",
+      "interval_claims",
+      "row_records",
+      "anchor_offsets",
+      "even_candidates",
+      "source_bytes"
+    ]
+  },
+  "reference": {
+    "theorem": "GoldbachAB.target",
+    "type": "SmallGoldbach.Covered 6 33554438",
+    "toolchain": "Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
+    "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+    "sources": {
+      "Trial.lean": "da93d7f97839d55c85f9dfdc2e95354b72b1b0fd2ca56b134af18b7eae081ff7",
+      "Trial.olean": "5152ca3eeae7b6b1581d71b9e9db3f3ef121c14f2f181028c2bef383e28cbdbc",
+      "Trial.olean.private": "a1818d0b1cf64c48210992ca706fd93f0e98a6b63c0efe9137e508d1bfa32a52"
+    },
+    "export_bytes": 15445301,
+    "export_sha256": "945239a9bd531435500d8189493521d3fdca596ce53007aff6e85c7daf945ee5",
+    "phases": {
+      "export": {
+        "status": 0,
+        "wall_seconds": 110.132,
+        "user_seconds": 64.387105,
+        "system_seconds": 11.871334,
+        "peak_rss_kib": 2700392
+      },
+      "leanchecker": {
+        "status": 0,
+        "wall_seconds": 59.949,
+        "user_seconds": 52.748075,
+        "system_seconds": 4.886629,
+        "peak_rss_kib": 1747408
+      },
+      "nanoda": {
+        "status": 0,
+        "wall_seconds": 42.048,
+        "user_seconds": 38.697619,
+        "system_seconds": 2.96751,
+        "peak_rss_kib": 1144184
+      }
+    },
+    "scope": {
+      "target": "GoldbachAB.target",
+      "mentions_archived_block_proof": false,
+      "factorial_certificate": "SmallGoldbach.Power10.fac_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "localized": {
+    "theorem": "GoldbachAB.target",
+    "type": "SmallGoldbach.Covered 6 33554438",
+    "toolchain": "Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
+    "mathlib": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+    "sources": {
+      "Trial.lean": "fbd02b353d87f536d36cbaec8be364c6cae72c44aa19d0f23cf22fd2fa44f556",
+      "Trial.olean": "277b9f4b786ebcbdf628eab099e5cd4d678e2a400e2c5cfd625bfbb6dd714a88",
+      "Trial.olean.private": "a49c6aef3ce3a0ff340fc85fa9383693fe1903656c65cdffd2c1b5340790d379"
+    },
+    "export_bytes": 15008029,
+    "export_sha256": "b58645db47839056f94570a897983418733f886e0fbbaa972bcf00ab3f49cffe",
+    "phases": {
+      "export": {
+        "status": 0,
+        "wall_seconds": 10.009,
+        "user_seconds": 3.845365,
+        "system_seconds": 2.476989,
+        "peak_rss_kib": 2685864
+      },
+      "leanchecker": {
+        "status": 0,
+        "wall_seconds": 31.025,
+        "user_seconds": 26.865318,
+        "system_seconds": 2.570729,
+        "peak_rss_kib": 1753392
+      },
+      "nanoda": {
+        "status": 0,
+        "wall_seconds": 43.038,
+        "user_seconds": 30.694505,
+        "system_seconds": 6.743699,
+        "peak_rss_kib": 1143176
+      }
+    },
+    "scope": {
+      "target": "GoldbachAB.target",
+      "mentions_archived_block_proof": false,
+      "factorial_certificate": "GoldbachAB.localFac_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "fermi_finite": {
+    "row_records": {
+      "leanchecker": 3.652,
+      "nanoda": 3.312
+    },
+    "anchor_offsets": {
+      "leanchecker": 3.594,
+      "nanoda": 3.259
+    },
+    "source_bytes": {
+      "leanchecker": 3.979,
+      "nanoda": 3.608
+    }
+  }
+}
