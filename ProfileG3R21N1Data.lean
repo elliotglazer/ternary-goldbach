@@ -29,7 +29,21 @@ def w21P576 : Array Entry := scaledEntries% "0,703347662965497029385523325744711
 def w21 : Table Entry := (.branch 288 (.branch 96 (.leaf w21P0) (.branch 96 (.leaf w21P96) (.leaf w21P192))) (.branch 192 (.branch 96 (.leaf w21P288) (.leaf w21P384)) (.branch 96 (.leaf w21P480) (.leaf w21P576))))
 def wv21 (i : Nat) := witness (w21.fetch i)
 def check21 := directTest ProfileTape16positive.tape.fetch v21 wv21 etab.fetch atab.fetch 56 8
-theorem checked21 : Checked check21 0 657 := segment_sound (size:=657) (by decide +kernel)
+private theorem row21Part0 : Checked check21 0 48 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part48 : Checked check21 48 96 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part96 : Checked check21 96 144 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part144 : Checked check21 144 192 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part192 : Checked check21 192 240 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part240 : Checked check21 240 288 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part288 : Checked check21 288 336 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part336 : Checked check21 336 384 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part384 : Checked check21 384 432 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part432 : Checked check21 432 480 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part480 : Checked check21 480 528 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part528 : Checked check21 528 576 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part576 : Checked check21 576 624 := segment_sound (size:=48) (by decide +kernel)
+private theorem row21Part624 : Checked check21 624 657 := segment_sound (size:=33) (by decide +kernel)
+theorem checked21 : Checked check21 0 657 := (Checked.join (Checked.join (Checked.join row21Part0 (Checked.join row21Part48 row21Part96)) (Checked.join (Checked.join row21Part144 row21Part192) (Checked.join row21Part240 row21Part288))) (Checked.join (Checked.join row21Part336 (Checked.join row21Part384 row21Part432)) (Checked.join (Checked.join row21Part480 row21Part528) (Checked.join row21Part576 row21Part624))))
 theorem cap21 : (directNode ProfileTape16positive.tape.fetch v21 wv21 656).b.hi*1000 ≤ 315*scale := by decide +kernel
 #print axioms checked21
 end ProfileG3R21N1

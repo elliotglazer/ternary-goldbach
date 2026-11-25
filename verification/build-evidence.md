@@ -71,3 +71,9 @@ Its five interval segments passed kernel reduction. The resulting
 `Quot.sound`. The same source repair covers 33 generated profile files and
 698 named helpers. It preserves the certificate literals and proof bodies.
 The full solution and its exported kernel replay remain pending.
+
+The 657 entries in `ProfileG3R21N1.checked21` are checked in 14 adjacent
+intervals, using the existing `Checked.join` theorem. The original single
+check hit a 2,560 MiB process limit. The split proof compiled under a
+1,024 MiB limit in 24.75 seconds on the same local Lean 4.35 installation.
+It proves the same statement and uses the same certificate inputs.
