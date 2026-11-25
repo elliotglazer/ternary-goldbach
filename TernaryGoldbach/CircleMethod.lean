@@ -250,7 +250,7 @@ theorem norm_integral_minor_le (X N : ℕ) (a b c : ℕ → ℂ) {M : Set ℝ} (
     _ ≤ ∫ α in Set.Ioc (0:ℝ) 1, B * (‖expSum X b α‖ * ‖expSum X c α‖) :=
         setIntegral_mono_set hbc.integrableOn_Ioc
           (Filter.Eventually.of_forall fun _ => by positivity)
-          (Set.sdiff_subset (s := Set.Ioc (0:ℝ) 1) (t := M)).eventuallyLE
+          (Filter.Eventually.of_forall fun _ hx => hx.1)
     _ = B * ∫ α in Set.Ioc (0:ℝ) 1, ‖expSum X b α‖ * ‖expSum X c α‖ :=
         MeasureTheory.integral_const_mul _ _
     _ ≤ _ := mul_le_mul_of_nonneg_left (setIntegral_norm_mul_norm_expSum_le X b c) hB0
