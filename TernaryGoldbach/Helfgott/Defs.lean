@@ -66,7 +66,7 @@ noncomputable def S (η : ℝ → ℝ) (x α : ℝ) : ℂ :=
 /-- The major arcs `𝔐_{δ₀,r}` [H, (10.5)], lifted from `ℝ/ℤ` to `ℝ`: intervals of radius
 `δ₀r/(2qx)` around `a/q` for odd `q ≤ r`, and of radius `δ₀r/(qx)` for even `q ≤ 2r`,
 where `gcd(a, q) = 1`. -/
-def majorArcs (δ₀ r x : ℝ) : Set ℝ :=
+noncomputable def majorArcs (δ₀ r x : ℝ) : Set ℝ :=
   (⋃ (q : ℕ) (_ : 1 ≤ q ∧ (q : ℝ) ≤ r ∧ Odd q) (a : ℤ) (_ : IsCoprime a (q : ℤ)),
       Set.Ioo (a / q - δ₀ * r / (2 * q * x)) (a / q + δ₀ * r / (2 * q * x))) ∪
   (⋃ (q : ℕ) (_ : 1 ≤ q ∧ (q : ℝ) ≤ 2 * r ∧ Even q) (a : ℤ) (_ : IsCoprime a (q : ℤ)),
