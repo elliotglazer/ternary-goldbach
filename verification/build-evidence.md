@@ -58,3 +58,7 @@ A fresh checkout of source commit `831a43890890f06e179f8e1d893e971a4647641d` use
 ## Lean 4.35.0 analytic compatibility
 
 The stock 4.35.0 compiler accepted the full `Totient` and `AtanCertificate` modules against pinned Mathlib. The totient proof uses the prime divisibility lemma and induction-case label from that release. The arctangent proof imports the derivative of a power. The audit of `arctan_enclosure` reported `propext`, `Classical.choice` and `Quot.sound`.
+
+The compiler accepted four complete compact modules in focused builds with pinned dependencies. These were `Lib.General.LinearAlgebra.Base`, `Lib.General.Analysis.OstrowskiTaussky`, `Lib.General.Analysis.HolomorphicIntegral` and `Lib.General.Algebra.AdicRingHomExt`. The HolomorphicIntegral build took 305 seconds on the test machine after its module header gained `import all Mathlib.NumberTheory.Padics.Measure.Basic`. Its proof text matches the previously bundled version.
+
+A focused 4.35.0 test reproduced the strong-induction step from `ScaledEval` with its dependent index bound. The compiler rejected the case label `ind` and accepted `h`. The full `ScaledEval` module still needs a 4.35.0 build.

@@ -83,7 +83,7 @@ theorem table_holds (pool : Nat → Node) (e t : Nat → Entry) {size : Nat}
     (checked : Checked (testAt pool e t) 0 size) (i : Nat) (hi : i < size) :
     (pool i).b.Holds (nodeValue pool i) := by
   induction i using Nat.strong_induction_on with
-  | ind i ih =>
+  | h i ih =>
     have prior_holds (j : Nat) : (prior pool i j).Holds (if j < i then nodeValue pool j else 0) := by
       by_cases hj : j < i
       · simpa [prior,hj] using ih j hj (hj.trans hi)
