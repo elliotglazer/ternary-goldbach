@@ -54,3 +54,7 @@ The joint worker validated all 794 packaged paths and converted hashes against `
 ## Lean 4.35.0 package routing and challenge
 
 A fresh checkout of source commit `831a43890890f06e179f8e1d893e971a4647641d` used the stock Windows Lean 4.35.0 release and local checkouts matching all nine lockfile revisions. `lake --no-build query +Main:lean +GoldbachSolution:lean +GoldbachChallenge:lean` resolved the compact `Main` to `CompactGRH/src/Main.lean` and the challenge and solution to their corresponding package-root files. The compiler accepted `GoldbachChallenge.lean` with the expected warning for its trusted statement placeholder. Full solution elaboration and exported-proof kernel verification remain pending.
+
+## Lean 4.35.0 analytic compatibility
+
+The stock 4.35.0 compiler accepted the full `Totient` and `AtanCertificate` modules against pinned Mathlib. The totient proof uses the prime divisibility lemma and induction-case label from that release. The arctangent proof imports the derivative of a power. The audit of `arctan_enclosure` reported `propext`, `Classical.choice` and `Quot.sound`.
