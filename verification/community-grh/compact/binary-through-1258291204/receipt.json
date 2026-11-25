@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "scope": "Every even natural n with 4 <= n <= 1258291204 is a sum of two primes. The proof includes the exact production declaration SmallGoldbach.Power10.block0.",
+  "project_commit": "fc729595d20448d3689f706378879a30a323a762",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "trusted_module": "TrustedPrefix",
+  "solution_module": "FinitePrefixSolution",
+  "targets": [
+    "SmallGoldbach.Power10.block0",
+    "FinitePrefixAudit.binary_goldbach_through_1258291204"
+  ],
+  "source_artifacts": {
+    "axioms.log": "6659fde3e0cf294731be74676daa719e938016dea230b358b38e7cd5e049a4b2",
+    "comparator.json": "b665ffeb8457ba88e2d45ec01bfe7e7dc4d155c88e5b52e89e30ba20bf0a68cf",
+    "comparator.log": "5b304adfe00c8107856812ee5184f11fcb2582fe7931ce1f2038375a4cce8171",
+    "FinitePrefixSolution.lean": "692ddeca8b553faa3993ff8659e6559e584c3e661a513be860f8ed3edb3da447",
+    "TrustedPrefix.lean": "91e4ca2345a7ff162236568af17b69414495c5334fd86521ee6cb7d660a1703d"
+  },
+  "production_source_sha256": {
+    "FastHex.lean": "efc35e840a1407d605f03caafa99f8b450346cbaf10586a8e63675c98e2a8aa5",
+    "GoldbachNatPowMod.lean": "47fc005726c7ddc34fcd15c89813662a02312331a6ea59f3971711835ec91cc2",
+    "Power10Block00.lean": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+    "Power10Common.lean": "2c2c258410f7fe9fddd866fb70def56d762a9a838966db9d334f985fa6e7c479",
+    "PrefixCheck.lean": "6eeade31a01a5fb5a242ec5cd6c9bc8f6df9ccbf8f1ccb861af2087fe1a69d29",
+    "PrefixFactorial.lean": "651a028ae1b550b129dbe91c6dadf1355b3d6c8fe2b1473ba3465d713a36486c",
+    "PrefixJoin.lean": "d4e072c67fbf4cd48665d3a2ee5282c3d2d9574f7b8e2813eb9fa0257ea370f7",
+    "PrefixSource.lean": "27c3d9e402dc3b1b94e78c7e76f1c6263ff1250eecc9b241cf8dacc9d574df03",
+    "PrimeBitmap.lean": "65a4fa1f5de3dc967ed132eed4445de97cb9afce0d9233acaef454317a6cbef5",
+    "PrimeSupport.lean": "52f5a4b8068c289b56c92abd428fde59fc11edd31ba29b3b32916f9c43a11748",
+    "Table.lean": "8d2c3ba8235402e5f0d25cf8030fbff870b5bc8a9baeb2823fcc141bda84aa44"
+  },
+  "prepared_with": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "checked_with": "Stock Linux Lean 4.35.0 (eb6cafb7290e8bd5f2937522d8d804f58f02bafc) and the NanoDa executable distributed in that release.",
+  "toolchain_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "linux_executable_sha256": {
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "bubblewrap_sha256": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71",
+  "trusted_inputs": "The separate trusted module imports only Mathlib.Data.Nat.Prime.Defs and Mathlib.Algebra.Ring.Parity, with no project objects on its Lean search path.",
+  "verification": "The Linux judge received the two exports and the pinned policy read-only in an empty, network-isolated outer bwrap, with one CPU affinity. Stock Comparator sandboxed the two kernels. It matched both theorem types and their primitive dependencies and enforced the listed axioms.",
+  "frontend_axioms": {
+    "SmallGoldbach.Power10.block0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FinitePrefixAudit.binary_goldbach_through_1258291204": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "protected_checker_accepts": {
+    "Lean default": true,
+    "nanoda": true
+  },
+  "comparator_exit": 0,
+  "wall_stages": {
+    "challenge-build": {
+      "wall_seconds": 9.52,
+      "log_sha256": "6d126e24ea1b60016ec6d9e2b4d36320c6c046428d275a8de699cb5784df1b90"
+    },
+    "challenge-export": {
+      "wall_seconds": 12.08,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "solution-build": {
+      "wall_seconds": 10.67,
+      "log_sha256": "6659fde3e0cf294731be74676daa719e938016dea230b358b38e7cd5e049a4b2"
+    },
+    "solution-export": {
+      "wall_seconds": 114.75,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "production-block-source-compilation": {
+      "wall_seconds": 102.051,
+      "user_cpu_seconds": 89.9375,
+      "system_cpu_seconds": 18.328125
+    },
+    "protected-comparator": {
+      "wall_seconds": 262.71,
+      "origin": "Linux /proc start times of comparator and Lean default subprocess. Includes structural matching, NanoDa, and process startup.",
+      "nanoda_accepted_by_s_from_comparator_start": 119.78
+    },
+    "protected-default-kernel-sample": {
+      "cpu_s_lower_bound": 136.39,
+      "elapsed_s_lower_bound": 141.55,
+      "peak_rss_kib_lower_bound": 1732616
+    }
+  },
+  "timing_scope": "Measurements from one workstation under concurrent builds. Source-compilation time is for Power10Block00 with its prerequisites available. Native preparation and protected Linux judging were separate runs. Unrecorded CPU times are omitted.",
+  "start_utc": "2026-11-25T23:26:02.099200+00:00",
+  "finish_utc": "2026-11-25T23:30:24.837915+00:00",
+  "exports": {
+    "challenge": {
+      "filename": "challenge.export",
+      "sha256": "f499e4895939b26b83f23094e6d6793df82544bc9e41a9723844b0313ff620c7",
+      "bytes": 1138265
+    },
+    "solution": {
+      "filename": "solution.export",
+      "sha256": "268c722acef0249ebfa4cee1ea0cacbf7438320c412f29213189286b5db0eb5c",
+      "bytes": 20354035
+    }
+  },
+  "export_roots": [
+    "Quot",
+    "Quot.mk",
+    "Quot.lift",
+    "Quot.ind",
+    "SmallGoldbach.Power10.block0",
+    "FinitePrefixAudit.binary_goldbach_through_1258291204",
+    "propext",
+    "Quot.sound",
+    "Classical.choice",
+    "Nat.add",
+    "Nat.sub",
+    "Nat.mul",
+    "Nat.pow",
+    "Nat.gcd",
+    "Nat.div",
+    "Nat.mod",
+    "Nat.beq",
+    "Nat.ble",
+    "Nat.land",
+    "Nat.lor",
+    "Nat.xor",
+    "Nat.shiftLeft",
+    "Nat.shiftRight",
+    "String.ofList",
+    "Char.ofNat",
+    "List",
+    "eagerReduce",
+    "Nat",
+    "String",
+    "String.mk",
+    "Char",
+    "optParam",
+    "autoParam",
+    "semiOutParam",
+    "outParam"
+  ]
+}

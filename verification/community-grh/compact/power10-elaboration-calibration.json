@@ -1,0 +1,122 @@
+{
+  "scope": "Three completed production Power10 modules. Lean source elaboration, kernel checking during compilation, and compiled object emission with prebuilt imports. Witness generation, dependencies, independent kernel replay, parallel builds, and all subsequent Goldbach proof stages are excluded.",
+  "repository": "elliotglazer/ternary-goldbach",
+  "units": "seconds",
+  "historical": {
+    "revision": "a664692883ac3deeea2c5471dba897147c728f89",
+    "archive_sha256": "3e491000b9437b13806dda59b111ad4a4c73f3f1329646c1d35e93ee6524f92c",
+    "time_report": "proof/evidence/analytic-progress.json",
+    "time_report_git_blob_sha1": "8ef6f17266d8f7dae1246a7c47a9929ab606b0a6",
+    "lean": "4.33.1, arm64-apple-darwin24.6.0, 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "platform": "arm64-apple-darwin24.6.0 (macOS); compiler target is recorded in the historical report",
+    "cpu_model": null,
+    "timing": "Per-module archived logs, fields real, user and sys. CPU equals user + sys, checked against the published module_cpu_seconds."
+  },
+  "candidate": {
+    "revision": "fc729595d20448d3689f706378879a30a323a762",
+    "source_manifest": "source-manifest.json",
+    "source_manifest_git_blob_sha1": "afa18b6fe2a42ece4c9957d8687d779393e90cd3",
+    "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "platform": "x86_64 Windows",
+    "cpu_model": "AMD Ryzen 9 8945HS w/ Radeon 780M Graphics",
+    "cpu_model_evidence": "Windows registry, HKLM/HARDWARE/DESCRIPTION/System/CentralProcessor/0/ProcessorNameString",
+    "lean_options": [
+      "-j1",
+      "-t0",
+      "-M5800",
+      "-o",
+      "MODULE.olean",
+      "MODULE.lean"
+    ],
+    "timing": "GetProcessTimes supplies Windows process user and kernel CPU seconds. Elapsed wall time is measured by the supervisor, which polls every two seconds."
+  },
+  "source_comparison": "For each sampled module, normalize CRLF to LF. Replace the historical import header with the module/public import/exposed public section header. The remaining bytes, from namespace SmallGoldbach.Power10 to EOF, are identical. Imported implementations and toolchains differ, including the Nat.powMod backport versus core implementation.",
+  "modules": [
+    {
+      "module": "Power10Block00",
+      "historical": {
+        "source_sha256": "8ebbc19c5ad920d0a32e9fcbf0655ac91026ee42f1b111104420ebaef9defe00",
+        "archive_log": "logs/Power10Block00.log",
+        "archive_log_sha256": "013a6ef06c76dfa2b26cd68f2ae06e7c09bca17087eccb8fa5b1c8305b684865",
+        "wall_seconds": 59.96,
+        "user_seconds": 47.42,
+        "system_seconds": 15.24,
+        "cpu_seconds": 62.66
+      },
+      "candidate": {
+        "source_sha256": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+        "olean_sha256": "6dc96256458d6e4b18677159f3825d1406c7d36fb61daf9d8b8ff83c951db0d6",
+        "inputs_signature_sha256": "68dcbcc7ef11c8d4bf5d5ce6bb44693ac5f809efa82c88d96936d135c991a1b4",
+        "original_jsonl_line_sha256": "2764c2d6c8aaf8cd110404bb48cbef2d8dcf076e247dee42e5f447e3b71f223a",
+        "wall_seconds": 102.051,
+        "user_seconds": 89.9375,
+        "kernel_seconds": 18.328125,
+        "cpu_seconds": 108.265625,
+        "exit_code": 0
+      },
+      "common_normalized_body_sha256": "386e6d5b2a0d65bda4ba5948e1b3f7c4db0161716b2c7a072d63314bbac327de"
+    },
+    {
+      "module": "Power10Block01",
+      "historical": {
+        "source_sha256": "9219078d068948a06551c1c9605524a157b46826c16cb41434b735b3e6dc1416",
+        "archive_log": "logs/Power10Block01.log",
+        "archive_log_sha256": "9e39acb5e7f2ae7f51d2dbcb8d8c0db179357d7728883aec16a05ff3cb27ca54",
+        "wall_seconds": 65.95,
+        "user_seconds": 43.16,
+        "system_seconds": 14.48,
+        "cpu_seconds": 57.64
+      },
+      "candidate": {
+        "source_sha256": "bc399c82768b6fd8051a76d018d784a0901ff884251f417226eafee149860b24",
+        "olean_sha256": "f77f6f522b2b0badbf5e3239384d2c63b1fc0a9ba649a452443cb1f60bbb45df",
+        "inputs_signature_sha256": "64f0ff49f1754ec8baaad567f59c6c705884961fad422e796717d50e41817395",
+        "original_jsonl_line_sha256": "f9e25b26ed70596308e0805dd78349cba0db5f2fa7b8a0abcc094c247dc0f0d5",
+        "wall_seconds": 108.056,
+        "user_seconds": 92.5625,
+        "kernel_seconds": 20.671875,
+        "cpu_seconds": 113.234375,
+        "exit_code": 0
+      },
+      "common_normalized_body_sha256": "cc66a4425441e4ea68466c1fe447f07fe548b6baba9cef6970b9c9121cb33789"
+    },
+    {
+      "module": "Power10Block02",
+      "historical": {
+        "source_sha256": "ccc0530fa0d6bdf33d49d4c3703ee4b4d0c7189a907fda134feda00c0eb0d9ac",
+        "archive_log": "logs/Power10Block02.log",
+        "archive_log_sha256": "5167b9aa9f5c58cdcd48eb143d3523ff05300fb7c87d0ddc8d6433fda1d4dcac",
+        "wall_seconds": 61.58,
+        "user_seconds": 43.38,
+        "system_seconds": 15.65,
+        "cpu_seconds": 59.03
+      },
+      "candidate": {
+        "source_sha256": "e58a0a40f670895d7e7659dceb81692c6808f07e3eb1ac70bb9c4efbb8860e2d",
+        "olean_sha256": "2704389739c68505e6d97071505762513eea22502aaa32d93dcdcad525882f45",
+        "inputs_signature_sha256": "16d13cf2f8f4cca1d18807bf1492adb3de2c9ef61940aef51d343f21e77e8562",
+        "original_jsonl_line_sha256": "dcc5791af90c89112f05efa28dd1053cb74b52d6d1dae9bd0d775ccc764f8245",
+        "wall_seconds": 116.073,
+        "user_seconds": 99.625,
+        "kernel_seconds": 20.8125,
+        "cpu_seconds": 120.4375,
+        "exit_code": 0
+      },
+      "common_normalized_body_sha256": "0df1756c9cdbc71f8b102b455f120804f84173d3e6d787cd3cb9efe754651f18"
+    }
+  ],
+  "totals": {
+    "historical": {
+      "wall_seconds": 187.49,
+      "cpu_seconds": 179.33
+    },
+    "candidate": {
+      "wall_seconds": 326.18,
+      "cpu_seconds": 341.9375
+    },
+    "candidate_cpu_divided_by_historical_cpu": 1.90675
+  },
+  "interpretation": "This ratio describes these three elaborations on two hosts and different Lean/Mathlib revisions. The timings do not establish a hardware- or toolchain-specific effect and do not predict Palomar or an end-to-end replay."
+}

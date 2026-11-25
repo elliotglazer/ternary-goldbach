@@ -1,0 +1,19 @@
+{
+  "challenge_module": "TrustedPrefix",
+  "solution_module": "FinitePrefixSolution",
+  "theorem_names": [
+    "SmallGoldbach.Power10.block0",
+    "FinitePrefixAudit.binary_goldbach_through_1258291204"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}
