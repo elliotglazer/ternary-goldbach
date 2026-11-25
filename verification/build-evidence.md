@@ -14,3 +14,5 @@ The verifier must take its challenge module and comparator configuration from an
 
 - `GoldbachChallenge.lean` — `f9e6190b4c77c9bf474c6d36748278af41140237432fff72e8084a4c572a382a`
 - `comparator.json` — `073582e85645abd6e5949deb0531c11797ac9c1266073bf913b02d86173ebdcb`
+
+The public EtaCirc port passed `lake build +TernaryGoldbach.MajorArcs.EtaCirc` on the same pins. Lake built PlancherelReal in 4.2 s and EtaCirc in 5.2 s, reporting 6,518 jobs including cached prerequisites. EtaCirc emitted two unused simp-argument warnings. Its source SHA-256 is `96347ec4fd98799d540929ab590fa734b5b7041c70e162c46eae603eca4d562f`.

@@ -4,7 +4,6 @@ public import TernaryGoldbach.Prelim.PlancherelReal
 
 @[expose] public section
 
-
 /-!
 # The approximation `η◦` and the tail of its Fourier transform
 
@@ -105,24 +104,27 @@ theorem ibp_fourier {f f' : ℝ → ℝ} {a b ξ : ℝ} (hξ : ξ ≠ 0) (hf : �
     rw [hc]
     refine mul_ne_zero (Complex.ofReal_ne_zero.2 ?_) Complex.I_ne_zero
     exact mul_ne_zero (mul_ne_zero (by norm_num) Real.pi_ne_zero) hξ
+  let E : ℝ → ℂ := fun t => Complex.exp (↑(-2 * π * t * ξ) * I)
+  have hu (t : ℝ) : HasDerivAt (fun t => (f t : ℂ)) (f' t : ℂ) t :=
+    (hf t).ofReal_comp
+  have hv (t : ℝ) : HasDerivAt (fun t => E t / c) (E t) t := by
+    exact ((hasDerivAt_cexp_fourier ξ t).div_const c).congr_deriv
+      (by change E t * c / c = E t; exact mul_div_cancel_right₀ _ hc0)
+  have hfI : IntervalIntegrable (fun t => (f' t : ℂ)) volume a b :=
+    (Complex.continuous_ofReal.comp hf').intervalIntegrable _ _
+  have hEI : IntervalIntegrable E volume a b :=
+    (continuous_iff_continuousAt.mpr fun t => (hasDerivAt_cexp_fourier ξ t).continuousAt).intervalIntegrable _ _
   have key := intervalIntegral.integral_mul_deriv_eq_deriv_mul (a := a) (b := b)
-    (u := fun t => (f t : ℂ)) (u' := fun t => (f' t : ℂ))
-    (v := fun t => Complex.exp (↑(-2 * π * t * ξ) * I) / c)
-    (v' := fun t => Complex.exp (↑(-2 * π * t * ξ) * I))
-    (fun t _ => (hf t).ofReal_comp)
-    (fun t _ => by
-      have := (hasDerivAt_cexp_fourier ξ t).div_const c
-      convert this using 1; rw [← hc]; field_simp)
-    ((Complex.continuous_ofReal.comp hf').intervalIntegrable _ _)
-    ((by fun_prop : Continuous fun t : ℝ => Complex.exp (↑(-2 * π * t * ξ) * I)).intervalIntegrable _ _)
+    (u := fun t => (f t : ℂ)) (u' := fun t => (f' t : ℂ)) (v := fun t => E t / c) (v' := E)
+    (fun t _ => hu t) (fun t _ => hv t) hfI hEI
   simp only [ha, hb, Complex.ofReal_zero, zero_mul, sub_zero, zero_sub] at key
   calc ∫ t in a..b, Complex.exp (↑(-2 * π * t * ξ) * I) * (f t : ℂ)
       = ∫ t in a..b, (f t : ℂ) * Complex.exp (↑(-2 * π * t * ξ) * I) := by
-        congr 1; ext t; ring
+        apply intervalIntegral.integral_congr; intro t _; ring
     _ = -∫ t in a..b, (f' t : ℂ) * (Complex.exp (↑(-2 * π * t * ξ) * I) / c) := key
     _ = -((1 / c) * ∫ t in a..b, Complex.exp (↑(-2 * π * t * ξ) * I) * (f' t : ℂ)) := by
         rw [← intervalIntegral.integral_const_mul]
-        congr 1; congr 1; ext t; field_simp
+        congr 1; apply intervalIntegral.integral_congr; intro t _; ring
     _ = (1 / (2 * π * ξ * I)) * ∫ t in a..b, Complex.exp (↑(-2 * π * t * ξ) * I) * (f' t : ℂ) := by
         rw [hc]; push_cast
         have : (2 * (π : ℂ) * ξ * I) ≠ 0 := by
@@ -179,7 +181,7 @@ theorem memLp_indicator_P2 :
   have : (fun t => (((Icc (0 : ℝ) 2).indicator P2 t : ℝ) : ℂ)) =
       (Icc (0 : ℝ) 2).indicator (fun t => (P2 t : ℂ)) := by
     ext t; by_cases ht : t ∈ Icc (0 : ℝ) 2 <;> simp [ht]
-  rw [this, memLp_indicator_iff_restrict measurableSet_Icc]
+  rw [this, memLp_indicator_iff_restrict measurableSet_Icc.nullMeasurableSet]
   have hc : Continuous fun t => (P2 t : ℂ) := Complex.continuous_ofReal.comp continuous_P2
   refine MemLp.of_bound (μ := volume.restrict (Icc (0 : ℝ) 2)) hc.aestronglyMeasurable 7 ?_
   refine (ae_restrict_iff' measurableSet_Icc).2 (Filter.Eventually.of_forall fun t ht => ?_)
