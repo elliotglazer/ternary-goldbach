@@ -501,7 +501,7 @@ theorem rectInt_logDeriv_mul {f : ℂ → ℂ} (hf : Differentiable ℂ f) {c : 
     exact ⟨key _ _ _ fun u hu => (hint_u u hu).1, key _ _ _ fun u hu => (hint_u u hu).2.1,
       key _ _ _ fun u hu => (hint_u u hu).2.2.1, key _ _ _ fun u hu => (hint_u u hu).2.2.2⟩
   have hg0' : rectInt (fun s => logDeriv g s * h s) z w = 0 :=
-    Complex.integral_boundary_rect_eq_zero_of_differentiableOn _ z w hgdiff
+    Complex.integral_boundary_rect_eq_zero_of_differentiableOn (fun s : ℂ => logDeriv g s * h s) z w hgdiff
   rw [hF, rectInt_add' hint_sum hint_g, hg0', add_zero,
     rectInt_finset_sum Z _ fun u hu => (hint_u u hu).const_mul _]
   simp only [rectInt_const_mul]
@@ -530,7 +530,7 @@ theorem rectInt_logDeriv_mul {f : ℂ → ℂ} (hf : Differentiable ℂ f) {c : 
           exact ((hh.differentiableAt (hU.mem_nhds (hsubU hs))).mul
             ((differentiableAt_id.sub_const u).inv hsu)).differentiableWithinAt
         have h0 : rectInt (fun s => h s * (s - u)⁻¹) z w = 0 :=
-          Complex.integral_boundary_rect_eq_zero_of_differentiableOn _ z w hd
+          Complex.integral_boundary_rect_eq_zero_of_differentiableOn (fun s : ℂ => h s * (s - u)⁻¹) z w hd
         rw [h0, mul_zero]
   rw [Finset.sum_congr rfl hterm, ← Finset.sum_filter, ← Finset.mul_sum]
 
