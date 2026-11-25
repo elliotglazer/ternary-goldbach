@@ -1,7 +1,0 @@
-# A Lucas-certified binary Goldbach interval ending at 10^14
-
-Lean 4.35 checked all 524,288 even numbers from 99,999,998,951,426 through 100,000,000,000,000. The final theorem depends on propext, Classical.choice and Quot.sound. Each of the 78 anchors has a recursive Lucas certificate. The run used 424 distinct prime nodes and the existing SampleWindow.source bitmap. It checks the existing bit-translation coverage predicate using the two proof lemmas reproduced from PrefixCheck, whose originals are private.
-
-The native certificate producer took 0.328 CPU seconds. Thirteen checked prime-certificate modules took 367.469 CPU seconds and 415.924 wall seconds together; the largest reached 1,304,624 KiB RSS. The final coverage theorem took 18.531 CPU seconds and 20.592 wall seconds at 1,471,556 KiB RSS. The successful serial path cost 386.328 CPU seconds including generation and excluding the shared bitmap's earlier proof. The first monolithic certificate module hit its memory cap after 128.328 CPU seconds. Splitting the certificates into 34-node chunks kept all successful invocations below the 1,750 MiB Lean limit. The successful total includes all 13 compiler startups and strict import checks. It is a standalone row cost.
-
-The range and the source, object and producer digests can be checked against summary.json, producer.json and the Lean receipts. Run produce.py to regenerate and resume the bounded chunk verifier.

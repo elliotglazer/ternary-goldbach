@@ -1,8 +1,0 @@
-C10004_AXIOMS,bool.SELECT_AX;bool.INFINITY_AX;bool.ETA_AX;bool.BOOL_CASES_AX
-C10004_THEOREM,finite_map_checked,⊢ finite_checks
-C10004_THEOREM,map_permutation,⊢ PERM unit_map expected_units
-C10004_THEOREM,unit_map_distinct,⊢ ALL_DISTINCT unit_map
-C10004_THEOREM,unit_map_complete,⊢ ∀r. MEM r unit_map ⇔ r < 10004 ∧ coprime r 10004
-C10004_THEOREM,coordinates_checked,⊢ ∀i. i < 4800 ⇒ coordinate_ok i
-C10004_THEOREM,labels_checked,⊢ ∀i. i < 2301 ⇒ label_ok i
-C10004_MAP_AUDIT_DONE_NO_CHARACTER_SEMANTICS

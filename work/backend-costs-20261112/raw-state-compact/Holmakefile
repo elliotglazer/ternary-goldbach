@@ -1,6 +1,0 @@
-INCLUDES = ../raw-state-handoff ../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
-
-all: RawCompactSignsTheory.uo
-
-compact_fused.exe: compact_fused.uo
-	$(HOLMOSMLC) -o $@ $<

@@ -1,5 +1,0 @@
-# Actual integer logarithm Horner refinement candidate
-
-Thirteen expected theorem statements and one real recurrence definition are frozen before the first build. The final contracts concern the actual SourceArithmetic.source_log_horner and source_log_center functions. No rounding, polynomial identity or input approximation is accepted as an assumed external producer premise. The hypotheses are positive denominator, 3*A <= B and, for normalized output, positive grid. Three exact program types are audited.
-
-The intended result combines the one-unit Horner invariant and the final rounded multiplication with SourceLogTail's analytic 45-term bound. It includes the actual ln(2) center required by range reduction. The range-reduced source_raw_log129, exponential phase, full source/sign/count blocks and campaign timing remain separate obligations. This is not a new aggregate forecast. Acceptance requires a built theory, actual audit execution, empty hypotheses, standard HOL ancestry/tags, exact original expected statements and all frozen source/dependency/output hashes. Recorded-result reload is not independent whole-kernel replay.

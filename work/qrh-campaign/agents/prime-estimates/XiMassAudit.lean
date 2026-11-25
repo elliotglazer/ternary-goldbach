@@ -1,8 +1,0 @@
-import XiMass
-
-#check TernaryGoldbach.Explicit.XiMass.finite_vonMangoldt_lower
-#print axioms TernaryGoldbach.Explicit.XiMass.finite_vonMangoldt_lower
-#check TernaryGoldbach.Explicit.XiMass.eulerMascheroni_lower
-#print axioms TernaryGoldbach.Explicit.XiMass.eulerMascheroni_lower
-#check TernaryGoldbach.Explicit.XiMass.re_logDeriv_xiF_two_le
-#print axioms TernaryGoldbach.Explicit.XiMass.re_logDeriv_xiF_two_le

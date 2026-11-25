@@ -1,6 +1,0 @@
-INCLUDES = .. ../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
-
-all: ties_diagnostic.exe
-
-ties_diagnostic.exe: ties_diagnostic.uo
-	$(HOLMOSMLC) -o $@ $<

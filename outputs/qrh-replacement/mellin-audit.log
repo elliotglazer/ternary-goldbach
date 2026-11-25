@@ -1,4 +1,0 @@
-TernaryGoldbach.QRH.norm_mellin_lt_of_gaussian_envelope {f : ℝ → ℂ}
-  (hf : ∀ (v : ℝ), 0 < v → ‖f v‖ ≤ 3.15 * (v * rexp (-v ^ 2 / 2))) {s : ℂ} (hs0 : 0 ≤ s.re) (hs1 : s.re ≤ 1) :
-  ‖mellin f s‖ < 3.95
-'TernaryGoldbach.QRH.norm_mellin_lt_of_gaussian_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]

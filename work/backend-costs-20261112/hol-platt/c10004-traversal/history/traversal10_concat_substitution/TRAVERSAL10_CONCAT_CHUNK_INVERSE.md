@@ -1,3 +1,0 @@
-# Derive concatenation from successful chunking
-
-Traversal09 passed the transpose and FLAT equivalence. The direct block-concatenation induction expanded GENLIST_APPEND using a different split order from the first-row recursion. The successor proves the structural inverse contract: any successful ft_chunks result concatenates to exactly its input. This follows from ft_take_spec and TAKE_DROP, including zero-width and empty cases. The original unconditional ft_concat_blocks theorem is then an instance using the already proved ft_chunks_genlist result. No program or audited theorem conclusion changes. Prior source, receipts and saved state remain under history/traversal09_concat_append_order.

@@ -1,3 +1,0 @@
-# Expose the inner generated columns
-
-Refinement05 passed the generic concatenation result, the length-2 arithmetic identity, all selected-stage shapes and the row-40 map equality. The column equality needs separate GENLIST extensionality steps: after selecting the outer column, beta-reduce its function application before applying the inner equal-length GENLIST rule. Coldiag01 verified this exact repair and returned the original universal column theorem without hypotheses. The same steps are now in the source. No algorithm, input/output ordering or theorem statement changes. Previous source, receipts, saved state and diagnostic sources are preserved under history/refinement05_column_extensionality.

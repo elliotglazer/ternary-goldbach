@@ -1,5 +1,0 @@
-# Expand the known row constructor before concatenating
-
-Traversal10 failed in the chunk/concat inverse proof. Saved-state diagnostics concatdiag01 and02 showed that the equation TAKE width xs :: tail = rows remained oriented toward the variable rows, so simplification never exposed the ft_concat constructor and the final first-order step lacked that equation. Concatdiag03 explicitly substitutes rows by that constructor, unfolds concatenation, and closes the proof using the induction hypothesis and TAKE_DROP. It returned the exact original universal conclusion with no hypotheses, checked by the diagnostic, and exited zero.
-
-The same directed substitution is now in the source proof. The ordinary complete build and seven-root audit remain necessary; a successful saved-state diagnostic is not a complete module result. All previous sources, receipts and the saved state are preserved under history/traversal10_concat_substitution and the diagnostic source archives. No program definition or theorem conclusion changes.

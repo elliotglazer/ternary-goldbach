@@ -1,9 +1,0 @@
-# Scope of the selected compute blueprint
-
-This supplements the frozen `CURRENT_COMPUTE_BLUEPRINT_2026-11-11.md`, SHA256 `8FEAC3536CCD7F521CD7BBD3B4986E1E7B9DAF289CA25273F466D5124A21DBDB`. Its [independent review](../qrh-campaign/agents/moebius/REVIEW_CURRENT_COMPUTE_BLUEPRINT_2026-11-11.md) passed at conditional research scope and requested the following clarification.
-
-The explicit prime chain in section1 is the selected comparison branch, not a necessary architecture for every proof. The reviewed [uniform-gap alternative](FRESH_GAP_FRONTIER_ACCEPTANCE_2026-11-11.md) can replace the explicit rungs with stronger principal finite-RH evidence and the associated analytic gap proof. Its extra spectral heights, head/zero-sum certificates, Logan analysis and foundation costs remain part of the comparison. The explicit-chain branch currently has the stronger cost case; no measured global optimum is claimed.
-
-The signed-dyadic bridge has subsequently passed [independent review](../qrh-campaign/agents/audit/REVIEW_EFFICIENCY_PA_SIGNED_DYADIC_BRIDGE_2026-11-11.md), conditional on the [current-exponent clarification](../qrh-campaign/agents/prime-estimates/CLARIFICATION_SIGNED_DYADIC_CURRENT_EXPONENT_2026-11-11.md). Normalize the actual current magnitude/exponent pair, using the retained exponent e on the no-materialization branch and grid exponent g only after grid conversion. The proposed14/14/22 sign-wrapper counts and linear local split counts are macro counts, not implemented proof bytes, primitive instruction totals or runtime bounds.
-
-New R132900 pruning metadata and an explicit shared Hurwitz Euler–Maclaurin seed circuit have arrived after the blueprint snapshot and are under review. They are not silently substituted into its R138000 workload examples. Scaled jets are a further research candidate; no seed-generation timing or successful spectral certificate has been established.

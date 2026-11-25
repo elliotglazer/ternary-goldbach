@@ -10,7 +10,7 @@ project:
     Every odd natural number greater than five is the sum of three primes.
     This project closes Charlie Reams’s formalization of Harald Helfgott’s
     theorem using a kernel-checked finite prefix, analytic bounds and
-    Levent Alpöge’s compiled RH and primitive Dirichlet GRH theorems.
+    the community RH and primitive Dirichlet GRH declarations.
 
 sources:
   - title: The ternary Goldbach problem
@@ -23,12 +23,11 @@ related_formalizations:
   - id: https://github.com/calr3/ternary-goldbach/tree/23b2d68ca344203d4384e0aff7affa4ec034bef9
     relationship: builds-on
     note: Charlie Reams’s formalization supplies the analytic Goldbach argument.
-  - id: https://math.mit.edu/~drew/grh/
+  - id: https://github.com/leanprover-community/riemann-hypothesis/tree/756a70250dcba9162b99d4ea35c186558434c17e
     relationship: builds-on
     note: >-
       The final application uses riemannHypothesis and LFunction_eq_zero_re_of_isPrimitive
-      from Alpöge’s compiled release. This repository records the import and an independent
-      verification reference. Its local build reused the compiled GRH objects.
+      from the pinned community source dependency.
 
 classification:
   arxiv: [math.NT]
@@ -36,12 +35,12 @@ classification:
 
 status:
   scope: >-
-    Closed theorem on Lean 4.33.1. The project checked binary Goldbach
+    The historical Lean 4.33.1 release checked binary Goldbach
     through 564386325504, extended the finite range through 2 × 10^19, and
     combined 223 analytic intervals with an infinite-tail estimate.
   main_results:
     - declaration: CompletedGoldbach.ternary_goldbach
-      file: proof/CompletedGoldbach.lean
+      file: CompletedGoldbach.lean
       sorry_count: 0
       axioms: [propext, Classical.choice, Quot.sound]
 
@@ -55,7 +54,5 @@ automation:
 review:
   status: self-assessed
   notes: >-
-    Lean’s kernel accepted the closed application. The saved declaration’s
-    type, proof inputs, checksum and transitive axiom list are recorded in
-    proof/evidence/CompletedGoldbach-receipt.json and
-    proof/evidence/CompletedGoldbach-metadata.log.
+    The 4.33.1 release recorded the displayed axiom inventory. Full replay of the
+    4.37.0-rc1 source package is pending.

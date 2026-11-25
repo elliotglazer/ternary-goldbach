@@ -1,7 +1,0 @@
-PrattChunk00.lean:10:13: warning: This simp argument is unused:
-  Nat.Prime.dvd_mul hq
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Nat.prime_dvd_prime_iff_eq hq p2] at hd
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

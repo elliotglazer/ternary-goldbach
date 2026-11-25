@@ -1,7 +1,0 @@
-# Integer initializer correction
-
-Typed inspection in source-initial/initialtypes02_run showed that the old source_initial had type num -> num -> num -> num -> (rat # int) option. Only the second tuple coordinate had an integer annotation, so imported rational overloads captured the first coordinate's casts and multiplication. Its raw and EM wrappers inherited the same incompatible type. The old three-root source audit never covered these definitions; its accepted theorems remain valid in their stated limited scope.
-
-The source now explicitly declares the initializer result as (int # int) option and annotates its first coordinate's cast as int. The guard, integer square-root expression, grids, exact shift and wrapper bodies are unchanged. This corrects the executable representation to match source_mul and source_state; it is not an additional mathematical premise. Seven fixed program-type checks and an exact source_initial_def audit root now supplement the original three theorem roots. No other definition or theorem statement changes.
-
-The old source, audit, review, manifests and compiled theory artifacts are preserved in history/before_integer_initializer. The new run_source_int.sh/run_source_container.ps1 route replaces the legacy run_source.sh receipt convention for this revision. All dependent recurrence/inverse-root/bounds artifacts require rebuild and exact audit with the corrected dependency before integration.

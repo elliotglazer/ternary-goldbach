@@ -1,3 +1,0 @@
-# Prove column extraction through a general list contract
-
-Traversal07 passed the complete chunk theorem. Its direct generated-list proof of head/tail extraction unfolded the inner successor-length rows before the induction hypothesis could match them. The successor first proves the ordinary structural statement for any list of nonempty rows, returning MAP HD and MAP TL. The original unconditional generated-list theorem follows from EVERY_GENLIST, GENLIST_EQ_NIL, HD_GENLIST and TL_GENLIST. No program or existing conclusion changes, and no new hypothesis is added to the audited generated-list theorem. The failed source and saved state are preserved under history/traversal07_heads_unfolding.

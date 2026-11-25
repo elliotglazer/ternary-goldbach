@@ -1,6 +1,0 @@
-theorem FiniteP0N1024.binary_interval : ∀ (n : ℕ),
-  3999999997356537860 ≤ n → n < 3999999997356539908 → n % 2 = 0 → ∃ p q, Nat.Prime p ∧ Nat.Prime q ∧ p + q = n :=
-PrimeCoverage.binaryGoldbach_interval FiniteData1024.target 1024 (of_decide_eq_true (id (Eq.refl true)))
-  FiniteP0N1024.binary_index
-'FiniteP0N1024.binary_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
-'PrimeCoverage.binaryGoldbach_of_bitmap' depends on axioms: [propext, Classical.choice, Quot.sound]

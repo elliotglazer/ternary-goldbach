@@ -1,9 +1,0 @@
-{
-  "conductor": 131071,
-  "left_grid_index": 5694,
-  "right_grid_index": 5695,
-  "candidate_population": "Every nonprincipal mode whose direct sign at 5694.5 reverses both archived strict endpoint signs.",
-  "criterion": "Minimize the independent interval for absolute completed midpoint amplitude divided by the magnitude of its parity-specific completion factor. Ties by smallest frequency. Certify ordering against runner-up.",
-  "stage_order": ["select and pin candidate", "certify interpolation from 12 actual coarse p24 and p28 rows", "if needed, recompute only unresolved targets at p48"],
-  "cost_policy": "Time the search separately from the coarse source and its two sparse projections. Charge a cold p48 source separately from the selected p48 projection. Report overlap or failed attempts."
-}

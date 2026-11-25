@@ -1,6 +1,0 @@
-INCLUDES = .. ../../hol4-setup
-
-all: compare_readback.exe
-
-compare_readback.exe: compare_readback.uo
-	$(HOLMOSMLC) -o $@ $<

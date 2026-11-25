@@ -1,9 +1,0 @@
-# Completed analysis dependencies, failed original helper
-
-The build-container01 attempt is terminal with exit 1. It successfully constructed all fifteen previously missing standard theory targets, including real, real_topology, derivative, seq, lim, powser, transc, complex and intreal. It then failed before the first RawPairRound proof because ABS_BOUNDS was not in the script's opened namespaces. This is not a successful helper build.
-
-The preserved RESULT.json has no source/log preservation errors. The coordinator rehashed every one of its 142 local object entries and matched both bytes and digests. The stage contains nineteen compiled theory modules including four inherited from the earlier partial build, and the supporting libraries. The new build used 195.85 user and 38.77 system CPU seconds, 477.88 wall seconds and 991468 KiB peak RSS. Prior cached construction and future helper repairs are separate. The stage occupies 18678211 bytes across 376 files at the recorded postcheck.
-
-The original HOL checkout, input manifest, helper source, old WSL runner, graph-validation evidence and old logs remain preserved. The container runner reused the validated stage after checking its exact forty-object starting set. It did not install software or access the network. Only the local stage and fresh receipt directory were writable.
-
-RawPairRound repairs now occur in ../raw-pair-round-proof with these library artifacts read-only. A private overlay supplies only disposable make-deps metadata required by Holmake. The separate seven-root audit remains pending; no actual analytic input, transform, sign or count is certified here. Standard-axiom ancestry of the full helper will be checked by that audit. These are library construction costs, not numerical production throughput, and they do not change the end-to-end forecast.

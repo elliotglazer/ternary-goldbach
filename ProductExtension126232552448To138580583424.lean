@@ -1,0 +1,31 @@
+module
+
+public import ProductRange126232552450Interval
+public import ProductRange126769423362Interval
+public import ProductRange127306294274Interval
+public import ProductRange127843165186Interval
+public import ProductRange128380036098Interval
+public import ProductRange128916907010Interval
+public import ProductRange129453777922Interval
+public import ProductRange129990648834Interval
+public import ProductRange130527519746Interval
+public import ProductRange131064390658Interval
+public import ProductRange131601261570Interval
+public import ProductRange132138132482Interval
+public import ProductRange132675003394Interval
+public import ProductRange133211874306Interval
+public import ProductRange133748745218Interval
+public import ProductRange134285616130Interval
+public import ProductRange134822487042Interval
+public import ProductRange135359357954Interval
+public import ProductRange135896228866Interval
+public import ProductRange136433099778Interval
+public import ProductRange136969970690Interval
+public import ProductRange137506841602Interval
+public import ProductRange138043712514Interval
+
+@[expose] public section
+namespace SmallGoldbach.ProductExtension126232552448To138580583424
+theorem covered : SmallGoldbach.Covered 126232552450 138580583426 := (SmallGoldbach.join (SmallGoldbach.join (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange126232552450.covered SmallGoldbach.ProductRange126769423362.covered) (SmallGoldbach.join SmallGoldbach.ProductRange127306294274.covered (SmallGoldbach.join SmallGoldbach.ProductRange127843165186.covered SmallGoldbach.ProductRange128380036098.covered))) (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange128916907010.covered (SmallGoldbach.join SmallGoldbach.ProductRange129453777922.covered SmallGoldbach.ProductRange129990648834.covered)) (SmallGoldbach.join SmallGoldbach.ProductRange130527519746.covered (SmallGoldbach.join SmallGoldbach.ProductRange131064390658.covered SmallGoldbach.ProductRange131601261570.covered)))) (SmallGoldbach.join (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange132138132482.covered (SmallGoldbach.join SmallGoldbach.ProductRange132675003394.covered SmallGoldbach.ProductRange133211874306.covered)) (SmallGoldbach.join SmallGoldbach.ProductRange133748745218.covered (SmallGoldbach.join SmallGoldbach.ProductRange134285616130.covered SmallGoldbach.ProductRange134822487042.covered))) (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange135359357954.covered (SmallGoldbach.join SmallGoldbach.ProductRange135896228866.covered SmallGoldbach.ProductRange136433099778.covered)) (SmallGoldbach.join SmallGoldbach.ProductRange136969970690.covered (SmallGoldbach.join SmallGoldbach.ProductRange137506841602.covered SmallGoldbach.ProductRange138043712514.covered)))))
+#print axioms covered
+end SmallGoldbach.ProductExtension126232552448To138580583424

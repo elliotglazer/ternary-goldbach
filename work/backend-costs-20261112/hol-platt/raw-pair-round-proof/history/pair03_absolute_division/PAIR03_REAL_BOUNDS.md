@@ -1,3 +1,0 @@
-# Preserve the transported real inequalities
-
-Pair02 reached the first rounding lemma and saved its failed proof state. Residualdiag01 showed that the unrestricted fs rewrote the transported real comparisons back to the integer hypotheses and normalized the goal to a multiple of an absolute value. The final real arithmetic tactic therefore lacked the needed real inequalities. Residualdiag02 changed only this step to full_simp_tac bool_ss with the four explicit cast rules. It proved the exact original closed theorem in the saved state. Pair03 integrates that one proof-body repair; full construction and the seven-root reload audit remain required. Both diagnostics and the pair02 source/heap/receipts are preserved.

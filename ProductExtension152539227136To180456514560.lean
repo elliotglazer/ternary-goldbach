@@ -1,0 +1,17 @@
+module
+
+public import ProductRange152539227138Interval
+public import ProductRange156834194434Interval
+public import ProductRange160592290818Interval
+public import ProductRange161129161730Interval
+public import ProductRange162739774466Interval
+public import ProductRange163276645378Interval
+public import ProductRange167571612674Interval
+public import ProductRange171866579970Interval
+public import ProductRange176161547266Interval
+
+@[expose] public section
+namespace SmallGoldbach.ProductExtension152539227136To180456514560
+theorem covered : SmallGoldbach.Covered 152539227138 180456514562 := (SmallGoldbach.join (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange152539227138.covered SmallGoldbach.ProductRange156834194434.covered) (SmallGoldbach.join SmallGoldbach.ProductRange160592290818.covered SmallGoldbach.ProductRange161129161730.covered)) (SmallGoldbach.join (SmallGoldbach.join SmallGoldbach.ProductRange162739774466.covered SmallGoldbach.ProductRange163276645378.covered) (SmallGoldbach.join SmallGoldbach.ProductRange167571612674.covered (SmallGoldbach.join SmallGoldbach.ProductRange171866579970.covered SmallGoldbach.ProductRange176161547266.covered))))
+#print axioms covered
+end SmallGoldbach.ProductExtension152539227136To180456514560

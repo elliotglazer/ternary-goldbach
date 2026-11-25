@@ -1,8 +1,0 @@
-CompletionFactor.lean:29:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
-  Complex.log ↑4
-in the target expression
-  Complex.log 4 = ↑(Real.log 4)
-
-hp : ↑Real.pi ≠ 0
-harg : (samplePoint + 1) / 2 = 3 / 4 + Complex.I * (5 / 128)
-⊢ Complex.log 4 = ↑(Real.log 4)

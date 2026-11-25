@@ -1,8 +1,0 @@
-INCLUDES = ../c10004-map $(HOLDIR)/src/num/theories/cv_compute/automation $(HOLDIR)/src/sort $(HOLDIR)/src/num/extra_theories
-
-all: C10004LayoutTheory.uo
-
-layout_audit.uo: C10004LayoutTheory.uo
-
-layout_audit.exe: layout_audit.uo
-	$(HOLMOSMLC) -o $@ $<

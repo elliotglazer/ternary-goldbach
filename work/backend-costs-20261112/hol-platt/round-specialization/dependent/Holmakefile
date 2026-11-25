@@ -1,6 +1,0 @@
-INCLUDES = .. ../../prepared-eval ../../../hol4-setup $(HOLDIR)/src/num/theories/cv_compute/automation
-
-all: RoundDependentTheory.uo round_dependent.exe
-
-round_dependent.exe: round_dependent.uo
-	$(HOLMOSMLC) -o $@ $<
