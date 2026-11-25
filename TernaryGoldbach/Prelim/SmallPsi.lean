@@ -22,8 +22,18 @@ open Finset
 
 namespace TernaryGoldbach.Prelim.Small
 
+def taylorSum (f : ℚ) : ℕ → ℚ
+  | 0 => 0
+  | k+1 => taylorSum f k + f ^ k / (k.factorial : ℚ)
+
+private theorem taylorSum_eq (f : ℚ) (k : ℕ) :
+    taylorSum f k = ∑ i ∈ range k, f ^ i / (i.factorial : ℚ) := by
+  induction k with
+  | zero => simp [taylorSum]
+  | succ k ih => rw [taylorSum, Finset.sum_range_succ, ih]
+
 /-- `T(f) = ∑_{i<12} f^i/i!`. -/
-def T12 (f : ℚ) : ℚ := ∑ i ∈ range 12, f ^ i / (i.factorial : ℚ)
+def T12 (f : ℚ) : ℚ := taylorSum f 12
 
 /-- `e_lo^a` with `e_lo = 2.7182818283`, from natural-number powers. -/
 def ELpow (a : ℕ) : ℚ := ((27182818283 ^ a : ℕ) : ℚ) / ((10 ^ (10 * a) : ℕ) : ℚ)
@@ -60,7 +70,7 @@ theorem loop_spec (cN cD : ℕ) : ∀ k n, loop cN cD k n (Nat.lcmUpto n) = true
 
 theorem T12_le_exp {f : ℚ} (hf : 0 ≤ f) : ((T12 f : ℚ) : ℝ) ≤ Real.exp f := by
   have h := Real.sum_le_exp_of_nonneg (x := (f : ℝ)) (by exact_mod_cast hf) 12
-  unfold T12; push_cast; exact h
+  rw [T12, taylorSum_eq]; push_cast; exact h
 
 theorem ELpow_le (a : ℕ) : ((ELpow a : ℚ) : ℝ) ≤ Real.exp a := by
   have he := Real.exp_one_gt_d9
@@ -84,7 +94,7 @@ theorem log_lt_of_chk {cN cD n L : ℕ} (hD : 0 < cD) (hL : 0 < L)
       Real.exp a * Real.exp (((((r : ℕ) : ℚ) / cD : ℚ) : ℝ)) :=
     mul_le_mul (ELpow_le a) (T12_le_exp hr0) (by
       have := T12_le_exp hr0; have := Real.exp_pos (((((r : ℕ) : ℚ) / cD : ℚ) : ℝ))
-      unfold T12; positivity) (Real.exp_pos _).le
+      rw [T12, taylorSum_eq]; positivity) (Real.exp_pos _).le
   have hsum : (a : ℝ) + ((((r : ℕ) : ℚ) / cD : ℚ) : ℝ) = (cN : ℝ) / cD * n := by
     have hdm := Nat.div_add_mod (cN * n) cD
     have hD' : (cD : ℝ) ≠ 0 := by exact_mod_cast hD.ne'
