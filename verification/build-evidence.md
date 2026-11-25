@@ -28,3 +28,5 @@ The SmallPsi target passed in 17 seconds (18,292 jobs including cached prerequis
 The public ScaledLiteral Lake target passed on the pinned dependencies.
 
 The public SingularBase Lake target passed on the pinned dependencies.
+
+The public ExpLookup Lake target passed on the pinned dependencies.
