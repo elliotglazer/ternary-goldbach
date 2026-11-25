@@ -1,5 +1,7 @@
 module
 
+import all Init.Data.Array.Basic
+
 public import ScaledEntries
 public import ProfileG3R12N9Data
 
@@ -167,7 +169,7 @@ private def samples128 : Array Sample := #[⟨8285596360742628192514150452163964
 private theorem samples128Ok : samples128.all Sample.check=true := by decide +kernel
 private def bank : BankTree := (.branch 64 (.branch 32 (.leaf samples0) (.leaf samples32)) (.branch 32 (.leaf samples64) (.branch 32 (.leaf samples96) (.leaf samples128))))
 private theorem bankOk : bank.checked := ⟨⟨samples0Ok,samples32Ok⟩,⟨samples64Ok,⟨samples96Ok,samples128Ok⟩⟩⟩
-private def bankIdsP0 : Array Nat := #[147,
+def bankIdsP0 : Array Nat := #[147,
 148,
 146,
 146,
@@ -263,7 +265,7 @@ private def bankIdsP0 : Array Nat := #[147,
 27,
 13,
 12]
-private def bankIdsP96 : Array Nat := #[83,
+def bankIdsP96 : Array Nat := #[83,
 82,
 101,
 100,

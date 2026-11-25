@@ -62,3 +62,12 @@ The stock 4.35.0 compiler accepted the full `Totient` and `AtanCertificate` modu
 The compiler accepted four complete compact modules in focused builds with pinned dependencies. These were `Lib.General.LinearAlgebra.Base`, `Lib.General.Analysis.OstrowskiTaussky`, `Lib.General.Analysis.HolomorphicIntegral` and `Lib.General.Algebra.AdicRingHomExt`. The HolomorphicIntegral build took 305 seconds on the test machine after its module header gained `import all Mathlib.NumberTheory.Padics.Measure.Basic`. Its proof text matches the previously bundled version.
 
 A focused 4.35.0 test reproduced the strong-induction step from `ScaledEval` with its dependent index bound. The compiler rejected the case label `ind` and accepted `h`. The full `ScaledEval` module still needs a 4.35.0 build.
+
+Lean 4.35 compiled the complete generated numerical certificate in
+`ProfileG1R12N1Data.lean` after exposing the six table helpers consumed by
+its public definitions and privately importing `Init.Data.Array.Basic`.
+Its five interval segments passed kernel reduction. The resulting
+`ProfileG1R12N1.checked12` depends on `propext`, `Classical.choice`, and
+`Quot.sound`. The same source repair covers 33 generated profile files and
+698 named helpers. It preserves the certificate literals and proof bodies.
+The full solution and its exported kernel replay remain pending.
