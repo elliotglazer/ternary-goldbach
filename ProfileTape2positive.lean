@@ -6,7 +6,7 @@ public import ScaledRefs
 
 open ScaledGrid
 namespace ProfileTape2positive
-private def tapeP0 : Array Step := #[⟨.literal 0,0,0⟩,
+def tapeP0 : Array Step := #[⟨.literal 0,0,0⟩,
 ⟨.literal 18268770466636286477546060408953537745699156787200000000000000000000,0,0⟩,
 ⟨.pi,0,0⟩,
 ⟨.mul,1,2⟩,
@@ -102,7 +102,7 @@ private def tapeP0 : Array Step := #[⟨.literal 0,0,0⟩,
 ⟨.mul,90,92⟩,
 ⟨.literal 11417981541647679048466287755595961091061972992000000000000000000000,0,0⟩,
 ⟨.literal 100478237566499575626503332249244457601345362329600000000000000000000,0,0⟩]
-private def tapeP96 : Array Step := #[⟨.add,0,95⟩,
+def tapeP96 : Array Step := #[⟨.add,0,95⟩,
 ⟨.mul,94,96⟩,
 ⟨.mul,97,97⟩,
 ⟨.mul,98,98⟩,
@@ -198,7 +198,7 @@ private def tapeP96 : Array Step := #[⟨.add,0,95⟩,
 ⟨.sqrt,188,0⟩,
 ⟨.sqrt,189,0⟩,
 ⟨.inv,190,0⟩]
-private def tapeP192 : Array Step := #[⟨.mul,186,191⟩,
+def tapeP192 : Array Step := #[⟨.mul,186,191⟩,
 ⟨.input 0,0,0⟩,
 ⟨.input 1,0,0⟩,
 ⟨.input 2,0,0⟩,

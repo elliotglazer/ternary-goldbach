@@ -20,3 +20,5 @@ The public EtaCirc port passed `lake build +TernaryGoldbach.MajorArcs.EtaCirc` o
 The public RectResidue port passed `lake build +TernaryGoldbach.Explicit.RectResidue` (5,998 jobs including cached dependencies). Lake built Landau in 6.2 s and RectResidue in 4.3 s. A separate source replay checked the three Saouter modules, LadderCheck and LadderToQuadrillion. The transitive axiom list for `LadderToQuadrillion.gapCover` is `[propext, Classical.choice, Quot.sound]`.
 
 The CircleMethod port and its public consumer passed `lake build +TernaryGoldbach.MinorArcs.Montgomery` (18,298 jobs, including cached dependencies).
+
+Focused public Lake targets passed for `ProfileTape16positive`, `ProfileTape1positive`, `ProfileTape1touching`, `ProfileTape2positive`, `ProfileTape2touching`, `ProfileTape4positive`, `ProfileTape8positive`.
