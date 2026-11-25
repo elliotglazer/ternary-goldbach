@@ -20,8 +20,25 @@ def main():
         return subprocess.check_output(["git", "-C", str(path), "rev-parse", "HEAD"], text=True).strip()
     def sha(path):
         return hashlib.sha256(path.read_bytes()).hexdigest()
-    if git_head(repo) != receipt["project_commit"] or git_head(repo / ".lake/packages/mathlib") != receipt["mathlib_commit"]:
-        raise SystemExit("Select the pinned project and Mathlib commits recorded in receipt.json.")
+    if git_head(repo) != receipt["project_commit"]:
+        raise SystemExit("Select the pinned project commit recorded in receipt.json.")
+    # Read the tracked manifest from the pinned Git object, independent of local edits.
+    manifest = json.loads(subprocess.check_output(["git", "-C", str(repo), "show", "HEAD:lake-manifest.json"]))
+    if (repo / "lake-manifest.json").read_text() != subprocess.check_output(
+        ["git", "-C", str(repo), "show", "HEAD:lake-manifest.json"], text=True
+    ):
+        raise SystemExit("Restore the pinned lake-manifest.json before replay.")
+    packages = manifest["packages"]
+    if {p["rev"] for p in packages if p["name"] == "mathlib"} != {receipt["mathlib_commit"]}:
+        raise SystemExit("Mathlib revision differs between the project manifest and receipt.")
+    libdirs = []
+    for package in packages:
+        path = repo / manifest["packagesDir"] / package["name"]
+        if not path.is_dir() or git_head(path) != package["rev"]:
+            raise SystemExit(f"Restore manifest dependency {package['name']} at {package['rev']}.")
+        lib = path / ".lake/build/lib/lean"
+        if lib.is_dir():
+            libdirs.append(lib)
     for name, expected in receipt["source_artifacts"].items():
         if sha(bundle / name) != expected:
             raise SystemExit(f"Evidence input hash differs: {name}")
@@ -40,7 +57,6 @@ def main():
     if not bw:
         raise SystemExit("A Linux installation of bwrap is required.")
     out.mkdir(parents=True, exist_ok=False)
-    libdirs = sorted(p for p in (repo / ".lake/packages").glob("*/.lake/build/lib/lean") if p.is_dir())
     for role, mod, extra in [("challenge", "TrustedPrefix", []), ("solution", "FinitePrefixSolution", [production])]:
         folder = out / role
         folder.mkdir()

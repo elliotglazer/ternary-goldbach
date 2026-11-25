@@ -8,10 +8,13 @@ The native Windows build used Mathlib at `56a005855ea17e0b0958f73ec801ae140b0a16
 
 ## Replay
 
-Use Linux with Lean 4.35.0, Git and Bubblewrap. In a checkout of `fc729595d20448d3689f706378879a30a323a762`, run `lake build +Power10Block00` with the pinned Mathlib dependencies available. Invoke the included replay script with the checkout path and a new output directory.
+Use Linux with the standard Lean 4.35.0 distribution, Git and Bubblewrap. Keep this evidence folder accessible while preparing a separate source checkout. The challenge uses Mathlib and its transitive packages from that checkout. Use trusted package objects from the pinned Mathlib cache or build them from their pinned sources.
 
 ```sh
-python3 replay.py /path/to/ternary-goldbach /tmp/goldbach-first-block
+git clone --branch codex/community-grh-compact https://github.com/elliotglazer/ternary-goldbach.git goldbach-source
+git -C goldbach-source checkout --detach fc729595d20448d3689f706378879a30a323a762
+(cd goldbach-source && lake exe cache get && lake build +Power10Block00)
+python3 /path/to/evidence/replay.py goldbach-source /tmp/goldbach-first-block
 ```
 
 The replay writes `challenge.export`, `solution.export` and `comparator.log` to the output directory. The original export sizes and hashes are in the receipt. Platform-specific elaboration can change the export bytes. Comparator checks the mathematical statements and proof on each replay.
