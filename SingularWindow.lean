@@ -36,7 +36,7 @@ private theorem sum_odd_lower (N R : ℕ) (hR : 200 ≤ R) :
   have sub : S ⊆ P := filter_subset _ _
   have hfg (t : Finset ℕ) (ht : t ∈ P) : |F t| ≤ G t := by
     rw [show |F t| = ∏ p ∈ t, |aP N p| from Finset.abs_prod _ _]
-    exact prod_le_prod (fun _ _ => abs_nonneg _) fun p hp =>
+    exact prod_le_prod₀ (fun _ _ => abs_nonneg _) fun p hp =>
       abs_aP_le (three_le_of_mem (mem_powerset.mp ht hp))
   have hr : -(∑ t ∈ P \ D, G t) ≤ ∑ t ∈ S \ D, F t := by
     have hsum : -(∑ t ∈ S \ D, G t) ≤ ∑ t ∈ S \ D, F t := by
@@ -56,7 +56,7 @@ private theorem sum_odd_lower (N R : ℕ) (hR : 200 ≤ R) :
     dsimp only [D,F]; rw [← prod_one_add]
     calc _ = ∏ p ∈ corePrimes, (1-envelope p) := by norm_num [corePrimes,envelope]
          _ ≤ _ := by
-           apply prod_le_prod
+           apply prod_le_prod₀
            · intro p hp; simp only [corePrimes,mem_insert,mem_singleton] at hp
              rcases hp with rfl|rfl|rfl <;> norm_num [envelope]
            · intro p hp
@@ -107,7 +107,7 @@ private theorem abs_odd_upper (N R : ℕ) (hR : 200 ≤ R) :
          sum_le_sum_of_subset_of_nonneg (filter_subset _ _) fun t _ _ => prod_nonneg fun _ _ => abs_nonneg _
        _ = ∏ p ∈ oddPrimes R, (1+|aP N p|) := (prod_one_add _).symm
        _ ≤ ∏ p ∈ oddPrimes R, (1+envelope p) := by
-          apply prod_le_prod (fun p _ => by positivity)
+          apply prod_le_prod₀ (fun p _ => by positivity)
           exact fun p hp => add_le_add_right (abs_aP_le (three_le_of_mem hp)) _
        _ ≤ _ := (prod_upper_bound hR).trans (mul_le_mul_of_nonneg_left exp_inv199_le (by norm_num))
 

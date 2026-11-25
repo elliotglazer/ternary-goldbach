@@ -36,3 +36,5 @@ The Totient public Lake target passed on the pinned dependencies.
 The TernaryGoldbach.Helfgott.Defs public Lake target passed on the pinned dependencies.
 
 The ScaledEval Lake target passed with the pinned Mathlib strong induction recursor.
+
+The SingularWindow Lake target passed after selecting the three nonnegative finite product comparisons.
