@@ -196,7 +196,7 @@ def U : Subgroup (GL n R) :=
 /-- For a vector of signs ε, the unitary group U(J) of the diagonal matrix J=diag(ε). -/
 abbrev USign := U (signMatrix ε)
 
-variable {J} (g : U J) (hf : ∀ x, f (star x) = star (f x) := by simp)
+variable {J} (g : U J)
 
 lemma mem_U {g} : g ∈ U J ↔ g.1ᴴ * J * g = J := .rfl
 
@@ -225,13 +225,13 @@ lemma form_mulVec_mulVec x y : star (g *ᵥ x) ⬝ᵥ J *ᵥ g *ᵥ y = star x �
 
 /-- For a ring homomorphism f commuting with the involutions and carrying J to J', the
 homomorphism U(J) → U(J') applying f to each entry. -/
-def map {J J'} (h : Matrix.map J f = J' := by simp) : U (n := n) J →* U J' := .codRestrict
+def map (hf : ∀ x, f (star x) = star (f x) := by simp) {J J'} (h : Matrix.map J f = J' := by simp) : U (n := n) J →* U J' := .codRestrict
   ((GeneralLinearGroup.map f).comp (U J).subtype) _ fun g ↦
   h ▸ by erw [mem_U, ← map_conjTranspose_mul_mul f hf, g.2]
 
 variable {f}
 
-lemma mem_range_map (inj : Injective f) (hJ : IsUnit J) {J'} (h : J.map f = J') {g M}
+lemma mem_range_map (hf : ∀ x, f (star x) = star (f x) := by simp) (inj : Injective f) (hJ : IsUnit J) {J'} (h : J.map f = J') {g M}
   (e : M.map f = ↑g) : ∃ k, k.1.1 = M ∧ map f hf h k = g := ⟨of hJ _
   (map_injective inj (by grind [map_conjTranspose_mul_mul, mem_U])), rfl, Subtype.ext (ext e)⟩
 
@@ -243,7 +243,7 @@ lemma mem_range_map (inj : Injective f) (hJ : IsUnit J) {J'} (h : J.map f = J') 
 
 /-- For J with unit determinant, the determinant as a homomorphism from U(J) to the group of
 elements u of R with uū = 1. -/
-def det (hJ : IsUnit J.det) : U J →* unitary R := .mk' (fun g ↦ ⟨_, by
+def det (hJ : IsUnit J.det) : U J →* unitary R := .mk' (fun g ↦ ⟨g.1.1.det, by
   simpa [unitary, mul_comm, mul_assoc, hJ.mul_eq_left] using congr($(g.2).det)⟩) (by simp)
 
 lemma continuous_map [TopologicalSpace R] [TopologicalSpace S] (hf : Continuous f := by fun_prop)

@@ -83,3 +83,9 @@ factorization proof the rational function is written as its finite-support
 product. In the logarithm argument the ball's connectedness follows from
 convexity. Both changes are inside proofs, and all theorem statements retain
 their original types.
+
+In `ValuationPair`, Lean 4.35 now compiles the full source without warnings.
+A fresh import reports exactly `propext`, `Classical.choice`, and `Quot.sound`
+for `U.map`, `U.mem_range_map`, `U.continuous_map`, `U.det`, and
+`U.form_mul_inv_eq`. The same default tactic remains available on the
+two declarations that use it.
