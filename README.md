@@ -1,7 +1,11 @@
-# Ternary Goldbach in Lean — source replay in progress
+# Ternary Goldbach with the compact GRH proof
 
-The solution source states that every odd natural number above five is the sum of three primes. The challenge and solution declare `PalomarTernaryGoldbach.ternary_goldbach`. The arithmetic and analytic proof is assembled in `CompletedFiniteRows.lean`. The application in `CompletedGoldbach.lean` uses the two theorems exported by the pinned community GRH package.
+This source package targets Lean 4.35.0. Its solution states that every odd natural number above five is the sum of three primes. The arithmetic and analytic argument is assembled in `CompletedFiniteRows.lean`. The final application in `CompletedGoldbach.lean` uses `riemannHypothesis` and `LFunction_eq_zero_re_of_isPrimitive` from the upstream `Main` module.
 
-Use the Lean toolchain in `lean-toolchain` and the Git revisions in `lake-manifest.json`. Build with `lake build GoldbachSolution`. The trusted challenge can be checked independently with `lake build GoldbachChallenge`. Comparator configuration is in `comparator.json`.
+Lake uses Sernau’s compact packaging of Levent Alpöge’s GRH proof with Claude, fetched from the immutable community mirror. The package is named `GRH` and its Lake project is under `grh-compact/`. Both projects require the same Mathlib revision. [Compact source and build configuration](https://github.com/leanprover-community/riemann-hypothesis/tree/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact)
 
-The legacy source archive and the individual source checksums are identified in `source-manifest.json`. Historical attribution is preserved in `NOTICE`, with upstream licenses and notices in `licenses/`. The 4.37 port is under verification. The challenge and the FastHex and GoldbachNatPowMod modules have compiled in this package. The complete solution and comparator run are outstanding.
+Use `lake build GoldbachSolution` to build the solution and `lake build GoldbachChallenge` to build the independent theorem statement. Comparator inputs appear in `comparator.json`. A protected verification must pin its own trusted statement and comparator configuration.
+
+**Verification in progress.** Full replay of the Goldbach solution on Lean 4.35.0 and protected Comparator verification are pending. The earlier Lean 4.37 port tests are recorded in `verification/build-evidence.md`. The historical Lean 4.33.1 release used different GRH proof artifacts.
+
+Source hashes are in `source-manifest.json`. Historical attribution is in `NOTICE` and the upstream licenses and notices are in `licenses/`.

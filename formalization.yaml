@@ -23,7 +23,7 @@ related_formalizations:
   - id: https://github.com/calr3/ternary-goldbach/tree/23b2d68ca344203d4384e0aff7affa4ec034bef9
     relationship: builds-on
     note: Charlie Reams’s formalization supplies the analytic Goldbach argument.
-  - id: https://github.com/leanprover-community/riemann-hypothesis/tree/756a70250dcba9162b99d4ea35c186558434c17e
+  - id: https://github.com/leanprover-community/riemann-hypothesis/tree/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact
     relationship: builds-on
     note: >-
       The final application uses riemannHypothesis and LFunction_eq_zero_re_of_isPrimitive
@@ -55,4 +55,4 @@ review:
   status: self-assessed
   notes: >-
     The 4.33.1 release recorded the displayed axiom inventory. Full replay of the
-    4.37.0-rc1 source package is pending.
+    4.35.0 compact-source package is pending.

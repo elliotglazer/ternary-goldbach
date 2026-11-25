@@ -1,4 +1,4 @@
-# Local source replay, 25 November 2026
+# Historical Lean 4.37 source replay, 25 November 2026
 
 Lean 4.37.0-rc1, Mathlib 31ce06eaadf4a200c0e1407c5f10953cf606b8f8. The source project used the committed Lake manifest and a local cache of Mathlib and its dependencies.
 
@@ -42,3 +42,7 @@ The SingularWindow Lake target passed after selecting the three nonnegative fini
 The public SmallMertens Lake target rebuilt both the exported Taylor-sum equality and its majorant consumer.
 
 The public SmallMertens Lake target rebuilt both the exported Taylor-sum equality and its majorant consumer.
+
+## Compact GRH dependency metadata on Lean 4.35.0
+
+The immutable community mirror reports root tree `5eb1240f03e791edd3fc7aa84a3a7d8dc3997b7f` and compact subtree `dba7a002d3863a6fdeeefe0528b1a232e732b8d5`. The upstream compact lockfile SHA-256 is `1390a02c1729c30db51ee0b19ea7199a129ed899ac571a48956da719573590ae`. All nine upstream dependency records are reproduced in the package lockfile alongside the direct GRH dependency. The compact `src/Main.lean` declares the two names used by the Goldbach application. Full Lean 4.35 elaboration of that application remains pending.

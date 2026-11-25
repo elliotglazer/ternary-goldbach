@@ -3,14 +3,15 @@ version = "0.1.0"
 defaultTargets = ["GoldbachSolution"]
 
 [[require]]
-name = "tree"
+name = "GRH"
+subDir = "grh-compact"
 git = "https://github.com/leanprover-community/riemann-hypothesis"
-rev = "756a70250dcba9162b99d4ea35c186558434c17e"
+rev = "72fead102f663d5c7a407964a13dc0cf9d977207"
 
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4"
-rev = "31ce06eaadf4a200c0e1407c5f10953cf606b8f8"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
 
 [[lean_lib]]
 name = "GoldbachProof"
