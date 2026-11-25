@@ -7,3 +7,9 @@ From this directory in AWS CloudShell, `python3 cloudshell.py render --autorun` 
 The r7i.8xlarge has 32 vCPUs and 256 GiB of RAM. The instance has no inbound security-group rules. It stops after the driver exits, with a second stop scheduled after 12 hours. A 12-hour run costs about $26.30 at the regional list prices checked November 25, 2026, excluding transfer. The encrypted 600 GiB data volume is retained for the Goldbach link and costs about $48 per month until removed. The root volume also incurs storage charges until the stack is removed.
 
 After the stack reaches CREATE_COMPLETE, use `python3 cloudshell.py status`, `python3 cloudshell.py console`, or `python3 cloudshell.py tail`. The driver receipt is `/work/replay/evidence/receipt.json`. Check step exit codes and the final status. Interrupted runs may have partial receipts. The pin, source tree, dependency hashes, object manifest, exports and execution measurements are written by the driver.
+
+## Goldbach proof and verification status
+
+The [source-only Goldbach branch](https://github.com/elliotglazer/ternary-goldbach/tree/codex/community-grh-proof) contains the root Lake project. A clean checkout can build the challenge with `lake build GoldbachChallenge` and the unconditional solution with `lake build GoldbachSolution`.
+
+The [Palomar preflight receipt](palomar-preflight.md) records the source-policy checks for Goldbach commit `c9ef5cbc995320af9b559143612b9221ffff4dc5` and the separate check of its challenge statement. The full solution replay and exported-theorem kernel checks are outstanding. Each later proof revision needs its own final verification.
