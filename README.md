@@ -6,6 +6,8 @@ Harald Helfgott proved that every odd integer greater than five is a sum of thre
 
 Start with the [finite and analytic proof](proof/CompletedFiniteRows.lean), then the [final theorem](proof/CompletedGoldbach.lean). Stock Lean 4.33.1 accepted `CompletedGoldbach.ternary_goldbach : TernaryGoldbach.Statement`. The final link supplied `riemannHypothesis` and `LFunction_eq_zero_re_of_isPrimitive` from the upstream compiled release. The saved theorem has no remaining hypotheses and its exported axiom set is `propext`, `Classical.choice`, and `Quot.sound`. [Independent checks of Alpöge’s development](https://math.mit.edu/~drew/grh/) · [Goldbach kernel receipt](proof/evidence/CompletedGoldbach-receipt.json) · [Proof bundle and replay instructions](proof/README.md)
 
+From the repository root, run `lake build inspect` to read the saved theorem and its axioms with Lean 4.33.1. To rebuild the local proofs and check the final theorem, supply the pinned Mathlib and RH/GRH objects and run `lake build`. [Lakefile](lakefile.lean) · [Setup and build commands](proof/README.md#build-with-lake)
+
 ### Compilation time
 
 Using the released RH/GRH objects, the closed Goldbach theorem took **at least 5.19 core-hours** of recorded CPU time. The binary Goldbach check accounted for **3.49 of the 5.07 core-hours** recorded before the final link (69%). The table counts each timed Goldbach module once.
