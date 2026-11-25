@@ -46,3 +46,7 @@ The public SmallMertens Lake target rebuilt both the exported Taylor-sum equalit
 ## Compact GRH dependency metadata on Lean 4.35.0
 
 The immutable community mirror reports root tree `5eb1240f03e791edd3fc7aa84a3a7d8dc3997b7f` and compact subtree `dba7a002d3863a6fdeeefe0528b1a232e732b8d5`. The upstream compact lockfile SHA-256 is `1390a02c1729c30db51ee0b19ea7199a129ed899ac571a48956da719573590ae`. All nine upstream dependency records are reproduced in the package lockfile alongside the direct GRH dependency. The compact `src/Main.lean` declares the two names used by the Goldbach application. Full Lean 4.35 elaboration of that application remains pending.
+
+## Source-bundled compact candidate
+
+The compact upstream Main lacks a Lean `module` header. Lean 4.35 rejects importing such a module from the Goldbach module system. The local CompactGRH library declares Main and Statements as its roots and covers Lib and New. Its 794 files were checked against the port manifest, and its module names are disjoint from the 735 Goldbach module names. The project lockfile uses the nine upstream dependency records. The earlier external-GRH dependency was removed. Full elaboration on 4.35 is pending.
