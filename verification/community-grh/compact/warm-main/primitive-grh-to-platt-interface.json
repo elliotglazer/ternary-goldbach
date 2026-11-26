@@ -1,0 +1,58 @@
+{
+  "scope": "Executable conditional interface. The community GRH proof is passed as a theorem hypothesis. No verification of that proof, the finite assemblies or Goldbach export is claimed here.",
+  "goldbach_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "goldbach_tree": "c1d19f1413029f25a41902d9d58b32f808d39d32",
+  "upstream_binding": {
+    "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "converted": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+    "equal_from_declaration_to_eof": {
+      "Statements.lean": {
+        "original_sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+        "converted_sha256": "5dcfb235de403e45f96ca2528a022421d911d1ddc0af3509e4e2d4524fd7fb9f",
+        "declaration_suffix_sha256": "1bcc887b48a99d89f4d91a83af1108915971fc75ec659f8a462e8d6bffafe339",
+        "declaration_line_count": 3
+      },
+      "Main.lean": {
+        "original_sha256": "e831c518e29e2f1bc06965cda6fed7a8ea77740915c64fdbb96639126ff1c013",
+        "converted_sha256": "4825ad09c5a5b17e6cf7d8e804ceac0a561603b0005a3a862cbca591316ae402",
+        "declaration_suffix_sha256": "1e0881f1969fcf4ea429d74ab1041dc2e15a77c579af07642d5503bc5db2a5b3",
+        "declaration_line_count": 2
+      }
+    }
+  },
+  "code": "module\n\npublic import Statements\npublic import TernaryGoldbach.Statement\n\npublic section\n\nnamespace GoldbachInterfaceCheck\n\ntheorem plattGRH_of_primitive (grh : PrimitiveDirichletLZerosOnLine) :\n    TernaryGoldbach.PlattGRH := by\n  intro q _ \u03c7 h\u03c7\n  constructor <;> intro _ _ \u03c1 hz h\u2080 h\u2081 _ <;> exact grh q \u03c7 h\u03c7 \u03c1 h\u2080 h\u2081 hz\n\nexample : TernaryGoldbach.PlattGRH =\n    (\u2200 (q : \u2115) [NeZero q] (\u03c7 : DirichletCharacter \u2102 q), \u03c7.IsPrimitive \u2192\n      (Odd q \u2192 q \u2264 300000 \u2192 \u2200 \u03c1 : \u2102, \u03c7.LFunction \u03c1 = 0 \u2192 0 < \u03c1.re \u2192 \u03c1.re < 1 \u2192\n        |\u03c1.im| \u2264 100000000 / q \u2192 \u03c1.re = 1 / 2) \u2227\n      (Even q \u2192 q \u2264 400000 \u2192 \u2200 \u03c1 : \u2102, \u03c7.LFunction \u03c1 = 0 \u2192 0 < \u03c1.re \u2192 \u03c1.re < 1 \u2192\n        |\u03c1.im| \u2264 max ((100000000 : \u211d) / q) (200 + 75000000 / q) \u2192 \u03c1.re = 1 / 2)) := by\n  have first : (1e8 : \u211d) = 100000000 := by norm_num\n  have second : (7.5e7 : \u211d) = 75000000 := by norm_num\n  unfold TernaryGoldbach.PlattGRH\n  rw [first, second]\n\nexample : PrimitiveDirichletLZerosOnLine =\n    (\u2200 (d : \u2115) [NeZero d] (\u03c7 : DirichletCharacter \u2102 d), \u03c7.IsPrimitive \u2192\n      \u2200 s : \u2102, 0 < s.re \u2192 s.re < 1 \u2192 \u03c7.LFunction s = 0 \u2192 s.re = 1 / 2) := rfl\n\nexample (grh : PrimitiveDirichletLZerosOnLine) : Fact TernaryGoldbach.PlattGRH :=\n  \u27e8plattGRH_of_primitive grh\u27e9\n\n#print axioms plattGRH_of_primitive\n\nend GoldbachInterfaceCheck\n",
+  "source_sha256": "ef6875b51d0aa39ab75b7b8b01cc19ccfdd319a7c3cb3d35bce1badbd99dcca8",
+  "stock_lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_executable_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "input_statement": {
+    "module": "TernaryGoldbach.Statement",
+    "exit": 0,
+    "wall_seconds": 23.03,
+    "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "6af39b249fbf4851ff966d6849d3f47e0fa3289f64debde50d521d2726b5dbba",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "object_sha256": "127fd3b5203457dc696c8239241034fe9524ccd00cfba12da408303dd71b2846",
+    "direct_import_object_sha256": {}
+  },
+  "assembly_parameter_source_equals_checked_expression_modulo_whitespace": true,
+  "proof_type": "PrimitiveDirichletLZerosOnLine \u2192 TernaryGoldbach.PlattGRH",
+  "positive_runs": [
+    {
+      "module": "Statements",
+      "exit": 0,
+      "wall_seconds": 138.42,
+      "working_tree_output_sha256": "d00280d263d8788d49e31c41ef5b42ca856473802f58bb8e5b3063e869f5c775",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PlattInterface",
+      "exit": 0,
+      "wall_seconds": 25.16,
+      "working_tree_output_sha256": "81fd46d01d10608cac201a915acc0a1bc5da5812f352255948be52e8750d7043",
+      "log_sha256": "282dbe0e2aed2c6b8f62958dc94cb07d4b9ee4bd529e5ed5d02a0eb5b11fbbfb"
+    }
+  ],
+  "stock_print_axioms": "'GoldbachInterfaceCheck.plattGRH_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "exact_heights_normalized": true,
+  "Fact_interface_compiled": true
+}

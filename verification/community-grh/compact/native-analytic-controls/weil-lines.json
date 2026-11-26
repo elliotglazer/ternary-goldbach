@@ -1,0 +1,52 @@
+{
+  "axiom_check": {
+    "cpu_seconds": 22.171875,
+    "exit": 0,
+    "log_sha256": "fba0aabc5c89de27eb77e65bfa186b9978e3df99196a12b7fd989fbb7d183e56",
+    "module": "WeilLinesProductionAudit",
+    "named_axioms": [
+      "'TernaryGoldbach.Explicit.J2_shift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'TernaryGoldbach.Explicit.J1_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'TernaryGoldbach.Explicit.integrable_archF_WHt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'TernaryGoldbach.Explicit.integrable_WP_three_halves' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "resource_guard": null,
+    "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "b4d0f05c602cef89333dd27c7c4a2ea8b41ac08847fc3057f502565dd8edd14a",
+    "wall_seconds": 23.027
+  },
+  "commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "direct_parents": {
+    "GoldbachDigamma": {
+      "compiled_commit": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "compiled_receipt_sha256": "42051a1124e0955b6da984b08f2cb6cbf998559e9872d1cc39c6707725715b13",
+      "module": "GoldbachDigamma",
+      "object_sha256": "89e6cff2d81518a7d5b0c8efd8c1e22d57a78ef8f7d0c1bdb518860eb427d933",
+      "source_sha256": "6f31514f03d2beb9f41b9af9aaaba0b1373ccb7fe3a35ba90caf7a256ceaa330"
+    },
+    "TernaryGoldbach.Explicit.WeilSplit": {
+      "compiled_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "compiled_receipt_sha256": "4ce979bb0f0b8be18fa05473341556865ab2bd3e71b4feba47ed1d3b01db89bf",
+      "module": "TernaryGoldbach.Explicit.WeilSplit",
+      "object_sha256": "f813c49eac4221f2a6f9a3e607ae3eb070b73d324d7ebb30be2f07e6a56234ae",
+      "source_sha256": "c9c6defb255a93a1303bf66588ef9a6f7722ab2bbbdf68b38144200bb97faeed"
+    }
+  },
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_check": {
+    "cpu_seconds": 37.375,
+    "direct_import_object_sha256": {
+      "GoldbachDigamma": "89e6cff2d81518a7d5b0c8efd8c1e22d57a78ef8f7d0c1bdb518860eb427d933",
+      "TernaryGoldbach.Explicit.WeilSplit": "f813c49eac4221f2a6f9a3e607ae3eb070b73d324d7ebb30be2f07e6a56234ae"
+    },
+    "exit": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "module": "TernaryGoldbach.Explicit.WeilLines",
+    "object_sha256": "4cbed01be638ae23f014b2f4f4e6f57d8cf0fca9e9dd6084da69c85bc3da0c78",
+    "resource_guard": null,
+    "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "8449cdd09353dc4ebb2c983f55b6b3b58dfabc222ef8aa854ece3138420b0cfe",
+    "wall_seconds": 39.336
+  },
+  "toolchain": "Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc"
+}
