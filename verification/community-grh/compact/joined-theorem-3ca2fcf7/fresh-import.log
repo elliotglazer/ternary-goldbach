@@ -1,0 +1,3 @@
+PalomarTernaryGoldbach.ternary_goldbach (n : ℕ) :
+  Odd n → 5 < n → ∃ p q r, Nat.Prime p ∧ Nat.Prime q ∧ Nat.Prime r ∧ p + q + r = n
+'PalomarTernaryGoldbach.ternary_goldbach' depends on axioms: [propext, Classical.choice, Quot.sound]

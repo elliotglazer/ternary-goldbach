@@ -1,0 +1,104 @@
+{
+  "kind": "Public summary of a source-bound warm Lean build and fresh import",
+  "candidate": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+  "tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "theorem": "PalomarTernaryGoldbach.ternary_goldbach",
+  "type": "∀ n : ℕ, Odd n → 5 < n → ∃ p q r : ℕ, Nat.Prime p ∧ Nat.Prime q ∧ Nat.Prime r ∧ p + q + r = n",
+  "observed_axioms_in_lean_output_order": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "roots": {
+    "grh": {
+      "source_commit": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+      "source_tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+      "root": "Main",
+      "modules": 794,
+      "closure_sha256": "264fa32d120af4ef730f44fefacad98a439c13bd17e645796985e5bcb110d113",
+      "exit": 0,
+      "warm_wall_seconds": 138.063,
+      "reused_modules": 781,
+      "freshly_built_modules": 13,
+      "original_archive_sha256": "720c33da6210d2d120c3e4326ca2a781f9e1e1e6e745651d6aa8309eee09bdde",
+      "original_members_sha256": {
+        "grh/result.json": "3c7580740b2ff64179d0bba7ff08e6cca586f240283b7a5e84b07f2c6d38a2f7",
+        "grh/warm-main.log": "711396f8fd29ba40d22ef4a6025f0998c2fe4118837d6080dcc11915899a2716"
+      }
+    },
+    "finite": {
+      "source_commit": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+      "source_tree": "3b85151bc9d0c03b0a36db5cd19dcebd67db85d8",
+      "root": "CompletedFiniteRows",
+      "modules": 732,
+      "closure_sha256": "fc486ba212dc84d9058ec54be72c599e6f20cd961ca3396caaa7d71811427127",
+      "exit": 0,
+      "warm_wall_seconds": 1358.682,
+      "reused_modules": 525,
+      "freshly_built_modules": 207,
+      "original_archive_sha256": "bb31b94715d90339da1e8d7d146b3d6005124eab9385fd28225861bc81d3e100",
+      "original_members_sha256": {
+        "finite/result.json": "ca36d50746df822b03aaf92a835df3f1ed789fb6eeed736e74b3ac44ee5a65c3",
+        "finite/warm-main.log": "8c21449cd2f54fdedab4236a49704310726569310445de8e9bac77d56e31b5f9"
+      }
+    }
+  },
+  "finite_source_match": {
+    "same_git_blobs": 732,
+    "from": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+    "to": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+    "source_closure_tsv_sha256": "7285437bd5e8c3fad1dc21a3efbe99e0792c6f63826c6994abca5a6126e6c299",
+    "unchanged_build_files": [
+      "lean-toolchain",
+      "lake-manifest.json",
+      "lakefile.toml"
+    ]
+  },
+  "join": {
+    "warm_frontend_passed": true,
+    "warm_wall_seconds": 37.321,
+    "stages": {
+      "compile-CompletedGoldbach": {
+        "exit": 0,
+        "wall_seconds": 26.648,
+        "original_log_sha256": "6b4460587cc56d6b885046c62e9b1d26e07d36ccf0fd71e8fdbf5b0a3692b2dc"
+      },
+      "compile-GoldbachSolution": {
+        "exit": 0,
+        "wall_seconds": 2.806,
+        "original_log_sha256": "17cbff04417fed1f3ef1f4f5f47c8bd515dbadf6a22772754bb31dc89b9bc3d9"
+      },
+      "fresh-import": {
+        "exit": 0,
+        "wall_seconds": 2.806,
+        "original_log_sha256": "1ce0a3786e20cdc0a8d12b36b7734d113920746777b2b6e126e8d0e21a99f81a"
+      }
+    },
+    "verified_by_join": {
+      "distinct_imported_modules": 1526,
+      "actual_lake_facets_verified": 7630,
+      "actual_source_traces_verified": 1526,
+      "distinct_parent_import_hashes_verified": 1524,
+      "distinct_external_import_hashes_verified": 86
+    },
+    "original_archive_sha256": "26142ce680b69aea1f8c700f1a84ab1e0c3c2bc821b3fa7708dccc924e1c804f",
+    "original_members_sha256": {
+      "receipt.json": "bf37c2144352e17798e3bb388befa1b639ec0d83fdc20a3be1c59d0e2a9ced44",
+      "portable.json": "ea4212e537e41838a6baa57d9bea806c17d2c09a0538c57a6a09b60b08e6cb5f",
+      "manifest.json": "23f965af5a59957946d2245e7d9f93e94d33db68289d9a2cb8f36735a5a03324",
+      "src/CompletedGoldbach.lean": "e8e8ef7b005103f3c0c417004af83e1fe8571cb68e9c01679c2e16ee6d4069e0",
+      "src/GoldbachSolution.lean": "4cea88129a02f692ab896084d017ae83e43aca78770585897baf823c4b03eae7",
+      "src/FreshTheorem.lean": "382e44a77556af646a170a4a04f464e9b8dced34db5b0de9228089ed9d1445c5",
+      "retained-closures.json": "ca0f0cc3cd0609812adf2e872fe135a0cefb543f1853c5afba0ea98ee06bce9a"
+    },
+    "bridge_public_oleans_sha256": {
+      "CompletedGoldbach": "d0ea5ac367b4e356445563019acce50b7146d037c64e067fb4c461a809b88b01",
+      "GoldbachSolution": "1bac7240a3134bf7e786ff8197bfd79285a38f865b988f21d6fee3167d466dba"
+    }
+  },
+  "published_verbatim_file_sha256": {
+    "fresh-import.log": "1ce0a3786e20cdc0a8d12b36b7734d113920746777b2b6e126e8d0e21a99f81a"
+  },
+  "scope": "Warm Linux source build, followed by a fresh Lean import and axiom report. This run did not execute a cold build, a protected independent-kernel replay of the full theorem, or a Palomar Registry submission."
+}
