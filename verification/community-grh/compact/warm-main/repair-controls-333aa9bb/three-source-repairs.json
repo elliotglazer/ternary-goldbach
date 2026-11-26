@@ -1,0 +1,83 @@
+{
+  "source": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "stock_lean": "4.35.0",
+  "linux_source_log_sha256": "02facac224e7675434ef5571b2bf054fe955bbf0d35debcc9cc569e333eadfe1",
+  "scope": "Focused checks; whole production modules await warm replay. Positive focused axiom reports contain only propext, Classical.choice and Quot.sound.",
+  "modules": {
+    "Lib.Weil.DualPair.Lift": {
+      "before_sha256": "b1c0b802fefc2cf823a828a55ca235f3723e4e7c6bbcab5dce1e7e8662eede91",
+      "candidate_sha256": "b3aa393bcb30bb1c61a561288149193d1939b360372dfd2b125c0452c06af629",
+      "checks": [
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "LiftBilinearOriginal",
+          "source_sha256": "5a1190220f7a66e282bcb1a29959d90e15f2f7207cf58ca13e42704757322d92",
+          "exit": 1,
+          "seconds": 16.12,
+          "log_sha256": "c66b9ce02454aed46228c99a39d34128c6e412500797588bb3a4245f4cd3bd36"
+        },
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "LiftBilinearAssocControl",
+          "source_sha256": "e86bb867f44fa57dba4347281ed03a05370328376e4f77dc8ba7e370404fc0cd",
+          "exit": 1,
+          "seconds": 9.78,
+          "log_sha256": "02bfed58d2609f6fd70d5a9521b44178fb0ddd16937daaae6895be76e40581a1"
+        },
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "LiftBilinearScoped",
+          "source_sha256": "7f239ef2dad141a8159fbf5d9743dc3aaefb91f97539c1b2e963a7a7b36eddaa",
+          "exit": 0,
+          "seconds": 15.51,
+          "log_sha256": "ff2f365d8f1e08be937afc0a633321317aa85aeede943909e911e2bad1565f7d"
+        }
+      ]
+    },
+    "Lib.Weil.DualPair.PairSplitting": {
+      "before_sha256": "62c9423d11eff6fdb869e498bd8338e611053ab20c291b9b85c57e1d418aeafd",
+      "candidate_sha256": "2c92995e31bec64de69a7eb2f4cc2e5abc61b53d5f96a15c94ad8a6c595a24e6",
+      "checks": [
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "PairSumRealProbe",
+          "source_sha256": "ad46fc69f6a7853d4ff788bc8e1e8b5a8dbaee4c68f4897d1a6f54c8bf9dc9d7",
+          "exit": 0,
+          "seconds": 24.6,
+          "log_sha256": "18cba1e39a400a8781dde8e7e54abc32994c599062c478ec803c0a892a9234e3"
+        },
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "PairFinalRealProbe",
+          "source_sha256": "2a0d71e23a0b8a45da2b6733407ed73aec54b6f39de74a6f8e755e4bfb4dd37a",
+          "exit": 1,
+          "seconds": 20.21,
+          "log_sha256": "159995d9d1a51ecb076b335152c5255cb861954e08b9c72350adca66f6c78725"
+        },
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "PairFinalDirectedProbe",
+          "source_sha256": "c0b05cec5a11b59124f0c243fe7802d05636ab3bc99c54e68d894a966e5f1f7f",
+          "exit": 0,
+          "seconds": 18.98,
+          "log_sha256": "6104a33f015d487c3f1d7b99674b55736540b341f5cad68ed57a3848f424c0b7"
+        }
+      ]
+    },
+    "Lib.Adelic.CuspForms.ReproducingKernel": {
+      "before_sha256": "e52ad228f0207130090ca16026b862dca41ab33ac23b1113278b5742d460c09b",
+      "candidate_sha256": "4ceaa7e2174a21ce7613ed61288badb81427740636cf12d873b2eddc7dc7c968",
+      "checks": [
+        {
+          "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+          "tag": "CuspThresholdRealProbe",
+          "source_sha256": "7008eb6995881fe08358a1790d7440ceb70291386046d63ced831e6cf20c1d68",
+          "exit": 0,
+          "seconds": 25.55,
+          "log_sha256": "2c33f3af84779688335addfcbd445646f1bf57dee4b7a4c83c2c8e291d05dfb1"
+        }
+      ]
+    }
+  }
+}

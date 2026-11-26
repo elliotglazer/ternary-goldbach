@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "scope": "Local stock Lean and Palomar source intake. No hosted run.",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "palomar_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "upstream_grh": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "grh_source_files": 794,
+  "grh_physical_lines": 112827,
+  "fixtures": {
+    "compiler-and-export.json": "9bb793b983f9054b97dae675ca2b047b2c84c2d77395e36e9aa2eddf6efc9e41",
+    "lake-build.json": "f072f34fba125118b6db00543cb52b1a045dd22f44b834d9ba5e653d49357d6d",
+    "stock-scanner.json": "f8d9de5079ee7583eeb367cdd84c30e19fbca9d51befd1475bd0d327aad276a2",
+    "consolidation-and-export.json": "18a0086f77ffc048e06913de4c938fffa15ec75482379161110a4e66e523283e"
+  },
+  "summary": [
+    "Each stock modular import of a legacy file failed at the header, including a transitive legacy chain imported across a package boundary.",
+    "The stock source scanner rejected legacy files, even if unused, and rejected the 10001-line fixture.",
+    "Modern chains, a modern ordinary proof-only import, a small genuinely merged modern file and a standalone legacy chain all built, exported and passed the stock kernel with zero axioms."
+  ]
+}

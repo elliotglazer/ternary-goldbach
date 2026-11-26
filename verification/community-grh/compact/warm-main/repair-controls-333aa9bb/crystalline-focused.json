@@ -1,0 +1,25 @@
+{
+  "candidate_source_sha256": "88817d0f64f789e29a4b6a13097b0ae13d1f9acf12b5d82721252feb34f2a4a3",
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "inputs": {
+    "Lib.PadicComparison.Descent.ReductionModP": "da85c8820603b35412e966be2abab3f587a83035b26cac0cafd5c85522342715",
+    "Lib.PadicHodge.PeriodRings.AmaxStructure": "79f45fbe603690fc08f0cfb0c362dbf3e57a341e2e5b9567bd3c4e09f956c820"
+  },
+  "original": {
+    "exit": 1,
+    "log": "CrystallineOriginalControl.lean:34:29: error: tactic execution is stuck, goal contains metavariables\n  tilt \u22d9\n      ((whiskeringRight (CommAlg OFlat) (CommAlg ?m.208) (CommAlg (WittVector p OFlat))).obj\n            (restrictAlg (WittVector p OFlat) ?m.208)).obj\n        (periodAlg ?m.208) \u27f6\n    ((whiskeringRight PadicTest (CommAlg OC) (CommAlg (WittVector p OFlat))).obj\n          (restrictAlg (WittVector p OFlat) OC)).obj\n      (crysThickening good \u22d9 pdReduction r)\n'PeriodRepairControls.check' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+    "log_sha256": "1ade20b14699ef3624c611cbd7fb5853f9012b704f6f554cd17be216c40d445b",
+    "source_sha256": "365df5c62cda26e5c7dccfa9c467fb8f687460d977b1c50221339e9eba2f0dfe",
+    "wall_seconds": 27.449
+  },
+  "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "positive": {
+    "exit": 0,
+    "fixture": "module\npublic import Lib.PadicComparison.Descent.ReductionModP\npublic import Lib.PadicHodge.PeriodRings.AmaxStructure\n@[expose] public section\nopen CategoryTheory Functor ConcreteCategory CommAlgCat ObjectProperty Algebra\nopen WittVector hiding map_surjective\nopen PadicTest\nnoncomputable section\nnamespace PeriodRepairControls\nsection\nopen AdicCompletion Algebra IsScalarTower\nvariable (S : Type) [CommRing S] (p : \u2115)\ndef algCompletion.of : \ud835\udfed _ \u27f6 algCompletion S p :=\n  \u27e8fun _ \u21a6 CommAlgCat.ofHom (toAlgHom ..), by delta algCompletion; aesop\u27e9\nend\nvariable {C k S} [Category C] [CommRing k] [CommRing S] [Algebra k S]\ndef algBaseChangeAdj : algBaseChange S \u22a3 restrictAlg k S := .mkOfHomEquiv (.mk (homEquiv.trans <|\n  .symm <| homEquiv.trans <| @AlgHom.liftEquiv k S \u00b7 \u00b7 _ _ _ _ _ _ _ (_) (.of_compHom ..)) fun _ _ \u21a6\n  ConcreteCategory.ext tmul_ext)\n\n/-- For functors F to k-algebras and G to S-algebras, the adjunction bijection from natural\nS-algebra maps S \u2297_k F \u2192 G to natural k-algebra maps F \u2192 G. -/\nabbrev baseChangeTranspose := ((@algBaseChangeAdj k S _ _ _).whiskerRight C).homEquiv\nvariable {p : \u2115} [ThePrime p] [Algebra Ainf Amax]\nvariable (r : OC \u2192+* Amax \u29f8 pdIdeal Amax)\nvariable (good : \u2200 c : PadicTest, IsCompleteTorsionFree ((tilt \u22d9 periodAlg Amax).obj c))\ndef crysThickening : PadicTest \u2964 CrysTest Amax := ObjectProperty.lift _ (_ \u22d9 periodAlg Amax) good\nvariable (thetaIso : tilt \u22d9 wittFunctor \u22d9 algBaseChange OC \u2245 algFunctor)\nvariable (toPdReduction : \u03b9 _ \u22d9 restrictAlg Ainf Amax \u27f6 pdReduction r \u22d9 restrictAlg Ainf OC)\ninclude good thetaIso toPdReduction in\ndef check : algFunctor \u27f6 crysThickening good \u22d9 pdReduction r :=\n  thetaIso.2 \u226b (baseChangeTranspose (tilt \u22d9 wittFunctor) (crysThickening good \u22d9 pdReduction r)).2 (tilt.whiskerLeft (baseChangeTranspose _\n  (periodAlg Amax) (wittFunctor.whiskerLeft ((algBaseChange Amax).whiskerLeft\n  (algCompletion.of ..)))) \u226b by\n    exact (crysThickening good).whiskerLeft toPdReduction)\n#print axioms check\nend PeriodRepairControls\n",
+    "log": "'PeriodRepairControls.check' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "log_sha256": "93a120228ec285b330e47082364ac55e08fa7c6a234268d8ef164920ff4effef",
+    "source_sha256": "28c68e307d3efe4617e75d8da5cf99ab87efc97731e3d9b31d1b77a89a70a92e",
+    "wall_seconds": 21.766
+  },
+  "scope": "Source-extracted composite under the authentic concrete categories, functors, completion map and base-change adjunction; source upstream transformations and membership proof are variables with the production types."
+}

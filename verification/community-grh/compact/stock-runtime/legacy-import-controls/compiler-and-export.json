@@ -1,0 +1,115 @@
+{
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "results": {
+    "LegacyLeaf": {
+      "exit": 0,
+      "output": "",
+      "seconds": 0.948,
+      "source": "3e51df16277a7c2601302ddc4a9783311a22edd960df5694ea1ca3be00feb4fb",
+      "object": "16b2feb081e7f368ff8a7c504d0b7692aa3b161fd7229fd28025d090d80ab0e7"
+    },
+    "LegacyMiddle": {
+      "exit": 0,
+      "output": "",
+      "seconds": 0.885,
+      "source": "dc18403c4ae3820fc4669772577342fda0b882cb42ae9e1579e0dc1693d5a63d",
+      "object": "3ac47d900088462daac70d204a9882f1b8cb0b45a648f6e112ac35f8a7297ada"
+    },
+    "LegacyRoot": {
+      "exit": 0,
+      "output": "'oldRoot' does not depend on any axioms\n",
+      "seconds": 1.271,
+      "source": "5d078d3b99fc65dc194eb9dc6f91daed3ff893c5fb65b6342f7750a5a817bbee",
+      "object": "d59779f85e32853d0f12d1421e89bbbfce91f33e77054712286c98f326529189",
+      "export": {
+        "exit": 0,
+        "sha256": "a76492428aef0e629873b9fd27949dc5814f16babc04da12921c4121e8d0bb90",
+        "bytes": 37259,
+        "stderr": ""
+      }
+    },
+    "ModernDirect": {
+      "exit": 1,
+      "output": "ModernDirect.lean:1:0: error: cannot import non-`module` LegacyLeaf from `module`\n",
+      "seconds": 0.595,
+      "source": "1601313842450176a589a35bfb9f3e64cca7744d842a58e99d411e4a5808dc3f",
+      "object": null
+    },
+    "ModernPrivateImport": {
+      "exit": 1,
+      "output": "ModernPrivateImport.lean:1:0: error: cannot import non-`module` LegacyLeaf from `module`\n",
+      "seconds": 0.576,
+      "source": "1280cc011229644665f5fa16884485289fb910adf3d0479ed8744be7de1c3853",
+      "object": null
+    },
+    "ModernAll": {
+      "exit": 1,
+      "output": "ModernAll.lean:1:0: error: cannot import non-`module` LegacyLeaf from `module`\n",
+      "seconds": 0.59,
+      "source": "25d730c0552db2893cd8558f247f5b83dd2d8d772b16da9debabaa36a368287b",
+      "object": null
+    },
+    "ModernIndirect": {
+      "exit": 1,
+      "output": "ModernIndirect.lean:1:0: error: cannot import non-`module` LegacyMiddle from `module`\n",
+      "seconds": 0.486,
+      "source": "59c9f649a7dd60fa99d35fea4560ed130dbdc7b49422968522cd85557f694445",
+      "object": null
+    },
+    "ModernPrivateLeaf": {
+      "exit": 0,
+      "output": "",
+      "seconds": 0.947,
+      "source": "a787f15ca9250216cf8732f6533c5d999edd079e9271aeda3494fe45b0448145",
+      "object": "d664fccceb434defccc22e5521cb1a8434f171faef1cbc6bd79796d1123f8003"
+    },
+    "ModernPrivateBlocked": {
+      "exit": 1,
+      "output": "ModernPrivateBlocked.lean:3:48: error(lean.unknownIdentifier): Unknown identifier `NewProof.privateLeaf`\n",
+      "seconds": 1.032,
+      "source": "6fe2016ba4f5792c200ac16b7d02c446543d6e15f7e115572c373cf22824860c",
+      "object": null
+    },
+    "ModernGoodLeaf": {
+      "exit": 0,
+      "output": "",
+      "seconds": 1.758,
+      "source": "7dab5b8d1a7dd046b0871402698767b8d6ac19155d3e11aa5b5ae42355615e8d",
+      "object": "f7b1a2576fed53bcb6459936e5ef6978e6286f00215bf2efba803e81120a8d80"
+    },
+    "ModernPrivateLink": {
+      "exit": 0,
+      "output": "'usePrivateImport' does not depend on any axioms\n",
+      "seconds": 1.361,
+      "source": "53ac55f448791438187babb14b41ad362d2d6bccfb39b12a7fa4c7c01fe60715",
+      "object": "6bd4e5154a4c4856b1edd7bcd6df27a59094d07085d5bf70061de19bb3a50f29",
+      "export": {
+        "exit": 0,
+        "sha256": "49005e89d61b1580d47600d6393344bf5b12a1276eade0e9dade9500effd792d",
+        "bytes": 36961,
+        "stderr": ""
+      }
+    },
+    "ModernGoodMid": {
+      "exit": 0,
+      "output": "",
+      "seconds": 0.797,
+      "source": "a7a6c14ee887ac0ac77a8e757b6413690af24b6ad7423b5b37bb9b5dcaed7395",
+      "object": "58ead26d6716f60bc3ffbcc19cdf3d922c1eaa513af4aeddc0a985b02dd26785"
+    },
+    "ModernGoodRoot": {
+      "exit": 0,
+      "output": "'modernRoot' does not depend on any axioms\n",
+      "seconds": 0.804,
+      "source": "bbd77ec60e7f1f6c440f1142994a20faf59e5e9e89d78876c730204e1b92ac8e",
+      "object": "1e1c734a2bc877a227cea34b63bd3e6258be7f996cce0aff02568a85e7b90c40",
+      "export": {
+        "exit": 0,
+        "sha256": "56ae49e3bc20f335fcf78955e7dc79c0575e6d79d4180715d8e18ee9e380d908",
+        "bytes": 37220,
+        "stderr": ""
+      }
+    }
+  }
+}

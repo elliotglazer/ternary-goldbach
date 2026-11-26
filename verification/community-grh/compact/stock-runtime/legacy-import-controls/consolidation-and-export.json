@@ -1,0 +1,45 @@
+{
+  "build": {
+    "exit": 0,
+    "bytes": 41,
+    "stdout_sha256": "5fab5d1988cb4666d4d129ff64d13f915f9671bcc8a02ef1012d5819319f838c",
+    "stderr": "",
+    "stdout": "'combined' does not depend on any axioms\n"
+  },
+  "export": {
+    "exit": 0,
+    "bytes": 37393,
+    "stdout_sha256": "673f7e8d27c73089fdd668146c8c2f553b66165dc8b0627533c5c0f6ba455022",
+    "stderr": ""
+  },
+  "LegacyRoot": {
+    "checker_exit": 0,
+    "stdout": "Lean default kernel accepts the solution\n",
+    "stderr": ""
+  },
+  "ModernGoodRoot": {
+    "checker_exit": 0,
+    "stdout": "Lean default kernel accepts the solution\n",
+    "stderr": ""
+  },
+  "ModernPrivateLink": {
+    "checker_exit": 0,
+    "stdout": "Lean default kernel accepts the solution\n",
+    "stderr": ""
+  },
+  "Consolidated": {
+    "checker_exit": 0,
+    "stdout": "Lean default kernel accepts the solution\n",
+    "stderr": "",
+    "source_sha256": "3acd01c079d5d49a55d634dd575b6d394a159c65a2e6a96d7bd0496f29381c5a",
+    "object_sha256": "60af13f62ba5c36d37273808c29e89269aa01c8c587742321113de3783bf28d4"
+  },
+  "legacy_upstream": {
+    "commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "files": 794,
+    "physical_lines": 112827,
+    "physical_lines_excluding_blank_import_linecomment": 93437,
+    "max_file": "Lib/Weil/MixedModel/ZeroTerm.lean",
+    "max_lines": 619
+  }
+}

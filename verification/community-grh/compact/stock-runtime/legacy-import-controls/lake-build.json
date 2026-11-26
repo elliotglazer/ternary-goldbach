@@ -1,0 +1,22 @@
+{
+  "LegacyRoot": {
+    "exit": 0,
+    "output": "\u2714 [2/4] Built LegacyLeaf (806ms)\n\u2714 [3/4] Built LegacyMiddle (934ms)\n\u2139 [4/4] Built LegacyRoot (911ms)\ninfo: LegacyRoot.lean:3:0: 'oldRoot' does not depend on any axioms\nBuild completed successfully (4 jobs).\ninfo: LegacyPkg: no previous manifest, creating one from scratch\ninfo: toolchain not updated; already up-to-date\n"
+  },
+  "ModernDirect": {
+    "exit": 1,
+    "output": "\u2716 [4/4] Building ModernDirect (439ms)\ntrace: .> LEAN_PATH=C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\legacy\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean c:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\ModernDirect.lean -o C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean\\ModernDirect.olean -i C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean\\ModernDirect.ilean -c C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\ir\\ModernDirect.c --setup C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\ir\\ModernDirect.setup.json --json\nerror: ModernDirect.lean:1:0: cannot import non-`module` LegacyLeaf from `module`\nSome required targets logged failures:\n- ModernDirect\ninfo: WrapperPkg: no previous manifest, creating one from scratch\ninfo: toolchain not updated; already up-to-date\nerror: build failed\n"
+  },
+  "ModernIndirect": {
+    "exit": 1,
+    "output": "\u2716 [5/5] Building ModernIndirect (459ms)\ntrace: .> LEAN_PATH=C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\legacy\\.lake\\build\\lib\\lean;C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean c:\\Users\\glaze\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\ModernIndirect.lean -o C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean\\ModernIndirect.olean -i C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\lib\\lean\\ModernIndirect.ilean -c C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\ir\\ModernIndirect.c --setup C:\\Users\\glaze\\Documents\\Codex\\tg-goldbach-source-runner\\palomar-legacy-experiment\\packages\\wrapper\\.lake\\build\\ir\\ModernIndirect.setup.json --json\nerror: ModernIndirect.lean:1:0: cannot import non-`module` LegacyMiddle from `module`\nSome required targets logged failures:\n- ModernIndirect\nerror: build failed\n"
+  },
+  "ModernGoodRoot": {
+    "exit": 0,
+    "output": "\u2714 [2/4] Built ModernGoodLeaf (747ms)\n\u2714 [3/4] Built ModernGoodMid (758ms)\n\u2139 [4/4] Built ModernGoodRoot (769ms)\ninfo: ModernGoodRoot.lean:4:0: 'modernRoot' does not depend on any axioms\nBuild completed successfully (4 jobs).\ninfo: ModernPkg: no previous manifest, creating one from scratch\ninfo: toolchain not updated; already up-to-date\n"
+  },
+  "Consolidated": {
+    "exit": 0,
+    "output": "\u2139 [2/2] Built Consolidated (842ms)\ninfo: Consolidated.lean:12:0: 'combined' does not depend on any axioms\nBuild completed successfully (2 jobs).\n"
+  }
+}

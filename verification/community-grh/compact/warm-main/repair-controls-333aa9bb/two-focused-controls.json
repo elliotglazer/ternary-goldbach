@@ -1,0 +1,15 @@
+{
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "exit": 0,
+  "log_sha256": "47d720481090a38c0bc4b85abd5ee75b85bc003e4ce54a13dfc5ba94b3de87cf",
+  "object_sha256": {
+    "Lib.General.Analysis.OstrowskiTaussky": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775",
+    "Mathlib.NumberTheory.NumberField.Discriminant.Basic": "880e5d443426051e054671a2bdecf800cc51949cb2050bbfedf7131b26e01eae"
+  },
+  "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "program": "module\npublic import Lib.General.Analysis.OstrowskiTaussky\npublic import Mathlib.NumberTheory.NumberField.Discriminant.Basic\n@[expose] public section\nopen NumberField Real Matrix\nopen scoped Matrix.Norms.L2Operator\nset_option autoImplicit false\nnoncomputable section\nnamespace PeriodRepairControls\n\ntheorem period (K : Type) [Field K] [NumberField K] (n : \u2115) (hn : 0 < n)\n    (D : \u2115) (z : \u2102) (p : \u211d) (hprod : p = rootDiscr K ^ n)\n    (hx : (\u2016z\u2016 ^ 2) ^ n = p / \u221a(D : \u211d) ^ n) :\n    \u2016z\u2016 ^ 2 = rootDiscr K / \u221a(D : \u211d) := by\n  erw [\u2190 pow_left_inj\u2080 (n := n), div_pow, \u2190 hprod]\n  exact hx\n  all_goals first | positivity | rw [rootDiscr_def]; positivity\n\ntheorem box {\u03b9 : Type} [Fintype \u03b9] {\u03c1 L : \u211d} (h\u03c1 : \u03c1 \u2264 L)\n    (G : Type) (M : G \u2192 Matrix \u03b9 \u03b9 \u2102) :\n    \u2200 \u2983x\u2984, x \u2208 ({x | \u2016M x\u2016 \u2264 \u03c1} : Set G) \u2192 \u2200 i j, \u2016M x i j\u2016 \u2264 L ^ (1 : \u2115) := by\n  intro x hx i j\n  change \u2016M x\u2016 \u2264 \u03c1 at hx\n  rw [pow_one]\n  exact (norm_apply_le_l2_opNorm (A := M x) i j).trans (hx.trans h\u03c1)\n\n#print axioms period\n#print axioms box\nend PeriodRepairControls\n",
+  "program_sha256": "1eb57da2c3b99867181913ab7232cf1d90683d9c7320fbabd504afd4716142b0",
+  "result": "'PeriodRepairControls.period' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PeriodRepairControls.box' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "scope": "The original NumberField.rootDiscr, Mathlib power lemmas, and project norm_apply_le_l2_opNorm are imported. The number field, weighted product identity, operator matrix, and bounds are variables. This verifies the two typed steps, independently of the remaining production source.",
+  "wall_seconds": 20.127
+}

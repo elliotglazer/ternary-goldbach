@@ -1,0 +1,61 @@
+{
+  "mixed": {
+    "meta": {
+      "schema_version": 1,
+      "module_required": true,
+      "maximum_lines": 10000,
+      "files_checked": 3
+    },
+    "issues": [
+      {
+        "error": "source.module_required",
+        "file": "LegacyLeaf.lean",
+        "line": 1
+      },
+      {
+        "error": "source.module_required",
+        "file": "LegacyMiddle.lean",
+        "line": 1
+      }
+    ]
+  },
+  "unused": {
+    "meta": {
+      "schema_version": 1,
+      "module_required": true,
+      "maximum_lines": 10000,
+      "files_checked": 2
+    },
+    "issues": [
+      {
+        "error": "source.module_required",
+        "file": "LegacyLeaf.lean",
+        "line": 1
+      }
+    ]
+  },
+  "positive": {
+    "meta": {
+      "schema_version": 1,
+      "module_required": true,
+      "maximum_lines": 10000,
+      "files_checked": 3
+    },
+    "issues": []
+  },
+  "large": {
+    "meta": {
+      "schema_version": 1,
+      "module_required": true,
+      "maximum_lines": 10000,
+      "files_checked": 1
+    },
+    "issues": [
+      {
+        "error": "source.file_too_long",
+        "file": "Long.lean",
+        "line": 10001
+      }
+    ]
+  }
+}
