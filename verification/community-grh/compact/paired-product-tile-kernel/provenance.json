@@ -1,0 +1,43 @@
+{
+  "source_revision": "fc729595d20448d3689f706378879a30a323a762",
+  "module": "ProductRange563245474818Interval",
+  "original_source_sha256": "475db2e1978432bac936741602aaf8f2615e9bf824afcacc9d3a25d6d545b575",
+  "augmented_source_sha256": "2229552f2ac6874ca4c593494cc0897737eb290c860298da54bdbe9a9de7fbf5",
+  "production_prefix_identical": true,
+  "shared_bitmap": "SmallGoldbach.WideSource22.certifiedSource",
+  "shared_basis": "SmallGoldbach.PilotPrimeProduct.sound",
+  "first_root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+  "union_root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+  "tiles": [
+    {
+      "production_private_theorem": "c48",
+      "row_list": "r48",
+      "lower_inclusive": 563648128002,
+      "upper_exclusive": 563715236866,
+      "even_inputs": 33554432,
+      "encoded_row_count": 8,
+      "packed_literal_count": 16,
+      "list_literal_source_bytes": 12887,
+      "list_literal_sha256": "8d0e62d14d022702118ab8b2af382e40af2a95430dddf1682df60f6c809a4d62"
+    },
+    {
+      "production_private_theorem": "c56",
+      "row_list": "r56",
+      "lower_inclusive": 563715236866,
+      "upper_exclusive": 563782345730,
+      "even_inputs": 33554432,
+      "encoded_row_count": 8,
+      "packed_literal_count": 16,
+      "list_literal_source_bytes": 12846,
+      "list_literal_sha256": "75d7f0e57f1ec9b92a27f00b64fa9ec14c0d55a63471bd6c4d7545f933952758"
+    }
+  ],
+  "repository": "elliotglazer/ternary-goldbach",
+  "lean_release": "4.35.0",
+  "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "dependency_targets": [
+    "+WideSource22:olean",
+    "+PilotPrimeProductBasis:olean"
+  ]
+}

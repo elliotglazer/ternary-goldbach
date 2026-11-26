@@ -1,0 +1,102 @@
+{
+  "scope": "Stock Kernel.Environment.replay against the module's prebuilt imported environment. Each stage requires that its root is absent before replay and present afterward. The first stage adds c48's actual private data and proofs. The second stage reuses first-stage declarations and adds c56 and the pair theorem. Excludes import, exporter, comparator, independent kernel, and shared-basis verification times.",
+  "lean": "4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "compile_receipt": {
+    "source_sha256": "2229552f2ac6874ca4c593494cc0897737eb290c860298da54bdbe9a9de7fbf5",
+    "olean_sha256": "1cde92481157404a15beac8199eaea6ac6bc1388d2db67b03f96c03bb1fa290c",
+    "private_olean_sha256": "57273d2b548e05a4c4bb72b08fc431a004adbbc6c9a2d6bea420e82e51a884cb",
+    "cpu_seconds": [
+      4.609375,
+      10.46875
+    ]
+  },
+  "process_timer": "Windows GetProcessTimes across one synchronization handshake for each stage. Process CPU clock has platform granularity; the in-Lean nanosecond elapsed counter excludes handshake boundaries.",
+  "timing_tool_sha256": "8eef558dd6cb08b1906bbae717b3054f7eabd653d519518b26bf10b0e4aa93b7",
+  "trials": [
+    [
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+        ],
+        "kernel_call_elapsed_ns": 628376500,
+        "process_system_seconds": 0.171875,
+        "process_user_seconds": 0.453125
+      },
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentPair",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+        ],
+        "kernel_call_elapsed_ns": 590153900,
+        "process_system_seconds": 0.140625,
+        "process_user_seconds": 0.453125
+      }
+    ],
+    [
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+        ],
+        "kernel_call_elapsed_ns": 635708400,
+        "process_system_seconds": 0.140625,
+        "process_user_seconds": 0.5
+      },
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentPair",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+        ],
+        "kernel_call_elapsed_ns": 626839000,
+        "process_system_seconds": 0.125,
+        "process_user_seconds": 0.5
+      }
+    ],
+    [
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+        ],
+        "kernel_call_elapsed_ns": 641882800,
+        "process_system_seconds": 0.09375,
+        "process_user_seconds": 0.5625
+      },
+      {
+        "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+        "inserted_declarations": [
+          "SmallGoldbach.ProductRange563245474818.adjacentPair",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+          "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+        ],
+        "kernel_call_elapsed_ns": 590939600,
+        "process_system_seconds": 0.15625,
+        "process_user_seconds": 0.4375
+      }
+    ]
+  ]
+}
