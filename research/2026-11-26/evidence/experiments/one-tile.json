@@ -1,0 +1,1330 @@
+{
+  "experiment": "One-tile proof representation",
+  "records": [
+    {
+      "measurements": {
+        "A": {
+          "checker_process_samples": {
+            "lake": {
+              "elapsed_s": 1408.87,
+              "peak_rss_kib": 163032,
+              "system_cpu_s": 1.51,
+              "user_cpu_s": 137.57
+            },
+            "leanchecker": {
+              "elapsed_s": 536.75,
+              "peak_rss_kib": 5204752,
+              "system_cpu_s": 19.21,
+              "user_cpu_s": 503.59
+            },
+            "nanoda_bin": {
+              "elapsed_s": 728.19,
+              "peak_rss_kib": 3228636,
+              "system_cpu_s": 50.02,
+              "user_cpu_s": 644.71
+            }
+          },
+          "export_numeric_literal_dimensions": {
+            "count": 19395,
+            "largest_decimal_digit_counts": [
+              1263571,
+              326069,
+              316616,
+              79874,
+              4932,
+              4932,
+              4932,
+              4932
+            ]
+          },
+          "native_adapter": {
+            "exit": 0,
+            "log_sha256": "8f1d6ac22bb8e632822cdb0f465358ca0fe6cf52b686931b999e4b94134b5014",
+            "olean_sha256": "f9b13caa202dc0e0957185467877f9637479b1d3fd1faf6580d49b4795f930db",
+            "peak_commit_bytes": 3168120832,
+            "peak_working_set_bytes": 781340672,
+            "system_cpu_seconds": 6.0,
+            "user_cpu_seconds": 11.578125,
+            "wall_s": 20.024
+          },
+          "native_receipt_sha256": "27da643d9a36f112ba66c9ded69a22edca852dbbdf96a5e5f18d4f8e7bd67d4c",
+          "production_rebuilds": {
+            "ProductRange564319216642Interval": {
+              "elapsed_s": 18.32,
+              "system_cpu_s": 6.375,
+              "user_cpu_s": 10.875
+            },
+            "WideSource22": {
+              "elapsed_s": 202.072,
+              "system_cpu_s": 17.4375,
+              "user_cpu_s": 184.40625
+            }
+          },
+          "protected_exit": 0,
+          "protected_receipt_sha256": "b61344daa4597d27925ea13f3762b7a6ad530f30ae3a30d62740c2405be78399",
+          "protected_wall_seconds": 1409.97,
+          "solution_export": {
+            "bytes": 28777802,
+            "exit": 0,
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "peak_commit_bytes": 3938156544,
+            "peak_working_set_bytes": 1487654912,
+            "sha256": "76090314a4a55061f8930501ed44e00f17e4cb4c7b1ef96672c5d5c10539dc56",
+            "system_cpu_seconds": 145.265625,
+            "user_cpu_seconds": 751.59375,
+            "wall_s": 1017.051
+          },
+          "solution_export_sha256": "76090314a4a55061f8930501ed44e00f17e4cb4c7b1ef96672c5d5c10539dc56",
+          "variant": "source literal",
+          "verdicts": {
+            "Lean default": true,
+            "nanoda": true
+          }
+        },
+        "B": {
+          "checker_process_samples": {
+            "lake": {
+              "elapsed_s": 852.34,
+              "peak_rss_kib": 164628,
+              "system_cpu_s": 0.35,
+              "user_cpu_s": 9.07
+            },
+            "leanchecker": {
+              "elapsed_s": 427.96,
+              "peak_rss_kib": 5205464,
+              "system_cpu_s": 16.25,
+              "user_cpu_s": 404.09
+            },
+            "nanoda_bin": {
+              "elapsed_s": 413.96,
+              "peak_rss_kib": 3243092,
+              "system_cpu_s": 19.82,
+              "user_cpu_s": 390.28
+            }
+          },
+          "export_numeric_literal_dimensions": {
+            "count": 19394,
+            "largest_decimal_digit_counts": [
+              326069,
+              316616,
+              79874,
+              4932,
+              4932,
+              4932,
+              4932,
+              4932
+            ]
+          },
+          "native_adapter": {
+            "exit": 0,
+            "log_sha256": "8f1d6ac22bb8e632822cdb0f465358ca0fe6cf52b686931b999e4b94134b5014",
+            "olean_sha256": "f9b13caa202dc0e0957185467877f9637479b1d3fd1faf6580d49b4795f930db",
+            "peak_commit_bytes": 3169153024,
+            "peak_working_set_bytes": 781279232,
+            "system_cpu_seconds": 3.125,
+            "user_cpu_seconds": 6.21875,
+            "wall_s": 10.011
+          },
+          "native_receipt_sha256": "f875953cd139a072d60cc31d22a3fdf7cd0ef806208ae7a45329b60ab56397d8",
+          "production_rebuilds": {
+            "ProductRange564319216642Interval": {
+              "elapsed_s": 10.011,
+              "system_cpu_s": 2.71875,
+              "user_cpu_s": 6.78125
+            },
+            "WideSource22": {
+              "elapsed_s": 463.628,
+              "system_cpu_s": 22.671875,
+              "user_cpu_s": 247.15625
+            }
+          },
+          "protected_exit": 0,
+          "protected_receipt_sha256": "f27c67aaca6b3b71bedc188b9999a7f77bfea93b2469a2ea60578442524a7cea",
+          "protected_wall_seconds": 853.38,
+          "solution_export": {
+            "bytes": 27531187,
+            "exit": 0,
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "peak_commit_bytes": 3938504704,
+            "peak_working_set_bytes": 1459404800,
+            "sha256": "5b226cc87f7d9cce050748b5a91d73c2dfbe94747f9b9a7118c1314cff4fe1c9",
+            "system_cpu_seconds": 16.234375,
+            "user_cpu_seconds": 57.15625,
+            "wall_s": 1091.405
+          },
+          "solution_export_sha256": "5b226cc87f7d9cce050748b5a91d73c2dfbe94747f9b9a7118c1314cff4fe1c9",
+          "variant": "balanced expression",
+          "verdicts": {
+            "Lean default": true,
+            "nanoda": true
+          }
+        },
+        "same_export_challenge_sha256": "bf27424f01b44f308db6cada4ef59d2b0dd7f2d3b3c4986dff148c89421254c4",
+        "same_policy_sha256": "3f5a1552d1a740e334b1b653ec3342ac00c356f8a03cab7ccf4dfd09a505e407",
+        "same_published_target": [
+          "SmallGoldbach.ProductRange564319216642.covered"
+        ],
+        "savings_comparison": {
+          "measured_export_cpu_s_A": 896.859375,
+          "measured_export_cpu_s_B": 73.390625,
+          "selective_end_to_end_cpu_s_A": 2472.5631249999997,
+          "selective_end_to_end_cpu_s_B": 1192.57875
+        },
+        "wide_source_expression_equivalence": {
+          "balanced_expression_sha256": "7b87ae89d07445b2bd1ffca347693ba4b299c57b6ab28f9c56971a131e01e724",
+          "balanced_operands": 193,
+          "baseline_commit": "fc729595d20448d3689f706378879a30a323a762",
+          "baseline_wide_sha256": "bad5e0e24f9dd0b5f2d7a751e6f8f171d87ce574b1cc2be74a067c83806f198d",
+          "expanded_expression_sha256": "10486f9037b41de5ada171366d18fa5f807413da9b8533f50b690c77f4b31305",
+          "expanded_operand_count": 192,
+          "identical_unsigned_integer_little_endian_sha256": "da9efb81462fa6e3fbca70c951f7562715fb9266a320e542a33a3085575e15a6",
+          "independent_challenge_export_sha256": "bf27424f01b44f308db6cada4ef59d2b0dd7f2d3b3c4986dff148c89421254c4",
+          "independent_challenge_sha256": "da2651d849dae954bceb52b1b68e54097d17172fd91ef191946735fbff57ea68",
+          "mathematical_bit_length": 4197491,
+          "original_hex_digits": 1049373,
+          "shifted_small_operands": 192,
+          "source_bytes_after": 3496843,
+          "source_bytes_before": 3753091,
+          "terminal_source_sha256": "9b92f6cfd6cdba2d7000d1573d01d6c8951a2cd4357304f082d92e6648ab74f8",
+          "variant_wide_sha256": "5d8add9c9170bcbdd8dbb734d787ce3abaf81a451357a9f6f544d4c4da62e368"
+        }
+      },
+      "original_bytes": 7243,
+      "original_sha256": "18011eba073069614e7ac8650a6d9bf5ca902ada8ae3ef934dde4dda2b2f4d5c",
+      "report_name": "matched-results.json"
+    },
+    {
+      "measurements": {
+        "count_distribution": {
+          "1": 1,
+          "128": 1,
+          "16": 3,
+          "24": 1,
+          "40": 1,
+          "48": 1,
+          "56": 2,
+          "64": 91,
+          "8": 10
+        },
+        "direct_source_users": 111,
+        "tiles": 6305,
+        "users": [
+          {
+            "bytes": 13307,
+            "file": "ProductRange564319216642Interval.lean",
+            "public_coverage": [
+              "covered",
+              "564319216642",
+              "564386325506"
+            ],
+            "tiles": 1
+          },
+          {
+            "bytes": 100945,
+            "file": "ProductRange138043712514Interval.lean",
+            "public_coverage": [
+              "covered",
+              "138043712514",
+              "138580583426"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100922,
+            "file": "ProductRange138580583426Interval.lean",
+            "public_coverage": [
+              "covered",
+              "138580583426",
+              "139117454338"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100454,
+            "file": "ProductRange139117454338Interval.lean",
+            "public_coverage": [
+              "covered",
+              "139117454338",
+              "139654325250"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100797,
+            "file": "ProductRange139654325250Interval.lean",
+            "public_coverage": [
+              "covered",
+              "139654325250",
+              "140191196162"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100801,
+            "file": "ProductRange140191196162Interval.lean",
+            "public_coverage": [
+              "covered",
+              "140191196162",
+              "140728067074"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100412,
+            "file": "ProductRange140728067074Interval.lean",
+            "public_coverage": [
+              "covered",
+              "140728067074",
+              "141264937986"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 100801,
+            "file": "ProductRange162739774466Interval.lean",
+            "public_coverage": [
+              "covered",
+              "162739774466",
+              "163276645378"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 104809,
+            "file": "ProductRange561097991170Interval.lean",
+            "public_coverage": [
+              "covered",
+              "561097991170",
+              "561634862082"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 104613,
+            "file": "ProductRange563245474818Interval.lean",
+            "public_coverage": [
+              "covered",
+              "563245474818",
+              "563782345730"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 102364,
+            "file": "WideProbe22Interval.lean",
+            "public_coverage": [
+              "covered",
+              "268503344130",
+              "269040215042"
+            ],
+            "tiles": 8
+          },
+          {
+            "bytes": 204723,
+            "file": "ProductRange266355860482Interval.lean",
+            "public_coverage": [
+              "covered",
+              "266355860482",
+              "267429602306"
+            ],
+            "tiles": 16
+          },
+          {
+            "bytes": 209056,
+            "file": "ProductRange560024249346Interval.lean",
+            "public_coverage": [
+              "covered",
+              "560024249346",
+              "561097991170"
+            ],
+            "tiles": 16
+          },
+          {
+            "bytes": 208400,
+            "file": "ProductRange561634862082Interval.lean",
+            "public_coverage": [
+              "covered",
+              "561634862082",
+              "562708603906"
+            ],
+            "tiles": 16
+          },
+          {
+            "bytes": 302128,
+            "file": "ProductRange161129161730Interval.lean",
+            "public_coverage": [
+              "covered",
+              "161129161730",
+              "162739774466"
+            ],
+            "tiles": 24
+          },
+          {
+            "bytes": 502310,
+            "file": "ProductRange145559905282Interval.lean",
+            "public_coverage": [
+              "covered",
+              "145559905282",
+              "148244259842"
+            ],
+            "tiles": 40
+          },
+          {
+            "bytes": 616653,
+            "file": "ProductRange329169757186Interval.lean",
+            "public_coverage": [
+              "covered",
+              "329169757186",
+              "332390982658"
+            ],
+            "tiles": 48
+          },
+          {
+            "bytes": 705070,
+            "file": "ProductRange156834194434Interval.lean",
+            "public_coverage": [
+              "covered",
+              "156834194434",
+              "160592290818"
+            ],
+            "tiles": 56
+          },
+          {
+            "bytes": 724864,
+            "file": "ProductRange440302035970Interval.lean",
+            "public_coverage": [
+              "covered",
+              "440302035970",
+              "444060132354"
+            ],
+            "tiles": 56
+          },
+          {
+            "bytes": 802499,
+            "file": "ProductRange141264937986Interval.lean",
+            "public_coverage": [
+              "covered",
+              "141264937986",
+              "145559905282"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 803997,
+            "file": "ProductRange148244259842Interval.lean",
+            "public_coverage": [
+              "covered",
+              "148244259842",
+              "152539227138"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 805511,
+            "file": "ProductRange152539227138Interval.lean",
+            "public_coverage": [
+              "covered",
+              "152539227138",
+              "156834194434"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 808988,
+            "file": "ProductRange163276645378Interval.lean",
+            "public_coverage": [
+              "covered",
+              "163276645378",
+              "167571612674"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 807652,
+            "file": "ProductRange167571612674Interval.lean",
+            "public_coverage": [
+              "covered",
+              "167571612674",
+              "171866579970"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 806141,
+            "file": "ProductRange171866579970Interval.lean",
+            "public_coverage": [
+              "covered",
+              "171866579970",
+              "176161547266"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 808949,
+            "file": "ProductRange176161547266Interval.lean",
+            "public_coverage": [
+              "covered",
+              "176161547266",
+              "180456514562"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 807899,
+            "file": "ProductRange180456514562Interval.lean",
+            "public_coverage": [
+              "covered",
+              "180456514562",
+              "184751481858"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 809080,
+            "file": "ProductRange184751481858Interval.lean",
+            "public_coverage": [
+              "covered",
+              "184751481858",
+              "189046449154"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 809202,
+            "file": "ProductRange189046449154Interval.lean",
+            "public_coverage": [
+              "covered",
+              "189046449154",
+              "193341416450"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 810342,
+            "file": "ProductRange193341416450Interval.lean",
+            "public_coverage": [
+              "covered",
+              "193341416450",
+              "197636383746"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 810469,
+            "file": "ProductRange197636383746Interval.lean",
+            "public_coverage": [
+              "covered",
+              "197636383746",
+              "201931351042"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 810382,
+            "file": "ProductRange201931351042Interval.lean",
+            "public_coverage": [
+              "covered",
+              "201931351042",
+              "206226318338"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 810892,
+            "file": "ProductRange206226318338Interval.lean",
+            "public_coverage": [
+              "covered",
+              "206226318338",
+              "210521285634"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 810663,
+            "file": "ProductRange210521285634Interval.lean",
+            "public_coverage": [
+              "covered",
+              "210521285634",
+              "214816252930"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 813016,
+            "file": "ProductRange214816252930Interval.lean",
+            "public_coverage": [
+              "covered",
+              "214816252930",
+              "219111220226"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 813789,
+            "file": "ProductRange219111220226Interval.lean",
+            "public_coverage": [
+              "covered",
+              "219111220226",
+              "223406187522"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 813820,
+            "file": "ProductRange223406187522Interval.lean",
+            "public_coverage": [
+              "covered",
+              "223406187522",
+              "227701154818"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 812431,
+            "file": "ProductRange227701154818Interval.lean",
+            "public_coverage": [
+              "covered",
+              "227701154818",
+              "231996122114"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 813142,
+            "file": "ProductRange231996122114Interval.lean",
+            "public_coverage": [
+              "covered",
+              "231996122114",
+              "236291089410"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 816445,
+            "file": "ProductRange236291089410Interval.lean",
+            "public_coverage": [
+              "covered",
+              "236291089410",
+              "240586056706"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 814873,
+            "file": "ProductRange240586056706Interval.lean",
+            "public_coverage": [
+              "covered",
+              "240586056706",
+              "244881024002"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 813771,
+            "file": "ProductRange244881024002Interval.lean",
+            "public_coverage": [
+              "covered",
+              "244881024002",
+              "249175991298"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 815042,
+            "file": "ProductRange249175991298Interval.lean",
+            "public_coverage": [
+              "covered",
+              "249175991298",
+              "253470958594"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 814318,
+            "file": "ProductRange253470958594Interval.lean",
+            "public_coverage": [
+              "covered",
+              "253470958594",
+              "257765925890"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 815838,
+            "file": "ProductRange257765925890Interval.lean",
+            "public_coverage": [
+              "covered",
+              "257765925890",
+              "262060893186"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 816626,
+            "file": "ProductRange262060893186Interval.lean",
+            "public_coverage": [
+              "covered",
+              "262060893186",
+              "266355860482"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 816649,
+            "file": "ProductRange269040215042Interval.lean",
+            "public_coverage": [
+              "covered",
+              "269040215042",
+              "273335182338"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 816804,
+            "file": "ProductRange273335182338Interval.lean",
+            "public_coverage": [
+              "covered",
+              "273335182338",
+              "277630149634"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 818492,
+            "file": "ProductRange277630149634Interval.lean",
+            "public_coverage": [
+              "covered",
+              "277630149634",
+              "281925116930"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 817317,
+            "file": "ProductRange281925116930Interval.lean",
+            "public_coverage": [
+              "covered",
+              "281925116930",
+              "286220084226"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 818529,
+            "file": "ProductRange286220084226Interval.lean",
+            "public_coverage": [
+              "covered",
+              "286220084226",
+              "290515051522"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 818136,
+            "file": "ProductRange290515051522Interval.lean",
+            "public_coverage": [
+              "covered",
+              "290515051522",
+              "294810018818"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 820675,
+            "file": "ProductRange294810018818Interval.lean",
+            "public_coverage": [
+              "covered",
+              "294810018818",
+              "299104986114"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 820437,
+            "file": "ProductRange299104986114Interval.lean",
+            "public_coverage": [
+              "covered",
+              "299104986114",
+              "303399953410"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 819997,
+            "file": "ProductRange303399953410Interval.lean",
+            "public_coverage": [
+              "covered",
+              "303399953410",
+              "307694920706"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 820993,
+            "file": "ProductRange307694920706Interval.lean",
+            "public_coverage": [
+              "covered",
+              "307694920706",
+              "311989888002"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 819857,
+            "file": "ProductRange311989888002Interval.lean",
+            "public_coverage": [
+              "covered",
+              "311989888002",
+              "316284855298"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 819712,
+            "file": "ProductRange316284855298Interval.lean",
+            "public_coverage": [
+              "covered",
+              "316284855298",
+              "320579822594"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822054,
+            "file": "ProductRange320579822594Interval.lean",
+            "public_coverage": [
+              "covered",
+              "320579822594",
+              "324874789890"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822642,
+            "file": "ProductRange324874789890Interval.lean",
+            "public_coverage": [
+              "covered",
+              "324874789890",
+              "329169757186"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 820366,
+            "file": "ProductRange332927853570Interval.lean",
+            "public_coverage": [
+              "covered",
+              "332927853570",
+              "337222820866"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822188,
+            "file": "ProductRange337222820866Interval.lean",
+            "public_coverage": [
+              "covered",
+              "337222820866",
+              "341517788162"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 821134,
+            "file": "ProductRange341517788162Interval.lean",
+            "public_coverage": [
+              "covered",
+              "341517788162",
+              "345812755458"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822450,
+            "file": "ProductRange345812755458Interval.lean",
+            "public_coverage": [
+              "covered",
+              "345812755458",
+              "350107722754"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822153,
+            "file": "ProductRange350107722754Interval.lean",
+            "public_coverage": [
+              "covered",
+              "350107722754",
+              "354402690050"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822788,
+            "file": "ProductRange354402690050Interval.lean",
+            "public_coverage": [
+              "covered",
+              "354402690050",
+              "358697657346"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 824412,
+            "file": "ProductRange358697657346Interval.lean",
+            "public_coverage": [
+              "covered",
+              "358697657346",
+              "362992624642"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 825964,
+            "file": "ProductRange362992624642Interval.lean",
+            "public_coverage": [
+              "covered",
+              "362992624642",
+              "367287591938"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 822689,
+            "file": "ProductRange367287591938Interval.lean",
+            "public_coverage": [
+              "covered",
+              "367287591938",
+              "371582559234"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 824015,
+            "file": "ProductRange371582559234Interval.lean",
+            "public_coverage": [
+              "covered",
+              "371582559234",
+              "375877526530"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 826335,
+            "file": "ProductRange375877526530Interval.lean",
+            "public_coverage": [
+              "covered",
+              "375877526530",
+              "380172493826"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 823368,
+            "file": "ProductRange380172493826Interval.lean",
+            "public_coverage": [
+              "covered",
+              "380172493826",
+              "384467461122"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 825616,
+            "file": "ProductRange384467461122Interval.lean",
+            "public_coverage": [
+              "covered",
+              "384467461122",
+              "388762428418"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 824318,
+            "file": "ProductRange388762428418Interval.lean",
+            "public_coverage": [
+              "covered",
+              "388762428418",
+              "393057395714"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 825223,
+            "file": "ProductRange393057395714Interval.lean",
+            "public_coverage": [
+              "covered",
+              "393057395714",
+              "397352363010"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827636,
+            "file": "ProductRange397352363010Interval.lean",
+            "public_coverage": [
+              "covered",
+              "397352363010",
+              "401647330306"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 826290,
+            "file": "ProductRange401647330306Interval.lean",
+            "public_coverage": [
+              "covered",
+              "401647330306",
+              "405942297602"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 826349,
+            "file": "ProductRange405942297602Interval.lean",
+            "public_coverage": [
+              "covered",
+              "405942297602",
+              "410237264898"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827464,
+            "file": "ProductRange410237264898Interval.lean",
+            "public_coverage": [
+              "covered",
+              "410237264898",
+              "414532232194"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827455,
+            "file": "ProductRange414532232194Interval.lean",
+            "public_coverage": [
+              "covered",
+              "414532232194",
+              "418827199490"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827436,
+            "file": "ProductRange418827199490Interval.lean",
+            "public_coverage": [
+              "covered",
+              "418827199490",
+              "423122166786"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827435,
+            "file": "ProductRange423122166786Interval.lean",
+            "public_coverage": [
+              "covered",
+              "423122166786",
+              "427417134082"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 826385,
+            "file": "ProductRange427417134082Interval.lean",
+            "public_coverage": [
+              "covered",
+              "427417134082",
+              "431712101378"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 828252,
+            "file": "ProductRange431712101378Interval.lean",
+            "public_coverage": [
+              "covered",
+              "431712101378",
+              "436007068674"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 827310,
+            "file": "ProductRange436007068674Interval.lean",
+            "public_coverage": [
+              "covered",
+              "436007068674",
+              "440302035970"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 828974,
+            "file": "ProductRange452650066946Interval.lean",
+            "public_coverage": [
+              "covered",
+              "452650066946",
+              "456945034242"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 828552,
+            "file": "ProductRange456945034242Interval.lean",
+            "public_coverage": [
+              "covered",
+              "456945034242",
+              "461240001538"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 829412,
+            "file": "ProductRange461240001538Interval.lean",
+            "public_coverage": [
+              "covered",
+              "461240001538",
+              "465534968834"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831756,
+            "file": "ProductRange465534968834Interval.lean",
+            "public_coverage": [
+              "covered",
+              "465534968834",
+              "469829936130"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 830062,
+            "file": "ProductRange469829936130Interval.lean",
+            "public_coverage": [
+              "covered",
+              "469829936130",
+              "474124903426"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 829611,
+            "file": "ProductRange474124903426Interval.lean",
+            "public_coverage": [
+              "covered",
+              "474124903426",
+              "478419870722"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 829829,
+            "file": "ProductRange478419870722Interval.lean",
+            "public_coverage": [
+              "covered",
+              "478419870722",
+              "482714838018"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 829830,
+            "file": "ProductRange482714838018Interval.lean",
+            "public_coverage": [
+              "covered",
+              "482714838018",
+              "487009805314"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 830543,
+            "file": "ProductRange487009805314Interval.lean",
+            "public_coverage": [
+              "covered",
+              "487009805314",
+              "491304772610"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831046,
+            "file": "ProductRange491304772610Interval.lean",
+            "public_coverage": [
+              "covered",
+              "491304772610",
+              "495599739906"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 833880,
+            "file": "ProductRange495599739906Interval.lean",
+            "public_coverage": [
+              "covered",
+              "495599739906",
+              "499894707202"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 830529,
+            "file": "ProductRange499894707202Interval.lean",
+            "public_coverage": [
+              "covered",
+              "499894707202",
+              "504189674498"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831684,
+            "file": "ProductRange504189674498Interval.lean",
+            "public_coverage": [
+              "covered",
+              "504189674498",
+              "508484641794"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831175,
+            "file": "ProductRange508484641794Interval.lean",
+            "public_coverage": [
+              "covered",
+              "508484641794",
+              "512779609090"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 832126,
+            "file": "ProductRange512779609090Interval.lean",
+            "public_coverage": [
+              "covered",
+              "512779609090",
+              "517074576386"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 833421,
+            "file": "ProductRange517074576386Interval.lean",
+            "public_coverage": [
+              "covered",
+              "517074576386",
+              "521369543682"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 832081,
+            "file": "ProductRange521369543682Interval.lean",
+            "public_coverage": [
+              "covered",
+              "521369543682",
+              "525664510978"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 830624,
+            "file": "ProductRange525664510978Interval.lean",
+            "public_coverage": [
+              "covered",
+              "525664510978",
+              "529959478274"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 833616,
+            "file": "ProductRange529959478274Interval.lean",
+            "public_coverage": [
+              "covered",
+              "529959478274",
+              "534254445570"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831298,
+            "file": "ProductRange534254445570Interval.lean",
+            "public_coverage": [
+              "covered",
+              "534254445570",
+              "538549412866"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 831724,
+            "file": "ProductRange538549412866Interval.lean",
+            "public_coverage": [
+              "covered",
+              "538549412866",
+              "542844380162"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 833863,
+            "file": "ProductRange542844380162Interval.lean",
+            "public_coverage": [
+              "covered",
+              "542844380162",
+              "547139347458"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 834571,
+            "file": "ProductRange547139347458Interval.lean",
+            "public_coverage": [
+              "covered",
+              "547139347458",
+              "551434314754"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 836622,
+            "file": "ProductRange551434314754Interval.lean",
+            "public_coverage": [
+              "covered",
+              "551434314754",
+              "555729282050"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 832590,
+            "file": "ProductRange555729282050Interval.lean",
+            "public_coverage": [
+              "covered",
+              "555729282050",
+              "560024249346"
+            ],
+            "tiles": 64
+          },
+          {
+            "bytes": 1660409,
+            "file": "ProductRange444060132354Interval.lean",
+            "public_coverage": [
+              "covered",
+              "444060132354",
+              "452650066946"
+            ],
+            "tiles": 128
+          }
+        ]
+      },
+      "original_bytes": 23613,
+      "original_sha256": "15b84a8efee45b37eaf87169b79b0054891cee95eec51930ff3087fe6d81ddd5",
+      "report_name": "frontend-population.json"
+    }
+  ],
+  "scope": "Matched baseline and balanced-expression runs on the same tile. Export, Lean and NanoDa costs are distinct phases."
+}

@@ -1,0 +1,144 @@
+{
+  "experiment": "64-tile proof representation",
+  "records": [
+    {
+      "measurements": {
+        "balanced": {
+          "challenge_export_sha256": "84f980cbfcafd7a063f50bf84b116897b9118f6ddaeeffaa97043d9ff48aed98",
+          "frontend_cpu_trials_s": [
+            103.59375,
+            115.078125
+          ],
+          "kernel_peak_rss_mib": {
+            "nanoda": 3842.04,
+            "statement_and_axioms": 159.61,
+            "stock_lean": 5835.42
+          },
+          "native_receipt_sha256": "7ac099b6c08c189813c47fa0d40757019091ab80ff6561cd623e9c27d11c03a9",
+          "phase_wall_s": {
+            "export": 133.099
+          },
+          "protected_comparator_wall_s": 1575.45,
+          "protected_receipt_sha256": "4a28b288bae1a8eb92d5cb5c95fa0c6e174db736d4557f93309440d13c58c0fb",
+          "solution_export_bytes": 29008541,
+          "solution_export_sha256": "4ea3effaaf205cbc2f23ebb1efe70d92a53dce47c1e4c80862935703e2971933",
+          "target_facets_sha256": {
+            ".olean": "ef79c3f4631c28dd56bdf91cba6b96e5d097685e74070a32f7dd3f095b0344f9",
+            ".olean.private": "ef33c834975f4449a701c43f455a363662add9f0924e645bcc5f39cb72986a10"
+          },
+          "touched_phases_cpu_s": {
+            "consumer_frontend_mean": 109.3359375,
+            "nanoda": 874.01,
+            "solution_export": 129.8125,
+            "statement_and_axioms": 25.099999999999998,
+            "stock_lean": 434.95000000000005
+          }
+        },
+        "baseline": {
+          "challenge_export_sha256": "84f980cbfcafd7a063f50bf84b116897b9118f6ddaeeffaa97043d9ff48aed98",
+          "frontend_cpu_trials_s": [
+            90.9375,
+            90.8125
+          ],
+          "kernel_peak_rss_mib": {
+            "nanoda": 3215.19,
+            "statement_and_axioms": 159.44,
+            "stock_lean": 5643.8
+          },
+          "native_receipt_sha256": "9e5842d8e242b418e4c0707bbc50c23af68f25d8b673eee079fb81f11a40e327",
+          "phase_wall_s": {
+            "export": 936.12
+          },
+          "protected_comparator_wall_s": 900.04,
+          "protected_receipt_sha256": "16545d91fa9e1a8211c4a23a42c60f6b7ccfdfb00fe82504134a197315c48bd4",
+          "solution_export_bytes": 30255156,
+          "solution_export_sha256": "a9e727f461753f6e6ebca946ac060e857052534e8dbc0531e578613d85787310",
+          "target_facets_sha256": {
+            ".olean": "ef79c3f4631c28dd56bdf91cba6b96e5d097685e74070a32f7dd3f095b0344f9",
+            ".olean.private": "ef33c834975f4449a701c43f455a363662add9f0924e645bcc5f39cb72986a10"
+          },
+          "touched_phases_cpu_s": {
+            "consumer_frontend_mean": 90.875,
+            "nanoda": 470.9,
+            "solution_export": 872.625,
+            "statement_and_axioms": 88.96,
+            "stock_lean": 326.53
+          }
+        },
+        "delta_balanced_minus_baseline_cpu_s": {
+          "consumer_frontend_mean": 18.460938,
+          "nanoda": 403.11,
+          "solution_export": -742.8125,
+          "statement_and_axioms": -63.86,
+          "stock_lean": 108.42
+        },
+        "frontend_family_sensitivity": {
+          "direct_modules": 111,
+          "extrapolated_cpu_minutes_if_delta_linear_in_tiles": 30.312,
+          "total_tiles": 6305
+        },
+        "measured_total_selected_cpu_delta_s": -276.681562,
+        "one_to_64_tile_sensitivity": {
+          "nanoda": {
+            "difference_of_differences_per_additional_tile_s": 10.9165079,
+            "one_tile_delta_s": -284.63,
+            "sixty_four_tile_delta_s": 403.11
+          },
+          "solution_export": {
+            "difference_of_differences_per_additional_tile_s": 1.2802579,
+            "one_tile_delta_s": -823.46875,
+            "sixty_four_tile_delta_s": -742.8125
+          },
+          "statement_and_axioms": {
+            "difference_of_differences_per_additional_tile_s": 1.0444444,
+            "one_tile_delta_s": -129.66,
+            "sixty_four_tile_delta_s": -63.86
+          },
+          "stock_lean": {
+            "difference_of_differences_per_additional_tile_s": 3.3473016,
+            "one_tile_delta_s": -102.46,
+            "sixty_four_tile_delta_s": 108.42
+          }
+        },
+        "scope": {
+          "inclusive_even_upper": 560024249344,
+          "inclusive_lower": 555729282050,
+          "matching_source_commit": "fc729595d20448d3689f706378879a30a323a762",
+          "same_exact_theorem": "SmallGoldbach.ProductRange555729282050.covered",
+          "strict_upper": 560024249346,
+          "tile_count": 64
+        }
+      },
+      "original_bytes": 6398,
+      "original_sha256": "6ad5e9d501d957da933f4310a896447b3cb0dc7b2535679ae4478ccac4b03b82",
+      "report_name": "matched-64-tile-results.json"
+    },
+    {
+      "measurements": {
+        "inputs": [
+          "76090314a4a55061f8930501ed44e00f17e4cb4c7b1ef96672c5d5c10539dc56",
+          "a9e727f461753f6e6ebca946ac060e857052534e8dbc0531e578613d85787310"
+        ],
+        "number_shared_expressions": 423437,
+        "per_export": [
+          {
+            "all_expression_record_bytes": 26802481,
+            "bytes": 28777802,
+            "expression_bytes_of_shapes_present_in_both": 26689345,
+            "unique_expression_shapes": 425364
+          },
+          {
+            "all_expression_record_bytes": 28243299,
+            "bytes": 30255156,
+            "expression_bytes_of_shapes_present_in_both": 26689276,
+            "unique_expression_shapes": 436848
+          }
+        ]
+      },
+      "original_bytes": 623,
+      "original_sha256": "ff1946d740d1b40fafeb8f27f65e74b781336eb83a370b6b83271e27c349ad8b",
+      "report_name": "one-vs-64-shared-expressions.json"
+    }
+  ],
+  "scope": "A protected A/B comparison on the same theorem and a comparison of expression sharing at different scales."
+}

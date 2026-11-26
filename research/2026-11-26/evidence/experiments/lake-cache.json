@@ -1,0 +1,28 @@
+{
+  "experiment": "Lake dependency and trace reuse",
+  "records": [
+    {
+      "measurements": {
+        "final_project_object_count": 4,
+        "first": {
+          "exit": 0,
+          "wall_seconds": 4.158
+        },
+        "first_project_object_count": 2,
+        "main_mathA_object_mtimes_unchanged": true,
+        "removed_completed_setup": [
+          "Main.setup.json",
+          "MathA.setup.json"
+        ],
+        "second": {
+          "exit": 0,
+          "wall_seconds": 2.799
+        }
+      },
+      "original_bytes": 803,
+      "original_sha256": "204265e6e4f0863043cdbf73a2f3fa8fd519ef65648fc9c640b17fbd147089d2",
+      "report_name": "lean435-separate-main-control.json"
+    }
+  ],
+  "scope": "Separate ordinary Lake controls test whether a second root rebuilds an unchanged ancestor and whether earlier finite objects can be reused after a configuration change."
+}

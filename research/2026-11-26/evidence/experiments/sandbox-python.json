@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "bwrap_status_present": true,
+      "exit": 127,
+      "interpreter_version": "3.11.10",
+      "missing_shared_library": "libpython3.11.so.1.0",
+      "policy": "046554302064b2c83c2b924bea6db87fc5900c68",
+      "stock_seccomp": true,
+      "venv_executable": "copied"
+    },
+    {
+      "bwrap_status_present": true,
+      "exit": 127,
+      "interpreter_version": "3.11.18",
+      "missing_shared_library": "libpython3.11.so.1.0",
+      "policy": "046554302064b2c83c2b924bea6db87fc5900c68",
+      "stock_seccomp": true,
+      "venv_executable": "copied"
+    },
+    {
+      "bwrap_status_present": true,
+      "exit": 0,
+      "interpreter_version": "3.11.18",
+      "policy": "046554302064b2c83c2b924bea6db87fc5900c68",
+      "runtime_check_passed": true,
+      "stock_seccomp": true,
+      "venv_executable": "linked"
+    }
+  ],
+  "original_sha256": "c9ee1427914ae857ca529c4735883e3ab4e20bb002ec3c2139fa4ea425fb4dee",
+  "scope": "Existing interpreter copies failed library resolution in stock bubblewrap under seccomp. The symlinked Python 3.11.18 environment resolved its real trusted interpreter and successfully imported the tested modules. This is a sandbox startup control."
+}

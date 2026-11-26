@@ -1,0 +1,3698 @@
+{
+  "scope": "Recorded Linux source attempts. Diagnostics preserve each source-located Lean error header, including cascades and repeats. The terminal result and module list come from each writer when available. Times are UTC. Independent kernel verdicts are separate.",
+  "runs": [
+    {
+      "kind": "early compact challenge build",
+      "source_commit": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "source_tree": "64fdf655501018bce8a241aa653a385d217017ee",
+      "exit": 1,
+      "receipt_sha256": "600adc819c6779ab2f7a638551bcead104d89a091f5b030b7f651a54643db8b2",
+      "public_record": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/ec2-challenge-build-e0722a0e.json",
+      "result": "ProofWidgets tried to produce its package lock during the challenge build; the project source build had not started",
+      "failed_targets": [
+        "proofwidgets/widgetPackageLock"
+      ],
+      "recorded_steps": [
+        {
+          "cgroup_lifetime_peak_bytes": 14293651456,
+          "cgroup_sampled_peak_bytes": 13950500864,
+          "cpu_seconds": 121.545827,
+          "exit": 0,
+          "name": "mathlib-cache",
+          "wall_seconds": 21.97881817817688
+        },
+        {
+          "cgroup_lifetime_peak_bytes": 14293651456,
+          "cgroup_sampled_peak_bytes": 14062505984,
+          "cpu_seconds": 1.956328,
+          "exit": 1,
+          "name": "challenge-build",
+          "wall_seconds": 2.168154716491699
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "source_commit": "0b68b493791e5f7569021f0cd13454151af47584",
+      "source_tree": "6d8764b58d1a41584cd5d43fd3e400f6ee55d18e",
+      "receipt_sha256": "e65c2f0c292338b9a2242e52afda0196d9ea161b9bebad5c12d76c71960ef51d",
+      "archive_sha256": "aa275483a4eeb0cc4724804f13ccd664ea10a01365277a1d48a3ac905d65caf0",
+      "start_utc": "2026-11-26T00:09:04Z",
+      "finish_utc": "2026-11-26T01:40:13Z",
+      "exit": 1,
+      "kind": "early joint source replay",
+      "result": "stopped by operator after confirmed Lean source failures; memory limits were raised for diagnosis",
+      "failed_targets": [
+        "Lib.General.Analysis.ZpowSum",
+        "Lib.General.Algebra.RingActions",
+        "Lib.GaloisRep.Pseudocharacter.SemisimpleReps",
+        "TernaryGoldbach.MajorArcs.HHFourier",
+        "Lib.Shimura.Uniformisation.Frames",
+        "Lib.General.Groups.ArtinDefs",
+        "Lib.ClassField.GaloisCohomology.DiscreteUnits",
+        "Lib.DiscreteSeries.Haar.CompactDualMeasure",
+        "Lib.LocalGL.Green.MackeyFormula",
+        "MajorEnergy"
+      ]
+    },
+    {
+      "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+      "source_tree": "5666784d088ba92460d084ddd8ac9ab8ac568a99",
+      "receipt_sha256": "54e4e1eabe1e6529d2bd66364af045d2f18c7d4040385b1d33c63f16a470a079",
+      "archive_sha256": "59717b3954a6be29457475420c9098cc5e167dc788b70b564f966ccb3758a9e9",
+      "start_utc": "2026-11-26T01:51:10Z",
+      "finish_utc": "2026-11-26T02:04:57Z",
+      "exit": 1,
+      "kind": "early joint source replay",
+      "result": "source preflight failed",
+      "log_sha256": "40ae1ff2883c118c3e5cbbd5818bb8bffa550333e6c3230bb04dc38eec878751",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/General/NumberTheory/QuadField.lean",
+          "line": 99,
+          "column": 20,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/PeriodRings/AmaxStructure.lean",
+          "line": 222,
+          "column": 71,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/PeriodRings/AmaxStructure.lean",
+          "line": 226,
+          "column": 66,
+          "message": "Tactic `tauto` failed"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 68,
+          "column": 67,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 70,
+          "column": 27,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 72,
+          "column": 59,
+          "message": "Invalid `⟨...⟩` notation: The expected type of this term could not be determined"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 72,
+          "column": 55,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 80,
+          "column": 43,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 83,
+          "column": 29,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 83,
+          "column": 68,
+          "message": "Invalid projection: Type of"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 85,
+          "column": 35,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 86,
+          "column": 3,
+          "message": "Unknown identifier `principalLevel_le_Kf`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 88,
+          "column": 41,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 88,
+          "column": 62,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 89,
+          "column": 2,
+          "message": "Invalid dotted identifier notation: The expected type of `.imp_right` could not be determined"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 94,
+          "column": 15,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 96,
+          "column": 2,
+          "message": "Invalid dotted identifier notation: The expected type of `.imp_right`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 98,
+          "column": 55,
+          "message": "Unknown identifier `exists_principalLevel_subset`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 137,
+          "column": 57,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 138,
+          "column": 49,
+          "message": "Unknown identifier `map_eq_one_of_principalLevel`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 144,
+          "column": 3,
+          "message": "mod_cast has type"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+          "line": 401,
+          "column": 50,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean",
+          "line": 41,
+          "column": 63,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModuliPoint.lean",
+          "line": 105,
+          "column": 54,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean",
+          "line": 76,
+          "column": 34,
+          "message": "Unknown constant `_private.Lib.DiscreteSeries.FlenstedJensen.RightDerivatives.0.IsHermInvolution.det_ne_zero._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean",
+          "line": 140,
+          "column": 19,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean",
+          "line": 140,
+          "column": 19,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean",
+          "line": 140,
+          "column": 19,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean",
+          "line": 140,
+          "column": 48,
+          "message": "Tactic `grewrite` failed: Did not find a rewrite with"
+        }
+      ],
+      "failed_targets": [
+        "Lib.General.NumberTheory.QuadField",
+        "Lib.PadicHodge.PeriodRings.AmaxStructure",
+        "Lib.Adelic.Unitary.CongruenceLevel",
+        "Lib.ClassField.GreenbergWiles.ExtendCharacter",
+        "Lib.Shimura.Uniformisation.ModuliPoint",
+        "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives",
+        "Lib.Adelic.QuotientMeasure.CocompactIntegrable"
+      ]
+    },
+    {
+      "source_commit": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "source_tree": "ddc22b3144b7147ce91c5c767690d9d56aac50ee",
+      "receipt_sha256": "5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c",
+      "archive_sha256": "28ac8622a176d35520a30345658d05d00e62068c7f826a0426a5533873411533",
+      "start_utc": "2026-11-26T02:33:29Z",
+      "finish_utc": "2026-11-26T02:55:42Z",
+      "exit": 1,
+      "kind": "early joint source replay",
+      "result": "source preflight failed",
+      "log_sha256": "de59d8a16d7dc6e8591025aaa3e19144a8632f07f9ffefcd9651bb5936cb7383",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Crystalline/CrystallineTests.lean",
+          "line": 46,
+          "column": 82,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Groups/CyclicSubrep.lean",
+          "line": 31,
+          "column": 86,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Groups/CyclicSubrep.lean",
+          "line": 34,
+          "column": 14,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/NumberTheory/UpsilonValues.lean",
+          "line": 54,
+          "column": 70,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 68,
+          "column": 4,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 72,
+          "column": 23,
+          "message": "overloaded, errors"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 73,
+          "column": 35,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 78,
+          "column": 93,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 77,
+          "column": 72,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 78,
+          "column": 31,
+          "message": "Invalid dotted identifier notation: The expected type of `.map` could not be determined"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 79,
+          "column": 2,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 86,
+          "column": 89,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 87,
+          "column": 24,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 88,
+          "column": 53,
+          "message": "Unknown identifier `map_locConstClass`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 107,
+          "column": 93,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 111,
+          "column": 61,
+          "message": "failed to elaborate eliminator, expected type is not available"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 111,
+          "column": 35,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/AcyclicTests.lean",
+          "line": 122,
+          "column": 48,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaNormality/NormalGeneration.lean",
+          "line": 252,
+          "column": 4,
+          "message": "`grind` failed"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/EichlerFlag.lean",
+          "line": 40,
+          "column": 40,
+          "message": "Unknown constant `_private.New.Filling.EichlerFlag.0.entrywise._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/EichlerFlag.lean",
+          "line": 40,
+          "column": 40,
+          "message": "Unknown constant `_private.New.Filling.EichlerFlag.0.entrywise._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Algebra/JetChainRule.lean",
+          "line": 36,
+          "column": 76,
+          "message": "Invalid simp theorem `pderiv`: Expected a definition with an exposed body"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Algebra/JetChainRule.lean",
+          "line": 36,
+          "column": 70,
+          "message": "`simp` made no progress"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Algebra/JetChainRule.lean",
+          "line": 36,
+          "column": 76,
+          "message": "Invalid simp theorem `pderiv`: Expected a definition with an exposed body"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Algebra/JetChainRule.lean",
+          "line": 36,
+          "column": 70,
+          "message": "`simp` made no progress"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean",
+          "line": 76,
+          "column": 3,
+          "message": "Type mismatch: After simplification, term"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 95,
+          "column": 26,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 98,
+          "column": 68,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 105,
+          "column": 54,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 208,
+          "column": 88,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 219,
+          "column": 48,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 222,
+          "column": 64,
+          "message": "Failed to delta derive `AddCommGroup` instance for `Form`."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 222,
+          "column": 78,
+          "message": "Failed to delta derive `Module` instance for `Form`."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 224,
+          "column": 19,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 226,
+          "column": 51,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 226,
+          "column": 80,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 226,
+          "column": 80,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 231,
+          "column": 31,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 233,
+          "column": 32,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 236,
+          "column": 78,
+          "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 237,
+          "column": 50,
+          "message": "Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
+          "line": 43,
+          "column": 95,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
+          "line": 147,
+          "column": 34,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
+          "line": 155,
+          "column": 4,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Fock/OscillatorPair.lean",
+          "line": 82,
+          "column": 7,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        },
+        {
+          "path": "CompactGRH/src/New/Heights/OneDeterminant.lean",
+          "line": 110,
+          "column": 70,
+          "message": "Invalid simp theorem `index`: Expected a definition with an exposed body"
+        },
+        {
+          "path": "CompactGRH/src/New/Heights/OneDeterminant.lean",
+          "line": 110,
+          "column": 70,
+          "message": "Invalid simp theorem `index`: Expected a definition with an exposed body"
+        },
+        {
+          "path": "CompactGRH/src/New/Heights/OneDeterminant.lean",
+          "line": 111,
+          "column": 7,
+          "message": "Tactic `grewrite` failed: did not find instance of the pattern in the current goal"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 64,
+          "column": 39,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 67,
+          "column": 49,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 68,
+          "column": 41,
+          "message": "Invalid field notation: Type of"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 104,
+          "column": 35,
+          "message": "Unknown constant `ratCoordMatrix_inclX`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 125,
+          "column": 32,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 125,
+          "column": 61,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 134,
+          "column": 48,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 135,
+          "column": 2,
+          "message": "Unknown identifier `V.isEmbedding_ratCoordMatrix.continuous_iff`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 138,
+          "column": 2,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/DegreeAndUnipotent.lean",
+          "line": 138,
+          "column": 29,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 93,
+          "column": 40,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 104,
+          "column": 51,
+          "message": "Unknown identifier `polarisationForm`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 115,
+          "column": 2,
+          "message": "Unknown identifier `polarisationForm`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 116,
+          "column": 41,
+          "message": "Unknown identifier `polarisationForm`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 116,
+          "column": 32,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
+          "line": 121,
+          "column": 7,
+          "message": "Unknown identifier `polarisationForm`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Crystalline/RegularityFrobenius.lean",
+          "line": 55,
+          "column": 7,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        }
+      ],
+      "failed_targets": [
+        "Lib.PadicComparison.Crystalline.CrystallineTests",
+        "Lib.General.Groups.CyclicSubrep",
+        "Lib.General.NumberTheory.UpsilonValues",
+        "Lib.Cohomology.Etale.AcyclicTests",
+        "Lib.Shimura.ThetaNormality.NormalGeneration",
+        "New.Filling.EichlerFlag",
+        "Lib.General.Algebra.JetChainRule",
+        "Lib.General.Geometry.SmoothnessCriterion",
+        "Lib.General.Geometry.EtaleCharts",
+        "Lib.Adelic.Reduction.Defs",
+        "Lib.DiscreteSeries.Bruhat.ComplexPlace",
+        "Lib.Weil.Fock.OscillatorPair",
+        "New.Heights.OneDeterminant",
+        "Lib.Weil.Periods.DegreeAndUnipotent",
+        "Lib.Shimura.Uniformisation.RiemannFormAdelic",
+        "Lib.PadicHodge.Crystalline.RegularityFrobenius"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "b4939fd0a55bf7c22f96e13c228207166edbd038694846b92166f7d52f852cc5",
+      "status_sha256": "0742a4ae6b4a282d20a3f07b3c6feb4c5aaf7d46b400abe34fe7ccdd6b0e7614",
+      "log_sha256": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
+      "start_utc": "2026-11-26T04:01:01Z",
+      "finish_utc": "2026-11-26T04:20:19Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean",
+          "line": 219,
+          "column": 82,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean",
+          "line": 32,
+          "column": 60,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean",
+          "line": 62,
+          "column": 48,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean",
+          "line": 125,
+          "column": 62,
+          "message": "Type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean",
+          "line": 165,
+          "column": 40,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean",
+          "line": 62,
+          "column": 3,
+          "message": "overloaded, errors"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/NearTerms.lean",
+          "line": 77,
+          "column": 46,
+          "message": "Tactic `grewrite` failed: `ℝ` is not a relation"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 69,
+          "column": 3,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 74,
+          "column": 38,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `reducedCocycle`) does not have a usable parameter of type `IsPotCrys ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 75,
+          "column": 26,
+          "message": "No applicable extensionality theorem found for type"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 83,
+          "column": 27,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 84,
+          "column": 18,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `reducedCocycle`) does not have a usable parameter of type `IsPotCrys ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+          "line": 83,
+          "column": 61,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 47,
+          "column": 14,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 158,
+          "column": 27,
+          "message": "could not synthesize default value for parameter 'map_id' using tactics"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 158,
+          "column": 27,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 158,
+          "column": 27,
+          "message": "could not synthesize default value for parameter 'map_comp' using tactics"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 158,
+          "column": 27,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean",
+          "line": 159,
+          "column": 37,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 94,
+          "column": 82,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 92,
+          "column": 4,
+          "message": "(kernel) declaration has metavariables 'EtaleChart.away'"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 97,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 102,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+          "line": 198,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaNormality/NormalGeneration.lean",
+          "line": 252,
+          "column": 28,
+          "message": "Type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 154,
+          "column": 12,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 215,
+          "column": 27,
+          "message": "Invalid field notation: Function `gauge` does not have a usable parameter of type `IsStdLevel ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 237,
+          "column": 3,
+          "message": "Invalid field notation: Function `gauge` does not have a usable parameter of type `IsStdLevel ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/New/DiscreteSeries/BesselExistence.lean",
+          "line": 214,
+          "column": 4,
+          "message": "Ambiguous term"
+        },
+        {
+          "path": "CompactGRH/src/New/DiscreteSeries/BesselExistence.lean",
+          "line": 194,
+          "column": 86,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 172,
+          "column": 97,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+      "source_tree": "caf08b79241d314b18823d40f8ebf05bd0e5beb5",
+      "exit": 1,
+      "wall_seconds": 1132.249,
+      "newly_built": [
+        "Lib.Adelic.Adeles.ExtensionByZero",
+        "Lib.Adelic.Adeles.FinitePlaceDensity",
+        "Lib.Adelic.Landherr.Landherr",
+        "Lib.Adelic.Landherr.SumOfTwoSquares",
+        "Lib.CM.FormalGroup.FormalHeight",
+        "Lib.CM.KroneckerLimit.LogTheta",
+        "Lib.CM.LocalHeight.EulerAdditionFormula",
+        "Lib.CM.LocalHeight.IntegralParameter",
+        "Lib.CM.LocalHeight.IsogenyIntegrality",
+        "Lib.CM.MainTheorem.ConjugateCurve",
+        "Lib.ClassField.Global.CMNorms",
+        "Lib.ClassField.HeckeCharacter.SplittingCharExists",
+        "Lib.Cohomology.Etale.AcyclicTests",
+        "Lib.Cohomology.Etale.ContinuityAtlas",
+        "Lib.Cyclotomic.Kolyvagin.ComponentBound",
+        "Lib.Cyclotomic.OddSha.OddShaBound",
+        "Lib.DiscreteSeries.Bruhat.ComplexFloorMeasure",
+        "Lib.DiscreteSeries.Bruhat.ComplexPlace",
+        "Lib.DiscreteSeries.Theta.LocalThetaCorrespondence",
+        "Lib.GaloisRep.BaseChange.ParahoricColumns",
+        "Lib.GaloisRep.BaseChange.UnitaryRoots",
+        "Lib.GaloisRep.BaseChange.WeilDataExtension",
+        "Lib.General.Algebra.BlockFittingBound",
+        "Lib.General.Algebra.DepthBounds",
+        "Lib.General.Algebra.JetChainRule",
+        "Lib.General.Groups.CyclicSubrep",
+        "Lib.General.Groups.IndexOfProduct",
+        "Lib.General.NumberTheory.UpsilonValues",
+        "Lib.LocalGL.Iwahori.ExponentOfLabel",
+        "Lib.LocalGL.Iwahori.HeckeCounts",
+        "Lib.LocalGL.Iwahori.HeckeOnLineStabiliser",
+        "Lib.LocalGL.Iwahori.IwahoriConjugation",
+        "Lib.LocalGL.Iwahori.IwahoriInjective",
+        "Lib.LocalGL.Iwahori.SortedExponents",
+        "Lib.LocalGL.Tadic.ChainLemma",
+        "Lib.LocalGL.TraceFormula.ChangingSigns",
+        "Lib.PadicComparison.Crystalline.CrystallineTests",
+        "Lib.PadicHodge.Comparison.CrystallineLimit",
+        "Lib.PadicHodge.Crystalline.RegularityFrobenius",
+        "Lib.PadicHodge.WachKisin.CrystallinePeriodMatrix",
+        "Lib.Shimura.Eigenspace.EigenQuotient",
+        "Lib.Shimura.HeckeTower.WildType",
+        "Lib.Shimura.TraceFormula.DefiniteTrace",
+        "Lib.Shimura.TraceFormula.MarkedEqDefinite",
+        "Lib.Shimura.Transfer.MarkedPairs",
+        "Lib.Shimura.Uniformisation.RiemannFormAdelic",
+        "Lib.SiegelWeil.Mass.TorusMajorant",
+        "Lib.Weil.Construction.AdelicHeisenberg",
+        "Lib.Weil.Construction.FiniteHeisenberg",
+        "Lib.Weil.Construction.FiniteMultiplier",
+        "Lib.Weil.Construction.FiniteVacuum",
+        "Lib.Weil.Fock.OscillatorPair",
+        "Lib.Weil.MixedModel.AdelicSum",
+        "Lib.Weil.Periods.DegreeAndUnipotent",
+        "Lib.Weil.Periods.DegreeOfT",
+        "Lib.Weil.Periods.FiniteBesselGroup",
+        "New.Curve.FormalParameter",
+        "New.Curve.KatzDivisibility",
+        "New.Data.WeilDataOfE",
+        "New.Filling.BesselSystem",
+        "New.Filling.CrudeBoundDefs",
+        "New.Filling.EichlerFlag",
+        "New.Filling.GramLiouville",
+        "New.Filling.LatticeChart",
+        "New.Filling.LevelBridge",
+        "New.Filling.Setup",
+        "New.Filling.StableCells",
+        "New.Heights.OneDeterminant",
+        "New.Patching.OnePrime",
+        "New.RealPlace.BesselOrthonormal",
+        "New.RealPlace.CellNeighbourhood",
+        "New.RealPlace.FrameNorm",
+        "New.RealPlace.GramSection",
+        "New.RealPlace.GramSectionBounds",
+        "New.RealPlace.LocalTheorem",
+        "New.RealPlace.OpenCellBound",
+        "New.RealPlace.SobolevCell",
+        "New.Seesaw.EqualLinesOrbit",
+        "New.Seesaw.LatticeAndTorsionDefs",
+        "New.Seesaw.StandardLatticeLevel",
+        "New.Selmer.ReciprocityLaw",
+        "New.Selmer.RibetFirstOrder",
+        "New.Weil.FockCoeffDecay"
+      ],
+      "eligible": 354,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/Adelic/Reduction/Defs.lean:219:82",
+        "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean:32:60",
+        "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean:62:48",
+        "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean:125:62",
+        "CompactGRH/src/Lib/Weil/Construction/ThetaFunctional.lean:165:40",
+        "CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean:62:3",
+        "CompactGRH/src/New/Filling/NearTerms.lean:77:46",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:69:3",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:74:38",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:75:26",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:83:27",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:84:18",
+        "CompactGRH/src/Lib/PadicHodge/Limit/HodgeTateProjectors.lean:83:61",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:47:14",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:158:27",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:158:27",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:158:27",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:158:27",
+        "CompactGRH/src/Lib/PadicComparison/Descent/ReductionModP.lean:159:37",
+        "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean:94:82",
+        "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean:92:4",
+        "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean:97:6",
+        "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean:102:6",
+        "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean:198:6",
+        "CompactGRH/src/Lib/Shimura/ThetaNormality/NormalGeneration.lean:252:28",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:154:12",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:215:27",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:237:3",
+        "CompactGRH/src/New/DiscreteSeries/BesselExistence.lean:214:4",
+        "CompactGRH/src/New/DiscreteSeries/BesselExistence.lean:194:86",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:172:97"
+      ],
+      "receipt_sha256": "4c366f8a316cb87720b5e72d7baba941e0336cebc19f85ae91f5981105646fed",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.Adelic.Reduction.Defs",
+        "Lib.Weil.Construction.ThetaFunctional",
+        "Lib.General.Geometry.SmoothnessCriterion",
+        "New.Filling.NearTerms",
+        "Lib.PadicHodge.Limit.HodgeTateProjectors",
+        "Lib.PadicComparison.Descent.ReductionModP",
+        "Lib.General.Geometry.EtaleCharts",
+        "Lib.Shimura.ThetaNormality.NormalGeneration",
+        "New.Filling.StandardLevel",
+        "New.DiscreteSeries.BesselExistence",
+        "New.RealPlace.ComplexGauge"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "f6e82308d2727c0ad969f965b3d6a999cef5b9431a39e23f47927cbe42451b7d",
+      "status_sha256": "d536b08e0fccb608249a871a107c5ecd4ce51c2b2bc84e3c9845acf0aaf91bb2",
+      "log_sha256": "6babe5b5ac6ec50bd8e5930398291fc5cbde99b1bd1a4e4c6d46cdd250661a1a",
+      "start_utc": "2026-11-26T05:26:39Z",
+      "finish_utc": "2026-11-26T05:34:46Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean",
+          "line": 32,
+          "column": 33,
+          "message": "Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.Matrix.ext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean",
+          "line": 32,
+          "column": 33,
+          "message": "Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.Matrix.ext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean",
+          "line": 32,
+          "column": 33,
+          "message": "Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.Matrix.ext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean",
+          "line": 32,
+          "column": 33,
+          "message": "Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.Matrix.ext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/Definite.lean",
+          "line": 66,
+          "column": 32,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/Definite.lean",
+          "line": 80,
+          "column": 6,
+          "message": "Invalid field notation: Function `rapidFunctions` does not have a usable parameter of type `Space ...` for which to substitute `V`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Fock/EntireTheta.lean",
+          "line": 18,
+          "column": 86,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 67,
+          "column": 60,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 117,
+          "column": 45,
+          "message": "Invalid projection: Projection operates on types of the form `C ...` where C is a constant. The expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 117,
+          "column": 55,
+          "message": "Type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 118,
+          "column": 28,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 118,
+          "column": 91,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 156,
+          "column": 81,
+          "message": "Tactic `tauto` failed"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean",
+          "line": 156,
+          "column": 81,
+          "message": "Tactic `tauto` failed"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 215,
+          "column": 5,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 223,
+          "column": 4,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 227,
+          "column": 5,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 231,
+          "column": 16,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 235,
+          "column": 59,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 234,
+          "column": 54,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 239,
+          "column": 41,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 238,
+          "column": 20,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 245,
+          "column": 4,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean",
+          "line": 264,
+          "column": 5,
+          "message": "Invalid field `exists_thetaSpace_lagrangian_le_span`: The environment does not contain `PeriodMap.exists_thetaSpace_lagrangian_le_span`, so it is not possible to project the field `exists_thetaSpace_lagrangian_le_span` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 154,
+          "column": 19,
+          "message": "expected token"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 216,
+          "column": 27,
+          "message": "Invalid field notation: Function `gauge` does not have a usable parameter of type `IsStdLevel ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/StandardLevel.lean",
+          "line": 238,
+          "column": 3,
+          "message": "Invalid field notation: Function `gauge` does not have a usable parameter of type `IsStdLevel ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 177,
+          "column": 39,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_tree": "c1d19f1413029f25a41902d9d58b32f808d39d32",
+      "exit": 1,
+      "wall_seconds": 456.055,
+      "newly_built": [
+        "Lib.Adelic.Reduction.Defs",
+        "Lib.ClassField.HeckeCharacter.SplittingCharOnU1",
+        "Lib.ClassField.HeckeL.AutCharLFunction",
+        "Lib.Cohomology.Hodge.HodgeSite",
+        "Lib.Cohomology.PointClass.LocusEquations",
+        "Lib.Cohomology.ProperBaseChange.KummerLine",
+        "Lib.Cohomology.ProperBaseChange.SubringSplitting",
+        "Lib.Cohomology.WoodsHole.IsolatedCoincidences",
+        "Lib.DiscreteSeries.Character.FormalDegree",
+        "Lib.DiscreteSeries.Character.KTypeMultiplicity",
+        "Lib.DiscreteSeries.Character.SectorBound",
+        "Lib.GLn.Dual.ClassSum",
+        "Lib.GLn.SchurModule.SchurOrthogonality",
+        "Lib.GaloisRep.Division.MultiplicityFreeSum",
+        "Lib.GaloisRep.LocalGlobal.ParahoricTypeLabel",
+        "Lib.General.Algebra.TensorCohomology",
+        "Lib.General.Geometry.EtaleCharts",
+        "Lib.General.Geometry.Lefschetz",
+        "Lib.General.Geometry.SerreSaturation",
+        "Lib.General.Geometry.SmoothnessCriterion",
+        "Lib.General.LinearAlgebra.BlockMatrices",
+        "Lib.PadicComparison.Descent.ReductionModP",
+        "Lib.PadicHodge.BlochKato.BlochKato",
+        "Lib.PadicHodge.Characters.LocalCharacters",
+        "Lib.PadicHodge.Characters.UnramifiedPeriods",
+        "Lib.PadicHodge.Crystalline.GoodCriterion",
+        "Lib.PadicHodge.Crystalline.PairingDefs",
+        "Lib.PadicHodge.Herr.GaloisLattices",
+        "Lib.PadicHodge.Limit.HodgeTateProjectors",
+        "Lib.PadicHodge.Limit.LocalLimit",
+        "Lib.PadicHodge.WachGamma.GaloisOnFrames",
+        "Lib.PadicHodge.WachGamma.KisinModuleDefs",
+        "Lib.PadicHodge.WachGamma.Letters",
+        "Lib.PadicHodge.WachKisin.FrameTheorem",
+        "Lib.Shimura.ThetaNormality.NormalGeneration",
+        "Lib.Shimura.Uniformisation.AppellHumbert",
+        "Lib.Weil.Construction.DataProduct",
+        "Lib.Weil.Construction.PairDefs",
+        "Lib.Weil.Construction.Projections",
+        "Lib.Weil.Construction.ThetaFunctional",
+        "Lib.Weil.Fock.RealData",
+        "Lib.Weil.MixedModel.NameModulus",
+        "Lib.Weil.MixedModel.Names",
+        "Lib.Weil.Unramified.UniformiserScalar",
+        "New.Core.ClassCountBound",
+        "New.DiscreteSeries.BesselExistence",
+        "New.Filling.AmplitudeSums",
+        "New.Filling.BlockBound",
+        "New.Filling.BoxPartition",
+        "New.Filling.CrudeEnergy",
+        "New.Filling.LinkPairing",
+        "New.Filling.NearTerms",
+        "New.Filling.SchurTest",
+        "New.Filling.ThinClasses",
+        "New.Filling.UnipotentCovolume",
+        "New.Lift.CokernelKillers",
+        "New.Lift.CupProductBound",
+        "New.Lift.ExponentLattices",
+        "New.Lift.ExponentTheorems",
+        "New.Lift.FewLowJumps",
+        "New.Lift.HodgeExpansion",
+        "New.Lift.LongGap",
+        "New.Lift.SparseThickLetters",
+        "New.RealPlace.BesselCut",
+        "New.RealPlace.VolumeKernel",
+        "New.Rows.PartnerCut"
+      ],
+      "eligible": 437,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean:32:33",
+        "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean:32:33",
+        "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean:32:33",
+        "CompactGRH/src/Lib/Weil/MixedModel/HyperbolicSpace.lean:32:33",
+        "CompactGRH/src/Lib/Adelic/CuspForms/Definite.lean:66:32",
+        "CompactGRH/src/Lib/Adelic/CuspForms/Definite.lean:80:6",
+        "CompactGRH/src/Lib/Weil/Fock/EntireTheta.lean:18:86",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:67:60",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:117:45",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:117:55",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:118:28",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:118:91",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:156:81",
+        "CompactGRH/src/Lib/Cohomology/Etale/ConnectedComponents.lean:156:81",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:215:5",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:223:4",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:227:5",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:231:16",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:235:59",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:234:54",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:239:41",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:238:20",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:245:4",
+        "CompactGRH/src/Lib/Shimura/ThetaModuli/ThetaTorus.lean:264:5",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:154:19",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:216:27",
+        "CompactGRH/src/New/Filling/StandardLevel.lean:238:3",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:177:39"
+      ],
+      "receipt_sha256": "b6a2398233c50cae21da042f94b17f69cab65f3a1c00e5476e5f242af536318c",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.Weil.MixedModel.HyperbolicSpace",
+        "Lib.Adelic.CuspForms.Definite",
+        "Lib.Weil.Fock.EntireTheta",
+        "Lib.Cohomology.Etale.ConnectedComponents",
+        "Lib.Shimura.ThetaModuli.ThetaTorus",
+        "New.Filling.StandardLevel",
+        "New.RealPlace.ComplexGauge"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "426c1b2cbf1a39b71648cddc334a0740ecd80b18966c54bd649814488f67b51b",
+      "status_sha256": "bc14c1a2d68ca258ff5a50544775b99252e11472fba08ec76cfd40ac7f6f360d",
+      "log_sha256": "207fa494299ee5596ddd3a81c15d2810d6cbda0974d70c1c2ccac63a74fbf7cf",
+      "start_utc": "2026-11-26T05:34:46Z",
+      "finish_utc": null,
+      "diagnostics": [
+        {
+          "path": "TernaryGoldbach/Explicit/WeilNumC.lean",
+          "line": 32,
+          "column": 25,
+          "message": "failed to prove positivity/nonnegativity/nonzeroness"
+        }
+      ],
+      "root": "+CompletedFiniteRows",
+      "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "exit": null,
+      "result": "interrupted by host shutdown; terminal result unavailable",
+      "observed_distinct_built": 454,
+      "failed_targets": [
+        "TernaryGoldbach.Explicit.WeilNumC"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "251632d28137bd6d375cf189c6b6f2f281b5ce566c9cfddadaf3010ab1c19dd1",
+      "status_sha256": "857848949368daed672fab55c308b3fed1aaf12cff23e8bbacbc6fbf68b92420",
+      "log_sha256": "02facac224e7675434ef5571b2bf054fe955bbf0d35debcc9cc569e333eadfe1",
+      "start_utc": "2026-11-26T07:23:49Z",
+      "finish_utc": "2026-11-26T07:29:25Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+          "line": 59,
+          "column": 70,
+          "message": "Unknown constant `_private.Lib.Adelic.CuspForms.SmoothFormPairing.0.pairing_mem_smoothInvariants._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+          "line": 59,
+          "column": 70,
+          "message": "Unknown constant `_private.Lib.Adelic.CuspForms.SmoothFormPairing.0.pairing_mem_smoothInvariants._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+          "line": 62,
+          "column": 45,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+          "line": 63,
+          "column": 47,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+          "line": 62,
+          "column": 61,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/New/Curve/PeriodDefs.lean",
+          "line": 26,
+          "column": 48,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/Lift.lean",
+          "line": 98,
+          "column": 37,
+          "message": "Unknown constant `_private.Lib.Weil.DualPair.Lift.0.MeasureTheory.integral_const_mul._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/Lift.lean",
+          "line": 98,
+          "column": 37,
+          "message": "Unknown constant `_private.Lib.Weil.DualPair.Lift.0.mul_assoc._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 139,
+          "column": 47,
+          "message": "Invalid argument: Variable `K` is not a proposition or let-declaration"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 139,
+          "column": 47,
+          "message": "Invalid argument: Variable `K` is not a proposition or let-declaration"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 139,
+          "column": 47,
+          "message": "Invalid argument: Variable `K` is not a proposition or let-declaration"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 129,
+          "column": 2,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 128,
+          "column": 31,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 144,
+          "column": 41,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 181,
+          "column": 2,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 181,
+          "column": 54,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 180,
+          "column": 72,
+          "message": "Invalid projection: Type of"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 185,
+          "column": 3,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 185,
+          "column": 40,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 184,
+          "column": 82,
+          "message": "`fun_prop` was unable to prove `Continuous ?m.228`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 203,
+          "column": 64,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 202,
+          "column": 43,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 224,
+          "column": 8,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 224,
+          "column": 60,
+          "message": "Invalid field notation: Function `fullStructure` does not have a usable parameter of type `TorusModel ...` for which to substitute `m'`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 242,
+          "column": 86,
+          "message": "too many arguments supplied to `use`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/Duality/Contraction.lean",
+          "line": 275,
+          "column": 3,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/PairSplitting.lean",
+          "line": 71,
+          "column": 65,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/PairSplitting.lean",
+          "line": 51,
+          "column": 66,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/ReproducingKernel.lean",
+          "line": 42,
+          "column": 97,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Adelic/CuspForms/ReproducingKernel.lean",
+          "line": 29,
+          "column": 41,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 182,
+          "column": 43,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Crystalline/CrystallineEtale.lean",
+          "line": 123,
+          "column": 29,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+      "source_tree": "ffbd19a22cf91aab3933995029b20d5cbce0a246",
+      "exit": 1,
+      "wall_seconds": 293.805,
+      "newly_built": [
+        "Lib.Adelic.CuspForms.AlgebraicForms",
+        "Lib.Adelic.CuspForms.CuspStep",
+        "Lib.Adelic.CuspForms.Definite",
+        "Lib.Adelic.CuspForms.Petersson",
+        "Lib.Adelic.CuspForms.RealConvolution",
+        "Lib.Adelic.CuspForms.WeightParameter",
+        "Lib.ClassField.LocalDuality.CrystallineDuality",
+        "Lib.Cohomology.Etale.ConnectedComponents",
+        "Lib.Cohomology.Etale.EllAdicCohomology",
+        "Lib.Cohomology.Etale.ProperFunctors",
+        "Lib.Cohomology.Hodge.DepthVanishing",
+        "Lib.Cohomology.PointClass.HomogeneousCoords",
+        "Lib.Cohomology.ProperBaseChange.FieldExtension",
+        "Lib.Cohomology.ProperBaseChange.ProperBaseChange",
+        "Lib.Cohomology.ProperBaseChange.ValuativeDensity",
+        "Lib.DiscreteSeries.Character.WeylTrace",
+        "Lib.General.Algebra.JetRename",
+        "Lib.General.Geometry.ChartedSchemes",
+        "Lib.General.Geometry.ProperAtlas",
+        "Lib.General.Geometry.ProperSchemes",
+        "Lib.PadicComparison.Completion.RootSystems",
+        "Lib.PadicComparison.Crystalline.PeriodLifting",
+        "Lib.PadicComparison.Crystalline.TestGenericFibre",
+        "Lib.PadicComparison.Descent.AlmostAcyclic",
+        "Lib.PadicComparison.Descent.TestCover",
+        "Lib.PadicComparison.Descent.VDescent",
+        "Lib.PadicComparison.HodgeTate.GenericFibreTests",
+        "Lib.Shimura.ThetaModuli.ThetaTorus",
+        "Lib.Shimura.ThetaNormality.RiemannRelation",
+        "Lib.Weil.Construction.ConjugateJetDefs",
+        "Lib.Weil.Construction.FinitePart",
+        "Lib.Weil.Construction.FockThetaFunctions",
+        "Lib.Weil.Fock.EntireTheta",
+        "Lib.Weil.MixedModel.AdaptedSplitting",
+        "Lib.Weil.MixedModel.HyperbolicSpace",
+        "Lib.Weil.MixedModel.HyperbolicSplitting",
+        "Lib.Weil.MixedModel.MixedModelIntegrable",
+        "Lib.Weil.MixedModel.NameWeilAction",
+        "Lib.Weil.MixedModel.ZeroTerm",
+        "Lib.Weil.MixedModel.ZeroTermLaw",
+        "New.Filling.FixedLines",
+        "New.Filling.GlobalSieve",
+        "New.Filling.GlobalToLocal",
+        "New.Filling.StandardLevel",
+        "New.Filling.TopFloor"
+      ],
+      "eligible": 503,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean:59:70",
+        "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean:59:70",
+        "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean:62:45",
+        "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean:63:47",
+        "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean:62:61",
+        "CompactGRH/src/New/Curve/PeriodDefs.lean:26:48",
+        "CompactGRH/src/Lib/Weil/DualPair/Lift.lean:98:37",
+        "CompactGRH/src/Lib/Weil/DualPair/Lift.lean:98:37",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:139:47",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:139:47",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:139:47",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:129:2",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:128:31",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:144:41",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:181:2",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:181:54",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:180:72",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:185:3",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:185:40",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:184:82",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:203:64",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:202:43",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:224:8",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:224:60",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:242:86",
+        "CompactGRH/src/Lib/Cohomology/Duality/Contraction.lean:275:3",
+        "CompactGRH/src/Lib/Weil/DualPair/PairSplitting.lean:71:65",
+        "CompactGRH/src/Lib/Weil/DualPair/PairSplitting.lean:51:66",
+        "CompactGRH/src/Lib/Adelic/CuspForms/ReproducingKernel.lean:42:97",
+        "CompactGRH/src/Lib/Adelic/CuspForms/ReproducingKernel.lean:29:41",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:182:43",
+        "CompactGRH/src/Lib/PadicComparison/Crystalline/CrystallineEtale.lean:123:29"
+      ],
+      "receipt_sha256": "b317acea5e0aa77deeec17ebcfdd489f493b2b06e96ad88e4a32f222eacad7e4",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.Adelic.CuspForms.SmoothFormPairing",
+        "New.Curve.PeriodDefs",
+        "Lib.Weil.DualPair.Lift",
+        "Lib.Shimura.Uniformisation.ModelAlongArc",
+        "Lib.Cohomology.Duality.Contraction",
+        "Lib.Weil.DualPair.PairSplitting",
+        "Lib.Adelic.CuspForms.ReproducingKernel",
+        "New.RealPlace.ComplexGauge",
+        "Lib.PadicComparison.Crystalline.CrystallineEtale"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "40e26d0cbd9a160e32840bc0bbde526b011a4872ac6b43d4a9d7e854fd845401",
+      "status_sha256": "dd2d77492253c2d3a00c4422e67f49d4cdb5e76cd000fbaf754b00af782b5a53",
+      "log_sha256": "53ff4402b49831606e082181402679aea35ce828a4367db2bf17b8f25025f7e9",
+      "start_utc": "2026-11-26T07:41:11Z",
+      "finish_utc": "2026-11-26T09:39:16Z",
+      "diagnostics": [],
+      "root": "+CompletedFiniteRows",
+      "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+      "source_tree": "ffbd19a22cf91aab3933995029b20d5cbce0a246",
+      "exit": 124,
+      "wall_seconds": 7021.005,
+      "newly_built": [
+        "FiniteAtHeight",
+        "FiniteGaussian",
+        "LargeTail",
+        "LocalLowZeros",
+        "LowerAssembly",
+        "LowerCutoff",
+        "MinorOnly",
+        "NumericAssembly",
+        "PrimeInterval",
+        "ProductRange132675003394Interval",
+        "ProductRange133211874306Interval",
+        "ProductRange133748745218Interval",
+        "ProductRange134285616130Interval",
+        "ProductRange134822487042Interval",
+        "ProductRange135359357954Interval",
+        "ProductRange135896228866Interval",
+        "ProductRange136433099778Interval",
+        "ProductRange136969970690Interval",
+        "ProductRange137506841602Interval",
+        "ProfileAssembly",
+        "TernaryGoldbach.Explicit.WeilNumC",
+        "WideSource20"
+      ],
+      "eligible": 494,
+      "failed_source_locations": [],
+      "receipt_sha256": "a2fc065504dc59abe373b85d9d3fc66bdf930f5a9c29950c58568fb834d70964",
+      "result": "timed out"
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "0343046ebe7b4afc50df5c424fb6de0749e174ddac1ea895ea085a133860ce82",
+      "status_sha256": "9deb43737d2cc6cd1917c400adcdc371816f171597de3a0779b3b63e787204fb",
+      "log_sha256": "18ad8e3c13f2605840bcf3621b7bfcfb89ce46188e416e7e977a3f5cbc21561d",
+      "start_utc": "2026-11-26T08:04:21Z",
+      "finish_utc": "2026-11-26T08:10:57Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean",
+          "line": 200,
+          "column": 18,
+          "message": "Unknown constant `_private.Lib.Weil.DualPair.PairSumNegation.0.funext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean",
+          "line": 200,
+          "column": 18,
+          "message": "Unknown constant `_private.Lib.Weil.DualPair.PairSumNegation.0.Complex.inv_eq_conj._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean",
+          "line": 200,
+          "column": 18,
+          "message": "Unknown constant `_private.Lib.Weil.DualPair.PairSumNegation.0.Complex.inv_eq_conj._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean",
+          "line": 50,
+          "column": 19,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean",
+          "line": 65,
+          "column": 17,
+          "message": "Invalid field notation: Function `IsAdapted.mixedModel` does not have a usable parameter of type `IsAdapted ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean",
+          "line": 69,
+          "column": 17,
+          "message": "Invalid field notation: Function `IsAdapted.mixedModel` does not have a usable parameter of type `IsAdapted ...` for which to substitute `h`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean",
+          "line": 70,
+          "column": 21,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProperBaseChange/PointwiseTests.lean",
+          "line": 19,
+          "column": 97,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Duality/MovingKernel.lean",
+          "line": 43,
+          "column": 64,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Primitive/TiltedTheory.lean",
+          "line": 68,
+          "column": 5,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 131,
+          "column": 6,
+          "message": "Unknown identifier `simpa`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 130,
+          "column": 55,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 131,
+          "column": 84,
+          "message": "unexpected token 'using'; expected command"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 150,
+          "column": 11,
+          "message": "Type mismatch: After simplification, term"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean",
+          "line": 159,
+          "column": 10,
+          "message": "Type mismatch: After simplification, term"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 185,
+          "column": 95,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+      "source_tree": "0a3e5b8486771b3ca1acaa2cb465ff756e52c5e2",
+      "exit": 1,
+      "wall_seconds": 362.865,
+      "newly_built": [
+        "Lib.Adelic.CuspForms.FormRepresentation",
+        "Lib.Adelic.CuspForms.LevelForms",
+        "Lib.Adelic.CuspForms.ReproducingKernel",
+        "Lib.Adelic.CuspForms.SmoothFormPairing",
+        "Lib.ClassField.Grunwald.Grunwald",
+        "Lib.ClassField.HeckeCharacter.CharOfDet",
+        "Lib.ClassField.HeckeCharacter.LineParabolic",
+        "Lib.ClassField.HeckeCharacter.LocalCharacters",
+        "Lib.Cohomology.Duality.Contraction",
+        "Lib.Cohomology.Hodge.DiagonalClass",
+        "Lib.Cohomology.Hodge.FixedPointFormula",
+        "Lib.Cohomology.Hodge.GrothendieckSymbol",
+        "Lib.Cohomology.Hodge.Kunneth",
+        "Lib.Cohomology.Hodge.PointClass",
+        "Lib.Cohomology.PointClass.PointClassProduct",
+        "Lib.Cohomology.ProjectiveLine.LineChernClass",
+        "Lib.Cohomology.ProjectiveLine.PerfectLine",
+        "Lib.GaloisRep.BaseChange.BaseChangeEigenchar",
+        "Lib.GaloisRep.BaseChange.BaseChangeLabel",
+        "Lib.GaloisRep.BaseChange.BaseChangeLevel",
+        "Lib.GaloisRep.BaseChange.BaseChangeWeight",
+        "Lib.GaloisRep.BaseChange.TwistedTraceSum",
+        "Lib.GaloisRep.LocalGlobal.LocalTranslates",
+        "Lib.GaloisRep.Main.AttachedDefs",
+        "Lib.GaloisRep.Main.SplitPlaceCount",
+        "Lib.GaloisRep.WeightCongruence.WeightCongruence",
+        "Lib.LocalGL.TraceFormula.TraceComparison",
+        "Lib.PadicComparison.Crystalline.CrystallineClasses",
+        "Lib.PadicComparison.Crystalline.CrystallineEtale",
+        "Lib.PadicComparison.HodgeTate.GaloisTwist",
+        "Lib.PadicComparison.HodgeTate.GaloisWeight",
+        "Lib.PadicComparison.HodgeTate.HodgeTateMap",
+        "Lib.PadicComparison.HodgeTate.HodgeTatePairs",
+        "Lib.PadicComparison.ToricTower.CrystallineLines",
+        "Lib.Shimura.Transfer.PELDataExistence",
+        "Lib.SiegelWeil.SingularForms.AdaptedHom",
+        "Lib.Weil.CompactLift.BranchingPeriod",
+        "Lib.Weil.DualPair.DatumLevel",
+        "Lib.Weil.DualPair.DescentsVanishDef",
+        "Lib.Weil.DualPair.KernelDecay",
+        "Lib.Weil.DualPair.Lift",
+        "Lib.Weil.DualPair.ModularDataDecay",
+        "Lib.Weil.DualPair.PairReal",
+        "Lib.Weil.DualPair.PairSplitting",
+        "Lib.Weil.Periods.BesselIntegral",
+        "New.Curve.ConjugateGenerator",
+        "New.Curve.DepthPairs",
+        "New.Curve.FrameSections",
+        "New.Curve.JetDivisibility",
+        "New.Curve.LiveSum",
+        "New.Curve.PeriodDefs",
+        "New.Curve.ThetaProducts",
+        "New.Curve.TightFrameExists",
+        "New.Data.AdmissibleData",
+        "New.Data.DataExist",
+        "New.Data.Magnitudes",
+        "New.Data.Weights",
+        "New.DiscreteSeries.RestrictionLemma",
+        "New.Exchange.LValueRatio",
+        "New.Seesaw.AdmissibleComb",
+        "New.Seesaw.FramesForY",
+        "New.Seesaw.IndexTypes",
+        "New.Seesaw.IntegralAway",
+        "New.Seesaw.MovedVacuumComb",
+        "New.Selmer.CrystallineBound",
+        "New.Selmer.CrystallineRank",
+        "New.Selmer.DeterminantBound",
+        "New.Selmer.OnePlaceDefect",
+        "New.Selmer.TateTwistSteps",
+        "New.Selmer.ThickSpacing",
+        "New.Selmer.TwistTheorem"
+      ],
+      "eligible": 548,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean:200:18",
+        "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean:200:18",
+        "CompactGRH/src/Lib/Weil/DualPair/PairSumNegation.lean:200:18",
+        "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean:50:19",
+        "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean:65:17",
+        "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean:69:17",
+        "CompactGRH/src/Lib/Weil/DualPair/FourierCoefficient.lean:70:21",
+        "CompactGRH/src/Lib/Cohomology/ProperBaseChange/PointwiseTests.lean:19:97",
+        "CompactGRH/src/Lib/PadicComparison/Duality/MovingKernel.lean:43:64",
+        "CompactGRH/src/Lib/PadicComparison/Primitive/TiltedTheory.lean:68:5",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:131:6",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:130:55",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:131:84",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:150:11",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/ModelAlongArc.lean:159:10",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:185:95"
+      ],
+      "receipt_sha256": "beee6e109542ace2f497806337116f893e10673c0f479ba34784a3999cb6f429",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.Weil.DualPair.PairSumNegation",
+        "Lib.Weil.DualPair.FourierCoefficient",
+        "Lib.Cohomology.ProperBaseChange.PointwiseTests",
+        "Lib.PadicComparison.Duality.MovingKernel",
+        "Lib.PadicComparison.Primitive.TiltedTheory",
+        "Lib.Shimura.Uniformisation.ModelAlongArc",
+        "New.RealPlace.ComplexGauge"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "6bd717fa2d561e644eb4bb72b07c61f6e32072468c37c57e1e413a7afbb0b6ed",
+      "status_sha256": "60f0c047a53780b0870c18a42afc5a7859efdb111c911419b48c3fbfdcfac5fb",
+      "log_sha256": "ddffe45e10c3c4b932a9f639587b2dded717dfe7214ac9d6e44027ef6617c4c5",
+      "start_utc": "2026-11-26T09:06:11Z",
+      "finish_utc": "2026-11-26T09:11:54Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/PadicComparison/Primitive/TiltedTheory.lean",
+          "line": 67,
+          "column": 5,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/TwoLineTerms.lean",
+          "line": 59,
+          "column": 7,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/DualPair/TwoLineTerms.lean",
+          "line": 61,
+          "column": 45,
+          "message": "Unknown identifier `modKernelBilin`"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/GridParameters.lean",
+          "line": 97,
+          "column": 62,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/GridParameters.lean",
+          "line": 105,
+          "column": 40,
+          "message": "Type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/EdgePair.lean",
+          "line": 252,
+          "column": 69,
+          "message": "Unknown constant `_private.New.Seesaw.EdgePair.0.Function.Embedding.toFun_eq_coe._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/EdgePair.lean",
+          "line": 252,
+          "column": 69,
+          "message": "Unknown constant `_private.New.Seesaw.EdgePair.0.Function.Embedding.toFun_eq_coe._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/EdgePair.lean",
+          "line": 263,
+          "column": 19,
+          "message": "Unknown constant `_private.New.Seesaw.EdgePair.0.Function.Embedding.toFun_eq_coe._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/EdgePair.lean",
+          "line": 263,
+          "column": 19,
+          "message": "Unknown constant `_private.New.Seesaw.EdgePair.0.Function.Embedding.toFun_eq_coe._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/EdgePair.lean",
+          "line": 263,
+          "column": 19,
+          "message": "Unknown constant `_private.New.Seesaw.EdgePair.0.Subtype.ext_iff._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 191,
+          "column": 12,
+          "message": "Unknown constant `_private.New.RealPlace.ComplexGauge.0.ENNReal.ofReal_pow._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 31,
+          "message": "Invalid dotted identifier notation: The expected type of `.mk'` could not be determined"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 22,
+          "message": "Ambiguous term"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 10,
+          "message": "stuck at solving universe constraint"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 304,
+          "column": 76,
+          "message": "stuck at solving universe constraint"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 334,
+          "column": 7,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 334,
+          "column": 24,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 332,
+          "column": 67,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 332,
+          "column": 8,
+          "message": "Tactic `simp` failed with a nested error:"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 357,
+          "column": 0,
+          "message": "(deterministic) timeout at `whnf`, maximum number of heartbeats (4000000) has been reached"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "9e6a0519ba41540a0fb11ee606bb5f1e79d86b98",
+      "source_tree": "e7222ae726f8aecaf4bf1c12e20bbcd307226652",
+      "exit": 1,
+      "wall_seconds": 332.272,
+      "newly_built": [
+        "Lib.Cohomology.Kunneth.LerayHirschBasis",
+        "Lib.Cohomology.ProperBaseChange.PointwiseTests",
+        "Lib.GaloisRep.Main.AttachedDeterminant",
+        "Lib.PadicComparison.Duality.IntegrationOverLine",
+        "Lib.PadicComparison.Duality.MovingKernel",
+        "Lib.Shimura.ComplexTheta.PeriodVanishing",
+        "Lib.Shimura.Deformation.TangentBound",
+        "Lib.Shimura.GoodReduction.ArcReduction",
+        "Lib.Shimura.ThetaGroup.RigidFibres",
+        "Lib.Shimura.ThetaModuli.FamilyFromPoints",
+        "Lib.Shimura.Uniformisation.LiftedIsogenies",
+        "Lib.Shimura.Uniformisation.ModelAlongArc",
+        "Lib.SiegelWeil.SingularForms.SingularForms",
+        "Lib.SiegelWeil.StrongApproximation.EqualRankConstant",
+        "Lib.Weil.DualPair.Flip",
+        "Lib.Weil.DualPair.FourierCoefficient",
+        "Lib.Weil.DualPair.PairSumNegation",
+        "Lib.Weil.DualPair.TwoEdgesOnePair",
+        "Lib.Weil.Lift.Arrow",
+        "Lib.Weil.Lift.Edge",
+        "Lib.Weil.Unramified.HeckeTransfer"
+      ],
+      "eligible": 619,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/PadicComparison/Primitive/TiltedTheory.lean:67:5",
+        "CompactGRH/src/Lib/Weil/DualPair/TwoLineTerms.lean:59:7",
+        "CompactGRH/src/Lib/Weil/DualPair/TwoLineTerms.lean:61:45",
+        "CompactGRH/src/New/Exchange/GridParameters.lean:97:62",
+        "CompactGRH/src/New/Exchange/GridParameters.lean:105:40",
+        "CompactGRH/src/New/Seesaw/EdgePair.lean:252:69",
+        "CompactGRH/src/New/Seesaw/EdgePair.lean:252:69",
+        "CompactGRH/src/New/Seesaw/EdgePair.lean:263:19",
+        "CompactGRH/src/New/Seesaw/EdgePair.lean:263:19",
+        "CompactGRH/src/New/Seesaw/EdgePair.lean:263:19",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:191:12",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:31",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:22",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:10",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:304:76",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:334:7",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:334:24",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:332:67",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:332:8",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:357:0"
+      ],
+      "receipt_sha256": "b66aade47315a649dd2033907f589ae51d1db70a46d3acb527fff625199e9b6e",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.PadicComparison.Primitive.TiltedTheory",
+        "Lib.Weil.DualPair.TwoLineTerms",
+        "Lib.Shimura.Uniformisation.BallModel",
+        "New.Exchange.GridParameters",
+        "New.Seesaw.EdgePair",
+        "New.RealPlace.ComplexGauge",
+        "Lib.Weil.Periods.UnfoldingStep"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "0ac620bfc7362112dbbb71bfba73c6fb1cc6612725a2d44ccb31d9c6941cc130",
+      "status_sha256": "40fedb3f93616453fb4afbadf8e9b0cb4e1c823b1540d9f06c7ebbbe60618b08",
+      "log_sha256": "f04716a6fcecb8de0484c69c02b4bac434fd4bde368b50473504b2719d945a9d",
+      "start_utc": "2026-11-26T09:33:38Z",
+      "finish_utc": "2026-11-26T09:36:44Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 76,
+          "message": "unexpected token '('; expected '}'"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 22,
+          "message": "Type mismatch"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 305,
+          "column": 10,
+          "message": "Fields missing: `mul_smul`, `one_smul`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 337,
+          "column": 7,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 337,
+          "column": 24,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 335,
+          "column": 67,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 335,
+          "column": 8,
+          "message": "Tactic `simp` failed with a nested error:"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean",
+          "line": 378,
+          "column": 71,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/EquivariantCoefficients.lean",
+          "line": 120,
+          "column": 14,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Weil/MixedModel/EquivariantCoefficients.lean",
+          "line": 149,
+          "column": 16,
+          "message": "Tactic `rfl` failed: equality lhs"
+        },
+        {
+          "path": "CompactGRH/src/Lib/SiegelWeil/Formula/ZeroTermHeight.lean",
+          "line": 90,
+          "column": 66,
+          "message": "Unknown constant `_private.Lib.SiegelWeil.Formula.ZeroTermHeight.0.Matrix.ext_iff._simp_3`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 61,
+          "column": 52,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 65,
+          "column": 39,
+          "message": "Invalid field `residueEquiv`: The environment does not contain `IsSplitLevel.residueEquiv`, so it is not possible to project the field `residueEquiv` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 68,
+          "column": 33,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 68,
+          "column": 56,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 68,
+          "column": 60,
+          "message": "Invalid projection: Type of"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 68,
+          "column": 69,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 69,
+          "column": 34,
+          "message": "Unknown identifier `reduction`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 69,
+          "column": 45,
+          "message": "Unknown identifier `Λ.v_natCast`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 71,
+          "column": 3,
+          "message": "Unknown identifier `residueEquiv`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 73,
+          "column": 24,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 73,
+          "column": 47,
+          "message": "Unknown identifier `reduction`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 73,
+          "column": 38,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 81,
+          "column": 22,
+          "message": "overloaded, errors"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 84,
+          "column": 55,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 84,
+          "column": 74,
+          "message": "Invalid `⟨...⟩` notation: The expected type of this term could not be determined"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 111,
+          "column": 36,
+          "message": "Unknown identifier `liftGL`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 110,
+          "column": 49,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 111,
+          "column": 8,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 116,
+          "column": 4,
+          "message": "Invalid field `reductionGL`: The environment does not contain `IsSplitLevel.reductionGL`, so it is not possible to project the field `reductionGL` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 121,
+          "column": 34,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 125,
+          "column": 71,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 132,
+          "column": 4,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 136,
+          "column": 24,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 140,
+          "column": 21,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 147,
+          "column": 53,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 148,
+          "column": 73,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 149,
+          "column": 36,
+          "message": "Unknown identifier `lastRowDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 150,
+          "column": 11,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 153,
+          "column": 15,
+          "message": "Unknown identifier `LiftLaw`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 155,
+          "column": 48,
+          "message": "Unknown constant `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 165,
+          "column": 71,
+          "message": "Unknown identifier `lastRowDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 166,
+          "column": 61,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 167,
+          "column": 36,
+          "message": "Unknown identifier `reduction_eq_iff`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 168,
+          "column": 4,
+          "message": "Unknown identifier `Λ.v_natCast`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 171,
+          "column": 57,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 171,
+          "column": 78,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 172,
+          "column": 9,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 172,
+          "column": 65,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 174,
+          "column": 39,
+          "message": "Invalid field `mirabolic`: The environment does not contain `IsSplitLevel.mirabolic`, so it is not possible to project the field `mirabolic` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 174,
+          "column": 60,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 175,
+          "column": 3,
+          "message": "Invalid field notation: Type of"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 182,
+          "column": 59,
+          "message": "Unknown identifier `mirabolic`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 183,
+          "column": 14,
+          "message": "Unknown identifier `mirabolic`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 196,
+          "column": 7,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 196,
+          "column": 44,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 197,
+          "column": 41,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 204,
+          "column": 52,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 204,
+          "column": 30,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 204,
+          "column": 42,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 204,
+          "column": 92,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 204,
+          "column": 76,
+          "message": "Invalid `⟨...⟩` notation: The expected type"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 209,
+          "column": 60,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 210,
+          "column": 5,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 210,
+          "column": 52,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 217,
+          "column": 49,
+          "message": "Unknown identifier `charDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 218,
+          "column": 22,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 219,
+          "column": 11,
+          "message": "Unknown identifier `lastColDatum`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 219,
+          "column": 60,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 238,
+          "column": 41,
+          "message": "Unknown identifier `LiftLaw`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 239,
+          "column": 87,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 240,
+          "column": 19,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 242,
+          "column": 3,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 399,
+          "column": 79,
+          "message": "Unknown identifier `reduction`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 399,
+          "column": 49,
+          "message": "Invalid projection: Type of"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 400,
+          "column": 54,
+          "message": "Unknown identifier `reduction_eq_iff`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 400,
+          "column": 41,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 407,
+          "column": 37,
+          "message": "Invalid field `reduction`: The environment does not contain `IsSplitLevel.reduction`, so it is not possible to project the field `reduction` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 410,
+          "column": 3,
+          "message": "Unknown identifier `residueEquiv`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 418,
+          "column": 36,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 423,
+          "column": 33,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 424,
+          "column": 30,
+          "message": "Unknown identifier `residueEquiv`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 427,
+          "column": 57,
+          "message": "Invalid field `liftFn`: The environment does not contain `IsSplitLevel.liftFn`, so it is not possible to project the field `liftFn` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 427,
+          "column": 52,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 435,
+          "column": 22,
+          "message": "Unknown identifier `liftFn`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 436,
+          "column": 58,
+          "message": "Invalid field `name`: The environment does not contain `IsSplitLevel.name`, so it is not possible to project the field `name` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 475,
+          "column": 28,
+          "message": "Unknown identifier `reduction_eq_iff_idem_mul_mem`"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 484,
+          "column": 81,
+          "message": "Invalid field `name`: The environment does not contain `IsSplitLevel.name`, so it is not possible to project the field `name` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean",
+          "line": 485,
+          "column": 35,
+          "message": "Invalid field `name`: The environment does not contain `IsSplitLevel.name`, so it is not possible to project the field `name` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean",
+          "line": 33,
+          "column": 2,
+          "message": "Unknown constant `_private.Lib.Shimura.Uniformisation.BallModel.0.Complex.coe_smul._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean",
+          "line": 33,
+          "column": 2,
+          "message": "Unknown constant `_private.Lib.Shimura.Uniformisation.BallModel.0.Complex.coe_smul._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean",
+          "line": 33,
+          "column": 2,
+          "message": "Unknown constant `_private.Lib.Shimura.Uniformisation.BallModel.0.Complex.coe_smul._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean",
+          "line": 29,
+          "column": 15,
+          "message": "(kernel) declaration has metavariables 'ballPeriod'"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 138,
+          "column": 53,
+          "message": "invalid `▸` notation, expected result type of cast is"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 246,
+          "column": 61,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 251,
+          "column": 57,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 433,
+          "column": 86,
+          "message": "typeclass instance problem is stuck"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 206,
+          "column": 4,
+          "message": "Unknown constant `_private.New.RealPlace.ComplexGauge.0.pi_norm_le_iff_of_nonneg._simp_1`"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 216,
+          "column": 18,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 217,
+          "column": 12,
+          "message": "Unexpected term `z`; expected single reference to variable"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "731247bfc6c8d14f034396c049cf80ee604c3c4b",
+      "source_tree": "7c42fb444eb390e44a74f22fabccf93e7e0b8840",
+      "exit": 1,
+      "wall_seconds": 174.123,
+      "newly_built": [
+        "Lib.CM.Reciprocity.SemilinearWeilLaw",
+        "Lib.ClassField.HeckeCharacter.LevelModulus",
+        "Lib.DiscreteSeries.Holomorphic.NearMaximum",
+        "Lib.PadicComparison.Primitive.PrimitivePeriods",
+        "Lib.PadicComparison.Primitive.TiltedTheory",
+        "Lib.SiegelWeil.Tower.ConstantTerm",
+        "Lib.Weil.DualPair.ThetaIntegralLaws",
+        "Lib.Weil.DualPair.TwoLineTerms",
+        "Lib.Weil.Lift.Staircase",
+        "New.Curve.ConjugatesOfJets",
+        "New.Curve.IntegralVacuum",
+        "New.Exchange.ExchangeDifference",
+        "New.Exchange.GridParameters",
+        "New.Forms.AuxiliaryPair",
+        "New.Rows.RealMatching",
+        "New.Rows.SparseThetaSum",
+        "New.Rows.StackedDeterminants",
+        "New.Seesaw.EdgePair"
+      ],
+      "eligible": 640,
+      "failed_source_locations": [
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:76",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:22",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:305:10",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:337:7",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:337:24",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:335:67",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:335:8",
+        "CompactGRH/src/Lib/Weil/Periods/UnfoldingStep.lean:378:71",
+        "CompactGRH/src/Lib/Weil/MixedModel/EquivariantCoefficients.lean:120:14",
+        "CompactGRH/src/Lib/Weil/MixedModel/EquivariantCoefficients.lean:149:16",
+        "CompactGRH/src/Lib/SiegelWeil/Formula/ZeroTermHeight.lean:90:66",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:61:52",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:65:39",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:68:33",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:68:56",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:68:60",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:68:69",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:69:34",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:69:45",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:71:3",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:73:24",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:73:47",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:73:38",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:81:22",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:84:55",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:84:74",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:111:36",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:110:49",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:111:8",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:116:4",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:121:34",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:125:71",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:132:4",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:136:24",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:140:21",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:147:53",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:148:73",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:149:36",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:150:11",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:153:15",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:155:48",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:165:71",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:166:61",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:167:36",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:168:4",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:171:57",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:171:78",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:172:9",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:172:65",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:174:39",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:174:60",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:175:3",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:182:59",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:183:14",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:196:7",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:196:44",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:197:41",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:204:52",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:204:30",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:204:42",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:204:92",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:204:76",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:209:60",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:210:5",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:210:52",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:217:49",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:218:22",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:219:11",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:219:60",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:238:41",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:239:87",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:240:19",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:242:3",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:399:79",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:399:49",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:400:54",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:400:41",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:407:37",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:410:3",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:418:36",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:423:33",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:424:30",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:427:57",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:427:52",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:435:22",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:436:58",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:475:28",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:484:81",
+        "CompactGRH/src/New/Seesaw/NamesAtSplitLevel.lean:485:35",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean:33:2",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean:33:2",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean:33:2",
+        "CompactGRH/src/Lib/Shimura/Uniformisation/BallModel.lean:29:15",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:138:53",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:246:61",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:251:57",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:433:86",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:206:4",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:216:18",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:217:12"
+      ],
+      "receipt_sha256": "30d81c724dfd763801918970a92e1ab73440992a3395550ae231ed15e1e3b7df",
+      "result": "failed",
+      "failed_targets": [
+        "Lib.Weil.Periods.UnfoldingStep",
+        "Lib.Weil.MixedModel.EquivariantCoefficients",
+        "Lib.SiegelWeil.Formula.ZeroTermHeight",
+        "New.Seesaw.NamesAtSplitLevel",
+        "Lib.Shimura.Uniformisation.BallModel",
+        "Lib.Cohomology.ProjectiveLine.NormalizationPullback",
+        "New.RealPlace.ComplexGauge"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "8edb951148d5a663e0323f654ac64948aacde7cc9a19b02f9d913e38eac279c4",
+      "status_sha256": "5d22cc2a7dab9784ce1a320608eda8fbb2edec3c9e0ca158e2bbd43064e040a3",
+      "log_sha256": "881fd07886363aeadb9d2f9e72cc4211f1791a6ae3ab3ea9760d0f189c731cdf",
+      "start_utc": "2026-11-26T09:39:16Z",
+      "finish_utc": "2026-11-26T10:15:23Z",
+      "diagnostics": [],
+      "root": "+CompletedFiniteRows",
+      "source_commit": "b6535e79fde64adc5288e02ad3393bd1eca94631",
+      "source_tree": "c83fba5430c40808d8252da3c2ebb9ab8418e2e8",
+      "exit": 124,
+      "wall_seconds": 2153.002,
+      "newly_built": [
+        "FiniteAtHeight",
+        "FiniteGaussian",
+        "LargeTail",
+        "LocalLowZeros",
+        "LowerAssembly",
+        "LowerCutoff",
+        "MinorOnly",
+        "NumericAssembly",
+        "PrimeInterval",
+        "ProductExtension126232552448To138580583424",
+        "ProductPrefix138580583424",
+        "ProductRange132675003394Interval",
+        "ProductRange133211874306Interval",
+        "ProductRange133748745218Interval",
+        "ProductRange134285616130Interval",
+        "ProductRange134822487042Interval",
+        "ProductRange135359357954Interval",
+        "ProductRange135896228866Interval",
+        "ProductRange136433099778Interval",
+        "ProductRange136969970690Interval",
+        "ProductRange137506841602Interval",
+        "ProductRange138043712514Interval",
+        "ProductRange138580583426Interval",
+        "ProductRange139117454338Interval",
+        "ProductRange139654325250Interval",
+        "ProductRange140191196162Interval",
+        "ProductRange140728067074Interval",
+        "ProfileAssembly",
+        "TernaryGoldbach.Explicit.WeilNumC",
+        "WideSource20",
+        "WideSource22"
+      ],
+      "eligible": 494,
+      "failed_source_locations": [],
+      "receipt_sha256": "8700ca09864a8ce0fa5048e240009baa714033c379810bd056b06a0443f0a22f",
+      "result": "timed out"
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "ded905bc952ae703492f484637cf865a5877db27a0d1290c7bb0de066e09e678",
+      "status_sha256": "e23a6567ba3c0c5779ab983b36840b9f65cd06f74ddd035a13a68321605d4979",
+      "log_sha256": "37ead5e2eaf761f8bc2f93224c2323286790f735e30c94e709328f70e46adce4",
+      "start_utc": "2026-11-26T09:56:05Z",
+      "finish_utc": "2026-11-26T10:01:40Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/New/Columns/ColumnDefs.lean",
+          "line": 101,
+          "column": 94,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 138,
+          "column": 60,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 435,
+          "column": 4,
+          "message": "Tactic `apply` failed: could not unify the conclusion of `congrArg homClass`"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/EqualRankValue.lean",
+          "line": 36,
+          "column": 64,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+          "line": 207,
+          "column": 63,
+          "message": "Tactic `grewrite` failed: did not find instance of the pattern in the current goal"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "86170f1982b616fce1486fdb2c64d1a69558a0cf",
+      "source_tree": "6764d6cb4bdd5cd91317f955c1ea91e84cf66b5b",
+      "exit": 1,
+      "wall_seconds": 308.387,
+      "newly_built": [
+        "Lib.Adelic.Hecke.ClassSumBounds",
+        "Lib.GLn.Dual.DualWeights",
+        "Lib.GaloisRep.EvenRank.ThetaLift",
+        "Lib.Shimura.CongruenceRelation.CongruenceStep",
+        "Lib.Shimura.IntegralModel.ModelExistence",
+        "Lib.Shimura.IntegralModel.UniversalPoints",
+        "Lib.Shimura.ThetaModuli.UniversalFamily",
+        "Lib.Shimura.Uniformisation.BallModel",
+        "Lib.SiegelWeil.Formula.SiegelSets",
+        "Lib.SiegelWeil.Formula.SiegelWeilFormula",
+        "Lib.SiegelWeil.Formula.ZeroTermHeight",
+        "Lib.SiegelWeil.Mass.MassRatio",
+        "Lib.SiegelWeil.OneVector.OneVector",
+        "Lib.SiegelWeil.RallisInner.SharpData",
+        "Lib.SiegelWeil.Tower.LargeSideConstantTerm",
+        "Lib.SiegelWeil.Tower.LineGaussSum",
+        "Lib.Weil.CompactLift.RallisFormula",
+        "Lib.Weil.Fock.ReproducingFormula",
+        "Lib.Weil.MixedModel.EquivariantCoefficients",
+        "Lib.Weil.Periods.UnfoldingStep",
+        "New.Data.ChosenPlaceLevels",
+        "New.Exchange.DeterminantVectors",
+        "New.Exchange.LowRankIdentity",
+        "New.Exchange.NonnegativeVanishing",
+        "New.Exchange.RealPair",
+        "New.Exchange.SquareLawFourier",
+        "New.Exchange.StandardCoefficients",
+        "New.Filling.FiniteSystem",
+        "New.Filling.Moments",
+        "New.Seesaw.AdmissibleEvaluation",
+        "New.Seesaw.DoubleLiftValue",
+        "New.Seesaw.IntegralAsCosetSum",
+        "New.Seesaw.LinesStep",
+        "New.Seesaw.NamesAtSplitLevel"
+      ],
+      "eligible": 658,
+      "failed_source_locations": [
+        "CompactGRH/src/New/Columns/ColumnDefs.lean:101:94",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:138:60",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:435:4",
+        "CompactGRH/src/New/Exchange/EqualRankValue.lean:36:64",
+        "CompactGRH/src/New/RealPlace/ComplexGauge.lean:207:63"
+      ],
+      "receipt_sha256": "7e302c29b87f4da9be4dbe4bb231b97c952744f1a74a2274045d2d1282c0fd3c",
+      "result": "failed",
+      "failed_targets": [
+        "New.Columns.ColumnDefs",
+        "Lib.Cohomology.ProjectiveLine.NormalizationPullback",
+        "New.Exchange.EqualRankValue",
+        "New.RealPlace.ComplexGauge"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "157376aea7a829fcc6229ef3ed02c668f9bb5104cc1bced9d5669c48fb9e1f47",
+      "status_sha256": "2750ae75c58036bba7a04a4dc7d129134c4bccb8dc0d46cdd03857e415181979",
+      "log_sha256": "31e8be90fa3a0f963f979688ce067509dcf81df652a00f3f5ebd394b747453ac",
+      "start_utc": "2026-11-26T10:32:01Z",
+      "finish_utc": "2026-11-26T10:35:49Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/New/Exchange/CrudeModularData.lean",
+          "line": 48,
+          "column": 5,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean",
+          "line": 247,
+          "column": 67,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean",
+          "line": 254,
+          "column": 58,
+          "message": "Function expected at"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean",
+          "line": 258,
+          "column": 80,
+          "message": "Unknown identifier `trivialLift`"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean",
+          "line": 259,
+          "column": 11,
+          "message": "Invalid field notation: Type of"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 130,
+          "column": 61,
+          "message": "invalid `▸` notation, expected result type of cast is"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
+          "line": 437,
+          "column": 19,
+          "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+      "source_tree": "3b85151bc9d0c03b0a36db5cd19dcebd67db85d8",
+      "exit": 1,
+      "wall_seconds": 166.237,
+      "newly_built": [
+        "New.Columns.ColumnDefs",
+        "New.Columns.SizeEstimates",
+        "New.Exchange.EqualRankValue",
+        "New.Exchange.ExchangeTheorem",
+        "New.Exchange.OneSquare",
+        "New.Exchange.SteepParameters",
+        "New.RealPlace.BandLimits",
+        "New.RealPlace.ComplexGauge",
+        "New.RealPlace.ComplexShells",
+        "New.Rows.Carrier",
+        "New.Trace.GoodIdempotent"
+      ],
+      "eligible": 692,
+      "failed_source_locations": [
+        "CompactGRH/src/New/Exchange/CrudeModularData.lean:48:5",
+        "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean:247:67",
+        "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean:254:58",
+        "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean:258:80",
+        "CompactGRH/src/New/Exchange/AlgebraicPartDefs.lean:259:11",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:130:61",
+        "CompactGRH/src/Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean:437:19"
+      ],
+      "receipt_sha256": "3dffadb83cfc64e065d774820984ed15dfcee632db9a6afa74da17d909cebb97",
+      "result": "failed",
+      "failed_targets": [
+        "New.Exchange.CrudeModularData",
+        "New.Exchange.AlgebraicPartDefs",
+        "Lib.Cohomology.ProjectiveLine.NormalizationPullback"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "bb31b94715d90339da1e8d7d146b3d6005124eab9385fd28225861bc81d3e100",
+      "status_sha256": "90a296c1ae657dfe70ab2a78cf07d2f450b54e6606ea6e6e65994a40c45c4c44",
+      "log_sha256": "8c21449cd2f54fdedab4236a49704310726569310445de8e9bac77d56e31b5f9",
+      "start_utc": "2026-11-26T10:41:22Z",
+      "finish_utc": "2026-11-26T11:04:58Z",
+      "diagnostics": [],
+      "root": "+CompletedFiniteRows",
+      "source_commit": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+      "source_tree": "3b85151bc9d0c03b0a36db5cd19dcebd67db85d8",
+      "exit": 0,
+      "wall_seconds": 1358.682,
+      "newly_built": [
+        "BankAccess",
+        "BankEntry",
+        "BindPool",
+        "CompletedFiniteRows",
+        "DirectData",
+        "DirectSound",
+        "ExpLookup",
+        "GlobalPool",
+        "LookupOperation",
+        "LookupSamples",
+        "ProductExtension138580583424To152539227136",
+        "ProductExtension152539227136To180456514560",
+        "ProductExtension180456514560To257765925888",
+        "ProductExtension257765925888To564386325504",
+        "ProductPrefix152539227136",
+        "ProductPrefix180456514560",
+        "ProductPrefix257765925888",
+        "ProductPrefix564386325504",
+        "ProductRange141264937986Interval",
+        "ProductRange145559905282Interval",
+        "ProductRange148244259842Interval",
+        "ProductRange152539227138Interval",
+        "ProductRange156834194434Interval",
+        "ProductRange160592290818Interval",
+        "ProductRange161129161730Interval",
+        "ProductRange162739774466Interval",
+        "ProductRange163276645378Interval",
+        "ProductRange167571612674Interval",
+        "ProductRange171866579970Interval",
+        "ProductRange176161547266Interval",
+        "ProductRange180456514562Interval",
+        "ProductRange184751481858Interval",
+        "ProductRange189046449154Interval",
+        "ProductRange193341416450Interval",
+        "ProductRange197636383746Interval",
+        "ProductRange201931351042Interval",
+        "ProductRange206226318338Interval",
+        "ProductRange210521285634Interval",
+        "ProductRange214816252930Interval",
+        "ProductRange219111220226Interval",
+        "ProductRange223406187522Interval",
+        "ProductRange227701154818Interval",
+        "ProductRange231996122114Interval",
+        "ProductRange236291089410Interval",
+        "ProductRange240586056706Interval",
+        "ProductRange244881024002Interval",
+        "ProductRange249175991298Interval",
+        "ProductRange253470958594Interval",
+        "ProductRange257765925890Interval",
+        "ProductRange262060893186Interval",
+        "ProductRange266355860482Interval",
+        "ProductRange267429602306Interval",
+        "ProductRange267966473218Interval",
+        "ProductRange268503344130Interval",
+        "ProductRange269040215042Interval",
+        "ProductRange273335182338Interval",
+        "ProductRange277630149634Interval",
+        "ProductRange281925116930Interval",
+        "ProductRange286220084226Interval",
+        "ProductRange290515051522Interval",
+        "ProductRange294810018818Interval",
+        "ProductRange299104986114Interval",
+        "ProductRange303399953410Interval",
+        "ProductRange307694920706Interval",
+        "ProductRange311989888002Interval",
+        "ProductRange316284855298Interval",
+        "ProductRange320579822594Interval",
+        "ProductRange324874789890Interval",
+        "ProductRange329169757186Interval",
+        "ProductRange332390982658Interval",
+        "ProductRange332927853570Interval",
+        "ProductRange337222820866Interval",
+        "ProductRange341517788162Interval",
+        "ProductRange345812755458Interval",
+        "ProductRange350107722754Interval",
+        "ProductRange354402690050Interval",
+        "ProductRange358697657346Interval",
+        "ProductRange362992624642Interval",
+        "ProductRange367287591938Interval",
+        "ProductRange371582559234Interval",
+        "ProductRange375877526530Interval",
+        "ProductRange380172493826Interval",
+        "ProductRange384467461122Interval",
+        "ProductRange388762428418Interval",
+        "ProductRange393057395714Interval",
+        "ProductRange397352363010Interval",
+        "ProductRange401647330306Interval",
+        "ProductRange405942297602Interval",
+        "ProductRange410237264898Interval",
+        "ProductRange414532232194Interval",
+        "ProductRange418827199490Interval",
+        "ProductRange423122166786Interval",
+        "ProductRange427417134082Interval",
+        "ProductRange431712101378Interval",
+        "ProductRange436007068674Interval",
+        "ProductRange440302035970Interval",
+        "ProductRange444060132354Interval",
+        "ProductRange452650066946Interval",
+        "ProductRange456945034242Interval",
+        "ProductRange461240001538Interval",
+        "ProductRange465534968834Interval",
+        "ProductRange469829936130Interval",
+        "ProductRange474124903426Interval",
+        "ProductRange478419870722Interval",
+        "ProductRange482714838018Interval",
+        "ProductRange487009805314Interval",
+        "ProductRange491304772610Interval",
+        "ProductRange495599739906Interval",
+        "ProductRange499894707202Interval",
+        "ProductRange504189674498Interval",
+        "ProductRange508484641794Interval",
+        "ProductRange512779609090Interval",
+        "ProductRange517074576386Interval",
+        "ProductRange521369543682Interval",
+        "ProductRange525664510978Interval",
+        "ProductRange529959478274Interval",
+        "ProductRange534254445570Interval",
+        "ProductRange538549412866Interval",
+        "ProductRange542844380162Interval",
+        "ProductRange547139347458Interval",
+        "ProductRange551434314754Interval",
+        "ProductRange555729282050Interval",
+        "ProductRange560024249346Interval",
+        "ProductRange561097991170Interval",
+        "ProductRange561634862082Interval",
+        "ProductRange562708603906Interval",
+        "ProductRange563245474818Interval",
+        "ProductRange563782345730Interval",
+        "ProductRange564319216642Interval",
+        "ProfileG0R0N4Data",
+        "ProfileG0R0N4Entries",
+        "ProfileG0R0N4Interval",
+        "ProfileG0R0N4Scalar",
+        "ProfileG0R16N12Batch",
+        "ProfileG0R28N12Batch",
+        "ProfileG0R40N12Batch",
+        "ProfileG0R4N12Batch",
+        "ProfileG0R52N4Batch",
+        "ProfileG1R0N12Batch",
+        "ProfileG1R12N1Data",
+        "ProfileG1R12N1Entries",
+        "ProfileG1R12N1Interval",
+        "ProfileG1R12N1Scalar",
+        "ProfileG1R13N12Batch",
+        "ProfileG1R25N12Batch",
+        "ProfileG1R37N12Batch",
+        "ProfileG1R49N12Batch",
+        "ProfileG1R61N12Batch",
+        "ProfileG1R73N12Batch",
+        "ProfileG1R85N12Batch",
+        "ProfileG1R97N5Batch",
+        "ProfileG2R0N12Batch",
+        "ProfileG2R0N12Data",
+        "ProfileG2R0N12Entries",
+        "ProfileG2R0N12Interval",
+        "ProfileG2R0N12Scalar",
+        "ProfileG2R12N2Batch",
+        "ProfileG3R0N12Batch",
+        "ProfileG3R0N12Data",
+        "ProfileG3R0N12Entries",
+        "ProfileG3R12N9Batch",
+        "ProfileG3R12N9Data",
+        "ProfileG3R12N9Entries",
+        "ProfileG3R21N1Data",
+        "ProfileG3R21N1Entries",
+        "ProfileG3R21N1Interval",
+        "ProfileG3R21N1Scalar",
+        "ProfileG3R22N1Data",
+        "ProfileG3R22N1Entries",
+        "ProfileG3R22N1Interval",
+        "ProfileG3R22N1Scalar",
+        "ProfileG3R23N12Batch",
+        "ProfileG3R35N12Batch",
+        "ProfileG3R47N4Batch",
+        "ProfileG3R47N4Data",
+        "ProfileG3R47N4Entries",
+        "ProfileGroup0",
+        "ProfileGroup1",
+        "ProfileGroup2",
+        "ProfileGroup3",
+        "ProfileTape16positive",
+        "ProfileTape16positiveFormula",
+        "ProfileTape1positive",
+        "ProfileTape1positiveFormula",
+        "ProfileTape1touching",
+        "ProfileTape1touchingFormula",
+        "ProfileTape2positive",
+        "ProfileTape2positiveFormula",
+        "ProfileTape2touching",
+        "ProfileTape2touchingFormula",
+        "ProfileTape4positive",
+        "ProfileTape4positiveFormula",
+        "ProfileTape8positive",
+        "ProfileTape8positiveFormula",
+        "RadixEndpoints",
+        "RadixExpData",
+        "RadixExpSound",
+        "SampleTransfer",
+        "ScaledBinding",
+        "ScaledData",
+        "ScaledEntries",
+        "ScaledEval",
+        "ScaledLiteral",
+        "ScaledRefs",
+        "ScaledSound",
+        "WideProbe20Interval",
+        "WideProbe22Interval"
+      ],
+      "eligible": 525,
+      "failed_source_locations": [],
+      "receipt_sha256": "ca36d50746df822b03aaf92a835df3f1ed789fb6eeed736e74b3ac44ee5a65c3",
+      "result": "passed"
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "3b22b2a8e4d347fe435c1ddd0d18a8ffc6a4328fa8a5cdf6df9fc5a8ebba1c73",
+      "status_sha256": "97903edde8828af2bf9de84877d807e124a76f131949cb802250678425d57184",
+      "log_sha256": "50fede8a683963562fb7ce65079ce58ff9ac0b52b4fab5c79a9d2da3449cbf9c",
+      "start_utc": "2026-11-26T11:07:48Z",
+      "finish_utc": "2026-11-26T11:11:31Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/New/Exchange/CrudeModularData.lean",
+          "line": 48,
+          "column": 84,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/GradingsOfY.lean",
+          "line": 210,
+          "column": 24,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Seesaw/GradingsOfY.lean",
+          "line": 226,
+          "column": 4,
+          "message": "Invalid field `pairEvalY`: The environment does not contain `Data.pairEvalY`, so it is not possible to project the field `pairEvalY` from an expression"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 92,
+          "column": 69,
+          "message": "failed to synthesize instance of type class"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "8e9b8aefb683106c0c2ca08fac57e24ff2ad7a4a",
+      "source_tree": "28b3de5f7f33ef4f2671db1227fb1502b24b951f",
+      "exit": 1,
+      "wall_seconds": 206.018,
+      "newly_built": [
+        "Lib.Cohomology.PointClass.LinePointClass",
+        "Lib.Cohomology.PointClass.ProjectivePointClass",
+        "Lib.Cohomology.ProjectiveLine.NormalizationPullback",
+        "Lib.Cohomology.SmoothBaseChange.SmoothBaseChange",
+        "Lib.PadicComparison.CrystallineFrobenius.CrystallineCohomology",
+        "Lib.PadicComparison.CrystallineFrobenius.DenseRelation",
+        "Lib.PadicComparison.HodgeTate.HodgeTateVectors",
+        "Lib.PadicComparison.Primitive.PrimitiveComparison",
+        "New.Exchange.AlgebraicPartDefs",
+        "New.Selmer.FitTwists",
+        "New.SiegelWeil.AuxPairVanishing",
+        "New.SiegelWeil.DescentsVanishPlanes"
+      ],
+      "eligible": 703,
+      "failed_source_locations": [
+        "CompactGRH/src/New/Exchange/CrudeModularData.lean:48:84",
+        "CompactGRH/src/New/Seesaw/GradingsOfY.lean:210:24",
+        "CompactGRH/src/New/Seesaw/GradingsOfY.lean:226:4",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:92:69"
+      ],
+      "receipt_sha256": "e4e15c602855477c97ff9d43830d19ef299df3068f058f3cf25301d990e95b54",
+      "result": "failed",
+      "failed_targets": [
+        "New.Exchange.CrudeModularData",
+        "New.Seesaw.GradingsOfY",
+        "Lib.Cohomology.PointClass.GaloisRep"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "7f9453180901055f1f15be99c65ec7dc02648176ef8bda5ba92e2695481da2c1",
+      "status_sha256": "3e25b0f4f35b3d392248c90336babf175eb0a667d9ccbef1065391d25b934a2e",
+      "log_sha256": "e6ca05d61a394dc06cf44d23bd8715220d965b54a6b3aae7b04996882e542971",
+      "start_utc": "2026-11-26T11:20:54Z",
+      "finish_utc": "2026-11-26T11:24:40Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 79,
+          "column": 61,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 82,
+          "column": 35,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 86,
+          "column": 57,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 88,
+          "column": 23,
+          "message": "Unknown identifier `X.point_eq`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 88,
+          "column": 23,
+          "message": "Unknown identifier `X.point_eq`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 88,
+          "column": 7,
+          "message": "Insufficient number of fields for `⟨...⟩` constructor: Constructor `Eq.refl` does not have explicit fields, but 3 were provided"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 89,
+          "column": 2,
+          "message": "No goals to be solved"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 95,
+          "column": 64,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 96,
+          "column": 41,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 100,
+          "column": 20,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 105,
+          "column": 20,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 106,
+          "column": 51,
+          "message": "Invalid field notation: Function `mem_stdPrincipalLevel_iff` does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 106,
+          "column": 31,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 121,
+          "column": 70,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 125,
+          "column": 64,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 122,
+          "column": 69,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 135,
+          "column": 60,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 192,
+          "column": 5,
+          "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `finiteEquiv`) does not have a usable parameter of type `Fits ...` for which to substitute `X`"
+        },
+        {
+          "path": "CompactGRH/src/New/Filling/PoincareSeries.lean",
+          "line": 185,
+          "column": 91,
+          "message": "unsolved goals"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 94,
+          "column": 12,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 95,
+          "column": 6,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 96,
+          "column": 12,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 97,
+          "column": 7,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 98,
+          "column": 12,
+          "message": "failed to synthesize instance of type class"
+        },
+        {
+          "path": "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean",
+          "line": 101,
+          "column": 10,
+          "message": "overloaded, errors"
+        },
+        {
+          "path": "CompactGRH/src/New/Exchange/TriangleArrows.lean",
+          "line": 52,
+          "column": 0,
+          "message": "failed to set reducibility status, `instInv` is not a definition"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "6bfbe26fbd87822d1f9c4434dde84489dab7ff8e",
+      "source_tree": "9e1711f2b1e8ac93a1ce9c0623ea2ccd622cd2c4",
+      "exit": 1,
+      "wall_seconds": 208.65,
+      "newly_built": [
+        "New.Columns.ChainValuation",
+        "New.Columns.JetExponentBound",
+        "New.Columns.LocalStatement",
+        "New.Columns.MarkedPrimeType",
+        "New.Columns.TwistedHeckeType",
+        "New.Exchange.AlgebraicPartConjugates",
+        "New.Exchange.CharacterLiftNorm",
+        "New.Exchange.CostOfSquares",
+        "New.Exchange.CrudeModularData",
+        "New.Exchange.GridFirstColumns",
+        "New.Exchange.GridModuli",
+        "New.Exchange.GridMove",
+        "New.Exchange.RowLadder",
+        "New.Exchange.TriangleLevelExponent",
+        "New.Rows.GluedFormTheta",
+        "New.Rows.LineArithmetic",
+        "New.Rows.LineCoordinates",
+        "New.Rows.MemberKernels",
+        "New.Rows.NaturalFormNear",
+        "New.Seesaw.GoodDatumExists",
+        "New.Seesaw.GradingsOfY",
+        "New.Seesaw.LiftCharacters",
+        "New.Seesaw.PairTensorData"
+      ],
+      "eligible": 715,
+      "failed_source_locations": [
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:79:61",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:82:35",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:86:57",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:88:23",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:88:23",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:88:7",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:89:2",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:95:64",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:96:41",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:100:20",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:105:20",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:106:51",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:106:31",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:121:70",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:125:64",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:122:69",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:135:60",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:192:5",
+        "CompactGRH/src/New/Filling/PoincareSeries.lean:185:91",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:94:12",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:95:6",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:96:12",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:97:7",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:98:12",
+        "CompactGRH/src/Lib/Cohomology/PointClass/GaloisRep.lean:101:10",
+        "CompactGRH/src/New/Exchange/TriangleArrows.lean:52:0"
+      ],
+      "receipt_sha256": "2714d11667d86c2b832f57da70d808ad823d614928f8262ce7d155bad42ef875",
+      "result": "failed",
+      "failed_targets": [
+        "New.Filling.PoincareSeries",
+        "Lib.Cohomology.PointClass.GaloisRep",
+        "New.Exchange.TriangleArrows"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "760be806e823b6eb774ea3c9ba7c06858e8f05340ef8447cfe57de27dab4c13a",
+      "status_sha256": "e4afed09b4c7a1f61f4b7b7b969d9695af9386692a0286913d4598fcdf6faa1e",
+      "log_sha256": "99c403b76292e78dc52527a00e3a9bc6816884dc1542672519d94890dc24ea1e",
+      "start_utc": "2026-11-26T11:31:51Z",
+      "finish_utc": "2026-11-26T11:36:27Z",
+      "diagnostics": [
+        {
+          "path": "CompactGRH/src/New/Rows/Separation.lean",
+          "line": 59,
+          "column": 88,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        }
+      ],
+      "root": "+Main",
+      "source_commit": "53d3fc49f3eb5617cd6c5e19a7f1d0f1af01193e",
+      "source_tree": "0a75fc35bf513999718bde722e1644e43709d763",
+      "exit": 1,
+      "wall_seconds": 257.368,
+      "newly_built": [
+        "Lib.Adelic.CuspForms.BaseLevel",
+        "Lib.Cohomology.PointClass.GaloisRep",
+        "Lib.GaloisRep.LocalGlobal.EigencharCompatibility",
+        "Lib.GaloisRep.LocalGlobal.LabelCompatibility",
+        "Lib.GaloisRep.LocalGlobal.TypeFrobenius",
+        "Lib.GaloisRep.Main.AvatarCompatibility",
+        "Lib.GaloisRep.Main.SeedRepresentation",
+        "Lib.GaloisRep.Main.SphericalAllRanks",
+        "Lib.LocalGL.TaylorWiles.AuxPlaceOperators",
+        "Lib.LocalGL.TaylorWiles.HeckeAlgebra",
+        "New.Exchange.ChainNorms",
+        "New.Exchange.CrudeRows",
+        "New.Exchange.RowsReached",
+        "New.Exchange.TriangleArrows",
+        "New.Filling.ColumnCoords",
+        "New.Filling.DegreeBounds",
+        "New.Filling.FillingAdmissible",
+        "New.Filling.FillingData",
+        "New.Filling.PoincareSeries",
+        "New.GaloisRep.LabelUniqueness",
+        "New.Patching.OnePrimeTie",
+        "New.Rows.CartanIntegrality",
+        "New.Rows.MemberOrthogonality",
+        "New.Rows.MonomialCoefficientVector",
+        "New.Rows.RowVolume",
+        "New.Seesaw.BesselGeneric",
+        "New.Seesaw.UnfoldingStages",
+        "New.Selmer.AptTupleDefs",
+        "New.Selmer.AptTuples",
+        "New.Selmer.BaseLevelOfLabel",
+        "New.Selmer.DenominatorBound",
+        "New.Selmer.HeckeStableSubspaces",
+        "New.Selmer.HeckeString",
+        "New.Selmer.LabelledColumns",
+        "New.Selmer.LevelPlacesChosen",
+        "New.Selmer.RankOneDenominator",
+        "New.Selmer.RibetElement",
+        "New.Selmer.RowBalanced",
+        "New.Selmer.TrianglePrimes",
+        "New.Selmer.TwistForRows",
+        "New.Selmer.ValueFamilies",
+        "New.Trace.GoodFormTransfer",
+        "New.Trace.LabelRigidity"
+      ],
+      "eligible": 738,
+      "failed_source_locations": [
+        "CompactGRH/src/New/Rows/Separation.lean:59:88"
+      ],
+      "receipt_sha256": "d6d4db66ab72e97083e198a94dfc3ad791305b5cebbe61e53b6845d5daca5319",
+      "result": "failed",
+      "failed_targets": [
+        "New.Rows.Separation"
+      ]
+    },
+    {
+      "kind": "warm source build",
+      "archive_sha256": "720c33da6210d2d120c3e4326ca2a781f9e1e1e6e745651d6aa8309eee09bdde",
+      "status_sha256": "466c26a6b1826a90ffad73c9a43a6733058c2efe10603900032f8680385a6b40",
+      "log_sha256": "711396f8fd29ba40d22ef4a6025f0998c2fe4118837d6080dcc11915899a2716",
+      "start_utc": "2026-11-26T11:44:36Z",
+      "finish_utc": "2026-11-26T11:47:12Z",
+      "diagnostics": [],
+      "root": "+Main",
+      "source_commit": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+      "source_tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+      "exit": 0,
+      "wall_seconds": 138.063,
+      "newly_built": [
+        "Main",
+        "New.Endgame.LongForms",
+        "New.Endgame.ShortAndEnough",
+        "New.Filling.FillingTheorem",
+        "New.Filling.RowDimension",
+        "New.Main",
+        "New.Rows.ComparisonForms",
+        "New.Rows.HeckeValueHeight",
+        "New.Rows.LiftVolumeHeight",
+        "New.Rows.Separation",
+        "New.Seesaw.SeesawTheorem",
+        "New.Selmer.FitTwistsExist",
+        "New.Selmer.RowsExist"
+      ],
+      "eligible": 781,
+      "failed_source_locations": [],
+      "receipt_sha256": "3c7580740b2ff64179d0bba7ff08e6cca586f240283b7a5e84b07f2c6d38a2f7",
+      "result": "passed"
+    }
+  ]
+}

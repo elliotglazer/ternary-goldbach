@@ -1,0 +1,798 @@
+{
+  "experiment": "Paired source-encoding trials",
+  "records": [
+    {
+      "measurements": {
+        "basis_olean": "55e97969b8fe5f01a9ed79e6b1af1112e09e183719845efd96c0881b98ea4a7b",
+        "compiles": {
+          "A": {
+            "driver": {
+              "code": 0,
+              "elapsed": 2.697589000046719,
+              "guard": false,
+              "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "minima": [
+                7.89,
+                13.133,
+                5.659
+              ],
+              "process_cpu": [
+                1.34375,
+                1.078125
+              ]
+            },
+            "frontend": {
+              "code": 0,
+              "elapsed": 45.08546199998818,
+              "guard": false,
+              "log_sha256": "32b3b3b0e76f54fd70134d4ead8cd87ad0a60af37e891154faf7fb9c1b01ead2",
+              "minima": [
+                4.134,
+                9.062,
+                5.659
+              ],
+              "process_cpu": [
+                9.71875,
+                17.515625
+              ]
+            },
+            "private_sha": "57273d2b548e05a4c4bb72b08fc431a004adbbc6c9a2d6bea420e82e51a884cb",
+            "public_sha": "1cde92481157404a15beac8199eaea6ac6bc1388d2db67b03f96c03bb1fa290c"
+          },
+          "B": {
+            "driver": {
+              "code": 0,
+              "elapsed": 2.7939832000411116,
+              "guard": false,
+              "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "minima": [
+                8.028,
+                30.439,
+                5.549
+              ],
+              "process_cpu": [
+                1.640625,
+                1.109375
+              ]
+            },
+            "frontend": {
+              "code": 0,
+              "elapsed": 26.91271229996346,
+              "guard": false,
+              "log_sha256": "32b3b3b0e76f54fd70134d4ead8cd87ad0a60af37e891154faf7fb9c1b01ead2",
+              "minima": [
+                5.504,
+                23.386,
+                5.551
+              ],
+              "process_cpu": [
+                8.296875,
+                17.96875
+              ]
+            },
+            "private_sha": "57273d2b548e05a4c4bb72b08fc431a004adbbc6c9a2d6bea420e82e51a884cb",
+            "public_sha": "1cde92481157404a15beac8199eaea6ac6bc1388d2db67b03f96c03bb1fa290c"
+          }
+        },
+        "source": {
+          "augmented_source_sha256": "2229552f2ac6874ca4c593494cc0897737eb290c860298da54bdbe9a9de7fbf5",
+          "dependency_targets": [
+            "+WideSource22:olean",
+            "+PilotPrimeProductBasis:olean"
+          ],
+          "first_root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+          "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "lean_release": "4.35.0",
+          "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "module": "ProductRange563245474818Interval",
+          "original_source_sha256": "475db2e1978432bac936741602aaf8f2615e9bf824afcacc9d3a25d6d545b575",
+          "production_prefix_identical": true,
+          "shared_basis": "SmallGoldbach.PilotPrimeProduct.sound",
+          "shared_bitmap": "SmallGoldbach.WideSource22.certifiedSource",
+          "source_revision": "fc729595d20448d3689f706378879a30a323a762",
+          "tiles": [
+            {
+              "encoded_row_count": 8,
+              "even_inputs": 33554432,
+              "list_literal_sha256": "8d0e62d14d022702118ab8b2af382e40af2a95430dddf1682df60f6c809a4d62",
+              "list_literal_source_bytes": 12887,
+              "lower_inclusive": 563648128002,
+              "packed_literal_count": 16,
+              "production_private_theorem": "c48",
+              "row_list": "r48",
+              "upper_exclusive": 563715236866
+            },
+            {
+              "encoded_row_count": 8,
+              "even_inputs": 33554432,
+              "list_literal_sha256": "75d7f0e57f1ec9b92a27f00b64fa9ec14c0d55a63471bd6c4d7545f933952758",
+              "list_literal_source_bytes": 12846,
+              "lower_inclusive": 563715236866,
+              "packed_literal_count": 16,
+              "production_private_theorem": "c56",
+              "row_list": "r56",
+              "upper_exclusive": 563782345730
+            }
+          ],
+          "union_root": "SmallGoldbach.ProductRange563245474818.adjacentPair"
+        },
+        "trial_order": "ABBAAB",
+        "trials": [
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 43.218988300010096,
+              "guard": false,
+              "log_sha256": "cce94a072b35b2bf0fbc96d00e85065d98c6a8b553680af52a83114886e2ca0e",
+              "minima": [
+                5.132,
+                15.469,
+                5.546
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.296875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 1288648300,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.375,
+                  "user_cpu_seconds": 0.921875
+                },
+                {
+                  "cpu_seconds": 1.171875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1167529900,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.28125,
+                  "user_cpu_seconds": 0.890625
+                }
+              ],
+              "process_cpu": [
+                11.609375,
+                5.25
+              ]
+            },
+            "tag": "A",
+            "trial": 1
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 15.206961399991997,
+              "guard": false,
+              "log_sha256": "46c03f16f4776c93debea9e7365eeb9b6fd10f5873f973dda7759bee4f6baf2b",
+              "minima": [
+                6.332,
+                15.989,
+                5.514
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.125,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 1161128500,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.296875,
+                  "user_cpu_seconds": 0.828125
+                },
+                {
+                  "cpu_seconds": 1.109375,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1091078600,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.34375,
+                  "user_cpu_seconds": 0.765625
+                }
+              ],
+              "process_cpu": [
+                9.3125,
+                4.765625
+              ]
+            },
+            "tag": "B",
+            "trial": 2
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 13.713236599985976,
+              "guard": false,
+              "log_sha256": "d062afb190f08b99dce3f5d97bb7479955a4ef0720f0f9c0c605104e4bea9f6f",
+              "minima": [
+                6.213,
+                10.602,
+                5.513
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.203125,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 1205617200,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.3125,
+                  "user_cpu_seconds": 0.890625
+                },
+                {
+                  "cpu_seconds": 1.109375,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1126367900,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.25,
+                  "user_cpu_seconds": 0.859375
+                }
+              ],
+              "process_cpu": [
+                9.125,
+                4.234375
+              ]
+            },
+            "tag": "B",
+            "trial": 3
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 13.450477799982764,
+              "guard": false,
+              "log_sha256": "916c20b02764a06e6701cff5eb96ddc3068ca2a20e43b3bcf96185a7d06f8e6c",
+              "minima": [
+                5.987,
+                23.717,
+                5.589
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.1875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 1176302900,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.375,
+                  "user_cpu_seconds": 0.8125
+                },
+                {
+                  "cpu_seconds": 1.109375,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1118826500,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.421875,
+                  "user_cpu_seconds": 0.6875
+                }
+              ],
+              "process_cpu": [
+                8.53125,
+                4.484375
+              ]
+            },
+            "tag": "A",
+            "trial": 4
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 12.825368000019807,
+              "guard": false,
+              "log_sha256": "f8c905c61508bee6248cc13964bfd2428adbc54ee892b78569bf74e6bda80c6b",
+              "minima": [
+                6.469,
+                24.216,
+                5.589
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 0.90625,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 918927900,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.25,
+                  "user_cpu_seconds": 0.65625
+                },
+                {
+                  "cpu_seconds": 0.84375,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 846381200,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.171875,
+                  "user_cpu_seconds": 0.671875
+                }
+              ],
+              "process_cpu": [
+                8.296875,
+                4.234375
+              ]
+            },
+            "tag": "A",
+            "trial": 5
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 16.11174810002558,
+              "guard": false,
+              "log_sha256": "d4d7256017ae65d4e45a278dec4c9a5fcbb168e9bcf6d968c6a0a4657d3c9506",
+              "minima": [
+                7.196,
+                8.862,
+                5.585
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.296875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48"
+                  ],
+                  "elapsed_ns": 1440711000,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+                  "system_cpu_seconds": 0.375,
+                  "user_cpu_seconds": 0.921875
+                },
+                {
+                  "cpu_seconds": 1.3125,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1335031100,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.328125,
+                  "user_cpu_seconds": 0.984375
+                }
+              ],
+              "process_cpu": [
+                9.921875,
+                5.234375
+              ]
+            },
+            "tag": "B",
+            "trial": 6
+          }
+        ],
+        "variants": {
+          "A": {
+            "WideSource22.olean": "f5c0b08ca92c92115a39d742b1dd5d3a405b046e347b1a3bd4efc63c48324579",
+            "WideSource22.olean.private": "d42b6918eab7dc1412b9198a34a3fbfb79c43129a154cc70cee8d4e0dd36abea"
+          },
+          "B": {
+            "WideSource22.olean": "8133aa33f259c21278e9627c5bbd34913f8428e5f2d6a5ad0ef3ca4c680c170d",
+            "WideSource22.olean.private": "19404b6fdfeb891b5dcf5f804b3c072fb8732025bcd7de5698f3a700c5423ea1"
+          }
+        }
+      },
+      "original_bytes": 17735,
+      "original_sha256": "5d74d224b3b861d989d5359d10c3b9256963651688059b2be346d59b04da5f42",
+      "report_name": "results.json"
+    },
+    {
+      "measurements": {
+        "compiled": {
+          "A": {
+            "private_sha": "57273d2b548e05a4c4bb72b08fc431a004adbbc6c9a2d6bea420e82e51a884cb",
+            "public_sha": "1cde92481157404a15beac8199eaea6ac6bc1388d2db67b03f96c03bb1fa290c"
+          },
+          "B": {
+            "private_sha": "57273d2b548e05a4c4bb72b08fc431a004adbbc6c9a2d6bea420e82e51a884cb",
+            "public_sha": "1cde92481157404a15beac8199eaea6ac6bc1388d2db67b03f96c03bb1fa290c"
+          }
+        },
+        "roots": [
+          "SmallGoldbach.ProductRange563245474818.adjacentPair",
+          "SmallGoldbach.ProductRange563245474818.covered"
+        ],
+        "six_new_leaves": [
+          "c0",
+          "c8",
+          "c16",
+          "c24",
+          "c32",
+          "c40"
+        ],
+        "source": {
+          "augmented_source_sha256": "2229552f2ac6874ca4c593494cc0897737eb290c860298da54bdbe9a9de7fbf5",
+          "dependency_targets": [
+            "+WideSource22:olean",
+            "+PilotPrimeProductBasis:olean"
+          ],
+          "first_root": "SmallGoldbach.ProductRange563245474818.adjacentFirst",
+          "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "lean_release": "4.35.0",
+          "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "module": "ProductRange563245474818Interval",
+          "original_source_sha256": "475db2e1978432bac936741602aaf8f2615e9bf824afcacc9d3a25d6d545b575",
+          "production_prefix_identical": true,
+          "shared_basis": "SmallGoldbach.PilotPrimeProduct.sound",
+          "shared_bitmap": "SmallGoldbach.WideSource22.certifiedSource",
+          "source_revision": "fc729595d20448d3689f706378879a30a323a762",
+          "tiles": [
+            {
+              "encoded_row_count": 8,
+              "even_inputs": 33554432,
+              "list_literal_sha256": "8d0e62d14d022702118ab8b2af382e40af2a95430dddf1682df60f6c809a4d62",
+              "list_literal_source_bytes": 12887,
+              "lower_inclusive": 563648128002,
+              "packed_literal_count": 16,
+              "production_private_theorem": "c48",
+              "row_list": "r48",
+              "upper_exclusive": 563715236866
+            },
+            {
+              "encoded_row_count": 8,
+              "even_inputs": 33554432,
+              "list_literal_sha256": "75d7f0e57f1ec9b92a27f00b64fa9ec14c0d55a63471bd6c4d7545f933952758",
+              "list_literal_source_bytes": 12846,
+              "lower_inclusive": 563715236866,
+              "packed_literal_count": 16,
+              "production_private_theorem": "c56",
+              "row_list": "r56",
+              "upper_exclusive": 563782345730
+            }
+          ],
+          "union_root": "SmallGoldbach.ProductRange563245474818.adjacentPair"
+        },
+        "trials": [
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 20.71341820002999,
+              "guard": false,
+              "log_sha256": "127e9cc90959e0e24d9900b763a351c140a6ff93e5af1316faac72fe97bbaf7d",
+              "minima": [
+                3.254,
+                6.819,
+                5.571
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 2.703125,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 2715234600,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.9375,
+                  "user_cpu_seconds": 1.765625
+                },
+                {
+                  "cpu_seconds": 6.421875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.covered",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r8"
+                  ],
+                  "elapsed_ns": 6487276000,
+                  "root": "SmallGoldbach.ProductRange563245474818.covered",
+                  "system_cpu_seconds": 1.734375,
+                  "user_cpu_seconds": 4.6875
+                }
+              ],
+              "process_cpu": [
+                10.875,
+                9.5
+              ]
+            },
+            "tag": "B",
+            "trial": 1
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 18.551989700004924,
+              "guard": false,
+              "log_sha256": "6adc30c3d648e822a58fc178630642f254058b55d7a88fff2e93b7e1a88bce0a",
+              "minima": [
+                5.093,
+                25.608,
+                5.534
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.859375,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1866267700,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.40625,
+                  "user_cpu_seconds": 1.453125
+                },
+                {
+                  "cpu_seconds": 5.3125,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.covered",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r8"
+                  ],
+                  "elapsed_ns": 5358867800,
+                  "root": "SmallGoldbach.ProductRange563245474818.covered",
+                  "system_cpu_seconds": 1.1875,
+                  "user_cpu_seconds": 4.125
+                }
+              ],
+              "process_cpu": [
+                9.390625,
+                8.203125
+              ]
+            },
+            "tag": "A",
+            "trial": 2
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 19.407778699998744,
+              "guard": false,
+              "log_sha256": "16d183820330b7e0ced9b9469980c1a0c9ae3278c9ac41a3a83ed6978d8cb76a",
+              "minima": [
+                5.354,
+                24.207,
+                5.534
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 1.875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 1925760200,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 0.453125,
+                  "user_cpu_seconds": 1.421875
+                },
+                {
+                  "cpu_seconds": 6.71875,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.covered",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r8"
+                  ],
+                  "elapsed_ns": 7811078300,
+                  "root": "SmallGoldbach.ProductRange563245474818.covered",
+                  "system_cpu_seconds": 1.796875,
+                  "user_cpu_seconds": 4.921875
+                }
+              ],
+              "process_cpu": [
+                9.171875,
+                8.90625
+              ]
+            },
+            "tag": "A",
+            "trial": 3
+          },
+          {
+            "result": {
+              "code": 0,
+              "elapsed": 33.56354820000706,
+              "guard": false,
+              "log_sha256": "38ddfed51a57229814a0fe427d83a7407516d85a1a42781daa6e456b1422b88e",
+              "minima": [
+                5.064,
+                7.119,
+                5.541
+              ],
+              "phases": [
+                {
+                  "cpu_seconds": 2.765625,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c48._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c56._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r48",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r56"
+                  ],
+                  "elapsed_ns": 4211977600,
+                  "root": "SmallGoldbach.ProductRange563245474818.adjacentPair",
+                  "system_cpu_seconds": 1.140625,
+                  "user_cpu_seconds": 1.625
+                },
+                {
+                  "cpu_seconds": 7.015625,
+                  "declarations": [
+                    "SmallGoldbach.ProductRange563245474818.covered",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c0._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c16._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c24._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c32._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c40._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_1",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.c8._proof_1_2",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r0",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r16",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r24",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r32",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r40",
+                    "_private.ProductRange563245474818Interval.0.SmallGoldbach.ProductRange563245474818.r8"
+                  ],
+                  "elapsed_ns": 8881309100,
+                  "root": "SmallGoldbach.ProductRange563245474818.covered",
+                  "system_cpu_seconds": 2.046875,
+                  "user_cpu_seconds": 4.96875
+                }
+              ],
+              "process_cpu": [
+                12.578125,
+                10.34375
+              ]
+            },
+            "tag": "B",
+            "trial": 4
+          }
+        ]
+      },
+      "original_bytes": 21681,
+      "original_sha256": "1568a6fe1dcb6c31c8bf3975ab77b15ee547c8584d0246f45d0bc79a522a8bf2",
+      "report_name": "six-remaining.json"
+    }
+  ],
+  "scope": "Repeated paired trials and four additional replays compare alternative encodings on source-matched adjacent leaves."
+}

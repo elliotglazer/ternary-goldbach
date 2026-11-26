@@ -1,0 +1,207 @@
+{
+  "experiment": "Palomar policy and deadline controls",
+  "records": [
+    {
+      "measurements": {
+        "genuine_python": "3.11.18",
+        "no_proof_or_cloud_dispatch": true,
+        "policy": "046554302064b2c83c2b924bea6db87fc5900c68",
+        "policy_verifier_sha256": "8d3d157ad23150ba231014c9e754c51bdff57e02180f174c6ecdbf1d37233750",
+        "tests": {
+          "distinct_schedules_and_seven_adverse_controls": true,
+          "frozen_hashes_bound_across_three_helpers": true,
+          "mandatory_kernels_and_only_stock_con_ron_dispositions": true,
+          "original_window_boundaries_including_latest_1110": true,
+          "six_profile_requirements_and_three_common_resource_bounds": true
+        }
+      },
+      "original_bytes": 809,
+      "original_sha256": "d3c554f2a6ab27de49ab6f466ab246b70140f2198bdef5c09f8a8c7139ec5bd4",
+      "report_name": "operator-controls.json"
+    },
+    {
+      "measurements": {
+        "perphase": 43200,
+        "primitives": [
+          "Nat.add",
+          "Nat.sub",
+          "Nat.mul",
+          "Nat.pow",
+          "Nat.gcd",
+          "Nat.div",
+          "Nat.mod",
+          "Nat.beq",
+          "Nat.ble",
+          "Nat.land",
+          "Nat.lor",
+          "Nat.xor",
+          "Nat.shiftLeft",
+          "Nat.shiftRight",
+          "String.ofList",
+          "Char.ofNat",
+          "List",
+          "eagerReduce",
+          "Nat",
+          "String",
+          "String.mk",
+          "Char",
+          "optParam",
+          "autoParam",
+          "semiOutParam",
+          "outParam"
+        ],
+        "profile": {
+          "id": "palomar-namespace-32x64-v1",
+          "limits": {
+            "execution_budget_seconds": 19800,
+            "file_size_max_bytes": 1099511627776,
+            "job_timeout_minutes": 350,
+            "memory_high_percent": 95,
+            "memory_max_percent": 98,
+            "minimum_host_memory_bytes": 64424509440,
+            "minimum_workspace_free_bytes": 21474836480,
+            "open_files_max": 1048576,
+            "tasks_max": 32768
+          },
+          "runner": {
+            "architecture": "x86_64",
+            "label": "nscloud-ubuntu-24.04-amd64-32x64-with-features",
+            "labels": [
+              "nscloud-ubuntu-24.04-amd64-32x64-with-features",
+              "namespace-features:container.privileged=true"
+            ],
+            "provider": "namespace"
+          },
+          "schema_version": 1,
+          "trusted_tools": {
+            "bwrap_source_tag": "v0.12.0",
+            "toolchain_floor": "v4.35.0-rc2"
+          }
+        },
+        "protected": [
+          [
+            "nanoda",
+            "nanoda_bin"
+          ],
+          [
+            "con-ron",
+            "con-ron"
+          ]
+        ]
+      },
+      "original_bytes": 1194,
+      "original_sha256": "4bbfe5cf6dfaa0ce180b6baef8a8dc6b6418410028aadcfff62a81e9ed71602d",
+      "report_name": "new-actual435.json"
+    },
+    {
+      "measurements": {
+        "perphase": 43200,
+        "primitives": [
+          "Nat.add",
+          "Nat.sub",
+          "Nat.mul",
+          "Nat.pow",
+          "Nat.gcd",
+          "Nat.div",
+          "Nat.mod",
+          "Nat.beq",
+          "Nat.ble",
+          "Nat.land",
+          "Nat.lor",
+          "Nat.xor",
+          "Nat.shiftLeft",
+          "Nat.shiftRight",
+          "String.ofList",
+          "Char.ofNat",
+          "List",
+          "eagerReduce",
+          "Nat",
+          "String",
+          "String.mk",
+          "Char",
+          "optParam",
+          "autoParam",
+          "semiOutParam",
+          "outParam"
+        ],
+        "profile": {
+          "id": "palomar-namespace-32x64-v1",
+          "limits": {
+            "execution_budget_seconds": 19800,
+            "file_size_max_bytes": 1099511627776,
+            "job_timeout_minutes": 350,
+            "memory_high_percent": 95,
+            "memory_max_percent": 98,
+            "minimum_host_memory_bytes": 64424509440,
+            "minimum_workspace_free_bytes": 21474836480,
+            "open_files_max": 1048576,
+            "tasks_max": 32768
+          },
+          "runner": {
+            "architecture": "x86_64",
+            "label": "nscloud-ubuntu-24.04-amd64-32x64-with-features",
+            "labels": [
+              "nscloud-ubuntu-24.04-amd64-32x64-with-features",
+              "namespace-features:container.privileged=true"
+            ],
+            "provider": "namespace"
+          },
+          "schema_version": 1,
+          "trusted_tools": {
+            "bwrap_source_tag": "v0.12.0",
+            "toolchain_floor": "v4.35.0-rc2"
+          }
+        },
+        "protected": [
+          [
+            "nanoda",
+            "nanoda_bin"
+          ],
+          [
+            "con-ron",
+            "con-ron"
+          ]
+        ]
+      },
+      "original_bytes": 1194,
+      "original_sha256": "4bbfe5cf6dfaa0ce180b6baef8a8dc6b6418410028aadcfff62a81e9ed71602d",
+      "report_name": "old-actual435.json"
+    },
+    {
+      "measurements": {
+        "bytes": 364967482,
+        "candidate": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+        "candidate_tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+        "dependency_hashes": {
+          "Gemfile.lock": "d93caad3b41ab81138c1770dcde1415ac9aa47e8e469ea25b3f876a9f3d2cdff",
+          "pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl": "b8bb0864c5a28024fac8a632c443c87c5aa6f215c0b126c449ae1a150412f31d",
+          "requirements.txt": "5144c14fbd798e2eb36ce329776b1c7f15f309f007f93003c30d29ddd9261536",
+          "ruby-3.3.12-ubuntu-24.04-x64.tar.gz": "3fa2d6242e105a65f694fae86e9f68d9617c827fc14d1fcf611035b9ae2cbdb8",
+          "tg-palomar-intake-04655430-py.tgz": "099ef30fc27f0d7067a67be5a5fb7fd66154cfa1e4186c88f71c3a3070c81abc"
+        },
+        "elapsed_s": 33.68,
+        "execution_profile": "palomar-standard-v1",
+        "files": 1529,
+        "github_workflow_sha256": "7fea06a86e73d2a342b42f3fdf7335b59654190c5ba042ae88c69dddd30838c7",
+        "mode": "preflight",
+        "phase": "preparation",
+        "policy": "046554302064b2c83c2b924bea6db87fc5900c68",
+        "policy_tree": "2b1996e34b7837ab54148c1eeb9939c4e6a225b7",
+        "report_sha256": "f38e4f000dca58bfeda13ecac45bbddfeddee9301705575f33204ad05aecdadd",
+        "returned": 0,
+        "stage": "prepared",
+        "status": "pending",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "verified_script_sha256": "8d3d157ad23150ba231014c9e754c51bdff57e02180f174c6ecdbf1d37233750",
+        "versions": {
+          "pyyaml": "6.0.3"
+        }
+      },
+      "original_bytes": 1821,
+      "original_sha256": "131f6257c32f79406b622ae4599a161a33ed2c1e61288c0fdb72d9f854a076d3",
+      "report_name": "receipt.json"
+    }
+  ],
+  "scope": "The unmodified current parser, deadline functions and verified Lean toolchain were exercised, as well as synthetic deadline/recovery cases. These tests do not constitute hosted certification."
+}

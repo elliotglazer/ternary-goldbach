@@ -1,0 +1,298 @@
+{
+  "groups": [
+    {
+      "extract": "experiments/finite-10e10.json",
+      "extract_sha256": "7ff85e3e9cb9b90d25a765cacce885bebcced0cc3ea0b7be80ab840086e29c0c",
+      "newly_extracted_records": 3,
+      "public_originals": [
+        {
+          "original_bytes": 341,
+          "original_sha256": "08d9d2c76d797f0aeec34fa63e7fbbaac305da81b1f45d3f555d3c331ab774ff",
+          "public_git_blob": "279fa3f23f0d056c0dab49163b27f290b97b5748",
+          "report_name": "comparator.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/binary-through-10000000000/comparator.json"
+        },
+        {
+          "original_bytes": 297,
+          "original_sha256": "a5a0170a9162074ca829a842682e8acdd6842f67314108f586b2340ea59151e4",
+          "public_git_blob": "f371d1e708e8d6119696a600010f3d95e451d8c8",
+          "report_name": "comparator-default.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/binary-through-10000000000/comparator-default.json"
+        },
+        {
+          "original_bytes": 13718,
+          "original_sha256": "164865da27c39db13653f7c8bb7c477db9f0e4666332eec91ad74fe5bb545bcb",
+          "public_git_blob": "ab7302ad948ab127071ac476ccc5e72fe8b55cad",
+          "report_name": "receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/binary-through-10000000000/receipt.json"
+        }
+      ],
+      "scope": "Fixed-export binary prefix. NanoDa accepted in the first trial and the Lean default kernel accepted on a separately recorded retry using the same export digests.",
+      "title": "Protected binary Goldbach through 10¹⁰"
+    },
+    {
+      "extract": "experiments/one-tile.json",
+      "extract_sha256": "07d5d31bacf1387d8b23287f6cc47143e0f98d4690e6b44bd83be3df20a25889",
+      "newly_extracted_records": 2,
+      "public_originals": [],
+      "scope": "Matched baseline and balanced-expression runs on the same tile. Export, Lean and NanoDa costs are distinct phases.",
+      "title": "One-tile proof representation"
+    },
+    {
+      "extract": "experiments/64-tiles.json",
+      "extract_sha256": "dcff1ec5648c9334238ef7ff1ecbb0e16e136ba7638ee41c90b7f5b030b3156a",
+      "newly_extracted_records": 2,
+      "public_originals": [],
+      "scope": "A protected A/B comparison on the same theorem and a comparison of expression sharing at different scales.",
+      "title": "64-tile proof representation"
+    },
+    {
+      "newly_extracted_records": 0,
+      "public_originals": [
+        {
+          "original_bytes": 5805,
+          "original_sha256": "8dc080d90375481b3a99f4bb3cf73c764c6d365857ec72af0e9630031bdd206c",
+          "public_git_blob": "cf85bc2ac009d0cb0249822f6ad1bad7587252d3",
+          "report_name": "marginal-replay-receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/paired-product-tile-kernel/evidence/marginal-replay-receipt.json"
+        },
+        {
+          "original_bytes": 450,
+          "original_sha256": "40d2ce824af945a1a21def6cc83e7bbd19dbf3568937773ad9308113b69ba130",
+          "public_git_blob": "82576e19c97438f9c6b95b642ad5ce8e1d131b1e",
+          "report_name": "failed-2600MB-trial.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/paired-product-tile-kernel/evidence/failed-2600MB-trial.json"
+        },
+        {
+          "original_bytes": 1733,
+          "original_sha256": "f5113800b71f3b9be5fb3212484d74002ee2085f4a65dc5fa8e7d79ba217d5fd",
+          "public_git_blob": "c8b7be6a7c988a23b79040e9a2d4589c8df84564",
+          "report_name": "replay-receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/paired-product-tile-kernel/evidence/portable-validation.json"
+        }
+      ],
+      "scope": "Incremental kernel replay verifies newly introduced declarations in a prebuilt environment, so it measures marginal costs.",
+      "title": "Shared declarations across adjacent tiles"
+    },
+    {
+      "extract": "experiments/adjacent-variants.json",
+      "extract_sha256": "0aac08aa7d45b343170c5d87bf390a9da5dd0d3e97a2b64e61f740519b746702",
+      "newly_extracted_records": 2,
+      "public_originals": [],
+      "scope": "Repeated paired trials and four additional replays compare alternative encodings on source-matched adjacent leaves.",
+      "title": "Paired source-encoding trials"
+    },
+    {
+      "extract": "experiments/literal-c-emit.json",
+      "extract_sha256": "1065afdd3602d7459405816947c5982a5807d8a3db284abc44a22ae90872d33a",
+      "newly_extracted_records": 5,
+      "public_originals": [],
+      "scope": "Isolated fast-hex literal trials, a production module receipt, and original Linux compiler evidence separate elaboration from C generation.",
+      "title": "Large bitmaps and C emission"
+    },
+    {
+      "newly_extracted_records": 0,
+      "public_originals": [
+        {
+          "original_bytes": 1825,
+          "original_sha256": "2dba3c1b070f57bb1018169bd9cefce0025658a52e6c6b24dfadfc27da57505f",
+          "public_git_blob": "c8ed49edec4d98220fe3c9468d8a356cbd283b7b",
+          "report_name": "full-leaf-before-after.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/finite-interval-scheduling/full-leaf-before-after.json"
+        }
+      ],
+      "scope": "Complete front-end measurements before and after setting Elab.async false. Compiler arguments and source ancestry also differed, as recorded by the producer, so this is not a controlled speedup estimate.",
+      "title": "Synchronous elaboration on an interval source"
+    },
+    {
+      "newly_extracted_records": 0,
+      "public_originals": [
+        {
+          "original_bytes": 1880,
+          "original_sha256": "035b524a73c47c3da5187d43cfd1780c76f7e3c233a84f85c483f08e5705450e",
+          "public_git_blob": "5e68edc23d4b96d0b0c77609e954c2e2ba1181db",
+          "report_name": "ordinary-lake-schedule-receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/ordinary-power10-lake-schedule.json"
+        },
+        {
+          "original_bytes": 1324,
+          "original_sha256": "31c9f55b76b3becabc4948cd369998ed09f5f8d12b21d5d38c67867a198d2c05",
+          "public_git_blob": "27f1158892e027497b70be0713d59d404bba4c8f",
+          "report_name": "compact-linux435-lake-threads.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/compact-linux435-lake-threads.json"
+        }
+      ],
+      "scope": "Intervals for four sentinel jobs and genuine Power10 producers test whether explicit library prerequisites bound overlapping elaborations. A warm reuse result is separate.",
+      "title": "Ordinary Lake library dependencies"
+    },
+    {
+      "extract": "experiments/lake-facets.json",
+      "extract_sha256": "b85b8d4317406e948ab2fb763afe53042afbd459d291e6a751d90773b2bd3766",
+      "newly_extracted_records": 1,
+      "public_originals": [
+        {
+          "original_bytes": 1230,
+          "original_sha256": "ed615a8b2d25009990bd4d31f10d223fcbf7ad3590fd12333420af66fd82c1f0",
+          "public_git_blob": "d112d2882e81de2d153df4ad5355c39092c45c46",
+          "report_name": "verdict.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/stock-runtime/legacy-import-controls/verdict.json"
+        }
+      ],
+      "scope": "Small stock fixtures compare proof output, module facets and ingress checks; limited to the exact tested configurations.",
+      "title": "Lean interface and Lake facet experiments"
+    },
+    {
+      "extract": "experiments/lake-cache.json",
+      "extract_sha256": "3a19e736e3f078800d04f713a5cd5ed95af47749a2ef2599fc36080075a33135",
+      "newly_extracted_records": 1,
+      "public_originals": [
+        {
+          "original_bytes": 12824,
+          "original_sha256": "e95c3f80353fa3fe5417104e2def93bf4b6d4df76b81f3cd5ec6ed8910791d6d",
+          "public_git_blob": "f3bca5c0954f5e2037f11816947a76d6ecf1a755",
+          "report_name": "stock-trace-result.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/warm-main/independent-roots/stock-trace-result.json"
+        },
+        {
+          "original_bytes": 4307,
+          "original_sha256": "88b5a713c4538a7e3bd5ff98be393f05a4f452306d5554785867d62c5e2a1e27",
+          "public_git_blob": "b2972e476beac5b11576c14a33a3017fcc399ca8",
+          "report_name": "stock-reuse-project-counts.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/warm-main/independent-roots/stock-reuse-project-counts.json"
+        }
+      ],
+      "scope": "Separate ordinary Lake controls test whether a second root rebuilds an unchanged ancestor and whether earlier finite objects can be reused after a configuration change.",
+      "title": "Lake dependency and trace reuse"
+    },
+    {
+      "extract": "experiments/profile-rows.json",
+      "extract_sha256": "07134642f9ea5f519a1ea4cd711b52f81d10eee4175524952de6b581fab7dbd6",
+      "newly_extracted_records": 2,
+      "public_originals": [
+        {
+          "original_bytes": 9912,
+          "original_sha256": "29c025ca1340a430c673352a43218799dce818198289b48a15255fe734bf63fe",
+          "public_git_blob": "19633262c1dd85310261328bb687f5d547827f53",
+          "report_name": "receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/eight-numerical-profiles/receipt.json"
+        },
+        {
+          "original_bytes": 3938,
+          "original_sha256": "5d6ae14ed9d0ba248832765d5c061a1a16f09f0e7303096bc5a177b330addec9",
+          "public_git_blob": "f4756be00db90a4c85d131dd860e97f067e70034",
+          "report_name": "verified-price-rows-portable.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/native-analytic-controls/price-joint-24954b28/verified-price-rows-portable.json"
+        }
+      ],
+      "scope": "Analytic coefficient tape counts, the audit of eight profile modules, and a checked assembly of all four row groups. The intermediate theorem retains its recorded assumptions.",
+      "title": "Interval certificates and joined analytic rows"
+    },
+    {
+      "extract": "experiments/bound-axioms.json",
+      "extract_sha256": "cc9e872ccbd1e6d39315922689b362f4669b5ea51967d37b69368bd3d94beee2",
+      "newly_extracted_records": 2,
+      "public_originals": [],
+      "scope": "Controlled fixtures check whether the metadata reader tracks a disallowed axiom from its declaration into dependent declarations; this is diagnostic evidence.",
+      "title": "Axiom provenance controls"
+    },
+    {
+      "extract": "experiments/exposure-witness.json",
+      "extract_sha256": "2f42849616c8b3b6c8dcf8f05b4a4e81297814769def819e09fdbdd5e100a14a",
+      "newly_extracted_records": 3,
+      "public_originals": [
+        {
+          "original_bytes": 2252,
+          "original_sha256": "d3eeaf6491e69adceaf1e662071dd9ff045290c62c1ae15bc18b3ae8b5794728",
+          "public_git_blob": "d195623105c4e4f3a4e20ef3b57ee86570d4d818",
+          "report_name": "quadfield-plain-public-control.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/elaboration-e9f3c8ad/quadfield-plain-public-control.json"
+        },
+        {
+          "original_bytes": 9350,
+          "original_sha256": "f24755dfc3b119824ab11986548d47fa71781a4e11886b7667d80ddff82bbdb6",
+          "public_git_blob": "176693399d1c37bb2877e5ed4a79265a45cf79e1",
+          "report_name": "quadfield-systemic-ab.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/elaboration-e9f3c8ad/quadfield-systemic-ab.json"
+        }
+      ],
+      "scope": "Typed and scoped-simp fixtures, original and repaired theorem bodies, and compatibility-switch controls isolate elaboration failures. Focused fixtures are represented separately from complete source builds.",
+      "title": "Lean 4.35 declaration exposure and witness inference"
+    },
+    {
+      "newly_extracted_records": 0,
+      "public_originals": [
+        {
+          "original_bytes": 3586,
+          "original_sha256": "3b6a5e0d660c0542330fb5fde5960aee3a6fe4c1aa26f247bf9f9f7aaa102f66",
+          "public_git_blob": "6f6d375b4d807e9990ec80e4d9c6925f6a9dcf22",
+          "report_name": "compact-linux435-proofwidgets.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/compact-linux435-proofwidgets.json"
+        }
+      ],
+      "scope": "A Linux source-sandbox test checks the genuine challenge and one dependent Goldbach module with frozen dependencies.",
+      "title": "Frozen dependencies under protected compilation"
+    },
+    {
+      "extract": "experiments/two-roots-and-join.json",
+      "extract_sha256": "93dd5d0b6713e5502b1af0f11460fd50a226eb55aaddfad6047ec0f0ce9ea4ec",
+      "newly_extracted_records": 1,
+      "public_originals": [
+        {
+          "original_bytes": 3459,
+          "original_sha256": "c5a778d23fd8187510b4ec192333fba2665c3d6cdda3615108301e12d4a5ab7a",
+          "public_git_blob": "805385c476135b528c9cdba12f5dd1ee310ac41b",
+          "report_name": "receipt.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/finite-terminal-22f442fa/receipt.json"
+        },
+        {
+          "original_bytes": 4774,
+          "original_sha256": "c370c954bf6a254bc404d09a8c57c8a8a2c31e7e2b78b947ffdf6f65ce8afe0e",
+          "public_git_blob": "2975f5ac9ac5f077300624dc745841802f906743",
+          "report_name": "evidence.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/joined-theorem-3ca2fcf7/evidence.json"
+        }
+      ],
+      "scope": "Source-bound warm finite target and final Lean theorem assembly. Each receipt identifies what was compiled freshly, inherited or independently reimported. These are development build records.",
+      "title": "Completed finite and GRH imports"
+    },
+    {
+      "newly_extracted_records": 0,
+      "public_originals": [
+        {
+          "original_bytes": 1029,
+          "original_sha256": "83272efa8e19d299624c7e1507a6e9201a55c7ff2e9f5d593942bd60c9278e92",
+          "public_git_blob": "f0cf6d1b75d99ddd5946bf0ad96ae71e688cf80d",
+          "report_name": "linux-prefix.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/binary-through-100328530944/linux-prefix.json"
+        }
+      ],
+      "scope": "The Linux frontend completed a specific finite binary prefix in a later interrupted build. This is separate from independent kernel replay.",
+      "title": "Intermediate binary certificate prefix"
+    },
+    {
+      "extract": "experiments/intake-and-resource-controls.json",
+      "extract_sha256": "320ce0117d82deae0b6efed77dce4b902949da32af1897247c85cec2c5b28ef0",
+      "newly_extracted_records": 4,
+      "public_originals": [
+        {
+          "original_bytes": 963,
+          "original_sha256": "14803751bbe45416adf86197a0ce7065f6eb82df70318839b3ffdb24837da01d",
+          "public_git_blob": "f8f1b7d8479d1fc93e908e7b53c1153ddffa94a8",
+          "report_name": "limited-controls.json",
+          "url": "https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/stock-protected-limited/limited-controls.json"
+        }
+      ],
+      "scope": "The unmodified current parser, deadline functions and verified Lean toolchain were exercised, as well as synthetic deadline/recovery cases. These tests do not constitute hosted certification.",
+      "title": "Palomar policy and deadline controls"
+    },
+    {
+      "extract": "experiments/sandbox-python.json",
+      "extract_sha256": "f99aaaf39f5c5fa6e2b1289e38f0cf7aa3108055c903331238339d28782e7f3c",
+      "newly_extracted_records": 1,
+      "public_originals": [],
+      "scope": "Three genuine sandbox invocations. Exit codes alone do not establish a Goldbach theorem or hosted runtime.",
+      "title": "Stock bubblewrap interpreter confinement"
+    }
+  ],
+  "policy": "Only immutable published originals are linked. New data extracts retain numeric and boolean fields, safe symbolic names, and artifact checksums from the listed reports. Machine paths, raw processes, free-form logs, commands and operator identities are omitted. Sum-of-time comparisons require the same group, assay and units. Link-only entries can contain additional details at the source."
+}

@@ -1,0 +1,167 @@
+{
+  "experiment": "Axiom provenance controls",
+  "records": [
+    {
+      "measurements": {
+        "affected_and_total": {
+          "binder": [
+            0,
+            213
+          ],
+          "witness": [
+            5,
+            211
+          ]
+        },
+        "banned_axiom": "sorryAx",
+        "control_receipt_sha256": "f5fd19cb8ccd11324399b6b3f3c9d98a12b45190c585ebf886b0df4d185f034e",
+        "control_script_sha256": "0929eaa235aa306be594edcc3ab7e41fe22a13df342b9d01bb845881d0798f1a",
+        "driver_sha256": "c4c5c51e176722afe087bd836caf75f3fae6acba43eaf17d3ae410a91e898b88",
+        "graph_tests": 6,
+        "matched_declared_paths_for_each_fixture": 4,
+        "module": "Lib.General.Groups.ValuationPair",
+        "reader_sha256": "b1155067f7819d780f2f7fb4243d904e227890cd465d57327b92f6429e45cfdd"
+      },
+      "original_bytes": 927,
+      "original_sha256": "552bc9dd8e180e4890fcd10e7c20abb3ee6835bf258a993ba3d604bae496ce9e",
+      "report_name": "control-replay.json"
+    },
+    {
+      "measurements": {
+        "binder": {
+          "elapsed": 0.955,
+          "max_rss_sampled": 580755456,
+          "objects": {
+            ".olean": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f",
+            ".private": "0c220cb7c2a578ec5e29f2361eca6fc71ee3e4196b3cb045e861be59364c996b",
+            ".server": "4e9270fb576816242f37928fae1157a9adc0296f2b0f35f8f2d1e9dd54a54440"
+          },
+          "top": {
+            "entries": 213,
+            "exports": 213,
+            "module": "Lib.General.Groups.ValuationPair",
+            "scope": "exported"
+          }
+        },
+        "reader_sha256": "b1155067f7819d780f2f7fb4243d904e227890cd465d57327b92f6429e45cfdd",
+        "witness": {
+          "elapsed": 3.938,
+          "max_rss_sampled": 580616192,
+          "objects": {
+            ".olean": "57c2b98189faa82ecf12039d6e222cd6cc5fa447930f983ab29023e9d6af0e1a",
+            ".private": "81514337b7ce720ed067fcbeef770400f0cc315d532abcce2c7a94b7d7f84ff9",
+            ".server": "0d28f67c377f851ec254674952b9b8f4df5b5cd1baabce101b9b02226b93707c"
+          },
+          "root_reports": {
+            "U.continuous_map": [
+              {
+                "introducer": "U.map",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.continuous_map",
+                  "U.map",
+                  "sorryAx"
+                ]
+              },
+              {
+                "introducer": "U.map._proof_3",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.continuous_map",
+                  "U.map._proof_3",
+                  "sorryAx"
+                ]
+              }
+            ],
+            "U.map": [
+              {
+                "introducer": "U.map",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.map",
+                  "sorryAx"
+                ]
+              },
+              {
+                "introducer": "U.map._proof_3",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.map",
+                  "U.map._proof_3",
+                  "sorryAx"
+                ]
+              }
+            ],
+            "U.mapEnd": [
+              {
+                "introducer": "U.map",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.mapEnd",
+                  "U.map",
+                  "sorryAx"
+                ]
+              },
+              {
+                "introducer": "U.map._proof_3",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.mapEnd",
+                  "U.map",
+                  "U.map._proof_3",
+                  "sorryAx"
+                ]
+              }
+            ],
+            "U.mem_range_map": [
+              {
+                "introducer": "U.mem_range_map",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.mem_range_map",
+                  "sorryAx"
+                ]
+              },
+              {
+                "introducer": "U.map",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.mem_range_map",
+                  "U.map",
+                  "sorryAx"
+                ]
+              },
+              {
+                "introducer": "U.map._proof_3",
+                "module": "Lib.General.Groups.ValuationPair",
+                "witness": [
+                  "U.mem_range_map",
+                  "U.map",
+                  "U.map._proof_3",
+                  "sorryAx"
+                ]
+              }
+            ]
+          },
+          "top": {
+            "dirty": [
+              "U.continuous_map",
+              "U.mapEnd",
+              "U.map",
+              "U.mem_range_map",
+              "U.map._proof_3"
+            ],
+            "entries": 211,
+            "exports": 211,
+            "module": "Lib.General.Groups.ValuationPair",
+            "scope": "exported"
+          }
+        }
+      },
+      "original_bytes": 3618,
+      "original_sha256": "f5fd19cb8ccd11324399b6b3f3c9d98a12b45190c585ebf886b0df4d185f034e",
+      "report_name": "ValuationPair-diagnostic.json"
+    }
+  ],
+  "scope": "Controlled fixtures check whether the metadata reader tracks a disallowed axiom from its declaration into dependent declarations; this is diagnostic evidence."
+}

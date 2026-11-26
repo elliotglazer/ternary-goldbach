@@ -1,0 +1,2445 @@
+{
+  "experiment": "Large bitmaps and C emission",
+  "records": [
+    {
+      "measurements": {
+        "cases": [
+          {
+            "annotation": "def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "7a887c74e0310345f2adbf3bb3705a289bf8818f0a6dfe2c4320629ad9b03546",
+            "hex_digits": 32768,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.375,
+            "user_cpu_s": 0.640625,
+            "wall_s": 2.129
+          },
+          {
+            "annotation": "noncomputable def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "96bc0bbec9fe09193346365a29d95ac3c61cad4f37f59eab2b522bdc1c39226c",
+            "hex_digits": 32768,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.296875,
+            "user_cpu_s": 0.828125,
+            "wall_s": 2.223
+          },
+          {
+            "annotation": "def",
+            "c_size": 42828,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "7a887c74e0310345f2adbf3bb3705a289bf8818f0a6dfe2c4320629ad9b03546",
+            "hex_digits": 32768,
+            "max_decimal_c_literal_digits": 39457,
+            "system_cpu_s": 1.453125,
+            "user_cpu_s": 0.96875,
+            "wall_s": 2.529
+          },
+          {
+            "annotation": "noncomputable def",
+            "c_size": 2545,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "96bc0bbec9fe09193346365a29d95ac3c61cad4f37f59eab2b522bdc1c39226c",
+            "hex_digits": 32768,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.296875,
+            "user_cpu_s": 0.71875,
+            "wall_s": 2.225
+          },
+          {
+            "annotation": "def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "c3e037b18be37254a3c2b258ca7bd1799caa05c501b179c7e14e3c6cf0f9a14b",
+            "hex_digits": 65536,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.4375,
+            "user_cpu_s": 0.71875,
+            "wall_s": 2.227
+          },
+          {
+            "annotation": "noncomputable def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "2cabe72d543959e0d35bd517302e517011539c3aecf1dfa6b4c9e72da22b06c6",
+            "hex_digits": 65536,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.375,
+            "user_cpu_s": 0.734375,
+            "wall_s": 2.224
+          },
+          {
+            "annotation": "def",
+            "c_size": 82284,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "c3e037b18be37254a3c2b258ca7bd1799caa05c501b179c7e14e3c6cf0f9a14b",
+            "hex_digits": 65536,
+            "max_decimal_c_literal_digits": 78913,
+            "system_cpu_s": 1.375,
+            "user_cpu_s": 2.046875,
+            "wall_s": 3.533
+          },
+          {
+            "annotation": "noncomputable def",
+            "c_size": 2545,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "2cabe72d543959e0d35bd517302e517011539c3aecf1dfa6b4c9e72da22b06c6",
+            "hex_digits": 65536,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.46875,
+            "user_cpu_s": 0.71875,
+            "wall_s": 2.228
+          },
+          {
+            "annotation": "def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "a3ba7ca1ddcfc04a5e4eb71bd606541258a03934f315cd5f44623fc1d13f1b74",
+            "hex_digits": 131072,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.171875,
+            "user_cpu_s": 0.84375,
+            "wall_s": 2.124
+          },
+          {
+            "annotation": "noncomputable def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "9dd742aae409258678628ab67a017e797e0f1f97262f323a75a8805e13e30771",
+            "hex_digits": 131072,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.34375,
+            "user_cpu_s": 0.703125,
+            "wall_s": 2.125
+          },
+          {
+            "annotation": "def",
+            "c_size": 161197,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "a3ba7ca1ddcfc04a5e4eb71bd606541258a03934f315cd5f44623fc1d13f1b74",
+            "hex_digits": 131072,
+            "max_decimal_c_literal_digits": 157826,
+            "system_cpu_s": 4.5625,
+            "user_cpu_s": 8.140625,
+            "wall_s": 12.881
+          },
+          {
+            "annotation": "noncomputable def",
+            "c_size": 2545,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "9dd742aae409258678628ab67a017e797e0f1f97262f323a75a8805e13e30771",
+            "hex_digits": 131072,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.6875,
+            "user_cpu_s": 1.125,
+            "wall_s": 2.935
+          },
+          {
+            "annotation": "def",
+            "emit_c": false,
+            "exit": 0,
+            "fixture_sha256": "915ad208235a3b78152b3b6a8ca92430ceadbb90d60a423b150b2aa1e84376ed",
+            "hex_digits": 1049373,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.5,
+            "user_cpu_s": 1.4375,
+            "wall_s": 3.035
+          },
+          {
+            "annotation": "noncomputable def",
+            "c_size": 2545,
+            "emit_c": true,
+            "exit": 0,
+            "fixture_sha256": "4d804bbb6ea6dfc838eb03477a7f069e5d1af04a1ff883862be7670645ace379",
+            "hex_digits": 1049373,
+            "max_decimal_c_literal_digits": 0,
+            "system_cpu_s": 1.359375,
+            "user_cpu_s": 1.609375,
+            "wall_s": 3.034
+          }
+        ],
+        "full_hex_digits": 1049373,
+        "packed_hex_macro_source_sha256": "efc35e840a1407d605f03caafa99f8b450346cbaf10586a8e63675c98e2a8aa5",
+        "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+        "source_path": "WideSource22.lean",
+        "source_sha256": "bad5e0e24f9dd0b5f2d7a751e6f8f171d87ce574b1cc2be74a067c83806f198d"
+      },
+      "original_bytes": 5762,
+      "original_sha256": "f68422a8eb5a97fc749e85156a6293410d9e9fa73aa10f66982fd0a35365f419",
+      "report_name": "measurements.json"
+    },
+    {
+      "measurements": {
+        "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "modules": {
+          "ExactOriginalBits": {
+            "actual_args": [
+              "-j1",
+              "-t0",
+              "-o",
+              "ExactOriginalBits.olean",
+              "-i",
+              "ExactOriginalBits.ilean",
+              "-c",
+              "ExactOriginalBits.c",
+              "ExactOriginalBits.lean"
+            ],
+            "decimal_atoms": 0,
+            "exit": 0,
+            "files": {
+              ".c": {
+                "bytes": 2612,
+                "sha256": "e80c99b9de4b84cc5cc9516226c1f4f2fa9fbec6001478abd684979eaef0679b"
+              },
+              ".ilean": {
+                "bytes": 1109,
+                "sha256": "c95a31146318e93cb6e6c04736f72bc6f64f4a01fa4cdfb290ebcbce2a492c20"
+              },
+              ".ir": {
+                "bytes": 1296,
+                "sha256": "6eefb9de6e128a589a78b9d9bc4a86a5bf9c4af46c17c22771b2744ec5bf3ccc"
+              },
+              ".ir.sig": {
+                "bytes": 176,
+                "sha256": "a9327a794e10d7b78ffb3a31916ced80e1ed813e96a0d2fc25b135971497a297"
+              },
+              ".olean": {
+                "bytes": 660528,
+                "sha256": "4ee121269406061fa7ad5a887b0c269d7c4330070c9a8d0db799c9316c195455"
+              },
+              ".olean.private": {
+                "bytes": 1192,
+                "sha256": "ddb493a2f7c2a8fc805c022067f1a99efcffee0d7a80afec8f9fae8fcacace36"
+              },
+              ".olean.server": {
+                "bytes": 832,
+                "sha256": "eaea68b6083664be71f37413ba7ce9431aa71748754554725a8d69c8af980383"
+              }
+            },
+            "large_decimal_max": 0,
+            "peak_commit_bytes": 3122745344,
+            "peak_working_set_bytes": 798109696,
+            "source_sha256": "cf8ecd231c6a9d23f32e91af709fb19fb6305a850affc058aa93a09a6d6602c3",
+            "success": true,
+            "system_seconds": 3.25,
+            "user_seconds": 6.625,
+            "wall_s": 10.047
+          },
+          "ProductRange564319216642Interval": {
+            "actual_args": [
+              "-j1",
+              "-t0",
+              "-o",
+              "ProductRange564319216642Interval.olean",
+              "-i",
+              "ProductRange564319216642Interval.ilean",
+              "-c",
+              "ProductRange564319216642Interval.c",
+              "ProductRange564319216642Interval.lean"
+            ],
+            "decimal_atoms": 16,
+            "exit": 0,
+            "files": {
+              ".c": {
+                "bytes": 49975,
+                "sha256": "7289784e6c4a77c8f3f9ada47105349c2ca9d160c3ff0d699cc9c083e532d1a5"
+              },
+              ".ilean": {
+                "bytes": 3053,
+                "sha256": "7788d0ec01012d280a3c7aff91eb6ed6bbca8434a84b1a6fb1961a9a9fec81f2"
+              },
+              ".ir": {
+                "bytes": 17984,
+                "sha256": "088f11d712d4ac3c9df1053886ea0c5958ec09b20372f99fa5a09984bcd3949d"
+              },
+              ".ir.sig": {
+                "bytes": 176,
+                "sha256": "1609eda9b228f9a5cad68328bcac69b2e0a734411347dc3aac6b088b5adc03f5"
+              },
+              ".olean": {
+                "bytes": 3960,
+                "sha256": "4a59207c89f27689f8fe5832e7a218e251d5c135490cbec229187b2d8016d99e"
+              },
+              ".olean.private": {
+                "bytes": 54216,
+                "sha256": "f5a3dcb5a53a6739b15b393b414310d652cdc0eb5b11ab3c10c2c3805c7f3d16"
+              },
+              ".olean.server": {
+                "bytes": 1392,
+                "sha256": "ed6da35c369a34b6ba152dd2d7d8105932f39d3ed25347e399eb1d2a6f459ce1"
+              }
+            },
+            "large_decimal_max": 1411,
+            "peak_commit_bytes": 4106317824,
+            "peak_working_set_bytes": 1785729024,
+            "source_sha256": "9b92f6cfd6cdba2d7000d1573d01d6c8951a2cd4357304f082d92e6648ab74f8",
+            "success": true,
+            "system_seconds": 3.921875,
+            "user_seconds": 6.34375,
+            "wall_s": 11.029
+          },
+          "WideProbe20Interval": {
+            "actual_args": [
+              "-j1",
+              "-t0",
+              "-o",
+              "WideProbe20Interval.olean",
+              "-i",
+              "WideProbe20Interval.ilean",
+              "-c",
+              "WideProbe20Interval.c",
+              "WideProbe20Interval.lean"
+            ],
+            "decimal_atoms": 512,
+            "exit": 0,
+            "files": {
+              ".c": {
+                "bytes": 1257677,
+                "sha256": "976ad7189c7bc946c17fb894d93680dbbb31e776f0329628610682e4fdcef5ae"
+              },
+              ".ilean": {
+                "bytes": 43784,
+                "sha256": "38ce3d1ab6991043de86a9dadcd7f07bf9c900d23a46797baefdc200660022ad"
+              },
+              ".ir": {
+                "bytes": 378952,
+                "sha256": "f95763975e10eac417d359c658ae3b52119a7bd3d88e092479e6b0157643d6a2"
+              },
+              ".ir.sig": {
+                "bytes": 176,
+                "sha256": "a75d0070da033d07a10f376248948df87ffcbb4736b6904325cb7ac35f8803f8"
+              },
+              ".olean": {
+                "bytes": 3944,
+                "sha256": "8123fad47c2bafaca946f7c8fc2eb66cb8727cde3705454631f0872f8bc4d44a"
+              },
+              ".olean.private": {
+                "bytes": 1082112,
+                "sha256": "a2527482246b42f59f65ca2711842356d0ec765df9b77b5da398fb4b9e4bca21"
+              },
+              ".olean.server": {
+                "bytes": 20224,
+                "sha256": "089566b3a995e3d8c14a984a13317af144b234391c2544f3ee94ea9c42ccfb1c"
+              }
+            },
+            "large_decimal_max": 1097,
+            "peak_commit_bytes": 3389923328,
+            "peak_working_set_bytes": 1069080576,
+            "source_sha256": "a3ca1cee4a8721f1a6e0b256caa7aeecf9c8937531e9ec1f5a047ddfe7164790",
+            "success": true,
+            "system_seconds": 5.796875,
+            "user_seconds": 16.0625,
+            "wall_s": 22.037
+          },
+          "WideSource20": {
+            "actual_args": [
+              "-j1",
+              "-t0",
+              "-o",
+              "WideSource20.olean",
+              "-i",
+              "WideSource20.ilean",
+              "-c",
+              "WideSource20.c",
+              "WideSource20.lean"
+            ],
+            "decimal_atoms": 1536,
+            "exit": 0,
+            "files": {
+              ".c": {
+                "bytes": 4732595,
+                "sha256": "9d38f463c250581dd22b57f535f456731ac75efa1c0ee9b5ef9ea57bd351f566"
+              },
+              ".ilean": {
+                "bytes": 91086,
+                "sha256": "db958cf215bca9e92d0168f28620b46d634b98465d5b88b53cf5f5109819f8c8"
+              },
+              ".ir": {
+                "bytes": 1387736,
+                "sha256": "c20295644398cb52ff5a11a142b9361d5afad6fcd061798002299d91b4471e49"
+              },
+              ".ir.sig": {
+                "bytes": 176,
+                "sha256": "17ad319b83ae488a598aa108de3eea56aa7e831759aff0b5d3987a858aff06de"
+              },
+              ".olean": {
+                "bytes": 139848,
+                "sha256": "aa65b6c85ae60c1da8ec4b6236250723981251acda0c23b29bea13df5dfa0878"
+              },
+              ".olean.private": {
+                "bytes": 5231080,
+                "sha256": "84864a9a70e5f6a602129edbd2bd0d54e08b196b3fb7eb672bf84ec5d562845e"
+              },
+              ".olean.server": {
+                "bytes": 41552,
+                "sha256": "335943e074ee4efa80f0b749522ea5d5522ac376cef595fdfd80064861841ad5"
+              }
+            },
+            "large_decimal_max": 437,
+            "peak_commit_bytes": 3344351232,
+            "peak_working_set_bytes": 1035739136,
+            "source_sha256": "c786bf72bd0226c8eb637e5a12b09149b167a3e56a55235b4a8f4cb191194766",
+            "success": true,
+            "system_seconds": 4.78125,
+            "user_seconds": 48.546875,
+            "wall_s": 54.058
+          },
+          "WideSource22": {
+            "actual_args": [
+              "-j1",
+              "-t0",
+              "-o",
+              "WideSource22.olean",
+              "-i",
+              "WideSource22.ilean",
+              "-c",
+              "WideSource22.c",
+              "WideSource22.lean"
+            ],
+            "decimal_atoms": 6144,
+            "exit": 0,
+            "files": {
+              ".c": {
+                "bytes": 18963190,
+                "sha256": "3fd5a4b7a8ba7675a786ac58df62a507cb1ef9985faf08de1110869520111ec0"
+              },
+              ".ilean": {
+                "bytes": 365484,
+                "sha256": "f97523cbd6120a466c4322acda501811de7be200cfda392c52949316c9a1b786"
+              },
+              ".ir": {
+                "bytes": 5398864,
+                "sha256": "60513223d21c0719c8f3bf04700819e23e275176740831b246d8a71ae19891f1"
+              },
+              ".ir.sig": {
+                "bytes": 176,
+                "sha256": "13dd4db89e4cd29b8c3068293d1235d5988c315159033cc6083c0e3b853248fd"
+              },
+              ".olean": {
+                "bytes": 546096,
+                "sha256": "0268c4c0a0bb94b3258737f942afaaa32a8b60c160cd371bf7248d3b603af88c"
+              },
+              ".olean.private": {
+                "bytes": 19700584,
+                "sha256": "7f0cb70546c71e8a46234a96dd1288c944f8af8e1776601fb0f424bd22950f29"
+              },
+              ".olean.server": {
+                "bytes": 165176,
+                "sha256": "f65b6965f1f48d98f2287f6da4672bd11abd42ac3406e512fe424d9b69cff81d"
+              }
+            },
+            "large_decimal_max": 432,
+            "peak_commit_bytes": 4117684224,
+            "peak_working_set_bytes": 1743572992,
+            "source_sha256": "b706662b0b88d414c05137d7e22986e57bd2076fc378a7a9830d50ac210a9c32",
+            "success": true,
+            "system_seconds": 13.703125,
+            "user_seconds": 152.8125,
+            "wall_s": 163.255
+          }
+        },
+        "original_producers": {
+          "WideSource20": "a6f5d99c73260d6c375cf32fe0e1f66e2ec3bc45ce3cf1fc3677e1e220ea2911",
+          "WideSource22": "bad5e0e24f9dd0b5f2d7a751e6f8f171d87ce574b1cc2be74a067c83806f198d"
+        },
+        "same_ancestry_at": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+        "source_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+        "status": "complete"
+      },
+      "original_bytes": 10226,
+      "original_sha256": "b0eb81abe683a62de8038467cb7470be3acd4a646a0d846c2a7c9d469b0c7ba2",
+      "report_name": "production-receipt.json"
+    },
+    {
+      "measurements": {
+        "c_temp_age_seconds": 3078.247,
+        "files": [
+          {
+            "exists": false,
+            "name": "WideSource22.c"
+          },
+          {
+            "bytes": 0,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679804720621214,
+            "name": "WideSource22.c.tmp586"
+          },
+          {
+            "bytes": 661182,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679640044190398,
+            "name": "WideSource22.setup.json"
+          },
+          {
+            "bytes": 365480,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679804720621214,
+            "name": "WideSource22.ilean"
+          },
+          {
+            "bytes": 69188808,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679804043656114,
+            "name": "WideSource22.ir"
+          },
+          {
+            "bytes": 176,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679803686665030,
+            "name": "WideSource22.ir.sig"
+          },
+          {
+            "bytes": 530344,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679802215654385,
+            "name": "WideSource22.olean"
+          },
+          {
+            "bytes": 83018880,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679803444655547,
+            "name": "WideSource22.olean.private"
+          },
+          {
+            "bytes": 180688,
+            "exists": true,
+            "is_file": true,
+            "mtime_ns": 1795679802219654389,
+            "name": "WideSource22.olean.server"
+          },
+          {
+            "exists": false,
+            "name": "WideSource22.trace"
+          }
+        ],
+        "raw_probe_sha256": "dc32fa433f2844cfc9d674ab6c5582833c60b26126d7a99f073cb4a0d5104ffd",
+        "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+        "source_sha256": "bad5e0e24f9dd0b5f2d7a751e6f8f171d87ce574b1cc2be74a067c83806f198d",
+        "temporary_c_still_open": true
+      },
+      "original_bytes": 2990,
+      "original_sha256": "34ad7ebfc78034ec2c473b5e60e1f3134fd11c2d4f725dbcfb92b15daa3c53c0",
+      "report_name": "linux-original-C-stage.json"
+    },
+    {
+      "measurements": {
+        "WideSource20_public_only_candidate": [
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3547960,
+            "name": "b265344",
+            "shift_bits": 265344,
+            "storage_bytes": 35216
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3316712,
+            "name": "b281728",
+            "shift_bits": 281728,
+            "storage_bytes": 37263
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2024856,
+            "name": "b298112",
+            "shift_bits": 298112,
+            "storage_bytes": 39312
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1231840,
+            "name": "b314496",
+            "shift_bits": 314496,
+            "storage_bytes": 41359
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 566896,
+            "name": "b330880",
+            "shift_bits": 330880,
+            "storage_bytes": 43408
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4718640,
+            "name": "b347264",
+            "shift_bits": 347264,
+            "storage_bytes": 45456
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2507016,
+            "name": "b363648",
+            "shift_bits": 363648,
+            "storage_bytes": 47504
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2981592,
+            "name": "b380032",
+            "shift_bits": 380032,
+            "storage_bytes": 49552
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3180712,
+            "name": "b396416",
+            "shift_bits": 396416,
+            "storage_bytes": 51600
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3463000,
+            "name": "b412800",
+            "shift_bits": 412800,
+            "storage_bytes": 53645
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 393616,
+            "name": "b429184",
+            "shift_bits": 429184,
+            "storage_bytes": 55696
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4528240,
+            "name": "b445568",
+            "shift_bits": 445568,
+            "storage_bytes": 57744
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 503624,
+            "name": "b461952",
+            "shift_bits": 461952,
+            "storage_bytes": 59790
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3719376,
+            "name": "b478336",
+            "shift_bits": 478336,
+            "storage_bytes": 61840
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4054952,
+            "name": "b494720",
+            "shift_bits": 494720,
+            "storage_bytes": 63888
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 764232,
+            "name": "b511104",
+            "shift_bits": 511104,
+            "storage_bytes": 65935
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3239768,
+            "name": "b527488",
+            "shift_bits": 527488,
+            "storage_bytes": 67984
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2692528,
+            "name": "b543872",
+            "shift_bits": 543872,
+            "storage_bytes": 70032
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4318936,
+            "name": "b560256",
+            "shift_bits": 560256,
+            "storage_bytes": 72080
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 5078512,
+            "name": "b576640",
+            "shift_bits": 576640,
+            "storage_bytes": 74128
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1722056,
+            "name": "b593024",
+            "shift_bits": 593024,
+            "storage_bytes": 76175
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1535752,
+            "name": "b609408",
+            "shift_bits": 609408,
+            "storage_bytes": 78224
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4222320,
+            "name": "b625792",
+            "shift_bits": 625792,
+            "storage_bytes": 80272
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2891336,
+            "name": "b642176",
+            "shift_bits": 642176,
+            "storage_bytes": 82320
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1630344,
+            "name": "b658560",
+            "shift_bits": 658560,
+            "storage_bytes": 84367
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3371560,
+            "name": "b674944",
+            "shift_bits": 674944,
+            "storage_bytes": 86416
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4123040,
+            "name": "b691328",
+            "shift_bits": 691328,
+            "storage_bytes": 88464
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3597832,
+            "name": "b707712",
+            "shift_bits": 707712,
+            "storage_bytes": 90512
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4954600,
+            "name": "b724096",
+            "shift_bits": 724096,
+            "storage_bytes": 92559
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4392024,
+            "name": "b740480",
+            "shift_bits": 740480,
+            "storage_bytes": 94608
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 863376,
+            "name": "b756864",
+            "shift_bits": 756864,
+            "storage_bytes": 96655
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3949120,
+            "name": "b773248",
+            "shift_bits": 773248,
+            "storage_bytes": 98702
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2782936,
+            "name": "b789632",
+            "shift_bits": 789632,
+            "storage_bytes": 100752
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 967056,
+            "name": "b806016",
+            "shift_bits": 806016,
+            "storage_bytes": 102800
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4588520,
+            "name": "b822400",
+            "shift_bits": 822400,
+            "storage_bytes": 104848
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4774312,
+            "name": "b838784",
+            "shift_bits": 838784,
+            "storage_bytes": 106896
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2117920,
+            "name": "b855168",
+            "shift_bits": 855168,
+            "storage_bytes": 108942
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3835784,
+            "name": "b871552",
+            "shift_bits": 871552,
+            "storage_bytes": 110992
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2393256,
+            "name": "b887936",
+            "shift_bits": 887936,
+            "storage_bytes": 113040
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 614576,
+            "name": "b904320",
+            "shift_bits": 904320,
+            "storage_bytes": 115088
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1278112,
+            "name": "b920704",
+            "shift_bits": 920704,
+            "storage_bytes": 117136
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1413256,
+            "name": "b937088",
+            "shift_bits": 937088,
+            "storage_bytes": 119182
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1847752,
+            "name": "b953472",
+            "shift_bits": 953472,
+            "storage_bytes": 121232
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 5201520,
+            "name": "b969856",
+            "shift_bits": 969856,
+            "storage_bytes": 123280
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3031848,
+            "name": "b986240",
+            "shift_bits": 986240,
+            "storage_bytes": 125328
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 244560,
+            "name": "b1002624",
+            "shift_bits": 1002624,
+            "storage_bytes": 127374
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1076072,
+            "name": "b1019008",
+            "shift_bits": 1019008,
+            "storage_bytes": 129424
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2244616,
+            "name": "b1035392",
+            "shift_bits": 1035392,
+            "storage_bytes": 131472
+          }
+        ],
+        "WideSource22_original": [
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 58845000,
+            "name": "b1051776",
+            "shift_bits": 1051776,
+            "storage_bytes": 133520
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 25672880,
+            "name": "b1068160",
+            "shift_bits": 1068160,
+            "storage_bytes": 135567
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 59376720,
+            "name": "b1084544",
+            "shift_bits": 1084544,
+            "storage_bytes": 137615
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 12841736,
+            "name": "b1100928",
+            "shift_bits": 1100928,
+            "storage_bytes": 139664
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 26804664,
+            "name": "b1117312",
+            "shift_bits": 1117312,
+            "storage_bytes": 141712
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 41119944,
+            "name": "b1133696",
+            "shift_bits": 1133696,
+            "storage_bytes": 143760
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 14253848,
+            "name": "b1150080",
+            "shift_bits": 1150080,
+            "storage_bytes": 145807
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 22837968,
+            "name": "b1166464",
+            "shift_bits": 1166464,
+            "storage_bytes": 147855
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 47977832,
+            "name": "b1182848",
+            "shift_bits": 1182848,
+            "storage_bytes": 149903
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 57487152,
+            "name": "b1199232",
+            "shift_bits": 1199232,
+            "storage_bytes": 151952
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 20250008,
+            "name": "b1215616",
+            "shift_bits": 1215616,
+            "storage_bytes": 154000
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 8950288,
+            "name": "b1232000",
+            "shift_bits": 1232000,
+            "storage_bytes": 156048
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 24163512,
+            "name": "b1248384",
+            "shift_bits": 1248384,
+            "storage_bytes": 158096
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 52083768,
+            "name": "b1264768",
+            "shift_bits": 1264768,
+            "storage_bytes": 160143
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 15183000,
+            "name": "b1281152",
+            "shift_bits": 1281152,
+            "storage_bytes": 162192
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 14069032,
+            "name": "b1297536",
+            "shift_bits": 1297536,
+            "storage_bytes": 164240
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 41265192,
+            "name": "b1313920",
+            "shift_bits": 1313920,
+            "storage_bytes": 166288
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 33828168,
+            "name": "b1330304",
+            "shift_bits": 1330304,
+            "storage_bytes": 168336
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 8762864,
+            "name": "b1346688",
+            "shift_bits": 1346688,
+            "storage_bytes": 170382
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 11968904,
+            "name": "b1363072",
+            "shift_bits": 1363072,
+            "storage_bytes": 172432
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 12657528,
+            "name": "b1379456",
+            "shift_bits": 1379456,
+            "storage_bytes": 174480
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 45126408,
+            "name": "b1395840",
+            "shift_bits": 1395840,
+            "storage_bytes": 176528
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 26601320,
+            "name": "b1412224",
+            "shift_bits": 1412224,
+            "storage_bytes": 178575
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 12149688,
+            "name": "b1428608",
+            "shift_bits": 1428608,
+            "storage_bytes": 180624
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 42989688,
+            "name": "b1444992",
+            "shift_bits": 1444992,
+            "storage_bytes": 182672
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 60375072,
+            "name": "b1461376",
+            "shift_bits": 1461376,
+            "storage_bytes": 184720
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 10657784,
+            "name": "b1477760",
+            "shift_bits": 1477760,
+            "storage_bytes": 186768
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 46726432,
+            "name": "b1494144",
+            "shift_bits": 1494144,
+            "storage_bytes": 188813
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 15932152,
+            "name": "b1510528",
+            "shift_bits": 1510528,
+            "storage_bytes": 190864
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 58632096,
+            "name": "b1526912",
+            "shift_bits": 1526912,
+            "storage_bytes": 192912
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 63290608,
+            "name": "b1543296",
+            "shift_bits": 1543296,
+            "storage_bytes": 194959
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 32308352,
+            "name": "b1559680",
+            "shift_bits": 1559680,
+            "storage_bytes": 197008
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 13354256,
+            "name": "b1576064",
+            "shift_bits": 1576064,
+            "storage_bytes": 199054
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 32924584,
+            "name": "b1592448",
+            "shift_bits": 1592448,
+            "storage_bytes": 201104
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 20023688,
+            "name": "b1608832",
+            "shift_bits": 1608832,
+            "storage_bytes": 203152
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 31317888,
+            "name": "b1625216",
+            "shift_bits": 1625216,
+            "storage_bytes": 205200
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 56443672,
+            "name": "b1641600",
+            "shift_bits": 1641600,
+            "storage_bytes": 207247
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 25836712,
+            "name": "b1657984",
+            "shift_bits": 1657984,
+            "storage_bytes": 209296
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 32091856,
+            "name": "b1674368",
+            "shift_bits": 1674368,
+            "storage_bytes": 211344
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 52562792,
+            "name": "b1690752",
+            "shift_bits": 1690752,
+            "storage_bytes": 213392
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 64627832,
+            "name": "b1707136",
+            "shift_bits": 1707136,
+            "storage_bytes": 215439
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 17245480,
+            "name": "b1723520",
+            "shift_bits": 1723520,
+            "storage_bytes": 217488
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 33572696,
+            "name": "b1739904",
+            "shift_bits": 1739904,
+            "storage_bytes": 219536
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 43578344,
+            "name": "b1756288",
+            "shift_bits": 1756288,
+            "storage_bytes": 221583
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 5555384,
+            "name": "b1772672",
+            "shift_bits": 1772672,
+            "storage_bytes": 223632
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 54809744,
+            "name": "b1789056",
+            "shift_bits": 1789056,
+            "storage_bytes": 225679
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 23013376,
+            "name": "b1805440",
+            "shift_bits": 1805440,
+            "storage_bytes": 227728
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 48590408,
+            "name": "b1821824",
+            "shift_bits": 1821824,
+            "storage_bytes": 229775
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 26347200,
+            "name": "b1838208",
+            "shift_bits": 1838208,
+            "storage_bytes": 231823
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 64370536,
+            "name": "b1854592",
+            "shift_bits": 1854592,
+            "storage_bytes": 233872
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 57658440,
+            "name": "b1870976",
+            "shift_bits": 1870976,
+            "storage_bytes": 235920
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4475040,
+            "name": "b1887360",
+            "shift_bits": 1887360,
+            "storage_bytes": 237966
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 52780088,
+            "name": "b1903744",
+            "shift_bits": 1903744,
+            "storage_bytes": 240016
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 68764368,
+            "name": "b1920128",
+            "shift_bits": 1920128,
+            "storage_bytes": 242064
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 46986296,
+            "name": "b1936512",
+            "shift_bits": 1936512,
+            "storage_bytes": 244112
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 20404328,
+            "name": "b1952896",
+            "shift_bits": 1952896,
+            "storage_bytes": 246160
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 29209040,
+            "name": "b1969280",
+            "shift_bits": 1969280,
+            "storage_bytes": 248207
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 26064048,
+            "name": "b1985664",
+            "shift_bits": 1985664,
+            "storage_bytes": 250256
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 15366672,
+            "name": "b2002048",
+            "shift_bits": 2002048,
+            "storage_bytes": 252304
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 21785488,
+            "name": "b2018432",
+            "shift_bits": 2018432,
+            "storage_bytes": 254352
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 9932192,
+            "name": "b2034816",
+            "shift_bits": 2034816,
+            "storage_bytes": 256400
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 56668336,
+            "name": "b2051200",
+            "shift_bits": 2051200,
+            "storage_bytes": 258448
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3730944,
+            "name": "b2067584",
+            "shift_bits": 2067584,
+            "storage_bytes": 260496
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 34369848,
+            "name": "b2083968",
+            "shift_bits": 2083968,
+            "storage_bytes": 262544
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 21086368,
+            "name": "b2100352",
+            "shift_bits": 2100352,
+            "storage_bytes": 264592
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2132168,
+            "name": "b2116736",
+            "shift_bits": 2116736,
+            "storage_bytes": 266639
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 22557704,
+            "name": "b2133120",
+            "shift_bits": 2133120,
+            "storage_bytes": 268688
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 35328688,
+            "name": "b2149504",
+            "shift_bits": 2149504,
+            "storage_bytes": 270735
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 61546360,
+            "name": "b2165888",
+            "shift_bits": 2165888,
+            "storage_bytes": 272784
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 53603864,
+            "name": "b2182272",
+            "shift_bits": 2182272,
+            "storage_bytes": 274832
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 27306720,
+            "name": "b2198656",
+            "shift_bits": 2198656,
+            "storage_bytes": 276879
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 47249320,
+            "name": "b2215040",
+            "shift_bits": 2215040,
+            "storage_bytes": 278928
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 40745472,
+            "name": "b2231424",
+            "shift_bits": 2231424,
+            "storage_bytes": 280975
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 38162312,
+            "name": "b2247808",
+            "shift_bits": 2247808,
+            "storage_bytes": 283023
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 15627712,
+            "name": "b2264192",
+            "shift_bits": 2264192,
+            "storage_bytes": 285071
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 58333864,
+            "name": "b2280576",
+            "shift_bits": 2280576,
+            "storage_bytes": 287120
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 12361984,
+            "name": "b2296960",
+            "shift_bits": 2296960,
+            "storage_bytes": 289168
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 62170176,
+            "name": "b2313344",
+            "shift_bits": 2313344,
+            "storage_bytes": 291216
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 6632248,
+            "name": "b2329728",
+            "shift_bits": 2329728,
+            "storage_bytes": 293261
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 52247144,
+            "name": "b2346112",
+            "shift_bits": 2346112,
+            "storage_bytes": 295312
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 40006376,
+            "name": "b2362496",
+            "shift_bits": 2362496,
+            "storage_bytes": 297360
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 45707632,
+            "name": "b2378880",
+            "shift_bits": 2378880,
+            "storage_bytes": 299408
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 46017696,
+            "name": "b2395264",
+            "shift_bits": 2395264,
+            "storage_bytes": 301456
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 65336400,
+            "name": "b2411648",
+            "shift_bits": 2411648,
+            "storage_bytes": 303504
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 9624648,
+            "name": "b2428032",
+            "shift_bits": 2428032,
+            "storage_bytes": 305552
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1811872,
+            "name": "b2444416",
+            "shift_bits": 2444416,
+            "storage_bytes": 307600
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 48829216,
+            "name": "b2460800",
+            "shift_bits": 2460800,
+            "storage_bytes": 309647
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 65654312,
+            "name": "b2477184",
+            "shift_bits": 2477184,
+            "storage_bytes": 311696
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2402544,
+            "name": "b2493568",
+            "shift_bits": 2493568,
+            "storage_bytes": 313744
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 19290200,
+            "name": "b2509952",
+            "shift_bits": 2509952,
+            "storage_bytes": 315792
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 37034368,
+            "name": "b2526336",
+            "shift_bits": 2526336,
+            "storage_bytes": 317840
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 26956080,
+            "name": "b2542720",
+            "shift_bits": 2542720,
+            "storage_bytes": 319888
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 55555280,
+            "name": "b2559104",
+            "shift_bits": 2559104,
+            "storage_bytes": 321936
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 43210720,
+            "name": "b2575488",
+            "shift_bits": 2575488,
+            "storage_bytes": 323983
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 40405376,
+            "name": "b2591872",
+            "shift_bits": 2591872,
+            "storage_bytes": 326032
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 61820528,
+            "name": "b2608256",
+            "shift_bits": 2608256,
+            "storage_bytes": 328080
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 12983016,
+            "name": "b2624640",
+            "shift_bits": 2624640,
+            "storage_bytes": 330127
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 62924568,
+            "name": "b2641024",
+            "shift_bits": 2641024,
+            "storage_bytes": 332176
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 33998232,
+            "name": "b2657408",
+            "shift_bits": 2657408,
+            "storage_bytes": 334222
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 18824168,
+            "name": "b2673792",
+            "shift_bits": 2673792,
+            "storage_bytes": 336272
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 28857952,
+            "name": "b2690176",
+            "shift_bits": 2690176,
+            "storage_bytes": 338320
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 45349656,
+            "name": "b2706560",
+            "shift_bits": 2706560,
+            "storage_bytes": 340368
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 57946520,
+            "name": "b2722944",
+            "shift_bits": 2722944,
+            "storage_bytes": 342416
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 59975160,
+            "name": "b2739328",
+            "shift_bits": 2739328,
+            "storage_bytes": 344463
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 6983480,
+            "name": "b2755712",
+            "shift_bits": 2755712,
+            "storage_bytes": 346512
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 43830776,
+            "name": "b2772096",
+            "shift_bits": 2772096,
+            "storage_bytes": 348560
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 67443768,
+            "name": "b2788480",
+            "shift_bits": 2788480,
+            "storage_bytes": 350608
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 64014064,
+            "name": "b2804864",
+            "shift_bits": 2804864,
+            "storage_bytes": 352656
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 50949480,
+            "name": "b2821248",
+            "shift_bits": 2821248,
+            "storage_bytes": 354703
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 6237352,
+            "name": "b2837632",
+            "shift_bits": 2837632,
+            "storage_bytes": 356752
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 46344336,
+            "name": "b2854016",
+            "shift_bits": 2854016,
+            "storage_bytes": 358800
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 58992760,
+            "name": "b2870400",
+            "shift_bits": 2870400,
+            "storage_bytes": 360848
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 7388800,
+            "name": "b2886784",
+            "shift_bits": 2886784,
+            "storage_bytes": 362896
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 37790472,
+            "name": "b2903168",
+            "shift_bits": 2903168,
+            "storage_bytes": 364944
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 51710240,
+            "name": "b2919552",
+            "shift_bits": 2919552,
+            "storage_bytes": 366992
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 14806952,
+            "name": "b2935936",
+            "shift_bits": 2935936,
+            "storage_bytes": 369039
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4743768,
+            "name": "b2952320",
+            "shift_bits": 2952320,
+            "storage_bytes": 371088
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 28459240,
+            "name": "b2968704",
+            "shift_bits": 2968704,
+            "storage_bytes": 373135
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 21359040,
+            "name": "b2985088",
+            "shift_bits": 2985088,
+            "storage_bytes": 375182
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 49631104,
+            "name": "b3001472",
+            "shift_bits": 3001472,
+            "storage_bytes": 377232
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 37391624,
+            "name": "b3017856",
+            "shift_bits": 3017856,
+            "storage_bytes": 379280
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 29459072,
+            "name": "b3034240",
+            "shift_bits": 3034240,
+            "storage_bytes": 381328
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 51320504,
+            "name": "b3050624",
+            "shift_bits": 3050624,
+            "storage_bytes": 383376
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 14401944,
+            "name": "b3067008",
+            "shift_bits": 3067008,
+            "storage_bytes": 385424
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 10218224,
+            "name": "b3083392",
+            "shift_bits": 3083392,
+            "storage_bytes": 387472
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 28048696,
+            "name": "b3099776",
+            "shift_bits": 3099776,
+            "storage_bytes": 389520
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 50555080,
+            "name": "b3116160",
+            "shift_bits": 3116160,
+            "storage_bytes": 391567
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 32506528,
+            "name": "b3132544",
+            "shift_bits": 3132544,
+            "storage_bytes": 393616
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 59535504,
+            "name": "b3148928",
+            "shift_bits": 3148928,
+            "storage_bytes": 395664
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 36091616,
+            "name": "b3165312",
+            "shift_bits": 3165312,
+            "storage_bytes": 397711
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 25272680,
+            "name": "b3181696",
+            "shift_bits": 3181696,
+            "storage_bytes": 399760
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 33140440,
+            "name": "b3198080",
+            "shift_bits": 3198080,
+            "storage_bytes": 401808
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 5126384,
+            "name": "b3214464",
+            "shift_bits": 3214464,
+            "storage_bytes": 403854
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 17465128,
+            "name": "b3230848",
+            "shift_bits": 3230848,
+            "storage_bytes": 405903
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 19609264,
+            "name": "b3247232",
+            "shift_bits": 3247232,
+            "storage_bytes": 407950
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 67802336,
+            "name": "b3263616",
+            "shift_bits": 3263616,
+            "storage_bytes": 409999
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 20653272,
+            "name": "b3280000",
+            "shift_bits": 3280000,
+            "storage_bytes": 412048
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 53902200,
+            "name": "b3296384",
+            "shift_bits": 3296384,
+            "storage_bytes": 414095
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 5793712,
+            "name": "b3312768",
+            "shift_bits": 3312768,
+            "storage_bytes": 416144
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 1376752,
+            "name": "b3329152",
+            "shift_bits": 3329152,
+            "storage_bytes": 418192
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 47529736,
+            "name": "b3345536",
+            "shift_bits": 3345536,
+            "storage_bytes": 420238
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 62499616,
+            "name": "b3361920",
+            "shift_bits": 3361920,
+            "storage_bytes": 422287
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 64909880,
+            "name": "b3378304",
+            "shift_bits": 3378304,
+            "storage_bytes": 424336
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 27607360,
+            "name": "b3394688",
+            "shift_bits": 3394688,
+            "storage_bytes": 426384
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 30848560,
+            "name": "b3411072",
+            "shift_bits": 3411072,
+            "storage_bytes": 428431
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 23254968,
+            "name": "b3427456",
+            "shift_bits": 3427456,
+            "storage_bytes": 430480
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 60577928,
+            "name": "b3443840",
+            "shift_bits": 3443840,
+            "storage_bytes": 432528
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 13577008,
+            "name": "b3460224",
+            "shift_bits": 3460224,
+            "storage_bytes": 434576
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 17873216,
+            "name": "b3476608",
+            "shift_bits": 3476608,
+            "storage_bytes": 436624
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 66471208,
+            "name": "b3492992",
+            "shift_bits": 3492992,
+            "storage_bytes": 438672
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 44677168,
+            "name": "b3509376",
+            "shift_bits": 3509376,
+            "storage_bytes": 440717
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 8273728,
+            "name": "b3525760",
+            "shift_bits": 3525760,
+            "storage_bytes": 442768
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 24332640,
+            "name": "b3542144",
+            "shift_bits": 3542144,
+            "storage_bytes": 444816
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 7809896,
+            "name": "b3558528",
+            "shift_bits": 3558528,
+            "storage_bytes": 446864
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 42047784,
+            "name": "b3574912",
+            "shift_bits": 3574912,
+            "storage_bytes": 448912
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 48129304,
+            "name": "b3591296",
+            "shift_bits": 3591296,
+            "storage_bytes": 450960
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 4015040,
+            "name": "b3607680",
+            "shift_bits": 3607680,
+            "storage_bytes": 453008
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 35614952,
+            "name": "b3624064",
+            "shift_bits": 3624064,
+            "storage_bytes": 455056
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 68225808,
+            "name": "b3640448",
+            "shift_bits": 3640448,
+            "storage_bytes": 457104
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 65967816,
+            "name": "b3656832",
+            "shift_bits": 3656832,
+            "storage_bytes": 459149
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 24799880,
+            "name": "b3673216",
+            "shift_bits": 3673216,
+            "storage_bytes": 461199
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 9120344,
+            "name": "b3689600",
+            "shift_bits": 3689600,
+            "storage_bytes": 463248
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 23690712,
+            "name": "b3705984",
+            "shift_bits": 3705984,
+            "storage_bytes": 465296
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 42513288,
+            "name": "b3722368",
+            "shift_bits": 3722368,
+            "storage_bytes": 467344
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 10909440,
+            "name": "b3738752",
+            "shift_bits": 3738752,
+            "storage_bytes": 469392
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 54330792,
+            "name": "b3755136",
+            "shift_bits": 3755136,
+            "storage_bytes": 471439
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 30366128,
+            "name": "b3771520",
+            "shift_bits": 3771520,
+            "storage_bytes": 473488
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 16757856,
+            "name": "b3787904",
+            "shift_bits": 3787904,
+            "storage_bytes": 475536
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 44180200,
+            "name": "b3804288",
+            "shift_bits": 3804288,
+            "storage_bytes": 477584
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 18328632,
+            "name": "b3820672",
+            "shift_bits": 3820672,
+            "storage_bytes": 479632
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 34638392,
+            "name": "b3837056",
+            "shift_bits": 3837056,
+            "storage_bytes": 481680
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 49144760,
+            "name": "b3853440",
+            "shift_bits": 3853440,
+            "storage_bytes": 483728
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 22066248,
+            "name": "b3869824",
+            "shift_bits": 3869824,
+            "storage_bytes": 485775
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 63519456,
+            "name": "b3886208",
+            "shift_bits": 3886208,
+            "storage_bytes": 487824
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 61041016,
+            "name": "b3902592",
+            "shift_bits": 3902592,
+            "storage_bytes": 489872
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 38970688,
+            "name": "b3918976",
+            "shift_bits": 3918976,
+            "storage_bytes": 491920
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 3232960,
+            "name": "b3935360",
+            "shift_bits": 3935360,
+            "storage_bytes": 493967
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 36534352,
+            "name": "b3951744",
+            "shift_bits": 3951744,
+            "storage_bytes": 496015
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 38465960,
+            "name": "b3968128",
+            "shift_bits": 3968128,
+            "storage_bytes": 498064
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 2721744,
+            "name": "b3984512",
+            "shift_bits": 3984512,
+            "storage_bytes": 500112
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 55048384,
+            "name": "b4000896",
+            "shift_bits": 4000896,
+            "storage_bytes": 502160
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 39466728,
+            "name": "b4017280",
+            "shift_bits": 4017280,
+            "storage_bytes": 504208
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 55885528,
+            "name": "b4033664",
+            "shift_bits": 4033664,
+            "storage_bytes": 506256
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 16168560,
+            "name": "b4050048",
+            "shift_bits": 4050048,
+            "storage_bytes": 508303
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 50017624,
+            "name": "b4066432",
+            "shift_bits": 4066432,
+            "storage_bytes": 510352
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 31550784,
+            "name": "b4082816",
+            "shift_bits": 4082816,
+            "storage_bytes": 512400
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 29842792,
+            "name": "b4099200",
+            "shift_bits": 4099200,
+            "storage_bytes": 514448
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 41459632,
+            "name": "b4115584",
+            "shift_bits": 4115584,
+            "storage_bytes": 516495
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 56949776,
+            "name": "b4131968",
+            "shift_bits": 4131968,
+            "storage_bytes": 518544
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 855280,
+            "name": "b4148352",
+            "shift_bits": 4148352,
+            "storage_bytes": 520592
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 53077120,
+            "name": "b4164736",
+            "shift_bits": 4164736,
+            "storage_bytes": 522640
+          },
+          {
+            "exact_little_endian_atom_found": true,
+            "found_at": 66915360,
+            "name": "b4181120",
+            "shift_bits": 4181120,
+            "storage_bytes": 524687
+          }
+        ]
+      },
+      "original_bytes": 41158,
+      "original_sha256": "c9f88e2f6c255bb1664796228eddd3ff687306172598ddc0cc97fae8b7351796",
+      "report_name": "shifted-ir-inspection.json"
+    },
+    {
+      "measurements": {
+        "large_literals": {
+          "ExtensionCommon": [
+            {
+              "base": "hex",
+              "length": 383331,
+              "line": 8,
+              "module": "ExtensionCommon"
+            }
+          ],
+          "ExtensionCommonB": [
+            {
+              "base": "hex",
+              "length": 404155,
+              "line": 8,
+              "module": "ExtensionCommonB"
+            }
+          ],
+          "GoldbachBand01Common": [
+            {
+              "base": "hex",
+              "length": 481956,
+              "line": 8,
+              "module": "GoldbachBand01Common"
+            }
+          ],
+          "GoldbachBand02Common": [
+            {
+              "base": "hex",
+              "length": 582704,
+              "line": 8,
+              "module": "GoldbachBand02Common"
+            }
+          ],
+          "GoldbachBand03Common": [
+            {
+              "base": "hex",
+              "length": 711031,
+              "line": 8,
+              "module": "GoldbachBand03Common"
+            }
+          ],
+          "GoldbachBand04Common": [
+            {
+              "base": "hex",
+              "length": 873340,
+              "line": 8,
+              "module": "GoldbachBand04Common"
+            }
+          ],
+          "GoldbachBand05FactorLeaves": [
+            {
+              "base": "hex",
+              "length": 110041,
+              "line": 9,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 126286,
+              "line": 12,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 132419,
+              "line": 15,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 136401,
+              "line": 18,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 139362,
+              "line": 21,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 141722,
+              "line": 24,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 143685,
+              "line": 27,
+              "module": "GoldbachBand05FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 145365,
+              "line": 30,
+              "module": "GoldbachBand05FactorLeaves"
+            }
+          ],
+          "GoldbachBand06FactorLeaves": [
+            {
+              "base": "hex",
+              "length": 136898,
+              "line": 9,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 156693,
+              "line": 12,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 164165,
+              "line": 15,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 169021,
+              "line": 18,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 172625,
+              "line": 21,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 175501,
+              "line": 24,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 177892,
+              "line": 27,
+              "module": "GoldbachBand06FactorLeaves"
+            },
+            {
+              "base": "hex",
+              "length": 179943,
+              "line": 30,
+              "module": "GoldbachBand06FactorLeaves"
+            }
+          ],
+          "PilotPrimeProductBasis": [
+            {
+              "base": "hex",
+              "length": 270795,
+              "line": 10,
+              "module": "PilotPrimeProductBasis"
+            }
+          ],
+          "Power10Common": [
+            {
+              "base": "hex",
+              "length": 66334,
+              "line": 533,
+              "module": "Power10Common"
+            },
+            {
+              "base": "hex",
+              "length": 379177,
+              "line": 537,
+              "module": "Power10Common"
+            }
+          ],
+          "WideSource20": [
+            {
+              "base": "hex",
+              "length": 262944,
+              "line": 1738,
+              "module": "WideSource20"
+            }
+          ],
+          "WideSource22": [
+            {
+              "base": "hex",
+              "length": 1049373,
+              "line": 6922,
+              "module": "WideSource22"
+            }
+          ]
+        },
+        "minimum_decimal": 20000,
+        "minimum_hex": 18000,
+        "pin": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+        "project_modules": 732,
+        "qualified_data_ref_uses": {
+          "Power10.bits": [
+            {
+              "line": 1740,
+              "module": "WideSource20"
+            }
+          ],
+          "WideSource20.bits": [
+            {
+              "line": 6924,
+              "module": "WideSource22"
+            }
+          ]
+        }
+      },
+      "original_bytes": 5147,
+      "original_sha256": "7938af369c14adbea22dd8bae37298b6f6b939d653454455605b1d44ac4f348e",
+      "report_name": "literal-source-audit.json"
+    }
+  ],
+  "scope": "Isolated fast-hex literal trials, a production module receipt, and original Linux compiler evidence separate elaboration from C generation."
+}

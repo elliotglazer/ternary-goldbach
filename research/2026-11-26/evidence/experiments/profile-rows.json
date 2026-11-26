@@ -1,0 +1,64 @@
+{
+  "experiment": "Interval certificates and joined analytic rows",
+  "records": [
+    {
+      "measurements": {
+        "ProfileTape16positive": {
+          "distinct_reachable_final": 657,
+          "instructions": 657,
+          "unfolded_final_nodes": 10450
+        },
+        "ProfileTape1positive": {
+          "distinct_reachable_final": 185,
+          "instructions": 185,
+          "unfolded_final_nodes": 1105
+        },
+        "ProfileTape1touching": {
+          "distinct_reachable_final": 179,
+          "instructions": 179,
+          "unfolded_final_nodes": 1095
+        },
+        "ProfileTape2positive": {
+          "distinct_reachable_final": 225,
+          "instructions": 225,
+          "unfolded_final_nodes": 1238
+        },
+        "ProfileTape2touching": {
+          "distinct_reachable_final": 216,
+          "instructions": 216,
+          "unfolded_final_nodes": 1223
+        },
+        "ProfileTape4positive": {
+          "distinct_reachable_final": 287,
+          "instructions": 287,
+          "unfolded_final_nodes": 1714
+        },
+        "ProfileTape8positive": {
+          "distinct_reachable_final": 411,
+          "instructions": 411,
+          "unfolded_final_nodes": 3506
+        }
+      },
+      "original_bytes": 938,
+      "original_sha256": "1372abe5ba315298d736e02c74a4485f0a40c6082c105e431169c2639416b672",
+      "report_name": "tape-size-census.json"
+    },
+    {
+      "measurements": {
+        "exit": 9,
+        "local_imports": [
+          "ProfileTape2positive",
+          "ScaledBinding",
+          "ProfileFormula"
+        ],
+        "log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+        "seconds": 61.57,
+        "source_sha256": "eb9839ae6312456dbe9d4d6b0899e57522cb6524c3e68220bc366ddb316cc842"
+      },
+      "original_bytes": 328,
+      "original_sha256": "0735326649ed3ebd0751000ab958e32bf25c25abcc1e4ac29e2c4c128b499118",
+      "report_name": "ProfileTape2positiveFormula-2600-failed.json"
+    }
+  ],
+  "scope": "Analytic coefficient tape counts, the audit of eight profile modules, and a checked assembly of all four row groups. The intermediate theorem retains its recorded assumptions."
+}

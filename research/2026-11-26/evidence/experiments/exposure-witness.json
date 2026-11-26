@@ -1,0 +1,334 @@
+{
+  "experiment": "Lean 4.35 declaration exposure and witness inference",
+  "records": [
+    {
+      "measurements": [
+        {
+          "exit": 1,
+          "file": "TypeBeforeMatched.lean",
+          "log_sha256": "67ac004cda433abc84bab26fa9a79a3a2b37a4eebcb8ad3cdc7326b059fc01ba",
+          "seconds": 7.55,
+          "sha256": "f3ecdd9a836921002756e33ef56f4c9df2106e01c6aec8d97ddb101f9dc2e4da"
+        },
+        {
+          "exit": 0,
+          "file": "ExactBindersMatched.lean",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "seconds": 6.95,
+          "sha256": "b758f1de1701925eb1ff1dcec173bda6b35db0dda1aad7b567195fe2f9124651"
+        },
+        {
+          "exit": 0,
+          "file": "ScopedMatched.lean",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "seconds": 6.5,
+          "sha256": "f9c5de4fcd09d587b3041995487758c28aab68519d38bacf121ab394a58df5c0"
+        }
+      ],
+      "original_bytes": 750,
+      "original_sha256": "9820b41c214ddd65cb712bded5d330293b0b3d9d45da31c84e25d6ca6f950cf8",
+      "report_name": "matched-receipt.json"
+    },
+    {
+      "measurements": {
+        "default": {
+          "args": [
+            "leanchecker.exe",
+            "witness.export"
+          ],
+          "exit": 0,
+          "seconds": 0.94
+        },
+        "export": {
+          "args": [
+            "leanexport.exe",
+            "PairedGoldbachProbe",
+            "PairedGoldbachProbe.value_eq"
+          ],
+          "exit": 0,
+          "output_bytes": 12655,
+          "output_sha256": "9cef138471fd40629cd73490da92a9bae29ba55a9f925bc598db2ecb1389d5ad",
+          "seconds": 1.74
+        },
+        "nanoda": {
+          "args": [
+            "nanoda_bin.exe",
+            "nanoda.json"
+          ],
+          "exit": 0,
+          "seconds": 0.16
+        },
+        "recheck": {
+          "args": [
+            "leanchecker-paranoid.exe",
+            "witness.export"
+          ],
+          "exit": 0,
+          "output_bytes": 0,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "seconds": 0.04
+        },
+        "source": {
+          "args": [
+            "lean.exe",
+            "-j1",
+            "-o",
+            "PairedGoldbachProbe.olean",
+            "PairedGoldbachProbe.lean"
+          ],
+          "exit": 0,
+          "output_bytes": 563,
+          "output_sha256": "0f47f6521b72feea9210c2016125b579e8b150664f5cd0774309b4e2b285ad57",
+          "seconds": 0.74
+        },
+        "source_sha256": "316e8d2efcc3f4dd0d00f7a1659c5b13f495babea78d0bd4d9731b87e87070d8",
+        "stock_policy": {
+          "source_sha256": "60d0e3b523773f83b7271c3ad34a2d3d34309769c65cee04fd07b108883d186a"
+        }
+      },
+      "original_bytes": 1642,
+      "original_sha256": "957f6915aec23b15f74923679f4b18605969cdcf5b1a807cd9bff240f7770efa",
+      "report_name": "kernel-receipt.json"
+    },
+    {
+      "measurements": {
+        "authentic_full_consumer": "Lib.ClassField.GaloisCohomology.DiscreteUnits",
+        "base_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+        "base_tree": "d49b7d88ef17668bb6378c16eaf46cc90f9b4c71",
+        "externally_compiled_project_seed": {
+          "module": "Lib.General.LinearAlgebra.Base",
+          "outputs": {
+            ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+            ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62",
+            ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+            ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+            ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d"
+          },
+          "source_sha256": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85"
+        },
+        "files": {
+          "AuditCocycleExports.lean": "d62e205be1cf2f413921087c8236cded3ba73f30d0166f3e20811c669d15339a",
+          "ContinuousCocycles.log": "916dc0d1dddb00374a01b2b64f170f54c491f378e52bfb97fb0547945d2920b2",
+          "ContinuousCocycles.patch": "a77d3b159b44db5aa2b0ef468012235299495038e57603f84f1ab7e98c70922f",
+          "DiscreteUnits.log": "d4e1857dc18d255dc10166519c1cc449b464fa8f029d294e175b44fd6d7da312",
+          "DiscreteUnitsSurface.lean": "3d851fb080e207b56bfa1a9ef7b755bc87d823887cf9a4a45611aee5854a9055",
+          "DiscreteUnitsSurface.log": "d9b27ea70d2ddab7a07847f11c5e224f88164009c951e8cabdfc082c671285b6"
+        },
+        "flags": [
+          "-j1"
+        ],
+        "records": {
+          "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+            "exit": 0,
+            "frozen_source_sha256": "d69196620009a2548c490287aa9e7435afe16881815b2d0fb1cd13759d7c8011",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "5fc88e819c4b40f952a2f2f8f482b9c1f30380f3479df95af770cb0ffa03f6e4",
+              ".ir.sig": "7444b72c86e9c460b2e238ffcfe93ce058d7f02fb26437ed0b700c0031edcb19",
+              ".olean": "4c91ac54a360681422d6a0fe52b0e34ab42e28dbb256a228c24607b64446848b",
+              ".olean.private": "216c00cd9df503214b40fc055d18694dcfffee04bbb201ac0ce589fef494d911",
+              ".olean.server": "ff9d989532592c49ff0b6377ec54cfb653a38ea7371203d9960600614f55bc26"
+            },
+            "parents": {
+              "Lib.General.LinearAlgebra.Base": {
+                ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+                ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62",
+                ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+                ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+                ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d"
+              }
+            },
+            "source_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+            "wall_seconds": 52.04
+          },
+          "Lib.ClassField.GaloisCohomology.CyclicClass": {
+            "exit": 0,
+            "frozen_source_sha256": "7b12af57eab81a533d25ce330b62c16ebaaf8cd59beb6d9e104426960621eb02",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "508b1ee6b9c051217985fa1dd74a52f13a52f703f9f350779087065b66327ada",
+              ".ir.sig": "e518dbd4660f5f652224697adf589ecfc1279d1c5fa0f6d3ec6b743cc2494fe4",
+              ".olean": "78c6e74d7fb0983d545352d711bd0f778641b3a997e7271e435b8ec7637d2d39",
+              ".olean.private": "af3c98c47547129ffb96897675a325dbf50e5a8cb82a462435217d3d32862e12",
+              ".olean.server": "6528067249e3b9e42d46aff37d2e2f923295b936bc37a5b52e4f06e67f70e70b"
+            },
+            "parents": {
+              "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+                ".ir": "5fc88e819c4b40f952a2f2f8f482b9c1f30380f3479df95af770cb0ffa03f6e4",
+                ".ir.sig": "7444b72c86e9c460b2e238ffcfe93ce058d7f02fb26437ed0b700c0031edcb19",
+                ".olean": "4c91ac54a360681422d6a0fe52b0e34ab42e28dbb256a228c24607b64446848b",
+                ".olean.private": "216c00cd9df503214b40fc055d18694dcfffee04bbb201ac0ce589fef494d911",
+                ".olean.server": "ff9d989532592c49ff0b6377ec54cfb653a38ea7371203d9960600614f55bc26"
+              },
+              "Lib.ClassField.Places.GaloisDefs": {
+                ".ir": "2b3742bdc8ea9f75da420572a22a0c9fd18e1dbdd65d0538b380a9d6f5e7db1a",
+                ".ir.sig": "a6414c0858c77d034cde3668581a05cafc85e8c271196f32c22e4ef834e58461",
+                ".olean": "83898675764cf316f1fd19afb2d63005469a670c3fae7a7e3e8f16c81dc5dee7",
+                ".olean.private": "81c9c6d8f0072fbc4b905dd49e2b8b40de6654efd70c3f3dcce98f981f07829c",
+                ".olean.server": "a77c1d2f00615081173ca669a01b3fddd49a300e03a422b1d9db7880edece236"
+              }
+            },
+            "source_sha256": "7b12af57eab81a533d25ce330b62c16ebaaf8cd59beb6d9e104426960621eb02",
+            "wall_seconds": 46.039
+          },
+          "Lib.ClassField.GaloisCohomology.DiscreteUnits": {
+            "exit": 0,
+            "frozen_source_sha256": "3609197907180a1e20c53e363d8b34b2b48232887d140f20cd2310aae433a3c4",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "3cadc65f5c0ce79342c13625a9ad5bba46e712b0986ace7c6ffeb6f0cc4c7044",
+              ".ir.sig": "3407bcd2a3ebf0879eacbe4f3dc0135cbe242daa33c7330cb2dac6a0d8429219",
+              ".olean": "afa54cf7101cfc2240aa508bfd7c056716178f07a93934345388c2b2727021cf",
+              ".olean.private": "927d1c949f0fb9b75a19c50459b502062a3853027eaba2f61ba4aec3b3b6000e",
+              ".olean.server": "03421fb158e95d801ce4ead87214c80a77552c26f30eaa63194b28522387ad37"
+            },
+            "parents": {
+              "Lib.ClassField.Places.ProfiniteGalois": {
+                ".ir": "87144108e88ccac63438fbfadb5f19871dca6e66b9bdb4287cb0087ff5a73526",
+                ".ir.sig": "c3937f630fbcea708260396e351359baa6f76ebdb5a364593d2385aee44f9ec2",
+                ".olean": "7feda2578394107197bc77069d338514ae4f899e071d3ead79f85c57828363bd",
+                ".olean.private": "76cb29eb121ed894b4ab1bc487e42dadc423cb39b1e5a96ff634339c80d260e4",
+                ".olean.server": "ca787966fc244da601f8ca73e68a3d49da0a486147680b7ce384bf0a6bb5f4bc"
+              },
+              "Lib.General.Groups.RatModInt": {
+                ".ir": "ef17a6d1b9e4222b691dec5a3cd76fe80c3436b1bd11ffb80e2498b9fc897840",
+                ".ir.sig": "c3f59b3e40a7d5f5cee6c683a31a6d836d05e7ffc957d9fc9cdf8d04abe5aaa6",
+                ".olean": "280108d9cbe69bfc28be2e46229843e576d05de46f83a7df9ccbc68d0942510d",
+                ".olean.private": "63cbcb8fbcc6bf1d37f70e192697a9ffa3a87e0395df6322c0df21cce4bb9261",
+                ".olean.server": "5239b4ef6b00f6ad958e7a3dee3409e64c07d516828e5a124aa8b2ee92df5892"
+              }
+            },
+            "source_sha256": "3609197907180a1e20c53e363d8b34b2b48232887d140f20cd2310aae433a3c4",
+            "wall_seconds": 102.073
+          },
+          "Lib.ClassField.Places.GaloisDefs": {
+            "exit": 0,
+            "frozen_source_sha256": "32ad0a45ce22ced92fc4263d639f601257c34c57100e8954034cddf377beb067",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "2b3742bdc8ea9f75da420572a22a0c9fd18e1dbdd65d0538b380a9d6f5e7db1a",
+              ".ir.sig": "a6414c0858c77d034cde3668581a05cafc85e8c271196f32c22e4ef834e58461",
+              ".olean": "83898675764cf316f1fd19afb2d63005469a670c3fae7a7e3e8f16c81dc5dee7",
+              ".olean.private": "81c9c6d8f0072fbc4b905dd49e2b8b40de6654efd70c3f3dcce98f981f07829c",
+              ".olean.server": "a77c1d2f00615081173ca669a01b3fddd49a300e03a422b1d9db7880edece236"
+            },
+            "parents": {
+              "Lib.General.LinearAlgebra.Base": {
+                ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+                ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62",
+                ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+                ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+                ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d"
+              }
+            },
+            "source_sha256": "32ad0a45ce22ced92fc4263d639f601257c34c57100e8954034cddf377beb067",
+            "wall_seconds": 48.039
+          },
+          "Lib.ClassField.Places.LocalDefs": {
+            "exit": 0,
+            "frozen_source_sha256": "73afe8280f24e5631f83a83dbb027d51d2b7829ae7fb1fe92297c8e0c71f1e00",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "01a3027a61a2fd5f8ca8f6131c2c1f699e96d66bd9a96865ac2a010d30ab0169",
+              ".ir.sig": "a39729116fcd180d0627ebc32246998bfdf59dfabbf3ae2211839fdd2efe90ff",
+              ".olean": "12a81375c92eeec437d7c3f6a7ba6759a74ee3756c23c16462ae007e2a874d27",
+              ".olean.private": "4e92cd298a3125ea0b1d000f00fc1997c19fe14312c7996b153a33545c6a1897",
+              ".olean.server": "3ee0fc9b186983aadfac6271b0e0d165b0dae2f76706a0a2254fdbc32eb6c13b"
+            },
+            "parents": {
+              "Lib.ClassField.GaloisCohomology.CyclicClass": {
+                ".ir": "508b1ee6b9c051217985fa1dd74a52f13a52f703f9f350779087065b66327ada",
+                ".ir.sig": "e518dbd4660f5f652224697adf589ecfc1279d1c5fa0f6d3ec6b743cc2494fe4",
+                ".olean": "78c6e74d7fb0983d545352d711bd0f778641b3a997e7271e435b8ec7637d2d39",
+                ".olean.private": "af3c98c47547129ffb96897675a325dbf50e5a8cb82a462435217d3d32862e12",
+                ".olean.server": "6528067249e3b9e42d46aff37d2e2f923295b936bc37a5b52e4f06e67f70e70b"
+              },
+              "Lib.General.Analysis.OstrowskiTaussky": {
+                ".ir": "dd1640bdfcb40578363e6fc5dc5d11120e16d58703df621b2ab687ee73a17103",
+                ".ir.sig": "a6db58e2ceeacccf9577e897b11cd53bb0e879b25b8b12398c92ab783db143fd",
+                ".olean": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775",
+                ".olean.private": "24cfd565b0d13783a58aab0ead3c56d1b65fa00db20c7c6ba635b75df6205827",
+                ".olean.server": "7ab76d99ec8df9795e04758eb5f770634b632b8673d2b92f657d4e2996ef765a"
+              }
+            },
+            "source_sha256": "73afe8280f24e5631f83a83dbb027d51d2b7829ae7fb1fe92297c8e0c71f1e00",
+            "wall_seconds": 42.036
+          },
+          "Lib.ClassField.Places.ProfiniteGalois": {
+            "exit": 0,
+            "frozen_source_sha256": "7b864f6b7e21427eaf4ec2a35ffc40b20c77664585b53431e321398d39d5191c",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "87144108e88ccac63438fbfadb5f19871dca6e66b9bdb4287cb0087ff5a73526",
+              ".ir.sig": "c3937f630fbcea708260396e351359baa6f76ebdb5a364593d2385aee44f9ec2",
+              ".olean": "7feda2578394107197bc77069d338514ae4f899e071d3ead79f85c57828363bd",
+              ".olean.private": "76cb29eb121ed894b4ab1bc487e42dadc423cb39b1e5a96ff634339c80d260e4",
+              ".olean.server": "ca787966fc244da601f8ca73e68a3d49da0a486147680b7ce384bf0a6bb5f4bc"
+            },
+            "parents": {
+              "Lib.ClassField.Places.LocalDefs": {
+                ".ir": "01a3027a61a2fd5f8ca8f6131c2c1f699e96d66bd9a96865ac2a010d30ab0169",
+                ".ir.sig": "a39729116fcd180d0627ebc32246998bfdf59dfabbf3ae2211839fdd2efe90ff",
+                ".olean": "12a81375c92eeec437d7c3f6a7ba6759a74ee3756c23c16462ae007e2a874d27",
+                ".olean.private": "4e92cd298a3125ea0b1d000f00fc1997c19fe14312c7996b153a33545c6a1897",
+                ".olean.server": "3ee0fc9b186983aadfac6271b0e0d165b0dae2f76706a0a2254fdbc32eb6c13b"
+              }
+            },
+            "source_sha256": "7b864f6b7e21427eaf4ec2a35ffc40b20c77664585b53431e321398d39d5191c",
+            "wall_seconds": 51.071
+          },
+          "Lib.General.Analysis.OstrowskiTaussky": {
+            "exit": 0,
+            "frozen_source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+            "outputs": {
+              ".ir": "dd1640bdfcb40578363e6fc5dc5d11120e16d58703df621b2ab687ee73a17103",
+              ".ir.sig": "a6db58e2ceeacccf9577e897b11cd53bb0e879b25b8b12398c92ab783db143fd",
+              ".olean": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775",
+              ".olean.private": "24cfd565b0d13783a58aab0ead3c56d1b65fa00db20c7c6ba635b75df6205827",
+              ".olean.server": "7ab76d99ec8df9795e04758eb5f770634b632b8673d2b92f657d4e2996ef765a"
+            },
+            "parents": {
+              "Lib.General.LinearAlgebra.Base": {
+                ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+                ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62",
+                ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+                ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+                ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d"
+              }
+            },
+            "source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d"
+          },
+          "Lib.General.Groups.RatModInt": {
+            "exit": 0,
+            "frozen_source_sha256": "f4a46a2a519c76bc35ef56acf3392b29be4a7eb9bd3c43851548707678b8e956",
+            "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "outputs": {
+              ".ir": "ef17a6d1b9e4222b691dec5a3cd76fe80c3436b1bd11ffb80e2498b9fc897840",
+              ".ir.sig": "c3f59b3e40a7d5f5cee6c683a31a6d836d05e7ffc957d9fc9cdf8d04abe5aaa6",
+              ".olean": "280108d9cbe69bfc28be2e46229843e576d05de46f83a7df9ccbc68d0942510d",
+              ".olean.private": "63cbcb8fbcc6bf1d37f70e192697a9ffa3a87e0395df6322c0df21cce4bb9261",
+              ".olean.server": "5239b4ef6b00f6ad958e7a3dee3409e64c07d516828e5a124aa8b2ee92df5892"
+            },
+            "parents": {
+              "Lib.ClassField.Places.LocalDefs": {
+                ".ir": "01a3027a61a2fd5f8ca8f6131c2c1f699e96d66bd9a96865ac2a010d30ab0169",
+                ".ir.sig": "a39729116fcd180d0627ebc32246998bfdf59dfabbf3ae2211839fdd2efe90ff",
+                ".olean": "12a81375c92eeec437d7c3f6a7ba6759a74ee3756c23c16462ae007e2a874d27",
+                ".olean.private": "4e92cd298a3125ea0b1d000f00fc1997c19fe14312c7996b153a33545c6a1897",
+                ".olean.server": "3ee0fc9b186983aadfac6271b0e0d165b0dae2f76706a0a2254fdbc32eb6c13b"
+              }
+            },
+            "source_sha256": "f4a46a2a519c76bc35ef56acf3392b29be4a7eb9bd3c43851548707678b8e956",
+            "wall_seconds": 44.035
+          }
+        },
+        "source_count": 9,
+        "source_delta": "Lib.ClassField.GaloisCohomology.ContinuousCocycles"
+      },
+      "original_bytes": 14670,
+      "original_sha256": "97dcd4da592deb74b30e6c416df6fb7cefcdbdba09f11c1f8a7ed8809400849c",
+      "report_name": "receipt.json"
+    }
+  ],
+  "scope": "Typed and scoped-simp fixtures, original and repaired theorem bodies, and compatibility-switch controls isolate elaboration failures. Focused fixtures are represented separately from complete source builds."
+}
