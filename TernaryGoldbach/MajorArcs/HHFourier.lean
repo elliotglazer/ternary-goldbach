@@ -332,7 +332,7 @@ theorem integrable_Kc (H : ℝ) : Integrable (Kc H) :=
 
 theorem memLp_Kc (H : ℝ) : MemLp (Kc H) 2 := by
   have hK : Kc H = (Icc (-(H / (2 * π))) (H / (2 * π))).indicator (𝓕 gC) := rfl
-  rw [hK, memLp_indicator_iff_restrict measurableSet_Icc]
+  rw [hK, memLp_indicator_iff_restrict measurableSet_Icc.nullMeasurableSet]
   exact MemLp.of_bound (μ := volume.restrict (Icc (-(H / (2 * π))) (H / (2 * π))))
     continuous_fourier_gC.aestronglyMeasurable (∫ u, ‖gC u‖)
     (Filter.Eventually.of_forall fun ξ => VectorFourier.norm_fourierIntegral_le_integral_norm 𝐞 volume (innerₗ ℝ) gC ξ)
@@ -604,7 +604,7 @@ theorem integrable_etaO : Integrable etaO :=
 
 theorem memLp_etaO : MemLp etaO 2 := by
   have hK : etaO = (Icc (0 : ℝ) 2).indicator P0 := rfl
-  rw [hK, memLp_indicator_iff_restrict measurableSet_Icc]
+  rw [hK, memLp_indicator_iff_restrict measurableSet_Icc.nullMeasurableSet]
   obtain ⟨C, hC⟩ := (isCompact_Icc (a := (0:ℝ)) (b := 2)).exists_bound_of_continuousOn
     continuous_P0.continuousOn
   exact MemLp.of_bound (μ := volume.restrict (Icc (0 : ℝ) 2)) continuous_P0.aestronglyMeasurable C

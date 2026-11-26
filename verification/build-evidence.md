@@ -89,3 +89,7 @@ A fresh import reports exactly `propext`, `Classical.choice`, and `Quot.sound`
 for `U.map`, `U.mem_range_map`, `U.continuous_map`, `U.det`, and
 `U.form_mul_inv_eq`. The same default tactic remains available on the
 two declarations that use it.
+
+Stock Lean 4.35 compiled the full HHFourier module in 30.84 seconds. The
+proofs of `memLp_Kc` and `memLp_etaO` now pass the null-measurability
+of the integration interval to `memLp_indicator_iff_restrict`.
