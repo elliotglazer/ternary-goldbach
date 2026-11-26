@@ -107,7 +107,8 @@
     {
       "path": "Lib/Adelic/CuspForms/CuspStep.lean",
       "upstream_sha256": "450170120ec13b1762b507a5afca78918ab75169b925af52caeac11cff52df65",
-      "converted_sha256": "dcea04a8fc612be4ee7088432eb9a4e42b229649ba4f413fb704ac49852ca38e"
+      "converted_sha256": "1d3ae9436fd895e78665b139624675e3d5cf86a1db938e82adf3dcfd9e86dd1a",
+      "adaptation": "Rewrite with the public root-discriminant equation."
     },
     {
       "path": "Lib/Adelic/CuspForms/Definite.lean",
@@ -1527,8 +1528,8 @@
     {
       "path": "Lib/General/Geometry/EtaleCharts.lean",
       "upstream_sha256": "284cca0f475853df819272750837caee7009bd688c965bf2370e197d3ba5b5e1",
-      "converted_sha256": "4148144121ecd9c97f67a10447a3925c0c09a613eccceea1acd41ca18a9ef3d5",
-      "adaptation": "Name the localization element in the ring of the chart point. Diagnostic candidate."
+      "converted_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+      "adaptation": "Bind the Yoneda element with its commutative-algebra hom type."
     },
     {
       "path": "Lib/General/Geometry/Lefschetz.lean",
@@ -1975,7 +1976,8 @@
     {
       "path": "Lib/PadicComparison/Descent/ReductionModP.lean",
       "upstream_sha256": "48eb85d7f96b1f8895f3d6819b39eca392b50c383ae8b4c4f658fccf4e64ac34",
-      "converted_sha256": "dcacaed47bf5fe18a58e32858f19ecfe8e6d2f7963a154baaf215bb3bf651ba2"
+      "converted_sha256": "aba3c25e7cf821e8c261c8c378e5ec9730ea3aa9ce1db7466cc6bc2071ba9bbe",
+      "adaptation": "Elaborate the two base change proofs at their expected types and specify the Witt prime."
     },
     {
       "path": "Lib/PadicComparison/Descent/TestCover.lean",
@@ -3000,7 +3002,8 @@
     {
       "path": "New/Curve/PeriodDefs.lean",
       "upstream_sha256": "854903bde75a3a2a64d2341947f6768438e9cae73399e8d4fc29c1a598a203ea",
-      "converted_sha256": "dd58a02f6e1ef37254be83c2a57fa6d67853c839d876cba12ec1a8ada25f4215"
+      "converted_sha256": "5e4e3e60a946cb24cfe6075f3d84fe9d3ba49c2aa9aa537b5a289300cfc18617",
+      "adaptation": "Rewrite with the public root-discriminant equation."
     },
     {
       "path": "New/Curve/ThetaProducts.lean",
@@ -3507,7 +3510,8 @@
     {
       "path": "New/RealPlace/ComplexGauge.lean",
       "upstream_sha256": "f0e59c67632fa29571ece3545a697a35fadcee2aa2092bb0b73ec4e6cbba6bcb",
-      "converted_sha256": "386e8b89d54588da492f72833353f1a325c1585c9faf1d873eabc5aa7b8d8d3c"
+      "converted_sha256": "0620ffe6658f8a67ee9dc883725fcf216f3ef86a00d2f0cb4d1df564a5b3c731",
+      "adaptation": "Prove the disk volume estimate separately and supply it to the gauge constructor."
     },
     {
       "path": "New/RealPlace/ComplexShells.lean",

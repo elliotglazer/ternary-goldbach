@@ -23,7 +23,7 @@ open NumberField Real
 lemma Parameters.norm_gal_vacuumRoot P s (σ : Gal(ℂ/K P)) : ‖σ (vacuumRoot P s)‖ ^ 2 =
   rootDiscr (P.E s) / √P.d := by
   obtain ⟨k, h, ⟨⟩⟩ := WeilData.exists_chiFin_pow_eq_prod (P.α s)
-  erw [rootDiscr, ← pow_left_inj₀, div_pow, ← prod_varpi_eq_rootDiscr_pow, pow_right_comm,
+  erw [rootDiscr_def, ← pow_left_inj₀, div_pow, ← prod_varpi_eq_rootDiscr_pow, pow_right_comm,
     ← norm_pow, ← map_pow]
   simp [vacuumRoot, by simpa [h.ne'] using congr(‖$(σ.commutes ⟨chiFin (P.α s) ^ k, by simp_all
     [prod_phi_eq_norm]⟩)‖)]

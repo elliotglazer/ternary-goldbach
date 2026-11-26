@@ -158,6 +158,11 @@ lemma exists_orthonormal_ker_lintegral_le {m ι : Type} [Fintype m] [Fintype ι]
 lemma RealPlaceSizes.ten_le (hF : RealPlaceSizes 𝔰 ρ s b) : 4 ≤ ρ :=
   hF.eight_mul_r_le_rho.trans' (by simp; bound)
 
+/-- The volume of the complex disk of radius `L ^ j` satisfies the bound in the complex gauge. -/
+lemma RealPlaceSizes.complexGauge_volume_le (L : ℝ) (h4 : 4 ≤ L) : ∀ j : ℕ, volume {x : ℂ | ‖x‖ ≤ L ^ j} ≤ (ENNReal.ofReal L ^ 2) ^ (j + 1) := by
+  simp (disch := positivity) [← mem_closedBall_zero_iff, -mem_closedBall]
+  grw [pi_le_four, h4]; ring; bound
+
 /-- For L ≥ ρ, the gauge of the level at ℂ with sizes B_j = {x : |x| ≤ L^j} and constant Λ = L². -/
 noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : ρ ≤ L := by rfl) :
   Gauge hF.complexLevel := by
@@ -169,9 +174,7 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
     .ofReal L ^ 2, fun _ ↦ by simpa [closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
     simp [HasMatSize, apply_ite, complexBasis]
     grind [norm_add_le, norm_one, norm_I], by simp +contextual [HasMatSize, (norm_apply_le_l2_opNorm
-    ..).trans, hρ.trans'], fun u h i ↦ by simp_all; grind [PiLp.norm_apply_le (toLp 2 u) i], ?_, by
-    simp (disch := positivity) [← mem_closedBall_zero_iff, -mem_closedBall]
-    grw [pi_le_four, h4]; ring; bound, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
+    ..).trans, hρ.trans'], fun u h i ↦ by simp_all; grind [PiLp.norm_apply_le (toLp 2 u) i], ?_, RealPlaceSizes.complexGauge_volume_le L h4, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
   iterate 6 simp (disch := positivity) [pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
     bound [two_le_pi, sq_nonneg (L - 1)]
   · grw [Measure.map_apply, prod_apply_symm, complexPlace_skewMeasure, lintegral_map_le,
