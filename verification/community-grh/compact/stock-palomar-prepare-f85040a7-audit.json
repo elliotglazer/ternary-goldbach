@@ -1,0 +1,36 @@
+{
+  "scope": "Stock Palomar source preparation. Full protected execution remains pending.",
+  "stock_policy_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "source_commit": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+  "git_tree": "728ed945f3e4e2a7c48d7ff0c01412cf43cc2ff9",
+  "git_archive_format": "tar",
+  "git_archive_sha256": "22576efd9a20dbc7651bc04e5247f60400c790e8df5511ec86fa31674b28b4b3",
+  "git_version": "git version 2.43.0",
+  "tracked_files": 1550,
+  "lean_files_checked": 1529,
+  "stock_source_bytes": 364823631,
+  "mechanical_receipt": "stock-palomar-prepare-f85040a7.json",
+  "receipt_sha256": "b716e15988e4dc341ff17fe5d3704ba2220dc29cc95aa24642f7429f63ad9c5e",
+  "status": "pending",
+  "stage": "prepared",
+  "errors": [],
+  "warnings": [],
+  "checked_at": "2026-11-26T05:58:08Z",
+  "challenge_theorem": "PalomarTernaryGoldbach.ternary_goldbach",
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "profile_sha256": "4695b3c9548ffe03f40e9cee9c7fbe4941fa96b53f2748cf9d0962336f9597fd",
+  "protected_file_sha256": {
+    "GoldbachChallenge.lean": "f9e6190b4c77c9bf474c6d36748278af41140237432fff72e8084a4c572a382a",
+    "GoldbachSolution.lean": "4cea88129a02f692ab896084d017ae83e43aca78770585897baf823c4b03eae7",
+    "comparator.json": "073582e85645abd6e5949deb0531c11797ac9c1266073bf913b02d86173ebdcb",
+    "lakefile.toml": "6b0e3975d86d07816edfa3f0d176e44f1d6ea8becb7280301312e15f89b46c3e",
+    "lake-manifest.json": "28fc7e6db5a7c849bf990d62e91c7df31b32d1cd00e088e341e0202a49ec6a60",
+    "formalization.yaml": "8ae7516b368a8d9efdd7d8b491e25b7e111dbed006da78130aa21cfb4487dd82",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+  },
+  "previous_source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443"
+}
