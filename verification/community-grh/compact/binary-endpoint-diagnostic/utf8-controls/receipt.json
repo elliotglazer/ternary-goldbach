@@ -1,0 +1,75 @@
+{
+  "scope": "Canonical source binding and full mathematical challenge transport. The protected kernel verdicts below concern only the distinct tiny control.",
+  "canonical_public_commit": "024d0b452e198b23c0a6dc8520765c3a7789a574",
+  "canonical_public_path": "verification/community-grh/compact/binary-endpoint-diagnostic/binary_endpoint.py",
+  "canonical_public_sha256": "65ce0a4ace395459efa319eba1bff721e0158c71e31f2b674827ac4b013bdaa7",
+  "stock_windows": {
+    "lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "leanexport.exe": "bda24bb3fafaf299ba472f944942d6293294b76559fafc9f166badd7c0f981b3"
+  },
+  "stock_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "profiles": {
+    "bitmap": {
+      "closure": "a52dfee6c6337444a445b8b6782a6f906eae2b8a338b893439ad6ba13bcda878",
+      "worker_sha256": "f4af9625761296d977c32412468028dc6b31cd4f77d3b3756947d6dbba2fad79"
+    },
+    "scheduled": {
+      "closure": "6b8e9432260a92538716538fab88b8fb477953923ae5ebdcc5ca9432af3bd58c",
+      "worker_sha256": "c99727b5e03b78c59b8c33cbc0afb20958adccfa59e98a3bac698d27641718a2"
+    }
+  },
+  "superseded_scheduled_worker_sha256": "65609245d4427c36c6b5abc0e82405a441fead78cbaee32a4ac93020d3e176c4",
+  "superseded_bitmap_worker_sha256": "ba1468f8a3edc488454d4e74e1d3ac14251aaa559b697f5354f02e7fbb1a1dd0",
+  "source_pins": {
+    "bitmap": "b6535e79fde64adc5288e02ad3393bd1eca94631",
+    "scheduled": [
+      "dafa3e64289998b784aca99ec8fb491ddaac5362",
+      "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+      "8e9b8aefb683106c0c2ca08fac57e24ff2ad7a4a"
+    ]
+  },
+  "full_statement": {
+    "source_sha256": "8b8cfbc6c2727fd9c509c559af6ffaa6f5e764e2409dbad0ea1ab60bc529b523",
+    "negative_source_sha256": "9ca0660546ae41bb8b4ed9b50305251720afc5ba95bbdb48eb4a3216be57ce40",
+    "negative_stock_lean_exit": 1,
+    "negative_lean_output": "TrustedBinaryEndpoint.lean:9:5: error: expected token",
+    "positive_stock_lean_exit": 0,
+    "positive_lean_output": "TrustedBinaryEndpoint.lean:8:8: warning: declaration uses `sorry`",
+    "positive_stock_leanexport_exit": 0,
+    "challenge_export_bytes": 1134989,
+    "fresh_challenge_export_sha256": "553a79110caf1a369e4eb9b6d30bc797218c564d4afc01cd4aaf15fd8ca724f2",
+    "independently_prepared_challenge_export_sha256": "553a79110caf1a369e4eb9b6d30bc797218c564d4afc01cd4aaf15fd8ca724f2",
+    "independently_prepared_challenge_source_sha256": "8b8cfbc6c2727fd9c509c559af6ffaa6f5e764e2409dbad0ea1ab60bc529b523"
+  },
+  "protected_linux_tiny_control": {
+    "role": "small ASCII control only",
+    "worker_sha256": "c99727b5e03b78c59b8c33cbc0afb20958adccfa59e98a3bac698d27641718a2",
+    "stock_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "stock_tool_sha256": {
+      "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "leanexport": "f6a6483d518a11b323c28b9bac176d2220df0e9fc3230833815db9586669c074",
+      "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+      "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+      "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+    },
+    "bwrap_sha256": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71",
+    "wall_seconds": 5.504,
+    "kernel_markers": {
+      "nanoda kernel accepts the solution": true,
+      "Lean default kernel accepts the solution": true,
+      "Your solution is okay!": true
+    },
+    "stock_log_sha256": "5b304adfe00c8107856812ee5184f11fcb2582fe7931ce1f2038375a4cce8171",
+    "complete_local_receipt_sha256": "31449ea807bc3b7a06584cc3fe784f47d967e3bf30a835cbeb6d85a9b0cf59dc"
+  },
+  "reproducible_full_statement_regression": {
+    "script_sha256": "05437bd38bd4ad8218796f3a226e733f1e0d10accbd50eebcf539319bdc8bb4b",
+    "exit": 0,
+    "stdout": [
+      "TrustedBinaryEndpoint.lean:8:8: warning: declaration uses `sorry`",
+      "Verified both source profiles and the full UTF-8 negative control",
+      "Recompiled and exported the exact full challenge, 1134989 bytes"
+    ]
+  }
+}
