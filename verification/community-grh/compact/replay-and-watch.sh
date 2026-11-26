@@ -2,8 +2,8 @@
 # Launch the reviewed source once per CloudShell workspace, then follow the receipt.
 set -euo pipefail
 
-commit=e1b717c79e823107d1e3aa6fae7d03e54bfd4728
-tree=ecf41d12061d4a326f81a5c5b3ca5ecb5bc6c707
+commit=b5b238244b7b73e2ebcd13ca6d16782e90faea4b
+tree=34c3f1389081acfb87f36f04ac981bd5c8240223
 runner_rev=78f5182fe44570e8d8f77377afc7835e13e7d5ed
 archive_sha=053cc11be69d5149f3af41af38cb353cffc75649a85d16c33f354c022328c627
 base=https://raw.githubusercontent.com/elliotglazer/ternary-goldbach/$runner_rev/verification/community-grh/compact
@@ -23,6 +23,8 @@ case ${1:-} in
       --preflight-module Lib.DiscreteSeries.Haar.CompactDualMeasure
       --preflight-module Lib.LocalGL.Green.MackeyFormula
       --preflight-module MajorEnergy
+      --preflight-module New.Data.Magnitudes
+      --preflight-module Lib.DiscreteSeries.CuspKernel.BumpConvolution
     ) ;;
   *) printf '%s\n' 'Expected no option or --tuned.' >&2; exit 2 ;;
 esac
