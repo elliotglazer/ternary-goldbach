@@ -195,3 +195,5 @@ CyclicSubrep reproduced both previous errors as a full file and passed on stock 
 Native Lean 4.35 reproduced the original geometry evaluation mismatch and JetChainRule closedness failure, then accepted both corresponding repaired expressions. Full module checks are pending. A separate native full-module run of CrystallineTests now passed in 42.21 s with the same three standard axioms for pdReduction and both audited declarations.
 
 A native matched constructor test reproduced the unresolved uniform bound in Form and passed the explicit witness with propext, Classical.choice and Quot.sound. It uses the real Mathlib linear-combination constructor and abstracts unrelated form fields. The full parent module awaits replay.
+
+Native 4.35 checked the complete besselLatticeBasis and gram_besselLatticeBasis declarations and the full exists_few_translates proof in focused modules with the standard three axioms. The original basis proof reproduces the private simp constant error. Full module replay remains pending.

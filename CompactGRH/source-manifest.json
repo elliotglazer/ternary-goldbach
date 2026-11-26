@@ -3281,7 +3281,8 @@
     {
       "path": "New/Filling/EichlerFlag.lean",
       "upstream_sha256": "d4a1e65ceef02bd1fe17c0ff1dc7a1eee0731694a08f87fd2f5f74b029bd1d25",
-      "converted_sha256": "e85fab3cafc14637cfb1f4a5f687b505a6d6dd099e95d736f9c58fc7c307ac92"
+      "converted_sha256": "c8398a07ff9abd8c5c6e6e4d984fe7d6dd46f73d48974c4c00f57419a113cc2e",
+      "adaptation": "Use the public entrywise equality at the two simplification sites."
     },
     {
       "path": "New/Filling/FillingAdmissible.lean",
@@ -3411,7 +3412,8 @@
     {
       "path": "New/Heights/OneDeterminant.lean",
       "upstream_sha256": "f639f87dd549954a36f7723b31c108b4dae9e0106dbd0b7969f0c14c78b386b7",
-      "converted_sha256": "5dc92562b885721fd308ce56a375604e29d516ac72823c0a46acb3c0eca1849e"
+      "converted_sha256": "9e79d3c3d55518d135393e7a06deaef780d51eb33282b7ca1622c1c1c6c6362e",
+      "adaptation": "Replace the opaque index unfolding with the public index_eq_finrank_sub formula."
     },
     {
       "path": "New/Lift/CokernelKillers.lean",

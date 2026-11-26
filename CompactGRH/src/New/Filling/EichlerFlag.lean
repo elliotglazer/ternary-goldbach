@@ -24,7 +24,7 @@ def latMiddleGram {R} [CommRing R] (𝔰 : Shape) (N : R)
 
 section
 
-attribute [local simp] diagonal entrywise latMiddleGram
+attribute [local simp] diagonal latMiddleGram
 
 variable {R} [CommRing R] (𝔰 : Shape) [StarRing R] (p : Rˣ)
 
@@ -37,7 +37,7 @@ coordinates, where v = x_{k₀}/p̄ + z/(p p̄). -/
 def besselLatticeBasis : GL 𝔰.BesselIndex
   R := by use fromBlocks 1 0 0 (((scaleAt (star p⁻¹.1) 𝔰.k₀).fromBlocks 0 (of fun _ j ↦ ite (j =
   𝔰.k₀) ↑(p * star p)⁻¹ 0) 1).fromBlocks 0 0 1), fromBlocks 1 0 0 (((middleBaseChange 𝔰 p).fromCols
-  (fromRows 0 1)).fromBlocks 0 0 1) <;> simp [middleBaseChange, ← star_mul,
+  (fromRows 0 1)).fromBlocks 0 0 1) <;> simp [entrywise, middleBaseChange, ← star_mul,
   mul_right_comm _ p⁻¹.1] <;> grind
 
 variable {𝔰} (N : R) {T : 𝔰.Form R} (γ : T.G)
@@ -48,7 +48,7 @@ def frameDisc Z := let d := leadingMinor Z 𝔰.top.castSucc; Z.det * star Z.det
 
 lemma gram_besselLatticeBasis : p * star ↑p = N → (besselLatticeBasis 𝔰 p).1ᴴ *
   (𝔰.middleGram N).splitGram * besselLatticeBasis 𝔰 p = (latMiddleGram 𝔰 N).splitGram := by
-  simp [besselLatticeBasis, splitGram, middleGram]
+  simp [entrywise, besselLatticeBasis, splitGram, middleGram]
   grind [p.mul_inv, star_mul, star_one, star_star, star_zero]
 
 /-- For k in the unitary group, the matrix (f | kf) of the frame f and its image under k, side

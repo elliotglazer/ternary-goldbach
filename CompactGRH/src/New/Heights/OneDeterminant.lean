@@ -107,7 +107,7 @@ lemma exists_few_translates {B : Θ → V →ₗ[ℂ] W} {η} (hη : 0 < η) (h 
     simp [ψ]; grw [finrank_quotient_le, div_self_le_one]; simp⟩).imp fun t ⟨ht, m⟩ ↦
     (h (T t)).rec fun s _ ↦ ⟨ht.trans' (by bound), ?_⟩; by_contra
   obtain ⟨_ | _, m⟩ := em (finrank ℂ W = 0), @m (insert s t), (T t).finrank_quotient_add_finrank,
-    ((T t).mkQ ∘ₗ B s).index_eq_of_finiteDimensional <;> simp_all [T, index, t.iSup_insert]
+    ((T t).mkQ ∘ₗ B s).index_eq_of_finiteDimensional <;> simp_all [T, LinearMap.index_eq_finrank_sub, t.iSup_insert]
   grw [range_comp, ker_comp, ker_mkQ, card_insert_le] at *
   have : ψ (T t ⊔ (B s).range) - ψ (T t) ≤ -finrank ℂ V
   grw [← mul_sub, ← log_div, log_le_sub_one_of_pos] <;> try positivity
