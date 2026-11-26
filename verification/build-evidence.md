@@ -166,3 +166,9 @@ ambient subring specified. A separate test using the actual Frames import
 reproduced the ModuliPoint error and checked its action with the frame named.
 The tested declarations reported only the standard three axioms. The
 complete modules are part of the next source preflight.
+
+The CocompactIntegrable source preflight left two subgroup arguments
+undetermined during conversion of the block integral formula. The proof for
+a singleton orbit now supplies the fixed data and the summability or
+integrability hypothesis. The complete module compiled on stock Lean 4.35
+with its original imports and an empty compiler log in 74.08 seconds.

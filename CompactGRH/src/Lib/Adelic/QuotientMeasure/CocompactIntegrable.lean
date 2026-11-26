@@ -136,8 +136,20 @@ equivariant. If ∫_{Γ\G} Σ_{z∈Y} |k_z| < ∞ or k_y is integrable on S\G, t
 lemma integral_tsum_orbit {y} (hy : (stabilizer Λ y).map i = S) (hD : ∀ z, z ∈ D ↔ y ∈ orbit Λ z) :
   S.FixesLeft (k y) ∧ (∫⁻ x, tsum (‖k · x‖ₑ) ∂Γ.qms μ < ∞ ∨ Integrable (k y) (S.qms μ) → Integrable
     (k y) (S.qms μ) ∧ ∫ x, ∑' z : D, k z x ∂Γ.qms μ = (S.qms μ)[k y] ∧ ∑' z : D, (Γ.qms μ)[k z] =
-    (S.qms μ)[k y]) := ⟨by subst hy; simp_all; grind, (by convert (integral_tsum_block hi (C := {y})
-  (h := ·) ..) <;> aesop_cat) ∘ Or.imp (by grw [← ·, ← tsum_comp_le_tsum_of_injective]; simp) (·.2)⟩
+    (S.qms μ)[k y]) := by
+  refine ⟨by subst hy; simp_all; grind, ?_⟩
+  intro h
+  have hblock : (∫⁻ x, ∑' z : D, ‖k z x‖ₑ ∂Γ.qms μ) < ∞ ∨
+      (∫⁻ x, ∑' z : ({y} : Set Y), ‖k z x‖ₑ ∂S.qms μ) < ∞ := by
+    rcases h with h | h
+    · left
+      exact lt_of_le_of_lt (lintegral_mono fun x ↦
+        tsum_comp_le_tsum_of_injective (f := ((↑) : D → Y)) Subtype.val_injective
+          (fun z ↦ ‖k z x‖ₑ)) h
+    · right
+      simpa [HasFiniteIntegral] using h.2
+  convert (integral_tsum_block hi (Γ := Γ) (S := S) (C := {y}) (D := D) (k := k) (μ := μ)
+    (h := hblock) ..) <;> aesop_cat
 
 end
 
