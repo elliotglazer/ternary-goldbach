@@ -1,0 +1,76 @@
+{
+  "status": "intermediate",
+  "target": "+Main",
+  "source_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "proof_branch_commit_compared": "c789376056a330f5a792bab92d3aa62e77f5f536",
+  "previous_log_sha256": "de59d8a16d7dc6e8591025aaa3e19144a8632f07f9ffefcd9651bb5936cb7383",
+  "warm_log_sha256": "1662e6b6b62299200f9b7d6f5a6009ff7b39e905f2fda0f45359f0bd594b16c1",
+  "seed_accepted": 354,
+  "seed_rejected": 0,
+  "source_modules_changed_since_seed_run": 17,
+  "previous_failures_now_built": [
+    {
+      "module": "Lib.Cohomology.Etale.AcyclicTests",
+      "source_sha256": "0f3841a91729a1615c147923157dca5a0255d0215cab96f3c305f6d562486132"
+    },
+    {
+      "module": "Lib.DiscreteSeries.Bruhat.ComplexPlace",
+      "source_sha256": "5cf2d88ed2b1cdb570dbd3ab3df75c3a95e1d59470fb48d653e58d230604edf8"
+    },
+    {
+      "module": "Lib.General.Algebra.JetChainRule",
+      "source_sha256": "c0d2d8e4ededfbc9c615df69c4ac886d5bf0f7e41d45ba20be1b4ae0706ce909"
+    },
+    {
+      "module": "Lib.General.Groups.CyclicSubrep",
+      "source_sha256": "0a97755f0a9b721edb70940004336103fa18dda40604263439500d8e7be018da"
+    },
+    {
+      "module": "Lib.General.NumberTheory.UpsilonValues",
+      "source_sha256": "f29e012dc10b466900e6799df5feaa2133c85fab656edf15fc064751748c9f68"
+    },
+    {
+      "module": "Lib.PadicComparison.Crystalline.CrystallineTests",
+      "source_sha256": "01486114d692349331cfacc1f87cfb2357c52a7de3375e62588a0e9e48695c4c"
+    },
+    {
+      "module": "Lib.PadicHodge.Crystalline.RegularityFrobenius",
+      "source_sha256": "8e0ec2dd38c643eb54630e5f920844a5af2a6e8261d5424c7d46d2f561a29229"
+    },
+    {
+      "module": "Lib.Shimura.Uniformisation.RiemannFormAdelic",
+      "source_sha256": "8713cd8d37027348c727f5dc7040f6cf6adeba8953da41118bd8deb6cf1b04f4"
+    },
+    {
+      "module": "Lib.Weil.Fock.OscillatorPair",
+      "source_sha256": "b93e651a3de5db7f9bf7ec9fc56efaa779e70ccab32798af5b3afe1f75473b51"
+    },
+    {
+      "module": "Lib.Weil.Periods.DegreeAndUnipotent",
+      "source_sha256": "4a7d7c69d02157e554c017114c0a4a634f4522cc754a3cf78a32898d91b3e500"
+    },
+    {
+      "module": "New.Filling.EichlerFlag",
+      "source_sha256": "c8398a07ff9abd8c5c6e6e4d984fe7d6dd46f73d48974c4c00f57419a113cc2e"
+    },
+    {
+      "module": "New.Heights.OneDeterminant",
+      "source_sha256": "9e79d3c3d55518d135393e7a06deaef780d51eb33282b7ca1622c1c1c6c6362e"
+    }
+  ],
+  "previous_failures_reproduced": [
+    "Lib.Adelic.Reduction.Defs",
+    "Lib.General.Geometry.EtaleCharts",
+    "Lib.General.Geometry.SmoothnessCriterion",
+    "Lib.Shimura.ThetaNormality.NormalGeneration"
+  ],
+  "new_failures_so_far": [
+    "Lib.PadicComparison.Descent.ReductionModP",
+    "Lib.PadicHodge.Limit.HodgeTateProjectors",
+    "Lib.Weil.Construction.ThetaFunctional",
+    "New.DiscreteSeries.BesselExistence",
+    "New.Filling.NearTerms",
+    "New.Filling.StandardLevel",
+    "New.RealPlace.ComplexGauge"
+  ]
+}

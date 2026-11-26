@@ -1,0 +1,69 @@
+{
+  "base": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "file": "CompactGRH/src/Lib/Shimura/ThetaNormality/NormalGeneration.lean",
+  "before": {
+    "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+    "tag": "before",
+    "source_sha256": "4cb27caa6dd92b7c024d77a8466e0abb660e690526ed0b8e366b004dba0c9c2c",
+    "exit": 1,
+    "seconds": 122.96
+  },
+  "single_projection_fix": {
+    "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+    "tag": "after",
+    "source_sha256": "93203bc976d2b82768980e54951e128c4e0710660e35f0e320706c920c8e4b72",
+    "exit": 1,
+    "seconds": 107.49
+  },
+  "fixed": {
+    "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+    "tag": "after-both-cast",
+    "source_sha256": "4532f6bc7f5f35417df09f9359c2915d74c2ef77761cedf5b5a6c8c4691824ac",
+    "exit": 0,
+    "seconds": 162.16,
+    "olean_sha256": "9cdc130f2243c95f834ff46de05a4c7c6ae05f5fbdfd4b9cfed9cf2e75826ccf"
+  },
+  "axiom_audit": {
+    "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+    "tag": "NormGenAudit",
+    "source_sha256": "04947ecad1a19eb00fe4a5f3d4636255c2088c6fac14ed8e351968e419780a56",
+    "exit": 0,
+    "seconds": 25.33
+  },
+  "axioms": [
+    "'HasGoodReduction.thetaNorm_lt_iff_coords' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'HasGoodReduction.finrank_reduction_eq' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "4532f6bc7f5f35417df09f9359c2915d74c2ef77761cedf5b5a6c8c4691824ac",
+  "olean_sha256": "9cdc130f2243c95f834ff46de05a4c7c6ae05f5fbdfd4b9cfed9cf2e75826ccf",
+  "patch_sha256": "79e2589b7fa285dc6eb7934bab1bd342fb488f650a719c22d1a43137b0a87e30",
+  "upstream_native_modules": 23,
+  "fresh_parent_checks": [
+    {
+      "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "tag": "Lib.Shimura.ComplexTheta.ThetaDimension",
+      "source_sha256": "cb68e8c7fde8b4cc5191e38c19d8489415d682d9b8ebb891b534d3a620465bfc",
+      "exit": 0,
+      "seconds": 150.78,
+      "olean_sha256": "e26e6b0795dd30a792c9f221a528513108b90b82e3bcf7c9ff809ac5d778faec"
+    },
+    {
+      "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "tag": "Lib.CM.Sigma.SigmaFunction",
+      "source_sha256": "d5c218fde592375cbc297d21496ed664761dc65ef2f6b212ce182ad7ff1c0582",
+      "exit": 0,
+      "seconds": 52.09,
+      "olean_sha256": "adc4ee53d1fce7cce77493f6d81ff7928ec69e35fad281c7d367aaf4b7774030"
+    },
+    {
+      "pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "tag": "Lib.Shimura.GoodReduction.ThetaOrthogonality",
+      "source_sha256": "6ef621f244a138040b4619e1a86f69b28d035d50a0049adc4280aa7b6c7c947d",
+      "exit": 0,
+      "seconds": 57.12,
+      "olean_sha256": "5139159642affa7038279a2dfe4050ee60de00bb9b111d90f3f62fd6b5c35519"
+    }
+  ],
+  "lean4": "v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+}
