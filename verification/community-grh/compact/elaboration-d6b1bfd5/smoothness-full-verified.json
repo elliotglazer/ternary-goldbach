@@ -1,0 +1,204 @@
+{
+  "source_pin_original": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "source_pin_first_candidate": "eadbe8e8e7d47e437429d485aeae11538d697d50",
+  "new_source_kind": "diagnostic follow-up from eadbe8e8",
+  "stock_lean": "4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_path": "CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean",
+  "original_source_sha256": "69e788fb92c60b35bc3af50adef8d33dc17834b512a60a4f32a35255958fd525",
+  "eadbe8e8_full_module": {
+    "source_sha256": "cb81b7b61d9d50da148e18eb170387ae0b3dec0945daa2fcae0b077a5f4f6c28",
+    "exit": 1,
+    "seconds": 36.71,
+    "log_sha256": "e1c890177babbd13cd14298ea919c601b72956215aac961cf215fe7743885602",
+    "source_commit": "eadbe8e8e7d47e437429d485aeae11538d697d50"
+  },
+  "candidate_full": {
+    "source_sha256": "508dce3bd2ca33148d6fa8f500f3cf8baefcaa541d6bb5bad6b4e3bf66aa5945",
+    "exit": 0,
+    "seconds": 42.48,
+    "log_sha256": "0057b762f35a88ec0cb92fc457421a546a3b8f51f4936e3361843f81188d30f5",
+    "olean_sha256": "4f2a684ee2490341bc94b7f90915c6c04aec7ed4efc32fd963cb20a82c83c41f"
+  },
+  "original_type_mismatch": "Lib\\General\\Geometry\\SmoothnessCriterion.lean:45:81: warning: `MvPolynomial.eval₂AlgHom` has been deprecated: Use `MvPolynomial.aeval` instead\n\nHint: Replace the deprecated name:\n  a̲eval₂̵A̵l̵g̵H̵o̵m̵\nLib\\General\\Geometry\\SmoothnessCriterion.lean:62:3: error: overloaded, errors \n  62:19 Application type mismatch: The argument\n    hi\n  has type\n    Function.Injective ⇑(ConcreteCategory.hom u)\n  but is expected to have type\n    Submodule.map ?m.1156 ?m.1158 = Submodule.map ?m.1156 ?m.1159\n  in the application\n    LinearMap.map_injective ?m.1157 hi\n  \n  62:23 overloaded, errors \n    Type mismatch\n      _root_.funext\n        (eq_zero_of_submersion (AnalyticOnNhd.eval_mvPolynomial ((MvPolynomial.map (Hom.hom u)) Q))\n          (hasStrictFDerivAt_pi.mpr fun x ↦ AnalyticAt.hasStrictFDerivAt (r (z x)).right)\n          (ker_eq_bot_iff_range_eq_top.mp\n            (bot_unique fun v h0 ↦\n              h.right v (Exists.elim (HolomorphicAt.exists_isJet h.left (?m.1250 v h0)) fun τ hτ ↦ ?m.1243)))\n          (Filter.Eventually.mp (r 0).left (Filter.Eventually.mono hg fun w h k ↦ ?m.1267)))\n    has type\n      (fun x ↦ (MvPolynomial.eval x) ((MvPolynomial.map (Hom.hom u)) Q)) = fun x ↦ 0\n    but is expected to have type\n      (MvPolynomial.map (ConcreteCategory.hom u)) Q = (MvPolynomial.map (ConcreteCategory.hom u)) 0\n    \n    62:30 Application type mismatch: The argument\n      eq_zero_of_submersion (AnalyticOnNhd.eval_mvPolynomial ((MvPolynomial.map (Hom.hom u)) Q))\n        (hasStrictFDerivAt_pi.mpr fun x ↦ AnalyticAt.hasStrictFDerivAt (r (z x)).right)\n        (ker_eq_bot_iff_range_eq_top.mp\n          (bot_unique fun v h0 ↦\n            h.right v (Exists.elim (HolomorphicAt.exists_isJet h.left (?m.1253 v h0)) fun τ hτ ↦ ?m.1246)))\n        (Filter.Eventually.mp (r 0).left (Filter.Eventually.mono hg fun w h k ↦ ?m.1270))\n    has type\n      ∀ (y : Fin d → ↑↧ℂ), (MvPolynomial.eval y) ((MvPolynomial.map (Hom.hom u)) Q) = 0\n    but is expected to have type\n      ∀ (x : Fin d → ↑↧ℂ),\n        (MvPolynomial.eval x) ((MvPolynomial.map (ConcreteCategory.hom u)) Q) =\n          (MvPolynomial.eval x) ((MvPolynomial.map (ConcreteCategory.hom u)) 0)\n    in the application\n      MvPolynomial.funext\n        (eq_zero_of_submersion (AnalyticOnNhd.eval_mvPolynomial ((MvPolynomial.map (Hom.hom u)) Q))\n          (hasStrictFDerivAt_pi.mpr fun x ↦ AnalyticAt.hasStrictFDerivAt (r (z x)).right)\n          (ker_eq_bot_iff_range_eq_top.mp\n            (bot_unique fun v h0 ↦\n              h.right v (Exists.elim (HolomorphicAt.exists_isJet h.left (?m.1253 v h0)) fun τ hτ ↦ ?m.1246)))\n          (Filter.Eventually.mp (r 0).left (Filter.Eventually.mono hg fun w h k ↦ ?m.1270)))\n    \n    Note: The following definitions were not unfolded because their definition is not exposed:\n      Finsupp.onFinsetSupport ↦ 13\n  \n  Function expected at\n    Spec.map_injective ?m.1148\n  but this term has type\n    ?m.1146 = ?m.1147\n  \n  Note: Expected a function because this term is being applied to the argument\n    hi\n",
+  "candidate_log": "Lib\\General\\Geometry\\SmoothnessCriterion.lean:45:81: warning: `MvPolynomial.eval₂AlgHom` has been deprecated: Use `MvPolynomial.aeval` instead\n\nHint: Replace the deprecated name:\n  a̲eval₂̵A̵l̵g̵H̵o̵m̵\n",
+  "audit": {
+    "source_sha256": "7f052b327d874a92fc5c3f58c7e1035455086752ff1c7db0d344e3cdd7a5e03f",
+    "exit": 0,
+    "seconds": 26.85,
+    "log_sha256": "c53d220088ebde90c5da8bc5a91f7c59ad1eee49404a7bb0648e7f4f17907cea"
+  },
+  "audited_public_declaration": "'smooth_of_immersion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "retained_project_dependencies": {
+    "Lib.General.LinearAlgebra.Base": {
+      "source_sha256": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+      "olean_sha256": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91"
+    },
+    "Lib.General.Analysis.OstrowskiTaussky": {
+      "source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+      "olean_sha256": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775"
+    },
+    "Lib.General.LinearAlgebra.SubmersionZero": {
+      "source_sha256": "f2804683b0c8a5a4342ba1aa6f4f222087f715a7f91932498408b20e30071d00",
+      "olean_sha256": "818ac2e3527e440593f11d57f2961477ec06ac0b5d460c58be88482250f7fb04"
+    },
+    "Lib.General.LinearAlgebra.CommonEigenvectors": {
+      "source_sha256": "36a94f29aec1676763c392ab38819d658a2a2749fa8418b25d034209f5029e76",
+      "olean_sha256": "58ad62fe24fee6c0af2115fe3de8e242bb638e15d18266657a850998ef9e0727"
+    },
+    "Lib.Adelic.Adeles.CoprimeValuation": {
+      "source_sha256": "24794a87d5f90db2e34433267b9a6820ea8c39de04318f589c9b7e84477f0fd6",
+      "olean_sha256": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432"
+    },
+    "Lib.Adelic.Adeles.AdeleTopology": {
+      "source_sha256": "188525e98f2ec2b41f82d636e309f46ace3edc1931754f78ac3705ce3abf405d",
+      "olean_sha256": "a92f74d58c4b872c5fe2262630530fc9c3587537cd0301880910b372b7b25ba2"
+    },
+    "Lib.General.Groups.ValuationPair": {
+      "source_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "olean_sha256": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f"
+    },
+    "Lib.General.LinearAlgebra.ValuedMatrix": {
+      "source_sha256": "8274a177c289aac8a62f75bad30a782edb9dc8cfcde16dde8339388a249248c5",
+      "olean_sha256": "1c2fb8bd05152ce73aa48875a8ea9d6b745445716e0fe85414c2db95de4c3f91"
+    },
+    "Lib.Adelic.Adeles.AdeleIdempotent": {
+      "source_sha256": "543a8b33fec343b06fce9be1ea2d976693d3377727dd1f56c6945ebf3021e050",
+      "olean_sha256": "02bdc9c04596f7eece4862b970e5b0f8101ef43f4af2b29d1364e2256f434e5d"
+    },
+    "Lib.Shimura.Uniformisation.Frames": {
+      "source_sha256": "d374402f66474ba1908c3183fc4a13b39ceb254acfa47f0ec5624f7a30931c25",
+      "olean_sha256": "cb975c2bed0381c1a2c234dbad37a26d8c3491a68e2d2bcd973c55b814fe7834"
+    },
+    "Lib.General.Analysis.ZpowSum": {
+      "source_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "olean_sha256": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd"
+    },
+    "Lib.General.NumberTheory.Embeddings": {
+      "source_sha256": "23e04a472cc47195fdaa1baf568a034a52565a611edbebcc8b143214f7ca5627",
+      "olean_sha256": "c401eac320b01954fe95138db55cd215d7503ba5f05678eee707915c3b949db2"
+    },
+    "Lib.General.LinearAlgebra.PartialDerivComm": {
+      "source_sha256": "e0737a5c37df37a07ae52addc74cc4d1a0d6a986448d06e10b87497c906d97bf",
+      "olean_sha256": "16f4fcf1358ff18b3376bc4416d1e3503e11bdac9f42a302d7010e25c14ee635"
+    },
+    "Lib.General.Measure.SubgroupIntegral": {
+      "source_sha256": "4eb0f6ab29bad03b624e8fe413642e2c6b8960619ad67125c4882b78adf1c28b",
+      "olean_sha256": "786c73e4b15cea3949c2237670daa69626ce5461a96bb4dcacd7b1cd51532648"
+    },
+    "Lib.Adelic.QuotientMeasure.Unimodular": {
+      "source_sha256": "77e707e1fd9e3e6b4a937e6b2ebd1b2ad059a6292563a8e4bd04fca58d131f1d",
+      "olean_sha256": "cbf84a9957ea32c35c4d924c1b97b97a5a5c5e8b5454a98917c31443eb33292b"
+    },
+    "Lib.General.Analysis.HolomorphicIntegral": {
+      "source_sha256": "f5bf910333315fcbc3027a05d8bcc000c46d7569353b13aa15f4d95f7c5c3ec3",
+      "olean_sha256": "9b541e8b321fa39886c82d337cc1bf471c2ed7735863f7da0a0762f6c106259d"
+    },
+    "Lib.Shimura.Uniformisation.LieExponential": {
+      "source_sha256": "9260440fb5e2dff2e6763585b33f94f9dcbd694c176ff03783d5664524129847",
+      "olean_sha256": "e54f39f4469336054c2a9923d57efc8f1f1986d2ec72e31d316b7d2e81d00cd4"
+    },
+    "Lib.Shimura.ComplexTheta.CanonicalMultiplier": {
+      "source_sha256": "9146a353439fedc2afc35b9b3453a939376fdc427da8314de1f4659c386a6bd0",
+      "olean_sha256": "f14551fabe723fc964e86b3222135d328cff73bcda3b2cd5ace390cd76949717"
+    }
+  },
+  "rebuilt_project_dependencies": {
+    "Lib.Adelic.Adeles.AdditiveCharDefs": {
+      "source_sha256": "ff8f5897509f5446e5e868e524a53408b8d69b782db68a87735bf85dd9f3c1da",
+      "olean_sha256": "fc7042ede8a8dc93bf8a3030ef12726cd6942f0dc2b7baf7b990686ddffe5041",
+      "seconds": 25.96
+    },
+    "Lib.Adelic.Unitary.SpaceDefs": {
+      "source_sha256": "5cf745b78feeac3fcc1c91c40933331d999f187ac320beb0ad108519d9013e36",
+      "olean_sha256": "3b66e19c3f5e3c63703c3fe73b424c24e41064b3116cd953484172a2720de9f2",
+      "seconds": 40.75
+    },
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": {
+      "source_sha256": "d71067206d92a944363400d1754e64e565d14ac6a743121febbe2009ac127ae1",
+      "olean_sha256": "62f847523a3142bc6d66d06bd851af96ed4d2e43e1ee56ac2f3896f75a69f02d",
+      "seconds": 45.27
+    },
+    "Lib.Weil.Construction.SubmoduleNormedSpace": {
+      "source_sha256": "a74d6ecf2a6e6b052efeb702f2ee165f3a22c8312296230d723d8ee62eb26527",
+      "olean_sha256": "6db7455d7b917030e6ebbf2f66370ed7f8eff783807925c90aad275c131992d7",
+      "seconds": 21.44
+    },
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": {
+      "source_sha256": "cadb32cab1d61d9896f234481d473079e681ca18ffe87b8203335b8a0d321e06",
+      "olean_sha256": "d8a2c48c08e4a9a30cec27942a521fc96adbd96d4e767288ac80c0f72d189abc",
+      "seconds": 23.71
+    },
+    "Lib.Adelic.QuotientMeasure.Packing": {
+      "source_sha256": "616b336811176e6f3e871b7ffa59a00f858acb175514e6a8d5af1e295d1a26db",
+      "olean_sha256": "72b755f25146d4ed983d347a0fb489a35e9d9d4246047e9679f2282f4a1c5e3e",
+      "seconds": 45.61
+    },
+    "Lib.General.Analysis.FundamentalDomain": {
+      "source_sha256": "0f28dde96f541a43b738e42275bfc7647da76f39d48aa910f738e6e7d8febc64",
+      "olean_sha256": "5c02c3a334ac60ed17585731514ee79e54b40d5fe5f4d374d119c647a92b5c5a",
+      "seconds": 40.5
+    },
+    "Lib.Adelic.Adeles.RationalPoints": {
+      "source_sha256": "7bc04bc93e197185dbc1933142ad608757ded3f210ddda8fb6400908451d730f",
+      "olean_sha256": "aefd5db741511bc8d8822184f8143d607a2bfce86f109ecd0d90caa18fa7d001",
+      "seconds": 42.06
+    },
+    "Lib.Adelic.Adeles.AdditiveCharBasic": {
+      "source_sha256": "40bd5484a34e7ed1351cee7922cf60eb57a729aee02e50cf1f8dda376aadc579",
+      "olean_sha256": "35a2a4b706f62c0030a559c03f7ca5441cdd2aae974ceebdd767c5d2edfc8b47",
+      "seconds": 30.83
+    },
+    "Lib.General.Geometry.ReducedClosure": {
+      "source_sha256": "7ddc599fd5aef7f993243f3c874cdfd553a16c8e40356a193accc96a77c20364",
+      "olean_sha256": "9b38f91cf8c2fea5388ee7437b9bd478d822970626cf6e780320414444a4fb7f",
+      "seconds": 37.47
+    },
+    "Lib.General.Geometry.PointFunctions": {
+      "source_sha256": "e048b49410540c551a13affb9dca6fd6f101abb95d7157392a35ef8b26e31d1a",
+      "olean_sha256": "c4bb600bcb49024c886656d0094d68fe1933f092c4030c028e428c2bbb9c2e10",
+      "seconds": 42.89
+    },
+    "Lib.General.Geometry.ProjectiveSpace": {
+      "source_sha256": "818fc5f0a81928f7a857e4efd1e2acc180ef1c8f97340436a6ea6426bd8dbd6b",
+      "olean_sha256": "05cbc82690b5171f9763195b10114c8dfd91c7db5dd0632bf189868452d0d738",
+      "seconds": 130.94
+    },
+    "Lib.General.Geometry.TensorPowers": {
+      "source_sha256": "0ece473d46b3b3b723530ef5f1a3feec3ef5e54478dbca1619165f17e52e8086",
+      "olean_sha256": "a13f09a56a69b38c549e8a22938944f25c87dac8786632381d3af9facd526905",
+      "seconds": 43.69
+    },
+    "Lib.Shimura.AbelianScheme.KernelRing": {
+      "source_sha256": "8faca232b4bdbf7cb7c5437d6e72fec6177832f2aa509b8ff4b006b17f55b932",
+      "olean_sha256": "a44fc7b0b018aadf79973a538fc36ef05c13283ff74afa80168b761f0b836d31",
+      "seconds": 30.8
+    },
+    "Lib.Shimura.ThetaModuli.CutOutIdeals": {
+      "source_sha256": "20be1a42054dec08f4fb3362c7a63c34aa742914667bd6fdeb8ad18ac2375f62",
+      "olean_sha256": "670b3b5af1d74461cd1e74ef540778a9226facdf80269861715732db4628b7a8",
+      "seconds": 33.35
+    },
+    "Lib.Shimura.IntegralModel.GroupBaseChange": {
+      "source_sha256": "8dc17ba84fdd6869a96f72a6bdbdc890c048c2e4e20e5b7e652f55a5b1b937f8",
+      "olean_sha256": "6024009c4f0790d2d217b53ba71ae94945c6c2c64e3116cb2fcd94c2d7e34592",
+      "seconds": 32.42
+    },
+    "Lib.Shimura.AbelianScheme.TangentCoords": {
+      "source_sha256": "bc53f8fd498c3d114c5145640e0d4591045292d0db0b2a26aa3ea508feb6cb2f",
+      "olean_sha256": "8e73c3cd8499796ecedb1bcba95212bf7395de1ddb7ecc4dcf858107d5ab0ce9",
+      "seconds": 47.57
+    },
+    "Lib.Shimura.Uniformisation.HolomorphicFamily": {
+      "source_sha256": "05f51169d0d9fb309ff257e95921e3c728e5f6362a1bd938129c59272d9dce6b",
+      "olean_sha256": "4a0f47e209af9d18e649d3ead3b812f3b064724b4cab61cc60df838d031265d2",
+      "seconds": 57.97
+    },
+    "Lib.General.Geometry.SeparatingPoints": {
+      "source_sha256": "d33841433e0783cf7b13f4b0d676c0e0bbc6ac8eda4740f3c12a3ba280dd64c2",
+      "olean_sha256": "0a3b32c1fb6d0b08c8d0df7a365c6b14f0289bd9a0ad7224be26e8e2de7b2d49",
+      "seconds": 24.81
+    }
+  },
+  "source_diff": "--- a/CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean\n+++ b/CompactGRH/src/Lib/General/Geometry/SmoothnessCriterion.lean\n@@ -59,7 +59,7 @@\n   algebraize [β.1, β.1.comp (algebraMap A _)]\n   have hx := (G.hasMap.map π).map (algHom _ _ V)\n   with_unfolding_all have := (faithfulSMul_iff_algebraMap_injective A V).2 (.of_ker _ fun Q hQ ↦\n-   map_injective _ hi (funext (eq_zero_of_submersion (.eval_mvPolynomial (MvPolynomial.map u.hom Q))\n+   MvPolynomial.map_injective u.hom hi (MvPolynomial.funext fun y ↦ (eq_zero_of_submersion (.eval_mvPolynomial (MvPolynomial.map u.hom Q))\n    (hasStrictFDerivAt_pi.2 (z · |> r |>.2.hasStrictFDerivAt)) (ker_eq_bot_iff_range_eq_top.1\n    (bot_unique fun v h0 ↦ h.2 v ((h.1.exists_isJet _).elim fun τ hτ ↦ by\n    convert hτ\n@@ -76,7 +76,7 @@\n    simpa [← (landsIn_iff_mem), landsIn_basicOpen, ofSection_eq, k,\n      ← (map_injective (by simp [*, reassoc_of% map_evalSection_fromSpec]) : ρ ≫ evalSection _ k =\n      u)] using! mt (h.mem_open (X.basicOpen (aeval z Q)).2)\n-     (ha ▸ ((hW.fromSpec_preimage_basicOpen _).le · (·.ne_zero congr($hQ)))))))))\n+     (ha ▸ ((hW.fromSpec_preimage_basicOpen _).le · (·.ne_zero congr($hQ)))))) y).trans (by simp)))\n   have hm p := minpoly.isIntegrallyClosed_dvd (p := p) ⟨_, G.monic_f, hx.1⟩\n   have ⟨g, hg⟩ := hm _ hx.1\n   have := Etale.iff_isStandardSmoothOfRelativeDimension_zero.1 (.of_equiv (.ofBijective (awayMapₐ π\n"
+}
