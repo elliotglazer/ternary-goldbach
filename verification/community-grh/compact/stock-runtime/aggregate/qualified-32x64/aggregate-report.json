@@ -1,0 +1,207 @@
+{
+  "policy": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "profile": "palomar-namespace-32x64-v1",
+  "observed_host": {
+    "architecture": "x86_64",
+    "effective_cpus": 32.0,
+    "memory_bytes": 68719476736,
+    "workspace_free_bytes": 556056956928,
+    "memory_high_bytes": 65283502899,
+    "memory_max_bytes": 67345087201
+  },
+  "raw_physical_memory": 265985765376,
+  "outer": {
+    "uid": 1001,
+    "leaf": "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/palomar-cold-a6e69aceaa888915654d8499.service",
+    "cpu": 32.0,
+    "memory": 68719476736,
+    "affinity": 32,
+    "ancestors": {
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/palomar-cold-a6e69aceaa888915654d8499.service": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "pids.max": "284003"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service": {
+        "memory.max": "68719476736",
+        "memory.high": "max",
+        "memory.swap.max": "0",
+        "cpu.max": "3200000 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "624807"
+      },
+      "/sys/fs/cgroup/user.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup": {}
+    }
+  },
+  "stock_properties": [
+    "MemoryHigh=65283502899",
+    "MemoryMax=67345087201",
+    "TasksMax=32768",
+    "LimitNOFILE=1048576",
+    "LimitFSIZE=1099511627776"
+  ],
+  "stock_supervisor_bootstrap": [
+    "/usr/bin/systemd-run",
+    "--user",
+    "--scope",
+    "--quiet",
+    "--property=Delegate=yes",
+    "--"
+  ],
+  "translated_limits": {
+    "memory.oom.group": "1",
+    "memory.high": "65283502899",
+    "memory.max": "67345087201",
+    "pids.max": "32768"
+  },
+  "inner": {
+    "uid": 1001,
+    "leaf": "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/run-r712bc1572a9d4c89b01b5d08d1932b9c.scope/palomar-da5304e1e3d85ce9a1c62c46/leaf",
+    "cpu": 32.0,
+    "memory": 67345084416,
+    "affinity": 32,
+    "ancestors": {
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/run-r712bc1572a9d4c89b01b5d08d1932b9c.scope/palomar-da5304e1e3d85ce9a1c62c46/leaf": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/run-r712bc1572a9d4c89b01b5d08d1932b9c.scope/palomar-da5304e1e3d85ce9a1c62c46": {
+        "memory.max": "67345084416",
+        "memory.high": "65283502080",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "32768"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/run-r712bc1572a9d4c89b01b5d08d1932b9c.scope": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "284003"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service": {
+        "memory.max": "68719476736",
+        "memory.high": "max",
+        "memory.swap.max": "0",
+        "cpu.max": "3200000 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup/user.slice/user-1001.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "624807"
+      },
+      "/sys/fs/cgroup/user.slice": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      },
+      "/sys/fs/cgroup": {}
+    }
+  },
+  "stock_status": {
+    "cgroup": "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/run-r712bc1572a9d4c89b01b5d08d1932b9c.scope/palomar-da5304e1e3d85ce9a1c62c46",
+    "cpu_delegated": true,
+    "cpu_stat": {
+      "burst_usec": 0,
+      "core_sched.force_idle_usec": 0,
+      "nice_usec": 0,
+      "nr_bursts": 0,
+      "nr_periods": 0,
+      "nr_throttled": 0,
+      "system_usec": 14194,
+      "throttled_usec": 0,
+      "usage_usec": 56777,
+      "user_usec": 42582
+    },
+    "deadline_fired": false,
+    "elapsed": 0.22,
+    "exit_status": 0,
+    "launch_error": null,
+    "limits_applied": {
+      "memory.high": true,
+      "memory.max": true,
+      "memory.oom.group": true,
+      "pids.max": true
+    },
+    "liveness_lost": false,
+    "memory_events": {
+      "high": 0,
+      "low": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0,
+      "sock_throttled": 0
+    },
+    "memory_peak": 9572352,
+    "pids_events": {
+      "max": 0
+    },
+    "placement_error": null,
+    "placement_ok": true,
+    "populated_after_kill": false,
+    "rlimits_applied": {
+      "FSIZE": 1099511627776,
+      "NOFILE": 1048576
+    },
+    "sandbox_started": null,
+    "state": "finished",
+    "supervisor_pid": 5929,
+    "term_signal": null
+  },
+  "stdout": "",
+  "classification": {
+    "outer_selected_profile": true,
+    "stock_phase": true,
+    "phase_cpu_32": true,
+    "phase_memory_limits": true,
+    "phase_has_zero_swap_cgroup": true,
+    "phase_inside_entry_service": false,
+    "common_memory64_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "common_cpu32_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "common_swap0_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "aggregate_32x64_swap0": true
+  }
+}
