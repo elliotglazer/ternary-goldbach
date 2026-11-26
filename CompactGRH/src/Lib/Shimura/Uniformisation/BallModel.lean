@@ -21,7 +21,15 @@ variable (E) {n} [Field E] [Ψ : CMBase E] [Fintype.{0} n] {D : PEL E} (e : (n �
 attribute [local simp] map_smul' mulVec_sub ModuliPoint.act polarisationForm mul_sum
   vecMulVec_mulVec roots_eq_map_numberedRoots smul_smul
   PeriodMap.intAction PEL.xi_im_pos_and_re_eq_zero Prod.ext_iff toBilin'_apply' mulVec_transpose
-attribute [local simp ←] Complex.coe_smul dotProduct_mulVec mulVec_mulVec
+namespace BallModelSimp
+
+attribute [scoped simp ←] Complex.coe_smul
+
+end BallModelSimp
+
+open scoped BallModelSimp
+
+attribute [local simp ←] dotProduct_mulVec mulVec_mulVec
 attribute [-simp] Prod.forall map_smul map_smul_of_tower map_sum Pi.star_apply Prod.smul_mk
 
 /-- The map, ℂ-linear in q = (q₁,q') and ℝ-linear in w, with value ((e⁻¹q)ᵀHw₀, q₁y₂ − y₁q',

@@ -40,7 +40,13 @@ attribute [local simp] Splitting.comp splitWeil star_mulVec_dotProduct
 
 attribute [simp] sourceTerm_zero ideleAbs_det_dyadicDiag_natCast sqrt_sq_eq_abs abs_of_nonneg
 
-attribute [local simp ←] ext_iff Matrix.mul_assoc
+namespace ZeroTermHeightSimp
+
+attribute [scoped simp ←] ext_iff Matrix.mul_assoc
+
+end ZeroTermHeightSimp
+
+open scoped ZeroTermHeightSimp
 
 omit [WeilData E] in
 @[local simp↓] lemma forall_colSpan_dot_eq_zero_iff {y} : (∀ x ∈ colSpan A, star x ⬝ᵥ y = 0) ↔
