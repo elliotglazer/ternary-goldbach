@@ -23,13 +23,16 @@ variable {E ι : Type*} [Field E] [CMType E] [WeilData E] [Fintype ι]
 `Heisenberg.MultiplierAction` for the finite vacuum, with multiplier Δ_f and cocycle
 `stdLattice.finProjAction.1`. -/
 def stdLattice.finProjAction : Σ c,
-  (finHeis E ι).MultiplierAction (latticeMeasure ..) finVac (Gf E ι) c := ⟨_, by simp [finHeis,
+  (finHeis E ι).MultiplierAction (latticeMeasure ..) finVac (Gf E ι) c :=
+  ⟨fun g h ↦ finMultiplier g * finMultiplier h * finMultiplier (g * h)⁻¹ *
+    ∫ x, ∫ y, finVac (h • x) * finVac ((g * h) • y) * (finHeis E ι).β x y * finVac (x + y)
+      ∂latticeMeasure E ι ∂latticeMeasure E ι, by simp [finHeis,
   HSMul.hSMul, SMul.smul], fun g ↦ ⟨by fun_prop, (map_mulVec_haar_finAdele ..).trans (by
   obtain := congr(‖$(finMultiplier_inv g)‖), finMultiplier_ne_zero g; simp_all [finMultiplier,
     glMultiplier_inv, chiFin, chiAdelic, finIdeleAbs, Circle.norm_coe, abs_of_nonneg])⟩, _,
   (isLocallyConstant_of_eventually_mul ((isOpen_Kf.eventually_mem (by simp)).mono fun _ h g ↦ by
   simpa using! glMultiplier_mul_of_mem g (one_mem _) h)).continuous,
-  finMultiplier_eq_one_of_mem (by simp), finMultiplier_inv, by tauto⟩
+  finMultiplier_eq_one_of_mem (by simp), finMultiplier_inv, fun _ _ ↦ rfl⟩
 
 /-- The finite cocycle as a Gauss sum: c(g,s)Δ_f(s⁻¹)Δ_f(gs) = Δ_f(g)∑_{q∈Q} χ(γ(q)) for some finite
 Ô-module Q and function γ with χ(γ(tq)) = χ(t̄tγ(q)) for t in Ô, where t kills Q whenever ts⁻¹ is
