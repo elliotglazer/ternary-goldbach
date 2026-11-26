@@ -1,0 +1,75 @@
+{
+  "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "scope": "stock Lean 4.35 whole project-module elaboration on Windows using pinned Mathlib and verified native imports; axiom audit through a fresh FullWaveComparison import",
+  "source_closure_modules": 28,
+  "fresh_compiler_invocations": {
+    "TernaryGoldbach.Prelim.GaussInduced": {
+      "module": "TernaryGoldbach.Prelim.GaussInduced",
+      "exit": 0,
+      "wall_seconds": 28.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "b95d735d189e2315b6ff85f06bbd4c00346f5925e7c312ea990056df48b41e19",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "e8ea72811f4b3bcb106b2272a2b411e3dccc040c7d8c44b3c20a3eb29d132fef",
+      "direct_import_object_sha256": {
+        "GoldbachVersionAliases": "643a20ff99811d01832ce087ea5bd1f0bcb91c8769b31ea8b9ea705c1d8c4376",
+        "TernaryGoldbach.MinorArcs.Montgomery": "a0b44859ceab9267d490fbed5b4f2df816c0ded312191e79e633533c3413478f"
+      }
+    },
+    "CharacterComparison": {
+      "module": "CharacterComparison",
+      "exit": 0,
+      "wall_seconds": 27.54,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "4889da866af5267e3e0cb038dcc2f9117b73473a6f410b83fbba46cc6b6aafbe",
+      "log_sha256": "11808ca3bc4f22acf531603f8f674dd898c1e36f181e4c7b074297d653641a54",
+      "object_sha256": "8f06ff8a3650da69b3ea214fb44f2ba152caba090927dcc4bd9839b64e8a4826",
+      "direct_import_object_sha256": {
+        "TernaryGoldbach.MinorArcs.Bombieri": "4e2a306a7d206f19e1ac04ebfbc7630ea2cd0f3bf750973f00c754d7dd6e7202",
+        "TernaryGoldbach.MinorArcs.Montgomery": "a0b44859ceab9267d490fbed5b4f2df816c0ded312191e79e633533c3413478f",
+        "PrincipalWave": "5e91957ab155ca958d33bd4c1762a17b256101c4edd2a160e4b79de63f9f7dad"
+      }
+    },
+    "BadPrimes": {
+      "module": "BadPrimes",
+      "exit": 0,
+      "wall_seconds": 25.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "7a2f929690675a696671d21baf1cf9c34d09415be72c3bbe6811b97a19ae6572",
+      "log_sha256": "77816e960ae70c93ef2e184ead0dc27634544e0a58fb22b846f4a52e9fb599d7",
+      "object_sha256": "6e6f244249d4e4b433d412dfffd347f5be0bdd9d23fe2dde80595836d862c615",
+      "direct_import_object_sha256": {
+        "FourierEnergy": "2f8d12e6378e7807f2f8e2fe6bfec7faa1d3330dd5d0aec9f78551968f2ad637"
+      }
+    },
+    "FullWaveComparison": {
+      "module": "FullWaveComparison",
+      "exit": 0,
+      "wall_seconds": 23.54,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "813ed7eb6759092fc0abd072ae67a7dbd1b87b41289e5121418546d235efcd96",
+      "log_sha256": "0e7c9edcf99ab293018e31d349880681552dc975858ff5e165d6b85d3903254f",
+      "object_sha256": "3177097854716502b7fb15b78b3d5ca509c84bbe3fa323835bd8c4ad4cc25b84",
+      "direct_import_object_sha256": {
+        "CharacterComparison": "8f06ff8a3650da69b3ea214fb44f2ba152caba090927dcc4bd9839b64e8a4826",
+        "BadPrimes": "6e6f244249d4e4b433d412dfffd347f5be0bdd9d23fe2dde80595836d862c615"
+      }
+    },
+    "GoldbachCharacterComparisonAudit": {
+      "module": "GoldbachCharacterComparisonAudit",
+      "exit": 0,
+      "wall_seconds": 23.07,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "cbe7e2c4537c440b7103620e8db5388af1a109570745cd44955477ba58249c3d",
+      "log_sha256": "eed90728cf2b2453e33cb4b5d541b04bf2138d319ad4fda7ec2146155fe98b5c"
+    }
+  },
+  "fresh_import_audits": [
+    "'GoldbachEnergy.character_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.coprime_character_error' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.primitive_character_error' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.wave_from_primitive_characters' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "verified_seeds_manifest": "960ad0331a2b466960df4aa58c834b5f1002da4c4bf3e875a1f8b5bbfa21c17a",
+  "provenance_note": "Five previously unreceipted-at-inventory modules found verified in the simultaneous MajorIdentity run were reused after checking source and direct import/output object hashes; TernaryGoldbach.Statement initially exited under local resource pressure with an empty compiler log. The accepted object is the matching successful same-pin sibling result."
+}

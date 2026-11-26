@@ -1,0 +1,40 @@
+{
+  "source_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "scope": "Native Windows Lean 4.35 whole-module compile followed by a fresh consumer import. Warm dependencies and stock local Mathlib packages.",
+  "tool": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "source_closure_modules": 44,
+  "fresh": {
+    "TwistedWeights": {
+      "module": "TwistedWeights",
+      "exit": 0,
+      "wall_seconds": 22.58,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "673ef25518bf03cd4e1f92b14e86e1e5cffda154b4d7934e82e7d52680ecd92b",
+      "log_sha256": "20999ae4d455cbb467e1b8ab8a8ed9a0a5bdd7722e10db55ec3ddd38ffe57609",
+      "object_sha256": "0b69114b67481e2a97213eb7c32fdf4ab5aaabad76594756c7551cbbcca250b7",
+      "direct_import_object_sha256": {
+        "CharacterComparison": "8f06ff8a3650da69b3ea214fb44f2ba152caba090927dcc4bd9839b64e8a4826",
+        "CharacterFormula": "7d1aacca87b83b120e4a6d50db796412adf1da527d5447268ad247f5601d8eb5"
+      }
+    },
+    "GoldbachTwistedWeightsAudit": {
+      "module": "GoldbachTwistedWeightsAudit",
+      "exit": 0,
+      "wall_seconds": 22.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "96ed135d79df25daf7943193b70e59bf18e8a090a480069b74469a40db7b4c65",
+      "log_sha256": "8b7bb438bb6c8ea03132bf5445c41656d50f38dd6df065823ede9be6b269d4d0"
+    }
+  },
+  "axiom_audit": [
+    "'GoldbachEnergy.norm_amp_sum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.unit_character_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.Schar_sub_unit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "inputs": {
+    "own_prior_receipt": "9bce7e8bb1638547b71b08680bf0c32511d611a10169cbcf90e499e5e365348f",
+    "twisted_seed_manifest_sha256": "0456fb71e88d8b18856931d14b77b4fccfa5cc911422e2f62b357c2119a0e818",
+    "twisted_order_sha256": "78fbea5280d5256e03f62141081417802e2003820999aece83b50028750f1492",
+    "documented_warm_boundary": "MellinRotate has an authenticated object, original producer linter log and recorded downstream consumers; its archived producer exit code is unavailable."
+  }
+}
