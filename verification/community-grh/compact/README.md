@@ -4,7 +4,7 @@ The Lean target is `PalomarTernaryGoldbach.ternary_goldbach`. Every odd natural 
 
 ## Replaying the candidate
 
-Check out [candidate cb1dffe1](https://github.com/elliotglazer/ternary-goldbach/tree/cb1dffe10fd5a86ab53fb71a4812eb73786ed530). Its root contains `lakefile.toml`, `lean-toolchain` and the pinned Mathlib manifest. With the specified Lean 4.35.0 toolchain and Mathlib dependencies available, the project build entry point is `lake build`. It defaults to `GoldbachSolution`. For the protected challenge comparison, use the [Palomar replay instructions](stock-runtime/protected-final/README.md).
+Check out [candidate cb1dffe1](https://github.com/elliotglazer/ternary-goldbach/tree/cb1dffe10fd5a86ab53fb71a4812eb73786ed530). Its root contains `lakefile.toml`, `lean-toolchain` and the pinned Mathlib manifest. With the specified Lean 4.35.0 toolchain and Mathlib dependencies available, the project build entry point is `lake build`. It defaults to `GoldbachSolution`. For the protected challenge comparison, use the [full-window replay instructions](stock-runtime/protected-final/README.md). A [shorter local rehearsal](stock-protected-limited/README.md) uses the same stock verification steps and records an inconclusive result if its local time limit interrupts them.
 
 ## What has been checked
 
@@ -15,7 +15,7 @@ Check out [candidate cb1dffe1](https://github.com/elliotglazer/ternary-goldbach/
 | Community GRH | Of 794 dependencies, the Linux build reused 658 modules and compiled 34 more. Four modules failed on that revision. The candidate above revises all four. [Build result](linux-grh-86170f19/result.json) |
 | Palomar intake | The stock verifier prepared candidate `cb1dffe1`, inspected 1,529 Lean files (364,965,011 bytes) and reported zero errors. [Intake summary](stock-runtime/stock-palomar-prepare-cb1dffe1-summary.json) |
 
-The candidate turns off concurrent theorem elaboration within 103 finite interval files. One complete 320-row interval took 43.2 seconds on Windows, peaked at 1.70 GiB of resident memory and emitted the C output requested by Lake. The full Linux build can schedule many interval files at once. [Interval measurement](binary-through-152539227136/synchronous-interval.json)
+The candidate turns off concurrent theorem elaboration within 103 finite interval files. One complete 320-row interval took 43.2 seconds on Windows, peaked at 1.70 GiB of resident memory and emitted the C output requested by Lake. This measures one process. The solution project also configures Lake build batches in its root lakefile. [Interval measurement](binary-through-152539227136/synchronous-interval.json)
 
 The stock resource probe on the retained Linux host measured a shared limit of 32 vCPUs and 64 GiB RAM with swap disabled. The probe also restored the original cgroup settings. [Measurements](stock-runtime/aggregate/qualified-32x64/aggregate-report.json) · [Restoration check](stock-runtime/aggregate/qualified-32x64/postcheck.json)
 
