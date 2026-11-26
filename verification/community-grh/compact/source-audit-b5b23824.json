@@ -1,0 +1,47 @@
+{
+  "pin": "b5b238244b7b73e2ebcd13ca6d16782e90faea4b",
+  "tree": "34c3f1389081acfb87f36f04ac981bd5c8240223",
+  "solution": "PalomarTernaryGoldbach.ternary_goldbach",
+  "identical_decl_header_sha256": "df8b053cf9df18be504b463a3f18f85c37c45f2e64e012954b1a1c508c4b7a11",
+  "trusted_hardcoded_challenge_sha256": "f9e6190b4c77c9bf474c6d36748278af41140237432fff72e8084a4c572a382a",
+  "solution_source_sha256": "4cea88129a02f692ab896084d017ae83e43aca78770585897baf823c4b03eae7",
+  "comparator_config": {
+    "challenge_module": "GoldbachChallenge",
+    "solution_module": "GoldbachSolution",
+    "theorem_names": [
+      "PalomarTernaryGoldbach.ternary_goldbach"
+    ],
+    "definition_names": [],
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ]
+  },
+  "wrapper_providers": [
+    "CompletedGoldbach.ternary_goldbach",
+    "GoldbachFinite.completed_of_release",
+    "riemannHypothesis",
+    "LFunction_eq_zero_re_of_isPrimitive"
+  ],
+  "base_analytic_provider": "New.grh : DirichletLNonvanishingRightOfHalf",
+  "binary_required_inclusive": 564383557524,
+  "binary_certificate_inclusive": 564386325504,
+  "ternary_cutover": 20000000000000000000,
+  "legacy_remarks": [
+    "Fact PlattGRH remains only on uncalled TernaryGoldbach.Explicit.rh_upto_1e8 helper; BinaryGoldbachInput occurs only in its definition."
+  ],
+  "historical": {
+    "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "object": "b13579410a20c49d91c353a59a011727fd8c266959922089694d1e7e8352acc3",
+    "rebuilt_release_from_source": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "static_scan_sha256": "b77cec48fb8b4d900ea8a60446a1842553504c727f0d306fe8c8c10823ac3430",
+  "sources_with_literal_plus_kernel": 453,
+  "status": "Source audit only. Await both exact axiom checks, direct proof-body edges, comparator and independent kernel receipts at this source pin."
+}

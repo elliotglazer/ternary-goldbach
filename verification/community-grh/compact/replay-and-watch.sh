@@ -2,8 +2,8 @@
 # Launch the reviewed source once per CloudShell workspace, then follow the receipt.
 set -euo pipefail
 
-commit=b5b238244b7b73e2ebcd13ca6d16782e90faea4b
-tree=34c3f1389081acfb87f36f04ac981bd5c8240223
+commit=264ca33a6ebb4c72854ae6000e01d1828583dd5d
+tree=d391104b151699a030e9e62a60487aedf0bb3683
 runner_rev=78f5182fe44570e8d8f77377afc7835e13e7d5ed
 archive_sha=053cc11be69d5149f3af41af38cb353cffc75649a85d16c33f354c022328c627
 base=https://raw.githubusercontent.com/elliotglazer/ternary-goldbach/$runner_rev/verification/community-grh/compact

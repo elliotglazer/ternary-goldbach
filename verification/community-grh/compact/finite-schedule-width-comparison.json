@@ -1,0 +1,67 @@
+{
+  "base_commit": "b5b238244b7b73e2ebcd13ca6d16782e90faea4b",
+  "base_lakefile_sha256": "89aada669336da89b471a146a09120500a93d6e49a4e510746ac4ed99f554a61",
+  "historical_timing_commit": "a664692883ac3deeea2c5471dba897147c728f89",
+  "historical_timing_path": "proof/evidence/analytic-progress.json",
+  "timed_modules": 405,
+  "missing_module_costs_treated_as_zero": [
+    "FastHex",
+    "GoldbachNatPowMod",
+    "PrefixCheck",
+    "PrefixFactorial",
+    "PrefixJoin",
+    "PrefixSource",
+    "PrimeBitmap",
+    "PrimeProductCheck",
+    "PrimeSupport",
+    "Table"
+  ],
+  "historical_total_finite_cpu_seconds": 12567.52,
+  "base_critical_path_model_seconds": 412.36,
+  "model": "Longest dependency chain for the finite endpoint, using historical per-module process CPU seconds as single-core durations. Unlimited resources for all ready work. Excludes code generation outside the recorded module runs, other libraries, caches, exports and independent kernels.",
+  "semantics": "Missing times are zero in this model. The caps cover classified finite modules. Compact GRH, analytic modules and 31 light finite modules may still run at the same time. Building one later finite target cold can build preceding schedule groups. Lean mathematical sources and export dependencies are unchanged.",
+  "variants": {
+    "2": {
+      "critical_path_model_seconds": 6815.18,
+      "staged_groups": 192,
+      "initial_common_modules": 1,
+      "power10_group_size": 2,
+      "subsequent_group_size": 2,
+      "heavy_modules": 384,
+      "light_finite_modules": 31,
+      "last_group_size": 1,
+      "unique_partition_and_acyclic": true,
+      "all_old_power10_lib_tables_identical": true,
+      "lakefile_sha256": "001f225fd995f1261932b552040b58217278eb330d644edd91969488505eee8f",
+      "patch_sha256": "1c11660f7fb99f93b1163e3ecfd1a99c971e9b2297f879dc415eda05f23b36a9"
+    },
+    "4": {
+      "critical_path_model_seconds": 3980.15,
+      "staged_groups": 98,
+      "initial_common_modules": 1,
+      "power10_group_size": 2,
+      "subsequent_group_size": 4,
+      "heavy_modules": 384,
+      "light_finite_modules": 31,
+      "last_group_size": 3,
+      "unique_partition_and_acyclic": true,
+      "all_old_power10_lib_tables_identical": true,
+      "lakefile_sha256": "5d52bdc11adaa5570ab474f37ec1211d7bb2ed13947e3c5ccd35bf5ece323006",
+      "patch_sha256": "5541c2f2a29d8433b505fbcdb7992b9f23c633e3bf1526c4d3eae862903a7cd6"
+    },
+    "6": {
+      "critical_path_model_seconds": 2999.11,
+      "staged_groups": 67,
+      "initial_common_modules": 1,
+      "power10_group_size": 2,
+      "subsequent_group_size": 6,
+      "heavy_modules": 384,
+      "light_finite_modules": 31,
+      "last_group_size": 3,
+      "unique_partition_and_acyclic": true,
+      "all_old_power10_lib_tables_identical": true,
+      "lakefile_sha256": "54a18a3a4d35a94468977bc15b87d96c4cc3a65fa46bf2f9ad6518ac68b3a395",
+      "patch_sha256": "1c2e76038ed1b00ea34cf49f3aae700405d6a4796d54fa246a8ae0edd3845332"
+    }
+  }
+}
