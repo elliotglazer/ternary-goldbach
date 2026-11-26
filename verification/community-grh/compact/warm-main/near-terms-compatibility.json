@@ -1,0 +1,62 @@
+{
+  "actual_errors": [
+    "error: CompactGRH/src/New/Filling/NearTerms.lean:77:46: Tactic `grewrite` failed: `\u211d` is not a relation"
+  ],
+  "candidate_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "candidate_sha256": "a4a188315198477f0c264489806e98d0d8b739b16a63efd58541582a5fa857af",
+  "changed_lines": [
+    77,
+    85
+  ],
+  "closure_count": 107,
+  "complete_nearterms_verification": "pending; direct compiled parents absent from the identified native object archives",
+  "diagnostic_origin_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "direct_imports": [
+    "Lib.Shimura.IntegralModel.NeatLevel",
+    "New.RealPlace.FrameNorm",
+    "New.Filling.GramLiouville",
+    "New.Filling.StableCells"
+  ],
+  "existing_reduced_A_B_receipt_sha256": "21fc938c36b1d84547549e1445ba61c571a449a60ab5e52293074bfc4571118d",
+  "existing_reduced_A_B_scope": "Focused stock Lean 4.35 reproduction of the exact first two grw arguments on a power bound, and separate check of the later simp argument. Full source consumption is pending. Existing theorem statements are unchanged.",
+  "fixed_control_exit": 0,
+  "missing_local_objects": [
+    "Lib.General.NumberTheory.QuadFieldSplitting",
+    "Lib.Adelic.Adeles.IdeleHilbert90",
+    "Lib.ClassField.Places.AdeleNorm",
+    "Lib.Adelic.Adeles.OneSidedPoisson",
+    "New.Filling.EichlerFlag",
+    "Lib.Adelic.Adeles.NormAbsValue",
+    "Lib.Weil.Unramified.SphericalHecke",
+    "Lib.Shimura.HeckeTower.GroupRingOperators",
+    "Lib.General.LinearAlgebra.ExpSurjective",
+    "Lib.Shimura.TraceFormula.TraceFormula",
+    "Lib.Adelic.Reduction.FirstMinimum",
+    "Lib.DiscreteSeries.CuspKernel.BesselSchurBound",
+    "Lib.Adelic.Witt.MaximalCompact",
+    "Lib.Shimura.IntegralModel.NeatLevel",
+    "Lib.Adelic.Transference.MassBasic",
+    "New.Filling.BesselSystem",
+    "Lib.General.Algebra.LatticeComplement",
+    "New.RealPlace.FrameNorm",
+    "New.Filling.Setup",
+    "New.Filling.LevelBridge",
+    "New.Filling.CrudeBoundDefs",
+    "New.Filling.LatticeChart",
+    "New.Filling.StableCells",
+    "New.Filling.GramLiouville",
+    "New.Filling.NearTerms"
+  ],
+  "module": "New.Filling.NearTerms",
+  "original_control_exit": 1,
+  "prior_sha256": "b2e62b06a74bdd4779079a892214f93f5919aaf8f6fc64e6e43a81a6ebe0ab19",
+  "tested_mathlib_rewrite": "NumberField.rootDiscr_def",
+  "unverified_local_direct_imports": [
+    "Lib.Shimura.IntegralModel.NeatLevel",
+    "New.RealPlace.FrameNorm",
+    "New.Filling.GramLiouville",
+    "New.Filling.StableCells"
+  ],
+  "warm_log_sha256": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
+  "work": "Read-only comparison and native object inventory"
+}
