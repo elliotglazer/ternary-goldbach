@@ -103,7 +103,12 @@ omit [WeilData E] in
 lemma ratCoordMatrix_sum g : (V.sum V').ratCoordMatrix (.sum g) = fromBlocks
   (V.ratCoordMatrix g.1) 0 0 (V'.ratCoordMatrix g.2) := by simp [ratCoordMatrix_eq, sum, blockGL]
 
-attribute [local simp] Fintype.card_subtype ratCoordMatrix_inclX diagonal_apply det_inclX entrywise
+theorem GradeZeroPart.matrix_eq_iff_apply {m n : Type*} {K : Type*} {A B : Matrix m n K} :
+    (A = B) = (∀ i j, A i j = B i j) :=
+  propext ⟨fun h i j ↦ congrFun (congrFun h i) j, fun h ↦ Matrix.ext h⟩
+
+attribute [local simp] Fintype.card_subtype ratCoordMatrix_inclX diagonal_apply det_inclX GradeZeroPart.matrix_eq_iff_apply
+  Matrix.mul_apply Matrix.mulVec_apply_eq_sum dotProduct
   inclMatrix ratCoordMatrix_sum
 
 /-- The splitting of V over its weight-zero part V'' whose isotropic frame k consists of the basis

@@ -228,8 +228,8 @@
     {
       "path": "Lib/Adelic/Reduction/Defs.lean",
       "upstream_sha256": "7883213bd1f8aabc5d17122be245902c1891cde3c52bfcafb186bd200cfc1670",
-      "converted_sha256": "47c7fa8948063c9fac9c9e939216552b4fa24ada2377f1a6f29d49895208c721",
-      "adaptation": "Give the weighted sum of the two existing uniform bounds in the form submodule."
+      "converted_sha256": "61a573bed7c43d343dcc239b8548420adbf5fa8e66c6eca1b87ccebe89b1e244",
+      "adaptation": "Close the reflexive inequality left by generalized rewriting."
     },
     {
       "path": "Lib/Adelic/Reduction/FirstMinimum.lean",
@@ -2116,7 +2116,8 @@
     {
       "path": "Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
       "upstream_sha256": "59fdb798db7d1011a45d1246ac799d105fe51a7b8fba71f098f424069389228f",
-      "converted_sha256": "ffc682b498096422b42fb4d1daa19942b36cb8205841cdb43d9703fb7007ae2f"
+      "converted_sha256": "85c3723eef3b671ed79696acc20d95d800f49c3bbdc06d9dee4dc6eb0ae64509",
+      "adaptation": "Fix the power of p in the continuity lemma."
     },
     {
       "path": "Lib/PadicHodge/Limit/LimitDefs.lean",
@@ -2402,8 +2403,8 @@
     {
       "path": "Lib/Shimura/ThetaNormality/NormalGeneration.lean",
       "upstream_sha256": "476420b3f13e3766baf3553c1827673de6a7a656119505f54bd1cf8825e77e47",
-      "converted_sha256": "93203bc976d2b82768980e54951e128c4e0710660e35f0e320706c920c8e4b72",
-      "adaptation": "Supply the evaluation point of the linear-map projection. Diagnostic candidate."
+      "converted_sha256": "4532f6bc7f5f35417df09f9359c2915d74c2ef77761cedf5b5a6c8c4691824ac",
+      "adaptation": "Specify the evaluation point and vector, and cast the valuation comparison."
     },
     {
       "path": "Lib/Shimura/ThetaNormality/RiemannRelation.lean",
@@ -2646,7 +2647,8 @@
     {
       "path": "Lib/Weil/Construction/ThetaFunctional.lean",
       "upstream_sha256": "151f2d1e91e837b6f948dcaa8e3085087f34416b0e2dbf78931a4dcea8c681e2",
-      "converted_sha256": "849ad7e5de7f932a2fc9d3f9eb7e0264aad352717e21442a7e76ce7dd027f9c4"
+      "converted_sha256": "8489ceabfbfb1ffd398940b0a1d29c4745fe32b5cea95cdc07167a122658ab77",
+      "adaptation": "Define the finite cocycle by its multiplier integral."
     },
     {
       "path": "Lib/Weil/Construction/WeilOperators.lean",
@@ -3049,7 +3051,8 @@
     {
       "path": "New/DiscreteSeries/BesselExistence.lean",
       "upstream_sha256": "79adbfdae9b67cc9dea3402393cf32e5195e98b80ac33d1eeaa81b6d7b0017a8",
-      "converted_sha256": "2561d9c504c69a120d86a67fa7173e5a97d5983407dbac80a1ac285491a31d2a"
+      "converted_sha256": "edf0000d762613e0fbd6c9fe3ee904e0fce268c7eb98e40c13ceb3065275d913",
+      "adaptation": "Specify the extended-real multiplication lemma."
     },
     {
       "path": "New/DiscreteSeries/GaussianShape.lean",
@@ -3356,7 +3359,8 @@
     {
       "path": "New/Filling/NearTerms.lean",
       "upstream_sha256": "0457df0e5a945c7a631e78ae1c62f1b064da29fe3ebae0c549e19825ffa4803c",
-      "converted_sha256": "b2e62b06a74bdd4779079a892214f93f5919aaf8f6fc64e6e43a81a6ebe0ab19"
+      "converted_sha256": "a4a188315198477f0c264489806e98d0d8b739b16a63efd58541582a5fa857af",
+      "adaptation": "Rewrite rootDiscr with its public defining equation."
     },
     {
       "path": "New/Filling/PoincareSeries.lean",
@@ -3386,7 +3390,8 @@
     {
       "path": "New/Filling/StandardLevel.lean",
       "upstream_sha256": "e804f49ac0d45d9309af31567673dd13efe91154dfeb304cd1fb2b8f6c3909d7",
-      "converted_sha256": "36ac641c2cc02e988c221d046de934a13d90e5ad5999823073e3ab7c9214a098"
+      "converted_sha256": "41ee2fafef9371f7894d9408c4b36ad36b58e3ec2b135056108561347a885c21",
+      "adaptation": "Give the Haar-measure comparison its intended extended-real type."
     },
     {
       "path": "New/Filling/ThinClasses.lean",
@@ -3687,7 +3692,8 @@
     {
       "path": "New/Seesaw/EdgePair.lean",
       "upstream_sha256": "ecaa6c2058d20775f9e50985e4d0ec47cd6ac9071dd6370b3999fb8b148eab31",
-      "converted_sha256": "d807c51f3b985f9844d029e7af1291127430c7d4c44a86188338339552f51a67"
+      "converted_sha256": "7bc5015587b28c46d93d2e4bbf105b538bb556546ece287763cb98936e49208e",
+      "adaptation": "Use the public proposition equality for matrix extensionality in the local simp set."
     },
     {
       "path": "New/Seesaw/EqualLinesOrbit.lean",

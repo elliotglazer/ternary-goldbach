@@ -151,7 +151,8 @@ namespace IntegralPlace.IsStdLevel
 R, and Λ = 2/md(α). -/
 @[simp] noncomputable def gauge (α : Aˣ := 1) (hα : α.1 ∈ R := by simp)
     (sα : star α.1 = α := by simp [*] <;> ring) : Gauge F := by
-  have l := by simpa using ENNReal.div_le_div_left (md_le_one α hα) 2
+  have l : (2 : ℝ≥0∞) ≤ 2 / P.md α := by
+    simpa only [div_one] using ENNReal.div_le_div_left (md_le_one α hα) 2
   obtain ⟨J, c, _, G, o⟩ := h.integral_data.1.isIntMatrix, le_two_of_pow_le_ofReal h.zeta_rank.1,
     h.zeta_rank, h.integral_data.2, one_le_two.trans l
   have L j : (md (α ^ j).1)⁻¹ ≤ (2 / P.md α) ^ j := by grw [← one_le_two]; simp [ENNReal.inv_pow]
