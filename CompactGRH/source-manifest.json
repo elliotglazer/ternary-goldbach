@@ -922,7 +922,8 @@
     {
       "path": "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
       "upstream_sha256": "223503c42d17861bdc20b79f2c54d413ef58fd769815669e83cd38e42eb8b54b",
-      "converted_sha256": "0bdf306c5568603c99fe7b25f4332ab9429df601a6177d031fbbb97fa7658f89"
+      "converted_sha256": "5cf2d88ed2b1cdb570dbd3ab3df75c3a95e1d59470fb48d653e58d230604edf8",
+      "adaptation": "Provide the complex place constructor laws before later fields consume them and use a public order equality."
     },
     {
       "path": "Lib/DiscreteSeries/Bruhat/EichlerMaps.lean",
@@ -2480,7 +2481,8 @@
     {
       "path": "Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
       "upstream_sha256": "90b09b195b7a871ad845d7911b13e9c12aa1c6087a5c0a3b575069a5f2989039",
-      "converted_sha256": "e701dc85a0ab908ef22af6aa4bfd089d1f260416aa5a8bb8087173ad2cde6876"
+      "converted_sha256": "8713cd8d37027348c727f5dc7040f6cf6adeba8953da41118bd8deb6cf1b04f4",
+      "adaptation": "Specify the input matrix and real bilinear output of the polarisation form."
     },
     {
       "path": "Lib/Shimura/Uniformisation/ThetaCoords.lean",

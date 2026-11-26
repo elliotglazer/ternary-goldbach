@@ -197,3 +197,5 @@ Native Lean 4.35 reproduced the original geometry evaluation mismatch and JetCha
 A native matched constructor test reproduced the unresolved uniform bound in Form and passed the explicit witness with propext, Classical.choice and Quot.sound. It uses the real Mathlib linear-combination constructor and abstracts unrelated form fields. The full parent module awaits replay.
 
 Native 4.35 checked the complete besselLatticeBasis and gram_besselLatticeBasis declarations and the full exists_few_translates proof in focused modules with the standard three axioms. The original basis proof reproduces the private simp constant error. Full module replay remains pending.
+
+The full corrected complex Place instance and the skew-unit consequence passed a native focused check with their real producers. The bilinear form body reproduced the original unknown codomain and passed with the matrix and target specified, including its standard-three-axiom audit. Neither test rebuilt the entire owning module.

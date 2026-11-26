@@ -24,8 +24,11 @@ lemma exists_unitary_mulVec_eq ω {v : κ → ℂ} (h : star ω ⬝ᵥ ω = star
   u.1.1 *ᵥ ω = v := if o : _ then ⟨1, by have := h.symm; aesop⟩ else (witt ⟨I, by simp⟩ (by simp)
   isUnit_one (.of_ne_zero o) (.of_ne_zero (by aesop)) (by aesop)).imp fun _ ↦ replicateCol_inj.1
 
+lemma complexPlace_le_eq_true_of_lt {α : Type*} [Preorder α] {a b : α} (h : a < b) :
+    (a ≤ b) = True := eq_true (le_of_lt h)
+
 attribute [local simp] wave skewAdjoint.mem_iff LeftInverse Matrix.mul_apply inclMatrix frameGram
-  dotProduct conj_mul' mem_floorGroup val_toBesselH_apply_coe mul_pow orbitPoint le_of_lt funext_iff
+  dotProduct conj_mul' mem_floorGroup val_toBesselH_apply_coe mul_pow orbitPoint complexPlace_le_eq_true_of_lt funext_iff
   neg_add_eq_sub
 
 /-- The place ℂ. -/
@@ -35,8 +38,8 @@ attribute [local simp] wave skewAdjoint.mem_iff LeftInverse Matrix.mul_apply inc
   have h z := integral_cexp_neg_mul_sq_norm_add (b := 1) one_pos (2 * I) (z / I)
   have := ofReal_integral_norm_eq_lintegral_enorm (J.const_mul π)
   by refine .mk (haar := AddEquiv.isAddHaarMeasure_map _ ⟨⟨_, (·.1.im), ?_, by simp_all
-    [RightInverse, Complex.ext_iff, self_eq_neg]⟩, ?_⟩ ?_ ?_) (toTraceOne := ⟨2⁻¹, ?_⟩) (.mk0
-    (I / 2) ?_) (volume.map fun r : ℝ ↦ ⟨r * I, by simp⟩) ⟨⟨(‖·‖ₑ ^ 2), ?_⟩, ?_⟩ ⟨wave, ?_, by
+    [RightInverse, Complex.ext_iff, self_eq_neg]⟩, ?_⟩ ?_ ?_) (toTraceOne := ⟨2⁻¹, by norm_num⟩) (.mk0
+    (I / 2) (by norm_num)) (volume.map fun r : ℝ ↦ ⟨r * I, by simp⟩) ⟨⟨(‖·‖ₑ ^ 2), ?_⟩, ?_⟩ ⟨wave, by simp [wave], by
     simp [← Complex.exp_add, sub_add_sub_comm]⟩ (.ofReal (π ^ 2)) ?_ ?_ ?_ ⟨?_, by
     rw [map_prod_map, Measure.map_map, ← volume_preserving_equiv_real_prod.symm.2] <;> try fun_prop
     congr 1; simp [Complex.ext_iff]⟩ ?_ ?_ ?_ ⟨(‖·‖⁻¹),
