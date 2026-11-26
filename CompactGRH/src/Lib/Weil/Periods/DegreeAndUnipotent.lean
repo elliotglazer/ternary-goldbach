@@ -61,8 +61,13 @@ def unipotent := (unitriangular (-Y.gradeOf ·) _).comap V.ratCoordMatrix.toHomU
 
 /-- The homomorphism from the adelic unitary group of the standard definite space on X to that
 of V, acting on X and fixing the string vectors. -/
-def inclX := ((U.reindex Y.indexEquiv (by erw [Y.2, ← submatrix_map]; aesop)).trans
-  V.toRatCoords.symm).toMonoidHom.comp ((U.sum rfl).comp (G.toUnitary (s := 1).toMonoidHom.prod 1))
+def inclX := ((U.reindex Y.indexEquiv (by
+    erw [Y.gram_eq, ← submatrix_map]
+    simp only [stdForm_one, fromBlocks_map, Matrix.map_zero _ (map_zero toAdele),
+      Matrix.map_one _ (map_zero toAdele) (map_one toAdele)])).trans
+  V.toRatCoords.symm).toMonoidHom.comp ((U.sum
+    (J' := (of fun i j : Fin s ↦ if i = j.rev then (if i = j then -N else 1) else 0).map toAdele)
+    rfl).comp (G.toUnitary (s := 1).toMonoidHom.prod 1))
 
 lemma ratCoordMatrix_inclX h : V.ratCoordMatrix (Y.inclX h) =
   gradedBlocks Y.indexEquiv Y.indexEquiv h.mat 1 := by simp [Space.ratCoordMatrix, inclX]; rfl

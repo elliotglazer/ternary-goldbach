@@ -201,3 +201,5 @@ Native 4.35 checked the complete besselLatticeBasis and gram_besselLatticeBasis 
 The full corrected complex Place instance and the skew-unit consequence passed a native focused check with their real producers. The bilinear form body reproduced the original unknown codomain and passed with the matrix and target specified, including its standard-three-axiom audit. Neither test rebuilt the entire owning module.
 
 Matched native tests of exists_retraction with actual Bcris and the original flatness instance and of locConstClass with the genuine étale comparison maps each reproduced the previous error and passed the repaired declaration with the three standard axioms. Full owning modules await warm replay.
+
+Native controls reproduced the missing lower-right block. The complete inclX and its unchanged ratCoordMatrix_inclX consequence passed in a focused module with propext, Classical.choice and Quot.sound after the map identity was spelled out. Full source replay is pending.
