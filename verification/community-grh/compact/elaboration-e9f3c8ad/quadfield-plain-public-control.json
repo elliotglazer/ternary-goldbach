@@ -1,0 +1,28 @@
+{
+  "variant": "module-public-unexposed",
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "flags": [
+    "-j1",
+    "-M3500",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "upstream_source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+  "converted_source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+  "source_sha256": "ba48d035f3108c34ea4efc089af352adf8f6784cc1430ff878fe3b6602e583fe",
+  "unchanged_body_sha256": "fecf81ce07799c91994948eceeb06fde603244ce8a9b1185d828d6584a837841",
+  "wall_seconds": 51.64,
+  "diagnostic": "Lib\\General\\NumberTheory\\QuadField.lean:61:2: error: Theorem QuadField.sqrtNegD_coe has a `rfl`-proof but could not be validated as a definitional equality:\n  Not a definitional equality: the left-hand side\n    ↑(sqrtNegD d)\n  is not definitionally equal to the right-hand side\n    I * ↑√↑d\n  \n  Note: This theorem is exported from the current module. This requires that all definitions that need to be unfolded to prove this theorem must be exposed.\nLib\\General\\NumberTheory\\QuadField.lean:124:0: error: Not a definitional equality: the left-hand side\n  ↑(c₀ d)\nis not definitionally equal to the right-hand side\n  (1 + sqrtNegD d) / 2\n\nNote: This theorem is exported from the current module. This requires that all definitions that need to be unfolded to prove this theorem must be exposed.\n",
+  "exit": 1,
+  "log_sha256": "bdcddd5a45d67fe5598cea505b54911c0228b546c6255c5fd9ed77a4bb3c6ff8",
+  "schema": 1,
+  "controlled_parent_facets_reference": "quadfield-systemic-ab.json",
+  "controlled_parent_facets_reference_sha256": "f24755dfc3b119824ab11986548d47fa71781a4e11886b7667d80ddff82bbdb6",
+  "comparison": "The full source now uses public section instead of @[expose] public section. The original witness-stuck diagnostic disappears, but two public reflexivity proofs require exposed bodies and fail."
+}

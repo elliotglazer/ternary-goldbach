@@ -1,0 +1,172 @@
+{
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "controlled_inputs": {
+    "Lib.Adelic.Adeles.CoprimeValuation": {
+      ".ir": "9e2c0c5ba41a244f5042660548da9dd921dc654c9eb8b3d475533cd8f676ca2e",
+      ".ir.sig": "dca860f5cc808e0a069c69bb2502bb4fe865fcd394a9f000e550f81bd84a4bea",
+      ".olean": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432",
+      ".olean.private": "3ae309f9e8a029c02485d4bd23be874f8b32e0855e9a33026b192bc55969792f",
+      ".olean.server": "a046e2e88c910c5c15eb4b334bd4485369732b2ea9aeac76b7aadb09635ceb8c"
+    },
+    "Lib.General.Analysis.ZpowSum": {
+      ".ir": "9f631d074b7a49dfec21006fa08825ae0c3fdd8586fb8831708cc93f1c763eff",
+      ".ir.sig": "039ffe229c8830eec5aa4c9c08031e25bc0e7cec191b53da2c237f687e69f566",
+      ".olean": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd",
+      ".olean.private": "36eaadd9be8a9231ff44cbe93684be3c66e10d7ab838c4eae11226a4aa8e2c68",
+      ".olean.server": "1de5a3aab79ecc546baaf0966bb143189cba7a38137d3501de1b4a7be84881c9"
+    },
+    "Lib.General.LinearAlgebra.Base": {
+      ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+      ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62",
+      ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+      ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+      ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d"
+    },
+    "Lib.General.NumberTheory.Embeddings": {
+      ".ir": "1a39d05ab43b63d3e8f80632bf44313dbb40ba7f1c90469a332be3a2fd77573b",
+      ".ir.sig": "bed81d17288827a209c145dced6215d6256fb53e926802a3fc98580a2d4845a0",
+      ".olean": "c401eac320b01954fe95138db55cd215d7503ba5f05678eee707915c3b949db2",
+      ".olean.private": "e90b923acf5626caadf2871c2317e63ad5edf41e4743aee2296e329c155eb29d",
+      ".olean.server": "52cc6714635a206b89eb547781a18ed55752dddf66f398befc40caf49f996fc1"
+    }
+  },
+  "def": "QuadField.nonempty_algHom_of_isPrimitiveRoot",
+  "dependency_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "flags": [
+    "-j1",
+    "-M3500",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "full_module": {
+    "explicit_gauss_sum_witness": {
+      "axiom_audit": [
+        "'QuadField.embOfSqrt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'QuadField.nonempty_algHom_of_isPrimitiveRoot' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'QuadField.different_eq_span_and_adjoin_c₀' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "a5ee399960bf7535a53404c52d7e7554c0a720058fd47f66e96bfb9124aadf5f",
+      "source_sha256": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d",
+      "wall_seconds": 49.1
+    },
+    "original_exposed_public": {
+      "diagnostic": "Lib\\General\\NumberTheory\\QuadField.lean:99:20: error: tactic execution is stuck, goal contains metavariables\n  ?m.27 ^ 2 = -↑d",
+      "exit": 1,
+      "log_sha256": "e1f091ef6257c73d5e7ce9e289cc0358a9c4109061ad3d57d1f1b8b5597a29e8",
+      "source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+      "wall_seconds": 46.9
+    },
+    "single_declaration_backward_option": {
+      "converted_source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+      "diagnostic": "Lib\\General\\NumberTheory\\QuadField.lean:102:2: error: Unknown constant `_private.Lib.General.NumberTheory.QuadField.0.NeZero.ne._simp_1`\n\nNote: A private declaration `NeZero.ne._simp_1` (from the current module) exists but would need to be public to access here.\nLib\\General\\NumberTheory\\QuadField.lean:102:2: error: Unknown constant `_private.Lib.General.NumberTheory.QuadField.0.NeZero.ne._simp_1`\n\nNote: A private declaration `NeZero.ne._simp_1` (from the current module) exists but would need to be public to access here.\n",
+      "exit": 1,
+      "log_sha256": "b6aa7e35a859109b2eb0c8e9e9408e39683b87ba440f79353dbc0a34a9dc70fb",
+      "source_sha256": "a3e4d020dee4cdb07c76a7e59db4139759de4105eb41337c9dec387604f2c22c",
+      "unchanged_body_sha256": "fecf81ce07799c91994948eceeb06fde603244ce8a9b1185d828d6584a837841",
+      "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "upstream_source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+      "variant": "module-local-legacy-tactic",
+      "wall_seconds": 52.87
+    },
+    "upstream_legacy": {
+      "converted_source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+      "diagnostic": "",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "608e659d8bbf8a4cac572ae27194235ffc032796d16063ac682b271bc5319620",
+      "source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+      "unchanged_body_sha256": "fecf81ce07799c91994948eceeb06fde603244ce8a9b1185d828d6584a837841",
+      "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+      "upstream_source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+      "variant": "legacy",
+      "wall_seconds": 60.05
+    }
+  },
+  "header_diff_sha256": "aa90aa97d6075147ff119456e8bf484cf0adaf0853dd1a4a076dde6c88dbd1cb",
+  "interpretation": "The exported elaborator delays a by proof until its goal contains no expression metavariables. In legacy mode the proof can determine the value y by unification. This gates before the rw command. With backward.proofsInPublic enabled the original proof runs in the exporting context and hits a private generated simp lemma. The explicit public witness works with ordinary settings. This evidence applies to this declaration and failure signature; other module-system errors can have different causes.",
+  "package_path": "CompactGRH/src/Lib/General/NumberTheory/QuadField.lean",
+  "pinned_lean": {
+    "compiler_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "git_tag": "v4.35.0",
+    "source": [
+      {
+        "lines": [
+          178,
+          181,
+          182,
+          183,
+          184
+        ],
+        "path": "Lean/Elab/BuiltinTerm.lean",
+        "sha256": "8c05cb49c6f257458b4fd8e22495658c8982bc7ed421cfbad954f17e66d095b9"
+      },
+      {
+        "lines": [
+          311,
+          315,
+          458,
+          459,
+          460,
+          461,
+          476,
+          563,
+          565
+        ],
+        "path": "Lean/Elab/SyntheticMVars.lean",
+        "sha256": "e33b9ec83b5ca5108b910419fda0492a36a7837cb205d7594429fb6ed9ea22fc"
+      }
+    ]
+  },
+  "prior_native_artifact_sha256": "0a768ef8ad582457bdafac00cf38dab6871f4fca3020f667bde823935ee83e0b",
+  "producer": "QuadField.embOfSqrt",
+  "project_pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "project_tree": "5666784d088ba92460d084ddd8ac9ab8ac568a99",
+  "schema": 1,
+  "small_control_modes": {
+    "both_public_all": {
+      "exit": 1,
+      "log": "controls\\both_public_all.lean:2:14: error: cannot use `all` with `public import`; consider using separate `public import Init` and `import all Init` directives in order to import public data into the public scope and private data into the private scope.\n",
+      "source_sha256": "e2d6f038d7a6db7b94bbdb0132835ed7da130966708f6338202131ca07c6db35"
+    },
+    "explicit": {
+      "exit": 0,
+      "log": "",
+      "source_sha256": "75e0efb224cc92d4e71bb7aa1f5575abfe166b8da8581dd022380b442856d7da"
+    },
+    "exported": {
+      "exit": 1,
+      "log": "controls\\exported.lean:5:32: error: tactic execution is stuck, goal contains metavariables\n  ?m.1 = 1\n",
+      "source_sha256": "8856402d43eea764df4f8b2e3651afb268c3b80ec890ce9c8080f670b2eb4631"
+    },
+    "legacy": {
+      "exit": 0,
+      "log": "",
+      "source_sha256": "8794e6f98542c274b89f37d93641515a43a69293eac1e81a5c6a8519f972f1a4"
+    },
+    "local_compat": {
+      "exit": 0,
+      "log": "",
+      "source_sha256": "013eeaad05c544c1c5956815d00a69b11da8933a19ba1294d091bad095da477f"
+    },
+    "plain_public": {
+      "exit": 0,
+      "log": "",
+      "source_sha256": "b8672855531c1f6358e975c9a1d6b8949053549793f950b71660950d74ddbd3c"
+    },
+    "private_import_all": {
+      "exit": 1,
+      "log": "controls\\private_import_all.lean:5:32: error: tactic execution is stuck, goal contains metavariables\n  ?m.1 = 1\n",
+      "source_sha256": "d7775c2a4d38ca254f278bde0761f50983e4626034f816f3542de54551f9b0df"
+    }
+  },
+  "source_delta": "The 72fead10 source proof body matches the e9f3c8ad body byte for byte. The module marker, public imports, and exposed public section are the only file-level changes. The legacy control uses identical modular parents to test this file's header without rebuilding its parents.",
+  "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "upstream_path": "grh-compact/src/Lib/General/NumberTheory/QuadField.lean"
+}

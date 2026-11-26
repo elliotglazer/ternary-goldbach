@@ -2,10 +2,10 @@
 # Launch the reviewed source once per CloudShell workspace, then follow the receipt.
 set -euo pipefail
 
-commit=e9f3c8adb418f4e497787ef93175066acb1c8f72
-tree=5666784d088ba92460d084ddd8ac9ab8ac568a99
-runner_rev=78f5182fe44570e8d8f77377afc7835e13e7d5ed
-archive_sha=053cc11be69d5149f3af41af38cb353cffc75649a85d16c33f354c022328c627
+commit=d6b1bfd523e2c54b6e4bb72844deeddf8341879a
+tree=ddc22b3144b7147ce91c5c767690d9d56aac50ee
+runner_rev=bea3421af2bc1d9607d542dd8f9613764156c0da
+archive_sha=03e8b1d7d48ff94a1713b1a28096d648e0b0bf37d83a0b16b180e10203a316e3
 base=https://raw.githubusercontent.com/elliotglazer/ternary-goldbach/$runner_rev/verification/community-grh/compact
 
 case ${1:-} in
@@ -13,6 +13,7 @@ case ${1:-} in
   --tuned)
     mode=tuned
     project_options=(--lake-threads 4
+      --preflight-module Lib.General.NumberTheory.QuadField
       --preflight-module Lib.General.Analysis.ZpowSum
       --preflight-module Lib.General.Algebra.RingActions
       --preflight-module Lib.GaloisRep.Pseudocharacter.SemisimpleReps
@@ -21,6 +22,13 @@ case ${1:-} in
       --preflight-module Lib.General.Groups.ArtinDefs
       --preflight-module Lib.ClassField.GaloisCohomology.DiscreteUnits
       --preflight-module Lib.DiscreteSeries.Haar.CompactDualMeasure
+      --preflight-module Main
+      --preflight-module Lib.PadicHodge.PeriodRings.AmaxStructure
+      --preflight-module Lib.Adelic.Unitary.CongruenceLevel
+      --preflight-module Lib.ClassField.GreenbergWiles.ExtendCharacter
+      --preflight-module Lib.Shimura.Uniformisation.ModuliPoint
+      --preflight-module Lib.DiscreteSeries.FlenstedJensen.RightDerivatives
+      --preflight-module Lib.Adelic.QuotientMeasure.CocompactIntegrable
       --preflight-module Lib.LocalGL.Green.MackeyFormula
       --preflight-module MajorEnergy
       --preflight-module New.Data.Magnitudes

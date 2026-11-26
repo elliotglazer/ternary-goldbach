@@ -1,0 +1,57 @@
+{
+  "proof_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "module": "Lib.Adelic.QuotientMeasure.CocompactIntegrable",
+  "changed_declaration": "integral_tsum_orbit",
+  "statement_sha256": "b0746e27f71240405beb7363e9212d5ee7af2f9a418ec5aac7e3ba8cc61feb67",
+  "original_sha256": "f3c08037d8996ee8795d465470ac59547fe6053445b023ae018fa84e11b09e9d",
+  "candidate_sha256": "b99c3327491300ed34f91c14090d6c4d56acd5e80301f2258851c5d3d5326f0e",
+  "patch_sha256": "b4ce4208a06be29fb2818f6424e9a7c88cb2fd9c17e594e5c4f3df7d7aad559d",
+  "full_module_build": {
+    "module": "Lib.Adelic.QuotientMeasure.CocompactIntegrable",
+    "source_sha256": "b99c3327491300ed34f91c14090d6c4d56acd5e80301f2258851c5d3d5326f0e",
+    "git_source_sha256": "f3c08037d8996ee8795d465470ac59547fe6053445b023ae018fa84e11b09e9d",
+    "proof_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "start_utc": "2026-11-26T02:24:07.239484+00:00",
+    "wall_seconds": 74.079,
+    "mode": "candidate2",
+    "exit": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "system_cpu_seconds": 11.859375,
+    "user_cpu_seconds": 61.90625,
+    "peak_working_set_bytes": 2371186688,
+    "peak_commit_bytes": 8219148288,
+    "olean_sha256": "765d3c1fa122aaa8d9181a46efc6330c944328feaebfe85a737741c1c05e9f52",
+    "private_olean_sha256": "0d9df212bef2a0b6141b51c7e3498a7173882aa984bcb86787017f54c2655879"
+  },
+  "imported_axioms": {
+    "integral_tsum_block": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "integral_tsum_orbit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "integrable_of_cocompact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "cocompact_prod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "audit_wall_seconds": 35.758,
+  "audit_cpu": {
+    "system_cpu_seconds": 11.109375,
+    "user_cpu_seconds": 24.09375,
+    "peak_working_set_bytes": 2220224512,
+    "peak_commit_bytes": 8085925888
+  },
+  "audit_log_sha256": "1c1da0007080520384f4f26788ebabe32f70478eb5d215018232c3ddddc54526",
+  "object_closure_sha256": "2bffad43d04c1af52c3b010bccb3e8e271eeb68caa5d93e7666dfb9c7ea88449"
+}

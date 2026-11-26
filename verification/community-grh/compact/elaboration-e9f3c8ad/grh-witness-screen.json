@@ -1,0 +1,169 @@
+{
+  "additional_review": [
+    {
+      "closure_count": 5,
+      "evidence": "Unconstrained y only appears in the sole proof. The existing stock native diagnostic displays a metavariable s square as the unsolved goal; naming the Gauss sum is a separate tested fix.",
+      "line": 99,
+      "module": "Lib.General.NumberTheory.QuadField",
+      "scope": "kernel-confirmed-baseline",
+      "source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9"
+    },
+    {
+      "closure_count": 32,
+      "evidence": "The second of_det_dvd uses an implicit matrix A, determinant rewrite first, le_rfl second. The immediately preceding call names A. The second premise equates the image of A with N by reflexivity; surrounding IndexDvd.map can constrain N. No exact compiler failure for this site is established. Outer lemma of_pairing enters a by proof (lines 49-53), so the exported-data-specific gate is also a poor match. palomar_fit owns any full source check.",
+      "line": 63,
+      "module": "New.TwistedHecke.ElementaryDivisors",
+      "scope": "open-source-flag",
+      "source_sha256": "a8a95c2980a027286e5bb08748b67547cda7dc59abe070f8d57129cc42f343bd"
+    },
+    {
+      "closure_count": 53,
+      "evidence": "The first argument e, the primality proof p.2 and the last typed root proof (O p).1 constrain the root and exponent. This does not isolate a data witness in a single untyped proof.",
+      "line": 247,
+      "module": "Lib.ClassField.Local.ArtinMapAtPlace",
+      "scope": "anchored-source",
+      "source_sha256": "6afa31687cdc5df83d40b346d6f270aa2ac931dc245645ea72eed32564fc122c"
+    },
+    {
+      "closure_count": 53,
+      "evidence": "Explicit shared named synthetic hole ?N occurs twice; inspect the final proof obligation and surrounding local valuation proof before calling it a missing witness.",
+      "line": 275,
+      "module": "Lib.ClassField.Local.ArtinMapAtPlace",
+      "scope": "open-lower-priority",
+      "source_sha256": "6afa31687cdc5df83d40b346d6f270aa2ac931dc245645ea72eed32564fc122c"
+    },
+    {
+      "closure_count": 167,
+      "evidence": "Dot-notation receiver hk supplies IsWeilPair (j s) m, from the producer s include h directive.",
+      "line": 179,
+      "module": "Lib.GaloisRep.Division.MultiplicityFreeSum",
+      "scope": "anchored-source",
+      "source_sha256": "da7d5e198d42abc4fe197807f0e7bfa0042265ba1075e76099da01c459a81721"
+    },
+    {
+      "closure_count": 218,
+      "evidence": "The inline rewrite is nested inside a later equality transitivity, not the first producer premise.",
+      "line": 40,
+      "module": "New.Exchange.EqualRankValue",
+      "scope": "different-tactic",
+      "source_sha256": "246b79a384f8889aaa8e035935cccd09932ea278da79bccfebe6a88453841b4c"
+    },
+    {
+      "closure_count": 111,
+      "evidence": "The adjacent uses are termsOver.mul; the screen matched a reachable but different spanOn.mul.",
+      "line": 79,
+      "module": "New.RealPlace.VolumeKernel",
+      "scope": "wrong-short-name",
+      "source_sha256": "ab66aaca5eb2376b2993230abeae7bd92a95e906460b1e71548f74a996046567"
+    },
+    {
+      "closure_count": 111,
+      "evidence": "The adjacent uses are termsOver.mul; the screen matched a reachable but different spanOn.mul.",
+      "line": 80,
+      "module": "New.RealPlace.VolumeKernel",
+      "scope": "wrong-short-name",
+      "source_sha256": "ab66aaca5eb2376b2993230abeae7bd92a95e906460b1e71548f74a996046567"
+    },
+    {
+      "closure_count": 68,
+      "evidence": "The rewrite belongs to a nested power comparison after norm_le_one has already been applied.",
+      "line": 58,
+      "module": "New.Selmer.RootsOfUnityPoints",
+      "scope": "different-tactic",
+      "source_sha256": "ad03ce6f650e25b8c4f2150dd53ab16352546ad3f6670562eaeb4369fceac7b8"
+    },
+    {
+      "closure_count": 3,
+      "evidence": "The variable named t occurs under forall i A t in the extensionality premise and shadows the section variable t. No missing free witness t.",
+      "line": 46,
+      "module": "Lib.General.Geometry.PointFunctions",
+      "scope": "binder-shadowing",
+      "source_sha256": "e048b49410540c551a13affb9dca6fd6f101abb95d7157392a35ef8b26e31d1a"
+    },
+    {
+      "closure_count": 14,
+      "evidence": "The family of index types enters the matrix z and schur family in the expected target. The consumer at 135 uses the same form with a typed g. No new failure observed.",
+      "line": 123,
+      "module": "Lib.GLn.SchurModule.SchurMatrix",
+      "scope": "dependent-type-anchor",
+      "source_sha256": "69f9eb39bc63cc4a35c5eb8d8ec2c4910aa8ff5e6d28ae2127d39de613c330f8"
+    },
+    {
+      "closure_count": 35,
+      "evidence": "The implicit Shape appears explicitly in the frame-fixing premise; the dependent type of s and the Bessel subgroup in the surrounding expected result also carry it. No exact kernel failure observed.",
+      "line": 233,
+      "module": "Lib.DiscreteSeries.Bessel.UnipotentCoords",
+      "scope": "source-flag",
+      "source_sha256": "dc81276475983b383435adbe35cf8a86d66eff69fdbac7dd9aedda656319f220"
+    },
+    {
+      "closure_count": 97,
+      "evidence": "bijective_ofZMod_comp at 118 is a second application following the separate smul_gaussSum character test at 117; its output is a dependent function of the character field. Does not inherit the earlier verdict without a direct confirmation.",
+      "line": 118,
+      "module": "Lib.Cyclotomic.Stickelberger.GaussSums",
+      "scope": "separate-producer",
+      "source_sha256": "5d75f4b80d4eb6fd5db8899d514816fd3159248820f12de7e6c6218ad05608b2"
+    },
+    {
+      "closure_count": 59,
+      "evidence": "Equality proofs k and k1 explicitly constrain the inverse matrices. The first argument alone is a tactic, but it is not the only source of determinant matrix data.",
+      "line": 98,
+      "module": "Lib.General.Algebra.LatticeComplement",
+      "scope": "anchored-source",
+      "source_sha256": "94d3195e36ebc9952f958235e37e10630903d3d4479888643c6a59b47ce23c3a"
+    }
+  ],
+  "exclusions": [
+    "The narrower 72/3 counts concern lexical equality premises with a concrete typed witness and selected inline tactics, not every Lean mechanism that can create a metavariable.",
+    "The data-definition filter maps named declarations by nearest parsed source head. Instances, anonymous constructors, signature-only issues, generated terms and imported external producers require separate inspection."
+  ],
+  "file_hashes": {
+    "equality-single-premise.json": "e2977cce327ea257b552ae61713e9f116053d879e8a91f729304d60a60e61b5e",
+    "scan.py": "98431d30bdd239fa839b7af463623198dc008f9c55d60f5c8310f6e3036aace3",
+    "triage.py": "b8696f9fabcb345e9e4d9bb1d5acce4e011e7e4b7f9cb9c4bf1c792e77e0b99b",
+    "witness-manifest.json": "72444f8616b7cfa8be495320d0519d27f2da3738a60c15508753fd77e0ab60f1"
+  },
+  "lexical_producers": 762,
+  "lexical_relations": 1391,
+  "limitations": [
+    "Unification may recover values from dependent result types and typeclasses. Section variables, lexical names and nested tactics can produce false matches. This scan does not prove absence of other errors.",
+    "Explicit-result local declarations and named inline callers only. Imported Mathlib declarations, declarations with inferred result types, macro-expanded calls, anonymous constructors and tactic-generated applications are outside the screened class."
+  ],
+  "modules": 794,
+  "narrow_data_definition_relations": 3,
+  "narrow_data_definition_review": [
+    {
+      "reason": "No other value or expected result determines y. Both full-module controls in quadfield-systemic-ab.json are source-authenticated.",
+      "site": "Lib.General.NumberTheory.QuadField:99",
+      "status": "confirmed"
+    },
+    {
+      "reason": "The first explicit argument IsHermInvolution.mul_self has type S * S = 1, fixing K = S in U.kron's first premise before the by tactic for its second premise.",
+      "site": "Lib.Weil.Fock.OscillatorPair:72",
+      "status": "typed anchor, source analysis"
+    },
+    {
+      "reason": "principalForms V unfolds on lines 109-110 to levelOf.reduction D.chosen bottom. The subgroup H consumed by levelRep is constrained by this expected type.",
+      "site": "New.Trace.GoodIdempotent:115",
+      "status": "dependent target anchor, source analysis"
+    }
+  ],
+  "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "reachable": 794,
+  "rewrite_first_lexical_with_typed_data": 9,
+  "root": "Main",
+  "single_equality_premise_relations": 72,
+  "source": "CompactGRH/src",
+  "source_records": {
+    "data-definition-calls.json": "f1890be0b91c808b49db977d8885409800e6b567f42e5f074add2379d1f1f1d1",
+    "data_definitions.py": "bac3e5292b5a3616414591fcbe014b6f952002609a1eb39fa80a9e288e4185ce",
+    "equality-single-premise.json": "e2977cce327ea257b552ae61713e9f116053d879e8a91f729304d60a60e61b5e",
+    "review.json": "fef316015d9321afc0d9ea8b78e43cbcb4335ea11d14bbea4e0bcf268d903ca7",
+    "scan.py": "98431d30bdd239fa839b7af463623198dc008f9c55d60f5c8310f6e3036aace3",
+    "triage.py": "b8696f9fabcb345e9e4d9bb1d5acce4e011e7e4b7f9cb9c4bf1c792e77e0b99b",
+    "witness-manifest.json": "72444f8616b7cfa8be495320d0519d27f2da3738a60c15508753fd77e0ab60f1"
+  },
+  "status": "static triage; original AWS per-module pass ledger unavailable. No new compile failure from this screen. Failed-baseline QuadField is independently established by its original source and authenticated 4.35 inputs.",
+  "tree": "5666784d088ba92460d084ddd8ac9ab8ac568a99",
+  "unique_lines": 974
+}

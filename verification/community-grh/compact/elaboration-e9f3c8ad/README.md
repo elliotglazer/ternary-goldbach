@@ -13,8 +13,8 @@ GRH modules before any of the expensive finite Goldbach computations.
 | CongruenceLevel | Identify the principal congruence subgroup while the generator and the integral subring are unknown | The original and repaired definitions were compared in the finite-adèle setting. |
 | ModuliPoint | Build a signed frame for a group action with an unspecified left factor | Using the input point’s frame checks in the complete module. |
 | RightDerivatives | Export a derivative whose simplification referred to a private generated theorem | A public determinant equality supplies the rewrite. The complete module and seven axiom checks pass. |
-| ExtendCharacter | Finish multiplicativity in an exact sequence | The original source leaves a goal after simplification. |
-| CocompactIntegrable | Apply the integral formula to one orbit | The original conversion leaves subgroup arguments undetermined. |
+| ExtendCharacter | Finish multiplicativity in an exact sequence | Rewriting the composite as scalar multiplication checks the complete theorem with reduced imports. |
+| CocompactIntegrable | Apply the integral formula to one orbit | Supplying the subgroups and restricted sum bound checks in the full module. |
 
 The same diagnostic had appeared in two earlier modules, RingActions and
 MackeyFormula. Both repaired modules compiled in full. A scan of all 735
@@ -35,3 +35,17 @@ The full log and receipt remain on EBS. The attached diagnostic record
 identifies the bytes available on the serial console and the digest required
 to authenticate the full receipt. These results cover the source preflight.
 The all-n theorem still needs a successful joint compile and both comparators.
+
+The combined source revision is `d6b1bfd523e2c54b6e4bb72844deeddf8341879a`.
+Five of the seven repaired modules passed complete native builds. The complete
+character-index theorem and the CM congruence-level definition passed focused
+checks. The Linux preflight builds all seven with their original imports.
+
+An independent scan examined exposed definitions across all 794 GRH modules.
+In the controlled QuadField test, the unchanged legacy source passed and the
+converted exposed definition failed. The declaration-level compatibility
+option let the tactic run but exposed a private simp theorem. Removing
+`@[expose]` broke two definitional equalities elsewhere in the module.
+Supplying the mathematical witness preserved both exposure and the original
+proof of its square. The associated controls and search scope are recorded
+here.

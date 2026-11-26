@@ -1,0 +1,21 @@
+{
+  "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "file": "CompactGRH/src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean",
+  "before_sha256": "ce6e194b7d35833e54adaf3a3afb86da90c439cd3eda5271a01d3bc101d100bc",
+  "after_sha256": "4c4e5c0519982eea613b9bed04c89ad524a9266d493936a7a15dda34ae695e1f",
+  "patch_sha256": "041e253d99af058d6f27442053c480f7a152626000c73dd24adcc56fc43c0de1",
+  "focused_check": {
+    "utc": "2026-11-26T02:25:07.119766+00:00",
+    "mode": "compfix",
+    "elapsed": 37.87,
+    "code": 0,
+    "guard": false,
+    "mins": [
+      6.52,
+      8.39,
+      6.18
+    ],
+    "srcsha": "12184588854e30d1944d8eb77446bdd7447452a641f2d2714d06f6581ca21ea9"
+  },
+  "scope": "Native stock Lean 4.35, same complete cokerKerIndex_comp and cokerKerIndex_mul_of_exact declaration plus def over pinned Mathlib. Reduced imports: production lacks local artifacts for its two direct dependencies. The full production module has not been independently checked here."
+}
