@@ -1,0 +1,1007 @@
+{
+  "description": "Actual conditional ternary Goldbach theorem compiled from production sources with a fresh importing axiom check",
+  "source_candidate": "f1b8ac5c426fa118c988146ff7ea6df0d3a8e5c1",
+  "identical_project_closure_on_proof_branch": "dcf825bbde09fa3b4b3e012a38c437d2a2a70b8a",
+  "source_root": "ProfileAssembly",
+  "theorem": "GoldbachFinite.ternary_of_profiles",
+  "conclusion": "TernaryGoldbach.Statement",
+  "explicit_hypotheses": [
+    "RiemannHypothesis",
+    "GRH for primitive Dirichlet characters",
+    "BinaryGoldbachUpTo 564383557524",
+    "Four PriceRows hypotheses for pieces0 through pieces3"
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "verified_project_modules": 231,
+  "reused_project_modules": 221,
+  "compiled_after_repair": [
+    {
+      "module": "LocalLowZeros",
+      "wall_seconds": 40.56,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PrimeInterval",
+      "wall_seconds": 44.06,
+      "log_sha256": "cbb713fccf190860c7db498d8de5f16ff06bb9cdbd42e8d3c0ffd692736b561a"
+    },
+    {
+      "module": "FiniteGaussian",
+      "wall_seconds": 39.56,
+      "log_sha256": "bedb983c99aa456605387c50fb908bc34730246d4eb898e62a303d4e5f330c15"
+    },
+    {
+      "module": "FiniteAtHeight",
+      "wall_seconds": 46.06,
+      "log_sha256": "fa41b26f0a29c959ab1e6ccd6b90125f34a8719beb28257e32b73933d40d58af"
+    },
+    {
+      "module": "LowerCutoff",
+      "wall_seconds": 44.08,
+      "log_sha256": "ebd3a9fd7056de78103cbcc94874de554d9dbd153e1fd80c731234842f1c42ff"
+    },
+    {
+      "module": "LowerAssembly",
+      "wall_seconds": 43.56,
+      "log_sha256": "be752daf96bb407d7160fe393189297c9d643c7e74890c35744bd37d5fefcb95"
+    },
+    {
+      "module": "NumericAssembly",
+      "wall_seconds": 41.55,
+      "log_sha256": "2fd9b201e47521e01d1d553c46ee6c3f4a839d3ca50e4c7b515e58fac15dade4"
+    },
+    {
+      "module": "LargeTail",
+      "wall_seconds": 41.06,
+      "log_sha256": "1077c6057cffe4ae76ac824017bfe00b74f59f29e6ba863a6a3df0cc47790383"
+    },
+    {
+      "module": "MinorOnly",
+      "wall_seconds": 40.06,
+      "log_sha256": "89964d7189d0b84186b96be8a124264b1a866d91edc6a7c5de1caa09c5cb7135"
+    },
+    {
+      "module": "ProfileAssembly",
+      "wall_seconds": 39.06,
+      "log_sha256": "b9291dfe439a9913a9dabc777d67572de4f0a919037688ffd6984d4432753930"
+    }
+  ],
+  "incremental_sum_wall_seconds": 419.61,
+  "fresh_import": {
+    "exit": 0,
+    "wall_seconds": 40.56,
+    "log_sha256": "58037d9b4c8fc7fc2cc9209a06f855aeacfe77615187abfe72540905080763cf",
+    "printed_axioms": [
+      "'GoldbachEnergy.Profile.bounded_minor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'GoldbachFinite.ternary_from_two_e19' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'GoldbachFinite.ternary_of_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "modules": {
+    "LogCertificate": {
+      "source_sha256": "6418bf5b8dad8c184e9254f23a521523d7d5ed3d753a72890dc35e2fd83d9242",
+      "object_sha256": "efe47c28a918adab477af3e898b8bbad5bdb6f7317106176d05cb706cb06b38c"
+    },
+    "TernaryGoldbach.Explicit.MellinRotate": {
+      "source_sha256": "79d905a92983972446db95a2d3d651bbab5004fcc981008fc6e7c63302e28be4",
+      "object_sha256": "596c3aa4861bf25487321f52e089c29aeda39034b4ae3e5ba0e2acf2c4c03a6f"
+    },
+    "TernaryGoldbach.Explicit.GMellin": {
+      "source_sha256": "45f5ad35c1c3426e35968e06a97344944126cb6d3d1b8e55e7b3552913379230",
+      "object_sha256": "8277bf0f2a157f7a84f204212ba4628e5a7956ef7bd4039ae1df1d38b35a6005"
+    },
+    "TernaryGoldbach.Explicit.GammaBounds": {
+      "source_sha256": "520f27cc29656a36f67cc6861406485487650e9a80f58ab74bfd96a9efce0af4",
+      "object_sha256": "78249fea18fa948bfc5ca5b5c5fef19564b29d3907ddc9e93da6d1d22d0c75cf"
+    },
+    "ComplexRate": {
+      "source_sha256": "39f1a970d0b46e0630a04756a29b633d57bdc4e83af292bce0ad37990d45dd83",
+      "object_sha256": "007746a1ee65e12cde5cc1893bf2201ee7a17d85dc43ea9242b94c65cb2a94cc"
+    },
+    "Energy": {
+      "source_sha256": "d4d98716ab6956d329b2696afcb222f42ce70d6912ea33f0e7c1415704364148",
+      "object_sha256": "79ef537cf127025d8c1b7b86a308b2c0181f6398668dfdc71880fc94599213b6"
+    },
+    "Moment": {
+      "source_sha256": "6968225e2761cc40e929e18758f38503fb56e5897275a975a00bf1897bda53ac",
+      "object_sha256": "3987f0be3571abd6e677a54c83ebf61c7b0be90d7140b3021f3c7a1e3296e3de"
+    },
+    "SharpMoment": {
+      "source_sha256": "c70922c5ec5f6c2340ef8d1156b207fd01212e32d753c17a30b7a1d89d91e408",
+      "object_sha256": "c5397f682de041c99df01227260b1c7e432b0282ac9a2744a9aa532c602d87fb"
+    },
+    "GoldbachVersionAliases": {
+      "source_sha256": "d7a744ece63b5f7685059614da908c5be0232a6148c469eba63d9d2ea5f60501",
+      "object_sha256": "643a20ff99811d01832ce087ea5bd1f0bcb91c8769b31ea8b9ea705c1d8c4376"
+    },
+    "TernaryGoldbach.Statement": {
+      "source_sha256": "6af39b249fbf4851ff966d6849d3f47e0fa3289f64debde50d521d2726b5dbba",
+      "object_sha256": "127fd3b5203457dc696c8239241034fe9524ccd00cfba12da408303dd71b2846"
+    },
+    "TernaryGoldbach.CircleMethod": {
+      "source_sha256": "385d854927e6cc6f7ce837d010b002f4b065d054f059ab2feed73b23b2037bf4",
+      "object_sha256": "098a3527af2bee0cbafa3273965c7c79fdbcdbb6a1424c1a4f05b8eed893756b"
+    },
+    "FourierEnergy": {
+      "source_sha256": "4421d76e35567e7a8b439fa4f42fca876f26e510cd3c5898f1e7e715b95702eb",
+      "object_sha256": "2f8d12e6378e7807f2f8e2fe6bfec7faa1d3330dd5d0aec9f78551968f2ad637"
+    },
+    "RegularizedWave": {
+      "source_sha256": "47a761f8b513f254c1e737b9381511d70b6eba9925ceea0a68894cea060c7021",
+      "object_sha256": "d2fd10a7242207aaaf05d41b3ca1cb3014981a33b85a3ed1f6b7967c214127f9"
+    },
+    "CriticalGamma": {
+      "source_sha256": "f801dc501751e9aab64ca08d13ca324013788662acfb9480b225666608b35d64",
+      "object_sha256": "5ffc0d302a37ad15cde3d9c5b23503f1079c065dfbc98617df01f945dbbbdf1d"
+    },
+    "RegularizedMellin": {
+      "source_sha256": "872f8cb52aff229d323a6a957204a79ba51da26f325bf872c22e5a99c4d36d97",
+      "object_sha256": "993ebf99bbb7682c6114a8f0b27397526f5566c281abd671ce8222bd8951031b"
+    },
+    "GoldbachOrderAndLogDeriv": {
+      "source_sha256": "b4553d61d8148dbb673241c5183145da33ec7a5e69b204a84cd15173c87aecbc",
+      "object_sha256": "6e096717453277215d216cf2d26858808c78b5f260a0319edc2aef616b5f2237"
+    },
+    "TernaryGoldbach.Explicit.Landau": {
+      "source_sha256": "4c0f11c37b5e2400ba08f034ebd7843649a60609e1ccea9c78ac904e8f64f607",
+      "object_sha256": "c84880c18105b5075b026d2e9e538d00c1a8b130ce365ca4f739a142df4e50ba"
+    },
+    "TernaryGoldbach.Explicit.RectResidue": {
+      "source_sha256": "74459576a9dac309795a959a5950c76a5503cc4642fe052c678fd869f450fa8c",
+      "object_sha256": "01b27d9abfd0c6df64820d830b5250bf8fd349a18334890afa08044842330412"
+    },
+    "TernaryGoldbach.MinorArcs.Montgomery": {
+      "source_sha256": "1450865f2e96932081298826789597d9701add85e36d8881eb0919596e6db8a1",
+      "object_sha256": "a0b44859ceab9267d490fbed5b4f2df816c0ded312191e79e633533c3413478f"
+    },
+    "TernaryGoldbach.Prelim.GaussInduced": {
+      "source_sha256": "b95d735d189e2315b6ff85f06bbd4c00346f5925e7c312ea990056df48b41e19",
+      "object_sha256": "e8ea72811f4b3bcb106b2272a2b411e3dccc040c7d8c44b3c20a3eb29d132fef"
+    },
+    "TernaryGoldbach.Explicit.LGrowth": {
+      "source_sha256": "7016208fcc2a58c4a2d643703725768ec35d205afcbad383981ec3536601abf8",
+      "object_sha256": "fcba3175ab7c4c61fdc3d698c5dd6f02731679562df9b29380884e3a5067710d"
+    },
+    "TernaryGoldbach.Explicit.LGrowthLeft": {
+      "source_sha256": "a33048b8208bfc1fb1f63ceefbef89645e2f23ad0e26fb92ba0ad1955860fe6a",
+      "object_sha256": "b516f3ec8836ee56005c20f542a801f74e978e805b1476cedfb7210190494d2f"
+    },
+    "TernaryGoldbach.Explicit.ZeroCount": {
+      "source_sha256": "ba12f7378a6b0a2e0d482e55e930fbf1cb7f95539bd113091b6d32eeacfba89a",
+      "object_sha256": "38e9c122b3dfb83aaebf29674fb4c857c2663a467b2b47f93dd91f82cfae13d3"
+    },
+    "TernaryGoldbach.Explicit.LogDerivL": {
+      "source_sha256": "98e74fe6faccc20972a0e3003c0ae86e511f4bd09ffadcb522fe7f2590838b1c",
+      "object_sha256": "e2b57000ea8a9588045bc88737099cd08a3276a2c457535918e90351ac3ff8f0"
+    },
+    "TernaryGoldbach.Explicit.ExplicitFormula": {
+      "source_sha256": "ed59d2148ed6114c09b4199a012f0ad8cf1f9b0636f3a662080a366a9bbeca00",
+      "object_sha256": "00974a33c1ca76bdc556193f8bd7b9616ee9a221bef0fc0567bf2d57e89913e8"
+    },
+    "AdmissibleWave": {
+      "source_sha256": "cd248847787b39f741d6f472abe0e13da2c5b0826d94a57b8a2eb8f67e5280ae",
+      "object_sha256": "8e962d5ef110efc2de6e38fb02d80259e94b522f136967ca988a377f1bc37464"
+    },
+    "CharacterFormula": {
+      "source_sha256": "384e4ca6cf47eb72e8dc05cd71b9a7d256c53ad5166859b1f7a41d0367888d31",
+      "object_sha256": "7d1aacca87b83b120e4a6d50db796412adf1da527d5447268ad247f5601d8eb5"
+    },
+    "TernaryGoldbach.Explicit.LGrowthPoly": {
+      "source_sha256": "3e16f422b4fb22be0c270cd25848fd3bcd141c8fdd6bac1079839a91dd05ef51",
+      "object_sha256": "850f9006d74bc68cc461561659cec4d109be091910bce473b038330fb6ef9add"
+    },
+    "TernaryGoldbach.Explicit.ZeroSums": {
+      "source_sha256": "9891e165733d975393974b80add8bc8a6ddc777554cc7d9bef97223d030d47a7",
+      "object_sha256": "5785de195fc52a0e0d6f506d583f18431d3dfa2699e586d8a158d5ec7a8eeab6"
+    },
+    "ZeroWindow": {
+      "source_sha256": "1854095cc06c07847600b50555924a3de8b676905931ea0dfed5074832e8227a",
+      "object_sha256": "3257598c1e105fff9d8c50422d45555057ecd84756cad33126f427411cfb2c5c"
+    },
+    "TernaryGoldbach.Prelim.PlancherelReal": {
+      "source_sha256": "ef01cc1dcb0de8879e891246b2bce312942777a709f8167e90dac2623358bf97",
+      "object_sha256": "d2a4b5c05fee7e901df5d38e2c147582defe5d5292ad96459ec626a11d859d5c"
+    },
+    "TernaryGoldbach.Explicit.MellinPlancherel": {
+      "source_sha256": "d53112599fb92e12336cc1e4d29c413e2c2ac5237ec943b138facb7121577d3d",
+      "object_sha256": "fdcbfdd230a1493d9d631da93c98f2b01d3f37faf1950620f2c7983a8df199b2"
+    },
+    "TernaryGoldbach.Explicit.LineZeros": {
+      "source_sha256": "db2ff0a0dc24dc8700490ad4f592a6ed3caccb04584765cb0749c12a1ddea1e5",
+      "object_sha256": "707c21af60a9f9cf7f7af4f7adf309c009a2edf7d608478ffead69a8d3253a4c"
+    },
+    "TernaryGoldbach.Explicit.ZeroSumBound": {
+      "source_sha256": "747647c38f7c7daaf13a8e5c8a301ce301324bb5a8e9880e32986d7ccc0dd690",
+      "object_sha256": "cdec4fbc0867e6901b292b47bca8c93b5e754ce8973dcea3061ad2b45d6e874e"
+    },
+    "ZeroRay": {
+      "source_sha256": "4ce4c9faf676b4a531848430a2b9db21b7aa02b8e7646e1a9d096ef8b68ea491",
+      "object_sha256": "7700fb8b150bb63dde168dc588e629cb45cdd50fb6ddab54b072fb2cda520343"
+    },
+    "TrivialZero": {
+      "source_sha256": "6bc0eb55413ac3a8cca734a8da7f491c104d04be73fd80482a3aa2a2779b9d06",
+      "object_sha256": "9d3d4e44ac98c2146d640bd76a39a6769e055ccc36984b1a02bcfa168e6579f5"
+    },
+    "LeftWeight": {
+      "source_sha256": "9f9ee568e58a50e60e23389b3afe9be4bd85f6b4c91e435cc04f4c0e370d615e",
+      "object_sha256": "7a9f44a9e1e1174a6374f46694108424d9c5a740e1c95ae893e7a843271dfddb"
+    },
+    "LongRay": {
+      "source_sha256": "0a093efc6305b388049a2009c5d8c3308ea402e4e0d60fdd661acba7e75823d0",
+      "object_sha256": "fca8a6a1d41ec7546391657d6fe4701f802e6c5236c3f7b2052a6346b0495656"
+    },
+    "TernaryGoldbach.Explicit.ExplicitBound": {
+      "source_sha256": "47a8e2e402c5113856915e5564a27c96bcbe777418cc272bf8b18aaf81dad995",
+      "object_sha256": "25b4c2373d037d0ed785003bed48025349e295db4eb8ef6d6b468772c7aefa3b"
+    },
+    "TailHeight": {
+      "source_sha256": "c5cdc6b6781a93c75375f1c3fe45ae7ba6b3b702766bbf0a825fa0e264b3bc80",
+      "object_sha256": "c558029b93646069c4de052aba46b146f8b366283c9e8202538d538863383c1e"
+    },
+    "TailProduct": {
+      "source_sha256": "19a7ddd12d7af275a86296a5de79a799878d05320f27f9b2a3049bda448da1f6",
+      "object_sha256": "e3290ba959b62f203d03f6e0191fe0cfd18920f934c512e46726f020f6c9b405"
+    },
+    "CentralZeros": {
+      "source_sha256": "fbb5d662343a0ba197c02e3488ddb665f9d4168438d187abfc9061673bde1aab",
+      "object_sha256": "42e4e94a7de875671ffaaf2924a93dc217bb3896b112a8918dcc773916a102c1"
+    },
+    "ZeroGrid": {
+      "source_sha256": "6ee5013e8dbd4681365bcd8a05e18adc2655f45641f2d14ea0b23105789744e8",
+      "object_sha256": "5d4ff7d52de78b537939452f3053b24ca509e5992d350cbf0b82f83ed5d51fab"
+    },
+    "GammaBudget": {
+      "source_sha256": "2b8a99d47cbd51d784b670f71471d4131695004daa09210105d1a259d70c0357",
+      "object_sha256": "39854cbae2d65ac91b2155558072c39bc47ca13ec8f1e489978573a5ecccf8fe"
+    },
+    "TailGamma": {
+      "source_sha256": "4fbc286c4123f29037d8948cb368c9701a673686cdc784826e0f78a241a4266d",
+      "object_sha256": "0b26394c2bf931cb380d971b412b1dfa7b77e085e3699427fb5262427cbc6e6c"
+    },
+    "TailScale": {
+      "source_sha256": "0dc93806551bdb1756118a193b4843fdddfdd09594369845191238ee8ce1222d",
+      "object_sha256": "4d3684205612fe4d641c74af1096906b61886a35ae424b37e5e4b821402f9722"
+    },
+    "ResidueBudget": {
+      "source_sha256": "8c11c3e67a8f6c73b41f09430e93a512050328eea60f639ce04894cd81fcd5c7",
+      "object_sha256": "fdf41279571cb062bb6fdd08a4b1c7088d864a65405141d4849c1c4ea098fd09"
+    },
+    "TernaryGoldbach.Explicit.Datum": {
+      "source_sha256": "fbd3030ae1a68d61b36d06113393052cd2f1cc5fb91d324fed6ea9cab0b04438",
+      "object_sha256": "a27cb51150e69a7808156f74824f36902d28771e307efca2dc08adc6970a92a2"
+    },
+    "TernaryGoldbach.Explicit.ZetaGrowth": {
+      "source_sha256": "157a61b7a27ad223466d0624d5b6f92b1966d48bbf8e0536241980e66f6faeb6",
+      "object_sha256": "7fe2a0716fd7f4b1fd0d02f9918756d2fe9c284a54fbbe1a0ca28975b779f277"
+    },
+    "TernaryGoldbach.Explicit.ZetaDatum": {
+      "source_sha256": "274e5f70f6d3495ebad17af3226068098d910c90c120b36097f73de2803dc8ab",
+      "object_sha256": "0e7ae500a6ee9a0a90d272b155cca1d7fa2f7e8bc7243c233dcf5586cf20cc67"
+    },
+    "TernaryGoldbach.Explicit.ZetaExplicit": {
+      "source_sha256": "ed12bfcd500935d384e6823ccd43f5b871840d478c80ec5092d59a8b2b8e0751",
+      "object_sha256": "18da76954f8b554d279d0a646d0f97e643ac7eb1973e65c26d7fa9b729fa52cf"
+    },
+    "TernaryGoldbach.Explicit.ZeroSumGen": {
+      "source_sha256": "5a7f013aad04157f70a6f9a92592efe12c394c3ba5d948a2525bb87dc8bcc0da",
+      "object_sha256": "87b2e1fd0e23afbb7456006d0d4c96c104dac03fd67b91f2d774e298ab5246c1"
+    },
+    "TernaryGoldbach.Explicit.ZetaPoly": {
+      "source_sha256": "a75caa54b39c268a48fa29b2f6a6628edfe9abd3555ee773bd5b86c3db6c1cfb",
+      "object_sha256": "7d0852954ec05f8b1e773b5f9fb9c7769865b4893edd5982a7eaeb63f9d6f521"
+    },
+    "TernaryGoldbach.Explicit.ZetaBound": {
+      "source_sha256": "3637960dfbf5e35bc45d30f7331055959584c2a059fb8f8fc5b810e263ca1730",
+      "object_sha256": "fae2630ca646eac795cc330ac321daa6c8f2c79544e3b68a52ced78b008b05c9"
+    },
+    "TernaryGoldbach.Explicit.ExplicitBoundGen": {
+      "source_sha256": "6268ced48f2226a5162fdd394db1050540e34c3e7ee4399928c9ce6a3ba38148",
+      "object_sha256": "1c91415f5a046c95e35733e4d834cc3fe8c2eab169eb01fc65a8faaed628c9b6"
+    },
+    "LeftIntegral": {
+      "source_sha256": "4d0ac1b8f6791604d5c87108a5315d3c1c70da9b3844aed4e08447300bc31d4b",
+      "object_sha256": "7b1aedde4ed0adbac1cb5a96b1f4d324bdfb8a4378c6e03ba37c49631f67e575"
+    },
+    "TernaryGoldbach.MinorArcs.Bombieri": {
+      "source_sha256": "c36a9a7d39acde2414ee8c54197ad16203efd21af9898a5eb12b896016237756",
+      "object_sha256": "4e2a306a7d206f19e1ac04ebfbc7630ea2cd0f3bf750973f00c754d7dd6e7202"
+    },
+    "SingularBase": {
+      "source_sha256": "f73a9e6a96eeb52ad7502961f273e0f0c161981f941397548053a5a76d4d234d",
+      "object_sha256": "e46d34b9bd7a2f5934d9c10ff03deab2803187549abaa7a6d0db7a8a2feb2754"
+    },
+    "SingularWindow": {
+      "source_sha256": "a408db7abd059a5a3925ef5945c8d6dabf3a041c16aff5ae7867b180f3ee5fd4",
+      "object_sha256": "d1b5a7bed3b6d5ee9b349b3e50bdca871430191dc0e0a0d83927f65146a34797"
+    },
+    "Ramanujan": {
+      "source_sha256": "f398d8f4dabfac055344f4c2dd2fd5474121b1a4f4043f454c0e52c484d43e13",
+      "object_sha256": "01ab049cc132644b1b66c63911f51fd5e2ca4d6284066ed953f299ca1e077605"
+    },
+    "MinorIntegral": {
+      "source_sha256": "0ff36eb189ddc8e75f67a805dd1b65e724e6b1ef53c4a2d449970653710aaefe",
+      "object_sha256": "bd13003131b5ed651cdc965f87c95bb96b66e59425c3f9a4b493aecb56bd5260"
+    },
+    "TernaryGoldbach.Helfgott.Defs": {
+      "source_sha256": "25b5a5e868b9ffbac115ee61d4e8397b6dc1ae71d067a7623e8898120e87b93b",
+      "object_sha256": "7c68bfb047799051d5269c31843788aaf9c3dbc4c8de6b24b2725d4f39e9a0bc"
+    },
+    "TernaryGoldbach.Helfgott.Numerics": {
+      "source_sha256": "e1b3207e6808989ca57d48d8de5a4af0ecbabb0ff39ebb50ed561df87e7455b6",
+      "object_sha256": "9ba953322f229d1fcb1ed5cb5a48931dd224bed180f667138f7193bb68b96628"
+    },
+    "TernaryGoldbach.Helfgott.NonPrime": {
+      "source_sha256": "628e0114d615e9d7d1e9a110f21e471501b4335bca0e2d4628a9b9dde674bb4f",
+      "object_sha256": "77b637ce24f9229c0ec0b2e909111b53ff22942b6f3fd8f82b21e12b9cc966af"
+    },
+    "Arith": {
+      "source_sha256": "f82559f37567eba9f5b44296572480e0affb968d4e19785d7dd111315e0f27d7",
+      "object_sha256": "1a0440fff51c6bf0273b1fdc83914c5857a3591a37a663d9342bb46cd9bad3ed"
+    },
+    "Coefficient": {
+      "source_sha256": "d634be307adddc89cc4d35b155670dd27d9f368b7a0564fc5536b07cad90c97c",
+      "object_sha256": "0acbf979f29799efd2483338cfad2594eb814ecd42799621a4958f4f570ee1e3"
+    },
+    "Totient": {
+      "source_sha256": "b51a57488fb3c3a65f66c6944509104b4e4de08eed3c72de9890b645b455bce7",
+      "object_sha256": "f090bd301a9e5c9846aabe965f884fa9a9f5373d0edcd213eb85b6a8dc3951da"
+    },
+    "TotientGrid": {
+      "source_sha256": "fd68fb71a4f21a7e673e9d6c49c02f0f77c486913255116e75e61d0fa676376a",
+      "object_sha256": "186425946acb1943daca3a0c8b7c75cc024256a4e038e740880b0232f2f2195d"
+    },
+    "BudgetCore": {
+      "source_sha256": "9b95eed6df95a0abcf8788757cdbcf47ba839dfbb41cb8e92235dc5467b0f101",
+      "object_sha256": "0dba1cdddd87c55aff45e177b6a2e366bec01f2f4185a1fe13dd79c02f6e06e5"
+    },
+    "Budget": {
+      "source_sha256": "ff396d25f950da38935fbae00d57f587acfe86443e827bbbfac3028bee973c9d",
+      "object_sha256": "3b8715d933a41f63ae2d6d87813d8a7d820526ec1735d2ae96818c45e7a1dc70"
+    },
+    "MajorBudget": {
+      "source_sha256": "494d3be4655fa1fa6801a6d1d2d103bdad8401ba005b106dc41d33487e353c5c",
+      "object_sha256": "985993347d904484e225b74e33fad9f2ffe04898e773be021a1b22f226ff91ae"
+    },
+    "PrincipalWave": {
+      "source_sha256": "bde29d4c3c6c892b3167c768559aff580cbbddd3f03a6b26c71aa31e46a6249b",
+      "object_sha256": "5e91957ab155ca958d33bd4c1762a17b256101c4edd2a160e4b79de63f9f7dad"
+    },
+    "CharacterComparison": {
+      "source_sha256": "4889da866af5267e3e0cb038dcc2f9117b73473a6f410b83fbba46cc6b6aafbe",
+      "object_sha256": "8f06ff8a3650da69b3ea214fb44f2ba152caba090927dcc4bd9839b64e8a4826"
+    },
+    "TwistedWeights": {
+      "source_sha256": "673ef25518bf03cd4e1f92b14e86e1e5cffda154b4d7934e82e7d52680ecd92b",
+      "object_sha256": "0b69114b67481e2a97213eb7c32fdf4ab5aaabad76594756c7551cbbcca250b7"
+    },
+    "PrincipalFormula": {
+      "source_sha256": "647f83523ece3368766bf66f562e2b7686af98895cec74895634ae8e35fd40f6",
+      "object_sha256": "72a88f279f78de771c9a586d6c6d2f09d0d17e61523eea5cab26f4dbf39daec6"
+    },
+    "ZetaCount": {
+      "source_sha256": "712839ade996e61b4840128d587d937a5a7f413ebfa50e3377c9cff117c9771f",
+      "object_sha256": "23e68d77b69348588a705ac812e16f0c49241d1f3f9f7666c031b2f310e6afdf"
+    },
+    "CharacterError": {
+      "source_sha256": "c576d671b67a212aabdcfe2a5e326736c395c6ae0926631cb2a1c3beb85f4da1",
+      "object_sha256": "7eac89c32d87f1fa385efcc8f7de55b6fd8e252555181dc8d6cfaa9b32eebbab"
+    },
+    "BadPrimes": {
+      "source_sha256": "7a2f929690675a696671d21baf1cf9c34d09415be72c3bbe6811b97a19ae6572",
+      "object_sha256": "6e6f244249d4e4b433d412dfffd347f5be0bdd9d23fe2dde80595836d862c615"
+    },
+    "FullWaveComparison": {
+      "source_sha256": "813ed7eb6759092fc0abd072ae67a7dbd1b87b41289e5121418546d235efcd96",
+      "object_sha256": "3177097854716502b7fb15b78b3d5ca509c84bbe3fa323835bd8c4ad4cc25b84"
+    },
+    "RationalError": {
+      "source_sha256": "3fb8391abc18a5a780e359dc654e363b8efa1d06e0444351625e0576ea91a1fd",
+      "object_sha256": "b7193873eb7fd0332d6695f645cf3a364a8f17e1bb077c216efab699edd01c95"
+    },
+    "RationalCoordinates": {
+      "source_sha256": "5c65a95572f8d31c1c4d35d2e35bb92a411f481046cf44b7e65da206a9868db4",
+      "object_sha256": "cc06666b2f7a0395e879b9e818fbe3b2a83c2f126cc4eaf2b4383409fd65fe04"
+    },
+    "TailCharacter": {
+      "source_sha256": "562ae5d7aff74370a2f30667b756a267238b78f3155b116890061f9f72f61b08",
+      "object_sha256": "720e0e5558d72ff23dddac7dcb973ab5e6de38e86d85627f6ccbe72bd738d335"
+    },
+    "LowerRatio": {
+      "source_sha256": "fd0c882b8cccde538dce4b4ca25e07f52e21edc80cda1185ca88ac75909993c8",
+      "object_sha256": "e6f0fd4933c9217d5a5eb38a4d24847dee4f6368cb7767f67e9c9422a9c29c10"
+    },
+    "FiniteBridge": {
+      "source_sha256": "65b6998d1c48bce26e18e628754429b0970a9864034f0df4ea5e7ff0770a0ab7",
+      "object_sha256": "f74f8a13b5f1db9493d0376e775a940e8b92876464917a442a2f968c2573497c"
+    },
+    "Route": {
+      "source_sha256": "40572ab05dd319829f513db86f91c2d923ffbe59f5b8701975154b044e4f0552",
+      "object_sha256": "96ec2ae2752b18b4653db66b1a41dfa29e090a093e3a85cf607959f74de12147"
+    },
+    "RationalArcs": {
+      "source_sha256": "4960e92f0b16849a7461a31f7ca4b14492c874b043133f4428b311f2a62af8d6",
+      "object_sha256": "5b0053be42a61d2e7b627fbe53b710a7220dcc397acfed677b539d21979697b4"
+    },
+    "ArcSeparation": {
+      "source_sha256": "285cb860b4a5696b9d26403f9a443d102bfd2abf3237a3abddcae4d7e9daea0e",
+      "object_sha256": "c01c41184b76a47c69d85628c1fd9a32eb86fc2bd3e91c77cd8ef1c5c9b88c94"
+    },
+    "MinorNumerics": {
+      "source_sha256": "a7446df1cd6f5b31d77309914539413688961761c83051acfb3fb222dd89c9a7",
+      "object_sha256": "2b77e2fb1cdc1e2711f2d3e669dcbcca8ff5fa01a84a3f686b4d5e8502c29afc"
+    },
+    "TailBudget": {
+      "source_sha256": "569ca5649958a63aaa907bf4b8ed31978cf0df5d8facc4ea86f03aae12691fdd",
+      "object_sha256": "6bbda844e277733fdc3f93a00e6c08378dbd3de9c89aa594607f06ddac6bdd72"
+    },
+    "ProfileEnvelope": {
+      "source_sha256": "c5d96ee1ea01c948ea2340b835be484316cbfa6d692136dfd2b68986b1bd17a8",
+      "object_sha256": "34e5b7632415de77de8a3c6b5f6327d979cd046ccc4916847f7d3b668c2ec1a7"
+    },
+    "ProfileMultiplier": {
+      "source_sha256": "9583df718d230b4b8a0cbb5ba5cedf435ca3e7e6c39d171e604837ba2d8aab80",
+      "object_sha256": "77752966389ae3205eb0ed2c8f347e2e4a43bd17e065cb86c343e12d0f80c325"
+    },
+    "ProfileRemainder": {
+      "source_sha256": "672ee569744d982b9119bdfad21d27dbb7912333a91d21483d8154184fbeadb9",
+      "object_sha256": "2fa2441da79892842e2cb7e88a6101d6d9264d9508fbb145851ffab20c83578d"
+    },
+    "TotientSquare": {
+      "source_sha256": "f4dd4a33de2db54541dd2f980a67b64ceb0b705a60fb6456277c6c0103f9c2df",
+      "object_sha256": "eccfcaa2bce557413844b42c5c47789297169fb432d50df71093dbdb4a2b0037"
+    },
+    "RectPrincipal": {
+      "source_sha256": "7720e09856405df7e655784544a59f25b854642b4ccf0e5aa6f9324c1b80de50",
+      "object_sha256": "bc3f33e24ef70d87a32f8a15d6bb4329da144ec1ce70affe49803e85bcaca3bc"
+    },
+    "ProfileTail": {
+      "source_sha256": "282e96c3be984aefa344ec642d797c98299fe0cfef5346021f756ea8ebab3814",
+      "object_sha256": "b8e1a6677861dea0048a8ee8cade9d74edde971405805a49776b7de8d872a371"
+    },
+    "ProfileGeometry": {
+      "source_sha256": "7fc4856240527b1d653d75d479f291918b43a8158abd7bea573673a6f0fd5c3d",
+      "object_sha256": "f49cc2b6623f6deb2218c1a17f70914340f9b61fbcf9cf7ca699e21baad326c8"
+    },
+    "ExpSteps": {
+      "source_sha256": "5015fad37eb9469c63f5a4a1f09405363caf60de04d1c19e5cdf319d8ec144e5",
+      "object_sha256": "e0c8a2425328d676bac7293b69547da6dc5be6ad0d30d233f5c09a5690039d00"
+    },
+    "RoundArithmetic": {
+      "source_sha256": "786409cd3eeb8ebdc3b6a1b5a61819c6097a76068de1feb8822faab1cdc4f8f9",
+      "object_sha256": "c9e9e84943d75672c9108f261410090997f1a4e239627287bf91720f8a5a51b2"
+    },
+    "PreciseExp": {
+      "source_sha256": "f70d154f1ca78ab758583d3b123c3c13c719c79ea32c07dbc64f24be78e42143",
+      "object_sha256": "6429369331be6e2ef750a6ea2453e8ea80fb1ac4bbfcdbc49179ab86a60398fc"
+    },
+    "AtanCertificate": {
+      "source_sha256": "32a6da54e43772501c9982dfcb6a074be72535d106b0fe2024013ee291774c31",
+      "object_sha256": "167d5105f716843aa49dd92c7305239b7ff24775794fa002099ea6037d5b13dd"
+    },
+    "BoxFunctions": {
+      "source_sha256": "93d9636358b3129410991ed860125ad2cb057444a8287bdabcb3b820582c0b12",
+      "object_sha256": "65fb4ec178edbef164e89f93ec816a8a2e1ae55b639b9575f86b6a31ecc82b3c"
+    },
+    "ExpCheck": {
+      "source_sha256": "7c4d8952b456e2681681c8b975d90650588466c4ae92afa9d99ea6a94cbbf747",
+      "object_sha256": "9ce96bb2434922eacdb3e15115c72b5f018f94d976e95722c5815c53bea15dd6"
+    },
+    "AtanCheck": {
+      "source_sha256": "0d3986cade94d86ff0f2d6b9170b7ab8fa48eae8b2d15d0d51c752640ad654ef",
+      "object_sha256": "bad60c1c0cf474ba6a3c301e9f0538abb4224595b290294306566f7794723629"
+    },
+    "RealBoxEval": {
+      "source_sha256": "abd306df31a77e12893ff5e46154e78fd1aa01f653a4894fc01d13d56d888db8",
+      "object_sha256": "4886b33022245ce161a6695ca2030ea665c939fcc66f627e0fbc9680f1c789fa"
+    },
+    "ScalarProgram": {
+      "source_sha256": "40b14e9935e0c323e352c9163bc4158b8e94f4a677f34212ce478ed2e54d0633",
+      "object_sha256": "e09c22621c4fbc2be0879d05ddc9b05a15b90f16e0548928bf0759edd25a53c4"
+    },
+    "ScalarTemplate": {
+      "source_sha256": "5c7d12d8e4c63a18e06ac22149c7063d06665262095c56b7395c030ffacf7023",
+      "object_sha256": "9ac0b7ad75f701aee823e10cce3db615316eccba640a176d31df2cb3bd35cd42"
+    },
+    "CalcLanguage": {
+      "source_sha256": "b353d451bad83a83d423786fd1987fdb4d0cc0cecadb5e07685d5acb5a24657e",
+      "object_sha256": "efe91b7c8e6484c87117bc4692bb13c41f2ba4ac4d0e33a9533bc3a3f6857826"
+    },
+    "CellEnvelope": {
+      "source_sha256": "721c5b7d27b4a5ed02a781b89d806fe42564676bb580209c99c16fe69747d2c5",
+      "object_sha256": "a59e795dd0bc99ee85ca574348edf2d00b6337753deac12c390a93aae6916aa2"
+    },
+    "CellSeries": {
+      "source_sha256": "7fe8dd7934f1e47ac7a7b7031de2112c040a51dc6f2956fd556aaa0118fa969e",
+      "object_sha256": "b1083827b23919a7c9702236ae39dd86f5a8f4bd6f3c8f88b1e37e13d00e8678"
+    },
+    "BoxRay": {
+      "source_sha256": "9f25fe5fdcb550e9068926af7c8eea919fd3587c5920f3cb09ef77a5380cc1f5",
+      "object_sha256": "fe8fd62416e336628995829129e7fe1fa2d1229004b2bee92ec0d25f86786b77"
+    },
+    "BoxTiling": {
+      "source_sha256": "4ec51367e0d39738def13af5ea753c464eb8f6bcecf4f3a32bb42955cc794c7d",
+      "object_sha256": "afe7f1c8fba62821bb3fc5652559de3c06a0d6bb738c8ed25eb36803f672a65b"
+    },
+    "RectGamma": {
+      "source_sha256": "4170942674ec78731f60382655b2aae107b9cde4b4ab96c28d64748f9a70b738",
+      "object_sha256": "49ef019573d9faa12843b0031edc1a4452d800c7d1b0927d1bab1c167c9521f0"
+    },
+    "BoxGeometry": {
+      "source_sha256": "8de2de4cae51b62b5e8990874ab517f47375853e0d27c55269f33c2602751a6a",
+      "object_sha256": "2d3ff073287606f1e000cdfdbab651bc4d46145c5bc95fcb5e81018c1c2e1112"
+    },
+    "RectProfile": {
+      "source_sha256": "dfa4460c6b79c830f8279a088bf8d91d11df09039de9a09dea849f28232a078a",
+      "object_sha256": "8d8219c0ead51d4e099078aba5290bb3a6e266b8c2a7725bb4e7fb8cf29c0e28"
+    },
+    "MeshCosh": {
+      "source_sha256": "ee89a807cf938a24869dfacba14614ed77325294c5850a4aa3dcd2a1e5f423f3",
+      "object_sha256": "42564d4e814fdaff20088d942855edca0d8bd40bc26f071b42293aa597f8fe59"
+    },
+    "CellFormula": {
+      "source_sha256": "3ecde82c20680c22480145cbf4ffdd60bc1b31898dc3c6767bdedf06c3c7055f",
+      "object_sha256": "9b224df2111fb7f944d285fe63130eba75ba770a888e246775184254143e532c"
+    },
+    "FormulaMesh": {
+      "source_sha256": "850cf7e2e710eb983506938763f832ca1166bbfa17453fe81e34a195ac1a5301",
+      "object_sha256": "3f8b8343822ad8ebe1c22250748af6b01311646b0bb6c51965a15185fa8fd1ec"
+    },
+    "FormulaGamma": {
+      "source_sha256": "94dc8ee433dc902d2c7f866c5351ebaf447c1a6b02236cdd286d62e40b770584",
+      "object_sha256": "5871054fc91389b76b550d78d408b15add0b66dd26ecab1c62d8589d6c499fa5"
+    },
+    "FormulaProfile": {
+      "source_sha256": "b5252f7805e072c609338762f21dfe8f5c33ba394fcb83c92c3f013a8b6de1af",
+      "object_sha256": "35b7352e2d219f142f534329301b71ff6514d4e5c87f96a3663aeb2f4b3e9096"
+    },
+    "ProfileFormula": {
+      "source_sha256": "e1751e6fa0eeec93375f4623851de0a83c1900968c0c3cd94ea00f5922d4c6b6",
+      "object_sha256": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+    },
+    "ProfilePositive": {
+      "source_sha256": "824899c1ffad2b017a5bc26283efe6d957aa6073a0a96bb275013aff3af6c474",
+      "object_sha256": "0a5fc73f894e1aaa6cdeff25a2da186944ca01c93ecb34ee452728eadefd48f0"
+    },
+    "ProfileTransfer": {
+      "source_sha256": "c59fd052d4ee3a6c2ae5d8591cec317a9293a4aa7eff03f2d6c4e4309ced7f7a",
+      "object_sha256": "4242ec81ac039d6bbc497089bc0d4b93283bbc12846ee823d650eb370de69277"
+    },
+    "ProfileLargeTwist": {
+      "source_sha256": "d415ac811d8c88de29ee246eeb568a5d3aeb7a558ba353d7da43eb6fb5e4865d",
+      "object_sha256": "b9bcd45b22974c049cf2f02edd0170aa4345b22032aeb00fd8d3b4d16c651ed2"
+    },
+    "ProfilePartition": {
+      "source_sha256": "ca2482a6482cf97c42ea6c0ab64cf208929c4f4556446213f62c8b3ada611dd4",
+      "object_sha256": "372d343b56086bf743638992d0b2b5114877c931510675f323dd9b9c5a2ef82b"
+    },
+    "ProfilePieces": {
+      "source_sha256": "bbe0a492d09f9c57961a2af2aa1b27b5eb153b252a5def1a7d1e835ff87335f2",
+      "object_sha256": "065506355c14fe7be1bffc316fcc218cd8636a57bed9bd3ba50216be2b6b6a9a"
+    },
+    "ProfileNumbers": {
+      "source_sha256": "8c5caabb6630baabd838513d1efd9e7f10a1abb038a99196f0bf5b0025cb512b",
+      "object_sha256": "227ee3028d4fcbd1a1ecf7b930c111ebbb6d61e7b9ea8ffa679f2228652afaa2"
+    },
+    "ArcCenters": {
+      "source_sha256": "0eeecf6c4c19308c1c601875f1cc099c51fe3f930ec66f5b1234137e98c73d45",
+      "object_sha256": "c48fd0608e8248b5ababd18c4f0fe075b0c65e57661bcccd9cb53f0eaa1010b0"
+    },
+    "LaplaceCube": {
+      "source_sha256": "db4fd5fc90d4c49a5e33f8c7854d8ab4b1ffead1d4ec94e015861cfc4e52a755",
+      "object_sha256": "b33aa5a258eb97aafe111b59919d43df972fbdd24fb25c7144a8b5babe4910bc"
+    },
+    "PrincipalTransform": {
+      "source_sha256": "9354223db6c604f9adbd15bff3296a4043200938574f873bfb8544d9b78e2d8e",
+      "object_sha256": "a4438f985ebfd9eb2363a1ccda54cddac920a1293fd5c2fb1c03f3bbfa2b648d"
+    },
+    "PrincipalTail": {
+      "source_sha256": "1d44ea1b977bb1ada8c6279f22b85cb81cec95521468e9fc1bc3de3fe86bc275",
+      "object_sha256": "97550a128c1c7664e900d868d8065f4f0ee5d01b0cd5afba4b2ebd245685c74d"
+    },
+    "PrincipalMajor": {
+      "source_sha256": "2723aec44d7a81dfa36ce44704d17ad65d8a5dad6c36147893cd87ffdeb8b16e",
+      "object_sha256": "7a1cc70ea6be389d2eb074a16a75ddd4f86bfcb45628648bfee082002a981ea7"
+    },
+    "RouteOnArcs": {
+      "source_sha256": "42eaff27d9a69d53de9243f63b4133acace8de0f030dadbc6ab29823fa68d773",
+      "object_sha256": "33db92769ca63e6868aca90c4066ebf544f2ab2cc73c1651c1b2b209bf823c6a"
+    },
+    "ModelRoute": {
+      "source_sha256": "cc5d8cf7e71ed2446135133755035bbda56ab41f04a75188ca440da678e3dd1f",
+      "object_sha256": "08968cc334e96a944bef62513b0a45e3b8f89990194fb7b5b1a94a466f6e1c88"
+    },
+    "MajorEnergy": {
+      "source_sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "object_sha256": "41a61bfa0b7de6c471b4a7eac0fa35c368bbaea256bc75451b91d677ada4ac3a"
+    },
+    "ArcMeasure": {
+      "source_sha256": "93ce64d06cbf4b4432e52ab1f5ec09d2881175fda57063b56da85aa45f149cec",
+      "object_sha256": "4cca2b3dccddad88465ccaa1048c8acb33ebc591cb1f12b511e55da04c127293"
+    },
+    "ArcUnion": {
+      "source_sha256": "cb5d9f6ef7a21f0bb233e1283f7e61a8416b0ae64048e6f99dfa034d213a7485",
+      "object_sha256": "1178daa3a9fe2b1a3297f372e581b861a2e8faf0befea530195a3c44f58c754b"
+    },
+    "ArcDisjoint": {
+      "source_sha256": "2670a0ec66c6416deca6cc64376f137c41558ae0437e4101655c54634397ad70",
+      "object_sha256": "dcdfa0d3ba7a62659571280f547e69a56ce0e83ce1791dac40da43b4227b82d6"
+    },
+    "ArcTranslation": {
+      "source_sha256": "0108e69c4567175fd43fc97d07dbce60c9c82b69b15d15833b9c16e2cda4d4cf",
+      "object_sha256": "da9cf044bd39485c440b763dfaab812d6bfac0fc5d2af2ce86ee7f1b37fea58e"
+    },
+    "PatchedModel": {
+      "source_sha256": "e693ef2a21e440794bbca8a2ac8be0cb384827efb499f8ec7e5f459709521eab",
+      "object_sha256": "f9b8423b8854aa4590a19eef4d7310b05340cb0109893ed331e4c2bbca7bd0c8"
+    },
+    "AtomIntegral": {
+      "source_sha256": "2c87d91d11865c49f7d402bbbab70b814a5c75a255b217ceece2cafe206421e7",
+      "object_sha256": "07d07871ed5e80adf09a6df0f5549c0040de8840a36033280d1ec3fe845febd4"
+    },
+    "MajorComparison": {
+      "source_sha256": "548680aea674ba6478b057f68b5c9c3d6940cc4c90833f1fc3ba30b555fc4c89",
+      "object_sha256": "da63da64ec1bc86343c1b1ff905c753bde02c15d554c524fda9e39cc3eb86c5d"
+    },
+    "MajorIdentity": {
+      "source_sha256": "4cf4a99485d055ffafb0ab690925643e018552b7ebe9efc9920092384100802c",
+      "object_sha256": "154600e6b4aa8ace1d1a27fafb73483389e7aa8965ce4fab6afab253cfa253d9"
+    },
+    "MajorNumerics": {
+      "source_sha256": "be5cd8ae4c08e34b7019be0fc34c65aca5326e5e5a558ad3cbdaa79b9a4c40eb",
+      "object_sha256": "05011a6eca9b85c2f5b417e55093a5d5f4b9a3770db3ed3ee91cb39963b044fd"
+    },
+    "BoundedGeometry": {
+      "source_sha256": "ba3709168506186d6c3766791b28ce209efcbb330e4396f26fc547cd9e26bc99",
+      "object_sha256": "c8f6cb47ffba346c4c231dbe64c51b81054fc46f780db152b674123eb864e672"
+    },
+    "SmallWindow": {
+      "source_sha256": "ca777816fc84607fa0f5366c61acd4304e34cd0b1554e6acb9f5f3c8e38c8061",
+      "object_sha256": "f2651eebeadfbfe061df98ba6c1283cea64bbcc8740cc5393cada7ab895d8030"
+    },
+    "BoundedMajor": {
+      "source_sha256": "c9d81d256fbfa63f1958ba9cd5100056bdd1f3e9565948b262c09e1bfbeef0e2",
+      "object_sha256": "ab4b36f7623be029b6d2137f572cb571a088faff2cf85c22c104ddd4d8fd7cee"
+    },
+    "BoundedBands": {
+      "source_sha256": "1e31fe9db275bb2fc1b2774841e35bf534d8c7d665cfb2f32061d496415975e5",
+      "object_sha256": "8ef88e7086e67ef5a5ec4aa754b9d7beef33d5bb87d912a8373a9cb6ac02af0d"
+    },
+    "ProfileRoute": {
+      "source_sha256": "8b344cebd16409623789167bbe6934533fda9e81932c6b5fc62e90013609c3d5",
+      "object_sha256": "b65ae240371e0774feb7ac42fabdaf58e1345757161f42f08400a1246c0ae9cb"
+    },
+    "GoldbachExpSubstitution": {
+      "source_sha256": "978ffd3937873cfb52a5fba188be0cd7ad785802949f1f67d0c3f07d9df9b0e0",
+      "object_sha256": "bd8826b758427fdd0af5e38f12d1f5172d37962c7916ac51903155f7eb7dcb2f"
+    },
+    "TernaryGoldbach.Explicit.GaussSmooth": {
+      "source_sha256": "046fbec562b108977bfacdd641f5852ff60a475bc3410c7831cd5f6a65e2ad66",
+      "object_sha256": "9ba0bbb2e6952afc7d486ae7f5284f556796a6ed78bd07719dd797b4e127e7bb"
+    },
+    "GoldbachZetaConj": {
+      "source_sha256": "3fab338c65f856435815f6442f2d1087027068fd1d01d8155cc253a891aa7bc0",
+      "object_sha256": "f6e8f6d4a6315aaf917a5b8abe7fb91bf12f76e62d71f4c20da438a44e3be6fb"
+    },
+    "TernaryGoldbach.Explicit.Digamma": {
+      "source_sha256": "4598cf0bb3da26e7fe9d6f2e2ac5cb2c20cd511131e69f7b184f093095ba93f4",
+      "object_sha256": "01d3724a1b8e683215080899d256700bbc6dea209c2bd54b424809870552abba"
+    },
+    "TernaryGoldbach.Explicit.Xi": {
+      "source_sha256": "874fd664a2709118ee641f3ca49f8a8adbb43e444d468f1f4611a69433216399",
+      "object_sha256": "cfd75435b9b2f87aac1695bd40d0002854da3b463229a2b294f3675a3bd5c64d"
+    },
+    "TernaryGoldbach.Explicit.RectResidue2": {
+      "source_sha256": "8666a25ab2aad04f3202cf13f84b51d7ba744275d799455d48ba2bc1a38bd32d",
+      "object_sha256": "a00495ba101ff4005ff36c62250efacefbee0f5a80560720c95fe35d2e782bc1"
+    },
+    "TernaryGoldbach.Explicit.LogNumerics": {
+      "source_sha256": "1d5df698c959a0879995c942d4c0078a641ee8933b6a9936b1a3214297a7ebcc",
+      "object_sha256": "c87865222f87f4652e88ec9088b10632c86be0d3b7484eba2bdb2a033c1d0441"
+    },
+    "TernaryGoldbach.Explicit.XiPartial": {
+      "source_sha256": "0c43e9c203572e84121777e4b0024ab243d56f3c4fc5cbcda1202de15d3ee48f",
+      "object_sha256": "5a0cbaf8bde642df73c54be4127555d633f0d740572b0aa318bdd119b58d708e"
+    },
+    "TernaryGoldbach.Explicit.ZeroFree": {
+      "source_sha256": "6ff8920c2ed1bfc4c88c6fa76e24c4873fd66d7c639eda8035f50256ab4a82c9",
+      "object_sha256": "8842815847769ae8ad7f5f86e8751ea5d53541eb14a1f9d943b7631c14a23d76"
+    },
+    "TernaryGoldbach.Explicit.ZeroFreeRegion": {
+      "source_sha256": "b7ba157ef9d40ec67a5e995b8bfd84aa56da14f87243935631fbd141862ee989",
+      "object_sha256": "c83c0421dcb597c8b5d61d966441a8b1eb7d7f491accb0dad724977dbd04fa71"
+    },
+    "TernaryGoldbach.Explicit.ZetaZeroSums": {
+      "source_sha256": "3b2bdfac211c130145c76af3dbc367322e2bd2666a181de0fd6e2e199734ad1e",
+      "object_sha256": "87ddad8bc1d71196fbc8ea1e1b387e5aa48290205a49be1a84a799eeb4b4855a"
+    },
+    "TernaryGoldbach.Explicit.GrExtend": {
+      "source_sha256": "f231fb9c64dab75d7ba7b08b69fd0c61bc25faac4ee0284e08c86d45e3b36201",
+      "object_sha256": "0d2e3667131c8e7028974ad618ed32f3e71bc19cab163575a6343b63a34340da"
+    },
+    "TernaryGoldbach.MajorArcs.EtaCirc": {
+      "source_sha256": "96347ec4fd98799d540929ab590fa734b5b7041c70e162c46eae603eca4d562f",
+      "object_sha256": "5788f963ff9a2b9685ff7912d306e440014752d4b0cd28ec86f8533d15753a86"
+    },
+    "TernaryGoldbach.Helfgott.Decay": {
+      "source_sha256": "bd9c662758ee752ecfc3fc981241e0ae53f3d9770690a3ca89353674f2b2aac7",
+      "object_sha256": "c495a624934b2fd069d53e212608edd64c62a74f472460f942de2ce3b7d618a5"
+    },
+    "TernaryGoldbach.Helfgott.SupNorms": {
+      "source_sha256": "f5c6a6f3ec60c8992ec58c8c847b61507e735a0ae49b1e8c0cf32acffbbf8280",
+      "object_sha256": "d8b1d85a2db9d50f488396cd868d540058089fe47e0c57b5de6bcfb2672081ce"
+    },
+    "TernaryGoldbach.Helfgott.HHBound": {
+      "source_sha256": "2205b2b2a7ffc35948662d84cf452dc0281e25c3a0bcb18d83dd039007893c8a",
+      "object_sha256": "b13db170680ec9fcb773b480e0302b1549e8f9dd6bf47138e2c28b801a0f1756"
+    },
+    "TernaryGoldbach.MajorArcs.HHFourier": {
+      "source_sha256": "0f21169c051f85b83d1e93efb805eed3d18b6f4434ed9bc402f73a70a6aec064",
+      "object_sha256": "49997b1e8d52cb322f678230c95f3c9153587ace8a94b0706681448dc48c4878"
+    },
+    "TernaryGoldbach.Explicit.EtaPlusMellin": {
+      "source_sha256": "578d4b25777cafd95f8c430c598d39da8bd5813f31e02a80ddbd5e2ec6b1c10a",
+      "object_sha256": "7825096703ede215cf254fb849ace63c388129240a4a29415327010e3572d73a"
+    },
+    "TernaryGoldbach.Explicit.MellinPlancherelGen": {
+      "source_sha256": "68e6954dfa6592e8787a6b407d259dfa22789148f46205e03ff60934251757ae",
+      "object_sha256": "a6dfb863dd703d0e83435d88a588f58fedd9b1aef8e96debfce688ab132b81ca"
+    },
+    "TernaryGoldbach.Explicit.EtaPlusBound": {
+      "source_sha256": "90c0b09054ceee06886ad661148a6bce31b1465e26768f51fbb1b785e0d81608",
+      "object_sha256": "54800c2ed815ca3a862f8ec5228f09e777cb7adf022ddc6dc7099308e5db0ec6"
+    },
+    "TernaryGoldbach.Explicit.EtaPlusSq": {
+      "source_sha256": "0b828bf85c245736ea5a61fc929ec4935379490ed28c199745acd0e4633cf5ba",
+      "object_sha256": "fcc10795f26137ea3d8b38b86a78118f818c61c198876a5095249ba0b7c7c0ff"
+    },
+    "TernaryGoldbach.Helfgott.Chebyshev": {
+      "source_sha256": "e015ed9358b3bb095fb0c5b59e4e7d6ab175dc8049fdc071a3898ffc022234ab",
+      "object_sha256": "3cb909045afd22ed6b567ae48104ad3a94edfe78d36f52731df4085ddf078c0b"
+    },
+    "TernaryGoldbach.Explicit.PsiSandwich": {
+      "source_sha256": "753f4b01170c5376726fe08c89587f960829f34b453e93d5e5d68ff623443d39",
+      "object_sha256": "903d85cdc6adc83a1f3aebc364c059d4bf67c083cdecb28a4f50a97a87701826"
+    },
+    "TernaryGoldbach.Explicit.PsiExplicit": {
+      "source_sha256": "26c41b278e821ed7fc9e117c7fbead33616c6330e5e433c553c918d093929410",
+      "object_sha256": "0ed1e6133e7463fa7307204069a518dffaf43f0396b074bac226fab9bc966954"
+    },
+    "GoldbachDigamma": {
+      "source_sha256": "6f31514f03d2beb9f41b9af9aaaba0b1373ccb7fe3a35ba90caf7a256ceaa330",
+      "object_sha256": "89e6cff2d81518a7d5b0c8efd8c1e22d57a78ef8f7d0c1bdb518860eb427d933"
+    },
+    "TernaryGoldbach.Explicit.WeilTest": {
+      "source_sha256": "8c733fbed9816aa5fabfec50cd61921bdda8c67159927d7d08ad0ea839da2d96",
+      "object_sha256": "4e0cb089f34671dd6465da086c0a76941bf0d4b9e61fa9a12f1606ce381ef5b6"
+    },
+    "TernaryGoldbach.Explicit.WeilPrime": {
+      "source_sha256": "df0722c09f2590a8592bc504b825564bd959430e0a1ab3032a3ee9244e9dc670",
+      "object_sha256": "59e36a42e4605bfa0021305ddd5cbc5163b2a0113889a81e1b885773441a5d34"
+    },
+    "TernaryGoldbach.Explicit.WeilRect": {
+      "source_sha256": "86e173c268b4e685315f0d6625fe796cff4b78d34f6d06602e013088f0dbc07f",
+      "object_sha256": "f0cd60077378c70e5485119bed69520dfab871d8b6e9555eacbf0fc0d482c9ab"
+    },
+    "TernaryGoldbach.Explicit.WeilSplit": {
+      "source_sha256": "c9c6defb255a93a1303bf66588ef9a6f7722ab2bbbdf68b38144200bb97faeed",
+      "object_sha256": "f813c49eac4221f2a6f9a3e607ae3eb070b73d324d7ebb30be2f07e6a56234ae"
+    },
+    "TernaryGoldbach.Explicit.WeilLines": {
+      "source_sha256": "8449cdd09353dc4ebb2c983f55b6b3b58dfabc222ef8aa854ece3138420b0cfe",
+      "object_sha256": "4cbed01be638ae23f014b2f4f4e6f57d8cf0fca9e9dd6084da69c85bc3da0c78"
+    },
+    "TernaryGoldbach.Explicit.WeilFormula": {
+      "source_sha256": "2c777c7beec9a9075df4dd1ec4f87a753df5749cce7c6d5ae74ef0bb78039189",
+      "object_sha256": "3b3cd385f4c9d0a16bfa757a3f7913327717e969ac8aae9c1215184e2accbdf0"
+    },
+    "TernaryGoldbach.Explicit.WeilBridge": {
+      "source_sha256": "807ce3335e2956ccb91661e7a554ecdc7d1870cd58a0d8d405f971f8f3919775",
+      "object_sha256": "cdfff3c563058345fa467e2daaa134c36552223a3f29e99a12705d21a6e02db0"
+    },
+    "TernaryGoldbach.Explicit.PsiPlateau": {
+      "source_sha256": "5352cf25cf0bf72d6bba2dfab596e1fbea84c92997efca231c4a2bd88ec49f05",
+      "object_sha256": "e0cf930f8cadde5c0bc178ccf88cb9fba97546995bb52fba2f3b55dd3f19e1dc"
+    },
+    "TernaryGoldbach.Explicit.WeilWindow": {
+      "source_sha256": "883cffa71f0773d3eb045973cd364dd4889f6ca921088ff73390403898d0c22c",
+      "object_sha256": "32e275254b117d2754b1326cc9960858c9a48bd5588f2784e38cf12715ee1501"
+    },
+    "TernaryGoldbach.Explicit.WeilWeights": {
+      "source_sha256": "93aaa72ba9089d0660a5592c39fa90bcdd4a69394de80baa83dd5a4729d90284",
+      "object_sha256": "4b9f90f36e36f984d67511372ad39eeca15e180e6bd656abf798f3fb73a1c99a"
+    },
+    "TernaryGoldbach.Explicit.WeilArch": {
+      "source_sha256": "42e0585050149a42586ed32aa0f780468e5e842618ecac1c02871a359e853564",
+      "object_sha256": "b2076e23e88167bd3b2b238f5f50f0252574c3970b977ba4d817ba5d9c184774"
+    },
+    "TernaryGoldbach.Explicit.WeilPhiBound": {
+      "source_sha256": "d18c0ee3285f32c1049a8b14cd6ff93ad21769076ef96983af9fc89431d24513",
+      "object_sha256": "d80a36aa2ac9042ff06f0dde81ffb8c83945ea03fe653c85ce579adc31f7a54d"
+    },
+    "TernaryGoldbach.Explicit.ZetaLowZeroFree": {
+      "source_sha256": "ccb7c2c2a0253a8173355bfb4c8f8b3782c8b999a0244eb56852f699b9abb908",
+      "object_sha256": "ae13ad1912a3af91f66860d2c79730cfeb53aaae7926b4827a6924cf2d654508"
+    },
+    "TernaryGoldbach.Explicit.WeilLineSum": {
+      "source_sha256": "cca95407c74e3470e5fd5cfc230989f6ff088fda173e1c7d2e015e0654c993ff",
+      "object_sha256": "af554d0352d5b28654679ef91099b58808360b5e9b771457ad289ae2d28628b7"
+    },
+    "PinnedCount": {
+      "source_sha256": "e1d6da57d28d418412ea2bd1f1a34f055e0839a3360f25ae9113e86c925e97e4",
+      "object_sha256": "334c9afb799336b1c961d5b3cad98445a221e2d65dafdb730b7fa495b588cf3f"
+    },
+    "LocalPowers": {
+      "source_sha256": "ed223dca4244784d9147d99b950267333e1b83d2eed25cd83fea0deeb18e4625",
+      "object_sha256": "f6e4f53b7fc8baf3d6b3e880c161b3172c0cd199a80f4e8d5f44c4f2dd09390b"
+    },
+    "Assembly": {
+      "source_sha256": "7c2098a24e07000252a2132371f96a0bb9e0885ff9bb2766f7bd2644ed8ed3c5",
+      "object_sha256": "8618b2b1956d8864d4b6876084da3d8046633c2a7071d8198e4c63b348f23218"
+    },
+    "Vertical": {
+      "source_sha256": "b4673798f0263deacabaa8530f3e16c6ca0b12fcc5cda054008c3b12780d55a0",
+      "object_sha256": "057c15836833c6f9999c4a18beb6a65bdbce350c5472303c0c80addfec1100f3"
+    },
+    "ZeroBudget": {
+      "source_sha256": "7f96995d1ac37135ed35be91df9acd6c959d35075dd36d325b7491e052eb464a",
+      "object_sha256": "ad032a410cb5a3a639f0804ba08542a529d2ab60be43b7eee8f985f916593b85"
+    },
+    "WeightedBound": {
+      "source_sha256": "2fc9fd327313ab9865a8a40b1418c1669a4b35aa9d04efd9b1388fe2d96fd483",
+      "object_sha256": "3bda752386a49bf9a7a473fea90f0fbc41403b2677a4cb1902a9ba2b8cf77e2d"
+    },
+    "LocalWeight": {
+      "source_sha256": "7269c50c69535d623ab9ae016cede4347756a9a7308b578e2836b0519f2741c7",
+      "object_sha256": "86316a72b58edb2c1339a2031baa1c02430491c231b1f6a1fb5dbe57a4ccd13f"
+    },
+    "ShiftedWeight": {
+      "source_sha256": "5a534fe90eb8cf3439e0e47b8cb5e1f8339681cd3093fdd129e79d78a1798da1",
+      "object_sha256": "1899612635f27e0d021eb6c08cfe0ace086fe4f8c41aead67126d791ffe56622"
+    },
+    "LocalMellin": {
+      "source_sha256": "7c01c28062a0e0ad3eba541a3b21936eaa4b2f056c2784bf296cc84bceff49e2",
+      "object_sha256": "644f517b05bf3bbaf7c1ebc0b7b6caef11a72fb5a4148fdec39d74572e1a2734"
+    },
+    "DensityBound": {
+      "source_sha256": "10d525bf8d2506b4899e138c0eb9c9178133542f7411f425015db51f12cb5959",
+      "object_sha256": "94090befc1ad9fd9dab0fac9ab93c60e229495630e94fb3483c82291abc0d5a2"
+    },
+    "WeilWindowRH": {
+      "source_sha256": "6ec5eb3b863677e2d8cfefbb78d48ec60c4a4c1c2c4c24a116346e3a8e0be322",
+      "object_sha256": "7549481d30c13a3b07918eb789400d88b5c6b14cdf424113a7cb8b13151ae3ab"
+    },
+    "WeilWeightedRH": {
+      "source_sha256": "b919368f6ed52cd66f80845fcc55d5b5e62a17abc256b1dca14bf1e3aa62fd87",
+      "object_sha256": "808e781830978b448e1f957a56e50438d6a966852c174420c34acd2e5c99b9fe"
+    },
+    "TernaryGoldbach.Explicit.WeilNumA": {
+      "source_sha256": "67c713a5f9c198439d29cd92412c08a8a7db68e6ac3bdfca9437541dc82c6111",
+      "object_sha256": "03fb7ae9135e147cc3ab946e8a8cf893c5a90a950d7dd3f1d875231dba859fe9"
+    },
+    "TernaryGoldbach.Explicit.WeilNumB": {
+      "source_sha256": "6ffd922fd6f7acc9b3c405fa350404a9684a1d8fd23779fae6d12732dfcada05",
+      "object_sha256": "3339a3ef784a13a6a36d96e61655b6e34353241c75efe00e6647df786b8e6263"
+    },
+    "TernaryGoldbach.Prelim.SmallPsi": {
+      "source_sha256": "2f87faf2c99ed22b0a48a38915fa73e7a1d265b954b074850fc3cdf74b79db75",
+      "object_sha256": "350c60bb47c802d11c191a4b7f0e15b1ace80ac8178fa8ded80b20a5d56b85c5"
+    },
+    "TernaryGoldbach.Prelim.SmallMertens": {
+      "source_sha256": "5f9b91b2d454bd3c416dbfbe4e1a9cf2a491569c2a8f944ee665b7f4522adbe8",
+      "object_sha256": "5311eb74f0528b33d2dbd3442b51115202b4349dc2df926b99f71e35c87a109e"
+    },
+    "TernaryGoldbach.Explicit.WeilNumC": {
+      "source_sha256": "b439ff967544c6f9fc4c05a789adaa02d83a391de35229df418119a5d180c24e",
+      "object_sha256": "807e47239a92c9fb82c91d578c3d5d2824abfb1c22e2d6c51b5a01dba684a1ef"
+    },
+    "LocalLowZeros": {
+      "source_sha256": "6d68dd07b6f40393b041e873bbbdb05d0b8c98bae7a9651f022bb2e343de94ad",
+      "object_sha256": "60c6e0831358f2dea5e5fce0b3fff72f7eb15afe557c850c6125348c4ae24a99"
+    },
+    "LocalLeak": {
+      "source_sha256": "a08b5dcae61c7542b30315e3867f901bed8ec4cbd6cd621308b924b755157da8",
+      "object_sha256": "e20d580097a1445752ce593d165bf1f116e504bf8e7507b960fbab4300794654"
+    },
+    "ShiftCount": {
+      "source_sha256": "cd104cc18860499ed95b69b5045f8522fa0b885f91142fd3200f39309a41968e",
+      "object_sha256": "de78591d4593d70e7874cb1a2f8ea505cd4f419166f6aca52b7c32f4122df17c"
+    },
+    "GaussianSource": {
+      "source_sha256": "1e9adcda117549e6e060b6b34e9905ccd5ac34d9e5d1de07c91a3acc923351c2",
+      "object_sha256": "88a096b937f315a716d0be327625d722f61211f783829bb53d2bc3a7919e10cb"
+    },
+    "LeakExchange": {
+      "source_sha256": "983c3d87c26caafdefaa35642a5f7eaab6ac087af70677d8fbb718c79b489dc8",
+      "object_sha256": "f5f2c17e57641e48c38fb3d4bfe99731cd9cad5ecd01496d6066530b44c2ac9f"
+    },
+    "LeakNumeric": {
+      "source_sha256": "3c99952fb4781895eb2372b49240b3fa88d3a00c87f82a52164326313a96e20b",
+      "object_sha256": "205127609a6c0b84e595cdd9470dcccce94434c98a7264f39a20e7ecd096d9ef"
+    },
+    "LeakBound": {
+      "source_sha256": "d695c78b15847913c82d4acac1d9f3d1d4ea1923e8acc147ee1b88e40c172943",
+      "object_sha256": "1ff7cc74afb9c7b0996ffbc04dd32d62239ccf8fe3fbb4a0c59b4c40dc007a08"
+    },
+    "LeakOutside": {
+      "source_sha256": "62223662dfecff46853ae0cc1013d390f40c59b97ff841d1028c89598a8a08b6",
+      "object_sha256": "b9d7a0d995d62095ab6f3cbb16ab8e3226001c3ae39a1cce5f1d69da61085688"
+    },
+    "Transfer": {
+      "source_sha256": "bfc63606e08134d29668a5f6ec97397385425f852ec1c30fbd584b1c4c075736",
+      "object_sha256": "7baf8f5ca01292c165b0d56a8f2365bb96083bc43154d803e478dd8e0bd86c4e"
+    },
+    "PrimeInterval": {
+      "source_sha256": "ca8340475ec43606504a78851d3fd3e6ab627fb47866fc6722bbfcc5515bc201",
+      "object_sha256": "a461dc8393c06c43534b1f2279187125a6284ab00e1be45a5d7601955576defe"
+    },
+    "GoldbachLean.Saouter1998.Paper": {
+      "source_sha256": "0b8e72f7893fc6424e99f77a44547f95256f83e54d0da3c0f2c52680800b5a3c",
+      "object_sha256": "62fee0fe22dae8623fc84d4c7c17f0113d8677472cbf1be13cf0664b3ccdb314"
+    },
+    "GoldbachLean.Saouter1998.ModPow": {
+      "source_sha256": "ab7647bc0a1138b7d13d8481a68efe475f997e275500210a1c1ea68ab8121241",
+      "object_sha256": "c9c446686c668c1c7040ad258a5a233475b2a8d3f411161598c78417b604865c"
+    },
+    "GoldbachLean.Saouter1998.Theorem2": {
+      "source_sha256": "a600295124eaaa2066df267582d997cdf9341b8f43a598b36d7453f7657f5969",
+      "object_sha256": "c217fa7a060e029118d121b66ab454eb1eb225cfdc1615f843eac59501b74765"
+    },
+    "LadderCheck": {
+      "source_sha256": "524aa2b353782e3adba675e3e9a2d363c30f2801113e41e1398a6190b5286636",
+      "object_sha256": "555a293fbbef542ce262de9d27e0c78a4198f3335f0671b2b6b7bd616e162a96"
+    },
+    "LadderToQuadrillion": {
+      "source_sha256": "0b067e6fee1fe7049ef5f04bde69deb9b77da1599dd36c98640f5b2258f6c4b3",
+      "object_sha256": "9ffb214912f4675f532eb30409eda3fbe7e40dfc11d67c2652da37ba64b5bfc3"
+    },
+    "LowerPrefix": {
+      "source_sha256": "9d57f8832235fdff82e655566b7cc8564b1f6fe4bdbf7fbfd9f11659881f44b2",
+      "object_sha256": "a7daba083a50db618933d4570639b8c6696d4182baae053fba26279495b82487"
+    },
+    "FiniteGaussian": {
+      "source_sha256": "5df28268e41b8700786f34b7bf48d164cd79806a67bdc12f22476739d736ed42",
+      "object_sha256": "1e271849fcc43e58227bcc57076b16e7696f0cd9be58c24def7ff4cf568c2686"
+    },
+    "FiniteAtHeight": {
+      "source_sha256": "3f942f387ccec362ac12afa14774f91dc78ff5fbefc9b249212e5363eb084914",
+      "object_sha256": "af5667ce94f51358b07b15c09db8216b02c77e871b7760c17fcff769e880c57d"
+    },
+    "LowerCutoff": {
+      "source_sha256": "d57062c9b4486aa0729e4fc1fd999e308e0d14bdeb314b5f4b41875a282c49b5",
+      "object_sha256": "beb08e4fddefdbb1d488e24b74eca7a8eaae673820a485926bfb98f274a2f78c"
+    },
+    "LowerModel": {
+      "source_sha256": "b5a2ef0adae0d4833e9ca82fbe22bc3082b7ca687214fbf60bc318910357a695",
+      "object_sha256": "dd38a5cf08b5a6414bd27c0d0bcee8da5f145301ef1a36168e8766a40a71688e"
+    },
+    "LowerAssembly": {
+      "source_sha256": "34ec4464c07ca48a0351eecc421379f2428e010f3646e9f1e747f456503de246",
+      "object_sha256": "e7b3cb72ea0fa85f19190f2aaeb36abd4a561b5c9bd92afea6961a5e85846982"
+    },
+    "NumericAssembly": {
+      "source_sha256": "5d5560eb981f45017d3454b5b409a54eb8d9ae167a84a23057b0297c4db89dde",
+      "object_sha256": "2af8a237467f2e3e0510a5a572845a479664d9c73e303332dd80f2a0d7740c68"
+    },
+    "TailMinor": {
+      "source_sha256": "9f4f21401e83c40d1c9658ecf98970638fdb253c16180c31e8c3bd47177211d0",
+      "object_sha256": "ef0f647ae2d1ce6646a6af6b70debbc3b9b4f91f233f23d3f754c9f48f99dfae"
+    },
+    "TailMajor": {
+      "source_sha256": "af168c1721febeca8863d4e7b837d6fb5540e2ef5bdd8facd4e77024d4319337",
+      "object_sha256": "b2589d9c9605d4e741d20a38d90a7d6e80a13108ee5c889fab54e63d0659cf86"
+    },
+    "LargeTail": {
+      "source_sha256": "6d70702b794e6de4d85461974dbc249e1fb6c4fd6aeeab907523ef9c6c97d516",
+      "object_sha256": "3ae9754bf4c8b26b64c6128a948a342123d5eee5f96611ba1028535baca59645"
+    },
+    "MinorOnly": {
+      "source_sha256": "476499273c7f07d257934ad7677fdeace294a9d6c3c8900668b8197d95a29158",
+      "object_sha256": "728d8127060c50dbdbb09b3f88e70f124ca5664a7fcba96505ecd4e313e1c21b"
+    },
+    "ProfileAssembly": {
+      "source_sha256": "c078378782cc55edc186ac4c9c410b2d1102c98c8fac33505ae53ca82d673928",
+      "object_sha256": "35051de2f26a16c6ae9e0ad8db5168543c0d3336f5cbcbe7ef061c7cea652002"
+    }
+  },
+  "scope": "These are project-closure checks and an import of the conditional analytic theorem. The finite and GRH hypotheses must still be discharged in the final GoldbachSolution."
+}
