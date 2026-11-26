@@ -188,6 +188,14 @@ install -d -m 0755 /work/compact-joint-runs
 mkdir "$attempt"
 chown grhreplay:grhreplay "$attempt"
 exec > >(tee -a "$attempt/driver.log" /dev/console) 2>&1
+logger_pid=$!
+finish_log() {
+  local logger_status=0
+  exec 1>&- 2>&-
+  wait "$logger_pid" || logger_status=$?
+  printf '%s\n' "$logger_status" > "$attempt/driver-log.exit"
+  sync
+}
 test -f /work/replay/evidence/receipt.json
 sysctl -w vm.max_map_count=1048576
 iptables -C OUTPUT -m owner --uid-owner grhreplay -d 169.254.169.254 -j REJECT || iptables -I OUTPUT -m owner --uid-owner grhreplay -d 169.254.169.254 -j REJECT
@@ -240,6 +248,8 @@ summary['steps']=[{k:s[k] for k in ('name','exit','wall_seconds','cpu_seconds','
 msg=json.dumps(summary,sort_keys=True,separators=(',',':')).encode()
 ref_line=' '.join(('TG435_RECEIPT_REF',str(p),sha(raw)))
 summary_line=' '.join(('TG435_RECEIPT_V1',sha(msg),base64.b64encode(gzip.compress(msg,mtime=0)).decode()))
+print(ref_line, flush=True)
+print(summary_line, flush=True)
 # Stay below 24 KiB for the full terminal bundle, with short serial records.
 token=attempt.name.rsplit('-',1)[-1]
 if len(raw)<=2*1024*1024 and len(token)==32 and all(c in '0123456789abcdef' for c in token):
@@ -248,11 +258,14 @@ if len(raw)<=2*1024*1024 and len(token)==32 and all(c in '0123456789abcdef' for 
     lines=[f'TG435_FULL_V1 {token} {sha(raw)} {i+1}/{len(blocks)} {block}' for i,block in enumerate(blocks)]
     if len(lines)<=32 and sum(len(line)+1 for line in [*lines,ref_line,summary_line])<=24*1024:
         for line in lines:print(line)
-print(ref_line);print(summary_line)
 TG_SUMMARY
-sync
-if unit_busy tg-joint-replay.service; then echo 'Active joint worker; no poweroff' >&2; exit "$rc"; fi
+if unit_busy tg-joint-replay.service; then
+  echo 'Active joint worker; no poweroff' >&2
+  finish_log
+  exit "$rc"
+fi
 echo "Community 4.35 verification completed with exit $rc; stopping this instance"
+finish_log
 systemctl --no-block poweroff
 exit "$rc"
 """

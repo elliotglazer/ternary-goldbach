@@ -28,8 +28,8 @@ def main():
         # The fixture's temporary directory supplies real bytes. Production's exact absolute path
         # is checked independently, and the encoder's real REF/V1 still must match each other.
         assert c.read_summary(printed,commit,tree)[0]["receipt_sha256"]==digest
-        assert wire[-2].startswith("TG435_RECEIPT_REF") and wire[-1].startswith("TG435_RECEIPT_V1")
-        frames=wire[:-2]
+        assert wire[0].startswith("TG435_RECEIPT_REF") and wire[1].startswith("TG435_RECEIPT_V1")
+        frames=wire[2:]
         assert len(frames)>1 and max(map(len,frames))<700 and len(printed.encode())<=24*1024
         def check(text):return c.console_full(text,commit,tree,attempt,r,{"status":"verified"})
         assert check("\r\n".join(frames))[1]==raw
