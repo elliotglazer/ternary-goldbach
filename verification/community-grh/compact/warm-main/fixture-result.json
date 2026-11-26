@@ -1,0 +1,86 @@
+{
+  "scope": "Linux native warm diagnostic fixture",
+  "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "old_failed": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 1,
+    "wall_seconds": 0.889,
+    "log_sha256": "5eb8f061a8be5c7ebdbe72330f7eb119a12fb2cb7199450a4ea4445563bea528",
+    "newly_built": [
+      "Base",
+      "Changed",
+      "Reader",
+      "Stable"
+    ],
+    "failed_source_locations": [
+      "CompactGRH/src/Intermediate.lean:4:43"
+    ]
+  },
+  "warm_failed": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 1,
+    "wall_seconds": 0.661,
+    "log_sha256": "3210d27905917e07d6a0cfcd32b9ea8c8e15ac048ecb99b213bdaecd48504b04",
+    "newly_built": [
+      "Changed",
+      "Intermediate",
+      "Reader"
+    ],
+    "failed_source_locations": [
+      "CompactGRH/src/Deep.lean:4:40"
+    ]
+  },
+  "second_repaired_candidate": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 0,
+    "wall_seconds": 0.751,
+    "log_sha256": "7a948b280b22b440b8abdf5ffc7df368e8f2fda5b2259b287f46a82962be1ef6",
+    "newly_built": [
+      "Changed",
+      "Deep",
+      "Intermediate",
+      "Main",
+      "Reader"
+    ],
+    "failed_source_locations": []
+  },
+  "corrupt_artifact_control": {
+    "changed": [
+      "Changed",
+      "Intermediate"
+    ],
+    "old_successful_in_graph": 4,
+    "accepted": [],
+    "rejected": {
+      "Base": "actual artifact bytes disagree with Lake trace: lib/lean/Base.olean"
+    },
+    "copied_bytes": 0,
+    "copied_files": 0
+  },
+  "seed_verification": {
+    "changed": [
+      "Changed",
+      "Intermediate"
+    ],
+    "old_successful_in_graph": 4,
+    "accepted": [
+      "Base",
+      "Stable"
+    ],
+    "rejected": {},
+    "copied_bytes": 22220,
+    "copied_files": 30
+  },
+  "old_source_and_artifact_sha256_before_after": "476d925b093b3649085dff6f6b02e30a25067f726628f7ee8d016ea2927d3678",
+  "old_and_new_objects_distinct_inodes": true,
+  "used_persisted_traces_with_pruned_setups": true,
+  "finite_module_untouched": true,
+  "first_log": "✔ [2/8] Built Base (455ms)\n✔ [3/8] Built Changed (451ms)\n✖ [4/8] Building Intermediate (274ms)\ntrace: .> LEAN_PATH=/project/.lake/build/lib/lean /tool/bin/lean /project/CompactGRH/src/Intermediate.lean -o /project/.lake/build/lib/lean/Intermediate.olean -i /project/.lake/build/lib/lean/Intermediate.ilean -c /project/.lake/build/ir/Intermediate.c --setup /project/.lake/build/ir/Intermediate.setup.json --json\nerror: CompactGRH/src/Intermediate.lean:4:43: Unknown identifier `firstMissing`\n✔ [6/8] Built Reader (294ms)\n✔ [7/8] Built Stable (299ms)\nSome required targets logged failures:\n- Intermediate\nerror: build failed\n",
+  "second_log": "✔ [4/8] Built Intermediate (269ms)\n✔ [5/8] Built Changed (273ms)\n✖ [6/8] Building Deep (234ms)\ntrace: .> LEAN_PATH=/project/.lake/build/lib/lean /tool/bin/lean /project/CompactGRH/src/Deep.lean -o /project/.lake/build/lib/lean/Deep.olean -i /project/.lake/build/lib/lean/Deep.ilean -c /project/.lake/build/ir/Deep.c --setup /project/.lake/build/ir/Deep.setup.json --json\nerror: CompactGRH/src/Deep.lean:4:40: Unknown identifier `laterMissing`\n✔ [7/8] Built Reader (232ms)\nSome required targets logged failures:\n- Deep\nerror: build failed\n"
+}
