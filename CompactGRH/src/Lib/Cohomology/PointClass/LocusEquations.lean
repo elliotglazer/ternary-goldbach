@@ -23,7 +23,7 @@ variable (k) [Field k] (d) {A : CommAlg k} {v w : Fin (d + 1) → A} {h : span (
 A^{d+1} modulo units of A. -/
 def projSpace : CommAlg k ⥤ Type 1 := by refine ⟨fun A ↦ Quot ((MulAction.orbitRel Aˣ _).comap
   (·.1.1 : @unimodular k _ (d + 1) A → _)), fun f ↦ ↾.map (unimodular.toFunctor.map f) fun _ _ ⟨u,
-  h⟩ ↦ ⟨u.map _, by simpa using! congr(f ∘ $h)⟩, ?_, ?_⟩ <;> intros <;> ext ⟨⟩ <;> rfl
+  h⟩ ↦ ⟨u.map f.hom.toMonoidHom, by simpa using! congr(f ∘ $h)⟩, ?_, ?_⟩ <;> intros <;> ext ⟨⟩ <;> rfl
 
 variable {k d}
 

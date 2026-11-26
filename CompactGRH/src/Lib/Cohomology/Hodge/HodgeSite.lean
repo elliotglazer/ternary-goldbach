@@ -141,14 +141,14 @@ def semilinearOfBasis : (ι → T) →ₛₗ[a] M' := ∑ i,
 
 /-- The functor sending a pair (A, M) to the square-zero extension A ⊕ M, as a k-algebra. -/
 def HodgeTest.sqZeroExt : HodgeTest k ⥤ CommAlg k :=
-  .mk (.of k <| TrivSqZeroExt _ <| _ → ·.baseAlg) fun f ↦ CommAlgCat.ofHom (by
+  .mk (fun X ↦ .of k (TrivSqZeroExt X.baseAlg (X.Index → X.baseAlg))) fun f ↦ CommAlgCat.ofHom (by
   refine' { toFun x := (f.1 x.fst, f.2 x.snd), .. } <;> simp [TrivSqZeroExt.ext_iff])
 
 /-- The functor sending a pair (A, M) to the exterior algebra ⋀_A M, as a k-algebra. -/
 def exteriorAlg : HodgeTest k ⥤ AlgCat
   k := by refine' ⟨fun X ↦ .of k (ExteriorAlgebra X.baseAlg (X.Index → X.baseAlg)), fun f ↦
   AlgCat.ofHom (.mk' (exteriorMap f.2) (by simpa using exteriorMap_smul f.2 <| · • 1)), _, _⟩ <;>
-  intros <;> ext <;> induction ‹_› using induction <;> aesop
+  intros <;> ext x <;> induction x using ExteriorAlgebra.induction <;> aesop
 
 /-- The functor (A, M) ↦ ⋀_A M with values in abelian groups: the coefficient of Hodge
 cohomology. -/
