@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "build",
+    "+Root"
+  ],
+  "returncode": 0,
+  "peak_frontends": 4,
+  "peak_aggregate_rss_kib": 1536972,
+  "wall": 5.199,
+  "cut_to_exit": null,
+  "alive_frontends": [],
+  "log": "\u2714 [2/7] Built A (2.4s)\n\u2714 [3/7] Built B (2.4s)\n\u2714 [4/7] Built C (2.4s)\n\u2714 [5/7] Built D (2.4s)\n\u2714 [6/7] Built E (2.2s)\n\u2714 [7/7] Built Root (318ms)\nBuild completed successfully (7 jobs).\n",
+  "objects": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "Root"
+  ],
+  "time_receipt": true,
+  "lean_version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "source_sha256": {
+    "Root.lean": "1e49345e613e8183e9a8f531b57018d64c2fda079e0d2c6242b1cb8bf68659c4",
+    "E.lean": "768c41b9d37f07d4893bb565f6f30565ac0aaff8f4376d23930c75d112078f91",
+    "B.lean": "8b41f707e5bc9e0b2fdf62b8c8c8654ffcbf2e7e663b03c070d20d65badb8ebb",
+    "C.lean": "fd2bcb244c77cd2185a4a2f82412ccf9e1af4ea00ca640881c60bca129e182f4",
+    "D.lean": "b202809d8b96507357dd255680a1cab2c8bee48eba92447f999d9d4ad3bb2689",
+    "A.lean": "3b0c12817bc616b533cda2f77e88842af048111a7a09457b6633b62f3900262b",
+    "lakefile.toml": "55db0290e29220057dd8bebb8115569255755a119229aff296b26df9c707b3fd"
+  },
+  "LEAN_NUM_THREADS": 4,
+  "note": "Five independent test modules and a join. Sampling every 35ms. Bash timing parent."
+}

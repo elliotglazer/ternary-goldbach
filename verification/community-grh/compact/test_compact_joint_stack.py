@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 import subprocess
 
-def exercise(mod, **override):
+def exercise(mod, lake_threads=None, modules=(), **override):
     calls=[]
     commands=[]
     def fake(service,action,*args):
@@ -28,12 +28,31 @@ def exercise(mod, **override):
         if action=='list-command-invocations':return {'CommandInvocations':[{'Status':'Success','CommandPlugins':[{}]}]}
         if action=='get-command-invocation':return {'StandardOutputContent':'online'}
         raise AssertionError(action)
-    with patch.object(mod,'aws',fake),patch.object(mod,'public_pin',lambda commit,tree: None),patch.object(sys,'argv',['compact_joint_stack.py','--commit','1'*40,'--tree','2'*40]):
+    arguments = ['compact_joint_stack.py', '--commit', '1'*40, '--tree', '2'*40]
+    for module in modules:
+        arguments += ['--preflight-module', module]
+    if lake_threads is not None:
+        arguments += ['--lake-threads', str(lake_threads)]
+    with patch.object(mod,'aws',fake),patch.object(mod,'public_pin',lambda commit,tree,modules: None),patch.object(sys,'argv',arguments):
         try: mod.main()
         except SystemExit:
             assert override and 'start-instances' not in calls
             return
     assert not override
+    import base64, re, shlex
+    dispatch = shlex.split(commands[-1])[-1]
+    transport = re.search(r"echo '([A-Za-z0-9+/=]+)' \| base64 -d > [^\n]+/launch", dispatch)
+    assert transport, 'Missing captured driver transport'
+    uploaded = base64.b64decode(transport.group(1)).decode()
+    assert '--threads 32 ' in uploaded and '--profile palomar-32x64 ' in uploaded
+    assert ('--lake-threads ' in uploaded) == (lake_threads is not None)
+    if lake_threads is not None:
+        assert f'--lake-threads {lake_threads} ' in uploaded
+    for module in modules:
+        assert '--preflight-module ' + module + ' ' in uploaded
+    assert uploaded.count('--preflight-module ') == len(modules)
+    assert len(commands[-1].encode()) < 24000
+    assert 'CPUQuota=3200%' in dispatch and 'MemorySwapMax=0' in dispatch
     assert calls.count('start-instances')==1
     assert sum('systemd-run --collect --unit=tg-source-replay' in c for c in commands)==1
     assert '/work/compact-joint' in mod.DRIVER
@@ -97,6 +116,7 @@ def failure_summary_control():
 if __name__=='__main__':
     failure_summary_control()
     import compact_joint_stack as compact_stack
+    exercise(compact_stack, lake_threads=4, modules=("Lib.Alpha", "Beta"))
     for case in [{},{'state':'running'},{'size':601},{'schedule':'DISABLED'},{'window_hours':200}]:
         exercise(compact_stack,**case)
     print('Mock compact dispatch, four pre-start refusals, and failure receipt round-trips passed.')

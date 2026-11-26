@@ -52,6 +52,29 @@ def verify_manifest(data,before,after):
         seen.add(name)
     require(seen==set(before),'incomplete conversion manifest')
 
+def verified_preflight_modules(source, modules):
+    if not modules:
+        return {}
+    goldbach = json.loads((source / "source-manifest.json").read_text())["sources"]
+    compact_manifest = source / "CompactGRH" / "source-manifest.json"
+    compact = {item["path"]: item["converted_sha256"] for item in json.loads(compact_manifest.read_text())["files"]}
+    checked = {}
+    for module in modules:
+        relative = "/".join(module.split(".")) + ".lean"
+        matches = []
+        if relative in goldbach:
+            matches.append((relative, goldbach[relative]["sha256"]))
+        if relative in compact:
+            matches.append(("CompactGRH/src/" + relative, compact[relative]))
+        require(len(matches) == 1, f"early target has no unique canonical source: {module}")
+        path, expected = matches[0]
+        file = source / path
+        require(file.resolve() == file and file.is_file() and digest(file) == expected,
+                f"early target disagrees with its canonical source digest: {module}")
+        checked[module] = {"path": path, "sha256": expected}
+    return checked
+
+
 def failed_build_details(source, evidence, steps):
     """Report diagnostic locations and retained project artifacts from an incomplete run."""
     result = {
@@ -127,6 +150,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--threads", type=int, default=12)
+    parser.add_argument("--lake-threads", type=int, choices=range(1, 33), metavar="N",
+                        help="override LEAN_NUM_THREADS only for candidate source builds (1..32)")
     parser.add_argument('--commit',required=True)
     parser.add_argument('--tree',required=True)
     parser.add_argument('--shard-main',action='store_true',help='compile CompactGRH Main in its own timed Lake step before the joint root')
@@ -135,7 +160,14 @@ def main():
     parser.add_argument('--mathlib-cache-dir',type=Path,required=True)
     parser.add_argument('--con-ron',type=Path,required=True)
     parser.add_argument('--advisory-paranoid',action='store_true')
+    parser.add_argument('--preflight-module', action='append', default=[], metavar='MODULE',
+                        help='early ordinary source-build target; may be repeated')
     args = parser.parse_args()
+    if (len(args.preflight_module) > 32 or len(set(args.preflight_module)) != len(args.preflight_module)
+            or sum(map(len, args.preflight_module)) > 1800
+            or any(len(module) > 160 or not re.fullmatch(r'[A-Za-z_][A-Za-z_0-9]*(?:\.[A-Za-z_][A-Za-z_0-9]*)*', module)
+                   for module in args.preflight_module)):
+        parser.error('expected up to 32 distinct, dotted Lean module names (maximum 1800 characters total)')
     PIN,TREE=args.commit,args.tree
     require(all(re.fullmatch('[0-9a-f]{40}',n) for n in [PIN,TREE]),'full joint Git commit/tree required')
     require(1 <= args.threads <= 32, "threads must be in 1..32")
@@ -164,6 +196,13 @@ def main():
     state['resource_profile'] = {'name':args.profile,'initial_cgroup':start_stats,'visible_cpus':len(os.sched_getaffinity(0)),'execution_budget_seconds':19800,
         'dispatch_start_unix':int(os.environ.get('TG_DISPATCH_START',state['started_unix'])),
         'environment':'EC2 scheduling and storage; Palomar simulator, not a hosted registry verdict'}
+    state["project_lake_threads"] = {
+        "requested": args.lake_threads,
+        "effective": args.threads if args.lake_threads is None else args.lake_threads,
+        "other_sandboxes": args.threads,
+        "scope": ["source-preflight", "compact-main-shard", "joint-source-build"],
+        "timing": "explicit local scheduling" if args.lake_threads is not None else "default simulator scheduling",
+    }
     receipt = evidence / "receipt.json"
     save(receipt, state)
     stop = threading.Event()
@@ -278,6 +317,8 @@ def main():
         for entry in filter(None,entries):
             mode,path=entry.split(chr(9),1)
             require(mode.split()[0] in ('100755','100644') and not (set(Path(path).parts)&{'.lake'}) and not path.endswith(('.olean','.ilean','.so','.a','.o','.export','.olean.private','.olean.server')), 'forbidden tracked object or link: '+path)
+        state["preflight_modules"] = verified_preflight_modules(source, args.preflight_module)
+        save(receipt, state)
         manifest=json.loads((source/"lake-manifest.json").read_text())
         official=json.loads((original/'grh-compact'/'lake-manifest.json').read_text())
         identity=lambda deps:{v['name']:(v['url'],v['rev'],v['type'],v.get('subDir')) for v in deps}
@@ -349,7 +390,7 @@ def main():
             (checkout_dir/".lake/config").mkdir()
         (challenge/".lake/packages").mkdir()
         hostpaths=["/usr","/bin","/lib","/lib64","/etc"]
-        def box(work, writable, command):
+        def box(work, writable, command, *, threads=None):
             # Host credentials, caller HOME, other workspaces, network, and the receipt directory are absent.
             argv=["bwrap","--unshare-all","--die-with-parent","--new-session","--clearenv","--proc","/proc","--dev","/dev","--tmpfs","/tmp","--dir","/tmp/home"]
             for x in hostpaths:
@@ -359,7 +400,7 @@ def main():
                     argv+=["--ro-bind",x,x]
             argv+=["--ro-bind",str(tc),"/tool","--ro-bind",str(work),"/project",
                    "--setenv","HOME","/tmp/home","--setenv","PATH","/tool/bin:/usr/bin:/bin","--setenv","LANG","C.UTF-8",
-                   "--setenv","LEAN_ABORT_ON_PANIC","1","--setenv","LEAN_NUM_THREADS",str(args.threads),"--setenv","LAKE_ARTIFACT_CACHE","false","--chdir","/project"]
+                   "--setenv","LEAN_ABORT_ON_PANIC","1","--setenv","LEAN_NUM_THREADS",str(args.threads if threads is None else threads),"--setenv","LAKE_ARTIFACT_CACHE","false","--chdir","/project"]
             if work==empty:
                 # The stock Linux comparator masks these paths inside its own read-only root.
                 # Precreate empty mountpoints without exposing the host directories.
@@ -413,9 +454,13 @@ def main():
         thread=threading.Thread(target=prune,daemon=True)
         thread.start()
         try:
+            if args.preflight_module:
+                early_targets = ["+" + module for module in args.preflight_module]
+                step("source-preflight", box(source, True, ["lake", "--no-cache", "build", *early_targets],
+                                             threads=args.lake_threads))
             if args.shard_main:
-                step("compact-main-shard",box(source,True,["lake","--no-cache","build","+Main"]))
-            step("joint-source-build",box(source,True,["lake","--no-cache","build","+Main","GoldbachSolution"]))
+                step("compact-main-shard",box(source,True,["lake","--no-cache","build","+Main"], threads=args.lake_threads))
+            step("joint-source-build",box(source,True,["lake","--no-cache","build","+Main","GoldbachSolution"], threads=args.lake_threads))
         finally:
             stop.set()
             thread.join()

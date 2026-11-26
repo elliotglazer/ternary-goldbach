@@ -1,0 +1,32 @@
+{
+  "failed": {
+    "rc": 1,
+    "diagnostics": {
+      "source_error_count": 1,
+      "source_error_modules": 1,
+      "representative_errors": [
+        {
+          "path": "A.lean",
+          "line": 1,
+          "column": 26,
+          "message": "Unknown identifier `missingProof`"
+        }
+      ],
+      "failed_lake_targets": [
+        "A"
+      ],
+      "completed_oleans": {
+        "compact": 0,
+        "goldbach": 0
+      }
+    },
+    "root_output": false
+  },
+  "repaired": {
+    "preflight_rc": 0,
+    "joint_rc": 0,
+    "root_olean_sha256": "078061e966b007f8bc2413ddbf7f7fcbcb77f35d216e2304ef1d3a88688ab0ed"
+  },
+  "scope": "Ordinary isolated fixture, not a Goldbach proof run",
+  "lean_version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)"
+}
