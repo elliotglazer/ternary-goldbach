@@ -923,7 +923,8 @@
     {
       "path": "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
       "upstream_sha256": "223503c42d17861bdc20b79f2c54d413ef58fd769815669e83cd38e42eb8b54b",
-      "converted_sha256": "0bdf306c5568603c99fe7b25f4332ab9429df601a6177d031fbbb97fa7658f89"
+      "converted_sha256": "5cf2d88ed2b1cdb570dbd3ab3df75c3a95e1d59470fb48d653e58d230604edf8",
+      "adaptation": "Spell out the complex-place laws at the constructor. Diagnostic candidate."
     },
     {
       "path": "Lib/DiscreteSeries/Bruhat/EichlerMaps.lean",
@@ -2104,7 +2105,8 @@
     {
       "path": "Lib/PadicHodge/Crystalline/RegularityFrobenius.lean",
       "upstream_sha256": "f0dfd69a51d711207d7c5b2bbcebfc1a4c7e6a3d794a41e4440d612e9eac5088",
-      "converted_sha256": "4a91e7123e7a5ea5780b58d06edc3e915170e9a051ea5137cdddef4c4091440b"
+      "converted_sha256": "8e0ec2dd38c643eb54630e5f920844a5af2a6e8261d5424c7d46d2f561a29229",
+      "adaptation": "Use the public inverse tensor-product equivalence on pure tensors. Diagnostic candidate."
     },
     {
       "path": "Lib/PadicHodge/Herr/GaloisLattices.lean",
@@ -2754,7 +2756,8 @@
     {
       "path": "Lib/Weil/Fock/OscillatorPair.lean",
       "upstream_sha256": "405ba5f3f36b229700fa6288d12d17a2c0a631ce25100bdff5c2c38d3c7ed164",
-      "converted_sha256": "6086f1ab09e44a3a1f2a9599c06a8cbb1c1a5616332bed8d8092ad0448dc5dca"
+      "converted_sha256": "b93e651a3de5db7f9bf7ec9fc56efaa779e70ccab32798af5b3afe1f75473b51",
+      "adaptation": "Factor through the two contractive star-algebra maps on explicitly typed matrices. Diagnostic candidate."
     },
     {
       "path": "Lib/Weil/Fock/RealData.lean",
