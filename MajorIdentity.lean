@@ -31,7 +31,7 @@ private theorem integrable_modelCube {N : ℕ} (hn : 0<N) (q b : ℕ) {u v : ℝ
   have h : modelCube N q b = s.piecewise (translatedCube N 1 1) (translatedCube N q ((b:ℝ)/q)) := by
     funext x; by_cases hx : x∈s <;> simp [modelCube,localModel,translatedCube,s,Set.piecewise] at hx ⊢
   rw [h]
-  exact Integrable.piecewise hs ((continuous_translatedCube hn 1 1).integrableOn_Ioc.integrableOn)
+  exact Integrable.piecewise hs.nullMeasurableSet ((continuous_translatedCube hn 1 1).integrableOn_Ioc.integrableOn)
     ((continuous_translatedCube hn q _).integrableOn_Ioc.integrableOn)
 
 private theorem model_atom_integral {N : ℕ} (hn : 2*10^19 ≤ N) {q b : ℕ}
