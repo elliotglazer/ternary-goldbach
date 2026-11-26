@@ -1,0 +1,33 @@
+{
+  "stock_verifier": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "host": "Ubuntu 24.04 WSL, isolated mount namespace with fresh memory-backed /opt",
+  "source_sha256": {
+    "bootstrap-stock-tools.sh": "58862c1e18fa08e1fb20d77c8ddce53a34f67d5f767860087b1b89a5c41a1fef",
+    "stock-user-session.sh": "901f17ca74898b81c1a91afce93b9a54dbcc477ba0cd79833fee7a8afadc28a1",
+    "probe-stock-user.sh": "b2407cde6963e2c608abf7edb0a1ae5620467d707edad3491fa97a051dfcad49",
+    "README.md": "6539feeb35d9ad0f69c4c297566047ae48e9d664756490155c9951b8e5f83197"
+  },
+  "python_archive_sha256": "afd148857762e10695475b013cdf9cb6898ac6817d58ae9961c2619b76e36fc2",
+  "original_bwrap_installer_sha256": "c290df6cebdf1cb26edb69ed4164d9551062bfeb65243b93d1d1d3b77eac0a35",
+  "bubblewrap_source_sha256": "9760d007363e3abba7c747489910f9f82d9fca53ba3bd3282e396fa3c97a3314",
+  "official_requirements_sha256": "5144c14fbd798e2eb36ce329776b1c7f15f309f007f93003c30d29ddd9261536",
+  "tests": {
+    "fresh_python_and_hash_locked_pyyaml": "passed, Python 3.11.10 / PyYAML 6.0.3 / SSL",
+    "unmodified_released_bubblewrap_build": "passed, 0.12.0",
+    "ubuntu_prerequisites_private_extraction": "passed, meson 1.3.2 / ninja 1.11.1 / libcap 2.66",
+    "repeat_setup": "passed",
+    "unprivileged_userns": "passed, real non-root /usr/bin/true inside bubblewrap",
+    "system_python_and_observed_dpkg_records": "unchanged",
+    "apparmor_profile_source": "apparmor_parser --skip-kernel-load --skip-cache succeeded, no profile loaded on WSL",
+    "systemd_unit_source": "systemd-analyze verify succeeded, --setenv/--property/--wait/--collect/--pipe supported",
+    "systemd_live_delegation": "pending actual systemd EC2 host",
+    "restricted_apparmor_kernel": "pending actual EC2 host"
+  },
+  "local_control_sha256": {
+    "fresh.log": "6a50048614a3d58dcb3c75b5ee6dd9589d4af6f317012502fcdb5910fdc43cb2",
+    "repeat.log": "d22b8de804acc0842ce5622d93138e4e914ed7c551526d0f2b17077a1adb462d",
+    "system-python.before": "98ed23d3b727378de76f5c7c5831d6c9b690cc3341e28733c32021d0afa35460",
+    "dpkg.before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dpkg.after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

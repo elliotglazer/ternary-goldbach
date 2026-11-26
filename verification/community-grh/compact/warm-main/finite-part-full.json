@@ -1,0 +1,56 @@
+{
+  "module": "Lib.Weil.Construction.FinitePart",
+  "baseline_git_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "source_sha256": "7a91bc22419c17c469209cf86e0673357bd9a267ec3ae385831a6a18e6875cb8",
+  "repaired_direct_import": {
+    "module": "Lib.Weil.Fock.EntireTheta",
+    "object_sha256": "05d617785c03e4b1e711b864cefff30adeb0fe7f8d6fb83b408a0b87ed2b2e05",
+    "recursive_receipt_sha256": "05924f8f69cce75ebf97fd7827a826df091720bbd9d95844f24d19b89e6d4cdb"
+  },
+  "lean_version": "4.35.0",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "platform": "x86_64 Windows",
+  "compiler_exit": 0,
+  "wall_seconds": 51.08,
+  "compiler_output": [
+    "Try this:",
+    "  [apply] ring_nf",
+    "  ",
+    "  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.",
+    "    ",
+    "  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead."
+  ],
+  "compiler_output_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+  "output_sha256": {
+    ".olean": "c573a386d64995774599730c881e8eed595e655f50a9a344334b2e5228532571",
+    ".olean.private": "f1a5843e8a677e33de84324fec924d2b2f9bc79ea68ada94d3fc64988641f124",
+    ".olean.server": "76b97f45d092911ee1fdd3ba07e8a31d5cffcb4ffaa9b284543f89908932f7e6",
+    ".ir": "1646e3c3e19ae1114a0d7837a207839430ca5c94ac75840ca872a5c34702747c",
+    ".ir.sig": "3b3e3eb2b91ad71c7cb70a96c77b92836c78fe1dd89a3f36cf0ed24e2a8aaef4"
+  },
+  "named_audit": {
+    "exit": 0,
+    "wall_seconds": 47.43,
+    "source_sha256": "6371d68a52dee759d4bd51c11791fe470fddadb91b7d408d63006225d78c633a",
+    "output": [
+      "'Space.finHeisOp_mem_finitePart' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'Space.omega_mem_finitePart' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'Space.exists_eq_smul_omega_vacElem' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'Space.eventually_omega_eq_self' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "whole_module_audit": {
+    "exit": 0,
+    "seconds": 2.24,
+    "summary": [
+      "12 declarations, direct sorryAx references: #[]",
+      "12 audited transitive axiom entries, 0 offending: #[]",
+      "12 declarations, direct sorryAx references: #[]",
+      "12 audited transitive axiom entries, 0 offending: #[]",
+      "21 declarations, direct sorryAx references: #[]",
+      "12 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "inspector_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "log_sha256": "8967d3ea449a19596a31780720addbb0b20ff441ecff8726b41bba4698a54d5f"
+  }
+}
