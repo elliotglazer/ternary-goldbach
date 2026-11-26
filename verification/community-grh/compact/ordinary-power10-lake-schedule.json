@@ -1,0 +1,59 @@
+{
+  "scope": "Ordinary stock Lake 4.35.0 build, two unmodified production sources in two declarative prerequisite stages, using prebuilt pinned support imports. Also a separate four-way controlled toy demonstrates the two-wide cap.",
+  "cold_build_success": true,
+  "cold_log_sha256": "7a641812d2e6afc2b56f56c0114c7f4587f043862165ce8dff1390f4a5fb433e",
+  "raw_supervisor_receipt_sha256": "45c34d1e4fdccf9205a28ee6c81e3130ce66ba8a025f2800e6ed7f94b9524429",
+  "warm_replay_exit": 0,
+  "warm_replay_log_sha256": "2ab608f00d6be01a5dbfb81f09c27bbb3bb1bd2ae5f660e7c20910900d633ef7",
+  "source_sha256": {
+    "Power10Block00": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+    "Power10Block02": "e58a0a40f670895d7e7659dceb81692c6808f07e3eb1ac70bb9c4efbb8860e2d"
+  },
+  "objects_sha256": {
+    "Power10Block00": "f8489e0b4be334e63e0100988aaf5696c8ef75e331c6d93b0ed95eeb36dc34e8",
+    "Power10Block02": "aa76b515bc565ce39a6c280e30fe03ea3b357469aefb2667e983d7552970a369"
+  },
+  "cold_wall_seconds": 329.952,
+  "resource_guard_detail": "The supervisor attempted to stop at its commit threshold during completion. The stock Lake process exited zero, published both proof objects and RealJoin, printed both axiom audits and the successful five-job completion. The warm replay independently exited zero.",
+  "control_sentinel_intervals_ms": [
+    [
+      474080384,
+      474081886
+    ],
+    [
+      474080384,
+      474081886
+    ],
+    [
+      474080384,
+      474081886
+    ],
+    [
+      474080384,
+      474081886
+    ]
+  ],
+  "two_wide_sentinel_intervals_ms": [
+    [
+      474144760,
+      474146273
+    ],
+    [
+      474144784,
+      474146288
+    ],
+    [
+      474150433,
+      474151945
+    ],
+    [
+      474150433,
+      474151945
+    ]
+  ],
+  "cold_real_lean_times_seconds": {
+    "Power10Block00": 141,
+    "Power10Block02": 146,
+    "RealJoin": 40
+  }
+}
