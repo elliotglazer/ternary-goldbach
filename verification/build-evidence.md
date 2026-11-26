@@ -152,3 +152,9 @@ In the source preflight, RightDerivatives failed at line 76 because its
 exposed definition used a private simp theorem for a nonzero determinant.
 A named public equality now supplies that rewrite. The complete production
 module compiled without diagnostics on stock Lean 4.35 in 131.30 seconds.
+
+Stock Lean 4.35 reproduced the two source-preflight errors in the complete
+AmaxStructure module. With the ring approximation and intermediate algebra
+specified, it compiled without diagnostics in 138.60 seconds. A fresh import
+reported only propext, Classical.choice, and Quot.sound for the action,
+the scalar-action instance, the approximation lemma, and two downstream lemmas.
