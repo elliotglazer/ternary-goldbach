@@ -1,0 +1,743 @@
+{
+  "status": "failed",
+  "commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "tree": "5666784d088ba92460d084ddd8ac9ab8ac568a99",
+  "attempt": "5d9ac7f8089149f5a3f9b9852ceb43df",
+  "worker_sha256": "d9b3b1a3b1b4a97e7766349c0c6dfcc5e0eab6071935321482d2d91bdbaccf67",
+  "driver_exit": 1,
+  "archive_sha256": "59717b3954a6be29457475420c9098cc5e167dc788b70b564f966ccb3758a9e9",
+  "full_receipt_sha256": "54e4e1eabe1e6529d2bd66364af045d2f18c7d4040385b1d33c63f16a470a079",
+  "source_preflight_log_sha256": "40ae1ff2883c118c3e5cbbd5818bb8bffa550333e6c3230bb04dc38eec878751",
+  "source_preflight_log_bytes": 86241,
+  "full_receipt_matches_console_digest": true,
+  "source_preflight": {
+    "exit": 1,
+    "wall_seconds": 719.2056543827057,
+    "cpu_seconds": 2331.392887,
+    "oom_kills": 0,
+    "cgroup_lifetime_peak_bytes": 17010548736
+  },
+  "failure_details": {
+    "completed_oleans": {
+      "compact": 125,
+      "goldbach": 40
+    },
+    "failed_lake_targets": [
+      "Lib.General.NumberTheory.QuadField",
+      "Lib.PadicHodge.PeriodRings.AmaxStructure",
+      "Lib.Adelic.Unitary.CongruenceLevel",
+      "Lib.ClassField.GreenbergWiles.ExtendCharacter",
+      "Lib.Shimura.Uniformisation.ModuliPoint",
+      "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives",
+      "Lib.Adelic.QuotientMeasure.CocompactIntegrable"
+    ],
+    "representative_errors": [
+      {
+        "column": 20,
+        "line": 99,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/General/NumberTheory/QuadField.lean"
+      },
+      {
+        "column": 71,
+        "line": 222,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/PadicHodge/PeriodRings/AmaxStructure.lean"
+      },
+      {
+        "column": 67,
+        "line": 68,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean"
+      },
+      {
+        "column": 63,
+        "line": 41,
+        "message": "unsolved goals",
+        "path": "CompactGRH/src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean"
+      },
+      {
+        "column": 54,
+        "line": 105,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModuliPoint.lean"
+      },
+      {
+        "column": 34,
+        "line": 76,
+        "message": "Unknown constant `_private.Lib.DiscreteSeries.FlenstedJensen.RightDerivatives.0.IsHermInvolution.det_ne_zero._simp_1`",
+        "path": "CompactGRH/src/Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean"
+      },
+      {
+        "column": 19,
+        "line": 140,
+        "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search.",
+        "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean"
+      }
+    ],
+    "source_error_count": 29,
+    "source_error_modules": 7
+  },
+  "project_source_targets_with_a_built_line": {
+    "GoldbachVersionAliases": {
+      "source_sha256": "d7a744ece63b5f7685059614da908c5be0232a6148c469eba63d9d2ea5f60501",
+      "lake_elapsed": "166ms"
+    },
+    "GoldbachExpSubstitution": {
+      "source_sha256": "978ffd3937873cfb52a5fba188be0cd7ad785802949f1f67d0c3f07d9df9b0e0",
+      "lake_elapsed": "4.9s"
+    },
+    "LaplaceCube": {
+      "source_sha256": "db4fd5fc90d4c49a5e33f8c7854d8ab4b1ffead1d4ec94e015861cfc4e52a755",
+      "lake_elapsed": "5.6s"
+    },
+    "TernaryGoldbach.Prelim.PlancherelReal": {
+      "source_sha256": "ef01cc1dcb0de8879e891246b2bce312942777a709f8167e90dac2623358bf97",
+      "lake_elapsed": "5.0s"
+    },
+    "TernaryGoldbach.MajorArcs.EtaCirc": {
+      "source_sha256": "96347ec4fd98799d540929ab590fa734b5b7041c70e162c46eae603eca4d562f",
+      "lake_elapsed": "1.8s"
+    },
+    "Energy": {
+      "source_sha256": "d4d98716ab6956d329b2696afcb222f42ce70d6912ea33f0e7c1415704364148",
+      "lake_elapsed": "1.0s"
+    },
+    "TernaryGoldbach.Statement": {
+      "source_sha256": "6af39b249fbf4851ff966d6849d3f47e0fa3289f64debde50d521d2726b5dbba",
+      "lake_elapsed": "11s"
+    },
+    "Moment": {
+      "source_sha256": "6968225e2761cc40e929e18758f38503fb56e5897275a975a00bf1897bda53ac",
+      "lake_elapsed": "2.1s"
+    },
+    "Lib.General.LinearAlgebra.Base": {
+      "source_sha256": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+      "lake_elapsed": "7.7s"
+    },
+    "SharpMoment": {
+      "source_sha256": "c70922c5ec5f6c2340ef8d1156b207fd01212e32d753c17a30b7a1d89d91e408",
+      "lake_elapsed": "2.1s"
+    },
+    "TernaryGoldbach.CircleMethod": {
+      "source_sha256": "385d854927e6cc6f7ce837d010b002f4b065d054f059ab2feed73b23b2037bf4",
+      "lake_elapsed": "4.0s"
+    },
+    "SingularBase": {
+      "source_sha256": "f73a9e6a96eeb52ad7502961f273e0f0c161981f941397548053a5a76d4d234d",
+      "lake_elapsed": "10s"
+    },
+    "Arith": {
+      "source_sha256": "f82559f37567eba9f5b44296572480e0affb968d4e19785d7dd111315e0f27d7",
+      "lake_elapsed": "5.1s"
+    },
+    "Lib.ClassField.Places.GaloisDefs": {
+      "source_sha256": "32ad0a45ce22ced92fc4263d639f601257c34c57100e8954034cddf377beb067",
+      "lake_elapsed": "3.9s"
+    },
+    "Lib.General.Analysis.OstrowskiTaussky": {
+      "source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+      "lake_elapsed": "5.5s"
+    },
+    "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+      "source_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+      "lake_elapsed": "6.9s"
+    },
+    "Lib.General.Groups.ValuationPair": {
+      "source_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "lake_elapsed": "8.7s"
+    },
+    "Lib.General.LinearAlgebra.SubmersionZero": {
+      "source_sha256": "f2804683b0c8a5a4342ba1aa6f4f222087f715a7f91932498408b20e30071d00",
+      "lake_elapsed": "2.8s"
+    },
+    "FourierEnergy": {
+      "source_sha256": "4421d76e35567e7a8b439fa4f42fca876f26e510cd3c5898f1e7e715b95702eb",
+      "lake_elapsed": "2.9s"
+    },
+    "TernaryGoldbach.MinorArcs.Montgomery": {
+      "source_sha256": "1450865f2e96932081298826789597d9701add85e36d8881eb0919596e6db8a1",
+      "lake_elapsed": "3.0s"
+    },
+    "Lib.Adelic.Adeles.CoprimeValuation": {
+      "source_sha256": "24794a87d5f90db2e34433267b9a6820ea8c39de04318f589c9b7e84477f0fd6",
+      "lake_elapsed": "9.9s"
+    },
+    "TernaryGoldbach.Helfgott.Defs": {
+      "source_sha256": "25b5a5e868b9ffbac115ee61d4e8397b6dc1ae71d067a7623e8898120e87b93b",
+      "lake_elapsed": "2.4s"
+    },
+    "PrincipalTransform": {
+      "source_sha256": "9354223db6c604f9adbd15bff3296a4043200938574f873bfb8544d9b78e2d8e",
+      "lake_elapsed": "2.8s"
+    },
+    "SingularWindow": {
+      "source_sha256": "a408db7abd059a5a3925ef5945c8d6dabf3a041c16aff5ae7867b180f3ee5fd4",
+      "lake_elapsed": "3.1s"
+    },
+    "Totient": {
+      "source_sha256": "b51a57488fb3c3a65f66c6944509104b4e4de08eed3c72de9890b645b455bce7",
+      "lake_elapsed": "2.0s"
+    },
+    "Lib.General.Analysis.ZpowSum": {
+      "source_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "lake_elapsed": "10s"
+    },
+    "Lib.General.LinearAlgebra.ValuedMatrix": {
+      "source_sha256": "8274a177c289aac8a62f75bad30a782edb9dc8cfcde16dde8339388a249248c5",
+      "lake_elapsed": "3.2s"
+    },
+    "Lib.ClassField.GaloisCohomology.CyclicClass": {
+      "source_sha256": "7b12af57eab81a533d25ce330b62c16ebaaf8cd59beb6d9e104426960621eb02",
+      "lake_elapsed": "4.5s"
+    },
+    "Lib.General.LinearAlgebra.HaarUnique": {
+      "source_sha256": "53f9f9b45f5396b057d9258190c6478cb7a7e97c7c951d8be822d3e4bcfd8e84",
+      "lake_elapsed": "6.2s"
+    },
+    "Lib.General.Combinatorics.Average": {
+      "source_sha256": "13c963c4d4e83daadae3e5594cc4503bffa36955628f3effe4cb465f5611a004",
+      "lake_elapsed": "7.0s"
+    },
+    "MinorIntegral": {
+      "source_sha256": "0ff36eb189ddc8e75f67a805dd1b65e724e6b1ef53c4a2d449970653710aaefe",
+      "lake_elapsed": "2.8s"
+    },
+    "Lib.General.LinearAlgebra.CommonEigenvectors": {
+      "source_sha256": "36a94f29aec1676763c392ab38819d658a2a2749fa8418b25d034209f5029e76",
+      "lake_elapsed": "4.1s"
+    },
+    "Lib.PadicHodge.Crystalline.NonUnitalUnits": {
+      "source_sha256": "3023e89785bd9fca271a78a15570b9a923f41976d60e0ab29da534b2debcb2c2",
+      "lake_elapsed": "3.7s"
+    },
+    "TernaryGoldbach.Helfgott.Decay": {
+      "source_sha256": "bd9c662758ee752ecfc3fc981241e0ae53f3d9770690a3ca89353674f2b2aac7",
+      "lake_elapsed": "3.4s"
+    },
+    "Ramanujan": {
+      "source_sha256": "f398d8f4dabfac055344f4c2dd2fd5474121b1a4f4043f454c0e52c484d43e13",
+      "lake_elapsed": "2.8s"
+    },
+    "Lib.Adelic.Adeles.AdeleTopology": {
+      "source_sha256": "188525e98f2ec2b41f82d636e309f46ace3edc1931754f78ac3705ce3abf405d",
+      "lake_elapsed": "6.7s"
+    },
+    "BudgetCore": {
+      "source_sha256": "9b95eed6df95a0abcf8788757cdbcf47ba839dfbb41cb8e92235dc5467b0f101",
+      "lake_elapsed": "3.3s"
+    },
+    "Lib.ClassField.Places.LocalDefs": {
+      "source_sha256": "73afe8280f24e5631f83a83dbb027d51d2b7829ae7fb1fe92297c8e0c71f1e00",
+      "lake_elapsed": "3.1s"
+    },
+    "TernaryGoldbach.Helfgott.Numerics": {
+      "source_sha256": "e1b3207e6808989ca57d48d8de5a4af0ecbabb0ff39ebb50ed561df87e7455b6",
+      "lake_elapsed": "8.9s"
+    },
+    "Lib.General.Groups.VirtualCharacters": {
+      "source_sha256": "83bb47023b2b0e5233b851c69c0d43738fc9b48a4f60618efac68a41338aa48b",
+      "lake_elapsed": "4.3s"
+    },
+    "Lib.General.LinearAlgebra.HuaIntegral": {
+      "source_sha256": "b2709d08e7dc863f9eb57855bb1db7a0ed4c1c4905e8b8b2e622a368e199658d",
+      "lake_elapsed": "9.8s"
+    },
+    "Lib.General.Algebra.RingActions": {
+      "source_sha256": "37f675aadfab199b67008cc0b38ef8e9258df49e8740a23442c9dc3d5068de1a",
+      "lake_elapsed": "6.3s"
+    },
+    "FiniteBridge": {
+      "source_sha256": "65b6998d1c48bce26e18e628754429b0970a9864034f0df4ea5e7ff0770a0ab7",
+      "lake_elapsed": "2.0s"
+    },
+    "TernaryGoldbach.Helfgott.SupNorms": {
+      "source_sha256": "f5c6a6f3ec60c8992ec58c8c847b61507e735a0ae49b1e8c0cf32acffbbf8280",
+      "lake_elapsed": "3.1s"
+    },
+    "Lib.Adelic.Adeles.AdeleIdempotent": {
+      "source_sha256": "543a8b33fec343b06fce9be1ea2d976693d3377727dd1f56c6945ebf3021e050",
+      "lake_elapsed": "3.1s"
+    },
+    "Lib.GaloisRep.Pseudocharacter.SemisimpleReps": {
+      "source_sha256": "8325803afaa566ec79ae553f5deb554a17c1f6670b9a2f168fee9f863e7919aa",
+      "lake_elapsed": "15s"
+    },
+    "Lib.ClassField.Places.ProfiniteGalois": {
+      "source_sha256": "7b864f6b7e21427eaf4ec2a35ffc40b20c77664585b53431e321398d39d5191c",
+      "lake_elapsed": "4.1s"
+    },
+    "Lib.General.Groups.RatModInt": {
+      "source_sha256": "f4a46a2a519c76bc35ef56acf3392b29be4a7eb9bd3c43851548707678b8e956",
+      "lake_elapsed": "2.0s"
+    },
+    "TernaryGoldbach.Helfgott.NonPrime": {
+      "source_sha256": "628e0114d615e9d7d1e9a110f21e471501b4335bca0e2d4628a9b9dde674bb4f",
+      "lake_elapsed": "4.5s"
+    },
+    "Lib.DiscreteSeries.Haar.UnitaryNorm": {
+      "source_sha256": "a76965d32c8f1ff73d1906c579454505e331376e741c044121f101156687ee53",
+      "lake_elapsed": "4.5s"
+    },
+    "Lib.General.Groups.CentralProjections": {
+      "source_sha256": "9607fa3ba5b0ed4783a46e4fba9457f294d53121db623fff4e47a1e8208de25e",
+      "lake_elapsed": "4.0s"
+    },
+    "TernaryGoldbach.Helfgott.HHBound": {
+      "source_sha256": "2205b2b2a7ffc35948662d84cf452dc0281e25c3a0bcb18d83dd039007893c8a",
+      "lake_elapsed": "5.3s"
+    },
+    "Lib.Shimura.Uniformisation.Frames": {
+      "source_sha256": "d374402f66474ba1908c3183fc4a13b39ceb254acfa47f0ec5624f7a30931c25",
+      "lake_elapsed": "4.4s"
+    },
+    "Lib.ClassField.HeckeL.EulerProduct": {
+      "source_sha256": "478640be010a08b9d6bc1f86651305cf2d9d23705c22e0f78b41ec505741bf9e",
+      "lake_elapsed": "8.2s"
+    },
+    "Coefficient": {
+      "source_sha256": "d634be307adddc89cc4d35b155670dd27d9f368b7a0564fc5536b07cad90c97c",
+      "lake_elapsed": "3.7s"
+    },
+    "Lib.DiscreteSeries.Haar.SkewCoordinates": {
+      "source_sha256": "53515b248263777ba6d248ad26f0d59c7721359626f19b82d5ddc4e826bc0dde",
+      "lake_elapsed": "3.2s"
+    },
+    "TernaryGoldbach.MajorArcs.HHFourier": {
+      "source_sha256": "0f21169c051f85b83d1e93efb805eed3d18b6f4434ed9bc402f73a70a6aec064",
+      "lake_elapsed": "4.9s"
+    },
+    "Lib.General.Groups.IrreducibleCharacters": {
+      "source_sha256": "8c702a8fe616e82d8fa2016b03297598898e118a8162da9b32af799b18921bdc",
+      "lake_elapsed": "9.9s"
+    },
+    "Lib.General.Groups.ArtinDefs": {
+      "source_sha256": "af492166ba3089cb5f8d9876b9b6929d05037e772df1c0100cf7ca148dbe44f5",
+      "lake_elapsed": "6.1s"
+    },
+    "Lib.ClassField.GaloisCohomology.DiscreteUnits": {
+      "source_sha256": "3609197907180a1e20c53e363d8b34b2b48232887d140f20cd2310aae433a3c4",
+      "lake_elapsed": "18s"
+    },
+    "Lib.DiscreteSeries.Haar.LogDerivative": {
+      "source_sha256": "a039c0555176bf09e76c9682d4706a23ebf11abb6c2232212b9b7d4f91ee77c6",
+      "lake_elapsed": "4.8s"
+    },
+    "Lib.General.LinearAlgebra.ExtendColumns": {
+      "source_sha256": "df1d38445a66e63f76475917545b0de0e66827b8533189bce4b6245319c40dc1",
+      "lake_elapsed": "4.3s"
+    },
+    "Lib.General.LinearAlgebra.PartialDerivComm": {
+      "source_sha256": "e0737a5c37df37a07ae52addc74cc4d1a0d6a986448d06e10b87497c906d97bf",
+      "lake_elapsed": "10s"
+    },
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure": {
+      "source_sha256": "8ff779189b82158e783fa09ba5cfb266f2642007619d2df5752d688fce683c79",
+      "lake_elapsed": "15s"
+    },
+    "Lib.General.LinearAlgebra.AdelicRingDefs": {
+      "source_sha256": "844039e4f0e5beacc16f9a8ea51701dbe86e1da5215daa2c5800e7e608b727fd",
+      "lake_elapsed": "4.7s"
+    },
+    "Lib.Adelic.Hecke.HeckeBasic": {
+      "source_sha256": "d100fe45dbb4ddc58f946fb4a6abe6a0fe466a062c45cd8d7a367af1c0f6f54a",
+      "lake_elapsed": "3.8s"
+    },
+    "Lib.General.LinearAlgebra.ColumnLattices": {
+      "source_sha256": "173fc15736f148f7bcf90502b58f5ae2153835d87b1cccaa8c8edc1bb62a2d78",
+      "lake_elapsed": "8.9s"
+    },
+    "Lib.LocalGL.Green.MackeyFormula": {
+      "source_sha256": "e9b0c8bd4e7ab8184214b934cbe7980618ad5729680ad893e3602d5dd23c2861",
+      "lake_elapsed": "31s"
+    },
+    "Lib.General.NumberTheory.Embeddings": {
+      "source_sha256": "23e04a472cc47195fdaa1baf568a034a52565a611edbebcc8b143214f7ca5627",
+      "lake_elapsed": "2.9s"
+    },
+    "Lib.General.Analysis.HolomorphicIntegral": {
+      "source_sha256": "f5bf910333315fcbc3027a05d8bcc000c46d7569353b13aa15f4d95f7c5c3ec3",
+      "lake_elapsed": "17s"
+    },
+    "Lib.Adelic.Adeles.AdditiveCharDefs": {
+      "source_sha256": "ff8f5897509f5446e5e868e524a53408b8d69b782db68a87735bf85dd9f3c1da",
+      "lake_elapsed": "3.7s"
+    },
+    "Lib.General.Algebra.ZerosCostDegree": {
+      "source_sha256": "30ca4a05278edbd578e32601336696c6d1c13b4feededd4952b8a74775dc5126",
+      "lake_elapsed": "15s"
+    },
+    "Lib.Weil.Construction.SubmoduleNormedSpace": {
+      "source_sha256": "a74d6ecf2a6e6b052efeb702f2ee165f3a22c8312296230d723d8ee62eb26527",
+      "lake_elapsed": "2.8s"
+    },
+    "Lib.General.Measure.SubgroupIntegral": {
+      "source_sha256": "4eb0f6ab29bad03b624e8fe413642e2c6b8960619ad67125c4882b78adf1c28b",
+      "lake_elapsed": "3.6s"
+    },
+    "Lib.Shimura.Uniformisation.LieExponential": {
+      "source_sha256": "9260440fb5e2dff2e6763585b33f94f9dcbd694c176ff03783d5664524129847",
+      "lake_elapsed": "17s"
+    },
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": {
+      "source_sha256": "d71067206d92a944363400d1754e64e565d14ac6a743121febbe2009ac127ae1",
+      "lake_elapsed": "14s"
+    },
+    "Lib.Adelic.QuotientMeasure.Packing": {
+      "source_sha256": "616b336811176e6f3e871b7ffa59a00f858acb175514e6a8d5af1e295d1a26db",
+      "lake_elapsed": "9.6s"
+    },
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": {
+      "source_sha256": "cadb32cab1d61d9896f234481d473079e681ca18ffe87b8203335b8a0d321e06",
+      "lake_elapsed": "3.2s"
+    },
+    "Lib.Shimura.ComplexTheta.CanonicalMultiplier": {
+      "source_sha256": "9146a353439fedc2afc35b9b3453a939376fdc427da8314de1f4659c386a6bd0",
+      "lake_elapsed": "7.4s"
+    },
+    "Lib.Adelic.QuotientMeasure.Unimodular": {
+      "source_sha256": "77e707e1fd9e3e6b4a937e6b2ebd1b2ad059a6292563a8e4bd04fca58d131f1d",
+      "lake_elapsed": "7.4s"
+    },
+    "Lib.General.Algebra.AdicRingHomExt": {
+      "source_sha256": "cad5bc1b19dfca0ad49423289ea41ae2032c40df0825854898909daa8abb0e01",
+      "lake_elapsed": "4.9s"
+    },
+    "Lib.ClassField.Places.CyclotomicCharacter": {
+      "source_sha256": "742ca2494dabc1fa20df234826c6787b7fc47919e3ce2942688434328680ceff",
+      "lake_elapsed": "7.2s"
+    },
+    "Lib.PadicHodge.PeriodRings.CpIntegers": {
+      "source_sha256": "34b44a3d1f18785fa4ec31cba0bc501c830252bda267c736133f996dd796046f",
+      "lake_elapsed": "6.1s"
+    },
+    "Lib.General.Analysis.FundamentalDomain": {
+      "source_sha256": "0f28dde96f541a43b738e42275bfc7647da76f39d48aa910f738e6e7d8febc64",
+      "lake_elapsed": "7.0s"
+    },
+    "Lib.ClassField.Places.Places": {
+      "source_sha256": "e1036fbde9535d5b6bd51f0284394efb42f6198f36664b61d959684a0e5416f7",
+      "lake_elapsed": "4.4s"
+    },
+    "Lib.General.Algebra.SuccessiveApprox": {
+      "source_sha256": "e8ffdacf0fe1c9de32e4231697efd1e1052dfc4f060540321db06173d17f07a7",
+      "lake_elapsed": "3.7s"
+    },
+    "Lib.PadicHodge.PeriodRings.Ainf": {
+      "source_sha256": "0cecdb054f1992f2b0a139f35ca3204fc5a068d4d5546da750372f442a7550b1",
+      "lake_elapsed": "8.9s"
+    },
+    "Lib.ClassField.Places.LocalFrobenius": {
+      "source_sha256": "687f9185be29ba1fc5a63d861cda22fbae65b3b7c3186b7dc4091652da47e7fc",
+      "lake_elapsed": "6.7s"
+    },
+    "Lib.PadicHodge.PeriodRings.ThetaKernel": {
+      "source_sha256": "8ce07f96e7b4ec1a2209d3d866dfb442cc1480931b2e7dce3c446e0a42c47460",
+      "lake_elapsed": "6.7s"
+    },
+    "Lib.ClassField.Places.LocalExtension": {
+      "source_sha256": "af56d32031e6cf9b7f59f6d27b8ea323fa85a85fcc5a372f4e78e4c0c53c96f1",
+      "lake_elapsed": "6.6s"
+    },
+    "Lib.Shimura.ComplexTheta.ThetaDimension": {
+      "source_sha256": "cb68e8c7fde8b4cc5191e38c19d8489415d682d9b8ebb891b534d3a620465bfc",
+      "lake_elapsed": "21s"
+    },
+    "Lib.Adelic.Hecke.ClassMean": {
+      "source_sha256": "aad69a89e5a6a98acfd072bbc88ede877f8f4b586e4ce615f748c36fb1aadf5f",
+      "lake_elapsed": "9.1s"
+    },
+    "Lib.ClassField.Places.UnramifiedCharacters": {
+      "source_sha256": "5a0957b0f96fd2d766b0e44dd8a544f8c25b9be091b46a1a7747f02af19510d2",
+      "lake_elapsed": "5.7s"
+    },
+    "Lib.General.Groups.CompactMean": {
+      "source_sha256": "d42ea144b169deb3cfdea0ed2c3231a6e6d4646a1fa9a6e9f268f3ddba35b87b",
+      "lake_elapsed": "3.7s"
+    },
+    "Lib.CM.Sigma.SigmaFunction": {
+      "source_sha256": "d5c218fde592375cbc297d21496ed664761dc65ef2f6b212ce182ad7ff1c0582",
+      "lake_elapsed": "10s"
+    },
+    "Lib.Adelic.Adeles.AdelicAbs": {
+      "source_sha256": "796a33ad421075107600d877806f3daa0ea5ccf389d11da1a1f600ae462630cb",
+      "lake_elapsed": "3.5s"
+    },
+    "Lib.Adelic.Unitary.SpaceDefs": {
+      "source_sha256": "5cf745b78feeac3fcc1c91c40933331d999f187ac320beb0ad108519d9013e36",
+      "lake_elapsed": "9.3s"
+    },
+    "Lib.ClassField.Places.PadicDecomposition": {
+      "source_sha256": "c21c31fa5062bf390de8552e0506c3fe35ce496e868119fc5e66c325f31a8266",
+      "lake_elapsed": "9.3s"
+    },
+    "Lib.Weil.DualPair.Kronecker": {
+      "source_sha256": "24cca1a1c771a5dec192767a1f7ccf72f8e629924b8d5928595009a675e9d68b",
+      "lake_elapsed": "3.9s"
+    },
+    "Lib.General.Measure.HaarModulus": {
+      "source_sha256": "7925ed45352e52e48b78ae59baa524a29994c7ee3ebdaf4565fa15d5fcbbb935",
+      "lake_elapsed": "7.2s"
+    },
+    "Lib.Adelic.Adeles.RationalPoints": {
+      "source_sha256": "7bc04bc93e197185dbc1933142ad608757ded3f210ddda8fb6400908451d730f",
+      "lake_elapsed": "6.2s"
+    },
+    "Lib.General.Algebra.GeneralisedIndex": {
+      "source_sha256": "cb519de76c44bef47736b402d2a29224e1f14545c19e8c9eb8976f21992660df",
+      "lake_elapsed": "3.2s"
+    },
+    "Lib.Adelic.Adeles.LocalComponents": {
+      "source_sha256": "e0483843f6816c8175994af933079b31de9239f9f07e0d7daec30e04244dd0bb",
+      "lake_elapsed": "8.0s"
+    },
+    "Lib.Weil.GaussSum.LocalHomUnit": {
+      "source_sha256": "fb480cb86ccbbd60c93175cdb1e719544bbba703ce02e544248780910d2601ec",
+      "lake_elapsed": "5.0s"
+    },
+    "Lib.ClassField.HeckeCharacter.CharacterDefs": {
+      "source_sha256": "2a555e39e99da7c1cc9322c2b56fa982d5ffd795f48c37f41a951363306a3436",
+      "lake_elapsed": "4.2s"
+    },
+    "Lib.Adelic.Unitary.SpaceGram": {
+      "source_sha256": "9d6952fca7498e9e4cc092798f498ab6ae8457d50c4995f936bd1fbd8eb7a93e",
+      "lake_elapsed": "3.1s"
+    },
+    "Lib.Weil.Construction.GaussSumSign": {
+      "source_sha256": "d89c7959bd58aff457c270970f07e605774d50bc1d62360f0f2700c7f28fff09",
+      "lake_elapsed": "3.9s"
+    },
+    "Lib.General.Algebra.InertResidue": {
+      "source_sha256": "83716ef52264e2fda1f14ecadcb56c9322adf7e229f683e247d779afb5383745",
+      "lake_elapsed": "4.8s"
+    },
+    "Lib.GaloisRep.Hilbert90.TameDescent": {
+      "source_sha256": "7acbab5f569b097bbc2fbc34adc3cb91168ecbd85dabe6dbbf839540b92cf040",
+      "lake_elapsed": "13s"
+    },
+    "Lib.Adelic.Adeles.AdelicModulus": {
+      "source_sha256": "badca842bf6bfb4154d6e0065463014043de1f19a0e0cf8d3a298f6411c3f890",
+      "lake_elapsed": "5.0s"
+    },
+    "Lib.Adelic.Witt.FrameAction": {
+      "source_sha256": "6445beb4629e627330b2c06ae6fdd5924e9538e4ea5874a988c12e6c5f98ce32",
+      "lake_elapsed": "13s"
+    },
+    "Lib.GaloisRep.Hilbert90.UnitaryHilbert90": {
+      "source_sha256": "3636b25ed15ae8fb0822d45aa47ce3e80e36eaf4d1220fcee2693525d818c8af",
+      "lake_elapsed": "11s"
+    },
+    "Lib.DiscreteSeries.Bruhat.EichlerMaps": {
+      "source_sha256": "724894beff38aee114cc2493fb2fc691192aef7eb4fc06f542d624d9ae0731d9",
+      "lake_elapsed": "4.9s"
+    },
+    "Lib.Adelic.Adeles.IdeleHilbert90": {
+      "source_sha256": "0c5563e9ecbe8978308f4e50444d05bceacb7d84cb57d9bfbbf5e167e3270ffb",
+      "lake_elapsed": "14s"
+    },
+    "Lib.Adelic.Witt.SpaceOperations": {
+      "source_sha256": "222acbd1af056c17d300a5edd06a16541e5c1086f96249f7e9b024d141811f60",
+      "lake_elapsed": "14s"
+    },
+    "Lib.ClassField.HeckeL.IdelicThetaSum": {
+      "source_sha256": "5a71f0659e2b9b6381f4148576f3624124f25542f323d856e91181acbded4ad9",
+      "lake_elapsed": "18s"
+    },
+    "Lib.GaloisRep.BaseChange.OrbitClassSum": {
+      "source_sha256": "30ce95be2749dcd12e413ad37d7f2ffac9de0444bfa32d4a2807d1ee25b20074",
+      "lake_elapsed": "20s"
+    },
+    "Lib.Adelic.Adeles.AdditiveCharBasic": {
+      "source_sha256": "40bd5484a34e7ed1351cee7922cf60eb57a729aee02e50cf1f8dda376aadc579",
+      "lake_elapsed": "3.9s"
+    },
+    "Lib.ClassField.Places.AdeleNorm": {
+      "source_sha256": "c1e819d1696c3a3df9b8a620f5292260a040f3e17bc538d6aeea445a83fc9b93",
+      "lake_elapsed": "8.4s"
+    },
+    "Lib.Adelic.Adeles.AdeleSelfDual": {
+      "source_sha256": "11a4ffc3684db8ef5a94213334439b13b45849c64793e0cde1a90b8fca0c7680",
+      "lake_elapsed": "4.3s"
+    },
+    "Lib.Adelic.Adeles.NormAbsValue": {
+      "source_sha256": "1b855d01572460102f7d7f1d67a118d4da8913defedb83bf126187640c329dc6",
+      "lake_elapsed": "2.0s"
+    },
+    "Lib.Adelic.Adeles.MatrixApprox": {
+      "source_sha256": "be66f8831c3f6caf0695b4ef0c6442b590acaf279d32c30f2f0be872a013c69d",
+      "lake_elapsed": "4.6s"
+    },
+    "Lib.Adelic.Reduction.MinkowskiSecond": {
+      "source_sha256": "7a5e7d4024f7b01c43f2708096b0907c94d9a0302fe241b9401630875fa6ffd5",
+      "lake_elapsed": "16s"
+    },
+    "Lib.ClassField.GaloisCohomology.CupProduct": {
+      "source_sha256": "abecbffc9232a7c9d57795ff0e1208cad232375beb7aaab2f031127081f7ef8f",
+      "lake_elapsed": "5.1s"
+    },
+    "Lib.Adelic.Cartan.ProjectiveModules": {
+      "source_sha256": "93a88a8e6a69255bfa167e5be7ff0ddc0e1e11e10d38f00fc904e3f0446cf5f3",
+      "lake_elapsed": "20s"
+    },
+    "Lib.Adelic.Unitary.SpaceBasic": {
+      "source_sha256": "2772de25a502ff8ce6d1cb883654b5f85b10f310e4cdf181515bc1c79ef7b6fe",
+      "lake_elapsed": "8.3s"
+    },
+    "Lib.ClassField.GaloisCohomology.SylowReduction": {
+      "source_sha256": "fd5c759621b5e109c3c7e4facf6883acc95dcc2d2d34f30720be38bdcb7de2f9",
+      "lake_elapsed": "7.3s"
+    },
+    "Lib.Adelic.Reduction.FirstMinimum": {
+      "source_sha256": "1f3848f88fd7daca9bc3e338cc1cbf520164a35305ff000e3ec5cdc8916395c6",
+      "lake_elapsed": "6.6s"
+    },
+    "Lib.ClassField.HeckeL.HeckeContinuation": {
+      "source_sha256": "572e5b3c10c05817cfb1bb58f42332d34f58a44f7508647292dadce3c6664a2a",
+      "lake_elapsed": "27s"
+    },
+    "Lib.ClassField.Places.FrobeniusOnRoots": {
+      "source_sha256": "a28b7570f69f9cd3f7d2981d25053a8b00e3423a75d1b1fc5f74256d7575e1d5",
+      "lake_elapsed": "2.8s"
+    },
+    "Lib.ClassField.Places.TameInertia": {
+      "source_sha256": "89a47e42c1bb3575e73fcab0f4393b2ddc26b1b322551b1dc3d81da6c6e1d5f4",
+      "lake_elapsed": "6.0s"
+    },
+    "Lib.ClassField.HeckeCharacter.CharacterLevels": {
+      "source_sha256": "68c597d25c181faef4e139b0ed95cfb920c36de24d288559eea75fb94a06a4de",
+      "lake_elapsed": "5.6s"
+    },
+    "Lib.ClassField.Places.DecompositionLocal": {
+      "source_sha256": "6b13968f3e5e5e21307d97ba791d987a16f1aad7d8e279245198787a6530ad75",
+      "lake_elapsed": "9.0s"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": {
+      "source_sha256": "472d000ce4ae2cda557764b5b847214cec15898711a097cf679cd6d95d56c7b5",
+      "lake_elapsed": "6.1s"
+    },
+    "Lib.General.LinearAlgebra.ElementOfMatrix": {
+      "source_sha256": "af49bd99a51b954d6823c7ed4c1e869c46aae8157c2adfd56ed31b7a8acea008",
+      "lake_elapsed": "2.4s"
+    },
+    "Lib.Weil.Fock.FockVacuum": {
+      "source_sha256": "3a26d11f6ab6351e14f2c0b8ae606563e1f7fdd937d5e4a3a2029ad76a5c5ce5",
+      "lake_elapsed": "3.9s"
+    },
+    "Lib.Weil.Construction.Model": {
+      "source_sha256": "f851a204ea424ef681c3cdf7526082424b2e86a6a56c60fe6ee81083339bb700",
+      "lake_elapsed": "11s"
+    },
+    "Lib.Shimura.GoodReduction.ThetaOrthogonality": {
+      "source_sha256": "6ef621f244a138040b4619e1a86f69b28d035d50a0049adc4280aa7b6c7c947d",
+      "lake_elapsed": "10s"
+    },
+    "Lib.Weil.Construction.WeilOperators": {
+      "source_sha256": "58f5809379b715f8eaaef0fdaf740931fb3d422b9eb6298ed1d7c21f60dae847",
+      "lake_elapsed": "5.1s"
+    },
+    "Lib.DiscreteSeries.Theta.OscillatorDefs": {
+      "source_sha256": "238ecf8ff1f2a24aebcced0e5803198cea85a3a2a389f87651d705bdbe5ef407",
+      "lake_elapsed": "17s"
+    },
+    "Lib.Weil.Construction.OrthogonalSum": {
+      "source_sha256": "3fbb8113f1e265faa1165c324f0ff0c9ccb88da2880a8c795eb8159f62edf641",
+      "lake_elapsed": "5.5s"
+    },
+    "Lib.GLn.SchurModule.Nabla": {
+      "source_sha256": "1226dcf4a7404f5036463a59ae34f2f92e88a60d8872bf9cfe2c6ac17cbfeb4c",
+      "lake_elapsed": "10s"
+    },
+    "Lib.Weil.Fock.FockAction": {
+      "source_sha256": "7e15e312e4600ba51e75b94e6587ef271aa3b6ffb1365b5991f1f7d5567bdcee",
+      "lake_elapsed": "8.6s"
+    },
+    "Lib.DiscreteSeries.Haar.HaarColumnChart": {
+      "source_sha256": "7caff241c34b31df28facb268333193882b38777d2aeaaa413c6d31e919c47bd",
+      "lake_elapsed": "10s"
+    },
+    "Lib.GLn.SchurModule.Bordering": {
+      "source_sha256": "8dbebb16916b3a7ac2deb8d8ddad7a058ab7a698647286a96ade7559b042a089",
+      "lake_elapsed": "9.8s"
+    },
+    "Lib.DiscreteSeries.Haar.SphereFibreIntegral": {
+      "source_sha256": "5f2d0801ed210a76fdabd941348d51c9ac6b7a5f53e3f5755e16ca6d541567d3",
+      "lake_elapsed": "7.9s"
+    },
+    "Lib.Weil.Fock.FockTensor": {
+      "source_sha256": "82dfee720e0c1ec269c15fbbbadd3cfecdba7958956a153935cf843f1f86977a",
+      "lake_elapsed": "10s"
+    },
+    "Lib.Adelic.QuotientMeasure.IwasawaIntegration": {
+      "source_sha256": "137424c54f5ea2f4d11c9b588f9afa254e52735c9f8eb3282c2a2710bcea9529",
+      "lake_elapsed": "8.1s"
+    },
+    "Lib.GLn.SchurModule.Interlacing": {
+      "source_sha256": "ebc1e4f52d93ae2eb3194636a765e1efbaa5b8bbe0b1f3e0576d36e89a1a23d6",
+      "lake_elapsed": "21s"
+    },
+    "Lib.Weil.Fock.MixedFockModel": {
+      "source_sha256": "7ab0dec8ae7ee6b212368979cd50df0770d0e937c8a51df078979d91d802acb5",
+      "lake_elapsed": "17s"
+    },
+    "Lib.GLn.SchurModule.MinorBasis": {
+      "source_sha256": "b7f3ccb3dee36d7c5d6939fa068393fec8cacfe8f04a7603080a1b0b2b8f5ca3",
+      "lake_elapsed": "17s"
+    },
+    "Lib.Weil.Fock.FockHarmonicCoeff": {
+      "source_sha256": "509098e99818c6e55fd9aa60cc01093cef76c4f7ca8c894b9e0c1b55eb03e9f6",
+      "lake_elapsed": "27s"
+    },
+    "Lib.GLn.SchurModule.SchurMatrix": {
+      "source_sha256": "69f9eb39bc63cc4a35c5eb8d8ec2c4910aa8ff5e6d28ae2127d39de613c330f8",
+      "lake_elapsed": "13s"
+    },
+    "Lib.GLn.SchurModule.RationalRep": {
+      "source_sha256": "a4e95b5b210fd6250a57209941a26fd8e0508b29ad5352b14a02a08113c6656a",
+      "lake_elapsed": "2.7s"
+    },
+    "TotientGrid": {
+      "source_sha256": "fd68fb71a4f21a7e673e9d6c49c02f0f77c486913255116e75e61d0fa676376a",
+      "lake_elapsed": "645s"
+    },
+    "Budget": {
+      "source_sha256": "ff396d25f950da38935fbae00d57f587acfe86443e827bbbfac3028bee973c9d",
+      "lake_elapsed": "2.3s"
+    },
+    "Route": {
+      "source_sha256": "40572ab05dd319829f513db86f91c2d923ffbe59f5b8701975154b044e4f0552",
+      "lake_elapsed": "2.3s"
+    },
+    "MajorBudget": {
+      "source_sha256": "494d3be4655fa1fa6801a6d1d2d103bdad8401ba005b106dc41d33487e353c5c",
+      "lake_elapsed": "2.0s"
+    },
+    "PrincipalWave": {
+      "source_sha256": "bde29d4c3c6c892b3167c768559aff580cbbddd3f03a6b26c71aa31e46a6249b",
+      "lake_elapsed": "2.5s"
+    },
+    "RationalArcs": {
+      "source_sha256": "4960e92f0b16849a7461a31f7ca4b14492c874b043133f4428b311f2a62af8d6",
+      "lake_elapsed": "2.8s"
+    },
+    "RouteOnArcs": {
+      "source_sha256": "42eaff27d9a69d53de9243f63b4133acace8de0f030dadbc6ab29823fa68d773",
+      "lake_elapsed": "2.5s"
+    },
+    "PrincipalTail": {
+      "source_sha256": "1d44ea1b977bb1ada8c6279f22b85cb81cec95521468e9fc1bc3de3fe86bc275",
+      "lake_elapsed": "2.9s"
+    },
+    "PrincipalMajor": {
+      "source_sha256": "2723aec44d7a81dfa36ce44704d17ad65d8a5dad6c36147893cd87ffdeb8b16e",
+      "lake_elapsed": "2.9s"
+    },
+    "ModelRoute": {
+      "source_sha256": "cc5d8cf7e71ed2446135133755035bbda56ab41f04a75188ca440da678e3dd1f",
+      "lake_elapsed": "2.8s"
+    },
+    "MajorEnergy": {
+      "source_sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "lake_elapsed": "2.8s"
+    }
+  }
+}

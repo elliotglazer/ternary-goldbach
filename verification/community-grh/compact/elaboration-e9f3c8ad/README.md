@@ -31,9 +31,11 @@ Compiler checks and source inspections are identified separately in the
 accompanying receipts.
 
 The AWS receipt prefix records 29 errors spread across the seven modules.
-The full log and receipt remain on EBS. The attached diagnostic record
-identifies the bytes available on the serial console and the digest required
-to authenticate the full receipt. These results cover the source preflight.
+The recovered 5d9a EBS archive now authenticates the complete error log and
+the full receipt against the digest printed in the serial console. The
+preflight took 719.21 wall seconds and 2,331.39 CPU seconds, with zero OOM
+kills. The terminal record also lists each local target with a successful
+Lake build line and the source hash at that revision. These results cover the source preflight.
 The all-n theorem still needs a successful joint compile and both comparators.
 
 The combined source revision is `d6b1bfd523e2c54b6e4bb72844deeddf8341879a`.
