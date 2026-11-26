@@ -96,7 +96,8 @@ seal Finset.univ Finset.sum Finset.prod in
 branching matrix, and multiply by ∏_τ τ(π̄)^{−n_τ}. -/
 def restrictToY := (∏ τ, Φ τ (star ↑D.π) ^ (-D.branchExp τ)) •
   ((D.branching.1.map (↑)).mulVecLin.compLeft _ ∘ₗ .funLeft ℂ _ D.borderU).restrict (p :=
-  AlgForm ..) (q := AlgForm ..) (id fun ψ ↦ .imp (((rightStab ψ).comap
+  AlgForm (D.X D.m) D.κ (D.lastEntry D.m))
+  (q := AlgForm (D.Y D.m) D.columnsY (D.lastEntry D.m)) (id fun ψ ↦ .imp (((rightStab ψ).comap
   D.borderU).isOpen_mono (fun _ ↦ (by simp [· _])) <| ·.preimage ((U.isClosedEmbedding_mat
   isUnit_one).continuous_iff.2 (.matrix_reindex (by simp [U.sum]; fun_prop) ..))) fun k _ _ ↦ by
   simp [stdSpace_weightRep_apply]
