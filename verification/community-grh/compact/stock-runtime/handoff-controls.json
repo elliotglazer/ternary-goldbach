@@ -1,0 +1,39 @@
+{
+  "scope": "Actual source-only stock prepare plus three shell syntax checks and real clock-boundary controls. Protected proof execution pending.",
+  "stock_policy": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "source_commit": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+  "source_tree": "728ed945f3e4e2a7c48d7ff0c01412cf43cc2ff9",
+  "source_bytes": 364823631,
+  "checked_files": 1529,
+  "local_preparation_type": "clean publicly fetched candidate and policy, previously provisioned Python/Ruby/Elan; UID 65534",
+  "stock_return_status": [
+    "pending",
+    "prepared"
+  ],
+  "errors": [],
+  "warnings": [],
+  "stock_report_sha256": "d3dfdfcb5887d92673f6d6a5bfe1ae7fa6cbc5b838fe46c7feec2b361becaef3",
+  "input_clock_epoch": 1795676983,
+  "hours_since_host_window_closed_at_this_source_check": 2.372,
+  "file_sha256": {
+    "stock_rehearsal_job.py": "8d292e16165ab800b5895dd944d1bcd66e1340b65c7af3e5090f969030d5d32c",
+    "dispatch_stock_rehearsal.py": "06e77e6c383db0998689418e7d2c468b49e7bc51141261350e8fdde1589e1b21"
+  },
+  "host_cutoff": "2026-11-26T10:17:24Z",
+  "latest_full_start": "2026-11-26T04:47:24Z",
+  "window_tests": {
+    "latest_full_start": "admitted",
+    "one_second_too_late": "The original host cutoff cannot accommodate the full 19,800-second verification window",
+    "setup_keeps_clock": "admitted",
+    "already_elapsed": "Original verification deadline already reached"
+  },
+  "outer_350_min_latest_start": "2026-11-26T04:27:24Z",
+  "dispatcher_tests": {
+    "both_outer_scripts_bash_n": true,
+    "actual_prepare_inner_script_bash_n": true,
+    "refused_wrong_tree": true,
+    "refused_short_commit": true,
+    "contacted_aws": false
+  },
+  "elapsed_to_sealed_manifest_seconds": 17.506
+}

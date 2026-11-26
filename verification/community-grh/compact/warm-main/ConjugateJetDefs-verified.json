@@ -1,0 +1,73 @@
+{
+  "module": "Lib.Weil.Construction.ConjugateJetDefs",
+  "persistent_pin": "ee2e860eeb620ce12701a9d3779fa46df493a8c1",
+  "source_sha256": "1851f99ed3e1f4161d84761af88aac31c405b28a849fe6287ba4d67936376eb1",
+  "lean_version": "4.35.0",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target_platform": "Windows x86_64",
+  "compile": {
+    "exit": 0,
+    "wall_seconds": 199.28,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": {
+    ".olean": "160ed7348b674e1be185bedf398a23c09218fb98f41b49017ff71998f1e5fdc7",
+    ".olean.private": "17575852e98506f1d44ed2d6f29aa3f2155defe7f921f4f211ef5b03d0badf18",
+    ".olean.server": "14fc11445d3775af0b2ea588a34d53a2dfa10f20ddf66040239e1f2c2cee6c37",
+    ".ir": "498b390dec07ed17b00dfbbb2e9b2c5dfc5c2d2937593a18e774fac715f40e0d",
+    ".ir.sig": "d1aa20c6334e9f56026d77fb451bd891c02c007a39e91aeadf0fd6c60f28a0e0"
+  },
+  "actual_direct_import_sha256": {
+    "Lib.Weil.MixedModel.NameWeilAction": "a66f86c1dba63178218f24d60d6fc9b1e948246a628c624b0fe1d442d0747717"
+  },
+  "whole_source_audit": {
+    "exit": 0,
+    "wall_seconds": 1.11,
+    "reader_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "raw_log_sha256": "1182e70e3041f22bb991c38da3afb56c7b365113c17496e395afc0d27fddbc58",
+    "summary": [
+      "34 declarations, direct sorryAx references: #[]",
+      "34 audited transitive axiom entries, 0 offending: #[]",
+      "34 declarations, direct sorryAx references: #[]",
+      "34 audited transitive axiom entries, 0 offending: #[]",
+      "34 declarations, direct sorryAx references: #[]",
+      "34 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "named_exports": [
+      "EXPORTED finiteImage._proof_2 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.constantCoeff_jetSeries = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED IsTightFrame.eq_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk.sizeOf_spec = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.fintypeIndex = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.rec = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.IsJetConjugate._proof_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk._flat_ctor = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.noConfusion = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.card_dvd = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.shift = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED finiteImage.eq_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.sum_eq = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.IsJetConjugate = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk.inj = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED finiteImage._proof_3 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.Index = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.multiplier = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk.injEq = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mk.noConfusion = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.mul_shift_mem = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED finiteImage = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.noConfusionType = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.nonempty = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.ctorIdx = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED finiteImage._proof_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED IsTightFrame = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.casesOn = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion._sizeOf_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion._sizeOf_inst = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.VacuumExpansion.recOn = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED IsTightFrame.repeat_vectors = #[propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}
