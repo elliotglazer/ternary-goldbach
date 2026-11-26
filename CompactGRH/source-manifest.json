@@ -652,7 +652,8 @@
     {
       "path": "Lib/Cohomology/Etale/AcyclicTests.lean",
       "upstream_sha256": "815aa8c3996dc2790ec85a339b743be9e91a7f78099f0e1d1c1e2c092336b8a5",
-      "converted_sha256": "4f5970ae1220420a92a610b6fecd02f64f2bca249beb9b933cf74ed313169966"
+      "converted_sha256": "0f3841a91729a1615c147923157dca5a0255d0215cab96f3c305f6d562486132",
+      "adaptation": "Specify the locally constant coefficient functor and ULift map in degree zero."
     },
     {
       "path": "Lib/Cohomology/Etale/BijectiveComparisons.lean",
@@ -2103,7 +2104,8 @@
     {
       "path": "Lib/PadicHodge/Crystalline/RegularityFrobenius.lean",
       "upstream_sha256": "f0dfd69a51d711207d7c5b2bbcebfc1a4c7e6a3d794a41e4440d612e9eac5088",
-      "converted_sha256": "4a91e7123e7a5ea5780b58d06edc3e915170e9a051ea5137cdddef4c4091440b"
+      "converted_sha256": "8e0ec2dd38c643eb54630e5f920844a5af2a6e8261d5424c7d46d2f561a29229",
+      "adaptation": "Use the public inverse tensor-product equivalence and its pure tensor evaluation."
     },
     {
       "path": "Lib/PadicHodge/Herr/GaloisLattices.lean",

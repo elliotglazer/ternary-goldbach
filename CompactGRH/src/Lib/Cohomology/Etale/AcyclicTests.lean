@@ -65,7 +65,7 @@ lemma isFilteredColimit_locConstSpec {c : Cocone L} (s : ∀ y : c.pt, ∃ j x, 
 Λ): pull-back along q for n = 0, zero for n > 0. -/
 noncomputable def locConstClass : ∀ n, locConstSpec Λ B →+ H (freeAb T) (locConstCoeff Λ) n
   | 0 => .comp (.mk' mk₀ mk₀_add)
-    ((Comparison.homOfValue ⟨testIncl, 𝟙 (_ ⋙ liftCoeff _)⟩ q).comp (.mk' _ (by tauto))) | _ => 0
+    ((Comparison.homOfValue ⟨testIncl, 𝟙 (testIncl ⋙ liftCoeff (locConstSpec Λ))⟩ q).comp (.mk' ULift.up (by tauto))) | _ => 0
 
 /-- Property of q: T → h_B on tests: pull-back LC(Spec B, Λ) → H^0(T, Λ) is bijective and H^n(T,
 Λ) = 0 for n > 0. -/
