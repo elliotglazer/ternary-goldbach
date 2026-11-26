@@ -29,7 +29,10 @@ namespace TernaryGoldbach.Explicit
 /-! ### Certificates for `log` and `exp` -/
 
 theorem T12_nonneg {f : ℚ} (hf : 0 ≤ f) : (0 : ℝ) ≤ ((T12 f : ℚ) : ℝ) := by
-  unfold T12; push_cast; positivity
+  have h : (0 : ℚ) ≤ T12 f := by
+    rw [T12, TernaryGoldbach.Prelim.Small.taylorSum_eq]
+    exact Finset.sum_nonneg fun i _ => div_nonneg (pow_nonneg hf i) (Nat.cast_nonneg _)
+  exact_mod_cast h
 
 theorem exp_ge_cert (a : ℕ) {f : ℚ} (hf : 0 ≤ f) :
     ((ELpow a : ℚ) : ℝ) * ((T12 f : ℚ) : ℝ) ≤ Real.exp ((a : ℝ) + (f : ℝ)) := by

@@ -167,6 +167,12 @@ lemma RealPlaceSizes.complexGauge_volume_le (L : ℝ) (h4 : 4 ≤ L) : ∀ j : �
 noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : ρ ≤ L := by rfl) :
   Gauge hF.complexLevel := by
   obtain ⟨hk, _, h4⟩ := hF.k_eq, hF.eight_mul_r_le_rho, hF.ten_le.trans hρ
+  have hball : ∀ u ∈ hF.complexLevel.𝔅, ∀ i, ‖u i‖ ≤ L ^ (1 : ℕ) := by
+    intro u hu i
+    change toLp 2 u ∈ Metric.ball 0 (4 : ℝ)⁻¹ at hu
+    have hu' : ‖toLp 2 u‖ < (4 : ℝ)⁻¹ := by simpa [Metric.mem_ball] using hu
+    rw [pow_one]
+    exact (PiLp.norm_apply_le (toLp 2 u) i).trans (by linarith)
   refine ⟨⟨fun j ↦ {x | ‖x‖ ≤ L ^ j}, ?_, fun c k ↦ by
     rify at c; simp_all [pow_succ']; grw [norm_sum_le, k]; simp; bound, ?_, ?_, by simp [
     inv_eq_left_inv IsHermInvolution.mul_self,
@@ -174,7 +180,7 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
     .ofReal L ^ 2, fun _ ↦ by simpa [closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
     simp [HasMatSize, apply_ite, complexBasis]
     grind [norm_add_le, norm_one, norm_I], by simp +contextual [HasMatSize, (norm_apply_le_l2_opNorm
-    ..).trans, hρ.trans'], fun u h i ↦ by simp_all; grind [PiLp.norm_apply_le (toLp 2 u) i], ?_, RealPlaceSizes.complexGauge_volume_le L h4, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
+    ..).trans, hρ.trans'], fun u hu i ↦ hball u hu i, ?_, RealPlaceSizes.complexGauge_volume_le L h4, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
   iterate 6 simp (disch := positivity) [pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
     bound [two_le_pi, sq_nonneg (L - 1)]
   · grw [Measure.map_apply, prod_apply_symm, complexPlace_skewMeasure, lintegral_map_le,
