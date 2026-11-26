@@ -191,3 +191,5 @@ functor definition and its laws in 40.43 seconds. The declaration reported
 only propext, Classical.choice, and Quot.sound.
 
 CyclicSubrep reproduced both previous errors as a full file and passed on stock Lean 4.35 after repair. UpsilonValues reproduced the stuck metavariable in the original definition RHS and passed the same focused test with the place specified. Full source replay is pending.
+
+Native Lean 4.35 reproduced the original geometry evaluation mismatch and JetChainRule closedness failure, then accepted both corresponding repaired expressions. Full module checks are pending. A separate native full-module run of CrystallineTests now passed in 42.21 s with the same three standard axioms for pdReduction and both audited declarations.
