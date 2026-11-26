@@ -76,7 +76,7 @@ lemma realHomeo_mul g' : X.realHomeo (g * g').1 =
 
 /-- The isomorphism g ↦ η⁻¹(x_f g x_f⁻¹)η from the standard finite adelic unitary group onto
 that of S, written in the lattice basis; x_f is the finite point of V. -/
-def finiteEquiv : Gf E 𝔰.BesselIndex ≃* S.GFin := (U.conj _ (by simpa [X.J_eq_ratGram] using
+def finiteEquiv : Gf E 𝔰.BesselIndex ≃* S.GFin := (U.conj V.xFin (by simpa [X.J_eq_ratGram] using
   V.gram_xFin)).trans (S.toLatBasis.trans (MulAut.conj (S.inclHFin η)⁻¹))
 
 lemma finiteEquiv_eq_adelicToFin : X.finiteEquiv g.2 =
