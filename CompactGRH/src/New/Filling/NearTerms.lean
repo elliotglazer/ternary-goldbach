@@ -74,7 +74,7 @@ lemma Filling.tsum_sublatticeDisc_inv_le {E} [Field E] [CMType E] [StablyUnram E
     (one_le_firstMinimum).trans (x.2.rec firstMinimum_le)
   choose a b using tsum_inv_pow_le_of_separated one_pos (fun x y _ ↦ by
     simpa using O ⟨x - y, by aesop⟩) O
-  grw [(by ring : 200 = (5 / 1 : ℝ) ^ 2 * 8), rootDiscr, mul_assoc, mul_assoc, pow_mul, mul_pow,
+  grw [(by ring : 200 = (5 / 1 : ℝ) ^ 2 * 8), rootDiscr_def, mul_assoc, mul_assoc, pow_mul, mul_pow,
     ← pow_mul, ofReal_pow, ← b, ← tsum_mul_right, ofReal_tsum_of_nonneg _ ((a _).mul_right _), ←
     Fin.prod_const, ← tsum_prod_le_prod_tsum, ← tsum_fiberwise _ fun X ↦
     (Subtype.val ∘ X)ᵀᴴ.mulVecLin.ker]
@@ -82,7 +82,7 @@ lemma Filling.tsum_sublatticeDisc_inv_le {E} [Field E] [CMType E] [StablyUnram E
   choose X e h H using siegel_lemma u hs; have := Finset.univ.one_le_prod₀ fun i _ ↦ O ⟨_, h i⟩
   grw [← ENNReal.le_tsum ⟨(⟨_, h ·⟩), e⟩, ← ofReal_prod_of_nonneg, ← one_div,
     sublatticeDisc, div_le_of_le_mul₀] <;> try positivity
-  simp [field, Finset.prod_pow, sublatticeDisc, rootDiscr] at *
+  simp [field, Finset.prod_pow, sublatticeDisc, rootDiscr_def] at *
   grw [← mul_assoc, pow_mul, H, s.le_add_left, hs]
   ring_nf; all_goals simp [mul_add, NeZero.one_le] <;> bound
 
