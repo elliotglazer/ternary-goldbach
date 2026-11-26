@@ -1,0 +1,523 @@
+{
+  "stock": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "command": "/tool/bin/lake --no-cache build +CompletedFiniteRows",
+  "sandbox_chdir": "/project",
+  "program_sha256": "722af0633332051acdc1ae5816f500a1507102e10a30218d3f53c18f29b8b09e",
+  "tool_digests": {
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
+  },
+  "states": {
+    "baseline": {
+      "exit": 0,
+      "log_sha256": "7529d088074d87ec2dd002605e6a115f1f4eb0a437b6454475e577685c53ef9e",
+      "seconds": 0.856,
+      "Built": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent",
+        "Second"
+      ],
+      "threads": 32
+    },
+    "same_config": {
+      "exit": 0,
+      "log_sha256": "9d76cc00aa7d56bacefa99f6dca149fa76bb618af40ccd94011babf9244df7e8",
+      "seconds": 0.154,
+      "Built": [],
+      "threads": 4,
+      "exact_olean_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent",
+        "Second"
+      ],
+      "depHash_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent",
+        "Second"
+      ]
+    },
+    "config_only": {
+      "exit": 0,
+      "log_sha256": "e0645a73c732482fdacd4244787c6256cde285b202fd7c4880267971a2adead8",
+      "seconds": 0.344,
+      "Built": [
+        "Second"
+      ],
+      "threads": 4,
+      "exact_olean_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent",
+        "Second"
+      ],
+      "depHash_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent"
+      ]
+    },
+    "duplicate_import_as_need": {
+      "exit": 0,
+      "log_sha256": "2d795490b94e9df1c66dfe1780e071cad87528b29c2b0644096c781464674407",
+      "seconds": 0.346,
+      "Built": [
+        "Second"
+      ],
+      "threads": 4,
+      "exact_olean_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent",
+        "Second"
+      ],
+      "depHash_unchanged": [
+        "Changed",
+        "Common",
+        "CompletedFiniteRows",
+        "Consumer",
+        "First",
+        "Independent"
+      ]
+    },
+    "config_and_source": {
+      "exit": 0,
+      "log_sha256": "0ee0dfdb6463a2ae197f51f4b006eca8e2f617614839fdcddfd7053797d0204d",
+      "seconds": 0.751,
+      "Built": [
+        "Changed",
+        "CompletedFiniteRows",
+        "Consumer",
+        "Second"
+      ],
+      "threads": 4,
+      "exact_olean_unchanged": [
+        "Common",
+        "CompletedFiniteRows",
+        "First",
+        "Independent",
+        "Second"
+      ],
+      "depHash_unchanged": [
+        "Common",
+        "First",
+        "Independent"
+      ]
+    }
+  },
+  "commits": {
+    "baseline": "88cee531cefcdb72313a4ed3723ac6d6d42584d5",
+    "same_config": "88cee531cefcdb72313a4ed3723ac6d6d42584d5",
+    "config_only": "b824a96841dabda6f6175d770584077478541d71",
+    "duplicate_import_as_need": "0fdcbf9d3a3e8957e50b54d6eb8fe957ed2c8a94",
+    "config_and_source": "297ca2d57eaf5def9aa84dd3a657708e7b6a82af"
+  },
+  "trace_sample": {
+    "before_First": {
+      "depHash": "a1aa37f7c0cb59dd",
+      "inputs": [
+        [
+          "deps",
+          [
+            [
+              "goldbach/GoldbachProof:extraDep",
+              [
+                [
+                  "@goldbach:extraDep",
+                  "00000000000006bb"
+                ]
+              ]
+            ],
+            [
+              "imports",
+              [
+                [
+                  "Common transitive imports (public)",
+                  "00000000000006bb"
+                ],
+                [
+                  "Common:importArts",
+                  "c0cae4f5f3886ece"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "libs",
+          [
+            [
+              "import dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "package external libraries",
+              "00000000000006bb"
+            ],
+            [
+              "module dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "module plugins",
+              "00000000000006bb"
+            ]
+          ]
+        ],
+        [
+          "Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "407ce514b71d5a10"
+        ],
+        [
+          "/project/First.lean",
+          "f9f494af8b693453"
+        ],
+        [
+          "options",
+          "00000000000006bb"
+        ],
+        [
+          "isModule: true",
+          "760fcc16989f4b9b"
+        ],
+        [
+          "Module.name: First",
+          "f975047c277668fc"
+        ],
+        [
+          "Package.id?: (some goldbach)",
+          "e016a39f2e4897ed"
+        ],
+        [
+          "Module.leanArgs: #[]",
+          "00000000000006bb"
+        ]
+      ],
+      "outputs": {
+        "rs": "175e929eb9e5c9ce.ir.sig",
+        "r": "7fa752527be5cc8e.ir",
+        "o": [
+          "bfbd89ec984f4863.olean",
+          "9da8292da461155c.olean.server",
+          "a42a77297e79e85b.olean.private"
+        ],
+        "m": true,
+        "i": "34adf05a7b3c227c.ilean",
+        "c": "f9d1eaa6e61f55dc.c"
+      },
+      "olean_sha256": "28df029ba6440a6b2356aaa654004215d5ef16af4bbdf5c976922343e6711de4"
+    },
+    "after_First": {
+      "depHash": "a1aa37f7c0cb59dd",
+      "inputs": [
+        [
+          "deps",
+          [
+            [
+              "goldbach/GoldbachProof:extraDep",
+              [
+                [
+                  "@goldbach:extraDep",
+                  "00000000000006bb"
+                ]
+              ]
+            ],
+            [
+              "imports",
+              [
+                [
+                  "Common transitive imports (public)",
+                  "00000000000006bb"
+                ],
+                [
+                  "Common:importArts",
+                  "c0cae4f5f3886ece"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "libs",
+          [
+            [
+              "import dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "package external libraries",
+              "00000000000006bb"
+            ],
+            [
+              "module dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "module plugins",
+              "00000000000006bb"
+            ]
+          ]
+        ],
+        [
+          "Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "407ce514b71d5a10"
+        ],
+        [
+          "/project/First.lean",
+          "f9f494af8b693453"
+        ],
+        [
+          "options",
+          "00000000000006bb"
+        ],
+        [
+          "isModule: true",
+          "760fcc16989f4b9b"
+        ],
+        [
+          "Module.name: First",
+          "f975047c277668fc"
+        ],
+        [
+          "Package.id?: (some goldbach)",
+          "e016a39f2e4897ed"
+        ],
+        [
+          "Module.leanArgs: #[]",
+          "00000000000006bb"
+        ]
+      ],
+      "outputs": {
+        "rs": "175e929eb9e5c9ce.ir.sig",
+        "r": "7fa752527be5cc8e.ir",
+        "o": [
+          "bfbd89ec984f4863.olean",
+          "9da8292da461155c.olean.server",
+          "a42a77297e79e85b.olean.private"
+        ],
+        "m": true,
+        "i": "34adf05a7b3c227c.ilean",
+        "c": "f9d1eaa6e61f55dc.c"
+      },
+      "olean_sha256": "28df029ba6440a6b2356aaa654004215d5ef16af4bbdf5c976922343e6711de4"
+    },
+    "before_Second": {
+      "depHash": "193e1693e5d1902e",
+      "inputs": [
+        [
+          "deps",
+          [
+            [
+              "goldbach/GoldbachProof:extraDep",
+              [
+                [
+                  "@goldbach:extraDep",
+                  "00000000000006bb"
+                ]
+              ]
+            ],
+            [
+              "imports",
+              [
+                [
+                  "Common transitive imports (public)",
+                  "00000000000006bb"
+                ],
+                [
+                  "Common:importArts",
+                  "c0cae4f5f3886ece"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "libs",
+          [
+            [
+              "import dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "package external libraries",
+              "00000000000006bb"
+            ],
+            [
+              "module dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "module plugins",
+              "00000000000006bb"
+            ]
+          ]
+        ],
+        [
+          "Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "407ce514b71d5a10"
+        ],
+        [
+          "/project/Second.lean",
+          "04bdb7a4ef8e22d5"
+        ],
+        [
+          "options",
+          "00000000000006bb"
+        ],
+        [
+          "isModule: true",
+          "760fcc16989f4b9b"
+        ],
+        [
+          "Module.name: Second",
+          "c296c75587ffd2f2"
+        ],
+        [
+          "Package.id?: (some goldbach)",
+          "e016a39f2e4897ed"
+        ],
+        [
+          "Module.leanArgs: #[]",
+          "00000000000006bb"
+        ]
+      ],
+      "outputs": {
+        "rs": "ca3354eaf6098b57.ir.sig",
+        "r": "9ae3eae66ed6797e.ir",
+        "o": [
+          "41b80db111fad92b.olean",
+          "b6fbfb448223f954.olean.server",
+          "71110d1d42bf785d.olean.private"
+        ],
+        "m": true,
+        "i": "34621ba56e919081.ilean",
+        "c": "f3f6f8ef2a2bfb64.c"
+      },
+      "olean_sha256": "012036f4e7d9e7fd79ec902beffeb33455d67d88f4f58142137b964fcff5460d"
+    },
+    "after_Second": {
+      "depHash": "f0f68c48ec8f6f39",
+      "inputs": [
+        [
+          "deps",
+          [
+            [
+              "goldbach/FiniteBatch001:extraDep",
+              [
+                [
+                  "@goldbach:extraDep",
+                  "00000000000006bb"
+                ],
+                [
+                  "First:olean",
+                  [
+                    [
+                      "/project/.lake/build/lib/lean/First.olean",
+                      "bfbd89ec984f4863"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              "imports",
+              [
+                [
+                  "Common transitive imports (public)",
+                  "00000000000006bb"
+                ],
+                [
+                  "Common:importArts",
+                  "c0cae4f5f3886ece"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "libs",
+          [
+            [
+              "import dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "package external libraries",
+              "00000000000006bb"
+            ],
+            [
+              "module dynlibs",
+              "00000000000006bb"
+            ],
+            [
+              "module plugins",
+              "00000000000006bb"
+            ]
+          ]
+        ],
+        [
+          "Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+          "407ce514b71d5a10"
+        ],
+        [
+          "/project/Second.lean",
+          "04bdb7a4ef8e22d5"
+        ],
+        [
+          "options",
+          "00000000000006bb"
+        ],
+        [
+          "isModule: true",
+          "760fcc16989f4b9b"
+        ],
+        [
+          "Module.name: Second",
+          "c296c75587ffd2f2"
+        ],
+        [
+          "Package.id?: (some goldbach)",
+          "e016a39f2e4897ed"
+        ],
+        [
+          "Module.leanArgs: #[]",
+          "00000000000006bb"
+        ]
+      ],
+      "outputs": {
+        "rs": "ca3354eaf6098b57.ir.sig",
+        "r": "9ae3eae66ed6797e.ir",
+        "o": [
+          "41b80db111fad92b.olean",
+          "b6fbfb448223f954.olean.server",
+          "71110d1d42bf785d.olean.private"
+        ],
+        "m": true,
+        "i": "34621ba56e919081.ilean",
+        "c": "f3f6f8ef2a2bfb64.c"
+      },
+      "olean_sha256": "012036f4e7d9e7fd79ec902beffeb33455d67d88f4f58142137b964fcff5460d"
+    }
+  },
+  "scope": "Ordinary stock Lake adjudicates all old traces itself. Fresh configuration, distinct host checkout paths, same /project sandbox path, unchanged package/toolchain, copied historical .lake/build (pruned setup files), ungrouped versus grouped libraries including an extra scheduling prerequisite."
+}

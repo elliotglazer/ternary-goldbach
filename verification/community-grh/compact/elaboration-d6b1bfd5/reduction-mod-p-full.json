@@ -1,0 +1,37 @@
+{
+  "clean": true,
+  "compile": {
+    "cpu_seconds": 45.5625,
+    "exit": 0,
+    "resource_guard": null,
+    "wall_seconds": 48.019
+  },
+  "compiler_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "exported": [
+    "137 audited transitive axiom entries, 0 offending: #[]"
+  ],
+  "metadata": {
+    "cpu_seconds": 1.0625,
+    "exit": 0,
+    "resource_guard": null,
+    "wall_seconds": 4.061
+  },
+  "module": "Lib.PadicComparison.Descent.ReductionModP",
+  "outputs": {
+    ".ir": "2dc10595e17be869903bf4ed39b1e245a1f04ee680362ed60d69c2b15cebb3fa",
+    ".ir.sig": "1492ec659dd88c57a70d5c8fee25a19461124a2dddff3391bb2a4cded97488d9",
+    ".olean": "da85c8820603b35412e966be2abab3f587a83035b26cac0cafd5c85522342715",
+    ".olean.private": "72b0a80fe9374f01af40d8785e7b7e40d11ba1bf046641d523dbc29fd1930afe",
+    ".olean.server": "7ccbcf30096f8344fe79382ad7b1de32d2fcd123a43d413a523ccdbda9a2b962"
+  },
+  "parents": {
+    "Lib.General.Algebra.MultivariateHensel": "ef94da39caecd1429baa7728fbd4879e7bafc4d81ea885936aef69955f2550a5",
+    "Lib.PadicComparison.Crystalline.CrystallineTests": "c7f9e305adac8273bad6aadf0a6f762704d5b672003ccfcb67cbb19ce499eeef",
+    "Lib.PadicHodge.PeriodRings.ThetaKernel": "ea35cd3c5274950c7e5268b8c041fe04c30cabb14729cca891e49ce10e0fea02"
+  },
+  "private": [
+    "147 declarations, direct sorryAx references: #[]"
+  ],
+  "proof_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "source_sha256": "aba3c25e7cf821e8c261c8c378e5ec9730ea3aa9ce1db7466cc6bc2071ba9bbe"
+}
