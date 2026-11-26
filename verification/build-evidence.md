@@ -219,3 +219,5 @@ Stock Lean 4.35 accepted the complete ReductionModP module in 48.02 seconds. The
 The native Lean 4.35 build of the entire LocusEquations module passed in 35.04 seconds against the repaired EtaleCharts dependency. The preceding version first failed at the transport of units in projSpace.
 
 Stock Lean 4.35 built the entire HodgeSite module in 70.04 seconds against the repaired EtaleCharts module. The square-zero extension carrier and exterior-algebra induction now use their explicit arguments.
+
+Stock Lean 4.35 rejected the old piecewise-integrability application at MajorIdentity.lean line 34. The full file compiled in 28.31 seconds after the measurable set was passed as a null-measurable set for the restricted measure. Both patched_model_identity and major_of_local_errors reported only propext, Classical.choice and Quot.sound.
