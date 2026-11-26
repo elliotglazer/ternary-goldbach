@@ -31,6 +31,18 @@
     "terminal_archive_sha256": "de477a3c0314511667de483744486fcecdf71ccea8206d6a81b186435be0fe12",
     "terminal_collection_sha256": "8937d9e284e0dd6a914c23969413cd9803f7181161352d924b9f7f974d53deff"
   },
+  "export_comparison": {
+    "basis": "Inferred from the observed kernel invocation and the execution order of the pinned Lake verifier.",
+    "completed_before_kernel_launch": [
+      "compareAt",
+      "checkAxioms"
+    ],
+    "lake_binary_sha256": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "lake_cli_check_git_blob": "8ec393aabb3d106da38db76c31b8f179fb6eac80",
+    "observation_sha256": "f7b960ffde6075e84678f5a9d233c02683aa423c08c6e028d06aafad254a5eb7",
+    "protected_config_sha256": "928a01351cb430dff5fbb597852f047212e4dac476894810531a6229dbddbc86",
+    "toolchain_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc"
+  },
   "exports": {
     "challenge.export": {
       "bytes": 1434686,
