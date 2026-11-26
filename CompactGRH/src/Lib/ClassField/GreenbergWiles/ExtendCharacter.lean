@@ -43,11 +43,18 @@ lemma cokerKerIndex_mul_of_exact (hf : Injective f) (h : Exact f g) (hg : Surjec
   have : Exact ψ (coprod (-g) l) ∧ Exact (f.prod l) ψ := by
     simp_all [Exact, ψ, hg.forall, ← hf.eq_iff]
     use fun b x ↦ by grind [h (l • x - b)], by grind
+  have hcomp : (fst ℤ B C ∘ₗ ψ.range.subtype) ∘ₗ (ψ.rangeRestrict ∘ₗ inl ℤ B A) =
+      (l : End ℤ B) := by
+    ext b
+    simp [ψ]
+  have hindex := (cokerKerIndex_comp (ψ.rangeRestrict ∘ₗ inl ℤ B A)
+    (fst ℤ B C ∘ₗ ψ.range.subtype)).2
+  rw [hcomp] at hindex
   rw [← snd_prod f (l : End ..), ← coprod_inr (-g) (l : End ..)]
-  convert (cokerKerIndex_comp (ψ.rangeRestrict ∘ₗ inl ..) (fst .. ∘ₗ ψ.range.subtype)).2 ∘ .inl <;>
+  convert hindex ∘ .inl <;>
     simp_all [↓cokerKerIndex_comp, exact_iff, range_inr, range_inl, ← ker_eq_bot, ← range_eq_top,
     range_coprod, sup_comm, inf_comm]
-  aesop
+  all_goals aesop
 
 /-- If f : A → B has finite kernel and cokernel, then #(A/lA) / #A[l] = #(B/lB) / #B[l], each
 side read as 0 when one of its groups is infinite. -/

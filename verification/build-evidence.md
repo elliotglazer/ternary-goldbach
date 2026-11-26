@@ -172,3 +172,14 @@ undetermined during conversion of the block integral formula. The proof for
 a singleton orbit now supplies the fixed data and the summability or
 integrability hypothesis. The complete module compiled on stock Lean 4.35
 with its original imports and an empty compiler log in 74.08 seconds.
+
+In ExtendCharacter the composition of the two range maps is scalar
+multiplication. The exact-sequence proof now rewrites this identity before
+converting the index formula. On stock Lean 4.35 the complete repaired
+theorem checked against pinned Mathlib in 37.87 seconds with reduced imports.
+The full original import context is included in the next source preflight.
+
+The complete ModuliPoint source also passed a native replay in 44.07 seconds.
+The original full module reproduced the signed-frame error at line 105.
+Fresh imports of four CocompactIntegrable declarations, including
+integral_tsum_orbit, reported only propext, Classical.choice, and Quot.sound.
