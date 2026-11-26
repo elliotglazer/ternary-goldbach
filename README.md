@@ -1,10 +1,24 @@
 # Ternary Goldbach research archive
 
-Harald Helfgott proved that every odd integer greater than five is a sum of three primes. This Lean development builds on Charlie Reams’s formalization of Helfgott’s argument and imports Levent Alpöge’s compiled proofs of the Riemann hypothesis (RH) and GRH for primitive Dirichlet characters. Elliot Glazer directed this project with GPT-6.2 Astra as the AI collaborator on the Lean proofs and computational checks. This project verified binary Goldbach through 564,386,325,504, combined it with a prime-gap bound to cover odd inputs through 2 × 10¹⁹, and checked 223 analytic intervals and a uniform estimate for the infinite tail. Together these steps give a Lean theorem covering every odd input greater than five. [Helfgott’s proof](https://arxiv.org/abs/1501.05438) · [Reams’s formalization](https://github.com/calr3/ternary-goldbach/tree/23b2d68ca344203d4384e0aff7affa4ec034bef9) · [Alpöge’s compiled release](https://proofsandreasons.io/rh-oleans.html)
+Harald Helfgott proved that every odd integer greater than five is a sum of three primes. The November 26 Lean development builds on Charlie Reams’s formalization of Helfgott’s argument and compiles the community sources for Levent Alpöge’s proofs of the Riemann hypothesis (RH) and GRH for primitive Dirichlet characters. Elliot Glazer directed this project with GPT-6.2 Astra as the AI collaborator on the Lean proofs and computational checks. This project verified binary Goldbach through 564,386,325,504, combined it with a prime-gap bound to cover odd inputs through 2 × 10¹⁹, and checked 223 analytic intervals and a uniform estimate for the infinite tail. Together these steps give a Lean theorem covering every odd input greater than five. [Helfgott’s proof](https://arxiv.org/abs/1501.05438) · [Reams’s formalization](https://github.com/calr3/ternary-goldbach/tree/23b2d68ca344203d4384e0aff7affa4ec034bef9) · [Community GRH source](https://github.com/leanprover-community/riemann-hypothesis/tree/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact)
 
 Dmitrii Zinoviev proved that, assuming the generalized Riemann hypothesis (GRH), every odd integer above $10^{20}$ is a sum of three primes. Jean-Marc Deshouillers, Gove Effinger, Herman te Riele and Dmitrii Zinoviev proved the complete conditional theorem in 1997, covering every odd integer above five. Their paper combines Zinoviev's large-number theorem with explicit prime-gap bounds and a finite computation. Helfgott later proved the theorem unconditionally. The Lean development here uses Reams's formalization and its own finite certificates and analytic estimates. [Zinoviev's paper](https://doi.org/10.1006/jnth.1997.2141) · [The four-author paper](https://doi.org/10.1090/S1079-6762-97-00031-0) · [Helfgott's proof](https://arxiv.org/abs/1312.7748)
 
+## Palomar source candidate · November 26, 2026
+
 On November 26, Lean 4.35.0 compiled the compact community GRH sources, the Goldbach sources and the combined theorem. A fresh Lean process imported the result and reported exactly `propext`, `Classical.choice` and `Quot.sound`. In a private rehearsal, Palomar’s stock verifier rebuilt the solution in 1 h 44 min and exported the 6.08 GB proof in 32 min. The local 4 h 49 min window ended while Lean’s default kernel was checking the export. The verifier issued no final verdict. The November 24 release below used the published Lean 4.33.1 RH/GRH objects. [Protected rehearsal](research/2026-11-26/palomar/README.md) · [November 26 source candidate](https://github.com/elliotglazer/ternary-goldbach/tree/3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b) · [Fresh Lean output](https://github.com/elliotglazer/ternary-goldbach/blob/c6368decde84d4be04943117a2bfef991f9b1831/verification/community-grh/compact/joined-theorem-3ca2fcf7/fresh-import.log) · [Agentic research notebook](research/2026-11-26/README.md)
+
+For the Palomar form, use repository `elliotglazer/ternary-goldbach`, commit `3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b`, and comparator configuration `comparator.json`. The Lean project and `formalization.yaml` are at the repository root. [Candidate metadata](https://github.com/elliotglazer/ternary-goldbach/blob/3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b/formalization.yaml) · [Comparator configuration](https://github.com/elliotglazer/ternary-goldbach/blob/3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b/comparator.json)
+
+To reproduce the source build, start in a directory with room for a fresh checkout and run the same Lake target used in the rehearsal.
+
+```sh
+git init ternary-goldbach-palomar
+cd ternary-goldbach-palomar
+git fetch --depth=1 https://github.com/elliotglazer/ternary-goldbach.git 3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b
+git switch --detach FETCH_HEAD
+lake build GoldbachSolution
+```
 
 ## Completed proof · November 24, 2026
 
