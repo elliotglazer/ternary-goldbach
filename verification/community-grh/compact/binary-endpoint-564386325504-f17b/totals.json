@@ -1,0 +1,78 @@
+{
+  "theorem": "SmallGoldbach.ProductPrefix564386325504.binaryGoldbachUpTo",
+  "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "source_tree": "c5d1fc25d678af056f4b23e4a3d89b1f916ea371",
+  "source_modules": 415,
+  "export_bytes": 749206539,
+  "export_sha256": "a7bbbe8a275b78fcc31cad84ca0ac0c092468aa96a73df53ea4f8d0037dfb303",
+  "source_successful_cpu_s": 19933.34375,
+  "proof_export_cpu_s": 2425.171875,
+  "component_sum_counting_one_comparison_and_each_accepting_kernel_core_hours_lower_bound": 14.062204340277777,
+  "all_attempts_observed_core_hours_lower_bound": 14.748498784722223,
+  "default_recovery_observed_pauses": 2,
+  "default_recovery_observed_suspension_s": 24.252155000000002,
+  "all_protected_comparator_active_wall_s": 30879.424,
+  "first_start_to_final_finish_wall_s": 31038.034498,
+  "metrics": "Source and export CPU are measured process user plus system time. Linux per-process CPU, elapsed and peak RSS are lower bounds sampled every five seconds. The component sum counts one comparison and each accepting kernel once. The all-attempts sum includes interrupted default checking and repeated stock comparison. The measurements exclude Mathlib and toolchain builds, C output, and challenge preparation.",
+  "protected_attempts": [
+    {
+      "attempt": 1,
+      "status": "incomplete",
+      "reason": "host resource guard during protected-kernels",
+      "recorded_kernel_markers": {
+        "nanoda kernel accepts the solution": true,
+        "Lean default kernel accepts the solution": false,
+        "Your solution is okay!": false
+      },
+      "wall_s": 16849.072,
+      "exit": -15,
+      "processes": {
+        "lake": {
+          "cpu_s_lower_bound": 336.39,
+          "wall_s_lower_bound": 16847.0,
+          "peak_rss_mib_lower_bound": 932.15234375
+        },
+        "nanoda_bin": {
+          "cpu_s_lower_bound": 14302.140000000001,
+          "wall_s_lower_bound": 14348.18,
+          "peak_rss_mib_lower_bound": 4361.94140625
+        },
+        "leanchecker": {
+          "cpu_s_lower_bound": 2149.25,
+          "wall_s_lower_bound": 2158.67,
+          "peak_rss_mib_lower_bound": 5526.375
+        }
+      },
+      "raw_parent_rusage_user_plus_system_s": 0.013981,
+      "receipt_sha256": "b260cf72cfcb11b8511aa8efc9437f8064f22a4cc8a0293f5c3ea4375c880d5e",
+      "observations_file": "first-process-observations.json"
+    },
+    {
+      "attempt": 2,
+      "status": "accepted",
+      "reason": null,
+      "recorded_kernel_markers": {
+        "nanoda kernel accepts the solution": false,
+        "Lean default kernel accepts the solution": true,
+        "Your solution is okay!": true
+      },
+      "wall_s": 14030.352,
+      "exit": 0,
+      "processes": {
+        "lake": {
+          "cpu_s_lower_bound": 321.41,
+          "wall_s_lower_bound": 14029.5,
+          "peak_rss_mib_lower_bound": 932.60546875
+        },
+        "leanchecker": {
+          "cpu_s_lower_bound": 13626.89,
+          "wall_s_lower_bound": 13707.08,
+          "peak_rss_mib_lower_bound": 5526.4140625
+        }
+      },
+      "raw_parent_rusage_user_plus_system_s": 0.007188999999999999,
+      "receipt_sha256": "42137bca81da1a650d2b7676bb4326412ce6684c4a59be6da9edad4d52bffe4a",
+      "observations_file": "final-process-observations.json"
+    }
+  ]
+}

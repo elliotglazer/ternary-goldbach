@@ -1,0 +1,45 @@
+{
+  "method": "Linux /proc field counters for processes descending from the stock comparator's authenticated Lake PID",
+  "clock_ticks_per_second": 100,
+  "sampling_period_s": 5,
+  "updated_utc": "2026-11-26T17:18:42.636463+00:00",
+  "comparator_status": "interrupted",
+  "processes": {
+    "54852": {
+      "exe": "lake",
+      "first_observed_utc": "2026-11-26T12:51:46.845204+00:00",
+      "samples": 3201,
+      "last_observed_utc": "2026-11-26T17:18:37.634724+00:00",
+      "start_ticks": 3927007,
+      "lake_ancestor": 54852,
+      "user_cpu_s_lower_bound": 333.58,
+      "system_cpu_s_lower_bound": 2.81,
+      "lifetime_s_lower_bound": 16847.0,
+      "peak_rss_kib_lower_bound": 954524
+    },
+    "54886": {
+      "exe": "nanoda_bin",
+      "first_observed_utc": "2026-11-26T12:51:46.845204+00:00",
+      "samples": 2769,
+      "last_observed_utc": "2026-11-26T16:42:36.253220+00:00",
+      "start_ticks": 3960751,
+      "lake_ancestor": 54852,
+      "user_cpu_s_lower_bound": 14086.2,
+      "system_cpu_s_lower_bound": 215.94,
+      "lifetime_s_lower_bound": 14348.18,
+      "peak_rss_kib_lower_bound": 4466628
+    },
+    "55735": {
+      "exe": "leanchecker",
+      "first_observed_utc": "2026-11-26T16:42:41.255036+00:00",
+      "samples": 432,
+      "last_observed_utc": "2026-11-26T17:18:37.634724+00:00",
+      "start_ticks": 5395840,
+      "lake_ancestor": 54852,
+      "user_cpu_s_lower_bound": 2096.52,
+      "system_cpu_s_lower_bound": 52.73,
+      "lifetime_s_lower_bound": 2158.67,
+      "peak_rss_kib_lower_bound": 5659008
+    }
+  }
+}

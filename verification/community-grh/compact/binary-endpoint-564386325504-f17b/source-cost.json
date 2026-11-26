@@ -1,0 +1,54 @@
+{
+  "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "git_tree": "c5d1fc25d678af056f4b23e4a3d89b1f916ea371",
+  "sourcebuild_receipt_sha256": "082c2cd0ab995037f7d045cc0e8cd2ddb0c416a97244ff18482e8cedd8c910b7",
+  "theorem": "SmallGoldbach.ProductPrefix564386325504.binaryGoldbachUpTo",
+  "host": {
+    "architecture": "AMD64",
+    "cpu": "AMD Ryzen 9 8945HS w/ Radeon 780M Graphics",
+    "logical_processors": 16,
+    "physical_memory_bytes": 33593020416,
+    "os": [
+      "11",
+      "10.0.26200"
+    ]
+  },
+  "source_modules": 415,
+  "total_successful_producer_cpu_seconds": 19933.34375,
+  "total_successful_producer_core_hours": 5.537039930555555,
+  "by_module_group": {
+    "GoldbachBand shards": {
+      "sources": 166,
+      "user_cpu_s": 7362.453125,
+      "system_cpu_s": 1907.03125
+    },
+    "Power10 blocks": {
+      "sources": 8,
+      "user_cpu_s": 721.15625,
+      "system_cpu_s": 178.953125
+    },
+    "ProductRange intervals": {
+      "sources": 187,
+      "user_cpu_s": 6296.25,
+      "system_cpu_s": 2325.1875
+    },
+    "other production modules": {
+      "sources": 54,
+      "user_cpu_s": 896.375,
+      "system_cpu_s": 245.9375
+    }
+  },
+  "by_cached_source_provenance": {
+    "fresh": {
+      "sources": 356,
+      "user_cpu_s": 12938.203125,
+      "system_cpu_s": 4067.53125
+    },
+    "previously-verified": {
+      "sources": 59,
+      "user_cpu_s": 2338.03125,
+      "system_cpu_s": 589.578125
+    }
+  },
+  "accounting": "Each accepted original-source module is counted exactly once. CPU seconds sum user plus system time for successful producer processes. The measurements exclude Mathlib, the toolchain, C output, failed or interrupted attempts, the independent native export, and the protected kernels."
+}

@@ -1,0 +1,33 @@
+{
+  "method": "Linux /proc field counters for processes descending from the stock comparator's authenticated Lake PID",
+  "clock_ticks_per_second": 100,
+  "sampling_period_s": 5,
+  "updated_utc": "2026-11-26T21:15:07.829347+00:00",
+  "comparator_status": "passed",
+  "processes": {
+    "55876": {
+      "exe": "lake",
+      "first_observed_utc": "2026-11-26T17:21:44.366343+00:00",
+      "samples": 2798,
+      "last_observed_utc": "2026-11-26T21:15:02.826050+00:00",
+      "start_ticks": 5627277,
+      "lake_ancestor": 55876,
+      "user_cpu_s_lower_bound": 319.19,
+      "system_cpu_s_lower_bound": 2.22,
+      "lifetime_s_lower_bound": 14029.5,
+      "peak_rss_kib_lower_bound": 954988
+    },
+    "55903": {
+      "exe": "leanchecker",
+      "first_observed_utc": "2026-11-26T17:26:39.541113+00:00",
+      "samples": 2739,
+      "last_observed_utc": "2026-11-26T21:15:02.826050+00:00",
+      "start_ticks": 5659519,
+      "lake_ancestor": 55876,
+      "user_cpu_s_lower_bound": 13501.51,
+      "system_cpu_s_lower_bound": 125.38,
+      "lifetime_s_lower_bound": 13707.08,
+      "peak_rss_kib_lower_bound": 5659048
+    }
+  }
+}
