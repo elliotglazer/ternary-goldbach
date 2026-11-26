@@ -1,0 +1,115 @@
+{
+  "scope": "Census of all 415 active finite production sources, not an independent kernel replay or a runtime forecast.",
+  "repository": "elliotglazer/ternary-goldbach",
+  "source_revision": "fc729595d20448d3689f706378879a30a323a762",
+  "source_manifest": "source-manifest.json",
+  "historical_report_revision": "a664692883ac3deeea2c5471dba897147c728f89",
+  "historical_report_path": "proof/evidence/analytic-progress.json",
+  "counts": {
+    "power10_blocks": {
+      "modules": 8,
+      "source_bytes": 19189038,
+      "lexical_kernel_decide_sites": 4770,
+      "timed_modules": 8,
+      "historical_elaboration_cpu_seconds": 489.97,
+      "ordinary_checker_applications": 2385
+    },
+    "factorial_rows_after_power10": {
+      "modules": 172,
+      "source_bytes": 164612521,
+      "lexical_kernel_decide_sites": 43072,
+      "timed_modules": 172,
+      "historical_elaboration_cpu_seconds": 5128.9,
+      "ordinary_checker_applications": 21536
+    },
+    "factorial_bases_after_power10": {
+      "modules": 10,
+      "source_bytes": 5851431,
+      "lexical_kernel_decide_sites": 22,
+      "timed_modules": 10,
+      "historical_elaboration_cpu_seconds": 87.83
+    },
+    "power10_common": {
+      "modules": 1,
+      "source_bytes": 642575,
+      "lexical_kernel_decide_sites": 3,
+      "timed_modules": 1,
+      "historical_elaboration_cpu_seconds": 21.91
+    },
+    "prime_product_tiles": {
+      "modules": 190,
+      "source_bytes": 148840652,
+      "lexical_kernel_decide_sites": 29634,
+      "timed_modules": 190,
+      "historical_elaboration_cpu_seconds": 6347.57,
+      "product_checker_applications": 14817
+    },
+    "prime_product_bases": {
+      "modules": 3,
+      "source_bytes": 5001256,
+      "lexical_kernel_decide_sites": 483,
+      "timed_modules": 3,
+      "historical_elaboration_cpu_seconds": 351.37
+    },
+    "support_and_joins": {
+      "modules": 31,
+      "source_bytes": 61223,
+      "lexical_kernel_decide_sites": 0,
+      "timed_modules": 21,
+      "historical_elaboration_cpu_seconds": 139.97
+    }
+  },
+  "product_tile_shapes": [
+    {
+      "bitmap": "Power10.certifiedSource",
+      "integer_span_per_checker_application": 4194304,
+      "even_targets_per_application": 2097152,
+      "applications": 8096,
+      "even_targets_across_applications": 16978542592,
+      "number_of_modules_containing_this_shape": 64
+    },
+    {
+      "bitmap": "WideSource20.certifiedSource",
+      "integer_span_per_checker_application": 16777216,
+      "even_targets_per_application": 8388608,
+      "applications": 416,
+      "even_targets_across_applications": 3489660928,
+      "number_of_modules_containing_this_shape": 13
+    },
+    {
+      "bitmap": "WideSource22.certifiedSource",
+      "integer_span_per_checker_application": 67108864,
+      "even_targets_per_application": 33554432,
+      "applications": 6305,
+      "even_targets_across_applications": 211560693760,
+      "number_of_modules_containing_this_shape": 111
+    }
+  ],
+  "method": "Each source was SHA-256 checked against its manifest entry. Ordinary and product checker calls are counted in the generated witness files. Product spans are hi-lo in their exact Covered statements. Shared bitmap and modulus proofs are counted separately. Source bytes include proof text and packed literals; they are not kernel export bytes.",
+  "terminal_sample": {
+    "module": "ProductRange564319216642Interval",
+    "declaration": "SmallGoldbach.ProductRange564319216642.covered",
+    "interval": "[564319216642,564386325506)",
+    "even_targets": 33554432,
+    "product_checker_applications": 1,
+    "shared_dependencies": [
+      "PilotPrimeProductBasis",
+      "WideSource20",
+      "WideSource22"
+    ]
+  },
+  "historical_cpu_measurement": "Successful source elaboration, as reported for each module on historical Lean 4.33.1 macOS ARM64. No extrapolation to rechecking exported proof objects.",
+  "small_protected_calibration": {
+    "upper_inclusive": 1258291204,
+    "one_cpu_affinity": [
+      0
+    ],
+    "sequential_kernels": [
+      "nanoda",
+      "Lean default"
+    ],
+    "total_judge_wall_seconds": 262.71,
+    "both_kernels_accepted": true
+  },
+  "interpretation": "The early factorial checker also serves the next 90 billion input range. The product family uses a shared certified primorial, reencoding rows against factorial divisibility. Product tile widths rise from 2^22 to 2^26. A fresh terminal sample includes shared bases and cannot isolate per-tile cost without another measurement varying tile count."
+}
