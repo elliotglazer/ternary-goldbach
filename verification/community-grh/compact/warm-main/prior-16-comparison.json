@@ -1,10 +1,10 @@
 {
-  "status": "intermediate",
+  "status": "finished",
   "target": "+Main",
   "source_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
   "proof_branch_commit_compared": "c789376056a330f5a792bab92d3aa62e77f5f536",
   "previous_log_sha256": "de59d8a16d7dc6e8591025aaa3e19144a8632f07f9ffefcd9651bb5936cb7383",
-  "warm_log_sha256": "1662e6b6b62299200f9b7d6f5a6009ff7b39e905f2fda0f45359f0bd594b16c1",
+  "warm_log_sha256": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
   "seed_accepted": 354,
   "seed_rejected": 0,
   "source_modules_changed_since_seed_run": 17,
@@ -64,7 +64,12 @@
     "Lib.General.Geometry.SmoothnessCriterion",
     "Lib.Shimura.ThetaNormality.NormalGeneration"
   ],
-  "new_failures_so_far": [
+  "result_sha256": "4c366f8a316cb87720b5e72d7baba941e0336cebc19f85ae91f5981105646fed",
+  "wall_seconds": 1132.249,
+  "exit_code": 1,
+  "newly_built_count": 83,
+  "source_diagnostics_count": 31,
+  "new_failures": [
     "Lib.PadicComparison.Descent.ReductionModP",
     "Lib.PadicHodge.Limit.HodgeTateProjectors",
     "Lib.Weil.Construction.ThetaFunctional",
