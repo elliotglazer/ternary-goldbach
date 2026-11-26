@@ -1,0 +1,238 @@
+{
+  "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "scope": "Four unconditional numeric PriceRows inputs. Standalone focused native stock Lean 4.35, without final theorem or protected-comparator verdict.",
+  "groups": [
+    {
+      "group": 0,
+      "pieces": 56,
+      "statement": "theorem rows : PriceRows 44.44 46.052 30 1 100000000 pieces0",
+      "closure": 111,
+      "source_and_object_receipt_sha256": "27f2675f6f225445b15b3576dcb464caec0e7e795d998506adabf1b7799750e0",
+      "native_facets_sha256": "d9b65123db9b70b61cdcc8320f96dec59503a4374915d861cd33648c06410dec",
+      "fresh_audit": "'ProfileGroup0.rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "group": 1,
+      "pieces": 102,
+      "statement": "theorem rows : PriceRows 44.44 46.052 30 100000000 4047962620 pieces1",
+      "closure": 117,
+      "source_and_object_receipt_sha256": "7eb8333ba806cb4953742842a9f3886137450d554a1feb9ecdd31a5e3f46719c",
+      "native_facets_sha256": "712789ea7234e77280ec931748c73259ac0b2873272ff0944cb5c92b19ad308d",
+      "fresh_audit": "'ProfileGroup1.rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "group": 2,
+      "pieces": 14,
+      "statement": "theorem rows : PriceRows 46.05 56 70 1 100000000 pieces2",
+      "closure": 108,
+      "source_and_object_receipt_sha256": "d8056d2d217626eed50fac682a9ce76b27b614391728aa48cfd9fd189711a236",
+      "native_facets_sha256": "dd9fa41e0203055f054d044e941ee21742a79924cbc8e4caf77e073e81f3e771",
+      "fresh_audit": "'ProfileGroup2.rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "group": 3,
+      "pieces": 51,
+      "statement": "theorem rows : PriceRows 46.05 56 70 100000000 48189030400 pieces3",
+      "closure": 127,
+      "source_and_object_receipt_sha256": "7a4f531f033bade1ec19ed36f2d2836e63127d020e539ca37da1eac71be83cf1",
+      "native_facets_sha256": "f61dfd01b0f27a1c33bc8471ad00c6db95f8a8b6e1ec34954cf3bc0dd37d1654",
+      "fresh_audit": "'ProfileGroup3.rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    }
+  ],
+  "pieces": 223,
+  "unique_source_modules": 162,
+  "fresh_source_versions_timed_in_this_campaign": 47,
+  "sum_of_final_successful_single_frontend_wall_seconds": 3782.36,
+  "max_single_frontend_peak_rss_mib": 4053.6,
+  "wall_scope": "Each unique successful source version with a matching local producer receipt is counted only once. Excludes earlier receipt seeds, build retries, fresh axiom-import probes, and idle waits. This is wall time accumulated by individual frontend processes and includes host paging.",
+  "measured": {
+    "ProfileTape1touchingFormula": {
+      "seconds": 50.5,
+      "peak_rss_mib": 2798.1
+    },
+    "ProfileG0R0N4Scalar": {
+      "seconds": 40.66,
+      "peak_rss_mib": 2216.3
+    },
+    "ProfileG0R0N4Interval": {
+      "seconds": 38.54,
+      "peak_rss_mib": 2217.8
+    },
+    "ProfileG0R4N12Batch": {
+      "seconds": 147.14,
+      "peak_rss_mib": 2632.2
+    },
+    "ProfileG0R16N12Batch": {
+      "seconds": 175.92,
+      "peak_rss_mib": 2641.9
+    },
+    "ProfileG0R28N12Batch": {
+      "seconds": 167.49,
+      "peak_rss_mib": 2627.7
+    },
+    "ProfileG0R40N12Batch": {
+      "seconds": 159.82,
+      "peak_rss_mib": 2640.2
+    },
+    "ProfileG0R52N4Batch": {
+      "seconds": 77.78,
+      "peak_rss_mib": 2730.2
+    },
+    "ProfileGroup0": {
+      "seconds": 34.34,
+      "peak_rss_mib": 2204.8
+    },
+    "ProfileTape2touchingFormula": {
+      "seconds": 58.17,
+      "peak_rss_mib": 2906.6
+    },
+    "ProfileG1R0N12Batch": {
+      "seconds": 157.66,
+      "peak_rss_mib": 2629.0
+    },
+    "ProfileG1R12N1Scalar": {
+      "seconds": 44.16,
+      "peak_rss_mib": 2209.6
+    },
+    "ProfileG1R12N1Interval": {
+      "seconds": 37.85,
+      "peak_rss_mib": 2210.3
+    },
+    "ProfileG1R13N12Batch": {
+      "seconds": 159.06,
+      "peak_rss_mib": 2639.5
+    },
+    "ProfileG1R25N12Batch": {
+      "seconds": 145.05,
+      "peak_rss_mib": 2639.7
+    },
+    "ProfileG1R37N12Batch": {
+      "seconds": 158.62,
+      "peak_rss_mib": 2630.1
+    },
+    "ProfileG1R49N12Batch": {
+      "seconds": 166.09,
+      "peak_rss_mib": 2635.8
+    },
+    "ProfileG1R61N12Batch": {
+      "seconds": 161.19,
+      "peak_rss_mib": 2639.3
+    },
+    "ProfileG1R73N12Batch": {
+      "seconds": 159.07,
+      "peak_rss_mib": 2646.9
+    },
+    "ProfileG1R85N12Batch": {
+      "seconds": 531.12,
+      "peak_rss_mib": 2640.0
+    },
+    "ProfileG1R97N5Batch": {
+      "seconds": 80.58,
+      "peak_rss_mib": 2565.9
+    },
+    "ProfileGroup1": {
+      "seconds": 34.34,
+      "peak_rss_mib": 2205.5
+    },
+    "ProfileG2R0N12Entries": {
+      "seconds": 73.58,
+      "peak_rss_mib": 2666.3
+    },
+    "ProfileG2R0N12Scalar": {
+      "seconds": 44.15,
+      "peak_rss_mib": 2238.2
+    },
+    "ProfileG2R0N12Interval": {
+      "seconds": 48.35,
+      "peak_rss_mib": 2242.2
+    },
+    "ProfileG2R0N12Batch": {
+      "seconds": 42.75,
+      "peak_rss_mib": 2197.0
+    },
+    "ProfileG2R12N2Batch": {
+      "seconds": 68.68,
+      "peak_rss_mib": 3276.5
+    },
+    "ProfileGroup2": {
+      "seconds": 48.38,
+      "peak_rss_mib": 2201.6
+    },
+    "ProfileG3R0N12Entries": {
+      "seconds": 46.25,
+      "peak_rss_mib": 1558.1
+    },
+    "ProfileTape16positiveFormula": {
+      "seconds": 44.15,
+      "peak_rss_mib": 2300.6
+    },
+    "ProfileTape8positiveFormula": {
+      "seconds": 28.03,
+      "peak_rss_mib": 4053.6
+    },
+    "ProfileG3R0N12Batch": {
+      "seconds": 30.83,
+      "peak_rss_mib": 2253.6
+    },
+    "ProfileG3R12N9Entries": {
+      "seconds": 21.72,
+      "peak_rss_mib": 1545.9
+    },
+    "ProfileG3R12N9Batch": {
+      "seconds": 30.83,
+      "peak_rss_mib": 2241.3
+    },
+    "ProfileG3R21N1Entries": {
+      "seconds": 16.12,
+      "peak_rss_mib": 1689.8
+    },
+    "ProfileG3R21N1Scalar": {
+      "seconds": 23.13,
+      "peak_rss_mib": 2209.6
+    },
+    "ProfileG3R21N1Interval": {
+      "seconds": 30.18,
+      "peak_rss_mib": 2211.0
+    },
+    "ProfileG3R22N1Entries": {
+      "seconds": 18.22,
+      "peak_rss_mib": 1688.1
+    },
+    "ProfileG3R22N1Scalar": {
+      "seconds": 35.04,
+      "peak_rss_mib": 2209.6
+    },
+    "ProfileG3R22N1Interval": {
+      "seconds": 24.53,
+      "peak_rss_mib": 2210.2
+    },
+    "ProfileTape4positive": {
+      "seconds": 2.11,
+      "peak_rss_mib": 298.5
+    },
+    "ProfileTape4positiveFormula": {
+      "seconds": 23.13,
+      "peak_rss_mib": 3130.4
+    },
+    "ProfileG3R23N12Batch": {
+      "seconds": 138.01,
+      "peak_rss_mib": 2784.5
+    },
+    "ProfileG3R35N12Batch": {
+      "seconds": 90.37,
+      "peak_rss_mib": 2632.0
+    },
+    "ProfileG3R47N4Entries": {
+      "seconds": 17.52,
+      "peak_rss_mib": 1721.4
+    },
+    "ProfileG3R47N4Batch": {
+      "seconds": 24.52,
+      "peak_rss_mib": 2222.0
+    },
+    "ProfileGroup3": {
+      "seconds": 26.63,
+      "peak_rss_mib": 2205.1
+    }
+  }
+}

@@ -1,0 +1,4 @@
+module
+public import VerifiedPriceRows
+#check GoldbachFinite.ternary_of_verified_price_rows
+#print axioms GoldbachFinite.ternary_of_verified_price_rows

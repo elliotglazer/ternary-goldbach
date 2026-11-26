@@ -1,0 +1,62 @@
+{
+  "source_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "source_tree": "ffbd19a22cf91aab3933995029b20d5cbce0a246",
+  "module": "VerifiedPriceRows",
+  "theorem": "GoldbachFinite.ternary_of_verified_price_rows",
+  "assumptions": [
+    "RiemannHypothesis",
+    "primitive Dirichlet L-functions satisfy critical-line GRH in the open strip",
+    "BinaryGoldbachUpTo 564383557524"
+  ],
+  "conclusion": "TernaryGoldbach.Statement",
+  "source": "module\n\npublic import ProfileAssembly\npublic import ProfileGroup0\npublic import ProfileGroup1\npublic import ProfileGroup2\npublic import ProfileGroup3\n\n@[expose] public section\n\nopen TernaryGoldbach\nnamespace GoldbachFinite\ntheorem ternary_of_verified_price_rows (rh : RiemannHypothesis)\n    (grh : ∀ (d : ℕ) [NeZero d] (χ : DirichletCharacter ℂ d), χ.IsPrimitive →\n      ∀ s : ℂ, 0 < s.re → s.re < 1 → χ.LFunction s=0 → s.re=1/2)\n    (bg : BinaryGoldbachUpTo 564383557524) : Statement :=\n  ternary_of_profiles rh grh bg ProfileGroup0.rows ProfileGroup1.rows ProfileGroup2.rows ProfileGroup3.rows\n\n#print axioms ternary_of_verified_price_rows\nend GoldbachFinite\n",
+  "source_sha256": "ddf415d22c6719609214f735a24dee8bc3fda7fd5be27dfb5bbfda887ae9b280",
+  "original_joint_receipt_sha256": "72686fc8e96ffdd8878f14d615ae4b90bf544afab2e19647d3565d8cf8363958",
+  "joint_inputs": {
+    "ProfileAssembly": "35051de2f26a16c6ae9e0ad8db5168543c0d3336f5cbcbe7ef061c7cea652002",
+    "ProfileGroup0": "a6c7b9bae5d259b7e3dd3971f736c3fcebf34ed96451558acac51fc514e782f5",
+    "ProfileGroup1": "aa27eb0d4da9e976f601143c37ee5d71aad9e9e5a214a7fa48fd9c647a99f86c",
+    "ProfileGroup2": "c00b2e3f30336226d2a020d2885472ececee5b2672d7073f6665b006bfdd41a0",
+    "ProfileGroup3": "ed87daebb8caf736aeaa8b27562a9d43095224eb009ccdb450ad7a78c8b609f0"
+  },
+  "compiled": {
+    "verdict": "accepted",
+    "exit": 0,
+    "guard": null,
+    "wall_seconds": 26.021,
+    "input_roots": {
+      "ProfileAssembly": "35051de2f26a16c6ae9e0ad8db5168543c0d3336f5cbcbe7ef061c7cea652002",
+      "ProfileGroup0": "a6c7b9bae5d259b7e3dd3971f736c3fcebf34ed96451558acac51fc514e782f5",
+      "ProfileGroup1": "aa27eb0d4da9e976f601143c37ee5d71aad9e9e5a214a7fa48fd9c647a99f86c",
+      "ProfileGroup2": "c00b2e3f30336226d2a020d2885472ececee5b2672d7073f6665b006bfdd41a0",
+      "ProfileGroup3": "ed87daebb8caf736aeaa8b27562a9d43095224eb009ccdb450ad7a78c8b609f0"
+    },
+    "probe_source_sha256": "ddf415d22c6719609214f735a24dee8bc3fda7fd5be27dfb5bbfda887ae9b280",
+    "log_sha256": "a6d7dc0e233265a165b35fa24d805d1fa3f62db0c8b1750d36f29c5c34f695e5",
+    "observed_axiom_lines": [
+      "'GoldbachFinite.ternary_of_verified_price_rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "output_facets": {
+      ".olean": "0ba19519c0e18836e319290c5162a3e7cb93ed292344b7d526246d5b751c4f57",
+      ".olean.private": "4c6e1c5bffb643067e7cacc9a4619adc36c2d28f96dbf403ae9aa76acc62764d",
+      ".olean.server": "9d502d1b216c4b72c50d6446354e53dbf3394e42914be94e9453e5dd7d51f34b",
+      ".ir": "ba658ab1a1bea73f824385fb04f070b5e54d81e9c1129b2cbecdb3b91f24d508",
+      ".ir.sig": "54f0d8fd1451be3d8a33d188b136a8aaf4b33f8606c45aab59d38205f8b193ec"
+    }
+  },
+  "independent_import": {
+    "verdict": "accepted",
+    "exit": 0,
+    "guard": null,
+    "wall_seconds": 26.028,
+    "input_roots": {
+      "VerifiedPriceRows": "0ba19519c0e18836e319290c5162a3e7cb93ed292344b7d526246d5b751c4f57"
+    },
+    "probe_source_sha256": "78bb236d6e69772c824758ca9c1d16a63b780b9aff4c9996f2915fffec67723d",
+    "log_sha256": "7e8bcbfa4bb85ecd93f4e16fbbb10510b7c54e2bcf09f86a15bc6b67aa1bde0c",
+    "observed_axiom_lines": [
+      "'GoldbachFinite.ternary_of_verified_price_rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "scope": "Authentic native Lean 4.35 source elaboration and fresh imported axiom query. This result is conditional on the three explicit theorem arguments."
+}
