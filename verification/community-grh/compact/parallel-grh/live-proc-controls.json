@@ -1,0 +1,15 @@
+{
+  "scope": "Actual Linux child, uid and procfs data. The restricted cgroup membership list is a private fixture. No system services or other jobs started.",
+  "checks": {
+    "kernel_provides_nul_terminated_full_argv": true,
+    "production_argv_order_and_values_preserved": true,
+    "before_repair_wrong_delimiter_yields_single_arg": true,
+    "finite_process_identified": true,
+    "eligible_finite_source_without_binary_fallback": true,
+    "different_uid_rejected": true,
+    "simultaneous_finite_and_Main_rejected": true,
+    "running_Main_excludes_aux": true,
+    "stopped_process_not_counted": true
+  },
+  "helper_sha256": "ce05b1e7b545c69c41c400ea56f7c18a2f8e5ed87ada3f5162a82e1b2db0d2f6"
+}

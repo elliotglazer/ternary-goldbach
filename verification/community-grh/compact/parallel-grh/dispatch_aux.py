@@ -15,7 +15,7 @@ import urllib.request
 BOOTSTRAP="0b4f8c36092d95240e4ee5f0c2e68d1ec8b25c39"
 BASE="https://raw.githubusercontent.com/elliotglazer/ternary-goldbach"
 SUBDIR="verification/community-grh/compact"
-ARCHIVE="7fbff13828b3b603791db491b6e5d81ff82d00c54bb3b05af90e8868cb058743"
+ARCHIVE="f0bfc470d4f505300767b007d70f7d4e9f33d21caa2b7a26652658e48598a9e7"
 HELPERS={"warm_dispatch.py":"3b332604b176e351566374c12f11851c0f3fcd5f62bd6d0a7309b2f1e7d2ffb3",
          "warm_supervisor.py":"37a6b50079fdf31ffc2a075c3dc5b448f83307f1cc3e0e6a2f121a2e0b918c0c"}
 BASE_RECEIPT="5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c"
