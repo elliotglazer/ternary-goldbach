@@ -134,3 +134,9 @@ sets of at most four. All four earlier Power10 pairs retain their previous
 ordering. The schedule covers 384 finite modules and only changes the
 Lake build graph. It preserves every Lean source file and all 415 finite
 modules have a unique library owner.
+
+Stock Lean 4.35 compiled the complete MackeyFormula module with its original
+imports in 84.06 seconds. The Hall ring proof uses a scoped set of simp
+lemmas and applies the quotient similarity lemma directly. A fresh import
+reported exactly propext, Classical.choice, and Quot.sound for
+Hall.one_sub_constOne_pow_eq_zero, Hall.isUnit_constOne, and Hall.blockAverage_mul.

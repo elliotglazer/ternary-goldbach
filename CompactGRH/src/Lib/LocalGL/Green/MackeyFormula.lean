@@ -148,9 +148,12 @@ lemma StableSubspace.sum_comap (F : _ → ℂ) : ∑ W with p.ker ≤ W.1, F W =
 
 section
 
-attribute [local simp] Finset.mul_sum Finset.sum_filter Finset.sum_mul injective_id range_eq_top
+namespace HallProofSimp
+attribute [scoped simp] Finset.mul_sum Finset.sum_filter Finset.sum_mul injective_id range_eq_top
   finrank_zero_iff mkQ_surjective range_dualMap_mkQ_eq subsingleton_iff_eq_bot
   Subspace.dualCoannihilator_dualAnnihilator_eq Subtype.coe_eq_iff add_mul mul_add
+end HallProofSimp
+open scoped HallProofSimp
 
 omit [Finite k] in
 @[simp] lemma simClassOf_endOnQuot_comap (s : p.range = ⊤) U : simClassOf (StableSubspace.comap p hp
@@ -178,13 +181,14 @@ lemma simClassOf_eq_dualMap : simClassOf g = simClassOf g.dualMap := let ⟨_, _
 
 instance : CommRing (Hall k) := by
   refine' { mul_assoc := _, .. } <;> intros <;> ext _ g
-  any_goals solve | simp [simClassOf_endOnQuot (g' := g) 1 _ ⟨⊥, _⟩ surjective_id rfl,
+  any_goals solve | simp [Hall.mul_simClassOf, simClassOf_endOnQuot (g' := g) 1 _ ⟨⊥, _⟩ surjective_id rfl,
     simClassOf_endOnSub (g := g) .id]
   have (W : StableSubspace g) := And.intro (StableSubspace.sum_comap (g :=
     W.endOnSub) W.1.subtype (congrFun rfl)) (StableSubspace.sum_comap (g := g) (g' :=
     W.endOnQuot) W.1.mkQ (fun _ ↦ rfl)); simp_all [mul_assoc, Finset.sum_comm]
   congr!; apply simClassOf_endOnQuot ((mkQ _).submoduleComap _) (by tauto) _ (by rintro ⟨⟨⟩⟩; tauto)
   simp [submoduleComap, ker_restrict]; rfl
+  all_goals try solve | apply simClassOf_endOnQuot_comap <;> simp
   nth_rw 2 [simClassOf_eq_dualMap]; simp; apply Finset.sum_nbij' (⟨dualAnnihilator ·, by aesop⟩)
     (⟨dualCoannihilator ·, by grind [mem_dualCoannihilator, g.dualMap_apply]⟩) <;> simp_intro W
   rw [simClassOf_eq_dualMap, mul_comm, simClassOf_eq_dualMap, simClassOf_endOnSub W.1.mkQ.dualMap,

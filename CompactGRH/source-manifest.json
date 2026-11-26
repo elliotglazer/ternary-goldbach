@@ -1845,8 +1845,8 @@
     {
       "path": "Lib/LocalGL/Green/MackeyFormula.lean",
       "upstream_sha256": "f87352e5fcf4800a4287d333bb7bcc7d1b4438c92a05bb73766a484f30d84b2c",
-      "converted_sha256": "6b4efa99f1ae1793dbae57a3bb71d5152c08fe5226614fde1aa925f7992dd44a",
-      "adaptation": "Lean 4.35: Specify the endomorphism and provide the quotient compatibility proof."
+      "converted_sha256": "e9b0c8bd4e7ab8184214b934cbe7980618ad5729680ad893e3602d5dd23c2861",
+      "adaptation": "Lean 4.35: specify the quotient map, register the original simplifications in a named scope, and apply the existing quotient similarity lemma in the Hall ring proof."
     },
     {
       "path": "Lib/LocalGL/Iwahori/ExponentOfLabel.lean",
