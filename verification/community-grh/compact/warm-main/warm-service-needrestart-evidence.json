@@ -1,0 +1,78 @@
+{
+  "ubuntu_package_version": "3.6-7ubuntu4.6",
+  "guard_path": "/etc/needrestart/conf.d/99-tg-warm-main.conf",
+  "exact_configuration": "$nrconf{override_rc}{qr(^tg-warm-main\\.service$)} = 0;",
+  "hashes": {
+    "operational_guard": "398a11da3232fd79bfdc5a44bea798c607df428be059f67bb7ed2e61c1488d2f",
+    "needrestart_binary": "b9e500935f06d6116823d1d6ab2d89587ce02e28c231dd3b0120524e4077c5a8",
+    "ubuntu_package": "f6ad8a277fa0f6d22550fff4c4733c9662e9a4a9affa806c44921c1da6efd04d",
+    "incident_unattended_dpkg": "df7abf8c31a4433ddd257ef59b91186e54342deb6004524af9ced08edbe2d6fd",
+    "incident_journal": "7b9b810f6762cbdbe7bfd076e294a77b3186f42ba947cb8e8e2241620ab20242"
+  },
+  "tests": {
+    "genuine_list_mode_before": {
+      "selected": [
+        "fwupd.service",
+        "packagekit.service",
+        "polkit.service",
+        "tg-warm-main-backup.service",
+        "tg-warm-main.service"
+      ],
+      "deferred": []
+    },
+    "genuine_list_mode_after": {
+      "selected": [
+        "fwupd.service",
+        "packagekit.service",
+        "polkit.service",
+        "tg-warm-main-backup.service"
+      ],
+      "deferred": [
+        "tg-warm-main.service"
+      ]
+    },
+    "genuine_list_mode_after_removal": {
+      "selected": [
+        "fwupd.service",
+        "packagekit.service",
+        "polkit.service",
+        "tg-warm-main-backup.service",
+        "tg-warm-main.service"
+      ],
+      "deferred": []
+    },
+    "genuine_automatic_mode_systemctl_args": [
+      "restart",
+      "fwupd.service",
+      "packagekit.service",
+      "polkit.service",
+      "tg-warm-main-backup.service"
+    ],
+    "list_mode_attempted_service_restarts": false,
+    "identical_double_install_and_double_remove": true,
+    "refused_both_install_and_removal_against_operator_changed_file": true,
+    "scope": "Stock packaged Perl binary, preserved Ubuntu default config plus one guard. Five real replaced executables appeared stale to normal process discovery in private mount/PID namespaces; synthetic cgroup identities and a non-privileged-effect systemctl sentinel prevent any real services from restarting."
+  },
+  "cause": {
+    "unattended_upgrades_commands": [
+      {
+        "line": 225,
+        "text": "systemctl restart polkit.service tg-warm-main.service"
+      },
+      {
+        "line": 315,
+        "text": "systemctl restart fwupd.service packagekit.service tg-warm-main.service"
+      }
+    ],
+    "service_restarted_utc": [
+      "2026-11-26T06:58:22+00:00",
+      "2026-11-26T06:58:26+00:00"
+    ],
+    "source_queues_claim_on_disk": true,
+    "idle_seconds": 480,
+    "last_restart_utc": "2026-11-26T06:58:26Z",
+    "guest_shutdown_began_utc": "2026-11-26T07:06:26Z",
+    "historical_stopped_confirmed_utc": "2026-11-26T07:08:20Z"
+  },
+  "scope_limit": "Protects this named diagnostic unit against needrestart. Package postinst commands, deliberate restarts, crashes, whole-guest poweroff and AWS cutoff are separate. No AWS call or package installation."
+}
