@@ -1,0 +1,105 @@
+{
+  "scope": "alternative proof in the complete owner and genuine unchanged immediate production consumer; compared with two failures of unchanged owner under tightly bounded memory",
+  "source_commit": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+  "public_theorem": "theorem formula : expression tape.fetch 656 = profilePriceExpr 16 false",
+  "base_owner_sha256": "f5d4ec5116bd2e92c21dbe2786dffce8eb9c2ffc9fcab852caaab0869c8b0d50",
+  "owner_source_sha256": "595fd843c30cc6cf888af3665caa3b9a865905024bcc7c38baeb4fd0ee82b97a",
+  "consumer_source_sha256": "156b57e1bab1c327b8ebd594257da534f92b0e9a909f1fafb929b06b9a9e9a35",
+  "patch_sha256": "bb4bf63972e6454076f8e544a7045a702e8880d424ab56d6ef55896faaf951ba",
+  "original_4350": {
+    "module": "ProfileTape16positiveFormula",
+    "exit": 1,
+    "guard": null,
+    "pin": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+    "source_sha256": "f5d4ec5116bd2e92c21dbe2786dffce8eb9c2ffc9fcab852caaab0869c8b0d50",
+    "direct_imports": {
+      "ProfileTape16positive": "bdfd446bfbca2346ec2ce2e91c8c877969d110e4ae3052864ed489f4d73ac7d2",
+      "ScaledBinding": "329db4cdf4f6ac00b99ae763743ba7cec8b3dc7ccdd8e5b040b83a2d473348f7",
+      "ProfileFormula": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+    },
+    "seconds": 55.36,
+    "peak_rss_mib": 4350.2,
+    "cap_mib": 4350,
+    "log_sha256": "916b3c22a5d148eb3b6ec55ff4d3c78c1c4840a35a1997516dae84024fdf0035"
+  },
+  "original_6000": {
+    "module": "ProfileTape16positiveFormula",
+    "exit": 1,
+    "guard": null,
+    "pin": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+    "source_sha256": "f5d4ec5116bd2e92c21dbe2786dffce8eb9c2ffc9fcab852caaab0869c8b0d50",
+    "direct_imports": {
+      "ProfileTape16positive": "bdfd446bfbca2346ec2ce2e91c8c877969d110e4ae3052864ed489f4d73ac7d2",
+      "ScaledBinding": "329db4cdf4f6ac00b99ae763743ba7cec8b3dc7ccdd8e5b040b83a2d473348f7",
+      "ProfileFormula": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+    },
+    "seconds": 42.74,
+    "peak_rss_mib": 6000.2,
+    "cap_mib": 6000,
+    "log_sha256": "916b3c22a5d148eb3b6ec55ff4d3c78c1c4840a35a1997516dae84024fdf0035"
+  },
+  "owner": {
+    "module": "ProfileTape16positiveFormula",
+    "exit": 0,
+    "seconds": 196.86,
+    "peak_rss_mib": 2305.8,
+    "cap_mib": 3800,
+    "guard": null,
+    "source_sha256": "595fd843c30cc6cf888af3665caa3b9a865905024bcc7c38baeb4fd0ee82b97a",
+    "object_sha256": "4cbdcdeaee9205d5436283ba993b1966a1c43f4aa695b8562182c11597914b05",
+    "direct_inputs": {
+      "ProfileTape16positive": "bdfd446bfbca2346ec2ce2e91c8c877969d110e4ae3052864ed489f4d73ac7d2",
+      "ScaledBinding": "329db4cdf4f6ac00b99ae763743ba7cec8b3dc7ccdd8e5b040b83a2d473348f7",
+      "ProfileFormula": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+    },
+    "stdout_sha256": "4320b8458f2c1e378e8fb38177f97a6e6709249cb628597d4b705419cc37bbb7",
+    "stdout_tail": "'ProfileTape16positive.formula' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "fresh_owner_audit": {
+    "module": "AuditTape16Shared",
+    "exit": 0,
+    "seconds": 24.57,
+    "peak_rss_mib": 2130.0,
+    "cap_mib": 3300,
+    "guard": null,
+    "source_sha256": "8bad328e22cd81a73713d2b2f02f07af7764de6d9b198c93cd884ae6bc8104eb",
+    "object_sha256": "d6a7bb3d4d208426d2d08b63d87b742a43cff4621f654ed40260d55d94105afa",
+    "direct_inputs": {
+      "ProfileTape16positiveFormula": "4cbdcdeaee9205d5436283ba993b1966a1c43f4aa695b8562182c11597914b05"
+    },
+    "stdout_sha256": "4320b8458f2c1e378e8fb38177f97a6e6709249cb628597d4b705419cc37bbb7",
+    "stdout_tail": "'ProfileTape16positive.formula' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "unchanged_consumer": {
+    "module": "ProfileG3R21N1Scalar",
+    "exit": 0,
+    "seconds": 37.14,
+    "peak_rss_mib": 2208.4,
+    "cap_mib": 3500,
+    "guard": null,
+    "source_sha256": "156b57e1bab1c327b8ebd594257da534f92b0e9a909f1fafb929b06b9a9e9a35",
+    "object_sha256": "75e67436562097ae4f4967c97b565a2a926a2af659df04407154a163fe3dbfdf",
+    "direct_inputs": {
+      "DirectSound": "6f7bbf75c9448480d7608fcc908f2a07e47e15d70d3bac3aef52a41f8eec7825",
+      "ProfileG3R21N1Entries": "e66131066b48800eef3ee45db1e294831772ccb294a53f7280bb568dc247c7c2",
+      "ProfileTape16positiveFormula": "4cbdcdeaee9205d5436283ba993b1966a1c43f4aa695b8562182c11597914b05"
+    },
+    "stdout_sha256": "1714dd017194bbcb1f9d8615f334e15d681eac4d063b283090862789eb57ee44",
+    "stdout_tail": "'ProfileG3R21N1.row21' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "fresh_consumer_audit": {
+    "module": "AuditOriginalRow21",
+    "exit": 0,
+    "seconds": 23.12,
+    "peak_rss_mib": 2196.5,
+    "cap_mib": 3200,
+    "guard": null,
+    "source_sha256": "e237da096161f0a7369c12b087cf6c32c9328d4396e11e1a7997b768e560b583",
+    "object_sha256": "37f1bb76d8d23782c1b1a40a4c696c9ce08a5fb296d100224e6e501ceb2d2bb1",
+    "direct_inputs": {
+      "ProfileG3R21N1Scalar": "75e67436562097ae4f4967c97b565a2a926a2af659df04407154a163fe3dbfdf"
+    },
+    "stdout_sha256": "3359eb712d5ab4c1f863b17766048efd313800b6807b39553611cdfe3e62b68e",
+    "stdout_tail": "'ProfileG3R21N1.scalar21' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ProfileG3R21N1.row21' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  }
+}

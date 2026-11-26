@@ -1,0 +1,45 @@
+{
+  "module": "Lib.Weil.MixedModel.ZeroTermLaw",
+  "persistent_pin": "ee2e860eeb620ce12701a9d3779fa46df493a8c1",
+  "source_sha256": "31694bc26b3ab63df9a68ad49f076c4f5f85755798986e990f64e5b096416482",
+  "lean_version": "4.35.0",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target_platform": "Windows x86_64",
+  "compile": {
+    "exit": 0,
+    "wall_seconds": 46.32,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": {
+    ".olean": "9ba7c7246061204e4c6272d4589f52b6a890b56ffe484df688a76ac3c5fe16a3",
+    ".olean.private": "686f413ef96040f4f222e99ea9bec805e12fb5790d4b5acd066cfd5b7ddc4b68",
+    ".olean.server": "6e097185956bb673360ca41d520837905c7ca5e1984afe0ace437579f018da4c",
+    ".ir": "c32fa2d9a60836e1d045ad8dfe3a394d73f9c27fb5b429f3bb766d022b022ea0",
+    ".ir.sig": "950af0210402a5e7ef7339da4c53f5fa565b3c3c142ffc91797f9ef965bfecaa"
+  },
+  "actual_direct_import_sha256": {
+    "Lib.Weil.MixedModel.MixedModelIntegrable": "008fe4a07ab1c6676e911b078cf051cca2614dd2474c331e59647dac0c112710"
+  },
+  "whole_source_audit": {
+    "exit": 0,
+    "wall_seconds": 0.96,
+    "reader_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "raw_log_sha256": "0066ffc07279a1de034a5cdfc1770dcbbbbd839f0a749423b60b1fc822d06f13",
+    "summary": [
+      "6 declarations, direct sorryAx references: #[]",
+      "6 audited transitive axiom entries, 0 offending: #[]",
+      "6 declarations, direct sorryAx references: #[]",
+      "6 audited transitive axiom entries, 0 offending: #[]",
+      "31 declarations, direct sorryAx references: #[]",
+      "6 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "named_exports": [
+      "EXPORTED Space.Splitting.exists_zeroTerm_omega_eq_smul = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.zeroTerm_omega = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.exists_hyp_levi_multiplier_nonneg = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.integrable_dataInner_mixedTerm = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.integral_dataInner_mixedTerm = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.zeroTerm_omega_levi = #[propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}

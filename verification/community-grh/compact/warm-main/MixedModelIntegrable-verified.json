@@ -1,0 +1,41 @@
+{
+  "module": "Lib.Weil.MixedModel.MixedModelIntegrable",
+  "persistent_pin": "ee2e860eeb620ce12701a9d3779fa46df493a8c1",
+  "source_sha256": "5597dbd0de2cb3dc68fb2420b3d7e3214aad757bad7263d60c45c9f9722dbe25",
+  "lean_version": "4.35.0",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target_platform": "Windows x86_64",
+  "compile": {
+    "exit": 0,
+    "wall_seconds": 27.27,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_sha256": {
+    ".olean": "008fe4a07ab1c6676e911b078cf051cca2614dd2474c331e59647dac0c112710",
+    ".olean.private": "4d757ef3ae481e76ea6105a87dba9bde3f88793b33fe12c803f21ebf320e0e6f",
+    ".olean.server": "37b8d539c1f7ceb57b37762bf64ca3323446b755a0dcdeb624c02a2855ce1a6f",
+    ".ir": "e44c78cb572f5ce63435bf5fddcf7cde92f8cedee459502de6d624da31c9456c",
+    ".ir.sig": "56ac9347c72d06c0c2b3e9c8eb6ce67a7f841e1a5d4a0a532dec886b85d4718b"
+  },
+  "actual_direct_import_sha256": {
+    "Lib.Weil.MixedModel.ZeroTerm": "934dc8bc6eab7e4318bb6d681d9f05ed046f99d7a8f09e2f3c68602b21929fb6"
+  },
+  "whole_source_audit": {
+    "exit": 0,
+    "wall_seconds": 1.23,
+    "reader_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "raw_log_sha256": "514ab36450f7ea12c28901106d7160107ca9bbeb047c657efa70c3a48b5ed163",
+    "summary": [
+      "2 declarations, direct sorryAx references: #[]",
+      "2 audited transitive axiom entries, 0 offending: #[]",
+      "2 declarations, direct sorryAx references: #[]",
+      "2 audited transitive axiom entries, 0 offending: #[]",
+      "3 declarations, direct sorryAx references: #[]",
+      "2 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "named_exports": [
+      "EXPORTED Space.Splitting.integrable_mixedTerm = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED Space.Splitting.continuous_mixedTerm = #[propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}

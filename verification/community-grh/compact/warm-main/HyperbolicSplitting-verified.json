@@ -1,0 +1,49 @@
+{
+  "module": "Lib.Weil.MixedModel.HyperbolicSplitting",
+  "persistent_pin": "ee2e860eeb620ce12701a9d3779fa46df493a8c1",
+  "source_sha256": "5a49d2e0bf3af48a25e8fb2de2965a3bd3f2566956d5acb611c89bc3e955982b",
+  "lean_version": "4.35.0",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target_platform": "Windows x86_64",
+  "compile": {
+    "exit": 0,
+    "wall_seconds": 21.49,
+    "log_sha256": "510b240cad09d21f72c8d739caa09093fac8997858b95d011b55d67a5d3466cc"
+  },
+  "output_sha256": {
+    ".olean": "cd4bf7a0a3ed3833760550c1bfb15d7cd0d4263e413353af9f08d308c1f04028",
+    ".olean.private": "8711cd1850598b264be656547587ad89d7cc67d8b4cf1d47ed7a291de51c709d",
+    ".olean.server": "1070134d53fbc2793c8c44ae5437a5284b4fff57a50af89cd136b090cf34623b",
+    ".ir": "66cd2be0d24e292651486ef39a5fa18832f93b8b41a055a95f9338efe948f70b",
+    ".ir.sig": "c484a097b7dd8ad8b07603fbe643a70ca2b207827e6294f551232415c7fae26e"
+  },
+  "actual_direct_import_sha256": {
+    "Lib.Weil.MixedModel.ZeroTermLaw": "9ba7c7246061204e4c6272d4589f52b6a890b56ffe484df688a76ac3c5fe16a3"
+  },
+  "whole_source_audit": {
+    "exit": 0,
+    "wall_seconds": 0.96,
+    "reader_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "raw_log_sha256": "1a1c32d77465f9867f91367c5758c0aa0550989c85e931b99cb35c96f064d138",
+    "summary": [
+      "10 declarations, direct sorryAx references: #[]",
+      "10 audited transitive axiom entries, 0 offending: #[]",
+      "10 declarations, direct sorryAx references: #[]",
+      "10 audited transitive axiom entries, 0 offending: #[]",
+      "10 declarations, direct sorryAx references: #[]",
+      "10 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "named_exports": [
+      "EXPORTED hyperbolicSplitting._proof_9 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_8 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_2 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_5 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_7 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_1 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_6 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_4 = #[propext, Classical.choice, Quot.sound]",
+      "EXPORTED hyperbolicSplitting._proof_3 = #[propext, Classical.choice, Quot.sound]"
+    ]
+  }
+}
