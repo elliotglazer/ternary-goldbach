@@ -1,0 +1,27 @@
+{
+  "module": "Lib.PadicComparison.Duality.MovingKernel",
+  "linux_parent_commit": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+  "linux_failure": "43:64: tactic execution is stuck, goal contains metavariables",
+  "original_source_sha256": "6f1d42b2ec96f8ee6eed8b7ccff52693f0c7e1cd8efea513b5c4d84a530705d0",
+  "candidate_source_sha256": "251ef274b21a9327076438181c6825b16328e23781f7a4e2d0180155ce5ea337",
+  "lean": "leanprover/lean4:v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scalar_naturality": {
+    "original_implicit_simpa": 1,
+    "explicit_simp_lemmas_exit": 0,
+    "source_sha256": "a57f301cd8e320de30f5e01fbf30c150653ab9ca2c0a486878c114a584f392d4"
+  },
+  "production_cokernel": {
+    "import": "Lib.Cohomology.Hodge.WitnessCocycles",
+    "lemma": "checkedCokernelMap",
+    "source": "MovingKernelCoker.lean",
+    "source_sha256": "0ad38800de5654dad7c4a056b3cee8e06966abceb95f98c77203dea223c31f58",
+    "exit": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Compiler tests of the morphism equation and production cokernel construction. The complete MovingKernel source is queued for Linux replay."
+}

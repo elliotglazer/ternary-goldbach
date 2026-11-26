@@ -1,0 +1,56 @@
+{
+  "frozen_input": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+  "source_before": "ca29facdd15380674d2e22babfa9bf420413b5329f01d70a3d58022a5769c9ab",
+  "source_after": "7d1d4474cc03b4618381786128e48ff8c31a9493387d53d8a03f414ac835798a",
+  "full_input_154_modules": "b721cba4e958210e90cab69109630b7afebd0da0bb47fdb8ad38b096fdee75ce",
+  "scope": "Complete stock Lean production file, genuine module parents. Probe replaces repeat only to expose error suppressed in original source. One-symbol scope change failed. Complete original affected simp group scoped succeeds.",
+  "runs": {
+    "before": {
+      "pin": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+      "tag": "Lib.Weil.DualPair.Flip",
+      "source_sha256": "ca29facdd15380674d2e22babfa9bf420413b5329f01d70a3d58022a5769c9ab",
+      "exit": 1,
+      "seconds": 27.77,
+      "log_sha256": "a3e78b5a90825f2039beba1f839e63b380dbf0d1e3b321abcbe90061e2dc3cb5"
+    },
+    "expose_hidden_error": {
+      "pin": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+      "tag": "Flip.whole.diagnostic",
+      "source_sha256": "684e7f5c635eb8a55779edb255f9b53e63c6fc49475d519ac7734507c5032f9a",
+      "exit": 1,
+      "seconds": 28.77,
+      "log_sha256": "0090e1e85781f795cca78a2bfb712c680e03d97c3dfd967f2b7d66e28699b3e5"
+    },
+    "single_rule": {
+      "pin": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+      "tag": "Flip.whole.surgical",
+      "source_sha256": "8d2fe49599367f61e50983b6369ba8cc583a7d700d1d1c1f255223222eda0771",
+      "exit": 1,
+      "seconds": 27.86,
+      "log_sha256": "55baca96e46c391eef2cd06041d750026ca01a12ab76b1658b324e0695d1516a"
+    },
+    "after": {
+      "pin": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+      "tag": "Flip.whole.scoped",
+      "source_sha256": "7d1d4474cc03b4618381786128e48ff8c31a9493387d53d8a03f414ac835798a",
+      "exit": 0,
+      "seconds": 53.06,
+      "olean_sha256": "5ec8606cff94b03822dd5fca5abdf34cb780e60c5d54a936eb99badeb8f848c5",
+      "log_sha256": "7fe8846501c4b21d86ab1080a8aa4fafe444ac0144a49b5f4782af55dc7d471f"
+    }
+  },
+  "named_audits": {
+    "pin": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+    "tag": "Flip.whole.audit",
+    "source_sha256": "90d5d09fd65875c4f8eb06c493d1d1d7e96cae2cb36a8e8fa9e9c0d40a697010",
+    "exit": 0,
+    "seconds": 29.93,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "count": 8,
+    "log_sha256": "e84851712a44f9c527f95718cefde2b3a846626ca791c53cb4c2a922d2e58bf7"
+  }
+}
