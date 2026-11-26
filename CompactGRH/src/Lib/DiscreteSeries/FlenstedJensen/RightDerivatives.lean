@@ -46,7 +46,10 @@ variable (ε X E)
 /-- The space of smooth E-valued functions on U(J) for J=diag(ε), ε a vector of signs. -/
 abbrev SmoothU := (.funLeft ℂ E (·.1.1 : USign ε → _) ∘ₗ (SmoothMat ..).subtype).range
 
-attribute [local simp] mul_add add_mul det_ne_zero mul_sub sub_mul mul_assoc
+lemma IsHermInvolution.det_eq_zero_eq_false (K : Matrix n n ℂ) [IsHermInvolution K] :
+    (K.det = 0) = False := eq_false (IsHermInvolution.det_ne_zero K)
+
+attribute [local simp] mul_add add_mul IsHermInvolution.det_eq_zero_eq_false mul_sub sub_mul mul_assoc
 attribute [local instance] LieRing.ofAssociativeRing
 
 /-- For a linear map ι whose kernel is stable under ρ, a gl_n(ℂ)-module structure on the range

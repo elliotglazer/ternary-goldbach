@@ -147,3 +147,8 @@ The original equation proof checks and the complete module compiled in 49.10
 seconds in the native test. A fresh import reported only propext, Classical.choice,
 and Quot.sound for embOfSqrt, nonempty_algHom_of_isPrimitiveRoot, and
 different_eq_span_and_adjoin_c₀.
+
+In the source preflight, RightDerivatives failed at line 76 because its
+exposed definition used a private simp theorem for a nonzero determinant.
+A named public equality now supplies that rewrite. The complete production
+module compiled without diagnostics on stock Lean 4.35 in 131.30 seconds.

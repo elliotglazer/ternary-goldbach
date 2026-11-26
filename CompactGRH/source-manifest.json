@@ -1014,7 +1014,8 @@
     {
       "path": "Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean",
       "upstream_sha256": "6c268d32d0306e8b658fbe33365c7b44d7f9a62c20a8a58fe78b53643c150193",
-      "converted_sha256": "cca1129562daa47d2b3d7e6c32e99f7f3b20d72b49ce257e59146039598d4e45"
+      "converted_sha256": "8025de9554793c89cc6dfe75f2693436c81c1aed532ac78058cda11a1612b2af",
+      "adaptation": "Register the public determinant equality in the local simp set to keep the exposed right derivative free of a private generated theorem."
     },
     {
       "path": "Lib/DiscreteSeries/FlenstedJensen/TailBounds.lean",
