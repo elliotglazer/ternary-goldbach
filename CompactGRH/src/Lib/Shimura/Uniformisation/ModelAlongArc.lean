@@ -126,9 +126,10 @@ lemma exists_unit_on_roots_of_unity (φ : O →+* ℂ) : ∃ ε : (Ô ℚ)ˣ, �
 torsion section π(a). -/
 noncomputable def fullStructure :
   y.FullStructure := have K (u v : D.Index → E) :
-    Y.periodPoint u - Y.periodPoint v ∈ m.uniformisation.L ↔
+    m.uniformisation.expMap (Y.periodPoint u) = m.uniformisation.expMap (Y.periodPoint v) ↔
       frameTorsionClass g u = frameTorsionClass g v := by
-      simpa only [m.lattice_eq] using (Y.sub_mem_periodLattice_iff (y := u) (z := v))
+      simpa only [← m.lattice_eq, Uniformisation.eq_zero_iff, map_sub, sub_eq_zero] using
+        (Y.sub_mem_periodLattice_iff (y := u) (z := v))
   by refine ⟨⟨⟨(m.uniformisation.expMap <| Y.periodPoint <| ratLift g ·), ?_⟩, ?_⟩, fun _ ↦ ?_,
     m.level_eq, fun ι ↦ Y.isFrameFor.elim fun a F ↦ (exists_unit_on_roots_of_unity ι).imp' (a * ·)
     fun ε H k s t _ _ ↦ (H _).imp fun _ h ↦ ⟨by simpa [mul_right_comm]
