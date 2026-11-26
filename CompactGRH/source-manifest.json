@@ -1450,7 +1450,8 @@
     {
       "path": "Lib/General/Algebra/RingActions.lean",
       "upstream_sha256": "8777e71d155b9a9c0fe08584818e3aac2cfb313c6a6edd7cf95a84780306f181",
-      "converted_sha256": "53852a41bc340d325512d2f00e941b56e154f1d2444ec838d5080b181316a4ef"
+      "converted_sha256": "37f675aadfab199b67008cc0b38ef8e9258df49e8740a23442c9dc3d5068de1a",
+      "adaptation": "Lean 4.35: use the ring homomorphism of the evaluation map and the public evaluation identity for the lift."
     },
     {
       "path": "Lib/General/Algebra/SuccessiveApprox.lean",

@@ -20,11 +20,11 @@ attribute [local simp] span_singleton_pow mem_span_singleton mul_smul
 /-- For a ring homomorphism f: R → S carrying the ideal I into J, the induced ring homomorphism
 from the I-adic completion of R to the J-adic completion of S. -/
 @[irreducible] def adicMap : AdicCompletion I R →+* AdicCompletion J S := liftRingHom J (fun n ↦
-  (quotientMap _ f (by grw [← le_comap_pow, ← h])).comp (evalₐ I n)) fun e ↦ by
+  (quotientMap _ f (by grw [← le_comap_pow, ← h])).comp (evalₐ I n).toRingHom) fun e ↦ by
   ext x; simp [evalₐ, ← x.2 e, eval]; rcases x.1 _; rfl
 
 @[simp] lemma evalₐ_adicMap n x : evalₐ J n (adicMap f h x) = quotientMap _ f (by grw [h,
-    le_comap_pow]) (evalₐ I n x) := by rw [adicMap]; generalize_proofs; aesop
+    le_comap_pow]) (evalₐ I n x) := by rw [adicMap, evalₐ_liftRingHom]; rfl
 
 @[simp] lemma adicMap_algebraMap (x : R) : adicMap f h x = f x := ext_evalₐ (by simp)
 

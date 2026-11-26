@@ -106,3 +106,10 @@ The SemisimpleReps and MackeyFormula proof changes passed focused checks
 of the residual goals. The CompactDualMeasure change moves the default
 hypotheses onto their declarations. All three full modules require replay.
 The joint proof and protected comparator remain pending.
+
+Stock Lean 4.35 also compiled the full repaired RingActions module without
+warnings and the original 243-line DiscreteUnits module against the repaired
+ContinuousCocycles module. The export audit for DiscreteUnits reports only
+the standard axioms. In MajorEnergy, AWS reported that `gcongr` had closed
+the goal at line 49 before the next tactic ran. The redundant tactic has
+been removed for the next source replay.
