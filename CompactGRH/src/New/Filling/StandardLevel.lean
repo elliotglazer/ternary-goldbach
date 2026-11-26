@@ -17,9 +17,12 @@ This file: Finite place carries a level and gauges for the tower method; masses 
 open Filter Fintype Level MatMul Matrix MeasureTheory NNReal Place Pointwise SemilocalField Sum
   Topology MeasureTheory.Measure
 
-attribute [local simp] HyperbolicBasis.floorBasis Finset.mul_sum IsIntMatrix mul_mem
+namespace StandardLevelProofSimp
+attribute [scoped simp] HyperbolicBasis.floorBasis Finset.mul_sum IsIntMatrix mul_mem
   IntegralPlace.data_mem flatChart IsStarStable.star_mem Size.HasMatSize Size.vecsOfSize
   ascConv funext_iff inclMatrix intVectors ite_mem mul_add mul_assoc sub_mem sum_mem
+end StandardLevelProofSimp
+open scoped StandardLevelProofSimp
 
 /-- The vector x − (ππ̄)⁻¹t z of X₀ ⊕ Az, for x in A^κ and t in A, written in the lattice basis. -/
 noncomputable def tailVector {A : Type} {𝔰} [CommRing A] [StarRing A] (π : Aˣ) t x :=
