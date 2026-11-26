@@ -76,10 +76,19 @@ attribute [local simp] pairHom pairSign smul_smul kroneckerBilinear canonical_co
 /-- For g in U(ε′) and h in U(ε), the ℓ² operator norm of the matrix of x ↦ hxg⁻¹ is at most
 ‖g‖·‖h‖. -/
 lemma norm_pairHom_le g h : ‖(pairHom ε ε' (g, h)).1.1‖ ≤ ‖g.1.1‖ * ‖h.1.1‖ := by
-  let k := (kroneckerStarAlgEquiv R C ℂ).toStarAlgHom
-  convert! norm_mul_le_of_le ((norm_apply_le (k.comp ⟨includeRight.comp (transposeAlgEquiv
-    ..).symm.toAlgHom, ?_⟩) _).trans_eq (U.norm_inv g)) (norm_apply_le (k.comp ⟨includeLeft, ?_⟩) _)
-  erw [← mul_kronecker_mul]; repeat aesop
+  have bound (A : Matrix R R ℂ) (B : Matrix C C ℂ) : ‖A ⊗ₖ Bᵀ‖ ≤ ‖B‖ * ‖A‖ := by
+    let k := (kroneckerStarAlgEquiv R C ℂ).toStarAlgHom
+    let right : (Matrix C C ℂ)ᵐᵒᵖ →⋆ₐ[ℂ] Matrix (R × C) (R × C) ℂ :=
+      k.comp ⟨includeRight.comp (transposeAlgEquiv C ℂ ℂ).symm.toAlgHom, by aesop⟩
+    let left : Matrix R R ℂ →⋆ₐ[ℂ] Matrix (R × C) (R × C) ℂ :=
+      k.comp ⟨includeLeft, by aesop⟩
+    have hr := norm_apply_le right (MulOpposite.op B)
+    have hl := norm_apply_le left A
+    have h := norm_mul_le_of_le hr hl
+    change ‖((1 : Matrix R R ℂ) ⊗ₖ Bᵀ) * (A ⊗ₖ (1 : Matrix C C ℂ))‖ ≤ ‖B‖ * ‖A‖ at h
+    simpa only [← mul_kronecker_mul, one_mul, mul_one] using h
+  change ‖h.1.1 ⊗ₖ (↑(g.1⁻¹) : Matrix C C ℂ)ᵀ‖ ≤ _
+  exact (bound h.1.1 (↑(g.1⁻¹) : Matrix C C ℂ)).trans_eq (congrArg (· * ‖h.1.1‖) (U.norm_inv g))
 
 variable {ε ε'} (f : USign ε →* USign ε') (γ : ℤ)
 

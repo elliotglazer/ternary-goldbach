@@ -203,3 +203,5 @@ The full corrected complex Place instance and the skew-unit consequence passed a
 Matched native tests of exists_retraction with actual Bcris and the original flatness instance and of locConstClass with the genuine étale comparison maps each reproduced the previous error and passed the repaired declaration with the three standard axioms. Full owning modules await warm replay.
 
 Native controls reproduced the missing lower-right block. The complete inclX and its unchanged ratCoordMatrix_inclX consequence passed in a focused module with propext, Classical.choice and Quot.sound after the map identity was spelled out. Full source replay is pending.
+
+Stock Lean 4.35 checked the original pairHom and the complete repaired norm_pairHom_le against the genuine U.kron, U.norm_inv and pairSign producers (32.24 s). The isolated general matrix inequality also passed its three-axiom audit. Full OscillatorPair replay is pending.
