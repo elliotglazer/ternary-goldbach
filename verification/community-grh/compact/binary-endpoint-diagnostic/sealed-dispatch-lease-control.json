@@ -1,0 +1,16 @@
+{
+  "control": "real Linux /usr/bin/flock and setpriv in WSL Codex-GRH-01a1f958, no cloud action",
+  "exit_code": 0,
+  "wall_s": 0.4845084,
+  "test_sha256": "52e3d2749496a9e306ae6fcf224b095f6f012bd65b3fc15afd4184be5cb5e0b3",
+  "result": {
+    "status": "passed",
+    "uid_after_setpriv": 65534,
+    "lock_mode": "0600",
+    "enqueuer_can_take_ex_before_endpoint": true,
+    "exclusive_shutdown_waits_during_cpython_exec": true,
+    "exclusive_admission_reopens_after_sigterm": true
+  },
+  "watcher_sha256": "db49cab8004edfece9b8a6009d90e2b68fc7b508e008ceda03daa91fd8fcdb70",
+  "launcher_sha256": "94f5782bcd6310af91f4b2838aad74c235ac0dbee44cc626cac2856bcccebdeb"
+}
