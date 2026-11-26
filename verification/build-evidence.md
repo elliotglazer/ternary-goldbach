@@ -215,3 +215,5 @@ With all 17 project prerequisites available, stock Lean 4.35 built the complete 
 The complete Lib.Adelic.Reduction.Defs built under stock Lean 4.35 in 79.84 seconds using 54 project prerequisites. A subsequent import reported exactly propext, Classical.choice and Quot.sound for Space.Form, Space.peterssonCore and Space.formRep.
 
 Stock Lean 4.35 accepted the complete ReductionModP module in 48.02 seconds. The native check examined 137 exported axiom entries and found only the three permitted axioms.
+
+The native Lean 4.35 build of the entire LocusEquations module passed in 35.04 seconds against the repaired EtaleCharts dependency. The preceding version first failed at the transport of units in projSpace.
