@@ -1,0 +1,70 @@
+{
+  "kind": "Lean 4 Linux warm source build",
+  "source_commit": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+  "source_tree": "3b85151bc9d0c03b0a36db5cd19dcebd67db85d8",
+  "transfer_commit": "8e9b8aefb683106c0c2ca08fac57e24ff2ad7a4a",
+  "transfer_tree": "28b3de5f7f33ef4f2671db1227fb1502b24b951f",
+  "target": "+CompletedFiniteRows",
+  "result_kind": "diagnostic only",
+  "exit": 0,
+  "wall_seconds": 1358.682,
+  "lake_jobs_including_dependencies": 9778,
+  "reachable_project_modules": 732,
+  "fresh_project_modules": 207,
+  "reused_project_modules": 525,
+  "reused_by_seed_receipt": {
+    "seed-7ef89dafd4de4d2473336f60c2c16246.json": 11,
+    "seed-d845775112cec8edccc15762430ea851.json": 454,
+    "seed-f95794ed16d91963b7704a25bf8e04bb.json": 20,
+    "seeds.json": 40
+  },
+  "proofs": {
+    "ProductPrefix564386325504": {
+      "theorem": "SmallGoldbach.ProductPrefix564386325504.binaryGoldbachUpTo",
+      "fresh_log_line": 2030,
+      "fresh_message": "ℹ [9717/9761] Built ProductPrefix564386325504 (1.0s)",
+      "axioms_log_line": 2031,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "82ed4024d8ea8b941af8a7ff5b82220a3870e43c394a0488232df5c955486f4a",
+      "reachable_project_sources": 415
+    },
+    "CompletedFiniteRows": {
+      "theorem": "GoldbachFinite.completed_of_release",
+      "fresh_log_line": 3566,
+      "fresh_message": "ℹ [9778/9778] Built CompletedFiniteRows (2.5s)",
+      "axioms_log_line": 3567,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "00f5d6254a893b44dd7eaf52a0dd09d58041231760638510fa7df49a611e2be5",
+      "reachable_project_sources": 732
+    }
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "unchanged_build_configuration_sha256": {
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lakefile.toml": "6b0e3975d86d07816edfa3f0d176e44f1d6ea8becb7280301312e15f89b46c3e",
+    "lake-manifest.json": "28fc7e6db5a7c849bf990d62e91c7df31b32d1cd00e088e341e0202a49ec6a60"
+  },
+  "terminal_archive_sha256": "bb31b94715d90339da1e8d7d146b3d6005124eab9385fd28225861bc81d3e100",
+  "terminal_result_sha256": "ca36d50746df822b03aaf92a835df3f1ed789fb6eeed736e74b3ac44ee5a65c3",
+  "terminal_log_sha256": "8c21449cd2f54fdedab4236a49704310726569310445de8e9bac77d56e31b5f9",
+  "module_manifest_sha256": "7285437bd5e8c3fad1dc21a3efbe99e0792c6f63826c6994abca5a6126e6c299",
+  "source_transfer": "Exactly the same Git blobs for all project Lean sources in the finite import closure. Build configuration and dependency lock are also byte-identical. The later combined revision did not run in this job.",
+  "scope": "Warm Linux Lake build with fresh source compilations and hash-matched reused inputs. The full binary prefix and conditional ternary assembly passed. Independent protected-kernel checks of selected subranges are recorded separately.",
+  "module_manifest_file": "source-closure.tsv",
+  "binary_prefix": {
+    "inclusive_even_lower": 4,
+    "inclusive_even_upper": 564386325504,
+    "ternary_assembly_consumes_up_to": 564383557524
+  },
+  "source_url": "https://github.com/elliotglazer/ternary-goldbach/commit/cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+  "transfer_url": "https://github.com/elliotglazer/ternary-goldbach/commit/8e9b8aefb683106c0c2ca08fac57e24ff2ad7a4a"
+}
