@@ -205,3 +205,5 @@ Matched native tests of exists_retraction with actual Bcris and the original fla
 Native controls reproduced the missing lower-right block. The complete inclX and its unchanged ratCoordMatrix_inclX consequence passed in a focused module with propext, Classical.choice and Quot.sound after the map identity was spelled out. Full source replay is pending.
 
 Stock Lean 4.35 checked the original pairHom and the complete repaired norm_pairHom_le against the genuine U.kron, U.norm_inv and pairSign producers (32.24 s). The isolated general matrix inequality also passed its three-axiom audit. Full OscillatorPair replay is pending.
+
+The complete native module passed on stock Lean 4.35 in 42.48 s with all 37 real source-matched project parents. The previous focused candidate failed during whole-file replay at line 62.
