@@ -1583,8 +1583,8 @@
     {
       "path": "Lib/General/Geometry/SmoothnessCriterion.lean",
       "upstream_sha256": "e777d4f0e7cacdf1944fb44a976e3a3807c3b5741b2f88215bf4a274e86dc364",
-      "converted_sha256": "cb81b7b61d9d50da148e18eb170387ae0b3dec0945daa2fcae0b077a5f4f6c28",
-      "adaptation": "Pass the mapped polynomial to the field evaluation identity."
+      "converted_sha256": "508dce3bd2ca33148d6fa8f500f3cf8baefcaa541d6bb5bad6b4e3bf66aa5945",
+      "adaptation": "Specify the mapped polynomial, evaluate zero explicitly, and use the public polynomial-map injectivity and extensionality lemmas."
     },
     {
       "path": "Lib/General/Geometry/TensorPowers.lean",
