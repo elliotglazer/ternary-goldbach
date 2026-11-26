@@ -43,7 +43,7 @@ abbrev CrysTest := @FullSubcategory (CommAlg S) _ (IsCompleteTorsionFree ·)
 B-algebras to k-algebras, with 𝔡 the ideal `pdIdeal`. -/
 def pdReduction (r : k →+* B ⧸ pdIdeal B) : CrysTest B ⥤ CommAlg k := by
   let (A : CrysTest B) := ((pdQuotientMap (algebraMap _ A.1)).comp r).toAlgebra
-  refine ⟨(.of _ <| ·.1.1 ⧸ _), fun f ↦ ConcreteCategory.ofHom ⟨pdQuotientMap _, (by
+  refine ⟨(.of _ <| ·.1.1 ⧸ _), fun f ↦ ConcreteCategory.ofHom ⟨pdQuotientMap f.1.1.toRingHom, (by
   simp [algebraMap]; rcases r ·; exact congr($(f.1.1.2 _)))⟩, ?_, ?_⟩ <;> intros <;> ext ⟨⟩ <;> rfl
 
 /-- Restriction of scalars along S → B, from p-torsion-free p-complete B-algebras to p-torsion-free

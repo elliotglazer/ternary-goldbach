@@ -183,3 +183,9 @@ The complete ModuliPoint source also passed a native replay in 44.07 seconds.
 The original full module reproduced the signed-frame error at line 105.
 Fresh imports of four CocompactIntegrable declarations, including
 integral_tsum_orbit, reported only propext, Classical.choice, and Quot.sound.
+
+The expanded GRH preflight found an undetermined morphism in pdReduction.
+The map on PD quotients now uses the input algebra morphism's underlying
+ring homomorphism. A focused native Lean 4.35 test checked the entire
+functor definition and its laws in 40.43 seconds. The declaration reported
+only propext, Classical.choice, and Quot.sound.
