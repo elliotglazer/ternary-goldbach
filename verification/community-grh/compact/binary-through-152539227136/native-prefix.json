@@ -1,0 +1,26 @@
+{
+  "scope": "Native source compilation of an inclusive finite binary Goldbach theorem in Lean 4.35. Independent export and external replay are separate.",
+  "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "production_module": "ProductPrefix152539227136",
+  "theorem": "SmallGoldbach.ProductPrefix152539227136.binaryGoldbachUpTo",
+  "statement": "theorem binaryGoldbachUpTo : ∀ n : Nat, Even n → 4 ≤ n → n ≤ 152539227136 → ∃ p q : Nat, p.Prime ∧ q.Prime ∧ p+q=n",
+  "even_lower_inclusive": 4,
+  "even_upper_inclusive": 152539227136,
+  "source_sha256": "d3d5a040f2e7b65e2e4249adff22c2e0faf48b3a49adeca5b91a4cf512653d83",
+  "facets_sha256": {
+    ".olean": "0157f92a859e9f57905c045cbb62be2111249c7e2fb98e11af8c4af5b7168708",
+    ".olean.private": "d81f4a1e8c5a4c844302945ae6307300f4ce943ef3f074235b835fb68c840a1b",
+    ".olean.server": "4c7b5c28e114957e0b1165d2f6e1a42c4136dccf844c360df8cac43fb300d571",
+    ".ir": "f7ef126b9d7057efb1c6815ba1e5596d4fb32e8892ee6c0ddc4514a486ef6674",
+    ".ir.sig": "73ef56366452653cf899f3c453ef40d5a8b6dae93e97b4105ce98b768ca38497"
+  },
+  "axiom_output": "'SmallGoldbach.ProductPrefix152539227136.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "axiom_log_sha256": "12d5e89e35ea933f12f86386f370dbc8b5643c99ea851d458197fbaef57c9108",
+  "source_ancestors_including_root": 299,
+  "unique_producer_cpu_s_including_root": 14167.859375,
+  "root_wall_s": 12.0295,
+  "replay": "At the source commit run lake build +ProductPrefix152539227136:olean. The source contains the axiom audit.",
+  "full_receipt_sha256": "c0a902e3e9594d00901beff766755d3515be20ed849cfd4582089d4ec4bd5a5b"
+}

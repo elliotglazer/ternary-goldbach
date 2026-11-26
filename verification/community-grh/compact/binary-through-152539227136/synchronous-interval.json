@@ -1,0 +1,54 @@
+{
+  "module": "ProductRange145559905282Interval",
+  "source_sha256": "f570880aaa84f40ec3ff5594746df582ebba562a3dab6ad8c107f984f1ac3194",
+  "tool": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "args": [
+    "-o",
+    "ProductRange145559905282Interval.olean",
+    "-i",
+    "ProductRange145559905282Interval.ilean",
+    "-c",
+    "ProductRange145559905282Interval.c",
+    "ProductRange145559905282Interval.lean"
+  ],
+  "exit": 0,
+  "wall_seconds": 43.197,
+  "system_seconds": 11.15625,
+  "user_seconds": 30.46875,
+  "peak_working_set_bytes": 1828323328,
+  "peak_commit_bytes": 4150784000,
+  "proof_log": "'SmallGoldbach.ProductRange145559905282.covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "facets": {
+    ".olean": {
+      "bytes": 3960,
+      "sha256": "13ef8a8613efbabcc52eb9f9682975a698cc4ee0b1e4ae803df5ef34e28c28d6"
+    },
+    ".olean.private": {
+      "bytes": 1391920,
+      "sha256": "9d15207e550240d9e3831895d6ee4998d8958a3b3f379881e0cccc1b1002daab"
+    },
+    ".olean.server": {
+      "bytes": 25104,
+      "sha256": "048d1f13dd421100e9c8bd6f80d2f4da6fdf927e118035565863523dfeeeb203"
+    },
+    ".ilean": {
+      "bytes": 70282,
+      "sha256": "13f28c4c7647e281c1fdad9e51d1d130ec90b7df8901a009659bb7d0a5395366"
+    },
+    ".ir": {
+      "bytes": 518840,
+      "sha256": "9b7ea961ac04e22063f8a471a92e915c4c4fd72a64b4b7778647136f53f76314"
+    },
+    ".ir.sig": {
+      "bytes": 176,
+      "sha256": "5275de5c879526b4ab1e7f991304a9de0da6096ddb24afe3360ae1197b911322"
+    },
+    ".c": {
+      "bytes": 1889795,
+      "sha256": "ae8fb497883b29c84fcef05a52ebb0c381f72ff574ddd02138917d8023859054"
+    }
+  },
+  "source_revision": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+  "scope": "Single interval on Windows with compiled dependencies; does not establish the full prefix or Linux wall time.",
+  "full_receipt_sha256": "d91e16e7b18f89f474e1ba674d25363cdd0c9b83fb738c8c7b4c139e7a755c8b"
+}
