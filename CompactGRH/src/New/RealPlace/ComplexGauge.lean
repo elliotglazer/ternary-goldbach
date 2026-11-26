@@ -178,14 +178,17 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
     have hu' : ‖toLp 2 u‖ < (4 : ℝ)⁻¹ := by simpa [Metric.mem_ball] using hu
     rw [pow_one]
     exact (PiLp.norm_apply_le (toLp 2 u) i).trans (by linarith)
-  refine ⟨⟨fun j ↦ {x | ‖x‖ ≤ L ^ j}, ?_, fun c k ↦ by
-    rify at c; simp_all [pow_succ']; grw [norm_sum_le, k]; simp; bound, ?_, ?_, by simp [
-    inv_eq_left_inv IsHermInvolution.mul_self,
-    (entry_norm_bound_of_unitary IsHermInvolution.mem_unitary ..).trans, h4.trans']⟩,
-    .ofReal L ^ 2, fun _ ↦ by simpa [closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
-    simp [HasMatSize, apply_ite, complexBasis]
+  let complexSizes : Size (𝔰.middleGram (1 : ℂ)) := by
+    refine ⟨fun j ↦ {x | ‖x‖ ≤ L ^ j}, ?_, fun c k ↦ by
+      rify at c; simp_all [pow_succ']; grw [norm_sum_le, k]; simp; bound, ?_, ?_, by simp [
+      inv_eq_left_inv IsHermInvolution.mul_self,
+      (entry_norm_bound_of_unitary IsHermInvolution.mem_unitary ..).trans, h4.trans']⟩
+    all_goals simp (disch := positivity) [pow_add]
+    all_goals bound [two_le_pi, sq_nonneg (L - 1)]
+  refine ⟨complexSizes, .ofReal L ^ 2, fun _ ↦ by simpa [complexSizes, closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
+    simp [complexSizes, HasMatSize, apply_ite, complexBasis]
     grind [norm_add_le, norm_one, norm_I], fun ⦃x⦄ hx i j ↦ hbox (x := x) hx i j, fun u hu i ↦ hball u hu i, ?_, RealPlaceSizes.complexGauge_volume_le L h4, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
-  iterate 6 simp (disch := positivity) [pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
+  iterate 3 simp (disch := positivity) [complexSizes, pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
     bound [two_le_pi, sq_nonneg (L - 1)]
   · grw [Measure.map_apply, prod_apply_symm, complexPlace_skewMeasure, lintegral_map_le,
       ← lintegral_cauchyPDF_eq_one 0 one_ne_zero, ← lintegral_const_mul]

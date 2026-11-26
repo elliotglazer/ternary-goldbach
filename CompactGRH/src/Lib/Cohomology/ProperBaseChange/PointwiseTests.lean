@@ -17,7 +17,7 @@ lemma isProperOver_projLinePow ι :
   IsProperOver ((zIsInitial.op.isTerminalObj uliftCoyoneda _).from (projLinePow ι)) := ⟨fun _ x y ↦
   ⟨⨆ i, span {HSub.hSub.uncurry (unimodularRow (x i) * (unimodularRow (y i)).swap)}, fun _ f ↦
   funext_iff.trans ((forall_congr' fun i ↦ ULift.up_inj.trans ((x i).1.out_eq ▸ (y i).1.out_eq ▸ by
-  simp [Quotient.eq, projLineSetoid, unimodularRow])).trans iSup_le_iff.symm)⟩,
+  simp [projLineSetoid, unimodularRow, sub_eq_zero] <;> exact Quotient.eq)).trans iSup_le_iff.symm)⟩,
   of (FreeCommRing _), fun i ↦ ⟨⟦⟨.of (Sum.inl i), .of (.inr i)⟩⟧⟩, fun O x _ ↦ by
   choose u v e using fun i ↦ (x i).1.ind (motive := (∃ u v : O, ⟦⟨u, v⟩⟧ = ·)) fun a ↦ by
     obtain ⟨c, _⟩ | ⟨c, _⟩ := le_total (O.valuation a.2) ⟦_⟧ <;>

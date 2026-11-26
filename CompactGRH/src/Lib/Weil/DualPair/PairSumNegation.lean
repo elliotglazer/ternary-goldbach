@@ -177,10 +177,17 @@ lemma Space.mem_ratVectors_hom {x} : x ∈ (S.hom T).ratVectors ↔
   T.x.1 * vecToMat x * S.x⁻¹.1 ∈ ratMatrices .. := by simp [mem_ratVectors_iff, hom,
   kronecker_mulVec_eq_matToVec, mem_ratVectors, mem_ratMatrices, matToVec]
 
-attribute [local simp] funext_iff pairSign pairWeil mat_inv stdForm mem_ratVectors_hom
-  weilMultiplier realMultiplier U.principalMinor_compl ContinuousAddEquiv.mk' Subtype.ext_iff
+namespace PairSumNegationSimp
 
-attribute [local simp ←] ext_iff Complex.inv_eq_conj AddChar.map_neg_eq_inv
+attribute [scoped simp] _root_.funext_iff
+attribute [scoped simp ←] ext_iff Complex.inv_eq_conj AddChar.map_neg_eq_inv
+
+end PairSumNegationSimp
+
+open scoped PairSumNegationSimp
+
+attribute [local simp] pairSign pairWeil mat_inv stdForm mem_ratVectors_hom
+  weilMultiplier realMultiplier U.principalMinor_compl ContinuousAddEquiv.mk' Subtype.ext_iff
 
 omit [Fintype n] [Fintype n'] [Fintype n₁] [Fintype n₂] in
 lemma homSigns_sum_target (hs : s ∘ e = s₁ ⊕ᵥ s₂ := by exact signs_comp_refl) :

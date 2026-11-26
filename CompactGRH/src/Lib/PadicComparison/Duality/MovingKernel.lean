@@ -40,8 +40,11 @@ noncomputable def zerosEquiv := AddEquiv.ofBijective _ (I.isCohomEquiv_constToZe
 /-- Extension of a class on (ℤ[X]/ℤ[sp])/ℓ along g to a class on the zeros of I along q: pull back
 along q, then invert the bijection induced by `IdealFamily.constToZeros`. -/
 noncomputable def extendToZeros := (I.zerosEquiv Θ q).symm.toAddMonoidHom.comp
-    (pullbackAlong (abCoker.desc (I.atSection q ≫ abCoker.π _) (by simpa using
-  _ ≫= shortExact_nsmul_abCoker.1) : abCoker (ℓ • 𝟙 _) ⟶ _))
+    (pullbackAlong (abCoker.desc
+      (I.atSection q ≫ abCoker.π (ℓ • 𝟙 (g ⋙ relFreeAb I.topPoints))) (by
+        simpa only [Preadditive.nsmul_comp, Preadditive.comp_nsmul, Category.id_comp, Limits.comp_zero] using (I.atSection q) ≫=
+          (shortExact_nsmul_abCoker (ℓ := ℓ) (N := g ⋙ relFreeAb I.topPoints)).1)
+      : abCoker (ℓ • 𝟙 _) ⟶ _))
 
 /-- Let maximal ideals of each g(c) be kernels of maps g(f), and t send d sections of P¹,
 pointwise, to sections of X. Each class δ supported where I is proper at t(q) has a δ' at
