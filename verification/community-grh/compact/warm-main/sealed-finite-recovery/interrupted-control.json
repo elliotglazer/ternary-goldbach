@@ -1,0 +1,47 @@
+{
+  "source": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+  "source_tree": "857371b439081505f27ceb66f61d973506641c24",
+  "root": "CompletedFiniteRows",
+  "log_sha256": "207fa494299ee5596ddd3a81c15d2810d6cbda0974d70c1c2ccac63a74fbf7cf",
+  "original_prefix_sha256": "5b5be4744b09fc80bcda23d3f59af5a5e098a03ae71cb835bd168998dfed7f9d",
+  "completed_job": false,
+  "production_log_names": 454,
+  "source_modules": 732,
+  "empty_archive_candidates_accepted": 0,
+  "empty_archive_candidates_rejected": 454,
+  "microproject": {
+    "stock_log_sha256": "96f54436a93753f7fbc4046bc62f61d871ab2eeb33b1d65a65721354299d89ad",
+    "exact_source_modules": {
+      "FastHex": "efc35e840a1407d605f03caafa99f8b450346cbaf10586a8e63675c98e2a8aa5",
+      "GoldbachNatPowMod": "47fc005726c7ddc34fcd15c89813662a02312331a6ea59f3971711835ec91cc2"
+    },
+    "accepted": [
+      "FastHex",
+      "GoldbachNatPowMod"
+    ],
+    "copied_files": 30,
+    "corruption": {
+      "GoldbachNatPowMod": "actual artifact bytes disagree with Lake trace: lib/lean/GoldbachNatPowMod.olean"
+    }
+  },
+  "genuine_positive_inputs": [
+    "actual recorded status, claim, seed ledgers, complete log, prefix and changed boot",
+    "all 454 production names withheld without their actual Lake traces",
+    "real exact production FastHex and GoldbachNatPowMod source: original stock Lake facets accepted, corrupt binary rejected"
+  ],
+  "negative_controls": [
+    "Interrupted source or job differs",
+    "Interrupted diagnostic still belongs to the running boot",
+    "Interrupted diagnostic still belongs to the running boot",
+    "Interrupted final log or archived prefix differs",
+    "Interrupted immutable claim differs",
+    "Interrupted start receipt differs",
+    "Interrupted seed ledger differs: seeds.json",
+    "Interrupted seed ledger differs: seed-layers.json",
+    "Interrupted job has a driver summary or a result",
+    "Interrupted final log length differs",
+    "Interrupted job has a driver summary or a result",
+    "Interrupted job has a driver summary or a result"
+  ],
+  "scope": "Original cloud evidence and exact source are genuine. Changed boot observation is injected locally from archived host facts; private WSL clock is different. The two real sources were compiled locally in a separate small Lake project. Actual retained EC2 facets will be checked on the host; this receipt does not mark the interrupted root complete."
+}

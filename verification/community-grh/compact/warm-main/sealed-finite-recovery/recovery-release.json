@@ -1,0 +1,17 @@
+{
+  "original_timed_worker_sha256": "7e2c8f67f784809aaf52aef725ba3ca31764d7013cc03d375763093873d030a7",
+  "original_interrupted_worker_sha256": "7fe64566a1e93efed1f8eede30b65be4499d788068295c340e91d57d98721e3a",
+  "installed_worker_sha256": "d3ec73a505d8e4a08e18c80a8666271cac7884aca13c1df1e4ad1b3928525664",
+  "single_file_archive_sha256": "65aecf85865c333dc85f1fefb0a8b1bce952a911c55c176e5e1e3afdbdd115b6",
+  "files": {
+    "baseline-finite.json": "0792119dd231731e15a77d0c0bede82f46d6cb774e17115414447832f09e1f46",
+    "baseline-layer.json": "9ffda6d22c086db54dfad6b8c4ebba504673c562b066e2b90bf44be19210c410",
+    "interrupted-control.json": "155793c7606a827390e1f9bf477c7ebce13d27bc3d03a6a388477a5e32b7fdb5",
+    "test-interrupted-archive.py": "25ac3ccdbd23899649452c8a51d0f9de794bfb77bb0f1da1c7d16bec715b203c",
+    "warm-main-interrupted.patch": "d1c3c9433f7df4f4fb99e593bf031013e1540db2a1259ea627b6306ca46c1afb",
+    "warm-main-interrupted.tar.gz": "65aecf85865c333dc85f1fefb0a8b1bce952a911c55c176e5e1e3afdbdd115b6",
+    "warm_main.py": "d3ec73a505d8e4a08e18c80a8666271cac7884aca13c1df1e4ad1b3928525664"
+  },
+  "installation": "Use warm_main.py in the trusted future timed warm-service bundle, recompute the enclosing manifest/archive if the operator changes other helper files, and request d845775112cec8edccc15762430ea851 as an explicit previous job for CompletedFiniteRows. No host or queue was changed by this package.",
+  "evidence": "Two unmodified baseline stock Lake regression groups pass. Original cloud logs have 454 candidate Built names. None is imported without its genuine local Lake trace, stock rehash and accepted dependency closure. Two production sources freshly built in a separate Linux 4.35 test package passed; one deliberately perturbed binary was excluded. Only the actual subsequent EC2 warm run can report its retained-facet count."
+}
