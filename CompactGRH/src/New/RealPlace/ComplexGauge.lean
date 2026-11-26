@@ -203,7 +203,7 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
     · simp (disch := positivity) [norm_eq_sqrt_sq_add_sq, volume_eq_prod, cauchyPDF,
         cauchyPDFReal, field]
       ring; grw [pi_le_four, pi_le_four, h4, h4, h4]; ring; bound
-    simp (disch := positivity) [Place.flatChart, neg_add_eq_sub, mul_assoc,
+    simp (disch := positivity) [complexSizes, Place.flatChart, neg_add_eq_sub, mul_assoc,
       inv_def (starRingEnd ℂ _), ← mul_sub] at h ⊢; nth_grw 1 [← abs_im_le_norm (_ - _),
       le_div_iff₀ (by simp [Complex.ext_iff]), norm_add_le] at *
     simp_all [entrywise, ← Finset.sum_add_distrib, mul_comm]; linarith
