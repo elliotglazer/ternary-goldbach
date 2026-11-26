@@ -1,0 +1,115 @@
+{
+  "policy": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "profile": "palomar-namespace-32x64-v1",
+  "session_script_sha256": "cacbcb0de04ace1a03e9a251fa853891bb6c998dd5f372f1cca9ccd41d28c051",
+  "probe_sha256": "a24992ee326a5314160ea0e5eece28116d8a08a7605396dd90da55e1411a5413",
+  "local_live": {
+    "uid": 0,
+    "leaf": "/sys/fs/cgroup/non-systemd",
+    "cpu": 16.0,
+    "memory": 16391204864,
+    "affinity": 16,
+    "ancestors": {
+      "/sys/fs/cgroup/non-systemd": {},
+      "/sys/fs/cgroup": {
+        "memory.max": "max",
+        "memory.high": "max",
+        "memory.swap.max": "max",
+        "cpu.max": "max 100000",
+        "pids.max": "max"
+      }
+    }
+  },
+  "local_pid1": "init(Codex-GRH-",
+  "stock_check_host_32x64_control": {
+    "architecture": "x86_64",
+    "effective_cpus": 32,
+    "memory_bytes": 68719476736,
+    "workspace_free_bytes": 23622320128,
+    "memory_high_bytes": 65283502899,
+    "memory_max_bytes": 67345087201
+  },
+  "official_supervisor_command_arguments": [
+    "systemd-run",
+    "--user",
+    "--scope",
+    "--quiet",
+    "--property=Delegate=yes",
+    "--",
+    "/usr/bin/python3.12",
+    "-I",
+    "/verification/tg-community-20261125/palomar-verifier/scripts/supervise_cgroup.py",
+    "--parent",
+    "self",
+    "--name",
+    "palomar-186939d8e2820c2e9e9c2458",
+    "--deadline",
+    "30",
+    "--grace",
+    "30",
+    "--cwd",
+    "/tmp/tmp6vuw98mo",
+    "--status",
+    "/tmp/tmp6vuw98mo/s",
+    "--liveness",
+    "/tmp/tmp6vuw98mo/live",
+    "--stdout",
+    "/tmp/tmp6vuw98mo/output",
+    "--limit",
+    "memory.oom.group=1",
+    "--limit",
+    "memory.high=65283502899",
+    "--limit",
+    "memory.max=67345087201",
+    "--limit",
+    "pids.max=32768",
+    "--rlimit",
+    "NOFILE=1048576",
+    "--rlimit",
+    "FSIZE=1099511627776",
+    "--",
+    "/usr/bin/python3",
+    "-I",
+    "/mnt/c/Users/glaze/Documents/Codex/tg-hubbard-port-20261125/aws-stock-runtime-f85040a7/probe-stock-32x64.py",
+    "--inner",
+    "/verification/tg-community-20261125/palomar-verifier"
+  ],
+  "stock_limits": {
+    "memory.oom.group": "1",
+    "memory.high": "65283502899",
+    "memory.max": "67345087201",
+    "pids.max": "32768"
+  },
+  "sibling_control": {
+    "outer_selected_profile": true,
+    "stock_phase": true,
+    "phase_cpu_32": true,
+    "phase_memory_limits": true,
+    "phase_has_zero_swap_cgroup": false,
+    "phase_inside_entry_service": false,
+    "common_memory64_enforced_by": [],
+    "common_cpu32_enforced_by": [],
+    "common_swap0_enforced_by": [],
+    "aggregate_32x64_swap0": false
+  },
+  "common_ancestor_control": {
+    "outer_selected_profile": true,
+    "stock_phase": true,
+    "phase_cpu_32": true,
+    "phase_memory_limits": true,
+    "phase_has_zero_swap_cgroup": true,
+    "phase_inside_entry_service": false,
+    "common_memory64_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "common_cpu32_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "common_swap0_enforced_by": [
+      "/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service"
+    ],
+    "aggregate_32x64_swap0": true
+  },
+  "wrong_memory_and_nonzero_exit_rejected": true,
+  "scope": "This live WSL control measures the native Linux hierarchy. PID 1 is not systemd and has less than 32 CPUs or 64 GiB; the clamped-host classifications above are injected controls; the real EC2 two-stage command is outstanding."
+}
