@@ -1,0 +1,37 @@
+{
+  "kind": "Reachable Lean source token audit",
+  "commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "solution_sources_scanned": 1528,
+  "bytes_scanned": 364197221,
+  "tokens_checked": [
+    "axiom",
+    "admit",
+    "sorry",
+    "sorryAx",
+    "native_decide",
+    "ofReduceBool",
+    "ofReduceNat",
+    "trustCompiler",
+    "PlattGRH"
+  ],
+  "exclusions": [
+    "comments",
+    "string literals",
+    "independently compiled trusted challenge stub"
+  ],
+  "code_matches": [
+    {
+      "path": "TernaryGoldbach/Explicit/ZetaZeroSums.lean",
+      "line": 34,
+      "token": "PlattGRH"
+    },
+    {
+      "path": "TernaryGoldbach/Statement.lean",
+      "line": 60,
+      "token": "PlattGRH"
+    }
+  ],
+  "platt_helper": "rh_upto_1e8 has an explicit Fact PlattGRH argument. A source search found its declaration and doc comment as its only named occurrences.",
+  "release_application": "GoldbachFinite.completed_of_release riemannHypothesis LFunction_eq_zero_re_of_isPrimitive",
+  "scope": "Text inspection does not determine transitive axioms of elaborated declarations. The protected final export and kernel checks remain pending."
+}

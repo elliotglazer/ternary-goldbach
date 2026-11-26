@@ -1,0 +1,250 @@
+{
+  "note": "Native Windows Lean 4.35 plus local official Palomar prepare scanner. The combined theorem still requires a clean protected verdict.",
+  "quadratic_field": {
+    "variant": "module-both-compat",
+    "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "flags": [
+      "-j1",
+      "-M3500",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000"
+    ],
+    "commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "upstream": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "upstream_source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+    "converted_source_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+    "source_sha256": "7bbf702ae8bac9d749a4104f15870d9300145ba7398e064d1c3b26748f787647",
+    "unchanged_body_sha256": "fecf81ce07799c91994948eceeb06fde603244ce8a9b1185d828d6584a837841",
+    "input_oleans": {
+      "Lib.General.Analysis.ZpowSum": {
+        ".olean": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd",
+        ".olean.private": "36eaadd9be8a9231ff44cbe93684be3c66e10d7ab838c4eae11226a4aa8e2c68",
+        ".olean.server": "1de5a3aab79ecc546baaf0966bb143189cba7a38137d3501de1b4a7be84881c9",
+        ".ir": "9f631d074b7a49dfec21006fa08825ae0c3fdd8586fb8831708cc93f1c763eff",
+        ".ir.sig": "039ffe229c8830eec5aa4c9c08031e25bc0e7cec191b53da2c237f687e69f566"
+      },
+      "Lib.General.NumberTheory.Embeddings": {
+        ".olean": "c401eac320b01954fe95138db55cd215d7503ba5f05678eee707915c3b949db2",
+        ".olean.private": "e90b923acf5626caadf2871c2317e63ad5edf41e4743aee2296e329c155eb29d",
+        ".olean.server": "52cc6714635a206b89eb547781a18ed55752dddf66f398befc40caf49f996fc1",
+        ".ir": "1a39d05ab43b63d3e8f80632bf44313dbb40ba7f1c90469a332be3a2fd77573b",
+        ".ir.sig": "bed81d17288827a209c145dced6215d6256fb53e926802a3fc98580a2d4845a0"
+      },
+      "Lib.General.LinearAlgebra.Base": {
+        ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+        ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+        ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d",
+        ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+        ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62"
+      },
+      "Lib.Adelic.Adeles.CoprimeValuation": {
+        ".olean": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432",
+        ".olean.private": "3ae309f9e8a029c02485d4bd23be874f8b32e0855e9a33026b192bc55969792f",
+        ".olean.server": "a046e2e88c910c5c15eb4b334bd4485369732b2ea9aeac76b7aadb09635ceb8c",
+        ".ir": "9e2c0c5ba41a244f5042660548da9dd921dc654c9eb8b3d475533cd8f676ca2e",
+        ".ir.sig": "dca860f5cc808e0a069c69bb2502bb4fe865fcd394a9f000e550f81bd84a4bea"
+      }
+    },
+    "package_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "exit": 0,
+    "wall_seconds": 32.42,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnostic": "",
+    "output_sha256": "714706db98ac397940b7f30dffe3a97ecc3d0f69b26896600f21bf8d6bcb748f"
+  },
+  "fresh_modular_consumer": {
+    "exit": 0,
+    "source_sha256": "c35ba79415011afd2481abb735967eca99f2ec1e76ee19421737b005b744763e",
+    "wall_s": 143.09,
+    "output": "'QuadField.nonempty_algHom_of_isPrimitiveRoot' depends on axioms: [propext, Classical.choice, Quot.sound]\n'transportedEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "log_sha256": "c84e4612ee9f67f766af3ef926277276c1a5c81d0ddec154c84cfb21e512e2e7",
+    "output_sha256": "b0ac024ed7257bf3a61a0088197eae40c12c0b1150a92074a5a3f786ad166dfd"
+  },
+  "adelic_norm_bound": {
+    "base": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+    "failing_source_repair": "Only the two file-local options added to the 4d574858 original module header.",
+    "paired_options": {
+      "exit": 1,
+      "source_sha256": "e28120b9a58fbc9ec71fdffded9da12f475da62cf98a7abbb51ea0a9270ed0db",
+      "wall_s": 86.06,
+      "output": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nLib\\Adelic\\Reduction\\Defs.lean:222:82: error: unsolved goals\nE✝ n✝ : Type\ninst✝⁶ : Field E✝\ninst✝⁵ : NumberField E✝\ninst✝⁴ : NumberField.IsCMField E✝\ninst✝³ : Fintype n✝\ns✝ : n✝ → E✝\nE' : Type u_1\nn' : Type u_2\nE n : Type\ninst✝² : Field E\ninst✝¹ : CMType E\ninst✝ : Fintype n\ns : n → ℤˣ\nV : Space E n s\nF F' : G E s → ℂ\nV' : Space E n s\ne : GInf E s → ℂ\nx✝² : G E s → ℂ\nh : x✝² ∈ {F | V'.IsForm e F}\nx✝¹ : G E s → ℂ\nk : x✝¹ ∈ {F | V'.IsForm e F}\nx y : ℂ\nx✝ : G E s\n⊢ ‖x‖ * ⋯.choose + ‖y‖ * ⋯.choose ≤ ‖x‖ * ⋯.choose + ‖y‖ * ⋯.choose\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:64: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:225:78: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:227:0: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:232:34: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:229:9: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:229:9: warning: declaration uses `sorry`\nLib\\Adelic\\Reduction\\Defs.lean:239:4: warning: declaration uses `sorry`\n",
+      "log_sha256": "374be592423d174b3ab7f2fef48961c405e1d6219043594a5cb2dc8ab2440ae9"
+    },
+    "identical_parent_count": 54,
+    "explicit_source_sha256": "0d58964cc62030e2185b409c4108de42f30f60f39e289eeb9ddb3130558f0948",
+    "explicit_full_exit": 0,
+    "explicit_wall_s": 79.84,
+    "explicit_imported_axioms": "'Space.Form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Space.peterssonCore' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Space.formRep' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "complete_input_receipt_sha256": "1c8f3622aed92c9c6f8959e088c86b336e2787d2ff01536f4c8635747755c405"
+  },
+  "core_private_witness_fixture": {
+    "source_sha256": "316e8d2efcc3f4dd0d00f7a1659c5b13f495babea78d0bd4d9731b87e87070d8",
+    "source": {
+      "exit": 0,
+      "args": [
+        "lean.exe",
+        "-j1",
+        "-M800",
+        "-o",
+        "PairedGoldbachProbe.olean",
+        "PairedGoldbachProbe.lean"
+      ],
+      "seconds": 0.74,
+      "output_bytes": 563,
+      "output_sha256": "0f47f6521b72feea9210c2016125b579e8b150664f5cd0774309b4e2b285ad57",
+      "stderr": ""
+    },
+    "export": {
+      "exit": 0,
+      "args": [
+        "leanexport.exe",
+        "PairedGoldbachProbe",
+        "--",
+        "PairedGoldbachProbe.value_eq"
+      ],
+      "seconds": 1.74,
+      "output_bytes": 12655,
+      "output_sha256": "9cef138471fd40629cd73490da92a9bae29ba55a9f925bc598db2ecb1389d5ad",
+      "stderr": ""
+    },
+    "recheck": {
+      "exit": 0,
+      "args": [
+        "leanchecker-paranoid.exe",
+        "--silent",
+        "--from-export",
+        "witness.export"
+      ],
+      "seconds": 0.04,
+      "output_bytes": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    "nanoda": {
+      "exit": 0,
+      "args": [
+        "nanoda_bin.exe",
+        "nanoda.json"
+      ],
+      "seconds": 0.16,
+      "log": ""
+    },
+    "default": {
+      "exit": 0,
+      "args": [
+        "leanchecker.exe",
+        "--silent",
+        "--from-export",
+        "witness.export"
+      ],
+      "seconds": 0.94,
+      "log": ""
+    },
+    "stock_policy": {
+      "source_sha256": "60d0e3b523773f83b7271c3ad34a2d3d34309769c65cee04fd07b108883d186a",
+      "stage": "inspect_lean_sources and lean --deps-json on native modular fixture, real hosted job pending"
+    }
+  },
+  "intake": {
+    "registry_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "module": "PairedGoldbachProbe",
+    "date_context": "2026-11-26 UTC",
+    "source_sha256": "316e8d2efcc3f4dd0d00f7a1659c5b13f495babea78d0bd4d9731b87e87070d8",
+    "scope": "Unmodified official inspect_lean_sources, called inside prepare, plus the pinned stock compiler --deps-json header path used in execute. This unpublished local fixture did not exercise the public GitHub fetch or the hosted workflow.",
+    "paired": {
+      "requirements": {
+        "schema_version": 1,
+        "module_required": true,
+        "maximum_lines": 10000,
+        "files_checked": 1
+      },
+      "issue_codes": [],
+      "lean_header": {
+        "errors": [],
+        "result": {
+          "imports": [
+            {
+              "importAll": false,
+              "isExported": true,
+              "isMeta": false,
+              "module": "Init"
+            },
+            {
+              "importAll": false,
+              "isExported": true,
+              "isMeta": true,
+              "module": "Init"
+            },
+            {
+              "importAll": false,
+              "isExported": true,
+              "isMeta": false,
+              "module": "Init"
+            }
+          ],
+          "isModule": true
+        }
+      }
+    },
+    "legacy_control": {
+      "requirements": {
+        "schema_version": 1,
+        "module_required": true,
+        "maximum_lines": 10000,
+        "files_checked": 1
+      },
+      "issue_codes": [
+        "source.module_required"
+      ],
+      "lean_header": {
+        "errors": [
+          "PairedGoldbachProbe.lean:2:0: cannot use 'public', 'meta', or 'all' without 'module'"
+        ]
+      }
+    }
+  },
+  "actual_protected_workflow": "Not run for these option fixtures; Windows native and local intake source checks are separate.",
+  "receipts_sha256": {
+    "receipt.json-0": "92b84d7953e3c48feb64697dd837882d663a59ff3c2e38e551f9a330205bf850",
+    "receipt.json-1": "73c1a2144166dd250a41d806aed7c63a15eda65f593b1b0cd12d565ac51b54cf",
+    "kernel-receipt.json-2": "957f6915aec23b15f74923679f4b18605969cdcf5b1a807cd9bff240f7770efa",
+    "paired-switches-palomar.json-3": "60d0e3b523773f83b7271c3ad34a2d3d34309769c65cee04fd07b108883d186a",
+    "form-complete-receipt.json-4": "1c8f3622aed92c9c6f8959e088c86b336e2787d2ff01536f4c8635747755c405"
+  },
+  "core_negative_controls": {
+    "no-flags": {
+      "exit": 1,
+      "seconds": 0.74,
+      "source_sha256": "bbf90405729c5fc8539f2beab77c78f20af45e8bd247d9deaba10e771a561295",
+      "output": "PairedGoldbachProbe.lean:12:22: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nPairedGoldbachProbe.lean:14:27: error: tactic execution is stuck, goal contains metavariables\n  ?m.1 = 7\nPairedGoldbachProbe.lean:16:0: error: Not a definitional equality: the left-hand side\n  value\nis not definitionally equal to the right-hand side\n  7\nPairedGoldbachProbe.lean:16:32: error: Type mismatch\n  rfl\nhas type\n  ?m.5 = ?m.5\nbut is expected to have type\n  value = 7\n"
+    },
+    "proofs-only": {
+      "exit": 1,
+      "seconds": 0.79,
+      "source_sha256": "dd73aef3e37d915bb1b0cc96fb611cfdddc234046dc4bb492a4c6442b1459e33",
+      "output": "PairedGoldbachProbe.lean:13:22: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nPairedGoldbachProbe.lean:15:36: error(lean.unknownIdentifier): Unknown identifier `seed`\n\nNote: A private declaration `seed` (from the current module) exists but would need to be public to access here.\nPairedGoldbachProbe.lean:17:0: error: Not a definitional equality: the left-hand side\n  value\nis not definitionally equal to the right-hand side\n  7\nPairedGoldbachProbe.lean:17:32: error: Type mismatch\n  rfl\nhas type\n  ?m.5 = ?m.5\nbut is expected to have type\n  value = 7\n"
+    },
+    "private-only": {
+      "exit": 1,
+      "seconds": 0.81,
+      "source_sha256": "d983e62d3baafd674bcf3ae96d89a149fb1e4223671849630027bce7277954bd",
+      "output": "PairedGoldbachProbe.lean:13:22: warning: Variable name `h` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nPairedGoldbachProbe.lean:15:27: error: tactic execution is stuck, goal contains metavariables\n  ?m.1 = 7\nPairedGoldbachProbe.lean:17:0: error: Not a definitional equality: the left-hand side\n  value\nis not definitionally equal to the right-hand side\n  7\nPairedGoldbachProbe.lean:17:32: error: Type mismatch\n  rfl\nhas type\n  ?m.5 = ?m.5\nbut is expected to have type\n  value = 7\n"
+    }
+  },
+  "bounded_real_embedding_export": {
+    "input_olean_sha256": "714706db98ac397940b7f30dffe3a97ecc3d0f69b26896600f21bf8d6bcb748f",
+    "consumer_sha256": "b0ac024ed7257bf3a61a0088197eae40c12c0b1150a92074a5a3f786ad166dfd",
+    "status": "incomplete",
+    "reason": "90 s cap",
+    "exit": 1,
+    "seconds": 90.33,
+    "size_bytes": 0,
+    "log": ""
+  },
+  "core_kernel_fidelity": "Stock Win64 4.35 leanexport/default/paranoid/nanoda, without Linux bwrap. The private witness name occurs in the actual export; no real QuadField export verdict inside its 90-second diagnostic cap."
+}

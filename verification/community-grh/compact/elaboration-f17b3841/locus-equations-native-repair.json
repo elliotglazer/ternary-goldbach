@@ -1,0 +1,40 @@
+{
+  "kind": "full native single-module source repair and serialized axiom audit",
+  "module": "Lib.Cohomology.PointClass.LocusEquations",
+  "pin": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "parent_EtaleCharts_source_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+  "baseline": {
+    "source_sha256": "56e88eeb7d81c9eefdb09d99c42465e49ee6149c72bc5345c267511aa81c27d7",
+    "exit": 1,
+    "wall_seconds": 28.045,
+    "user_cpu_seconds": 18.21875,
+    "system_cpu_seconds": 7.578125,
+    "peak_working_set_bytes": 2260103168,
+    "log_sha256": "5898492eb74b2179a2ff31c5e06b23aeef472eeac532e00dd265ffc3f5cbe525",
+    "parent_oleans": {
+      "Lib.General.Geometry.EtaleCharts": "123d43cae33b64c528f4f45191e2deabe1836fe048a15a13e52cf0380eb0c989"
+    }
+  },
+  "candidate": {
+    "source_sha256": "97ba8ab403411be4878e831041d3804e158f2767da060e8b473d9d9b50e37596",
+    "olean_sha256": "341a1ebe444faafdf16af89053199cf1bedcd7c3871165a321a9fa27fae9420a",
+    "exit": 0,
+    "wall_seconds": 35.037,
+    "user_cpu_seconds": 26.65625,
+    "system_cpu_seconds": 7.484375,
+    "peak_working_set_bytes": 2329911296,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parent_oleans": {
+      "Lib.General.Geometry.EtaleCharts": "123d43cae33b64c528f4f45191e2deabe1836fe048a15a13e52cf0380eb0c989"
+    }
+  },
+  "source_patch": "--- a/CompactGRH/src/Lib/Cohomology/PointClass/LocusEquations.lean\n+++ b/CompactGRH/src/Lib/Cohomology/PointClass/LocusEquations.lean\n@@ -23,7 +23,7 @@\n A^{d+1} modulo units of A. -/\n def projSpace : CommAlg k \u2964 Type 1 := by refine \u27e8fun A \u21a6 Quot ((MulAction.orbitRel A\u02e3 _).comap\n   (\u00b7.1.1 : @unimodular k _ (d + 1) A \u2192 _)), fun f \u21a6 \u21be.map (unimodular.toFunctor.map f) fun _ _ \u27e8u,\n-  h\u27e9 \u21a6 \u27e8u.map _, by simpa using! congr(f \u2218 $h)\u27e9, ?_, ?_\u27e9 <;> intros <;> ext \u27e8\u27e9 <;> rfl\n+  h\u27e9 \u21a6 \u27e8u.map f.hom.toMonoidHom, by simpa using! congr(f \u2218 $h)\u27e9, ?_, ?_\u27e9 <;> intros <;> ext \u27e8\u27e9 <;> rfl\n \n variable {k d}\n \n",
+  "stock_lean_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "metadata_reader": {
+    "reader_sha256": "872fe685e097ded47cd212359e8de375f32f36a2403227aa4b9f69ab3722d2a9",
+    "kind": "diagnostic Lean 4.35 serialized exported axiom entries and direct sorryAx scan of public and private facets",
+    "exit": 0,
+    "stdout": "43 declarations, direct sorryAx references: #[]\n43 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n43 audited transitive axiom entries, 0 offending: #[]\n43 declarations, direct sorryAx references: #[]\n43 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n43 audited transitive axiom entries, 0 offending: #[]\n63 declarations, direct sorryAx references: #[]\n43 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n43 audited transitive axiom entries, 0 offending: #[]\n",
+    "seconds": 0.951
+  }
+}
