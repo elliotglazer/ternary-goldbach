@@ -1,0 +1,49 @@
+{
+  "revision": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "non_compact_grh_sources_blob_verified": 735,
+  "matched_top_level_declarations": 92562,
+  "heuristic_scope": "Named project helpers with explicit typed binder groups, proof-only data witnesses absent from the written conclusion, parsed applications with parenthesized tactic proof arguments. Source syntax scan, no Lean name resolution. Section parameters, unnamed, macro-generated, partially applied and higher-order calls need separate inspection. Raw hits may contain namespace collisions and dot-notation receivers. Generated decision rows excluded from shortlist.",
+  "qualified_candidates": [
+    {
+      "file": "GoldbachLean/Saouter1998/Theorem2.lean",
+      "sha256": "a600295124eaaa2066df267582d997cdf9341b8f43a598b36d7453f7657f5969",
+      "helper": "two_pow_dvd",
+      "helper_line": 33,
+      "call_line": 67,
+      "witnesses": [
+        "R",
+        "a"
+      ],
+      "qualification": "tactic exact_mod_cast h5 supplies a concrete separately typed equality. Line 66 already rewrites its exponent via half_eq. Supplying (R := R) (a := 5) would make the two arguments explicit. This source review establishes neither a Lean failure nor a necessary change."
+    }
+  ],
+  "excluded_projections": {
+    "files": {
+      "TernaryGoldbach/Explicit/Datum.lean": [
+        414,
+        419,
+        442
+      ],
+      "TernaryGoldbach/Explicit/ExplicitFormula.lean": [
+        78,
+        100,
+        130,
+        136,
+        137,
+        789,
+        794,
+        836
+      ]
+    },
+    "declaration_lines": {
+      "TernaryGoldbach/Explicit/ExplicitFormula.lean": [
+        70,
+        75,
+        94
+      ]
+    },
+    "reason": "Dot receiver hφ : GoodSmoothing φ K c explicitly constrains K and c."
+  },
+  "raw_source_data_sha256": "6fb8a726a32c21a15e17b7780701d169d8757c70c8267d8e7b28458d02e666ba",
+  "scan_sha256": "0eb9942d15eeb3a0cf4d3f4e14227d1e7ac328398339bd94b172db74366d7049"
+}

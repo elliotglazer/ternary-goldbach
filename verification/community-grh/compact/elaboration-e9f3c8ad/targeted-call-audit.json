@@ -1,0 +1,125 @@
+{
+  "source": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "method": "All qualified and unqualified references searched in all submitted Lean sources. Full-file local builds used authentic source, native Lean 4.35 and pinned project parents. An explicit term is a source observation unless a whole-module receipt is listed.",
+  "family_stable_subspace": {
+    "full_original_module": "Lib.LocalGL.Green.MackeyFormula",
+    "module_source_sha256": "e9b0c8bd4e7ab8184214b934cbe7980618ad5729680ad893e3602d5dd23c2861",
+    "module_public_olean_sha256": "fcc8ca3641fe11d60f490d603d105f3c8b34ea2674ecb20de99d0bf71a512530",
+    "receipt_sha256": "b8c881b593611eb4796f18ad499ce7eaa21b5b796c3cf6ba802ab7f552981706",
+    "call_sites": {
+      "Lib.LocalGL.Green.MackeyFormula": [
+        167,
+        186,
+        188,
+        191,
+        286
+      ],
+      "Lib.LocalGL.Green.InductionMean": [
+        58
+      ],
+      "Lib.LocalGL.Green.CuspidalFunction": [
+        78
+      ],
+      "Lib.LocalGL.Green.CuspidalAtScalars": [
+        56
+      ]
+    },
+    "external_full_module_receipts": {
+      "Lib.LocalGL.Green.CuspidalAtScalars": {
+        "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+        "source_sha256": "cb5050b5d0d6f36fd985d270a221dcb65768a93d8b18cbd559310b306f8bc684",
+        "module": "Lib.LocalGL.Green.CuspidalAtScalars",
+        "exit": 0,
+        "seconds": 52.02,
+        "parents": {
+          "Lib.LocalGL.Green.CuspidalSupport": "886a60a4a0a866d77f9a1589b288048353bffc9461ae0b391318f1fed4b807fd"
+        },
+        "olean_sha256": "f858a9b620b4e90dfee38d93637cd5627e6efc8544266ee65fb6ed0b5c03f6bf",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt_sha256": "b9a3dc63c369b966f98f6567c81f150e56bcd4b1ec8391a9be0ec437486e7e52"
+      },
+      "Lib.LocalGL.Green.CuspidalFunction": {
+        "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+        "source_sha256": "f7e3dd24dfeb09f3e997725b35f161fd835d6cff4a7252a28bca10b807dd36c0",
+        "module": "Lib.LocalGL.Green.CuspidalFunction",
+        "exit": 0,
+        "seconds": 100.92,
+        "parents": {
+          "Lib.LocalGL.Green.InductionMean": "b7f6165b99487c3aab08eb6614b0ac9b3b689cd9ab571cc453dd32d7ff592229"
+        },
+        "olean_sha256": "f5f6ccdd5ebfec56baaf1f5b9162268536ea2e61afbfdfae9ca19acfffb3f51d",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt_sha256": "d9f6ce2da61e50cb182ba17b03c803490e75423c571b4639ab98c91789f871f1"
+      },
+      "Lib.LocalGL.Green.CuspidalSupport": {
+        "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+        "source_sha256": "70a2aaddf2003e1d8a8b6d2d2a80b26e888af8ee6cebac5a8f9a29132564b3e6",
+        "module": "Lib.LocalGL.Green.CuspidalSupport",
+        "exit": 0,
+        "seconds": 48.47,
+        "parents": {
+          "Lib.General.LinearAlgebra.ValuedMatrix": "1c2fb8bd05152ce73aa48875a8ea9d6b745445716e0fe85414c2db95de4c3f91",
+          "Lib.LocalGL.Green.FrobeniusOrbits": "33d10bc1f68ec00215542e62820e6a406958890f14ca47eb90184e56f24af629"
+        },
+        "olean_sha256": "886a60a4a0a866d77f9a1589b288048353bffc9461ae0b391318f1fed4b807fd",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt_sha256": "c4cfd2e1a1f53c56de974f3736dde9769a1dc08b050f2f681c68cb6ef04b7ff2"
+      },
+      "Lib.LocalGL.Green.FrobeniusOrbits": {
+        "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+        "source_sha256": "9c0c5e4e8a6782ae356541bdf1cc0fb9383a1af2b47d528e9a9153d6e6975736",
+        "module": "Lib.LocalGL.Green.FrobeniusOrbits",
+        "exit": 0,
+        "seconds": 52.88,
+        "parents": {
+          "Lib.LocalGL.Green.CuspidalFunction": "f5f6ccdd5ebfec56baaf1f5b9162268536ea2e61afbfdfae9ca19acfffb3f51d"
+        },
+        "olean_sha256": "33d10bc1f68ec00215542e62820e6a406958890f14ca47eb90184e56f24af629",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt_sha256": "343b8c38130559fc654a69c499bb216072c02dea4919cd6289dadb765a8b4984"
+      },
+      "Lib.LocalGL.Green.InductionMean": {
+        "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+        "source_sha256": "5acf8c38170d32b6335524848d9d943b4c2618b7dc467880c83364f5fb6db988",
+        "module": "Lib.LocalGL.Green.InductionMean",
+        "exit": 0,
+        "seconds": 72.83,
+        "parents": {
+          "Lib.LocalGL.Green.MackeyFormula": "fcc8ca3641fe11d60f490d603d105f3c8b34ea2674ecb20de99d0bf71a512530"
+        },
+        "olean_sha256": "b7f6165b99487c3aab08eb6614b0ac9b3b689cd9ab571cc453dd32d7ff592229",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "receipt_sha256": "32ad3403c7211dba03b1b82a4078eec07e4df3012e903bccb850b921952ea4cf"
+      }
+    }
+  },
+  "family_quadfield": {
+    "Lib.General.NumberTheory.QuadField:99": {
+      "stock_4_35_before": "failed to infer y",
+      "stock_4_35_after": "passed full module after supplying the quadratic Gauss sum explicitly",
+      "source_before_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+      "source_after_sha256": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d",
+      "receipts": {
+        "QuadField-audit.json": "387a2c9bf53e4815c10b66b6e3abd3c592fb3180477aee7c9340efacf7831cf8",
+        "QuadField-quad-fix.receipt.json": "4095e4d7062f2894f5fb45610fbabded1c9679a3e180e1165a825385d3a377b2",
+        "QuadField-src.receipt.json": "e1b379d23156b31b3ea0869452e1ff397b6faf7fc1a7aa031c659db66089c934"
+      }
+    },
+    "Lib.GaloisRep.Main.AttachedDeterminant:187": "Source specifies root as subtype value. No full-file verdict from this audit.",
+    "New.Data.Different:99,110": "Both pass typed primitive-root witnesses to the wrapper. No full-file verdict from this audit."
+  },
+  "family_gauss_sums": {
+    "Lib.Cyclotomic.Stickelberger.GaussSums:77,90,113": "The pointwise equality, primitivity witness or character is typed explicitly.",
+    "Lib.Cyclotomic.Stickelberger.GaussSums:117": "An authentic local proof using the original helper type and actual G expression accepted both inferred (by tauto) and explicitly supplied character-family arguments. The second original application has typed primitivity witnesses. The full 97-module original GaussSums closure was not built for this check.",
+    "native_inference_check": {
+      "exit": 0,
+      "wall_seconds": 76.473,
+      "scope": "Local proof with original smul_gaussSum type, actual G construction and tauto call. Uses original proof as a hypothesis. No full module verdict.",
+      "source_sha256": "c64363ff013d9a91caba2f908ee2d7393f65576b02c2ed3288fb15751387db42",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "DiscreteUnits.olean": "afa54cf7101cfc2240aa508bfd7c056716178f07a93934345388c2b2727021cf",
+      "LocalDefs.olean": "12a81375c92eeec437d7c3f6a7ba6759a74ee3756c23c16462ae007e2a874d27",
+      "receipt_sha256": "eed8db9b986313dfa0d0680aa880df82b49b8c8bdf0fe7d38b6c5096fc9180cf"
+    }
+  }
+}

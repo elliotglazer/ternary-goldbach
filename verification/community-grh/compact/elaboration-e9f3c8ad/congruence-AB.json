@@ -1,0 +1,52 @@
+{
+  "identical_source_at": "733452040c776a07eec35a6694c8abf90bdbfa4d",
+  "original_sha256": "0a334b6a5c36bf6ee66e2473cb18112fd6d1c9814438fb4af137189430c476da",
+  "patch_sha256": "47dcc83bb593f7663b341e1f65da2824deb5cb84e79b46916a844ae628c5406b",
+  "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean",
+  "repaired_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+  "runs": {
+    "After": {
+      "log_sha256": "af6f6f525818e7f9e96e0a22ae37ac5e9a89d448b3bb21ff02f328609b57a961",
+      "module": "Lib.Adelic.Unitary.CongruenceLevel",
+      "olean_sha256": "92ee34d04010aa318edadb344e36297cdd5c423056c43eccaf90b4b1e67bc485",
+      "parents": {
+        "Lib.Adelic.Adeles.CoprimeValuation": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432",
+        "Lib.General.Groups.ValuationPair": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f"
+      },
+      "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+      "production_candidate_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+      "production_original_sha256": "0a334b6a5c36bf6ee66e2473cb18112fd6d1c9814438fb4af137189430c476da",
+      "raw_diagnostics": "'principalLevel' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "run": {
+        "cpu_seconds": 37.109375,
+        "exit": 0,
+        "resource_guard": null,
+        "wall_seconds": 38.021
+      },
+      "source_sha256": "d378ed86a151e18630fb887ae1797b124013ab891fc9ba5305e17b3ddc415f24",
+      "variant": "After"
+    },
+    "Before": {
+      "log_sha256": "d060204645f8c93da19ad78be2992ed81ec85fe52296277682f85376c113a09b",
+      "module": "Lib.Adelic.Unitary.CongruenceLevel",
+      "parents": {
+        "Lib.Adelic.Adeles.CoprimeValuation": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432",
+        "Lib.General.Groups.ValuationPair": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f"
+      },
+      "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+      "production_candidate_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+      "production_original_sha256": "0a334b6a5c36bf6ee66e2473cb18112fd6d1c9814438fb4af137189430c476da",
+      "raw_diagnostics": "Before.lean:11:71: error: tactic execution is stuck, goal contains metavariables\n  {g | g \u2208 focusKf H \u2227 \u2200 (i j : n), \u2203 y \u2208 ?m.79 g i j y, (\u2191\u2191g - 1) i j = (algebraMap (\ud835\udcde E) (\ud835\udd38f E)) a * y} =\n    \u2191((congruenceGL (\u21a5(\u00d4 E) \u2219 ?m.27) id).subgroupOf H)\n'principalLevel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "run": {
+        "cpu_seconds": 34.875,
+        "exit": 1,
+        "resource_guard": null,
+        "wall_seconds": 40.031
+      },
+      "source_sha256": "a70ce68ed7752b1ea25c8709ca1d2ed3f696d689b380b3dd64f934a2b9e22f13",
+      "variant": "Before"
+    }
+  },
+  "scope": "Complete principalLevel definition on the actual finite adeles and profinite integer subring, generalized over an arbitrary subgroup H of GL including the unitary group. The rest of CongruenceLevel is outside this probe.",
+  "source_revision": "e9f3c8adb418f4e497787ef93175066acb1c8f72"
+}

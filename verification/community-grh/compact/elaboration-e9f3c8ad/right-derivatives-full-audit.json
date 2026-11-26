@@ -1,0 +1,90 @@
+{
+  "source_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "source_path": "CompactGRH/src/Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean",
+  "compiler": "Lean 4.35.0 (eb6cafb), Windows x86_64",
+  "full_file_native_result": {
+    "module": "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives",
+    "source_pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "source_sha256": "8025de9554793c89cc6dfe75f2693436c81c1aed532ac78058cda11a1612b2af",
+    "exit": 0,
+    "seconds": 131.301,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "6cb45b0808343ff2f3b09161197d0e6f356bf81b7755aa9905d67f36a33e40b6",
+    "direct_imports": {
+      "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": "6ee8090f510e7c6afd60fee94bb08aa01bf21fb0384a202d20024ae18adbf097"
+    }
+  },
+  "full_file_native_log": "",
+  "parent_native_result": {
+    "module": "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs",
+    "source_pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "source_sha256": "472d000ce4ae2cda557764b5b847214cec15898711a097cf679cd6d95d56c7b5",
+    "exit": 0,
+    "seconds": 48.828,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "olean_sha256": "6ee8090f510e7c6afd60fee94bb08aa01bf21fb0384a202d20024ae18adbf097",
+    "direct_imports": {
+      "Lib.General.LinearAlgebra.PartialDerivComm": "16f4fcf1358ff18b3376bc4416d1e3503e11bdac9f42a302d7010e25c14ee635",
+      "Lib.DiscreteSeries.Haar.CompactDualMeasure": "e7b781dc5e2916b152412b36a24c7ef0178141b56dc4fdb014055c0efebfb6a9"
+    }
+  },
+  "before": {
+    "source_sha256": "cca1129562daa47d2b3d7e6c32e99f7f3b20d72b49ce257e59146039598d4e45",
+    "hosted_simulation_reported": "RightDerivatives.lean:76:34: unknown private constant IsHermInvolution.det_ne_zero._simp_1",
+    "evidence": "Earlier AWS source build of the pinned checkout. The unmodified baseline was not recompiled for this local receipt."
+  },
+  "patch": "--- Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean\n+++ Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean\n@@ -46,7 +46,10 @@\n /-- The space of smooth E-valued functions on U(J) for J=diag(\u03b5), \u03b5 a vector of signs. -/\n abbrev SmoothU := (.funLeft \u2102 E (\u00b7.1.1 : USign \u03b5 \u2192 _) \u2218\u2097 (SmoothMat ..).subtype).range\n \n-attribute [local simp] mul_add add_mul det_ne_zero mul_sub sub_mul mul_assoc\n+lemma IsHermInvolution.det_eq_zero_eq_false (K : Matrix n n \u2102) [IsHermInvolution K] :\n+    (K.det = 0) = False := eq_false (IsHermInvolution.det_ne_zero K)\n+\n+attribute [local simp] mul_add add_mul IsHermInvolution.det_eq_zero_eq_false mul_sub sub_mul mul_assoc\n attribute [local instance] LieRing.ofAssociativeRing\n \n /-- For a linear map \u03b9 whose kernel is stable under \u03c1, a gl_n(\u2102)-module structure on the range\n",
+  "protected_comparator": "not run in this focused compile",
+  "axiom_audit": {
+    "compiler_receipt": {
+      "module": "RightDerivativesAudit",
+      "source_pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+      "source_sha256": "841379abcfe816f3f5d9426790b138f1f543c8f34bb0312f5681f8b86b1d6420",
+      "exit": 0,
+      "seconds": 246.763,
+      "log_sha256": "43d0a0080056b96c8e8022586ea9e4e6b108abbf3c0bbc253d1ee9c916e9be33",
+      "olean_sha256": null,
+      "direct_imports": {
+        "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives": "6cb45b0808343ff2f3b09161197d0e6f356bf81b7755aa9905d67f36a33e40b6"
+      }
+    },
+    "stock_print_output": "'GlModule.onRange' depends on axioms: [propext, Classical.choice, Quot.sound]\n'unitaryLiePart' depends on axioms: [propext, Classical.choice, Quot.sound]\n'rightDerivMat' depends on axioms: [propext, Classical.choice, Quot.sound]\n'rightDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]\n'hasDerivAt_curve' depends on axioms: [propext, Classical.choice, Quot.sound]\n'rightDeriv_eq_fderiv' depends on axioms: [propext, Classical.choice, Quot.sound]\n'IsHermInvolution.det_eq_zero_eq_false' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "named": {
+      "GlModule.onRange": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "unitaryLiePart": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "rightDerivMat": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "rightDeriv": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "hasDerivAt_curve": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "rightDeriv_eq_fderiv": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsHermInvolution.det_eq_zero_eq_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}

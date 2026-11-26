@@ -1,0 +1,78 @@
+{
+  "base": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "baseline": {
+    "module": "Lib.PadicHodge.PeriodRings.AmaxStructure",
+    "source_sha256": "66d7f4fcb054fa1896c83fc7adf42e665e05466da14f133bcf3d2c3c531b808e",
+    "exit": 1,
+    "seconds": 148.17
+  },
+  "fixed": {
+    "module": "Lib.PadicHodge.PeriodRings.AmaxStructure",
+    "source_sha256": "25d44137664e4a48b57613f8688def1846d2bdd5b93ff58f0420be8def698e39",
+    "exit": 0,
+    "seconds": 138.6,
+    "olean_sha256": "79f45fbe603690fc08f0cfb0c362dbf3e57a341e2e5b9567bd3c4e09f956c820"
+  },
+  "axiom_audit": {
+    "exit": 0,
+    "seconds": 36.66,
+    "results": {
+      "actAmax": "propext, Classical.choice, Quot.sound",
+      "Amax.exists_algebraMap_eq_p_pow_mul_sub": "propext, Classical.choice, Quot.sound",
+      "associated_p_frobEnd_xi": "propext, Classical.choice, Quot.sound",
+      "isUnit_smul_of_dvd_mu": "propext, Classical.choice, Quot.sound",
+      "_private.AmaxAxioms.0.auditAmaxSMulDistribClass": "propext, Classical.choice, Quot.sound"
+    }
+  },
+  "prerequisite_compiles": [
+    {
+      "module": "Lib.General.Algebra.SuccessiveApprox",
+      "source_sha256": "e8ffdacf0fe1c9de32e4231697efd1e1052dfc4f060540321db06173d17f07a7",
+      "exit": 0,
+      "seconds": 38.69,
+      "olean_sha256": "e08591e751dedde68c4353ec5e3d4e74bac6328e2628909fa0e82c794740441a"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.Ainf",
+      "source_sha256": "0cecdb054f1992f2b0a139f35ca3204fc5a068d4d5546da750372f442a7550b1",
+      "exit": 0,
+      "seconds": 65.46,
+      "olean_sha256": "ad4289fed41d9e315760a100efb20c1343e50015dd6e452f8cdcdbce3ecc02de"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.CpIntegers",
+      "source_sha256": "34b44a3d1f18785fa4ec31cba0bc501c830252bda267c736133f996dd796046f",
+      "exit": 0,
+      "seconds": 48.77,
+      "olean_sha256": "71cf3b18019376656690bcf84fec1ff50a82955ef3f2c3ce4d26145c878931e5"
+    },
+    {
+      "module": "Lib.PadicHodge.PeriodRings.ThetaKernel",
+      "source_sha256": "8ce07f96e7b4ec1a2209d3d866dfb442cc1480931b2e7dce3c446e0a42c47460",
+      "exit": 0,
+      "seconds": 80.55,
+      "olean_sha256": "ea35cd3c5274950c7e5268b8c041fe04c30cabb14729cca891e49ce10e0fea02"
+    }
+  ],
+  "original_diagnostics": [
+    "Lib\\PadicHodge\\PeriodRings\\AmaxStructure.lean:222:71: error: tactic execution is stuck, goal contains metavariables",
+    "  F✝ (x1✝ - ↑(?m.85 h) ^ x2✝ * ?m.129 x✝¹ x✝ a w✝ e) = G✝ (x1✝ - ↑(?m.85 h) ^ x2✝ * ?m.129 x✝¹ x✝ a w✝ e)",
+    "Lib\\PadicHodge\\PeriodRings\\AmaxStructure.lean:226:66: error: Tactic `tauto` failed",
+    "",
+    "p : ℕ",
+    "inst✝³ : ThePrime p",
+    "m : FrobGal",
+    "a : Ainf",
+    "R : Type ?u.8",
+    "S : Type ?u.10",
+    "inst✝² : CommRing R",
+    "inst✝¹ : CommRing S",
+    "inst✝ : Algebra R S",
+    "pf✝ : Fact (Nat.Prime p)",
+    "⊢ ∀ {m : FrobGal} (b : ?m.25), m • ↑b = ↑(m • b)"
+  ],
+  "fixed_diagnostics": [],
+  "patch_sha256": "13e35f370b50dd1291c39e37f7c2e060db4dc184e1b0300b9bdc29fe0e39bba8"
+}

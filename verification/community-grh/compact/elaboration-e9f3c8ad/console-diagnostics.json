@@ -1,0 +1,72 @@
+{
+  "console_timestamp": "2026-11-26T02:12:19+00:00",
+  "console_response_sha256": "a70c2c6983ad016d53b825ffb93d760617c35b5eb8475ed6b70e2edf9e44da33",
+  "full_receipt_sha256_advertised": "54e4e1eabe1e6529d2bd66364af045d2f18c7d4040385b1d33c63f16a470a079",
+  "complete_frames_read": 11,
+  "total_frames": 30,
+  "full_receipt_verified": false,
+  "attempt": "5d9ac7f8089149f5a3f9b9852ceb43df",
+  "commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "tree": "5666784d088ba92460d084ddd8ac9ab8ac568a99",
+  "failure_details": {
+    "completed_oleans": {
+      "compact": 125,
+      "goldbach": 40
+    },
+    "failed_lake_targets": [
+      "Lib.General.NumberTheory.QuadField",
+      "Lib.PadicHodge.PeriodRings.AmaxStructure",
+      "Lib.Adelic.Unitary.CongruenceLevel",
+      "Lib.ClassField.GreenbergWiles.ExtendCharacter",
+      "Lib.Shimura.Uniformisation.ModuliPoint",
+      "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives",
+      "Lib.Adelic.QuotientMeasure.CocompactIntegrable"
+    ],
+    "representative_errors": [
+      {
+        "column": 20,
+        "line": 99,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/General/NumberTheory/QuadField.lean"
+      },
+      {
+        "column": 71,
+        "line": 222,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/PadicHodge/PeriodRings/AmaxStructure.lean"
+      },
+      {
+        "column": 67,
+        "line": 68,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/Adelic/Unitary/CongruenceLevel.lean"
+      },
+      {
+        "column": 63,
+        "line": 41,
+        "message": "unsolved goals",
+        "path": "CompactGRH/src/Lib/ClassField/GreenbergWiles/ExtendCharacter.lean"
+      },
+      {
+        "column": 54,
+        "line": 105,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/Shimura/Uniformisation/ModuliPoint.lean"
+      },
+      {
+        "column": 34,
+        "line": 76,
+        "message": "Unknown constant `_private.Lib.DiscreteSeries.FlenstedJensen.RightDerivatives.0.IsHermInvolution.det_ne_zero._simp_1`",
+        "path": "CompactGRH/src/Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean"
+      },
+      {
+        "column": 19,
+        "line": 140,
+        "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search.",
+        "path": "CompactGRH/src/Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean"
+      }
+    ],
+    "source_error_count": 29,
+    "source_error_modules": 7
+  }
+}
