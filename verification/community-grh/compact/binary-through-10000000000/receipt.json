@@ -1,0 +1,343 @@
+{
+  "schema_version": 2,
+  "scope": "Every even natural n with 4 <= n <= 10000000000 is a sum of two primes. The original production declaration was compared to an independent Mathlib-only statement and the same frozen proof export was accepted by both protected kernels across two invocations.",
+  "project_commit": "fc729595d20448d3689f706378879a30a323a762",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "dependency_pins": {
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "plausible": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+    "LeanSearchClient": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+    "importGraph": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+    "proofwidgets": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+    "aesop": "4a174c490d8707121c4a9290800489f105d85e07",
+    "Qq": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+    "batteries": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+    "Cli": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+  },
+  "production_module": "Power10Joined",
+  "trusted_module": "TrustedPrefix",
+  "solution_module": "FinitePrefixSolution",
+  "targets": [
+    "SmallGoldbach.Power10.binaryGoldbachUpTo"
+  ],
+  "source_artifacts": {
+    "TrustedPrefix.lean": "b7bafbca19890b46c1a9cbe89fefc033af1b4b3fcf5ba4e6cd67e6e0af42b18e",
+    "FinitePrefixSolution.lean": "61fa6a39cb6ff11fbc45862ec64bc05fee30370029699246d6313ce9576de75b",
+    "comparator.json": "08d9d2c76d797f0aeec34fa63e7fbbaac305da81b1f45d3f555d3c331ab774ff",
+    "comparator-default.json": "a5a0170a9162074ca829a842682e8acdd6842f67314108f586b2340ea59151e4",
+    "comparator-initial.log": "e34f58b396991d87292d0bc7257dc291516a40973b678722e7187da818901385",
+    "comparator-default.log": "2c8a1285153d2ac838ff12abeacdc41d7b18f822402289094c4e69a428118001",
+    "axioms.log": "b5e785a852449d48f88af53ad78c90b4b0a2dd8bc6409d7d9ef31a817a1bc157"
+  },
+  "production_source_sha256": {
+    "FastHex.lean": "efc35e840a1407d605f03caafa99f8b450346cbaf10586a8e63675c98e2a8aa5",
+    "GoldbachNatPowMod.lean": "47fc005726c7ddc34fcd15c89813662a02312331a6ea59f3971711835ec91cc2",
+    "Power10Block00.lean": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+    "Power10Block01.lean": "bc399c82768b6fd8051a76d018d784a0901ff884251f417226eafee149860b24",
+    "Power10Block02.lean": "e58a0a40f670895d7e7659dceb81692c6808f07e3eb1ac70bb9c4efbb8860e2d",
+    "Power10Block03.lean": "f23dd129a932ded62c652b13b76e2a28f425db5f32e176d6bce1dcb762f2213d",
+    "Power10Block04.lean": "74a2393f51bf7c42f4a8cc03ca2a35caef5f2b4f0d2b93f6dd55506d4bf4fa82",
+    "Power10Block05.lean": "988357bc48527927d622e33715b96369505c7f08116474a6f9cc45aef7841a41",
+    "Power10Block06.lean": "defbff0e3434746d30d29e22a2df783a6a7db0299204bb6b74711c6faab139ae",
+    "Power10Block07.lean": "60866238e90ab2c0192798b40d9f18bd45bef9ae6c1b376785a76b3eb767221d",
+    "Power10Common.lean": "2c2c258410f7fe9fddd866fb70def56d762a9a838966db9d334f985fa6e7c479",
+    "Power10Joined.lean": "d5e6040e128d0e4fa5827a27f16ed60a32b3935e351076f08c7b42fa50607151",
+    "PrefixCheck.lean": "6eeade31a01a5fb5a242ec5cd6c9bc8f6df9ccbf8f1ccb861af2087fe1a69d29",
+    "PrefixFactorial.lean": "651a028ae1b550b129dbe91c6dadf1355b3d6c8fe2b1473ba3465d713a36486c",
+    "PrefixJoin.lean": "d4e072c67fbf4cd48665d3a2ee5282c3d2d9574f7b8e2813eb9fa0257ea370f7",
+    "PrefixSource.lean": "27c3d9e402dc3b1b94e78c7e76f1c6263ff1250eecc9b241cf8dacc9d574df03",
+    "PrimeBitmap.lean": "65a4fa1f5de3dc967ed132eed4445de97cb9afce0d9233acaef454317a6cbef5",
+    "PrimeSupport.lean": "52f5a4b8068c289b56c92abd428fde59fc11edd31ba29b3b32916f9c43a11748",
+    "Table.lean": "8d2c3ba8235402e5f0d25cf8030fbff870b5bc8a9baeb2823fcc141bda84aa44"
+  },
+  "prepared_with": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "windows_executable_sha256": {
+    "lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "leanexport.exe": "bda24bb3fafaf299ba472f944942d6293294b76559fafc9f166badd7c0f981b3"
+  },
+  "checked_with": "Stock Linux Lean 4.35.0 (eb6cafb7290e8bd5f2937522d8d804f58f02bafc) and the bundled NanoDa kernel.",
+  "toolchain_release_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+  "linux_executable_sha256": {
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "bubblewrap_sha256": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71",
+  "frontend_axioms": {
+    "SmallGoldbach.Power10.binaryGoldbachUpTo": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "protected_checker_accepts": {
+    "nanoda": {
+      "accepted": true,
+      "attempt": "first",
+      "log": "comparator-initial.log"
+    },
+    "Lean default": {
+      "accepted": true,
+      "attempt": "default_recovery",
+      "log": "comparator-default.log"
+    }
+  },
+  "policy_files": {
+    "first": "comparator.json",
+    "default_recovery": "comparator-default.json"
+  },
+  "timings": {
+    "source_compilation_cpu_seconds": 1025.6875,
+    "sum_source_module_wall_seconds": 1008.627,
+    "native_adapter_and_export_cpu_seconds": 140.953125,
+    "source_compilation_by_module": {
+      "FastHex": {
+        "compilation_wall_s": 22.013,
+        "compilation_user_s": 1.34375,
+        "compilation_system_s": 2.25
+      },
+      "GoldbachNatPowMod": {
+        "compilation_wall_s": 2.03,
+        "compilation_user_s": 0.375,
+        "compilation_system_s": 0.625
+      },
+      "Power10Block00": {
+        "compilation_wall_s": 102.051,
+        "compilation_user_s": 89.9375,
+        "compilation_system_s": 18.328125
+      },
+      "Power10Block01": {
+        "compilation_wall_s": 108.056,
+        "compilation_user_s": 92.5625,
+        "compilation_system_s": 20.671875
+      },
+      "Power10Block02": {
+        "compilation_wall_s": 116.073,
+        "compilation_user_s": 99.625,
+        "compilation_system_s": 20.8125
+      },
+      "Power10Block03": {
+        "compilation_wall_s": 110.063,
+        "compilation_user_s": 90.796875,
+        "compilation_system_s": 25.984375
+      },
+      "Power10Block04": {
+        "compilation_wall_s": 98.038,
+        "compilation_user_s": 82.84375,
+        "compilation_system_s": 23.046875
+      },
+      "Power10Block05": {
+        "compilation_wall_s": 114.072,
+        "compilation_user_s": 96.328125,
+        "compilation_system_s": 24.46875
+      },
+      "Power10Block06": {
+        "compilation_wall_s": 106.047,
+        "compilation_user_s": 89.203125,
+        "compilation_system_s": 23.21875
+      },
+      "Power10Block07": {
+        "compilation_wall_s": 96.046,
+        "compilation_user_s": 79.859375,
+        "compilation_system_s": 22.421875
+      },
+      "Power10Common": {
+        "compilation_wall_s": 42.019,
+        "compilation_user_s": 35.390625,
+        "compilation_system_s": 4.25
+      },
+      "Power10Joined": {
+        "compilation_wall_s": 10.018,
+        "compilation_user_s": 5.671875,
+        "compilation_system_s": 3.328125
+      },
+      "PrefixCheck": {
+        "compilation_wall_s": 12.01,
+        "compilation_user_s": 7.921875,
+        "compilation_system_s": 2.703125
+      },
+      "PrefixFactorial": {
+        "compilation_wall_s": 10.009,
+        "compilation_user_s": 6.671875,
+        "compilation_system_s": 2.765625
+      },
+      "PrefixJoin": {
+        "compilation_wall_s": 12.011,
+        "compilation_user_s": 7.21875,
+        "compilation_system_s": 2.921875
+      },
+      "PrefixSource": {
+        "compilation_wall_s": 10.011,
+        "compilation_user_s": 6.71875,
+        "compilation_system_s": 2.640625
+      },
+      "PrimeBitmap": {
+        "compilation_wall_s": 12.035,
+        "compilation_user_s": 7.59375,
+        "compilation_system_s": 2.921875
+      },
+      "PrimeSupport": {
+        "compilation_wall_s": 14.012,
+        "compilation_user_s": 8.0,
+        "compilation_system_s": 3.421875
+      },
+      "Table": {
+        "compilation_wall_s": 12.013,
+        "compilation_user_s": 7.71875,
+        "compilation_system_s": 3.125
+      }
+    },
+    "native_stages": {
+      "challenge-build": {
+        "exit": 0,
+        "start_utc": "2026-11-25T23:42:30.217528+00:00",
+        "wall_s": 10.014,
+        "log_sha256": "30c1bb245bb4b59e34ba8a399d5b0aacae564861f3cda331e109b6de517e798e",
+        "system_cpu_seconds": 2.890625,
+        "user_cpu_seconds": 6.109375,
+        "peak_working_set_bytes": 479731712,
+        "peak_commit_bytes": 1798610944,
+        "olean_sha256": "a5aa0c52f5164e83bdcaccc4ecde8bce86e6bbdfa0e5341cb4cb730a535d0c35"
+      },
+      "challenge-export": {
+        "exit": 0,
+        "start_utc": "2026-11-25T23:42:40.243797+00:00",
+        "wall_s": 11.055,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "system_cpu_seconds": 3.109375,
+        "user_cpu_seconds": 1.46875,
+        "peak_working_set_bytes": 965001216,
+        "peak_commit_bytes": 2377908224,
+        "bytes": 1135869,
+        "sha256": "5d6752f1d2d220dca502f822b48edbcd740ced112eb49a6b5a3332b3dee762bd"
+      },
+      "solution-build": {
+        "exit": 0,
+        "start_utc": "2026-11-25T23:48:54.794111+00:00",
+        "wall_s": 12.016,
+        "log_sha256": "b5e785a852449d48f88af53ad78c90b4b0a2dd8bc6409d7d9ef31a817a1bc157",
+        "system_cpu_seconds": 3.984375,
+        "user_cpu_seconds": 6.375,
+        "peak_working_set_bytes": 792866816,
+        "peak_commit_bytes": 3152769024,
+        "olean_sha256": "7756102bddfc6ad7b1ffb226bdf655450797b3dd0a7adf26527d872494bff0d8"
+      },
+      "solution-export": {
+        "exit": 0,
+        "start_utc": "2026-11-25T23:49:06.825806+00:00",
+        "wall_s": 141.126,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "system_cpu_seconds": 25.703125,
+        "user_cpu_seconds": 91.3125,
+        "peak_working_set_bytes": 1498181632,
+        "peak_commit_bytes": 3874361344,
+        "bytes": 56779505,
+        "sha256": "9a893a6106a5fdeb62c752dbadc9c2a2296499ead19b05d24930119c8786f890"
+      }
+    },
+    "first_attempt": {
+      "wall_seconds": 934.28,
+      "exit": -15,
+      "resource_guard_interrupted_default": true,
+      "start_utc": "2026-11-25T23:52:39.302146+00:00",
+      "finish_utc": "2026-11-26T00:08:13.629066+00:00",
+      "nanoda_accepted_by_wall_seconds": 554.933,
+      "matched_through": {
+        "first_seen_utc": "2026-11-25T23:52:40.373044+00:00",
+        "peak_rss_kib_lower_bound": 191676,
+        "last_seen_utc": "2026-11-26T00:08:13.576289+00:00",
+        "elapsed_s_lower_bound": 934.21,
+        "user_cpu_s_lower_bound": 16.03,
+        "system_cpu_s_lower_bound": 0.84
+      },
+      "completed_nanoda": {
+        "first_seen_utc": "2026-11-25T23:52:59.564494+00:00",
+        "peak_rss_kib_lower_bound": 1641204,
+        "last_seen_utc": "2026-11-26T00:01:53.221154+00:00",
+        "elapsed_s_lower_bound": 534.39,
+        "user_cpu_s_lower_bound": 498.76,
+        "system_cpu_s_lower_bound": 17.08
+      },
+      "unfinished_default": {
+        "first_seen_utc": "2026-11-26T00:01:54.235321+00:00",
+        "peak_rss_kib_lower_bound": 1745684,
+        "last_seen_utc": "2026-11-26T00:08:13.576364+00:00",
+        "elapsed_s_lower_bound": 380.02,
+        "user_cpu_s_lower_bound": 356.29,
+        "system_cpu_s_lower_bound": 12.43
+      }
+    },
+    "default_recovery": {
+      "wall_seconds": 620.78,
+      "exit": 0,
+      "start_utc": "2026-11-26T00:10:00.226745+00:00",
+      "finish_utc": "2026-11-26T00:20:21.040605+00:00",
+      "matched_through": {
+        "first_seen_utc": "2026-11-26T00:10:01.582167+00:00",
+        "peak_rss_kib_lower_bound": 188640,
+        "last_seen_utc": "2026-11-26T00:20:20.025555+00:00",
+        "elapsed_s_lower_bound": 619.43,
+        "user_cpu_s_lower_bound": 16.21,
+        "system_cpu_s_lower_bound": 1.0
+      },
+      "completed_default": {
+        "first_seen_utc": "2026-11-26T00:10:21.783699+00:00",
+        "peak_rss_kib_lower_bound": 1745644,
+        "last_seen_utc": "2026-11-26T00:20:20.025602+00:00",
+        "elapsed_s_lower_bound": 599.17,
+        "user_cpu_s_lower_bound": 577.5,
+        "system_cpu_s_lower_bound": 15.86
+      },
+      "resource_suspensions": []
+    },
+    "timing_note": "Each protected Linux invocation was confined to one CPU. Process CPU and peak RSS are sampled lower bounds. The first invocation was interrupted after NanoDa accepted but before Lean finished. The recovery ran only Lean against the identical exports. The measured initial wall total includes the incomplete first Lean pass."
+  },
+  "export_roots": [
+    "Quot",
+    "Quot.mk",
+    "Quot.lift",
+    "Quot.ind",
+    "SmallGoldbach.Power10.binaryGoldbachUpTo",
+    "propext",
+    "Quot.sound",
+    "Classical.choice",
+    "Nat.add",
+    "Nat.sub",
+    "Nat.mul",
+    "Nat.pow",
+    "Nat.gcd",
+    "Nat.div",
+    "Nat.mod",
+    "Nat.beq",
+    "Nat.ble",
+    "Nat.land",
+    "Nat.lor",
+    "Nat.xor",
+    "Nat.shiftLeft",
+    "Nat.shiftRight",
+    "String.ofList",
+    "Char.ofNat",
+    "List",
+    "eagerReduce",
+    "Nat",
+    "String",
+    "String.mk",
+    "Char",
+    "optParam",
+    "autoParam",
+    "semiOutParam",
+    "outParam"
+  ],
+  "exports": {
+    "challenge": {
+      "filename": "challenge.export",
+      "sha256": "5d6752f1d2d220dca502f822b48edbcd740ced112eb49a6b5a3332b3dee762bd",
+      "bytes": 1135869
+    },
+    "solution": {
+      "filename": "solution.export",
+      "sha256": "9a893a6106a5fdeb62c752dbadc9c2a2296499ead19b05d24930119c8786f890",
+      "bytes": 56779505
+    }
+  }
+}
