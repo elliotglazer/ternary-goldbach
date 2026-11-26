@@ -444,9 +444,9 @@ lemma isGood_of_prod_projLine : D.IsGood (relFreeAb (V.preimage (fst ..) ⊔ (af
       (tensorPoint (freeAbMap tautSection))).app (t.g ⋙ relFreeAb V)))
       (map_homClass_comp (Φ := restrictAlong (elementsProj (projLineAlong t.g))) (f := v) (x := y))
   refine Eq.trans ?_ (normalize _ _).symm
-  apply comp_assoc_of_sq
-  simp only [← homClass_comp]
-  exact congrArg homClass relFreeAb.hom_ext))) (t.line_formula.integrate_mul_cupClass _ 0))
+  exact comp_assoc_of_sq ((homClass_comp _).symm.trans
+    ((congrArg homClass (relFreeAb.hom_ext
+      (U := (V.whisker t.g).whisker (elementsProj (projLineAlong t.g))))).trans (homClass_comp _))) _))) (t.line_formula.integrate_mul_cupClass _ 0))
 
 variable (L : D.IsGood (relFreeAb IdealFamily.ofMaximalIdeal.topLocus)) [Algebra A R] (P :
   StandardEtalePair R)
