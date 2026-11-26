@@ -1,0 +1,121 @@
+{
+  "kind": "two-root-fixture",
+  "status": "accepted",
+  "warm_frontend_passed": true,
+  "protected_full_theorem_passed": true,
+  "theorem": "Fixture.positive",
+  "observed_axioms": [],
+  "worker_sha256": "dc65458aa8feb5c2f10dab202e60235664aa3b8e70fd0619803309f65552c686",
+  "distinct_imported_modules": 3,
+  "actual_lake_facets_verified": 20,
+  "actual_source_traces_verified": 4,
+  "distinct_parent_import_hashes_verified": 1,
+  "distinct_external_import_hashes_verified": 0,
+  "warm_outputs": {
+    "FixtureJoint": {
+      "source_sha256": "17545ad9bdb7067044c1ebfc9f85f5a53517ca18322fa774db9706d09ba1ef14",
+      "oleans": {
+        ".olean": "0d2a6bb8d7ea2deeeb26c245f4ba9afcd2eb8ef5e314fcd6807e54cce0f56936",
+        ".olean.server": "03f3dd9d57389a1e4b3ba035ced3f3c7cf0440cefb9b3e1c70a93b3463035ff6",
+        ".olean.private": "ca73124dbdec8dd5efb39789a27caa58165d0121a1067f642a557d799eaa3f70",
+        ".ir": "e05ba48ecf2ff5055bcfe898e79ed597c2fbad94d756b3b45075ba7003de2b0f",
+        ".ir.sig": "56321030c37aa06a6082b4cc7182cc74fd3546c583f06f0543a5ec4bfd59d1d9"
+      }
+    },
+    "FixtureSolution": {
+      "source_sha256": "a7655750841d43f5fd5f5efc48c7e51d4a2029c333b5ebecc5dcb716de716fae",
+      "oleans": {
+        ".olean": "3b1a9086d72fd6d034020762d527b97d212b7c793d2749bbe5394f1cafc5ec4f",
+        ".olean.server": "c3f5102c02327ca8a7439ed660458ea7db5c10ee911c36a089d9ec3845db2beb",
+        ".olean.private": "9ad8b85c4f3322ebd46972a092c4215e72d5002172cd0be54aeb9233ac81c5d3",
+        ".ir": "b33625b2fc4f2c1fb22d7d9deb2bd27e3e1e28b395474f2e98b0da79b08cfb2e",
+        ".ir.sig": "f3f9e2181d8faa3fc804834f06c45c546dc23740ffd29f33caa7615d69b8f1bb"
+      }
+    }
+  },
+  "protected_inputs": {
+    "challenge.export": {
+      "bytes": 1014749,
+      "sha256": "b268d62f5e0308b66483458b7191f85b0b1810ecb9a086fb704e346426da2869"
+    },
+    "solution.export": {
+      "bytes": 1014479,
+      "sha256": "475ebd863a0037d6557ae380ed076fe95abd1adfbe388c2bb506404e4f70ed3d"
+    }
+  },
+  "wall_seconds": 3.779,
+  "parents": {
+    "grh": {
+      "source_commit": "0d2c9c72a3bf83a167a1373918fb92593e62d0c7",
+      "source_tree": "9d328508f675237d498dec17afa4bdc81a15b3d6",
+      "root": "FixtureLeft",
+      "modules": 2,
+      "closure_sha256": "2864e5476becc6e63a89c56d04dd282ae0ddbf5c0487a16abef2cecba180f8e1"
+    },
+    "finite": {
+      "source_commit": "75a20a0fad4c7fadaa3a3eae279a5d0b77543ef4",
+      "source_tree": "6744a03837d35d994205adeb779d52fe5136932f",
+      "root": "FixtureRight",
+      "modules": 2,
+      "closure_sha256": "616596ee175a950d746cb02048bab5954f202dd25d2f0660cef0e7846c6ce273"
+    }
+  },
+  "stages": {
+    "compile-FixtureJoint": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.351,
+      "user_cpu_s": 0.002377000000000018,
+      "system_cpu_s": 0.0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compile-FixtureSolution": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.351,
+      "user_cpu_s": 0.0,
+      "system_cpu_s": 0.005124999999999991,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "fresh-import": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.351,
+      "user_cpu_s": 0.0,
+      "system_cpu_s": 0.0035479999999999956,
+      "log_sha256": "0d34f05e296ed55e0fbfc5d49a078b38b67466ae5b7a07e9de9e1df22b24e6e9"
+    },
+    "challenge-build": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.352,
+      "user_cpu_s": 0.00023200000000000998,
+      "system_cpu_s": 0.002911999999999998,
+      "log_sha256": "14191a1ce43703a930eda9357d8829570e3a504abc4c84d5b2b7d987d3ca92b1"
+    },
+    "challenge-export": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.702,
+      "user_cpu_s": 0.0,
+      "system_cpu_s": 0.004264000000000018,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "solution-export": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.703,
+      "user_cpu_s": 0.0,
+      "system_cpu_s": 0.00356999999999999,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "protected-kernels": {
+      "status": "passed",
+      "exit": 0,
+      "wall_s": 0.352,
+      "user_cpu_s": 0.0031959999999999766,
+      "system_cpu_s": 0.0,
+      "log_sha256": "5b304adfe00c8107856812ee5184f11fcb2582fe7931ce1f2038375a4cce8171"
+    }
+  }
+}

@@ -1,0 +1,1408 @@
+{
+  "schema": "full-native-module-v1",
+  "scope": "Full published owning module and all three original public imports, compiled with stock native Windows Lean 4.35. The exported-axiom table and direct forbidden-constant scan are separately labeled diagnostics.",
+  "candidate_commit": "333aa9bb21fd87ef1f6be2159dbffc2c8da75962",
+  "candidate_tree": "0a3e5b8486771b3ca1acaa2cb465ff756e52c5e2",
+  "baseline_commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+  "module": "Lib.Adelic.CuspForms.SmoothFormPairing",
+  "path": "CompactGRH/src/Lib/Adelic/CuspForms/SmoothFormPairing.lean",
+  "unchanged_imports": [
+    "public import Lib.Weil.Unramified.SphericalHecke",
+    "public import Lib.GLn.SchurModule.WeightRepBasic",
+    "public import Lib.Adelic.CuspForms.RealConvolution"
+  ],
+  "source_sha256": {
+    "Lib.Adelic.CuspForms.SmoothFormPairing": "17697b5d141e9464407ddaf12e715b560ac8c73e472699a08e57b13d987234cc",
+    "Lib.Weil.Unramified.SphericalHecke": "c70f7aa341e42fd9cef6dfca3841a7df288bca41eccae875cd7f15eb9e7cd468",
+    "Lib.General.LinearAlgebra.CommonEigenvectors": "36a94f29aec1676763c392ab38819d658a2a2749fa8418b25d034209f5029e76",
+    "Lib.General.LinearAlgebra.SubmersionZero": "f2804683b0c8a5a4342ba1aa6f4f222087f715a7f91932498408b20e30071d00",
+    "Lib.General.LinearAlgebra.Base": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+    "Lib.Weil.Unramified.HeckeGL": "ad15b2e267771906ddf300e48c4030892fbf70f1f30307fc2b734a64bb23a1ec",
+    "Lib.Adelic.Unitary.CongruenceLevel": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+    "Lib.General.Groups.CompactMean": "d42ea144b169deb3cfdea0ed2c3231a6e6d4646a1fa9a6e9f268f3ddba35b87b",
+    "Lib.Adelic.Hecke.ClassMean": "aad69a89e5a6a98acfd072bbc88ede877f8f4b586e4ce615f748c36fb1aadf5f",
+    "Lib.General.Measure.SubgroupIntegral": "4eb0f6ab29bad03b624e8fe413642e2c6b8960619ad67125c4882b78adf1c28b",
+    "Lib.General.LinearAlgebra.PartialDerivComm": "e0737a5c37df37a07ae52addc74cc4d1a0d6a986448d06e10b87497c906d97bf",
+    "Lib.General.LinearAlgebra.ColumnLattices": "173fc15736f148f7bcf90502b58f5ae2153835d87b1cccaa8c8edc1bb62a2d78",
+    "Lib.General.LinearAlgebra.AdelicRingDefs": "844039e4f0e5beacc16f9a8ea51701dbe86e1da5215daa2c5800e7e608b727fd",
+    "Lib.General.LinearAlgebra.ExtendColumns": "df1d38445a66e63f76475917545b0de0e66827b8533189bce4b6245319c40dc1",
+    "Lib.General.Groups.ValuationPair": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+    "Lib.General.Analysis.ZpowSum": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+    "Lib.Adelic.Hecke.HeckeBasic": "d100fe45dbb4ddc58f946fb4a6abe6a0fe466a062c45cd8d7a367af1c0f6f54a",
+    "Lib.Adelic.Adeles.LocalComponents": "e0483843f6816c8175994af933079b31de9239f9f07e0d7daec30e04244dd0bb",
+    "Lib.Adelic.Unitary.SpaceDefs": "5cf745b78feeac3fcc1c91c40933331d999f187ac320beb0ad108519d9013e36",
+    "Lib.Adelic.Adeles.AdditiveCharDefs": "ff8f5897509f5446e5e868e524a53408b8d69b782db68a87735bf85dd9f3c1da",
+    "Lib.Adelic.Adeles.AdeleTopology": "188525e98f2ec2b41f82d636e309f46ace3edc1931754f78ac3705ce3abf405d",
+    "Lib.Adelic.Adeles.CoprimeValuation": "24794a87d5f90db2e34433267b9a6820ea8c39de04318f589c9b7e84477f0fd6",
+    "Lib.General.Analysis.OstrowskiTaussky": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+    "Lib.General.LinearAlgebra.ValuedMatrix": "8274a177c289aac8a62f75bad30a782edb9dc8cfcde16dde8339388a249248c5",
+    "Lib.Adelic.Adeles.AdeleIdempotent": "543a8b33fec343b06fce9be1ea2d976693d3377727dd1f56c6945ebf3021e050",
+    "Lib.Adelic.Adeles.AdelicModulus": "badca842bf6bfb4154d6e0065463014043de1f19a0e0cf8d3a298f6411c3f890",
+    "Lib.Adelic.Adeles.AdelicAbs": "796a33ad421075107600d877806f3daa0ea5ccf389d11da1a1f600ae462630cb",
+    "Lib.ClassField.HeckeL.EulerProduct": "478640be010a08b9d6bc1f86651305cf2d9d23705c22e0f78b41ec505741bf9e",
+    "Lib.ClassField.GaloisCohomology.CyclicClass": "7b12af57eab81a533d25ce330b62c16ebaaf8cd59beb6d9e104426960621eb02",
+    "Lib.ClassField.GaloisCohomology.ContinuousCocycles": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+    "Lib.ClassField.Places.GaloisDefs": "32ad0a45ce22ced92fc4263d639f601257c34c57100e8954034cddf377beb067",
+    "Lib.PadicHodge.Crystalline.NonUnitalUnits": "3023e89785bd9fca271a78a15570b9a923f41976d60e0ab29da534b2debcb2c2",
+    "Lib.Adelic.Adeles.RationalPoints": "7bc04bc93e197185dbc1933142ad608757ded3f210ddda8fb6400908451d730f",
+    "Lib.General.Analysis.FundamentalDomain": "0f28dde96f541a43b738e42275bfc7647da76f39d48aa910f738e6e7d8febc64",
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": "cadb32cab1d61d9896f234481d473079e681ca18ffe87b8203335b8a0d321e06",
+    "Lib.Weil.Construction.SubmoduleNormedSpace": "a74d6ecf2a6e6b052efeb702f2ee165f3a22c8312296230d723d8ee62eb26527",
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": "d71067206d92a944363400d1754e64e565d14ac6a743121febbe2009ac127ae1",
+    "Lib.Adelic.QuotientMeasure.Unimodular": "77e707e1fd9e3e6b4a937e6b2ebd1b2ad059a6292563a8e4bd04fca58d131f1d",
+    "Lib.Adelic.QuotientMeasure.Packing": "616b336811176e6f3e871b7ffa59a00f858acb175514e6a8d5af1e295d1a26db",
+    "Lib.General.Algebra.GeneralisedIndex": "cb519de76c44bef47736b402d2a29224e1f14545c19e8c9eb8976f21992660df",
+    "Lib.General.Measure.HaarModulus": "7925ed45352e52e48b78ae59baa524a29994c7ee3ebdaf4565fa15d5fcbbb935",
+    "Lib.Weil.DualPair.Kronecker": "24cca1a1c771a5dec192767a1f7ccf72f8e629924b8d5928595009a675e9d68b",
+    "Lib.General.Algebra.InertResidue": "83716ef52264e2fda1f14ecadcb56c9322adf7e229f683e247d779afb5383745",
+    "Lib.Weil.Construction.GaussSumSign": "d89c7959bd58aff457c270970f07e605774d50bc1d62360f0f2700c7f28fff09",
+    "Lib.Adelic.Unitary.SpaceGram": "9d6952fca7498e9e4cc092798f498ab6ae8457d50c4995f936bd1fbd8eb7a93e",
+    "Lib.Weil.GaussSum.LocalHomUnit": "fb480cb86ccbbd60c93175cdb1e719544bbba703ce02e544248780910d2601ec",
+    "Lib.GLn.SchurModule.WeightRepBasic": "d9a79853c75cada7c54e9dfa4100cc0fe3edf44a717a16c9bb61cbeb4b40c5c1",
+    "Lib.Adelic.CuspForms.DeltaForms": "a4477a1deef5078644c2018f6dea8dd53fa2761057e9cb0d2154f278e51302c2",
+    "Lib.GLn.Branching.BranchingVector": "60eff5cf8544ce2ca11ce62ef3d54dfa86379be78105610c18e01da65c268fb6",
+    "Lib.Adelic.Witt.FrameAction": "6445beb4629e627330b2c06ae6fdd5924e9538e4ea5874a988c12e6c5f98ce32",
+    "Lib.GLn.SchurModule.Gram": "cb217bba8e18c4ce9c80c993168d23cd2693e56daccf29e8eac18d6cdf40e38a",
+    "Lib.GLn.SchurModule.Hook": "807546fa4040a5a13f6d8da0af111efea448d97e3ff6531a7c8734b4f253754e",
+    "Lib.GLn.SchurModule.RationalRep": "a4e95b5b210fd6250a57209941a26fd8e0508b29ad5352b14a02a08113c6656a",
+    "Lib.GLn.SchurModule.SchurMatrix": "69f9eb39bc63cc4a35c5eb8d8ec2c4910aa8ff5e6d28ae2127d39de613c330f8",
+    "Lib.GLn.SchurModule.MinorBasis": "b7f3ccb3dee36d7c5d6939fa068393fec8cacfe8f04a7603080a1b0b2b8f5ca3",
+    "Lib.GLn.SchurModule.Interlacing": "ebc1e4f52d93ae2eb3194636a765e1efbaa5b8bbe0b1f3e0576d36e89a1a23d6",
+    "Lib.GLn.SchurModule.Bordering": "8dbebb16916b3a7ac2deb8d8ddad7a058ab7a698647286a96ade7559b042a089",
+    "Lib.GLn.SchurModule.Nabla": "1226dcf4a7404f5036463a59ae34f2f92e88a60d8872bf9cfe2c6ac17cbfeb4c",
+    "Lib.General.Algebra.ZerosCostDegree": "30ca4a05278edbd578e32601336696c6d1c13b4feededd4952b8a74775dc5126",
+    "Lib.ClassField.Places.UnramifiedCharacters": "5a0957b0f96fd2d766b0e44dd8a544f8c25b9be091b46a1a7747f02af19510d2",
+    "Lib.General.Algebra.AdicRingHomExt": "cad5bc1b19dfca0ad49423289ea41ae2032c40df0825854898909daa8abb0e01",
+    "Lib.ClassField.Places.LocalExtension": "af56d32031e6cf9b7f59f6d27b8ea323fa85a85fcc5a372f4e78e4c0c53c96f1",
+    "Lib.ClassField.Places.LocalFrobenius": "687f9185be29ba1fc5a63d861cda22fbae65b3b7c3186b7dc4091652da47e7fc",
+    "Lib.General.Groups.ArtinDefs": "af492166ba3089cb5f8d9876b9b6929d05037e772df1c0100cf7ca148dbe44f5",
+    "Lib.General.Groups.RatModInt": "f4a46a2a519c76bc35ef56acf3392b29be4a7eb9bd3c43851548707678b8e956",
+    "Lib.ClassField.Places.LocalDefs": "73afe8280f24e5631f83a83dbb027d51d2b7829ae7fb1fe92297c8e0c71f1e00",
+    "Lib.ClassField.Places.Places": "e1036fbde9535d5b6bd51f0284394efb42f6198f36664b61d959684a0e5416f7",
+    "Lib.ClassField.Places.CyclotomicCharacter": "742ca2494dabc1fa20df234826c6787b7fc47919e3ce2942688434328680ceff",
+    "Lib.ClassField.Places.ProfiniteGalois": "7b864f6b7e21427eaf4ec2a35ffc40b20c77664585b53431e321398d39d5191c",
+    "Lib.Adelic.CuspForms.RealConvolution": "4c4f43e9553731f4a05ac3ffd5bd5592d745a19c136566f04ac215a69622471f",
+    "Lib.Adelic.CuspForms.Definite": "502236e6bbc4ab5b4db7a74e769666cc9cc9927a0b8b8641d796a629a9798a0a",
+    "Lib.Adelic.Reduction.Defs": "0d58964cc62030e2185b409c4108de42f30f60f39e289eeb9ddb3130558f0948",
+    "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": "472d000ce4ae2cda557764b5b847214cec15898711a097cf679cd6d95d56c7b5",
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure": "8ff779189b82158e783fa09ba5cfb266f2642007619d2df5752d688fce683c79",
+    "Lib.DiscreteSeries.Haar.LogDerivative": "a039c0555176bf09e76c9682d4706a23ebf11abb6c2232212b9b7d4f91ee77c6",
+    "Lib.DiscreteSeries.Haar.SkewCoordinates": "53515b248263777ba6d248ad26f0d59c7721359626f19b82d5ddc4e826bc0dde",
+    "Lib.DiscreteSeries.Haar.UnitaryNorm": "a76965d32c8f1ff73d1906c579454505e331376e741c044121f101156687ee53",
+    "Lib.General.LinearAlgebra.HuaIntegral": "b2709d08e7dc863f9eb57855bb1db7a0ed4c1c4905e8b8b2e622a368e199658d",
+    "Lib.General.LinearAlgebra.HaarUnique": "53f9f9b45f5396b057d9258190c6478cb7a7e97c7c951d8be822d3e4bcfd8e84",
+    "Lib.Adelic.Reduction.MahlerForms": "6e2103de605714245a4a504b668dc901d0d0e0d99a7254a1ad06a70288a4c9d4",
+    "Lib.Adelic.Reduction.MinkowskiSecond": "7a5e7d4024f7b01c43f2708096b0907c94d9a0302fe241b9401630875fa6ffd5",
+    "Lib.GaloisRep.BaseChange.OrbitClassSum": "30ce95be2749dcd12e413ad37d7f2ffac9de0444bfa32d4a2807d1ee25b20074",
+    "Lib.GaloisRep.Hilbert90.UnitaryHilbert90": "3636b25ed15ae8fb0822d45aa47ce3e80e36eaf4d1220fcee2693525d818c8af",
+    "Lib.GaloisRep.Hilbert90.TameDescent": "7acbab5f569b097bbc2fbc34adc3cb91168ecbd85dabe6dbbf839540b92cf040",
+    "Lib.Adelic.Witt.SpaceOperations": "222acbd1af056c17d300a5edd06a16541e5c1086f96249f7e9b024d141811f60",
+    "Lib.DiscreteSeries.Bruhat.EichlerMaps": "724894beff38aee114cc2493fb2fc691192aef7eb4fc06f542d624d9ae0731d9",
+    "Lib.Adelic.Transference.MassBasic": "68293bb07d0c44a78b63be9bc9281ce405852578401b302f0d92a470c308c47c",
+    "Lib.Adelic.Adeles.AdditiveCharBasic": "40bd5484a34e7ed1351cee7922cf60eb57a729aee02e50cf1f8dda376aadc579",
+    "Lib.General.NumberTheory.Embeddings": "23e04a472cc47195fdaa1baf568a034a52565a611edbebcc8b143214f7ca5627",
+    "Lib.Adelic.Reduction.FirstMinimum": "1f3848f88fd7daca9bc3e338cc1cbf520164a35305ff000e3ec5cdc8916395c6",
+    "Lib.Adelic.Unitary.SpaceBasic": "2772de25a502ff8ce6d1cb883654b5f85b10f310e4cdf181515bc1c79ef7b6fe",
+    "Lib.DiscreteSeries.Rigidity.KernelFixes": "bb2f5bd423cb5e2bed71eea2fe4152af691932017feb4e8f98ecd96e1b8779c9",
+    "Lib.DiscreteSeries.CuspKernel.SchurOrthogonality": "0d2331470e0d4306a52bb171638b1966404907e3b8c3101b417d2ee293447631",
+    "Lib.DiscreteSeries.FlenstedJensen.CasimirOnPsi": "b74e21211b8446c6eaa06287470e41b9b4ea9ccf9f68f37b0aeff97121d7996f",
+    "Lib.DiscreteSeries.FlenstedJensen.PsiSmooth": "9ea6722758245bd035777afee94c4441ab2192952298cd9c9549eabfbb8cf738",
+    "Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance": "8de6c36d5f2cba1f70b50c8fe2b2495c863a3bc6cfd653f7e185f056603a3e39",
+    "Lib.DiscreteSeries.Rigidity.CasimirBound": "dfabcbd50cb980f864f7a8355db412203373ba01afe11da05c518f748781db2f",
+    "Lib.DiscreteSeries.Holomorphic.MinorEquivariance": "e0070c908770d02f0aa80a648dd030f55c3f97216997e1624c47ddacad4b7691",
+    "Lib.General.LinearAlgebra.ExpSurjective": "5e68d213aabdb661a89679b91fd36521ec65e308a87b09787196466d0d0a91f7",
+    "Lib.General.Analysis.HolomorphicIntegral": "f5bf910333315fcbc3027a05d8bcc000c46d7569353b13aa15f4d95f7c5c3ec3",
+    "Lib.DiscreteSeries.Haar.HaarMass": "6bf40d95b04c88e5568d9dfc8f08814acf42dd35578a335a3eb08b5684edf445",
+    "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives": "8025de9554793c89cc6dfe75f2693436c81c1aed532ac78058cda11a1612b2af",
+    "Lib.DiscreteSeries.Haar.SphereFibreIntegral": "5f2d0801ed210a76fdabd941348d51c9ac6b7a5f53e3f5755e16ca6d541567d3",
+    "Lib.DiscreteSeries.Haar.HaarColumnChart": "7caff241c34b31df28facb268333193882b38777d2aeaaa413c6d31e919c47bd",
+    "Lib.Adelic.QuotientMeasure.CocompactIntegrable": "b99c3327491300ed34f91c14090d6c4d56acd5e80301f2258851c5d3d5326f0e",
+    "Lib.Adelic.QuotientMeasure.IwasawaIntegration": "137424c54f5ea2f4d11c9b588f9afa254e52735c9f8eb3282c2a2710bcea9529",
+    "Lib.General.LinearAlgebra.SmoothMatrices": "5fd95e147ebba1c856ac934180ab5502b39b81807b5d91e59b5522ac5c4eeaaf",
+    "Lib.DiscreteSeries.Rigidity.AnalyticVectors": "eb01610cad2ada7d2d2bf2758b88aa28748c7b605e29397a19d2880ed068038b",
+    "Lib.DiscreteSeries.Rigidity.CasimirGrowth": "f85f07566ae86b3fb83c8f0100b40a44b16eae9181f48ff43af8ceb5989e6fe2",
+    "Lib.DiscreteSeries.Rigidity.HighestVectors": "7c910dcaf2ca0a21f6dc25634047ea0f01f3407201f75fb5bf1eed38e0f3387f",
+    "Lib.DiscreteSeries.FlenstedJensen.PsiDecay": "3d3a7b177d24ab487f2db582db96b388c309c0ec6ab0b4c3fbf1ac3873087c6a",
+    "Lib.General.LinearAlgebra.BlockDiagonalDet": "08436fd582e13f29d21126ef2696268687f114656d42931b8f4dad0c446b90a9",
+    "Lib.DiscreteSeries.FlenstedJensen.PsiBasic": "749f0f3eb58757caaae8de4a97ef61ecc16616b6de892a826f9b8c208b537fa8",
+    "Lib.DiscreteSeries.Holomorphic.HolomorphicExtension": "5c0b9988a8eb16be2825bdb0b22860ffe973e5762fdc6a7de34e9c7b33fe06b7",
+    "Lib.DiscreteSeries.FlenstedJensen.KTypeProjection": "eddda1ae1edc2ff9bcd61804b153635504cf09b5ab3579d3594ec4564f09bc08",
+    "Lib.DiscreteSeries.CuspKernel.BumpConvolution": "b37fab9aaec16fb80f9a490353cfff0cb308dfc5433f830308a435f16eab61a7",
+    "Lib.DiscreteSeries.Haar.RegularRepL2": "8c125a91704b5cd5a6bb2addda36b1fe5676b9106545835cd21bb48313ffde82"
+  },
+  "imports": {
+    "Lib.Adelic.CuspForms.SmoothFormPairing": [
+      "Lib.Weil.Unramified.SphericalHecke",
+      "Lib.GLn.SchurModule.WeightRepBasic",
+      "Lib.Adelic.CuspForms.RealConvolution"
+    ],
+    "Lib.Weil.Unramified.SphericalHecke": [
+      "Lib.General.LinearAlgebra.CommonEigenvectors",
+      "Lib.Weil.Unramified.HeckeGL"
+    ],
+    "Lib.General.LinearAlgebra.CommonEigenvectors": [
+      "Lib.General.LinearAlgebra.SubmersionZero"
+    ],
+    "Lib.General.LinearAlgebra.SubmersionZero": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.LinearAlgebra.Base": [],
+    "Lib.Weil.Unramified.HeckeGL": [
+      "Lib.Adelic.Unitary.CongruenceLevel",
+      "Lib.Adelic.Adeles.AdelicModulus"
+    ],
+    "Lib.Adelic.Unitary.CongruenceLevel": [
+      "Lib.General.Groups.CompactMean",
+      "Lib.General.LinearAlgebra.ColumnLattices",
+      "Lib.Adelic.Adeles.LocalComponents"
+    ],
+    "Lib.General.Groups.CompactMean": [
+      "Lib.Adelic.Hecke.ClassMean"
+    ],
+    "Lib.Adelic.Hecke.ClassMean": [
+      "Lib.General.Measure.SubgroupIntegral"
+    ],
+    "Lib.General.Measure.SubgroupIntegral": [
+      "Lib.General.LinearAlgebra.PartialDerivComm"
+    ],
+    "Lib.General.LinearAlgebra.PartialDerivComm": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.LinearAlgebra.ColumnLattices": [
+      "Lib.General.LinearAlgebra.AdelicRingDefs",
+      "Lib.Adelic.Hecke.HeckeBasic"
+    ],
+    "Lib.General.LinearAlgebra.AdelicRingDefs": [
+      "Lib.General.LinearAlgebra.ExtendColumns",
+      "Lib.General.Analysis.ZpowSum"
+    ],
+    "Lib.General.LinearAlgebra.ExtendColumns": [
+      "Lib.General.Groups.ValuationPair"
+    ],
+    "Lib.General.Groups.ValuationPair": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.Analysis.ZpowSum": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.Adelic.Hecke.HeckeBasic": [
+      "Lib.General.LinearAlgebra.PartialDerivComm"
+    ],
+    "Lib.Adelic.Adeles.LocalComponents": [
+      "Lib.Adelic.Unitary.SpaceDefs",
+      "Lib.Adelic.Adeles.AdeleIdempotent"
+    ],
+    "Lib.Adelic.Unitary.SpaceDefs": [
+      "Lib.General.Measure.SubgroupIntegral",
+      "Lib.Adelic.Adeles.AdditiveCharDefs",
+      "Lib.General.LinearAlgebra.ValuedMatrix"
+    ],
+    "Lib.Adelic.Adeles.AdditiveCharDefs": [
+      "Lib.General.Groups.ValuationPair",
+      "Lib.Adelic.Adeles.AdeleTopology"
+    ],
+    "Lib.Adelic.Adeles.AdeleTopology": [
+      "Lib.Adelic.Adeles.CoprimeValuation",
+      "Lib.General.Analysis.OstrowskiTaussky"
+    ],
+    "Lib.Adelic.Adeles.CoprimeValuation": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.Analysis.OstrowskiTaussky": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.LinearAlgebra.ValuedMatrix": [
+      "Lib.General.Groups.ValuationPair"
+    ],
+    "Lib.Adelic.Adeles.AdeleIdempotent": [
+      "Lib.Adelic.Adeles.AdeleTopology"
+    ],
+    "Lib.Adelic.Adeles.AdelicModulus": [
+      "Lib.Adelic.Adeles.AdelicAbs",
+      "Lib.Adelic.Adeles.RationalPoints",
+      "Lib.General.Algebra.GeneralisedIndex",
+      "Lib.Weil.DualPair.Kronecker",
+      "Lib.General.Algebra.InertResidue"
+    ],
+    "Lib.Adelic.Adeles.AdelicAbs": [
+      "Lib.ClassField.HeckeL.EulerProduct"
+    ],
+    "Lib.ClassField.HeckeL.EulerProduct": [
+      "Lib.ClassField.GaloisCohomology.CyclicClass",
+      "Lib.PadicHodge.Crystalline.NonUnitalUnits",
+      "Lib.Adelic.Adeles.AdeleIdempotent"
+    ],
+    "Lib.ClassField.GaloisCohomology.CyclicClass": [
+      "Lib.ClassField.GaloisCohomology.ContinuousCocycles",
+      "Lib.ClassField.Places.GaloisDefs"
+    ],
+    "Lib.ClassField.GaloisCohomology.ContinuousCocycles": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.ClassField.Places.GaloisDefs": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.PadicHodge.Crystalline.NonUnitalUnits": [
+      "Lib.Adelic.Adeles.CoprimeValuation"
+    ],
+    "Lib.Adelic.Adeles.RationalPoints": [
+      "Lib.Adelic.Unitary.SpaceDefs",
+      "Lib.General.Analysis.FundamentalDomain"
+    ],
+    "Lib.General.Analysis.FundamentalDomain": [
+      "Lib.Adelic.QuotientMeasure.PeriodicMean",
+      "Lib.Adelic.QuotientMeasure.Unimodular"
+    ],
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": [
+      "Lib.Weil.Construction.SubmoduleNormedSpace",
+      "Lib.DiscreteSeries.CuspKernel.CircleMean"
+    ],
+    "Lib.Weil.Construction.SubmoduleNormedSpace": [
+      "Lib.General.Groups.ValuationPair"
+    ],
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": [
+      "Lib.General.Analysis.ZpowSum"
+    ],
+    "Lib.Adelic.QuotientMeasure.Unimodular": [
+      "Lib.Adelic.QuotientMeasure.Packing",
+      "Lib.DiscreteSeries.CuspKernel.CircleMean"
+    ],
+    "Lib.Adelic.QuotientMeasure.Packing": [
+      "Lib.General.Measure.SubgroupIntegral"
+    ],
+    "Lib.General.Algebra.GeneralisedIndex": [
+      "Lib.General.Measure.HaarModulus"
+    ],
+    "Lib.General.Measure.HaarModulus": [
+      "Lib.General.LinearAlgebra.ColumnLattices"
+    ],
+    "Lib.Weil.DualPair.Kronecker": [
+      "Lib.General.LinearAlgebra.ExtendColumns"
+    ],
+    "Lib.General.Algebra.InertResidue": [
+      "Lib.Adelic.Adeles.AdeleIdempotent",
+      "Lib.Weil.Construction.GaussSumSign"
+    ],
+    "Lib.Weil.Construction.GaussSumSign": [
+      "Lib.Adelic.Unitary.SpaceGram"
+    ],
+    "Lib.Adelic.Unitary.SpaceGram": [
+      "Lib.Weil.GaussSum.LocalHomUnit",
+      "Lib.Adelic.Unitary.SpaceDefs"
+    ],
+    "Lib.Weil.GaussSum.LocalHomUnit": [
+      "Lib.General.LinearAlgebra.AdelicRingDefs"
+    ],
+    "Lib.GLn.SchurModule.WeightRepBasic": [
+      "Lib.Adelic.CuspForms.DeltaForms",
+      "Lib.ClassField.Places.UnramifiedCharacters",
+      "Lib.Adelic.Adeles.RationalPoints"
+    ],
+    "Lib.Adelic.CuspForms.DeltaForms": [
+      "Lib.Adelic.Hecke.ClassMean",
+      "Lib.GLn.Branching.BranchingVector"
+    ],
+    "Lib.GLn.Branching.BranchingVector": [
+      "Lib.General.LinearAlgebra.SubmersionZero",
+      "Lib.Adelic.Witt.FrameAction",
+      "Lib.GLn.SchurModule.Gram"
+    ],
+    "Lib.Adelic.Witt.FrameAction": [
+      "Lib.General.LinearAlgebra.ColumnLattices"
+    ],
+    "Lib.GLn.SchurModule.Gram": [
+      "Lib.GLn.SchurModule.Hook"
+    ],
+    "Lib.GLn.SchurModule.Hook": [
+      "Lib.GLn.SchurModule.RationalRep"
+    ],
+    "Lib.GLn.SchurModule.RationalRep": [
+      "Lib.GLn.SchurModule.SchurMatrix"
+    ],
+    "Lib.GLn.SchurModule.SchurMatrix": [
+      "Lib.GLn.SchurModule.MinorBasis"
+    ],
+    "Lib.GLn.SchurModule.MinorBasis": [
+      "Lib.GLn.SchurModule.Interlacing"
+    ],
+    "Lib.GLn.SchurModule.Interlacing": [
+      "Lib.GLn.SchurModule.Bordering"
+    ],
+    "Lib.GLn.SchurModule.Bordering": [
+      "Lib.GLn.SchurModule.Nabla"
+    ],
+    "Lib.GLn.SchurModule.Nabla": [
+      "Lib.General.Algebra.ZerosCostDegree"
+    ],
+    "Lib.General.Algebra.ZerosCostDegree": [
+      "Lib.General.LinearAlgebra.ColumnLattices"
+    ],
+    "Lib.ClassField.Places.UnramifiedCharacters": [
+      "Lib.General.Algebra.AdicRingHomExt",
+      "Lib.ClassField.Places.LocalExtension"
+    ],
+    "Lib.General.Algebra.AdicRingHomExt": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.ClassField.Places.LocalExtension": [
+      "Lib.ClassField.Places.LocalFrobenius"
+    ],
+    "Lib.ClassField.Places.LocalFrobenius": [
+      "Lib.General.Groups.ArtinDefs",
+      "Lib.ClassField.Places.Places"
+    ],
+    "Lib.General.Groups.ArtinDefs": [
+      "Lib.General.Groups.RatModInt",
+      "Lib.ClassField.HeckeL.EulerProduct"
+    ],
+    "Lib.General.Groups.RatModInt": [
+      "Lib.ClassField.Places.LocalDefs"
+    ],
+    "Lib.ClassField.Places.LocalDefs": [
+      "Lib.ClassField.GaloisCohomology.CyclicClass",
+      "Lib.General.Analysis.OstrowskiTaussky"
+    ],
+    "Lib.ClassField.Places.Places": [
+      "Lib.Adelic.Adeles.CoprimeValuation",
+      "Lib.ClassField.Places.CyclotomicCharacter"
+    ],
+    "Lib.ClassField.Places.CyclotomicCharacter": [
+      "Lib.ClassField.Places.ProfiniteGalois"
+    ],
+    "Lib.ClassField.Places.ProfiniteGalois": [
+      "Lib.ClassField.Places.LocalDefs"
+    ],
+    "Lib.Adelic.CuspForms.RealConvolution": [
+      "Lib.Adelic.CuspForms.Definite",
+      "Lib.DiscreteSeries.Rigidity.KernelFixes"
+    ],
+    "Lib.Adelic.CuspForms.Definite": [
+      "Lib.Adelic.Reduction.Defs",
+      "Lib.Adelic.Transference.MassBasic"
+    ],
+    "Lib.Adelic.Reduction.Defs": [
+      "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs",
+      "Lib.Adelic.Reduction.MahlerForms"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": [
+      "Lib.General.LinearAlgebra.PartialDerivComm",
+      "Lib.DiscreteSeries.Haar.CompactDualMeasure"
+    ],
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure": [
+      "Lib.DiscreteSeries.Haar.LogDerivative"
+    ],
+    "Lib.DiscreteSeries.Haar.LogDerivative": [
+      "Lib.DiscreteSeries.Haar.SkewCoordinates"
+    ],
+    "Lib.DiscreteSeries.Haar.SkewCoordinates": [
+      "Lib.DiscreteSeries.Haar.UnitaryNorm"
+    ],
+    "Lib.DiscreteSeries.Haar.UnitaryNorm": [
+      "Lib.General.LinearAlgebra.HuaIntegral"
+    ],
+    "Lib.General.LinearAlgebra.HuaIntegral": [
+      "Lib.General.Groups.ValuationPair",
+      "Lib.General.LinearAlgebra.HaarUnique"
+    ],
+    "Lib.General.LinearAlgebra.HaarUnique": [
+      "Lib.General.Analysis.OstrowskiTaussky"
+    ],
+    "Lib.Adelic.Reduction.MahlerForms": [
+      "Lib.Adelic.Reduction.MinkowskiSecond"
+    ],
+    "Lib.Adelic.Reduction.MinkowskiSecond": [
+      "Lib.GaloisRep.BaseChange.OrbitClassSum",
+      "Lib.Adelic.Witt.SpaceOperations"
+    ],
+    "Lib.GaloisRep.BaseChange.OrbitClassSum": [
+      "Lib.Adelic.Hecke.ClassMean",
+      "Lib.GaloisRep.Hilbert90.UnitaryHilbert90",
+      "Lib.Adelic.Adeles.LocalComponents"
+    ],
+    "Lib.GaloisRep.Hilbert90.UnitaryHilbert90": [
+      "Lib.GaloisRep.Hilbert90.TameDescent"
+    ],
+    "Lib.GaloisRep.Hilbert90.TameDescent": [
+      "Lib.General.LinearAlgebra.ValuedMatrix",
+      "Lib.Adelic.Adeles.AdeleIdempotent"
+    ],
+    "Lib.Adelic.Witt.SpaceOperations": [
+      "Lib.GaloisRep.Hilbert90.UnitaryHilbert90",
+      "Lib.DiscreteSeries.Bruhat.EichlerMaps",
+      "Lib.Adelic.Adeles.AdelicModulus"
+    ],
+    "Lib.DiscreteSeries.Bruhat.EichlerMaps": [
+      "Lib.Adelic.Witt.FrameAction"
+    ],
+    "Lib.Adelic.Transference.MassBasic": [
+      "Lib.Adelic.Adeles.AdditiveCharBasic",
+      "Lib.Adelic.Reduction.FirstMinimum",
+      "Lib.Adelic.Reduction.MahlerForms"
+    ],
+    "Lib.Adelic.Adeles.AdditiveCharBasic": [
+      "Lib.General.NumberTheory.Embeddings",
+      "Lib.Adelic.Adeles.RationalPoints"
+    ],
+    "Lib.General.NumberTheory.Embeddings": [
+      "Lib.Adelic.Adeles.CoprimeValuation"
+    ],
+    "Lib.Adelic.Reduction.FirstMinimum": [
+      "Lib.Adelic.Unitary.SpaceBasic"
+    ],
+    "Lib.Adelic.Unitary.SpaceBasic": [
+      "Lib.Adelic.Reduction.MinkowskiSecond"
+    ],
+    "Lib.DiscreteSeries.Rigidity.KernelFixes": [
+      "Lib.DiscreteSeries.CuspKernel.SchurOrthogonality"
+    ],
+    "Lib.DiscreteSeries.CuspKernel.SchurOrthogonality": [
+      "Lib.DiscreteSeries.FlenstedJensen.CasimirOnPsi",
+      "Lib.DiscreteSeries.Rigidity.AnalyticVectors",
+      "Lib.DiscreteSeries.FlenstedJensen.PsiDecay",
+      "Lib.DiscreteSeries.FlenstedJensen.KTypeProjection",
+      "Lib.DiscreteSeries.CuspKernel.BumpConvolution"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.CasimirOnPsi": [
+      "Lib.DiscreteSeries.FlenstedJensen.PsiSmooth",
+      "Lib.General.LinearAlgebra.SmoothMatrices"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.PsiSmooth": [
+      "Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance": [
+      "Lib.DiscreteSeries.Rigidity.CasimirBound",
+      "Lib.DiscreteSeries.Holomorphic.MinorEquivariance"
+    ],
+    "Lib.DiscreteSeries.Rigidity.CasimirBound": [
+      "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs"
+    ],
+    "Lib.DiscreteSeries.Holomorphic.MinorEquivariance": [
+      "Lib.General.LinearAlgebra.ExpSurjective"
+    ],
+    "Lib.General.LinearAlgebra.ExpSurjective": [
+      "Lib.General.Analysis.HolomorphicIntegral",
+      "Lib.DiscreteSeries.Haar.HaarMass"
+    ],
+    "Lib.General.Analysis.HolomorphicIntegral": [
+      "Lib.General.Analysis.OstrowskiTaussky"
+    ],
+    "Lib.DiscreteSeries.Haar.HaarMass": [
+      "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives",
+      "Lib.DiscreteSeries.Haar.SphereFibreIntegral",
+      "Lib.Adelic.QuotientMeasure.CocompactIntegrable"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives": [
+      "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs"
+    ],
+    "Lib.DiscreteSeries.Haar.SphereFibreIntegral": [
+      "Lib.DiscreteSeries.Haar.HaarColumnChart"
+    ],
+    "Lib.DiscreteSeries.Haar.HaarColumnChart": [
+      "Lib.DiscreteSeries.Haar.CompactDualMeasure"
+    ],
+    "Lib.Adelic.QuotientMeasure.CocompactIntegrable": [
+      "Lib.Adelic.QuotientMeasure.IwasawaIntegration"
+    ],
+    "Lib.Adelic.QuotientMeasure.IwasawaIntegration": [
+      "Lib.Adelic.QuotientMeasure.Unimodular"
+    ],
+    "Lib.General.LinearAlgebra.SmoothMatrices": [
+      "Lib.General.LinearAlgebra.CommonEigenvectors"
+    ],
+    "Lib.DiscreteSeries.Rigidity.AnalyticVectors": [
+      "Lib.General.LinearAlgebra.ExpSurjective",
+      "Lib.DiscreteSeries.Rigidity.CasimirGrowth"
+    ],
+    "Lib.DiscreteSeries.Rigidity.CasimirGrowth": [
+      "Lib.DiscreteSeries.Rigidity.HighestVectors"
+    ],
+    "Lib.DiscreteSeries.Rigidity.HighestVectors": [
+      "Lib.General.LinearAlgebra.CommonEigenvectors",
+      "Lib.DiscreteSeries.Rigidity.CasimirBound"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.PsiDecay": [
+      "Lib.General.LinearAlgebra.BlockDiagonalDet"
+    ],
+    "Lib.General.LinearAlgebra.BlockDiagonalDet": [
+      "Lib.DiscreteSeries.FlenstedJensen.PsiBasic"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.PsiBasic": [
+      "Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance",
+      "Lib.DiscreteSeries.Holomorphic.HolomorphicExtension"
+    ],
+    "Lib.DiscreteSeries.Holomorphic.HolomorphicExtension": [
+      "Lib.DiscreteSeries.Rigidity.CasimirBound",
+      "Lib.DiscreteSeries.Holomorphic.MinorEquivariance"
+    ],
+    "Lib.DiscreteSeries.FlenstedJensen.KTypeProjection": [
+      "Lib.DiscreteSeries.FlenstedJensen.PsiBasic"
+    ],
+    "Lib.DiscreteSeries.CuspKernel.BumpConvolution": [
+      "Lib.DiscreteSeries.Haar.RegularRepL2"
+    ],
+    "Lib.DiscreteSeries.Haar.RegularRepL2": [
+      "Lib.DiscreteSeries.Haar.HaarMass"
+    ]
+  },
+  "native_artifact_facets_sha256": {
+    "Lib.Adelic.CuspForms.SmoothFormPairing": {
+      ".olean": "24178df9456bdb3a5945d99bd505801c60847e3088c3c54b847ee77144238e3d",
+      ".olean.private": "d8ab6d302384af7465a3108f7305ca5b1de95b59c1a2222e89d3c5b11c919188",
+      ".olean.server": "41ee35513a607f59d9b8287d77e73c1b313b6ac7c51a55bf2b16e2f5587c6e58",
+      ".ir": "66f082d3e08f9706131ed0abccf6a67389f028bd31f73fb675c44a90aa41b888",
+      ".ir.sig": "771e9e1296150adddadacb267d4bed46002b4104fc7903a635444972e12ecc78"
+    },
+    "Lib.Weil.Unramified.SphericalHecke": {
+      ".olean": "31cfd73ae7747c069af88f4bda0e030504277e29bef3b6d550ccc849a3aa8c46",
+      ".olean.private": "bf7f97133a462f2fd1f8f010f78a551142656c4737a3562066132c072a31ec4e",
+      ".olean.server": "013fad9044eda0eb07cb216494ababa5a91958b98910e3566cf9903349b71093",
+      ".ir": "c55f9c8b59661cba3adf2884daeb9be4041468c9f08c46b403f2069733ff839f",
+      ".ir.sig": "ef3bc59ca01b4aac8adae53662db1aa13ec01b06571a9b9bbe5b2d7860735904"
+    },
+    "Lib.General.LinearAlgebra.CommonEigenvectors": {
+      ".olean": "58ad62fe24fee6c0af2115fe3de8e242bb638e15d18266657a850998ef9e0727",
+      ".olean.private": "063517a6e54a09e77bdf1437644c228caa981c17854cd544a68ac09e2a7db8cf",
+      ".olean.server": "a91ebd47d2956591315359281d4e4d62f14768077047a51b69ac4b5615c5791f",
+      ".ir": "23ce8e00e0dbd3c433c687fbdf3e24d37809cd74994646c76553692cc38448c9",
+      ".ir.sig": "ec9e625f1bca92d7c93856216a862abfcb46566b651a1d138c19ae29534a4926"
+    },
+    "Lib.General.LinearAlgebra.SubmersionZero": {
+      ".olean": "818ac2e3527e440593f11d57f2961477ec06ac0b5d460c58be88482250f7fb04",
+      ".olean.private": "49564e297388467b5e43d209a0f1fbf21bdec4e2ae9abeb6aec15f9e5bde642a",
+      ".olean.server": "3c7f4b5ee48dee9b227caaffdf73c7c1ae3929dc893d02183b0b2a010ea56b63",
+      ".ir": "e37aaca63678e46a6c361c3259a41b61cd0760e2dbf917ada9be9d1ac0cb6325",
+      ".ir.sig": "df0277809490537961b66e0767b98478109b5b1142db6c28ea5f164f96b0f8f9"
+    },
+    "Lib.General.LinearAlgebra.Base": {
+      ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+      ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+      ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d",
+      ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+      ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62"
+    },
+    "Lib.Weil.Unramified.HeckeGL": {
+      ".olean": "6bfa6e2cb57806720c3b76887daeb0267dfbe07e4a2b3d1556ab720f8f7f5f27",
+      ".olean.private": "83720000d1d6434283d744d32ccb7e25b6e8d69016a9ebfa13cddf7babe7ae1d",
+      ".olean.server": "8100958e8b76fbac8f97b2dfd429db7929a36743fc06e013aaeb955d8b8a91a9",
+      ".ir": "d6bba9792ec2242da21c0ca6a899aacc96c9c1aeb71ef4bf64f5674a5e629e10",
+      ".ir.sig": "09b873f05108137049b540c13e6e94003ebe1e51d0d5b9f8e713f4c244c358c0"
+    },
+    "Lib.Adelic.Unitary.CongruenceLevel": {
+      ".olean": "0cd0f2492a6f4ec7b4a6122c60db727efde7e51287767884f6c84ecd97a98714",
+      ".olean.private": "1909444cb7c9e3173006b2cc3ac14526a8f23b515bd59f6f650376912a60aa52",
+      ".olean.server": "756306de48b99b0c3abc25c5a84d642b3d007ef606813070c106a20a25fb12f4",
+      ".ir": "91f486fedc50afbe1fde37e69b3d767129ebe9367dc57a3be35eb2be3987f57b",
+      ".ir.sig": "0a6531e6e88960c4803883b17fd31b9c80f381e1904d69cf6ca3534ee574ec94"
+    },
+    "Lib.General.Groups.CompactMean": {
+      ".olean": "7a255fac524ac0c3ac9537c9de790610d58f761c144d1811e34e0be13810ea3d",
+      ".olean.private": "c549e22b491c5373bfd2b15d3ff141cbb329da5369c786a4120d67f0d38eadf3",
+      ".olean.server": "0af774bb5bb5e1df8917b27f94fec7b4621db47b461a246d2924bc0e4e789631",
+      ".ir": "359072c60a9dcfd1798411a98007b38fe124ba71973c0beacd069fc69ce5d85d",
+      ".ir.sig": "205179f1e85da1e96827dd93e23c057a1e651827eae17b0b6e045b96f03bbbce"
+    },
+    "Lib.Adelic.Hecke.ClassMean": {
+      ".olean": "daa6e06d9ef7d5387ee3be1943ffa3b3005b6d570bcc7086df3b0f816246d391",
+      ".olean.private": "9e6c71e08583d87830c419cbe114cfc00c54017218815c5a5ecfb5d17eb00d50",
+      ".olean.server": "5b648f17109b25ad19ff3e66037f132f871c0b2a3c84357f2b76806efe72e3ff",
+      ".ir": "a89657d282fd48f63e3b7de7b997dd67552cc3e0fdc298b013d908e83aa186d6",
+      ".ir.sig": "0e821c5ad1cfeb82342e306a656c644d9a0a97e38908ccf8ca4547c94e227a11"
+    },
+    "Lib.General.Measure.SubgroupIntegral": {
+      ".olean": "786c73e4b15cea3949c2237670daa69626ce5461a96bb4dcacd7b1cd51532648",
+      ".olean.private": "3b8303ece52a981c316b5b7297acd29204dccdf2c191cb86b00e94d315f9794e",
+      ".olean.server": "ca9da0d86087325cbbffe32b16f64ba0f612b2692522bdc31e3e419b903f22f5",
+      ".ir": "94f642d5c24d2618edaef2f1f98df48dfca23a2ece40db63d8f68d2bb2f0e569",
+      ".ir.sig": "e44aaf98d81c86633c287c5650257782ff55c935e49b2b9d0efaa71206d5919f"
+    },
+    "Lib.General.LinearAlgebra.PartialDerivComm": {
+      ".olean": "16f4fcf1358ff18b3376bc4416d1e3503e11bdac9f42a302d7010e25c14ee635",
+      ".olean.private": "55a644a51a231d0d8d56d7c4b3042f9eab79862a4b2b437f5d63abfe03bb6878",
+      ".olean.server": "e4eb4a752bdd419e20c9ed2905618c30e547d6121fb2cd01cafe039f01aa7de9",
+      ".ir": "31f7e99c0fb97f7293a96441c2f8b6a3527939431115756633c851e68d4e0e36",
+      ".ir.sig": "7518f76c0f534bd215eb46f7ab77b004c61bb889b5178f2a0b17ca701c0d9aa7"
+    },
+    "Lib.General.LinearAlgebra.ColumnLattices": {
+      ".olean": "57fd257a6aaa73e27efb45056ca8042817e683fc04440f73c13d0d44e9a7f486",
+      ".olean.private": "2e593e4f2a0f8b2b6c9c4dd9218229400728e10e5c16c7eb14289d16ca1e3e8c",
+      ".olean.server": "881b5d1c4ed49e70b989edc78ce77b66ec38840b1ecd9471a05fe7fe26e40151",
+      ".ir": "94de03d6e04865174097b8be2d6f488a6d70df0335937cec5febee37eb032eef",
+      ".ir.sig": "d979bcfc06c71ba145c99dae3ade1659d899bf81ed7bef310d91da3882cf2519"
+    },
+    "Lib.General.LinearAlgebra.AdelicRingDefs": {
+      ".olean": "95ead0e311647379c8b5a18fe04d63927d044c8dbd0fde0f6137572200e82ef3",
+      ".olean.private": "cc26d4791d78229289ab12d3e9c8a380d2c46705e4a866ced5324eb95ce60e36",
+      ".olean.server": "a3be3385f95f7a47073e8c1acddef325e3cc65ce5ad3fdde3b08cd2da2c1f3de",
+      ".ir": "df938be49e674bd548f3ae86a7887406396f1e8203fbaaa50dd86fe9b2d3e4c1",
+      ".ir.sig": "9f264675a32a31cf1a3da9fb0b5eb9b98aef4aaa27c7451cb3dbe4217a5bf682"
+    },
+    "Lib.General.LinearAlgebra.ExtendColumns": {
+      ".olean": "fd8c51cd32bb754596a961997f06191bec526a1273abfdeec0074dd5ac5d30ac",
+      ".olean.private": "c9e5e5575aed5fb5cef69604a027cad3b2b63ca26d21ebb48b73866931144cfd",
+      ".olean.server": "764dde804048e99100f5abbf084bb62bbb99f8039c8818f70ca951fc581f6aea",
+      ".ir": "63ec4bdf81e2a46df1f1b40bf67e0d03bed5d3a21db19cf829c9af5f596b29e8",
+      ".ir.sig": "5b2fceb6f88bad7522d97ad123fbe794fab749d0ef91ac409be95cd3adbe927a"
+    },
+    "Lib.General.Groups.ValuationPair": {
+      ".olean": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f",
+      ".olean.private": "0c220cb7c2a578ec5e29f2361eca6fc71ee3e4196b3cb045e861be59364c996b",
+      ".olean.server": "4e9270fb576816242f37928fae1157a9adc0296f2b0f35f8f2d1e9dd54a54440",
+      ".ir": "7cbf01f62db583f28b992214d90db1a351293c60d014b86b113a045d4a8ccb1a",
+      ".ir.sig": "9cb0108abd6df851198fdda614a79706da1147b0b072cab3f6c54f28d9326312"
+    },
+    "Lib.General.Analysis.ZpowSum": {
+      ".olean": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd",
+      ".olean.private": "36eaadd9be8a9231ff44cbe93684be3c66e10d7ab838c4eae11226a4aa8e2c68",
+      ".olean.server": "1de5a3aab79ecc546baaf0966bb143189cba7a38137d3501de1b4a7be84881c9",
+      ".ir": "9f631d074b7a49dfec21006fa08825ae0c3fdd8586fb8831708cc93f1c763eff",
+      ".ir.sig": "039ffe229c8830eec5aa4c9c08031e25bc0e7cec191b53da2c237f687e69f566"
+    },
+    "Lib.Adelic.Hecke.HeckeBasic": {
+      ".olean": "572f840fee36837fc86fed233fcfe046fde509e7b4151ce67375fa7144e41bd3",
+      ".olean.private": "57f6b7f64f95a76a37a256eebabf248d98c84170a2ccfd6de8bd5e19a2b0a80f",
+      ".olean.server": "934b944b9ff5b5969e3894508eb284f14b0caddde1f470c8856e0e31f7d02100",
+      ".ir": "70e1872cd4f9ac8e1fa00f39af4583bae1ae82d0ad723ec1f2348b027087109a",
+      ".ir.sig": "37df732fc5310e23936fc17fb5de80d7f1190790fbf38d82eac248eba85545dd"
+    },
+    "Lib.Adelic.Adeles.LocalComponents": {
+      ".olean": "b96dd197b04373ad6da040329fb65c0fa39a939ce0da077bfbc1bfeeb3e24ec5",
+      ".olean.private": "2a06dd9aaf7cc4d761b6e7ff674b954502aa91df8117b1438387a00a5d6e01a5",
+      ".olean.server": "170ef8fa88a7b257c0530207b9016bb34bdf47d3f02d001a201588d60c0aee45",
+      ".ir": "9cefebe4c828985aa22c030f71f8de0f4ade29b324508680442cd78c29a526ef",
+      ".ir.sig": "1cd20ba89da16eb46d6e490c358ad180a25df173d92424aa3a30471eb31406a2"
+    },
+    "Lib.Adelic.Unitary.SpaceDefs": {
+      ".olean": "3b66e19c3f5e3c63703c3fe73b424c24e41064b3116cd953484172a2720de9f2",
+      ".olean.private": "93a36e365c524e59bc72a6abc7932378525a5c3790f1538ddc5fbe5e9654c323",
+      ".olean.server": "ceba0aff4d9ba50c021c86ae4edab66a7c4aa000eb6b375d173a3f7d10b8b8ec",
+      ".ir": "c606cfd189482ef9606731c9f37eb7c59b2d71f82ebebe80568f285598f4330c",
+      ".ir.sig": "6291048a5a1ae72d7e712d3bdce6eb5b786000400dcfcb801bf976fdb23ccabc"
+    },
+    "Lib.Adelic.Adeles.AdditiveCharDefs": {
+      ".olean": "fc7042ede8a8dc93bf8a3030ef12726cd6942f0dc2b7baf7b990686ddffe5041",
+      ".olean.private": "44089d1546f6c756459ecd0bffe61a6406ad8b3ae62339fbba80a8b2d56b7374",
+      ".olean.server": "5e40a77ed9101e1cd547e2eb83bb3b0229c9e8cdc543f3447c654893d59eb1b6",
+      ".ir": "cf40c3c0441232006d5752abe22f7cec52033bb6f40aed85849f24a27af8abd9",
+      ".ir.sig": "57e875a0d864d88b29b7a584301a51da7186f9c27ac468f716f7250f302e1da3"
+    },
+    "Lib.Adelic.Adeles.AdeleTopology": {
+      ".olean": "a92f74d58c4b872c5fe2262630530fc9c3587537cd0301880910b372b7b25ba2",
+      ".olean.private": "35edf244e05a6286cf9fc350270171aa3c7ca79f0615ffe5533f5c1e607a088c",
+      ".olean.server": "093e93915360653067ea6cf65b11671daa2d9fa95c0b6ec8a609291df3c29f27",
+      ".ir": "a44f830aedb3def94b48c97153b0cc4ac39edba5b541c3c40b93d0039f1c8637",
+      ".ir.sig": "6957e5a274acefcef520b4f6b8faad157098ff9e84749e276a8d08221c934217"
+    },
+    "Lib.Adelic.Adeles.CoprimeValuation": {
+      ".olean": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432",
+      ".olean.private": "4f83047e96164c6ad5e801f74fa8e95e698a70688a198ad5789da97fab6d881b",
+      ".olean.server": "a046e2e88c910c5c15eb4b334bd4485369732b2ea9aeac76b7aadb09635ceb8c",
+      ".ir": "9e2c0c5ba41a244f5042660548da9dd921dc654c9eb8b3d475533cd8f676ca2e",
+      ".ir.sig": "dca860f5cc808e0a069c69bb2502bb4fe865fcd394a9f000e550f81bd84a4bea"
+    },
+    "Lib.General.Analysis.OstrowskiTaussky": {
+      ".olean": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775",
+      ".olean.private": "24cfd565b0d13783a58aab0ead3c56d1b65fa00db20c7c6ba635b75df6205827",
+      ".olean.server": "7ab76d99ec8df9795e04758eb5f770634b632b8673d2b92f657d4e2996ef765a",
+      ".ir": "dd1640bdfcb40578363e6fc5dc5d11120e16d58703df621b2ab687ee73a17103",
+      ".ir.sig": "a6db58e2ceeacccf9577e897b11cd53bb0e879b25b8b12398c92ab783db143fd"
+    },
+    "Lib.General.LinearAlgebra.ValuedMatrix": {
+      ".olean": "1c2fb8bd05152ce73aa48875a8ea9d6b745445716e0fe85414c2db95de4c3f91",
+      ".olean.private": "a05851166726dd1c6e63ca0067790b76c0593d9bde1cfc390083ad6d4dffe80b",
+      ".olean.server": "9a9ff80360bab6d753304be4af137326da3ec94135b225c4253fcd76df5bf528",
+      ".ir": "926cbbdeb88fa81a2970b1c095f84d9dd25724a9b3d56c8eb636c0dd02385969",
+      ".ir.sig": "f7424d368ce7ac6e2039a50f47b46f025560d15c2e581b4b4499e6d2e136921e"
+    },
+    "Lib.Adelic.Adeles.AdeleIdempotent": {
+      ".olean": "02bdc9c04596f7eece4862b970e5b0f8101ef43f4af2b29d1364e2256f434e5d",
+      ".olean.private": "c1994c9f914ba0969cadbbb769a2f2fee82c76dbb281716fdc5f14818ad1f217",
+      ".olean.server": "412c8a126d99990819f95f8b06322b8dafb7e8705658001826a087fdd21fc6a9",
+      ".ir": "61c964274f3458e0d153d773cf07df7f0c436adc959a722a7c716f7163ea2e3f",
+      ".ir.sig": "24cea20dcb1bcb22ad0f20a6af848dfc50378000139381bc88f0bfb20df8958d"
+    },
+    "Lib.Adelic.Adeles.AdelicModulus": {
+      ".olean": "0503fd9be1e4047ce97be67a4ffaa07901b30d6c788dc5226884ceda776da496",
+      ".olean.private": "baeec90d9bd2550ad34408e44847d546e0731c9549682d09fa529ec98d52309a",
+      ".olean.server": "4c5a5168f8057b54c988831654caf3bbed5705df3f5ccffb59aaa3b80ec59034",
+      ".ir": "b62e7e7cec8ee470e9b2d055f9fafa090c7edf859a8141ee5b65d6bd50cff2d9",
+      ".ir.sig": "a91e0031a53d896978ac09c7041d3d3467da66dad77e8a0e99e90f12ddc4bbff"
+    },
+    "Lib.Adelic.Adeles.AdelicAbs": {
+      ".olean": "94a5f3631310d5d4ae58a96bcdac43f496120b080290e788e03b87bace87f8e8",
+      ".olean.private": "654691bc96ae0fcb4faf43b1f64254b3ef9301217d14ddafe7c606cef590f6ba",
+      ".olean.server": "0bcd85c9bf1804031981dfb9e7451f61aa2f1565fb9b9bddfbc304c1ec4dad1a",
+      ".ir": "7e9311dec9164adbd86cda5723afb5ebd8897693db70c587cbb1584f17cb9d52",
+      ".ir.sig": "2d109da0331876a2f49afbe49af86736112d6187cf84be0017a2ce94ec2ff369"
+    },
+    "Lib.ClassField.HeckeL.EulerProduct": {
+      ".olean": "8b1a812e0def15b7aa507cfcd952a9a885708e4313e8d2ccee5bd0049cfc75d1",
+      ".olean.private": "0dbcd81eab862d44bb15969a32fff27c674483d8f14b9f4df4d3ab9911b58599",
+      ".olean.server": "8e2a5b973c28f6733c06856981161df290b3e3784893664ab4bcaa41f3f3fa0e",
+      ".ir": "b7454842e0ba1e656e2582e566169384fab34cd4b3556b7d1550ddb00e20c21d",
+      ".ir.sig": "20e1f3be7b63e19ce38fcddebc646c23452cadaa9212bc3e37e35bf0c3d12c1f"
+    },
+    "Lib.ClassField.GaloisCohomology.CyclicClass": {
+      ".olean": "78c6e74d7fb0983d545352d711bd0f778641b3a997e7271e435b8ec7637d2d39",
+      ".olean.private": "af3c98c47547129ffb96897675a325dbf50e5a8cb82a462435217d3d32862e12",
+      ".olean.server": "6528067249e3b9e42d46aff37d2e2f923295b936bc37a5b52e4f06e67f70e70b",
+      ".ir": "508b1ee6b9c051217985fa1dd74a52f13a52f703f9f350779087065b66327ada",
+      ".ir.sig": "e518dbd4660f5f652224697adf589ecfc1279d1c5fa0f6d3ec6b743cc2494fe4"
+    },
+    "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+      ".olean": "4c91ac54a360681422d6a0fe52b0e34ab42e28dbb256a228c24607b64446848b",
+      ".olean.private": "216c00cd9df503214b40fc055d18694dcfffee04bbb201ac0ce589fef494d911",
+      ".olean.server": "ff9d989532592c49ff0b6377ec54cfb653a38ea7371203d9960600614f55bc26",
+      ".ir": "5fc88e819c4b40f952a2f2f8f482b9c1f30380f3479df95af770cb0ffa03f6e4",
+      ".ir.sig": "7444b72c86e9c460b2e238ffcfe93ce058d7f02fb26437ed0b700c0031edcb19"
+    },
+    "Lib.ClassField.Places.GaloisDefs": {
+      ".olean": "83898675764cf316f1fd19afb2d63005469a670c3fae7a7e3e8f16c81dc5dee7",
+      ".olean.private": "81c9c6d8f0072fbc4b905dd49e2b8b40de6654efd70c3f3dcce98f981f07829c",
+      ".olean.server": "a77c1d2f00615081173ca669a01b3fddd49a300e03a422b1d9db7880edece236",
+      ".ir": "2b3742bdc8ea9f75da420572a22a0c9fd18e1dbdd65d0538b380a9d6f5e7db1a",
+      ".ir.sig": "a6414c0858c77d034cde3668581a05cafc85e8c271196f32c22e4ef834e58461"
+    },
+    "Lib.PadicHodge.Crystalline.NonUnitalUnits": {
+      ".olean": "89b3fd32c99ba768aa62dd817b3bc9c00b8ca5c6c75aef3fd3ec1838599c3a53",
+      ".olean.private": "a2e586bbd623719d2f099fe88d32b494d6787b19d32ecfd49a686d3e2b1839de",
+      ".olean.server": "06375fe0d17ab026ce72cf9240c042ab4226a8eba2762260d463f8d5545f84d7",
+      ".ir": "55b1c8198132d6f83b4257c2c6aacecd272481af4ac38c08685e26c1662253e6",
+      ".ir.sig": "82178c604999ba8dc8a5dd318e926b922398793f1c57e509c89bac9cc8e03e76"
+    },
+    "Lib.Adelic.Adeles.RationalPoints": {
+      ".olean": "aefd5db741511bc8d8822184f8143d607a2bfce86f109ecd0d90caa18fa7d001",
+      ".olean.private": "42a76422bb1d1f3cb97f812f6c51daf8b71b40724343d3793c1fced75dd4558c",
+      ".olean.server": "ce1fef407db88f27e7f60398a30534b0720c7a862ad522a9390b9311e9f4aad6",
+      ".ir": "87731d0797cab46cff61d3d6af8b6283c0b26275e071308c2b2c07afdfe20a09",
+      ".ir.sig": "42e16bfb01e2052f828f236248fe6e9f85df01b755dd5c691746f652d0972509"
+    },
+    "Lib.General.Analysis.FundamentalDomain": {
+      ".olean": "5c02c3a334ac60ed17585731514ee79e54b40d5fe5f4d374d119c647a92b5c5a",
+      ".olean.private": "29bc223a526a69d4a65985aa1ef65b02a16177cb1ff2bc383d9816a39ed45504",
+      ".olean.server": "1751697df6fcd55070cccbd6ac0c192ad9e682f7fc86c9bf132a78ee2df366f8",
+      ".ir": "f0af187a10d9066caa185e9f802f5e586265a2bb383d38672bc84b495ef927e7",
+      ".ir.sig": "56ab737de1fa56b0a48622e86c8e9b57a27db5b7f053ad9f392b9e823a2e2984"
+    },
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": {
+      ".olean": "d8a2c48c08e4a9a30cec27942a521fc96adbd96d4e767288ac80c0f72d189abc",
+      ".olean.private": "d7c4b30087ee0272ebcf33fafff9b7f482cd427fb9fd964c3a447b7e447d1560",
+      ".olean.server": "ab0089769c0811aaf961ffa053b7517321d3191005cce153dd2b04ce1bc9cf6e",
+      ".ir": "25510136aa47131d48f27ba843b8dd930fe6dd1192197a91bfecd24f89743884",
+      ".ir.sig": "e0e388271635adf4f82588f8ced0ce585dac59cbd5d4919c96b15a6e68f0dae6"
+    },
+    "Lib.Weil.Construction.SubmoduleNormedSpace": {
+      ".olean": "6db7455d7b917030e6ebbf2f66370ed7f8eff783807925c90aad275c131992d7",
+      ".olean.private": "74146efc0e8a37d69f61b591608d4c833e82e696b16c670f7aeca82e8283ae45",
+      ".olean.server": "1f75403810ebe69724e895343e84a12779bed2c6aee1ecc8181dcf51e42d9395",
+      ".ir": "74b3cbc2ac352197465ea8f51833556e98b4cfaf0b6f60348b3a6b83b374a2f4",
+      ".ir.sig": "422b51e47ff0644acc2dc64f3f7056e1c3709f49dd37ea435080c9768d0ccc3c"
+    },
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": {
+      ".olean": "62f847523a3142bc6d66d06bd851af96ed4d2e43e1ee56ac2f3896f75a69f02d",
+      ".olean.private": "1dcc2f725819b05e831cf6cbc2a89d77f2faa89747e4322f1f2f575951664474",
+      ".olean.server": "1c8462e31aa93fbf7f8e90abcd3ddcc529cbd877c40cf948f7ec55b4d44bfe7d",
+      ".ir": "e80440d4ab4b3036b50eccd9f3dad566428351cbb813adbd6463cd3909dc12f2",
+      ".ir.sig": "030b299fe3bacc8bd5acd74b28fb219b008ed9f45994b0aca40d21058d726ddb"
+    },
+    "Lib.Adelic.QuotientMeasure.Unimodular": {
+      ".olean": "cbf84a9957ea32c35c4d924c1b97b97a5a5c5e8b5454a98917c31443eb33292b",
+      ".olean.private": "e318baff734b6b95f47dfdd5ac5599cbcc63204082e4b6b5d3f460e870137bb3",
+      ".olean.server": "0c9fdf66d9483d2c7f29e1b6c3a220e41cc50ee3fcd17672826c497d947b9a01",
+      ".ir": "4d89b39e7f8280dfdf42442c33f63f51a9760206e11fe1a64ce7d22deea79c5a",
+      ".ir.sig": "cd16e3626e5848709dc31f297a0c47790fe0259f4530ef36aa867bc91673c6fb"
+    },
+    "Lib.Adelic.QuotientMeasure.Packing": {
+      ".olean": "72b755f25146d4ed983d347a0fb489a35e9d9d4246047e9679f2282f4a1c5e3e",
+      ".olean.private": "a23d5e07f23d039e88ab3ff9006ecaa68fb072dee12c2bfab66613ef5c2c189c",
+      ".olean.server": "3edfaa245852b3ceb5631fd786f1c80d9a6ae407ac6853d05015bfd2166347f8",
+      ".ir": "7cb46a43dba0878ea325ae34780f9c1de8004da44d0754c5289165b301d189ec",
+      ".ir.sig": "d8d67651def80330580fad6dee718884a60ea1790dbe40315a167c00a70508d5"
+    },
+    "Lib.General.Algebra.GeneralisedIndex": {
+      ".olean": "4aee3587bd9349498842823dffdb1685a116fb708b4a4c2f2176b64ccc84f670",
+      ".olean.private": "4821371f3701084acd239834641e04aee87d3aa9bb6a2434488c619b1d0e82e2",
+      ".olean.server": "4b8ae4010ce61bbb8575d64c6e23b777157fb81452815fe3525f086a6585af22",
+      ".ir": "3ced3a4fc92665a54aad00cb472313c6ea300be76c371fab34193d67099b21ee",
+      ".ir.sig": "e1a999a019cd00b4f15ff02ebd82c3e51a922903516b8a5a3bd4849627b07838"
+    },
+    "Lib.General.Measure.HaarModulus": {
+      ".olean": "14008c3dae2bc03ce057cc15ef512897a2e9a670affbe9c7346a64658c510ce4",
+      ".olean.private": "91e48eadfa877674d01011d0e5bde8ec9fd0bf6b549a71d352e50f048bfecbe6",
+      ".olean.server": "2444e1594192ff74af4e1396122c993eaccf32e68468c65b7a93eec1918725c7",
+      ".ir": "e2a38def7176e25bebde2ca4ae442bf12b856ccfe8e40374ec133545268c6cb8",
+      ".ir.sig": "7175272773b3fa6c2f8b322d7a042f07218a1c8651406676b8956b901d038b6c"
+    },
+    "Lib.Weil.DualPair.Kronecker": {
+      ".olean": "dc5f508e41ec27185697c9575b3bdba4afef1df939a721de1fa724ab1bdc8a10",
+      ".olean.private": "2659599bbcb778fa00d08651b828c06a54e5d0d3492b4974059e27094ed8fa4c",
+      ".olean.server": "fed86c2032404838b76faf07adcf35bbda1f203ab61e7dad1e7d89d49d1b84f5",
+      ".ir": "8b915ebb7ded410201df9f657886c7d8dd16ca019374850207a482613ed52e4e",
+      ".ir.sig": "d78dcd55395c595399b30f6d63de23b0c69e5e10528bdb3df908d25810187af9"
+    },
+    "Lib.General.Algebra.InertResidue": {
+      ".olean": "1e871ddaaf689cc39fec23f1fd4b6b17538876923e8060bc798154c8c827005d",
+      ".olean.private": "7a4f92b54c4719b2541419f8fe1b0216134b021f41d93c5b858121bf23837b9c",
+      ".olean.server": "228e7ebde775d1cd25d87e950ba9e6921a6bbfcaee5cc391b9d45dbfa809d91b",
+      ".ir": "e0e36aff8cebc440b6454ed6dfccf2aed3f0688c8d8211c40986976f5f1384f5",
+      ".ir.sig": "6bc492c17ffb1433a9e356cfcd2e80805c0ba2bab460e2c20d9f8f5211c218a5"
+    },
+    "Lib.Weil.Construction.GaussSumSign": {
+      ".olean": "a991e79987cc684f013f4b5a98ba9d74f55fb563500e3636f066f2bdb548931d",
+      ".olean.private": "7d96cb1e41ccd15941e7321b66b1a94792f65a397e371ac35dffb0ff3cb8597f",
+      ".olean.server": "50e5f0258db12e810db0cd681e2924bc23019da82bdb835afb93224d2dc4f470",
+      ".ir": "0e75395cf1fa1c6bdcba7b6628fe3b5702cc547663141e0db35d443538124c13",
+      ".ir.sig": "d4d4448cd93154fcd1fcbe4d41b2f6803cf7b51bd4e0f8238490ef51a30998f1"
+    },
+    "Lib.Adelic.Unitary.SpaceGram": {
+      ".olean": "12bd45b1b3e0a6459a5a7968eeaf8ba1e92224aef4ea56ea92a09b47a5a153a6",
+      ".olean.private": "06eebb4f92dcd89fd544c52663a62f4180bd7140b8a250ddad7663126a6461c7",
+      ".olean.server": "aa73fc1e220547f8f5b60c402c04e9ed3770f368208d4a53d2e2adfeac42e09a",
+      ".ir": "97c1474bd599c92c04aee6ff6476b79c8c8afe4fa16b75068b3a20a0e460896d",
+      ".ir.sig": "d7f3d542cc18c47204b25cfe869240526acfc371d250cee70156d7a681187a36"
+    },
+    "Lib.Weil.GaussSum.LocalHomUnit": {
+      ".olean": "e64de3d916ac6b605c8ab98ca66cfe5aafa962fd143e8ec0ae79148aebc1cbdd",
+      ".olean.private": "ccf873d205e9d6f5bc49aa83d12e6fd8b37244fc8b0db7c40175644be58a08d2",
+      ".olean.server": "7b9f686850b94b3205b06be7b415a2e422e669485d2dc2141b6eca3cecb7c472",
+      ".ir": "5c77a155755a2632607c5394bf69399f78dbb958b56ce4c502684d501ee334c5",
+      ".ir.sig": "c3b5978f4a4870fe9acedc98d0d7bda1a97b4951182ff6d405f7d87e1a5465ff"
+    },
+    "Lib.GLn.SchurModule.WeightRepBasic": {
+      ".olean": "d86213b41d6cb0acac97fe46a05d98347a7508f0bc9167e69bc56e1ebfe896b5",
+      ".olean.private": "4d1df03e78801031ef5c8534b77456bf67f5f943e87feb17bad660a8adb8a0f4",
+      ".olean.server": "4f34ede60725523d0535111cfd7b15970e4013808693b00499c31d19998e0977",
+      ".ir": "446af804ff37a44d4ec33516f2eddc3ae606e58fdf3fe4e8bebded8f434a3aa8",
+      ".ir.sig": "8d229b6ec020f91387dc2296bbcc38f0f7d13e5ff6e0ab4283e1855b94b9f4ce"
+    },
+    "Lib.Adelic.CuspForms.DeltaForms": {
+      ".olean": "af3aa367712d45e52298dbb8f9fa3cf0a6e71460d67eb1a773acbc7c155383d5",
+      ".olean.private": "09fa91158bfd2ea8546bbcf836d947a44b5419549afe003a9bf4fa003978959b",
+      ".olean.server": "2afd4c4986521d3ba61a9e805415f4483f18969cc72285f4150687e0469929a7",
+      ".ir": "12807b0242b5106f1f03cc90262693d53d756c3d360694953f24ce24f53bed8c",
+      ".ir.sig": "c1fe2784851f1b5794ed738dfedea055c54db6bc5eb061271806d46eb38c8ea3"
+    },
+    "Lib.GLn.Branching.BranchingVector": {
+      ".olean": "a796711bf887974792097feb728b1a2dda1afba63167c483bc6dba97a99a6bd1",
+      ".olean.private": "6982df2cb031ba74d6ebe8eddebbaa50de3013c2e9ff6f7964ff26421707ba85",
+      ".olean.server": "e0e54f25d02ae89c731cfd32fc98ea2fd406134f300650a8dd95f2a07383f560",
+      ".ir": "99b09aa48d8b310f7e51258044cc8e4bdd80c4698f175e2f53d6c66ff2e774c8",
+      ".ir.sig": "e985b9fb9e68d2168d6dbffd56b6424279b2d2c86b8f41c0a32c4e97fc763436"
+    },
+    "Lib.Adelic.Witt.FrameAction": {
+      ".olean": "973789ff61f8f54405f99bae8847aadad48d1b41dda2fad6101df2292ff9fdc5",
+      ".olean.private": "091631d7e451fbb006966c22062677e2b3ecfa3121227b08097cf9ca30181a28",
+      ".olean.server": "62779510b72b7eb91560953538acae1badbaff2aabf94969348e9c54b69573e1",
+      ".ir": "c51a6b9c40e261c1f5fcbfb7c4cacac22443a36d196ea6c7be872e97f4e4c219",
+      ".ir.sig": "301e98233a8012efb4347b32356cb53c61886eb23e4f7bb2a01af443ebded448"
+    },
+    "Lib.GLn.SchurModule.Gram": {
+      ".olean": "eb22c6ce0b70f0ac5d8866ee56234823bb07693893b3d2b6468eeeffd7658185",
+      ".olean.private": "218d08079c6e8f7ba6f301dd72909fa3e60a933bbde8c0bc5a3a465be78ae2ac",
+      ".olean.server": "c8a6bc056ff3dd2ca06313fd6bcefb64c78f7ef5c5f2ef4d8cc3ea79e28afba5",
+      ".ir": "533c0285729eb79d7927249d29ca4800bedef09abdb0b152558b484b6e13ba65",
+      ".ir.sig": "2571debc5e02b11e1e0cda55a70a2eb6864a1da9a445bfdeaab34b9efb9e4e07"
+    },
+    "Lib.GLn.SchurModule.Hook": {
+      ".olean": "0c9bdb175027cdca649967d8d139f5fe7e101c102c510ce4e293ba00ed2eaf40",
+      ".olean.private": "6c314f58d95acad9df2b7b3c645a47dbb5c7759dc06cef320428484835325bc3",
+      ".olean.server": "a141543e11eb47e979f8a0584c3dd12a9fbd30a246eba32b7263262e6ce0bc12",
+      ".ir": "471ccb184a29af4a4086d0ac7c4ed27c2e6c80cf65b8a8acf8e04b7ca55c5773",
+      ".ir.sig": "456f3c08eea4685eabfe7715f64a039b54cf63a3adfeabd2dbc9d7f8ebc4808e"
+    },
+    "Lib.GLn.SchurModule.RationalRep": {
+      ".olean": "151f8d0fbde70062d2f943fdb924b672ee0dea46141c8dd64fdd5456bce12d89",
+      ".olean.private": "172d9f7611fa4f2cf6f7a66af7d5f50c812a014250b10917fef1286c2cbcfd87",
+      ".olean.server": "d52400f55e9cb78cff9934f669f164c39201a514a49d82d7289837e60b1ee122",
+      ".ir": "2fd7a40b596bd93ecee457ac29d6cee0738d35ac0e19a64bc2b5de5efb81b8bd",
+      ".ir.sig": "efe8868fd1f9cbbc9745de83fb7e76c299b93ee7d580df76d0a1416f88d0c868"
+    },
+    "Lib.GLn.SchurModule.SchurMatrix": {
+      ".olean": "67b282db22c83a19fc51c5b8e69d2bbcffad4b9c9204258807ca65d898f16295",
+      ".olean.private": "d2c81db4637007c73dd5d00ee35bb200aaf5079390cef36015d8433d52c94e33",
+      ".olean.server": "99b5c9972724de60eb5b4302590c563eb6bf89768bb4324d215244867b48c664",
+      ".ir": "5f9b5a9d46f708f3ecdaafc7796d4f79855aa40b03c9deb82c0b09d9c47f3cac",
+      ".ir.sig": "462d10aa6162e8758794530e2dc62ed277e22e3efa36af83d2ebc7b3b48eaa5d"
+    },
+    "Lib.GLn.SchurModule.MinorBasis": {
+      ".olean": "46b2a688d52466ee64be7071755c26048f5b37cccb795f05ea6323832a7dcdaa",
+      ".olean.private": "bc75dd0d39936b394eb34d72cbb33749f60fe59ad7fc9059dfbb980bcf94a3b4",
+      ".olean.server": "b54253a9c0e5dab73a8a98ca87ae1eb7a8ae1e9f115227855117a97cd4312e80",
+      ".ir": "4c3b3afc5e087f4d05942ef915a8978ebbd9b78e7bb77a875ddebd6789b2d02b",
+      ".ir.sig": "dab01a16285fb2acb24f0aad96834f5f2bf4f54af26e603ae21b48bc217c7113"
+    },
+    "Lib.GLn.SchurModule.Interlacing": {
+      ".olean": "355d5d586a5e30f734f823f0d416291be5772a40ce58b702b5e0d30fa0ef01ce",
+      ".olean.private": "849dcc9022bf1bfbbe222546a09572fd888bd7340dda74e5e0ecca5f9468f465",
+      ".olean.server": "b981fd4dff35a895ec9917d3c0e0befce930b0809237785e41d571eaa41928dc",
+      ".ir": "96c1b6c44df06f3a057b0a608fb0e46eaffca5752391ce9d1220d7a79a324f96",
+      ".ir.sig": "75e92339b6fdd42421c5fc8db74e3af2db72212b87ba3a5a99613011a95f9aa3"
+    },
+    "Lib.GLn.SchurModule.Bordering": {
+      ".olean": "328644400cf29e94b49c02395c2a94cea1acf1a9ebd507b9ca40f7da9111d86d",
+      ".olean.private": "fb3aed2e10c40043d1dcad0d941b9ee294c54f909abb163976c01a812da4a82d",
+      ".olean.server": "ab1054f440064ed1ee98bc1213caebac713e667ed77dfd93be3d92253fa09576",
+      ".ir": "4195ed84402fe99580a0bd6891ad0184f1abc03fc8a8be5ebeca068aee72d360",
+      ".ir.sig": "43529bef2a4b414af5a0a1a9628b49fbbdf18e1d8956c3d3747de62a7b9460d9"
+    },
+    "Lib.GLn.SchurModule.Nabla": {
+      ".olean": "307ce7fbeaa9d7a36ff93cc0fabe0cab28ad8c38c1d793c3ea0261e6684db392",
+      ".olean.private": "bee4b5ef517c13d1f9251df0c50d92cda7fbb75c2d3c23849721e38815bda7b1",
+      ".olean.server": "8001f0f3e0a624c9b82889a8008e5a5aaf22f0e6cc841b4c47234e5d8702e6eb",
+      ".ir": "2f6378b11ce1906027842dd69ccbb3e62ddd4fdb1c5350dd1bbb8cf32795a061",
+      ".ir.sig": "6eeafc83e01e5ce3d9170dbe08c2e0382056ac40373cefb7321969615023c8fd"
+    },
+    "Lib.General.Algebra.ZerosCostDegree": {
+      ".olean": "1813e17659590281c4882d205c234e198407dac951562570ca0c654e39c9a1ee",
+      ".olean.private": "82f888f2574e557d6e61dafa8596d1535d9e1d88b5320c5ad96ff2513d89460a",
+      ".olean.server": "5b8bfd893cef926173508fcf332ab388ce254b94c1a2bcc783eb502a28a829b2",
+      ".ir": "036f504db0d93c8ef60eb8142ad4f0d8f10310043af3180bc57ab8e316bee72e",
+      ".ir.sig": "98fad35b26cc5b4da42a9cecc630e621453cc68178b0fc88b0a42e7c49a8ff32"
+    },
+    "Lib.ClassField.Places.UnramifiedCharacters": {
+      ".olean": "bc0426ab2c2e3a2a1ac01f263a9399ec29a95121196dc957e00af7b775ea3682",
+      ".olean.private": "ab5f2d07464677a6c51e06de028593f313a8d9c92088050f312e279be1b2ca07",
+      ".olean.server": "527fd4936fa5327e854c4b27089fac3d4772199833cd582c58ccc689d1e81daa",
+      ".ir": "25731c8449a638ddfb17e8843cac64c44dd2a2af76c0684731f3de4d88388329",
+      ".ir.sig": "e2ea08c74dd272630972ea59b3f422eff5a5ebb56d02ba5acac644e7ad3bfa67"
+    },
+    "Lib.General.Algebra.AdicRingHomExt": {
+      ".olean": "d82beeb5631ce56303a57478832f20ca5aa5ef926f6a34c12177a30c729683b4",
+      ".olean.private": "c64bf7ca60c3826c4a393d9c5f23505f36e2e8d35e22bcf23f14f6aa704abeec",
+      ".olean.server": "986913de9c6e738aa126f2a07e83e6792738ca28c6a0f8c0922abf2aa90d1702",
+      ".ir": "bd2d389405471b4bb9bb10eb7d0bede744434316e1320df09247b523d2eef0a9",
+      ".ir.sig": "3f9d6548344876e18ff84bf1db4ca4e525a572cfef9dc7963acef2cc7811fea6"
+    },
+    "Lib.ClassField.Places.LocalExtension": {
+      ".olean": "6b01565e21a6fa095dfc73cecda3d9d2c152cd4d8de941f321c57697812806bf",
+      ".olean.private": "640e45b0f58c79a47f425ba584efb622c8431ab2543b19fecdb64b59f623af9d",
+      ".olean.server": "0563ff3f6e98aefb4f1cc9a703b25b2f9da0ecf165aee5720442dad1d25e1c31",
+      ".ir": "3db1bde78af0a312e3dc2eb1b922030e5bd2c1193a78e79e37c388e20865de53",
+      ".ir.sig": "b702273d7a7f2f095aa21ba235254a655a5ede0080da048c67fce669971b5604"
+    },
+    "Lib.ClassField.Places.LocalFrobenius": {
+      ".olean": "c1d9f265e0b85f80bb1c0029316a3cb37df8138bed6f2507d803f70516c0d9ba",
+      ".olean.private": "4aa3fefbd28b4449761583ee2361dbe3c45d65a2ae6afda78985cb7fb2d692bb",
+      ".olean.server": "a98caa2cbf485b1df2a311330bfe6f28dc3301468d499dda0f84b37b256eb59a",
+      ".ir": "6037ca0d0b2c4876b5064d91c64c7af32b54ce6b92975dab528fcfef41591c7e",
+      ".ir.sig": "a3a0de36fec1f0c39116ddc7cc458126ad72f4490c55cad00089cef9e0386eb8"
+    },
+    "Lib.General.Groups.ArtinDefs": {
+      ".olean": "49ff0b0a4cc062263cd2833a4e8fb3013d32d48db8753c7c07caaacd556f115c",
+      ".olean.private": "01ab6fdadc7d1f9596a9c00e0622d03f623d5dac7e5cd51b34973055bc412666",
+      ".olean.server": "151a1be0786e841c899a513240a9b642bc91a1d0364a1cb7b038289464ace777",
+      ".ir": "d06032da3ee882497a7fef96c3be841c71fcf41fd87bf2bad8ca023c1bb8df83",
+      ".ir.sig": "9696408d2eed308705c6752af916b163a0fce93c4c6605c003b00449011560ab"
+    },
+    "Lib.General.Groups.RatModInt": {
+      ".olean": "280108d9cbe69bfc28be2e46229843e576d05de46f83a7df9ccbc68d0942510d",
+      ".olean.private": "63cbcb8fbcc6bf1d37f70e192697a9ffa3a87e0395df6322c0df21cce4bb9261",
+      ".olean.server": "5239b4ef6b00f6ad958e7a3dee3409e64c07d516828e5a124aa8b2ee92df5892",
+      ".ir": "ef17a6d1b9e4222b691dec5a3cd76fe80c3436b1bd11ffb80e2498b9fc897840",
+      ".ir.sig": "c3f59b3e40a7d5f5cee6c683a31a6d836d05e7ffc957d9fc9cdf8d04abe5aaa6"
+    },
+    "Lib.ClassField.Places.LocalDefs": {
+      ".olean": "12a81375c92eeec437d7c3f6a7ba6759a74ee3756c23c16462ae007e2a874d27",
+      ".olean.private": "4e92cd298a3125ea0b1d000f00fc1997c19fe14312c7996b153a33545c6a1897",
+      ".olean.server": "3ee0fc9b186983aadfac6271b0e0d165b0dae2f76706a0a2254fdbc32eb6c13b",
+      ".ir": "01a3027a61a2fd5f8ca8f6131c2c1f699e96d66bd9a96865ac2a010d30ab0169",
+      ".ir.sig": "a39729116fcd180d0627ebc32246998bfdf59dfabbf3ae2211839fdd2efe90ff"
+    },
+    "Lib.ClassField.Places.Places": {
+      ".olean": "e840b3d0e653d99de18823ebb259a58009d160d97238f69199e285b76fb980dd",
+      ".olean.private": "c4e3326db194705a9f08bb1ee33a78551ed1aceff8a468d88cc0622ccb7d8a7d",
+      ".olean.server": "5180984b77506a1c0e67a6115c854b9e5e68ea11e71b829b92e0a1f8b42b5c38",
+      ".ir": "0fa04026218189ccfb25093805dffdec37cdcc05e0e6f85b7637519a803444b1",
+      ".ir.sig": "24985e0cee23635d269caf07aea2161a89ea3c3ce97c569a740d44111786fa32"
+    },
+    "Lib.ClassField.Places.CyclotomicCharacter": {
+      ".olean": "e89c4be96d7d0992e6d6e77b774656b9276ebc0b0cde7a15b06dbc34653177f3",
+      ".olean.private": "a28bee8d6e188481f7f4662b7e356488922cb1ab93461a145ddc06b8d4d7adaa",
+      ".olean.server": "14564a7d3a814d8ce09d5995c4a9ed26e64014158b74d38510b687d6740bf756",
+      ".ir": "c2e16ca078cd5a0ab6f8b6092e30f2d982501d512d62169244515e60eadcb862",
+      ".ir.sig": "6da5fa97fd3ceb5d3279f700edba21ce827c3be816facb66888f3acf31baa2f1"
+    },
+    "Lib.ClassField.Places.ProfiniteGalois": {
+      ".olean": "7feda2578394107197bc77069d338514ae4f899e071d3ead79f85c57828363bd",
+      ".olean.private": "76cb29eb121ed894b4ab1bc487e42dadc423cb39b1e5a96ff634339c80d260e4",
+      ".olean.server": "ca787966fc244da601f8ca73e68a3d49da0a486147680b7ce384bf0a6bb5f4bc",
+      ".ir": "87144108e88ccac63438fbfadb5f19871dca6e66b9bdb4287cb0087ff5a73526",
+      ".ir.sig": "c3937f630fbcea708260396e351359baa6f76ebdb5a364593d2385aee44f9ec2"
+    },
+    "Lib.Adelic.CuspForms.RealConvolution": {
+      ".olean": "9a38520cffdaaa33747a3002c175e9e679cd60cdd362679c73bc3d7a55a03b5f",
+      ".olean.private": "0c11004ef58dacb39b8483a5bb8b7864180110e4db472b80840607995366a14d",
+      ".olean.server": "ed8de0747432e62f99b10377d03582452426f4efc1e0fad21c5bd3a20e4ced99",
+      ".ir": "d5d206945964ca42f7f3eb1991f3a51afd76d8e5e3a1ca9ac145863737a97388",
+      ".ir.sig": "8e2c31139b532932190c588492a146b9be09f93a21865195384d6f6c7d65c4ee"
+    },
+    "Lib.Adelic.CuspForms.Definite": {
+      ".olean": "2f0f3b8d2894b49a6728b0b472364b8a39ca9cd26aa62b48ceedc8b215e8300f",
+      ".olean.private": "85b8978dc17cf185882c46f3be1d2d7ec59aa64a510dd333d18c7f9319c23a2c",
+      ".olean.server": "48bf6ca27f54527a6c0f5bd728323329a1133b3e7518169507dc147bb997d1da",
+      ".ir": "3963b9f3f2ba216828eda5c34cd801ff553955eddc363e4dcc30c0135d320bc0",
+      ".ir.sig": "f01947c688864798fcf8596d609a925f2fd0b778215d3a46b8baa5a6131bb179"
+    },
+    "Lib.Adelic.Reduction.Defs": {
+      ".olean": "d51b319ccee78d85c1cc0e6866afefc8dbfebf5bd77ffab4a8d4638023c3edf5",
+      ".olean.private": "3ff03a14f2bce2a886c001b4fd46ab1b94867a4d4c77b6242d8e5bb88b9fa831",
+      ".olean.server": "a74bd7a2e403c21b9bdb6e51c4c823eecdb4acd7b8e6d64d32a1e43925cdfa9b",
+      ".ir": "ff87c13d324ab11ebe99eace6af5c5103fe11ce41a479ab1bdb2be156c050ee9",
+      ".ir.sig": "0013c2878e6e5a45c64ad2b6d36c191d1dcfd08a6a467ce1ed78e08f6c713b18"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": {
+      ".olean": "6ee8090f510e7c6afd60fee94bb08aa01bf21fb0384a202d20024ae18adbf097",
+      ".olean.private": "9d98fc20416427b4c182b703cc62354b95afecd46d03c84b9116acc943ff07cd",
+      ".olean.server": "1e404fee43bc1fb3cbe67872a4eb64ce69edf4e705d18a4d03f89b6efcd4cc7d",
+      ".ir": "8b72f0f3430866379a66a1959e081fc739641839e2a3d17b2aedb8fd32c52bc1",
+      ".ir.sig": "453635de7db8e585a4ea14af406bc56f44d6f101140f17ee48925ef7ff49bae5"
+    },
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure": {
+      ".olean": "e7b781dc5e2916b152412b36a24c7ef0178141b56dc4fdb014055c0efebfb6a9",
+      ".olean.private": "05e03eb75f624e5fe5115e8fb5ab762b3b50b384196b6cebaea947e39d7dc865",
+      ".olean.server": "853dee5e5f326935852c815e5b3ebd4f98459859325d9246493e720984229731",
+      ".ir": "b59aff2d408535829c2ad8e4b6039dbbd6442a327672cb61143e77e3fec7e16c",
+      ".ir.sig": "928a3c5c0323a78a3b47cc5f6d1a27e31462e9899ea86eb0f786542fa79eb583"
+    },
+    "Lib.DiscreteSeries.Haar.LogDerivative": {
+      ".olean": "b08a8e563e7090e8ad051a98851e348442756bfacf0395ba2767de500bd2ca25",
+      ".olean.private": "fa1b15a21495ea3290ef42789616fe614935ecf5051ec58c35ec2badc3c3ce7c",
+      ".olean.server": "e0e93690ac07fc1054340f8690785015e69bd2e6c44b3d5ba304492116edb4fe",
+      ".ir": "52fd8db39fbee70fef645d87b115f56120ae051f74d91a5553cd51459d8d0b2b",
+      ".ir.sig": "87201a1858a49c24a370d0e4499cd89487aabed1ea14cc4559c8e6c79caad85b"
+    },
+    "Lib.DiscreteSeries.Haar.SkewCoordinates": {
+      ".olean": "e40368e7dd7aa8b411edc4635120d28d902adec9335540333df85d64338eba02",
+      ".olean.private": "3590d5e5525e8334c594d63fda3c41f31500fb398127d8c1f9051c03128f7b5e",
+      ".olean.server": "ab342f8ddb214696a17f29bd71dc2aa10e4e4edd8c4dd21b172fa68f531d0a61",
+      ".ir": "64a4219fc6274a29d00447c9db6b505214c170bd90a241b3cc534829f183c95a",
+      ".ir.sig": "1c5bcc1b4b894f8d605667bcafb7594d72be33f261e4284e95271665d7a57048"
+    },
+    "Lib.DiscreteSeries.Haar.UnitaryNorm": {
+      ".olean": "8d56763b9caee7ab2d18ac417011287f8d840da6b4b660df34c70f864c5b0b6e",
+      ".olean.private": "8b39d4bb11f4866e911365edcf117bbc5d13fc903ea237723daf9e4ae5758268",
+      ".olean.server": "232cca7b6b7b85b5a808de7abc2c177322e4755ac5cd091359d891afa296e8e3",
+      ".ir": "6047d03aadc1fdaef4b16fbf6f55a869a4dc7221d5bf0093a1d2d6388fab568e",
+      ".ir.sig": "7676866299cf75504a27286ee528d400bfe79a4277a038b101a75fcd14443f6e"
+    },
+    "Lib.General.LinearAlgebra.HuaIntegral": {
+      ".olean": "859fadbac6c6d37435c84280fd307f512a1ca39b8f62767f7a8833900429a063",
+      ".olean.private": "1cd977c19ffac73ba228cf9e114dedddaaf69a3ec305bce524717e90ee221e6c",
+      ".olean.server": "44d9af3f7c8c9b054077ff2a11207ffb44fc0cf06d03eb6cff713bf037e3f3f1",
+      ".ir": "c783f57bf3097f98877c6e6067fb20677a4f25efea885d88bd861e5827e35262",
+      ".ir.sig": "4c49efb6be90da386cc823af91c576dcfa97a837c4803a96a8561173cd533dc0"
+    },
+    "Lib.General.LinearAlgebra.HaarUnique": {
+      ".olean": "4f72bfeac927dfde3393c25e3a1c4d7a4011ce9146b4db1d0d42ec665cf61f87",
+      ".olean.private": "b34a0711195c738648f20de3f87d4b4deeeda61770128b2c3fa5a7613b30891c",
+      ".olean.server": "2ed02daa5cb2537a96ba7ce7ce542ab1e258e0c6b218ae879d7114daeb20e4f2",
+      ".ir": "9b0474b83971c4d4a3303f77c7884aceebaf10eb12756dd3e0c10e11bbb11555",
+      ".ir.sig": "787e4e753abd5302c0585e127284cdc0988505e3d4b84da80e181a42870a94e2"
+    },
+    "Lib.Adelic.Reduction.MahlerForms": {
+      ".olean": "b4866743ebd894c0f59c4530e518b29bf192343659abdebb9e402a6b71f46bc1",
+      ".olean.private": "f0ff8c14444de731d0af9dbd86f154f4957ad7fdd397c6e98be4aae2e9aacc45",
+      ".olean.server": "bdb6c7e2b56c35f75dc280d9fddd20b16f30eae4a0b7d297c6629c0d7ae99973",
+      ".ir": "3e6b23978b8efbb60274672d6991310fbbf05997aaf5255696c4b2e80bcd0250",
+      ".ir.sig": "a9a808422bf99cce6e82f5e8a19644b7f08b20fcb56a03cf21d80b515ed5935d"
+    },
+    "Lib.Adelic.Reduction.MinkowskiSecond": {
+      ".olean": "5743ce04fe9f64db4ae94f1e3195446838430f94186fc122e146e275b14323f1",
+      ".olean.private": "69592e2ed4c9f7f96ff5fdd59f54471855a2401024455cc9898c0979ba9eeb4c",
+      ".olean.server": "27e34764e6842d2bff48683b286a5ff13efd44dd0ddc9b67f42feebde79d3e68",
+      ".ir": "d2ff02ad8953dbfe5a6a58ffdacd494419086d019643646c93ac13aef7c1d795",
+      ".ir.sig": "d6035ed202bb9ab44ba2730131d708ac7ae170cd090b64192cdaeaae633901d3"
+    },
+    "Lib.GaloisRep.BaseChange.OrbitClassSum": {
+      ".olean": "89cd07a999f59adfa496e02508fbf3cf917ef0009952cebbe10b68fa2f337388",
+      ".olean.private": "815fae0864a2c470b655770f3b556314692ef5a82a6d974a8fe60313189d8684",
+      ".olean.server": "d297e3b383a249fb7f4d7b3f3195f82a870adc2f887bdc35cef37ca6f959f6f7",
+      ".ir": "3b11df72ddd6f4efee53777988fed640442f71209c4ba8c3b61cbee1144afa73",
+      ".ir.sig": "2df9cbfaf570b2c9f9d14418023a963b7b45cb06f22840688516e5ada570249c"
+    },
+    "Lib.GaloisRep.Hilbert90.UnitaryHilbert90": {
+      ".olean": "a95c9a144219f0fb098add9426e0055b02420608f6b481aed30a0724c563d82b",
+      ".olean.private": "0c3bede48ddc47a83e093708d5e2751e7959d66152f08642bcf4f2848c88b4ab",
+      ".olean.server": "357fd436579dc512ceffcd9ab6a0d88ba9a64ab85fa457c8ef6fe0fcccf1ad2d",
+      ".ir": "b9710bd50d3218b48eeff5ef0e821a114071fe5644d0c02fb6006f1cb77c8b54",
+      ".ir.sig": "e839955655c673b5b73cc2659cb6f5e6321bae0ed0f354bea8af946b9324152e"
+    },
+    "Lib.GaloisRep.Hilbert90.TameDescent": {
+      ".olean": "ef64c0ebc46343983a8b58bb7d6185c3d176a0832746a08fce51c5105eeed83d",
+      ".olean.private": "d98a6f56498592edc8639d819df639e9267c01697b9f2154ca0718c1164778af",
+      ".olean.server": "eb4753deafd7aacf7769c95658b272ea669581c3dc28e894a084d075fdea289b",
+      ".ir": "dbc1d8ed3b53f8115a8b3c8cc87e1b24317b5bf54131a02afd34c1de2fa02fff",
+      ".ir.sig": "f482d264fb3ded7df5ed127d8f5be374066ed7a22d4a788ffdb2faaf45ec3878"
+    },
+    "Lib.Adelic.Witt.SpaceOperations": {
+      ".olean": "d0d5dd59e2f4b4d2d8334437ce3e0e5e1754203d531afdef43dc4ebe37bdd177",
+      ".olean.private": "b6ac8bb7579b9bbb9e9f31d153951f6eb158e8f5f113479ec2472e7a296432d3",
+      ".olean.server": "bc915cedee71b85bb50e6fe33946dfa9c76d67139a1c44d5e5890497fcc843cb",
+      ".ir": "4727a0b5f1082c2e25467b918c81d9a63d1268e3ff96dbca62d879adf9abec1d",
+      ".ir.sig": "925fac3d5b9560d9ccfdcadb4b2bc073bfe53ea3b87b90bbaab707ad6ab24a3c"
+    },
+    "Lib.DiscreteSeries.Bruhat.EichlerMaps": {
+      ".olean": "0b82bd5d6b73083ab9ce07b21688fbd40e352ceca6dd4b664c8ed9d68bc8f994",
+      ".olean.private": "b1d0cc2d44b7ba72781fe3d3775d1d86327436d5dd015a3f40ec4ee4ba446b32",
+      ".olean.server": "4bb8501153b9d1dd0846dbb9663343cf18958fea00b84b0d0aa00e65cca80f6d",
+      ".ir": "e2c96ae90a61a73b05c7939c02da891954ee3900f2a5b35e01039190831d91f9",
+      ".ir.sig": "3fe77e5fb80819ec1e382d7520abd36cd56345ae694d8ef172982f02adb1b7b1"
+    },
+    "Lib.Adelic.Transference.MassBasic": {
+      ".olean": "f20b55c68348c3a3299b1f42c92bda23cf0d45d99ab1b3e61d1d1f62c98709ea",
+      ".olean.private": "b287dee38299f110c2c45b0f61929a051664d6b195b8aeba6a0d68047f73d4ac",
+      ".olean.server": "9bcaa90df0b75c0c8c7c88594f2559e6d7d730d0f0d86522ed6b129e276e0830",
+      ".ir": "ff01fe5bb66ea5ca135ac53f3d9c3555498af4e42dcb83ca6427d34325ed0706",
+      ".ir.sig": "bd2c572d104bf3f4b1e0f10f6ffe9f7a0cfff5bf1662aa1abbc65675eb5adcf0"
+    },
+    "Lib.Adelic.Adeles.AdditiveCharBasic": {
+      ".olean": "35a2a4b706f62c0030a559c03f7ca5441cdd2aae974ceebdd767c5d2edfc8b47",
+      ".olean.private": "14a67722dd296b6fa1f3a824d8d5ee52c4dae9c550e6bee7aa367727c204dee3",
+      ".olean.server": "4745eb1c9017e3038cae1fc17db672addd85255a12e2be40b42f2134c06cc116",
+      ".ir": "9cce543e3b650d307edb2cb28e1ddf8db9fe491cd16e98e4c4940867a639d441",
+      ".ir.sig": "62dfde778139c6bbe3dff85dcf2e97cabe1b5b6b0335e193408e7325189b8387"
+    },
+    "Lib.General.NumberTheory.Embeddings": {
+      ".olean": "c401eac320b01954fe95138db55cd215d7503ba5f05678eee707915c3b949db2",
+      ".olean.private": "e90b923acf5626caadf2871c2317e63ad5edf41e4743aee2296e329c155eb29d",
+      ".olean.server": "52cc6714635a206b89eb547781a18ed55752dddf66f398befc40caf49f996fc1",
+      ".ir": "1a39d05ab43b63d3e8f80632bf44313dbb40ba7f1c90469a332be3a2fd77573b",
+      ".ir.sig": "bed81d17288827a209c145dced6215d6256fb53e926802a3fc98580a2d4845a0"
+    },
+    "Lib.Adelic.Reduction.FirstMinimum": {
+      ".olean": "87695097b9858940bb812c02a4a32df5df2065430f6fc9c32f35b5cb025cff43",
+      ".olean.private": "b86b9aed427e3e97b400ebb5e1bc1a9917e9a28ac1be9e09725cc166362d48bc",
+      ".olean.server": "41e59eb401217160008e680e95ec0d6d773decc1c7e7c3d5b44d4632aa073747",
+      ".ir": "6fb9598cbb9dfc5c69df012c83fc09462bf3a16cdec63a3a1d9b7fe78f692397",
+      ".ir.sig": "c90e4f8b1109f4850fede428eaf4fc56a066e79759a06311ad11d983740f276a"
+    },
+    "Lib.Adelic.Unitary.SpaceBasic": {
+      ".olean": "91e512e377a6b0f1ddec6cbcadf07b48ed61bcb9fd8a3193ac8f0f9b20c9758d",
+      ".olean.private": "27f88d49e42e2d880b6f5fdf330adfd976f442c7dc0b847cc1a5b737b6f08cf6",
+      ".olean.server": "489c3fb2ccc0f61a62d3c14d37b4384b1f26d38cd8555155a5ae968a1a015b9c",
+      ".ir": "fb3c4dcc44fd29e2d6607090ba3e995f5a852b76a36870ba22f60a07d9ff323d",
+      ".ir.sig": "14c1fae6c740b36b947c831d182e37936f1a8d60304c5717232b4235bdde31e1"
+    },
+    "Lib.DiscreteSeries.Rigidity.KernelFixes": {
+      ".olean": "c3568f4cee4dd9b43ff59081844328cc916c0866bb3b8a4d75313d2b6939ca1a",
+      ".olean.private": "e6e62fcb286fe061d111b64be08dcee8d187065b865e4645fd870374d4dd384c",
+      ".olean.server": "0312696233ebed9b924527d8905dc16ea8e3cf84a87254cf3af2b71225ecf94c",
+      ".ir": "89fd64355e9184e91b112f206cdb17e2fa912a84d1d71bc6f879a7a72afd1471",
+      ".ir.sig": "bccad16bb8b63cdd197d238c5ebe140457b543252f51df346d683b113406c6a6"
+    },
+    "Lib.DiscreteSeries.CuspKernel.SchurOrthogonality": {
+      ".olean": "581d4d131c975f524726c809904f668889f024baabb36e8f5f608415efa37b23",
+      ".olean.private": "4ff4af0ac041f3edde99f1c5a5be3614ecab5cc37707ab2a63eeaaaff1237ebf",
+      ".olean.server": "fbcf0893792a21001dc1072d5c4d1687b5171e532b0b828f4e585431a195d40c",
+      ".ir": "f0e511993c41da6a09559db86bbc9de6b82e0359d871d4aa94e155c3cd1889d7",
+      ".ir.sig": "81adb6fe500f70581420075afc0a7bab3d83c5b5069a3ff97cfb324b31f587d7"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.CasimirOnPsi": {
+      ".olean": "1b93ecf74629fdfdc30ecc4f3ade07d936d9d9f58451ea6cdf338ef6fd96d573",
+      ".olean.private": "f20a0dd0bf54da98074dc95fe9c933eb1fcc9b082f7e5614fccd9a4d1bdfc557",
+      ".olean.server": "84e0bfc67d0f3332e9f1168ec6f12a245e09e71b58d2cdc9cc511e2fb9097fe6",
+      ".ir": "9294917ba018a24578a37a21ba23056c92cc41833a513876f37dffe7ba63b2eb",
+      ".ir.sig": "e8ecd5066d900cb495e4e3c475e1947082c0d4ea2fd20c699cb9b0a49dd0d547"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.PsiSmooth": {
+      ".olean": "a670f7ba6a533348e97907ac187789fba1eb9195b40c0ad595dca553edc00c72",
+      ".olean.private": "181a3cfe0aaff35a3d699e5174efbb51849994882187fceebc9201e05744f320",
+      ".olean.server": "9a5e07861a41a17ad1e29e43769f7b0e521e16fb4bc246f22f10d9d0ec7baf21",
+      ".ir": "bac2ab73428f55ddffd529b7864ac2a573abfb269ded08b79d6646003173cac4",
+      ".ir.sig": "24876e16595ded518165d63f527c3d8e6c16aa61da2e2d63b941cdcd6a4d6312"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.FlenstedJensenInvariance": {
+      ".olean": "4422dba27751ce934a5cda45f4c405e1ff8ca454bddc826328bf6c09c0dd12ca",
+      ".olean.private": "d850f94823feeb7e7d4f3fa714a76a930133090e9b022ee4051d39b343244048",
+      ".olean.server": "2388bfa4a2c8efb0877d3df47678cc839ed863fa0473368058a998acb7982c39",
+      ".ir": "103ca76072fe89691720290977dcbfd6c7f07876d1234f745c997477ae63a569",
+      ".ir.sig": "eb03b2ebff66fe4699275521af7400395637e2c357808f43fcfa4bbee589e77a"
+    },
+    "Lib.DiscreteSeries.Rigidity.CasimirBound": {
+      ".olean": "05728c2b77215924e83155c3cf59c84352a58e91884c61c487b2848561fedda9",
+      ".olean.private": "e60f7ffc2c2a7041455e4e063bfffe6f9e124f001e20c6b5e9554592752efa51",
+      ".olean.server": "63d1bad14b78fb2380872deb7c654787e303a67b855dddf9dc73366fad364515",
+      ".ir": "56f452b87061be85ed5891c0296c8227d356287533ed197f9418fa41750c78e1",
+      ".ir.sig": "70ecfd21b61248945a1d61925146351bf8c1d955afd61ffbb8bf17d982cc711d"
+    },
+    "Lib.DiscreteSeries.Holomorphic.MinorEquivariance": {
+      ".olean": "6faeadfb962d205db925bf05817534eb803ee8583154c6adab9931b511e4175f",
+      ".olean.private": "2ed55e21dc754e7940d74a23ef030d3caf7d4d960210b97305593401a16dbc0b",
+      ".olean.server": "a5b8d8cfcb25e82aaa4d885ff3c18a213e6ea276cc371c136dc7701f0175578c",
+      ".ir": "51cd6333b448bf3c8e3c45bab54fd829ce9730de6ff997d4334ec6dfb7d69dae",
+      ".ir.sig": "294ef3113079eb2781ec3f596b2c34152f7b6170281e0468a647d6ab96560f7b"
+    },
+    "Lib.General.LinearAlgebra.ExpSurjective": {
+      ".olean": "365444007100aefbfd37f7967ec3cd788a1918b51292e32add689dcd7ff211f2",
+      ".olean.private": "4a80fe69ddca344bd3cc46d0f18f516808d3c435e3ecd436080855c66f4cc6d2",
+      ".olean.server": "20a17ca8195e61259601f419d4a5e9229e7cc9487da12c86314b124393cb2498",
+      ".ir": "fa64a19a8a3e36a7d5d3e5415b4ba58fee8870bfd679fac08415b48ea72b70a1",
+      ".ir.sig": "a4907663560c823904ed985b0763f319de4d520cecd23d917ec76870df653e30"
+    },
+    "Lib.General.Analysis.HolomorphicIntegral": {
+      ".olean": "9b541e8b321fa39886c82d337cc1bf471c2ed7735863f7da0a0762f6c106259d",
+      ".olean.private": "f5c1e2b192e16a091a46430bb293832f6756b9ec65cc568e770d783ef4a8276f",
+      ".olean.server": "17b43d97b6500bf6f8fc674c694f1957c85a14e3e95daa8786686721acb0138d",
+      ".ir": "3279220ffb9e3ff85e49db27e30d650d8e44f01e3edf1cf4df04034089b56aae",
+      ".ir.sig": "1f4100127b1a927e0cba2159a54e8999c55aaa8b9731ead4c9d5dc8b85aaef32"
+    },
+    "Lib.DiscreteSeries.Haar.HaarMass": {
+      ".olean": "0defcfc930e40882a27bee5c2c84e577815bfdc27a4ec5cd424bc0e4494940c2",
+      ".olean.private": "60472d7acbd2dc1caeabce69573a886e29f0923bb4c726341fde0ee03950391f",
+      ".olean.server": "e8be2f5b88672a496748a8f3f9731ad611829c4f2aeae66572db0afd908d8238",
+      ".ir": "f08d02c51748068418cf8b4e424f83125443bbb161ceb1a8ce55764388fddd4a",
+      ".ir.sig": "859a1856233bf748b73e0ad9ce71af51585054c00677c4afaa661ac66e254939"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.RightDerivatives": {
+      ".olean": "6cb45b0808343ff2f3b09161197d0e6f356bf81b7755aa9905d67f36a33e40b6",
+      ".olean.private": "3d46328d86b47e557bbe151c3d9434ec6c30a432ed98533acc6b94d86282d396",
+      ".olean.server": "0ee4a6e627859c0056df2f6776deda184b67c6842573fced728275dc25ba0501",
+      ".ir": "ad6bacd8845ff1af6ffa3d0c5695f13675bb4125bdfb6a96791d3ce85e8308c5",
+      ".ir.sig": "915b8142de365d1fb88de3b6c4110d5289e4ce829b94eab20852b58a49d58ab3"
+    },
+    "Lib.DiscreteSeries.Haar.SphereFibreIntegral": {
+      ".olean": "6919d2a4d85ba61d389fe2c600475a4f84c2a4b7bdd2166697cbf7f0dfbd3c5e",
+      ".olean.private": "faa9cb71b48ed131ea0799dc2ea4feb5ce59e097ca4fc8938e7605670fa9e820",
+      ".olean.server": "d530f2b1744f76d718a2aacdfdee0bd4255abf5d6408af2a2119f413536aa976",
+      ".ir": "6e4cec3ceecd3180bfc5a079dfd98d5023b8eefb1877f2865fe2598218236d1a",
+      ".ir.sig": "103bc4a931be935216eee3665cc6b6a0b84d10f3e1d603c0c132a930e8b23a4f"
+    },
+    "Lib.DiscreteSeries.Haar.HaarColumnChart": {
+      ".olean": "d851d7bd1819fd3a36fdbdf26c4ffff6c122fde0262bb242ba655525d1dfbc1b",
+      ".olean.private": "85eef51096131722d4d7d21c6190ab830f5ff5b64f3ee7d98264d7d9be27b667",
+      ".olean.server": "edfceade885585914b26640470fcd596d7e946c9c2a0fb51d89e5110aae3cf36",
+      ".ir": "723c15d8743ec3661ee67bdb0b7686dfcb688d9fb73113361dbb2a9a0efe20c8",
+      ".ir.sig": "12ca27a8a3b181d63f9cd5a8cd927a3fcb4755886af2937f7c5e36ccf2e52628"
+    },
+    "Lib.Adelic.QuotientMeasure.CocompactIntegrable": {
+      ".olean": "765d3c1fa122aaa8d9181a46efc6330c944328feaebfe85a737741c1c05e9f52",
+      ".olean.private": "0d9df212bef2a0b6141b51c7e3498a7173882aa984bcb86787017f54c2655879",
+      ".olean.server": "ebc54ad16d0e53b4198030f8887cf88cc90025c8990a0fdcee09df7ea3fce2c9",
+      ".ir": "9b7787b7318cac73c7772134d74a2ddcf88d361f804013586a5c7a786c3cc1e5",
+      ".ir.sig": "454d2a85d4bf724a34849e9baddf924e2c3bed33f6b274a09510adf7a52ea2dc"
+    },
+    "Lib.Adelic.QuotientMeasure.IwasawaIntegration": {
+      ".olean": "afe423aba04d6af6385cbefd51af6c18adc624470cd0821505dfc905fd38e8cd",
+      ".olean.private": "655e883c1ffcc4b6e240f071130c7cf8ad6b21b4ec4f003bea24388feaa24df7",
+      ".olean.server": "81d12787761670eca6bc01827c0ee816384ff9d06b8ae893aa37a3a7c0abaca9",
+      ".ir": "4b8b4c7a117bce0ed0c6cad244742b72fbab063992bdc3ab291c298f1da1daca",
+      ".ir.sig": "8644cc48f2c27a5ba69f65929dcea0cfa1d92685cd025310b10c2f19113d4479"
+    },
+    "Lib.General.LinearAlgebra.SmoothMatrices": {
+      ".olean": "77ff36d42e43472635c6b2dbe53329dac1dc0b5631d32701072a34567974b05b",
+      ".olean.private": "049ed9b448a6596ff39459b78fa3dae4171635a4837ac140e249ce64b47aa6d6",
+      ".olean.server": "fc8eb4c203cbc01f40028596317ce5052c79272798f90eee167680ac0bf8041d",
+      ".ir": "986873954eacae21ea7bdd28fe2bad4f755276f254d3c5abc86ff8341926ed20",
+      ".ir.sig": "34f70867a1c64d4554eecd6705a5e635ab455057e06c96aacd5fbf1fc56e6b4a"
+    },
+    "Lib.DiscreteSeries.Rigidity.AnalyticVectors": {
+      ".olean": "8edb0e6cfc94a05701d1c62b5ecc26cf9f9793e61ea2f154aec61ba674773d95",
+      ".olean.private": "c38496455f019dfb5f9ee121c876bf096de0e80cd6ffd443b1bd2b2a67ef0fad",
+      ".olean.server": "037c744cee0ad5d2736c5811e25c04f41984fd58cf976232a4ffde589680354b",
+      ".ir": "16afdeb136520e5baecde214a459689850ae0c3906662a8426ceaeb4f302c439",
+      ".ir.sig": "b670b75e667825970c0d2b70b259d555ff5cbf214b501e3e15845cd782dbea2b"
+    },
+    "Lib.DiscreteSeries.Rigidity.CasimirGrowth": {
+      ".olean": "13e7888ea4c8531dfa069d8c8cb25c596fd4054ef7fb014d4bbbe472c533cb96",
+      ".olean.private": "76a1ea56e26c5bd332051f4e636fe5a7adc2185b668950335cb031e32102d02e",
+      ".olean.server": "f568b1831080f88349eda6b0c21f27d682650a4716751ab47d97fb6184bc04b4",
+      ".ir": "f88e2097befa9e78407ebc20f5fe5016b8eef74792d3b04f86877e3665a33731",
+      ".ir.sig": "0abada266e877c24097f078d80b311604add97dbc68596d846eadb68f7a4438f"
+    },
+    "Lib.DiscreteSeries.Rigidity.HighestVectors": {
+      ".olean": "62c2d124fa8977dc08062df12184ac5377610b7228de2d89da468a60e47d9911",
+      ".olean.private": "d968975205e64afb2353334611935241dc0b1c53c4303d8f17f562cc8552e2cd",
+      ".olean.server": "7a62060ec1a06ebbe894fb55530eac99edaae99a85760d52e966f408244e05f4",
+      ".ir": "0a5e318a7b584256f9bd1777527b2e47d54167268708e3b7eff4806374a7f77e",
+      ".ir.sig": "112aade64fe6138974b6842f00aa2dc06340343a09707b812609faec9d0cddb0"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.PsiDecay": {
+      ".olean": "cf578093df7266662d2fee7869db327f5cb7b220c0caa43aaec7dcb22fa69f92",
+      ".olean.private": "a26c0172c7be1b7506a2d9cdfbba879c0ceda15bc73d89c87286fcd4373af6f1",
+      ".olean.server": "edf33f1c950ff3ce0111e0487af1d6d03525652f518798b3a6be8282e743c997",
+      ".ir": "b2afa55bdb6a64146ca252be1f40336827575b80cf80859231701dffda7e92e4",
+      ".ir.sig": "24bc3116a45b0e3bc6bc2cae59214b5caf74fd88bdc417dc3c2070de27eb7458"
+    },
+    "Lib.General.LinearAlgebra.BlockDiagonalDet": {
+      ".olean": "3183cb96ad155fdccb8531c3d4b189f6af85eb5cc503dd6ecd42d2b90d4924bb",
+      ".olean.private": "b8b6a3ebc28143ac1a58d98a2608ccc73902de2dc3bf2d0b3c09de1f5d6c20dd",
+      ".olean.server": "a0a71814796320a75cce5ecbf675ba56e473dad933254292abd341e7c980070a",
+      ".ir": "b493911625c91268e5baba899141bace8d17ba6e2455dbb8b89fababfeb49854",
+      ".ir.sig": "ef20ec0d7477579bb5804672685eeec1d1f25450a6ab67b066c3d73f16d309c0"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.PsiBasic": {
+      ".olean": "9b9c8b70ee504be360b4ce5fb8c16bbb15f6932ece51662a7d6d7329ae61368f",
+      ".olean.private": "7af4df6fb51bbc7431be7fecf583d460c73cecb59b867a559b8cc4905f4fb2ce",
+      ".olean.server": "073da425c5ae7c8b6ee979ad0a85bd55b5e1872580f90c09e0d0fef47095b657",
+      ".ir": "6768dd64a147d366b3b43ee93e6c27c9354f0d4d91ca50a69f5df2453b37841b",
+      ".ir.sig": "65b7edffbbf8f2033a0a59ef09fee26ec699f2d1ae9b7a4688b2aba0d6771fe2"
+    },
+    "Lib.DiscreteSeries.Holomorphic.HolomorphicExtension": {
+      ".olean": "7747b4c20e6af389c8d2ebf3d603ce7a04871919784b38e479a7e6cc943f9764",
+      ".olean.private": "2252f790cfd2d38dbc71fad939300b7f720e88a0e98db0b930bbacff0fcef114",
+      ".olean.server": "6d39c802467e82bcb9547adb3b782fb77073ea4fdd692d472f6ea1d4929a720d",
+      ".ir": "8156f2977bd00eeb0b4a10776198020d5979cc2ffbc316e3a3c3b9a4022c6bca",
+      ".ir.sig": "b7fc845061967359f698a23b2e553f1c6f6dd218ef1544985308f2eb2327abf8"
+    },
+    "Lib.DiscreteSeries.FlenstedJensen.KTypeProjection": {
+      ".olean": "d086222e182c70ed29647be107ea63140f11a2436de78068843e8ab3c9e48c37",
+      ".olean.private": "912ec17fd6c03b6a97bcdf409cb8066dd75eb10d278841993550e1b547aa1fa5",
+      ".olean.server": "ae450cf784d51db18bdd574aff57ae1bb18624cbd71430b7c8d9dac7d4d174d5",
+      ".ir": "5cdfe8276c3f7635f0b9d74502ee3ecbf93f1abb1531d6cf24f26570d66d4bda",
+      ".ir.sig": "7568b6b45282158f1f2d741c17343567d9165cd6d1121468e9001e7ad29f5465"
+    },
+    "Lib.DiscreteSeries.CuspKernel.BumpConvolution": {
+      ".olean": "f695886a1cd297f1acd501ad3b8cbf63719b6acbf6d80396464c15a42d33ec69",
+      ".olean.private": "2d3439b32ce10d938a606d73368964ad3a748d33ed02d5d58cfd504c5b42ad9a",
+      ".olean.server": "c03e48f487aed985500bf9e2242bbef3398bac879d02f6a25e158a67c11fbb7f",
+      ".ir": "0d2c67b480e67e8b9192614a0820798bc0054163e502f7b5225fbccb38b990cd",
+      ".ir.sig": "7f657e443d22defbb2f0476918c307ae85c61255c678e35f9a06d228c74fe2a8"
+    },
+    "Lib.DiscreteSeries.Haar.RegularRepL2": {
+      ".olean": "050e9f19ffa6a5a82fc8d74e6917a85bebfc445348d73b80c68ca20d9d8e2a55",
+      ".olean.private": "590c221ebbacca3750de0b3ecce870d735e7c775c6bc5dedae00e7972086f652",
+      ".olean.server": "1e727f4c8db3c26d3ccbac4fa20427692261f38113e42364b8c239bffe00ee01",
+      ".ir": "b21b0e5194a37966f420ff4d6d8d49fe96f109d46ae339ab1219d0fa0e17888e",
+      ".ir.sig": "40821adf3f506db42127714e0c27a7cc58abe0044cab84c9797b18776ed98492"
+    }
+  },
+  "source_count": 117,
+  "candidate": {
+    "module": "Lib.Adelic.CuspForms.SmoothFormPairing",
+    "exit": 0,
+    "source_sha256": "17697b5d141e9464407ddaf12e715b560ac8c73e472699a08e57b13d987234cc",
+    "commit": "24954b2814714e7fe324bcdc0304c0a9ddefb909",
+    "tree": "ffbd19a22cf91aab3933995029b20d5cbce0a246",
+    "parents": {
+      "Lib.Weil.Unramified.SphericalHecke": "31cfd73ae7747c069af88f4bda0e030504277e29bef3b6d550ccc849a3aa8c46",
+      "Lib.GLn.SchurModule.WeightRepBasic": "d86213b41d6cb0acac97fe46a05d98347a7508f0bc9167e69bc56e1ebfe896b5",
+      "Lib.Adelic.CuspForms.RealConvolution": "9a38520cffdaaa33747a3002c175e9e679cd60cdd362679c73bc3d7a55a03b5f"
+    },
+    "wall_s": 30.63,
+    "guard": null,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "system_cpu_seconds": 7.8125,
+    "user_cpu_seconds": 22.140625,
+    "peak_working_set_bytes": 2310709248,
+    "peak_commit_bytes": 8323493888,
+    "olean_sha256": "24178df9456bdb3a5945d99bd505801c60847e3088c3c54b847ee77144238e3d"
+  },
+  "compiler": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "checked_published_source_map_sha256": "3d2f5c2fbaa0280fe95b7c6709ffe840c016de52e14590ed28158867468cc612",
+  "actual_core_source_sha256": "17697b5d141e9464407ddaf12e715b560ac8c73e472699a08e57b13d987234cc",
+  "own_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "own_log": "",
+  "axiom_table_diagnostic": {
+    "reader_sha256": "872fe685e097ded47cd212359e8de375f32f36a2403227aa4b9f69ab3722d2a9",
+    "stdout": "19 declarations, direct sorryAx references: #[]\n19 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n19 audited transitive axiom entries, 0 offending: #[]\n19 declarations, direct sorryAx references: #[]\n19 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n19 audited transitive axiom entries, 0 offending: #[]\n26 declarations, direct sorryAx references: #[]\n19 entries in _private.Lean.Util.CollectAxioms.0.Lean.exportedAxiomsExt\n19 audited transitive axiom entries, 0 offending: #[]\n",
+    "stdout_sha256": "f1153c9195c6edbe93b666cbf4fb233a5301a08221852529928167f220843b9e",
+    "allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "exported_entries": 19,
+    "offending_entries": 0
+  },
+  "previous_reduced_import_ab_sha256": "22d21b7ee17802d4a5ece573609033c782ab64998b4bb7482d7ebe6959d4e37d",
+  "independent_kernel_replay": false
+}
