@@ -75,6 +75,25 @@ def controlled_files(before):
     extra={n:v for n,v in now.items() if n not in before}
     need(all(recognized(n,v) for n,v in extra.items()),"Foreign or ambiguous runtime setting; retaining owner lease")
     return extra
+def process_identity(pid,proc=Path("/proc")):
+    d=proc/str(pid);fields={}
+    for line in (d/"status").read_text().splitlines():
+        key,sep,val=line.partition(":")
+        if key in ("Uid","Gid","PPid"):fields[key]=list(map(int,val.split()))
+    return {"exe":os.readlink(d/"exe"),"cmd":[x.decode() for x in (d/"cmdline").read_bytes().split(b"\0") if x],
+            "comm":(d/"comm").read_text().strip(),"cgroup":(d/"cgroup").read_text().strip(),**fields}
+def pam_child(pid,group,main_pid,gid,reader=process_identity):
+    if group!="init.scope" or not main_pid.isdigit() or int(main_pid)<=1:return False
+    child=reader(pid);manager=reader(main_pid)
+    location="0::/user.slice/user-1001.slice/user@1001.service/init.scope"
+    expected_uid=[UID]*4;expected_gid=[gid]*4
+    return (child["exe"]=="/usr/lib/systemd/systemd-executor" and child["comm"]=="(sd-pam)"
+            and child["cmd"]==["(sd-pam)"] and child["PPid"]==[int(main_pid)]
+            and manager["exe"]=="/usr/lib/systemd/systemd" and manager["comm"]=="systemd"
+            and len(manager["cmd"])==2 and manager["cmd"][0] in ("/usr/lib/systemd/systemd","/lib/systemd/systemd")
+            and manager["cmd"][1]=="--user" and
+            all(x["cgroup"]==location and x["Uid"]==expected_uid and x["Gid"]==expected_gid
+                for x in (child,manager)))
 def workloads():
     sessions=run(["loginctl","list-sessions","--no-legend","--no-pager"]).stdout
     need(not any(len(row.split())>=3 and (row.split()[1]==str(UID) or row.split()[2]==NAME) for row in sessions.splitlines()),"Dedicated UID has an active login session")
@@ -89,6 +108,10 @@ def workloads():
             try:exe=Path(os.readlink(f"/proc/{pid}/exe")).name
             except FileNotFoundError:continue
             okay=(group=="init.scope" and exe in ("systemd","(sd-pam)","sd-pam")) or (group.endswith("/dbus.service") and exe in ("dbus-daemon","dbus-broker","dbus-broker-launch"))
+            if not okay and group=="init.scope" and exe=="systemd-executor":
+                main_pid=run(["systemctl","show",UNIT,"-p","MainPID","--value"]).stdout.strip()
+                try:okay=pam_child(pid,group,main_pid,pwd.getpwnam(NAME).pw_gid)
+                except FileNotFoundError:continue
             need(okay,f"Dedicated user manager has another workload: {group} {pid} {exe}")
             observed.append((group,pid,exe))
     return observed
@@ -143,7 +166,9 @@ def restore(token):
     if not read_lease(token):return 0
     st=json.loads(statefile(token).read_text())
     clean=True
-    if st["phase"] in ("armed","bounded"):
+    armed=st["phase"] in ("armed","bounded")
+    st["settings_untouched"]=not armed
+    if armed:
         before=st["before"];extra=controlled_files(before)
         if st["phase"]=="bounded":run(usercmd("systemctl","--user","stop","palomar-cold-"+token+".service"),check=False)
         # Stock's FIFO makes its delegated helpers exit if the coordinator dies.
@@ -174,11 +199,44 @@ def restore(token):
             run(["systemctl","--no-block","stop",UNIT])
             st["prior_inactive_manager_shutdown_requested"]=True
         except RuntimeError as err:
-            clean=False;print("Leaving the manager alive: "+str(err),file=sys.stderr,flush=True)
+            st["manager_shutdown_deferred"]=str(err)
+            if armed:clean=False
+            print("Leaving the manager alive: "+str(err),file=sys.stderr,flush=True)
     st["phase"]="released";st["cleanup_clean"]=clean;save(statefile(token),st)
-    print(json.dumps({"released":token,"restored":st.get("restored"),"same_invocation":st.get("same_invocation_at_cleanup")}),flush=True)
+    print(json.dumps({"released":token,"settings_untouched":not armed,"original_error":st.get("original_error"),"restored":st.get("restored"),"same_invocation":st.get("same_invocation_at_cleanup"),"manager_shutdown_deferred":st.get("manager_shutdown_deferred")}),flush=True)
     (STATE/"owner").unlink()
     need(clean,"Aggregate measurement contaminated by a manager change or other work")
+    return 0
+def active_dependents(exclude=()):
+    names=run(["systemctl","show",UNIT,"-p","RequiredBy","-p","BoundBy","--value"]).stdout.split()
+    return [d for d in names if d not in exclude and run(["systemctl","is-active","--quiet",d],check=False).returncode==0]
+def reconcile():
+    # One real aborted probe started this previously idle manager. Reconcile that
+    # specific, unchanged invocation only. A different manager belongs to its owner.
+    old="0692ebdd76c1ffc6748e874c"; invocation="b144a957097a4dcf949b655476b55e7e"
+    trusted_file(HERE);owned_directory(STATE)
+    if (STATE/"owner").exists():raise RuntimeError("Another aggregate lease exists")
+    record=statefile(old);trusted_file(record)
+    prior=json.loads(record.read_text())
+    need(prior=={"cleanup_clean":False,"phase":"released","prior_manager":"inactive","scope":"tg-palomar-aggregate-"+old,"token":old},
+         "Original aborted probe receipt differs")
+    lease=secrets.token_hex(12);make_lease(lease)
+    try:
+        active=run(["systemctl","is-active",UNIT],check=False).stdout.strip()
+        if active=="inactive":print("Original inactive state already restored.",flush=True);return 0
+        need(active=="active" and identity()==invocation,"Different user-manager invocation; refusing to stop")
+        manager_scoped();initial=workloads()
+        need(current()==ORIGINAL and not raw_config(),"Original untouched resource state differs")
+        need(not active_dependents(),"Active external system unit requires the user manager")
+        need(identity()==invocation and current()==ORIGINAL,"Manager changed during reconciliation")
+        workloads()
+        run(["systemctl","stop",UNIT])
+        after=run(["systemctl","is-active",UNIT],check=False).stdout.strip()
+        need(after=="inactive" and not raw_config(),"Earlier manager did not return to its inactive state")
+        print(json.dumps({"reconciled_prior_probe":old,"previous_manager_invocation":invocation,
+                          "management_processes":initial,"final_manager_state":after,"resource_settings_changed":False}),flush=True)
+    finally:
+        if read_lease(lease):(STATE/"owner").unlink()
     return 0
 def launch(seconds,policy,scratch,command):
     need(45<=seconds<=25200,"Invalid bounded operation length")
@@ -196,10 +254,20 @@ def launch(seconds,policy,scratch,command):
           "--property=Wants="+UNIT,"--property=After="+UNIT,"--property=RuntimeMaxSec="+str(seconds),
           "--property=TimeoutStopSec=75s","--property=ExecStopPost="+stop,"--",
           "/usr/bin/python3","-I",str(HERE),"hold",token,policy,scratch,*command]
-    return subprocess.call(args)
+    code=subprocess.call(args)
+    saved=json.loads(statefile(token).read_text())
+    if saved.get("prior_inactive_manager_shutdown_requested"):
+        for _ in range(40):
+            after=run(["systemctl","is-active",UNIT],check=False).stdout.strip()
+            if after=="inactive":break
+            time.sleep(0.25)
+        need(after=="inactive","User manager did not return to initial inactive state")
+        print(json.dumps({"entry_manager_state":prior,"final_manager_state":after,"token":token}),flush=True)
+    return code
 def main():
     mode=sys.argv[1] if len(sys.argv)>1 else ""
     if mode!="inner":need(os.geteuid()==0,"Root controller required")
+    if mode=="reconcile" and len(sys.argv)==2:return reconcile()
     if mode=="restore" and len(sys.argv)==3:
         need(re.fullmatch(r"[0-9a-f]{24}",sys.argv[2]),"Invalid token");return restore(sys.argv[2])
     if mode=="launch":
@@ -209,6 +277,11 @@ def main():
         return launch(x.seconds,x.policy,x.scratch,argv)
     if mode in ("hold","inner") and len(sys.argv)>=5:
         token,policy,scratch=sys.argv[2:5];need(re.fullmatch(r"[0-9a-f]{24}",token),"Invalid token")
-        return (root_entry if mode=="hold" else inner)(token,policy,scratch,sys.argv[5:])
+        if mode=="inner":return inner(token,policy,scratch,sys.argv[5:])
+        try:return root_entry(token,policy,scratch,sys.argv[5:])
+        except Exception as exc:
+            f=statefile(token);st=json.loads(f.read_text());st["original_error"]=str(exc);save(f,st)
+            print(json.dumps({"aggregate_hold_error":str(exc),"phase":st["phase"],"token":token}),file=sys.stderr,flush=True)
+            raise
     raise SystemExit("Usage: stock_aggregate.py launch SECONDS POLICY SCRATCH [-- /absolute/handoff args...]")
 if __name__=="__main__":sys.exit(main())

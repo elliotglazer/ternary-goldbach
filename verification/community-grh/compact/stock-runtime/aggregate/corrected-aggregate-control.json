@@ -1,0 +1,55 @@
+{
+  "controller_sha256": "2fce0fb9bd3436303aa017d9b94383689a21fe5f152f0679266b3d908407d28a",
+  "stock_probe_sha256": "a24992ee326a5314160ea0e5eece28116d8a08a7605396dd90da55e1411a5413",
+  "base_controls_sha256": "1d9c92f9fc3d477aaa75ae625b75bd03b1b45b5edf519cbe7a04ac70ac1a2bdd",
+  "first_failure_archive_sha256": "96193b153f83e5619e1ff581d01dbb24b8d5749e6c84d6aced72dce5cbee0f27",
+  "actual_child_snapshot": {
+    "comm": "(sd-pam)",
+    "cgroup": "0::/user.slice/user-1001.slice/user@1001.service/init.scope",
+    "exe": "/usr/lib/systemd/systemd-executor",
+    "cmd": [
+      "(sd-pam)"
+    ],
+    "PPid": [
+      2909
+    ],
+    "Uid": [
+      1001,
+      1001,
+      1001,
+      1001
+    ],
+    "Gid": [
+      1001,
+      1001,
+      1001,
+      1001
+    ]
+  },
+  "actual_first_invocation": "b144a957097a4dcf949b655476b55e7e",
+  "wrong_pam_fields_rejected": [
+    "child.Uid",
+    "child.Gid",
+    "child.PPid",
+    "child.cmd",
+    "child.comm",
+    "child.cgroup",
+    "child.exe",
+    "manager.exe",
+    "manager.cmd",
+    "manager.comm",
+    "manager.Uid",
+    "manager.cgroup",
+    "scope",
+    "invalid MainPID"
+  ],
+  "reconciliation_controls": [
+    "different manager refused",
+    "external required unit refused",
+    "concurrent lease refused",
+    "exact archived initial state and idle invocation stopped",
+    "already inactive is idempotent",
+    "unrelated pre-arm workload left running with original failure preserved"
+  ],
+  "scope": "Archived child/boot control facts are real. Host manager response and rollback interactions were simulated locally. A real EC2 second-run positive stock profile and actual restored manager state remain required."
+}
