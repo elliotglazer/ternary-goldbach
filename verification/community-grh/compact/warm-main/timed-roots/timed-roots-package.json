@@ -1,0 +1,14 @@
+{
+  "parent_operator_archive_sha256": "58e8ec25f2af199b7096470464f191ea3c0ce8d3283a15ffc5d67e13312b5202",
+  "operator_sha256": "6e79cb344f500b27e87ad5acfd00381b098dfb2d6ece01c8325feeff79ffa7e1",
+  "internal_manifest_sha256": "1d47ec4a9715577888ad27a4548ecf9de31adb50461faa0840c652d1a7f9e4b6",
+  "host_archive_sha256": "f4879f79494ece22864fe9c7d02b8969be7de63d8f87f9e0d10785897b28605c",
+  "warm_main_sha256": "7e2c8f67f784809aaf52aef725ba3ca31764d7013cc03d375763093873d030a7",
+  "operator_bytes": 37794,
+  "tests": [
+    "real Lean timeout, five accepted modules, five inconsistent records rejected, successful retry",
+    "independent GRH and finite diagnostics",
+    "changed-ancestor and tampered-log regression"
+  ],
+  "scope": "Prepared and tested locally for future diagnostics. The in-flight AWS worker uses the parent operator."
+}

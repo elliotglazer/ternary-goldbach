@@ -1,0 +1,46 @@
+{
+  "scope": "Real local Linux Lean diagnostic timeout and artifact reuse. No protected proof check.",
+  "lake": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "interrupted": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 124,
+    "wall_seconds": 61.007,
+    "log_sha256": "72fd289df761995a80fa9f404edb8a7447ab25a3ff5036f95c9d87035f6769a2",
+    "newly_built": [
+      "Base",
+      "Changed",
+      "Intermediate",
+      "Reader",
+      "Stable"
+    ],
+    "failed_source_locations": [],
+    "time_limit_seconds": 61,
+    "source_commit": "68b0ea30dbeec445086434be6c3b3ab8dd9e3dd5",
+    "source_tree": "59af4f290d9bbfce8c11b3700a3d11f9aa75d3c8",
+    "parent_receipt": "5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c",
+    "eligible": 0
+  },
+  "reused": [
+    "Base",
+    "Changed",
+    "Intermediate",
+    "Reader",
+    "Stable"
+  ],
+  "retry": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 0,
+    "wall_seconds": 1.389,
+    "log_sha256": "1de939eeeacf6d98f45825aa1e6e3536c8e142f477c9e8dba9cfa3790789b1fc",
+    "newly_built": [
+      "Deep",
+      "Main"
+    ],
+    "failed_source_locations": []
+  },
+  "controls_rejected": 5
+}
