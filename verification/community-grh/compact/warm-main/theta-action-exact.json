@@ -1,0 +1,269 @@
+{
+  "kind": "Original/fixed same native complete declaration with all authentic finite-adelic data and unchanged proof fields",
+  "declaration": "stdLattice.finProjAction",
+  "lean": "4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "Includes all original text through and including the definition. Omits later declarations and the two imports needed only for them. Prints transitive axioms for the complete definition. The full owning module is a separate check.",
+  "trials": {
+    "4d574858": {
+      "git_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+      "production_file_sha256": "849ad7e5de7f932a2fc9d3f9eb7e0264aad352717e21442a7e76ce7dd027f9c4",
+      "focused_source_sha256": "26fccdd9b9268a759900c43082cc61e9d3a27615181fe8daeaba57d429f851fd",
+      "log_sha256": "55cea48c8cce73dbf83a3a82249196b0e61b2d45a43e24c21c0823af8e6633e7",
+      "lean_exit": 1,
+      "wall_seconds": 24.24,
+      "compiler_output": [
+        "ActionExactBefore.lean:30:60: error: tactic execution is stuck, goal contains metavariables",
+        "  ∀ (g h : Gf E ι),",
+        "    finMultiplier g * finMultiplier h * finMultiplier (g * h)⁻¹ *",
+        "        ∫ (x : ι → 𝔸f E),",
+        "          ∫ (y : ι → 𝔸f E),",
+        "            finVac (h • x) * finVac ((g * h) • y) * (finHeis E ι).β x y *",
+        "              finVac (x + y) ∂latticeMeasure E ι ∂latticeMeasure E ι =",
+        "      ?m.46 g h",
+        "'stdLattice.finProjAction' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+      ]
+    },
+    "7fb3c021": {
+      "git_commit": "7fb3c02142995996fc9867febb08e9fbb3a369bf",
+      "production_file_sha256": "8489ceabfbfb1ffd398940b0a1d29c4745fe32b5cea95cdc07167a122658ab77",
+      "focused_source_sha256": "a3deae1bd65619bda7e9524423490e0e667281b5e65c4a96217e995caf36938c",
+      "log_sha256": "8d24127fada7c657fe135d8cd49108d6fae977944cff68f240c3fb00eb0ec97c",
+      "lean_exit": 0,
+      "wall_seconds": 25.49,
+      "compiler_output": [
+        "'stdLattice.finProjAction' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  },
+  "complete_finite_imports": {
+    "Lib.Adelic.Adeles.AdditiveCharDefs": {
+      "source_sha256": "ff8f5897509f5446e5e868e524a53408b8d69b782db68a87735bf85dd9f3c1da",
+      "olean_sha256": "fc7042ede8a8dc93bf8a3030ef12726cd6942f0dc2b7baf7b990686ddffe5041"
+    },
+    "Lib.Weil.Construction.GaussSumSign": {
+      "source_sha256": "d89c7959bd58aff457c270970f07e605774d50bc1d62360f0f2700c7f28fff09",
+      "olean_sha256": "a991e79987cc684f013f4b5a98ba9d74f55fb563500e3636f066f2bdb548931d"
+    },
+    "Lib.Adelic.Unitary.SpaceDefs": {
+      "source_sha256": "5cf745b78feeac3fcc1c91c40933331d999f187ac320beb0ad108519d9013e36",
+      "olean_sha256": "3b66e19c3f5e3c63703c3fe73b424c24e41064b3116cd953484172a2720de9f2"
+    },
+    "Lib.General.LinearAlgebra.AdelicRingDefs": {
+      "source_sha256": "844039e4f0e5beacc16f9a8ea51701dbe86e1da5215daa2c5800e7e608b727fd",
+      "olean_sha256": "95ead0e311647379c8b5a18fe04d63927d044c8dbd0fde0f6137572200e82ef3"
+    },
+    "Lib.General.LinearAlgebra.ExtendColumns": {
+      "source_sha256": "df1d38445a66e63f76475917545b0de0e66827b8533189bce4b6245319c40dc1",
+      "olean_sha256": "fd8c51cd32bb754596a961997f06191bec526a1273abfdeec0074dd5ac5d30ac"
+    },
+    "Lib.Weil.Construction.AdelicHeisenberg": {
+      "source_sha256": "d0efd4625f5be616ec79098025096975dcd9ef3f7fd22a64313811c3d7305ba1",
+      "olean_sha256": "bcc98907547859255f4de8c9452b6c16985a11318a8df409a72741ac47d787ba"
+    },
+    "Lib.General.LinearAlgebra.PartialDerivComm": {
+      "source_sha256": "e0737a5c37df37a07ae52addc74cc4d1a0d6a986448d06e10b87497c906d97bf",
+      "olean_sha256": "16f4fcf1358ff18b3376bc4416d1e3503e11bdac9f42a302d7010e25c14ee635"
+    },
+    "Lib.General.Groups.CompactMean": {
+      "source_sha256": "d42ea144b169deb3cfdea0ed2c3231a6e6d4646a1fa9a6e9f268f3ddba35b87b",
+      "olean_sha256": "7a255fac524ac0c3ac9537c9de790610d58f761c144d1811e34e0be13810ea3d"
+    },
+    "Lib.Weil.Construction.FiniteHeisenberg": {
+      "source_sha256": "4b7577a13349138d2de6cca9df307810ace90fa898fe6040bdb3845521ed3b46",
+      "olean_sha256": "48d3c194d6c4b757169d180e267194b9fc25a7cada58de86f4e1dceb8b96e684"
+    },
+    "Lib.General.Analysis.OstrowskiTaussky": {
+      "source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+      "olean_sha256": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775"
+    },
+    "Lib.Weil.Construction.FiniteVacuum": {
+      "source_sha256": "05ab0e7965828474d953aaa02e4e43e60088a7e6b2696c9d7e76f8fa922edc97",
+      "olean_sha256": "9a0b589d74cea07c92f95929f166454c8d9146e08f6e9cb36ee01d587a1d156b"
+    },
+    "Lib.General.LinearAlgebra.ValuedMatrix": {
+      "source_sha256": "8274a177c289aac8a62f75bad30a782edb9dc8cfcde16dde8339388a249248c5",
+      "olean_sha256": "1c2fb8bd05152ce73aa48875a8ea9d6b745445716e0fe85414c2db95de4c3f91"
+    },
+    "Lib.General.LinearAlgebra.ColumnLattices": {
+      "source_sha256": "173fc15736f148f7bcf90502b58f5ae2153835d87b1cccaa8c8edc1bb62a2d78",
+      "olean_sha256": "57fd257a6aaa73e27efb45056ca8042817e683fc04440f73c13d0d44e9a7f486"
+    },
+    "Lib.Adelic.Hecke.ClassMean": {
+      "source_sha256": "aad69a89e5a6a98acfd072bbc88ede877f8f4b586e4ce615f748c36fb1aadf5f",
+      "olean_sha256": "daa6e06d9ef7d5387ee3be1943ffa3b3005b6d570bcc7086df3b0f816246d391"
+    },
+    "Lib.Adelic.Adeles.AdelicAbs": {
+      "source_sha256": "796a33ad421075107600d877806f3daa0ea5ccf389d11da1a1f600ae462630cb",
+      "olean_sha256": "94a5f3631310d5d4ae58a96bcdac43f496120b080290e788e03b87bace87f8e8"
+    },
+    "Lib.ClassField.GaloisCohomology.CyclicClass": {
+      "source_sha256": "7b12af57eab81a533d25ce330b62c16ebaaf8cd59beb6d9e104426960621eb02",
+      "olean_sha256": "78c6e74d7fb0983d545352d711bd0f778641b3a997e7271e435b8ec7637d2d39"
+    },
+    "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+      "source_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+      "olean_sha256": "4c91ac54a360681422d6a0fe52b0e34ab42e28dbb256a228c24607b64446848b"
+    },
+    "Lib.Adelic.Adeles.AdditiveCharBasic": {
+      "source_sha256": "40bd5484a34e7ed1351cee7922cf60eb57a729aee02e50cf1f8dda376aadc579",
+      "olean_sha256": "35a2a4b706f62c0030a559c03f7ca5441cdd2aae974ceebdd767c5d2edfc8b47"
+    },
+    "Lib.General.Measure.SubgroupIntegral": {
+      "source_sha256": "4eb0f6ab29bad03b624e8fe413642e2c6b8960619ad67125c4882b78adf1c28b",
+      "olean_sha256": "786c73e4b15cea3949c2237670daa69626ce5461a96bb4dcacd7b1cd51532648"
+    },
+    "Lib.Adelic.Adeles.AdeleTopology": {
+      "source_sha256": "188525e98f2ec2b41f82d636e309f46ace3edc1931754f78ac3705ce3abf405d",
+      "olean_sha256": "a92f74d58c4b872c5fe2262630530fc9c3587537cd0301880910b372b7b25ba2"
+    },
+    "Lib.General.Analysis.ZpowSum": {
+      "source_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "olean_sha256": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd"
+    },
+    "Lib.General.NumberTheory.UpsilonValues": {
+      "source_sha256": "f29e012dc10b466900e6799df5feaa2133c85fab656edf15fc064751748c9f68",
+      "olean_sha256": "8644a95ba4d2ff2d36967b8c08ed775ecb1b0061067f3118723cc901c8b1dc3f"
+    },
+    "Lib.DiscreteSeries.Bruhat.EichlerMaps": {
+      "source_sha256": "724894beff38aee114cc2493fb2fc691192aef7eb4fc06f542d624d9ae0731d9",
+      "olean_sha256": "0b82bd5d6b73083ab9ce07b21688fbd40e352ceca6dd4b664c8ed9d68bc8f994"
+    },
+    "Lib.ClassField.HeckeCharacter.CharacterDefs": {
+      "source_sha256": "2a555e39e99da7c1cc9322c2b56fa982d5ffd795f48c37f41a951363306a3436",
+      "olean_sha256": "a53baff3601a2212af1e68623ed1aad3e7da7cd4bb6ef84175bd1eb3af4fcace"
+    },
+    "Lib.Adelic.Adeles.AdelicModulus": {
+      "source_sha256": "badca842bf6bfb4154d6e0065463014043de1f19a0e0cf8d3a298f6411c3f890",
+      "olean_sha256": "0503fd9be1e4047ce97be67a4ffaa07901b30d6c788dc5226884ceda776da496"
+    },
+    "Lib.General.LinearAlgebra.Base": {
+      "source_sha256": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+      "olean_sha256": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91"
+    },
+    "Lib.Adelic.Unitary.SpaceGram": {
+      "source_sha256": "9d6952fca7498e9e4cc092798f498ab6ae8457d50c4995f936bd1fbd8eb7a93e",
+      "olean_sha256": "12bd45b1b3e0a6459a5a7968eeaf8ba1e92224aef4ea56ea92a09b47a5a153a6"
+    },
+    "Lib.General.Algebra.InertResidue": {
+      "source_sha256": "83716ef52264e2fda1f14ecadcb56c9322adf7e229f683e247d779afb5383745",
+      "olean_sha256": "1e871ddaaf689cc39fec23f1fd4b6b17538876923e8060bc798154c8c827005d"
+    },
+    "Lib.GaloisRep.Hilbert90.UnitaryHilbert90": {
+      "source_sha256": "3636b25ed15ae8fb0822d45aa47ce3e80e36eaf4d1220fcee2693525d818c8af",
+      "olean_sha256": "a95c9a144219f0fb098add9426e0055b02420608f6b481aed30a0724c563d82b"
+    },
+    "Lib.DiscreteSeries.CuspKernel.CircleMean": {
+      "source_sha256": "d71067206d92a944363400d1754e64e565d14ac6a743121febbe2009ac127ae1",
+      "olean_sha256": "62f847523a3142bc6d66d06bd851af96ed4d2e43e1ee56ac2f3896f75a69f02d"
+    },
+    "Lib.Weil.DualPair.Kronecker": {
+      "source_sha256": "24cca1a1c771a5dec192767a1f7ccf72f8e629924b8d5928595009a675e9d68b",
+      "olean_sha256": "dc5f508e41ec27185697c9575b3bdba4afef1df939a721de1fa724ab1bdc8a10"
+    },
+    "Lib.General.Groups.ValuationPair": {
+      "source_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "olean_sha256": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f"
+    },
+    "Lib.Adelic.Adeles.LocalComponents": {
+      "source_sha256": "e0483843f6816c8175994af933079b31de9239f9f07e0d7daec30e04244dd0bb",
+      "olean_sha256": "b96dd197b04373ad6da040329fb65c0fa39a939ce0da077bfbc1bfeeb3e24ec5"
+    },
+    "Lib.Adelic.Witt.SpaceOperations": {
+      "source_sha256": "222acbd1af056c17d300a5edd06a16541e5c1086f96249f7e9b024d141811f60",
+      "olean_sha256": "d0d5dd59e2f4b4d2d8334437ce3e0e5e1754203d531afdef43dc4ebe37bdd177"
+    },
+    "Lib.Adelic.Witt.FrameAction": {
+      "source_sha256": "6445beb4629e627330b2c06ae6fdd5924e9538e4ea5874a988c12e6c5f98ce32",
+      "olean_sha256": "973789ff61f8f54405f99bae8847aadad48d1b41dda2fad6101df2292ff9fdc5"
+    },
+    "Lib.Weil.Unramified.HeckeGL": {
+      "source_sha256": "ad15b2e267771906ddf300e48c4030892fbf70f1f30307fc2b734a64bb23a1ec",
+      "olean_sha256": "6bfa6e2cb57806720c3b76887daeb0267dfbe07e4a2b3d1556ab720f8f7f5f27"
+    },
+    "Lib.General.Measure.HaarModulus": {
+      "source_sha256": "7925ed45352e52e48b78ae59baa524a29994c7ee3ebdaf4565fa15d5fcbbb935",
+      "olean_sha256": "14008c3dae2bc03ce057cc15ef512897a2e9a670affbe9c7346a64658c510ce4"
+    },
+    "Lib.Adelic.Unitary.CongruenceLevel": {
+      "source_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+      "olean_sha256": "0cd0f2492a6f4ec7b4a6122c60db727efde7e51287767884f6c84ecd97a98714"
+    },
+    "Lib.General.LinearAlgebra.ElementOfMatrix": {
+      "source_sha256": "af49bd99a51b954d6823c7ed4c1e869c46aae8157c2adfd56ed31b7a8acea008",
+      "olean_sha256": "a7c5e51fc5c7742b2267c48f6a09b4a5aa6a70c620a075d0cc84e50bca66d21f"
+    },
+    "Lib.Adelic.QuotientMeasure.Packing": {
+      "source_sha256": "616b336811176e6f3e871b7ffa59a00f858acb175514e6a8d5af1e295d1a26db",
+      "olean_sha256": "72b755f25146d4ed983d347a0fb489a35e9d9d4246047e9679f2282f4a1c5e3e"
+    },
+    "Lib.Weil.GaussSum.LocalHomUnit": {
+      "source_sha256": "fb480cb86ccbbd60c93175cdb1e719544bbba703ce02e544248780910d2601ec",
+      "olean_sha256": "e64de3d916ac6b605c8ab98ca66cfe5aafa962fd143e8ec0ae79148aebc1cbdd"
+    },
+    "Lib.Adelic.Adeles.RationalPoints": {
+      "source_sha256": "7bc04bc93e197185dbc1933142ad608757ded3f210ddda8fb6400908451d730f",
+      "olean_sha256": "aefd5db741511bc8d8822184f8143d607a2bfce86f109ecd0d90caa18fa7d001"
+    },
+    "Lib.ClassField.HeckeL.EulerProduct": {
+      "source_sha256": "478640be010a08b9d6bc1f86651305cf2d9d23705c22e0f78b41ec505741bf9e",
+      "olean_sha256": "8b1a812e0def15b7aa507cfcd952a9a885708e4313e8d2ccee5bd0049cfc75d1"
+    },
+    "Lib.General.Analysis.FundamentalDomain": {
+      "source_sha256": "0f28dde96f541a43b738e42275bfc7647da76f39d48aa910f738e6e7d8febc64",
+      "olean_sha256": "5c02c3a334ac60ed17585731514ee79e54b40d5fe5f4d374d119c647a92b5c5a"
+    },
+    "Lib.Adelic.QuotientMeasure.Unimodular": {
+      "source_sha256": "77e707e1fd9e3e6b4a937e6b2ebd1b2ad059a6292563a8e4bd04fca58d131f1d",
+      "olean_sha256": "cbf84a9957ea32c35c4d924c1b97b97a5a5c5e8b5454a98917c31443eb33292b"
+    },
+    "Lib.Adelic.Adeles.AdeleSelfDual": {
+      "source_sha256": "11a4ffc3684db8ef5a94213334439b13b45849c64793e0cde1a90b8fca0c7680",
+      "olean_sha256": "eca12cdf610c3555891ddbb65ca4a46bdf70388e0c66e118ba7b5668ac688f7e"
+    },
+    "Lib.Weil.Construction.FiniteMultiplier": {
+      "source_sha256": "adc90e63f1cd676ea486dffb4fe41cb3109182f648cf34a71026d2d75262ac7f",
+      "olean_sha256": "bbe9ef06f9b5a8ca649df8e81aaf2ebcdb1cf9243fca039ee7056230d9d65dce"
+    },
+    "Lib.Weil.Construction.SubmoduleNormedSpace": {
+      "source_sha256": "a74d6ecf2a6e6b052efeb702f2ee165f3a22c8312296230d723d8ee62eb26527",
+      "olean_sha256": "6db7455d7b917030e6ebbf2f66370ed7f8eff783807925c90aad275c131992d7"
+    },
+    "Lib.Adelic.QuotientMeasure.PeriodicMean": {
+      "source_sha256": "cadb32cab1d61d9896f234481d473079e681ca18ffe87b8203335b8a0d321e06",
+      "olean_sha256": "d8a2c48c08e4a9a30cec27942a521fc96adbd96d4e767288ac80c0f72d189abc"
+    },
+    "Lib.ClassField.Places.GaloisDefs": {
+      "source_sha256": "32ad0a45ce22ced92fc4263d639f601257c34c57100e8954034cddf377beb067",
+      "olean_sha256": "83898675764cf316f1fd19afb2d63005469a670c3fae7a7e3e8f16c81dc5dee7"
+    },
+    "Lib.GaloisRep.Hilbert90.TameDescent": {
+      "source_sha256": "7acbab5f569b097bbc2fbc34adc3cb91168ecbd85dabe6dbbf839540b92cf040",
+      "olean_sha256": "ef64c0ebc46343983a8b58bb7d6185c3d176a0832746a08fce51c5105eeed83d"
+    },
+    "Lib.Adelic.Adeles.CoprimeValuation": {
+      "source_sha256": "24794a87d5f90db2e34433267b9a6820ea8c39de04318f589c9b7e84477f0fd6",
+      "olean_sha256": "a1c4f6d90683eac392f0f053c3e65d7e4d4f49e7085a28da0b965e237baea432"
+    },
+    "Lib.General.NumberTheory.Embeddings": {
+      "source_sha256": "23e04a472cc47195fdaa1baf568a034a52565a611edbebcc8b143214f7ca5627",
+      "olean_sha256": "c401eac320b01954fe95138db55cd215d7503ba5f05678eee707915c3b949db2"
+    },
+    "Lib.PadicHodge.Crystalline.NonUnitalUnits": {
+      "source_sha256": "3023e89785bd9fca271a78a15570b9a923f41976d60e0ab29da534b2debcb2c2",
+      "olean_sha256": "89b3fd32c99ba768aa62dd817b3bc9c00b8ca5c6c75aef3fd3ec1838599c3a53"
+    },
+    "Lib.Adelic.Hecke.HeckeBasic": {
+      "source_sha256": "d100fe45dbb4ddc58f946fb4a6abe6a0fe466a062c45cd8d7a367af1c0f6f54a",
+      "olean_sha256": "572f840fee36837fc86fed233fcfe046fde509e7b4151ce67375fa7144e41bd3"
+    },
+    "Lib.General.Algebra.GeneralisedIndex": {
+      "source_sha256": "cb519de76c44bef47736b402d2a29224e1f14545c19e8c9eb8976f21992660df",
+      "olean_sha256": "4aee3587bd9349498842823dffdb1685a116fb708b4a4c2f2176b64ccc84f670"
+    },
+    "Lib.Adelic.Adeles.AdeleIdempotent": {
+      "source_sha256": "543a8b33fec343b06fce9be1ea2d976693d3377727dd1f56c6945ebf3021e050",
+      "olean_sha256": "02bdc9c04596f7eece4862b970e5b0f8101ef43f4af2b29d1364e2256f434e5d"
+    }
+  }
+}

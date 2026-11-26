@@ -1,0 +1,191 @@
+{
+  "source_revision": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "target": "ProfileGroup0.rows",
+  "closure_files": 111,
+  "verified_prior": 94,
+  "newly_compiled": {
+    "ProfilePartition": {
+      "module": "ProfilePartition",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "ca2482a6482cf97c42ea6c0ab64cf208929c4f4556446213f62c8b3ada611dd4",
+      "direct_imports": {},
+      "seconds": 10.52,
+      "peak_rss_mib": 526.3,
+      "cap_mib": 3300,
+      "log_sha256": "1ad79cbc52aa682c698c1395045c9a2c0ee097ed7e769e5de8040cb215ba8cf5",
+      "output_sha256": "372d343b56086bf743638992d0b2b5114877c931510675f323dd9b9c5a2ef82b"
+    },
+    "ProfilePieces": {
+      "module": "ProfilePieces",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "bbe0a492d09f9c57961a2af2aa1b27b5eb153b252a5def1a7d1e835ff87335f2",
+      "direct_imports": {
+        "ProfilePartition": "372d343b56086bf743638992d0b2b5114877c931510675f323dd9b9c5a2ef82b"
+      },
+      "seconds": 9.82,
+      "peak_rss_mib": 521.2,
+      "cap_mib": 3300,
+      "log_sha256": "c724f1d141d77b93940404f079b57c7d9c70a1bd47e96dc4a2c0d7ea9ea44a0a",
+      "output_sha256": "065506355c14fe7be1bffc316fcc218cd8636a57bed9bd3ba50216be2b6b6a9a"
+    },
+    "TernaryGoldbach.Explicit.MellinRotate": {
+      "module": "TernaryGoldbach.Explicit.MellinRotate",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "79d905a92983972446db95a2d3d651bbab5004fcc981008fc6e7c63302e28be4",
+      "direct_imports": {},
+      "seconds": 145.02,
+      "peak_rss_mib": 1288.6,
+      "cap_mib": 3300,
+      "log_sha256": "d7a3c1a8efb0a34bd4ddecf0ab6f6fdff243519c9f5d325c9212d58a2cd6f50f",
+      "output_sha256": "596c3aa4861bf25487321f52e089c29aeda39034b4ae3e5ba0e2acf2c4c03a6f"
+    },
+    "ProfileTape1positive": {
+      "module": "ProfileTape1positive",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "fce0a6e17e54ff3aaad8fcf8394cfe131cc8b15a78bdc98235599832b3d0c896",
+      "direct_imports": {
+        "ScaledRefs": "1c1323ff89ef01a926f90046cbc4e5c968ae73f5d64273fea3ea6aa36395bb73"
+      },
+      "seconds": 1.41,
+      "peak_rss_mib": 286.8,
+      "cap_mib": 3300,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "5ab466503f278a2b035ab88f2f7d56de70c3cd5aa479dae9cb42f464455ee3ee"
+    },
+    "ProfileTape1touching": {
+      "module": "ProfileTape1touching",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "8d16f8501586ebec87bb4b57e56c7ddaba692f1fdb0c2a7f5ae5450a01b658ad",
+      "direct_imports": {
+        "ScaledRefs": "1c1323ff89ef01a926f90046cbc4e5c968ae73f5d64273fea3ea6aa36395bb73"
+      },
+      "seconds": 2.11,
+      "peak_rss_mib": 286.6,
+      "cap_mib": 3300,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "1e7e25fa59899c5564b8f4a424974bdefcbb64d5c5e005e1f80da2ae91571887"
+    },
+    "ProfileG0R0N4Data": {
+      "module": "ProfileG0R0N4Data",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "01e3da4950b5ca3e4c4ff403c4576b47e6190c21936df6e93a0e7c1bb4ddf738",
+      "direct_imports": {
+        "DirectData": "bb9e63f89fa2f9e64eab1b889483a1cf4d268e0c74bcd5922e8f8c2aefaaf96c",
+        "ScaledLiteral": "baaef939fd80929a6b8fc4a9999eaf594e150b95059b0ac8b5f7d799c9b89891",
+        "ProfileTape1positive": "5ab466503f278a2b035ab88f2f7d56de70c3cd5aa479dae9cb42f464455ee3ee",
+        "ProfileTape1touching": "1e7e25fa59899c5564b8f4a424974bdefcbb64d5c5e005e1f80da2ae91571887"
+      },
+      "seconds": 32.95,
+      "peak_rss_mib": 1570.4,
+      "cap_mib": 3300,
+      "log_sha256": "de2ccec4e41fe8014d745f0ff66b16d671b07cf2af1c86b86774f0f4b50e9370",
+      "output_sha256": "22d7027d612ab27c3c6c35d29dc05cecbc0b24f61cedb38b17c3c9cff187740d"
+    },
+    "ProfileG0R0N4Entries": {
+      "module": "ProfileG0R0N4Entries",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "b9f67acde5dc763a347a27ed65d9318c5241417e0f4e3026f8b29999d321548d",
+      "direct_imports": {
+        "ScaledEntries": "dd858dc434233b252c0804d62c1d5107203e0987f52ec3a7f28c4f707e82e50b",
+        "ProfileG0R0N4Data": "22d7027d612ab27c3c6c35d29dc05cecbc0b24f61cedb38b17c3c9cff187740d"
+      },
+      "seconds": 21.03,
+      "peak_rss_mib": 1739.8,
+      "cap_mib": 4350,
+      "log_sha256": "03b4ddd004d9e7c7cbf7b788fdc0e5b8cdbd4f0364b817f63fea94eac2c189b1",
+      "output_sha256": "7649d09fdb91e2225fa7df763950044c40513edf8366e5a3f3f6a11dd46cd3d2"
+    },
+    "ProfileTape1positiveFormula": {
+      "module": "ProfileTape1positiveFormula",
+      "exit": 0,
+      "guard": null,
+      "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "source_sha256": "43fae634ffd11c769ec62083e05f59bbad00fdb3e9307aafb1eee9d5d97c5ffc",
+      "direct_imports": {
+        "ProfileTape1positive": "5ab466503f278a2b035ab88f2f7d56de70c3cd5aa479dae9cb42f464455ee3ee",
+        "ScaledBinding": "329db4cdf4f6ac00b99ae763743ba7cec8b3dc7ccdd8e5b040b83a2d473348f7",
+        "ProfileFormula": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+      },
+      "seconds": 27.33,
+      "peak_rss_mib": 2810.9,
+      "cap_mib": 4350,
+      "log_sha256": "309cfd4ac1b2389d376d4a503dd0689466780ead33fd0987d4460039fe3c9b64",
+      "output_sha256": "521d0d64dd46a6b4c462ef5aefd05095a37cf7fc1407c4d13f3492c303b5413f"
+    }
+  },
+  "pending_modules": [
+    "ProfileTape1touchingFormula",
+    "ProfileG0R0N4Scalar",
+    "ProfileG0R0N4Interval",
+    "ProfileG0R4N12Batch",
+    "ProfileG0R16N12Batch",
+    "ProfileG0R28N12Batch",
+    "ProfileG0R40N12Batch",
+    "ProfileG0R52N4Batch",
+    "ProfileGroup0"
+  ],
+  "terminal_touching_attempt": {
+    "module": "ProfileTape1touchingFormula",
+    "exit": 1,
+    "guard": "persistent low-memory or wall guard",
+    "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+    "source_sha256": "a851cdb5f8877fd364451b5da05ec121270d45c0e39d6456a3ece4bcd2b128cb",
+    "direct_imports": {
+      "ProfileTape1touching": "1e7e25fa59899c5564b8f4a424974bdefcbb64d5c5e005e1f80da2ae91571887",
+      "ScaledBinding": "329db4cdf4f6ac00b99ae763743ba7cec8b3dc7ccdd8e5b040b83a2d473348f7",
+      "ProfileFormula": "0bfb19c6b83db3ab9192da76afb9b5a5b9fbc63e9250342059ed6a5e5d2f2978"
+    },
+    "seconds": 109.4,
+    "peak_rss_mib": 203.2,
+    "cap_mib": 4350,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "complete_formula_receipt_sha256": "49c9554678cf6816eebf3bb60bcf0aed26c1f799a1a128df42cf169930f39150",
+  "shared_formula_generation": {
+    "ProfileTape2positive": {
+      "base": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "tape_sha256": "544ccd3c6f0cba480ffc1752eb109580a670b00ac94b33bdff06f16787e62213",
+      "original_formula_sha256": "eb9839ae6312456dbe9d4d6b0899e57522cb6524c3e68220bc366ddb316cc842",
+      "generated_sha256": "ed285c53a2c940daf07bdb7332a3c5ae31ecde372d86345e292a83f87b9fe7d2",
+      "public_statement": "theorem formula : expression tape.fetch 224 = profilePriceExpr 2 false",
+      "steps": 225,
+      "expanded_nodes": 1238,
+      "compiled_generated_source": true
+    },
+    "ProfileTape1touching": {
+      "base": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "tape_sha256": "8d16f8501586ebec87bb4b57e56c7ddaba692f1fdb0c2a7f5ae5450a01b658ad",
+      "original_formula_sha256": "a851cdb5f8877fd364451b5da05ec121270d45c0e39d6456a3ece4bcd2b128cb",
+      "generated_sha256": "9a206d1bf29e69a6af3fe4a04d1c2280a60727b3697d81c39486abbc88da17f3",
+      "public_statement": "theorem formula : expression tape.fetch 178 = profilePriceExpr 1 true",
+      "steps": 179,
+      "expanded_nodes": 1095,
+      "compiled_generated_source": false
+    },
+    "ProfileTape1positive": {
+      "base": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "tape_sha256": "fce0a6e17e54ff3aaad8fcf8394cfe131cc8b15a78bdc98235599832b3d0c896",
+      "original_formula_sha256": "43fae634ffd11c769ec62083e05f59bbad00fdb3e9307aafb1eee9d5d97c5ffc",
+      "generated_sha256": "53e6372bcca8d3abcc1d088e0372ffa7ece55012c1ea40a8517d4bd360d442ba",
+      "public_statement": "theorem formula : expression tape.fetch 184 = profilePriceExpr 1 false",
+      "steps": 185,
+      "expanded_nodes": 1105,
+      "compiled_generated_source": false
+    }
+  },
+  "user_visible_status": "Full positive formula passed with a fresh axiom audit. The group rows theorem is pending. The first touching check ended on the shared host resource guard before producing a Lean diagnostic. No derived Tape1 alternative has been compiled."
+}
