@@ -126,3 +126,11 @@ original unqualified call to `nat_le_of_hasLogBound`. Attaching the
 existing default to each comparison lemma resolved it. BumpConvolution
 now attaches its original continuity default to the convolution declarations.
 Both modules are inputs to Main and require full-module replay.
+
+In the same diagnostic run, 32 simultaneous Lean jobs reached the raised
+152 GiB memory threshold. Several GoldbachBand05 shards used about 5 GiB
+RSS each. The package now also groups the later heavy finite modules in
+sets of at most four. All four earlier Power10 pairs retain their previous
+ordering. The schedule covers 384 finite modules and only changes the
+Lake build graph. It preserves every Lean source file and all 415 finite
+modules have a unique library owner.
