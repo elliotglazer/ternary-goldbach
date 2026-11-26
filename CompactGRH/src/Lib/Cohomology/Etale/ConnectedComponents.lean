@@ -64,7 +64,7 @@ variable {p} [ThePrime p] (c : PadicTest)
 ∏ W_i, over O_C through B, with the point (y_i): B → ∏ W_i. -/
 noncomputable def cellPoint B {I} [n : Nonempty I] {W : I → _} [∀ i, CommRing (W i)]
     [∀ i, IsCell p (W i)] (y : ∀ i, B.1 →+* W i) : Sigma (PadicTest.algFunctor ⋙ reprBy B) :=
-  ⟨⟨I, W, .comp (.pi y) _⟩, ⟨ConcreteCategory.ofHom ⟨.pi y, by tauto⟩⟩⟩
+  ⟨⟨I, W, (RingHom.pi y).comp (algebraMap OC B.1)⟩, ⟨ConcreteCategory.ofHom ⟨.pi y, fun _ ↦ rfl⟩⟩⟩
 
 /-- The product ring of a p-adic test c is a test ring: reduced, absolutely integrally closed,
 and any a, b admit an idempotent e with a ∣ eb and b ∣ (1 − e)a. -/
@@ -153,7 +153,10 @@ lemma HV.mayer_vietoris_injective (d : IsCohomDense (locConstCoeff Λ) (((U ⊔ 
         convert! ← (biprodAddEquiv.bijective.comp
         ((isCohomEquiv_quotient_of_acyclic mayer_vietoris_shortExact.2
         (hasPartitions_locConstCoeff.eq_zero_of_zero_ring (h ·.1))).comp_iff.2 r n))] <;> funext
-        <;> simp [biprodAddEquiv, H.map, ← Functor.map_comp, sub_eq_add_neg] <;> tauto
+        <;> simp [biprodAddEquiv, H.map, ← Functor.map_comp, sub_eq_add_neg] <;> first
+          | tauto
+          | apply iff_of_eq; congr 1; funext x; apply Prod.ext <;>
+            simp [Function.comp_apply, precomp, ← Functor.map_comp] <;> rfl
 
 lemma zorn_injective_and_surjective {α} [PartialOrder α] {G K : α ⥤ Ab} {π : ∀ _, _ →+ _} (w :
   ∀ {a b} h x, @K.map a b h (π a x) = π b (G.map h x)) (hc :
