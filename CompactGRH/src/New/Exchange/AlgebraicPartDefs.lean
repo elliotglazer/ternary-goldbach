@@ -243,8 +243,8 @@ variable {p} {n : Type} [Fintype n] (H : p.HasLiftRank n) (ϑ)
 
 /-- The data `LValueData` for the pair p = (ν, z) twisted by ϑ: the chosen places of ϑ, jet
 degrees c_τ − z and character νϑ. -/
-noncomputable abbrev lValueData := (⟨D.levelPlaces ϑ, (p.c · - p.z), _,
-  _, by simpa [H, le_c] using p.hasWeight.mul ϑ.hasWeight, by lia, by
+noncomputable abbrev lValueData := (⟨D.levelPlaces ϑ, (p.c · - p.z), p.ν * ϑ.toAutChar,
+  p.ψ * ϑ.ψ, by simpa [H, le_c] using p.hasWeight.mul ϑ.hasWeight, by lia, by
     simp_all [levelPlaces, ϑ.5, ψ_eq_one, range_chosen]⟩ : LValueData _ n)
 
 /-- The lift Ξ_ϑ of the trivial character from the definite U(1) to the definite U(2z) for νϑ, at
