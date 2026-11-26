@@ -110,4 +110,4 @@ lemma IsSignedFrame.mul {x J} (h : IsSignedFrame x J) z {g} : g ∈ GU E n →
   IsSignedFrame (toFinGL z * x * g) (ratConj z J) | ⟨c, a, k⟩ => h.rec fun _ ⟨h, H⟩ ↦
   ⟨_, ((IsFrameFor.conj_iff _ z⁻¹).2 (by simpa)).mul_iff.2 k, fun w ↦ by
   split <;> simpa [ratConj, units_smul_def, mul_assoc, ↓map_smul', ↓map_conjTranspose_mul_mul, *,
-    ↓← val_map_apply] using! (z⁻¹.map _).isUnit.posDef_star_left_conjugate_iff.2 ((H w).smul a)⟩
+    ↓← val_map_apply, Rat.cast_smul_eq_qsmul] using! (z⁻¹.map _).isUnit.posDef_star_left_conjugate_iff.2 ((H w).smul a)⟩

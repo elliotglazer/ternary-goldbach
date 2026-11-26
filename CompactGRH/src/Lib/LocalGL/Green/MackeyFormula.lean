@@ -181,8 +181,8 @@ instance : CommRing (Hall k) := by
   any_goals solve | simp [simClassOf_endOnQuot (g' := g) 1 _ ⟨⊥, _⟩ surjective_id rfl,
     simClassOf_endOnSub (g := g) .id]
   have (W : StableSubspace g) := And.intro (StableSubspace.sum_comap (g :=
-    W.endOnSub) W.1.subtype (congrFun rfl)) (StableSubspace.sum_comap (g' :=
-    W.endOnQuot) W.1.mkQ (by aesop)); simp_all [mul_assoc, Finset.sum_comm]
+    W.endOnSub) W.1.subtype (congrFun rfl)) (StableSubspace.sum_comap (g := g) (g' :=
+    W.endOnQuot) W.1.mkQ (fun _ ↦ rfl)); simp_all [mul_assoc, Finset.sum_comm]
   congr!; apply simClassOf_endOnQuot ((mkQ _).submoduleComap _) (by tauto) _ (by rintro ⟨⟨⟩⟩; tauto)
   simp [submoduleComap, ker_restrict]; rfl
   nth_rw 2 [simClassOf_eq_dualMap]; simp; apply Finset.sum_nbij' (⟨dualAnnihilator ·, by aesop⟩)

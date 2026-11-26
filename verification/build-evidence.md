@@ -93,3 +93,16 @@ two declarations that use it.
 Stock Lean 4.35 compiled the full HHFourier module in 30.84 seconds. The
 proofs of `memLp_Kc` and `memLp_etaO` now pass the null-measurability
 of the integration interval to `memLp_indicator_iff_restrict`.
+
+## November 25 compact GRH build repairs
+
+The AWS joint build exposed failures in the modular port. Local stock
+Lean 4.35 compiled the full repaired ZpowSum, ContinuousCocycles, and Frames
+modules. A fresh import of Frames reports the standard three axioms for
+`IsSignedFrame.mul`. The original DiscreteUnits and ArtinDefs call sites
+also elaborate against the new ContinuousCocycles object in focused checks.
+
+The SemisimpleReps and MackeyFormula proof changes passed focused checks
+of the residual goals. The CompactDualMeasure change moves the default
+hypotheses onto their declarations. All three full modules require replay.
+The joint proof and protected comparator remain pending.

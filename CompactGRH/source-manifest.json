@@ -372,7 +372,8 @@
     {
       "path": "Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean",
       "upstream_sha256": "bbcdf16020e70d05e78283d68ac2306e23ab9d11bd1b123f5ca3e4984fbbc829",
-      "converted_sha256": "d69196620009a2548c490287aa9e7435afe16881815b2d0fb1cd13759d7c8011"
+      "converted_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+      "adaptation": "Lean 4.35: Attach the existing default hypothesis to each of the two public pair maps."
     },
     {
       "path": "Lib/ClassField/GaloisCohomology/CupProduct.lean",
@@ -1022,7 +1023,8 @@
     {
       "path": "Lib/DiscreteSeries/Haar/CompactDualMeasure.lean",
       "upstream_sha256": "f0149a7f00e6278244e6bd8ca6f91ca2e3f8fe6e986397cf5055da14411823ef",
-      "converted_sha256": "ae0a5e6d71074cf7f647d314acd42f7b81a2e44fa9ccc282f414677d04cd03cd"
+      "converted_sha256": "8ff779189b82158e783fa09ba5cfb266f2642007619d2df5752d688fce683c79",
+      "adaptation": "Lean 4.35: Attach the same default arguments directly to the measure declarations."
     },
     {
       "path": "Lib/DiscreteSeries/Haar/HaarColumnChart.lean",
@@ -1372,7 +1374,8 @@
     {
       "path": "Lib/GaloisRep/Pseudocharacter/SemisimpleReps.lean",
       "upstream_sha256": "2e44bbcf60329c3feddad86c401023173a6b42ec360d04fafc5c6b8ad305e5bf",
-      "converted_sha256": "7a11fc6bada380cfb36849ccd91295aac925ebf290cff053d6147904c06160b4"
+      "converted_sha256": "8325803afaa566ec79ae553f5deb554a17c1f6670b9a2f168fee9f863e7919aa",
+      "adaptation": "Lean 4.35: Recover equality of the matrix indices from the heterogeneous equality."
     },
     {
       "path": "Lib/GaloisRep/WeightCongruence/WeightCongruence.lean",
@@ -1493,7 +1496,8 @@
     {
       "path": "Lib/General/Analysis/ZpowSum.lean",
       "upstream_sha256": "274eb047f6235bee9ea6a93f6ad954e386f6567bb89426db16ada49a4b45f9c0",
-      "converted_sha256": "5c79ca228e06a5f5e0b6339a1f0139a13319d2371b310a9f8e091356162b5dad"
+      "converted_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "adaptation": "Lean 4.35: Use the public rootDiscr_def identity in both proofs."
     },
     {
       "path": "Lib/General/Combinatorics/Average.lean",
@@ -1839,7 +1843,8 @@
     {
       "path": "Lib/LocalGL/Green/MackeyFormula.lean",
       "upstream_sha256": "f87352e5fcf4800a4287d333bb7bcc7d1b4438c92a05bb73766a484f30d84b2c",
-      "converted_sha256": "f5ebc41a5f2da437fc03458b79ebbad4d1997d45221b89777dfc85796292267a"
+      "converted_sha256": "6b4efa99f1ae1793dbae57a3bb71d5152c08fe5226614fde1aa925f7992dd44a",
+      "adaptation": "Lean 4.35: Specify the endomorphism and provide the quotient compatibility proof."
     },
     {
       "path": "Lib/LocalGL/Iwahori/ExponentOfLabel.lean",
@@ -2424,7 +2429,8 @@
     {
       "path": "Lib/Shimura/Uniformisation/Frames.lean",
       "upstream_sha256": "f6d561b6a89562534f0fd67ab535e18c65a3e97109acb32b9999e215556c3f4f",
-      "converted_sha256": "6269eedf5a154ab43e01ab8ec93effdd210c5c5488e778cb6db5ec667da0d7d3"
+      "converted_sha256": "d374402f66474ba1908c3183fc4a13b39ceb254acfa47f0ec5624f7a30931c25",
+      "adaptation": "Lean 4.35: Use Rat.cast_smul_eq_qsmul to compare the two rational scalar actions."
     },
     {
       "path": "Lib/Shimura/Uniformisation/HolomorphicFamily.lean",
