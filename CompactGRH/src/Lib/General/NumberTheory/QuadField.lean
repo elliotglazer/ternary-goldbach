@@ -96,7 +96,8 @@ open Subalgebra Int Algebra Ideal ZMod
 /-- For a prime d ≡ 3 mod 4, the field ℚ(√−d) embeds in every field M of characteristic zero
 that contains a primitive d-th root of unity (quadratic Gauss sum). -/
 def nonempty_algHom_of_isPrimitiveRoot [Fact d.Prime] (hx : IsPrimitiveRoot x d) : QuadField d →ₐ[ℚ]
-  M := embOfSqrt d (by rw [gaussSum_sq (MulChar.ne_one_iff.2 ⟨-1, _⟩) ((quadraticChar_isQuadratic
+  M := embOfSqrt d (y := gaussSum ((quadraticChar (ZMod d)).ringHomComp (Int.castRingHom M))
+    (zmodChar d hx.pow_eq_one)) (by rw [gaussSum_sq (MulChar.ne_one_iff.2 ⟨-1, _⟩) ((quadraticChar_isQuadratic
   _).comp (castRingHom _)) (zmodChar_primitive_of_primitive_root _ hx)] <;>
   simp [quadraticCharFun, exists_sq_eq_neg_one_iff, h.1])
 

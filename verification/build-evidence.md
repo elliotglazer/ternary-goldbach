@@ -140,3 +140,10 @@ imports in 84.06 seconds. The Hall ring proof uses a scoped set of simp
 lemmas and applies the quotient similarity lemma directly. A fresh import
 reported exactly propext, Classical.choice, and Quot.sound for
 Hall.one_sub_constOne_pow_eq_zero, Hall.isUnit_constOne, and Hall.blockAverage_mul.
+
+On Lean 4.35 the full QuadField source reproduced the AWS error at line 99.
+The embedding constructor now receives the quadratic Gauss sum explicitly.
+The original equation proof checks and the complete module compiled in 49.10
+seconds in the native test. A fresh import reported only propext, Classical.choice,
+and Quot.sound for embOfSqrt, nonempty_algHom_of_isPrimitiveRoot, and
+different_eq_span_and_adjoin_c₀.
