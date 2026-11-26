@@ -1,0 +1,573 @@
+{
+  "target": "MajorIdentity",
+  "lean": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "proof_commit": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+  "platform": "Windows x86-64",
+  "project_closure_module_count": 43,
+  "retained_objects_with_matching_source_ancestry_and_prior_compile_receipt": 27,
+  "fresh_compile_count": 16,
+  "original_failure": {
+    "module": "MajorIdentity",
+    "exit": 1,
+    "wall_seconds": 30.54,
+    "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "ea3696b023813ed7733d24a589d8938b6dbe46751fbf355a2a685e43dbf57590",
+    "log_sha256": "87616be55610b0d6a1b1f9d76698034483ec7385ef45a3fe7e4bf51cfc465b6c",
+    "direct_import_object_sha256": {
+      "PatchedModel": "f9b8423b8854aa4590a19eef4d7310b05340cb0109893ed331e4c2bbca7bd0c8",
+      "AtomIntegral": "07d07871ed5e80adf09a6df0f5549c0040de8840a36033280d1ec3fe845febd4",
+      "MajorComparison": "da63da64ec1bc86343c1b1ff905c753bde02c15d554c524fda9e39cc3eb86c5d"
+    }
+  },
+  "first_error": "Integrable.piecewise expected NullMeasurableSet for the restricted measure.",
+  "solution": "Pass hs.nullMeasurableSet.",
+  "fresh_import": {
+    "exit": 0,
+    "module": "GoldbachMajorIdentityAudit",
+    "wall_seconds": 25.23,
+    "source_sha256": "0ea390670f9c368baec85042d60e66e438369b9779050b43fa6c84a188a3c2c6",
+    "log_sha256": "05c46872956503d690b5ee2fd1eca464df4a84c35c894e33b8fc03d9e891606e"
+  },
+  "axiom_reports": [
+    "'GoldbachEnergy.patched_model_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.major_of_local_errors' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "modules": [
+    {
+      "object_sha256": "643a20ff99811d01832ce087ea5bd1f0bcb91c8769b31ea8b9ea705c1d8c4376",
+      "source_sha256": "d7a744ece63b5f7685059614da908c5be0232a6148c469eba63d9d2ea5f60501",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 1,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "60c8bc4b73fc2c7bd645d5156e9c9cbee43f2d0e0368b321fbe90486a45b0180",
+      "kind": "retained object",
+      "module": "GoldbachVersionAliases"
+    },
+    {
+      "module": "TernaryGoldbach.Statement",
+      "exit": 0,
+      "wall_seconds": 23.03,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "6af39b249fbf4851ff966d6849d3f47e0fa3289f64debde50d521d2726b5dbba",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "127fd3b5203457dc696c8239241034fe9524ccd00cfba12da408303dd71b2846",
+      "direct_import_object_sha256": {},
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "TernaryGoldbach.CircleMethod",
+      "exit": 0,
+      "wall_seconds": 31.05,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "385d854927e6cc6f7ce837d010b002f4b065d054f059ab2feed73b23b2037bf4",
+      "log_sha256": "a4526507e1a31d156f1a3e62227ae6ba4b4e3a935999e654dcaa7ccf79768ab9",
+      "object_sha256": "098a3527af2bee0cbafa3273965c7c79fdbcdbb6a1424c1a4f05b8eed893756b",
+      "direct_import_object_sha256": {
+        "GoldbachVersionAliases": "643a20ff99811d01832ce087ea5bd1f0bcb91c8769b31ea8b9ea705c1d8c4376",
+        "TernaryGoldbach.Statement": "127fd3b5203457dc696c8239241034fe9524ccd00cfba12da408303dd71b2846"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "TernaryGoldbach.MinorArcs.Montgomery",
+      "exit": 0,
+      "wall_seconds": 26.54,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "1450865f2e96932081298826789597d9701add85e36d8881eb0919596e6db8a1",
+      "log_sha256": "859ee4bc0c9babab2e3e11c64af5f81361c029b75bcdff4f642f8aa97eec3dad",
+      "object_sha256": "a0b44859ceab9267d490fbed5b4f2df816c0ded312191e79e633533c3413478f",
+      "direct_import_object_sha256": {
+        "TernaryGoldbach.CircleMethod": "098a3527af2bee0cbafa3273965c7c79fdbcdbb6a1424c1a4f05b8eed893756b"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "object_sha256": "7c68bfb047799051d5269c31843788aaf9c3dbc4c8de6b24b2725d4f39e9a0bc",
+      "source_sha256": "25b5a5e868b9ffbac115ee61d4e8397b6dc1ae71d067a7623e8898120e87b93b",
+      "source_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "ancestral_module_count": 4,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "4ba54320193b2ec651a7b8857231c4eba91cc50da3f78d6922f3bfafe7007839",
+      "kind": "retained object",
+      "module": "TernaryGoldbach.Helfgott.Defs"
+    },
+    {
+      "object_sha256": "9ba953322f229d1fcb1ed5cb5a48931dd224bed180f667138f7193bb68b96628",
+      "source_sha256": "e1b3207e6808989ca57d48d8de5a4af0ecbabb0ff39ebb50ed561df87e7455b6",
+      "source_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "ancestral_module_count": 5,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "b671a77874356b890a351eda10703b1280d19b81f4dbcc51e93b59ea416bcc8b",
+      "kind": "retained object",
+      "module": "TernaryGoldbach.Helfgott.Numerics"
+    },
+    {
+      "object_sha256": "77b637ce24f9229c0ec0b2e909111b53ff22942b6f3fd8f82b21e12b9cc966af",
+      "source_sha256": "628e0114d615e9d7d1e9a110f21e471501b4335bca0e2d4628a9b9dde674bb4f",
+      "source_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "ancestral_module_count": 6,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "bcb4b8342f1ff15921f606607b9907d85c848cc2e217a0c2ae56c83be04434e9",
+      "kind": "retained object",
+      "module": "TernaryGoldbach.Helfgott.NonPrime"
+    },
+    {
+      "object_sha256": "e46d34b9bd7a2f5934d9c10ff03deab2803187549abaa7a6d0db7a8a2feb2754",
+      "source_sha256": "f73a9e6a96eeb52ad7502961f273e0f0c161981f941397548053a5a76d4d234d",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 2,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "0ed00c59582f9ac3cca00f313ad83cc084e7c4ffeaed5b7c998370d02130692c",
+      "kind": "retained object",
+      "module": "SingularBase"
+    },
+    {
+      "object_sha256": "d1b5a7bed3b6d5ee9b349b3e50bdca871430191dc0e0a0d83927f65146a34797",
+      "source_sha256": "a408db7abd059a5a3925ef5945c8d6dabf3a041c16aff5ae7867b180f3ee5fd4",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 3,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "a9ed477538bed47a0d2b19daca4c63ba418acf1fc98cba457c5cd9d7f4e3503a",
+      "kind": "retained object",
+      "module": "SingularWindow"
+    },
+    {
+      "object_sha256": "01ab049cc132644b1b66c63911f51fd5e2ca4d6284066ed953f299ca1e077605",
+      "source_sha256": "f398d8f4dabfac055344f4c2dd2fd5474121b1a4f4043f454c0e52c484d43e13",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 7,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "058e37deb5942aaf15bcf46a896b8e8e385a56ec54acb9b2aefc43ecc98cc643",
+      "kind": "retained object",
+      "module": "Ramanujan"
+    },
+    {
+      "object_sha256": "79ef537cf127025d8c1b7b86a308b2c0181f6398668dfdc71880fc94599213b6",
+      "source_sha256": "d4d98716ab6956d329b2696afcb222f42ce70d6912ea33f0e7c1415704364148",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 1,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "76d69bc0cec78033b49e4c7579182fede5d887f14e19cee89cef7a7cee7e7b74",
+      "kind": "retained object",
+      "module": "Energy"
+    },
+    {
+      "object_sha256": "3987f0be3571abd6e677a54c83ebf61c7b0be90d7140b3021f3c7a1e3296e3de",
+      "source_sha256": "6968225e2761cc40e929e18758f38503fb56e5897275a975a00bf1897bda53ac",
+      "source_pin": "0b68b493791e5f7569021f0cd13454151af47584",
+      "ancestral_module_count": 2,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "241f29cf459a2bc1bb1d6890477aaa46567d999fe17d3f01acf173dde1f280f0",
+      "kind": "retained object",
+      "module": "Moment"
+    },
+    {
+      "object_sha256": "c5397f682de041c99df01227260b1c7e432b0282ac9a2744a9aa532c602d87fb",
+      "source_sha256": "c70922c5ec5f6c2340ef8d1156b207fd01212e32d753c17a30b7a1d89d91e408",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 3,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "3b2c272d5fc32615ff54eed4af59465094ef2e3227751b85210a15a296f37016",
+      "kind": "retained object",
+      "module": "SharpMoment"
+    },
+    {
+      "module": "FourierEnergy",
+      "exit": 0,
+      "wall_seconds": 28.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "4421d76e35567e7a8b439fa4f42fca876f26e510cd3c5898f1e7e715b95702eb",
+      "log_sha256": "50d37654b66e5f09af24220ce56afcf5328c9d8cd63f671b67c2f49cfa35f003",
+      "object_sha256": "2f8d12e6378e7807f2f8e2fe6bfec7faa1d3330dd5d0aec9f78551968f2ad637",
+      "direct_import_object_sha256": {
+        "SharpMoment": "c5397f682de041c99df01227260b1c7e432b0282ac9a2744a9aa532c602d87fb",
+        "TernaryGoldbach.CircleMethod": "098a3527af2bee0cbafa3273965c7c79fdbcdbb6a1424c1a4f05b8eed893756b"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "object_sha256": "bd13003131b5ed651cdc965f87c95bb96b66e59425c3f9a4b493aecb56bd5260",
+      "source_sha256": "0ff36eb189ddc8e75f67a805dd1b65e724e6b1ef53c4a2d449970653710aaefe",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 8,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "bb44a6045f39aa66c5882739baee4f36d3417fafecf4196446153b0a86200c13",
+      "kind": "retained object",
+      "module": "MinorIntegral"
+    },
+    {
+      "object_sha256": "1a0440fff51c6bf0273b1fdc83914c5857a3591a37a663d9342bb46cd9bad3ed",
+      "source_sha256": "f82559f37567eba9f5b44296572480e0affb968d4e19785d7dd111315e0f27d7",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 1,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "32376b9fdc48d4e9a56e8a4f4076511856e14893c6ed452e6cde20a90b835ec7",
+      "kind": "retained object",
+      "module": "Arith"
+    },
+    {
+      "object_sha256": "0acbf979f29799efd2483338cfad2594eb814ecd42799621a4958f4f570ee1e3",
+      "source_sha256": "d634be307adddc89cc4d35b155670dd27d9f368b7a0564fc5536b07cad90c97c",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 13,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "b92d887c8d6e74e34b6956de7b02c9c61f2d3c85d56af9227abc82de3ce730da",
+      "kind": "retained object",
+      "module": "Coefficient"
+    },
+    {
+      "module": "Totient",
+      "exit": 0,
+      "wall_seconds": 16.02,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "b51a57488fb3c3a65f66c6944509104b4e4de08eed3c72de9890b645b455bce7",
+      "log_sha256": "073ae641ad5e71bbc9c91fb98443680df6e995b6f84735f2b605b4ba34596d14",
+      "object_sha256": "f090bd301a9e5c9846aabe965f884fa9a9f5373d0edcd213eb85b6a8dc3951da",
+      "direct_import_object_sha256": {},
+      "kind": "freshly compiled object"
+    },
+    {
+      "object_sha256": "186425946acb1943daca3a0c8b7c75cc024256a4e038e740880b0232f2f2195d",
+      "source_sha256": "fd68fb71a4f21a7e673e9d6c49c02f0f77c486913255116e75e61d0fa676376a",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 2,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "b102446558c4354877f99366f815e10a484e21bbbe28fbdf47c5759065d3c2e8",
+      "kind": "retained object",
+      "module": "TotientGrid"
+    },
+    {
+      "object_sha256": "0dba1cdddd87c55aff45e177b6a2e366bec01f2f4185a1fe13dd79c02f6e06e5",
+      "source_sha256": "9b95eed6df95a0abcf8788757cdbcf47ba839dfbb41cb8e92235dc5467b0f101",
+      "source_pin": "0b68b493791e5f7569021f0cd13454151af47584",
+      "ancestral_module_count": 5,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "b74c3cfd6502eefc322a755ef97dd358b3eaf2c344eb777ead584b17d9eb6294",
+      "kind": "retained object",
+      "module": "BudgetCore"
+    },
+    {
+      "object_sha256": "3b8715d933a41f63ae2d6d87813d8a7d820526ec1735d2ae96818c45e7a1dc70",
+      "source_sha256": "ff396d25f950da38935fbae00d57f587acfe86443e827bbbfac3028bee973c9d",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 7,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "84fdaed9e3b00096d2f2f947ca661f9df656c07c9bd3d2d2d0d88193ac1027d0",
+      "kind": "retained object",
+      "module": "Budget"
+    },
+    {
+      "object_sha256": "985993347d904484e225b74e33fad9f2ffe04898e773be021a1b22f226ff91ae",
+      "source_sha256": "494d3be4655fa1fa6801a6d1d2d103bdad8401ba005b106dc41d33487e353c5c",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 22,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "c460f4bbe0b8c14fa4a67747199ab38a388abba44fed018d265828ea5cae51e1",
+      "kind": "retained object",
+      "module": "MajorBudget"
+    },
+    {
+      "object_sha256": "5e91957ab155ca958d33bd4c1762a17b256101c4edd2a160e4b79de63f9f7dad",
+      "source_sha256": "bde29d4c3c6c892b3167c768559aff580cbbddd3f03a6b26c71aa31e46a6249b",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 23,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "b8366e94999bbe1fd7f8007d23868004790344745c9b6cbb8b24d8d38b98ef54",
+      "kind": "retained object",
+      "module": "PrincipalWave"
+    },
+    {
+      "object_sha256": "f74f8a13b5f1db9493d0376e775a940e8b92876464917a442a2f968c2573497c",
+      "source_sha256": "65b6998d1c48bce26e18e628754429b0970a9864034f0df4ea5e7ff0770a0ab7",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 2,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "d94db0bf7463e9cd78d8ecdee2eb804d3afc7066188b9cd74c62b311738df34a",
+      "kind": "retained object",
+      "module": "FiniteBridge"
+    },
+    {
+      "object_sha256": "96ec2ae2752b18b4653db66b1a41dfa29e090a093e3a85cf607959f74de12147",
+      "source_sha256": "40572ab05dd319829f513db86f91c2d923ffbe59f5b8701975154b044e4f0552",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 19,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "fd4fbafda99b0ca8b303c9b7fe48e62c0a905b16d73ee7ea960ae9819cf0390a",
+      "kind": "retained object",
+      "module": "Route"
+    },
+    {
+      "object_sha256": "5b0053be42a61d2e7b627fbe53b710a7220dcc397acfed677b539d21979697b4",
+      "source_sha256": "4960e92f0b16849a7461a31f7ca4b14492c874b043133f4428b311f2a62af8d6",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 26,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "1f0bee411c2ed6bbcbe2f7e6d5a3241faba0a129d501405528ae32fe4b6c7553",
+      "kind": "retained object",
+      "module": "RationalArcs"
+    },
+    {
+      "object_sha256": "33db92769ca63e6868aca90c4066ebf544f2ab2cc73c1651c1b2b209bf823c6a",
+      "source_sha256": "42eaff27d9a69d53de9243f63b4133acace8de0f030dadbc6ab29823fa68d773",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 27,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "0843ae4dd2efa9bcbe9f4e7592a419c3c6edc0466b908fa5abbc6bae16b2836f",
+      "kind": "retained object",
+      "module": "RouteOnArcs"
+    },
+    {
+      "object_sha256": "b33aa5a258eb97aafe111b59919d43df972fbdd24fb25c7144a8b5babe4910bc",
+      "source_sha256": "db4fd5fc90d4c49a5e33f8c7854d8ab4b1ffead1d4ec94e015861cfc4e52a755",
+      "source_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "ancestral_module_count": 1,
+      "matched_artifact_hashes": [
+        ".olean",
+        ".olean.private",
+        ".olean.server",
+        ".ir",
+        ".ir.sig"
+      ],
+      "prior_compile_receipt_sha256": "44f1d03ee8c73fa670f8f5ca5ba1b0ea8395631535b49323d0af155c914e5bfa",
+      "kind": "retained object",
+      "module": "LaplaceCube"
+    },
+    {
+      "object_sha256": "a4438f985ebfd9eb2363a1ccda54cddac920a1293fd5c2fb1c03f3bbfa2b648d",
+      "source_sha256": "9354223db6c604f9adbd15bff3296a4043200938574f873bfb8544d9b78e2d8e",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 5,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "2b8c798adf0bb50840b4352b0b12f290e2cd8a323d6d418217003b252cb5af06",
+      "kind": "retained object",
+      "module": "PrincipalTransform"
+    },
+    {
+      "object_sha256": "97550a128c1c7664e900d868d8065f4f0ee5d01b0cd5afba4b2ebd245685c74d",
+      "source_sha256": "1d44ea1b977bb1ada8c6279f22b85cb81cec95521468e9fc1bc3de3fe86bc275",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 27,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "30ff7a0c9db9aef2c0ba2b6846eac68a983bb9bef031d79ca1a0b95ec33646f7",
+      "kind": "retained object",
+      "module": "PrincipalTail"
+    },
+    {
+      "object_sha256": "7a1cc70ea6be389d2eb074a16a75ddd4f86bfcb45628648bfee082002a981ea7",
+      "source_sha256": "2723aec44d7a81dfa36ce44704d17ad65d8a5dad6c36147893cd87ffdeb8b16e",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 30,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "afe43e20e1ea5dd40b79cab918d5734cf4c5cc498031adc40d11f9dbee6547a6",
+      "kind": "retained object",
+      "module": "PrincipalMajor"
+    },
+    {
+      "object_sha256": "08968cc334e96a944bef62513b0a45e3b8f89990194fb7b5b1a94a466f6e1c88",
+      "source_sha256": "cc5d8cf7e71ed2446135133755035bbda56ab41f04a75188ca440da678e3dd1f",
+      "source_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "ancestral_module_count": 32,
+      "matched_artifact_hashes": [],
+      "prior_compile_receipt_sha256": "4f275b1d9e45d606cb7ce608ab2c0bdec05603bf5b21090e55e5e5e79e64a828",
+      "kind": "retained object",
+      "module": "ModelRoute"
+    },
+    {
+      "module": "ArcSeparation",
+      "exit": 0,
+      "wall_seconds": 24.54,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "285cb860b4a5696b9d26403f9a443d102bfd2abf3237a3abddcae4d7e9daea0e",
+      "log_sha256": "0d18f061a43f9f836bc8fd25ab40c4cb8cf72c66e91bc18b025d5acf8212aca5",
+      "object_sha256": "c01c41184b76a47c69d85628c1fd9a32eb86fc2bd3e91c77cd8ef1c5c9b88c94",
+      "direct_import_object_sha256": {
+        "RationalArcs": "5b0053be42a61d2e7b627fbe53b710a7220dcc397acfed677b539d21979697b4"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "ArcCenters",
+      "exit": 0,
+      "wall_seconds": 24.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "0eeecf6c4c19308c1c601875f1cc099c51fe3f930ec66f5b1234137e98c73d45",
+      "log_sha256": "fffc559c8b9ca41e5249bad17a4effbc4df27374a93d72b56adf8a61567601cc",
+      "object_sha256": "c48fd0608e8248b5ababd18c4f0fe075b0c65e57661bcccd9cb53f0eaa1010b0",
+      "direct_import_object_sha256": {
+        "ArcSeparation": "c01c41184b76a47c69d85628c1fd9a32eb86fc2bd3e91c77cd8ef1c5c9b88c94"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "MajorEnergy",
+      "exit": 0,
+      "wall_seconds": 28.57,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "log_sha256": "3f0c495c3492a2a70b801281d9a92377c4e7a29776c5642dd06b940f0164da7f",
+      "object_sha256": "41a61bfa0b7de6c471b4a7eac0fa35c368bbaea256bc75451b91d677ada4ac3a",
+      "direct_import_object_sha256": {
+        "ModelRoute": "08968cc334e96a944bef62513b0a45e3b8f89990194fb7b5b1a94a466f6e1c88"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "ArcMeasure",
+      "exit": 0,
+      "wall_seconds": 28.04,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "93ce64d06cbf4b4432e52ab1f5ec09d2881175fda57063b56da85aa45f149cec",
+      "log_sha256": "faee78ee7c98323d5add6553734363e04479c55656f6c8a226366059786d6dcb",
+      "object_sha256": "4cca2b3dccddad88465ccaa1048c8acb33ebc591cb1f12b511e55da04c127293",
+      "direct_import_object_sha256": {
+        "ArcCenters": "c48fd0608e8248b5ababd18c4f0fe075b0c65e57661bcccd9cb53f0eaa1010b0",
+        "MajorEnergy": "41a61bfa0b7de6c471b4a7eac0fa35c368bbaea256bc75451b91d677ada4ac3a"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "ArcUnion",
+      "exit": 0,
+      "wall_seconds": 24.58,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "cb5d9f6ef7a21f0bb233e1283f7e61a8416b0ae64048e6f99dfa034d213a7485",
+      "log_sha256": "aa81dfc39cff8b640954195e51fd144c4f1ba08aeec878c15ebbf9352bb57334",
+      "object_sha256": "1178daa3a9fe2b1a3297f372e581b861a2e8faf0befea530195a3c44f58c754b",
+      "direct_import_object_sha256": {
+        "ArcMeasure": "4cca2b3dccddad88465ccaa1048c8acb33ebc591cb1f12b511e55da04c127293"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "ArcDisjoint",
+      "exit": 0,
+      "wall_seconds": 25.53,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "2670a0ec66c6416deca6cc64376f137c41558ae0437e4101655c54634397ad70",
+      "log_sha256": "e0f5fbf6c67d461eafd5423fe62468f3e83483d5bf0fd3fd067fd5902f3c010f",
+      "object_sha256": "dcdfa0d3ba7a62659571280f547e69a56ce0e83ce1791dac40da43b4227b82d6",
+      "direct_import_object_sha256": {
+        "ArcUnion": "1178daa3a9fe2b1a3297f372e581b861a2e8faf0befea530195a3c44f58c754b"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "ArcTranslation",
+      "exit": 0,
+      "wall_seconds": 25.03,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "0108e69c4567175fd43fc97d07dbce60c9c82b69b15d15833b9c16e2cda4d4cf",
+      "log_sha256": "99f5f4ad45e627936fe31a9411592c9a30dd665dae576ad659c9b58cd3a23929",
+      "object_sha256": "da9cf044bd39485c440b763dfaab812d6bfac0fc5d2af2ce86ee7f1b37fea58e",
+      "direct_import_object_sha256": {
+        "PrincipalMajor": "7a1cc70ea6be389d2eb074a16a75ddd4f86bfcb45628648bfee082002a981ea7"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "PatchedModel",
+      "exit": 0,
+      "wall_seconds": 24.53,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "e693ef2a21e440794bbca8a2ac8be0cb384827efb499f8ec7e5f459709521eab",
+      "log_sha256": "df283a2b89a0666f0d22262f36cd6607d01a749fb2219f0445b5e19f91095746",
+      "object_sha256": "f9b8423b8854aa4590a19eef4d7310b05340cb0109893ed331e4c2bbca7bd0c8",
+      "direct_import_object_sha256": {
+        "ArcDisjoint": "dcdfa0d3ba7a62659571280f547e69a56ce0e83ce1791dac40da43b4227b82d6",
+        "ArcTranslation": "da9cf044bd39485c440b763dfaab812d6bfac0fc5d2af2ce86ee7f1b37fea58e"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "AtomIntegral",
+      "exit": 0,
+      "wall_seconds": 27.54,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "2c87d91d11865c49f7d402bbbab70b814a5c75a255b217ceece2cafe206421e7",
+      "log_sha256": "c9722b579a19c7fd1e179867376dd6d818866bfaead7d09d46fade740a64bb1d",
+      "object_sha256": "07d07871ed5e80adf09a6df0f5549c0040de8840a36033280d1ec3fe845febd4",
+      "direct_import_object_sha256": {
+        "ArcUnion": "1178daa3a9fe2b1a3297f372e581b861a2e8faf0befea530195a3c44f58c754b",
+        "ArcTranslation": "da9cf044bd39485c440b763dfaab812d6bfac0fc5d2af2ce86ee7f1b37fea58e"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "module": "MajorComparison",
+      "exit": 0,
+      "wall_seconds": 25.6,
+      "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "source_sha256": "548680aea674ba6478b057f68b5c9c3d6940cc4c90833f1fc3ba30b555fc4c89",
+      "log_sha256": "ae52c9bfc104b3e4aa7a84336ff75c394ee040c38e048ff3030425eea7590830",
+      "object_sha256": "da63da64ec1bc86343c1b1ff905c753bde02c15d554c524fda9e39cc3eb86c5d",
+      "direct_import_object_sha256": {
+        "ArcMeasure": "4cca2b3dccddad88465ccaa1048c8acb33ebc591cb1f12b511e55da04c127293"
+      },
+      "kind": "freshly compiled object"
+    },
+    {
+      "exit": 0,
+      "module": "MajorIdentity",
+      "wall_seconds": 28.31,
+      "source_sha256": "4cf4a99485d055ffafb0ab690925643e018552b7ebe9efc9920092384100802c",
+      "log_sha256": "654dc33fe38cffba4e53bf7d6a6a40fa7a47595096b5bd752a8abe9234e816d9",
+      "object_sha256": "154600e6b4aa8ace1d1a27fafb73483389e7aa8965ce4fab6afab253cfa253d9",
+      "kind": "freshly compiled object"
+    }
+  ]
+}

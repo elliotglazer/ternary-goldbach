@@ -1,0 +1,42 @@
+{
+  "pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "module": "Lib.Cohomology.Hodge.HodgeSite",
+  "original_sha256": "73c36eba04ec7946a5c256d632ce777f1519a7e3e97cf669eb34f5c1c088f7a3",
+  "source_sha256": "2802ab2a54c7fecf14fef745a2ad82f1a1b58ffb1817e6f6ba40bcb0f7f4103c",
+  "patched_parent_source_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+  "verified_full_module": {
+    "module": "Lib.Cohomology.Hodge.HodgeSite",
+    "pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "2802ab2a54c7fecf14fef745a2ad82f1a1b58ffb1817e6f6ba40bcb0f7f4103c",
+    "exit": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "wall_seconds": 70.043,
+    "guard_killed": false,
+    "parent_oleans": {
+      "Lib.General.Geometry.EtaleCharts": "123d43cae33b64c528f4f45191e2deabe1836fe048a15a13e52cf0380eb0c989"
+    },
+    "system_cpu_seconds": 8.234375,
+    "user_cpu_seconds": 60.609375,
+    "peak_working_set_bytes": 2388271104,
+    "peak_commit_bytes": 8219537408,
+    "olean_sha256": "2d199314ec40a7ccd8ba2155c497e54489f9383e9337dee3116fa266cf2f39ae"
+  },
+  "entry_audit": {
+    "module": "HodgeRepairAudit",
+    "pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "source_sha256": "4bf6892ab37ac29350bf8cf0ba6eeb20094654f2bc190bdb2144e4951b4b1c1c",
+    "exit": 0,
+    "log_sha256": "f5ccc4f8faf5bdbed3a930af29447d71ab99ce30f54847cc6c8b3555b2852a5d",
+    "wall_seconds": 135.886,
+    "guard_killed": false,
+    "parent_oleans": {
+      "Lib.Cohomology.Hodge.HodgeSite": "2d199314ec40a7ccd8ba2155c497e54489f9383e9337dee3116fa266cf2f39ae"
+    },
+    "system_cpu_seconds": 19.34375,
+    "user_cpu_seconds": 17.8125,
+    "peak_working_set_bytes": 3391205376,
+    "peak_commit_bytes": 8550907904,
+    "olean_sha256": "c9980ad88abf60a5fe1d8aa1ba95154a51a7a0fad07218ba1fe8a0c86432055b"
+  },
+  "audit": "'HodgeTest.sqZeroExt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'exteriorAlg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeTest.baseProj' depends on axioms: [propext, Classical.choice, Quot.sound]\n'hodgeCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'HodgeH.baseChange' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EtaleChart.exists_univPoint' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+}
