@@ -1,0 +1,29 @@
+{
+  "candidate": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+  "candidate_tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+  "community_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "community_source_tree": "b834f80c6399db99d54ce171ba541c4a95a4f90f",
+  "source_manifest_sha256": "99422337064bd9c1a6428701718a76b31848e7ff7767ef564dea9291b145e58f",
+  "upstream_lean_files": 794,
+  "upstream_source_bytes": 7420187,
+  "ported_source_bytes": 7472018,
+  "changed_from_upstream": 794,
+  "upstream_and_converted_sha256_pairs_verified": 794,
+  "source_files_in_warm_dependency_closures": {
+    "Main": 794,
+    "CompletedFiniteRows": 732
+  },
+  "distinct_trace_records_matching_candidate_source_blobs": 1526,
+  "stored_lake_facet_hashes_inventoried": 7630,
+  "remaining_candidate_lean_files": [
+    "CompletedGoldbach.lean",
+    "GoldbachChallenge.lean",
+    "GoldbachSolution.lean"
+  ],
+  "warm_receipt_sha256": "ea4212e537e41838a6baa57d9bea806c17d2c09a0538c57a6a09b60b08e6cb5f",
+  "closure_sha256": {
+    "finite-closure.json": "fc486ba212dc84d9058ec54be72c599e6f20cd961ca3396caaa7d71811427127",
+    "grh-closure.json": "264fa32d120af4ef730f44fefacad98a439c13bd17e645796985e5bcb110d113"
+  },
+  "scope": "Independent source provenance and reachability check. The host warm receipt checked the compiled facet bytes. This local comparison reads the candidate Git tree, the original and converted GRH source bytes, and both retained dependency inventories. The cold verifier judges the exported theorem separately."
+}

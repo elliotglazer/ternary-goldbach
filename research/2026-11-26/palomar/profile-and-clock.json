@@ -1,0 +1,42 @@
+{
+  "candidate": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+  "candidate_tree": "d310a9b71577cc7225486e5ea39c913e411473ca",
+  "verifier_commit": "046554302064b2c83c2b924bea6db87fc5900c68",
+  "profile": "palomar-namespace-32x64-v1",
+  "setup_basis": "preprovisioned",
+  "accounting_start_utc": "2026-11-26T12:07:57Z",
+  "outer_cutoff_utc": "2026-11-26T16:57:00Z",
+  "local_proof_allowance_seconds": 17343,
+  "palomar_profile_execution_budget_seconds": 19800,
+  "probes": {
+    "pre_qualification": {
+      "original_sha256": "16834865e2cc4df629f7ec48d24024fea3b3a29ad9ef25b5d1f80ea543b42d2f",
+      "common_ancestor_limits": {
+        "cpu.max": "3200000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "entry_effective_memory_bytes": 68719476736,
+      "stock_child_effective_memory_bytes": 67345084416,
+      "stock_child_cpu_count": 32.0,
+      "stock_child_affinity_count": 32,
+      "stock_child_exit_status": 0,
+      "placement_ok": true
+    },
+    "in_session": {
+      "original_sha256": "a1af7c5c70140012100bcaddec0945b6fa3c7f9abfc7c3bb49588df874f7d7a0",
+      "common_ancestor_limits": {
+        "cpu.max": "3200000 100000",
+        "memory.max": "68719476736",
+        "memory.swap.max": "0"
+      },
+      "entry_effective_memory_bytes": 68719476736,
+      "stock_child_effective_memory_bytes": 67345084416,
+      "stock_child_cpu_count": 32.0,
+      "stock_child_affinity_count": 32,
+      "stock_child_exit_status": 0,
+      "placement_ok": true
+    }
+  },
+  "scope": "Both measurements used a genuine stock child and observed the same aggregate limits in the entry and child cgroup ancestry."
+}

@@ -25,7 +25,7 @@ The [commit table](evidence/published-history.tsv) contains one row per distinct
 
 The [source timing model](evidence/source-build-timing-model.json) records one timing per source-matched module and its direct project dependencies. It includes 794 GRH modules, 732 finite and analytic modules, and the two final connecting modules. The recorded seconds are elapsed times of individual Lake tasks. Adding them charges overlapping work more than once. Measures of processor time, estimates based on reserved cores, and the elapsed time of a complete run answer different questions.
 
-The [protected checkpoint](evidence/performance-1240.json) lists all 655 completed modules and the concurrent compilers observed at 12:40 UTC. It also records the memory limits, actual usage, pressure and event counters. The snapshot forecast in the timing model removes the already completed modules. It charges active modules their full measured duration and excludes the subsequent solution export and kernel checks. A fraction of completed modules alone cannot give a finish time.
+The [protected checkpoint](evidence/performance-1240.json) lists all 655 completed modules and the concurrent compilers observed at 12:40 UTC. It also records the memory limits, actual usage, pressure and event counters. The snapshot forecast in the timing model removes the already completed modules. It charges active modules their full measured duration and excludes the subsequent solution export and kernel checks. The completed cold build and solution export have separate measured durations. [Stock measurements and source hashes](palomar/README.md)
 
 ## Check the handoff
 

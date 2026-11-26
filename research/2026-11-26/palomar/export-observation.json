@@ -1,0 +1,113 @@
+{
+  "utc": "2026-11-26T14:47:56.671538+00:00",
+  "stage": "comparator",
+  "status": "error",
+  "errors": [],
+  "kernels": [],
+  "report_sha256": "717d2dc90e097f720be154c26b27cc817e762ec01253747d8dbe595216b8e28a",
+  "report_keys": [
+    "build_log_tail",
+    "bwrap_source_tag",
+    "challenge",
+    "checked_at",
+    "classification",
+    "comparator",
+    "con_ron_checker",
+    "errors",
+    "existing_id",
+    "formalization",
+    "kernels",
+    "lake_manifest",
+    "lakefile",
+    "lean_toolchain",
+    "lean_toolchain_path",
+    "license",
+    "mathlib_cache",
+    "mathlib_toolchain",
+    "orcid_validation",
+    "phase",
+    "project_dependencies",
+    "protected_config",
+    "protected_config_sha256",
+    "provenance",
+    "resource_usage",
+    "schema_version",
+    "solution",
+    "source",
+    "source_requirements",
+    "stage",
+    "status",
+    "submission",
+    "tool_digests",
+    "toolchain_commit",
+    "verification_profile",
+    "warnings",
+    "workflow_url"
+  ],
+  "files": [
+    {
+      "path": "proof-scratch/proof/work/exports/challenge.export",
+      "bytes": 1434686,
+      "mtime": 1795696214.3959157
+    },
+    {
+      "path": "proof-scratch/proof/work/exports/solution.export",
+      "bytes": 6079160562,
+      "mtime": 1795704427.5097249
+    },
+    {
+      "path": "proof-scratch/proof/work/canonical-challenge/PalomarCanonicaleb7e43899438dd073c412697/Challenge.ir",
+      "bytes": 1824,
+      "mtime": 1795696206.290202
+    },
+    {
+      "path": "proof-scratch/proof/work/canonical-challenge/PalomarCanonicaleb7e43899438dd073c412697/Challenge.olean",
+      "bytes": 7152,
+      "mtime": 1795696206.2900853
+    },
+    {
+      "path": "proof-scratch/proof/work/canonical-challenge/PalomarCanonicaleb7e43899438dd073c412697/Challenge.olean.private",
+      "bytes": 3872,
+      "mtime": 1795696206.2901363
+    },
+    {
+      "path": "proof-scratch/proof/work/canonical-challenge/PalomarCanonicaleb7e43899438dd073c412697/Challenge.olean.server",
+      "bytes": 840,
+      "mtime": 1795696206.2901704
+    }
+  ],
+  "recent_phases": [
+    {
+      "phase": "candidate-configuration",
+      "elapsed_seconds": 0.995,
+      "returncode": 0
+    },
+    {
+      "phase": "candidate-configuration:cgroup"
+    },
+    {
+      "phase": "challenge-export",
+      "elapsed_seconds": 2.712,
+      "returncode": 0
+    },
+    {
+      "phase": "challenge-export:cgroup"
+    },
+    {
+      "phase": "solution-build",
+      "elapsed_seconds": 6266.44,
+      "returncode": 0
+    },
+    {
+      "phase": "solution-build:cgroup"
+    },
+    {
+      "phase": "solution-export",
+      "elapsed_seconds": 1946.365,
+      "returncode": 0
+    },
+    {
+      "phase": "solution-export:cgroup"
+    }
+  ]
+}
