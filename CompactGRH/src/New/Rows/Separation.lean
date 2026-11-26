@@ -56,8 +56,11 @@ noncomputable def Data.linePair {P : Parameters} {D : Data P} (j : D.LiftIndex) 
   D.Pair := by
   let n := j + (D.t - 11 * D.m - 1) / 2
   refine' Option.rec (.mk _ (D.w j · - n) _ D.heckeCount (((D.mu₀_hasWeight j).mul_upsilonU1_pow
-    n).of_weight_eq _) ..) fun s ↦ ⟨_ * _ ^ (s.1 * j), fun _ ↦ D.eSign s, _, D.eSign s, by
-    simpa using! (WeilData.hasWeight_upsilonU1_pow _).inv.mul (D.chi_hasWeight.zpow _), _, _, _, _⟩
+    n).of_weight_eq _) ..) fun s ↦
+    ⟨(WeilData.upsilonU1 ^ D.eSign s : AutChar D.E)⁻¹ * D.χ ^ (s.1 * j),
+      fun _ ↦ D.eSign s, D.ω ^ (s.1 * j), D.eSign s, by
+        simpa [Pi.neg_def] using (WeilData.hasWeight_upsilonU1_pow (E := D.E) (D.eSign s)).inv.mul
+          (D.chi_hasWeight.zpow (s.1 * j)), _, _, _, _⟩
   any_goals refine' fun v ↦ .trans (b := (D.w j v : ℝ)) (Nat.mono_cast _) _
   all_goals grind [heckeCount, eSign, omega_eq_one_of_not_isChosen, _root_.one_zpow, Pi.pow_apply,
     w_le_two_mul_b]
