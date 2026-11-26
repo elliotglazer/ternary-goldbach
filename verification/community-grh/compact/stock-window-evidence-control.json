@@ -1,0 +1,26 @@
+{
+  "scope": "Wrapper administrative branch with version responses substituted and a forced test capacity rejection. Actual stock argument parser ran. No proof, capacity result or kernel verdict represented.",
+  "runner_sha256": "c3a938cb2a2d9b88537d15534d9f02a115d22540f0a82d5f18495f0e52ed418d",
+  "cases": {
+    "standard": {
+      "exit": 77,
+      "intake_report_untouched": true,
+      "alternate_clock_receipt": null
+    },
+    "alternate": {
+      "exit": 77,
+      "intake_report_untouched": true,
+      "alternate_clock_receipt": {
+        "source_commit": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+        "verification_policy_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+        "prepared_report_sha256": "b716e15988e4dc341ff17fe5d3704ba2220dc29cc95aa24642f7429f63ad9c5e",
+        "published_profile": "palomar-namespace-32x64-v1",
+        "published_profile_budget_seconds": 19800,
+        "local_replay_budget_seconds": 36000,
+        "clock_basis": "full-pipeline",
+        "job_started_at_epoch": 1795672978,
+        "classification": "local alternate-window replay"
+      }
+    }
+  }
+}

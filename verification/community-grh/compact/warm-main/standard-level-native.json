@@ -1,0 +1,122 @@
+{
+  "axiom_check": {
+    "declarations": {
+      "IntegralPlace.IsStdLevel.ascConv_unitaryLevel": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.gauge": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.groupMeasure_boxSet_le": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.heisenbergMeasure_eq_floorModulus": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.le_stackMeasure_boxSet": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.unfold_besselU": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "log_sha256": "338c5672a7aacd506e71b189fa13593daba2a95a9cc42a10298d011bb895a61b",
+    "native": {
+      "cpu_seconds": 45.15625,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 54.029
+    },
+    "source_sha256": "1b68de35731091fbed73b99c4fd2762eda067ec22bd9fa89e7438d9e8ba9d017"
+  },
+  "compiled_metadata": {
+    "exported_axiom_entries_per_facet": [
+      96,
+      96,
+      96
+    ],
+    "log_sha256": "2ac13268939ea133955f65277e091fa1cbed47e70affffe18e2f91b0752efcd5",
+    "nonstandard_exported_records": 0,
+    "private_facet_declarations": 160,
+    "public_server_private_direct_sorry_counts": [
+      0,
+      0,
+      0
+    ]
+  },
+  "detailed_receipt_sha256": "d0362e52336d21f39d766dad5ad8f0de4552776a62da2bd56ec24c0dd6f7bf56",
+  "full_check": [
+    {
+      "first_error": "154:19 expected token",
+      "log_sha256": "d6bb7696b4f9f9d064fd3d47fedf11379c49fc3ef9654b5b8669d8c97db4da88",
+      "native": {
+        "cpu_seconds": 134.59375,
+        "exit": 1,
+        "resource_guard": null,
+        "wall_seconds": 138.056
+      },
+      "other_errors": [
+        "216:27 and 238:3 invalid field notation on gauge"
+      ],
+      "source_sha256": "41ee2fafef9371f7894d9408c4b36ad36b58e3ec2b135056108561347a885c21"
+    },
+    {
+      "first_error": "180:4 unknown private funext_iff._simp_1",
+      "log_sha256": "52671a8ef680725a0151b6ecd7347ff128811566f0616640724c427eb85c08b8",
+      "native": {
+        "cpu_seconds": 142.90625,
+        "exit": 1,
+        "resource_guard": null,
+        "wall_seconds": 146.071
+      },
+      "other_errors": [
+        "191:2 unknown private sum_mem._simp_1",
+        "216:27 and 238:3 invalid field notation on gauge"
+      ],
+      "source_change": "Use the canonical ENNReal identifier in the lower bound.",
+      "source_sha256": "db8f85fc5f8037251758ab3fd04df8dc277659be32e7d9ce5100375994878dba"
+    },
+    {
+      "affected_consumer_statements_and_proof_calls_unchanged": true,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "module_artifacts": {
+        ".ir": "a91fc54fcba92b4a929d284ba837d7aecea6e6c626300a13e14c20ac35e41f9b",
+        ".ir.sig": "1637a04abfe0bd2e37eaf23aa440b60840a6a7947d65ef2b99ff36d58d67e087",
+        ".olean": "a4ebe744fc525b361b352d8af507fa6d5ed96392dbf0512fab10b11dcbb5903b",
+        ".olean.private": "4d7ad805391a37f59f3f3e62865f3cfd862cd9b1564ce093de4b30f3bf7c1f32",
+        ".olean.server": "9c96779430b93099e73f212a9b62bedd22c8914529e6ff7d9a03b3790d482253"
+      },
+      "native": {
+        "cpu_seconds": 159.609375,
+        "exit": 0,
+        "resource_guard": null,
+        "wall_seconds": 162.063
+      },
+      "source_change": "Put the original list of locally active simp rules in the explicitly opened StandardLevelProofSimp scope.",
+      "source_sha256": "a0448fb43fe2c36305e9edf10a8f5ef703a4b2086771f93088f619e29de56ccf"
+    }
+  ],
+  "matching_base_commits": [
+    "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+    "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443"
+  ],
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "module": "New.Filling.StandardLevel",
+  "project_dependencies_verified": 95,
+  "protected_comparator_run": false,
+  "scope": "Full Lean module and six individual axiom reports using genuine Mathlib and project ancestors",
+  "source_base_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "toolchain": "Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc"
+}

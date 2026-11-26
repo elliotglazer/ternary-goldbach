@@ -35,7 +35,10 @@ def main():
     parser.add_argument("--bwrap", type=Path, required=True, help="Path built by the pinned installer.")
     parser.add_argument("--output", type=Path, required=True, help="Fresh execution-report path.")
     parser.add_argument("--job-start", type=int, help="Unix epoch recorded before a fresh full pipeline bootstrap.")
+    parser.add_argument("--execution-budget-seconds", type=int, default=BUDGET,
+                        help="Wall-clock allowance for this local replay. Published profiles allow 19800 seconds.")
     args = parser.parse_args()
+    require(args.execution_budget_seconds >= 60, "The stock verifier requires at least 60 seconds.")
     policy = args.verifier.resolve(strict=True)
     work = args.work_dir.resolve(strict=True)
     original = args.prepared_report.resolve(strict=True)
@@ -65,17 +68,25 @@ def main():
     env["PYTHONDONTWRITEBYTECODE"] = "1"
     env["PALOMAR_EXECUTION_PROFILE"] = PROFILE
     epoch = args.job_start or int(env.get("PALOMAR_JOB_STARTED_AT", "0"))
+    timing_basis = "full-pipeline" if epoch else "execution-only"
     if epoch:
         require(0 < epoch <= time.time() + 1, "Invalid job-start epoch.")
     else:
         print("Clock covers execution-stage work only. Supply the original start for a full timed replay.")
         epoch = int(time.time())
     env["PALOMAR_JOB_STARTED_AT"] = str(epoch)
+    profile_budget = report["verification_profile"]["limits"]["execution_budget_seconds"]
+    nonstandard_window = args.execution_budget_seconds != profile_budget
+    window_path = output.with_name(output.name + ".timing.json")
+    if nonstandard_window:
+        require(not window_path.exists(), "Choose an unused local timing evidence path.")
+        print(f"Local replay window {args.execution_budget_seconds}s; published profile window {profile_budget}s "
+              f"({timing_basis} clock).", flush=True)
     cli = [sys.executable, str(policy / "scripts/verify_submission.py")]
     capacity = [*cli, "check-capacity", "--disk-path", str(work), "--output", str(output)]
     execution = [*cli, "execute", "--work-dir", str(work), "--output", str(output),
                  "--bwrap", str(bwrap), "--bwrap-source-tag", "v0.12.0",
-                 "--execution-budget-seconds", str(BUDGET), "--workflow-url", output.as_uri()]
+                 "--execution-budget-seconds", str(args.execution_budget_seconds), "--workflow-url", output.as_uri()]
     for cmd in (capacity, execution):
         # The stock argument parser checks these exact constructed options; invoking it starts no jobs.
         statement = ("import sys; from scripts.verify_submission import parser; "
@@ -114,6 +125,21 @@ def main():
     lean = shutil.which("lean", path=env["PATH"])
     require(lean and "version 4.35.0," in command([lean, "--version"], env=env, cwd=source),
             "Use the submitted official Linux Lean toolchain.")
+    if nonstandard_window:
+        evidence = {
+            "source_commit": report["source"]["commit"],
+            "verification_policy_commit": POLICY,
+            "prepared_report_sha256": args.report_sha256,
+            "published_profile": PROFILE,
+            "published_profile_budget_seconds": profile_budget,
+            "local_replay_budget_seconds": args.execution_budget_seconds,
+            "clock_basis": timing_basis,
+            "job_started_at_epoch": epoch,
+            "classification": "local alternate-window replay",
+        }
+        with window_path.open("x", encoding="utf-8") as dest:
+            json.dump(evidence, dest, indent=2)
+            dest.write("\n")
     with output.open("xb") as dest:
         dest.write(original.read_bytes())
     rc = subprocess.run(capacity, cwd=policy, env=env).returncode
@@ -121,7 +147,7 @@ def main():
         rc = subprocess.run(execution, cwd=policy, env=env).returncode
     decision = json.loads(output.read_bytes())
     print(json.dumps({k: decision.get(k) for k in ("status", "stage", "errors", "warnings", "kernel_attempts")}))
-    return 0 if rc == 0 and decision.get("status") == "pass" else (rc or 1)
+    return 0 if rc == 0 and (decision.get("status"), decision.get("stage")) == ("pass", "complete") else (rc or 1)
 
 if __name__ == "__main__":
     raise SystemExit(main())
