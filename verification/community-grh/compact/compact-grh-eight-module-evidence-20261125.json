@@ -1,0 +1,442 @@
+{
+  "format": "compact-grh-native-replay-evidence-v1",
+  "date": "2026-11-25",
+  "scope": "Eight local project-module compiles against prebuilt dependency artifacts in the 794-module compact GRH source tree.",
+  "build_source": {
+    "repository": "https://github.com/elliotglazer/ternary-goldbach",
+    "commit": "0b68b493791e5f7569021f0cd13454151af47584",
+    "git_tree": "6d8764b58d1a41584cd5d43fd3e400f6ee55d18e",
+    "module_directory": "CompactGRH/src",
+    "source_check": "All eight local source files byte-matched the raw files served at the stated public commit."
+  },
+  "upstream": {
+    "repository": "https://github.com/leanprover-community/riemann-hypothesis",
+    "commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+    "directory": "grh-compact/src",
+    "git_tree": "b834f80c6399db99d54ce171ba541c4a95a4f90f"
+  },
+  "environment": {
+    "platform": "x86_64-w64-windows-gnu",
+    "toolchain": "leanprover/lean4:v4.35.0",
+    "compiler_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "compiler_exe_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "lake_manifest_sha256": "28fc7e6db5a7c849bf990d62e91c7df31b32d1cd00e088e341e0202a49ec6a60",
+    "dependency_revisions": {
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "plausible": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "LeanSearchClient": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "importGraph": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "proofwidgets": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "aesop": "4a174c490d8707121c4a9290800489f105d85e07",
+      "Qq": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "batteries": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "Cli": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+    },
+    "native_flags": [
+      "-j1",
+      "--tstack=400000",
+      "-DautoImplicit=false",
+      "-DrelaxedAutoImplicit=false",
+      "-DmaxSynthPendingDepth=3",
+      "-Dpp.unicode.fun=true",
+      "-DmaxHeartbeats=4000000"
+    ],
+    "timing": "Per-process elapsed wall time and kernel-plus-user CPU time when captured. Null CPU fields were unmeasured. Reused dependencies, concurrent jobs and memory pressure affected wall time."
+  },
+  "modules": [
+    {
+      "name": "Lib.General.LinearAlgebra.Base",
+      "path": "CompactGRH/src/Lib/General/LinearAlgebra/Base.lean",
+      "upstream_sha256": "088ce908d2db1b76eb757d39cd377002e1c9659897281f7bd7fe7ee1690bfac0",
+      "source_sha256": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+      "git_blob_sha1": "14dfcfe769268ccf22caedd14ced8833c37ec5dc",
+      "compact_imports": [],
+      "exit_code": 0,
+      "wall_seconds": 34.869,
+      "cpu_seconds": 31.53125,
+      "output_sha256": {
+        ".olean": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91",
+        ".olean.server": "ae33307941a4f8625ec9d58bc9ccee7ddc70c7ef66baa0d977df59ba6de48f0d",
+        ".olean.private": "da97f25ab26c38abc8e4f9754d28c66bb0b054185d2377449bfa9ca62c7edd62",
+        ".ir": "4eeefbfaed23c2ada1a487cfdb08b2ff4e4dd525e44bdfaf120f0b0b29e13e81",
+        ".ir.sig": "4423cc5a8926f6a2afae0282c64b6cafe5256a1f2fa96d850c5464a4c2f24f62"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 136,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 137,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.Analysis.OstrowskiTaussky",
+      "path": "CompactGRH/src/Lib/General/Analysis/OstrowskiTaussky.lean",
+      "upstream_sha256": "60c2f52a8e35a50d7e9aa83c3a18c7b01e311c421d6ac9d1a09a74d872ad5bc0",
+      "source_sha256": "9bf72a0c55a46fcb1a6aa9122f707f76a6baa23ad1d33e8041ae28ff64d4824d",
+      "git_blob_sha1": "bad1a87dd0bd6567bb338dc0e0d4baef6b3d5a66",
+      "compact_imports": [
+        {
+          "module": "Lib.General.LinearAlgebra.Base",
+          "olean_sha256": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 55.929,
+      "cpu_seconds": 47.546875,
+      "output_sha256": {
+        ".olean": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775",
+        ".olean.server": "7ab76d99ec8df9795e04758eb5f770634b632b8673d2b92f657d4e2996ef765a",
+        ".olean.private": "24cfd565b0d13783a58aab0ead3c56d1b65fa00db20c7c6ba635b75df6205827",
+        ".ir": "dd1640bdfcb40578363e6fc5dc5d11120e16d58703df621b2ab687ee73a17103",
+        ".ir.sig": "a6db58e2ceeacccf9577e897b11cd53bb0e879b25b8b12398c92ab783db143fd"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 24,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 41,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.Algebra.AdicRingHomExt",
+      "path": "CompactGRH/src/Lib/General/Algebra/AdicRingHomExt.lean",
+      "upstream_sha256": "20f4cfe385cb2c9bc5133f4af47be62995a545e8ea634a1c691e8604735e2b8f",
+      "source_sha256": "cad5bc1b19dfca0ad49423289ea41ae2032c40df0825854898909daa8abb0e01",
+      "git_blob_sha1": "a0e9b0048d65c44914ba7f05036dd91cee2ef94d",
+      "compact_imports": [
+        {
+          "module": "Lib.General.LinearAlgebra.Base",
+          "olean_sha256": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 42.33,
+      "cpu_seconds": 39.78125,
+      "output_sha256": {
+        ".olean": "d82beeb5631ce56303a57478832f20ca5aa5ef926f6a34c12177a30c729683b4",
+        ".olean.server": "986913de9c6e738aa126f2a07e83e6792738ca28c6a0f8c0922abf2aa90d1702",
+        ".olean.private": "c64bf7ca60c3826c4a393d9c5f23505f36e2e8d35e22bcf23f14f6aa704abeec",
+        ".ir": "bd2d389405471b4bb9bb10eb7d0bede744434316e1320df09247b523d2eef0a9",
+        ".ir.sig": "3f9d6548344876e18ff84bf1db4ca4e525a572cfef9dc7963acef2cc7811fea6"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 76,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 95,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.Analysis.HolomorphicIntegral",
+      "path": "CompactGRH/src/Lib/General/Analysis/HolomorphicIntegral.lean",
+      "upstream_sha256": "993f648fa6d0db7f6a3f987f033cb131a4cdc89045a3c7e6d03073c5e9bd80cd",
+      "source_sha256": "f5bf910333315fcbc3027a05d8bcc000c46d7569353b13aa15f4d95f7c5c3ec3",
+      "git_blob_sha1": "46d8675b84a18b6900259dc7a20abd9bd35f52a9",
+      "compact_imports": [
+        {
+          "module": "Lib.General.Analysis.OstrowskiTaussky",
+          "olean_sha256": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 304.983,
+      "cpu_seconds": null,
+      "output_sha256": {
+        ".olean": "9b541e8b321fa39886c82d337cc1bf471c2ed7735863f7da0a0762f6c106259d",
+        ".olean.server": "17b43d97b6500bf6f8fc674c694f1957c85a14e3e95daa8786686721acb0138d",
+        ".olean.private": "f5c1e2b192e16a091a46430bb293832f6756b9ec65cc568e770d783ef4a8276f",
+        ".ir": "3279220ffb9e3ff85e49db27e30d650d8e44f01e3edf1cf4df04034089b56aae",
+        ".ir.sig": "1f4100127b1a927e0cba2159a54e8999c55aaa8b9731ead4c9d5dc8b85aaef32"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 12,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 34,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.Shimura.Uniformisation.LieExponential",
+      "path": "CompactGRH/src/Lib/Shimura/Uniformisation/LieExponential.lean",
+      "upstream_sha256": "ff9069d68b5db748943d106e463e4bcddccf8677baf63b6aee0e653ccc2f5549",
+      "source_sha256": "9260440fb5e2dff2e6763585b33f94f9dcbd694c176ff03783d5664524129847",
+      "git_blob_sha1": "8cfe540c2a85f5bcb3fa9f568c975e575a7b940d",
+      "compact_imports": [
+        {
+          "module": "Lib.General.Analysis.HolomorphicIntegral",
+          "olean_sha256": "9b541e8b321fa39886c82d337cc1bf471c2ed7735863f7da0a0762f6c106259d"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 278.121,
+      "cpu_seconds": 112.703125,
+      "output_sha256": {
+        ".olean": "e54f39f4469336054c2a9923d57efc8f1f1986d2ec72e31d316b7d2e81d00cd4",
+        ".olean.server": "79f1fc36838da74dabc148c52ddffc0869ec6e7c8e94a37c4b23496b265b2ae7",
+        ".olean.private": "c1f918bcd4e634f8272d24bd016c772e4cc5d7046a41061e2530333c481307a0",
+        ".ir": "31d03e8689cb75a23d569fc4560628472c183fc2a0218b11acc2011bc779f508",
+        ".ir.sig": "ef031b6d5cf57d7a539f069ef1330dd0af82fda4b5e9d168fd809020d06cf930"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 132,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 177,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.LinearAlgebra.HaarUnique",
+      "path": "CompactGRH/src/Lib/General/LinearAlgebra/HaarUnique.lean",
+      "upstream_sha256": "affd1f487d630aac0dd74faf56e3260bcc0775f1316401e885b528715b747c6b",
+      "source_sha256": "53f9f9b45f5396b057d9258190c6478cb7a7e97c7c951d8be822d3e4bcfd8e84",
+      "git_blob_sha1": "b433f29ea461c37dca57275f4e27a9771fa383c9",
+      "compact_imports": [
+        {
+          "module": "Lib.General.Analysis.OstrowskiTaussky",
+          "olean_sha256": "34eb7d47537fa220bc2d0b71b6358b6cb4c0cb7e5865c0937a22b0be7c6d6775"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 44.019,
+      "cpu_seconds": 39.0,
+      "output_sha256": {
+        ".olean": "4f72bfeac927dfde3393c25e3a1c4d7a4011ce9146b4db1d0d42ec665cf61f87",
+        ".olean.server": "2ed02daa5cb2537a96ba7ce7ce542ab1e258e0c6b218ae879d7114daeb20e4f2",
+        ".olean.private": "b34a0711195c738648f20de3f87d4b4deeeda61770128b2c3fa5a7613b30891c",
+        ".ir": "9b0474b83971c4d4a3303f77c7884aceebaf10eb12756dd3e0c10e11bbb11555",
+        ".ir.sig": "787e4e753abd5302c0585e127284cdc0988505e3d4b84da80e181a42870a94e2"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 19,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 48,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.Groups.ValuationPair",
+      "path": "CompactGRH/src/Lib/General/Groups/ValuationPair.lean",
+      "upstream_sha256": "22c95428b903e84f75ac1edae98f5622576047bb052f5061e83d6b181db8dbe2",
+      "source_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "git_blob_sha1": "084f30e34cd0c0f04cb00117702613c4fb7e8121",
+      "compact_imports": [
+        {
+          "module": "Lib.General.LinearAlgebra.Base",
+          "olean_sha256": "567b01ab64fbdeac39f938f4631e4a94b569f99537d10234d6b57f9eedc15c91"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 52.023,
+      "cpu_seconds": 49.5625,
+      "output_sha256": {
+        ".olean": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f",
+        ".olean.server": "4e9270fb576816242f37928fae1157a9adc0296f2b0f35f8f2d1e9dd54a54440",
+        ".olean.private": "0c220cb7c2a578ec5e29f2361eca6fc71ee3e4196b3cb045e861be59364c996b",
+        ".ir": "7cbf01f62db583f28b992214d90db1a351293c60d014b86b113a045d4a8ccb1a",
+        ".ir.sig": "9cb0108abd6df851198fdda614a79706da1147b0b072cab3f6c54f28d9326312"
+      },
+      "axiom_table": {
+        "status": "audited",
+        "exported_declarations": 213,
+        "exported_declarations_with_nonstandard_axioms": 0,
+        "private_facet_declarations": 233,
+        "private_facet_declarations_with_direct_sorryAx": 0
+      }
+    },
+    {
+      "name": "Lib.General.LinearAlgebra.HuaIntegral",
+      "path": "CompactGRH/src/Lib/General/LinearAlgebra/HuaIntegral.lean",
+      "upstream_sha256": "f8cafa22d25ddd7c36adfff0aaac075a57a305d905199ba30c3924c4127b1faf",
+      "source_sha256": "b2709d08e7dc863f9eb57855bb1db7a0ed4c1c4905e8b8b2e622a368e199658d",
+      "git_blob_sha1": "2620873d296f1d5fb210ef2a353d219185ab24b3",
+      "compact_imports": [
+        {
+          "module": "Lib.General.Groups.ValuationPair",
+          "olean_sha256": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f"
+        },
+        {
+          "module": "Lib.General.LinearAlgebra.HaarUnique",
+          "olean_sha256": "4f72bfeac927dfde3393c25e3a1c4d7a4011ce9146b4db1d0d42ec665cf61f87"
+        }
+      ],
+      "exit_code": 0,
+      "wall_seconds": 44.252,
+      "cpu_seconds": null,
+      "output_sha256": {
+        ".olean": "859fadbac6c6d37435c84280fd307f512a1ca39b8f62767f7a8833900429a063",
+        ".olean.server": "44d9af3f7c8c9b054077ff2a11207ffb44fc0cf06d03eb6cff713bf037e3f3f1",
+        ".olean.private": "1cd977c19ffac73ba228cf9e114dedddaaf69a3ec305bce524717e90ee221e6c",
+        ".ir": "c783f57bf3097f98877c6e6067fb20677a4f25efea885d88bd861e5827e35262",
+        ".ir.sig": "4c49efb6be90da386cc823af91c576dcfa97a837c4803a96a8561173cd533dc0"
+      },
+      "axiom_table": {
+        "status": "not measured"
+      }
+    }
+  ],
+  "summary": {
+    "verified_compiles": 8,
+    "source_modules_in_full_compact_proof": 794,
+    "sum_of_individual_wall_seconds": 856.526,
+    "modules_with_cpu_counters": 6,
+    "sum_of_recorded_cpu_seconds": 320.125,
+    "modules_with_complete_exported_axiom_tables": 7,
+    "total_exported_declarations_audited": 612,
+    "total_private_facet_declarations_scanned_for_direct_sorryAx": 765
+  },
+  "valuation_pair": {
+    "unrepaired": {
+      "commit": "fc729595d20448d3689f706378879a30a323a762",
+      "module": "Lib.General.Groups.ValuationPair",
+      "source_sha256": "9159d8ec661d2103dadaf645ecdb4a419dd14c9a0000a82a0c1e5832a57a84c8",
+      "exit_code": 1,
+      "first_error": "Line 247, column 82: tactic execution is stuck, goal contains metavariables in determinant multiplication."
+    },
+    "compiling_negative_control": {
+      "source_derivation": "Start with the unmodified ValuationPair source at the unrepaired commit. Replace precisely the one occurrence described in determinant_witness_edit. Preserve all section-level binders and all other bytes.",
+      "determinant_witness_edit": {
+        "old": "U J →* unitary R := .mk' (fun g ↦ ⟨_, by",
+        "new": "U J →* unitary R := .mk' (fun g ↦ ⟨g.1.1.det, by"
+      },
+      "source_sha256": "491d4ed06cfe6c779afb3f64b5fea5ee4ac2226b85b5f9aabe2347fb3bad9454",
+      "olean_sha256": "57c2b98189faa82ecf12039d6e222cd6cc5fa447930f983ab29023e9d6af0e1a",
+      "wall_seconds": 50.021,
+      "cpu_seconds": 48.171875,
+      "exit_code": 0,
+      "exported_table_size": 211,
+      "nonstandard_exported_declarations": [
+        "U.continuous_map",
+        "U.mapEnd",
+        "U.map",
+        "U.mem_range_map",
+        "U.map._proof_3"
+      ],
+      "unexpected_axioms": [
+        "sorryAx"
+      ],
+      "private_facet_size": 287,
+      "private_facet_direct_sorryAx": [
+        "U.map._proof_3",
+        "U.mem_range_map",
+        "U.map"
+      ],
+      "stock_print_axioms": {
+        "U.map": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.mem_range_map": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.continuous_map": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.form_mul_inv_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "intentional_sorry_control": [
+          "sorryAx"
+        ],
+        "True.intro": []
+      }
+    },
+    "repair": {
+      "commit": "0b68b493791e5f7569021f0cd13454151af47584",
+      "module": "Lib.General.Groups.ValuationPair",
+      "source_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "olean_sha256": "6e730fc508e8f62ba8893aaed41c98da1de88841dcc3e60a578649097802268f",
+      "change": "The determinant witness is explicit. The same optional star-compatibility tactic binder is attached to U.map and U.mem_range_map at their declarations. The section-level form had elaborated to sorryAx at type Unit → Lean.Syntax.",
+      "compiler_diagnostic_bytes": 0,
+      "exported_table_size": 213,
+      "nonstandard_exported_declarations": [],
+      "private_facet_size": 233,
+      "private_facet_direct_sorryAx": [],
+      "stock_print_axioms": {
+        "U.map": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.mem_range_map": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.continuous_map": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "U.form_mul_inv_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "intentional_sorry_control": [
+          "sorryAx"
+        ],
+        "True.intro": []
+      }
+    },
+    "negative_control_fixture": "Inside a separate scratch Lean file after importing Lib.General.Groups.ValuationPair, declare private theorem compactSorryNegative : False := by sorry, then run #print axioms compactSorryNegative. The fixture is excluded from every proof source and compiled object in the module ledger."
+  },
+  "reproduction": {
+    "source_checkout_commands": [
+      "git clone https://github.com/elliotglazer/ternary-goldbach.git",
+      "cd ternary-goldbach",
+      "git checkout --detach 0b68b493791e5f7569021f0cd13454151af47584"
+    ],
+    "build_from_repository_root": [
+      "lake exe cache get",
+      "lake build +Lib.General.LinearAlgebra.Base:olean +Lib.General.Analysis.OstrowskiTaussky:olean +Lib.General.Algebra.AdicRingHomExt:olean +Lib.General.Analysis.HolomorphicIntegral:olean +Lib.Shimura.Uniformisation.LieExponential:olean +Lib.General.LinearAlgebra.HaarUnique:olean +Lib.General.Groups.ValuationPair:olean +Lib.General.LinearAlgebra.HuaIntegral:olean"
+    ],
+    "source_verification": "Hash the raw bytes in modules[].path with SHA-256. Each Git blob identity is SHA-1 of 'blob ', the decimal byte length, a NUL byte, and the source bytes.",
+    "stock_declaration_check": "In a separate audit file containing 'import Lib.General.Groups.ValuationPair', issue #print axioms for U.map, U.mem_range_map, U.det, U.continuous_map, U.form_mul_inv_eq, and True.intro. Run it with lake env lean after building the target.",
+    "table_reader": {
+      "allowed_transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "filename": "InspectCompactAxioms.lean",
+      "source_sha256": "872fe685e097ded47cd212359e8de375f32f36a2403227aa4b9f69ab3722d2a9",
+      "encoding": "utf-8",
+      "source": "import Lean.Environment\nimport Lean.Util.FoldConsts\n\nopen Lean\n\nunsafe def main (args : List String) : IO UInt32 := do\n  let [path] := args | throw (IO.userError \"provide the .olean path\")\n  let parts ← readModuleDataParts #[path, path ++ \".server\", path ++ \".private\"]\n  for (data, _) in parts do\n    let mut direct := #[]\n    for c in data.constants do\n      if c.getUsedConstantsAsSet.contains `sorryAx then\n        direct := direct.push c.name\n    IO.println s!\"{data.constants.size} declarations, direct sorryAx references: {direct}\"\n    for (n, entries) in data.entries do\n      if (toString n).contains \"exportedAxiomsExt\" then\n        IO.println s!\"{entries.size} entries in {n}\"\n        let table : Array (Name × Array Name) := unsafeCast entries\n        let allowed := [`propext, `Classical.choice, `Quot.sound]\n        if table.size == 0 then throw (IO.userError \"empty axiom table\")\n        let mut bad := #[]\n        for (decl, axioms) in table do\n          if !data.constNames.contains decl then\n            throw (IO.userError s!\"foreign declaration {decl}\")\n          let nonstandard := axioms.filter (fun a => !(allowed.contains a))\n          if !nonstandard.isEmpty then bad := bad.push (decl, nonstandard)\n        IO.println s!\"{table.size} audited transitive axiom entries, {bad.size} offending: {bad}\"\n\n  return 0\n",
+      "usage": "Write the source field verbatim to the named file. Run lake env lean -j1 --run InspectCompactAxioms.lean .lake/build/lib/lean/Lib/General/Groups/ValuationPair.olean. The .olean.server and .olean.private files must be adjacent to the .olean.",
+      "method": "The reader uses stock Lean 4.35 readModuleDataParts and scans constant types and bodies for direct sorryAx. It uses an unsafe cast in an external diagnostic program to read the pinned compiler’s internal exportedAxiomsExt entry format. It checks alignment against the module's declaration names."
+    }
+  },
+  "limitations": [
+    "The metadata reader reports compiler-recorded transitive axioms for exported declarations. Its private-facet scan detects direct sorryAx occurrences. Private scans alone do not establish the transitive status of all private constants.",
+    "Metadata deserialization depends on this exact compiler layout. The separately executed stock #print checks and the negative control calibrate the reader.",
+    "HuaIntegral has a successful native compilation with both repaired-parent object hashes matched. Its exported-axiom table was not inspected for this receipt.",
+    "The measurements cover eight project files with cached dependencies. They do not give a full-build timing, an independent source rebuild of Mathlib, or a Palomar kernel replay of the Goldbach theorem.",
+    "Output hashes identify the retained native artifacts in this run. Different operating systems, compiler binaries, build arrangements, or debug paths may give different hashes even when source checks pass."
+  ]
+}

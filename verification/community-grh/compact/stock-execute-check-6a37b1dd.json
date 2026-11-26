@@ -1,0 +1,13 @@
+{
+  "plan": {
+    "exit": 0,
+    "stdout": "Clock covers execution-stage work only. Supply the original start for a full timed replay.\n/opt/hostedtoolcache/Python/3.11.10/x64/bin/python3.11 /verification/tg-community-20261125/palomar-verifier/scripts/verify_submission.py check-capacity --disk-path /verification/palomar-local-prepare-6a37b1dd/work --output /verification/palomar-local-prepare-6a37b1dd/execute-report.json\n/opt/hostedtoolcache/Python/3.11.10/x64/bin/python3.11 /verification/tg-community-20261125/palomar-verifier/scripts/verify_submission.py execute --work-dir /verification/palomar-local-prepare-6a37b1dd/work --output /verification/palomar-local-prepare-6a37b1dd/execute-report.json --bwrap /verification/palomar-intake-runtime-20261125/pinned-bwrap/bin/bwrap --bwrap-source-tag v0.12.0 --execution-budget-seconds 19800 --workflow-url file:///verification/palomar-local-prepare-6a37b1dd/execute-report.json\n",
+    "stderr": ""
+  },
+  "probe": {
+    "exit": 1,
+    "stdout": "Clock covers execution-stage work only. Supply the original start for a full timed replay.\n/opt/hostedtoolcache/Python/3.11.10/x64/bin/python3.11 /verification/tg-community-20261125/palomar-verifier/scripts/verify_submission.py check-capacity --disk-path /verification/palomar-local-prepare-6a37b1dd/work --output /verification/palomar-local-prepare-6a37b1dd/execute-report.json\n/opt/hostedtoolcache/Python/3.11.10/x64/bin/python3.11 /verification/tg-community-20261125/palomar-verifier/scripts/verify_submission.py execute --work-dir /verification/palomar-local-prepare-6a37b1dd/work --output /verification/palomar-local-prepare-6a37b1dd/execute-report.json --bwrap /verification/palomar-intake-runtime-20261125/pinned-bwrap/bin/bwrap --bwrap-source-tag v0.12.0 --execution-budget-seconds 19800 --workflow-url file:///verification/palomar-local-prepare-6a37b1dd/execute-report.json\n{\"capacity\": 1, \"observed_host\": null, \"diagnostics\": [\"runner has 16.0 effective CPUs; Namespace profile requires 32\"]}\n{\"missing_tools\": [\"pinned bubblewrap 0.12.0\", \"Linux Lean 4.35.0 on PATH\"], \"visible_cpus\": 16, \"pid1\": \"init(Codex-GRH-\"}\n",
+    "stderr": ""
+  },
+  "launcher_sha256": "4a10a872d5087e731b9fdd5682c1149636e9c38d3621fc4e39288860e2a1d4f1"
+}
