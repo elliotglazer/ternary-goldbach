@@ -91,8 +91,11 @@ def EtaleChart.restrict [FiniteType k R] {φ y} (e : X.map φ a.point = y) i h :
 the point and coordinates of a. -/
 def EtaleChart.away g := a.restrict (φ := CommAlg.toAway g) rfl (fun _ _ _ e ↦ by
   ext; congrm $(a.eq_comp_of_map_point_eq _ ((map_comp_apply ..).trans e)) _) (a.isOpenSub_of_le_locus
-  (fun | _, _, ⟨_, rfl⟩ => a.locus.2 _ ⟨_, rfl⟩) fun | _, ⟨_, _, rfl⟩ => ⟨span {_}, fun _ φ ↦
-      ULift.exists.trans (by simpa [← (injective ..).eq_iff] using! CommAlg.exists_toAway_comp_iff g (_ ≫ φ))⟩)
+  (fun | _, _, ⟨_, rfl⟩ => a.locus.2 _ ⟨_, rfl⟩) fun
+    | S, ⟨_, ⟨ψ⟩, rfl⟩ =>
+      let χ : a.R ⟶ S := ψ
+      ⟨span {χ g}, fun _ φ ↦
+        ULift.exists.trans (by simpa [← (injective ..).eq_iff] using! CommAlg.exists_toAway_comp_iff g (χ ≫ φ))⟩)
 
 lemma EtaleChart.mem_locus_away g φ : X.map φ a.point ∈ (a.away g).locus B ↔ IsUnit (φ g) := by
   simp [← CommAlg.exists_toAway_comp_iff, ← (injective ..).eq_iff]; bound

@@ -209,3 +209,5 @@ Stock Lean 4.35 checked the original pairHom and the complete repaired norm_pair
 The complete native module passed on stock Lean 4.35 in 42.48 s with all 37 real source-matched project parents. The previous focused candidate failed during whole-file replay at line 62.
 
 Stock Lean 4.35 built the entire NormalGeneration module in 162.16 seconds after reproducing the original failure. A fresh import reported propext, Classical.choice and Quot.sound for both HasGoodReduction.thetaNorm_lt_iff_coords and HasGoodReduction.finrank_reduction_eq.
+
+With all 17 project prerequisites available, stock Lean 4.35 built the complete EtaleCharts file in 53.25 seconds. Typing the chart map removed all five compiler errors reported on the previous warm build.
