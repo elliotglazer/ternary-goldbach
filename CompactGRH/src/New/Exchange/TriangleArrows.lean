@@ -49,7 +49,7 @@ lemma IsEdgeFamily.exists_adjoint_first_arrow {l k' Φ Φ'} (h : IsEdgeFamily a 
 
 namespace Data
 
-seal U w Int.add instInv
+seal U w Int.add
 
 /-- The space of forms on the hermitian space at position (i, n) of the triangle whose type has
 the doubled parameter `Data.gridParam` z i 0 n. -/

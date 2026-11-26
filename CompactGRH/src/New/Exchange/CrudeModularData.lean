@@ -44,8 +44,14 @@ conj(`Data.piG`)·`jetScale`. -/
 @[simps! -isSimp ω] def Data.liftKernel (j : ℕ) : Kernel _ (D.X (j + 1)) D.κ (D.lastEntry j)
   (D.lastEntry (j + 1)) (D.columnLevel j) (D.homX j).finitePart := by
   obtain h : (D.chainChar ϑ j.succ).HasWeight .. := D.hasWeight_liftChar
-  apply thetaKernel (D.isLiftWeight_kappa j) (star ↑D.piG * P.jetScale D.s)
-    (by convert h.hasWeight_rankTwist (n := D.X j); grind [lastEntry]) h.hasWeight_rankTwist
+  exact thetaKernel (D.isLiftWeight_kappa j) (star ↑D.piG * P.jetScale D.s)
+    ((h.hasWeight_rankTwist (n := D.X j)).of_weight_eq (e' := D.lastEntry (j + 1)) (by
+      funext τ
+      change ((Fintype.card (D.X j) / 2 : ℕ) : ℤ) + -(D.w j.succ τ : ℤ) =
+        D.lastEntry (j + 1) τ
+      rw [D.card_X]
+      simp [lastEntry, Int.sub_eq_add_neg]))
+    (h.hasWeight_rankTwist (n := D.X (j + 1))) (D.columnLevel j)
 
 /-- Tuples (x_j) of finite adelic matrices with rows X_{j+1} and columns X_j, the translations
 that define the data of a chain. -/
