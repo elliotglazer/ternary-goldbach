@@ -47,7 +47,10 @@ conj(`Data.piG`)·`jetScale`. -/
   exact thetaKernel (D.isLiftWeight_kappa j) (star ↑D.piG * P.jetScale D.s)
     ((h.hasWeight_rankTwist (n := D.X j)).of_weight_eq (e' := D.lastEntry (j + 1)) (by
       funext τ
-      simp [lastEntry, Data.card_X, Int.sub_eq_add_neg]))
+      change ((Fintype.card (D.X j) / 2 : ℕ) : ℤ) + -(D.w j.succ τ : ℤ) =
+        D.lastEntry (j + 1) τ
+      rw [D.card_X]
+      simp [lastEntry, Int.sub_eq_add_neg]))
     (h.hasWeight_rankTwist (n := D.X (j + 1))) (D.columnLevel j)
 
 /-- Tuples (x_j) of finite adelic matrices with rows X_{j+1} and columns X_j, the translations
