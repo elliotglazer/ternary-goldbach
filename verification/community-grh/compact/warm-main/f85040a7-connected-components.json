@@ -1,0 +1,42 @@
+{
+  "aws_failure_log": "6babe5b5ac6ec50bd8e5930398291fc5cbde99b1bd1a4e4c6d46cdd250661a1a",
+  "aws_source": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "cell_compilation_scope": "First two complete declarations accepted in their authentic combined probe. That process exited 1 because its separate Mayer-Vietoris theorem reached the capped kernel heap.",
+  "cell_evidence": [
+    "'cellPoint' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'PadicTest.exists_isIdemQuotient' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "cell_probe": {
+    "compiler_log_sha256": "7daaf9379c038b60a5a1af34bcdf8586c719cc5d82f55dbc8817981a0ccb7921",
+    "cpu_seconds": 176.0625,
+    "elapsed": 180.072,
+    "exit": 1,
+    "source_sha256": "d1807b8799df890d95b93bb4dae666dfa023a0e0cf89561c77dadab2eaab9ae5",
+    "stop": null
+  },
+  "mayer": {
+    "assertion_output": [
+      "'HV.mayer_vietoris_injective' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "imported_oleans": {
+      "Lib.Cohomology.Etale.Partitions": "e77b21eb8e31a104f78a874621048101065de558e91040417836f9f1a3575817",
+      "Lib.Cohomology.Etale.TestRings": "959620d6682fadd35cba99a239b4b93f4d26b1a6d49ba47b636ed6b11bcc6e91",
+      "Lib.General.Geometry.LocalTerms": "41b40ada9559510c90c3c0c1427a3a2ce62377cbba70031416a393f471bbc853"
+    },
+    "run": {
+      "compiler_log_sha256": "48a4cc070b297f79998a06f0c0ab6eee96ced1152150d24b8dab6c6941c72491",
+      "cpu_seconds": 179.28125,
+      "elapsed": 184.073,
+      "exit": 0,
+      "source_sha256": "287601c8e554cb7bec1ccc8357b942d70b9b5ebb4eb24300310a9e600c5f0521",
+      "stop": null
+    }
+  },
+  "module": "Lib.Cohomology.Etale.ConnectedComponents",
+  "native_source": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+  "patch_sha256": "6df634ffe1eb4d707cb7eab7fd857ee20ce2c7eea4313cd88ada47b6c891c3e0",
+  "production_source_after": "ab9dcc42f3bd8b87daf5adac6fbccaa0567db950bfd7b71d314d6f548c189d6a",
+  "production_source_before": "495acc8b96fe368541a9d9b8cbc602d422f54e2cbb15e779441d8676d09864a6",
+  "project": "CompactGRH",
+  "whole_module": "Pending a source build including its full 36-module closure."
+}

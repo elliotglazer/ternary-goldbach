@@ -1,0 +1,61 @@
+{
+  "source_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "scope": "original full-module failure plus separate reduced-record proof A/B",
+  "module": "New.RealPlace.ComplexGauge",
+  "path": "CompactGRH/src/New/RealPlace/ComplexGauge.lean",
+  "source_before_sha256": "0620ffe6658f8a67ee9dc883725fcf216f3ef86a00d2f0cb4d1df564a5b3c731",
+  "source_after_sha256": "acb7bd49b873590b214ce231f8b8906838291967f76cd15a3e9ce71b652064de",
+  "patch_sha256": "d615b3db210b5cca9f20b5b7cfa36756d7dac6f0b2214e5d64ee19599d8b6b0b",
+  "full_stock_failure": {
+    "warm_attempt": "c5b595a6",
+    "source_log_sha256": "6babe5b5ac6ec50bd8e5930398291fc5cbde99b1bd1a4e4c6d46cdd250661a1a",
+    "log_line": 1490,
+    "excerpt": [
+      "error: CompactGRH/src/New/RealPlace/ComplexGauge.lean:177:39: tactic execution is stuck, goal contains metavariables",
+      "  u i ∈",
+      "    { ofSize := fun j ↦ {x | ‖x‖ ≤ L ^ j}, mul_mem_ofSize := ?m.73, sum_mem_ofSize := ⋯, neg_star_mem_ofSize := ?m.79,",
+      "          zero_one_mem_ofSize := ?m.80, gram_mem_ofSize := ⋯ }.ofSize",
+      "      1"
+    ]
+  },
+  "cloud_direct_inputs": {
+    "New.RealPlace.LevelGauge": {
+      "source": "original",
+      "changed_ancestry_since_warm": []
+    },
+    "Lib.DiscreteSeries.Bruhat.ComplexFloorMeasure": {
+      "source": "warm",
+      "changed_ancestry_since_warm": []
+    },
+    "New.Filling.StableCells": {
+      "source": "warm",
+      "changed_ancestry_since_warm": []
+    },
+    "New.RealPlace.SobolevCell": {
+      "source": "warm",
+      "changed_ancestry_since_warm": []
+    }
+  },
+  "full_module_after": "not checked locally",
+  "fixture": {
+    "scope": "native mathematical field plus reduced enclosing record; remaining production parents available only on AWS",
+    "pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+    "candidate_sha256": "acb7bd49b873590b214ce231f8b8906838291967f76cd15a3e9ce71b652064de",
+    "results": {
+      "Patched": {
+        "rc": 0,
+        "seconds": 20.03,
+        "source_sha256": "32fa25c29c69c152a4f7808482ec1a06f46a37cd4a74f760b469ead5ec59de87",
+        "output_sha256": "4a3a8b678718f810ab8921c8cd596792d26282e2ad814a06e3b42d5116eb0e64",
+        "stdout": "'ComplexGauge177.gauge' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+      },
+      "Original": {
+        "rc": 1,
+        "seconds": 19.42,
+        "source_sha256": "ae20d3c11f7dcae038f6633759471e63291c00c5f0c2b52a79ef0e7f704963c5",
+        "output_sha256": null,
+        "stdout": "Original.lean:31:55: error: tactic execution is stuck, goal contains metavariables\n  u i ∈ { ofSize := fun j ↦ {x | ‖x‖ ≤ L ^ j}, zero_mem := ?m.22 }.ofSize 1\n'ComplexGauge177.gauge' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n"
+      }
+    }
+  }
+}

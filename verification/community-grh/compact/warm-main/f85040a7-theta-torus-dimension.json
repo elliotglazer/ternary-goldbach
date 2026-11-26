@@ -1,0 +1,44 @@
+{
+  "source_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "production_source_sha256": "01fc13008cf14879f339607e9fad014afc7e326f3a417d633d96e1cfe6bbad15",
+  "production_candidate_sha256": "b53f56f6b78a78c66ff021b070647e8b49805a57cc0db6e178d0fd71673bf451",
+  "diagnostic_location": "Lib.Shimura.ThetaModuli.ThetaTorus:215:5",
+  "scope": "Stock native Lean 4.35 before/after on the genuine imported IsAppellHumbert.finrank_sq_eq_relIndex for an actual theta space and its dual lattice. The period map\u2019s two lattice relations are supplied as hypotheses; the definition, lattice simplification, rank-one choice and two downstream generator projections were exercised.",
+  "accepted_projections": [
+    "the chosen function lies in the correct theta subspace",
+    "the chosen generator is nonzero"
+  ],
+  "actual_dimension_object_sha256": "e26e6b0795dd30a792c9f221a528513108b90b82e3bcf7c9ff809ac5d778faec",
+  "runs": {
+    "TrueThetaBefore": {
+      "exit": 1,
+      "wall_seconds": 39.57,
+      "source_sha256": "7a045688a42e77a7ea1a079849d8a1e01193cf1e92e679bd6a46e71cf58c33c6",
+      "log_sha256": "1fc6a0313d86b13852d90d382d2f156e3e243a95e9f8674d2ae916ebceda650f"
+    },
+    "TrueThetaAfter": {
+      "exit": 0,
+      "wall_seconds": 39.48,
+      "source_sha256": "49294246b0960ec591b7ce01e0d623a3db0cd666bee7637e7ba10de69cba64dd",
+      "log_sha256": "54447524b1e3712460585c10a16739accc0fbf20b3ff6b2d4b13d4c76c7256fc"
+    },
+    "RankBefore": {
+      "exit": 1,
+      "wall_seconds": 18.94,
+      "source_sha256": "f9a2f467b33b52d31714ec8f29140502f18c0a02c9beab1d085ba877a313fa90",
+      "log_sha256": "1c0467cf09886e8478068dcc85fcfb6b2e0c50aa5f201768f9a6061b96714f88"
+    },
+    "RankAfter": {
+      "exit": 0,
+      "wall_seconds": 18.25,
+      "source_sha256": "9f82c672974f6eb1beee25e920235e98a7d43191e7ef9471a855ac516ac0f751",
+      "log_sha256": "54447524b1e3712460585c10a16739accc0fbf20b3ff6b2d4b13d4c76c7256fc"
+    }
+  },
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "full_file_status": "Pending cloud source build. NormalGeneration is available locally. The 100-project-module RiemannFormAdelic ancestry has 58 unavailable from this otherwise matching local seed."
+}
