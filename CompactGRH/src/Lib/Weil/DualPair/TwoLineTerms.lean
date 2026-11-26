@@ -55,8 +55,9 @@ abbrev renameRowsCols {ι a b c d} (e : a → c) (f : b → d) :=
 
 /-- The value θ^{S,T}_{a,b}[Ψ, P](g, h) of the theta kernel as a complex bilinear form in the
 function Ψ modulo 𝔪 and the polynomial P. -/
-def modKernelBilin g
-  h := by apply LinearMap.mk₂ ℂ (modKernel S T a b 𝔪 · · g h) <;> simp [Pi.add_comp]
+def modKernelBilin g h :=
+  LinearMap.mk₂ ℂ (modKernel S T a b 𝔪 · · g h) (by simp [Pi.add_comp])
+    (by simp [Pi.add_comp]) (by simp [Pi.add_comp]) (by simp [Pi.add_comp])
 
 @[simp] lemma modKernelBilin_apply g h Ψ P : modKernelBilin S T a b 𝔪 g h Ψ P =
   modKernel S T a b 𝔪 Ψ P g h := rfl

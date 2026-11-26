@@ -61,7 +61,7 @@ def tiltTheory (ac : IsAcyclicOnPerfect (moduleCoeff (tensorCoeff M))) :
     I).ge.trans (map_le_of_le_comap fun r b ↦ (mapGeneric_algebraMap ..).trans (OrderBot.bot_le
     (ker _) (eq_of_forall_pow_dvd_sub (p : _) fun n ↦ (c.isTest.2 r (p ^ n)).elim fun e ⟨i, k, l⟩ ↦
     (mem_jacobson_bot.1 (HenselianRing.jac (mk_ker.le congr($(congr($h ⟨fun _ ↦ e, by simp [(i.map
-    _).pow_eq out]⟩).symm.trans ((ker g.1).ker_le_comap _ (mk_ker.ge ⟨_, I.mem_of_dvd (by
+    _).pow_eq out]⟩).symm.trans ((ker g.1).ker_le_comap _ (mk_ker.ge ⟨algebraMap c.ProdRing c.GenericRing e, I.mem_of_dvd (by
     simpa [-map_natCast, algebraMap_pow_isUnit] using! map_dvd (algebraMap _ c.GenericRing) k) b,
     fun d f u ↦ ext fun _ ↦ congr(⟦$(d.eq_zero_of_algebraMap_genericRing _ (u.mul_right_eq_zero.1
     (by simp [mapGeneric_algebraMap, sub_mul, ← map_mul, i.eq])))⟧)⟩))).1 0))) (-1)).dvd_mul_left.1

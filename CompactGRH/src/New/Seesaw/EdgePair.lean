@@ -233,10 +233,16 @@ lemma ArrowPair.finEval_inclXFin a b {g g' k k' x} (hx : Y''.inclXFin k = x) (e 
   intro; simp [tripleWeil, omega_integrated, inclX_inr, G.onHom_eq, G.sum, G.neg, ← Pi.one_def,
     MulEquiv.prodCongr]
 
-attribute [local simp ←] Function.Embedding.toFun_eq_coe
+namespace EdgePairSimp
 
-attribute [local simp] Function.Injective G.blockEmb stringMap stringReversal Subtype.ext_iff
+attribute [scoped simp ←] Function.Embedding.toFun_eq_coe
+
+attribute [scoped simp] Function.Injective G.blockEmb stringMap stringReversal Subtype.ext_iff
   stackedT flipSpace gradedGram hypSum
+
+end EdgePairSimp
+
+open scoped EdgePairSimp
 
 variable (Y Y' Y'') (H : Odd s ∧ s' = s - 1 ∧ s'' = s' - 1 ∧ Y'.c = Y.c)
   (H' : Even (Fintype.card ι + Fintype.card ι''))

@@ -26,7 +26,7 @@ attribute [-simp] Prod.forall map_smul map_smul_of_tower map_sum Pi.star_apply P
 
 /-- The map, ℂ-linear in q = (q₁,q') and ℝ-linear in w, with value ((e⁻¹q)ᵀHw₀, q₁y₂ − y₁q',
 (q₁w_v)_{v≠v₀}), where w₀ = w_{v₀} and (y₁,y₂) = e(w̄₀). -/
-@[simp] def ballPeriod : ℂ × BallBase n →ₗ[ℂ] RealVectors E n →ₗ[ℝ] BallFibre E
+@[simp] abbrev ballPeriod : ℂ × BallBase n →ₗ[ℂ] RealVectors E n →ₗ[ℝ] BallFibre E
   n := by apply mk₂' ℂ ℝ fun q w ↦
   ((e.symm q ⬝ᵥ H *ᵥ (w · v₀)) • (1, 0) + q.1 • e (star (w · v₀)) - (e (star (w · v₀))).1 • q,
   fun v ↦ q.1 • (w · v)) <;> intros <;> ext <;>

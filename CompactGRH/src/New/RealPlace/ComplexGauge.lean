@@ -119,7 +119,13 @@ instance :
 
 attribute [-instance] Finset.Subtype.fintype Finset.fintypeCoeSort
 
-attribute [local simp ←] ofReal_coe_nnreal ENNReal.ofReal_mul ENNReal.ofReal_pow dotProduct_mulVec
+namespace ComplexGaugeSimp
+
+attribute [scoped simp ←] ofReal_coe_nnreal ENNReal.ofReal_mul ENNReal.ofReal_pow dotProduct_mulVec
+
+end ComplexGaugeSimp
+
+open scoped ComplexGaugeSimp
 
 attribute [local simp] star_mulVec MeasureTheory.volume_pi_closedBall Size.vecsOfSize inclMatrix
   pi_norm_le_iff_of_nonneg

@@ -302,7 +302,10 @@ variable {E ι ι' X X' : Type} [Field E] [CMType E] [Fintype ι] [Fintype ι'] 
 attribute [local simp] compHom_smul_def mul_assoc
 
 instance : MulAction (Y.ratBessel × V'.ratParabolic d) (_ ⧸ Y.nonnegMaps d) := by
-  refine' { smul γ := map _ _ (.mk' (⟨_, mul_mem_ratMatrices γ⁻¹.1.2.1 γ.2.2.1 ·.2⟩) _) fun _ h ↦
+  refine' { smul γ := QuotientAddGroup.map (Y.nonnegMaps d) (Y.nonnegMaps d)
+      (AddMonoidHom.mk' (fun w : ratMatrices E ι' ι ↦
+        ⟨V'.ratCoordMatrix γ.2 * (w.1 * V.ratCoordMatrix γ⁻¹.1),
+          mul_mem_ratMatrices γ⁻¹.1.2.1 γ.2.2.1 w.2⟩) _) fun _ h ↦
     (by apply HasDegreeGe.mul (d := 0) (fun _ _ _ ↦
     γ.2.2.2 (by lia)) (h.mul (Y.hasDegreeGe_zero_of_mem_besselGroup γ⁻¹.1.2.2)
     le_rfl) le_rfl), .. } <;> simp [forall_mk, HSMul.hSMul]
