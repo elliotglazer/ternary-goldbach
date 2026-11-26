@@ -1,0 +1,31 @@
+{
+  "source_commit": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "module_count": 794,
+  "checked_syntax": "No explicit result type; body begins by apply, refine, or constructor. Static lexical review; this is not an elaboration result.",
+  "candidates": [
+    {
+      "module": "Lib.General.Measure.Place",
+      "line": 170,
+      "decl": "skewUnitMul",
+      "tactic": "apply",
+      "built": true,
+      "head": " IsHermitian.apply IsHermUnit.conjTranspose_eq) : skewAdjoint A :="
+    },
+    {
+      "module": "Lib.Shimura.Uniformisation.RiemannFormAdelic",
+      "line": 93,
+      "decl": "polarisationForm",
+      "tactic": "apply",
+      "built": false,
+      "head": " LinearMap.mk₂ ℝ fun y z : RealVectors E D.Index ↦"
+    },
+    {
+      "module": "New.Filling.FillingData",
+      "line": 131,
+      "decl": "Data.filling",
+      "tactic": "refine",
+      "built": false,
+      "head": "' (Filling.mk (fintypeChosen := _) _ _ D.piIdele _ _ _ _"
+    }
+  ]
+}

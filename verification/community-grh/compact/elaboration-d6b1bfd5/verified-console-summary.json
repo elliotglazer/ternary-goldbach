@@ -1,0 +1,23 @@
+{
+  "source_commit": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "source_tree": "ddc22b3144b7147ce91c5c767690d9d56aac50ee",
+  "compact_summary_sha256": "e07fe5bf36e7cf51748dd9ccd9398f6debddc1a716afe511909ba94946a06fc9",
+  "full_receipt_sha256_from_worker": "5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c",
+  "preflight": {
+    "cgroup_lifetime_peak_bytes": 18277482496,
+    "cgroup_sampled_peak_bytes": 18232393728,
+    "cpu_seconds": 6570.620478,
+    "exit": 1,
+    "name": "source-preflight",
+    "wall_seconds": 1249.628482580185
+  },
+  "diagnostics": 65,
+  "distinct_failed_modules": 16,
+  "completed_oleans": {
+    "compact": 354,
+    "goldbach": 40
+  },
+  "status": "failed",
+  "driver_exit": 1,
+  "note": "The production collector authenticated this compact summary from the stopped EC2 console. Snapshot counts cover log lines before shutdown; the terminal object counts cover all completed objects."
+}
