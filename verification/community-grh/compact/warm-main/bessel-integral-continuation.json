@@ -1,0 +1,42 @@
+{
+  "backend": "native local",
+  "changed_lines": [
+    214
+  ],
+  "cloud_log_sha256": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
+  "controls": {
+    "Fixed": {
+      "cpu_seconds": 12.546875,
+      "exit": 0,
+      "log_sha256": "d07607fb78c78d7c6987cbca309f8f241c26e8403513a9584ce046aaaa723707",
+      "resource_guard": null,
+      "source_sha256": "c80eac6d8db4837177f43df0715baecded5e5b85260ceb40f511b68d91da8cb9",
+      "stock_axiom_output": "'besselIntegralNormContinuation' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "wall_seconds": 14.011
+    },
+    "Original": {
+      "cpu_seconds": 12.78125,
+      "exit": 1,
+      "log_sha256": "56d7d0657b8381274745a18ec4bedda6cd85bb2917dbdb5ef86ae525913ba495",
+      "observed_error": "Ambiguous term; ENNReal.ofReal_mul' and Complex.ofReal_mul' alternatives",
+      "resource_guard": null,
+      "source_sha256": "7e4a0e731546c9674464938cc6db770f8ca21cd94ba6ea4f6c581ad52904a3e1",
+      "wall_seconds": 14.016
+    }
+  },
+  "direct_project_imports": [
+    "Lib.General.Algebra.ZerosCostDegree",
+    "New.RealPlace.BesselOrthonormal",
+    "New.DiscreteSeries.TwoFactorSetup"
+  ],
+  "input_compiler_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "module": "New.DiscreteSeries.BesselExistence",
+  "patched_source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "production_check": "lake build +New.DiscreteSeries.BesselExistence:olean",
+  "scope": "Stock 4.35 A/B on the complex Euclidean Bochner-integral expression in the actual diagnostic and the following generalized rewrite, with the graph carrier, measure and finite-measure set universally quantified. This checks the full norm-conversion step at 214-215, not the remainder constructing HasPeakAt.",
+  "source_after_sha256": "edf0000d762613e0fbd6c9fe3ee904e0fce268c7eb98e40c13ceb3065275d913",
+  "source_before_sha256": "2561d9c504c69a120d86a67fa7173e5a97d5983407dbac80a1ac285491a31d2a",
+  "toolchain": "Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "transitive_project_ancestor_count_including_target": 76
+}

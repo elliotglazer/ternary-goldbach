@@ -1,0 +1,43 @@
+{
+  "original_native": {
+    "module": "Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+    "original_source_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+    "candidate_source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "original_source_sha256": "ffc682b498096422b42fb4d1daa19942b36cb8205841cdb43d9703fb7007ae2f",
+    "candidate_source_sha256": "85c3723eef3b671ed79696acc20d95d800f49c3bbdc06d9dee4dc6eb0ae64509",
+    "exit": 1,
+    "wall_seconds": 24.63,
+    "source_sha256": "a494696de8b677d3f18c5f2306585358c24a6fd44bd0bcc8fce43df8e88d5147",
+    "log_sha256": "534177c2fd3e1172767d2bead09da262396a6612b773651e44b45a5da50f16fa"
+  },
+  "corrected_native": {
+    "module": "Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
+    "original_source_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+    "candidate_source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "original_source_sha256": "ffc682b498096422b42fb4d1daa19942b36cb8205841cdb43d9703fb7007ae2f",
+    "candidate_source_sha256": "85c3723eef3b671ed79696acc20d95d800f49c3bbdc06d9dee4dc6eb0ae64509",
+    "exit": 0,
+    "wall_seconds": 23.65,
+    "source_sha256": "c95854f0c650dfc06f3ebde608a0aeb880caf074d6ba2346de5134b3d9e4ba03",
+    "log_sha256": "d9274806089dcbe7e31e7d0413123e258110c951cd7b6b7af21f9ea6b9ca1eb6"
+  },
+  "prior_focused_receipt": "062aafaf71e890a956600b7a1d15d988b7c4205ab086bef9bbe7b3df5f9a59bf",
+  "cloud_baseline_log_sha256": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
+  "cloud_problem_rows": [
+    69,
+    74,
+    75
+  ],
+  "matching_errors": [
+    "tactic execution is stuck, goal contains metavariables",
+    "Invalid field notation",
+    "No applicable extensionality theorem found"
+  ],
+  "scope": "Exact definition body and entire following kernel theorem with actual imported crysCocycles, Z1, IsPotCrys, p-adic modules, and additive subgroups. The target representation is parameterized directly in place of V.\u03c1. The published upstream continuity, cocycle and saturation lemmas are represented by typed hypotheses. The single changed argument (m := m) is the only source difference within the comparison.",
+  "positive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "remaining": "The later holdsCorestrictions declaration and the full owning file still require native parents."
+}

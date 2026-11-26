@@ -1,0 +1,111 @@
+{
+  "candidate": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "tree": "c1d19f1413029f25a41902d9d58b32f808d39d32",
+  "original": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "first_warm": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "prior_job": "0c296855616fd2f1d288aae9c2f27f55",
+  "assumption": "On-disk traces and output bytes still pass the worker's stock Lake hash validation. Counts are project source targets for the five named full files, excluding Mathlib, setup and proof export.",
+  "evidence_hashes": {
+    "seeds.json": "d5b4d620929f7377e4873b20ba8d236f998987f0db823314b16b822f0b9900d4",
+    "warm-main.log": "c6ef0af19531ffea7b8b54a83e3fefade5c3832cdf2e71edb095871b4f621343",
+    "warm-main-driver.log": "d2ca718d155e1d2b0b4d800b65c80cc9592ffb3bb385fb5329520208e1cb6721",
+    "result.json": "4c366f8a316cb87720b5e72d7baba941e0336cebc19f85ae91f5981105646fed",
+    "status.json": "0742a4ae6b4a282d20a3f07b3c6feb4c5aaf7d46b400abe34fe7ccdd6b0e7614"
+  },
+  "rows": [
+    {
+      "target": "New.Filling.NearTerms",
+      "target_sha256": "a4a188315198477f0c264489806e98d0d8b739b16a63efd58541582a5fa857af",
+      "direct": {
+        "Lib.Shimura.IntegralModel.NeatLevel": "original",
+        "New.RealPlace.FrameNorm": "first_warm",
+        "New.Filling.GramLiouville": "first_warm",
+        "New.Filling.StableCells": "first_warm"
+      },
+      "prerequisites": 106,
+      "original_ready": 97,
+      "first_warm_ready": 9,
+      "prerequisites_to_rebuild": 0,
+      "additional_with_root": 1,
+      "rebuild_modules": {}
+    },
+    {
+      "target": "Lib.PadicHodge.Limit.HodgeTateProjectors",
+      "target_sha256": "85c3723eef3b671ed79696acc20d95d800f49c3bbdc06d9dee4dc6eb0ae64509",
+      "direct": {
+        "Lib.PadicHodge.Comparison.CrystallineLimit": "first_warm"
+      },
+      "prerequisites": 107,
+      "original_ready": 104,
+      "first_warm_ready": 3,
+      "prerequisites_to_rebuild": 0,
+      "additional_with_root": 1,
+      "rebuild_modules": {}
+    },
+    {
+      "target": "New.Filling.StandardLevel",
+      "target_sha256": "41ee2fafef9371f7894d9408c4b36ad36b58e3ec2b135056108561347a885c21",
+      "direct": {
+        "New.Filling.EichlerFlag": "first_warm",
+        "New.RealPlace.WeightPlancherel": "original",
+        "Lib.Adelic.Adeles.FinitePlaceDensity": "first_warm"
+      },
+      "prerequisites": 95,
+      "original_ready": 86,
+      "first_warm_ready": 9,
+      "prerequisites_to_rebuild": 0,
+      "additional_with_root": 1,
+      "rebuild_modules": {}
+    },
+    {
+      "target": "New.DiscreteSeries.BesselExistence",
+      "target_sha256": "edf0000d762613e0fbd6c9fe3ee904e0fce268c7eb98e40c13ceb3065275d913",
+      "direct": {
+        "Lib.General.Algebra.ZerosCostDegree": "original",
+        "New.RealPlace.BesselOrthonormal": "first_warm",
+        "New.DiscreteSeries.TwoFactorSetup": "original"
+      },
+      "prerequisites": 75,
+      "original_ready": 68,
+      "first_warm_ready": 7,
+      "prerequisites_to_rebuild": 0,
+      "additional_with_root": 1,
+      "rebuild_modules": {}
+    },
+    {
+      "target": "New.RealPlace.ComplexGauge",
+      "target_sha256": "0620ffe6658f8a67ee9dc883725fcf216f3ef86a00d2f0cb4d1df564a5b3c731",
+      "direct": {
+        "New.RealPlace.LevelGauge": "original",
+        "Lib.DiscreteSeries.Bruhat.ComplexFloorMeasure": "first_warm",
+        "New.Filling.StableCells": "first_warm",
+        "New.RealPlace.SobolevCell": "first_warm"
+      },
+      "prerequisites": 93,
+      "original_ready": 79,
+      "first_warm_ready": 14,
+      "prerequisites_to_rebuild": 0,
+      "additional_with_root": 1,
+      "rebuild_modules": {}
+    }
+  ],
+  "union": {
+    "prerequisites": 213,
+    "available_prerequisites": 213,
+    "unavailable_prerequisites": [],
+    "new_roots": [
+      "New.Filling.NearTerms",
+      "Lib.PadicHodge.Limit.HodgeTateProjectors",
+      "New.Filling.StandardLevel",
+      "New.DiscreteSeries.BesselExistence",
+      "New.RealPlace.ComplexGauge"
+    ],
+    "distinct_total_to_compile": [
+      "Lib.PadicHodge.Limit.HodgeTateProjectors",
+      "New.DiscreteSeries.BesselExistence",
+      "New.Filling.NearTerms",
+      "New.Filling.StandardLevel",
+      "New.RealPlace.ComplexGauge"
+    ]
+  }
+}
