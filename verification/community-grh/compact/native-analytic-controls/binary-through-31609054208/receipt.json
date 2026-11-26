@@ -1,0 +1,543 @@
+{
+  "schema": 1,
+  "scope": "Native source compilation of an inclusive finite binary Goldbach theorem in Lean 4.35. Independent export and external replay are separate.",
+  "source_commit": "f17b38415535507fe31ba15eba396ef7fbd863af",
+  "same_ancestor_source_and_dependency_pins_at": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "production_module": "GoldbachBand03Prefix",
+  "theorem": "SmallGoldbach.GoldbachBand03.binaryGoldbachUpTo",
+  "statement": "theorem binaryGoldbachUpTo : \u2200 n : Nat, Even n \u2192 4 \u2264 n \u2192 n \u2264 31609054208 \u2192 \u2203 p q : Nat, p.Prime \u2227 q.Prime \u2227 p+q=n",
+  "even_lower_inclusive": 4,
+  "even_upper_inclusive": 31609054208,
+  "source_sha256": "7689f67e35c4d5993299a77d35ad4f6ed7add21e5fb814836d966f6ef201e97e",
+  "facets_sha256": {
+    ".olean": "84f77e34acb919bb32545de746f06fb0cf50e9b964991d1b11006f388f4131f3",
+    ".olean.private": "c6b1c9f2fb29d23b731a98f802ce272449395b3395ee3869f6b8c77d3ed53880",
+    ".olean.server": "2448b4f55942311f034969404d50522d93dc3ec709c5d815a9c22329ab76b30b",
+    ".ir": "e31f634570e9d52f4b284a49110849b51cc5c15b22ad02a2fc5620d22637e935",
+    ".ir.sig": "ee80250059903c10706c335e3a6646efd555f6ac52bbd3d80670364be8163dbe"
+  },
+  "axiom_output": "'SmallGoldbach.GoldbachBand03.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "axiom_log_sha256": "19adbfc257ce85e4618470cc23f1f19c2858532ea60e5ce31472d078a9e71d56",
+  "source_ancestors_including_root": 73,
+  "unique_producer_cpu_s_including_root": 3778.609375,
+  "root_wall_s": 21.3224,
+  "root_user_cpu_s": 11.53125,
+  "root_system_cpu_s": 6.09375,
+  "root_peak_working_set_bytes": 830713856,
+  "accepted_source_and_object_hashes": [
+    {
+      "module": "ExtendedPrefix",
+      "source_sha256": "e4b37a86532faa37797add9777da2116aaa7dbdb890ca2385fd772e1dcf5f7ff",
+      "public_olean_sha256": "67150131313ffcea0427484db792668b4697fdcce84b2d850b043345c3f7719a",
+      "user_cpu_s": 6.765625,
+      "system_cpu_s": 3.78125
+    },
+    {
+      "module": "ExtendedPrefixB",
+      "source_sha256": "432d65961f472e397c6fcd282a6c7ddea8839d5da248e5e77a8a3af480730822",
+      "public_olean_sha256": "44a10ecde21491c606b0cd6204ea69cdc40c6788629cf329234b542f9842ea65",
+      "user_cpu_s": 7.921875,
+      "system_cpu_s": 3.21875
+    },
+    {
+      "module": "Extension0",
+      "source_sha256": "0a18da783ee944dccda19bcc3a4268263675e60872624101e72959c564bd8714",
+      "public_olean_sha256": "02697487661776e4af4d95036cd887e53f886f79da6e1a71e82a654d4b2ed605",
+      "user_cpu_s": 7.96875,
+      "system_cpu_s": 3.9375
+    },
+    {
+      "module": "Extension1",
+      "source_sha256": "36be9f96811451ff19ce95c56badfe0ff04a36b2bf50efaebc967a1c007bed0a",
+      "public_olean_sha256": "341744bd6c0a12dce7c74c5e3c11f811f1aecc0043ca4c0cb2b39525f8a9de07",
+      "user_cpu_s": 10.234375,
+      "system_cpu_s": 4.109375
+    },
+    {
+      "module": "ExtensionB0",
+      "source_sha256": "aa1d564451e4920a09e98db7a110b503823acbf0c7c1ee491357f283c123bfac",
+      "public_olean_sha256": "f30768d0ad1ee790ccb9e4504181bed38c6ccfee12a311d9f119b1d3cb3d2c6a",
+      "user_cpu_s": 23.515625,
+      "system_cpu_s": 7.28125
+    },
+    {
+      "module": "ExtensionB1",
+      "source_sha256": "4e4c3947ea6aa6216f6e5f7aa297fb9401cc83ab1df70b65650bd47da7c96b02",
+      "public_olean_sha256": "3d2f914e259f4caad8a0f745d4c90187d5e287990a8b502682074f1263922f2b",
+      "user_cpu_s": 20.671875,
+      "system_cpu_s": 7.671875
+    },
+    {
+      "module": "ExtensionB2",
+      "source_sha256": "3b9d7959b387bf6ad92012d015efb33aaee47b66ec64745c084c02f9d29be65b",
+      "public_olean_sha256": "77114357004da4ec82bf018e4880b54c049840b7fb3ba5afcfd2422d2b87972f",
+      "user_cpu_s": 21.46875,
+      "system_cpu_s": 5.671875
+    },
+    {
+      "module": "ExtensionB3",
+      "source_sha256": "81687e070f607a7d6a6f456dbcc994efc5749010e2f2e5d5f5a8a9044d769eb3",
+      "public_olean_sha256": "0545eea5eb464c15f7b037f5d1667637144e3a8b3b058addd29aa35339989192",
+      "user_cpu_s": 21.1875,
+      "system_cpu_s": 5.6875
+    },
+    {
+      "module": "ExtensionCommon",
+      "source_sha256": "e8cc69508dbc36764ef36db15c596d520686b42d3384ef0942e851c989196308",
+      "public_olean_sha256": "b1b1abaed2daeeee7a3cb4db9400caf4e2155714784c1b3bf5c61b8f7f282324",
+      "user_cpu_s": 13.28125,
+      "system_cpu_s": 3.875
+    },
+    {
+      "module": "ExtensionCommonB",
+      "source_sha256": "8b00298bb1804e0c18d2cc4ca60cacba439deb04f9f8f82837fa13d832d9636c",
+      "public_olean_sha256": "b729597d5846e7442f48fa8a840b7cdcc8c2edfa82a764352a024e921cc1c220",
+      "user_cpu_s": 15.640625,
+      "system_cpu_s": 3.734375
+    },
+    {
+      "module": "FastHex",
+      "source_sha256": "efc35e840a1407d605f03caafa99f8b450346cbaf10586a8e63675c98e2a8aa5",
+      "public_olean_sha256": "11212185d53fc9162363e0ac77368b1cff42dd8d236d398d41d2115e15f75cbe",
+      "user_cpu_s": 1.34375,
+      "system_cpu_s": 2.25
+    },
+    {
+      "module": "GoldbachBand01Common",
+      "source_sha256": "97a5caf34046db517595e1c751ca46eee39dd6edeac27d1cffaedbf67bde2d17",
+      "public_olean_sha256": "1035d5bbd833ff08bd3b487cfb5c09d12c789f0d5dd75d5c730d27c4b7a9359f",
+      "user_cpu_s": 16.171875,
+      "system_cpu_s": 3.625
+    },
+    {
+      "module": "GoldbachBand01Prefix",
+      "source_sha256": "1bcc01cdadbb178f0058c24877288023510eaa3a5513082d9df939a4d55df783",
+      "public_olean_sha256": "47d9c4bb9795c0e1e611160821a3dd1852c0c9a91ea1410187abfe98784a198f",
+      "user_cpu_s": 5.921875,
+      "system_cpu_s": 3.59375
+    },
+    {
+      "module": "GoldbachBand01Shard0",
+      "source_sha256": "203609c7cef5ed31d4eeb40b48fbcdbc4258dde07f5642f72877875bc3d4615f",
+      "public_olean_sha256": "5190c8bcdfeb2d9d2c8065861aac0444531f84ba8dc541d6aeb418fdd71723b8",
+      "user_cpu_s": 35.171875,
+      "system_cpu_s": 10.921875
+    },
+    {
+      "module": "GoldbachBand01Shard1",
+      "source_sha256": "b634969839877b310a53633238e047f72baf660de0714b19f3ac81957dea4342",
+      "public_olean_sha256": "9e0fef8769552bcf21461dbae4abef5e475183e9fb7d9f37c16b3a01a0576af7",
+      "user_cpu_s": 37.140625,
+      "system_cpu_s": 10.65625
+    },
+    {
+      "module": "GoldbachBand01Shard2",
+      "source_sha256": "65ff6e15b864cfe2900adaded4be07d2bcf949c72b49510876ff88c6fd60cb80",
+      "public_olean_sha256": "e377e546a7aa7abaf59ccaa805029285718439008da5beea5bf0ef3d05221739",
+      "user_cpu_s": 35.15625,
+      "system_cpu_s": 10.0
+    },
+    {
+      "module": "GoldbachBand01Shard3",
+      "source_sha256": "5314de1e05013610c2adeda7ec1e8d8406aceaef375f3e9dc8cf4482b1237815",
+      "public_olean_sha256": "33242d5c48abbacfbb36fb39bafed844e2085938fd6c5661223ceb6a1023e330",
+      "user_cpu_s": 31.203125,
+      "system_cpu_s": 9.703125
+    },
+    {
+      "module": "GoldbachBand01Shard4",
+      "source_sha256": "e9a917077087a20741b0f4bc4dfbcb56c28030fe7e1ea8cf4b294c7a73db698b",
+      "public_olean_sha256": "9330b842d573730c7db261d41f6fd5bde4364cae50d39dee4d0bf4d6ff420190",
+      "user_cpu_s": 31.5,
+      "system_cpu_s": 9.625
+    },
+    {
+      "module": "GoldbachBand01Shard5",
+      "source_sha256": "6fc31c301f58c5ff070621fc1cd7fb4051a42d3535147c9b8fed1216db6e4ca3",
+      "public_olean_sha256": "fedfe8cc40382eb269591b921dd97954a5be58bb122f983d00af89d64982bb17",
+      "user_cpu_s": 29.078125,
+      "system_cpu_s": 8.9375
+    },
+    {
+      "module": "GoldbachBand01Shard6",
+      "source_sha256": "cafce3fb5736d867dc3ec282ca48fecd4bd29eb7f3356d2893f20f04282a995f",
+      "public_olean_sha256": "f855cc4e732c7f9c48ff0523149f59eb73668859a20244d66851a1511d50ba72",
+      "user_cpu_s": 33.25,
+      "system_cpu_s": 10.21875
+    },
+    {
+      "module": "GoldbachBand01Shard7",
+      "source_sha256": "4d05b6a8331cc0e81104af6899a0c4dbd41be2cfbec99fcf9d61905dd3a47915",
+      "public_olean_sha256": "9e908041ea1cb0a7cc4e79cd2b0c99b2575b0a9a78cdf7a8c5175bcee8e85533",
+      "user_cpu_s": 28.640625,
+      "system_cpu_s": 8.625
+    },
+    {
+      "module": "GoldbachBand02Common",
+      "source_sha256": "2711fc5b19278ec2db30aeda3bf0cfc91c0e27a07e05620db1147bdf4049da85",
+      "public_olean_sha256": "3f155c78104a560ec3e19a52b0d492331e38029d73527224215c02e51356042e",
+      "user_cpu_s": 14.40625,
+      "system_cpu_s": 3.5
+    },
+    {
+      "module": "GoldbachBand02Prefix",
+      "source_sha256": "158cebebb2de9ce3b89e449f48fbfcbe71dde3e3fb6fbedfa1f68cbe8d8c5c6d",
+      "public_olean_sha256": "2dd4f00af8b15491a3fbebb0b564dba7cffce713e8696be067d551b63afadd00",
+      "user_cpu_s": 7.828125,
+      "system_cpu_s": 4.0625
+    },
+    {
+      "module": "GoldbachBand02Shard0",
+      "source_sha256": "36fd67f92c4b0b237e3a56eaad6ea9d64c5f8025f93e56d8aa8409df1f56ac9c",
+      "public_olean_sha256": "e8957465de7361e6995aa021f16966c13a0f1b8aa3b40d9049a0b474cf8bc533",
+      "user_cpu_s": 37.40625,
+      "system_cpu_s": 9.609375
+    },
+    {
+      "module": "GoldbachBand02Shard1",
+      "source_sha256": "5d8f02c9343e570fa2888511c76bee695869c43ac0ddc17bfa540f21947c69ee",
+      "public_olean_sha256": "01729596aa279ccc653f03fe520998e4aa6f92fa7ed92ea3abd433d81f17e361",
+      "user_cpu_s": 59.65625,
+      "system_cpu_s": 15.640625
+    },
+    {
+      "module": "GoldbachBand02Shard10",
+      "source_sha256": "1bbd731613d39033ee2d0519eda9a3dceb1d8955d4514ad65bd8e25c4478b479",
+      "public_olean_sha256": "4e7a29921215bd38caa7bf747c6f4f38c4ca52c2f2a2acd99df2680e9b40cce4",
+      "user_cpu_s": 58.640625,
+      "system_cpu_s": 15.625
+    },
+    {
+      "module": "GoldbachBand02Shard11",
+      "source_sha256": "f632f9df7060e20bb13369c37803c14e95d7beb8a37fe0c61dd912bee1caa8c7",
+      "public_olean_sha256": "78917cdd2742da4ff7e2a508cd2b556773104a7e2fd3d1c24b0704362e1a1b87",
+      "user_cpu_s": 36.078125,
+      "system_cpu_s": 9.78125
+    },
+    {
+      "module": "GoldbachBand02Shard2",
+      "source_sha256": "ebaa532e73cee08b9c6eb5db162f3034e4a362db1fa187bac6bd0ff1de71dd8b",
+      "public_olean_sha256": "70cb144f058a10524f42abe7d460e6fd4d2c2ca49d0fa6f4a807779a853d3383",
+      "user_cpu_s": 57.375,
+      "system_cpu_s": 15.03125
+    },
+    {
+      "module": "GoldbachBand02Shard3",
+      "source_sha256": "7fbe5df2314de3d988da209d73616608ab4cff336b8a1dbdf1f98a21f87e33cc",
+      "public_olean_sha256": "8fc37aa768d24c231175b3a6beef55d2f36dc66133cd2d05aa8af830144a3f6d",
+      "user_cpu_s": 62.0,
+      "system_cpu_s": 17.203125
+    },
+    {
+      "module": "GoldbachBand02Shard4",
+      "source_sha256": "675544c88090c08ee67754f98c3c50fc9e7f6f50959ae895298e7448965a56d6",
+      "public_olean_sha256": "ae613c22c1f7167dda4393f748288ab8140dc0816e87556f2d3c49db493cdfd1",
+      "user_cpu_s": 59.46875,
+      "system_cpu_s": 15.921875
+    },
+    {
+      "module": "GoldbachBand02Shard5",
+      "source_sha256": "1efa2ada7ad7015263f3c5e4ead2ec3d748c04513dea830c2924a65cc10a177c",
+      "public_olean_sha256": "433c8d9b73190ab7f57dfbb162f6e7ed9bfe84d9673a89470e3804da00584fe2",
+      "user_cpu_s": 59.140625,
+      "system_cpu_s": 16.546875
+    },
+    {
+      "module": "GoldbachBand02Shard6",
+      "source_sha256": "9bab51b84ec45843a2222329cfa0713dddab2658b7f1092dcbd74e6502b0184c",
+      "public_olean_sha256": "55af648723bdfcc29f90020babefdac095bd47c54c4588cbe1756d971c29349a",
+      "user_cpu_s": 65.640625,
+      "system_cpu_s": 16.5
+    },
+    {
+      "module": "GoldbachBand02Shard7",
+      "source_sha256": "ed017b9f61a625dfb99d14af7199a3d256a6526ba15a23598734089a279481c2",
+      "public_olean_sha256": "b5ab533aca037959f590dd7ba772f3e239fb0f13992861ea51148cc824d7d142",
+      "user_cpu_s": 60.84375,
+      "system_cpu_s": 14.515625
+    },
+    {
+      "module": "GoldbachBand02Shard8",
+      "source_sha256": "fe4e30a478d01b8393de0a61a5138ff3f818a75447a90382f1153d7e607b7cc3",
+      "public_olean_sha256": "bc06090e167a447744092399deb6cfbe7a9bb9383ba3cbf1fae9ee6f5513a15b",
+      "user_cpu_s": 65.28125,
+      "system_cpu_s": 15.65625
+    },
+    {
+      "module": "GoldbachBand02Shard9",
+      "source_sha256": "61bc35087e84a3091bc49c426376dc48c5335610b06bf5a5c874092b5777459e",
+      "public_olean_sha256": "462b7c17a82fd925d957da1f14ae0a9b3b4c091f620a994634c332a5fb583ffa",
+      "user_cpu_s": 56.421875,
+      "system_cpu_s": 15.46875
+    },
+    {
+      "module": "GoldbachBand03Common",
+      "source_sha256": "d44a761ebe0c073ce54ded4ec485df079e91dcaeb87bd80c4b0aa8f134c2c046",
+      "public_olean_sha256": "d8a17d753a79be468a2ee2671dfb3707d96bca3a57a664132ec91f20d9a2d3ac",
+      "user_cpu_s": 27.25,
+      "system_cpu_s": 5.921875
+    },
+    {
+      "module": "GoldbachBand03Prefix",
+      "source_sha256": "7689f67e35c4d5993299a77d35ad4f6ed7add21e5fb814836d966f6ef201e97e",
+      "public_olean_sha256": "84f77e34acb919bb32545de746f06fb0cf50e9b964991d1b11006f388f4131f3",
+      "user_cpu_s": 11.53125,
+      "system_cpu_s": 6.09375
+    },
+    {
+      "module": "GoldbachBand03Shard0",
+      "source_sha256": "609bd81c78b0629d0fe3b69172ce17c68f5db41ae776f6a99d64ae790133dae4",
+      "public_olean_sha256": "3d7eb0a15681987377d0baffab6f8736436f2b32b045f0a71a6a57be750e0e5f",
+      "user_cpu_s": 53.75,
+      "system_cpu_s": 13.875
+    },
+    {
+      "module": "GoldbachBand03Shard1",
+      "source_sha256": "55e0653af0962378783601b1468de938ab9a219c71c4fc76379d8bd731538783",
+      "public_olean_sha256": "bdc986aa190c76af8798d20d8f1f0da14392d0f442c0d8f4a5e5c54a95033b9f",
+      "user_cpu_s": 55.15625,
+      "system_cpu_s": 13.515625
+    },
+    {
+      "module": "GoldbachBand03Shard10",
+      "source_sha256": "2c58a568e207d14496f24406b57c7c8140a2d5a948dfab25ba62cc8d3af83045",
+      "public_olean_sha256": "9d06821e6109e9da87253d706bc0565de7036cfb1615531bbe890334f2835d6f",
+      "user_cpu_s": 52.140625,
+      "system_cpu_s": 14.21875
+    },
+    {
+      "module": "GoldbachBand03Shard11",
+      "source_sha256": "b02e2038646bcc6e9a4e54418826b7b348818930d8f933035cd53e3e8d8a93a7",
+      "public_olean_sha256": "2ee3a45126fb8bd91e195f37f4dcf32e76cd6c584ee01c7e3ed5771f8f1af8d8",
+      "user_cpu_s": 55.78125,
+      "system_cpu_s": 15.640625
+    },
+    {
+      "module": "GoldbachBand03Shard12",
+      "source_sha256": "c21b962396065c76b266784ae5b6dfd733215dcfe4ad07a4985421102151355e",
+      "public_olean_sha256": "b6beb9c66ea11e96b150ed9e39ee6fc4744f9d1ca44580a5f2bf877226129389",
+      "user_cpu_s": 52.578125,
+      "system_cpu_s": 13.953125
+    },
+    {
+      "module": "GoldbachBand03Shard13",
+      "source_sha256": "4bbd5515b590dae95af30541b79c0cbf286ab5083b23371a85c612b50660176e",
+      "public_olean_sha256": "40de6d99b90860a4b01fb7d9f147ac3a2f3e7dc13e64652b700c53813f615eca",
+      "user_cpu_s": 50.609375,
+      "system_cpu_s": 14.84375
+    },
+    {
+      "module": "GoldbachBand03Shard14",
+      "source_sha256": "657e242064f6368e20ffd36ec38a84c5973e2ee7061e7fce8747397b14d61a47",
+      "public_olean_sha256": "d2d184d4d0dd214582d6f318af00b012d4a973676d34118df4e0d039c1c7267e",
+      "user_cpu_s": 51.765625,
+      "system_cpu_s": 13.640625
+    },
+    {
+      "module": "GoldbachBand03Shard15",
+      "source_sha256": "bd3fb3d1b23d6ddac054f6a58e0d3b52f10e58f2d13f2caf53359351a3911e91",
+      "public_olean_sha256": "98a1c39f4150121aeeff9d81bc86ce6d90f0a55a4d6f7c24921aeda70e7edb96",
+      "user_cpu_s": 55.203125,
+      "system_cpu_s": 14.703125
+    },
+    {
+      "module": "GoldbachBand03Shard16",
+      "source_sha256": "7d7333cbba06e66be88e1fb990a62f204a82289af1000583209f733c24e4fc43",
+      "public_olean_sha256": "5d8047416b4c1e87fdcc3eda8d507fc7b59232f50754ef8187fddd915f452c1e",
+      "user_cpu_s": 56.765625,
+      "system_cpu_s": 16.0
+    },
+    {
+      "module": "GoldbachBand03Shard17",
+      "source_sha256": "039bf1b545beaf95953b8d8501e264153f3958eab25a6758e1e313ef7fa28f8f",
+      "public_olean_sha256": "93f8c7cc8f7976d3ec153018fd95a129b7e81537af638e7a43c1d834e7253504",
+      "user_cpu_s": 56.5625,
+      "system_cpu_s": 15.28125
+    },
+    {
+      "module": "GoldbachBand03Shard2",
+      "source_sha256": "f01160d01c18c624c3b764c90fc433c0cc4c30e561bb765b385c79ccea49f075",
+      "public_olean_sha256": "be17a5aa53b74b857a02ce8b8c181c793795bb0c792dccabadf0f4894b19a2cd",
+      "user_cpu_s": 54.71875,
+      "system_cpu_s": 14.015625
+    },
+    {
+      "module": "GoldbachBand03Shard3",
+      "source_sha256": "6eb257fad3183385b803b4bfe693c59d629351d45f1b6b67e01aa452178fa362",
+      "public_olean_sha256": "9bf06d2a04ae63bd06426fad16a8063416a322cde02b7540c9aad8024ba9ab89",
+      "user_cpu_s": 55.59375,
+      "system_cpu_s": 14.15625
+    },
+    {
+      "module": "GoldbachBand03Shard4",
+      "source_sha256": "86e73845863c3f70f8d93d12e16e9f9cacfb8f778eb870d6625e9a702a2d2b70",
+      "public_olean_sha256": "4cf6922138c786654f99ebe11b2428c58cbbbaed5a896af806e5312df5e09665",
+      "user_cpu_s": 55.140625,
+      "system_cpu_s": 14.3125
+    },
+    {
+      "module": "GoldbachBand03Shard5",
+      "source_sha256": "d895d37a19d510a70f24ff31082b44c1909a0d9f02a64f2ab10678bac1edcb40",
+      "public_olean_sha256": "7eb6e542fae808a17575f4d360077771f4c1a7d24ac92a76421850b6f88e0041",
+      "user_cpu_s": 58.140625,
+      "system_cpu_s": 15.359375
+    },
+    {
+      "module": "GoldbachBand03Shard6",
+      "source_sha256": "e3b08ef017f57d720c8e14e3441a0c1ca6cb9816d61cce4f7dbc12a3a3781061",
+      "public_olean_sha256": "e9af5091bfba1f9873958b138bca1febed031a2f887aa3224a61f85ac2ebc682",
+      "user_cpu_s": 55.59375,
+      "system_cpu_s": 15.453125
+    },
+    {
+      "module": "GoldbachBand03Shard7",
+      "source_sha256": "c840cac54c3c90f268142644b0ffe08d2ae8f6ca019ce863c7b34c9dfc97913a",
+      "public_olean_sha256": "26eddd33c4280551ad04f47ea8f9493efb408ef58bd4c561bddae0132b90d9cc",
+      "user_cpu_s": 54.84375,
+      "system_cpu_s": 13.78125
+    },
+    {
+      "module": "GoldbachBand03Shard8",
+      "source_sha256": "1e7ea92faad535b60a42c60db1b166c1b8863298fbf4cdf981e5e5cfb8efb234",
+      "public_olean_sha256": "6a0e1a6234dd96cf39cf8364e3a642e88dcdec5d389f16c996f4125e8a9e969d",
+      "user_cpu_s": 55.171875,
+      "system_cpu_s": 14.140625
+    },
+    {
+      "module": "GoldbachBand03Shard9",
+      "source_sha256": "d3a67b8c9fd4189fd085f310e39d45e4ab736d0329c0f7b50b8c23cf8b0599b6",
+      "public_olean_sha256": "de409cabae0c4176bc3228f3603c7e878046d2d025058a9c76ac34e9adec2655",
+      "user_cpu_s": 57.515625,
+      "system_cpu_s": 16.1875
+    },
+    {
+      "module": "GoldbachNatPowMod",
+      "source_sha256": "47fc005726c7ddc34fcd15c89813662a02312331a6ea59f3971711835ec91cc2",
+      "public_olean_sha256": "13a21a0b22275b3a929d5d592683d086f3f55d5fd348ea75c4e352ca1ebb7be4",
+      "user_cpu_s": 0.375,
+      "system_cpu_s": 0.625
+    },
+    {
+      "module": "Power10Block00",
+      "source_sha256": "11775a15ce666a5e2a3489168610d35c07e8ea22e0a02c996900c07bf79285eb",
+      "public_olean_sha256": "6dc96256458d6e4b18677159f3825d1406c7d36fb61daf9d8b8ff83c951db0d6",
+      "user_cpu_s": 89.9375,
+      "system_cpu_s": 18.328125
+    },
+    {
+      "module": "Power10Block01",
+      "source_sha256": "bc399c82768b6fd8051a76d018d784a0901ff884251f417226eafee149860b24",
+      "public_olean_sha256": "f77f6f522b2b0badbf5e3239384d2c63b1fc0a9ba649a452443cb1f60bbb45df",
+      "user_cpu_s": 92.5625,
+      "system_cpu_s": 20.671875
+    },
+    {
+      "module": "Power10Block02",
+      "source_sha256": "e58a0a40f670895d7e7659dceb81692c6808f07e3eb1ac70bb9c4efbb8860e2d",
+      "public_olean_sha256": "2704389739c68505e6d97071505762513eea22502aaa32d93dcdcad525882f45",
+      "user_cpu_s": 99.625,
+      "system_cpu_s": 20.8125
+    },
+    {
+      "module": "Power10Block03",
+      "source_sha256": "f23dd129a932ded62c652b13b76e2a28f425db5f32e176d6bce1dcb762f2213d",
+      "public_olean_sha256": "e9d76887b08ce0e86ea2a2f2ba115eefa4ac8d3af9b4258b2cbb3f9322804466",
+      "user_cpu_s": 90.796875,
+      "system_cpu_s": 25.984375
+    },
+    {
+      "module": "Power10Block04",
+      "source_sha256": "74a2393f51bf7c42f4a8cc03ca2a35caef5f2b4f0d2b93f6dd55506d4bf4fa82",
+      "public_olean_sha256": "314e767c0805fb3b31228a59ffded8f6a280b8b8b0a31d2c09279847e14d7fd4",
+      "user_cpu_s": 82.84375,
+      "system_cpu_s": 23.046875
+    },
+    {
+      "module": "Power10Block05",
+      "source_sha256": "988357bc48527927d622e33715b96369505c7f08116474a6f9cc45aef7841a41",
+      "public_olean_sha256": "5d74b031eb0c79b18d38c71147e251dfb88a8fe52d94703d3d5ab8ea0a34ff2b",
+      "user_cpu_s": 96.328125,
+      "system_cpu_s": 24.46875
+    },
+    {
+      "module": "Power10Block06",
+      "source_sha256": "defbff0e3434746d30d29e22a2df783a6a7db0299204bb6b74711c6faab139ae",
+      "public_olean_sha256": "00382347f6cc141119468d2561b0f0d365a63cb784bf544e0000ecb80f3106bc",
+      "user_cpu_s": 89.203125,
+      "system_cpu_s": 23.21875
+    },
+    {
+      "module": "Power10Block07",
+      "source_sha256": "60866238e90ab2c0192798b40d9f18bd45bef9ae6c1b376785a76b3eb767221d",
+      "public_olean_sha256": "088d5ef810c434d45af264388d84473969e64518ebe228128e0a0ebe9c6f4531",
+      "user_cpu_s": 79.859375,
+      "system_cpu_s": 22.421875
+    },
+    {
+      "module": "Power10Common",
+      "source_sha256": "2c2c258410f7fe9fddd866fb70def56d762a9a838966db9d334f985fa6e7c479",
+      "public_olean_sha256": "90ca1f07859b400fff52c74c7350bfe243609a5754592ba3b0b91b52348fb160",
+      "user_cpu_s": 35.390625,
+      "system_cpu_s": 4.25
+    },
+    {
+      "module": "Power10Joined",
+      "source_sha256": "d5e6040e128d0e4fa5827a27f16ed60a32b3935e351076f08c7b42fa50607151",
+      "public_olean_sha256": "2b5a666f9e42dc22814c779a74ecfac2d5917bf0642f9d319c9198a5a3a8a119",
+      "user_cpu_s": 5.671875,
+      "system_cpu_s": 3.328125
+    },
+    {
+      "module": "PrefixCheck",
+      "source_sha256": "6eeade31a01a5fb5a242ec5cd6c9bc8f6df9ccbf8f1ccb861af2087fe1a69d29",
+      "public_olean_sha256": "234ffa181b36a76471ba738b7fd5af1c27547625ffe5d9277a99e8c174b317a4",
+      "user_cpu_s": 7.921875,
+      "system_cpu_s": 2.703125
+    },
+    {
+      "module": "PrefixFactorial",
+      "source_sha256": "651a028ae1b550b129dbe91c6dadf1355b3d6c8fe2b1473ba3465d713a36486c",
+      "public_olean_sha256": "fb58681b9b1d7ce1e6b5d2e24968e4fef53ec87aff4c2b9bb111ee325730e1af",
+      "user_cpu_s": 6.671875,
+      "system_cpu_s": 2.765625
+    },
+    {
+      "module": "PrefixJoin",
+      "source_sha256": "d4e072c67fbf4cd48665d3a2ee5282c3d2d9574f7b8e2813eb9fa0257ea370f7",
+      "public_olean_sha256": "6b485777f2dfa99c582ed234a17e102d3d1fc0c3fbc21a7502b760dd5ad43781",
+      "user_cpu_s": 7.21875,
+      "system_cpu_s": 2.921875
+    },
+    {
+      "module": "PrefixSource",
+      "source_sha256": "27c3d9e402dc3b1b94e78c7e76f1c6263ff1250eecc9b241cf8dacc9d574df03",
+      "public_olean_sha256": "71be5d6bddc003d8be94ffb8a3e87ff36b21e75258e61859a0a2efee82215b8b",
+      "user_cpu_s": 6.71875,
+      "system_cpu_s": 2.640625
+    },
+    {
+      "module": "PrimeBitmap",
+      "source_sha256": "65a4fa1f5de3dc967ed132eed4445de97cb9afce0d9233acaef454317a6cbef5",
+      "public_olean_sha256": "eafea46ca6923ebe433434a07861a7f3050566685644c6f5604615d1779d9571",
+      "user_cpu_s": 7.59375,
+      "system_cpu_s": 2.921875
+    },
+    {
+      "module": "PrimeSupport",
+      "source_sha256": "52f5a4b8068c289b56c92abd428fde59fc11edd31ba29b3b32916f9c43a11748",
+      "public_olean_sha256": "8568874617553e4ea13341831b9f1f684794fc603b86c3694e3c42013ea1e7e0",
+      "user_cpu_s": 8.0,
+      "system_cpu_s": 3.421875
+    },
+    {
+      "module": "Table",
+      "source_sha256": "8d2c3ba8235402e5f0d25cf8030fbff870b5bc8a9baeb2823fcc141bda84aa44",
+      "public_olean_sha256": "3b9aab07882e6bbc5b66ab8abecf68bb5321989d4b1fc90b08082a66aba43e52",
+      "user_cpu_s": 7.71875,
+      "system_cpu_s": 3.125
+    }
+  ],
+  "replay": "At the source commit run lake build +GoldbachBand03Prefix:olean. The source contains the axiom audit."
+}

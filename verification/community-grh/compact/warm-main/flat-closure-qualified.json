@@ -1,0 +1,105 @@
+{
+  "candidate": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+  "lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "FlatClosure full transitive project dependency path; source frontend and four directly imported theorem axiom audits",
+  "retained_input_manifest_sha256": "b63f1287a613f4a810f08307b2cd2d9922908aa0b769fa63ddae306bf6871481",
+  "retained_inputs": 42,
+  "fresh_runs": [
+    {
+      "module": "Lib.Shimura.AbelianScheme.Specialisation",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 48.05,
+      "source_sha256": "666b5bb525e37ad741ff6317db13ede9f863bae3fd77aa40c72d3c556dc58c7f",
+      "object_sha256": "a735aac0fc4e0b8dbcf0cb29ee71e5872a37605301e894f064d3ad6b4929cf98",
+      "log_sha256": "844d0d38ecb0de0f4bf22ad872fdb071ce6eaecef5a28a7edb5e62af58429c21",
+      "direct_object_sha256": {
+        "Lib.General.Geometry.SeparatingPoints": "0a3b32c1fb6d0b08c8d0df7a365c6b14f0289bd9a0ad7224be26e8e2de7b2d49"
+      }
+    },
+    {
+      "module": "Lib.General.Geometry.ConstantFunctions",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 72.06,
+      "source_sha256": "c8de36694d9c799162b12f308aec15f65e99d44ad52b591014dfbc094361c25b",
+      "object_sha256": "57546e5a5afedfb134a3703393f9522c92ca0ede240852db4e9445ce8d995766",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "direct_object_sha256": {
+        "Lib.General.Algebra.TangentNakayama": "ee579f7e2af8a2572949f5fc21f6555a7056f8d790c76d6cbcdef98b70f5f640",
+        "Lib.Shimura.AbelianScheme.KernelRing": "a44fc7b0b018aadf79973a538fc36ef05c13283ff74afa80168b761f0b836d31"
+      }
+    },
+    {
+      "module": "Lib.Shimura.ThetaGroup.SectionLifts",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 120.08,
+      "source_sha256": "683abeb5d2cd4c6ee0e40e722bef5394c8e0a23a8e449b4d44fae3853fa498a4",
+      "object_sha256": "1ad9470280a3488f5e7d9bd2e580bd6cd74525912ac03b0eaef67973329fbccc",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "direct_object_sha256": {
+        "Lib.Cohomology.Etale.TestRings": "959620d6682fadd35cba99a239b4b93f4d26b1a6d49ba47b636ed6b11bcc6e91",
+        "Lib.General.Geometry.ConstantFunctions": "57546e5a5afedfb134a3703393f9522c92ca0ede240852db4e9445ce8d995766",
+        "Lib.Shimura.IntegralModel.GroupBaseChange": "6024009c4f0790d2d217b53ba71ae94945c6c2c64e3116cb2fcd94c2d7e34592"
+      }
+    },
+    {
+      "module": "Lib.Shimura.ThetaGroup.ThetaStructure",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 85.07,
+      "source_sha256": "e9b4fea14be5fe15729b55db7792cd70b90a553e8f82c8eb7ee618bad8feb263",
+      "object_sha256": "f51c925a7d78b32859572a348d329936cf3b895446e17b480aa295e2dd720a16",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "direct_object_sha256": {
+        "Lib.Shimura.AbelianScheme.Specialisation": "a735aac0fc4e0b8dbcf0cb29ee71e5872a37605301e894f064d3ad6b4929cf98",
+        "Lib.Shimura.ThetaGroup.SectionLifts": "1ad9470280a3488f5e7d9bd2e580bd6cd74525912ac03b0eaef67973329fbccc"
+      }
+    },
+    {
+      "module": "Lib.Shimura.Uniformisation.UniformisationExists",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 176.13,
+      "source_sha256": "80d452c0fe294a1008588d3a3546585bc84fd2b3b372f18db0a63e97fcd6eae7",
+      "object_sha256": "0f5e9263c83e41a331e81849a40f935727d1087243a70c6461d5ddcfe02f4514",
+      "log_sha256": "48875f7e195304e6ef6a2922460ae1113e02c77a24cfbdcb4b76c0233c429d42",
+      "direct_object_sha256": {
+        "Lib.Shimura.ThetaGroup.ThetaStructure": "f51c925a7d78b32859572a348d329936cf3b895446e17b480aa295e2dd720a16"
+      }
+    },
+    {
+      "module": "Lib.Shimura.ThetaModuli.FlatClosure",
+      "pin": "f85040a7a5263b32cce873ac345010a7d0f1f2b9",
+      "exit": 0,
+      "guard": null,
+      "seconds": 128.1,
+      "source_sha256": "d33132085b852a832bdfec2d54ba94e48347437e294f2f6a71dc7089829c6f1a",
+      "object_sha256": "c78956a63357286fff4ccecc3253060c537c27f94c1195b3d3af3eec61249a6c",
+      "log_sha256": "3cbf7955ecc9e6bad06e9c2f7f9fced975655200966b881ca68941e2cb05f952",
+      "direct_object_sha256": {
+        "Lib.Shimura.Uniformisation.UniformisationExists": "0f5e9263c83e41a331e81849a40f935727d1087243a70c6461d5ddcfe02f4514"
+      }
+    }
+  ],
+  "imported_audit": {
+    "exit": 0,
+    "wall_seconds": 39.85,
+    "source_sha256": "8bd220f69d1617f1150b678e9fc7346772563d098772fb89dfa10f9b6600a247",
+    "log_sha256": "b8dcf4132b0a0662151dd409def70c65c20288da8449e183b13f79e6268ea685",
+    "output": [
+      "'exists_flat_closure' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'exists_isLinearSystem' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'IsSeparatingFamily.prod' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'LineBundle.IsProjEmbedding.nonempty_uniformisation' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "riemann_relation_owner_checked": false
+}

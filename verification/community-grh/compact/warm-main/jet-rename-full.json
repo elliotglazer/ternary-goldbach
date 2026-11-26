@@ -1,0 +1,188 @@
+{
+  "module": "Lib.General.Algebra.JetRename",
+  "baseline_git_commit": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+  "toolchain": "Lean 4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "platform": "x86_64 windows",
+  "direct_import_entiretheta_recursive_receipt_sha256": "05924f8f69cce75ebf97fd7827a826df091720bbd9d95844f24d19b89e6d4cdb",
+  "direct_import_entiretheta_olean_sha256": "05d617785c03e4b1e711b864cefff30adeb0fe7f8d6fb83b408a0b87ed2b2e05",
+  "compile_exit": 0,
+  "compile_wall_seconds": 44.4,
+  "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "additional_modules_beyond_entire_theta": {
+    "Lib.CM.Sigma.CurveTheta": {
+      "source_sha256": "424a9dd9ed59eafba20db6ef385b9d62d26c3979a7a26a0f3f902a8ff4e35bcb",
+      "outputs_sha256": {
+        ".olean": "c493f2989e5ec102d8f713b36cf5c2c6da73e12cd2b96040fe14d5a2b7fa61d6",
+        ".olean.private": "c76e3d3f1d003cfb7d0e62fd2784cad3984dea3e6c5e2ba8ccb17cfc7cb69fd3",
+        ".olean.server": "5a4fa9e860a95a3dba68a8442dcb998e6be9b7ce8cfb9598f27657a0bb42190d",
+        ".ir": "1463775b6fe4f2ecb239c9f22ae158b5b4d800ae62e529fa0f15aabad61794b7",
+        ".ir.sig": "d2a55311a7ffa0da53afc0aab726a80e1ae17299979b53a85b5b349cce4b7f92"
+      },
+      "direct_imports": [
+        "Lib.Shimura.ComplexTheta.CanonicalMultiplier",
+        "Lib.General.NumberTheory.QuadFieldSplitting",
+        "Lib.CM.Sigma.SigmaFunction"
+      ],
+      "new_compile_wall_seconds": 143.37
+    },
+    "Lib.CM.Sigma.PadicSeriesDefs": {
+      "source_sha256": "7784bbc2b37f47f6bf0a0601a79921327a8c1ef873a14aa90ab86ca34236b87a",
+      "outputs_sha256": {
+        ".olean": "d50e5f880ebb3f65c6334aede5d351ee4011ba7d5cf1ba0756e9a6f7c24ef1cd",
+        ".olean.private": "e7ae983053d200bf87b8dc1c56cff5b91215bd74659c8d97dbcff2b9c2650fb8",
+        ".olean.server": "04939d9393630a6622e3d822f528695baa874ef9b9e4da4526de381adaeefdfa",
+        ".ir": "6d375b08c03126df30b745f38c34bc974108d25035a09c32b7b8aa9ea894d6f1",
+        ".ir.sig": "ddc21b0992048375105fd4edad3d0a159488c02d380e0fab490ee08cc7ad2502"
+      },
+      "direct_imports": [
+        "Lib.CM.Sigma.CurveTheta"
+      ],
+      "new_compile_wall_seconds": 74.89
+    },
+    "Lib.CM.Sigma.SigmaFunction": {
+      "source_sha256": "d5c218fde592375cbc297d21496ed664761dc65ef2f6b212ce182ad7ff1c0582",
+      "outputs_sha256": {
+        ".olean": "adc4ee53d1fce7cce77493f6d81ff7928ec69e35fad281c7d367aaf4b7774030",
+        ".olean.private": "6a8a8138475c7bed6c94786b7124ba8c77fc90f9e0b83c5e0565056690846444",
+        ".olean.server": "23686b1ea9e6b32bc93130469f15872f840a386aa0b5f161b0badfd214bd5029",
+        ".ir": "9eabcec56b04cb8b469623d057c8f392ab548b6993dff0fcd0e6cf9e9f68d6bc",
+        ".ir.sig": "cbbc2c423e0ecc64daf39ffbb14335ebd6c1240c60412ca0fe0d655095ec1c5a"
+      },
+      "direct_imports": [
+        "Lib.Shimura.ComplexTheta.ThetaDimension",
+        "Lib.General.LinearAlgebra.HuaIntegral"
+      ],
+      "new_compile_wall_seconds": null
+    },
+    "Lib.General.Algebra.JetChainRule": {
+      "source_sha256": "c0d2d8e4ededfbc9c615df69c4ac886d5bf0f7e41d45ba20be1b4ae0706ce909",
+      "outputs_sha256": {
+        ".olean": "4725395766a5ce62fa559b379df0120039373e46ec1cbc6bde61eb27d3a2304b",
+        ".olean.private": "e8216747f85fb4408c1bc3b768d224036a2fce0a49896b9f568b49b8547c3817",
+        ".olean.server": "84eafae84ef926707b74520ab5b552f4febad4304ca5c84a53009a06e1dcc7b4",
+        ".ir": "f14526891cf964d20ea180d9d085a63877360e8a75e445b552239c512ae1852e",
+        ".ir.sig": "86c229b36cfdec39222952b856e8c8c02fa6abbe9e73bc515e123ed7dfb3450f"
+      },
+      "direct_imports": [
+        "Lib.General.Algebra.ZerosCostDegree",
+        "Lib.CM.Sigma.PadicSeriesDefs"
+      ],
+      "new_compile_wall_seconds": 48.03
+    },
+    "Lib.General.Algebra.JetRename": {
+      "source_sha256": "961ffd1670d3925c223851f2884c9097e8ca002401792ad7c88a23a29ea1afb8",
+      "outputs_sha256": {
+        ".olean": "378d91904aa73cd93a5f8b3c357a36bcb223794c4984e1976a88d8a84a6a8dbf",
+        ".olean.private": "e94af2c92a6c5d3e69372dffff311724ca6268a4589fd0636abeadd3333f8756",
+        ".olean.server": "c1d311867930bd7eb71e8f941ac0076c9a29e188e68cdd25886833386bd0aca6",
+        ".ir": "5535039560fb514c3c97e9aa5e2df45ca71891465250ee22b030f4c59386aa0c",
+        ".ir.sig": "cd44b12125c2fa1106b50d801e66e5ed0f3c57eb70bf6c7fad2f57554ca4e00d"
+      },
+      "direct_imports": [
+        "Lib.General.Algebra.JetChainRule",
+        "Lib.Weil.Fock.EntireTheta"
+      ],
+      "new_compile_wall_seconds": 44.4
+    },
+    "Lib.General.NumberTheory.QuadField": {
+      "source_sha256": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d",
+      "outputs_sha256": {
+        ".olean": "a5ee399960bf7535a53404c52d7e7554c0a720058fd47f66e96bfb9124aadf5f",
+        ".olean.private": "159e0c61b92af78c6107ffc1b8495b87a89e08c570081ab9bd153078fa13bf20",
+        ".olean.server": "32e8135cf6bac659ad2551ff8d164ca16f3f99d871f51d146f2d9d9b8a57580c",
+        ".ir": "a42fde70eaf35b2bebd933e31d3c8b51af4c9133d0f0d901ca7b1f0fd8a0cfe9",
+        ".ir.sig": "8cd87efb6d225ab3c0856b486c3202d017d94206d86f4491c6c970a556c37261"
+      },
+      "direct_imports": [
+        "Lib.General.Analysis.ZpowSum",
+        "Lib.General.NumberTheory.Embeddings"
+      ],
+      "new_compile_wall_seconds": null
+    },
+    "Lib.General.NumberTheory.QuadFieldSplitting": {
+      "source_sha256": "b973d601ea7a08ba8bbca465f24fd0b69c49060e2466f4ea596a664d96e35ace",
+      "outputs_sha256": {
+        ".olean": "3c928b4f3668c8fa3a2a6b89eb974306d0b0f39e96fd75ec3f7f7e44594dd525",
+        ".olean.private": "30cf0e1876b379006776fef00e9d4080d3519f2e85c6f6b61cc3dc94c5f03d0c",
+        ".olean.server": "873ae4ec37445bd8a42329bcac4f37fbf9a08e41d0f063c14003275b9d9670b0",
+        ".ir": "6a8089b5027f6b74a437cc84a2671c6b3e6cb9ae16a452ec828933f40e4931f4",
+        ".ir.sig": "8a3ac1681e493402709c24e68bac3f32f60a8e7069f4fae4dcabc9093b234a70"
+      },
+      "direct_imports": [
+        "Lib.General.NumberTheory.QuadField"
+      ],
+      "new_compile_wall_seconds": 55.49
+    },
+    "Lib.Shimura.ComplexTheta.CanonicalMultiplier": {
+      "source_sha256": "9146a353439fedc2afc35b9b3453a939376fdc427da8314de1f4659c386a6bd0",
+      "outputs_sha256": {
+        ".olean": "f14551fabe723fc964e86b3222135d328cff73bcda3b2cd5ace390cd76949717",
+        ".olean.private": "67c42f642433a22058f99b8bf3f5ded1023c276e18928672f4432175aab640c6",
+        ".olean.server": "062921644a20017f8a1a2aa04319a572e703e4388af6fa2e58ce61578102116c",
+        ".ir": "23135b54ecc4094f08c8c7413e38f226fd559f08cf9097b9b4b3d921f2e2965c",
+        ".ir.sig": "e497ea9d086fbb4d86fff389804849fc3711fd2196f531be3eb621f45735ac2e"
+      },
+      "direct_imports": [
+        "Lib.Shimura.Uniformisation.LieExponential"
+      ],
+      "new_compile_wall_seconds": null
+    },
+    "Lib.Shimura.ComplexTheta.ThetaDimension": {
+      "source_sha256": "cb68e8c7fde8b4cc5191e38c19d8489415d682d9b8ebb891b534d3a620465bfc",
+      "outputs_sha256": {
+        ".olean": "e26e6b0795dd30a792c9f221a528513108b90b82e3bcf7c9ff809ac5d778faec",
+        ".olean.private": "0671a4c126e7fa67f671d0659e6acb5361cc1b78021b6c0b2d72e5d4bf0b0aa8",
+        ".olean.server": "87001787e60f154704938f73ac578496c2daba6aa1e0b7c24364efa87dcb3b5e",
+        ".ir": "0ed8e17cb7628ac8546cb7ba8b21b927b49a861d4e654eb716bf691e9baf1c0d",
+        ".ir.sig": "7a4389185600b2c513616b6532aeadeecc2e7da9baba962be86fb2d129a2f2c1"
+      },
+      "direct_imports": [
+        "Lib.Adelic.Adeles.AdditiveCharDefs",
+        "Lib.Shimura.Uniformisation.LieExponential",
+        "Lib.General.Analysis.FundamentalDomain"
+      ],
+      "new_compile_wall_seconds": null
+    },
+    "Lib.Shimura.Uniformisation.LieExponential": {
+      "source_sha256": "9260440fb5e2dff2e6763585b33f94f9dcbd694c176ff03783d5664524129847",
+      "outputs_sha256": {
+        ".olean": "e54f39f4469336054c2a9923d57efc8f1f1986d2ec72e31d316b7d2e81d00cd4",
+        ".olean.private": "c1f918bcd4e634f8272d24bd016c772e4cc5d7046a41061e2530333c481307a0",
+        ".olean.server": "79f1fc36838da74dabc148c52ddffc0869ec6e7c8e94a37c4b23496b265b2ae7",
+        ".ir": "31d03e8689cb75a23d569fc4560628472c183fc2a0218b11acc2011bc779f508",
+        ".ir.sig": "ef031b6d5cf57d7a539f069ef1330dd0af82fda4b5e9d168fd809020d06cf930"
+      },
+      "direct_imports": [
+        "Lib.General.Analysis.HolomorphicIntegral"
+      ],
+      "new_compile_wall_seconds": null
+    }
+  },
+  "axiom_check": {
+    "exit": 0,
+    "wall_seconds": 165.88,
+    "audit_source": [
+      "import Lib.General.Algebra.JetRename",
+      "#print axioms jet_rename"
+    ],
+    "audit_source_sha256": "29cc5137a62d2cfddb72ecec0c0deed0ecb5f68ffd944f4e9b1eb5f1fe3fdbbf",
+    "output": [
+      "'jet_rename' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "complete_module_metadata": {
+    "exit": 0,
+    "seconds": 3.82,
+    "summary": [
+      "1 declarations, direct sorryAx references: #[]",
+      "1 audited transitive axiom entries, 0 offending: #[]",
+      "1 declarations, direct sorryAx references: #[]",
+      "1 audited transitive axiom entries, 0 offending: #[]",
+      "2 declarations, direct sorryAx references: #[]",
+      "1 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "inspector_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "log_sha256": "dac01bea157bdd49a842f56892593023950f564ce93f5f6262412b7912dc58ca"
+  }
+}
