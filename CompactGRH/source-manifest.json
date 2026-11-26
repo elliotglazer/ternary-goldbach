@@ -149,7 +149,7 @@
     {
       "path": "Lib/Adelic/CuspForms/ReproducingKernel.lean",
       "upstream_sha256": "a80c8ca490371bc5a3f054606c7fdfb8279a1308b1d33380aa4401f8300c8ff3",
-      "converted_sha256": "e52ad228f0207130090ca16026b862dca41ab33ac23b1113278b5742d460c09b"
+      "converted_sha256": "4ceaa7e2174a21ce7613ed61288badb81427740636cf12d873b2eddc7dc7c968"
     },
     {
       "path": "Lib/Adelic/CuspForms/SmoothFormPairing.lean",
@@ -649,7 +649,7 @@
     {
       "path": "Lib/Cohomology/Duality/Contraction.lean",
       "upstream_sha256": "f544175ef3677f3b46bd64a2994cc57a7f957b09735364ad11cdcb010afecec9",
-      "converted_sha256": "7a4500fff2a70b45edd19d88a4c2632a90f66e02e79eb1b53d8520fd84bb9590"
+      "converted_sha256": "f52fa9415df9a9400dc906c9b5ceb7ce1777ba56c2488e4cd4d7e2c14361f2fc"
     },
     {
       "path": "Lib/Cohomology/Etale/AcyclicTests.lean",
@@ -1943,7 +1943,7 @@
     {
       "path": "Lib/PadicComparison/Crystalline/CrystallineEtale.lean",
       "upstream_sha256": "389a9261b7e49828cb17c807b5a274dea52e2ec9d71e67e4d520534c19edbeaa",
-      "converted_sha256": "8f69104e6a464c17f2a0e8afa1ac4d94e221afa2d55e5b9122260aa0e6697120"
+      "converted_sha256": "88817d0f64f789e29a4b6a13097b0ae13d1f9acf12b5d82721252feb34f2a4a3"
     },
     {
       "path": "Lib/PadicComparison/Crystalline/CrystallineTests.lean",
@@ -2708,7 +2708,7 @@
     {
       "path": "Lib/Weil/DualPair/PairSplitting.lean",
       "upstream_sha256": "b22db2404ac812cf8eefb01c9e677ab58dace9c3f7ed4effdd1fafb27a1d9dab",
-      "converted_sha256": "62c9423d11eff6fdb869e498bd8338e611053ab20c291b9b85c57e1d418aeafd"
+      "converted_sha256": "2c92995e31bec64de69a7eb2f4cc2e5abc61b53d5f96a15c94ad8a6c595a24e6"
     },
     {
       "path": "Lib/Weil/DualPair/PairSumNegation.lean",
@@ -3007,7 +3007,8 @@
     {
       "path": "New/Curve/PeriodDefs.lean",
       "upstream_sha256": "854903bde75a3a2a64d2341947f6768438e9cae73399e8d4fc29c1a598a203ea",
-      "converted_sha256": "dd58a02f6e1ef37254be83c2a57fa6d67853c839d876cba12ec1a8ada25f4215"
+      "converted_sha256": "e966b46a1a62754c86179e5077abcc2e459d147d8f6adb2a929d0dd1cbbb8b85",
+      "adaptation": "Rewrite with the public root-discriminant equation."
     },
     {
       "path": "New/Curve/ThetaProducts.lean",
