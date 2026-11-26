@@ -1,0 +1,18 @@
+{
+  "verdict": "accepted",
+  "exit": 0,
+  "guard": null,
+  "wall_seconds": 44.041,
+  "input_roots": {
+    "ProfileAssembly": "35051de2f26a16c6ae9e0ad8db5168543c0d3336f5cbcbe7ef061c7cea652002",
+    "ProfileGroup0": "a6c7b9bae5d259b7e3dd3971f736c3fcebf34ed96451558acac51fc514e782f5",
+    "ProfileGroup2": "c00b2e3f30336226d2a020d2885472ececee5b2672d7073f6665b006bfdd41a0"
+  },
+  "probe_source_sha256": "18e7816b5809bf05d3e5ee3cff2aca23eb801cc4e13abf71d26127b901d041a5",
+  "log_sha256": "6c93a305200b69e5c468980c19709d640408551d5b3a21b6fca678a130690c27",
+  "observed_axiom_lines": [
+    "'GoldbachFinite.ternary_of_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ProfileGroup0.rows' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ProfileGroup2.rows' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}

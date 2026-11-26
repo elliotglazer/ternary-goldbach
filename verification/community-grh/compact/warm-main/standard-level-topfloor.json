@@ -1,0 +1,80 @@
+{
+  "input_progress_sha256": "3f67aeb719adbb04015ecd9ac063654c273778dd0420e6cc8f154f737f849b86",
+  "named_audit": {
+    "declarations": {
+      "IntegralPlace.IsStdLevel.continuous_topKernel": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.exists_gauge_depth_of_ne_zero": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.exists_gauge_isHead": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.floorZeroForm_le_main_term": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "IntegralPlace.IsStdLevel.lintegral_energy_le_topKernel": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "log_sha256": "27574d1a384c88cbb6f42c2d46dc805b6d9cf828faa602c7479c9cd53da0d955",
+    "probe_sha256": "040ef61a1cdd9e2a0b1544e206e4da58a993857efe19d7f460a16a3cef9fbf84",
+    "result": {
+      "cpu_seconds": 53.734375,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 206.094
+    }
+  },
+  "project_dependency_count": 101,
+  "protected_checker_run": false,
+  "scope": "Full native stock Lean module and five public named declarations",
+  "source_commit": "f4bef05f58e4c4360e9ac78e506b61a4815537b5",
+  "source_map_sha256": "083ad0f2a52255f58cc1b30c83e5a2845a5750f2054b8707d1a5380e0f5b63b2",
+  "source_tree": "a0dac9e342e466bbe66540dcbbe6b78dbb4657e5",
+  "target": "New.Filling.TopFloor",
+  "target_receipt": {
+    "clean": true,
+    "compile": {
+      "cpu_seconds": 203.6875,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 210.134
+    },
+    "exported": "63 audited transitive axiom entries, 0 offending: #[]",
+    "facets": {
+      ".ir": "a476aa011b05bf679e619b725d326d58ef832846d91fed334dd66e450319f39b",
+      ".ir.sig": "0811c206c8ad1c3c151c427f3e1385531b9a697e484e905f347f82f5fa9751f3",
+      ".olean": "94cf07c10f22673e175676629ec2c196251876b7b52cbdae74808ca570d7b13a",
+      ".olean.private": "179d5a3a1e5d09f6576ee3b1d27c9bc17fe617502363b8b3cf3d03c3436c5f20",
+      ".olean.server": "f1bbbf582a3935d58f6748d04ab0808be451250cdd2b8274a232916abc06535f"
+    },
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata": {
+      "cpu_seconds": 1.734375,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 2.011
+    },
+    "metadata_sha256": "c4ab03b8b99bd75ab41204b09bde5223444aa2ec1a9bf91ee22cf3f8391dfc75",
+    "module": "New.Filling.TopFloor",
+    "parents": {
+      "New.Filling.StandardLevel": "a4ebe744fc525b361b352d8af507fa6d5ed96392dbf0512fab10b11dcbb5903b",
+      "New.RealPlace.LocalTheorem": "06fdec7529f4606422438113a13c1c2e99c66dfa05f11a69a4d68a7a243a6c39"
+    },
+    "private": "165 declarations, direct sorryAx references: #[]",
+    "source_commit": "f4bef05f58e4c4360e9ac78e506b61a4815537b5",
+    "source_sha256": "8395c38fc458485584c2830181a5af4e308724e514c73c9cbc416a55d97150a0"
+  }
+}
