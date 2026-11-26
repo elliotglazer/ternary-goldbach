@@ -211,7 +211,7 @@ lemma exists_isBesselFunction {𝔰 I ε} [Fintype I] [Frame 𝔰 ε] {x v A b l
   erw [← le_ofReal_iff_toReal_le C0 (by bound), (congrArg _ (by simp [← hc, besselPairHom,
     laplaceIntegrand, f, wave, inner_smul_right, ← Unitary.star_eq_inv, star, adjoint_inner_right,
     neg_add_eq_sub, mul_assoc, mul_comm (cexp _), psiInFrame])).trans (integral_inner (iF x) v),
-    ofReal_mul' (norm_nonneg _)] at La
+    ENNReal.ofReal_mul' (norm_nonneg _)] at La
   grw [norm_inner_le_norm, v1, one_mul, ofReal_norm] at La
   exact ⟨_, ⟨⟨mf.stronglyMeasurable.integral_prod_right, _, (toReal_mono (by finiteness) <|
     (enorm_integral_le_lintegral_enorm _).trans <| hb ·)⟩,
