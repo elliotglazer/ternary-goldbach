@@ -1,0 +1,82 @@
+{
+  "base": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "repair_commit_sha": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "source_path": "CompactGRH/src/Lib/Weil/Fock/OscillatorPair.lean",
+  "base_source_sha256": "6086f1ab09e44a3a1f2a9599c06a8cbb1c1a5616332bed8d8092ad0448dc5dca",
+  "published_repair_source_sha256": "b93e651a3de5db7f9bf7ec9fc56efaa779e70ccab32798af5b3afe1f75473b51",
+  "actual_parent_modules": {
+    "Kronecker": {
+      "git_pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "module_or_fixture_source": "Lib/Weil/DualPair/Kronecker.lean",
+      "source_sha256": "24cca1a1c771a5dec192767a1f7ccf72f8e629924b8d5928595009a675e9d68b",
+      "exit": 0,
+      "seconds": 28.33,
+      "parent_oleans": {
+        "Lib.General.LinearAlgebra.ExtendColumns": "fd8c51cd32bb754596a961997f06191bec526a1273abfdeec0074dd5ac5d30ac"
+      },
+      "olean_sha256": "dc5f508e41ec27185697c9575b3bdba4afef1df939a721de1fa724ab1bdc8a10",
+      "native_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "OscillatorDefs": {
+      "git_pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "module_or_fixture_source": "Lib/DiscreteSeries/Theta/OscillatorDefs.lean",
+      "source_sha256": "238ecf8ff1f2a24aebcced0e5803198cea85a3a2a389f87651d705bdbe5ef407",
+      "exit": 0,
+      "seconds": 57.86,
+      "parent_oleans": {
+        "Lib.DiscreteSeries.FlenstedJensen.RepresentationDefs": "6ee8090f510e7c6afd60fee94bb08aa01bf21fb0384a202d20024ae18adbf097"
+      },
+      "olean_sha256": "cece2f0e86075822a6870d9712525f433d3cea4c0c63a047e536fabebcc1d59e",
+      "native_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "matched_tests": {
+    "baseline": {
+      "git_pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "module_or_fixture_source": "OscillatorExact.lean",
+      "source_sha256": "5ef2862ba074e458c6d9e0f9b5012870552606b0561df975af7c410bdcbfa36d",
+      "exit": 1,
+      "seconds": 28.16,
+      "parent_oleans": {
+        "Lib.Weil.DualPair.Kronecker": "dc5f508e41ec27185697c9575b3bdba4afef1df939a721de1fa724ab1bdc8a10",
+        "Lib.DiscreteSeries.Theta.OscillatorDefs": "cece2f0e86075822a6870d9712525f433d3cea4c0c63a047e536fabebcc1d59e"
+      },
+      "olean_sha256": null,
+      "native_log_sha256": "ba24eab875653491c8edc26b70144b11d8143635d3fb58dd3c0cf8117e61574f"
+    },
+    "corrected": {
+      "git_pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "module_or_fixture_source": "OscillatorExact.lean",
+      "source_sha256": "0baed9387a0675fbcbe28ebabe6971ace58c4c6e94335cc8548b4e4358b85f22",
+      "exit": 0,
+      "seconds": 32.24,
+      "parent_oleans": {
+        "Lib.Weil.DualPair.Kronecker": "dc5f508e41ec27185697c9575b3bdba4afef1df939a721de1fa724ab1bdc8a10",
+        "Lib.DiscreteSeries.Theta.OscillatorDefs": "cece2f0e86075822a6870d9712525f433d3cea4c0c63a047e536fabebcc1d59e"
+      },
+      "olean_sha256": "212dccb3d00fdf04b06469bedcba84c6f5c31040443c6fa0151b7a5b4ccae39b",
+      "native_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "axioms": {
+      "git_pin": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+      "module_or_fixture_source": "OscillatorAudit.lean",
+      "source_sha256": "c6a919e1f3969d56411d2dd8edf85648e7b2779593e19262e8a9599892a2cd77",
+      "exit": 0,
+      "seconds": 125.79,
+      "parent_oleans": {
+        "OscillatorExact": "212dccb3d00fdf04b06469bedcba84c6f5c31040443c6fa0151b7a5b4ccae39b"
+      },
+      "olean_sha256": null,
+      "native_log_sha256": "0546be97bcc282e03e1d74cde9d436f9ca3bff1c070b34ff481bee165e275b54"
+    }
+  },
+  "stock_output": {
+    "corrected": "",
+    "baseline": "OscillatorExact.lean:23:7: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  kroneckerMap (fun x1 x2 => x1 * x2) ?A ?A' * kroneckerMap (fun x1 x2 => x1 * x2) ?B ?B'\nin the target expression\n  \u2191\u2191((pairHom \u03b5 \u03b5') (g, h)) =\n    (k.comp { toAlgHom := includeRight.comp \u2191(transposeAlgEquiv C \u2102 \u2102).symm, map_star' := ?convert_1 })\n        { unop' := (\u2191g).inv } *\n      (k.comp { toAlgHom := includeLeft, map_star' := ?convert_2 }) \u2191\u2191h\n\ncase e'_3.e'_3\nR C : Type\ninst\u271d\u00b9 : Fintype R\ninst\u271d : Fintype C\n\u03b5 : R \u2192 \u2124\u02e3\n\u03b5' : C \u2192 \u2124\u02e3\ng : \u21a5(USign \u03b5')\nh : \u21a5(USign \u03b5)\nk : TensorProduct \u2102 (Matrix R R \u2102) (Matrix C C \u2102) \u2192\u22c6\u2090[\u2102] Matrix (R \u00d7 C) (R \u00d7 C) \u2102 :=\n  (kroneckerStarAlgEquiv R C \u2102).toStarAlgHom\n\u22a2 \u2191\u2191((pairHom \u03b5 \u03b5') (g, h)) =\n    (k.comp { toAlgHom := includeRight.comp \u2191(transposeAlgEquiv C \u2102 \u2102).symm, map_star' := ?convert_1 })\n        { unop' := (\u2191g).inv } *\n      (k.comp { toAlgHom := includeLeft, map_star' := ?convert_2 }) \u2191\u2191h\n\nNote: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.\nFull error:\n  Application type mismatch: The argument\n    { unop' := (\u2191g).inv }\n  has type\n    PreOpposite (Matrix C C \u2102)\n  but is expected to have type\n    MulOpposite (Matrix C C \u2102)\n  in the application\n    (k.comp { toAlgHom := includeRight.comp \u2191(transposeAlgEquiv C \u2102 \u2102).symm, map_star' := ?convert_1 })\n      { unop' := (\u2191g).inv }\n",
+    "axioms": "'U.kron' depends on axioms: [propext, Classical.choice, Quot.sound]\n'pairHom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'norm_pairHom_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "source_diff": "--- Lib/Weil/Fock/OscillatorPair.lean\n+++ Lib/Weil/Fock/OscillatorPair.lean\n@@ -76,10 +76,19 @@\n /-- For g in U(\u03b5\u2032) and h in U(\u03b5), the \u2113\u00b2 operator norm of the matrix of x \u21a6 hxg\u207b\u00b9 is at most\n \u2016g\u2016\u00b7\u2016h\u2016. -/\n lemma norm_pairHom_le g h : \u2016(pairHom \u03b5 \u03b5' (g, h)).1.1\u2016 \u2264 \u2016g.1.1\u2016 * \u2016h.1.1\u2016 := by\n-  let k := (kroneckerStarAlgEquiv R C \u2102).toStarAlgHom\n-  convert! norm_mul_le_of_le ((norm_apply_le (k.comp \u27e8includeRight.comp (transposeAlgEquiv\n-    ..).symm.toAlgHom, ?_\u27e9) _).trans_eq (U.norm_inv g)) (norm_apply_le (k.comp \u27e8includeLeft, ?_\u27e9) _)\n-  erw [\u2190 mul_kronecker_mul]; repeat aesop\n+  have bound (A : Matrix R R \u2102) (B : Matrix C C \u2102) : \u2016A \u2297\u2096 B\u1d40\u2016 \u2264 \u2016B\u2016 * \u2016A\u2016 := by\n+    let k := (kroneckerStarAlgEquiv R C \u2102).toStarAlgHom\n+    let right : (Matrix C C \u2102)\u1d50\u1d52\u1d56 \u2192\u22c6\u2090[\u2102] Matrix (R \u00d7 C) (R \u00d7 C) \u2102 :=\n+      k.comp \u27e8includeRight.comp (transposeAlgEquiv C \u2102 \u2102).symm.toAlgHom, by aesop\u27e9\n+    let left : Matrix R R \u2102 \u2192\u22c6\u2090[\u2102] Matrix (R \u00d7 C) (R \u00d7 C) \u2102 :=\n+      k.comp \u27e8includeLeft, by aesop\u27e9\n+    have hr := norm_apply_le right (MulOpposite.op B)\n+    have hl := norm_apply_le left A\n+    have h := norm_mul_le_of_le hr hl\n+    change \u2016((1 : Matrix R R \u2102) \u2297\u2096 B\u1d40) * (A \u2297\u2096 (1 : Matrix C C \u2102))\u2016 \u2264 \u2016B\u2016 * \u2016A\u2016 at h\n+    simpa only [\u2190 mul_kronecker_mul, one_mul, mul_one] using h\n+  change \u2016h.1.1 \u2297\u2096 (\u2191(g.1\u207b\u00b9) : Matrix C C \u2102)\u1d40\u2016 \u2264 _\n+  exact (bound h.1.1 (\u2191(g.1\u207b\u00b9) : Matrix C C \u2102)).trans_eq (congrArg (\u00b7 * \u2016h.1.1\u2016) (U.norm_inv g))\n \n variable {\u03b5 \u03b5'} (f : USign \u03b5 \u2192* USign \u03b5') (\u03b3 : \u2124)\n \n",
+  "literal_checked_declarations": "module\npublic import Lib.Weil.DualPair.Kronecker\npublic import Lib.DiscreteSeries.Theta.OscillatorDefs\n@[expose] public section\nopen Finset Matrix Norms.L2Operator\nopen MvPolynomial ComplexOrder Kronecker MatrixOrder Fintype Algebra.TensorProduct\n  NonUnitalStarAlgHom\nvariable {R C : Type} [Fintype R] [Fintype C] (\u03b5 : R \u2192 _) (\u03b5' : C \u2192 _)\n\n/-- The homomorphism (g, h) \u21a6 h \u2297 (g\u207b\u00b9)\u1d40, that is x \u21a6 hxg\u207b\u00b9 on R\u00d7C matrices, from U(\u03b5\u2032) \u00d7 U(\u03b5)\nto the unitary group of the signs \u03b5_r\u03b5\u2032_c. -/\nnoncomputable def pairHom : USign \u03b5' \u00d7 USign \u03b5 \u2192* USign (pairSign 1 \u03b5 \u03b5') :=\n  U.kron IsHermInvolution.mul_self (by simp [signMatrix, pairSign, diagonal]; aesop)\n\nattribute [local simp] pairHom pairSign smul_smul kroneckerBilinear canonical_commutation\n\n/-- For g in U(\u03b5\u2032) and h in U(\u03b5), the \u2113\u00b2 operator norm of the matrix of x \u21a6 hxg\u207b\u00b9 is at most\n\u2016g\u2016\u00b7\u2016h\u2016. -/\nlemma norm_pairHom_le g h : \u2016(pairHom \u03b5 \u03b5' (g, h)).1.1\u2016 \u2264 \u2016g.1.1\u2016 * \u2016h.1.1\u2016 := by\n  have bound (A : Matrix R R \u2102) (B : Matrix C C \u2102) : \u2016A \u2297\u2096 B\u1d40\u2016 \u2264 \u2016B\u2016 * \u2016A\u2016 := by\n    let k := (kroneckerStarAlgEquiv R C \u2102).toStarAlgHom\n    let right : (Matrix C C \u2102)\u1d50\u1d52\u1d56 \u2192\u22c6\u2090[\u2102] Matrix (R \u00d7 C) (R \u00d7 C) \u2102 :=\n      k.comp \u27e8includeRight.comp (transposeAlgEquiv C \u2102 \u2102).symm.toAlgHom, by aesop\u27e9\n    let left : Matrix R R \u2102 \u2192\u22c6\u2090[\u2102] Matrix (R \u00d7 C) (R \u00d7 C) \u2102 :=\n      k.comp \u27e8includeLeft, by aesop\u27e9\n    have hr := norm_apply_le right (MulOpposite.op B)\n    have hl := norm_apply_le left A\n    have h := norm_mul_le_of_le hr hl\n    change \u2016((1 : Matrix R R \u2102) \u2297\u2096 B\u1d40) * (A \u2297\u2096 (1 : Matrix C C \u2102))\u2016 \u2264 \u2016B\u2016 * \u2016A\u2016 at h\n    simpa only [\u2190 mul_kronecker_mul, one_mul, mul_one] using h\n  change \u2016h.1.1 \u2297\u2096 (\u2191(g.1\u207b\u00b9) : Matrix C C \u2102)\u1d40\u2016 \u2264 _\n  exact (bound h.1.1 (\u2191(g.1\u207b\u00b9) : Matrix C C \u2102)).trans_eq (congrArg (\u00b7 * \u2016h.1.1\u2016) (U.norm_inv g))\n\n",
+  "verdict": "The exact original norm_pairHom_le fails in the original pairHom/unitary sign context. The exact published repaired norm_pairHom_le compiles and all three audited declarations use precisely the allowed axioms. No substitute U action or sign function is used.",
+  "scope": "The full parent modules Kronecker and OscillatorDefs plus the complete literal target declarations were checked. The other proofs in OscillatorPair were not part of this focused test."
+}
