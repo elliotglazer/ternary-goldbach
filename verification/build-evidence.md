@@ -213,3 +213,5 @@ Stock Lean 4.35 built the entire NormalGeneration module in 162.16 seconds after
 With all 17 project prerequisites available, stock Lean 4.35 built the complete EtaleCharts file in 53.25 seconds. Typing the chart map removed all five compiler errors reported on the previous warm build.
 
 The complete Lib.Adelic.Reduction.Defs built under stock Lean 4.35 in 79.84 seconds using 54 project prerequisites. A subsequent import reported exactly propext, Classical.choice and Quot.sound for Space.Form, Space.peterssonCore and Space.formRep.
+
+Stock Lean 4.35 accepted the complete ReductionModP module in 48.02 seconds. The native check examined 137 exported axiom entries and found only the three permitted axioms.
