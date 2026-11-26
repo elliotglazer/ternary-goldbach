@@ -1,0 +1,96 @@
+{
+  "cold": {
+    "exit": 1,
+    "wall_seconds": 4.783,
+    "sha256": "5b86f96d0b312221d9bf74c08f1101440098bac019693a177a7652cff105e249",
+    "tail": [
+      "",
+      "Some issues need review, and may require choosing",
+      "a different dependency.",
+      "",
+      "Run `npm audit` for details.",
+      "trace: stderr:",
+      "npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:",
+      "npm warn allow-scripts   fsevents@2.3.3 (install: (install scripts present))",
+      "npm warn allow-scripts",
+      "npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.",
+      "error: read-only file system (error code: 30)",
+      "  file: /project/.lake/packages/proofwidgets/widget/package-lock.json.hash",
+      "Some required targets logged failures:",
+      "- proofwidgets/widgetPackageLock",
+      "error: build failed"
+    ]
+  },
+  "trusted-widget-replay": {
+    "exit": 0,
+    "wall_seconds": 3.427,
+    "sha256": "39054a3ab28cbb1f303071e8251278ec44f84e5f2288361596fe592873c6114c",
+    "tail": [
+      "Build completed successfully (6 jobs)."
+    ]
+  },
+  "trusted-selected-mathlib-replay": {
+    "exit": 0,
+    "wall_seconds": 3.276,
+    "sha256": "9d0b9eba7bbc90f11c828cd4b16882c9456688ae1fc20eae9f84d6562d5b5bd7",
+    "tail": [
+      "Build completed successfully (2921 jobs)."
+    ]
+  },
+  "trusted-downstream-replay": {
+    "exit": 0,
+    "wall_seconds": 1.721,
+    "sha256": "38e927414ee50c5e0e1575e41253ccafcbe6d490cb777166f302046c511b0e57",
+    "tail": [
+      "warning: no targets specified and no default targets configured",
+      "  Note: This will be an error in a future version of Lake.",
+      "  Hint: This warning (or error) can be suppressed with '--allow-empty'.",
+      "Nothing to build."
+    ]
+  },
+  "readonly-bounds": {
+    "exit": 0,
+    "wall_seconds": 0.017,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tail": []
+  },
+  "challenge-build": {
+    "exit": 0,
+    "wall_seconds": 3.377,
+    "sha256": "a88a0da2d6c4a4f4fafd6777dbf3d8f8885c360b9424f4a462de4565eccfcfd6",
+    "tail": [
+      "\u26a0 [626/627] Built GoldbachChallenge (1.7s)",
+      "warning: GoldbachChallenge.lean:11:8: declaration uses `sorry`",
+      "Build completed successfully (627 jobs)."
+    ]
+  },
+  "actual-solution-import": {
+    "exit": 0,
+    "wall_seconds": 7.138,
+    "sha256": "ce7936f6f597d0f81889172281bf0f957252722f5f39988f6c69ae8362883e3e",
+    "tail": [
+      "\u2714 [2923/2923] Built GoldbachDigamma (2.5s)",
+      "Build completed successfully (2923 jobs)."
+    ]
+  },
+  "challenge_object": {
+    "sha256": "3ff8d7bb71819367d19595a74cc8adb3253170b5dc459f363f4363c9f1f8a676",
+    "bytes": 7248
+  },
+  "solution_object": {
+    "sha256": "506dc0c215461378b0d5c07be937c8cbbda758dc9975262c99aea2308c3415c5",
+    "bytes": 1544
+  },
+  "trusted_marker": {
+    "sha256": "971a4e08a78d3b185902cde49867376deb03135a517d4380eb1cb6604cfcb38b",
+    "bytes": 16
+  },
+  "tool": "Linux Lean 4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "worker": "70afda55bfd8f96bd8be043a092da4cd7d1d39aaf3438fe135a8e7964c4ff263",
+  "input_hashes": {
+    "GoldbachChallenge.lean": "f9e6190b4c77c9bf474c6d36748278af41140237432fff72e8084a4c572a382a",
+    "GoldbachDigamma.lean": "6f31514f03d2beb9f41b9af9aaaba0b1373ccb7fe3a35ba90caf7a256ceaa330"
+  },
+  "scope": "Official Linux cache for selected authentic dependencies; actual separate challenge and source-side Lake builds, full Mathlib umbrella and full theorem not exercised."
+}

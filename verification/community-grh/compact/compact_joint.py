@@ -221,6 +221,12 @@ def main():
             cpu_seconds=(final.get('cpu.stat:usage_usec',0)-initial.get('cpu.stat:usage_usec',0))/1e6,
             oom_kills=final.get('memory.events:oom_kill',0)-initial.get('memory.events:oom_kill',0))
         save(receipt,state)
+        if rc and name in {"mathlib-cache","trusted-widget-replay","trusted-mathlib-replay","trusted-downstream-replay","challenge-build"}:
+            with log.open("rb") as f:
+                f.seek(max(0,log.stat().st_size-8192))
+                lines=f.read().decode("utf-8",errors="replace").splitlines()
+            state["failed_stage_tail"]=[line[:250] for line in lines[-8:]]
+            save(receipt,state)
         if not allow_failure:require(rc == 0, f"{name} failed with {rc}; see {log}")
         return log
 
@@ -283,6 +289,11 @@ def main():
             name,url,rev = dep["name"],dep["url"],dep["rev"]
             require(re.fullmatch(r"[A-Za-z0-9_-]+",name) and re.fullmatch(r"https://github.com/[-A-Za-z0-9_]+/[-A-Za-z0-9_.]+",url) and re.fullmatch(r"[0-9a-f]{40}",rev) and dep["type"]=="git" and dep["subDir"] is None,"invalid dependency")
             checkout(name,pack/name,url,rev)
+            if name=="proofwidgets":
+                tag="refs/tags/v0.0.116"
+                step("proofwidgets-release-tag",["git","fetch","--no-tags","--depth=1","origin",tag+":"+tag],pack/name)
+                require(git_hash(pack/name,tag+"^{commit}")==rev,"ProofWidgets release tag must point to its pinned commit")
+
         require(git_hash(pack/"mathlib","HEAD")==MATH,"Mathlib pin mismatch")
         state["packages"]={d["name"]:d["rev"] for d in manifest["packages"]}
         state["manifest_sha256"]=digest(source/"lake-manifest.json")
@@ -309,6 +320,16 @@ def main():
         require(cache.is_dir() and cache!=pack and not cache.is_relative_to(source), "separate Mathlib archive cache expected")
         env["MATHLIB_CACHE_DIR"]=str(cache)
         step("mathlib-cache",["lake","exe","mathlib/cache","get"],depstage,env=env)
+        mathlib_objects=pack/"mathlib/.lake/build/lib/lean"
+        umbrella=mathlib_objects/"Mathlib.olean"
+        def package_counts():
+            return {d["name"]:sum(1 for _ in (pack/d["name"]/".lake/build/lib/lean").rglob("*.olean")) for d in manifest["packages"]}
+        state["cached_module_counts"]=package_counts()
+        save(receipt,state)
+        required_objects=["Mathlib.olean","Mathlib/Data/Nat/Prime/Defs.olean","Mathlib/Algebra/Ring/Parity.olean"]
+        missing=[n for n in required_objects if not (mathlib_objects/n).is_file() or not (mathlib_objects/n).stat().st_size]
+        require(not missing,"Pinned Mathlib cache omitted required files: "+", ".join(missing)+"; see "+str(evidence/"mathlib-cache.log"))
+
         require(not (source/".lake/build").exists(),"GRH build output present before verification")
         for d in manifest["packages"]:
             require(git_hash(pack/d["name"],"HEAD")==d["rev"],"dependency changed")
@@ -350,6 +371,39 @@ def main():
                 if writable:
                     argv+=["--bind",str(work/".lake/build"),"/project/.lake/build"]
             return argv+command
+        # The trusted Lake replay writes ProofWidgets' derived lock hash. Candidate sources
+        # never enter this sandbox; only trusted .lake directories and this one file are writable.
+        readiness=root/"trusted-replay"
+        (readiness/".lake/packages").mkdir(parents=True)
+        for name in ["build","config"]:
+            (readiness/".lake"/name).mkdir()
+        for name in ["lean-toolchain","lake-manifest.json","lakefile.toml"]:
+            shutil.copy2(depstage/name,readiness/name)
+        def trusted_command(command):
+            argv=box(readiness,True,[])
+            for dep in manifest["packages"]:
+                path=pack/dep["name"]/".lake"
+                path.mkdir(exist_ok=True)
+                require(path.resolve(strict=True)==path and path.is_dir(),"unsafe trusted Lake directory")
+                argv+=["--bind",str(path),"/project/.lake/packages/"+dep["name"]+"/.lake"]
+            marker=pack/"proofwidgets/widget/package-lock.json.hash"
+            require(marker.parent.resolve(strict=True)==marker.parent,"unsafe ProofWidgets directory")
+            fd=os.open(marker,os.O_CREAT|os.O_NOFOLLOW|os.O_WRONLY,0o600)
+            os.close(fd)
+            require(marker.is_file() and not marker.is_symlink(),"unsafe ProofWidgets lock hash")
+            argv+=["--bind",str(marker),"/project/.lake/packages/proofwidgets/widget/package-lock.json.hash"]
+            return argv+command
+        step("trusted-widget-replay",trusted_command(["lake","--no-cache","build","proofwidgets/widgetJsAll"]))
+        step("trusted-mathlib-replay",trusted_command(["lake","--no-cache","build","mathlib/Mathlib"]))
+        step("trusted-downstream-replay",trusted_command(["lake","--no-cache","build"]))
+        require(umbrella.is_file() and umbrella.stat().st_size>0,"Full Mathlib umbrella replay did not materialize Mathlib.olean")
+        state["prepared_module_counts"]=package_counts()
+        state["mathlib_umbrella"]={"bytes":umbrella.stat().st_size,"sha256":digest(umbrella)}
+        save(receipt,state)
+
+        for dep in manifest["packages"]:
+            subprocess.run(["git","-C",pack/dep["name"],"diff","--exit-code","HEAD","--"],check=True,stdout=subprocess.DEVNULL)
+        state["proofwidgets_lock_marker_sha256"]=digest(pack/"proofwidgets/widget/package-lock.json.hash")
         for w in [challenge,source]:
             # Lake may compile project configuration; TOML configuration requires no project-level .olean.
             require(not list((w/".lake/build").iterdir()),"dirty verification starting state")

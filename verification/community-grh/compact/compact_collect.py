@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -94,6 +95,47 @@ def read_summary(console, commit, tree):
     raise ValueError("Terminal summary incomplete, corrupt, or belongs to different pins")
 
 
+def console_full(raw, commit, tree, attempt, reference, summary=None):
+    """Return original full bytes only when all frames, hash, internal pins and result agree."""
+    if not reference:return None
+    path,digest=reference
+    base=f"/work/compact-joint-runs/{commit}-{attempt}"
+    if not re.fullmatch(r"[a-f0-9]{64}",digest) or path not in {base+"/run/evidence/receipt.json",base+"/startup-receipt.json"}:
+        raise ValueError("Invalid full receipt binding")
+    pattern=re.compile(r"\bTG435_FULL_V1[ \t]+"+re.escape(attempt)+r"[ \t]+"+digest+r"[ \t]+(\d{1,3})/(\d{1,3})[ \t]+([A-Za-z0-9+/=]+)")
+    pieces={};total=None
+    for match in pattern.finditer(console_text(raw)):
+        ix,count=map(int,match.groups()[:2]);part=match.group(3)
+        if not 1<=ix<=count<=32 or total not in (None,count) or not 1<=len(part)<=560:
+            raise ValueError("Invalid full receipt frame bounds")
+        if ix in pieces and pieces[ix]!=part:raise ValueError("Conflicting full receipt frames")
+        pieces[ix]=part;total=count
+    if total is None:return None
+    if len(pieces)!=total:raise ValueError("Full receipt has missing frames")
+    try:
+        encoded="".join(pieces[i] for i in range(1,total+1))
+        packed=base64.b64decode(encoded,validate=True)
+        with gzip.GzipFile(fileobj=io.BytesIO(packed)) as f: body=f.read(2*1024*1024+1)
+        if len(body)>2*1024*1024 or hashlib.sha256(body).hexdigest()!=digest:raise ValueError("Full receipt digest or size mismatch")
+        record=json.loads(body)
+    except (OSError,ValueError,EOFError,zlib.error) as exc:raise ValueError("Full receipt data failed integrity checks") from exc
+    if not isinstance(record,dict) or record.get("pin")!=commit or record.get("git_tree")!=tree or record.get("root")!=base+"/run":
+        raise ValueError("Full receipt internal proof pins or attempt differ")
+    status=record.get("status")
+    if status not in {"verified","failed"} or (summary is not None and summary.get("status")!=status):
+        raise ValueError("Full receipt status differs")
+    return record,body
+
+def save_full(record_and_bytes,attempt):
+    record,body=record_and_bytes
+    dest=Path("compact-full-receipt-"+attempt+".json")
+    try: fd=os.open(dest,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600)
+    except FileExistsError:
+        if dest.is_symlink() or dest.read_bytes()!=body:raise ValueError("Different existing full receipt")
+    else:
+        with os.fdopen(fd,"wb") as f:f.write(body)
+    return dest
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--commit", required=True)
@@ -123,6 +165,10 @@ def main():
     print(f"Worker status: {summary.get('status', 'unknown')}")
     print(f"Full receipt SHA-256: {summary['receipt_sha256']}")
     print(f"Saved summary: {out}")
+    match=re.fullmatch(r"/work/compact-joint-runs/"+args.commit+r"-([0-9a-f]{32})/(?:run/evidence/receipt|startup-receipt)\.json",summary["receipt_path"])
+    if match:
+        full=console_full(console,args.commit,args.tree,match.group(1),(summary["receipt_path"],summary["receipt_sha256"]),summary)
+        if full:print("Saved verified full receipt:",save_full(full,match.group(1)))
 
 
 if __name__ == "__main__":

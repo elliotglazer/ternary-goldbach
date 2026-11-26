@@ -16,7 +16,7 @@ import urllib.request
 
 REGION='us-east-1'
 ORIGINAL='8d5d2316fd2b2865037aa8d5b820c17217e1b6771cf34d7373886c6a74090592'
-RECOVERY='65e185d6f035bb52b966d8a1ac11050a4931ce1bf2937e0e35e8d04abde76f16'
+RECOVERY='70afda55bfd8f96bd8be043a092da4cd7d1d39aaf3438fe135a8e7964c4ff263'
 
 def aws(service,action,*args):
     cmd=['aws','--region',REGION,'--no-cli-pager','--output','json','--cli-connect-timeout','8','--cli-read-timeout','20',service,action,*args]
@@ -204,14 +204,24 @@ attempt=Path(sys.argv[1]); p=attempt/'run/evidence/receipt.json'
 if p.is_file():
     raw=p.read_bytes();r=json.loads(raw)
 else:
-    r={'status':'failed','error':'tool setup or worker startup failed','steps':[]}
+    r={'status':'failed','error':'tool setup or worker startup failed','steps':[],'pin':sys.argv[2],'git_tree':sys.argv[3],'root':str(attempt/'run')}
     p=attempt/'startup-receipt.json';raw=(json.dumps(r)+chr(10)).encode();p.write_bytes(raw)
 sha=lambda b:hashlib.sha256(b).hexdigest()
-summary={k:r[k] for k in ('status','error','failure_details','axioms','compact','challenge_export','solution_export','comparator_accepts','con_ron','within_330_minutes','profile_outcome','baseline_elapsed_seconds','resource_profile') if k in r}
+summary={k:r[k] for k in ('status','error','failure_details','failed_stage_tail','cached_module_counts','prepared_module_counts','mathlib_umbrella','axioms','compact','challenge_export','solution_export','comparator_accepts','con_ron','within_330_minutes','profile_outcome','baseline_elapsed_seconds','resource_profile') if k in r}
 summary.update(commit=sys.argv[2],tree=sys.argv[3],driver_exit=int(sys.argv[4]),receipt_path=str(p),receipt_sha256=sha(raw))
-summary['steps']=[{k:s[k] for k in ('name','exit','wall_seconds','cpu_seconds','cgroup_sampled_peak_bytes','cgroup_lifetime_peak_bytes') if k in s} for s in r['steps'] if s.get('name','') in {'mathlib-cache','challenge-build','challenge-export','compact-main-shard','joint-source-build','axioms','solution-export','comparator','con-ron','extra-paranoid'} or s.get('exit',0)]
+summary['steps']=[{k:s[k] for k in ('name','exit','wall_seconds','cpu_seconds','cgroup_sampled_peak_bytes','cgroup_lifetime_peak_bytes') if k in s} for s in r['steps'] if s.get('name','') in {'mathlib-cache','trusted-widget-replay','trusted-mathlib-replay','trusted-downstream-replay','challenge-build','challenge-export','compact-main-shard','joint-source-build','axioms','solution-export','comparator','con-ron','extra-paranoid'} or s.get('exit',0)]
 msg=json.dumps(summary,sort_keys=True,separators=(',',':')).encode()
-print('TG435_RECEIPT_REF',p,sha(raw));print('TG435_RECEIPT_V1',sha(msg),base64.b64encode(gzip.compress(msg,mtime=0)).decode())
+ref_line=' '.join(('TG435_RECEIPT_REF',str(p),sha(raw)))
+summary_line=' '.join(('TG435_RECEIPT_V1',sha(msg),base64.b64encode(gzip.compress(msg,mtime=0)).decode()))
+# Stay below 24 KiB for the full terminal bundle, with short serial records.
+token=attempt.name.rsplit('-',1)[-1]
+if len(raw)<=2*1024*1024 and len(token)==32 and all(c in '0123456789abcdef' for c in token):
+    encoded=base64.b64encode(gzip.compress(raw,mtime=0)).decode()
+    blocks=[encoded[i:i+560] for i in range(0,len(encoded),560)]
+    lines=[f'TG435_FULL_V1 {token} {sha(raw)} {i+1}/{len(blocks)} {block}' for i,block in enumerate(blocks)]
+    if len(lines)<=32 and sum(len(line)+1 for line in [*lines,ref_line,summary_line])<=24*1024:
+        for line in lines:print(line)
+print(ref_line);print(summary_line)
 TG_SUMMARY
 sync
 if unit_busy tg-joint-replay.service; then echo 'Active joint worker; no poweroff' >&2; exit "$rc"; fi

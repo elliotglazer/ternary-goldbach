@@ -11,7 +11,7 @@ import subprocess
 import sys
 import time
 
-from compact_collect import aws, console_text, read_summary, REFERENCE_MARKER, SUMMARY_MARKER
+from compact_collect import aws, console_text, read_summary, console_full, save_full, REFERENCE_MARKER, SUMMARY_MARKER
 
 NAME = re.compile(r"[0-9a-f]+")
 REMOTE = """set -eu
@@ -134,6 +134,19 @@ def main():
         except ValueError as exc:
             saved=preserve_console(serial,a.attempt)
             sys.exit(f"EC2 {state} | unverified: {exc} | raw console: {saved}")
+        full=None
+        if reference:
+            try:full=console_full(serial,a.commit,a.tree,a.attempt,reference,result[0] if result else None)
+            except ValueError as exc:
+                saved=preserve_console(serial,a.attempt)
+                print("Full receipt unverified:",str(exc),"| raw console:",saved,flush=True)
+            if full:
+                print("Saved verified full receipt:",save_full(full,a.attempt),flush=True)
+                if not result:
+                    record,_=full
+                    print("Terminal status from verified full receipt:",record["status"])
+                    print("Full receipt SHA-256:",reference[1])
+                    return
         if result:
             s,raw=result
             out=Path("compact-receipt-"+a.attempt+".json")
