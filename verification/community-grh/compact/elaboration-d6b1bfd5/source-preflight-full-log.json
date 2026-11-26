@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "kind": "local Palomar-profile simulation, recovered complete driver receipt",
+  "proof_commit": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "proof_tree": "ddc22b3144b7147ce91c5c767690d9d56aac50ee",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "profile": {
+    "name": "palomar-32x64",
+    "visible_vcpus": 32,
+    "candidate_lake_threads": 4,
+    "budget_seconds": 19800,
+    "cgroup_ram_max_bytes": 67345084416,
+    "swap_limit_bytes": 0
+  },
+  "outcome": {
+    "driver_exit": 1,
+    "stage": "source-preflight",
+    "stage_exit": 1,
+    "solution_export_ran": false,
+    "protected_solution_kernels_ran": false
+  },
+  "driver_measurements": {
+    "start_utc": "2026-11-26T02:33:29.534Z",
+    "finish_utc": "2026-11-26T02:55:42.367Z",
+    "elapsed_seconds": 1332.833,
+    "measured_commands": 53,
+    "command_cpu_seconds_sum": 6705.033,
+    "cgroup_lifetime_peak_bytes": 18277482496,
+    "recorded_oom_kills": 0
+  },
+  "steps": {
+    "mathlib-cache": {
+      "exit": 0,
+      "wall_seconds": 44.021,
+      "cpu_seconds": 113.688,
+      "oom_kills": 0
+    },
+    "trusted-mathlib-replay": {
+      "exit": 0,
+      "wall_seconds": 6.669,
+      "cpu_seconds": 6.994,
+      "oom_kills": 0
+    },
+    "challenge-build": {
+      "exit": 0,
+      "wall_seconds": 6.748,
+      "cpu_seconds": 2.343,
+      "oom_kills": 0
+    },
+    "challenge-export": {
+      "exit": 0,
+      "wall_seconds": 11.622,
+      "cpu_seconds": 1.385,
+      "oom_kills": 0
+    },
+    "source-preflight": {
+      "exit": 1,
+      "wall_seconds": 1249.628,
+      "cpu_seconds": 6570.62,
+      "oom_kills": 0
+    }
+  },
+  "source_preflight": {
+    "requested_modules": 20,
+    "all_requested_module_source_sha256_values_match_public_git": true,
+    "memory_sampled_peak_bytes": 18232393728,
+    "completed_oleans": {
+      "compact": 354,
+      "goldbach": 40
+    },
+    "diagnostic_messages": 65,
+    "failed_modules": 16,
+    "receipt_target_list_entries": 12,
+    "diagnostics_per_failed_module": {
+      "Lib.Adelic.Reduction.Defs": 11,
+      "Lib.Cohomology.Etale.AcyclicTests": 14,
+      "Lib.DiscreteSeries.Bruhat.ComplexPlace": 3,
+      "Lib.General.Algebra.JetChainRule": 4,
+      "Lib.General.Geometry.EtaleCharts": 4,
+      "Lib.General.Geometry.SmoothnessCriterion": 1,
+      "Lib.General.Groups.CyclicSubrep": 2,
+      "Lib.General.NumberTheory.UpsilonValues": 1,
+      "Lib.PadicComparison.Crystalline.CrystallineTests": 1,
+      "Lib.PadicHodge.Crystalline.RegularityFrobenius": 1,
+      "Lib.Shimura.ThetaNormality.NormalGeneration": 1,
+      "Lib.Shimura.Uniformisation.RiemannFormAdelic": 6,
+      "Lib.Weil.Fock.OscillatorPair": 1,
+      "Lib.Weil.Periods.DegreeAndUnipotent": 10,
+      "New.Filling.EichlerFlag": 2,
+      "New.Heights.OneDeterminant": 3
+    },
+    "count_method": "The complete Lake terminal failure list supplies the module count. The receipt enumerates its first 12. Source diagnostics count lines with a project Lean filename, line and column.",
+    "coverage": "Failure occurred before solution export, comparison, and the protected solution kernel checks."
+  },
+  "verified_artifacts": {
+    "driver_receipt": {
+      "bytes": 78268,
+      "sha256": "5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c"
+    },
+    "source_preflight_log": {
+      "bytes": 226302,
+      "sha256": "de59d8a16d7dc6e8591025aaa3e19144a8632f07f9ffefcd9651bb5936cb7383"
+    },
+    "driver_exit": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "recovered_archive": {
+      "bytes": 49891,
+      "sha256": "28ac8622a176d35520a30345658d05d00e62068c7f826a0426a5533873411533"
+    },
+    "prior_console_archive": {
+      "bytes": 34608,
+      "sha256": "58395467dedc15219602e9942411203bca829662ec393da8a5f51bdf3c05b539"
+    }
+  },
+  "cross_checks": [
+    "Both prior console captures reference the recovered driver receipt by its SHA-256 and report source-preflight exit 1.",
+    "The terminal receipt records the same SHA-256 as the recovered source-preflight log. All three extracted files equal their archive members byte-for-byte.",
+    "The public Git tree, Lake manifest hash, and all 20 requested project module hashes match the recovered build metadata."
+  ],
+  "public_source_hashes": {
+    "lake_manifest_sha256": "28fc7e6db5a7c849bf990d62e91c7df31b32d1cd00e088e341e0202a49ec6a60",
+    "challenge_sha256": "f9e6190b4c77c9bf474c6d36748278af41140237432fff72e8084a4c572a382a",
+    "protected_judge_configuration_sha256": "9c3a867177f4f39a137adc853cba071f1df70f7f700d838410de5d5ee1708b89"
+  }
+}
