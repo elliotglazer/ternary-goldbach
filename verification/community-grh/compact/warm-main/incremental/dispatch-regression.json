@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "-m",
+      "unittest",
+      "-v",
+      "test_warm_dispatch",
+      "test_layer_dispatch"
+    ],
+    "exit": 0,
+    "output": "test_atomic_claim_and_single_lock (test_warm_dispatch.Lifecycle.test_atomic_claim_and_single_lock) ... ok\ntest_bound_guards (test_warm_dispatch.Lifecycle.test_bound_guards) ... ok\ntest_cloud_fixed_stop (test_warm_dispatch.Lifecycle.test_cloud_fixed_stop) ... ok\ntest_real_git_commit_tree (test_warm_dispatch.Lifecycle.test_real_git_commit_tree) ... From /tmp/tmpum3krv0y/upstream\n * branch            38e2e2433d5c849ee75d2faddd28cc7fce17561b -> FETCH_HEAD\nFrom /tmp/tmpum3krv0y/upstream\n * branch            38e2e2433d5c849ee75d2faddd28cc7fce17561b -> FETCH_HEAD\nok\ntest_immutable_v1_and_v2_requests (test_layer_dispatch.LayerDispatch.test_immutable_v1_and_v2_requests) ... ok\ntest_path_from_saved_queue_to_argv_and_finished_status (test_layer_dispatch.LayerDispatch.test_path_from_saved_queue_to_argv_and_finished_status) ... {\"finished_unix\": 1795665910.7682285, \"job\": {\"checks\": [], \"commit\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"main\": true, \"previous_jobs\": [\"11111111111111111111111111111111\", \"22222222222222222222222222222222\"], \"receipt_sha\": \"5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c\", \"token\": \"ffc8f3eb7db39e9b7ae3123c0f548385\", \"tree\": \"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\"}, \"kind\": \"warm diagnostics only\", \"old_receipt_sha256\": \"5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c\", \"started_unix\": 1795665910.767821, \"warm_main_exit\": 1, \"warm_main_output\": \"/work/tg-warm-diagnostics/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-ffc8f3eb7db39e9b7ae3123c0f548385\"}\nok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.134s\n\nOK\n"
+  },
+  {
+    "args": [
+      "test_layer_permissions.py",
+      "/tmp/tg-finite-kernel-435/lean-4.35.0-linux",
+      "/tmp/grh-challenge-repro-eolwchzr/pkg/usr/bin/bwrap",
+      "/tmp/tg-layer-dispatch-_fdge4a9/layer-integration.json"
+    ],
+    "exit": 0,
+    "output": "{\"scope\": \"local stock Linux Lake chained diagnostic\", \"version\": \"Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)\", \"first_exit\": 1, \"first_warm_new\": [\"Changed\", \"Intermediate\", \"Reader\"], \"first_warm_exit\": 1, \"second_warm\": {\"kind\": \"warm GRH source diagnostic\", \"root\": \"+Main\", \"verdict\": \"diagnostic only\", \"exit\": 0, \"wall_seconds\": 0.557, \"log_sha256\": \"41eecbc4981fe9356c5462f832951191bd0b934b57b7d0152646a0c8873e36e9\", \"newly_built\": [\"Deep\", \"Main\"], \"failed_source_locations\": []}, \"original_seeds\": [\"Base\", \"Stable\"], \"previous_additional_seeds\": [\"Changed\", \"Intermediate\", \"Reader\"], \"after_ancestor_changed\": [\"Intermediate\"], \"tampered_log_rejected\": \"Previous warm result identity differs\", \"original_preserved\": \"bb087c4fd7e301302844f75458724339be88deaf2db3bf42f0681c3e8f50b350\", \"first_warm_preserved\": \"a8070d3270a7c9f6bbc3349e038a94ad7eec989a8be6b5576854dbdcd635e352\"}\n"
+  }
+]

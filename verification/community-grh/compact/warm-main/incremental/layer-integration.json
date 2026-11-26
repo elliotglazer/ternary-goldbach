@@ -1,0 +1,39 @@
+{
+  "scope": "local stock Linux Lake chained diagnostic",
+  "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "first_exit": 1,
+  "first_warm_new": [
+    "Changed",
+    "Intermediate",
+    "Reader"
+  ],
+  "first_warm_exit": 1,
+  "second_warm": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 0,
+    "wall_seconds": 0.557,
+    "log_sha256": "41eecbc4981fe9356c5462f832951191bd0b934b57b7d0152646a0c8873e36e9",
+    "newly_built": [
+      "Deep",
+      "Main"
+    ],
+    "failed_source_locations": []
+  },
+  "original_seeds": [
+    "Base",
+    "Stable"
+  ],
+  "previous_additional_seeds": [
+    "Changed",
+    "Intermediate",
+    "Reader"
+  ],
+  "after_ancestor_changed": [
+    "Intermediate"
+  ],
+  "tampered_log_rejected": "Previous warm result identity differs",
+  "original_preserved": "bb087c4fd7e301302844f75458724339be88deaf2db3bf42f0681c3e8f50b350",
+  "first_warm_preserved": "a8070d3270a7c9f6bbc3349e038a94ad7eec989a8be6b5576854dbdcd635e352"
+}
