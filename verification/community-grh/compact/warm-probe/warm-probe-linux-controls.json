@@ -1,0 +1,50 @@
+{
+  "controls": {
+    "repaired": {
+      "kind": "disposable full-module frontend diagnostic",
+      "module": "Lib.Target",
+      "source_path": "CompactGRH/src/Lib/Target.lean",
+      "original_sha256": "1ddd597cc818d5dc9c15a315f4de0c8f6e4e5ddc1b544602c2effedfe3152733",
+      "replacement_sha256": "c7a6c1fc68d102e9d85e4d2a813c845dd1933945414a88833cbf9f393f479963",
+      "setup_sha256": "4ef2ed6fe24f1c799dae0bf0d306bf3f3cd6e83c792ca461925d34de4c53b929",
+      "original_import_entries": 1,
+      "direct_project_parents": {
+        "Lib.Parent": {
+          "bytes": 2168,
+          "trace_sha256": "d82a306d0cd3282140702d7fa0ab4c57311c9c8fa25b8767cf7fd766aed75aab"
+        }
+      },
+      "elapsed_seconds": 0.369,
+      "exit": 0,
+      "messages": [],
+      "output_sha256": "f495b5add219253a92908afc062c0bb362aeefc901edf5fd9d5b34dfa38b106f"
+    },
+    "unrepaired": {
+      "kind": "disposable full-module frontend diagnostic",
+      "module": "Lib.Target",
+      "source_path": "CompactGRH/src/Lib/Target.lean",
+      "original_sha256": "1ddd597cc818d5dc9c15a315f4de0c8f6e4e5ddc1b544602c2effedfe3152733",
+      "replacement_sha256": "1ddd597cc818d5dc9c15a315f4de0c8f6e4e5ddc1b544602c2effedfe3152733",
+      "setup_sha256": "4ef2ed6fe24f1c799dae0bf0d306bf3f3cd6e83c792ca461925d34de4c53b929",
+      "original_import_entries": 1,
+      "direct_project_parents": {
+        "Lib.Parent": {
+          "bytes": 2168,
+          "trace_sha256": "d82a306d0cd3282140702d7fa0ab4c57311c9c8fa25b8767cf7fd766aed75aab"
+        }
+      },
+      "elapsed_seconds": 0.34,
+      "exit": 1,
+      "messages": [
+        {
+          "severity": "error",
+          "pos": "{'column': 25, 'line': 5}",
+          "data": "Unknown identifier `unknownParent`"
+        }
+      ],
+      "output_sha256": null
+    },
+    "unchanged_original_files": 21
+  },
+  "scope": "independent two-module Linux 4.35 synthetic fixture"
+}
