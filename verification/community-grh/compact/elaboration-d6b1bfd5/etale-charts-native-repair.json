@@ -1,0 +1,204 @@
+{
+  "kind": "full native single-module source verification with stock Lean 4.35 on Windows",
+  "module": "Lib.General.Geometry.EtaleCharts",
+  "source_file": "CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean",
+  "original_commit": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "first_repair_commit": "4d57485856bf3346fa2ed54894a7411f404b66d1",
+  "first_repair_tree": "caf08b79241d314b18823d40f8ebf05bd0e5beb5",
+  "tested_source_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+  "variants": {
+    "before": {
+      "source_sha256": "49db21acae27ab8dafb1390ed02e34f2961ff97a1b396f4ae9b3aa5b33a6c0cc",
+      "exit": 1,
+      "wall_seconds": 56.057,
+      "user_cpu_seconds": 46.5625,
+      "system_cpu_seconds": 8.328125,
+      "peak_working_set_bytes": 2333646848,
+      "log_sha256": "832f71731f7229f514333334eab295f412918536734009feddda12edba81510b",
+      "parent_oleans": {
+        "Lib.Cohomology.Etale.GluingWithSupports": "637a08eb15e250c9a1a77b35c2d00b9c70722337042f464c644ff90dc16b8854"
+      },
+      "diagnostics": [
+        {
+          "line": 95,
+          "column": 26,
+          "message": "tactic execution is stuck, goal contains metavariables"
+        },
+        {
+          "line": 98,
+          "column": 68,
+          "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+        },
+        {
+          "line": 105,
+          "column": 54,
+          "message": "Application type mismatch: The argument"
+        },
+        {
+          "line": 208,
+          "column": 88,
+          "message": "Application type mismatch: The argument"
+        }
+      ]
+    },
+    "away-only": {
+      "source_sha256": "4148144121ecd9c97f67a10447a3925c0c09a613eccceea1acd41ca18a9ef3d5",
+      "exit": 1,
+      "wall_seconds": 48.36,
+      "user_cpu_seconds": 40.578125,
+      "system_cpu_seconds": 7.265625,
+      "peak_working_set_bytes": 2334027776,
+      "log_sha256": "0ef366546b2459464183dd23050f50bc01a3af600673a1bf01c6a6bcd2ccd378",
+      "parent_oleans": {
+        "Lib.Cohomology.Etale.GluingWithSupports": "637a08eb15e250c9a1a77b35c2d00b9c70722337042f464c644ff90dc16b8854"
+      },
+      "diagnostics": [
+        {
+          "line": 94,
+          "column": 82,
+          "message": "Function expected at"
+        },
+        {
+          "line": 92,
+          "column": 4,
+          "message": "(kernel) declaration has metavariables 'EtaleChart.away'"
+        },
+        {
+          "line": 97,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        },
+        {
+          "line": 102,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        },
+        {
+          "line": 198,
+          "column": 6,
+          "message": "(kernel) application type mismatch"
+        }
+      ]
+    },
+    "typed-hom": {
+      "source_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+      "olean_sha256": "123d43cae33b64c528f4f45191e2deabe1836fe048a15a13e52cf0380eb0c989",
+      "exit": 0,
+      "wall_seconds": 53.246,
+      "user_cpu_seconds": 43.609375,
+      "system_cpu_seconds": 8.640625,
+      "peak_working_set_bytes": 2354057216,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "parent_oleans": {
+        "Lib.Cohomology.Etale.GluingWithSupports": "637a08eb15e250c9a1a77b35c2d00b9c70722337042f464c644ff90dc16b8854"
+      },
+      "diagnostics": []
+    }
+  },
+  "candidate_patch": "--- a/CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean\n+++ b/CompactGRH/src/Lib/General/Geometry/EtaleCharts.lean\n@@ -91,8 +91,11 @@\n the point and coordinates of a. -/\n def EtaleChart.away g := a.restrict (\u03c6 := CommAlg.toAway g) rfl (fun _ _ _ e \u21a6 by\n   ext; congrm $(a.eq_comp_of_map_point_eq _ ((map_comp_apply ..).trans e)) _) (a.isOpenSub_of_le_locus\n-  (fun | _, _, \u27e8_, rfl\u27e9 => a.locus.2 _ \u27e8_, rfl\u27e9) fun | _, \u27e8_, \u27e8\u03c8\u27e9, rfl\u27e9 => \u27e8span {\u03c8 g}, fun _ \u03c6 \u21a6\n-      ULift.exists.trans (by simpa [\u2190 (injective ..).eq_iff] using! CommAlg.exists_toAway_comp_iff g (\u03c8 \u226b \u03c6))\u27e9)\n+  (fun | _, _, \u27e8_, rfl\u27e9 => a.locus.2 _ \u27e8_, rfl\u27e9) fun\n+    | S, \u27e8_, \u27e8\u03c8\u27e9, rfl\u27e9 =>\n+      let \u03c7 : a.R \u27f6 S := \u03c8\n+      \u27e8span {\u03c7 g}, fun _ \u03c6 \u21a6\n+        ULift.exists.trans (by simpa [\u2190 (injective ..).eq_iff] using! CommAlg.exists_toAway_comp_iff g (\u03c7 \u226b \u03c6))\u27e9)\n \n lemma EtaleChart.mem_locus_away g \u03c6 : X.map \u03c6 a.point \u2208 (a.away g).locus B \u2194 IsUnit (\u03c6 g) := by\n   simp [\u2190 CommAlg.exists_toAway_comp_iff, \u2190 (injective ..).eq_iff]; bound\n",
+  "imports": {
+    "Lib.General.Geometry.EtaleCharts": [
+      "Lib.Cohomology.Etale.GluingWithSupports"
+    ],
+    "Lib.Cohomology.Etale.GluingWithSupports": [
+      "Lib.Cohomology.Etale.RelativeChains",
+      "Lib.General.Geometry.OpenSubfunctors"
+    ],
+    "Lib.Cohomology.Etale.RelativeChains": [
+      "Lib.Cohomology.Hodge.CupProduct",
+      "Lib.Cohomology.Etale.Relations"
+    ],
+    "Lib.Cohomology.Hodge.CupProduct": [
+      "Lib.Cohomology.Etale.BijectiveComparisons"
+    ],
+    "Lib.Cohomology.Etale.BijectiveComparisons": [
+      "Lib.General.Algebra.DisjointUnions"
+    ],
+    "Lib.General.Algebra.DisjointUnions": [
+      "Lib.General.Algebra.CechDescent"
+    ],
+    "Lib.General.Algebra.CechDescent": [
+      "Lib.General.Algebra.TangentNakayama",
+      "Lib.Cohomology.Hodge.WitnessCocycles"
+    ],
+    "Lib.General.Algebra.TangentNakayama": [
+      "Lib.General.Analysis.ZpowSum"
+    ],
+    "Lib.General.Analysis.ZpowSum": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.General.LinearAlgebra.Base": [],
+    "Lib.Cohomology.Hodge.WitnessCocycles": [
+      "Lib.Cohomology.Etale.Functoriality"
+    ],
+    "Lib.Cohomology.Etale.Functoriality": [
+      "Lib.Cohomology.Etale.Defs"
+    ],
+    "Lib.Cohomology.Etale.Defs": [
+      "Lib.General.LinearAlgebra.Base"
+    ],
+    "Lib.Cohomology.Etale.Relations": [
+      "Lib.Cohomology.Etale.Partitions"
+    ],
+    "Lib.Cohomology.Etale.Partitions": [
+      "Lib.General.Geometry.LocalTerms",
+      "Lib.Cohomology.Etale.BijectiveComparisons"
+    ],
+    "Lib.General.Geometry.LocalTerms": [
+      "Lib.Cohomology.Etale.Functoriality"
+    ],
+    "Lib.General.Geometry.OpenSubfunctors": [
+      "Lib.Cohomology.Hodge.CupProduct",
+      "Lib.Cohomology.Etale.ClosedClasses"
+    ],
+    "Lib.Cohomology.Etale.ClosedClasses": [
+      "Lib.Cohomology.Etale.Partitions"
+    ]
+  },
+  "prerequisite_source_sha256": {
+    "Lib.General.LinearAlgebra.Base": "016f78fc033f0020fb4d48e7fdcac26263f16bf0d9594f5197672055beec3b85",
+    "Lib.General.Analysis.ZpowSum": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+    "Lib.General.Algebra.TangentNakayama": "e0f6fefa2b11f5723bc8fac8efa218a552378b8c439f198451a0e7a6859196d3",
+    "Lib.Cohomology.Etale.Defs": "83fdb4ee93ec32e2a6bf8174a7d72947bc6312b0207fae75eef85fb29c6cdcd1",
+    "Lib.Cohomology.Etale.Functoriality": "60d53b60103b7b640fb987412daf25465c148712acf7b1d6ba209bd380106ac4",
+    "Lib.Cohomology.Hodge.WitnessCocycles": "15d31c6ec163b05837fd2c14d16ea866e843923f31c20092b27f591b595c60b5",
+    "Lib.General.Algebra.CechDescent": "3eb55c6f87145a8fd329d20a4a7630aa3eaf21f3181c336641623e0bff68a910",
+    "Lib.General.Algebra.DisjointUnions": "7459faba4730a7cf131020c52f48adf5420d052740708ec4710394512f4f81a7",
+    "Lib.Cohomology.Etale.BijectiveComparisons": "0f170e2aaf053ac15eb5060dcb8fe8e8756235eaf73377ac672d461dab8aa6b1",
+    "Lib.Cohomology.Hodge.CupProduct": "10a042a1f3f392fcf9929e2376a05ca5f8b208a247848762855b93d76084eca9",
+    "Lib.General.Geometry.LocalTerms": "b697256e306a247a6825fbbe05b58a261378374e597d67f3ba9bda0e5fc74e29",
+    "Lib.Cohomology.Etale.Partitions": "619ca0455b43f085ef2f41ed5f87a6d45def9ef33406b8036762065aba7d6322",
+    "Lib.Cohomology.Etale.Relations": "cb0701e5c86f6e16dfa2e828857e78f9628e5015b025d0129fc03506290deb64",
+    "Lib.Cohomology.Etale.RelativeChains": "936d01b398b8ec2f030f0b03d3664984d0058bcd8c71eebdab47028777883279",
+    "Lib.Cohomology.Etale.ClosedClasses": "7e3cdf6d8117648e57fa0f9b55d2b8a20f5f358203834c4696ad9fd8c571a3a3",
+    "Lib.General.Geometry.OpenSubfunctors": "82ec30b2c85cbe5ef37288a46bde8720587c45b9b0b4913394e6a3a9d620e45b",
+    "Lib.Cohomology.Etale.GluingWithSupports": "55a82fca5fed5d4bb932ac214fd335a0be982c3a42813b563eed5d6d59108fb3"
+  },
+  "native_lean_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "stock_print_axioms": {
+    "declarations": {
+      "EtaleChart.away": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "EtaleChart.mem_locus_away": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "IsOpenSub.exists_chart_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "HasAtlas.exists_isCharting": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "exit": 0,
+    "log_sha256": "10788d59eb86312b34ebde9e738bb36ef10a3fe89e4a379c8c676e549dcc01f4"
+  }
+}
