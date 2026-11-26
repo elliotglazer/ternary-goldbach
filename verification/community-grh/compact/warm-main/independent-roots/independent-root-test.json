@@ -1,0 +1,75 @@
+{
+  "scope": "local stock Linux Lake diagnostic target selection and real facet validation",
+  "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "default": {
+    "kind": "warm GRH source diagnostic",
+    "root": "+Main",
+    "verdict": "diagnostic only",
+    "exit": 1,
+    "wall_seconds": 0.727,
+    "log_sha256": "7d885d09d17045cbf1df4f9dab5f680587889ad10465b0a72f20e1c31f248a0d",
+    "newly_built": [],
+    "failed_source_locations": [
+      "CompactGRH/src/Main.lean:2:35"
+    ]
+  },
+  "finite_initial": {
+    "kind": "warm Goldbach source diagnostic",
+    "root": "+CompletedFiniteRows",
+    "verdict": "diagnostic only",
+    "exit": 1,
+    "wall_seconds": 0.568,
+    "log_sha256": "e4069f57891acee471205a6f808a140552a6d86dd263a83587ce2c1270798514",
+    "newly_built": [
+      "FiniteBase"
+    ],
+    "failed_source_locations": [
+      "FiniteLeaf.lean:3:36"
+    ]
+  },
+  "accepted_from_initial": [
+    "FiniteBase"
+  ],
+  "finite_after_patch": {
+    "kind": "warm Goldbach source diagnostic",
+    "root": "+CompletedFiniteRows",
+    "verdict": "diagnostic only",
+    "exit": 0,
+    "wall_seconds": 0.567,
+    "log_sha256": "baf68800c99e6a84972b811c64b4ab616e5cb901c4ec666f6bbc716eda975b94",
+    "newly_built": [
+      "CompletedFiniteRows",
+      "FiniteLeaf"
+    ],
+    "failed_source_locations": []
+  },
+  "rejected": {
+    "unknown": "Unsupported diagnostic root",
+    "option": "Unsupported diagnostic root",
+    "probe_with_root": "Unsupported diagnostic root",
+    "invalid_direct_target": "Unsupported diagnostic root"
+  },
+  "accepted_finite_layer": [
+    "CompletedFiniteRows",
+    "FiniteLeaf"
+  ],
+  "fully_warm": {
+    "kind": "warm Goldbach source diagnostic",
+    "root": "+CompletedFiniteRows",
+    "verdict": "diagnostic only",
+    "exit": 0,
+    "wall_seconds": 0.153,
+    "log_sha256": "aee3d70d3b2c9bacc17719f0f81462902128b1735583320360093bc2f7ae9f37",
+    "newly_built": [],
+    "failed_source_locations": []
+  },
+  "cross_root_rejected": "Previous diagnostic root differs",
+  "runtime_files": {
+    "warm_main.py": "7fe64566a1e93efed1f8eede30b65be4499d788068295c340e91d57d98721e3a",
+    "warm_dispatch.py": "eeb5215719702561a35ed5710ff96ff590eceee22cdce3f5a1b163acf4d5b3b6",
+    "warm_supervisor.py": "424ee95014a36759e801851fa0ef2c336a15376906bd0c9c453ee3c6c2b51aa1",
+    "WarmArtifactHashes.lean": "abd08e22d7940e588054c7d54148abc11724320c6630d6065199333ce03eec3f",
+    "warm_probe.py": "d88c6366f2a18db000d45bb31ce5fae292fbec0f6182efa595b88c2dcdddbda8"
+  },
+  "host_archive_sha256": "d6b83ec7bf777d8a43fbe95c365a7955f3302d1faccacf964b4d0ca79977b4cd"
+}
