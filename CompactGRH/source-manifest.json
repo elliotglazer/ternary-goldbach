@@ -963,7 +963,8 @@
     {
       "path": "Lib/DiscreteSeries/CuspKernel/BumpConvolution.lean",
       "upstream_sha256": "b7d6bcb704df753f7da16769f1d4e6d1069f9d64c084776ff074633b080a7b42",
-      "converted_sha256": "c6a5eea752c135a5186af8e33bf52120e03060d1a89fca1bf6f21aded5ede7e5"
+      "converted_sha256": "b37fab9aaec16fb80f9a490353cfff0cb308dfc5433f830308a435f16eab61a7",
+      "adaptation": "Lean 4.35: Move the existing continuity default onto the convolution declarations that use it."
     },
     {
       "path": "Lib/DiscreteSeries/CuspKernel/CircleMean.lean",
@@ -3011,7 +3012,8 @@
     {
       "path": "New/Data/Magnitudes.lean",
       "upstream_sha256": "8734252446cfa1053d5f24b34af1e68540d9fae72c2388d02773d25ecc165977",
-      "converted_sha256": "e08e04f61ec2bbfc153a1bcc2c63d9b4312267daf26a2e541ed521299e3d9e3f"
+      "converted_sha256": "5c4f6e7c4b156d77eead14b29f73ed8060e390f630326345d9b83ffc68ddfd04",
+      "adaptation": "Lean 4.35: Move the original log-bound default onto the four numerical comparison lemmas."
     },
     {
       "path": "New/Data/Weights.lean",

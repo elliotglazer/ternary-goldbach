@@ -119,3 +119,10 @@ eight Power10Block modules were compiling. The package schedules those
 eight modules in four pairs using Lake library dependencies. Their Lean
 source, proof terms, and imports are unchanged. Other finite and analytic
 modules retain their ordinary scheduling. Hosted timing remains pending.
+
+Two further GRH modules use section-level tactic defaults of the same
+kind. A focused Lean 4.35 test reproduced the Magnitudes error at the
+original unqualified call to `nat_le_of_hasLogBound`. Attaching the
+existing default to each comparison lemma resolved it. BumpConvolution
+now attaches its original continuity default to the convolution declarations.
+Both modules are inputs to Main and require full-module replay.
