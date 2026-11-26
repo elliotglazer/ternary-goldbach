@@ -1,0 +1,37 @@
+{
+  "base": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+  "source": "CompactGRH/src/Lib/General/NumberTheory/QuadField.lean",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "stock_native_before": {
+    "module": "Lib.General.NumberTheory.QuadField",
+    "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "src_sha": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9",
+    "exit": 1,
+    "seconds": 46.9
+  },
+  "stock_native_after": {
+    "module": "Lib.General.NumberTheory.QuadField",
+    "pin": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "src_sha": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d",
+    "exit": 0,
+    "seconds": 49.1,
+    "object_sha256": "a5ee399960bf7535a53404c52d7e7554c0a720058fd47f66e96bfb9124aadf5f"
+  },
+  "imported_ax_audit": {
+    "exit": 0,
+    "seconds": 35.4,
+    "lines": [
+      "'QuadField.embOfSqrt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'QuadField.nonempty_algHom_of_isPrimitiveRoot' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'QuadField.different_eq_span_and_adjoin_c₀' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ],
+    "source_sha256": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d"
+  },
+  "patch_sha256": "27cc6b4cfe8761da43f9a03f9d5318d608af78faf67e8f04a9aeeff7a1cdc466",
+  "errors_before": [
+    "Lib\\General\\NumberTheory\\QuadField.lean:99:20: error: tactic execution is stuck, goal contains metavariables",
+    "  ?m.27 ^ 2 = -↑d"
+  ],
+  "errors_or_warnings_after": []
+}

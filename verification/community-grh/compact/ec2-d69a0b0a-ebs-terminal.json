@@ -1,0 +1,122 @@
+{
+  "attempt": "d69a0b0ad9464dbc84198f6c547221c7",
+  "commit": "0b68b493791e5f7569021f0cd13454151af47584",
+  "tree": "6d8764b58d1a41584cd5d43fd3e400f6ee55d18e",
+  "worker_sha256": "70afda55bfd8f96bd8be043a092da4cd7d1d39aaf3438fe135a8e7964c4ff263",
+  "interpretation": "Operator interrupted the inner Lake process after ten known source failures. Memory limits were raised during this diagnostic. The run supplies no hosted wall-time measurement.",
+  "archive_sha256": "aa275483a4eeb0cc4724804f13ccd664ea10a01365277a1d48a3ac905d65caf0",
+  "receipt_sha256": "e65c2f0c292338b9a2242e52afda0196d9ea161b9bebad5c12d76c71960ef51d",
+  "prior_intent_sha256": "518f8dd2d9ac0287483f80a6fcdcf629a79f1247d605f9a49e2061a4a2546eee",
+  "driver_exit": 1,
+  "source_stage": {
+    "name": "joint-source-build",
+    "exit": 143,
+    "wall_seconds": 5365.833364009857,
+    "cpu_seconds": 34587.030799,
+    "oom_kills": 0,
+    "log_sha256": "5a85ff057e14f2e696f014a99285d12e883b4b8ece7ca2a3da9406d30db979ca",
+    "cgroup_lifetime_peak_bytes": 163383005184
+  },
+  "source_log_bytes": 242565,
+  "original_driver_summary_present": false,
+  "original_driver_ref_present": false,
+  "proof_steps": [
+    {
+      "name": "challenge-build",
+      "exit": 0,
+      "wall_seconds": 5.879464387893677
+    },
+    {
+      "name": "challenge-export",
+      "exit": 0,
+      "wall_seconds": 19.677308082580566
+    },
+    {
+      "name": "joint-source-build",
+      "exit": 143,
+      "wall_seconds": 5365.833364009857
+    }
+  ],
+  "failure_details": {
+    "completed_oleans": {
+      "compact": 81,
+      "goldbach": 462
+    },
+    "failed_lake_targets": [
+      "Lib.General.Analysis.ZpowSum",
+      "Lib.General.Algebra.RingActions",
+      "Lib.GaloisRep.Pseudocharacter.SemisimpleReps",
+      "TernaryGoldbach.MajorArcs.HHFourier",
+      "Lib.Shimura.Uniformisation.Frames",
+      "Lib.General.Groups.ArtinDefs",
+      "Lib.ClassField.GaloisCohomology.DiscreteUnits",
+      "Lib.DiscreteSeries.Haar.CompactDualMeasure",
+      "Lib.LocalGL.Green.MackeyFormula",
+      "MajorEnergy"
+    ],
+    "representative_errors": [
+      {
+        "column": 66,
+        "line": 43,
+        "message": "`simp` made no progress",
+        "path": "CompactGRH/src/Lib/General/Analysis/ZpowSum.lean"
+      },
+      {
+        "column": 77,
+        "line": 23,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/General/Algebra/RingActions.lean"
+      },
+      {
+        "column": 32,
+        "line": 123,
+        "message": "unsolved goals",
+        "path": "CompactGRH/src/Lib/GaloisRep/Pseudocharacter/SemisimpleReps.lean"
+      },
+      {
+        "column": 39,
+        "line": 335,
+        "message": "failed to synthesize instance of type class",
+        "path": "TernaryGoldbach/MajorArcs/HHFourier.lean"
+      },
+      {
+        "column": 12,
+        "line": 112,
+        "message": "Type mismatch: After simplification, term",
+        "path": "CompactGRH/src/Lib/Shimura/Uniformisation/Frames.lean"
+      },
+      {
+        "column": 2,
+        "line": 23,
+        "message": "Internal error when elaborating function application: autoParam `h` is not a constant",
+        "path": "CompactGRH/src/Lib/General/Groups/ArtinDefs.lean"
+      },
+      {
+        "column": 49,
+        "line": 98,
+        "message": "Internal error when elaborating function application: autoParam `h` is not a constant",
+        "path": "CompactGRH/src/Lib/ClassField/GaloisCohomology/DiscreteUnits.lean"
+      },
+      {
+        "column": 43,
+        "line": 192,
+        "message": "Internal error when elaborating function application: autoParam `hb` is not a constant",
+        "path": "CompactGRH/src/Lib/DiscreteSeries/Haar/CompactDualMeasure.lean"
+      },
+      {
+        "column": 26,
+        "line": 185,
+        "message": "tactic execution is stuck, goal contains metavariables",
+        "path": "CompactGRH/src/Lib/LocalGL/Green/MackeyFormula.lean"
+      },
+      {
+        "column": 89,
+        "line": 49,
+        "message": "No goals to be solved",
+        "path": "MajorEnergy.lean"
+      }
+    ],
+    "source_error_count": 21,
+    "source_error_modules": 10
+  }
+}
