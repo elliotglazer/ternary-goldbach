@@ -243,7 +243,7 @@ lemma HasGoodReduction.thetaNorm_lt_iff_coords {I} {a : I → V} (ha : ∀ u : B
   have h b : ∀ y ∈ G.normBall f, v (y (a b) / s b) ≤ 1 := h ▸ forall_mem_range.2 (E b · ▸ (p ..).2)
   exact ⟨(G.exists_eq_smul_normBall hf f0 (hx j).1).rec (by simp_all [← mul_div,
     mul_lt_one_of_lt_of_le, G.thetaNorm_pos]), Function.mtr fun e H ↦
-    (G.mem_of_mem_normBall (M := Submodule.comap (.proj _ ∘ₗ .mulRight _ fun _ ↦ (s b)⁻¹)
+    (G.mem_of_mem_normBall (M := Submodule.comap (.proj (a b) ∘ₗ .mulRight _ fun _ ↦ (s b)⁻¹)
     (v.ltSubmodule 1)) (hx j).1 le_rfl G.isAppellHumbert (hx j).1 (hx _).1 (fun u m ↦
     (ha ⟨_, add_mem (G.le_dualLattice k) m⟩).rec fun d n ↦
     (mul_lt_one_of_lt_of_le (H d) (h b _ (G.thetaShift_mem_normBall m (hx (c d))))).trans_eq' (by

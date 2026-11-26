@@ -652,7 +652,8 @@
     {
       "path": "Lib/Cohomology/Etale/AcyclicTests.lean",
       "upstream_sha256": "815aa8c3996dc2790ec85a339b743be9e91a7f78099f0e1d1c1e2c092336b8a5",
-      "converted_sha256": "4f5970ae1220420a92a610b6fecd02f64f2bca249beb9b933cf74ed313169966"
+      "converted_sha256": "0f3841a91729a1615c147923157dca5a0255d0215cab96f3c305f6d562486132",
+      "adaptation": "Specify the coefficient functor and lift in the degree-zero comparison map. Diagnostic candidate."
     },
     {
       "path": "Lib/Cohomology/Etale/BijectiveComparisons.lean",
@@ -1525,7 +1526,8 @@
     {
       "path": "Lib/General/Geometry/EtaleCharts.lean",
       "upstream_sha256": "284cca0f475853df819272750837caee7009bd688c965bf2370e197d3ba5b5e1",
-      "converted_sha256": "49db21acae27ab8dafb1390ed02e34f2961ff97a1b396f4ae9b3aa5b33a6c0cc"
+      "converted_sha256": "4148144121ecd9c97f67a10447a3925c0c09a613eccceea1acd41ca18a9ef3d5",
+      "adaptation": "Name the localization element in the ring of the chart point. Diagnostic candidate."
     },
     {
       "path": "Lib/General/Geometry/Lefschetz.lean",
@@ -2398,7 +2400,8 @@
     {
       "path": "Lib/Shimura/ThetaNormality/NormalGeneration.lean",
       "upstream_sha256": "476420b3f13e3766baf3553c1827673de6a7a656119505f54bd1cf8825e77e47",
-      "converted_sha256": "4cb27caa6dd92b7c024d77a8466e0abb660e690526ed0b8e366b004dba0c9c2c"
+      "converted_sha256": "93203bc976d2b82768980e54951e128c4e0710660e35f0e320706c920c8e4b72",
+      "adaptation": "Supply the evaluation point of the linear-map projection. Diagnostic candidate."
     },
     {
       "path": "Lib/Shimura/ThetaNormality/RiemannRelation.lean",
@@ -2480,7 +2483,8 @@
     {
       "path": "Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
       "upstream_sha256": "90b09b195b7a871ad845d7911b13e9c12aa1c6087a5c0a3b575069a5f2989039",
-      "converted_sha256": "e701dc85a0ab908ef22af6aa4bfd089d1f260416aa5a8bb8087173ad2cde6876"
+      "converted_sha256": "8713cd8d37027348c727f5dc7040f6cf6adeba8953da41118bd8deb6cf1b04f4",
+      "adaptation": "Declare the matrix argument and the real bilinear target before the proof. Diagnostic candidate."
     },
     {
       "path": "Lib/Shimura/Uniformisation/ThetaCoords.lean",
@@ -2855,7 +2859,8 @@
     {
       "path": "Lib/Weil/Periods/DegreeAndUnipotent.lean",
       "upstream_sha256": "db5d7306c7d696d83a033f5b8191c652077b85f79817b2b3e796a262db34f682",
-      "converted_sha256": "0e69dacb70b5ef7e514ed40a681ed956660896f53389df2cfaf215052779dec3"
+      "converted_sha256": "ca7ed4c72c82774094ea9e57de8001e929030243d9f0770d93e59202200fc385",
+      "adaptation": "Name the lower Gram matrix in the unitary sum. Diagnostic candidate."
     },
     {
       "path": "Lib/Weil/Periods/DegreeOfT.lean",
@@ -3281,7 +3286,8 @@
     {
       "path": "New/Filling/EichlerFlag.lean",
       "upstream_sha256": "d4a1e65ceef02bd1fe17c0ff1dc7a1eee0731694a08f87fd2f5f74b029bd1d25",
-      "converted_sha256": "e85fab3cafc14637cfb1f4a5f687b505a6d6dd099e95d736f9c58fc7c307ac92"
+      "converted_sha256": "c8398a07ff9abd8c5c6e6e4d984fe7d6dd46f73d48974c4c00f57419a113cc2e",
+      "adaptation": "Use the public entrywise equalities at their proof sites. Diagnostic candidate."
     },
     {
       "path": "New/Filling/FillingAdmissible.lean",
@@ -3411,7 +3417,8 @@
     {
       "path": "New/Heights/OneDeterminant.lean",
       "upstream_sha256": "f639f87dd549954a36f7723b31c108b4dae9e0106dbd0b7969f0c14c78b386b7",
-      "converted_sha256": "5dc92562b885721fd308ce56a375604e29d516ac72823c0a46acb3c0eca1849e"
+      "converted_sha256": "9e79d3c3d55518d135393e7a06deaef780d51eb33282b7ca1622c1c1c6c6362e",
+      "adaptation": "Use the public Fredholm-index finrank formula. Diagnostic candidate."
     },
     {
       "path": "New/Lift/CokernelKillers.lean",
