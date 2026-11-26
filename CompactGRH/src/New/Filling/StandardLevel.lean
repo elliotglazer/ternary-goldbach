@@ -17,9 +17,12 @@ This file: Finite place carries a level and gauges for the tower method; masses 
 open Filter Fintype Level MatMul Matrix MeasureTheory NNReal Place Pointwise SemilocalField Sum
   Topology MeasureTheory.Measure
 
-attribute [local simp] HyperbolicBasis.floorBasis Finset.mul_sum IsIntMatrix mul_mem
+namespace StandardLevelProofSimp
+attribute [scoped simp] HyperbolicBasis.floorBasis Finset.mul_sum IsIntMatrix mul_mem
   IntegralPlace.data_mem flatChart IsStarStable.star_mem Size.HasMatSize Size.vecsOfSize
   ascConv funext_iff inclMatrix intVectors ite_mem mul_add mul_assoc sub_mem sum_mem
+end StandardLevelProofSimp
+open scoped StandardLevelProofSimp
 
 /-- The vector x − (ππ̄)⁻¹t z of X₀ ⊕ Az, for x in A^κ and t in A, written in the lattice basis. -/
 noncomputable def tailVector {A : Type} {𝔰} [CommRing A] [StarRing A] (π : Aˣ) t x :=
@@ -151,7 +154,8 @@ namespace IntegralPlace.IsStdLevel
 R, and Λ = 2/md(α). -/
 @[simp] noncomputable def gauge (α : Aˣ := 1) (hα : α.1 ∈ R := by simp)
     (sα : star α.1 = α := by simp [*] <;> ring) : Gauge F := by
-  have l := by simpa using ENNReal.div_le_div_left (md_le_one α hα) 2
+  have l : (2 : ENNReal) ≤ 2 / P.md α := by
+    simpa only [div_one] using ENNReal.div_le_div_left (md_le_one α hα) 2
   obtain ⟨J, c, _, G, o⟩ := h.integral_data.1.isIntMatrix, le_two_of_pow_le_ofReal h.zeta_rank.1,
     h.zeta_rank, h.integral_data.2, one_le_two.trans l
   have L j : (md (α ^ j).1)⁻¹ ≤ (2 / P.md α) ^ j := by grw [← one_le_two]; simp [ENNReal.inv_pow]
