@@ -64,17 +64,18 @@ lemma Space.theta_omega_ratEmbed [WeilData E] (γ : U V.J) f
       erw [Matrix.mul_assoc, fromBlocks_mul_fromRows]; aesop) (boxProd signs_comp_refl f y)
     erw [map_mul, map_mul, theta_omega_ratEmbed_of_mul_k u (D 1) (a 1 * (a 0)⁻¹) (by simp [↓hu, D]),
       sum_ratEmbed] at this
-    obtain ⟨⟩ : ∃ c, _ ∘L (boxProd signs_comp_refl).flip y = c • _ :=
-      V.isThetaFunctional_rawTheta.eq_smul fun _ ⟨x, h⟩ (f : 𝒮 V) ↦ by
-      simpa [← h] using! congr(W.rawTheta $(boxProd_rho signs_comp_refl ..)).trans
-        (W.isThetaFunctional_rawTheta.1 _ ⟨x ⊕ᵥ 0, sum_vecAtPoint ..⟩ _)
     have hω (g₁ : G E s) (g₂ : G E (-s)) (f₁ : 𝒮 V) (f₂ : 𝒮 V.neg) :
         W.ω (G.sum (g₁, g₂)) (boxProd signs_comp_refl f₁ f₂) =
           boxProd signs_comp_refl (V.ω g₁ f₁) (V.neg.ω g₂ f₂) :=
       omega_boxProd (V := W) (V₁ := V) (V₂ := V.neg) (e := Equiv.refl (n ⊕ n))
         (g := G.sum (g₁, g₂)) (g₁ := g₁) (g₂ := g₂) signs_comp_refl
         (by simpa only [Equiv.coe_refl, Matrix.submatrix_id_id] using (G.mat_sum (g₁, g₂))) f₁ f₂
-    simp_all [θ, DFunLike.ext_iff, hω]
+    erw [hω] at this
+    obtain ⟨⟩ : ∃ c, _ ∘L (boxProd signs_comp_refl).flip y = c • _ :=
+      V.isThetaFunctional_rawTheta.eq_smul fun _ ⟨x, h⟩ (f : 𝒮 V) ↦ by
+      simpa [← h] using! congr(W.rawTheta $(boxProd_rho signs_comp_refl ..)).trans
+        (W.isThetaFunctional_rawTheta.1 _ ⟨x ⊕ᵥ 0, sum_vecAtPoint ..⟩ _)
+    simp_all [θ, DFunLike.ext_iff]
 
 lemma Space.hom_point_inv_mul_kronecker {m m'} (A : Matrix n' m' E) (B : Matrix m n₁ E) :
   (V'.hom T).x⁻¹.1 * (A ⊗ₖ Bᵀ).map toAdele =
