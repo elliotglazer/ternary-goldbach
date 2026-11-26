@@ -1,0 +1,18 @@
+{
+  "scope": "One completed Linux module from a subsequently interrupted full build",
+  "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+  "source_tree": "857371b439081505f27ceb66f61d973506641c24",
+  "source_path": "GoldbachBand06Prefix.lean",
+  "source_sha256": "2b87ad8b6dbc33259201c3cbaf638f36fed78b0263abde5a35ad90d016a63b70",
+  "module": "GoldbachBand06Prefix",
+  "theorem": "SmallGoldbach.GoldbachBand06.binaryGoldbachUpTo",
+  "statement": "theorem binaryGoldbachUpTo : ∀ n : Nat, Even n → 4 ≤ n → n ≤ 100328530944 → ∃ p q : Nat, p.Prime ∧ q.Prime ∧ p+q=n := by",
+  "lower_inclusive": 4,
+  "upper_inclusive": 100328530944,
+  "full_retained_build_log_sha256": "207fa494299ee5596ddd3a81c15d2810d6cbda0974d70c1c2ccac63a74fbf7cf",
+  "first_log_line": 1751,
+  "compiler_output": [
+    "ℹ [9486/9489] Built GoldbachBand06Prefix (909ms)",
+    "info: GoldbachBand06Prefix.lean:74:0: 'SmallGoldbach.GoldbachBand06.binaryGoldbachUpTo' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}

@@ -15,7 +15,7 @@ import urllib.request
 BOOTSTRAP="0b4f8c36092d95240e4ee5f0c2e68d1ec8b25c39"
 BASE="https://raw.githubusercontent.com/elliotglazer/ternary-goldbach"
 SUBDIR="verification/community-grh/compact"
-ARCHIVE="80e64577c39545e1b418c78a8578ca4dd4c2560646f0d7405be4d0f35e8e48dc"
+ARCHIVE="7fbff13828b3b603791db491b6e5d81ff82d00c54bb3b05af90e8868cb058743"
 HELPERS={"warm_dispatch.py":"3b332604b176e351566374c12f11851c0f3fcd5f62bd6d0a7309b2f1e7d2ffb3",
          "warm_supervisor.py":"37a6b50079fdf31ffc2a075c3dc5b448f83307f1cc3e0e6a2f121a2e0b918c0c"}
 BASE_RECEIPT="5eca91028a75f56c21abfe6c9d189e5f2d02d2b6fc08997172dd2187eced650c"
@@ -23,10 +23,13 @@ OLD="33006912706042b49c1ddbc13515a4fb"
 DEADLINE=1795688244
 LINEAGE=["0c296855616fd2f1d288aae9c2f27f55","c5b595a6ca6bc4f7ef9ada59593b9a26","cc2ba2e764eca88b6ed1ad9d08d1cad7"]
 
-def payload(mode,release,commit,tree,nonce,volume):
+def payload(mode,release,commit,tree,nonce,volume,previous=None):
     if not (all(re.fullmatch("[0-9a-f]{40}",i) for i in [release,commit,tree]) and re.fullmatch("[a-zA-Z0-9_-]{1,40}",nonce) and re.fullmatch("vol-[0-9a-f]{17}",volume)):
         raise ValueError("Expected immutable IDs and a safe retry label")
-    job={"commit":commit,"tree":tree,"checks":[],"main":True,"root":"Main","receipt_sha":BASE_RECEIPT,"previous_jobs":LINEAGE}
+    lineage=LINEAGE if previous is None else previous
+    if len(lineage)>8 or len(set(lineage))!=len(lineage) or not all(re.fullmatch("[0-9a-f]{32}",i) for i in lineage):
+        raise ValueError("Expected at most eight distinct, explicitly listed previous +Main tokens")
+    job={"commit":commit,"tree":tree,"checks":[],"main":True,"root":"Main","receipt_sha":BASE_RECEIPT,"previous_jobs":lineage}
     job["token"]=hashlib.sha256(json.dumps(["parallel-grh",job,nonce],sort_keys=True).encode()).hexdigest()[:32]
     token=job["token"]
     state="/var/lib/tg-grh-aux-"+ARCHIVE[:12]
@@ -60,7 +63,7 @@ if [[ -f $state/{token}.console ]]; then tail -c 1200 "$state/{token}.console"; 
 exec 8>/run/lock/tg-grh-aux-install.lock
 flock -xn 8
 if [[ -d $record ]]; then echo 'Existing immutable job {token}'; exit 0; fi
-systemctl is-active --quiet tg-warm-main.service
+if ! systemctl is-active --quiet tg-warm-main.service && ! systemctl is-active --quiet tg-binary-7ef89daf.service; then echo "No prospective finite worker"; exit 75; fi
 if systemctl is-active --quiet "$unit.service"; then echo 'An auxiliary job is already active'; exit 75; fi
 for s in tg-source-replay tg-joint-replay tg-warm-patch-probe; do
   if systemctl is-active --quiet "$s.service"; then echo "Conflicting cold or probe job $s"; exit 75; fi
@@ -78,6 +81,7 @@ chmod 0755 "$helper"
 tar --no-same-owner -xzf "$archive" -C "$helper" run_aux.py warm_main.py warm_supervisor.py WarmArtifactHashes.lean
 printf '%s' '{encoded}' | base64 -d > "$helper/job.json"
 chmod 0444 "$helper/job.json"
+/usr/bin/python3 -B "$helper/run_aux.py" --preflight "$helper/job.json"
 systemd-run --quiet --collect --unit="$unit" --property=CPUQuota=800% --property=CPUWeight=20 --property=IOWeight=20 \
  --property=Nice=10 --property=MemoryHigh=32G --property=MemoryMax=40G --property=MemorySwapMax=0 --property=TasksMax=1024 \
  --property=LimitSTACK=infinity --property=LimitNOFILE=1048576 --property=KillMode=control-group \
@@ -92,6 +96,7 @@ def main():
     p.add_argument("mode",choices=("start","status"))
     for field in ("release","commit","tree"): p.add_argument("--"+field,required=True)
     p.add_argument("--nonce",default="one")
+    p.add_argument("--previous-job",action="append",default=None,help="Approved complete +Main token, oldest first. Repeat at most eight times. Providing this option replaces the three original defaults.")
     args=p.parse_args();sys.dont_write_bytecode=True
     with tempfile.TemporaryDirectory(prefix="tg-grh-parallel-") as tmp:
         for name,sha in HELPERS.items():
@@ -103,7 +108,7 @@ def main():
         if warm.SCHEDULE!="at(2026-11-26T10:17:24)" or warm.worker.DEADLINE!=DEADLINE:raise ValueError("Wrong original stop")
         state,vol=warm.validate_cloud()
         if state!="running":raise ValueError("Retained instance must already be running")
-        token,cmd=payload(args.mode,args.release,args.commit,args.tree,args.nonce,vol)
+        token,cmd=payload(args.mode,args.release,args.commit,args.tree,args.nonce,vol,args.previous_job)
         if args.mode=="start":
             warm.public_candidate(args.commit,args.tree)
         print("token",token,flush=True)
