@@ -217,3 +217,5 @@ The complete Lib.Adelic.Reduction.Defs built under stock Lean 4.35 in 79.84 seco
 Stock Lean 4.35 accepted the complete ReductionModP module in 48.02 seconds. The native check examined 137 exported axiom entries and found only the three permitted axioms.
 
 The native Lean 4.35 build of the entire LocusEquations module passed in 35.04 seconds against the repaired EtaleCharts dependency. The preceding version first failed at the transport of units in projSpace.
+
+Stock Lean 4.35 built the entire HodgeSite module in 70.04 seconds against the repaired EtaleCharts module. The square-zero extension carrier and exterior-algebra induction now use their explicit arguments.
