@@ -216,7 +216,7 @@ lemma IsForm.comp_mul_right {e} (k : V.IsForm e F) a :
 /-- The complex vector space of forms of type e for the space V, as a type; it carries the
 Petersson inner product. -/
 def Form := ↥(ofLinearComb {F | V'.IsForm e F} ⟨0, isAutomorphic_const .., by aesop, by simp⟩ fun _
-  h _ k x y ↦ ⟨h.map₂ k.1 (x * · + y * ·), ⟨_, (by simp; grw [norm_add_le, norm_mul, norm_mul,
+  h _ k x y ↦ ⟨h.map₂ k.1 (x * · + y * ·), ⟨‖x‖ * h.2.choose + ‖y‖ * k.2.choose, (by simp; grw [norm_add_le, norm_mul, norm_mul,
   h.2.choose_spec ·, k.2.choose_spec])⟩, have j F (h : V'.IsForm e F) i :=
     (And.intro (h.3 i) fun g ↦ (h.isBoundedMeasurable.integrable_mul_comp i (g * ⟨·, 1⟩)).const_mul)
   by simp_all [mul_add, integral_add, mul_left_comm]⟩) deriving AddCommGroup, Module ℂ
