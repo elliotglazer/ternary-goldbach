@@ -23,7 +23,8 @@ open NumberField Real
 lemma Parameters.norm_gal_vacuumRoot P s (σ : Gal(ℂ/K P)) : ‖σ (vacuumRoot P s)‖ ^ 2 =
   rootDiscr (P.E s) / √P.d := by
   obtain ⟨k, h, ⟨⟩⟩ := WeilData.exists_chiFin_pow_eq_prod (P.α s)
-  erw [rootDiscr_def, ← pow_left_inj₀, div_pow, ← prod_varpi_eq_rootDiscr_pow, pow_right_comm,
+  erw [← pow_left_inj₀ (n := numInfPlaces (P.E s)), div_pow,
+    ← @prod_varpi_eq_rootDiscr_pow P s, pow_right_comm,
     ← norm_pow, ← map_pow]
   simp [vacuumRoot, by simpa [h.ne'] using congr(‖$(σ.commutes ⟨chiFin (P.α s) ^ k, by simp_all
     [prod_phi_eq_norm]⟩)‖)]
@@ -31,7 +32,7 @@ lemma Parameters.norm_gal_vacuumRoot P s (σ : Gal(ℂ/K P)) : ‖σ (vacuumRoot
     ← InfinitePlace.apply, Finset.prod_nonneg, NeZero.ne, chiAdelic, field] using
     (ideleAbs_eq_prod_of_v_eq_one (x := finIdeleIncl _ * star (finIdeleIncl _) * .map toAdele.1
     (.mk0 _ (P.relDifferentGen_ne_zero s))) (by simpa using v_alpha_mul_relDifferentGen) :)
-  repeat positivity
+  all_goals first | positivity | rw [rootDiscr_def]; positivity
 
 /-- A chosen CM datum whose lattice is a complex multiple Ω₀𝓞_K of 𝓞_K: the curve 𝓔 = ℂ/Ω₀𝓞_K. -/
 noncomputable def Parameters.cmCurve (P : Parameters) :=

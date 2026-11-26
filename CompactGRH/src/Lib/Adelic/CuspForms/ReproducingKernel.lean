@@ -32,6 +32,13 @@ lemma Space.exists_norm_mul_height_pow_le {B : ℕ} (he : IsCuspKernel B e) (K :
     V.exists_height_le_mul (.prod ((isCompact_closedBall 1 1).mul α.2).inv isCompact_Kf)
   have ⟨δ, _, W⟩ := Metric.nhds_basis_closedBall_inv_nat_succ.mem_iff.1
     (eventually_norm_realConv_sub_le K α.integrable (ε := |D|⁻¹ ^ A / 2) (by positivity)).curry_nhds
+  have hMpos : (0 : ℝ) < M := by exact_mod_cast Nat.pos_of_ne_zero hM
+  have hκ : 0 < cuspConst E n (absNorm (differentIdeal ℤ (NumberField.RingOfIntegers E))) :=
+    lt_of_lt_of_le zero_lt_one (one_le_cuspConst ..)
+  have hthreshold : 0 < ((δ + 1 : ℝ)⁻¹ /
+      (M * cuspConst E n (absNorm (differentIdeal ℤ (NumberField.RingOfIntegers E))) ^ 2)) ^
+        Fintype.card n :=
+    pow_pos (div_pos (inv_pos.mpr (by positivity)) (mul_pos hMpos (sq_pos_of_pos hκ))) _
   refine ⟨_, @fun F c y k l t ↦ .trans ?_ (le_of_halving (f :=
     fun g ↦ ‖F g‖ * (V.height g ⊓ V.height t) ^ A) (by grw [inf_le_right, l ·] <;> simp) ?_
     (fun C _ b g ↦ (lt_or_ge ..).imp ((le_div_iff₀ ?P).1 <| y.norm_le_of_firstMinimum_lt he
@@ -40,7 +47,9 @@ lemma Space.exists_norm_mul_height_pow_le {B : ℕ} (he : IsCuspKernel B e) (K :
     y.isBoundedMeasurable k g fun x i ↦ (le_div_iff₀ ?P).2 (by grw [← one_mul (V.height t), ← d,
     hD 1 _ g ⟨(i.ne_or_ne 0).elim (⟨u, _, _, subset_closure ·, _⟩) (⟨1, _, _, subset_closure ·, _⟩),
     _⟩, ← mul_inf₀, mul_pow, mul_left_comm, b] <;> simp [d.trans', hu.trans, field])).trans ?_) (by
-    grw [inf_le_left, height, ← ·, l] <;> simp [field])) t)⟩ <;> simp [field, *, (l 1).trans']
+    grw [inf_le_left, height, ← ·, l] <;> simp [field] <;> exact hthreshold)) t)⟩ <;>
+    simp [field, *, (l 1).trans'] <;>
+    exact div_nonneg ((norm_nonneg _).trans (l 1)) (pow_nonneg hthreshold.le _)
 
 include he
 

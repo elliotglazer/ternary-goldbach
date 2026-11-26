@@ -118,9 +118,11 @@ def toPdReduction : ι _ ⋙ restrictAlg Ainf _ ⟶ pdReduction ocToAmaxModPd �
 /-- The natural O_C-algebra map S → D/𝔡(D), D the completion of A_max ⊗ W(S^♭), sending y to the
 class of 1 ⊗ [x] whenever x in S^♭ has zeroth component y mod p. -/
 @[irreducible] def testToThickening : algFunctor ⟶ crysThickening ⋙ pdReduction ocToAmaxModPd :=
-  thetaIso.2 ≫ (baseChangeTranspose ..).2 (tilt.whiskerLeft (baseChangeTranspose _
-  (periodAlg ..) (wittFunctor.whiskerLeft ((algBaseChange _).whiskerLeft
-  (algCompletion.of ..)))) ≫ by exact crysThickening.whiskerLeft toPdReduction)
+  thetaIso.2 ≫ (baseChangeTranspose (tilt ⋙ wittFunctor) (crysThickening ⋙ pdReduction ocToAmaxModPd)).2
+  (tilt.whiskerLeft (baseChangeTranspose _
+  (periodAlg Amax) (wittFunctor.whiskerLeft ((algBaseChange Amax).whiskerLeft
+  (algCompletion.of ..)))) ≫ by
+    exact crysThickening.whiskerLeft toPdReduction)
 
 /-- Assume `CrysPeriodAlgebra`. For a p-adic test c with ring S and x in W(S^♭), `testToThickening`
 sends θ(x), θ Fontaine's map, to the class of 1 ⊗ x in D/𝔡(D), D the p-adic completion of

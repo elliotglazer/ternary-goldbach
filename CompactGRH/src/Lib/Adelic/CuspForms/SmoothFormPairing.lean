@@ -48,16 +48,20 @@ translation. -/
 variable {V κ} {σ : ℂ →+* ℂ} {B : _ →ₛₗ[σ] _ →ₗ[ℂ] ℂ}
   (hB : ∀ γ v v', B (V.weightRep _ κ.2 γ v) (V.weightRep _ κ.2 γ v') = B v v')
 
-include hB in @[local simp] lemma pairing_mem_smoothInvariants (φ ψ : V.forms κ) : (fun g ↦
+include hB in lemma pairing_mem_smoothInvariants (φ ψ : V.forms κ) : (fun g ↦
   B (φ.1 g) (ψ.1 g)) ∈ smoothInvariants V.Γf := ⟨fun | _, ⟨_, rfl⟩ => by simp [φ.2.2 _, ψ.2.2 _, *],
   (rightStab _ ⊓ _).isOpen_mono (by aesop_cat) (.and φ.2.1 ψ.2.1)⟩
 
 variable (B) in
 /-- For a σ-sesquilinear B invariant under the weight κ action of U(J)(E), V definite, the
 pairing (φ, φ') ↦ ∫ B(φ(g), φ'(g)) dg of forms, over Γ\G_f with vol K₀ = 1. -/
-def smoothPairing : V.forms κ →ₛₗ[σ] V.forms κ →ₗ[ℂ] ℂ := by apply (LinearMap.mk₂'ₛₗ _ _ fun φ φ' ↦
-           classIntegral V.Γf (Kf ..) fun g ↦ B (φ.1 g) (φ'.1 g)) <;> simp [classIntegral_add,
-  ← Pi.add_def, *]
+def smoothPairing : V.forms κ →ₛₗ[σ] V.forms κ →ₗ[ℂ] ℂ := by
+  have hmem (φ ψ : V.forms κ) : (fun g ↦ B (φ.1 g) (ψ.1 g)) ∈ smoothInvariants V.Γf :=
+    pairing_mem_smoothInvariants hB φ ψ
+  apply (LinearMap.mk₂'ₛₗ _ _ fun φ φ' ↦
+    classIntegral V.Γf (Kf ..) fun g ↦ B (φ.1 g) (φ'.1 g)) <;>
+    simp [classIntegral_add, ← Pi.add_def, *]
 
 lemma smoothPairing_formTranslation a φ φ' : smoothPairing B hB (V.formTranslation κ a φ)
-  (V.formTranslation κ a φ') = smoothPairing B hB φ φ' := map_classIntegral (.id _) a
+  (V.formTranslation κ a φ') = smoothPairing B hB φ φ' :=
+  map_classIntegral (.id _) a (pairing_mem_smoothInvariants hB φ φ')
