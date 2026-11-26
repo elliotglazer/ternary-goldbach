@@ -15,7 +15,12 @@ open Complex ComplexConjugate Matrix Prod
 variable {E} [Field E] [CMType E] [WeilData E] {n} [Fintype n] {s} {V : Space E n s} {f : 𝒮 V}
 
 omit [Fintype n] in
-@[fun_prop] lemma Space.continuous_realVec : Continuous (realVec : _ → n → 𝔸 E) := by continuity
+@[fun_prop] lemma Space.continuous_realVec : Continuous (realVec : _ → n → 𝔸 E) := by
+  apply continuous_pi
+  intro i
+  change Continuous (fun y : NumberField.InfinitePlace E × n → ℂ =>
+    ((WeilData.scaleIdele E).1.1 * (fun v => y (v, i)), (0 : 𝔸f E)))
+  exact (continuous_const.mul (continuous_pi fun v => continuous_apply (v, i))).prodMk continuous_const
 
 /-- For f in 𝒮(V), the function Θ_f(y) = θ(ϱ(y)f)·exp(|y|²/2) of a real vector y in Fock
 coordinates, placed in the adelic vectors with finite part zero. -/
