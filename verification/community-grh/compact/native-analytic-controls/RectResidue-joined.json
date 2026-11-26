@@ -1,0 +1,60 @@
+{
+  "pin": "0b68b493791e5f7569021f0cd13454151af47584",
+  "tree": "6d8764b58d1a41584cd5d43fd3e400f6ee55d18e",
+  "index_digest": "ab1e1e7602dda55905e64130cdc3cda02ce7b0284de7beb8d2615aac8b63ef4f",
+  "target": "TernaryGoldbach.Explicit.RectResidue",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "compiler_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lockfile_sha256": "28fc7e6db5a7c849bf990d62e91c7df31b32d1cd00e088e341e0202a49ec6a60",
+  "runner_sha256": "af156ee16035f802604e5660f2ccbbecfd2e59e03177eb2edc586987fa30b233",
+  "module_count": 3,
+  "modules": {
+    "GoldbachOrderAndLogDeriv": {
+      "source_sha256": "b4553d61d8148dbb673241c5183145da33ec7a5e69b204a84cd15173c87aecbc",
+      "imports": [],
+      "inputs_sha256": "6ed7f925978de21bd7212b35b8ded31b58e6c4cfc14db8c6eac090c29c3eb14a",
+      "evidence": "joint source compile",
+      "producer_receipt_sha256": "fdcbc6a47ec43ce888597a44554cf69ac92153ed0b6db484743884f66af48554",
+      "outputs": {
+        ".olean": "6e096717453277215d216cf2d26858808c78b5f260a0319edc2aef616b5f2237",
+        ".olean.private": "7fb1c0f1a6b7c7fe46fb109166adfcc72eaea5cf4192102685a82fd4265edc00",
+        ".olean.server": "5b89b19cee00456ffebd7997741ce16e8f7683598197be5f89238dbc232c5558",
+        ".ir": "427913523622a6521964257018080f2970a72a8e330ccf2dc4547cdd6540c57c",
+        ".ir.sig": "e7da44ef7896751cfebbbac05f6269ea6c0edb9b500a937242a8f0a96a71f727"
+      }
+    },
+    "TernaryGoldbach.Explicit.Landau": {
+      "source_sha256": "4c0f11c37b5e2400ba08f034ebd7843649a60609e1ccea9c78ac904e8f64f607",
+      "imports": [
+        "GoldbachOrderAndLogDeriv"
+      ],
+      "inputs_sha256": "5de8e67993fbc25eb11fb2188733abd1310e187c6b9ea2def9efdf71f129fafc",
+      "evidence": "joint source compile",
+      "producer_receipt_sha256": "0721685b7e318b0057c614f5911443eb8bee4183e936be2ea217c6af0f5acd64",
+      "outputs": {
+        ".olean": "c84880c18105b5075b026d2e9e538d00c1a8b130ce365ca4f739a142df4e50ba",
+        ".olean.private": "c12f670d4483c224e6625315f65104536f311a47e17940949f89a9401a494474",
+        ".olean.server": "9ff597c7d9a0bbaeaeef21b369062d5b07ea00c79c4dbfd55b7795c854c79d68",
+        ".ir": "d0353f5428436d4ca3053a520f40790136a520368bb6cb0c227c548a48ac3efe",
+        ".ir.sig": "ca48f12ab0c7b54dbc35c2c22a63e7ddcd7c2e75d9f83770e19555244ba28113"
+      }
+    },
+    "TernaryGoldbach.Explicit.RectResidue": {
+      "source_sha256": "74459576a9dac309795a959a5950c76a5503cc4642fe052c678fd869f450fa8c",
+      "imports": [
+        "GoldbachOrderAndLogDeriv",
+        "TernaryGoldbach.Explicit.Landau"
+      ],
+      "inputs_sha256": "a69ded8206133d12742bc38ad60110ba39732396bdfd54ff6f4655b58c2ccf7a",
+      "evidence": "joint source compile",
+      "producer_receipt_sha256": "1d74cc3631c0c8b2a796c1fc3449af5bd182ad23178fbcfe1a178e68ef4d3027",
+      "outputs": {
+        ".olean": "01b27d9abfd0c6df64820d830b5250bf8fd349a18334890afa08044842330412",
+        ".olean.private": "af94026119283cb59f48899b94aed4977a7b2439c8a89848ea6c69fcac066d17",
+        ".olean.server": "8f0fc0d14d9c32eb6490c25b5fec11dc3199c3129cf737d35d8a6bcc0956c21d",
+        ".ir": "20950b16a30488fc3e5ae342b2f0e89c79ddd77dba9ff77c323b5a1df6b73e52",
+        ".ir.sig": "8f93d291e91295ce42e07610e0d587c985ef24ff4bd059b15aa00b0183f72ade"
+      }
+    }
+  }
+}
