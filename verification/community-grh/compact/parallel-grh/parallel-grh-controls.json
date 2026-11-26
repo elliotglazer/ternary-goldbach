@@ -1,0 +1,65 @@
+{
+  "scope": "Checked the staged parallel diagnostic on pinned Linux Lean 4.35, including a real prior Lake job, matching object reuse and tampered-log refusal. No AWS dispatch and no protected proof check.",
+  "operator_sha256": "1bd4b127377ded42def1f3348658aeb67cd3aba2e00a6618f2602bde30ca813e",
+  "host_archive_sha256": "80e64577c39545e1b418c78a8578ca4dd4c2560646f0d7405be4d0f35e8e48dc",
+  "parent_main_sha256": "7e2c8f67f784809aaf52aef725ba3ca31764d7013cc03d375763093873d030a7",
+  "aux_main_sha256": "bb02a7bfbc4d94cbd2232e2df1fc421e0a45675d4e92333026ab4e0ef8567855",
+  "unchanged_supervisor_sha256": "424ee95014a36759e801851fa0ef2c336a15376906bd0c9c453ee3c6c2b51aa1",
+  "only_main_function_changed": true,
+  "other_unchanged_functions": 16,
+  "shared_close_lock_blocks_original_exclusive_poweroff": true,
+  "accepted_second_reader_and_released_when_finished": true,
+  "both_SSM_shells_parse": true,
+  "incoming_layers": [
+    "0c296855616fd2f1d288aae9c2f27f55",
+    "c5b595a6ca6bc4f7ef9ada59593b9a26",
+    "cc2ba2e764eca88b6ed1ad9d08d1cad7"
+  ],
+  "genuine_native_Lake_lineage_control_sha256": "a2a4b0f337d1803ac8a9e571b43843c6f04a33670df911a0b1986b95f2ed9554",
+  "files_tested": {
+    "run_aux.py": "51086cb68d66c98b2ec14d535c6a381e1aebef799e47bb472bd203026a614cb5",
+    "dispatch_aux.py": "1bd4b127377ded42def1f3348658aeb67cd3aba2e00a6618f2602bde30ca813e",
+    "warm_main.py": "bb02a7bfbc4d94cbd2232e2df1fc421e0a45675d4e92333026ab4e0ef8567855",
+    "warm_supervisor.py": "424ee95014a36759e801851fa0ef2c336a15376906bd0c9c453ee3c6c2b51aa1",
+    "WarmArtifactHashes.lean": "abd08e22d7940e588054c7d54148abc11724320c6630d6065199333ce03eec3f"
+  },
+  "fixture_result": {
+    "scope": "local stock Linux Lake chained diagnostic",
+    "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+    "first_exit": 1,
+    "first_warm_new": [
+      "Changed",
+      "Intermediate",
+      "Reader"
+    ],
+    "first_warm_exit": 1,
+    "second_warm": {
+      "kind": "warm GRH source diagnostic",
+      "root": "+Main",
+      "verdict": "diagnostic only",
+      "exit": 0,
+      "wall_seconds": 1.223,
+      "log_sha256": "3301157fda9c3ae9ea685e8174f20cb0f394a0e9f469cdbbfcbe2723b53388aa",
+      "newly_built": [
+        "Deep",
+        "Main"
+      ],
+      "failed_source_locations": []
+    },
+    "original_seeds": [
+      "Base",
+      "Stable"
+    ],
+    "previous_additional_seeds": [
+      "Changed",
+      "Intermediate",
+      "Reader"
+    ],
+    "after_ancestor_changed": [
+      "Intermediate"
+    ],
+    "tampered_log_rejected": "Previous warm result identity differs",
+    "original_preserved": "bb087c4fd7e301302844f75458724339be88deaf2db3bf42f0681c3e8f50b350",
+    "first_warm_preserved": "f69189b7dc72d34287a51d6943d79a6f8fcf80b5ea58227101c6a04b1e63dc80"
+  }
+}

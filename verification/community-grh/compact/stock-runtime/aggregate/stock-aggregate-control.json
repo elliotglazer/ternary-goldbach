@@ -1,0 +1,17 @@
+{
+  "controller_sha256": "5dc184b68eff4260d3490539dc6c8bcc5588f97bef8e82d35c7bbc7fecf4ddc6",
+  "stock_probe_sha256": "a24992ee326a5314160ea0e5eece28116d8a08a7605396dd90da55e1411a5413",
+  "prior_host_receipt_sha256": "f0fc5c4d3089085dbe679c624351418f530eb698d6591f1698740e9f6ce6b898",
+  "prior_host_phase_was_sibling": true,
+  "tests": [
+    "scope of user coordinator and exact applied settings",
+    "competing lease refused, correct owner restored all kernel limits and private drop-ins",
+    "cleanup of an interruption immediately after runtime resource mutation",
+    "unrelated pre-existing resource override rejected and unchanged",
+    "live foreign process rejected",
+    "foreign runtime mutation retained and surfaced",
+    "manager restart marks result invalid while restoring resources",
+    "Ubuntu systemd 255 parsed bounded service with ExecStopPost control and user-manager dependency"
+  ],
+  "scope": "The stock 32x64 outer-only EC2 measurement is genuine. These predeployment tests exercise operative control code with an isolated simulated manager; a successful new EC2 aggregate report and release/rollback log are required."
+}
