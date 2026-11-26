@@ -1,0 +1,35 @@
+{
+  "module": "TernaryGoldbach.Explicit.WeilNumC",
+  "theorem": "TernaryGoldbach.Explicit.T12_nonneg",
+  "lean_version": "4.35.0",
+  "parent_project_commit": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+  "fixed_proof_commit": "dcf825bbde09fa3b4b3e012a38c437d2a2a70b8a",
+  "fixed_joint_candidate": "f1b8ac5c426fa118c988146ff7ea6df0d3a8e5c1",
+  "before": {
+    "module": "TernaryGoldbach.Explicit.WeilNumC",
+    "exit": 1,
+    "wall_seconds": 108.73,
+    "source_commit": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+    "source_sha256": "839d06470cd9705890165406b3b80e7ca037348bffaede30869fa8b205483c0a",
+    "log_sha256": "572575e58aed84ef2a374b9ab0187eb953fa3230766b5c2d04dd80845b834edf",
+    "direct_import_object_sha256": {
+      "TernaryGoldbach.Explicit.WeilNumB": "3339a3ef784a13a6a36d96e61655b6e34353241c75efe00e6647df786b8e6263",
+      "TernaryGoldbach.Prelim.SmallMertens": "5311eb74f0528b33d2dbd3442b51115202b4349dc2df926b99f71e35c87a109e"
+    }
+  },
+  "after": {
+    "module": "TernaryGoldbach.Explicit.WeilNumC",
+    "exit": 0,
+    "wall_seconds": 104.16,
+    "baseline_source_commit": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+    "source_sha256": "b439ff967544c6f9fc4c05a789adaa02d83a391de35229df418119a5d180c24e",
+    "log_sha256": "b1b5e8f27f6be93531933a9a6a76f18ab4eaee366d12011e13f0c9cb9f93dd81",
+    "object_sha256": "807e47239a92c9fb82c91d578c3d5d2824abfb1c22e2d6c51b5a01dba684a1ef",
+    "direct_import_object_sha256": {
+      "TernaryGoldbach.Explicit.WeilNumB": "3339a3ef784a13a6a36d96e61655b6e34353241c75efe00e6647df786b8e6263",
+      "TernaryGoldbach.Prelim.SmallMertens": "5311eb74f0528b33d2dbd3442b51115202b4349dc2df926b99f71e35c87a109e"
+    }
+  },
+  "statement_unchanged": true,
+  "scope": "Whole native file on identical compiled imports. The full joint Linux build and export remain pending."
+}

@@ -1,0 +1,81 @@
+{
+  "module": "Lib.Weil.MixedModel.HyperbolicSpace",
+  "base_proof_commit": "dcfe110b060a1f6c1e8162f0d3c31ad3b8332b73",
+  "lean_version": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "target_platform": "x86_64-windows",
+  "scope": "Three complete source files compiled separately with identical direct imports. Original source, then the single-rule candidate, then the scoped reverse attribute group. The third file preserves the mathematical declarations and all proof bodies.",
+  "direct_project_import": {
+    "name": "Lib.Weil.Construction.ThetaFunctional",
+    "olean_sha256": "06d6262ead5ace15bcdebbef68c2b58d457ca74dfe737d21037b0dfeda14017a",
+    "full_recursive_receipt_sha256": "6a2238060434c447877a11b01394266240e8af0f31021c3b3dcb50fc590c22dd"
+  },
+  "trials": [
+    {
+      "source_sha256": "4b493743061a28689806a7cb8bb34557ff105881c0d0f46076a8e4453542c004",
+      "lean_exit": 1,
+      "wall_seconds": 30.08,
+      "log_sha256": "e7a48834cd6c08204a43e4723c9ee7299b7a5782638338f9421019d34aa2a1cd",
+      "distinct_diagnostics": [
+        "Lib\\Weil\\MixedModel\\HyperbolicSpace.lean:32:33: error: Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.Matrix.ext_iff._simp_1`"
+      ]
+    },
+    {
+      "source_sha256": "0f6451a961b0da1d2cfa16e388bd255d3f9f4f96ae456113d46a5d5b392723d4",
+      "lean_exit": 1,
+      "wall_seconds": 55.22,
+      "log_sha256": "095b5fa33e67aef8389822886d25522d38b059bfbdc01aa5efc81aa6e9e24e24",
+      "distinct_diagnostics": [
+        "Lib\\Weil\\MixedModel\\HyperbolicSpace.lean:40:33: error: Unknown constant `_private.Lib.Weil.MixedModel.HyperbolicSpace.0.mul_assoc._simp_1`"
+      ]
+    },
+    {
+      "source_sha256": "875aad163f44b00acb9feb43a426d2dcfc5d2037418dc69bf2f53c4bafa693ba",
+      "lean_exit": 0,
+      "wall_seconds": 64.31,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "distinct_diagnostics": []
+    }
+  ],
+  "patch_sha256": "ec6240e3b2fd6c08e4ebfa43fdf5cba7c9106eb2160a1129fd5d78b55ba2d5bd",
+  "output_sha256": {
+    ".olean": "35c5027273cb31f2449f69a008724e63233c7f340bf4f5d58893a51472fff4e9",
+    ".olean.server": "ebbfe126c352d2b236d46a89ca6df608922fb8296091219702245f2f329eea2a",
+    ".olean.private": "86cf435e4daf93329ac1bdc5294fd9a0b028ded1f7a9208e8fdfa85c2e7bec35",
+    ".ir": "9d772a12cd23b8248e53e84ebaa60cfa93d12bd8b09b5c05e45387b998d52712",
+    ".ir.sig": "7c855cee61f32266025c0d6562d5370c64092670ba5925939c070a4d830bc778"
+  },
+  "named_axiom_audit": {
+    "exit": 0,
+    "wall_seconds": 252.29,
+    "source_sha256": "5d8e416da29f65134dd7f5ca54fa387b7d3ff71873d76e48893b56fbe89da473",
+    "source_lines": [
+      "import Lib.Weil.MixedModel.HyperbolicSpace",
+      "#print axioms hypSpace",
+      "#print axioms isOrthoIntegral_hypSpace",
+      "#print axioms IsOrthoIntegral.mul",
+      "#print axioms IsOrthoIntegral.of_eq_submatrix_mul"
+    ],
+    "log_sha256": "83d2e020b8c9f86704848102e3a306d87a5ce463fd1aa5142f440d13c37fa337",
+    "output": [
+      "'hypSpace' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'isOrthoIntegral_hypSpace' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'IsOrthoIntegral.mul' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'IsOrthoIntegral.of_eq_submatrix_mul' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    ]
+  },
+  "whole_module_metadata": {
+    "exit": 0,
+    "seconds": 1.95,
+    "summary": [
+      "35 declarations, direct sorryAx references: #[]",
+      "35 audited transitive axiom entries, 0 offending: #[]",
+      "35 declarations, direct sorryAx references: #[]",
+      "35 audited transitive axiom entries, 0 offending: #[]",
+      "42 declarations, direct sorryAx references: #[]",
+      "35 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "inspector_sha256": "e2cc1ca49b1b17888482a3cb36779242a044d78eec7cad7c366e18c1337751b5",
+    "log_sha256": "083eeac4f1f6022cf038e539d210235726f3b135a11c802a8ac6c1d08aa99d89"
+  }
+}
