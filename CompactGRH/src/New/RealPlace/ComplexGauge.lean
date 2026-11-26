@@ -123,12 +123,12 @@ namespace ComplexGaugeSimp
 
 attribute [scoped simp ←] ofReal_coe_nnreal ENNReal.ofReal_mul ENNReal.ofReal_pow dotProduct_mulVec
 
+attribute [scoped simp] star_mulVec MeasureTheory.volume_pi_closedBall Size.vecsOfSize inclMatrix
+  pi_norm_le_iff_of_nonneg
+
 end ComplexGaugeSimp
 
 open scoped ComplexGaugeSimp
-
-attribute [local simp] star_mulVec MeasureTheory.volume_pi_closedBall Size.vecsOfSize inclMatrix
-  pi_norm_le_iff_of_nonneg
 
 /-- Let n = ϱ+1, |ι| = s+1+3n ≤ L, L ≥ 4, and rank C ≤ 3n. Some matrix O with orthonormal
 columns has CO = 0 and, for all j, the integral of (36/|Oᴴu|²)^s over the u in ℂ^ι with all
@@ -211,9 +211,19 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
   let N := (1 - 𝔰.J₁).submatrix (.map id (inl ∘ inr)) id
   set e := hF.complexLevel.orthonormalPart
   intro x _ y _ v W
-  refine (exists_orthonormal_ker_lintegral_le (fromRows v (fromRows (N * x⁻¹.1.1 * e) (N * (x *
-    y)⁻¹.1.1 * e))) (by simp [volumeExponent, hk]; lia) h4 (by grw [rank_le_card_height]; simp; lia)
-    (by simp_all; bound)).elim fun _ ⟨O, z, o, I⟩ ↦ ⟨_, by fun_prop, fun u ↦ ?_, I⟩
+  obtain ⟨D, O, z, o, I⟩ := exists_orthonormal_ker_lintegral_le
+    (𝔰 := 𝔰) (s := hF.complexLevel.volumeExponent) (L := L)
+    (fromRows v (fromRows (N * x⁻¹.1.1 * e) (N * (x * y)⁻¹.1.1 * e)))
+    (by simp [volumeExponent, hk]; lia) h4 (by grw [rank_le_card_height]; simp; lia)
+    (by
+      calc
+        _ ≤ (𝔰.r : ℝ) := by
+          exact_mod_cast
+            Fintype.card_le_of_injective (fun i : {i : 𝔰.κ // i ≠ 𝔰.k₀} ↦ 𝔰.indexX₀ i.1) (by
+              intro i j h
+              exact Subtype.ext (Sum.inl.inj (Sum.inl.inj (Sum.inr.inj h))))
+        _ ≤ L := by linarith [hF.eight_mul_r_le_rho, Nat.cast_nonneg (α := ℝ) 𝔰.r])
+  refine ⟨_, by fun_prop, fun u ↦ ?_, I⟩
   clear * - z o
   generalize hr : star _ ⬝ᵥ Oᴴ *ᵥ u = r
   by_cases r = 0; simp [*]

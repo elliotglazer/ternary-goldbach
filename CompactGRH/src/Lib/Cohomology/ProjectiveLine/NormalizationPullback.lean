@@ -135,7 +135,7 @@ lemma line_formula_of_mulClass_injective (i : Function.Injective (Θ.mulClass (S
         (.map (restrictAlong _) $e))) ⟨_, (·.1.2)⟩ _) ((comp_assoc ..).trans
       (congrArg _ (by erw [TotalH.map_comp, Θ.onElements.map_etaAt_onElements]; rfl)))))) i
     ⟨(sliceEquiv.symm.toAddMonoidHom.comp (TotalH.map (restrictAlong _))).toIntLinearMap,
-    LinearMap.ext fun x ↦ ((map_homClass_comp.trans (a .. ▸ rfl)).congr (a _ x)).1
+    LinearMap.ext fun x ↦ ((map_homClass_comp.trans (by rw [a])).congr (a _ x)).1
     (congrArg _ (sliceEquiv.right_inv _))⟩).1.symm.bijective
 
 /-- Projective line formula H(P¹ × N) = H(N) ⊕ ηH(N), for all N, in the theory `tiltTheory`
@@ -243,12 +243,12 @@ def TestOver.resScalars : TestOver k ⥤ TestOver A :=
 structure map k → B. -/
 def TestOver.structurePt [IsAlgClosed k] :
   pointFunctor _ ⟶ resScalars A k ⋙ reprBy ⟨of A k, isTest_of_preValuationRing⟩ := sectionMap
-  ⟨fun B ↦ ⟨⟨CommAlg.homOfRingHom _ (by tauto)⟩⟩, (congr(⟨⟨$(by ext; apply ·.1.1.2)⟩⟩))⟩
+  ⟨fun B ↦ ⟨⟨CommAlg.homOfRingHom (algebraMap k B.1) (by tauto)⟩⟩, (congr(⟨⟨$(by ext; apply ·.1.1.2)⟩⟩))⟩
 
 lemma hasUnivPoints_structurePt [IsAlgClosed k] : (Comparison.restrict (TestOver.resScalars A k)
   Theory.locallyConstant.F).HasUnivPoints (TestOver.structurePt A k) := fun B y ↦ ⟨⟨@of k _ _ _
   y.1.1.1.1.toAlgebra, B.2⟩, ⟨⟩, ⟨CommAlg.homOfRingHom _ (y.1.1.1.2 · |>.symm)⟩, rfl, fun _ _ f e ↦
-  ⟨⟨CommAlg.homOfRingHom _ (congr($e.1.1.1 ·).symm)⟩, by bound⟩,
+  ⟨⟨CommAlg.homOfRingHom f.1.1.1 (congr($e.1.1.1 ·).symm)⟩, by bound⟩,
   ConcreteCategory.bijective_of_isIso ((locConstCoeff _).map (𝟙 _))⟩
 
 /-- The absolutely integrally closed valuation ring A, viewed as a test over itself. -/
@@ -430,7 +430,10 @@ lemma isGood_of_prod_projLine : D.IsGood (relFreeAb (V.preimage (fst ..) ⊔ (af
   (.trans (congrArg t.line_formula.integrate ((congrArg _ map_homClass_comp).trans (by
   conv_rhs => erw [map_zero, add_zero, ← TorsionCoeff.sliceEquiv_mulClass,
     ← map_restrictAlong_etaClass (g := 𝟭 _), ← e, map_homClass_comp, map_comp_assoc, map_homClass]
-  exact (comp_assoc_of_sq (by simpa [← homClass_comp] using congrArg _ (hom_ext (U := .whisker ..)))
+  exact (comp_assoc_of_sq (by
+    simp only [← homClass_comp]
+    apply congrArg homClass
+    exact relFreeAb.hom_ext)
     _).trans (congrArg _ map_homClass_comp).symm))) (t.line_formula.integrate_mul_cupClass _ 0))
 
 variable (L : D.IsGood (relFreeAb IdealFamily.ofMaximalIdeal.topLocus)) [Algebra A R] (P :
