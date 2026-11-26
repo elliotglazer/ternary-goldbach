@@ -1,0 +1,756 @@
+{
+  "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+  "source_tree": "857371b439081505f27ceb66f61d973506641c24",
+  "lean": "4.35.0",
+  "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "platform": "Windows x86-64",
+  "scope": "Incremental native elaboration of TailScale and BoundedGeometry followed by a fresh independent import of five named declarations.",
+  "project_closure_modules": 100,
+  "retained_objects": 98,
+  "fresh_compiles": [
+    {
+      "module": "TailScale",
+      "exit": 0,
+      "wall_seconds": 28.55,
+      "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "source_sha256": "0dc93806551bdb1756118a193b4843fdddfdd09594369845191238ee8ce1222d",
+      "log_sha256": "a6f6b957ee410078f4a5bf0a8d545551a66951bad463cda30a73155f3940f619",
+      "object_sha256": "4d3684205612fe4d641c74af1096906b61886a35ae424b37e5e4b821402f9722",
+      "direct_import_object_sha256": {
+        "LogCertificate": "efe47c28a918adab477af3e898b8bbad5bdb6f7317106176d05cb706cb06b38c",
+        "RegularizedMellin": "993ebf99bbb7682c6114a8f0b27397526f5566c281abd671ce8222bd8951031b"
+      }
+    },
+    {
+      "module": "BoundedGeometry",
+      "exit": 0,
+      "wall_seconds": 23.02,
+      "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "source_sha256": "ba3709168506186d6c3766791b28ce209efcbb330e4396f26fc547cd9e26bc99",
+      "log_sha256": "22d282969bf5935f0e1e1f51ce18ed7a158491014a8016f6a532ae84f71c62e4",
+      "object_sha256": "c8f6cb47ffba346c4c231dbe64c51b81054fc46f780db152b674123eb864e672",
+      "direct_import_object_sha256": {
+        "TailScale": "4d3684205612fe4d641c74af1096906b61886a35ae424b37e5e4b821402f9722",
+        "TotientSquare": "eccfcaa2bce557413844b42c5c47789297169fb432d50df71093dbdb4a2b0037",
+        "MajorNumerics": "05011a6eca9b85c2f5b417e55093a5d5f4b9a3770db3ed3ee91cb39963b044fd"
+      }
+    }
+  ],
+  "fresh_import": {
+    "module": "GoldbachMajorGeometryAudit",
+    "exit": 0,
+    "wall_seconds": 20.56,
+    "source_commit": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+    "source_sha256": "f24c5a12e904af66608597a730ddc25c6a8166491c4c84677bad5097a37a09e3",
+    "log_sha256": "ff045049c2d72b32491dcc85a4865f69110eb347e7cea2a5632078c10b74c17c"
+  },
+  "axiom_reports": [
+    "'GoldbachEnergy.tail_scale' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.twist_norm_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.sqrt_twist_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.major_scale' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GoldbachEnergy.major_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "objects": [
+    {
+      "module": "LogCertificate",
+      "source_sha256": "6418bf5b8dad8c184e9254f23a521523d7d5ed3d753a72890dc35e2fd83d9242",
+      "object_sha256": "efe47c28a918adab477af3e898b8bbad5bdb6f7317106176d05cb706cb06b38c",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.MellinRotate",
+      "source_sha256": "79d905a92983972446db95a2d3d651bbab5004fcc981008fc6e7c63302e28be4",
+      "object_sha256": "596c3aa4861bf25487321f52e089c29aeda39034b4ae3e5ba0e2acf2c4c03a6f",
+      "producer_or_validation_pin": "bdca1b47d0be84f96dfadad0dfd3b4c4eecc1c7a",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.GMellin",
+      "source_sha256": "45f5ad35c1c3426e35968e06a97344944126cb6d3d1b8e55e7b3552913379230",
+      "object_sha256": "8277bf0f2a157f7a84f204212ba4628e5a7956ef7bd4039ae1df1d38b35a6005",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.GammaBounds",
+      "source_sha256": "520f27cc29656a36f67cc6861406485487650e9a80f58ab74bfd96a9efce0af4",
+      "object_sha256": "78249fea18fa948bfc5ca5b5c5fef19564b29d3907ddc9e93da6d1d22d0c75cf",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "ComplexRate",
+      "source_sha256": "39f1a970d0b46e0630a04756a29b633d57bdc4e83af292bce0ad37990d45dd83",
+      "object_sha256": "007746a1ee65e12cde5cc1893bf2201ee7a17d85dc43ea9242b94c65cb2a94cc",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "Energy",
+      "source_sha256": "d4d98716ab6956d329b2696afcb222f42ce70d6912ea33f0e7c1415704364148",
+      "object_sha256": "79ef537cf127025d8c1b7b86a308b2c0181f6398668dfdc71880fc94599213b6",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Moment",
+      "source_sha256": "6968225e2761cc40e929e18758f38503fb56e5897275a975a00bf1897bda53ac",
+      "object_sha256": "3987f0be3571abd6e677a54c83ebf61c7b0be90d7140b3021f3c7a1e3296e3de",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "SharpMoment",
+      "source_sha256": "c70922c5ec5f6c2340ef8d1156b207fd01212e32d753c17a30b7a1d89d91e408",
+      "object_sha256": "c5397f682de041c99df01227260b1c7e432b0282ac9a2744a9aa532c602d87fb",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "GoldbachVersionAliases",
+      "source_sha256": "d7a744ece63b5f7685059614da908c5be0232a6148c469eba63d9d2ea5f60501",
+      "object_sha256": "643a20ff99811d01832ce087ea5bd1f0bcb91c8769b31ea8b9ea705c1d8c4376",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Statement",
+      "source_sha256": "6af39b249fbf4851ff966d6849d3f47e0fa3289f64debde50d521d2726b5dbba",
+      "object_sha256": "127fd3b5203457dc696c8239241034fe9524ccd00cfba12da408303dd71b2846",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.CircleMethod",
+      "source_sha256": "385d854927e6cc6f7ce837d010b002f4b065d054f059ab2feed73b23b2037bf4",
+      "object_sha256": "098a3527af2bee0cbafa3273965c7c79fdbcdbb6a1424c1a4f05b8eed893756b",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "FourierEnergy",
+      "source_sha256": "4421d76e35567e7a8b439fa4f42fca876f26e510cd3c5898f1e7e715b95702eb",
+      "object_sha256": "2f8d12e6378e7807f2f8e2fe6bfec7faa1d3330dd5d0aec9f78551968f2ad637",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "RegularizedWave",
+      "source_sha256": "47a761f8b513f254c1e737b9381511d70b6eba9925ceea0a68894cea060c7021",
+      "object_sha256": "d2fd10a7242207aaaf05d41b3ca1cb3014981a33b85a3ed1f6b7967c214127f9",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "CriticalGamma",
+      "source_sha256": "f801dc501751e9aab64ca08d13ca324013788662acfb9480b225666608b35d64",
+      "object_sha256": "5ffc0d302a37ad15cde3d9c5b23503f1079c065dfbc98617df01f945dbbbdf1d",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "RegularizedMellin",
+      "source_sha256": "872f8cb52aff229d323a6a957204a79ba51da26f325bf872c22e5a99c4d36d97",
+      "object_sha256": "993ebf99bbb7682c6114a8f0b27397526f5566c281abd671ce8222bd8951031b",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TailScale",
+      "source_sha256": "0dc93806551bdb1756118a193b4843fdddfdd09594369845191238ee8ce1222d",
+      "object_sha256": "4d3684205612fe4d641c74af1096906b61886a35ae424b37e5e4b821402f9722",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "compiled"
+    },
+    {
+      "module": "Totient",
+      "source_sha256": "b51a57488fb3c3a65f66c6944509104b4e4de08eed3c72de9890b645b455bce7",
+      "object_sha256": "f090bd301a9e5c9846aabe965f884fa9a9f5373d0edcd213eb85b6a8dc3951da",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TotientSquare",
+      "source_sha256": "f4dd4a33de2db54541dd2f980a67b64ceb0b705a60fb6456277c6c0103f9c2df",
+      "object_sha256": "eccfcaa2bce557413844b42c5c47789297169fb432d50df71093dbdb4a2b0037",
+      "producer_or_validation_pin": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+      "local_use": "retained"
+    },
+    {
+      "module": "SingularBase",
+      "source_sha256": "f73a9e6a96eeb52ad7502961f273e0f0c161981f941397548053a5a76d4d234d",
+      "object_sha256": "e46d34b9bd7a2f5934d9c10ff03deab2803187549abaa7a6d0db7a8a2feb2754",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "SingularWindow",
+      "source_sha256": "a408db7abd059a5a3925ef5945c8d6dabf3a041c16aff5ae7867b180f3ee5fd4",
+      "object_sha256": "d1b5a7bed3b6d5ee9b349b3e50bdca871430191dc0e0a0d83927f65146a34797",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.MinorArcs.Montgomery",
+      "source_sha256": "1450865f2e96932081298826789597d9701add85e36d8881eb0919596e6db8a1",
+      "object_sha256": "a0b44859ceab9267d490fbed5b4f2df816c0ded312191e79e633533c3413478f",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Ramanujan",
+      "source_sha256": "f398d8f4dabfac055344f4c2dd2fd5474121b1a4f4043f454c0e52c484d43e13",
+      "object_sha256": "01ab049cc132644b1b66c63911f51fd5e2ca4d6284066ed953f299ca1e077605",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "MinorIntegral",
+      "source_sha256": "0ff36eb189ddc8e75f67a805dd1b65e724e6b1ef53c4a2d449970653710aaefe",
+      "object_sha256": "bd13003131b5ed651cdc965f87c95bb96b66e59425c3f9a4b493aecb56bd5260",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Helfgott.Defs",
+      "source_sha256": "25b5a5e868b9ffbac115ee61d4e8397b6dc1ae71d067a7623e8898120e87b93b",
+      "object_sha256": "7c68bfb047799051d5269c31843788aaf9c3dbc4c8de6b24b2725d4f39e9a0bc",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Helfgott.Numerics",
+      "source_sha256": "e1b3207e6808989ca57d48d8de5a4af0ecbabb0ff39ebb50ed561df87e7455b6",
+      "object_sha256": "9ba953322f229d1fcb1ed5cb5a48931dd224bed180f667138f7193bb68b96628",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Helfgott.NonPrime",
+      "source_sha256": "628e0114d615e9d7d1e9a110f21e471501b4335bca0e2d4628a9b9dde674bb4f",
+      "object_sha256": "77b637ce24f9229c0ec0b2e909111b53ff22942b6f3fd8f82b21e12b9cc966af",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Arith",
+      "source_sha256": "f82559f37567eba9f5b44296572480e0affb968d4e19785d7dd111315e0f27d7",
+      "object_sha256": "1a0440fff51c6bf0273b1fdc83914c5857a3591a37a663d9342bb46cd9bad3ed",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Coefficient",
+      "source_sha256": "d634be307adddc89cc4d35b155670dd27d9f368b7a0564fc5536b07cad90c97c",
+      "object_sha256": "0acbf979f29799efd2483338cfad2594eb814ecd42799621a4958f4f570ee1e3",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "TotientGrid",
+      "source_sha256": "fd68fb71a4f21a7e673e9d6c49c02f0f77c486913255116e75e61d0fa676376a",
+      "object_sha256": "186425946acb1943daca3a0c8b7c75cc024256a4e038e740880b0232f2f2195d",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "BudgetCore",
+      "source_sha256": "9b95eed6df95a0abcf8788757cdbcf47ba839dfbb41cb8e92235dc5467b0f101",
+      "object_sha256": "0dba1cdddd87c55aff45e177b6a2e366bec01f2f4185a1fe13dd79c02f6e06e5",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Budget",
+      "source_sha256": "ff396d25f950da38935fbae00d57f587acfe86443e827bbbfac3028bee973c9d",
+      "object_sha256": "3b8715d933a41f63ae2d6d87813d8a7d820526ec1735d2ae96818c45e7a1dc70",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "MajorBudget",
+      "source_sha256": "494d3be4655fa1fa6801a6d1d2d103bdad8401ba005b106dc41d33487e353c5c",
+      "object_sha256": "985993347d904484e225b74e33fad9f2ffe04898e773be021a1b22f226ff91ae",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "PrincipalWave",
+      "source_sha256": "bde29d4c3c6c892b3167c768559aff580cbbddd3f03a6b26c71aa31e46a6249b",
+      "object_sha256": "5e91957ab155ca958d33bd4c1762a17b256101c4edd2a160e4b79de63f9f7dad",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "FiniteBridge",
+      "source_sha256": "65b6998d1c48bce26e18e628754429b0970a9864034f0df4ea5e7ff0770a0ab7",
+      "object_sha256": "f74f8a13b5f1db9493d0376e775a940e8b92876464917a442a2f968c2573497c",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "Route",
+      "source_sha256": "40572ab05dd319829f513db86f91c2d923ffbe59f5b8701975154b044e4f0552",
+      "object_sha256": "96ec2ae2752b18b4653db66b1a41dfa29e090a093e3a85cf607959f74de12147",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "RationalArcs",
+      "source_sha256": "4960e92f0b16849a7461a31f7ca4b14492c874b043133f4428b311f2a62af8d6",
+      "object_sha256": "5b0053be42a61d2e7b627fbe53b710a7220dcc397acfed677b539d21979697b4",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcSeparation",
+      "source_sha256": "285cb860b4a5696b9d26403f9a443d102bfd2abf3237a3abddcae4d7e9daea0e",
+      "object_sha256": "c01c41184b76a47c69d85628c1fd9a32eb86fc2bd3e91c77cd8ef1c5c9b88c94",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcCenters",
+      "source_sha256": "0eeecf6c4c19308c1c601875f1cc099c51fe3f930ec66f5b1234137e98c73d45",
+      "object_sha256": "c48fd0608e8248b5ababd18c4f0fe075b0c65e57661bcccd9cb53f0eaa1010b0",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "LaplaceCube",
+      "source_sha256": "db4fd5fc90d4c49a5e33f8c7854d8ab4b1ffead1d4ec94e015861cfc4e52a755",
+      "object_sha256": "b33aa5a258eb97aafe111b59919d43df972fbdd24fb25c7144a8b5babe4910bc",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "PrincipalTransform",
+      "source_sha256": "9354223db6c604f9adbd15bff3296a4043200938574f873bfb8544d9b78e2d8e",
+      "object_sha256": "a4438f985ebfd9eb2363a1ccda54cddac920a1293fd5c2fb1c03f3bbfa2b648d",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "PrincipalTail",
+      "source_sha256": "1d44ea1b977bb1ada8c6279f22b85cb81cec95521468e9fc1bc3de3fe86bc275",
+      "object_sha256": "97550a128c1c7664e900d868d8065f4f0ee5d01b0cd5afba4b2ebd245685c74d",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "PrincipalMajor",
+      "source_sha256": "2723aec44d7a81dfa36ce44704d17ad65d8a5dad6c36147893cd87ffdeb8b16e",
+      "object_sha256": "7a1cc70ea6be389d2eb074a16a75ddd4f86bfcb45628648bfee082002a981ea7",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "RouteOnArcs",
+      "source_sha256": "42eaff27d9a69d53de9243f63b4133acace8de0f030dadbc6ab29823fa68d773",
+      "object_sha256": "33db92769ca63e6868aca90c4066ebf544f2ab2cc73c1651c1b2b209bf823c6a",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ModelRoute",
+      "source_sha256": "cc5d8cf7e71ed2446135133755035bbda56ab41f04a75188ca440da678e3dd1f",
+      "object_sha256": "08968cc334e96a944bef62513b0a45e3b8f89990194fb7b5b1a94a466f6e1c88",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "MajorEnergy",
+      "source_sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "object_sha256": "41a61bfa0b7de6c471b4a7eac0fa35c368bbaea256bc75451b91d677ada4ac3a",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcMeasure",
+      "source_sha256": "93ce64d06cbf4b4432e52ab1f5ec09d2881175fda57063b56da85aa45f149cec",
+      "object_sha256": "4cca2b3dccddad88465ccaa1048c8acb33ebc591cb1f12b511e55da04c127293",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcUnion",
+      "source_sha256": "cb5d9f6ef7a21f0bb233e1283f7e61a8416b0ae64048e6f99dfa034d213a7485",
+      "object_sha256": "1178daa3a9fe2b1a3297f372e581b861a2e8faf0befea530195a3c44f58c754b",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcDisjoint",
+      "source_sha256": "2670a0ec66c6416deca6cc64376f137c41558ae0437e4101655c54634397ad70",
+      "object_sha256": "dcdfa0d3ba7a62659571280f547e69a56ce0e83ce1791dac40da43b4227b82d6",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "ArcTranslation",
+      "source_sha256": "0108e69c4567175fd43fc97d07dbce60c9c82b69b15d15833b9c16e2cda4d4cf",
+      "object_sha256": "da9cf044bd39485c440b763dfaab812d6bfac0fc5d2af2ce86ee7f1b37fea58e",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "PatchedModel",
+      "source_sha256": "e693ef2a21e440794bbca8a2ac8be0cb384827efb499f8ec7e5f459709521eab",
+      "object_sha256": "f9b8423b8854aa4590a19eef4d7310b05340cb0109893ed331e4c2bbca7bd0c8",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "AtomIntegral",
+      "source_sha256": "2c87d91d11865c49f7d402bbbab70b814a5c75a255b217ceece2cafe206421e7",
+      "object_sha256": "07d07871ed5e80adf09a6df0f5549c0040de8840a36033280d1ec3fe845febd4",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "MajorComparison",
+      "source_sha256": "548680aea674ba6478b057f68b5c9c3d6940cc4c90833f1fc3ba30b555fc4c89",
+      "object_sha256": "da63da64ec1bc86343c1b1ff905c753bde02c15d554c524fda9e39cc3eb86c5d",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "MajorIdentity",
+      "source_sha256": "4cf4a99485d055ffafb0ab690925643e018552b7ebe9efc9920092384100802c",
+      "object_sha256": "154600e6b4aa8ace1d1a27fafb73483389e7aa8965ce4fab6afab253cfa253d9",
+      "producer_or_validation_pin": "c61eb228eb3b201a7449c84da1845ff43831cc29",
+      "local_use": "retained"
+    },
+    {
+      "module": "GoldbachOrderAndLogDeriv",
+      "source_sha256": "b4553d61d8148dbb673241c5183145da33ec7a5e69b204a84cd15173c87aecbc",
+      "object_sha256": "6e096717453277215d216cf2d26858808c78b5f260a0319edc2aef616b5f2237",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.Landau",
+      "source_sha256": "4c0f11c37b5e2400ba08f034ebd7843649a60609e1ccea9c78ac904e8f64f607",
+      "object_sha256": "c84880c18105b5075b026d2e9e538d00c1a8b130ce365ca4f739a142df4e50ba",
+      "producer_or_validation_pin": "0b68b493791e5f7569021f0cd13454151af47584",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.RectResidue",
+      "source_sha256": "74459576a9dac309795a959a5950c76a5503cc4642fe052c678fd869f450fa8c",
+      "object_sha256": "01b27d9abfd0c6df64820d830b5250bf8fd349a18334890afa08044842330412",
+      "producer_or_validation_pin": "0b68b493791e5f7569021f0cd13454151af47584",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Prelim.GaussInduced",
+      "source_sha256": "b95d735d189e2315b6ff85f06bbd4c00346f5925e7c312ea990056df48b41e19",
+      "object_sha256": "e8ea72811f4b3bcb106b2272a2b411e3dccc040c7d8c44b3c20a3eb29d132fef",
+      "producer_or_validation_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.LGrowth",
+      "source_sha256": "7016208fcc2a58c4a2d643703725768ec35d205afcbad383981ec3536601abf8",
+      "object_sha256": "fcba3175ab7c4c61fdc3d698c5dd6f02731679562df9b29380884e3a5067710d",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.LGrowthLeft",
+      "source_sha256": "a33048b8208bfc1fb1f63ceefbef89645e2f23ad0e26fb92ba0ad1955860fe6a",
+      "object_sha256": "b516f3ec8836ee56005c20f542a801f74e978e805b1476cedfb7210190494d2f",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZeroCount",
+      "source_sha256": "ba12f7378a6b0a2e0d482e55e930fbf1cb7f95539bd113091b6d32eeacfba89a",
+      "object_sha256": "38e9c122b3dfb83aaebf29674fb4c857c2663a467b2b47f93dd91f82cfae13d3",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.LogDerivL",
+      "source_sha256": "98e74fe6faccc20972a0e3003c0ae86e511f4bd09ffadcb522fe7f2590838b1c",
+      "object_sha256": "e2b57000ea8a9588045bc88737099cd08a3276a2c457535918e90351ac3ff8f0",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ExplicitFormula",
+      "source_sha256": "ed59d2148ed6114c09b4199a012f0ad8cf1f9b0636f3a662080a366a9bbeca00",
+      "object_sha256": "00974a33c1ca76bdc556193f8bd7b9616ee9a221bef0fc0567bf2d57e89913e8",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "AdmissibleWave",
+      "source_sha256": "cd248847787b39f741d6f472abe0e13da2c5b0826d94a57b8a2eb8f67e5280ae",
+      "object_sha256": "8e962d5ef110efc2de6e38fb02d80259e94b522f136967ca988a377f1bc37464",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "CharacterFormula",
+      "source_sha256": "384e4ca6cf47eb72e8dc05cd71b9a7d256c53ad5166859b1f7a41d0367888d31",
+      "object_sha256": "7d1aacca87b83b120e4a6d50db796412adf1da527d5447268ad247f5601d8eb5",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.LGrowthPoly",
+      "source_sha256": "3e16f422b4fb22be0c270cd25848fd3bcd141c8fdd6bac1079839a91dd05ef51",
+      "object_sha256": "850f9006d74bc68cc461561659cec4d109be091910bce473b038330fb6ef9add",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZeroSums",
+      "source_sha256": "9891e165733d975393974b80add8bc8a6ddc777554cc7d9bef97223d030d47a7",
+      "object_sha256": "5785de195fc52a0e0d6f506d583f18431d3dfa2699e586d8a158d5ec7a8eeab6",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "ZeroWindow",
+      "source_sha256": "1854095cc06c07847600b50555924a3de8b676905931ea0dfed5074832e8227a",
+      "object_sha256": "3257598c1e105fff9d8c50422d45555057ecd84756cad33126f427411cfb2c5c",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Prelim.PlancherelReal",
+      "source_sha256": "ef01cc1dcb0de8879e891246b2bce312942777a709f8167e90dac2623358bf97",
+      "object_sha256": "d2a4b5c05fee7e901df5d38e2c147582defe5d5292ad96459ec626a11d859d5c",
+      "producer_or_validation_pin": "e0722a0e5d3ebac13fba180599f4dd4551e98921",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.MellinPlancherel",
+      "source_sha256": "d53112599fb92e12336cc1e4d29c413e2c2ac5237ec943b138facb7121577d3d",
+      "object_sha256": "fdcbfdd230a1493d9d631da93c98f2b01d3f37faf1950620f2c7983a8df199b2",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.LineZeros",
+      "source_sha256": "db2ff0a0dc24dc8700490ad4f592a6ed3caccb04584765cb0749c12a1ddea1e5",
+      "object_sha256": "707c21af60a9f9cf7f7af4f7adf309c009a2edf7d608478ffead69a8d3253a4c",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZeroSumBound",
+      "source_sha256": "747647c38f7c7daaf13a8e5c8a301ce301324bb5a8e9880e32986d7ccc0dd690",
+      "object_sha256": "cdec4fbc0867e6901b292b47bca8c93b5e754ce8973dcea3061ad2b45d6e874e",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "ZeroRay",
+      "source_sha256": "4ce4c9faf676b4a531848430a2b9db21b7aa02b8e7646e1a9d096ef8b68ea491",
+      "object_sha256": "7700fb8b150bb63dde168dc588e629cb45cdd50fb6ddab54b072fb2cda520343",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "CentralZeros",
+      "source_sha256": "fbb5d662343a0ba197c02e3488ddb665f9d4168438d187abfc9061673bde1aab",
+      "object_sha256": "42e4e94a7de875671ffaaf2924a93dc217bb3896b112a8918dcc773916a102c1",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "ZeroGrid",
+      "source_sha256": "6ee5013e8dbd4681365bcd8a05e18adc2655f45641f2d14ea0b23105789744e8",
+      "object_sha256": "5d4ff7d52de78b537939452f3053b24ca509e5992d350cbf0b82f83ed5d51fab",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "GammaBudget",
+      "source_sha256": "2b8a99d47cbd51d784b670f71471d4131695004daa09210105d1a259d70c0357",
+      "object_sha256": "39854cbae2d65ac91b2155558072c39bc47ca13ec8f1e489978573a5ecccf8fe",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TrivialZero",
+      "source_sha256": "6bc0eb55413ac3a8cca734a8da7f491c104d04be73fd80482a3aa2a2779b9d06",
+      "object_sha256": "9d3d4e44ac98c2146d640bd76a39a6769e055ccc36984b1a02bcfa168e6579f5",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "ResidueBudget",
+      "source_sha256": "8c11c3e67a8f6c73b41f09430e93a512050328eea60f639ce04894cd81fcd5c7",
+      "object_sha256": "fdf41279571cb062bb6fdd08a4b1c7088d864a65405141d4849c1c4ea098fd09",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "LeftWeight",
+      "source_sha256": "9f9ee568e58a50e60e23389b3afe9be4bd85f6b4c91e435cc04f4c0e370d615e",
+      "object_sha256": "7a9f44a9e1e1174a6374f46694108424d9c5a740e1c95ae893e7a843271dfddb",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.Datum",
+      "source_sha256": "fbd3030ae1a68d61b36d06113393052cd2f1cc5fb91d324fed6ea9cab0b04438",
+      "object_sha256": "a27cb51150e69a7808156f74824f36902d28771e307efca2dc08adc6970a92a2",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZetaGrowth",
+      "source_sha256": "157a61b7a27ad223466d0624d5b6f92b1966d48bbf8e0536241980e66f6faeb6",
+      "object_sha256": "7fe2a0716fd7f4b1fd0d02f9918756d2fe9c284a54fbbe1a0ca28975b779f277",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZetaDatum",
+      "source_sha256": "274e5f70f6d3495ebad17af3226068098d910c90c120b36097f73de2803dc8ab",
+      "object_sha256": "0e7ae500a6ee9a0a90d272b155cca1d7fa2f7e8bc7243c233dcf5586cf20cc67",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZetaExplicit",
+      "source_sha256": "ed12bfcd500935d384e6823ccd43f5b871840d478c80ec5092d59a8b2b8e0751",
+      "object_sha256": "18da76954f8b554d279d0a646d0f97e643ac7eb1973e65c26d7fa9b729fa52cf",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZeroSumGen",
+      "source_sha256": "5a7f013aad04157f70a6f9a92592efe12c394c3ba5d948a2525bb87dc8bcc0da",
+      "object_sha256": "87b2e1fd0e23afbb7456006d0d4c96c104dac03fd67b91f2d774e298ab5246c1",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZetaPoly",
+      "source_sha256": "a75caa54b39c268a48fa29b2f6a6628edfe9abd3555ee773bd5b86c3db6c1cfb",
+      "object_sha256": "7d0852954ec05f8b1e773b5f9fb9c7769865b4893edd5982a7eaeb63f9d6f521",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ExplicitBound",
+      "source_sha256": "47a8e2e402c5113856915e5564a27c96bcbe777418cc272bf8b18aaf81dad995",
+      "object_sha256": "25b4c2373d037d0ed785003bed48025349e295db4eb8ef6d6b468772c7aefa3b",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ZetaBound",
+      "source_sha256": "3637960dfbf5e35bc45d30f7331055959584c2a059fb8f8fc5b810e263ca1730",
+      "object_sha256": "fae2630ca646eac795cc330ac321daa6c8f2c79544e3b68a52ced78b008b05c9",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.Explicit.ExplicitBoundGen",
+      "source_sha256": "6268ced48f2226a5162fdd394db1050540e34c3e7ee4399928c9ce6a3ba38148",
+      "object_sha256": "1c91415f5a046c95e35733e4d834cc3fe8c2eab169eb01fc65a8faaed628c9b6",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "LeftIntegral",
+      "source_sha256": "4d0ac1b8f6791604d5c87108a5315d3c1c70da9b3844aed4e08447300bc31d4b",
+      "object_sha256": "7b1aedde4ed0adbac1cb5a96b1f4d324bdfb8a4378c6e03ba37c49631f67e575",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "TernaryGoldbach.MinorArcs.Bombieri",
+      "source_sha256": "c36a9a7d39acde2414ee8c54197ad16203efd21af9898a5eb12b896016237756",
+      "object_sha256": "4e2a306a7d206f19e1ac04ebfbc7630ea2cd0f3bf750973f00c754d7dd6e7202",
+      "producer_or_validation_pin": "5c7f472f6d9a36448442e1aeecfd24a649356cbb",
+      "local_use": "retained"
+    },
+    {
+      "module": "CharacterComparison",
+      "source_sha256": "4889da866af5267e3e0cb038dcc2f9117b73473a6f410b83fbba46cc6b6aafbe",
+      "object_sha256": "8f06ff8a3650da69b3ea214fb44f2ba152caba090927dcc4bd9839b64e8a4826",
+      "producer_or_validation_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "local_use": "retained"
+    },
+    {
+      "module": "TwistedWeights",
+      "source_sha256": "673ef25518bf03cd4e1f92b14e86e1e5cffda154b4d7934e82e7d52680ecd92b",
+      "object_sha256": "0b69114b67481e2a97213eb7c32fdf4ab5aaabad76594756c7551cbbcca250b7",
+      "producer_or_validation_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "local_use": "retained"
+    },
+    {
+      "module": "PrincipalFormula",
+      "source_sha256": "647f83523ece3368766bf66f562e2b7686af98895cec74895634ae8e35fd40f6",
+      "object_sha256": "72a88f279f78de771c9a586d6c6d2f09d0d17e61523eea5cab26f4dbf39daec6",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "ZetaCount",
+      "source_sha256": "712839ade996e61b4840128d587d937a5a7f413ebfa50e3377c9cff117c9771f",
+      "object_sha256": "23e68d77b69348588a705ac812e16f0c49241d1f3f9f7666c031b2f310e6afdf",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "CharacterError",
+      "source_sha256": "c576d671b67a212aabdcfe2a5e326736c395c6ae0926631cb2a1c3beb85f4da1",
+      "object_sha256": "7eac89c32d87f1fa385efcc8f7de55b6fd8e252555181dc8d6cfaa9b32eebbab",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "BadPrimes",
+      "source_sha256": "7a2f929690675a696671d21baf1cf9c34d09415be72c3bbe6811b97a19ae6572",
+      "object_sha256": "6e6f244249d4e4b433d412dfffd347f5be0bdd9d23fe2dde80595836d862c615",
+      "producer_or_validation_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "local_use": "retained"
+    },
+    {
+      "module": "FullWaveComparison",
+      "source_sha256": "813ed7eb6759092fc0abd072ae67a7dbd1b87b41289e5121418546d235efcd96",
+      "object_sha256": "3177097854716502b7fb15b78b3d5ca509c84bbe3fa323835bd8c4ad4cc25b84",
+      "producer_or_validation_pin": "f17b38415535507fe31ba15eba396ef7fbd863af",
+      "local_use": "retained"
+    },
+    {
+      "module": "RationalError",
+      "source_sha256": "3fb8391abc18a5a780e359dc654e363b8efa1d06e0444351625e0576ea91a1fd",
+      "object_sha256": "b7193873eb7fd0332d6695f645cf3a364a8f17e1bb077c216efab699edd01c95",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "RationalCoordinates",
+      "source_sha256": "5c65a95572f8d31c1c4d35d2e35bb92a411f481046cf44b7e65da206a9868db4",
+      "object_sha256": "cc06666b2f7a0395e879b9e818fbe3b2a83c2f126cc4eaf2b4383409fd65fe04",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "MajorNumerics",
+      "source_sha256": "be5cd8ae4c08e34b7019be0fc34c65aca5326e5e5a558ad3cbdaa79b9a4c40eb",
+      "object_sha256": "05011a6eca9b85c2f5b417e55093a5d5f4b9a3770db3ed3ee91cb39963b044fd",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "retained"
+    },
+    {
+      "module": "BoundedGeometry",
+      "source_sha256": "ba3709168506186d6c3766791b28ce209efcbb330e4396f26fc547cd9e26bc99",
+      "object_sha256": "c8f6cb47ffba346c4c231dbe64c51b81054fc46f780db152b674123eb864e672",
+      "producer_or_validation_pin": "ddd0f6b32b08f31d0e4a5dcfa7e6a1f9ecf25443",
+      "local_use": "compiled"
+    }
+  ]
+}
