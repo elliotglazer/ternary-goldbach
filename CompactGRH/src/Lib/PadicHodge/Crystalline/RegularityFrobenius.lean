@@ -50,7 +50,7 @@ lemma IsWeilPair.inv : IsWeilPair (toGp s) 0 → IsWeilPair (toGp s⁻¹) 0 := b
 include hi in
 open AlgebraTensorModule in
 lemma exists_retraction : ∃ Ψ : _ →ₗ[Bcris] _, LeftInverse Ψ fun x i ↦ (f i).baseChange Bcris x :=
-  ⟨liftBaseChange _ (curry (lTensor ℚ_[p] Bcris (pi f)).leftInverse 1) ∘ₗ piRightInv .., fun x ↦ by
+  ⟨liftBaseChange _ (curry (lTensor ℚ_[p] Bcris (pi f)).leftInverse 1) ∘ₗ (piRight ..).symm.toLinearMap, fun x ↦ by
   induction x <;> simp_all [← Pi.add_def, ← Pi.zero_def]
   erw [leftInverse_apply_of_inj (ker_eq_bot.2 (Flat.lTensor_preserves_injective_linearMap _
     (.of_ker _ (hi · ∘ congrFun)))) (1 ⊗ₜ _), ← tmul_eq_smul_one_tmul]⟩

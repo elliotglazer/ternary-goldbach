@@ -51,7 +51,7 @@ variable [WeilData E]
 /-- The idele whose component at each infinite place τ is (2π Im τȷ)^(-1/2) and whose finite
 part is α. -/
 @[simps! -isSimp val_fst val_snd] noncomputable def scaleIdele : (𝔸 E)ˣ := MulEquiv.prodUnits.symm
-    (MulEquiv.piUnits.symm fun w ↦ .mk0 ↑(√(2 * .pi * _))⁻¹ (mod_cast by positivity [im_pos w]), α)
+    (MulEquiv.piUnits.symm fun w ↦ .mk0 ↑(√(2 * .pi * (Φ w (j : E)).im))⁻¹ (mod_cast by positivity [im_pos w]), α)
 
 variable {E}
 

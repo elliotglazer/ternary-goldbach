@@ -33,7 +33,13 @@ structure Space.ModerateWeight where
   height_le : ∃ C, ∀ g, T.height (groupMap g) ≤ S.height g * C
 
 attribute [local simp] lift mul_pow rep_apply_apply le_of_lt
-attribute [local simp ←] integral_const_mul mul_assoc
+namespace ThetaLiftSimp
+
+attribute [scoped simp ←] MeasureTheory.integral_const_mul mul_assoc
+
+end ThetaLiftSimp
+
+open scoped ThetaLiftSimp
 
 omit [CompleteSpace X] in
 lemma lift_mul_right h k : lift K φ y (h * k) = lift K (K.ω (1, k) φ) y h := by simp

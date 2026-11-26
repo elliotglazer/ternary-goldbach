@@ -57,8 +57,9 @@ variable [Λ : IsSplitLevel P N] (π : Rep ℂ (GL (n ⊕ Unit) (LocProd P))) (�
 
 /-- For w in P, a ring isomorphism from the residue field of E_w, which has prime order N, to
 ℤ/N. -/
-def residueEquiv (w : P) :=
-  (ZMod.ringEquivOfPrime (ResField w.1) ‹Fact _›.1 (by simp [← card_ResField, ← Λ.q_eq w])).symm
+def residueEquiv (w : P) : ResField w.1 ≃+* ZMod N :=
+  (ZMod.ringEquivOfPrime (ResField w.1) ‹Fact N.Prime›.1 (by
+    simpa only [Nat.card_eq_fintype_card] using (card_ResField w.1).trans (Λ.q_eq w.1 w.2))).symm
 
 /-- The ring homomorphism from the integral elements of ∏_{w∈P} E_w to (Z/N)^P reducing each
 component to its residue field, identified with Z/N. -/
@@ -415,9 +416,12 @@ variable (f : Matrix n' n _ → ℂ) (a b : AutChar E)
 
 /-- The linear map sending a function on n'×n matrices over ∏_{w∈P} E_w to the operator it names
 (`Space.name`) on the finite part of Hom(I_n, I_{n'}). -/
-def name [h : IsSplitLevel P N] := (by apply LinearMap.mk₂ ℂ fun F v ↦
-  ⟨_, name_mem_finitePart P (F ∘ (vecToMat · |>.map (evalPlaces P))) v.2⟩ <;> simp [Pi.add_comp,
-  Pi.smul_comp] : _ →ₗ[ℂ] finitePart (hom (stdSpace E n) (stdSpace E n')) →ₗ[ℂ] finitePart _)
+def name [h : IsSplitLevel P N] :
+    (Matrix n' n (LocProd P) → ℂ) →ₗ[ℂ] finitePart (hom (stdSpace E n) (stdSpace E n')) →ₗ[ℂ]
+      finitePart (hom (stdSpace E n) (stdSpace E n')) := by
+  apply LinearMap.mk₂ ℂ fun F v ↦
+    ⟨_, name_mem_finitePart P (F ∘ (vecToMat · |>.map (evalPlaces P))) v.2⟩ <;>
+    simp [Pi.add_comp, Pi.smul_comp]
 
 omit [WeilData E] in
 lemma liftFn_eq_residueDatum : h.liftFn f ∘ (vecToMat · |>.map (evalPlaces _)) = residueDatum _

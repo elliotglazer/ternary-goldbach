@@ -61,7 +61,7 @@ instance measureSpaceU : MeasureSpace (U J) := ⟨haarU J⟩
 section
 
 variable {J J' y} (g : U J) [IsHermInvolution J'] (a b : GL n ℂ) (ε : ℝˣ) (φ : U J ≃ U J')
-  (hb : b.1ᴴ * ε • J * b = J' := by aesop) (hφ : ∀ g, (φ g).1 = a * g * b := by simp) {V}
+  {V}
   [NormedAddCommGroup V] [NormedSpace ℝ V]
   (e : V ≃ₗ[ℝ] Matrix n n ℝ)
 
@@ -112,8 +112,8 @@ lemma lintegral_eq_cayleyChart f : lintegral volume f = ∫⁻ y in {y | (cayley
   ← setLIntegral_withDensity_eq_setLIntegral_mul_non_measurable, ← lintegral_subtype_comap] <;>
   measurability
 
-include hb in
-lemma cayleyChart_jacobian {y p L} (hy : HasFDerivAt y L p) {Φ : V → U J'} (h : (cayleyDenom J
+lemma cayleyChart_jacobian (hb : b.1ᴴ * ε • J * b = J' := by aesop)
+    {V} [NormedAddCommGroup V] [NormedSpace ℝ V] (e : V ≃ₗ[ℝ] Matrix n n ℝ) {y p L} (hy : HasFDerivAt y L p) {Φ : V → U J'} (h : (cayleyDenom J
   (y p)).det ≠ 0) (E : ∀ᶠ q in nhds p, (Φ q).1.1 = a * cayleyChart J (y q) * b := by simp [*]) :
   DifferentiableAtU Φ p ∧ |(e.symm ∘ₗ skewCoords ∘ₗ logDerivU Φ p).det| =
   |(e.symm ∘ₗ L.1).det| * cayleyDensity J (y p) := by
@@ -162,9 +162,8 @@ lemma Haar.lintegral_chart_rotate_le [FiniteDimensional ℝ V] [MeasureSpace V] 
     (hΦ ..).2 ▸ cayleyChart_jacobian (circleScalar t : U J)⁻¹ 1 1 _ e (D ..) (k ..).1
     (.mono ((((hΦ ..).1.const_mul _).add_const _).continuousAt (h ..).2.unit.nhds) _)]; tauto
 
-include hb hφ
-
-lemma lintegral_comp_le_haarU f : lintegral volume f ≥ ∫⁻ g, f (φ g) := by
+lemma lintegral_comp_le_haarU (hb : b.1ᴴ * ε • J * b = J' := by aesop)
+    (hφ : ∀ g, (φ g).1 = a * g * b := by simp) f : lintegral volume f ≥ ∫⁻ g, f (φ g) := by
   have ⟨t, h, k⟩ := ((lintegral_chart_rotate_le (.refl ..) (.id _) (by measurability)
     (φ.injective.comp_injOn cayleyChart_injOn) (cayleyChart_jacobian a b ε hb _ <|
     hasFDerivAt_id ·)).and ((quasiMeasurePreserving_neg _).ae (lintegral_chart_rotate_le 1 (.id _)
@@ -174,7 +173,8 @@ lemma lintegral_comp_le_haarU f : lintegral volume f ≥ ∫⁻ g, f (φ g) := b
 
 /-- Let J, J' be hermitian involutions, a, b invertible, ε real nonzero, bᴴ(εJ)b = J'. A bijection
 φ: U(J) → U(J') given by g ↦ agb carries the measure `haarU` of U(J) to that of U(J'). -/
-lemma measurePreserving_haarU : MeasurePreserving φ := have c := .subtype_mk (by measurability)
+lemma measurePreserving_haarU (hb : b.1ᴴ * ε • J * b = J' := by aesop)
+    (hφ : ∀ g, (φ g).1 = a * g * b := by simp) : MeasurePreserving φ := have c := .subtype_mk (by measurability)
   ⟨c, ext_of_lintegral _ fun f h ↦
     lintegral_map h c ▸ (lintegral_comp_le_haarU a b ε φ hb hφ f).antisymm (by
                   simpa using lintegral_comp_le_haarU a⁻¹ b⁻¹ ε⁻¹ φ.symm

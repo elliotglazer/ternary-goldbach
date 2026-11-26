@@ -17,7 +17,13 @@ variable {E : Type _} [Field E] [CMType E] [WeilData E]
 /-- The sign function on two copies of p that is +1 on the first copy and −1 on the second. -/
 abbrev hypSigns p : p ⊕ p → ℤˣ := 1 ⊕ᵥ -1
 
-attribute [local simp ←] Complex.ofReal_mul Int.cast_mul ext_iff mul_assoc mul_inv
+namespace HyperbolicSpaceSimp
+
+attribute [scoped simp ←] Complex.ofReal_mul Int.cast_mul Matrix.ext_iff mul_assoc mul_inv
+
+end HyperbolicSpaceSimp
+
+open scoped HyperbolicSpaceSimp
 
 attribute [local simp] diagonal_apply Matrix.mul_apply mul_mem
 

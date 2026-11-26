@@ -110,23 +110,22 @@ instance (priority := low) [D.HasLogLower F l'] :
   D.logB) + 1) := hasLogUpper_of_abs_le (F := 99 * D.logB + exp _) (by grind [exp_le_exp])
 
 variable (D) [D.HasLogUpper A l] [D.HasLogLower G l'] [D.HasLogLower B l']
-  (e : l < l' := by clear_aux_decl; clear * - D; (repeat clear ‹_›); grind (splits := 99) [D.scale])
 
 lemma hasLogUpper_of_le : B ≤ A → D.HasLogUpper B l := by grind [cast_le]
 
 lemma hasLogLower_of_le : G ≤ F → D.HasLogLower F l' := by grind
 
-include D e
+include D
 
-protected lemma lt_of_hasLogBound : F < G := by grind [=_ exp_lt_exp]
+protected lemma lt_of_hasLogBound (e : l < l' := by clear_aux_decl; clear * - D; (repeat clear ‹_›); grind (splits := 99) [D.scale]) : F < G := by grind [=_ exp_lt_exp]
 
 /-- If |F| ≤ exp l, exp l' ≤ G and l < l', then F ≤ G. The exponents are found by instance search,
 and l < l' is by default proved from the scale conditions of the data. -/
-protected lemma le_of_hasLogBound : F ≤ G := (D.lt_of_hasLogBound e).le
+protected lemma le_of_hasLogBound (e : l < l' := by clear_aux_decl; clear * - D; (repeat clear ‹_›); grind (splits := 99) [D.scale]) : F ≤ G := (D.lt_of_hasLogBound e).le
 
-lemma nat_lt_of_hasLogBound : A < B := cast_lt.1 (D.lt_of_hasLogBound e)
+lemma nat_lt_of_hasLogBound (e : l < l' := by clear_aux_decl; clear * - D; (repeat clear ‹_›); grind (splits := 99) [D.scale]) : A < B := cast_lt.1 (D.lt_of_hasLogBound e)
 
-lemma nat_le_of_hasLogBound : A ≤ B := (D.nat_lt_of_hasLogBound e).le
+lemma nat_le_of_hasLogBound (e : l < l' := by clear_aux_decl; clear * - D; (repeat clear ‹_›); grind (splits := 99) [D.scale]) : A ≤ B := (D.nat_lt_of_hasLogBound e).le
 
 end
 

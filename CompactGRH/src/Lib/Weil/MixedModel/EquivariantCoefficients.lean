@@ -115,11 +115,13 @@ lemma mixedTerm_localDatum [Fintype p] (h : ReadsAt S π) {D : (W'.hom V').Split
 ι, l) and its dual frame, as mutually inverse integral matrices over F. -/
 noncomputable def adaptedFrame (h : ReadsAt S π) (A : W'.Splitting W r') [k : IsBaseAdapted A] :
   IntegralFrame F n' n r' := by
-  constructor
+  let φ : 𝔸 E →+* F := π.comp (RingHom.snd ..)
+  refine ⟨A.kAdelic.map φ, A.lAdelic.map φ, A.iAdelic.map φ,
+    A.kCoord.map φ, A.lCoord.map φ, A.iCoord.map φ, ?_⟩
   simp +arith [↓mul_eq_one_comm_of_card_eq _ n', A.card_eq, ← add_assoc]
   use ?_, ?_, by simpa [map_add, -RingHom.coe_comp] using
-    congr((π.comp (.snd ..)).mapMatrix $A.sum_frame_mul_coord_eq_one)
-  repeat cases k; simp_all [IsOrthoIntegral, IsIntMatrix, h.2, mul_mem, kCoord, iCoord, lCoord,
+    congr(φ.mapMatrix $A.sum_frame_mul_coord_eq_one)
+  repeat cases k; simp_all [φ, IsOrthoIntegral, IsIntMatrix, h.2, mul_mem, kCoord, iCoord, lCoord,
     star_mem_Ô, stdForm]
 
 end
@@ -146,7 +148,7 @@ lemma ReadsAt.sourceTerm_localDatum {E} [Field E] [CMType E] [WeilData E] {n a b
     O.toAddSubgroup _ _ _ isOpen_O ·), IsIntMatrix, h.2, prod_ite_zero, matToVec,
     y, ↓idem_mul_mem_Ô, ↓show ∀ x, π (Star.star x) ∈ O ↔ _ from h.star.2]; grind
   ext; simp [frameAt_homSource, stdForm, entrywise, vecToMat, sum_prod_type, diagonal,
-    apply_ite]; ac_rfl
+    apply_ite, A, adaptedFrame, y, matToVec, Matrix.map] <;> ac_rfl
   simp [e, stdDatum, blocks_spec, ↓mul_fromCols, forall_and, prod_ite_zero, fun z ↦
     (⟨(·.mul A.spec.1), (by simpa [-mul_fromCols, A.spec] using IsIntMatrix.mul · A.spec.2.1)⟩ :
     IsIntMatrix O z ↔ ∀ i : a, _)]

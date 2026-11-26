@@ -212,7 +212,8 @@ lemma mem_lagrangian_of_bicharacter_sq (h : ∀ l : D.lagrangian.addSubgroupOf D
 /-- A chosen non-zero theta function for B, the canonical multiplier of β₁ and the lattice over
 the self-annihilating subgroup L, of which every such theta function is a complex multiple. -/
 def exists_thetaSpace_lagrangian_le_span := Classical.indefiniteDescription _ (finrank_eq_one_iff'.1
-    (by simpa [inf_of_le_left x.dualLattice_le_latticeOver_top ▸
+    (show Module.finrank ℂ (x.B.thetaSpace (L := x.latticeOver D.lagrangian) x.multiplier) = 1 from by
+      simpa [inf_of_le_left x.dualLattice_le_latticeOver_top ▸
   x.dualLattice_inf_latticeOver_top D.mem_lagrangian] using
   x.isAppellHumbert_latticeOver_lagrangian.finrank_sq_eq_relIndex.2.1))
 

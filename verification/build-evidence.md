@@ -77,3 +77,147 @@ intervals, using the existing `Checked.join` theorem. The original single
 check hit a 2,560 MiB process limit. The split proof compiled under a
 1,024 MiB limit in 24.75 seconds on the same local Lean 4.35 installation.
 It proves the same statement and uses the same certificate inputs.
+
+Stock Lean 4.35 compiled the full Landau module in 16.85 seconds. In the
+factorization proof the rational function is written as its finite-support
+product. In the logarithm argument the ball's connectedness follows from
+convexity. Both changes are inside proofs, and all theorem statements retain
+their original types.
+
+In `ValuationPair`, Lean 4.35 now compiles the full source without warnings.
+A fresh import reports exactly `propext`, `Classical.choice`, and `Quot.sound`
+for `U.map`, `U.mem_range_map`, `U.continuous_map`, `U.det`, and
+`U.form_mul_inv_eq`. The same default tactic remains available on the
+two declarations that use it.
+
+Stock Lean 4.35 compiled the full HHFourier module in 30.84 seconds. The
+proofs of `memLp_Kc` and `memLp_etaO` now pass the null-measurability
+of the integration interval to `memLp_indicator_iff_restrict`.
+
+## November 25 compact GRH build repairs
+
+The AWS joint build exposed failures in the modular port. Local stock
+Lean 4.35 compiled the full repaired ZpowSum, ContinuousCocycles, and Frames
+modules. A fresh import of Frames reports the standard three axioms for
+`IsSignedFrame.mul`. The original DiscreteUnits and ArtinDefs call sites
+also elaborate against the new ContinuousCocycles object in focused checks.
+
+The SemisimpleReps and MackeyFormula proof changes passed focused checks
+of the residual goals. The CompactDualMeasure change moves the default
+hypotheses onto their declarations. All three full modules require replay.
+The joint proof and protected comparator remain pending.
+
+Stock Lean 4.35 also compiled the full repaired RingActions module without
+warnings and the original 243-line DiscreteUnits module against the repaired
+ContinuousCocycles module. The export audit for DiscreteUnits reports only
+the standard axioms. In MajorEnergy, AWS reported that `gcongr` had closed
+the goal at line 49 before the next tactic ran. The redundant tactic has
+been removed for the next source replay.
+
+The original run reached its cgroup's memory pressure threshold while all
+eight Power10Block modules were compiling. The package schedules those
+eight modules in four pairs using Lake library dependencies. Their Lean
+source, proof terms, and imports are unchanged. Other finite and analytic
+modules retain their ordinary scheduling. Hosted timing remains pending.
+
+Two further GRH modules use section-level tactic defaults of the same
+kind. A focused Lean 4.35 test reproduced the Magnitudes error at the
+original unqualified call to `nat_le_of_hasLogBound`. Attaching the
+existing default to each comparison lemma resolved it. BumpConvolution
+now attaches its original continuity default to the convolution declarations.
+Both modules are inputs to Main and require full-module replay.
+
+In the same diagnostic run, 32 simultaneous Lean jobs reached the raised
+152 GiB memory threshold. Several GoldbachBand05 shards used about 5 GiB
+RSS each. The package now also groups the later heavy finite modules in
+sets of at most four. All four earlier Power10 pairs retain their previous
+ordering. The schedule covers 384 finite modules and only changes the
+Lake build graph. It preserves every Lean source file and all 415 finite
+modules have a unique library owner.
+
+Stock Lean 4.35 compiled the complete MackeyFormula module with its original
+imports in 84.06 seconds. The Hall ring proof uses a scoped set of simp
+lemmas and applies the quotient similarity lemma directly. A fresh import
+reported exactly propext, Classical.choice, and Quot.sound for
+Hall.one_sub_constOne_pow_eq_zero, Hall.isUnit_constOne, and Hall.blockAverage_mul.
+
+On Lean 4.35 the full QuadField source reproduced the AWS error at line 99.
+The embedding constructor now receives the quadratic Gauss sum explicitly.
+The original equation proof checks and the complete module compiled in 49.10
+seconds in the native test. A fresh import reported only propext, Classical.choice,
+and Quot.sound for embOfSqrt, nonempty_algHom_of_isPrimitiveRoot, and
+different_eq_span_and_adjoin_c₀.
+
+In the source preflight, RightDerivatives failed at line 76 because its
+exposed definition used a private simp theorem for a nonzero determinant.
+A named public equality now supplies that rewrite. The complete production
+module compiled without diagnostics on stock Lean 4.35 in 131.30 seconds.
+
+Stock Lean 4.35 reproduced the two source-preflight errors in the complete
+AmaxStructure module. With the ring approximation and intermediate algebra
+specified, it compiled without diagnostics in 138.60 seconds. A fresh import
+reported only propext, Classical.choice, and Quot.sound for the action,
+the scalar-action instance, the approximation lemma, and two downstream lemmas.
+
+The source preflight exposed two further implicit arguments in CongruenceLevel
+and ModuliPoint. A focused Lean 4.35 test of the congruence-level definition
+on finite adèles reproduced its error and passed with the generator and
+ambient subring specified. A separate test using the actual Frames import
+reproduced the ModuliPoint error and checked its action with the frame named.
+The tested declarations reported only the standard three axioms. The
+complete modules are part of the next source preflight.
+
+The CocompactIntegrable source preflight left two subgroup arguments
+undetermined during conversion of the block integral formula. The proof for
+a singleton orbit now supplies the fixed data and the summability or
+integrability hypothesis. The complete module compiled on stock Lean 4.35
+with its original imports and an empty compiler log in 74.08 seconds.
+
+In ExtendCharacter the composition of the two range maps is scalar
+multiplication. The exact-sequence proof now rewrites this identity before
+converting the index formula. On stock Lean 4.35 the complete repaired
+theorem checked against pinned Mathlib in 37.87 seconds with reduced imports.
+The full original import context is included in the next source preflight.
+
+The complete ModuliPoint source also passed a native replay in 44.07 seconds.
+The original full module reproduced the signed-frame error at line 105.
+Fresh imports of four CocompactIntegrable declarations, including
+integral_tsum_orbit, reported only propext, Classical.choice, and Quot.sound.
+
+The expanded GRH preflight found an undetermined morphism in pdReduction.
+The map on PD quotients now uses the input algebra morphism's underlying
+ring homomorphism. A focused native Lean 4.35 test checked the entire
+functor definition and its laws in 40.43 seconds. The declaration reported
+only propext, Classical.choice, and Quot.sound.
+
+CyclicSubrep reproduced both previous errors as a full file and passed on stock Lean 4.35 after repair. UpsilonValues reproduced the stuck metavariable in the original definition RHS and passed the same focused test with the place specified. Full source replay is pending.
+
+Native Lean 4.35 reproduced the original geometry evaluation mismatch and JetChainRule closedness failure, then accepted both corresponding repaired expressions. Full module checks are pending. A separate native full-module run of CrystallineTests now passed in 42.21 s with the same three standard axioms for pdReduction and both audited declarations.
+
+A native matched constructor test reproduced the unresolved uniform bound in Form and passed the explicit witness with propext, Classical.choice and Quot.sound. It uses the real Mathlib linear-combination constructor and abstracts unrelated form fields. The full parent module awaits replay.
+
+Native 4.35 checked the complete besselLatticeBasis and gram_besselLatticeBasis declarations and the full exists_few_translates proof in focused modules with the standard three axioms. The original basis proof reproduces the private simp constant error. Full module replay remains pending.
+
+The full corrected complex Place instance and the skew-unit consequence passed a native focused check with their real producers. The bilinear form body reproduced the original unknown codomain and passed with the matrix and target specified, including its standard-three-axiom audit. Neither test rebuilt the entire owning module.
+
+Matched native tests of exists_retraction with actual Bcris and the original flatness instance and of locConstClass with the genuine étale comparison maps each reproduced the previous error and passed the repaired declaration with the three standard axioms. Full owning modules await warm replay.
+
+Native controls reproduced the missing lower-right block. The complete inclX and its unchanged ratCoordMatrix_inclX consequence passed in a focused module with propext, Classical.choice and Quot.sound after the map identity was spelled out. Full source replay is pending.
+
+Stock Lean 4.35 checked the original pairHom and the complete repaired norm_pairHom_le against the genuine U.kron, U.norm_inv and pairSign producers (32.24 s). The isolated general matrix inequality also passed its three-axiom audit. Full OscillatorPair replay is pending.
+
+The complete native module passed on stock Lean 4.35 in 42.48 s with all 37 real source-matched project parents. The previous focused candidate failed during whole-file replay at line 62.
+
+Stock Lean 4.35 built the entire NormalGeneration module in 162.16 seconds after reproducing the original failure. A fresh import reported propext, Classical.choice and Quot.sound for both HasGoodReduction.thetaNorm_lt_iff_coords and HasGoodReduction.finrank_reduction_eq.
+
+With all 17 project prerequisites available, stock Lean 4.35 built the complete EtaleCharts file in 53.25 seconds. Typing the chart map removed all five compiler errors reported on the previous warm build.
+
+The complete Lib.Adelic.Reduction.Defs built under stock Lean 4.35 in 79.84 seconds using 54 project prerequisites. A subsequent import reported exactly propext, Classical.choice and Quot.sound for Space.Form, Space.peterssonCore and Space.formRep.
+
+Stock Lean 4.35 accepted the complete ReductionModP module in 48.02 seconds. The native check examined 137 exported axiom entries and found only the three permitted axioms.
+
+The native Lean 4.35 build of the entire LocusEquations module passed in 35.04 seconds against the repaired EtaleCharts dependency. The preceding version first failed at the transport of units in projSpace.
+
+Stock Lean 4.35 built the entire HodgeSite module in 70.04 seconds against the repaired EtaleCharts module. The square-zero extension carrier and exterior-algebra induction now use their explicit arguments.
+
+Stock Lean 4.35 rejected the old piecewise-integrability application at MajorIdentity.lean line 34. The full file compiled in 28.31 seconds after the measurable set was passed as a null-measurable set for the restricted measure. Both patched_model_identity and major_of_local_errors reported only propext, Classical.choice and Quot.sound.

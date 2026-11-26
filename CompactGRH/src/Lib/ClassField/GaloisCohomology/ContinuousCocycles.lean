@@ -16,7 +16,7 @@ open Submodule DistribMulAction
 variable {R G M H N} [CommRing R] [Group G] [TopologicalSpace G] [AddCommGroup M] [Module R M]
   [TopologicalSpace M] [DiscreteTopology M] (ρ : Representation R G M) [Group H] [TopologicalSpace
   H] [AddCommGroup N] [Module R N] [TopologicalSpace N] [DiscreteTopology N] {ρ' : Representation R
-  H N} (φ : H →ₜ* G) (u : M →ₗ[R] N) (h : ∀ g m, u (ρ (φ g) m) = ρ' g (u m) := by bound)
+  H N} (φ : H →ₜ* G) (u : M →ₗ[R] N)
 
 instance (priority := 100) : ContinuousConstSMul R M := ⟨by fun_prop⟩
 
@@ -48,12 +48,12 @@ variable {ρ}
 
 /-- For a continuous homomorphism φ: H → G and linear u: M → N with uρ(φg) = ρ'(g)u, the
 additive map f ↦ u∘f∘φ from continuous 1-cocycles of ρ to those of ρ'. -/
-abbrev pairMapZ1 : Z1 ρ →+ Z1 ρ' := ⟨⟨fun f ↦ ⟨(u <| f.1 <| φ.1 ·), f.2.imp (by continuity)
+abbrev pairMapZ1 (h : ∀ g m, u (ρ (φ g) m) = ρ' g (u m) := by bound) : Z1 ρ →+ Z1 ρ' := ⟨⟨fun f ↦ ⟨(u <| f.1 <| φ.1 ·), f.2.imp (by continuity)
   (by aesop)⟩, by bound⟩, by bound⟩
 
 /-- The linear map H²(G,M) → H²(H,N) induced by a compatible pair: continuous φ: H → G and
 continuous φ-equivariant linear u: M → N. -/
-def pairMapH2 : H2 ρ →ₗ[R] H2 ρ' := mapQ _ _ ⟨⟨fun f ↦ ⟨(u <| f.1 <| ·.map φ φ), f.2.imp (by
+def pairMapH2 (h : ∀ g m, u (ρ (φ g) m) = ρ' g (u m) := by bound) : H2 ρ →ₗ[R] H2 ρ' := mapQ _ _ ⟨⟨fun f ↦ ⟨(u <| f.1 <| ·.map φ φ), f.2.imp (by
   fun_prop) (by aesop)⟩, by bound⟩, by bound⟩ fun f ⟨c, _, _⟩ ↦ ⟨u ∘ c ∘ φ, by fun_prop, by aesop⟩
 
 variable (R) in

@@ -128,7 +128,7 @@ instance Data.instLbHPowRealNatOfNatϱHMulLb : D.HasLogLower (ofNat(2) ^ D.ϱ) (
 
 /-- The filling data `Filling` attached to the admissible data D: its level N with π̄, primes
 g₀, g₁ with chosen places, ϖ, and Bessel systems chosen from `Data.exists_besselSystem`. -/
-noncomputable def Data.filling := by refine' (Filling.mk (fintypeChosen := _) _ _ D.piIdele _ _ _ _
+noncomputable def Data.filling : Filling D.E D.shape := by refine' (Filling.mk (fintypeChosen := _) _ _ D.piIdele _ _ _ _
   D.classAut_columnLevel_eq_bot (D.exists_besselSystem · |>.choose) (mod_cast D.piIdele_spec.1.symm)
   D.N_prime (by grind [D.piIdele_spec.2, D.isSplitLevel_piPlaces.q_eq]) (coe_mem_Ô _) (⟨D.g_prime ·,
   D.nat_lt_of_hasLogBound.ne⟩) (D.g_mem · |>.1) (D.g_mem · |>.2)

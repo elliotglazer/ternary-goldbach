@@ -107,12 +107,14 @@
     {
       "path": "Lib/Adelic/CuspForms/CuspStep.lean",
       "upstream_sha256": "450170120ec13b1762b507a5afca78918ab75169b925af52caeac11cff52df65",
-      "converted_sha256": "dcea04a8fc612be4ee7088432eb9a4e42b229649ba4f413fb704ac49852ca38e"
+      "converted_sha256": "1d3ae9436fd895e78665b139624675e3d5cf86a1db938e82adf3dcfd9e86dd1a",
+      "adaptation": "Rewrite with the public root-discriminant equation."
     },
     {
       "path": "Lib/Adelic/CuspForms/Definite.lean",
       "upstream_sha256": "6bc719b4834fd07c60fa49ca934b0bee0e6160ccb3fa45e8c8f3dd512278bafc",
-      "converted_sha256": "0b6141844442ca123b6cce73ea4640b33dd5549c451bc547a19169f42aa01086"
+      "converted_sha256": "502236e6bbc4ab5b4db7a74e769666cc9cc9927a0b8b8641d796a629a9798a0a",
+      "adaptation": "Prove rapid decay under linear combinations with an explicit norm bound."
     },
     {
       "path": "Lib/Adelic/CuspForms/DeltaForms.lean",
@@ -147,12 +149,12 @@
     {
       "path": "Lib/Adelic/CuspForms/ReproducingKernel.lean",
       "upstream_sha256": "a80c8ca490371bc5a3f054606c7fdfb8279a1308b1d33380aa4401f8300c8ff3",
-      "converted_sha256": "e52ad228f0207130090ca16026b862dca41ab33ac23b1113278b5742d460c09b"
+      "converted_sha256": "4ceaa7e2174a21ce7613ed61288badb81427740636cf12d873b2eddc7dc7c968"
     },
     {
       "path": "Lib/Adelic/CuspForms/SmoothFormPairing.lean",
       "upstream_sha256": "773de04463b4c8c44474d42c0dbb0903c1b2b318c876632e36bd702f064d26cc",
-      "converted_sha256": "6e3360cd8cbb4893be5a3bb72e27f8e94122ff92deee95747a3ff30b3bf2bb0d"
+      "converted_sha256": "17697b5d141e9464407ddaf12e715b560ac8c73e472699a08e57b13d987234cc"
     },
     {
       "path": "Lib/Adelic/CuspForms/WeightParameter.lean",
@@ -202,7 +204,8 @@
     {
       "path": "Lib/Adelic/QuotientMeasure/CocompactIntegrable.lean",
       "upstream_sha256": "6330f6fabb6ef701c425d9a451ab9ef591988149a596d5241e557d315e457ac0",
-      "converted_sha256": "f3c08037d8996ee8795d465470ac59547fe6053445b023ae018fa84e11b09e9d"
+      "converted_sha256": "b99c3327491300ed34f91c14090d6c4d56acd5e80301f2258851c5d3d5326f0e",
+      "adaptation": "Supply the fixed orbit, subgroups, measure and restricted sum bound to the block integration formula."
     },
     {
       "path": "Lib/Adelic/QuotientMeasure/IwasawaIntegration.lean",
@@ -227,7 +230,8 @@
     {
       "path": "Lib/Adelic/Reduction/Defs.lean",
       "upstream_sha256": "7883213bd1f8aabc5d17122be245902c1891cde3c52bfcafb186bd200cfc1670",
-      "converted_sha256": "85fc4a42c9351251b7195712de8433a2a2e669dc2cf85063924cfa96ec93d175"
+      "converted_sha256": "0d58964cc62030e2185b409c4108de42f30f60f39e289eeb9ddb3130558f0948",
+      "adaptation": "Apply the norm triangle inequality and the two pointwise bounds in the space of automorphic forms."
     },
     {
       "path": "Lib/Adelic/Reduction/FirstMinimum.lean",
@@ -252,7 +256,8 @@
     {
       "path": "Lib/Adelic/Unitary/CongruenceLevel.lean",
       "upstream_sha256": "a7f33e3355ec55ae89a3ab93818c10206c4c5aa97397763bb4127e5f720d9dea",
-      "converted_sha256": "0a334b6a5c36bf6ee66e2473cb18112fd6d1c9814438fb4af137189430c476da"
+      "converted_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+      "adaptation": "Name the adelic generator and the integral subring in the principal congruence subgroup."
     },
     {
       "path": "Lib/Adelic/Unitary/SpaceBasic.lean",
@@ -372,7 +377,8 @@
     {
       "path": "Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean",
       "upstream_sha256": "bbcdf16020e70d05e78283d68ac2306e23ab9d11bd1b123f5ca3e4984fbbc829",
-      "converted_sha256": "d69196620009a2548c490287aa9e7435afe16881815b2d0fb1cd13759d7c8011"
+      "converted_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+      "adaptation": "Lean 4.35: Attach the existing default hypothesis to each of the two public pair maps."
     },
     {
       "path": "Lib/ClassField/GaloisCohomology/CupProduct.lean",
@@ -437,7 +443,8 @@
     {
       "path": "Lib/ClassField/GreenbergWiles/ExtendCharacter.lean",
       "upstream_sha256": "1207b3a864daaa4062bb0fb3187f8ec53235d2b225eb4a0caabe4b702d8b3f92",
-      "converted_sha256": "ce6e194b7d35833e54adaf3a3afb86da90c439cd3eda5271a01d3bc101d100bc"
+      "converted_sha256": "4c4e5c0519982eea613b9bed04c89ad524a9266d493936a7a15dda34ae695e1f",
+      "adaptation": "Identify the composed linear map with scalar multiplication before simplifying the index formula."
     },
     {
       "path": "Lib/ClassField/GreenbergWiles/GreenbergWilesBound.lean",
@@ -642,12 +649,13 @@
     {
       "path": "Lib/Cohomology/Duality/Contraction.lean",
       "upstream_sha256": "f544175ef3677f3b46bd64a2994cc57a7f957b09735364ad11cdcb010afecec9",
-      "converted_sha256": "7a4500fff2a70b45edd19d88a4c2632a90f66e02e79eb1b53d8520fd84bb9590"
+      "converted_sha256": "f52fa9415df9a9400dc906c9b5ceb7ce1777ba56c2488e4cd4d7e2c14361f2fc"
     },
     {
       "path": "Lib/Cohomology/Etale/AcyclicTests.lean",
       "upstream_sha256": "815aa8c3996dc2790ec85a339b743be9e91a7f78099f0e1d1c1e2c092336b8a5",
-      "converted_sha256": "4f5970ae1220420a92a610b6fecd02f64f2bca249beb9b933cf74ed313169966"
+      "converted_sha256": "0f3841a91729a1615c147923157dca5a0255d0215cab96f3c305f6d562486132",
+      "adaptation": "Specify the locally constant coefficient functor and ULift map in degree zero."
     },
     {
       "path": "Lib/Cohomology/Etale/BijectiveComparisons.lean",
@@ -662,7 +670,7 @@
     {
       "path": "Lib/Cohomology/Etale/ConnectedComponents.lean",
       "upstream_sha256": "efb5fc23044ff7b5e47b6479c4bb0a0680bed03d8fec0503abf652cd9f76dbeb",
-      "converted_sha256": "495acc8b96fe368541a9d9b8cbc602d422f54e2cbb15e779441d8676d09864a6"
+      "converted_sha256": "ab9dcc42f3bd8b87daf5adac6fbccaa0567db950bfd7b71d314d6f548c189d6a"
     },
     {
       "path": "Lib/Cohomology/Etale/ContinuityAtlas.lean",
@@ -757,7 +765,8 @@
     {
       "path": "Lib/Cohomology/Hodge/HodgeSite.lean",
       "upstream_sha256": "0dbac2d09decf66435495bfa330e7cd3148002b73ebd54ac7748315850aec8d4",
-      "converted_sha256": "73c36eba04ec7946a5c256d632ce777f1519a7e3e97cf669eb34f5c1c088f7a3"
+      "converted_sha256": "2802ab2a54c7fecf14fef745a2ad82f1a1b58ffb1817e6f6ba40bcb0f7f4103c",
+      "adaptation": "Specify the square-zero carrier and the element in the exterior algebra induction."
     },
     {
       "path": "Lib/Cohomology/Hodge/Kunneth.lean",
@@ -782,7 +791,7 @@
     {
       "path": "Lib/Cohomology/PointClass/GaloisRep.lean",
       "upstream_sha256": "3bd54b6d4a6c40fb49cda365ab15d426928ad904519c28d4d82eea2fcde29d1f",
-      "converted_sha256": "080a76f0bfd1def45e771a50fc2aae99ea5bb2642bd3af183b4047eba6586b5c"
+      "converted_sha256": "9fa30692d361fe5213fed00a2785d94faab4df8b0c8804b76ba76563cf570ac8"
     },
     {
       "path": "Lib/Cohomology/PointClass/HomogeneousCoords.lean",
@@ -797,7 +806,8 @@
     {
       "path": "Lib/Cohomology/PointClass/LocusEquations.lean",
       "upstream_sha256": "e8de4ddd0791853d380c1b17def99ac1d312e62962ceaa7010d177a6926bda5f",
-      "converted_sha256": "56e88eeb7d81c9eefdb09d99c42465e49ee6149c72bc5345c267511aa81c27d7"
+      "converted_sha256": "97ba8ab403411be4878e831041d3804e158f2767da060e8b473d9d9b50e37596",
+      "adaptation": "Use the test-algebra map as the monoid hom in unit transport."
     },
     {
       "path": "Lib/Cohomology/PointClass/PointClassProduct.lean",
@@ -817,7 +827,7 @@
     {
       "path": "Lib/Cohomology/ProjectiveLine/NormalizationPullback.lean",
       "upstream_sha256": "9db85ceff33a930f4cd821da7d76b7c7451942fe3e4caa43724d2e37fd910ff0",
-      "converted_sha256": "b161e1a0b292308e12c04c27833497363836a9a38187b1dd0606cc9faa43484d"
+      "converted_sha256": "6477cfa7c281a074734c4db62ffe785bcce57369ac0b116f2663ac818e8efea1"
     },
     {
       "path": "Lib/Cohomology/ProjectiveLine/PerfectLine.lean",
@@ -837,7 +847,7 @@
     {
       "path": "Lib/Cohomology/ProperBaseChange/PointwiseTests.lean",
       "upstream_sha256": "12f21ab083499147f2d757ebc51e9a349f5e6af962d5382637798d5431e9a24f",
-      "converted_sha256": "b835c538806d2123cb2773fe555f71fde8481d8714616c4e4fe570f102b22490"
+      "converted_sha256": "60f1b62016b852bbc5bb4d73688740182e1cffb48c1f8ba09e0539ef496a0827"
     },
     {
       "path": "Lib/Cohomology/ProperBaseChange/ProperBaseChange.lean",
@@ -917,7 +927,8 @@
     {
       "path": "Lib/DiscreteSeries/Bruhat/ComplexPlace.lean",
       "upstream_sha256": "223503c42d17861bdc20b79f2c54d413ef58fd769815669e83cd38e42eb8b54b",
-      "converted_sha256": "0bdf306c5568603c99fe7b25f4332ab9429df601a6177d031fbbb97fa7658f89"
+      "converted_sha256": "5cf2d88ed2b1cdb570dbd3ab3df75c3a95e1d59470fb48d653e58d230604edf8",
+      "adaptation": "Provide the complex place constructor laws before later fields consume them and use a public order equality."
     },
     {
       "path": "Lib/DiscreteSeries/Bruhat/EichlerMaps.lean",
@@ -962,7 +973,8 @@
     {
       "path": "Lib/DiscreteSeries/CuspKernel/BumpConvolution.lean",
       "upstream_sha256": "b7d6bcb704df753f7da16769f1d4e6d1069f9d64c084776ff074633b080a7b42",
-      "converted_sha256": "c6a5eea752c135a5186af8e33bf52120e03060d1a89fca1bf6f21aded5ede7e5"
+      "converted_sha256": "b37fab9aaec16fb80f9a490353cfff0cb308dfc5433f830308a435f16eab61a7",
+      "adaptation": "Lean 4.35: Move the existing continuity default onto the convolution declarations that use it."
     },
     {
       "path": "Lib/DiscreteSeries/CuspKernel/CircleMean.lean",
@@ -1012,7 +1024,8 @@
     {
       "path": "Lib/DiscreteSeries/FlenstedJensen/RightDerivatives.lean",
       "upstream_sha256": "6c268d32d0306e8b658fbe33365c7b44d7f9a62c20a8a58fe78b53643c150193",
-      "converted_sha256": "cca1129562daa47d2b3d7e6c32e99f7f3b20d72b49ce257e59146039598d4e45"
+      "converted_sha256": "8025de9554793c89cc6dfe75f2693436c81c1aed532ac78058cda11a1612b2af",
+      "adaptation": "Register the public determinant equality in the local simp set to keep the exposed right derivative free of a private generated theorem."
     },
     {
       "path": "Lib/DiscreteSeries/FlenstedJensen/TailBounds.lean",
@@ -1022,7 +1035,8 @@
     {
       "path": "Lib/DiscreteSeries/Haar/CompactDualMeasure.lean",
       "upstream_sha256": "f0149a7f00e6278244e6bd8ca6f91ca2e3f8fe6e986397cf5055da14411823ef",
-      "converted_sha256": "ae0a5e6d71074cf7f647d314acd42f7b81a2e44fa9ccc282f414677d04cd03cd"
+      "converted_sha256": "8ff779189b82158e783fa09ba5cfb266f2642007619d2df5752d688fce683c79",
+      "adaptation": "Lean 4.35: Attach the same default arguments directly to the measure declarations."
     },
     {
       "path": "Lib/DiscreteSeries/Haar/HaarColumnChart.lean",
@@ -1372,7 +1386,8 @@
     {
       "path": "Lib/GaloisRep/Pseudocharacter/SemisimpleReps.lean",
       "upstream_sha256": "2e44bbcf60329c3feddad86c401023173a6b42ec360d04fafc5c6b8ad305e5bf",
-      "converted_sha256": "7a11fc6bada380cfb36849ccd91295aac925ebf290cff053d6147904c06160b4"
+      "converted_sha256": "8325803afaa566ec79ae553f5deb554a17c1f6670b9a2f168fee9f863e7919aa",
+      "adaptation": "Lean 4.35: Recover equality of the matrix indices from the heterogeneous equality."
     },
     {
       "path": "Lib/GaloisRep/WeightCongruence/WeightCongruence.lean",
@@ -1427,7 +1442,8 @@
     {
       "path": "Lib/General/Algebra/JetChainRule.lean",
       "upstream_sha256": "e96bf447368fa10681de7a2c940d9c264034318e0d197bd1dcf01256fb27adb8",
-      "converted_sha256": "71c5dfcec554b877daf5b7c379825efe057d759803d29ed6f63173a3983dda9d"
+      "converted_sha256": "c0d2d8e4ededfbc9c615df69c4ac886d5bf0f7e41d45ba20be1b4ae0706ce909",
+      "adaptation": "Identify the formal derivative through its public coefficients to prove continuity."
     },
     {
       "path": "Lib/General/Algebra/JetRename.lean",
@@ -1447,7 +1463,8 @@
     {
       "path": "Lib/General/Algebra/RingActions.lean",
       "upstream_sha256": "8777e71d155b9a9c0fe08584818e3aac2cfb313c6a6edd7cf95a84780306f181",
-      "converted_sha256": "53852a41bc340d325512d2f00e941b56e154f1d2444ec838d5080b181316a4ef"
+      "converted_sha256": "37f675aadfab199b67008cc0b38ef8e9258df49e8740a23442c9dc3d5068de1a",
+      "adaptation": "Lean 4.35: use the ring homomorphism of the evaluation map and the public evaluation identity for the lift."
     },
     {
       "path": "Lib/General/Algebra/SuccessiveApprox.lean",
@@ -1493,7 +1510,8 @@
     {
       "path": "Lib/General/Analysis/ZpowSum.lean",
       "upstream_sha256": "274eb047f6235bee9ea6a93f6ad954e386f6567bb89426db16ada49a4b45f9c0",
-      "converted_sha256": "5c79ca228e06a5f5e0b6339a1f0139a13319d2371b310a9f8e091356162b5dad"
+      "converted_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "adaptation": "Lean 4.35: Use the public rootDiscr_def identity in both proofs."
     },
     {
       "path": "Lib/General/Combinatorics/Average.lean",
@@ -1513,7 +1531,8 @@
     {
       "path": "Lib/General/Geometry/EtaleCharts.lean",
       "upstream_sha256": "284cca0f475853df819272750837caee7009bd688c965bf2370e197d3ba5b5e1",
-      "converted_sha256": "49db21acae27ab8dafb1390ed02e34f2961ff97a1b396f4ae9b3aa5b33a6c0cc"
+      "converted_sha256": "5a297cb54ae9c105dba9527a2c76037d850a5da50b37e7649db64dd4d5082278",
+      "adaptation": "Give the chart map its commutative-algebra hom type."
     },
     {
       "path": "Lib/General/Geometry/Lefschetz.lean",
@@ -1568,7 +1587,8 @@
     {
       "path": "Lib/General/Geometry/SmoothnessCriterion.lean",
       "upstream_sha256": "e777d4f0e7cacdf1944fb44a976e3a3807c3b5741b2f88215bf4a274e86dc364",
-      "converted_sha256": "69e788fb92c60b35bc3af50adef8d33dc17834b512a60a4f32a35255958fd525"
+      "converted_sha256": "508dce3bd2ca33148d6fa8f500f3cf8baefcaa541d6bb5bad6b4e3bf66aa5945",
+      "adaptation": "Use polynomial-map injectivity and polynomial function extensionality at the field point, then normalize the evaluation of zero."
     },
     {
       "path": "Lib/General/Geometry/TensorPowers.lean",
@@ -1598,7 +1618,8 @@
     {
       "path": "Lib/General/Groups/CyclicSubrep.lean",
       "upstream_sha256": "b6dc3dc6cf943451dd5220aff720257fa2a5c0649f1117ceba007ac8c8e70718",
-      "converted_sha256": "511242d49a75d265707f242d6e6bcd79907fa30cb292cfbce7e0d295da7ff872"
+      "converted_sha256": "0a97755f0a9b721edb70940004336103fa18dda40604263439500d8e7be018da",
+      "adaptation": "Name the neighborhood transported by conjugation and close the subtype equality explicitly."
     },
     {
       "path": "Lib/General/Groups/IndexOfProduct.lean",
@@ -1623,7 +1644,8 @@
     {
       "path": "Lib/General/Groups/ValuationPair.lean",
       "upstream_sha256": "22c95428b903e84f75ac1edae98f5622576047bb052f5061e83d6b181db8dbe2",
-      "converted_sha256": "9159d8ec661d2103dadaf645ecdb4a419dd14c9a0000a82a0c1e5832a57a84c8"
+      "converted_sha256": "ac90033007e8cf9ede6b333f1693cb71785eb89f8e121140876d1f4fc91a3179",
+      "adaptation": "Lean 4.35: place the same default hypothesis directly on its two declarations and specify the determinant witness."
     },
     {
       "path": "Lib/General/Groups/VirtualCharacters.lean",
@@ -1758,7 +1780,8 @@
     {
       "path": "Lib/General/NumberTheory/QuadField.lean",
       "upstream_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
-      "converted_sha256": "73c9bd88ca2832fb932a9ec9a7720c42a931e70fdb2a221070faba1134effea9"
+      "converted_sha256": "d72a3b58bc874c8af68a72f073f0930bbdcdcb7170c4a31ad0e733cf652d886d",
+      "adaptation": "Supply the quadratic Gauss sum as the square root in the embedding constructor."
     },
     {
       "path": "Lib/General/NumberTheory/QuadFieldSplitting.lean",
@@ -1773,7 +1796,8 @@
     {
       "path": "Lib/General/NumberTheory/UpsilonValues.lean",
       "upstream_sha256": "bf7e1f8e131ce7c7d7ddfc11beb6b60db6eb1352e63efe81aaab5ef3726d8d95",
-      "converted_sha256": "c34af7c1192ae06a84e491d2cf7f3e2db212777b6516bb4f9367a99206a50ce3"
+      "converted_sha256": "f29e012dc10b466900e6799df5feaa2133c85fab656edf15fc064751748c9f68",
+      "adaptation": "Specify the imaginary part in the nonzero unit construction before positivity runs."
     },
     {
       "path": "Lib/General/NumberTheory/Valuation.lean",
@@ -1838,7 +1862,8 @@
     {
       "path": "Lib/LocalGL/Green/MackeyFormula.lean",
       "upstream_sha256": "f87352e5fcf4800a4287d333bb7bcc7d1b4438c92a05bb73766a484f30d84b2c",
-      "converted_sha256": "f5ebc41a5f2da437fc03458b79ebbad4d1997d45221b89777dfc85796292267a"
+      "converted_sha256": "e9b0c8bd4e7ab8184214b934cbe7980618ad5729680ad893e3602d5dd23c2861",
+      "adaptation": "Lean 4.35: specify the quotient map, register the original simplifications in a named scope, and apply the existing quotient similarity lemma in the Hall ring proof."
     },
     {
       "path": "Lib/LocalGL/Iwahori/ExponentOfLabel.lean",
@@ -1918,12 +1943,13 @@
     {
       "path": "Lib/PadicComparison/Crystalline/CrystallineEtale.lean",
       "upstream_sha256": "389a9261b7e49828cb17c807b5a274dea52e2ec9d71e67e4d520534c19edbeaa",
-      "converted_sha256": "8f69104e6a464c17f2a0e8afa1ac4d94e221afa2d55e5b9122260aa0e6697120"
+      "converted_sha256": "88817d0f64f789e29a4b6a13097b0ae13d1f9acf12b5d82721252feb34f2a4a3"
     },
     {
       "path": "Lib/PadicComparison/Crystalline/CrystallineTests.lean",
       "upstream_sha256": "ed868194e4d2ced0d2113872085918ff7113b0e6fe52a0e42aae8878344f7c60",
-      "converted_sha256": "223986a1aff6262091d86ba469f7772c8bf07fd5fea5433ae7a2d75649471f44"
+      "converted_sha256": "01486114d692349331cfacc1f87cfb2357c52a7de3375e62588a0e9e48695c4c",
+      "adaptation": "Use the algebra morphism’s underlying ring homomorphism for the induced map on PD quotients."
     },
     {
       "path": "Lib/PadicComparison/Crystalline/PeriodLifting.lean",
@@ -1953,7 +1979,8 @@
     {
       "path": "Lib/PadicComparison/Descent/ReductionModP.lean",
       "upstream_sha256": "48eb85d7f96b1f8895f3d6819b39eca392b50c383ae8b4c4f658fccf4e64ac34",
-      "converted_sha256": "dcacaed47bf5fe18a58e32858f19ecfe8e6d2f7963a154baaf215bb3bf651ba2"
+      "converted_sha256": "aba3c25e7cf821e8c261c8c378e5ec9730ea3aa9ce1db7466cc6bc2071ba9bbe",
+      "adaptation": "Elaborate the base change proofs at their expected types and specify the Witt prime."
     },
     {
       "path": "Lib/PadicComparison/Descent/TestCover.lean",
@@ -1973,7 +2000,7 @@
     {
       "path": "Lib/PadicComparison/Duality/MovingKernel.lean",
       "upstream_sha256": "aebda21b98b71bbd90b78f0fa370b5681c0a532166b14b4c9f1a35aa97c3e076",
-      "converted_sha256": "6f1d42b2ec96f8ee6eed8b7ccff52693f0c7e1cd8efea513b5c4d84a530705d0"
+      "converted_sha256": "251ef274b21a9327076438181c6825b16328e23781f7a4e2d0180155ce5ea337"
     },
     {
       "path": "Lib/PadicComparison/HodgeTate/GaloisTwist.lean",
@@ -2018,7 +2045,7 @@
     {
       "path": "Lib/PadicComparison/Primitive/TiltedTheory.lean",
       "upstream_sha256": "72e6e24b8884191d7403b34b9ed04136bfbab9fbd2b450b01f9f1c5b34604565",
-      "converted_sha256": "58e37e5c810b6389531335e1ab8b12538bdfefee62d97b18bb2feee762f5cb06"
+      "converted_sha256": "0dbb8f3bf732620d74e73dc7628aa4f83c122c5543f694f2d8f253ab1c9a81c2"
     },
     {
       "path": "Lib/PadicComparison/ToricTower/CrystallineLines.lean",
@@ -2083,7 +2110,8 @@
     {
       "path": "Lib/PadicHodge/Crystalline/RegularityFrobenius.lean",
       "upstream_sha256": "f0dfd69a51d711207d7c5b2bbcebfc1a4c7e6a3d794a41e4440d612e9eac5088",
-      "converted_sha256": "4a91e7123e7a5ea5780b58d06edc3e915170e9a051ea5137cdddef4c4091440b"
+      "converted_sha256": "8e0ec2dd38c643eb54630e5f920844a5af2a6e8261d5424c7d46d2f561a29229",
+      "adaptation": "Use the public inverse tensor-product equivalence and its pure tensor evaluation."
     },
     {
       "path": "Lib/PadicHodge/Herr/GaloisLattices.lean",
@@ -2093,7 +2121,8 @@
     {
       "path": "Lib/PadicHodge/Limit/HodgeTateProjectors.lean",
       "upstream_sha256": "59fdb798db7d1011a45d1246ac799d105fe51a7b8fba71f098f424069389228f",
-      "converted_sha256": "ffc682b498096422b42fb4d1daa19942b36cb8205841cdb43d9703fb7007ae2f"
+      "converted_sha256": "85c3723eef3b671ed79696acc20d95d800f49c3bbdc06d9dee4dc6eb0ae64509",
+      "adaptation": "Specify the parameter of the continuity lemma in the restriction of the projection."
     },
     {
       "path": "Lib/PadicHodge/Limit/LimitDefs.lean",
@@ -2113,7 +2142,8 @@
     {
       "path": "Lib/PadicHodge/PeriodRings/AmaxStructure.lean",
       "upstream_sha256": "c00ffe73f254eecccf8414c4ff56a2aa7334d6669eec8a234c07f7c5c3a0e855",
-      "converted_sha256": "66d7f4fcb054fa1896c83fc7adf42e665e05466da14f133bcf3d2c3c531b808e"
+      "converted_sha256": "25d44137664e4a48b57613f8688def1846d2bdd5b93ff58f0420be8def698e39",
+      "adaptation": "Specify the prime, the existing approximation and its divisibility witness in the action proof, and name the intermediate algebra in the scalar tower."
     },
     {
       "path": "Lib/PadicHodge/PeriodRings/BdR.lean",
@@ -2368,7 +2398,7 @@
     {
       "path": "Lib/Shimura/ThetaModuli/ThetaTorus.lean",
       "upstream_sha256": "06d91a58a22c28f7bf62ab43d6894ea262e74498a7d1d4a51622464edcf4e9bf",
-      "converted_sha256": "01fc13008cf14879f339607e9fad014afc7e326f3a417d633d96e1cfe6bbad15"
+      "converted_sha256": "b53f56f6b78a78c66ff021b070647e8b49805a57cc0db6e178d0fd71673bf451"
     },
     {
       "path": "Lib/Shimura/ThetaModuli/UniversalFamily.lean",
@@ -2378,7 +2408,8 @@
     {
       "path": "Lib/Shimura/ThetaNormality/NormalGeneration.lean",
       "upstream_sha256": "476420b3f13e3766baf3553c1827673de6a7a656119505f54bd1cf8825e77e47",
-      "converted_sha256": "4cb27caa6dd92b7c024d77a8466e0abb660e690526ed0b8e366b004dba0c9c2c"
+      "converted_sha256": "4532f6bc7f5f35417df09f9359c2915d74c2ef77761cedf5b5a6c8c4691824ac",
+      "adaptation": "Use the explicit evaluation point, basis vector and real coercion in the theta norm comparison."
     },
     {
       "path": "Lib/Shimura/ThetaNormality/RiemannRelation.lean",
@@ -2418,12 +2449,13 @@
     {
       "path": "Lib/Shimura/Uniformisation/BallModel.lean",
       "upstream_sha256": "9c62a1dfd07aaa5ee75419df7559c08bdd7c8147c3741b92d219035a785731de",
-      "converted_sha256": "34bcaa51ae16ca10645b94cbfdd781cda6004bbc1890f203b9a05d993f3f5f76"
+      "converted_sha256": "f5cd10b8bf7fb0a529b01d9096fc18e067db75c135b97f49db5aa5ac99249a94"
     },
     {
       "path": "Lib/Shimura/Uniformisation/Frames.lean",
       "upstream_sha256": "f6d561b6a89562534f0fd67ab535e18c65a3e97109acb32b9999e215556c3f4f",
-      "converted_sha256": "6269eedf5a154ab43e01ab8ec93effdd210c5c5488e778cb6db5ec667da0d7d3"
+      "converted_sha256": "d374402f66474ba1908c3183fc4a13b39ceb254acfa47f0ec5624f7a30931c25",
+      "adaptation": "Lean 4.35: Use Rat.cast_smul_eq_qsmul to compare the two rational scalar actions."
     },
     {
       "path": "Lib/Shimura/Uniformisation/HolomorphicFamily.lean",
@@ -2443,12 +2475,13 @@
     {
       "path": "Lib/Shimura/Uniformisation/ModelAlongArc.lean",
       "upstream_sha256": "7b0102a0852234e1fc6db4fccda3ae7dadbf227117adbfed7752ad74ddecd6f6",
-      "converted_sha256": "d90ec154a7ea707ff1201d045947465f07de0390fac7384e253df301614deef2"
+      "converted_sha256": "2a8df5215eaf40a9ab20e5b3eac437ad56908c0809a7aec4de360a2c26511eb9"
     },
     {
       "path": "Lib/Shimura/Uniformisation/ModuliPoint.lean",
       "upstream_sha256": "b1566cba6d06b6d0d3526625926a4f141d18b14c08de78da82a07d3b547ec664",
-      "converted_sha256": "87860f1c853f75cab2223628f03830f326055a64b50abdf0a62af054fab752fb"
+      "converted_sha256": "4bba83f1d0d0e7b12cbfc056dfecaff54355f53dc4a71767a77b320946af0cd4",
+      "adaptation": "Use the input moduli point’s frame as the left factor in the action."
     },
     {
       "path": "Lib/Shimura/Uniformisation/PeriodLattice.lean",
@@ -2458,7 +2491,8 @@
     {
       "path": "Lib/Shimura/Uniformisation/RiemannFormAdelic.lean",
       "upstream_sha256": "90b09b195b7a871ad845d7911b13e9c12aa1c6087a5c0a3b575069a5f2989039",
-      "converted_sha256": "e701dc85a0ab908ef22af6aa4bfd089d1f260416aa5a8bb8087173ad2cde6876"
+      "converted_sha256": "8713cd8d37027348c727f5dc7040f6cf6adeba8953da41118bd8deb6cf1b04f4",
+      "adaptation": "Specify the input matrix and real bilinear output of the polarisation form."
     },
     {
       "path": "Lib/Shimura/Uniformisation/ThetaCoords.lean",
@@ -2483,7 +2517,7 @@
     {
       "path": "Lib/SiegelWeil/Formula/ZeroTermHeight.lean",
       "upstream_sha256": "66af5f1844f499ae7f92f3341cab8c1dd468003a9b2372b11a76afb064b83701",
-      "converted_sha256": "042267f9f281f448db5fe570a22ad3a1c6988fc29e244dfd99c49901fd8eb704"
+      "converted_sha256": "d4fd684150d125075ab83b0f06ce299db2cb4e9a9691dba2cc38721484e20015"
     },
     {
       "path": "Lib/SiegelWeil/Mass/MassRatio.lean",
@@ -2618,7 +2652,8 @@
     {
       "path": "Lib/Weil/Construction/ThetaFunctional.lean",
       "upstream_sha256": "151f2d1e91e837b6f948dcaa8e3085087f34416b0e2dbf78931a4dcea8c681e2",
-      "converted_sha256": "849ad7e5de7f932a2fc9d3f9eb7e0264aad352717e21442a7e76ce7dd027f9c4"
+      "converted_sha256": "8489ceabfbfb1ffd398940b0a1d29c4745fe32b5cea95cdc07167a122658ab77",
+      "adaptation": "Give the finite theta action its explicit multiplier."
     },
     {
       "path": "Lib/Weil/Construction/WeilOperators.lean",
@@ -2638,12 +2673,12 @@
     {
       "path": "Lib/Weil/DualPair/Flip.lean",
       "upstream_sha256": "86130ccac2f1aaaa2acd8a88a59453758a6a2f02cf20854ac399c7f76faaa0ca",
-      "converted_sha256": "ca29facdd15380674d2e22babfa9bf420413b5329f01d70a3d58022a5769c9ab"
+      "converted_sha256": "7d1d4474cc03b4618381786128e48ff8c31a9493387d53d8a03f414ac835798a"
     },
     {
       "path": "Lib/Weil/DualPair/FourierCoefficient.lean",
       "upstream_sha256": "8019ee8a03c41a150f89f3521900e8a4b303d1927394d56b0a530bcab0fe9b31",
-      "converted_sha256": "172c99ab70f1acefaf0bcf529b78b086fbd97cdddd86fccbf892f4e5b7f04bf2"
+      "converted_sha256": "25f2ce37613b4646754341dae756787296d528d52532374f1137601e4e08f2a9"
     },
     {
       "path": "Lib/Weil/DualPair/KernelDecay.lean",
@@ -2658,7 +2693,7 @@
     {
       "path": "Lib/Weil/DualPair/Lift.lean",
       "upstream_sha256": "4465520b4519aeb2d97dcd0ad2f4c2ebcb982a282e765cfd0e6b0b5b911ffaf7",
-      "converted_sha256": "b1c0b802fefc2cf823a828a55ca235f3723e4e7c6bbcab5dce1e7e8662eede91"
+      "converted_sha256": "b3aa393bcb30bb1c61a561288149193d1939b360372dfd2b125c0452c06af629"
     },
     {
       "path": "Lib/Weil/DualPair/ModularDataDecay.lean",
@@ -2673,12 +2708,12 @@
     {
       "path": "Lib/Weil/DualPair/PairSplitting.lean",
       "upstream_sha256": "b22db2404ac812cf8eefb01c9e677ab58dace9c3f7ed4effdd1fafb27a1d9dab",
-      "converted_sha256": "62c9423d11eff6fdb869e498bd8338e611053ab20c291b9b85c57e1d418aeafd"
+      "converted_sha256": "2c92995e31bec64de69a7eb2f4cc2e5abc61b53d5f96a15c94ad8a6c595a24e6"
     },
     {
       "path": "Lib/Weil/DualPair/PairSumNegation.lean",
       "upstream_sha256": "e82195f3656162e83052e6c5ce4bed39d098cd68cffe9d4817e4d9f73dcfe69b",
-      "converted_sha256": "3c212b185790bc64ba36f7ff3ef017f439e5a45a426ffd0207b3b218f0e98802"
+      "converted_sha256": "3e976d94d6d650406fe5f7e420f1a5a0cd620b25ba6ef14f335d2fb6d65fd3b5"
     },
     {
       "path": "Lib/Weil/DualPair/ThetaIntegralLaws.lean",
@@ -2693,12 +2728,13 @@
     {
       "path": "Lib/Weil/DualPair/TwoLineTerms.lean",
       "upstream_sha256": "aae60a088b3a3b0d2e99160a489f13836614baf6a85af1986d16ada61d8827cc",
-      "converted_sha256": "4107060f749bbdd70214511c29ff56b91ccfae9c4abd3a1e3c64a09f1e150abc"
+      "converted_sha256": "0c8a4383ed6290960076c45b667d95a285cd4f893df820cc40d0f834f48f8605"
     },
     {
       "path": "Lib/Weil/Fock/EntireTheta.lean",
       "upstream_sha256": "b78a38b96f203d407cbbe9c8996cc08bebcdd04d33d7ed90eb3c86b00305c75d",
-      "converted_sha256": "5b6617e1972c28dc6e80fdaccd1a3a8e2463ff79d642a754c5fcb15cbcdeeb38"
+      "converted_sha256": "1898dcf21e6de6784c4ccce5ace9184b7bfdec21386ae38697468bb3f159be5d",
+      "adaptation": "Prove continuity of the real adelic vector map coordinatewise."
     },
     {
       "path": "Lib/Weil/Fock/FockAction.lean",
@@ -2728,7 +2764,8 @@
     {
       "path": "Lib/Weil/Fock/OscillatorPair.lean",
       "upstream_sha256": "405ba5f3f36b229700fa6288d12d17a2c0a631ce25100bdff5c2c38d3c7ed164",
-      "converted_sha256": "6086f1ab09e44a3a1f2a9599c06a8cbb1c1a5616332bed8d8092ad0448dc5dca"
+      "converted_sha256": "b93e651a3de5db7f9bf7ec9fc56efaa779e70ccab32798af5b3afe1f75473b51",
+      "adaptation": "Factor the Kronecker matrix into the two contractive star-algebra maps on explicitly typed matrices."
     },
     {
       "path": "Lib/Weil/Fock/RealData.lean",
@@ -2778,12 +2815,13 @@
     {
       "path": "Lib/Weil/MixedModel/EquivariantCoefficients.lean",
       "upstream_sha256": "b9ee21cc8656470e149ac3fd93ec12d7fd36204f5e3a5485f62eec5bc2e33b2d",
-      "converted_sha256": "7ca7f36dfb42b7c50cb775e2fe31d672c077f7d76fd7dc8d070103a241d6fdf0"
+      "converted_sha256": "cab36734f9946162c767dfd1d41396d4f7ec3bac02a0e13dd3ce72582467eb66"
     },
     {
       "path": "Lib/Weil/MixedModel/HyperbolicSpace.lean",
       "upstream_sha256": "066aa0859a19bb9d9895e133b5baa7def72800772b1f07b4bc9f47f2fba447d5",
-      "converted_sha256": "4b493743061a28689806a7cb8bb34557ff105881c0d0f46076a8e4453542c004"
+      "converted_sha256": "875aad163f44b00acb9feb43a426d2dcfc5d2037418dc69bf2f53c4bafa693ba",
+      "adaptation": "Scope the reverse simplification rules in the hyperbolic-space proof."
     },
     {
       "path": "Lib/Weil/MixedModel/HyperbolicSplitting.lean",
@@ -2833,7 +2871,8 @@
     {
       "path": "Lib/Weil/Periods/DegreeAndUnipotent.lean",
       "upstream_sha256": "db5d7306c7d696d83a033f5b8191c652077b85f79817b2b3e796a262db34f682",
-      "converted_sha256": "0e69dacb70b5ef7e514ed40a681ed956660896f53389df2cfaf215052779dec3"
+      "converted_sha256": "4a7d7c69d02157e554c017114c0a4a634f4522cc754a3cf78a32898d91b3e500",
+      "adaptation": "Pass the lower Gram matrix to U.sum and identify its mapped block matrix explicitly."
     },
     {
       "path": "Lib/Weil/Periods/DegreeOfT.lean",
@@ -2848,7 +2887,7 @@
     {
       "path": "Lib/Weil/Periods/UnfoldingStep.lean",
       "upstream_sha256": "cd4c831fd7e81dd51dc4493a37c09114a6c09e32236b5194005230de1eb33754",
-      "converted_sha256": "19c6a135552170402292cd6a557774feabc05e5b6eed76a2b25b724d43d85c59"
+      "converted_sha256": "4843c0ac0c168c35c865b46b77250cd5540531a1732b356b1f4602e6c09baad0"
     },
     {
       "path": "Lib/Weil/Unramified/HeckeGL.lean",
@@ -2883,7 +2922,7 @@
     {
       "path": "New/Columns/ColumnDefs.lean",
       "upstream_sha256": "6b5f211b4f484f6114ad13f7c40c076d79d0f54c2217685f1bb29fcacf3b535f",
-      "converted_sha256": "ebf202ec80757c3a01c81598efda0d4ce43fc6fecdddacce5c0f62622bf26ea3"
+      "converted_sha256": "91137f9b18aea4d8444d9ca5f821d12fb8dd300efe42763ef8dac95443706883"
     },
     {
       "path": "New/Columns/JetExponentBound.lean",
@@ -2968,7 +3007,8 @@
     {
       "path": "New/Curve/PeriodDefs.lean",
       "upstream_sha256": "854903bde75a3a2a64d2341947f6768438e9cae73399e8d4fc29c1a598a203ea",
-      "converted_sha256": "dd58a02f6e1ef37254be83c2a57fa6d67853c839d876cba12ec1a8ada25f4215"
+      "converted_sha256": "e966b46a1a62754c86179e5077abcc2e459d147d8f6adb2a929d0dd1cbbb8b85",
+      "adaptation": "Rewrite with the public root-discriminant equation."
     },
     {
       "path": "New/Curve/ThetaProducts.lean",
@@ -3003,7 +3043,8 @@
     {
       "path": "New/Data/Magnitudes.lean",
       "upstream_sha256": "8734252446cfa1053d5f24b34af1e68540d9fae72c2388d02773d25ecc165977",
-      "converted_sha256": "e08e04f61ec2bbfc153a1bcc2c63d9b4312267daf26a2e541ed521299e3d9e3f"
+      "converted_sha256": "5c4f6e7c4b156d77eead14b29f73ed8060e390f630326345d9b83ffc68ddfd04",
+      "adaptation": "Lean 4.35: Move the original log-bound default onto the four numerical comparison lemmas."
     },
     {
       "path": "New/Data/Weights.lean",
@@ -3018,7 +3059,8 @@
     {
       "path": "New/DiscreteSeries/BesselExistence.lean",
       "upstream_sha256": "79adbfdae9b67cc9dea3402393cf32e5195e98b80ac33d1eeaa81b6d7b0017a8",
-      "converted_sha256": "2561d9c504c69a120d86a67fa7173e5a97d5983407dbac80a1ac285491a31d2a"
+      "converted_sha256": "edf0000d762613e0fbd6c9fe3ee904e0fce268c7eb98e40c13ceb3065275d913",
+      "adaptation": "Use the norm nonnegativity hypothesis in the extended-real multiplication formula."
     },
     {
       "path": "New/DiscreteSeries/GaussianShape.lean",
@@ -3068,7 +3110,7 @@
     {
       "path": "New/Exchange/AlgebraicPartDefs.lean",
       "upstream_sha256": "839c3cc293a34be436c1bb804df2f5eeb0bd65afbd1b61cc1dc80d8b6cffd6e4",
-      "converted_sha256": "6aacc6154fb33992a3a2fad242aa59abc08402e304cf6bc2eabdd4951b5c6b6e"
+      "converted_sha256": "b4e55240a55b7221781c1679208c79846ca5b0b3b3ad59882c6456ff52cf2945"
     },
     {
       "path": "New/Exchange/BlockPartners.lean",
@@ -3093,7 +3135,7 @@
     {
       "path": "New/Exchange/CrudeModularData.lean",
       "upstream_sha256": "53c8bc2142d4aae1849d24977f0e35f0db9ffcbee43adecd0ff851863e6b29c0",
-      "converted_sha256": "9672749a56bcfd6fadfc884b1eb99d7dcfb219a35e0f0a6a031f7285ee44737f"
+      "converted_sha256": "2909366e4a10842668cab3e9743dd81820f345a2facb49f5647d0fd243abdbc9"
     },
     {
       "path": "New/Exchange/CrudeRows.lean",
@@ -3108,7 +3150,7 @@
     {
       "path": "New/Exchange/EqualRankValue.lean",
       "upstream_sha256": "59b41b295be9ee8f6ba18542a29fe65ceefb87f7a90a535596fc6b4cd4b62c23",
-      "converted_sha256": "246b79a384f8889aaa8e035935cccd09932ea278da79bccfebe6a88453841b4c"
+      "converted_sha256": "7dc4517bedcb75f1fd4b344a212c054a4652ed4c9b438340e731e9fb10bb81f5"
     },
     {
       "path": "New/Exchange/ExchangeDifference.lean",
@@ -3138,7 +3180,7 @@
     {
       "path": "New/Exchange/GridParameters.lean",
       "upstream_sha256": "5382aba5b0d49efba4eb8b4ccff8d2a760974bc6fba8709123ffa791a6a90170",
-      "converted_sha256": "ebf2181d4e884383268dcf2bd8a2c64d23e4dc63c95dc1d54b167cf28da8cf25"
+      "converted_sha256": "f968fbb658e976ee541a9b079a4008261c0d11f35ae54729ac61c54e6c18231e"
     },
     {
       "path": "New/Exchange/LValueRatio.lean",
@@ -3203,7 +3245,7 @@
     {
       "path": "New/Exchange/TriangleArrows.lean",
       "upstream_sha256": "e515469f132d6daf25fef1cb69c94ac1b098aba48e7ce278494ba4d16d403f89",
-      "converted_sha256": "f6a14ef219379a60d76e0c6ac720d3449c397a6acba88125f18f57d589c5c0e3"
+      "converted_sha256": "3bf02c20304c78a8d00186f1bbf55f51b9379d9a5bde62084870a51021e4ff9d"
     },
     {
       "path": "New/Exchange/TriangleLevelExponent.lean",
@@ -3258,7 +3300,8 @@
     {
       "path": "New/Filling/EichlerFlag.lean",
       "upstream_sha256": "d4a1e65ceef02bd1fe17c0ff1dc7a1eee0731694a08f87fd2f5f74b029bd1d25",
-      "converted_sha256": "e85fab3cafc14637cfb1f4a5f687b505a6d6dd099e95d736f9c58fc7c307ac92"
+      "converted_sha256": "c8398a07ff9abd8c5c6e6e4d984fe7d6dd46f73d48974c4c00f57419a113cc2e",
+      "adaptation": "Use the public entrywise equality at the two simplification sites."
     },
     {
       "path": "New/Filling/FillingAdmissible.lean",
@@ -3268,7 +3311,7 @@
     {
       "path": "New/Filling/FillingData.lean",
       "upstream_sha256": "dfee0f560d571cb929d0470db4ed5bc2ce447d069e2d95382fca7285ea068419",
-      "converted_sha256": "7433434eaf7b45f3b7bd4ee0a6100ecd58db7328141f8827b4abe73a106e61b5"
+      "converted_sha256": "466357813906661ea149bc74e6fed86587ad5e1adb8782c0f8cb9b624b7228d7"
     },
     {
       "path": "New/Filling/FillingTheorem.lean",
@@ -3323,12 +3366,13 @@
     {
       "path": "New/Filling/NearTerms.lean",
       "upstream_sha256": "0457df0e5a945c7a631e78ae1c62f1b064da29fe3ebae0c549e19825ffa4803c",
-      "converted_sha256": "b2e62b06a74bdd4779079a892214f93f5919aaf8f6fc64e6e43a81a6ebe0ab19"
+      "converted_sha256": "a4a188315198477f0c264489806e98d0d8b739b16a63efd58541582a5fa857af",
+      "adaptation": "Use the root discriminant definition in the numerical bound."
     },
     {
       "path": "New/Filling/PoincareSeries.lean",
       "upstream_sha256": "edb910801e1254a61890a96ead60ffab5f87ce0cbb00939fe4a4b6edd2d4bd3b",
-      "converted_sha256": "98d228d25068031598df2717b12caca24d1e8e49934f7f39f0dde401c0e07dc2"
+      "converted_sha256": "bfa4e280acdca72e217735aa82680fcb6bcc94af9e7652fc1116434536470a13"
     },
     {
       "path": "New/Filling/RowDimension.lean",
@@ -3353,7 +3397,8 @@
     {
       "path": "New/Filling/StandardLevel.lean",
       "upstream_sha256": "e804f49ac0d45d9309af31567673dd13efe91154dfeb304cd1fb2b8f6c3909d7",
-      "converted_sha256": "36ac641c2cc02e988c221d046de934a13d90e5ad5999823073e3ab7c9214a098"
+      "converted_sha256": "a0448fb43fe2c36305e9edf10a8f5ef703a4b2086771f93088f619e29de56ccf",
+      "adaptation": "Scope the simplification rules used by the standard-level gauge construction."
     },
     {
       "path": "New/Filling/ThinClasses.lean",
@@ -3388,7 +3433,8 @@
     {
       "path": "New/Heights/OneDeterminant.lean",
       "upstream_sha256": "f639f87dd549954a36f7723b31c108b4dae9e0106dbd0b7969f0c14c78b386b7",
-      "converted_sha256": "5dc92562b885721fd308ce56a375604e29d516ac72823c0a46acb3c0eca1849e"
+      "converted_sha256": "9e79d3c3d55518d135393e7a06deaef780d51eb33282b7ca1622c1c1c6c6362e",
+      "adaptation": "Replace the opaque index unfolding with the public index_eq_finrank_sub formula."
     },
     {
       "path": "New/Lift/CokernelKillers.lean",
@@ -3468,7 +3514,7 @@
     {
       "path": "New/RealPlace/ComplexGauge.lean",
       "upstream_sha256": "f0e59c67632fa29571ece3545a697a35fadcee2aa2092bb0b73ec4e6cbba6bcb",
-      "converted_sha256": "386e8b89d54588da492f72833353f1a325c1585c9faf1d873eabc5aa7b8d8d3c"
+      "converted_sha256": "e956b9c008c72a237f205ccd324e2fe98bbce5aee4115e6b492caecec7d743c9"
     },
     {
       "path": "New/RealPlace/ComplexShells.lean",
@@ -3618,7 +3664,7 @@
     {
       "path": "New/Rows/Separation.lean",
       "upstream_sha256": "794fdd5d5211963a1f0b308459dd1e89755f9cb1e6624f81576f7b94496f591a",
-      "converted_sha256": "43b09391e8b2429cfbc920033dd6864c4defcb0f19c6b0c81672c6d639c1a0a6"
+      "converted_sha256": "24028d5909f4c58f3c537b6961eede7d17b991a4a44992bf2cf5e3593e95c0d1"
     },
     {
       "path": "New/Rows/SparseThetaSum.lean",
@@ -3653,7 +3699,7 @@
     {
       "path": "New/Seesaw/EdgePair.lean",
       "upstream_sha256": "ecaa6c2058d20775f9e50985e4d0ec47cd6ac9071dd6370b3999fb8b148eab31",
-      "converted_sha256": "d807c51f3b985f9844d029e7af1291127430c7d4c44a86188338339552f51a67"
+      "converted_sha256": "7f748ba2997b15bccd68f782845c6baf59e49cdc6e846060d77d2f9566c69315"
     },
     {
       "path": "New/Seesaw/EqualLinesOrbit.lean",
@@ -3673,7 +3719,7 @@
     {
       "path": "New/Seesaw/GradingsOfY.lean",
       "upstream_sha256": "2c67c6c76ae03344e21f60c710c60684f580748f26097e50d8e3707cdea85aaf",
-      "converted_sha256": "11852ca01dda826dbd344768736ab2f8a17d324badde72710dbf82528e9e315f"
+      "converted_sha256": "b6ef31cdfbb9b211d7e7433eb98ddfc68e9a43ea7e5f2614f1533bf3befc3cb6"
     },
     {
       "path": "New/Seesaw/IndexTypes.lean",
@@ -3713,7 +3759,7 @@
     {
       "path": "New/Seesaw/NamesAtSplitLevel.lean",
       "upstream_sha256": "86e1264b2fb003840b4d7beeb952b646c7718dc9d14e1d77bf497e005ecb08f0",
-      "converted_sha256": "2bdc6d7c1ef15dddbacab2646561edfda99c4f1c710c0635783d1808008c452a"
+      "converted_sha256": "a0355fae85a0a326bdcae106f0035f6b1876bf847e8e157c06de7ff8fff48836"
     },
     {
       "path": "New/Seesaw/PairTensorData.lean",

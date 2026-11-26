@@ -42,10 +42,10 @@ def tensorWith.mk : moduleCoeff Φ ⟶ moduleCoeff (Φ ⋙ tensorWith T M) :=
 z under x ↦ m ⊗ x. -/
 def baseChangeMap n :
   M ⊗[S] H N (moduleCoeff Φ) n →ₗ[T] H N (moduleCoeff (Φ ⋙ tensorWith T M)) n := by
-  use (liftAddHom ((pushHom ..).comp (.mk' (tensorWith.mk T · Φ) ?_)) fun (s : S) m ↦
-    (congr(push N $(?_) n ·).trans (push_comp ..))).toAddHom,
+  use (liftAddHom ((pushHom ..).comp (.mk' (tensorWith.mk T · Φ) (by
+      intros; ext; apply_rules [ULift.ext, add_tmul, smul_tmul]))) fun (s : S) m ↦
+    (congr(push N $(by ext; apply_rules [ULift.ext, add_tmul, smul_tmul]) n ·).trans (push_comp ..))).toAddHom,
     fun t x ↦ by induction x <;> simp_all; exact .symm (push_comp ..).symm
-  all_goals intros; ext; apply_rules [ULift.ext, add_tmul, smul_tmul]
 
 /-- N has flat base change: M ⊗_S H^n(N, Φ) → H^n(N, M ⊗_S Φ) is bijective for all n, all
 functors Φ to S-modules and all S-flat M. -/
@@ -155,8 +155,8 @@ instance : Algebra Ainf OC := (fontaineTheta ..).toAlgebra
 /-- For a ring S with a map to W(k), by default S = W(k), the functor sending a k-algebra b to
 its p-typical Witt vectors W(b), as an S-algebra. -/
 def wittFunctor {k} [CommRing k] (S := WittVector p k) [CommRing S] [Algebra S (WittVector p k)] :
-  CommAlg k ⥤ CommAlg S := .mk (fun b ↦ @of _ _ _ _ ((WittVector.map b.3.2).comp
-  ‹Algebra ..›.2).toAlgebra) fun f ↦ by use WittVector.map f.hom; intro; ext; apply f.1.2
+  CommAlg k ⥤ CommAlg S := .mk (fun b ↦ @of _ _ _ _ ((WittVector.map (p := p) b.3.2).comp
+  ‹Algebra ..›.2).toAlgebra) fun f ↦ by use WittVector.map (p := p) f.hom; intro; ext; apply f.1.2
 
 /-- For an A_inf-algebra T, the functor sending an O^♭-algebra b to the p-adic completion of T
 ⊗_{A_inf} W(b). -/

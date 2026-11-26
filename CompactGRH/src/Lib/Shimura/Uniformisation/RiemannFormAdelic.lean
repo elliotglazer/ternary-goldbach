@@ -90,7 +90,8 @@ variable {E : _} [Field E] [CMBase E] (D : PEL E) {D' : PEL E} {β' : Matrix D'.
 
 /-- For a matrix β over E, the real bilinear form (y, z) ↦ Σ_v 2 Re(Φ_v(ξ)·z_vᴴ Φ_v(β) y_v) on
 (E ⊗ ℝ)ⁿ, with ξ from the datum D. -/
-noncomputable def polarisationForm β := by apply LinearMap.mk₂ ℝ fun y z : RealVectors E D.Index ↦
+noncomputable def polarisationForm (β : Matrix D.Index D.Index E) :
+    RealVectors E D.Index →ₗ[ℝ] RealVectors E D.Index →ₗ[ℝ] ℝ := by apply LinearMap.mk₂ ℝ fun y z : RealVectors E D.Index ↦
   ∑ v, 2 * (Φ v D.ξ * star (z · v) ⬝ᵥ .map β (Φ v) *ᵥ (y · v)).re <;> simp [entrywise, mul_sum,
   -sum_sub_distrib, ← sum_add_distrib] <;> grind
 

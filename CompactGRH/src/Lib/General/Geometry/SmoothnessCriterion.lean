@@ -59,7 +59,7 @@ lemma smooth_of_immersion {d X R b u k} {φ : (Fin d → ℂ) → _} {V : Valuat
   algebraize [β.1, β.1.comp (algebraMap A _)]
   have hx := (G.hasMap.map π).map (algHom _ _ V)
   with_unfolding_all have := (faithfulSMul_iff_algebraMap_injective A V).2 (.of_ker _ fun Q hQ ↦
-   map_injective _ hi (funext (eq_zero_of_submersion (.eval_mvPolynomial _)
+   MvPolynomial.map_injective u.hom hi (MvPolynomial.funext fun y ↦ (eq_zero_of_submersion (.eval_mvPolynomial (MvPolynomial.map u.hom Q))
    (hasStrictFDerivAt_pi.2 (z · |> r |>.2.hasStrictFDerivAt)) (ker_eq_bot_iff_range_eq_top.1
    (bot_unique fun v h0 ↦ h.2 v ((h.1.exists_isJet _).elim fun τ hτ ↦ by
    convert hτ
@@ -76,7 +76,7 @@ lemma smooth_of_immersion {d X R b u k} {φ : (Fin d → ℂ) → _} {V : Valuat
    simpa [← (landsIn_iff_mem), landsIn_basicOpen, ofSection_eq, k,
      ← (map_injective (by simp [*, reassoc_of% map_evalSection_fromSpec]) : ρ ≫ evalSection _ k =
      u)] using! mt (h.mem_open (X.basicOpen (aeval z Q)).2)
-     (ha ▸ ((hW.fromSpec_preimage_basicOpen _).le · (·.ne_zero congr($hQ)))))))))
+     (ha ▸ ((hW.fromSpec_preimage_basicOpen _).le · (·.ne_zero congr($hQ)))))) y).trans (by simp)))
   have hm p := minpoly.isIntegrallyClosed_dvd (p := p) ⟨_, G.monic_f, hx.1⟩
   have ⟨g, hg⟩ := hm _ hx.1
   have := Etale.iff_isStandardSmoothOfRelativeDimension_zero.1 (.of_equiv (.ofBijective (awayMapₐ π

@@ -61,10 +61,17 @@ lemma IsRapid.integrable : V.IsRapid F → Continuous F → MeasureTheory.Integr
 /-- The automorphic functions of rapid decay for the space V, as a subrepresentation of the
 complex functions on G under right translation by G_f. -/
 noncomputable def rapidFunctions : Subrepresentation (finRightRep E s) := ⟨.ofLinearComb {y |
-  V.IsAutomorphic y ∧ V.IsRapid y} ⟨0, isAutomorphic_const .., (⟨·, by simp⟩)⟩ fun _ ⟨a, c⟩ _ ⟨b,
-  d⟩ u v ↦ ⟨a.map₂ b
-  (u * · + v * ·), fun _ ↦ ⟨_, (by simp; grw [norm_add_le, add_mul] <;> simp; grw [(c _).choose_spec
-  ·, (d _).choose_spec])⟩⟩, fun _ _ ↦ .imp (·.comp_mul_right _) (·.comp_mul_right)⟩
+  V.IsAutomorphic y ∧ V.IsRapid y} ⟨0, isAutomorphic_const .., (⟨·, by simp⟩)⟩ fun f ⟨a, c⟩ f' ⟨b, d⟩ u v ↦
+    ⟨a.map₂ b (u * · + v * ·), fun B ↦
+      ⟨‖u‖ * (c B).choose + ‖v‖ * (d B).choose, fun g ↦ calc
+        ‖u * f g + v * f' g‖ * V.height g ^ B
+            ≤ (‖u * f g‖ + ‖v * f' g‖) * V.height g ^ B :=
+          mul_le_mul_of_nonneg_right (norm_add_le _ _) (pow_nonneg (height_pos (V := V) g).le _)
+        _ = ‖u‖ * (‖f g‖ * V.height g ^ B) + ‖v‖ * (‖f' g‖ * V.height g ^ B) := by
+          rw [norm_mul, norm_mul]
+          ring
+        _ ≤ _ := add_le_add (mul_le_mul_of_nonneg_left ((c B).choose_spec g) (norm_nonneg u))
+          (mul_le_mul_of_nonneg_left ((d B).choose_spec g) (norm_nonneg v))⟩⟩, fun _ _ ↦ .imp (·.comp_mul_right _) (·.comp_mul_right)⟩
 
 end Space
 

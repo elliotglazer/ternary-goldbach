@@ -46,7 +46,7 @@ theorem major_error_of_energy {N : ℝ} (hn : (2*10^19) ≤ N) {S : Set ℝ}
   apply (norm_integral_le_of_norm_le (hi'.add hk) ((ae_restrict_mem hS).mono (fun x hx => ?_))).trans
   · simp only [Pi.add_apply]
     rw [integral_add hi' hk, integral_const_mul, setIntegral_const, smul_eq_mul]
-    calc _ ≤ 4.5*E*(0.705*N*Real.log N) + (4.4*(Real.log N)^3/N)*(2.5*E^3) := by gcongr; exact hbound
+    calc _ ≤ 4.5*E*(0.705*N*Real.log N) + (4.4*(Real.log N)^3/N)*(2.5*E^3) := by gcongr
          _ ≤ _ := by
            dsimp [E]
            rw [show 4.5*(0.001*N/Real.log N)*(0.705*N*Real.log N)+(4.4*(Real.log N)^3/N)*(2.5*(0.001*N/Real.log N)^3) = 0.003172511*N^2 by field_simp; ring]

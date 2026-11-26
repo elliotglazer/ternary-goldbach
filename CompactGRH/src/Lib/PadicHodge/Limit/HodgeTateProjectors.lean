@@ -65,7 +65,7 @@ variable (e : ∀ g x, q (ρ g x) = V.ρ g (q x)) (k : q.ker = pPowMultiples T m
 /-- For T finite free over Z_p, potentially crystalline, j an open embedding, q: T → V
 equivariant with kernel p^m T: the additive map c ↦ q∘c from Z_f(T) to Z¹(V). -/
 abbrev IsPotCrys.reducedCocycle : crysCocycles ρ →+ Z1 V.ρ :=
-  .codRestrict ((q.compLeft Γ).domRestrict _) _ fun ⟨_, u⟩ ↦ ⟨continuous_comp hj h q
+  .codRestrict ((q.compLeft Γ).domRestrict _) _ fun ⟨_, u⟩ ↦ ⟨continuous_comp (m := m) hj h q
   (by simpa [le, ← map_nsmul, ← cast_smul_eq_nsmul ℤ_[p]] using k.ge) u, by simp_all [apply_mul u]⟩
 
 /-- Let T be finite free over Z_p and potentially crystalline, j an open embedding, q: T → V

@@ -29,11 +29,15 @@ lemma map_pderiv (Ψ : R →+* S) (i : σ) f : MvPowerSeries.map Ψ (pderiv i f)
 
 attribute [simp] jet_monomial hasSubst_of_constantCoeff_zero
 
+private theorem pderiv_apply_eq_pderivFun {τ A : Type*} [CommRing A] (i : τ)
+    (F : MvPowerSeries τ A) : pderiv i F = pderivFun i F :=
+  MvPowerSeries.ext fun n => (coeff_pderiv F n).trans (coeff_pderivFun F n).symm
+
 @[simp] lemma pderiv_subst {a} (ha : @HasSubst ι σ R _ a) k (F : MvPowerSeries ι R) :
   pderiv k (subst a F) = ∑ i,
   (pderiv i F).subst a * pderiv k (a i) := let : UniformSpace R := ⊥
   have := continuous_subst
-  denseRange_toMvPowerSeries.induction_on F (by apply isClosed_eq <;> simp [pderiv] <;> fun_prop
+  denseRange_toMvPowerSeries.induction_on F (by apply isClosed_eq <;> simp [pderiv_apply_eq_pderivFun] <;> fun_prop
     [pderivFun]) (by simp_intro Q [pderiv_coe, subst_coe]; apply Q.induction_on <;> simp_all
     [add_mul, mul_sum, apply_ite, mul_assoc])
 

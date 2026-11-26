@@ -128,10 +128,10 @@
       "bytes": 154
     },
     "TernaryGoldbach/Explicit/Landau.lean": {
-      "origin": "analytic 4.37 port",
+      "origin": "archive with two Lean 4.35 proof expressions for factorization and ball connectedness",
       "historical": "60c2be27327cb2b1ef13bce5b12d889b430ffdd7316982296106e35a8c55653d",
-      "sha256": "647aa6904ed2b8d9df01ade670aee4053c2154f2c2e2ed870936726adf121555",
-      "bytes": 15959
+      "sha256": "4c0f11c37b5e2400ba08f034ebd7843649a60609e1ccea9c78ac904e8f64f607",
+      "bytes": 15934
     },
     "TernaryGoldbach/Explicit/LogDerivL.lean": {
       "origin": "archive",
@@ -356,10 +356,10 @@
       "bytes": 12586
     },
     "TernaryGoldbach/MajorArcs/HHFourier.lean": {
-      "origin": "archive",
+      "origin": "archive with two Lean 4.35 null-measurability arguments for restricted Lp norms",
       "historical": "6cb6de0129f9c1340be4c97968083a9812676a94775aaa8d57a9b8735abda200",
-      "sha256": "7ecfd2769d17ffa5455859f668c1379793a338971fc99ddddf48563975a1f552",
-      "bytes": 32893
+      "sha256": "0f21169c051f85b83d1e93efb805eed3d18b6f4434ed9bc402f73a70a6aec064",
+      "bytes": 32929
     },
     "TernaryGoldbach/MajorArcs/EtaCirc.lean": {
       "origin": "analytic 4.37 port",
@@ -586,8 +586,8 @@
     "TernaryGoldbach/Explicit/WeilNumC.lean": {
       "origin": "archive",
       "historical": "5a0c06a95234ee7de610131afde097f5c4dddefd331d74bc24564179642974ac",
-      "sha256": "839d06470cd9705890165406b3b80e7ca037348bffaede30869fa8b205483c0a",
-      "bytes": 32264
+      "sha256": "b439ff967544c6f9fc4c05a789adaa02d83a391de35229df418119a5d180c24e",
+      "bytes": 32428
     },
     "TernaryGoldbach/Explicit/WeilNumB.lean": {
       "origin": "archive",
@@ -862,8 +862,8 @@
     "MajorIdentity.lean": {
       "origin": "archive",
       "historical": "85b3132ddb1f482b28ef5c948f42ab1591b3263f7e69dbb7e063b802d1f28fe0",
-      "sha256": "ea3696b023813ed7733d24a589d8938b6dbe46751fbf355a2a685e43dbf57590",
-      "bytes": 5666
+      "sha256": "4cf4a99485d055ffafb0ab690925643e018552b7ebe9efc9920092384100802c",
+      "bytes": 5684
     },
     "PatchedModel.lean": {
       "origin": "archive",
@@ -902,10 +902,10 @@
       "bytes": 4134
     },
     "MajorEnergy.lean": {
-      "origin": "archive",
+      "origin": "archive with a redundant tactic removed in the energy bound for Lean 4.35",
       "historical": "8eb6ec924ed76e6e18b0a8a9e1bd5890ab24ba6aa3cac6380e1624693f23241c",
-      "sha256": "a645936448b0848fa588fe9bc7dcd2b88218e1c2133960259e6ed1f3d40a8b84",
-      "bytes": 2953
+      "sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "bytes": 2939
     },
     "ArcTranslation.lean": {
       "origin": "archive",
@@ -4282,8 +4282,9 @@
     "ProfileTape16positiveFormula.lean": {
       "origin": "archive",
       "historical": "7a5cb00fc6412af73313cd11a733b64814e9d9dfdcf5415a4995781c9bbb898d",
-      "sha256": "f5d4ec5116bd2e92c21dbe2786dffce8eb9c2ffc9fcab852caaab0869c8b0d50",
-      "bytes": 388
+      "sha256": "595fd843c30cc6cf888af3665caa3b9a865905024bcc7c38baeb4fd0ee82b97a",
+      "bytes": 129946,
+      "adaptation": "Compose the 657 tape-step equalities with shared subexpressions, then check equality with the published price expression in the kernel."
     },
     "ProfileTape8positiveFormula.lean": {
       "origin": "archive",

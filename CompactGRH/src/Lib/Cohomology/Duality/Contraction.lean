@@ -271,7 +271,10 @@ alias ⟨_, Comparison.IsBijective.bijective_totalH⟩ := bijective_total_iff_is
 /-- The additive isomorphism from total Ext(N ⊗ ℤ[X], F) to total Ext(N, F) on the category of
 elements of X: restrict, then precompose with n ↦ n ⊗ [tautological point]. -/
 def sliceEquiv : TotalH (abTensor N (freeAb X)) F ≃+ TotalH (elementsProj X ⋙ N)
-  (elementsProj X ⋙ F) := .ofBijective ((TotalH.comp _).comp (map (restrictAlong _)))
+  (elementsProj X ⋙ F) :=
+  .ofBijective
+  ((pullbackAlong (((restrictAlong (elementsProj X)).whiskerLeft
+    (tensorPoint (freeAbMap (tautSection (X := X))))).app N)).comp (map (restrictAlong _)))
   (by simpa [mapThenComp] using! IsBijective.bijective_totalH ((devissage (.restrict ..)
   (abTensor.flip (freeAb X)) ((restrictAlong _).whiskerLeft
   (tensorPoint (freeAbMap tautSection)))).bijective_of_sigma_repr (fun _ _ ↦ (IsCohomEquiv.of_isIso

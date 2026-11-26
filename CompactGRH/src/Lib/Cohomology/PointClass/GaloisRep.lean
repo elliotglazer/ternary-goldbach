@@ -89,7 +89,20 @@ lemma linearIndepOn_hodgeTateMap_pointClass {p k} [Field k] [EmbeddedInQpBar p k
     (congr($(c.eq_comp_of_map_point_eq _ ((e.comp (ofHom M.val)).ext hg).symm) r ∈ M).mpr (φ.1 r).2)
   have ⟨δ, hδ, et⟩ := @exists_etale_of_isEtaleAt _ _ _ _ y.1.toAlgebra
     (.of_restrict_scalars_finitePresentation k ..) ⊥ _ (by
-    delta IsEtaleAt Localization.AtPrime; rw [primeCompl_bot]; exact .comp _ (FractionRing S) _)
+    have atZero {R T : Type} [CommRing R] [IsDomain R] [CharZero R] [CommRing T] [IsDomain T]
+        [Algebra R T] [FaithfulSMul R T] (alg : Algebra.IsAlgebraic R T) :
+        Algebra.IsEtaleAt R (⊥ : Ideal T) := by
+      delta Algebra.IsEtaleAt Localization.AtPrime
+      rw [primeCompl_bot]
+      have : IsScalarTower R (FractionRing R) (FractionRing T) :=
+        FractionRing.isScalarTower_liftAlgebra R (FractionRing T)
+      have : Algebra.IsAlgebraic R (FractionRing T) :=
+        (IsFractionRing.isAlgebraic_iff' R T (FractionRing T)).1 alg
+      have : Algebra.IsAlgebraic (FractionRing R) (FractionRing T) :=
+        ⟨fun x ↦ (IsFractionRing.isAlgebraic_iff R (FractionRing R) (FractionRing T)).1
+          (Algebra.IsAlgebraic.isAlgebraic x)⟩
+      exact Algebra.FormallyEtale.comp R (FractionRing R) (FractionRing T)
+    exact atZero G)
   let U := { c.away δ with coordinate := _, etale := congr($(comp_aeval _ (toAway δ).1).1.Etale).mp
                              (etale_algebraMap.2 et) }
   have e₃ := (c.mem_locus_away δ κ).2 (by simpa using! I.ne hδ)

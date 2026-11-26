@@ -27,8 +27,13 @@ lemma compactMean_mem_cyclicSpan {ρ : Representation ℂ G V} {y} {K : Subgroup
 /-- The subrepresentation of ρ on its smooth vectors, those fixed by all g in some neighbourhood
 of 1. -/
 def smoothVectorRep [TopologicalSpace G] [IsTopologicalGroup G] := ρ.subrepresentation ⟨⟨⟨{x | ∀ᶠ
-  g in _, ρ g x = x}, (·.mp <| ·.mono (by grind))⟩, by simp⟩, fun _ _ ↦ (·.mono (by simp_all))⟩
-  fun a _ _ ↦ .mono ((continuous_const_mul a⁻¹).mul_const a |>.tendsto 1 (by simpa)) (by simp)
+  g in nhds (1 : G), ρ g x = x}, (·.mp <| ·.mono (by grind))⟩, by simp⟩, fun _ _ ↦ (·.mono (by simp_all))⟩
+  fun a x hx ↦ by
+    have hc : Filter.Tendsto (fun g : G ↦ a⁻¹ * g * a) (nhds 1) (nhds 1) := by
+      simpa using ((continuous_const_mul a⁻¹).mul_const a).tendsto (1 : G)
+    change ∀ᶠ g in nhds (1 : G), ρ g x = x at hx
+    filter_upwards [hc.eventually hx] with g hg
+    simpa [← Module.End.mul_apply, ← map_mul, ← mul_assoc] using congrArg (ρ a) hg
 
 instance [TopologicalSpace G] [IsTopologicalGroup G] : IsSmoothRep (smoothVectorRep ρ) :=
-  ⟨(·.2.mono (by aesop))⟩
+  ⟨fun x ↦ x.2.mono fun g hg ↦ Subtype.ext hg⟩

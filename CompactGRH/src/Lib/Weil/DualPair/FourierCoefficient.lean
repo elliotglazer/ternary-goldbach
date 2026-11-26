@@ -47,14 +47,17 @@ attribute [local simp↓] realVec_realMatrix_mulVec integrated_realHeisOp mixedT
 basis t, are orthonormal at infinity and integral. -/
 @[local simp] noncomputable def Space.Splitting.IsAdapted.mixedModel :
     MixedModel (realSigns E s) (realSigns E s₀) (InfinitePlace E × p) := by
-  choose T e using by simpa using h.exists_real_zeroTerm isMixedLaw_mixedTerm
+  choose T e using h.exists_real_zeroTerm D.isMixedLaw_mixedTerm
+  simp at e
   use realMatrix (D.lAdelic * t⁻¹.1ᴴ), realMatrix (D.kAdelic * t.1), realMatrix D.iAdelic,
     (T.comp <| realHeisOp <| realMatrix (D.lAdelic * t⁻¹.1ᴴ) *ᵥ ·), ⟨realMatrix (t.1ᴴ * D.lCoord),
-    realMatrix _, realMatrix (t⁻¹.1 * D.kCoord), fun y ↦ Function.Injective.of_ker realVec (by
+    realMatrix D.iCoord, realMatrix (t⁻¹.1 * D.kCoord), fun y ↦ Function.Injective.of_ker realVec (by
     simp_all [realVec, funext_iff])
     (by simpa [↓map_add] using! congr($D.symm.sum_frame_mul_coord_eq_one *ᵥ _))⟩
   all_goals intros; apply eq_of_integrated_zeroTerm_eq h
-  erw [← (by simpa using (adelicSum E (n := p) 1).2 ⟨·, 0⟩ ⟨·, 0⟩ :)]
+  have hβ (a b : InfinitePlace E × p → ℂ) := (adelicSum E (n := p) 1).beta_equiv (a, 0) (b, 0)
+  simp at hβ
+  erw [← hβ]
   simpa [← e, -Rep.mul] using fun _ ↦ D.isMixedLaw_mixedTerm (t⁻¹.1ᴴ *ᵥ _) (D.lAdelic *ᵥ t⁻¹.1ᴴ *ᵥ
     _ + D.iAdelic *ᵥ _ + D.kAdelic *ᵥ t.1 *ᵥ _) _
   simpa [← e] using h.omega_projReal_of_isMixedLaw isMixedLaw_mixedTerm _

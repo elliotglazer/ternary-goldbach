@@ -63,7 +63,7 @@ theorem factor_ball (hf : Differentiable ℂ f) (hfc : f c ≠ 0) (hR : 0 < R) :
   set S := (divB_finite f c R).toFinset with hS
   have hDnn : ∀ u, 0 ≤ D u := fun u => (MeromorphicOn.AnalyticOnNhd.divisor_nonneg hfa) u
   -- the factorized rational function as a finite product
-  have hP : ∀ z, Function.factorizedRational (⇑D) z = ∏ u ∈ S, (z - u) ^ (D u).toNat := by
+  have hP : ∀ z, (∏ᶠ u, (· - u) ^ D u) z = ∏ u ∈ S, (z - u) ^ (D u).toNat := by
     intro z
     rw [Function.FactorizedRational.finprod_eq_fun (divB_finite f c R)]
     simp only
@@ -207,7 +207,7 @@ theorem landau (hf : Differentiable ℂ f) (hfc : f c ≠ 0) (hR : 0 < R) {B : �
       field_simp
       ring
     intro w hw
-    have h := isOpen_ball.is_const_of_deriv_eq_zero (isPreconnected_ball : IsPreconnected (ball c r))
+    have h := isOpen_ball.is_const_of_deriv_eq_zero (convex_ball c r).isPreconnected
       (f := fun w => g w * Complex.exp (-H w))
       (fun w hw => (hE w hw).differentiableAt.differentiableWithinAt)
       (fun w hw => (hE w hw).deriv) hw (mem_ball_self hr0)

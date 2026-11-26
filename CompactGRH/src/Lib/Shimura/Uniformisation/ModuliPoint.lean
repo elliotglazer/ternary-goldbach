@@ -101,7 +101,7 @@ def IsPeriodMap := ∀ w, Q (Complex.I • fun i v ↦ (ite (v = v₀) ℓ 1 *�
 /-- The point a·(g, α) = (xg, ℓ, (α_i P_i)) for a = (x, ℓ, P), a similitude g and integers α_i
 of E. -/
 noncomputable def ModuliPoint.act (a : ModuliPoint E n ν) (g : GUPlus E n) (α : Fin ν → 𝓞 E := 1) :
-  ModuliPoint E n ν := { a with x := _ * g, P i := cmEmbedding (α i).val • a.P
+  ModuliPoint E n ν := { a with x := a.x * g, P i := cmEmbedding (α i).val • a.P
                                   i, isSignedFrame := by simpa [ratConj] using a.4.mul 1 g.2.1 }
 
 /-- z is an isomorphism from (x, ℓ, P) to (x', ℓ', P') at level K: x'⁻¹zx ∈ K, zℓz⁻¹ = ℓ' at v₀,

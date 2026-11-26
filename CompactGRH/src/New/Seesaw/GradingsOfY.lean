@@ -207,10 +207,17 @@ def Data.lastGrading {M} (e : D.m = M) : Grading (D.spaceY M) D.N (D.InitIndex M
 
 /-- The finite evaluation `ArrowPair.finEval` of the pair of arrows Y_{2i} → Y_{2i+1} → Y_{2i+2}:
 for the middle pair if i < ϱ, the last pair if i = ϱ, and 0 beyond. -/
-def Data.pairEvalY i := by refine if _ : i < D.ϱ then (middlePair (D.gradingY (2 * i))
-  (D.gradingY (2 * i + 1)) (D.gradingY (2 * i + 2)) ?_ ?_ ?_).finEval else if _ : D.ϱ =
-  i then (lastPair (D.gradingY _) (D.gradingY _) (D.lastGrading ?_) ?_ ?_
-  congr($D.π_mul_star) ?_).finEval else 0 <;> (try simp [gradingY]) <;> grind
+def Data.pairEvalY (i : ℕ) :=
+  if hi : i < D.ϱ then
+    (middlePair (D.gradingY (2 * i)) (D.gradingY (2 * i + 1)) (D.gradingY (2 * i + 2))
+      (by (try simp [gradingY]) <;> grind) (by (try simp [gradingY]) <;> grind)
+      (by (try simp [gradingY]) <;> grind)).finEval
+  else if hi : D.ϱ = i then
+    (lastPair (D.gradingY (2 * i)) (D.gradingY (2 * i + 1))
+      (D.lastGrading (M := 2 * i + 2) (by (try simp [gradingY]) <;> grind))
+      (by (try simp [gradingY]) <;> grind) (by (try simp [gradingY]) <;> grind)
+      congr($D.π_mul_star) (by (try simp [gradingY]) <;> grind)).finEval
+  else 0
 
 /-- The natural number g^{f𝗇²}, with g = g₀g₁, f the number of infinite places, 𝗇 = `Data.n` m. -/
 abbrev Data.cutBound := D.gProd ^ (D.f * D.n D.m ^ 2)

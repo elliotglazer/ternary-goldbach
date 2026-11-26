@@ -127,15 +127,20 @@ lemma line_formula_of_mulClass_injective (i : Function.Injective (Θ.mulClass (S
     Θ.sliceEquiv_mulClass, Function.Exact.splitSurjectiveEquiv]; abel!)
     (Finsupp.equivFunOnFinite.trans (.boolArrowEquivProd _)).symm.bijective sliceEquiv.bijective).1
     (Function.Exact.splitSurjectiveEquiv (f := (Θ.mulClass _).toIntLinearMap) (g :=
-    (comp _).toIntLinearMap) (.of_comp_of_mem_range (funext (Θ.comp_etaAt_basePt · ▸
-    Θ.mulClass_eq_comp_etaAt _ _ rfl _)) fun x e ↦ s x (sliceEquiv.injective (by
+    (comp _).toIntLinearMap) (.of_comp_of_mem_range (funext fun y ↦
+      (Θ.mulClass_eq_comp_etaAt (S := S) (etaClass g).toTotalH (freeAbSectionMap (basePt g))
+        (b := freeAbSectionMap (basePt g)) rfl y).trans (Θ.comp_etaAt_basePt y)) fun x e ↦ s x (sliceEquiv.injective (by
     erw [TorsionCoeff.sliceEquiv_mulClass, map_homClass_comp]
     exact .trans (etaAt_swap Θ.onElements.onElements (S := _ ⋙ _) _ (by
       simpa -dsimp [map_homClass_comp] using! congr(TotalH.map (restrictAlong _)
         (.map (restrictAlong _) $e))) ⟨_, (·.1.2)⟩ _) ((comp_assoc ..).trans
       (congrArg _ (by erw [TotalH.map_comp, Θ.onElements.map_etaAt_onElements]; rfl)))))) i
     ⟨(sliceEquiv.symm.toAddMonoidHom.comp (TotalH.map (restrictAlong _))).toIntLinearMap,
-    LinearMap.ext fun x ↦ ((map_homClass_comp.trans (a .. ▸ rfl)).congr (a _ x)).1
+    LinearMap.ext fun x ↦ ((map_homClass_comp.trans
+      (congrArg (pullbackAlong ((restrictAlong (sectionLift (𝟭 C) (basePt g))).map
+        (((restrictAlong (elementsProj (projLineAlong g))).whiskerLeft
+          (tensorPoint (freeAbMap tautSection))).app S)))
+        (a _ (sliceEquiv.symm (TotalH.map (restrictAlong (elementsProj (projLineAlong g))) x))))).congr (a _ x)).1
     (congrArg _ (sliceEquiv.right_inv _))⟩).1.symm.bijective
 
 /-- Projective line formula H(P¹ × N) = H(N) ⊕ ηH(N), for all N, in the theory `tiltTheory`
@@ -243,12 +248,12 @@ def TestOver.resScalars : TestOver k ⥤ TestOver A :=
 structure map k → B. -/
 def TestOver.structurePt [IsAlgClosed k] :
   pointFunctor _ ⟶ resScalars A k ⋙ reprBy ⟨of A k, isTest_of_preValuationRing⟩ := sectionMap
-  ⟨fun B ↦ ⟨⟨CommAlg.homOfRingHom _ (by tauto)⟩⟩, (congr(⟨⟨$(by ext; apply ·.1.1.2)⟩⟩))⟩
+  ⟨fun B ↦ ⟨⟨CommAlg.homOfRingHom (algebraMap k B.1) (by tauto)⟩⟩, (congr(⟨⟨$(by ext; apply ·.1.1.2)⟩⟩))⟩
 
 lemma hasUnivPoints_structurePt [IsAlgClosed k] : (Comparison.restrict (TestOver.resScalars A k)
   Theory.locallyConstant.F).HasUnivPoints (TestOver.structurePt A k) := fun B y ↦ ⟨⟨@of k _ _ _
   y.1.1.1.1.toAlgebra, B.2⟩, ⟨⟩, ⟨CommAlg.homOfRingHom _ (y.1.1.1.2 · |>.symm)⟩, rfl, fun _ _ f e ↦
-  ⟨⟨CommAlg.homOfRingHom _ (congr($e.1.1.1 ·).symm)⟩, by bound⟩,
+  ⟨⟨CommAlg.homOfRingHom f.1.1.1 (congr($e.1.1.1 ·).symm)⟩, by bound⟩,
   ConcreteCategory.bijective_of_isIso ((locConstCoeff _).map (𝟙 _))⟩
 
 /-- The absolutely integrally closed valuation ring A, viewed as a test over itself. -/
@@ -430,8 +435,18 @@ lemma isGood_of_prod_projLine : D.IsGood (relFreeAb (V.preimage (fst ..) ⊔ (af
   (.trans (congrArg t.line_formula.integrate ((congrArg _ map_homClass_comp).trans (by
   conv_rhs => erw [map_zero, add_zero, ← TorsionCoeff.sliceEquiv_mulClass,
     ← map_restrictAlong_etaClass (g := 𝟭 _), ← e, map_homClass_comp, map_comp_assoc, map_homClass]
-  exact (comp_assoc_of_sq (by simpa [← homClass_comp] using congrArg _ (hom_ext (U := .whisker ..)))
-    _).trans (congrArg _ map_homClass_comp).symm))) (t.line_formula.integrate_mul_cupClass _ 0))
+  have normalize {B E : AbFunctor t.C} (v : abTensor (t.g ⋙ relFreeAb V) (freeAb (projLineAlong t.g)) ⟶ B)
+      (y : TotalH B E) :
+      sliceEquiv (N := t.g ⋙ relFreeAb V) (X := projLineAlong t.g) (F := E) (pullbackAlong v y) = pullbackAlong
+        (((restrictAlong (elementsProj (projLineAlong t.g))).whiskerLeft (tensorPoint (freeAbMap tautSection))).app (t.g ⋙ relFreeAb V))
+        (pullbackAlong ((restrictAlong (elementsProj (projLineAlong t.g))).map v) (TotalH.map (restrictAlong (elementsProj (projLineAlong t.g))) y)) :=
+    congrArg (pullbackAlong (((restrictAlong (elementsProj (projLineAlong t.g))).whiskerLeft
+      (tensorPoint (freeAbMap tautSection))).app (t.g ⋙ relFreeAb V)))
+      (map_homClass_comp (Φ := restrictAlong (elementsProj (projLineAlong t.g))) (f := v) (x := y))
+  refine Eq.trans ?_ (normalize _ _).symm
+  exact comp_assoc_of_sq ((homClass_comp _).symm.trans
+    ((congrArg homClass (relFreeAb.hom_ext
+      (U := (V.whisker t.g).whisker (elementsProj (projLineAlong t.g))))).trans (homClass_comp _))) _))) (t.line_formula.integrate_mul_cupClass _ 0))
 
 variable (L : D.IsGood (relFreeAb IdealFamily.ofMaximalIdeal.topLocus)) [Algebra A R] (P :
   StandardEtalePair R)

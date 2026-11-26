@@ -40,10 +40,12 @@ lemma finrank_eq_two_mul_card_infinitePlace :
   finrank ℚ K = 2 * numInfPlaces K := by simp +arith [← InfinitePlace.sum_mult_eq]
 
 omit [IsTotallyComplex K] in
-lemma rootDiscr_pos : 0 < rootDiscr K := Real.rpow_pos_of_pos (by simp [discr_ne_zero]) _
+lemma rootDiscr_pos : 0 < rootDiscr K := by
+  rw [rootDiscr_def]
+  exact Real.rpow_pos_of_pos (by simp [discr_ne_zero]) _
 
 lemma abs_discr_eq_rootDiscr_pow : (|discr K| : ℝ) = (rootDiscr K ^ numInfPlaces K) ^ 2 := by
-  simp [← pow_mul', finrank_eq_two_mul_card_infinitePlace, rootDiscr,
+  simp [← pow_mul', finrank_eq_two_mul_card_infinitePlace, rootDiscr_def,
     Real.rpow_inv_natCast_pow, -Nat.cast_mul]
 
 /-- An ideal P of the integers of a number field L whose square contains a rational prime

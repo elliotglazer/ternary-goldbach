@@ -10,7 +10,7 @@ rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
 [[lean_lib]]
 name = "GoldbachProof"
 roots = ["CompletedGoldbach"]
-globs = ["AdmissibleWave", "ArcCenters", "ArcDisjoint", "ArcMeasure", "ArcSeparation", "ArcTranslation", "ArcUnion", "Arith", "Assembly", "AtanCertificate", "AtanCheck", "AtomIntegral", "BadPrimes", "BankAccess", "BankEntry", "BindPool", "BoundedBands", "BoundedGeometry", "BoundedMajor", "BoxFunctions", "BoxGeometry", "BoxRay", "BoxTiling", "Budget", "BudgetCore", "CalcLanguage", "CellEnvelope", "CellFormula", "CellSeries", "CentralZeros", "CharacterComparison", "CharacterError", "CharacterFormula", "Coefficient", "CompletedFiniteRows", "CompletedGoldbach", "ComplexRate", "CriticalGamma", "DensityBound", "DirectData", "DirectSound", "Energy", "ExpCheck", "ExpLookup", "ExpSteps", "ExtendedPrefix", "ExtendedPrefixB", "Extension0", "Extension1", "ExtensionB0", "ExtensionB1", "ExtensionB2", "ExtensionB3", "ExtensionCommon", "ExtensionCommonB", "FastHex", "FiniteAtHeight", "FiniteBridge", "FiniteGaussian", "FormulaGamma", "FormulaMesh", "FormulaProfile", "FourierEnergy", "FullWaveComparison", "GammaBudget", "GaussianSource", "GlobalPool", "GoldbachBand01Common", "GoldbachBand01Prefix", "GoldbachBand01Shard0", "GoldbachBand01Shard1", "GoldbachBand01Shard2", "GoldbachBand01Shard3", "GoldbachBand01Shard4", "GoldbachBand01Shard5", "GoldbachBand01Shard6", "GoldbachBand01Shard7", "GoldbachBand02Common", "GoldbachBand02Prefix", "GoldbachBand02Shard0", "GoldbachBand02Shard1", "GoldbachBand02Shard10", "GoldbachBand02Shard11", "GoldbachBand02Shard2", "GoldbachBand02Shard3", "GoldbachBand02Shard4", "GoldbachBand02Shard5", "GoldbachBand02Shard6", "GoldbachBand02Shard7", "GoldbachBand02Shard8", "GoldbachBand02Shard9", "GoldbachBand03Common", "GoldbachBand03Prefix", "GoldbachBand03Shard0", "GoldbachBand03Shard1", "GoldbachBand03Shard10", "GoldbachBand03Shard11", "GoldbachBand03Shard12", "GoldbachBand03Shard13", "GoldbachBand03Shard14", "GoldbachBand03Shard15", "GoldbachBand03Shard16", "GoldbachBand03Shard17", "GoldbachBand03Shard2", "GoldbachBand03Shard3", "GoldbachBand03Shard4", "GoldbachBand03Shard5", "GoldbachBand03Shard6", "GoldbachBand03Shard7", "GoldbachBand03Shard8", "GoldbachBand03Shard9", "GoldbachBand04Common", "GoldbachBand04Prefix", "GoldbachBand04Shard0", "GoldbachBand04Shard1", "GoldbachBand04Shard10", "GoldbachBand04Shard11", "GoldbachBand04Shard12", "GoldbachBand04Shard13", "GoldbachBand04Shard14", "GoldbachBand04Shard15", "GoldbachBand04Shard16", "GoldbachBand04Shard17", "GoldbachBand04Shard18", "GoldbachBand04Shard19", "GoldbachBand04Shard2", "GoldbachBand04Shard20", "GoldbachBand04Shard21", "GoldbachBand04Shard22", "GoldbachBand04Shard23", "GoldbachBand04Shard24", "GoldbachBand04Shard25", "GoldbachBand04Shard26", "GoldbachBand04Shard3", "GoldbachBand04Shard4", "GoldbachBand04Shard5", "GoldbachBand04Shard6", "GoldbachBand04Shard7", "GoldbachBand04Shard8", "GoldbachBand04Shard9", "GoldbachBand05Common", "GoldbachBand05FactorLeaves", "GoldbachBand05Prefix", "GoldbachBand05Shard0", "GoldbachBand05Shard1", "GoldbachBand05Shard10", "GoldbachBand05Shard11", "GoldbachBand05Shard12", "GoldbachBand05Shard13", "GoldbachBand05Shard14", "GoldbachBand05Shard15", "GoldbachBand05Shard16", "GoldbachBand05Shard17", "GoldbachBand05Shard18", "GoldbachBand05Shard19", "GoldbachBand05Shard2", "GoldbachBand05Shard20", "GoldbachBand05Shard21", "GoldbachBand05Shard22", "GoldbachBand05Shard23", "GoldbachBand05Shard24", "GoldbachBand05Shard25", "GoldbachBand05Shard26", "GoldbachBand05Shard27", "GoldbachBand05Shard28", "GoldbachBand05Shard29", "GoldbachBand05Shard3", "GoldbachBand05Shard30", "GoldbachBand05Shard31", "GoldbachBand05Shard32", "GoldbachBand05Shard33", "GoldbachBand05Shard34", "GoldbachBand05Shard35", "GoldbachBand05Shard36", "GoldbachBand05Shard37", "GoldbachBand05Shard38", "GoldbachBand05Shard39", "GoldbachBand05Shard4", "GoldbachBand05Shard5", "GoldbachBand05Shard6", "GoldbachBand05Shard7", "GoldbachBand05Shard8", "GoldbachBand05Shard9", "GoldbachBand06Common", "GoldbachBand06FactorLeaves", "GoldbachBand06Prefix", "GoldbachBand06Shard0", "GoldbachBand06Shard1", "GoldbachBand06Shard10", "GoldbachBand06Shard11", "GoldbachBand06Shard12", "GoldbachBand06Shard13", "GoldbachBand06Shard14", "GoldbachBand06Shard15", "GoldbachBand06Shard16", "GoldbachBand06Shard17", "GoldbachBand06Shard18", "GoldbachBand06Shard19", "GoldbachBand06Shard2", "GoldbachBand06Shard20", "GoldbachBand06Shard21", "GoldbachBand06Shard22", "GoldbachBand06Shard23", "GoldbachBand06Shard24", "GoldbachBand06Shard25", "GoldbachBand06Shard26", "GoldbachBand06Shard27", "GoldbachBand06Shard28", "GoldbachBand06Shard29", "GoldbachBand06Shard3", "GoldbachBand06Shard30", "GoldbachBand06Shard31", "GoldbachBand06Shard32", "GoldbachBand06Shard33", "GoldbachBand06Shard34", "GoldbachBand06Shard35", "GoldbachBand06Shard36", "GoldbachBand06Shard37", "GoldbachBand06Shard38", "GoldbachBand06Shard39", "GoldbachBand06Shard4", "GoldbachBand06Shard40", "GoldbachBand06Shard41", "GoldbachBand06Shard42", "GoldbachBand06Shard43", "GoldbachBand06Shard44", "GoldbachBand06Shard45", "GoldbachBand06Shard46", "GoldbachBand06Shard47", "GoldbachBand06Shard48", "GoldbachBand06Shard49", "GoldbachBand06Shard5", "GoldbachBand06Shard50", "GoldbachBand06Shard51", "GoldbachBand06Shard52", "GoldbachBand06Shard53", "GoldbachBand06Shard54", "GoldbachBand06Shard55", "GoldbachBand06Shard56", "GoldbachBand06Shard57", "GoldbachBand06Shard58", "GoldbachBand06Shard59", "GoldbachBand06Shard6", "GoldbachBand06Shard60", "GoldbachBand06Shard7", "GoldbachBand06Shard8", "GoldbachBand06Shard9", "GoldbachDigamma", "GoldbachExpSubstitution", "GoldbachLean.Saouter1998.ModPow", "GoldbachLean.Saouter1998.Paper", "GoldbachLean.Saouter1998.Theorem2", "GoldbachNatPowMod", "GoldbachOrderAndLogDeriv", "GoldbachVersionAliases", "GoldbachZetaConj", "LadderCheck", "LadderToQuadrillion", "LaplaceCube", "LargeTail", "LeakBound", "LeakExchange", "LeakNumeric", "LeakOutside", "LeftIntegral", "LeftWeight", "LocalLeak", "LocalLowZeros", "LocalMellin", "LocalPowers", "LocalWeight", "LogCertificate", "LongRay", "LookupOperation", "LookupSamples", "LowerAssembly", "LowerCutoff", "LowerModel", "LowerPrefix", "LowerRatio", "MajorBudget", "MajorComparison", "MajorEnergy", "MajorIdentity", "MajorNumerics", "MeshCosh", "MinorIntegral", "MinorNumerics", "MinorOnly", "ModelRoute", "Moment", "NumericAssembly", "PatchedModel", "PilotPrimeProductBasis", "PilotPrimeProductInterval", "PinnedCount", "Power10Block00", "Power10Block01", "Power10Block02", "Power10Block03", "Power10Block04", "Power10Block05", "Power10Block06", "Power10Block07", "Power10Common", "Power10Joined", "PreciseExp", "PrefixCheck", "PrefixFactorial", "PrefixJoin", "PrefixSource", "PrimeBitmap", "PrimeInterval", "PrimeProductCheck", "PrimeSupport", "PrincipalFormula", "PrincipalMajor", "PrincipalTail", "PrincipalTransform", "PrincipalWave", "ProductExtension126232552448To138580583424", "ProductExtension138580583424To152539227136", "ProductExtension152539227136To180456514560", "ProductExtension180456514560To257765925888", "ProductExtension257765925888To564386325504", "ProductPrefix126232552448", "ProductPrefix138580583424", "ProductPrefix152539227136", "ProductPrefix180456514560", "ProductPrefix257765925888", "ProductPrefix564386325504", "ProductRange100462748674Interval", "ProductRange100999619586Interval", "ProductRange101536490498Interval", "ProductRange102073361410Interval", "ProductRange102610232322Interval", "ProductRange103147103234Interval", "ProductRange103683974146Interval", "ProductRange104220845058Interval", "ProductRange104757715970Interval", "ProductRange105294586882Interval", "ProductRange105831457794Interval", "ProductRange106368328706Interval", "ProductRange106905199618Interval", "ProductRange107442070530Interval", "ProductRange107978941442Interval", "ProductRange108515812354Interval", "ProductRange109052683266Interval", "ProductRange109589554178Interval", "ProductRange110126425090Interval", "ProductRange110663296002Interval", "ProductRange111200166914Interval", "ProductRange111737037826Interval", "ProductRange112273908738Interval", "ProductRange112810779650Interval", "ProductRange113347650562Interval", "ProductRange113884521474Interval", "ProductRange114421392386Interval", "ProductRange114958263298Interval", "ProductRange115495134210Interval", "ProductRange116032005122Interval", "ProductRange116568876034Interval", "ProductRange117105746946Interval", "ProductRange117642617858Interval", "ProductRange118179488770Interval", "ProductRange118716359682Interval", "ProductRange119253230594Interval", "ProductRange119790101506Interval", "ProductRange120326972418Interval", "ProductRange120863843330Interval", "ProductRange121400714242Interval", "ProductRange121937585154Interval", "ProductRange122474456066Interval", "ProductRange123011326978Interval", "ProductRange123548197890Interval", "ProductRange124085068802Interval", "ProductRange124621939714Interval", "ProductRange125158810626Interval", "ProductRange125695681538Interval", "ProductRange126232552450Interval", "ProductRange126769423362Interval", "ProductRange127306294274Interval", "ProductRange127843165186Interval", "ProductRange128380036098Interval", "ProductRange128916907010Interval", "ProductRange129453777922Interval", "ProductRange129990648834Interval", "ProductRange130527519746Interval", "ProductRange131064390658Interval", "ProductRange131601261570Interval", "ProductRange132138132482Interval", "ProductRange132675003394Interval", "ProductRange133211874306Interval", "ProductRange133748745218Interval", "ProductRange134285616130Interval", "ProductRange134822487042Interval", "ProductRange135359357954Interval", "ProductRange135896228866Interval", "ProductRange136433099778Interval", "ProductRange136969970690Interval", "ProductRange137506841602Interval", "ProductRange138043712514Interval", "ProductRange138580583426Interval", "ProductRange139117454338Interval", "ProductRange139654325250Interval", "ProductRange140191196162Interval", "ProductRange140728067074Interval", "ProductRange141264937986Interval", "ProductRange145559905282Interval", "ProductRange148244259842Interval", "ProductRange152539227138Interval", "ProductRange156834194434Interval", "ProductRange160592290818Interval", "ProductRange161129161730Interval", "ProductRange162739774466Interval", "ProductRange163276645378Interval", "ProductRange167571612674Interval", "ProductRange171866579970Interval", "ProductRange176161547266Interval", "ProductRange180456514562Interval", "ProductRange184751481858Interval", "ProductRange189046449154Interval", "ProductRange193341416450Interval", "ProductRange197636383746Interval", "ProductRange201931351042Interval", "ProductRange206226318338Interval", "ProductRange210521285634Interval", "ProductRange214816252930Interval", "ProductRange219111220226Interval", "ProductRange223406187522Interval", "ProductRange227701154818Interval", "ProductRange231996122114Interval", "ProductRange236291089410Interval", "ProductRange240586056706Interval", "ProductRange244881024002Interval", "ProductRange249175991298Interval", "ProductRange253470958594Interval", "ProductRange257765925890Interval", "ProductRange262060893186Interval", "ProductRange266355860482Interval", "ProductRange267429602306Interval", "ProductRange267966473218Interval", "ProductRange268503344130Interval", "ProductRange269040215042Interval", "ProductRange273335182338Interval", "ProductRange277630149634Interval", "ProductRange281925116930Interval", "ProductRange286220084226Interval", "ProductRange290515051522Interval", "ProductRange294810018818Interval", "ProductRange299104986114Interval", "ProductRange303399953410Interval", "ProductRange307694920706Interval", "ProductRange311989888002Interval", "ProductRange316284855298Interval", "ProductRange320579822594Interval", "ProductRange324874789890Interval", "ProductRange329169757186Interval", "ProductRange332390982658Interval", "ProductRange332927853570Interval", "ProductRange337222820866Interval", "ProductRange341517788162Interval", "ProductRange345812755458Interval", "ProductRange350107722754Interval", "ProductRange354402690050Interval", "ProductRange358697657346Interval", "ProductRange362992624642Interval", "ProductRange367287591938Interval", "ProductRange371582559234Interval", "ProductRange375877526530Interval", "ProductRange380172493826Interval", "ProductRange384467461122Interval", "ProductRange388762428418Interval", "ProductRange393057395714Interval", "ProductRange397352363010Interval", "ProductRange401647330306Interval", "ProductRange405942297602Interval", "ProductRange410237264898Interval", "ProductRange414532232194Interval", "ProductRange418827199490Interval", "ProductRange423122166786Interval", "ProductRange427417134082Interval", "ProductRange431712101378Interval", "ProductRange436007068674Interval", "ProductRange440302035970Interval", "ProductRange444060132354Interval", "ProductRange452650066946Interval", "ProductRange456945034242Interval", "ProductRange461240001538Interval", "ProductRange465534968834Interval", "ProductRange469829936130Interval", "ProductRange474124903426Interval", "ProductRange478419870722Interval", "ProductRange482714838018Interval", "ProductRange487009805314Interval", "ProductRange491304772610Interval", "ProductRange495599739906Interval", "ProductRange499894707202Interval", "ProductRange504189674498Interval", "ProductRange508484641794Interval", "ProductRange512779609090Interval", "ProductRange517074576386Interval", "ProductRange521369543682Interval", "ProductRange525664510978Interval", "ProductRange529959478274Interval", "ProductRange534254445570Interval", "ProductRange538549412866Interval", "ProductRange542844380162Interval", "ProductRange547139347458Interval", "ProductRange551434314754Interval", "ProductRange555729282050Interval", "ProductRange560024249346Interval", "ProductRange561097991170Interval", "ProductRange561634862082Interval", "ProductRange562708603906Interval", "ProductRange563245474818Interval", "ProductRange563782345730Interval", "ProductRange564319216642Interval", "ProductSuffix126232552448", "ProfileAssembly", "ProfileEnvelope", "ProfileFormula", "ProfileG0R0N4Data", "ProfileG0R0N4Entries", "ProfileG0R0N4Interval", "ProfileG0R0N4Scalar", "ProfileG0R16N12Batch", "ProfileG0R28N12Batch", "ProfileG0R40N12Batch", "ProfileG0R4N12Batch", "ProfileG0R52N4Batch", "ProfileG1R0N12Batch", "ProfileG1R12N1Data", "ProfileG1R12N1Entries", "ProfileG1R12N1Interval", "ProfileG1R12N1Scalar", "ProfileG1R13N12Batch", "ProfileG1R25N12Batch", "ProfileG1R37N12Batch", "ProfileG1R49N12Batch", "ProfileG1R61N12Batch", "ProfileG1R73N12Batch", "ProfileG1R85N12Batch", "ProfileG1R97N5Batch", "ProfileG2R0N12Batch", "ProfileG2R0N12Data", "ProfileG2R0N12Entries", "ProfileG2R0N12Interval", "ProfileG2R0N12Scalar", "ProfileG2R12N2Batch", "ProfileG3R0N12Batch", "ProfileG3R0N12Data", "ProfileG3R0N12Entries", "ProfileG3R12N9Batch", "ProfileG3R12N9Data", "ProfileG3R12N9Entries", "ProfileG3R21N1Data", "ProfileG3R21N1Entries", "ProfileG3R21N1Interval", "ProfileG3R21N1Scalar", "ProfileG3R22N1Data", "ProfileG3R22N1Entries", "ProfileG3R22N1Interval", "ProfileG3R22N1Scalar", "ProfileG3R23N12Batch", "ProfileG3R35N12Batch", "ProfileG3R47N4Batch", "ProfileG3R47N4Data", "ProfileG3R47N4Entries", "ProfileGeometry", "ProfileGroup0", "ProfileGroup1", "ProfileGroup2", "ProfileGroup3", "ProfileLargeTwist", "ProfileMultiplier", "ProfileNumbers", "ProfilePartition", "ProfilePieces", "ProfilePositive", "ProfileRemainder", "ProfileRoute", "ProfileTail", "ProfileTape16positive", "ProfileTape16positiveFormula", "ProfileTape1positive", "ProfileTape1positiveFormula", "ProfileTape1touching", "ProfileTape1touchingFormula", "ProfileTape2positive", "ProfileTape2positiveFormula", "ProfileTape2touching", "ProfileTape2touchingFormula", "ProfileTape4positive", "ProfileTape4positiveFormula", "ProfileTape8positive", "ProfileTape8positiveFormula", "ProfileTransfer", "RadixEndpoints", "RadixExpData", "RadixExpSound", "Ramanujan", "RationalArcs", "RationalCoordinates", "RationalError", "RealBoxEval", "RectGamma", "RectPrincipal", "RectProfile", "RegularizedMellin", "RegularizedWave", "ResidueBudget", "RoundArithmetic", "Route", "RouteOnArcs", "SampleTransfer", "ScalarProgram", "ScalarTemplate", "ScaledBinding", "ScaledData", "ScaledEntries", "ScaledEval", "ScaledLiteral", "ScaledRefs", "ScaledSound", "SharpMoment", "ShiftCount", "ShiftedWeight", "SingularBase", "SingularWindow", "SmallWindow", "Table", "TailBudget", "TailCharacter", "TailGamma", "TailHeight", "TailMajor", "TailMinor", "TailProduct", "TailScale", "TernaryGoldbach.CircleMethod", "TernaryGoldbach.Explicit.Datum", "TernaryGoldbach.Explicit.Digamma", "TernaryGoldbach.Explicit.EtaPlusBound", "TernaryGoldbach.Explicit.EtaPlusMellin", "TernaryGoldbach.Explicit.EtaPlusSq", "TernaryGoldbach.Explicit.ExplicitBound", "TernaryGoldbach.Explicit.ExplicitBoundGen", "TernaryGoldbach.Explicit.ExplicitFormula", "TernaryGoldbach.Explicit.GMellin", "TernaryGoldbach.Explicit.GammaBounds", "TernaryGoldbach.Explicit.GaussSmooth", "TernaryGoldbach.Explicit.GrExtend", "TernaryGoldbach.Explicit.LGrowth", "TernaryGoldbach.Explicit.LGrowthLeft", "TernaryGoldbach.Explicit.LGrowthPoly", "TernaryGoldbach.Explicit.Landau", "TernaryGoldbach.Explicit.LineZeros", "TernaryGoldbach.Explicit.LogDerivL", "TernaryGoldbach.Explicit.LogNumerics", "TernaryGoldbach.Explicit.MellinPlancherel", "TernaryGoldbach.Explicit.MellinPlancherelGen", "TernaryGoldbach.Explicit.MellinRotate", "TernaryGoldbach.Explicit.PsiExplicit", "TernaryGoldbach.Explicit.PsiPlateau", "TernaryGoldbach.Explicit.PsiSandwich", "TernaryGoldbach.Explicit.RectResidue", "TernaryGoldbach.Explicit.RectResidue2", "TernaryGoldbach.Explicit.WeilArch", "TernaryGoldbach.Explicit.WeilBridge", "TernaryGoldbach.Explicit.WeilFormula", "TernaryGoldbach.Explicit.WeilLineSum", "TernaryGoldbach.Explicit.WeilLines", "TernaryGoldbach.Explicit.WeilNumA", "TernaryGoldbach.Explicit.WeilNumB", "TernaryGoldbach.Explicit.WeilNumC", "TernaryGoldbach.Explicit.WeilPhiBound", "TernaryGoldbach.Explicit.WeilPrime", "TernaryGoldbach.Explicit.WeilRect", "TernaryGoldbach.Explicit.WeilSplit", "TernaryGoldbach.Explicit.WeilTest", "TernaryGoldbach.Explicit.WeilWeights", "TernaryGoldbach.Explicit.WeilWindow", "TernaryGoldbach.Explicit.Xi", "TernaryGoldbach.Explicit.XiPartial", "TernaryGoldbach.Explicit.ZeroCount", "TernaryGoldbach.Explicit.ZeroFree", "TernaryGoldbach.Explicit.ZeroFreeRegion", "TernaryGoldbach.Explicit.ZeroSumBound", "TernaryGoldbach.Explicit.ZeroSumGen", "TernaryGoldbach.Explicit.ZeroSums", "TernaryGoldbach.Explicit.ZetaBound", "TernaryGoldbach.Explicit.ZetaDatum", "TernaryGoldbach.Explicit.ZetaExplicit", "TernaryGoldbach.Explicit.ZetaGrowth", "TernaryGoldbach.Explicit.ZetaLowZeroFree", "TernaryGoldbach.Explicit.ZetaPoly", "TernaryGoldbach.Explicit.ZetaZeroSums", "TernaryGoldbach.Helfgott.Chebyshev", "TernaryGoldbach.Helfgott.Decay", "TernaryGoldbach.Helfgott.Defs", "TernaryGoldbach.Helfgott.HHBound", "TernaryGoldbach.Helfgott.NonPrime", "TernaryGoldbach.Helfgott.Numerics", "TernaryGoldbach.Helfgott.SupNorms", "TernaryGoldbach.MajorArcs.EtaCirc", "TernaryGoldbach.MajorArcs.HHFourier", "TernaryGoldbach.MinorArcs.Bombieri", "TernaryGoldbach.MinorArcs.Montgomery", "TernaryGoldbach.Prelim.GaussInduced", "TernaryGoldbach.Prelim.PlancherelReal", "TernaryGoldbach.Prelim.SmallMertens", "TernaryGoldbach.Prelim.SmallPsi", "TernaryGoldbach.Statement", "Totient", "TotientGrid", "TotientSquare", "Transfer", "TrivialZero", "TwistedWeights", "Vertical", "WeightedBound", "WeilWeightedRH", "WeilWindowRH", "WideProbe20Interval", "WideProbe22Interval", "WideSource20", "WideSource22", "ZeroBudget", "ZeroGrid", "ZeroRay", "ZeroWindow", "ZetaCount"]
+globs = ["AdmissibleWave", "ArcCenters", "ArcDisjoint", "ArcMeasure", "ArcSeparation", "ArcTranslation", "ArcUnion", "Arith", "Assembly", "AtanCertificate", "AtanCheck", "AtomIntegral", "BadPrimes", "BankAccess", "BankEntry", "BindPool", "BoundedBands", "BoundedGeometry", "BoundedMajor", "BoxFunctions", "BoxGeometry", "BoxRay", "BoxTiling", "Budget", "BudgetCore", "CalcLanguage", "CellEnvelope", "CellFormula", "CellSeries", "CentralZeros", "CharacterComparison", "CharacterError", "CharacterFormula", "Coefficient", "CompletedFiniteRows", "CompletedGoldbach", "ComplexRate", "CriticalGamma", "DensityBound", "DirectData", "DirectSound", "Energy", "ExpCheck", "ExpLookup", "ExpSteps", "ExtendedPrefix", "ExtendedPrefixB", "FastHex", "FiniteAtHeight", "FiniteBridge", "FiniteGaussian", "FormulaGamma", "FormulaMesh", "FormulaProfile", "FourierEnergy", "FullWaveComparison", "GammaBudget", "GaussianSource", "GlobalPool", "GoldbachBand01Prefix", "GoldbachBand02Prefix", "GoldbachBand03Prefix", "GoldbachBand04Prefix", "GoldbachBand05Prefix", "GoldbachBand06Prefix", "GoldbachDigamma", "GoldbachExpSubstitution", "GoldbachLean.Saouter1998.ModPow", "GoldbachLean.Saouter1998.Paper", "GoldbachLean.Saouter1998.Theorem2", "GoldbachNatPowMod", "GoldbachOrderAndLogDeriv", "GoldbachVersionAliases", "GoldbachZetaConj", "LadderCheck", "LadderToQuadrillion", "LaplaceCube", "LargeTail", "LeakBound", "LeakExchange", "LeakNumeric", "LeakOutside", "LeftIntegral", "LeftWeight", "LocalLeak", "LocalLowZeros", "LocalMellin", "LocalPowers", "LocalWeight", "LogCertificate", "LongRay", "LookupOperation", "LookupSamples", "LowerAssembly", "LowerCutoff", "LowerModel", "LowerPrefix", "LowerRatio", "MajorBudget", "MajorComparison", "MajorEnergy", "MajorIdentity", "MajorNumerics", "MeshCosh", "MinorIntegral", "MinorNumerics", "MinorOnly", "ModelRoute", "Moment", "NumericAssembly", "PatchedModel", "PinnedCount", "Power10Joined", "PreciseExp", "PrefixCheck", "PrefixFactorial", "PrefixJoin", "PrefixSource", "PrimeBitmap", "PrimeInterval", "PrimeProductCheck", "PrimeSupport", "PrincipalFormula", "PrincipalMajor", "PrincipalTail", "PrincipalTransform", "PrincipalWave", "ProductExtension126232552448To138580583424", "ProductExtension138580583424To152539227136", "ProductExtension152539227136To180456514560", "ProductExtension180456514560To257765925888", "ProductExtension257765925888To564386325504", "ProductPrefix126232552448", "ProductPrefix138580583424", "ProductPrefix152539227136", "ProductPrefix180456514560", "ProductPrefix257765925888", "ProductPrefix564386325504", "ProductSuffix126232552448", "ProfileAssembly", "ProfileEnvelope", "ProfileFormula", "ProfileG0R0N4Data", "ProfileG0R0N4Entries", "ProfileG0R0N4Interval", "ProfileG0R0N4Scalar", "ProfileG0R16N12Batch", "ProfileG0R28N12Batch", "ProfileG0R40N12Batch", "ProfileG0R4N12Batch", "ProfileG0R52N4Batch", "ProfileG1R0N12Batch", "ProfileG1R12N1Data", "ProfileG1R12N1Entries", "ProfileG1R12N1Interval", "ProfileG1R12N1Scalar", "ProfileG1R13N12Batch", "ProfileG1R25N12Batch", "ProfileG1R37N12Batch", "ProfileG1R49N12Batch", "ProfileG1R61N12Batch", "ProfileG1R73N12Batch", "ProfileG1R85N12Batch", "ProfileG1R97N5Batch", "ProfileG2R0N12Batch", "ProfileG2R0N12Data", "ProfileG2R0N12Entries", "ProfileG2R0N12Interval", "ProfileG2R0N12Scalar", "ProfileG2R12N2Batch", "ProfileG3R0N12Batch", "ProfileG3R0N12Data", "ProfileG3R0N12Entries", "ProfileG3R12N9Batch", "ProfileG3R12N9Data", "ProfileG3R12N9Entries", "ProfileG3R21N1Data", "ProfileG3R21N1Entries", "ProfileG3R21N1Interval", "ProfileG3R21N1Scalar", "ProfileG3R22N1Data", "ProfileG3R22N1Entries", "ProfileG3R22N1Interval", "ProfileG3R22N1Scalar", "ProfileG3R23N12Batch", "ProfileG3R35N12Batch", "ProfileG3R47N4Batch", "ProfileG3R47N4Data", "ProfileG3R47N4Entries", "ProfileGeometry", "ProfileGroup0", "ProfileGroup1", "ProfileGroup2", "ProfileGroup3", "ProfileLargeTwist", "ProfileMultiplier", "ProfileNumbers", "ProfilePartition", "ProfilePieces", "ProfilePositive", "ProfileRemainder", "ProfileRoute", "ProfileTail", "ProfileTape16positive", "ProfileTape16positiveFormula", "ProfileTape1positive", "ProfileTape1positiveFormula", "ProfileTape1touching", "ProfileTape1touchingFormula", "ProfileTape2positive", "ProfileTape2positiveFormula", "ProfileTape2touching", "ProfileTape2touchingFormula", "ProfileTape4positive", "ProfileTape4positiveFormula", "ProfileTape8positive", "ProfileTape8positiveFormula", "ProfileTransfer", "RadixEndpoints", "RadixExpData", "RadixExpSound", "Ramanujan", "RationalArcs", "RationalCoordinates", "RationalError", "RealBoxEval", "RectGamma", "RectPrincipal", "RectProfile", "RegularizedMellin", "RegularizedWave", "ResidueBudget", "RoundArithmetic", "Route", "RouteOnArcs", "SampleTransfer", "ScalarProgram", "ScalarTemplate", "ScaledBinding", "ScaledData", "ScaledEntries", "ScaledEval", "ScaledLiteral", "ScaledRefs", "ScaledSound", "SharpMoment", "ShiftCount", "ShiftedWeight", "SingularBase", "SingularWindow", "SmallWindow", "Table", "TailBudget", "TailCharacter", "TailGamma", "TailHeight", "TailMajor", "TailMinor", "TailProduct", "TailScale", "TernaryGoldbach.CircleMethod", "TernaryGoldbach.Explicit.Datum", "TernaryGoldbach.Explicit.Digamma", "TernaryGoldbach.Explicit.EtaPlusBound", "TernaryGoldbach.Explicit.EtaPlusMellin", "TernaryGoldbach.Explicit.EtaPlusSq", "TernaryGoldbach.Explicit.ExplicitBound", "TernaryGoldbach.Explicit.ExplicitBoundGen", "TernaryGoldbach.Explicit.ExplicitFormula", "TernaryGoldbach.Explicit.GMellin", "TernaryGoldbach.Explicit.GammaBounds", "TernaryGoldbach.Explicit.GaussSmooth", "TernaryGoldbach.Explicit.GrExtend", "TernaryGoldbach.Explicit.LGrowth", "TernaryGoldbach.Explicit.LGrowthLeft", "TernaryGoldbach.Explicit.LGrowthPoly", "TernaryGoldbach.Explicit.Landau", "TernaryGoldbach.Explicit.LineZeros", "TernaryGoldbach.Explicit.LogDerivL", "TernaryGoldbach.Explicit.LogNumerics", "TernaryGoldbach.Explicit.MellinPlancherel", "TernaryGoldbach.Explicit.MellinPlancherelGen", "TernaryGoldbach.Explicit.MellinRotate", "TernaryGoldbach.Explicit.PsiExplicit", "TernaryGoldbach.Explicit.PsiPlateau", "TernaryGoldbach.Explicit.PsiSandwich", "TernaryGoldbach.Explicit.RectResidue", "TernaryGoldbach.Explicit.RectResidue2", "TernaryGoldbach.Explicit.WeilArch", "TernaryGoldbach.Explicit.WeilBridge", "TernaryGoldbach.Explicit.WeilFormula", "TernaryGoldbach.Explicit.WeilLineSum", "TernaryGoldbach.Explicit.WeilLines", "TernaryGoldbach.Explicit.WeilNumA", "TernaryGoldbach.Explicit.WeilNumB", "TernaryGoldbach.Explicit.WeilNumC", "TernaryGoldbach.Explicit.WeilPhiBound", "TernaryGoldbach.Explicit.WeilPrime", "TernaryGoldbach.Explicit.WeilRect", "TernaryGoldbach.Explicit.WeilSplit", "TernaryGoldbach.Explicit.WeilTest", "TernaryGoldbach.Explicit.WeilWeights", "TernaryGoldbach.Explicit.WeilWindow", "TernaryGoldbach.Explicit.Xi", "TernaryGoldbach.Explicit.XiPartial", "TernaryGoldbach.Explicit.ZeroCount", "TernaryGoldbach.Explicit.ZeroFree", "TernaryGoldbach.Explicit.ZeroFreeRegion", "TernaryGoldbach.Explicit.ZeroSumBound", "TernaryGoldbach.Explicit.ZeroSumGen", "TernaryGoldbach.Explicit.ZeroSums", "TernaryGoldbach.Explicit.ZetaBound", "TernaryGoldbach.Explicit.ZetaDatum", "TernaryGoldbach.Explicit.ZetaExplicit", "TernaryGoldbach.Explicit.ZetaGrowth", "TernaryGoldbach.Explicit.ZetaLowZeroFree", "TernaryGoldbach.Explicit.ZetaPoly", "TernaryGoldbach.Explicit.ZetaZeroSums", "TernaryGoldbach.Helfgott.Chebyshev", "TernaryGoldbach.Helfgott.Decay", "TernaryGoldbach.Helfgott.Defs", "TernaryGoldbach.Helfgott.HHBound", "TernaryGoldbach.Helfgott.NonPrime", "TernaryGoldbach.Helfgott.Numerics", "TernaryGoldbach.Helfgott.SupNorms", "TernaryGoldbach.MajorArcs.EtaCirc", "TernaryGoldbach.MajorArcs.HHFourier", "TernaryGoldbach.MinorArcs.Bombieri", "TernaryGoldbach.MinorArcs.Montgomery", "TernaryGoldbach.Prelim.GaussInduced", "TernaryGoldbach.Prelim.PlancherelReal", "TernaryGoldbach.Prelim.SmallMertens", "TernaryGoldbach.Prelim.SmallPsi", "TernaryGoldbach.Statement", "Totient", "TotientGrid", "TotientSquare", "Transfer", "TrivialZero", "TwistedWeights", "Vertical", "WeightedBound", "WeilWeightedRH", "WeilWindowRH", "ZeroBudget", "ZeroGrid", "ZeroRay", "ZeroWindow", "ZetaCount"]
 
 [[lean_lib]]
 name = "GoldbachChallenge"
@@ -35,3 +35,598 @@ relaxedAutoImplicit = false
 maxSynthPendingDepth = 3
 pp.unicode.fun = true
 maxHeartbeats = 4000000
+
+# Bound concurrent finite certificate elaborations. Each pair waits for both preceding objects.
+[[lean_lib]]
+name = "FiniteBatch000"
+roots = []
+globs = ["Power10Block00", "Power10Block01"]
+
+[[lean_lib]]
+name = "FiniteBatch001"
+roots = []
+globs = ["Power10Block02", "Power10Block03"]
+needs = ["+Power10Block00:olean", "+Power10Block01:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch002"
+roots = []
+globs = ["Power10Block04", "Power10Block05"]
+needs = ["+Power10Block02:olean", "+Power10Block03:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch003"
+roots = []
+globs = ["Power10Block06", "Power10Block07"]
+needs = ["+Power10Block04:olean", "+Power10Block05:olean"]
+
+# The shared bitmap builds first through the existing imports of every Power10 block.
+[[lean_lib]]
+name = "FinitePower10Common"
+roots = []
+globs = ["Power10Common"]
+
+# Each later group of finite certificates starts once the previous group's objects exist.
+[[lean_lib]]
+name = "FiniteBatch004"
+roots = []
+globs = ["ExtensionCommon", "Extension0", "Extension1", "ExtensionCommonB"]
+needs = ["+Power10Block06:olean", "+Power10Block07:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch005"
+roots = []
+globs = ["ExtensionB0", "ExtensionB1", "ExtensionB2", "ExtensionB3"]
+needs = ["+ExtensionCommon:olean", "+Extension0:olean", "+Extension1:olean", "+ExtensionCommonB:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch006"
+roots = []
+globs = ["GoldbachBand01Common", "GoldbachBand01Shard0", "GoldbachBand01Shard1", "GoldbachBand01Shard2"]
+needs = ["+ExtensionB0:olean", "+ExtensionB1:olean", "+ExtensionB2:olean", "+ExtensionB3:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch007"
+roots = []
+globs = ["GoldbachBand01Shard3", "GoldbachBand01Shard4", "GoldbachBand01Shard5", "GoldbachBand01Shard6"]
+needs = ["+GoldbachBand01Common:olean", "+GoldbachBand01Shard0:olean", "+GoldbachBand01Shard1:olean", "+GoldbachBand01Shard2:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch008"
+roots = []
+globs = ["GoldbachBand01Shard7", "GoldbachBand02Common", "GoldbachBand02Shard0", "GoldbachBand02Shard1"]
+needs = ["+GoldbachBand01Shard3:olean", "+GoldbachBand01Shard4:olean", "+GoldbachBand01Shard5:olean", "+GoldbachBand01Shard6:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch009"
+roots = []
+globs = ["GoldbachBand02Shard2", "GoldbachBand02Shard3", "GoldbachBand02Shard4", "GoldbachBand02Shard5"]
+needs = ["+GoldbachBand01Shard7:olean", "+GoldbachBand02Common:olean", "+GoldbachBand02Shard0:olean", "+GoldbachBand02Shard1:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch010"
+roots = []
+globs = ["GoldbachBand02Shard6", "GoldbachBand02Shard7", "GoldbachBand02Shard8", "GoldbachBand02Shard9"]
+needs = ["+GoldbachBand02Shard2:olean", "+GoldbachBand02Shard3:olean", "+GoldbachBand02Shard4:olean", "+GoldbachBand02Shard5:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch011"
+roots = []
+globs = ["GoldbachBand02Shard10", "GoldbachBand02Shard11", "GoldbachBand03Common", "GoldbachBand03Shard0"]
+needs = ["+GoldbachBand02Shard6:olean", "+GoldbachBand02Shard7:olean", "+GoldbachBand02Shard8:olean", "+GoldbachBand02Shard9:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch012"
+roots = []
+globs = ["GoldbachBand03Shard1", "GoldbachBand03Shard2", "GoldbachBand03Shard3", "GoldbachBand03Shard4"]
+needs = ["+GoldbachBand02Shard10:olean", "+GoldbachBand02Shard11:olean", "+GoldbachBand03Common:olean", "+GoldbachBand03Shard0:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch013"
+roots = []
+globs = ["GoldbachBand03Shard5", "GoldbachBand03Shard6", "GoldbachBand03Shard7", "GoldbachBand03Shard8"]
+needs = ["+GoldbachBand03Shard1:olean", "+GoldbachBand03Shard2:olean", "+GoldbachBand03Shard3:olean", "+GoldbachBand03Shard4:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch014"
+roots = []
+globs = ["GoldbachBand03Shard9", "GoldbachBand03Shard10", "GoldbachBand03Shard11", "GoldbachBand03Shard12"]
+needs = ["+GoldbachBand03Shard5:olean", "+GoldbachBand03Shard6:olean", "+GoldbachBand03Shard7:olean", "+GoldbachBand03Shard8:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch015"
+roots = []
+globs = ["GoldbachBand03Shard13", "GoldbachBand03Shard14", "GoldbachBand03Shard15", "GoldbachBand03Shard16"]
+needs = ["+GoldbachBand03Shard9:olean", "+GoldbachBand03Shard10:olean", "+GoldbachBand03Shard11:olean", "+GoldbachBand03Shard12:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch016"
+roots = []
+globs = ["GoldbachBand03Shard17", "GoldbachBand04Common", "GoldbachBand04Shard0", "GoldbachBand04Shard1"]
+needs = ["+GoldbachBand03Shard13:olean", "+GoldbachBand03Shard14:olean", "+GoldbachBand03Shard15:olean", "+GoldbachBand03Shard16:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch017"
+roots = []
+globs = ["GoldbachBand04Shard2", "GoldbachBand04Shard3", "GoldbachBand04Shard4", "GoldbachBand04Shard5"]
+needs = ["+GoldbachBand03Shard17:olean", "+GoldbachBand04Common:olean", "+GoldbachBand04Shard0:olean", "+GoldbachBand04Shard1:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch018"
+roots = []
+globs = ["GoldbachBand04Shard6", "GoldbachBand04Shard7", "GoldbachBand04Shard8", "GoldbachBand04Shard9"]
+needs = ["+GoldbachBand04Shard2:olean", "+GoldbachBand04Shard3:olean", "+GoldbachBand04Shard4:olean", "+GoldbachBand04Shard5:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch019"
+roots = []
+globs = ["GoldbachBand04Shard10", "GoldbachBand04Shard11", "GoldbachBand04Shard12", "GoldbachBand04Shard13"]
+needs = ["+GoldbachBand04Shard6:olean", "+GoldbachBand04Shard7:olean", "+GoldbachBand04Shard8:olean", "+GoldbachBand04Shard9:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch020"
+roots = []
+globs = ["GoldbachBand04Shard14", "GoldbachBand04Shard15", "GoldbachBand04Shard16", "GoldbachBand04Shard17"]
+needs = ["+GoldbachBand04Shard10:olean", "+GoldbachBand04Shard11:olean", "+GoldbachBand04Shard12:olean", "+GoldbachBand04Shard13:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch021"
+roots = []
+globs = ["GoldbachBand04Shard18", "GoldbachBand04Shard19", "GoldbachBand04Shard20", "GoldbachBand04Shard21"]
+needs = ["+GoldbachBand04Shard14:olean", "+GoldbachBand04Shard15:olean", "+GoldbachBand04Shard16:olean", "+GoldbachBand04Shard17:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch022"
+roots = []
+globs = ["GoldbachBand04Shard22", "GoldbachBand04Shard23", "GoldbachBand04Shard24", "GoldbachBand04Shard25"]
+needs = ["+GoldbachBand04Shard18:olean", "+GoldbachBand04Shard19:olean", "+GoldbachBand04Shard20:olean", "+GoldbachBand04Shard21:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch023"
+roots = []
+globs = ["GoldbachBand04Shard26", "GoldbachBand05FactorLeaves", "GoldbachBand05Common", "GoldbachBand05Shard0"]
+needs = ["+GoldbachBand04Shard22:olean", "+GoldbachBand04Shard23:olean", "+GoldbachBand04Shard24:olean", "+GoldbachBand04Shard25:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch024"
+roots = []
+globs = ["GoldbachBand05Shard1", "GoldbachBand05Shard2", "GoldbachBand05Shard3", "GoldbachBand05Shard4"]
+needs = ["+GoldbachBand04Shard26:olean", "+GoldbachBand05FactorLeaves:olean", "+GoldbachBand05Common:olean", "+GoldbachBand05Shard0:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch025"
+roots = []
+globs = ["GoldbachBand05Shard5", "GoldbachBand05Shard6", "GoldbachBand05Shard7", "GoldbachBand05Shard8"]
+needs = ["+GoldbachBand05Shard1:olean", "+GoldbachBand05Shard2:olean", "+GoldbachBand05Shard3:olean", "+GoldbachBand05Shard4:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch026"
+roots = []
+globs = ["GoldbachBand05Shard9", "GoldbachBand05Shard10", "GoldbachBand05Shard11", "GoldbachBand05Shard12"]
+needs = ["+GoldbachBand05Shard5:olean", "+GoldbachBand05Shard6:olean", "+GoldbachBand05Shard7:olean", "+GoldbachBand05Shard8:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch027"
+roots = []
+globs = ["GoldbachBand05Shard13", "GoldbachBand05Shard14", "GoldbachBand05Shard15", "GoldbachBand05Shard16"]
+needs = ["+GoldbachBand05Shard9:olean", "+GoldbachBand05Shard10:olean", "+GoldbachBand05Shard11:olean", "+GoldbachBand05Shard12:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch028"
+roots = []
+globs = ["GoldbachBand05Shard17", "GoldbachBand05Shard18", "GoldbachBand05Shard19", "GoldbachBand05Shard20"]
+needs = ["+GoldbachBand05Shard13:olean", "+GoldbachBand05Shard14:olean", "+GoldbachBand05Shard15:olean", "+GoldbachBand05Shard16:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch029"
+roots = []
+globs = ["GoldbachBand05Shard21", "GoldbachBand05Shard22", "GoldbachBand05Shard23", "GoldbachBand05Shard24"]
+needs = ["+GoldbachBand05Shard17:olean", "+GoldbachBand05Shard18:olean", "+GoldbachBand05Shard19:olean", "+GoldbachBand05Shard20:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch030"
+roots = []
+globs = ["GoldbachBand05Shard25", "GoldbachBand05Shard26", "GoldbachBand05Shard27", "GoldbachBand05Shard28"]
+needs = ["+GoldbachBand05Shard21:olean", "+GoldbachBand05Shard22:olean", "+GoldbachBand05Shard23:olean", "+GoldbachBand05Shard24:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch031"
+roots = []
+globs = ["GoldbachBand05Shard29", "GoldbachBand05Shard30", "GoldbachBand05Shard31", "GoldbachBand05Shard32"]
+needs = ["+GoldbachBand05Shard25:olean", "+GoldbachBand05Shard26:olean", "+GoldbachBand05Shard27:olean", "+GoldbachBand05Shard28:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch032"
+roots = []
+globs = ["GoldbachBand05Shard33", "GoldbachBand05Shard34", "GoldbachBand05Shard35", "GoldbachBand05Shard36"]
+needs = ["+GoldbachBand05Shard29:olean", "+GoldbachBand05Shard30:olean", "+GoldbachBand05Shard31:olean", "+GoldbachBand05Shard32:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch033"
+roots = []
+globs = ["GoldbachBand05Shard37", "GoldbachBand05Shard38", "GoldbachBand05Shard39", "GoldbachBand06FactorLeaves"]
+needs = ["+GoldbachBand05Shard33:olean", "+GoldbachBand05Shard34:olean", "+GoldbachBand05Shard35:olean", "+GoldbachBand05Shard36:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch034"
+roots = []
+globs = ["GoldbachBand06Common", "GoldbachBand06Shard0", "GoldbachBand06Shard1", "GoldbachBand06Shard2"]
+needs = ["+GoldbachBand05Shard37:olean", "+GoldbachBand05Shard38:olean", "+GoldbachBand05Shard39:olean", "+GoldbachBand06FactorLeaves:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch035"
+roots = []
+globs = ["GoldbachBand06Shard3", "GoldbachBand06Shard4", "GoldbachBand06Shard5", "GoldbachBand06Shard6"]
+needs = ["+GoldbachBand06Common:olean", "+GoldbachBand06Shard0:olean", "+GoldbachBand06Shard1:olean", "+GoldbachBand06Shard2:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch036"
+roots = []
+globs = ["GoldbachBand06Shard7", "GoldbachBand06Shard8", "GoldbachBand06Shard9", "GoldbachBand06Shard10"]
+needs = ["+GoldbachBand06Shard3:olean", "+GoldbachBand06Shard4:olean", "+GoldbachBand06Shard5:olean", "+GoldbachBand06Shard6:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch037"
+roots = []
+globs = ["GoldbachBand06Shard11", "GoldbachBand06Shard12", "GoldbachBand06Shard13", "GoldbachBand06Shard14"]
+needs = ["+GoldbachBand06Shard7:olean", "+GoldbachBand06Shard8:olean", "+GoldbachBand06Shard9:olean", "+GoldbachBand06Shard10:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch038"
+roots = []
+globs = ["GoldbachBand06Shard15", "GoldbachBand06Shard16", "GoldbachBand06Shard17", "GoldbachBand06Shard18"]
+needs = ["+GoldbachBand06Shard11:olean", "+GoldbachBand06Shard12:olean", "+GoldbachBand06Shard13:olean", "+GoldbachBand06Shard14:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch039"
+roots = []
+globs = ["GoldbachBand06Shard19", "GoldbachBand06Shard20", "GoldbachBand06Shard21", "GoldbachBand06Shard22"]
+needs = ["+GoldbachBand06Shard15:olean", "+GoldbachBand06Shard16:olean", "+GoldbachBand06Shard17:olean", "+GoldbachBand06Shard18:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch040"
+roots = []
+globs = ["GoldbachBand06Shard23", "GoldbachBand06Shard24", "GoldbachBand06Shard25", "GoldbachBand06Shard26"]
+needs = ["+GoldbachBand06Shard19:olean", "+GoldbachBand06Shard20:olean", "+GoldbachBand06Shard21:olean", "+GoldbachBand06Shard22:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch041"
+roots = []
+globs = ["GoldbachBand06Shard27", "GoldbachBand06Shard28", "GoldbachBand06Shard29", "GoldbachBand06Shard30"]
+needs = ["+GoldbachBand06Shard23:olean", "+GoldbachBand06Shard24:olean", "+GoldbachBand06Shard25:olean", "+GoldbachBand06Shard26:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch042"
+roots = []
+globs = ["GoldbachBand06Shard31", "GoldbachBand06Shard32", "GoldbachBand06Shard33", "GoldbachBand06Shard34"]
+needs = ["+GoldbachBand06Shard27:olean", "+GoldbachBand06Shard28:olean", "+GoldbachBand06Shard29:olean", "+GoldbachBand06Shard30:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch043"
+roots = []
+globs = ["GoldbachBand06Shard35", "GoldbachBand06Shard36", "GoldbachBand06Shard37", "GoldbachBand06Shard38"]
+needs = ["+GoldbachBand06Shard31:olean", "+GoldbachBand06Shard32:olean", "+GoldbachBand06Shard33:olean", "+GoldbachBand06Shard34:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch044"
+roots = []
+globs = ["GoldbachBand06Shard39", "GoldbachBand06Shard40", "GoldbachBand06Shard41", "GoldbachBand06Shard42"]
+needs = ["+GoldbachBand06Shard35:olean", "+GoldbachBand06Shard36:olean", "+GoldbachBand06Shard37:olean", "+GoldbachBand06Shard38:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch045"
+roots = []
+globs = ["GoldbachBand06Shard43", "GoldbachBand06Shard44", "GoldbachBand06Shard45", "GoldbachBand06Shard46"]
+needs = ["+GoldbachBand06Shard39:olean", "+GoldbachBand06Shard40:olean", "+GoldbachBand06Shard41:olean", "+GoldbachBand06Shard42:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch046"
+roots = []
+globs = ["GoldbachBand06Shard47", "GoldbachBand06Shard48", "GoldbachBand06Shard49", "GoldbachBand06Shard50"]
+needs = ["+GoldbachBand06Shard43:olean", "+GoldbachBand06Shard44:olean", "+GoldbachBand06Shard45:olean", "+GoldbachBand06Shard46:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch047"
+roots = []
+globs = ["GoldbachBand06Shard51", "GoldbachBand06Shard52", "GoldbachBand06Shard53", "GoldbachBand06Shard54"]
+needs = ["+GoldbachBand06Shard47:olean", "+GoldbachBand06Shard48:olean", "+GoldbachBand06Shard49:olean", "+GoldbachBand06Shard50:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch048"
+roots = []
+globs = ["GoldbachBand06Shard55", "GoldbachBand06Shard56", "GoldbachBand06Shard57", "GoldbachBand06Shard58"]
+needs = ["+GoldbachBand06Shard51:olean", "+GoldbachBand06Shard52:olean", "+GoldbachBand06Shard53:olean", "+GoldbachBand06Shard54:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch049"
+roots = []
+globs = ["GoldbachBand06Shard59", "GoldbachBand06Shard60", "PilotPrimeProductBasis", "PilotPrimeProductInterval"]
+needs = ["+GoldbachBand06Shard55:olean", "+GoldbachBand06Shard56:olean", "+GoldbachBand06Shard57:olean", "+GoldbachBand06Shard58:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch050"
+roots = []
+globs = ["ProductRange100462748674Interval", "ProductRange100999619586Interval", "ProductRange101536490498Interval", "ProductRange102073361410Interval"]
+needs = ["+GoldbachBand06Shard59:olean", "+GoldbachBand06Shard60:olean", "+PilotPrimeProductBasis:olean", "+PilotPrimeProductInterval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch051"
+roots = []
+globs = ["ProductRange102610232322Interval", "ProductRange103147103234Interval", "ProductRange103683974146Interval", "ProductRange104220845058Interval"]
+needs = ["+ProductRange100462748674Interval:olean", "+ProductRange100999619586Interval:olean", "+ProductRange101536490498Interval:olean", "+ProductRange102073361410Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch052"
+roots = []
+globs = ["ProductRange104757715970Interval", "ProductRange105294586882Interval", "ProductRange105831457794Interval", "ProductRange106368328706Interval"]
+needs = ["+ProductRange102610232322Interval:olean", "+ProductRange103147103234Interval:olean", "+ProductRange103683974146Interval:olean", "+ProductRange104220845058Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch053"
+roots = []
+globs = ["ProductRange106905199618Interval", "ProductRange107442070530Interval", "ProductRange107978941442Interval", "ProductRange108515812354Interval"]
+needs = ["+ProductRange104757715970Interval:olean", "+ProductRange105294586882Interval:olean", "+ProductRange105831457794Interval:olean", "+ProductRange106368328706Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch054"
+roots = []
+globs = ["ProductRange109052683266Interval", "ProductRange109589554178Interval", "ProductRange110126425090Interval", "ProductRange110663296002Interval"]
+needs = ["+ProductRange106905199618Interval:olean", "+ProductRange107442070530Interval:olean", "+ProductRange107978941442Interval:olean", "+ProductRange108515812354Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch055"
+roots = []
+globs = ["ProductRange111200166914Interval", "ProductRange111737037826Interval", "ProductRange112273908738Interval", "ProductRange112810779650Interval"]
+needs = ["+ProductRange109052683266Interval:olean", "+ProductRange109589554178Interval:olean", "+ProductRange110126425090Interval:olean", "+ProductRange110663296002Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch056"
+roots = []
+globs = ["ProductRange113347650562Interval", "ProductRange113884521474Interval", "ProductRange114421392386Interval", "ProductRange114958263298Interval"]
+needs = ["+ProductRange111200166914Interval:olean", "+ProductRange111737037826Interval:olean", "+ProductRange112273908738Interval:olean", "+ProductRange112810779650Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch057"
+roots = []
+globs = ["ProductRange115495134210Interval", "ProductRange116032005122Interval", "ProductRange116568876034Interval", "ProductRange117105746946Interval"]
+needs = ["+ProductRange113347650562Interval:olean", "+ProductRange113884521474Interval:olean", "+ProductRange114421392386Interval:olean", "+ProductRange114958263298Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch058"
+roots = []
+globs = ["ProductRange117642617858Interval", "ProductRange118179488770Interval", "ProductRange118716359682Interval", "ProductRange119253230594Interval"]
+needs = ["+ProductRange115495134210Interval:olean", "+ProductRange116032005122Interval:olean", "+ProductRange116568876034Interval:olean", "+ProductRange117105746946Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch059"
+roots = []
+globs = ["ProductRange119790101506Interval", "ProductRange120326972418Interval", "ProductRange120863843330Interval", "ProductRange121400714242Interval"]
+needs = ["+ProductRange117642617858Interval:olean", "+ProductRange118179488770Interval:olean", "+ProductRange118716359682Interval:olean", "+ProductRange119253230594Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch060"
+roots = []
+globs = ["ProductRange121937585154Interval", "ProductRange122474456066Interval", "ProductRange123011326978Interval", "ProductRange123548197890Interval"]
+needs = ["+ProductRange119790101506Interval:olean", "+ProductRange120326972418Interval:olean", "+ProductRange120863843330Interval:olean", "+ProductRange121400714242Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch061"
+roots = []
+globs = ["ProductRange124085068802Interval", "ProductRange124621939714Interval", "ProductRange125158810626Interval", "ProductRange125695681538Interval"]
+needs = ["+ProductRange121937585154Interval:olean", "+ProductRange122474456066Interval:olean", "+ProductRange123011326978Interval:olean", "+ProductRange123548197890Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch062"
+roots = []
+globs = ["ProductRange126232552450Interval", "ProductRange126769423362Interval", "ProductRange127306294274Interval", "ProductRange127843165186Interval"]
+needs = ["+ProductRange124085068802Interval:olean", "+ProductRange124621939714Interval:olean", "+ProductRange125158810626Interval:olean", "+ProductRange125695681538Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch063"
+roots = []
+globs = ["ProductRange128380036098Interval", "ProductRange128916907010Interval", "ProductRange129453777922Interval", "ProductRange129990648834Interval"]
+needs = ["+ProductRange126232552450Interval:olean", "+ProductRange126769423362Interval:olean", "+ProductRange127306294274Interval:olean", "+ProductRange127843165186Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch064"
+roots = []
+globs = ["ProductRange130527519746Interval", "ProductRange131064390658Interval", "ProductRange131601261570Interval", "ProductRange132138132482Interval"]
+needs = ["+ProductRange128380036098Interval:olean", "+ProductRange128916907010Interval:olean", "+ProductRange129453777922Interval:olean", "+ProductRange129990648834Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch065"
+roots = []
+globs = ["WideSource20", "ProductRange132675003394Interval", "ProductRange133211874306Interval", "ProductRange133748745218Interval"]
+needs = ["+ProductRange130527519746Interval:olean", "+ProductRange131064390658Interval:olean", "+ProductRange131601261570Interval:olean", "+ProductRange132138132482Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch066"
+roots = []
+globs = ["ProductRange134285616130Interval", "ProductRange134822487042Interval", "ProductRange135359357954Interval", "ProductRange135896228866Interval"]
+needs = ["+WideSource20:olean", "+ProductRange132675003394Interval:olean", "+ProductRange133211874306Interval:olean", "+ProductRange133748745218Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch067"
+roots = []
+globs = ["ProductRange136433099778Interval", "ProductRange136969970690Interval", "ProductRange137506841602Interval", "WideSource22"]
+needs = ["+ProductRange134285616130Interval:olean", "+ProductRange134822487042Interval:olean", "+ProductRange135359357954Interval:olean", "+ProductRange135896228866Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch068"
+roots = []
+globs = ["ProductRange138043712514Interval", "ProductRange138580583426Interval", "ProductRange139117454338Interval", "ProductRange139654325250Interval"]
+needs = ["+ProductRange136433099778Interval:olean", "+ProductRange136969970690Interval:olean", "+ProductRange137506841602Interval:olean", "+WideSource22:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch069"
+roots = []
+globs = ["ProductRange140191196162Interval", "ProductRange140728067074Interval", "ProductRange141264937986Interval", "ProductRange145559905282Interval"]
+needs = ["+ProductRange138043712514Interval:olean", "+ProductRange138580583426Interval:olean", "+ProductRange139117454338Interval:olean", "+ProductRange139654325250Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch070"
+roots = []
+globs = ["ProductRange148244259842Interval", "ProductRange152539227138Interval", "ProductRange156834194434Interval", "ProductRange160592290818Interval"]
+needs = ["+ProductRange140191196162Interval:olean", "+ProductRange140728067074Interval:olean", "+ProductRange141264937986Interval:olean", "+ProductRange145559905282Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch071"
+roots = []
+globs = ["ProductRange161129161730Interval", "ProductRange162739774466Interval", "ProductRange163276645378Interval", "ProductRange167571612674Interval"]
+needs = ["+ProductRange148244259842Interval:olean", "+ProductRange152539227138Interval:olean", "+ProductRange156834194434Interval:olean", "+ProductRange160592290818Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch072"
+roots = []
+globs = ["ProductRange171866579970Interval", "ProductRange176161547266Interval", "ProductRange180456514562Interval", "ProductRange184751481858Interval"]
+needs = ["+ProductRange161129161730Interval:olean", "+ProductRange162739774466Interval:olean", "+ProductRange163276645378Interval:olean", "+ProductRange167571612674Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch073"
+roots = []
+globs = ["ProductRange189046449154Interval", "ProductRange193341416450Interval", "ProductRange197636383746Interval", "ProductRange201931351042Interval"]
+needs = ["+ProductRange171866579970Interval:olean", "+ProductRange176161547266Interval:olean", "+ProductRange180456514562Interval:olean", "+ProductRange184751481858Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch074"
+roots = []
+globs = ["ProductRange206226318338Interval", "ProductRange210521285634Interval", "ProductRange214816252930Interval", "ProductRange219111220226Interval"]
+needs = ["+ProductRange189046449154Interval:olean", "+ProductRange193341416450Interval:olean", "+ProductRange197636383746Interval:olean", "+ProductRange201931351042Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch075"
+roots = []
+globs = ["ProductRange223406187522Interval", "ProductRange227701154818Interval", "ProductRange231996122114Interval", "ProductRange236291089410Interval"]
+needs = ["+ProductRange206226318338Interval:olean", "+ProductRange210521285634Interval:olean", "+ProductRange214816252930Interval:olean", "+ProductRange219111220226Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch076"
+roots = []
+globs = ["ProductRange240586056706Interval", "ProductRange244881024002Interval", "ProductRange249175991298Interval", "ProductRange253470958594Interval"]
+needs = ["+ProductRange223406187522Interval:olean", "+ProductRange227701154818Interval:olean", "+ProductRange231996122114Interval:olean", "+ProductRange236291089410Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch077"
+roots = []
+globs = ["ProductRange257765925890Interval", "ProductRange262060893186Interval", "ProductRange266355860482Interval", "WideProbe20Interval"]
+needs = ["+ProductRange240586056706Interval:olean", "+ProductRange244881024002Interval:olean", "+ProductRange249175991298Interval:olean", "+ProductRange253470958594Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch078"
+roots = []
+globs = ["ProductRange267429602306Interval", "ProductRange267966473218Interval", "WideProbe22Interval", "ProductRange268503344130Interval"]
+needs = ["+ProductRange257765925890Interval:olean", "+ProductRange262060893186Interval:olean", "+ProductRange266355860482Interval:olean", "+WideProbe20Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch079"
+roots = []
+globs = ["ProductRange269040215042Interval", "ProductRange273335182338Interval", "ProductRange277630149634Interval", "ProductRange281925116930Interval"]
+needs = ["+ProductRange267429602306Interval:olean", "+ProductRange267966473218Interval:olean", "+WideProbe22Interval:olean", "+ProductRange268503344130Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch080"
+roots = []
+globs = ["ProductRange286220084226Interval", "ProductRange290515051522Interval", "ProductRange294810018818Interval", "ProductRange299104986114Interval"]
+needs = ["+ProductRange269040215042Interval:olean", "+ProductRange273335182338Interval:olean", "+ProductRange277630149634Interval:olean", "+ProductRange281925116930Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch081"
+roots = []
+globs = ["ProductRange303399953410Interval", "ProductRange307694920706Interval", "ProductRange311989888002Interval", "ProductRange316284855298Interval"]
+needs = ["+ProductRange286220084226Interval:olean", "+ProductRange290515051522Interval:olean", "+ProductRange294810018818Interval:olean", "+ProductRange299104986114Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch082"
+roots = []
+globs = ["ProductRange320579822594Interval", "ProductRange324874789890Interval", "ProductRange329169757186Interval", "ProductRange332390982658Interval"]
+needs = ["+ProductRange303399953410Interval:olean", "+ProductRange307694920706Interval:olean", "+ProductRange311989888002Interval:olean", "+ProductRange316284855298Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch083"
+roots = []
+globs = ["ProductRange332927853570Interval", "ProductRange337222820866Interval", "ProductRange341517788162Interval", "ProductRange345812755458Interval"]
+needs = ["+ProductRange320579822594Interval:olean", "+ProductRange324874789890Interval:olean", "+ProductRange329169757186Interval:olean", "+ProductRange332390982658Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch084"
+roots = []
+globs = ["ProductRange350107722754Interval", "ProductRange354402690050Interval", "ProductRange358697657346Interval", "ProductRange362992624642Interval"]
+needs = ["+ProductRange332927853570Interval:olean", "+ProductRange337222820866Interval:olean", "+ProductRange341517788162Interval:olean", "+ProductRange345812755458Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch085"
+roots = []
+globs = ["ProductRange367287591938Interval", "ProductRange371582559234Interval", "ProductRange375877526530Interval", "ProductRange380172493826Interval"]
+needs = ["+ProductRange350107722754Interval:olean", "+ProductRange354402690050Interval:olean", "+ProductRange358697657346Interval:olean", "+ProductRange362992624642Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch086"
+roots = []
+globs = ["ProductRange384467461122Interval", "ProductRange388762428418Interval", "ProductRange393057395714Interval", "ProductRange397352363010Interval"]
+needs = ["+ProductRange367287591938Interval:olean", "+ProductRange371582559234Interval:olean", "+ProductRange375877526530Interval:olean", "+ProductRange380172493826Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch087"
+roots = []
+globs = ["ProductRange401647330306Interval", "ProductRange405942297602Interval", "ProductRange410237264898Interval", "ProductRange414532232194Interval"]
+needs = ["+ProductRange384467461122Interval:olean", "+ProductRange388762428418Interval:olean", "+ProductRange393057395714Interval:olean", "+ProductRange397352363010Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch088"
+roots = []
+globs = ["ProductRange418827199490Interval", "ProductRange423122166786Interval", "ProductRange427417134082Interval", "ProductRange431712101378Interval"]
+needs = ["+ProductRange401647330306Interval:olean", "+ProductRange405942297602Interval:olean", "+ProductRange410237264898Interval:olean", "+ProductRange414532232194Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch089"
+roots = []
+globs = ["ProductRange436007068674Interval", "ProductRange440302035970Interval", "ProductRange444060132354Interval", "ProductRange452650066946Interval"]
+needs = ["+ProductRange418827199490Interval:olean", "+ProductRange423122166786Interval:olean", "+ProductRange427417134082Interval:olean", "+ProductRange431712101378Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch090"
+roots = []
+globs = ["ProductRange456945034242Interval", "ProductRange461240001538Interval", "ProductRange465534968834Interval", "ProductRange469829936130Interval"]
+needs = ["+ProductRange436007068674Interval:olean", "+ProductRange440302035970Interval:olean", "+ProductRange444060132354Interval:olean", "+ProductRange452650066946Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch091"
+roots = []
+globs = ["ProductRange474124903426Interval", "ProductRange478419870722Interval", "ProductRange482714838018Interval", "ProductRange487009805314Interval"]
+needs = ["+ProductRange456945034242Interval:olean", "+ProductRange461240001538Interval:olean", "+ProductRange465534968834Interval:olean", "+ProductRange469829936130Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch092"
+roots = []
+globs = ["ProductRange491304772610Interval", "ProductRange495599739906Interval", "ProductRange499894707202Interval", "ProductRange504189674498Interval"]
+needs = ["+ProductRange474124903426Interval:olean", "+ProductRange478419870722Interval:olean", "+ProductRange482714838018Interval:olean", "+ProductRange487009805314Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch093"
+roots = []
+globs = ["ProductRange508484641794Interval", "ProductRange512779609090Interval", "ProductRange517074576386Interval", "ProductRange521369543682Interval"]
+needs = ["+ProductRange491304772610Interval:olean", "+ProductRange495599739906Interval:olean", "+ProductRange499894707202Interval:olean", "+ProductRange504189674498Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch094"
+roots = []
+globs = ["ProductRange525664510978Interval", "ProductRange529959478274Interval", "ProductRange534254445570Interval", "ProductRange538549412866Interval"]
+needs = ["+ProductRange508484641794Interval:olean", "+ProductRange512779609090Interval:olean", "+ProductRange517074576386Interval:olean", "+ProductRange521369543682Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch095"
+roots = []
+globs = ["ProductRange542844380162Interval", "ProductRange547139347458Interval", "ProductRange551434314754Interval", "ProductRange555729282050Interval"]
+needs = ["+ProductRange525664510978Interval:olean", "+ProductRange529959478274Interval:olean", "+ProductRange534254445570Interval:olean", "+ProductRange538549412866Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch096"
+roots = []
+globs = ["ProductRange560024249346Interval", "ProductRange561097991170Interval", "ProductRange561634862082Interval", "ProductRange562708603906Interval"]
+needs = ["+ProductRange542844380162Interval:olean", "+ProductRange547139347458Interval:olean", "+ProductRange551434314754Interval:olean", "+ProductRange555729282050Interval:olean"]
+
+[[lean_lib]]
+name = "FiniteBatch097"
+roots = []
+globs = ["ProductRange563245474818Interval", "ProductRange563782345730Interval", "ProductRange564319216642Interval"]
+needs = ["+ProductRange560024249346Interval:olean", "+ProductRange561097991170Interval:olean", "+ProductRange561634862082Interval:olean", "+ProductRange562708603906Interval:olean"]

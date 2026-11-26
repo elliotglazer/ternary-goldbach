@@ -23,28 +23,27 @@ variable {n} [Fintype n] (ε : n → _) {E} [NormedAddCommGroup E] [NormedSpace 
 abbrev Bumps : Submodule ℂ (SmoothU ε ℂ) :=
   ⟨⟨⟨{β | HasCompactSupport β.1}, .add⟩, .zero⟩, fun _ ↦ .smul_left⟩
 
-variable {ε} (F : USign ε → E) (α : Bumps ε) (hF : Continuous F := by fun_prop)
+variable {ε} (F : USign ε → E) (α : Bumps ε)
 
 /-- The gl_n(ℂ)-module of compactly supported smooth complex functions on U(diag ε) under right
 derivatives, a submodule of `rightDeriv`. -/
 def bumpDeriv := (rightDeriv ..).restrictTo (Bumps ε) fun _ f ↦ (.intro · fun _ h ↦
   (rightDeriv_comp_clm (f := f) 0 (notMem_tsupport_iff_eventuallyEq.1 h)).eq_of_nhds)
 
-include hF
 
-lemma integrable_bump_inv_smul : Integrable fun y ↦ α.1.1 y⁻¹ • F y :=
+lemma integrable_bump_inv_smul (hF : Continuous F := by fun_prop) : Integrable fun y ↦ α.1.1 y⁻¹ • F y :=
   (α.2.comp_homeomorph (.inv _)).smul_right.integrable
 
 /-- For continuous F : U(diag ε) → E, the linear map sending a compactly supported smooth α to
 the function g ↦ ∫ α(y⁻¹)F(gy) dy. -/
-@[simps] def smear : Bumps ε →ₗ[ℂ] USign ε → E := by
+@[simps] def smear (hF : Continuous F := by fun_prop) : Bumps ε →ₗ[ℂ] USign ε → E := by
   use! fun α g ↦ ∫ y, α.1.1 y⁻¹ • F (g * y) <;> simp [add_smul, integral_add, mul_smul,
     fun g ↦ (integrable_bump_inv_smul (F <| g * ·) ·), integral_smul, funext_iff]
 
 /-- Derivatives of a convolution fall on the test function: if a curve γ in U(diag ε) has γ'(t)
 = γ(t)X, then `smear` α along γ has derivative at t the value at γ(t) of
 `smear` (Xα), Xα the right derivative. -/
-lemma hasDerivAt_smear {γ : ℝ → USign ε} {t X} (h : HasDerivAt (γ · |>.1.1) ((γ t).1 * X) t) :
+lemma hasDerivAt_smear (hF : Continuous F := by fun_prop) {γ : ℝ → USign ε} {t X} (h : HasDerivAt (γ · |>.1.1) ((γ t).1 * X) t) :
     HasDerivAt (smear F hF α <| γ ·) (smear F hF (bumpDeriv X α) (γ t)) t := by
   obtain ⟨⟨A, a⟩, ⟨C, c⟩, N, k, m⟩ := α.1.2, h.isBigO_sub.bound, exists_compact_mem_nhds (γ t)
   obtain ⟨K, n⟩ := α.2.mul k.inv, mem_of_mem_nhds m
@@ -64,7 +63,7 @@ lemma hasDerivAt_smear {γ : ℝ → USign ε} {t X} (h : HasDerivAt (γ · |>.1
   convert ← j.hasDerivAt <;> simp [integral_apply i] <;>
     rw [← integral_mul_left_eq_self] <;> congr! 4 <;> simp
 
-lemma rightDeriv_smear {α f} (e : smear F hF α = f.1) X : smear F hF (bumpDeriv X α) =
+lemma rightDeriv_smear (hF : Continuous F := by fun_prop) {α f} (e : smear F hF α = f.1) X : smear F hF (bumpDeriv X α) =
   (rightDeriv ε E X f).1 := have k Y g :=
     (hasDerivAt_smear F α hF (hasDerivAt_expU Y g 0)).unique (e ▸ hasDerivAt_rightDeriv_expU ..)
   eq_unitaryLiePart_add_I_smul ε X ▸ by simp_all [funext_iff]

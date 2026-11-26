@@ -120,7 +120,7 @@ lemma exists_wedderburn (f : H →* G) (h : HasSemiprimeSpan k ρ) (hf :
     simpa [units_smul_def, mul_assoc, Subtype.ext_iff] using (a.2 _ (FG.of_finite.jacobson_smul_lt
       a.1)).le (smul_mem_smul (@Ring.le_comap_jacobson _ _ _ _ (.restrict _ _ _ (c g⁻¹)) ⟨(⟨⟨_, c g
       ·.2⟩, by aesop⟩)⟩ _ (l m)) m)))).exists_algEquiv_pi_matrix_of_isAlgClosed k
-  have e : A ≃ₐ[k] PiMat k d := by convert! e
+  have e : A ≃ₐ[k] PiMat k d := by convert! e <;> exact eq_of_heq (by assumption)
   ⟨_, _, h, .comp e ((ρ.comp f).codRestrict A (by bound)), A.val.comp e.symm, by
   erw [Set.range_comp e, span_image e.toLinearMap, (span_range_subtype_eq_top_iff ..).2 u.symm]
   simp [← ext_iff, Matrix.single]⟩

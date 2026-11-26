@@ -218,12 +218,13 @@ attribute [local simp] IsUnit.pow smul_xi_mem_span NeZero.ne IsUnit.map
 /-- Frobenius and `G_p` act on `A`. -/
 instance actAmax : MulSemiringAction FrobGal Amax :=
   extendAction _ _ _ (fun _ ↦ (exists_lift ((algebraMap ..).comp (toRingHom ..)) _ (@pow_one .. ▸
-  p_pow_dvd_of_mem_pow (by simp)).choose_spec).choose_spec.1) fun h ↦ ringHom_ext_of_approx
-  (exists_algebraMap_eq_p_pow_mul_sub · · |>.rec fun _ ⟨a, _, e⟩ ↦ ⟨_, by simpa [e, pow_mem,
-  mul_cancel_left_mem_nonZeroDivisors, p_mem_nonZeroDivisors] using (h a), _, sub_sub_self ..⟩)
+  p_pow_dvd_of_mem_pow (by simp)).choose_spec).choose_spec.1) fun h ↦ ringHom_ext_of_approx (p := p)
+  (fun y n ↦ (exists_algebraMap_eq_p_pow_mul_sub y n).rec fun _ ⟨a, w, e⟩ ↦
+    ⟨y - (p : Amax) ^ n * w, by simpa [e, pow_mem,
+      mul_cancel_left_mem_nonZeroDivisors, p_mem_nonZeroDivisors] using (h a), w, sub_sub_self ..⟩)
 
 instance : SMulDistribClass FrobGal Ainf Amax :=
-  smulDistribClass_of_tower (by delta actAmax; generalize_proofs; tauto)
+  smulDistribClass_of_tower (B := Ainf) (by delta actAmax; generalize_proofs; tauto)
 
 /-- Frobenius and `G_p` act on `B⁺`. -/
 instance actBPlus : MulSemiringAction FrobGal BPlus := locAction _ (p : Amax) (by simp)

@@ -119,10 +119,16 @@ instance :
 
 attribute [-instance] Finset.Subtype.fintype Finset.fintypeCoeSort
 
-attribute [local simp ←] ofReal_coe_nnreal ENNReal.ofReal_mul ENNReal.ofReal_pow dotProduct_mulVec
+namespace ComplexGaugeSimp
 
-attribute [local simp] star_mulVec MeasureTheory.volume_pi_closedBall Size.vecsOfSize inclMatrix
+attribute [scoped simp ←] ofReal_coe_nnreal ENNReal.ofReal_mul ENNReal.ofReal_pow dotProduct_mulVec
+
+attribute [scoped simp] star_mulVec MeasureTheory.volume_pi_closedBall Size.vecsOfSize inclMatrix
   pi_norm_le_iff_of_nonneg
+
+end ComplexGaugeSimp
+
+open scoped ComplexGaugeSimp
 
 /-- Let n = ϱ+1, |ι| = s+1+3n ≤ L, L ≥ 4, and rank C ≤ 3n. Some matrix O with orthonormal
 columns has CO = 0 and, for all j, the integral of (36/|Oᴴu|²)^s over the u in ℂ^ι with all
@@ -158,21 +164,37 @@ lemma exists_orthonormal_ker_lintegral_le {m ι : Type} [Fintype m] [Fintype ι]
 lemma RealPlaceSizes.ten_le (hF : RealPlaceSizes 𝔰 ρ s b) : 4 ≤ ρ :=
   hF.eight_mul_r_le_rho.trans' (by simp; bound)
 
+/-- The volume of the complex disk of radius `L ^ j` satisfies the bound in the complex gauge. -/
+lemma RealPlaceSizes.complexGauge_volume_le (L : ℝ) (h4 : 4 ≤ L) : ∀ j : ℕ, volume {x : ℂ | ‖x‖ ≤ L ^ j} ≤ (ENNReal.ofReal L ^ 2) ^ (j + 1) := by
+  simp (disch := positivity) [← mem_closedBall_zero_iff, -mem_closedBall]
+  grw [pi_le_four, h4]; ring; bound
+
 /-- For L ≥ ρ, the gauge of the level at ℂ with sizes B_j = {x : |x| ≤ L^j} and constant Λ = L². -/
 noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : ρ ≤ L := by rfl) :
   Gauge hF.complexLevel := by
   obtain ⟨hk, _, h4⟩ := hF.k_eq, hF.eight_mul_r_le_rho, hF.ten_le.trans hρ
-  refine ⟨⟨fun j ↦ {x | ‖x‖ ≤ L ^ j}, ?_, fun c k ↦ by
-    rify at c; simp_all [pow_succ']; grw [norm_sum_le, k]; simp; bound, ?_, ?_, by simp [
-    inv_eq_left_inv IsHermInvolution.mul_self,
-    (entry_norm_bound_of_unitary IsHermInvolution.mem_unitary ..).trans, h4.trans']⟩,
-    .ofReal L ^ 2, fun _ ↦ by simpa [closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
-    simp [HasMatSize, apply_ite, complexBasis]
-    grind [norm_add_le, norm_one, norm_I], by simp +contextual [HasMatSize, (norm_apply_le_l2_opNorm
-    ..).trans, hρ.trans'], fun u h i ↦ by simp_all; grind [PiLp.norm_apply_le (toLp 2 u) i], ?_, by
-    simp (disch := positivity) [← mem_closedBall_zero_iff, -mem_closedBall]
-    grw [pi_le_four, h4]; ring; bound, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
-  iterate 6 simp (disch := positivity) [pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
+  have hbox : ∀ ⦃x⦄, x ∈ hF.complexLevel.boxSet → ∀ i j, ‖x.1.1 i j‖ ≤ L ^ (1 : ℕ) := by
+    intro x hx i j
+    change ‖x.1.1‖ ≤ ρ at hx
+    rw [pow_one]
+    exact (norm_apply_le_l2_opNorm (A := x.1.1) i j).trans (hx.trans hρ)
+  have hball : ∀ u ∈ hF.complexLevel.𝔅, ∀ i, ‖u i‖ ≤ L ^ (1 : ℕ) := by
+    intro u hu i
+    change toLp 2 u ∈ Metric.ball 0 (4 : ℝ)⁻¹ at hu
+    have hu' : ‖toLp 2 u‖ < (4 : ℝ)⁻¹ := by simpa [Metric.mem_ball] using hu
+    rw [pow_one]
+    exact (PiLp.norm_apply_le (toLp 2 u) i).trans (by linarith)
+  let complexSizes : Size (𝔰.middleGram (1 : ℂ)) := by
+    refine ⟨fun j ↦ {x | ‖x‖ ≤ L ^ j}, ?_, fun c k ↦ by
+      rify at c; simp_all [pow_succ']; grw [norm_sum_le, k]; simp; bound, ?_, ?_, by simp [
+      inv_eq_left_inv IsHermInvolution.mul_self,
+      (entry_norm_bound_of_unitary IsHermInvolution.mem_unitary ..).trans, h4.trans']⟩
+    all_goals simp (disch := positivity) [pow_add]
+    all_goals bound [two_le_pi, sq_nonneg (L - 1)]
+  refine ⟨complexSizes, .ofReal L ^ 2, fun _ ↦ by simpa [complexSizes, closedBall] using isCompact_closedBall (0 : ℂ) _, ?_, ?_, by
+    simp [complexSizes, HasMatSize, apply_ite, complexBasis]
+    grind [norm_add_le, norm_one, norm_I], fun ⦃x⦄ hx i j ↦ hbox (x := x) hx i j, fun u hu i ↦ hball u hu i, ?_, RealPlaceSizes.complexGauge_volume_le L h4, fun σ _ j _ h ↦ .trans_eq ?_ (mul_one _), ?_⟩
+  iterate 3 simp (disch := positivity) [complexSizes, pow_add, ← ofReal_norm, pow_right_comm, abs_of_pos] <;>
     bound [two_le_pi, sq_nonneg (L - 1)]
   · grw [Measure.map_apply, prod_apply_symm, complexPlace_skewMeasure, lintegral_map_le,
       ← lintegral_cauchyPDF_eq_one 0 one_ne_zero, ← lintegral_const_mul]
@@ -181,17 +203,31 @@ noncomputable def RealPlaceSizes.gauge (hF : RealPlaceSizes 𝔰 ρ s b) (hρ : 
     · simp (disch := positivity) [norm_eq_sqrt_sq_add_sq, volume_eq_prod, cauchyPDF,
         cauchyPDFReal, field]
       ring; grw [pi_le_four, pi_le_four, h4, h4, h4]; ring; bound
-    simp (disch := positivity) [Place.flatChart, neg_add_eq_sub, mul_assoc,
+    simp (disch := positivity) [complexSizes, Place.flatChart, neg_add_eq_sub, mul_assoc,
       inv_def (starRingEnd ℂ _), ← mul_sub] at h ⊢; nth_grw 1 [← abs_im_le_norm (_ - _),
       le_div_iff₀ (by simp [Complex.ext_iff]), norm_add_le] at *
-    simp_all [entrywise, ← Finset.sum_add_distrib, mul_comm]; linarith
+    have sum_im (f : σ → ℂ) : (∑ i, f i).im = ∑ i, (f i).im :=
+      map_sum Complex.imAddGroupHom f Finset.univ
+    simp_all [dotProduct, Matrix.mulVec, hyperbolicGram, Matrix.one_apply, ite_mul, Complex.mul_im,
+      ← Finset.sum_add_distrib, mul_comm]
+    linarith
     all_goals measurability
   let N := (1 - 𝔰.J₁).submatrix (.map id (inl ∘ inr)) id
   set e := hF.complexLevel.orthonormalPart
   intro x _ y _ v W
-  refine (exists_orthonormal_ker_lintegral_le (fromRows v (fromRows (N * x⁻¹.1.1 * e) (N * (x *
-    y)⁻¹.1.1 * e))) (by simp [volumeExponent, hk]; lia) h4 (by grw [rank_le_card_height]; simp; lia)
-    (by simp_all; bound)).elim fun _ ⟨O, z, o, I⟩ ↦ ⟨_, by fun_prop, fun u ↦ ?_, I⟩
+  obtain ⟨D, O, z, o, I⟩ := exists_orthonormal_ker_lintegral_le
+    (𝔰 := 𝔰) (s := hF.complexLevel.volumeExponent) (L := L)
+    (fromRows v (fromRows (N * x⁻¹.1.1 * e) (N * (x * y)⁻¹.1.1 * e)))
+    (by simp [volumeExponent, hk]; lia) h4 (by grw [rank_le_card_height]; simp; lia)
+    (by
+      calc
+        _ ≤ (𝔰.r : ℝ) := by
+          exact_mod_cast
+            Fintype.card_le_of_injective (fun i : {i : 𝔰.κ // i ≠ 𝔰.k₀} ↦ 𝔰.indexX₀ i.1) (by
+              intro i j h
+              exact Subtype.ext (Sum.inl.inj (Sum.inl.inj (Sum.inr.inj h))))
+        _ ≤ L := by linarith [hF.eight_mul_r_le_rho, Nat.cast_nonneg (α := ℝ) 𝔰.r])
+  refine ⟨_, by fun_prop, fun u ↦ ?_, I⟩
   clear * - z o
   generalize hr : star _ ⬝ᵥ Oᴴ *ᵥ u = r
   by_cases r = 0; simp [*]

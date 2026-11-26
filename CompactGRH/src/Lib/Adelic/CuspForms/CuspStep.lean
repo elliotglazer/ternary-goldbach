@@ -67,7 +67,7 @@ noncomputable def _root_.cuspConst := 8 * (numInfPlaces E * card n) * rootDiscr 
     (48 * card n ^ 6 * numInfPlaces E ^ 2 * N + 1)
 
 lemma _root_.one_le_cuspConst : 1 ≤
-  cuspConst E n N := by rw [cuspConst, rootDiscr, ← add_assoc]; bound
+  cuspConst E n N := by rw [cuspConst, rootDiscr_def, ← add_assoc]; bound
 
 open Reduction
 

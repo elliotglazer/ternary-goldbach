@@ -103,7 +103,12 @@ omit [WeilData E] in
 lemma ratCoordMatrix_sum g : (V.sum V').ratCoordMatrix (.sum g) = fromBlocks
   (V.ratCoordMatrix g.1) 0 0 (V'.ratCoordMatrix g.2) := by simp [ratCoordMatrix_eq, sum, blockGL]
 
-attribute [local simp] Fintype.card_subtype ratCoordMatrix_inclX diagonal_apply det_inclX entrywise
+theorem GradeZeroPart.matrix_eq_iff_apply {m n : Type*} {K : Type*} {A B : Matrix m n K} :
+    (A = B) = (∀ i j, A i j = B i j) :=
+  propext ⟨fun h i j ↦ congrFun (congrFun h i) j, fun h ↦ Matrix.ext h⟩
+
+attribute [local simp] Fintype.card_subtype ratCoordMatrix_inclX diagonal_apply det_inclX GradeZeroPart.matrix_eq_iff_apply
+  Matrix.mul_apply Matrix.mulVec_apply_eq_sum dotProduct
   inclMatrix ratCoordMatrix_sum
 
 /-- The splitting of V over its weight-zero part V'' whose isotropic frame k consists of the basis
@@ -228,10 +233,16 @@ lemma ArrowPair.finEval_inclXFin a b {g g' k k' x} (hx : Y''.inclXFin k = x) (e 
   intro; simp [tripleWeil, omega_integrated, inclX_inr, G.onHom_eq, G.sum, G.neg, ← Pi.one_def,
     MulEquiv.prodCongr]
 
-attribute [local simp ←] Function.Embedding.toFun_eq_coe
+namespace EdgePairSimp
 
-attribute [local simp] Function.Injective G.blockEmb stringMap stringReversal Subtype.ext_iff
+attribute [scoped simp ←] Function.Embedding.toFun_eq_coe
+
+attribute [scoped simp] Function.Injective G.blockEmb stringMap stringReversal Subtype.ext_iff
   stackedT flipSpace gradedGram hypSum
+
+end EdgePairSimp
+
+open scoped EdgePairSimp
 
 variable (Y Y' Y'') (H : Odd s ∧ s' = s - 1 ∧ s'' = s' - 1 ∧ Y'.c = Y.c)
   (H' : Even (Fintype.card ι + Fintype.card ι''))

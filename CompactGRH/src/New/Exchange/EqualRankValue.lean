@@ -33,8 +33,16 @@ lemma exists_isBaseAdapted t (h : card r = card n + 2 * card p) (h' : negCount t
   iAdelic, Space.ratMap, removePlanes, splittingOfGram, Space.reindex, reindex_equiv ε.symm])⟩⟩
 
 lemma slice_zero_congr {B : W'.Splitting W r} {e} (k : B.k = A.k.submatrix id e ∧ B.i =
-  A.i) [IsBaseAdapted B] : realSlice A U 0 = realSlice B U 0 := by simp [realSlice, ← Pi.zero_def,
-  IsAdapted.mixedModel, A.zeroTerm_homSource_congr U (k.1 ▸ congr(submatrix $A.gram_kk e _)) k.2]
+  A.i) [IsBaseAdapted B] : realSlice A U 0 = realSlice B U 0 := by
+  have hzero := A.zeroTerm_homSource_congr U (k.1 ▸ congr(submatrix $A.gram_kk e _)) k.2
+  apply ContinuousLinearMap.ext
+  intro v
+  apply eq_of_integrated_zeroTerm_eq (isAdapted_homSource A U)
+  intro f
+  have ha := zeroTerm_integrated (isAdapted_homSource A U) v f
+  have hb := zeroTerm_integrated (isAdapted_homSource B U) v f
+  simp only [hzero] at hb
+  simpa [realSlice, ← Pi.zero_def] using ha.symm.trans hb
 
 lemma slice_zero_comp [IsBaseAdapted B] y : realSlice (A.comp B) U 0 y = realSlice B U 0
   (realSlice A U 0 y) := eq_of_integrated_zeroTerm_eq (isAdapted_homSource ..) fun _ ↦
