@@ -1,0 +1,63 @@
+{
+  "aws_error": "CongruenceLevel.lean:68:67: tactic execution is stuck, goal contains metavariables",
+  "closure_sha256": "f1db81f924d6dea494e4283bbb9d362c7946ded660cd375e711be05438d3c507",
+  "compiler": "Lean 4.35.0 eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "complete_project_import_count": 19,
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "negative_control_original_sha256": "0a334b6a5c36bf6ee66e2473cb18112fd6d1c9814438fb4af137189430c476da",
+  "positive_control_repaired_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+  "production_module": {
+    "clean": true,
+    "compile": {
+      "cpu_seconds": 135.9375,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 140.103
+    },
+    "compiler_output_sha256": "5651c7fc958723c750da68466e7109a24e26719d5a83c5f2d0dff055c08c6561",
+    "exported": [
+      "112 audited transitive axiom entries, 0 offending: #[]"
+    ],
+    "metadata": {
+      "cpu_seconds": 1.859375,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 2.012
+    },
+    "module": "Lib.Adelic.Unitary.CongruenceLevel",
+    "outputs": {
+      ".ir": "91f486fedc50afbe1fde37e69b3d767129ebe9367dc57a3be35eb2be3987f57b",
+      ".ir.sig": "0a6531e6e88960c4803883b17fd31b9c80f381e1904d69cf6ca3534ee574ec94",
+      ".olean": "0cd0f2492a6f4ec7b4a6122c60db727efde7e51287767884f6c84ecd97a98714",
+      ".olean.private": "1909444cb7c9e3173006b2cc3ac14526a8f23b515bd59f6f650376912a60aa52",
+      ".olean.server": "756306de48b99b0c3abc25c5a84d642b3d007ef606813070c106a20a25fb12f4"
+    },
+    "parents": {
+      "Lib.Adelic.Adeles.LocalComponents": "b96dd197b04373ad6da040329fb65c0fa39a939ce0da077bfbc1bfeeb3e24ec5",
+      "Lib.General.Groups.CompactMean": "7a255fac524ac0c3ac9537c9de790610d58f761c144d1811e34e0be13810ea3d",
+      "Lib.General.LinearAlgebra.ColumnLattices": "57fd257a6aaa73e27efb45056ca8042817e683fc04440f73c13d0d44e9a7f486"
+    },
+    "private": [
+      "168 declarations, direct sorryAx references: #[]"
+    ],
+    "proof_commit": "e9f3c8adb418f4e497787ef93175066acb1c8f72",
+    "source_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef"
+  },
+  "proof_source_confirmed_in_commits": [
+    "f5b6fcbb697fe3cf142f8165aff60f20fe98e36e",
+    "d6b1bfd523e2c54b6e4bb72844deeddf8341879a"
+  ],
+  "stock_named_axioms": {
+    "module": "Lib.Adelic.Unitary.CongruenceLevel",
+    "olean_sha256": "0cd0f2492a6f4ec7b4a6122c60db727efde7e51287767884f6c84ecd97a98714",
+    "probe_sha256": "796334648d1a00981712bf07f500ad96adca83857f5daee74ad1c6ec9987659c",
+    "run": {
+      "cpu_seconds": 37.21875,
+      "exit": 0,
+      "resource_guard": null,
+      "wall_seconds": 40.023
+    },
+    "source_sha256": "0a229c66485891f04dcf561cf4a9b758f0a45a5ca48e03930ebf7d0dd3713eef",
+    "stock_output": "'principalLevel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'principalLevel_le_Kf' depends on axioms: [propext, Classical.choice, Quot.sound]\n'isOpen_principalLevel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'exists_principalLevel_subset' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  }
+}

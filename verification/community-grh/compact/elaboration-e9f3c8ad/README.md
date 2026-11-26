@@ -39,9 +39,11 @@ Lake build line and the source hash at that revision. These results cover the so
 The all-n theorem still needs a successful joint compile and both comparators.
 
 The combined source revision is `d6b1bfd523e2c54b6e4bb72844deeddf8341879a`.
-Five of the seven repaired modules passed complete native builds. The complete
-character-index theorem and the CM congruence-level definition passed focused
-checks. The Linux preflight builds all seven with their original imports.
+Six of the seven repaired modules have now passed complete native builds.
+CongruenceLevel compiled in 140.10 seconds with its 19 authentic project
+parents. Four named declarations reported only the standard three axioms.
+The complete character-index theorem passed a focused check with reduced
+imports. The Linux preflight builds all seven with their original imports.
 
 An independent scan examined exposed definitions across all 794 GRH modules.
 In the controlled QuadField test, the unchanged legacy source passed and the
