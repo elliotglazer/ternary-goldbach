@@ -207,3 +207,5 @@ Native controls reproduced the missing lower-right block. The complete inclX and
 Stock Lean 4.35 checked the original pairHom and the complete repaired norm_pairHom_le against the genuine U.kron, U.norm_inv and pairSign producers (32.24 s). The isolated general matrix inequality also passed its three-axiom audit. Full OscillatorPair replay is pending.
 
 The complete native module passed on stock Lean 4.35 in 42.48 s with all 37 real source-matched project parents. The previous focused candidate failed during whole-file replay at line 62.
+
+Stock Lean 4.35 built the entire NormalGeneration module in 162.16 seconds after reproducing the original failure. A fresh import reported propext, Classical.choice and Quot.sound for both HasGoodReduction.thetaNorm_lt_iff_coords and HasGoodReduction.finrank_reduction_eq.
