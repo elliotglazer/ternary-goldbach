@@ -1,0 +1,502 @@
+{
+  "source_repository": "https://github.com/elliotglazer/ternary-goldbach",
+  "source_commit": "b5b238244b7b73e2ebcd13ca6d16782e90faea4b",
+  "source_tree": "34c3f1389081acfb87f36f04ac981bd5c8240223",
+  "baseline_commit": "6a37b1dd9ddec522cafebbdb99daa93acde5fc76",
+  "toolchain": {
+    "version": "Lean 4.35.0",
+    "commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "platform": "x86_64-w64-windows-gnu",
+    "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+  },
+  "scope": "Local source-level compilation and named axiom checks. Timings are elapsed seconds for individual recorded runs with their dependencies available. The shared focused fixture for SemisimpleReps and MackeyFormula is a single run.",
+  "modules": [
+    {
+      "module": "Lib.General.Analysis.ZpowSum",
+      "path": "CompactGRH/src/Lib/General/Analysis/ZpowSum.lean",
+      "source_sha256": "5d535288a634b8e95b8bc9831255d002c42fee26a8881532e76a68ddd2de0bd6",
+      "source_change": "repaired",
+      "prior_source_sha256": "5c79ca228e06a5f5e0b6339a1f0139a13319d2371b310a9f8e091356162b5dad",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 79.17,
+        "public_olean_sha256": "50b8b0e509a7d82de39a60be1d2dbc6b3b6d9a2b8e366829eb78fc697eae14bd",
+        "evidence": [
+          "ZpowSum.json",
+          "ZpowSum.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "rootDiscr_pos": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "abs_discr_eq_rootDiscr_pow": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "public-axioms.log"
+      }
+    },
+    {
+      "module": "Lib.General.Algebra.RingActions",
+      "path": "CompactGRH/src/Lib/General/Algebra/RingActions.lean",
+      "source_sha256": "37f675aadfab199b67008cc0b38ef8e9258df49e8740a23442c9dc3d5068de1a",
+      "source_change": "repaired",
+      "prior_source_sha256": "53852a41bc340d325512d2f00e941b56e154f1d2444ec838d5080b181316a4ef",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 55.55,
+        "public_olean_sha256": "19d299aacaf3de9cb39ede9dc0e5d4c1c1cc256465448d0c1ce8f60609048d5c",
+        "evidence": [
+          "RingActions.json",
+          "RingActions.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "adicMap": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "evalₐ_adicMap": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "adicMap_algebraMap": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "public-axioms.log"
+      }
+    },
+    {
+      "module": "Lib.Shimura.Uniformisation.Frames",
+      "path": "CompactGRH/src/Lib/Shimura/Uniformisation/Frames.lean",
+      "source_sha256": "d374402f66474ba1908c3183fc4a13b39ceb254acfa47f0ec5624f7a30931c25",
+      "source_change": "repaired",
+      "prior_source_sha256": "6269eedf5a154ab43e01ab8ec93effdd210c5c5488e778cb6db5ec667da0d7d3",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 45.44,
+        "public_olean_sha256": "cb975c2bed0381c1a2c234dbad37a26d8c3491a68e2d2bcd973c55b814fe7834",
+        "evidence": [
+          "Frames-cast-only.receipt.json",
+          "Frames-cast-only.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "IsSignedFrame.mul": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "Frames-audit.log"
+      }
+    },
+    {
+      "module": "Lib.ClassField.GaloisCohomology.ContinuousCocycles",
+      "path": "CompactGRH/src/Lib/ClassField/GaloisCohomology/ContinuousCocycles.lean",
+      "source_sha256": "2017d0763dd0e3d564ac909c639fba28962a77979b25d94bc29a184d6d5ca318",
+      "source_change": "repaired",
+      "prior_source_sha256": "d69196620009a2548c490287aa9e7435afe16881815b2d0fb1cd13759d7c8011",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 52.04,
+        "public_olean_sha256": "4c91ac54a360681422d6a0fe52b0e34ab42e28dbb256a228c24607b64446848b",
+        "evidence": [
+          "CompactCocycleFull/receipt.json"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "pairMapH2": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "pairMapZ1": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "ContinuousCocycles.log"
+      },
+      "module_axiom_table": {
+        "exported_entries_within_standard_allowlist": 48,
+        "private_facet_declarations_scanned_for_direct_sorryAx": 49,
+        "direct_sorryAx_occurrences": 0,
+        "evidence": "ContinuousCocycles.log"
+      }
+    },
+    {
+      "module": "Lib.ClassField.GaloisCohomology.DiscreteUnits",
+      "path": "CompactGRH/src/Lib/ClassField/GaloisCohomology/DiscreteUnits.lean",
+      "source_sha256": "3609197907180a1e20c53e363d8b34b2b48232887d140f20cd2310aae433a3c4",
+      "source_change": "unchanged downstream consumer",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 102.073,
+        "public_olean_sha256": "afa54cf7101cfc2240aa508bfd7c056716178f07a93934345388c2b2727021cf",
+        "evidence": [
+          "CompactCocycleFull/receipt.json"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "DiscreteModule.resH2": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "DiscreteUnits.log"
+      },
+      "module_axiom_table": {
+        "exported_entries_within_standard_allowlist": 91,
+        "private_facet_declarations_scanned_for_direct_sorryAx": 110,
+        "direct_sorryAx_occurrences": 0,
+        "evidence": "DiscreteUnits.log"
+      }
+    },
+    {
+      "module": "Lib.DiscreteSeries.Haar.CompactDualMeasure",
+      "path": "CompactGRH/src/Lib/DiscreteSeries/Haar/CompactDualMeasure.lean",
+      "source_sha256": "8ff779189b82158e783fa09ba5cfb266f2642007619d2df5752d688fce683c79",
+      "source_change": "repaired",
+      "prior_source_sha256": "ae0a5e6d71074cf7f647d314acd42f7b81a2e44fa9ccc282f414677d04cd03cd",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 112.042,
+        "public_olean_sha256": "e7b781dc5e2916b152412b36a24c7ef0178141b56dc4fdb014055c0efebfb6a9",
+        "evidence": [
+          "Lib.DiscreteSeries.Haar.CompactDualMeasure.json",
+          "Lib.DiscreteSeries.Haar.CompactDualMeasure.log"
+        ]
+      },
+      "module_axiom_table": {
+        "exported_entries_within_standard_allowlist": 45,
+        "private_facet_declarations_scanned_for_direct_sorryAx": 93,
+        "direct_sorryAx_occurrences": 0,
+        "evidence": "Lib.DiscreteSeries.Haar.CompactDualMeasure.whole-table.log",
+        "named_proof_helpers_with_empty_axioms": [
+          "cayleyChart_jacobian._auto_1",
+          "cayleyChart_jacobian._auto_3",
+          "lintegral_comp_le_haarU._auto_1",
+          "lintegral_comp_le_haarU._auto_3",
+          "measurePreserving_haarU._auto_1",
+          "measurePreserving_haarU._auto_3"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module public object",
+        "declarations": {
+          "cayleyChart_jacobian": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "lintegral_comp_le_haarU": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "measurePreserving_haarU": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "instIsHaarMeasureSubtypeGeneralLinearGroupComplexMemSubgroupUVolume": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "HaarNamedMetadata.json",
+        "stock_print_evidence": "ArtinHaarAxioms.json"
+      }
+    },
+    {
+      "module": "Lib.General.Groups.ArtinDefs",
+      "path": "CompactGRH/src/Lib/General/Groups/ArtinDefs.lean",
+      "source_sha256": "af492166ba3089cb5f8d9876b9b6929d05037e772df1c0100cf7ca148dbe44f5",
+      "source_change": "unchanged downstream consumer",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 44.309,
+        "public_olean_sha256": "49ff0b0a4cc062263cd2833a4e8fb3013d32d48db8753c7c07caaacd556f115c",
+        "evidence": [
+          "Lib.General.Groups.ArtinDefs.json",
+          "Lib.General.Groups.ArtinDefs.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "QZChar.ofZModCocycle": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "ArtinHaarAxioms.log",
+        "stock_print_evidence": "ArtinHaarAxioms.json"
+      },
+      "module_axiom_table": {
+        "exported_entries_within_standard_allowlist": 30,
+        "private_facet_declarations_scanned_for_direct_sorryAx": 40,
+        "direct_sorryAx_occurrences": 0,
+        "evidence": "Lib.General.Groups.ArtinDefs.axiom-table.log"
+      }
+    },
+    {
+      "module": "Lib.GaloisRep.Pseudocharacter.SemisimpleReps",
+      "path": "CompactGRH/src/Lib/GaloisRep/Pseudocharacter/SemisimpleReps.lean",
+      "source_sha256": "8325803afaa566ec79ae553f5deb554a17c1f6670b9a2f168fee9f863e7919aa",
+      "source_change": "repaired",
+      "prior_source_sha256": "7a11fc6bada380cfb36849ccd91295aac925ebf290cff053d6147904c06160b4",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 190.05,
+        "public_olean_sha256": "a857eda9598d7c800f04db19e52f6754c0921bded8a9653e979b0c4569e77830",
+        "evidence": [
+          "Full/Lib.GaloisRep.Pseudocharacter.SemisimpleReps.receipt.json",
+          "Full/Lib.GaloisRep.Pseudocharacter.SemisimpleReps.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "exists_wedderburn": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "IsTraceNondeg.hasSemiprimeSpan": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "IsTraceNondeg.exists_conj_of_trace_eq": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "SemisimpleAxiomAudit.log"
+      }
+    },
+    {
+      "module": "Lib.LocalGL.Green.MackeyFormula",
+      "path": "CompactGRH/src/Lib/LocalGL/Green/MackeyFormula.lean",
+      "source_sha256": "6b4efa99f1ae1793dbae57a3bb71d5152c08fe5226614fde1aa925f7992dd44a",
+      "source_change": "repaired",
+      "prior_source_sha256": "f5ebc41a5f2da437fc03458b79ebbad4d1997d45221b89777dfc85796292267a",
+      "compilation": {
+        "scope": "shared reduced fixture reproducing the implicated proof steps",
+        "complete_module_verified": false,
+        "observed_test_source_sha256": "47f42b9abe209ee050b44e3216d51fad5628d4a3c229773e5d7d872280667e7c",
+        "wall_seconds": 17.71,
+        "evidence": [
+          "source-bindings.json",
+          "focus.log"
+        ]
+      },
+      "complete_module_attempt": {
+        "exit": 1,
+        "wall_seconds": 140.04,
+        "errors": [
+          {
+            "line": 185,
+            "column": 41,
+            "message": "Unknown constant `_private.Lib.LocalGL.Green.MackeyFormula.0.Submodule.subsingleton_iff_eq_bot._simp_1`"
+          }
+        ],
+        "evidence": [
+          "FullFailed/Lib.LocalGL.Green.MackeyFormula.receipt.json",
+          "FullFailed/Lib.LocalGL.Green.MackeyFormula.log"
+        ]
+      }
+    },
+    {
+      "module": "MajorEnergy",
+      "path": "MajorEnergy.lean",
+      "source_sha256": "75448ed02262af50ac3f324e17b90c483c5f5a72bb977885b7cae2c820f742e8",
+      "source_change": "repaired",
+      "prior_source_sha256": "a645936448b0848fa588fe9bc7dcd2b88218e1c2133960259e6ed1f3d40a8b84",
+      "compilation": {
+        "scope": "complete module, original imports",
+        "exit": 0,
+        "wall_seconds": 24.95,
+        "public_olean_sha256": "41a61bfa0b7de6c471b4a7eac0fa35c368bbaea256bc75451b91d677ada4ac3a",
+        "evidence": [
+          "Full/MajorEnergy.receipt.json",
+          "Full/MajorEnergy.log"
+        ]
+      },
+      "named_axioms": {
+        "scope": "complete module",
+        "declarations": {
+          "GoldbachEnergy.major_error_of_energy": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "MajorEnergy.log"
+      }
+    },
+    {
+      "module": "New.Data.Magnitudes",
+      "path": "CompactGRH/src/New/Data/Magnitudes.lean",
+      "source_sha256": "5c4f6e7c4b156d77eead14b29f73ed8060e390f630326345d9b83ffc68ddfd04",
+      "source_change": "repaired",
+      "prior_source_sha256": "e08e04f61ec2bbfc153a1bcc2c63d9b4312267daf26a2e541ed521299e3d9e3f",
+      "compilation": {
+        "scope": "Exact four public inequality declarations, actual HasLogBound definition, true scale projection, original D.le_m body with explicit exponent-bound instances. Unused fields of Data/Parameters are omitted.",
+        "complete_module_verified": false,
+        "observed_test_source_sha256": "8fe6cf576748a230810a99fac4119f9c1b01dd4062a5e747407bc774fda7b82c",
+        "wall_seconds": 20.022,
+        "evidence": [
+          "remaining-grh-defaults/portable/receipt.json"
+        ],
+        "test_public_olean_sha256": "3c72989726f8a78fca00dbd9d69e135367befc31022f4e39ffee094b657aaec2"
+      },
+      "named_axioms": {
+        "scope": "focused file",
+        "declarations": {
+          "Data.nat_le_of_hasLogBound": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "Data.le_m": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "Data.lt_of_hasLogBound": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "Data.nat_lt_of_hasLogBound": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "Data.le_of_hasLogBound": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "magnitudes-after/export-audit.log"
+      }
+    },
+    {
+      "module": "Lib.DiscreteSeries.CuspKernel.BumpConvolution",
+      "path": "CompactGRH/src/Lib/DiscreteSeries/CuspKernel/BumpConvolution.lean",
+      "source_sha256": "b37fab9aaec16fb80f9a490353cfff0cb308dfc5433f830308a435f16eab61a7",
+      "source_change": "repaired",
+      "prior_source_sha256": "c6a5eea752c135a5186af8e33bf52120e03060d1a89fca1bf6f21aded5ede7e5",
+      "compilation": {
+        "scope": "Unchanged proof bodies for integrable_bump_inv_smul and smear against the authentic compiled ValuationPair HasCompactSupport.integrable, the USign carrier replaced by an abstract group and the smooth-functions carrier by the continuous submodule. The other two patched declarations are source-reviewed only.",
+        "complete_module_verified": false,
+        "observed_test_source_sha256": "567f195cfe3d9591faf861f20936b9dbe19a3daa7f90302c8c890f84207396b4",
+        "wall_seconds": 44.037,
+        "evidence": [
+          "remaining-grh-defaults/portable/receipt.json"
+        ],
+        "test_public_olean_sha256": "bffd2aaacf853eca2eca7f7b7c95d6c62ebd3325c05b33f5649192bbac4439d7"
+      },
+      "named_axioms": {
+        "scope": "focused file",
+        "declarations": {
+          "integrable_bump_inv_smul": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "smear": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "evidence": "bump-after/export-audit.log"
+      }
+    }
+  ],
+  "evidence_sha256": {
+    "ZpowSum.json": "f18c47f5b967ef73e8ce08e4e422a8f62f8570ab8db6a1186ad69a8100a96cfd",
+    "ZpowSum.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public-axioms.log": "c798a1d3aecba3af255930ad20cbfb3ddd9421f79710c28b59fc9ae214503a5e",
+    "RingActions.json": "7c8fa6dbc1f7b540eb7b099e409c5295e5f6990e64e62afc26f80fae3b10044f",
+    "RingActions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Frames-cast-only.receipt.json": "8aeea6de4275294a29cb800120895aba99db811f2dddcb32ce8d6fccbe127ad5",
+    "Frames-cast-only.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Frames-audit.log": "02d7f5a462c4c6e2b05190ee99d05a138c8d062f4def1346a65b701ff76e6af5",
+    "CompactCocycleFull/receipt.json": "97dcd4da592deb74b30e6c416df6fb7cefcdbdba09f11c1f8a7ed8809400849c",
+    "ContinuousCocycles.log": "916dc0d1dddb00374a01b2b64f170f54c491f378e52bfb97fb0547945d2920b2",
+    "DiscreteUnits.log": "d4e1857dc18d255dc10166519c1cc449b464fa8f029d294e175b44fd6d7da312",
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure.json": "4881aa0cbce9b61fcd17c7deecae37f87d585fc27cbadfe72eadc9ab7eb74189",
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Lib.DiscreteSeries.Haar.CompactDualMeasure.whole-table.log": "d3986648a44c6db5d9251a396edcc5d5639eb0fbb4e08e853c122f1eb0a9735f",
+    "HaarNamedMetadata.json": "68f703668c51d2eb74e6d0432fa86de4eb0f7bffdcc8f51b446d08bcf0173537",
+    "ArtinRatModInt.json": "dac2862dd7abee487d68d5316781bc15f2e74ccbc611dc07ee152c910acf1274",
+    "ArtinRatModInt.log": "8b2e78af3b2a2318f703ea62b1d0e33b99acbccaee63f7ef92dc673d73785827",
+    "Lib.General.Groups.ArtinDefs.json": "612521eb558132353a8b5b67a4dd312060c5ade18bcb456444a27137a9eb3f65",
+    "Lib.General.Groups.ArtinDefs.log": "6ce96f735568523c31d785e1068a72ea9afbaac0dec18cdf7f8cb0d67de79b91",
+    "Lib.General.Groups.ArtinDefs.axiom-table.log": "80a18ae123d6a440195c0c1863d4e13177652e927b89c1c2ee08b4fee5cdb0ff",
+    "ArtinHaarAxioms.log": "9579b76bc52b0549951d9044bfbc730a740f316c8fb7d69e48a7611f95df864b",
+    "source-bindings.json": "f0af9622aba2f0b49af4e38781e32386f14d1540c426bba3c04290e39d292a51",
+    "focus.log": "fd5027cfe6f671fe2f0eec4c998d7e94576f7f9aea297f982b06e992506cfdb6",
+    "MajorEnergy/narrow-after.receipt.json": "6dfe4d492a4c6498ae088f01bf9fabdb626ce6472090808ada9ad035126b8f77",
+    "MajorEnergy/narrow-after.log": "3f0c495c3492a2a70b801281d9a92377c4e7a29776c5642dd06b940f0164da7f",
+    "Full/Lib.GaloisRep.Pseudocharacter.SemisimpleReps.receipt.json": "e6e9bdf49fa7aaa4bdadc0a05b451f35aef37a287ef390b6e28b392cc31762b2",
+    "Full/Lib.GaloisRep.Pseudocharacter.SemisimpleReps.log": "004cf50c1bf74fd162dd9e4006dde45a5afb4394c63c28a4e2c6e81551915590",
+    "Full/MajorEnergy.receipt.json": "4a6284f96f034a60c89aa06ab1ca5962a085a12d01dcb8df363d178e2a97a282",
+    "Full/MajorEnergy.log": "3f0c495c3492a2a70b801281d9a92377c4e7a29776c5642dd06b940f0164da7f",
+    "MajorEnergy.log": "3f0c495c3492a2a70b801281d9a92377c4e7a29776c5642dd06b940f0164da7f",
+    "SemisimpleAxiomAudit.log": "704be218d4b4a12ee36c59b61fa43c3e1484e50573e98280afb4d05f6bd795f8",
+    "FullFailed/Lib.LocalGL.Green.MackeyFormula.receipt.json": "431c34d9e5a9d2f2d8f3f22d05136d7596b267063de2674b74182fc18b2ad82c",
+    "FullFailed/Lib.LocalGL.Green.MackeyFormula.log": "6ed602593419a52a79b4ef83e98b3fe714dcbcc2a31603b1867ee17f035f9ad0",
+    "ArtinHaarAxioms.json": "1ac5f678e3abd09807b21d0ce0983e0c00c00066841687defd357ef2b975a68d",
+    "remaining-grh-defaults/portable/receipt.json": "682e46ad73fbca8b00d9fc0386402e8b6f3d3e2b1fd758703127c0435e73d29d",
+    "magnitudes-after/export-audit.log": "f2330099e12d3668532f7b16d2962bf4e443131ec8ae40c756d0fade90e555c6",
+    "bump-after/export-audit.log": "5b6af3f2303a3e5a75799cc5ec4a1d9273213847c531a123f914b3693e887a35"
+  },
+  "identical_lean_sources_at": [
+    {
+      "commit": "264ca33a6ebb4c72854ae6000e01d1828583dd5d",
+      "tree": "d391104b151699a030e9e62a60487aedf0bb3683",
+      "lakefile_sha256": "6b0e3975d86d07816edfa3f0d176e44f1d6ea8becb7280301312e15f89b46c3e",
+      "stock_preparation_report_sha256": "1500daef01b9fc5d297f3c051d6abb76403e4e303ddf3bb58be1b90422782012"
+    }
+  ]
+}

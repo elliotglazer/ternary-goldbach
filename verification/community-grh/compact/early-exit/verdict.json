@@ -1,0 +1,18 @@
+{
+  "verifier_revision": "7ffe2f67d36f6fcb1d7b306c1e89b8a6a1ccea8f",
+  "archive_sha256": "f8e71a0ecd1d65f6f3299c082de9381a49c317fffb4ed2382e6061b3e01a6461",
+  "worker_sha256": "70afda55bfd8f96bd8be043a092da4cd7d1d39aaf3438fe135a8e7964c4ff263",
+  "source": "0b68b493791e5f7569021f0cd13454151af47584",
+  "attempt": "d69a0b0ad9464dbc84198f6c547221c7",
+  "step_behavior": "The parent records the actual child exit, both file hashes, sampled memory, CPU and OOM data, then raises and collects original diagnostic lines and trace-qualified counts. Wrapper saves driver.exit, serial receipt reference/hash, conditionally full serial frames, sync, poweroff.",
+  "natural_vs_cancelled": "Exit 143 denotes an operator interruption after the genuine errors already logged. Do not reclassify as natural code-1 completion or success. Stopping the outer service can skip these finalizers.",
+  "retention": "Raw logs and objects stay on retained EBS; work without successful .trace excluded. Failed run does not generate successful-build object hash manifest. New attempt uses a fresh project build.",
+  "deadline": "Keep original AWS Scheduler stop, boot timer, transient unit properties and automatic poweroff unchanged.",
+  "actual_mount_validation": "Use unique checked unit ancestry, exact configured Lake argv, mount/dev-inode identity for /proc/PID/root/project vs audited attempt source, exact source/tree, and real flushed source error. Never infer identity from process name alone.",
+  "local_test_limitation": "stock Linux Lean 4.35 and Ubuntu bubblewrap 0.9; Bash timing wrapper substituted for production GNU time; disposable fixture, no AWS",
+  "files": {
+    "linux-namespace-targeted-signal.json": "c00de139a8fe4c78621a646ac171668bd6fd3e63e78f39371d5ff35320c7d985",
+    "linux-namespace-targeted-signal.log": "5b3b60f0f38d6eb2a8c42e63f9aad5a9b244e8d14b5aa608dd67fea32feb9a23",
+    "preservation-fixture.json": "6fcec60a9b9e1cad7bf3dec599a8d145b10d9856d7d02c2e2d961e11c7aaffbd"
+  }
+}
