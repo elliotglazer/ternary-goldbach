@@ -1,0 +1,43 @@
+{
+  "sources": {
+    "baseline": "28a8d6c9cd4d0de58ee3611cd1540815af5fd195a1122b7f06c16eee987683bf",
+    "synchronous_candidate": "f570880aaa84f40ec3ff5594746df582ebba562a3dab6ad8c107f984f1ac3194"
+  },
+  "method": "Compare original Windows f17b -j1 -o source with DAFA candidate under LEAN_NUM_THREADS=4 and stock default compiler options -o -i -c. Source and bitmap dependencies differ between pins. This records bytes, not acceptance of archived artifacts under changed source.",
+  "module": "ProductRange145559905282Interval",
+  "origins": {
+    "baseline": "f17b38415535507fe31ba15eba396ef7fbd863af",
+    "candidate": "dafa3e64289998b784aca99ec8fb491ddaac5362"
+  },
+  "facet_results": {
+    ".olean": {
+      "before": "13ef8a8613efbabcc52eb9f9682975a698cc4ee0b1e4ae803df5ef34e28c28d6",
+      "after": "13ef8a8613efbabcc52eb9f9682975a698cc4ee0b1e4ae803df5ef34e28c28d6",
+      "same": true
+    },
+    ".olean.private": {
+      "before": "386975d49de5ea4c9b622e33d8bcff538650cf64209ec890e56e5d15ec381067",
+      "after": "9d15207e550240d9e3831895d6ee4998d8958a3b3f379881e0cccc1b1002daab",
+      "same": false
+    },
+    ".olean.server": {
+      "before": "27904a9c93f425caea3742224445efe334ebaa8b8cf42bb929f8a797bbad6339",
+      "after": "048d1f13dd421100e9c8bd6f80d2f4da6fdf927e118035565863523dfeeeb203",
+      "same": false
+    },
+    ".ir": {
+      "before": "9b7ea961ac04e22063f8a471a92e915c4c4fd72a64b4b7778647136f53f76314",
+      "after": "9b7ea961ac04e22063f8a471a92e915c4c4fd72a64b4b7778647136f53f76314",
+      "same": true
+    },
+    ".ir.sig": {
+      "before": "5275de5c879526b4ab1e7f991304a9de0da6096ddb24afe3360ae1197b911322",
+      "after": "5275de5c879526b4ab1e7f991304a9de0da6096ddb24afe3360ae1197b911322",
+      "same": true
+    }
+  },
+  "cpu_seconds": {
+    "before": 41.546875,
+    "after": 41.625
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "scope": "One measured full production source on Windows, a separate Linux scheduler experiment, and Lake durations for all 103 interval producers in a complete production finite replay. Full protected theorem checking is a separate phase.",
+  "source_commit": "dafa3e64289998b784aca99ec8fb491ddaac5362",
+  "source_tree": "9fe4b478b50bb69bbd2deee6d278085155e3a31d",
+  "source_parent": "b6535e79fde64adc5288e02ad3393bd1eca94631",
+  "source_only_insertion": "set_option Elab.async false",
+  "changed_files": 103,
+  "affected_in_732_module_closure": 112,
+  "unchanged_existing_ancestry_counts": {
+    "base": 40,
+    "d845": 454,
+    "f957_logged_at_10_05_UTC": 31
+  },
+  "new_endpoint_415_source_fingerprint": "6b8e9432260a92538716538fab88b8fb477953923ae5ebdcc5ca9432af3bd58c",
+  "control_original_415_source_fingerprint": "a52dfee6c6337444a445b8b6782a6f906eae2b8a338b893439ad6ba13bcda878",
+  "source_module": "ProductRange145559905282Interval",
+  "independent_checker_applications": 40,
+  "original_row_count": 320,
+  "stock_lean": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_num_threads_environment": "4",
+  "frontend_args": [
+    "-o",
+    "ProductRange145559905282Interval.olean",
+    "-i",
+    "ProductRange145559905282Interval.ilean",
+    "-c",
+    "ProductRange145559905282Interval.c",
+    "ProductRange145559905282Interval.lean"
+  ],
+  "windows": {
+    "wall_seconds": 43.197,
+    "user_seconds": 30.46875,
+    "system_seconds": 11.15625,
+    "peak_working_set_bytes": 1828323328,
+    "peak_commit_bytes": 4150784000,
+    "exit": 0,
+    "proof_log": "'SmallGoldbach.ProductRange145559905282.covered' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "source_sha256": "f570880aaa84f40ec3ff5594746df582ebba562a3dab6ad8c107f984f1ac3194",
+    "original_sha256": "28a8d6c9cd4d0de58ee3611cd1540815af5fd195a1122b7f06c16eee987683bf",
+    "cpu_seconds": 41.625,
+    "c_bytes": 1889795
+  },
+  "linux_cpu_concurrency_probe": {
+    "env-None-j-None-async-True": {
+      "overlapping_proof_tasks_peak": 12,
+      "kernel_threads_peak": 20,
+      "wall_seconds": 1.783
+    },
+    "env-4-j-4-async-True": {
+      "overlapping_proof_tasks_peak": 4,
+      "kernel_threads_peak": 8,
+      "wall_seconds": 2.184
+    },
+    "env-4-j-None-async-True": {
+      "overlapping_proof_tasks_peak": 12,
+      "kernel_threads_peak": 19,
+      "wall_seconds": 1.456
+    },
+    "env-4-j-1-async-True": {
+      "overlapping_proof_tasks_peak": 1,
+      "kernel_threads_peak": 6,
+      "wall_seconds": 5.421
+    },
+    "env-1-j-None-async-True": {
+      "overlapping_proof_tasks_peak": 12,
+      "kernel_threads_peak": 18,
+      "wall_seconds": 1.537
+    },
+    "env-4-j-None-async-False": {
+      "overlapping_proof_tasks_peak": 1,
+      "kernel_threads_peak": 7,
+      "wall_seconds": 5.338
+    }
+  },
+  "evidence_sha256": {
+    "full-production-result.json": "d91e16e7b18f89f474e1ba674d25363cdd0c9b83fb738c8c7b4c139e7a755c8b",
+    "source-manifest.json": "3b13268612c4473fbb975c7e90da925d7fe94b61b76f4e86b10bfb50f448f9bc",
+    "cpu/Concurrency.lean": "cafbbaef740f36e8bfa050875656961e2b9343f34247bb6c49e163014074bad8",
+    "cpu/probe.py": "730a00e2c4a9843319d0c9b3681909dc33a770f6b4e1554f4fa5f86586a280e8",
+    "cpu/receipt.json": "ab84a5c6f0f86f5f266a06a7f498cbc0bdfcb8572808b98043282ba65f92c16d",
+    "sleep/probe.py": "743c8e3bf9df0f9740372b166d0bfde211a0c0f4044f95293e6fa416b299cd8c",
+    "sleep/receipt.json": "7a8b451f3a0985c017d08ef7554c74ea2f242e47efb0aaab6b4d6024621c8a6b",
+    "sleep/Concurrency.lean": "6a4074bd1bf72f4262fcd1f8b0c355bab097d38a915f598781d90e4156c065dc",
+    "full-leaf-before-after.json": "2dba3c1b070f57bb1018169bd9cefce0025658a52e6c6b24dfadfc27da57505f",
+    "integrated-binary-source.json": "1a93353781dbb706554b9ad6c90305bd3c664b8654f7ba0d786986fbe1a81841",
+    "linux-production-intervals.json": "3cd3491edbd8dba8b8969afcb926d7063009c0db09012117ee76a47c01bc21a8",
+    "handoff-binary-source.json": "58d129d2776e46e2f6c705f6bc30a4a46cbfd30ef31d78d9322fe4907d07bb95"
+  },
+  "reproduce_scheduler_probe": "In a writable copy of the evidence folder, run python3 cpu/probe.py /absolute/path/to/lean or python3 sleep/probe.py /absolute/path/to/lean with stock Linux Lean 4.35.0.",
+  "linux_production": {
+    "source_commit": "cb1dffe10fd5a86ab53fb71a4812eb73786ed530",
+    "source_tree": "3b85151bc9d0c03b0a36db5cd19dcebd67db85d8",
+    "finite_optimization": "dafa3e64289998b784aca99ec8fb491ddaac5362",
+    "warm_log_sha256": "8c21449cd2f54fdedab4236a49704310726569310445de8e9bac77d56e31b5f9",
+    "archive_sha256": "bb31b94715d90339da1e8d7d146b3d6005124eab9385fd28225861bc81d3e100",
+    "complete_result_wall_seconds": 1358.682,
+    "count": 103,
+    "checker_applications": 6248,
+    "sum_reported_module_seconds": 3300.6,
+    "median_reported_seconds": 34.0,
+    "minimum_reported_seconds": 5.1,
+    "maximum_reported_seconds": 65.0
+  }
+}

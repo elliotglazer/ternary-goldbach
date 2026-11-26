@@ -1,0 +1,772 @@
+{
+  "parent": "b6535e79fde64adc5288e02ad3393bd1eca94631",
+  "commit": "dafa3e64289998b784aca99ec8fb491ddaac5362",
+  "tree": "9fe4b478b50bb69bbd2deee6d278085155e3a31d",
+  "branch": "refs/heads/codex/finite-interval-synchronous",
+  "archive_snapshot_sha256": "178c7a9a7e1a8631daf3884c8f9e3e2c774a2b8ea11e27f8f9ae9c15307ca4f3",
+  "snapshot_log_sha256": "881fd07886363aeadb9d2f9e72cc4211f1791a6ae3ab3ea9760d0f189c731cdf",
+  "source_only_insertion": "set_option Elab.async false",
+  "files": {
+    "ProductRange141264937986Interval": {
+      "old": "d6d8e456829840fe738a83b5f496254645fe7893",
+      "new": "53ca5ed7330e0c5292ba1d5f67a7972a50665b10",
+      "sha256": "04168cf4adde5178966a220fad60acb63257d84b9489ca1f8bafd7b4454ca6eb",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange145559905282Interval": {
+      "old": "fb670c4d6f8949c074cfd50826acf77516fc6abc",
+      "new": "015b5ba8707524a1b0c7e15a2872a4ecf61d772b",
+      "sha256": "f570880aaa84f40ec3ff5594746df582ebba562a3dab6ad8c107f984f1ac3194",
+      "checkers": 40,
+      "kernel_checks": 80
+    },
+    "ProductRange148244259842Interval": {
+      "old": "a2c7ca4364402beae1b935bf535014cd8d53954e",
+      "new": "0891fb7f3e79ccf18bde2cd1a4b413dd1dcece68",
+      "sha256": "20dece4811b124a9e213448090cef269e295b3aa8a4cc1fc48ba127678e4fb8c",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange152539227138Interval": {
+      "old": "d4c17d4865538d96f9a4c91bc98bbe7a9f18f144",
+      "new": "039d50088efcac5bd88117f723c4def668c7395d",
+      "sha256": "36c26574daea8008387dea2c3ab191dcbd30feed6a9daf5d638131e65d4008aa",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange156834194434Interval": {
+      "old": "0de902b71459585e68516a120614d7ab377796ea",
+      "new": "e18b57be2ca1a50e479b8e90ecb4da906fe5eb82",
+      "sha256": "1a59c3f178828bce8d0f7c708303c3f77bb6653c12a2fc2bac41b6a71b65a895",
+      "checkers": 56,
+      "kernel_checks": 112
+    },
+    "ProductRange161129161730Interval": {
+      "old": "7c0850206387c70762e0e8adbc3dffe3f7baa43f",
+      "new": "06af308bb4fa89ba2585661ababe1f94d9ff68f5",
+      "sha256": "66b53eb0d20c18bd0515d99dc4c4739623956e49954aee536ac55623b2b86ee2",
+      "checkers": 24,
+      "kernel_checks": 48
+    },
+    "ProductRange162739774466Interval": {
+      "old": "ef917e3a2a7641862300327427a40516cae324ba",
+      "new": "fbd30274747fa7e93156d5d2512ab22b795a0aba",
+      "sha256": "81295497b2a28cec140369064387edd4066ceca7f2795c245147b38bc8ed2523",
+      "checkers": 8,
+      "kernel_checks": 16
+    },
+    "ProductRange163276645378Interval": {
+      "old": "09b8ae1df4b8f2c70b9e14ff34b34ec20b729fd5",
+      "new": "c490badd50136a9d99888c690e243e929981ca98",
+      "sha256": "704c3aaec1073177868f38b64ab1f681865360d11435a7fa52d86ff32173a3ae",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange167571612674Interval": {
+      "old": "3286536d51d97b08acc5655855fca57198f451dd",
+      "new": "0c1684e4cf545b09b529b53e4407575bc6bfb696",
+      "sha256": "89ac17a0a8738b6b0a41ddba1326d61a38e011b8c4348ce896691f3b74234f97",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange171866579970Interval": {
+      "old": "b7cfe8df2c6958f41647ab25e1b2fde5d5b9cfe5",
+      "new": "d6776cf20610338a263c66c830b594e9b5c992fa",
+      "sha256": "4474e0f507405ef9991fcfda3352c6050f3ac1a9fd4453eddd3bc4efb136d4e7",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange176161547266Interval": {
+      "old": "c5c4d5ac86b840b3644f0eae2132ff3e992c8c82",
+      "new": "f99d23594629b91c67b2b62b7af5e7ad62d6bc7a",
+      "sha256": "acbc99d48e50672470870a879e63d660de5903a56f07b6a6862d3e06cfb4e3a0",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange180456514562Interval": {
+      "old": "ae06fb29f2c3897db78962c26e3566b288a45f40",
+      "new": "cb7771fffdbfeb1cb3d8e26fd2b162438efd5209",
+      "sha256": "2830eea03c440fc7aeccc346b0410551bc338ed6401b2e3ff699d4a3f61b4b6b",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange184751481858Interval": {
+      "old": "7b12edf0ddfe36e5a160cdf2cd66ea083ef91c80",
+      "new": "7c65a0379c36790f8c090c870b73592c4e1d9353",
+      "sha256": "144d42672e9df9ced788256076b2ff1c75103d65a2c4dff6a07acaf997874df8",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange189046449154Interval": {
+      "old": "419b8f0043d2d0bb5fd438c0fa9612a94aff509a",
+      "new": "2a63524c7b5c77a4aa4f8b1b9446a1d75bc4f5ee",
+      "sha256": "a00a6a9b190e5ecb5b3aa38341117355f91ba882ec361bcab955726b42f8a919",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange193341416450Interval": {
+      "old": "7cc69357951237cd073da1358716840f80e5a7ce",
+      "new": "4e894106501f8d04dc817aed03de6d1c2e88d524",
+      "sha256": "a9f158b8ef1a67620b393b8615305fc06b534ba49848773ff09cc65953e0a28e",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange197636383746Interval": {
+      "old": "628587b037582bab033372912851ee5fd5cbe06e",
+      "new": "677f826db16568dea20e4ea2f8e4f60eed18c19a",
+      "sha256": "983ad56e4510a11cd627fe1b3b69da9efc72cf0215d389c61995472dacc6ac14",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange201931351042Interval": {
+      "old": "2c9f0c6dbe23d578c0574f0ddc3487d8b7102d3d",
+      "new": "14981e491a670c4867eb2aa42b03b396fe70b400",
+      "sha256": "bf0e7ce7d757a04a5649d187d383c462d540854a978ce53584dba4caff9a3f97",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange206226318338Interval": {
+      "old": "bd9249f1b300b0fb907f0b71b2089ece6c7d6f33",
+      "new": "b564faa5bdfe389425d51cf86be370948fb40860",
+      "sha256": "66a3b2badf518055e13bb30c97d2d4609f5f28710798c70018e22e0f0fc45f19",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange210521285634Interval": {
+      "old": "80ec5559fd569813a149d7acd38963b1f2a6af4b",
+      "new": "2a4b578df49f12bf85e38c7e94a9e231ac05b524",
+      "sha256": "fabdcd8d5a6c8362118201b85eebbcf6a69e8cc45515a93ea03059afae02a36a",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange214816252930Interval": {
+      "old": "13a31d6109065f0c8955face27a81ec30724dc48",
+      "new": "9fe782ef0656ba5aec6740f0afdfb349da7fb60a",
+      "sha256": "8982cf87edeeb5306def58edf12b0304f8096a75dea931fa1be8c4121e5a14f0",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange219111220226Interval": {
+      "old": "da4543658072c60569ef48d929b041d7a5d20e1a",
+      "new": "55cdfc9bcd1d8add208c8e682f3e0bcd14d2793b",
+      "sha256": "027feac37c55187a945385aaf37b57ad1260d6eefc752f2189d11f7b40eba52c",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange223406187522Interval": {
+      "old": "433c8367e1ecbaa58ca499e0de1b63fd681b05fd",
+      "new": "c7fe3baa868e7de1e87dae4d152d4b60164dec98",
+      "sha256": "93c1e4cb72731ac6273a090d7c98cf7032d8cfec06dec462ac0b337834538656",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange227701154818Interval": {
+      "old": "1a85d9bc7c76254898c87046e9eac05115e4ce64",
+      "new": "de716769f0c92ebaa979bf84f8cfcf960a759528",
+      "sha256": "ab64c4d9321220251b11d685d5ea9db1f2a385e89ecdc6d53271d2995195c222",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange231996122114Interval": {
+      "old": "ad088f5cc0989a22573171e36e4f64cba2b24fc0",
+      "new": "ff44589bad984707fdab8c9af7178e78fa5bead5",
+      "sha256": "828cfa87970aa1df14294944f8d5b205325245f4b6bcbcd11e1c36256a26e004",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange236291089410Interval": {
+      "old": "afd13878314bca80d391b1b0f9b155249dd4ed6c",
+      "new": "71fcf4465f72e479e5d50f74fff73fd610da288d",
+      "sha256": "5f69456a211216b1a0d40d1fa5a82e558161bfa1b26db60ac8bc5573ca0f4afb",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange240586056706Interval": {
+      "old": "febd7bb87d78c664aa992991caff36906cac2aa2",
+      "new": "731c1e0f71e50b7108e74d50a457ab869fa90212",
+      "sha256": "c33d219eb1fc4f387bd5f89bbff0238735b9efe7a6745689400b320284f7f53e",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange244881024002Interval": {
+      "old": "32b2c893e08f45511d025d45986a3dd4b743abff",
+      "new": "c802fce3b6831ec2bbc2432163f8308d10a90987",
+      "sha256": "98205e054991f35e989f648618f8d288b595f188e557367cebd652ea6c86695c",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange249175991298Interval": {
+      "old": "c67a7f722f00823b5dfedc07e3482640052a2ef1",
+      "new": "5774f8487ef34b79f3c7e64e14ade68309c7630e",
+      "sha256": "09518f7e7148a9f224fe2db92d9e41f9c9abd3c20a5a904ddb715e8cb8fd93a2",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange253470958594Interval": {
+      "old": "00f6579f2fd6687bbbb05f1c6ccbaa113a4e2fb7",
+      "new": "efe7001e5efbd6f3e2bc1e2494380b2598fbf4b0",
+      "sha256": "607b912b23364e7e5220455069d78880048a0d260be9c0dd8bf99cba9092d57b",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange257765925890Interval": {
+      "old": "fafcef98ff55a12d68ee6c21b21b767784e00b29",
+      "new": "088f05d5dff108bdab85b78063648d068b257317",
+      "sha256": "b4bae12427d4a1a01dc812800175a5866aa17b57b7b13abe5b5f1a88f0935b88",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange262060893186Interval": {
+      "old": "b082f688cd4d892fefa52dda9c3eccdf8b32fd5b",
+      "new": "549549ea82e5d20fa80e12c359eabe5caeb10518",
+      "sha256": "f44a0d07b6571ba68430f9dd240ad6ce11242ceec7b29a70ac81f30d6ed04b42",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange266355860482Interval": {
+      "old": "a1b124d8487a0bbbd7c0f496e8188668c32a01f2",
+      "new": "27750ccd4c4211447f0ce6836b71e0a1f2e866cc",
+      "sha256": "d1461cc27840906c8c0445d74635c90fbf3fc3af300896e54eadfb612e2aad2b",
+      "checkers": 16,
+      "kernel_checks": 32
+    },
+    "ProductRange269040215042Interval": {
+      "old": "39a1716c346db7419b96f0ce8f482ff9efdc5932",
+      "new": "9119f19a0fb69d2536ddbec966df9522c65fc18e",
+      "sha256": "ee1ec77c35747d0d526a59c201876bee2e593a98889ae87f6d0b1059408087e3",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange273335182338Interval": {
+      "old": "048328ccb2d5590a012025d83c9c3c83d15516f9",
+      "new": "9b213873061dfc56d089e5734d11e5c25a04a98f",
+      "sha256": "3f64aabc7fcdb725c02abbcc83c6e37a4913291d635ee2503bf0bcc272eba06e",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange277630149634Interval": {
+      "old": "27cd8681f0b365d43f578ed61904a1f207d9589a",
+      "new": "e2e0a2aab1fe7b77e64925dbda7fed800800a22b",
+      "sha256": "cebbd5ddfbd2c113e4752c0e427d2bdfabc6b93a7a0a09d1aec11201b54d37c9",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange281925116930Interval": {
+      "old": "edac55c18167e9a8bd3171a2aaaa6ec2c7e8e41e",
+      "new": "7b14ae8e154a18e81633854c3f44367106aad6ec",
+      "sha256": "37a320d356c8bb8570bba2de6c80e22b1979f475ab3f61d075e3af5792fa2dd5",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange286220084226Interval": {
+      "old": "a3ed7159f4ab0207b35c2d0f59ac852fdf3f5b82",
+      "new": "6e750dc3bce3126c3543e9248c87b7f0ab59d9bd",
+      "sha256": "f225f62977e1d1afc9cda22712900b7f56a3f75b84efb3ca180f69d27880e327",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange290515051522Interval": {
+      "old": "8ccab96d960882f66771fcb67058b7891bb51edf",
+      "new": "24dd15736188b4682072d8b5f2438b674f108b55",
+      "sha256": "93c2316648f610b7b2156fbba178da08bcb4d63e6b95e63b14d7d491090fb952",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange294810018818Interval": {
+      "old": "293772bf260895595c193686fde09ef55084eae8",
+      "new": "3d5e141c2d871e6120877f4d01265cece92aaf08",
+      "sha256": "d565e4bd190ce24580f65dadc2a2ef7d5e2d7498e45e2fb500e57b292f8c1806",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange299104986114Interval": {
+      "old": "d9178cdc232b28fac849af6ff4418656a2345dda",
+      "new": "dc82f3697f38cf3492c0d3a4dc929fb329fa68d7",
+      "sha256": "43952180d04977ba91305bbcc41cf96f9bc6927fcaadbb99f4c5f186341abb96",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange303399953410Interval": {
+      "old": "b9f37e17d74471c77beb47f944014aca8db481e7",
+      "new": "56e71edfe30933fb73ece5ce615620faec61476b",
+      "sha256": "3aea59d4fea2debf786a0b2e6359f0471ae7f9e77548a34ee97fa8ba0e3afbd2",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange307694920706Interval": {
+      "old": "7e42015e7f4f56c6f3af4b3e0c24840f8b7abfe2",
+      "new": "b8dcd743b5d85eede1d4b4b2bc06391b400458fd",
+      "sha256": "fa7b933d323f5a9160b0a2fb659ccd06985580e6caddc895a47a1752958f8116",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange311989888002Interval": {
+      "old": "db36fd859a827618634bb6bb293fa9f98bc70c5f",
+      "new": "9318bfe04f9e069270868c0522c054de0e68adef",
+      "sha256": "df30857cd0f7674ecb049b8171b7ff6c3c54a1d9ba6f7c911047986c07e3a1bf",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange316284855298Interval": {
+      "old": "3894ff9a30dc588d16dd52799a6f7500cef9577a",
+      "new": "5ac339307814b1dfa18d23d336cd7c24aa84f269",
+      "sha256": "ca102db7fb6e67f65738e708a4097eab05b7e59ce3e32337a3dcdd8d0b51e1a4",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange320579822594Interval": {
+      "old": "1456031f53fc3c0d82e15ffd6e2413c529597bdd",
+      "new": "0d1b6b792ae211b12240070737e83988e07d8cbf",
+      "sha256": "309621a1999bf0127b8a8f86c129ce698f501229a182e189ed4db574457971b7",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange324874789890Interval": {
+      "old": "2aa5d0ec78862ca0164fc64ef9bf8c08199e3c08",
+      "new": "c9f0145ca526643eb3afb6602ca34f69941e4ba9",
+      "sha256": "63dc31a76fb449402d8180b2f99aa510cfe97661cf64e183334016d35471cc92",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange329169757186Interval": {
+      "old": "03b8c46b2cfcb92bd1b5fedbf0c8e2c8a35189b9",
+      "new": "24f145c79be70bf1da81a477abe14feb450eca46",
+      "sha256": "95e4a72d9a830437ba280c306eb6e52618a378138112ac9e6d084d4bb329463e",
+      "checkers": 48,
+      "kernel_checks": 96
+    },
+    "ProductRange332927853570Interval": {
+      "old": "2eb75f56d68f811d578c3dd321654f21f42019d6",
+      "new": "672a104194919b8c91e5db948abe9ae4d0967efb",
+      "sha256": "b588c618eef7ece220a229e50b7ffdba25b01dcdadb0a2afd395ca20dfc1960e",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange337222820866Interval": {
+      "old": "4354ebcd8fd12dc66f4176958280cacbe47f627f",
+      "new": "2195d35ce03f967a55b5b5acb8862a1030e6c6b1",
+      "sha256": "399a6e1765f3c7a5604e730fc879ca067c0abdfd995191c6b5385a23d45b4683",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange341517788162Interval": {
+      "old": "3310dfe3eb08d5f44fd45c337b5552d54a2a62fa",
+      "new": "a94b9c783f7625ba8fdd7058cde8aeec9ef99d2d",
+      "sha256": "4aa992212a405511501d40de26d60805759d68afa708511f30d087052752c490",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange345812755458Interval": {
+      "old": "648b2a3542f2f3bee027f8cc9f72e4425a0ff4e1",
+      "new": "d1f905bad72d701fa71e24098a2edc3bc4a48ee8",
+      "sha256": "8a6b5ad225be671290b33fbf2886e73b8be1fa3d5771fc1cf689477340084985",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange350107722754Interval": {
+      "old": "5ae1f5e6e3aa2b6638d4309bca21f59f9075dd66",
+      "new": "9d3a62c5c6eab3463ea6de3d7a5ea22b9ad0cfcf",
+      "sha256": "05b284eb53fabd0d42468685f282fb0ca749b700f4272f9e2a3836740903c3a8",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange354402690050Interval": {
+      "old": "d002e27b99bb6da5b93d86b084076121e2165f86",
+      "new": "7a93a5967b549be045210b949ce2371a0cdc2c0b",
+      "sha256": "2fe90cb8b4b70ee4747107e34f52c154898d981b9fe13f862a8af6268105a11f",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange358697657346Interval": {
+      "old": "d1366f055e9a4506b310296f1fb2249dd41e454b",
+      "new": "75afe084ae171710bdaefe78d6f7438f036b2036",
+      "sha256": "3f4b903a5d734f6b3563552720c4d7d69c7ef04134d92c73085a37ba643096d2",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange362992624642Interval": {
+      "old": "89eb9a5173fb0f50ae0edb0865c53f4fcb325994",
+      "new": "d1afe7ef53dee2946a35b5dc51c8a066e0606949",
+      "sha256": "15732372234f92a83318aa442baf354b40b78e1ec4627531c77fb1f191b8d88c",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange367287591938Interval": {
+      "old": "d867caf65438ae9078231f6ed28fcaa623d07686",
+      "new": "e0f2a0fa45039ccff9dc8d17130152aa3ae65400",
+      "sha256": "2503047a2b2473670c5c4473399bcc38c1ab6d28f201ea1a1fa4b99ba450b58c",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange371582559234Interval": {
+      "old": "d6867eac7acbb69c0291af88c50f9635b9bf3d21",
+      "new": "6be964158da91fdebf6cf14bb1c867d845a1a7df",
+      "sha256": "238ce6af22d5e51bcc8bec2e0eff61edcadc48c28a25d846325c49235f04fc32",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange375877526530Interval": {
+      "old": "641436a7a3923add5383f3bf89aaf53e12da011d",
+      "new": "f723e5497610bfeceb2f69c07ecd19719133ce17",
+      "sha256": "1f31f9b390eb1a23bc4eb8d11b0c5712adf21b1260c16f5b6e7a958429429a97",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange380172493826Interval": {
+      "old": "8bd16cbc961a29057dc34c29077090e84ece1945",
+      "new": "0a96983858de9da09a849e9b4d81b9cd510f99a1",
+      "sha256": "840a78ced23b43087e3bbed4f79780735ba9a179c95b89700cd7fda8933b349a",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange384467461122Interval": {
+      "old": "8a3816fccd331a78db910c66494b191452024dc9",
+      "new": "34cf71e62b1288cdbafb2f82ad23f32383ea5dc8",
+      "sha256": "fd297fd8921ff6c7b4036cd515c05109f0e190b55d505a356930212355030c49",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange388762428418Interval": {
+      "old": "80fd94f646307ed26c7ddd4549c464ca80301e86",
+      "new": "608e7a39d8c61872f75eafb0c25572c0ad625716",
+      "sha256": "e33241d2a7f78b9e827b8baa454196d19c38c5ea47dedfe7c028baa38ac17964",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange393057395714Interval": {
+      "old": "ff452f024a3f92bedd9865e345fe3e46c6c0f234",
+      "new": "e9182dcacc178e8ed9d395b8d757b2ef254ad93d",
+      "sha256": "341afd4618d7c421bd3d0c1cc82c2528da258f560976216040dbb2029276462b",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange397352363010Interval": {
+      "old": "b4b207bba248d5b842e84d5f742e934d4f95f403",
+      "new": "ad5b93e963f26f5e818c221e136ff10efc375854",
+      "sha256": "2fe0088dbd6e18c0ba18aa223c2037d9ed1df820d88553d1afa6d2603b58ce9f",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange401647330306Interval": {
+      "old": "1bd069dcc604dff0f7fced6536cb8a0142c1c66e",
+      "new": "3e1ed714733ce91836b78208c9984f6d0c990921",
+      "sha256": "ee70d40148132a2c342ab8afbbf3ea57735a6255c2021ff032f9700395525111",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange405942297602Interval": {
+      "old": "ffa82743ae879074c446645f5f3c8dfba0ba0a95",
+      "new": "aaa8d00d1706fb0ab3efee4c6528ee4bf925afdf",
+      "sha256": "ce25415a639d248f6497a8074c68a77330ceae0caa7a4249ea20a1bd2db1f1c5",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange410237264898Interval": {
+      "old": "0ea047f98e628ed183708f3e809d1ede7d1a95d1",
+      "new": "8c34598ee88f35802799e1a2318e42cd0b5540f4",
+      "sha256": "a5ed7fdad87f0c7aca869c8df23a9188d8c60bb35e6d01ea5b4b8f1170791b75",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange414532232194Interval": {
+      "old": "1169fcff16f1f3c6db05807d8ab286ee5d48fe3f",
+      "new": "0ce46482aaf1fcc54e5cef1eaa930771432a4eba",
+      "sha256": "b6b26c50b3067873dd9e8f246cd7a687bbba483efee8e76063663a1f1a0b65a8",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange418827199490Interval": {
+      "old": "b2c504060008d3800324fa22d5076c1860ab0722",
+      "new": "bf9c9824db2d0cce2f63d9e575821bb0940f3ab7",
+      "sha256": "80d24edf9287e391ba296e0df379d2405b6054540223439375f019b92b84a48e",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange423122166786Interval": {
+      "old": "367c582fb23015e47abd329e3bc59e0ab5d875e5",
+      "new": "68238a415438c04f37baecd573d4a1a9c4102af5",
+      "sha256": "1f8b81fb7c96ed66b0200725ae955f2277f74ef7169564fe260ae22b6520481f",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange427417134082Interval": {
+      "old": "fcad87db07f34ff70d0d3c229b37ad791cfe1885",
+      "new": "69d6956ff0347b3507dcfa1c3926dffc5184ffdd",
+      "sha256": "2d323b16a611b77fb9cb292cb6f721c4cbac579390603f6e49f497a5d3110d51",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange431712101378Interval": {
+      "old": "60e6b7fbed639fb3a8907587006a359fa9209172",
+      "new": "96ea58cc6f642ae91b1dcfb9a7946f163bd31967",
+      "sha256": "561d72cdeaf4e40343b7908e4d8fe4dc460c4afc03bf6cd7b8f5c849b6d77f66",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange436007068674Interval": {
+      "old": "5100af4bce48788e8e11c0c72251285d30a91146",
+      "new": "77afeca335b7c80e6df9a11bc2af87defa05f518",
+      "sha256": "3ff18632fb9afb5f881d4adad74fea9bc0ccf006d65308db9357460ce52dc1f0",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange440302035970Interval": {
+      "old": "c5fd03c67481968da453d26b0537847a9065e73c",
+      "new": "bed61943078d7ee0fe2dfe075ecdc434b914d125",
+      "sha256": "482bcef803d4ee7bc041c814d240cf956c1c7034b641926dca3d949ee6774dd0",
+      "checkers": 56,
+      "kernel_checks": 112
+    },
+    "ProductRange444060132354Interval": {
+      "old": "3ecaa51a1423c0d4f09aed31b77234a9e11e349e",
+      "new": "7d12c5af5f509e75be7dfacdf37e8b775f3fe0e4",
+      "sha256": "abd134dd9af1df21dd4bf7ace8ade967dec30909b121e1b38160fa5134d2f896",
+      "checkers": 128,
+      "kernel_checks": 256
+    },
+    "ProductRange452650066946Interval": {
+      "old": "5c481352669ff72747092ba65ff84ee11cf6d5ad",
+      "new": "20d0e501f25a37f07d0b3a7af43565e025ea9dd1",
+      "sha256": "4568402a7b45460910506e169dd5b44e3bafac7a5dc0f5a2e411753759bb8413",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange456945034242Interval": {
+      "old": "9fbcad97f3334651f5ad1c77ef47e5be7af95de7",
+      "new": "6e0b053f7076658839065975a4a799f1035fe4eb",
+      "sha256": "03895e807b6bfb189bf9bdf945a11bbe91031d41604e5cbdcf27b582625fe74b",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange461240001538Interval": {
+      "old": "a20fd456a5c80d7be80644513cc297aee9433805",
+      "new": "f616f9e6a9fca9c432cb6d04617edfff8abe2559",
+      "sha256": "c97a43a9093277816c36c061d7ee66e5885d13d3430dd43727556320ffc10903",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange465534968834Interval": {
+      "old": "95333558f217783f523e767cbf17a290b4e5bb6d",
+      "new": "576d124c20d08144f7abf995c85da0239c563dd7",
+      "sha256": "a9a449372a54d391ae8fbc65c188e9d6ad2b31b32e8aa294146adccd2287d6b3",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange469829936130Interval": {
+      "old": "d21614e6208eb767600b5d5b6d8151bdf7acbb45",
+      "new": "1d3e2535db7a52f4e7095b0cf6d763d856905194",
+      "sha256": "1c585eb733c27b00b064c1701f31f701e7f198e6e160730c62f346d5be4fb821",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange474124903426Interval": {
+      "old": "b5debc7a5a68c81dc0f3d58ee2028837ca89e9bd",
+      "new": "5ad02f22ca87ca6f9724b87e011b65602b9fef26",
+      "sha256": "eee37f54239e984c8b0734a75565ce3125bbafc26c3dffcee66541065b65de96",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange478419870722Interval": {
+      "old": "d65a543cb9e3df2a28e55a03d36b768be9ff53bd",
+      "new": "1e474d727aa1c1918b53bdc0c7bdb4e066c2d583",
+      "sha256": "d9837b15f4dafb85e85bd52dd1caccf5f2be5d2f33751524f391b1eb9206f286",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange482714838018Interval": {
+      "old": "e5da3904397d9c170bc8da4f3b2563e08d6320d6",
+      "new": "1f6bc0772b2ed370ed6f032027acb009d46212b6",
+      "sha256": "ee0580f2e128c016d31741325bf63faeb82dbfb21cac95d19d88dada35d806ca",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange487009805314Interval": {
+      "old": "5e838e4f76f8802c46887e9aa34efb0985f2881a",
+      "new": "f417bbfb27a056f1fd5e9f295fe88a21cd8700fd",
+      "sha256": "28ac302941dd80ce970280ecbaf933ab83aaea37c54de8ef5c1e3693ace21474",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange491304772610Interval": {
+      "old": "7289fa212312c9fdffe0ba8db1f77f304b4afc4c",
+      "new": "0a17afe1eb9ff6e0aede319677eaafae07906363",
+      "sha256": "df2485dfc9860da4b6bbcf061950c25f49af2052fdb57f4981d7053ca23eb20f",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange495599739906Interval": {
+      "old": "48ca6fde453f01489f70ad94961b0544adb2fcf5",
+      "new": "69a0579cc335bc241ab48cc595c1dc6424267569",
+      "sha256": "260b4bd58a52803bf18a6d6b97ac11875ed498f235b89dae3cfe5d0a6a4166e0",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange499894707202Interval": {
+      "old": "0a6102c075c7575a2069bc773763e5f15805c2aa",
+      "new": "d50a83f8ffe1d1c3597d106e8e75fce491eb272d",
+      "sha256": "2faeda12f34cbdc9e184143c1bcd0fc25151b550be8a5da0bf9b0bb7b4a24608",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange504189674498Interval": {
+      "old": "aaf01231c4eb09818f4ac2adefe7f153488e3119",
+      "new": "fba2a0f4ec8c91eb2c1015131dca0365a7b9f1d8",
+      "sha256": "95f8ed08bb00b7465209a7d5f2e157a2a7023068bdcc1e4b2334ec236c6aeba5",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange508484641794Interval": {
+      "old": "90f094bdf72e63a19f0bb59521c445205cc16297",
+      "new": "32febfebb2eca58f4721cc18c3a06b45f8028738",
+      "sha256": "778d89335082ba73aee8553945d929ed9880d004fbc43db121b5c07f18834b2f",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange512779609090Interval": {
+      "old": "4db40d518ce927bc8efa687089983760613b1ff2",
+      "new": "543d80aaed31664c81f0aa4fbf894a5f33324501",
+      "sha256": "4a095bd9d47d51e6dce88f2be163a8e8574d580cafc675064efd7e86018e2923",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange517074576386Interval": {
+      "old": "49194c4b217520818f6473dbbce593fd2fb7b5f0",
+      "new": "31e151c0a01e4c342e50ec632ef166bf7de6f2f4",
+      "sha256": "05bd47bb29fa27ed7e61461a2659e2606ff5ef1b9665c14f297cf995b46f1c24",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange521369543682Interval": {
+      "old": "c6e5f4d0e5449f4913ef1a26a07e5806900af36d",
+      "new": "993291cb61581db07c6f39ae64d79fba966b8f9d",
+      "sha256": "c4b40c2a4a0b360602039514612ae4e24accaf1594cd2c7a6b60de73165fef36",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange525664510978Interval": {
+      "old": "f0cd22e529b9e8dca2b428c4e01709dda2de6594",
+      "new": "ba9dd615d081042481dbf49612390bfa274145a1",
+      "sha256": "98e572dd1aa825b28e6f201f037e31c28e449c03fad715bc23229a0d315296ad",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange529959478274Interval": {
+      "old": "71b92036799e146433fb48e999de013018eb27ad",
+      "new": "09db0174ee3f6ff1a8b4cc7c4da64c6c23f780ef",
+      "sha256": "71ae371212f2f3b7d91220a8eba2743ea63032c6ff161acfc7c9f56d982945b9",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange534254445570Interval": {
+      "old": "a495cb1d6d791fef17f8a2fa190773cfe05040b0",
+      "new": "f05893d807d697fb35cf70fefabcdeef060d2267",
+      "sha256": "24a32011d34d2aa4071446dfd45f3f0753474b0f4f4169e87dd3ea9100c4a382",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange538549412866Interval": {
+      "old": "680b2935f10dcc028aee49cebfd7efc6196871e2",
+      "new": "21e7e793aaccc47a3e32289e592fa2e0e1470717",
+      "sha256": "4286a9028f4c4d9f6f3f116c929c8f535a4caa4f994e718b5bc4946b5a951c94",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange542844380162Interval": {
+      "old": "1e123f84be4a6333e6d9c65d9ea74b850f1c40cf",
+      "new": "ec5c948dd3c27c950ac2e1aa372dee5cc82a74e0",
+      "sha256": "222f2f851eb1ef0141247903dc90e75fc1b3b89380b78c27fcc9a00ade5a4019",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange547139347458Interval": {
+      "old": "3167627f38a13f87f3a9792cd902731c8e2bc95e",
+      "new": "a2802bf3e101ac324e335d20a326d5f9bb819b21",
+      "sha256": "84f360304c7997ba300854879ca7d77fb0c0f68fb30d999ac95245c83e8f7432",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange551434314754Interval": {
+      "old": "ba36e0584b54b5a016c18b9ca39af8920aef6838",
+      "new": "1dbacb015422bd1051bbcc7d953f59e1cf37c17f",
+      "sha256": "488f91152bf7956e6ec4508331adfef160c1830e9a41fb8db9e5e43e86c4b202",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange555729282050Interval": {
+      "old": "6f0f5fa1fcbc12a1176fa5b63e3c8c61d242c5b2",
+      "new": "9ed04ed0ec0527b8bbaf0437322ca9d2fa47ce46",
+      "sha256": "2f3ea4c60b99da0b18ca3974dbac66e0019825221d6197a5d069cf20a1b69f45",
+      "checkers": 64,
+      "kernel_checks": 128
+    },
+    "ProductRange560024249346Interval": {
+      "old": "ebe717503bfad57022d8990f77787763be273f99",
+      "new": "a244dc0fa1701a170bff5f3c7266b1be602f927e",
+      "sha256": "ccc22fe59973dcf8a06f9e892ce6236223340061b521402fd82f6ae99d2326ed",
+      "checkers": 16,
+      "kernel_checks": 32
+    },
+    "ProductRange561097991170Interval": {
+      "old": "caf0d8a7c18fc2d20fe262c2a79c28d0cccbf75e",
+      "new": "f4146dc1347882faed1a51f32d13e9925bcbea58",
+      "sha256": "65eb0c7950dd1d44b0ad213e9ee8fd3577e8c3cb220a56be5f5a283ee7930554",
+      "checkers": 8,
+      "kernel_checks": 16
+    },
+    "ProductRange561634862082Interval": {
+      "old": "80593b08d307fc6bf499c36b9731d1ab117dddae",
+      "new": "932818d9aa11a14185ee059acc6779c26349e8d5",
+      "sha256": "84de60154581abd35bbf8dd111a1ed2c6beca024ed5f72a9cbbd5d02f0c5cb66",
+      "checkers": 16,
+      "kernel_checks": 32
+    },
+    "ProductRange563245474818Interval": {
+      "old": "700e34410210e08c310807cd8fc9c8d7ca179211",
+      "new": "487fb5a0917ac2c1afb9be64df12c00de89b7f8f",
+      "sha256": "5d4ae6274a31a79db7dd3478948a73ff08fb85ee0df7ae34c3ade00427a98407",
+      "checkers": 8,
+      "kernel_checks": 16
+    }
+  },
+  "direct_edited": 103,
+  "transitively_changed_732": 112,
+  "unaffected_previous_base": 40,
+  "unaffected_d845": 454,
+  "unaffected_f957_positive_at_snapshot": 31,
+  "f957_built_names": [
+    "FiniteAtHeight",
+    "FiniteGaussian",
+    "LargeTail",
+    "LocalLowZeros",
+    "LowerAssembly",
+    "LowerCutoff",
+    "MinorOnly",
+    "NumericAssembly",
+    "PrimeInterval",
+    "ProductExtension126232552448To138580583424",
+    "ProductPrefix138580583424",
+    "ProductRange132675003394Interval",
+    "ProductRange133211874306Interval",
+    "ProductRange133748745218Interval",
+    "ProductRange134285616130Interval",
+    "ProductRange134822487042Interval",
+    "ProductRange135359357954Interval",
+    "ProductRange135896228866Interval",
+    "ProductRange136433099778Interval",
+    "ProductRange136969970690Interval",
+    "ProductRange137506841602Interval",
+    "ProductRange138043712514Interval",
+    "ProductRange138580583426Interval",
+    "ProductRange139117454338Interval",
+    "ProductRange139654325250Interval",
+    "ProductRange140191196162Interval",
+    "ProductRange140728067074Interval",
+    "ProfileAssembly",
+    "TernaryGoldbach.Explicit.WeilNumC",
+    "WideSource20",
+    "WideSource22"
+  ],
+  "bundle_bytes": 42446819,
+  "bundle_sha256": "d173042278f9c0d4eb55ec63535196ef843ac9495aa53fd4b5a57178e38738f2"
+}
