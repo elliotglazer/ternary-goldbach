@@ -189,3 +189,5 @@ The map on PD quotients now uses the input algebra morphism's underlying
 ring homomorphism. A focused native Lean 4.35 test checked the entire
 functor definition and its laws in 40.43 seconds. The declaration reported
 only propext, Classical.choice, and Quot.sound.
+
+CyclicSubrep reproduced both previous errors as a full file and passed on stock Lean 4.35 after repair. UpsilonValues reproduced the stuck metavariable in the original definition RHS and passed the same focused test with the place specified. Full source replay is pending.
