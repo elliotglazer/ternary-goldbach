@@ -113,3 +113,9 @@ ContinuousCocycles module. The export audit for DiscreteUnits reports only
 the standard axioms. In MajorEnergy, AWS reported that `gcongr` had closed
 the goal at line 49 before the next tactic ran. The redundant tactic has
 been removed for the next source replay.
+
+The original run reached its cgroup's memory pressure threshold while all
+eight Power10Block modules were compiling. The package schedules those
+eight modules in four pairs using Lake library dependencies. Their Lean
+source, proof terms, and imports are unchanged. Other finite and analytic
+modules retain their ordinary scheduling. Hosted timing remains pending.
