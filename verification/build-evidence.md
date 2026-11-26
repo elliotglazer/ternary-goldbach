@@ -158,3 +158,11 @@ AmaxStructure module. With the ring approximation and intermediate algebra
 specified, it compiled without diagnostics in 138.60 seconds. A fresh import
 reported only propext, Classical.choice, and Quot.sound for the action,
 the scalar-action instance, the approximation lemma, and two downstream lemmas.
+
+The source preflight exposed two further implicit arguments in CongruenceLevel
+and ModuliPoint. A focused Lean 4.35 test of the congruence-level definition
+on finite adèles reproduced its error and passed with the generator and
+ambient subring specified. A separate test using the actual Frames import
+reproduced the ModuliPoint error and checked its action with the frame named.
+The tested declarations reported only the standard three axioms. The
+complete modules are part of the next source preflight.

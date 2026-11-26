@@ -64,8 +64,8 @@ lemma Kf.map_eq_one {g} : map n f g = 1 ↔
 
 /-- The principal level K(a): the subgroup of g in K₀ = `Kf` with all entries of g − 1 in
 aÔ, for an integer a of E. -/
-def principalLevel : Subgroup (Gf E n) := .copy ((congruenceGL (Ô E ∙ _) id).subgroupOf _) {g ∈
-  Kf .. | ∀ i j, ∃ y ∈ _, (g.1.1 - 1) i j = algebraMap _ _ a * y} (by aesop (add simp congruenceGL))
+def principalLevel : Subgroup (Gf E n) := .copy ((congruenceGL (Ô E ∙ (a : 𝔸f E)) id).subgroupOf _) {g ∈
+  Kf .. | ∀ i j, ∃ y ∈ Ô E, (g.1.1 - 1) i j = algebraMap _ _ a * y} (by aesop (add simp congruenceGL))
 
 variable {n a k} (hk : k ∈ principalLevel n a) {k : Kf E n}
 
