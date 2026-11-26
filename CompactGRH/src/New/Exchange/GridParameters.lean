@@ -93,8 +93,11 @@ lemma gridSigns_zero : D.gridSigns true 0 0 0 = Sum.elim (D.signsY 0) 1 :=
 /-- A bijection from the index set of V_{j,j} plus one point to that of Z_{j,j}: the identity
 for j = 0, otherwise chosen to keep signs, the point having sign (−1)^{min(j,m)}. -/
 def gridDiagEquiv : ∀ j, D.GridIndex false j j ⊕ Unit ≃ D.GridIndex true j j
-  | 0 => .refl _ | j + 1 => (exists_equiv_of_card_neg (b := Sum.elim _ fun _ ↦ (-1) ^ min (j + 1)
-    D.m) (by simp [card_gridIndex]; zify [D.t_odd.pos]; lia) (by
+  | 0 => .refl _
+  | j + 1 => (exists_equiv_of_card_neg
+    (a := D.gridSigns true 0 (j + 1) (j + 1))
+    (b := Sum.elim (D.gridSigns false 0 (j + 1) (j + 1)) fun _ : Unit ↦ (-1) ^ min (j + 1) D.m)
+    (by simp [card_gridIndex]; zify [D.t_odd.pos]; lia) (by
     rw [negCount_sumElim, card_neg_gridSigns, card_neg_gridSigns, negCount, neg_one_pow_eq_ite]
     split <;> simp <;> grind)).choose.symm
 
