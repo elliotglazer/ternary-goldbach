@@ -1,0 +1,45 @@
+{
+  "scope": "Stock verifier prerequisites on the running EC2 Ubuntu 24.04.5 Linux host. No candidate proof was submitted by the setup.",
+  "stock_verifier": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "setup_source": "bcb82c96512d888635668989c9fcab4b23ed5d5b",
+  "dispatcher_source": "dbd53cbc3ae37d829c47a7d1d3a51731cfd37808",
+  "dispatcher_sha256": "5ba170128fde5c6e2ec087e3d6ac8678d85f936a50330a16d3a061d9895a8a79",
+  "completed_utc": "2026-11-26T06:44:04Z",
+  "unit_result": "success",
+  "observed": {
+    "uid": 1001,
+    "bootstrap": [
+      "/usr/bin/systemd-run",
+      "--user",
+      "--scope",
+      "--quiet",
+      "--property=Delegate=yes",
+      "--"
+    ],
+    "placement_checked": true,
+    "python": "3.11.10",
+    "pyyaml": "6.0.3",
+    "bubblewrap": "0.12.0",
+    "meson": "1.3.2",
+    "ninja": "1.11.1",
+    "libcap": "2.66"
+  },
+  "evidence": [
+    {
+      "filename": "setup.log",
+      "bytes": 2542,
+      "sha256": "55779066bc6df8757d52f763bc9b8213d9e29f66e11c04d37ab6bdb389c2970d"
+    },
+    {
+      "filename": "probe.ok",
+      "bytes": 47,
+      "sha256": "8e59504e3414459d97b88b4e1d2b2ce41beb518a6bb9533090450b402812d1bf"
+    }
+  ],
+  "evidence_source": "AWS console operator read the completed setup and delegation result, copied the original files to the retained evidence volume, and re-read the two copies to verify both SHA-256 hashes.",
+  "still_required": [
+    "stock-compatible Ruby/Bundler/Licensee and Elan setup",
+    "fresh source preparation for the eventual candidate",
+    "entire protected proof build and independent checks"
+  ]
+}
