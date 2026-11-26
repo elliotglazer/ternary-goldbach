@@ -1,0 +1,372 @@
+{
+  "kind": "Source preflight log snapshot before worker shutdown",
+  "attempt": "33006912706042b49c1ddbc13515a4fb",
+  "candidate": "d6b1bfd523e2c54b6e4bb72844deeddf8341879a",
+  "tree": "ddc22b3144b7147ce91c5c767690d9d56aac50ee",
+  "archive_sha256": "6251a03db8d40a42ef476a0bfbdad61beff1153d93d0615b5dcbf589749d8204",
+  "source_preflight_log_sha256": "b6d44339383a7374cbf13106659674f9e841fb9e5812e696b16ecad07d175906",
+  "last_captured_line": "✔ [9859/9880] Built Lib.ClassField.GaloisCohomology.TameCocycles (4.3s)",
+  "distinct_successful_Lib_or_New_modules": 350,
+  "successful_New_modules": 30,
+  "distinct_failed_modules": 16,
+  "compiler_errors": {
+    "Lib.PadicComparison.Crystalline.CrystallineTests": [
+      {
+        "line": 46,
+        "column": 82,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      }
+    ],
+    "Lib.General.Groups.CyclicSubrep": [
+      {
+        "line": 31,
+        "column": 86,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 34,
+        "column": 14,
+        "message": "unsolved goals"
+      }
+    ],
+    "Lib.General.NumberTheory.UpsilonValues": [
+      {
+        "line": 54,
+        "column": 70,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      }
+    ],
+    "Lib.Cohomology.Etale.AcyclicTests": [
+      {
+        "line": 68,
+        "column": 4,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 72,
+        "column": 23,
+        "message": "overloaded, errors "
+      },
+      {
+        "line": 73,
+        "column": 35,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 78,
+        "column": 93,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 77,
+        "column": 72,
+        "message": "Function expected at"
+      },
+      {
+        "line": 78,
+        "column": 31,
+        "message": "Invalid dotted identifier notation: The expected type of `.map` could not be determined"
+      },
+      {
+        "line": 79,
+        "column": 2,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 86,
+        "column": 89,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 87,
+        "column": 24,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 88,
+        "column": 53,
+        "message": "Unknown identifier `map_locConstClass`"
+      },
+      {
+        "line": 107,
+        "column": 93,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 111,
+        "column": 61,
+        "message": "failed to elaborate eliminator, expected type is not available"
+      },
+      {
+        "line": 111,
+        "column": 35,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 122,
+        "column": 48,
+        "message": "Application type mismatch: The argument"
+      }
+    ],
+    "Lib.Shimura.ThetaNormality.NormalGeneration": [
+      {
+        "line": 252,
+        "column": 4,
+        "message": "`grind` failed"
+      }
+    ],
+    "New.Filling.EichlerFlag": [
+      {
+        "line": 40,
+        "column": 40,
+        "message": "Unknown constant `_private.New.Filling.EichlerFlag.0.entrywise._simp_1`"
+      },
+      {
+        "line": 40,
+        "column": 40,
+        "message": "Unknown constant `_private.New.Filling.EichlerFlag.0.entrywise._simp_1`"
+      }
+    ],
+    "Lib.General.Algebra.JetChainRule": [
+      {
+        "line": 36,
+        "column": 76,
+        "message": "Invalid simp theorem `pderiv`: Expected a definition with an exposed body"
+      },
+      {
+        "line": 36,
+        "column": 70,
+        "message": "`simp` made no progress"
+      },
+      {
+        "line": 36,
+        "column": 76,
+        "message": "Invalid simp theorem `pderiv`: Expected a definition with an exposed body"
+      },
+      {
+        "line": 36,
+        "column": 70,
+        "message": "`simp` made no progress"
+      }
+    ],
+    "Lib.General.Geometry.SmoothnessCriterion": [
+      {
+        "line": 76,
+        "column": 3,
+        "message": "Type mismatch: After simplification, term"
+      }
+    ],
+    "Lib.General.Geometry.EtaleCharts": [
+      {
+        "line": 95,
+        "column": 26,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 98,
+        "column": 68,
+        "message": "Tactic `aesop` failed, failed to prove the goal after exhaustive search."
+      },
+      {
+        "line": 105,
+        "column": 54,
+        "message": "Application type mismatch: The argument"
+      },
+      {
+        "line": 208,
+        "column": 88,
+        "message": "Application type mismatch: The argument"
+      }
+    ],
+    "Lib.Adelic.Reduction.Defs": [
+      {
+        "line": 219,
+        "column": 48,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 222,
+        "column": 64,
+        "message": "Failed to delta derive `AddCommGroup` instance for `Form`."
+      },
+      {
+        "line": 222,
+        "column": 78,
+        "message": "Failed to delta derive `Module` instance for `Form`."
+      },
+      {
+        "line": 224,
+        "column": 19,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 226,
+        "column": 51,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 226,
+        "column": 80,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 226,
+        "column": 80,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 231,
+        "column": 31,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 233,
+        "column": 32,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V'`"
+      },
+      {
+        "line": 236,
+        "column": 78,
+        "message": "Invalid field notation: Function `Form` does not have a usable parameter of type `Space ...` for which to substitute `V`"
+      },
+      {
+        "line": 237,
+        "column": 50,
+        "message": "Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression"
+      }
+    ],
+    "Lib.DiscreteSeries.Bruhat.ComplexPlace": [
+      {
+        "line": 43,
+        "column": 95,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 147,
+        "column": 34,
+        "message": "unsolved goals"
+      },
+      {
+        "line": 155,
+        "column": 4,
+        "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+      }
+    ],
+    "Lib.Weil.Fock.OscillatorPair": [
+      {
+        "line": 82,
+        "column": 7,
+        "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+      }
+    ],
+    "New.Heights.OneDeterminant": [
+      {
+        "line": 110,
+        "column": 70,
+        "message": "Invalid simp theorem `index`: Expected a definition with an exposed body"
+      },
+      {
+        "line": 110,
+        "column": 70,
+        "message": "Invalid simp theorem `index`: Expected a definition with an exposed body"
+      },
+      {
+        "line": 111,
+        "column": 7,
+        "message": "Tactic `grewrite` failed: did not find instance of the pattern in the current goal"
+      }
+    ],
+    "Lib.Weil.Periods.DegreeAndUnipotent": [
+      {
+        "line": 64,
+        "column": 39,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 67,
+        "column": 49,
+        "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+      },
+      {
+        "line": 68,
+        "column": 41,
+        "message": "Invalid field notation: Type of"
+      },
+      {
+        "line": 104,
+        "column": 35,
+        "message": "Unknown constant `ratCoordMatrix_inclX`"
+      },
+      {
+        "line": 125,
+        "column": 32,
+        "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+      },
+      {
+        "line": 125,
+        "column": 61,
+        "message": "unsolved goals"
+      },
+      {
+        "line": 134,
+        "column": 48,
+        "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+      },
+      {
+        "line": 135,
+        "column": 2,
+        "message": "Unknown identifier `V.isEmbedding_ratCoordMatrix.continuous_iff`"
+      },
+      {
+        "line": 138,
+        "column": 2,
+        "message": "Invalid field notation: Function `DFunLike.coe` (coerced from `inclX`) does not have a usable parameter of type `Grading ...` for which to substitute `Y`"
+      },
+      {
+        "line": 138,
+        "column": 29,
+        "message": "unsolved goals"
+      }
+    ],
+    "Lib.Shimura.Uniformisation.RiemannFormAdelic": [
+      {
+        "line": 93,
+        "column": 40,
+        "message": "tactic execution is stuck, goal contains metavariables"
+      },
+      {
+        "line": 104,
+        "column": 51,
+        "message": "Unknown identifier `polarisationForm`"
+      },
+      {
+        "line": 115,
+        "column": 2,
+        "message": "Unknown identifier `polarisationForm`"
+      },
+      {
+        "line": 116,
+        "column": 41,
+        "message": "Unknown identifier `polarisationForm`"
+      },
+      {
+        "line": 116,
+        "column": 32,
+        "message": "unsolved goals"
+      },
+      {
+        "line": 121,
+        "column": 7,
+        "message": "Unknown identifier `polarisationForm`"
+      }
+    ],
+    "Lib.PadicHodge.Crystalline.RegularityFrobenius": [
+      {
+        "line": 55,
+        "column": 7,
+        "message": "Tactic `rewrite` failed: Did not find an occurrence of the pattern"
+      }
+    ]
+  },
+  "scope": "Counts only visible module build messages. Later errors may exist on the retained evidence volume. The stopped attempt failed source elaboration and did not reach the kernels."
+}
