@@ -22,8 +22,14 @@ finite part cα/ᾱ. -/
 @[simps! -isSimp val] noncomputable def flipIdele (c : (Ô E)ˣ) (t : ℤˣ) :
     (𝔸 E)ˣ := MulEquiv.prodUnits.symm (t.map (castRingHom _).1, c.map (Ô E).subtype * α * star α⁻¹)
 
-attribute [local simp] sum_prod_type Matrix.mul_assoc Prod.ext_iff starCoordEquiv _root_.funext_iff
+namespace PairFlipSimp
+
+attribute [scoped simp] sum_prod_type Matrix.mul_assoc Prod.ext_iff starCoordEquiv _root_.funext_iff
   pairSign realVac val_flipIdele pairWeil
+
+end PairFlipSimp
+
+open scoped PairFlipSimp
 
 /-- For a unit c of Ô with c̄c = −1 and signs t′ = −t, the change of coordinates x ↦ (1, cα/ᾱ)
 ε_s x* ε_t from signs t′_i s_j to signs s_j t_i. -/
