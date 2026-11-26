@@ -10,11 +10,17 @@ On November 26, 2026, Palomar’s stock verifier built `GoldbachSolution` from s
 | Canonical challenge export | 1,434,686 bytes |
 | Cold solution build | Exit 0 in 6,266.44 s (1 h 44 min 26 s) |
 | Solution export | Exit 0 in 1,946.365 s (32 min 26 s), 6,079,160,562 bytes |
-| Protected comparison | Entered at 14:47 UTC. Kernel verdict pending at that observation. |
+| Protected comparison | The comparator began at 14:47 UTC. The 16:57 UTC local cutoff interrupted Lean’s default checker. No final verdict. |
 
 The build’s cgroup recorded 50,282.361 CPU seconds, or **13.97 core-hours**. Dividing by 6,266.44 elapsed seconds gives an average of 8.02 CPUs. Reserving all 32 vCPUs for that interval used 55.70 allocated vCPU-hours. The cgroup peaked at **62.45 GiB** and reported zero OOM kills. This measurement covers compilation of the candidate with Mathlib already available. The export and kernel phases have separate costs. Both rows in the raw record describe the same build. The export observation captures the report as comparison began, before the verifier had any kernel verdict to record. [Stock build measurements](solution-build-metrics.jsonl) · [Export sizes and phase exits](export-observation.json)
 
 The rehearsal used preinstalled verifier tools. Its accounting clock started at 12:07:57 UTC, before setup of the protected attempt. The local proof cutoff was 16:57 UTC, giving 4 h 49 min 3 s of the profile’s published 5 h 30 min execution budget. There were about 2 h 10 min left on the local clock when comparison began. The entry process and the verifier child shared a cgroup ancestor that enforced the 32-CPU quota, 64-GiB memory limit and zero swap. [Measured profile and clock](profile-and-clock.json) · [Published profile policy](https://github.com/PalomarRegistry/PalomarSubmission/blob/046554302064b2c83c2b924bea6db87fc5900c68/README.md)
+
+## What the checker reached
+
+At 15:10 UTC the comparator was running NanoDa. At 16:00 UTC its child was Lean’s default checker, reading the complete solution export. That same process had used 3,242.20 CPU seconds in 3,242.81 elapsed seconds by 16:45 UTC. The judge’s memory controller reported zero out-of-memory events. At the local cutoff the report still named the comparator stage and listed zero diagnostics and zero recorded kernel verdicts. The run ended before the con-ron stage. [Terminal record and process observations](cutoff-outcome.json)
+
+The recorded outcome was `inconclusive-local-cutoff`. The clock allowed 4 h 49 min 3 s, which is 40 min 57 s shorter than the published 5 h 30 min execution budget. Both exports were hashed after the service stopped. The challenge SHA-256 is `8144a16f2ac29e3d6a1c1741ec2c8d71d89738994db20f2bc679f0bc41abc838`. The solution SHA-256 is `4ede6061978e3702dc85b3fd41bcd981abc862eaebea62c59d6174cba9f9979f`. A full-budget verdict remains open. [Source, clock, build and export evidence](cutoff-outcome.json)
 
 ## Which GRH proof was compiled?
 

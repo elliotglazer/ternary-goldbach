@@ -1,0 +1,142 @@
+{
+  "checker_observations": [
+    {
+      "cpu_seconds": 2876.59,
+      "elapsed_seconds": 771.11,
+      "program": "nanoda_bin",
+      "rss_kib": 5816056,
+      "source_sha256": "f7b960ffde6075e84678f5a9d233c02683aa423c08c6e028d06aafad254a5eb7",
+      "utc": "2026-11-26T15:10:01.010210+00:00"
+    },
+    {
+      "cpu_seconds": 540.86,
+      "elapsed_seconds": 540.92,
+      "program": "leanchecker",
+      "rss_kib": 9265556,
+      "source_sha256": "bf4b52928a33f6a19ea7710541e5634fc3ff9f604b9ab21a557f1cf09e296d62",
+      "utc": "2026-11-26T16:00:01.125786+00:00"
+    },
+    {
+      "cpu_seconds": 3242.2,
+      "elapsed_seconds": 3242.81,
+      "program": "leanchecker",
+      "rss_kib": 8240512,
+      "source_sha256": "a958906047d9f789c6a7a0ce7bba148774112862759db42f5e1da73ebdbdbb6d",
+      "utc": "2026-11-26T16:45:03.015620+00:00"
+    }
+  ],
+  "evidence": {
+    "clock_sha256": "40a321090aae15b73eea201f835c27dc3ad47f2efc0fef23869f8a9fb9b2c979",
+    "outcome_sha256": "e4802eb772286cc85943510597ddf196c9d8f0750eefd782696b42be37837a33",
+    "terminal_archive_sha256": "de477a3c0314511667de483744486fcecdf71ccea8206d6a81b186435be0fe12",
+    "terminal_collection_sha256": "8937d9e284e0dd6a914c23969413cd9803f7181161352d924b9f7f974d53deff"
+  },
+  "exports": {
+    "challenge.export": {
+      "bytes": 1434686,
+      "sha256": "8144a16f2ac29e3d6a1c1741ec2c8d71d89738994db20f2bc679f0bc41abc838"
+    },
+    "solution.export": {
+      "bytes": 6079160562,
+      "sha256": "4ede6061978e3702dc85b3fd41bcd981abc862eaebea62c59d6174cba9f9979f"
+    }
+  },
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "rehearsal": {
+    "classification": "inconclusive-local-cutoff",
+    "local_cutoff_epoch": 1795712220,
+    "passed_before_local_cutoff": false,
+    "recorded_epoch": 1795712221,
+    "setup_basis": "preprovisioned",
+    "started_epoch": 1795694877,
+    "stock_budget_seconds": 19800
+  },
+  "source": {
+    "bytes": 364967482,
+    "commit": "3ca2fcf7e3dd1897ff242d8e482aa7f82abe263b",
+    "lean_files": 1529,
+    "repo": "elliotglazer/ternary-goldbach",
+    "tree": "d310a9b71577cc7225486e5ea39c913e411473ca"
+  },
+  "stock": {
+    "additional_kernel_attempts": [],
+    "error_count": 0,
+    "mechanical_report_sha256": "717d2dc90e097f720be154c26b27cc817e762ec01253747d8dbe595216b8e28a",
+    "phases": [
+      {
+        "elapsed_seconds": 2.712,
+        "max_rss_kib": 610648,
+        "phase": "challenge-export",
+        "returncode": 0,
+        "system_cpu_seconds": 0.377,
+        "user_cpu_seconds": 0.542
+      },
+      {
+        "cpu_usage_nanoseconds": 925465000,
+        "deadline_fired": false,
+        "memory_events": {
+          "oom": 0,
+          "oom_kill": 0
+        },
+        "memory_peak_bytes": 625561600,
+        "phase": "challenge-export:cgroup",
+        "supervisor_timeout": false,
+        "systemd_result": "success"
+      },
+      {
+        "elapsed_seconds": 6266.44,
+        "max_rss_kib": 65487428,
+        "phase": "solution-build",
+        "returncode": 0,
+        "system_cpu_seconds": 2343.158,
+        "user_cpu_seconds": 47939.197
+      },
+      {
+        "cpu_usage_nanoseconds": 50282361488000,
+        "deadline_fired": false,
+        "memory_events": {
+          "oom": 0,
+          "oom_kill": 0
+        },
+        "memory_peak_bytes": 67059191808,
+        "phase": "solution-build:cgroup",
+        "supervisor_timeout": false,
+        "systemd_result": "success"
+      },
+      {
+        "elapsed_seconds": 1946.365,
+        "max_rss_kib": 19959684,
+        "phase": "solution-export",
+        "returncode": 0,
+        "system_cpu_seconds": 9.689,
+        "user_cpu_seconds": 1842.259
+      },
+      {
+        "cpu_usage_nanoseconds": 1851954323000,
+        "deadline_fired": false,
+        "memory_events": {
+          "oom": 0,
+          "oom_kill": 0
+        },
+        "memory_peak_bytes": 20438781952,
+        "phase": "solution-export:cgroup",
+        "supervisor_timeout": false,
+        "systemd_result": "success"
+      }
+    ],
+    "recorded_kernels": [],
+    "stage": "comparator",
+    "status": "error",
+    "warning_count": 0
+  },
+  "theorem": "PalomarTernaryGoldbach.ternary_goldbach",
+  "verifier": {
+    "commit": "046554302064b2c83c2b924bea6db87fc5900c68",
+    "profile": "palomar-namespace-32x64-v1",
+    "repo": "PalomarRegistry/PalomarSubmission"
+  }
+}
